@@ -135,6 +135,14 @@
           <range-value-positions>false</range-value-positions>
         </range-element-index>
 -->
+        <range-element-index>
+          <scalar-type>string</scalar-type>
+          <namespace-uri/>
+          <localname>country</localname>
+          <collation>http://marklogic.com/collation/codepoint</collation>
+          <range-value-positions>false</range-value-positions>
+        </range-element-index>
+
       </range-element-indexes>
       <range-element-attribute-indexes>
 <!--
@@ -151,6 +159,34 @@
           <range-value-positions>false</range-value-positions>
         </range-element-attribute-index>
 -->
+        <range-element-attribute-index>
+          <scalar-type>string</scalar-type>
+          <parent-namespace-uri/>
+          <parent-localname>application-reference</parent-localname>
+          <namespace-uri/>
+          <localname>appl-type</localname>
+          <collation>http://marklogic.com/collation/codepoint</collation>
+          <range-value-positions>false</range-value-positions>
+        </range-element-attribute-index>
+        <range-element-attribute-index>
+          <scalar-type>string</scalar-type>
+          <parent-namespace-uri/>
+          <parent-localname>classification-ipcr</parent-localname>
+          <namespace-uri/>
+          <localname>code</localname>
+          <collation>http://marklogic.com/collation/codepoint</collation>
+          <range-value-positions>false</range-value-positions>
+        </range-element-attribute-index>
+        <range-element-attribute-index>
+          <scalar-type>date</scalar-type>
+          <parent-namespace-uri/>
+          <parent-localname>date</parent-localname>
+          <namespace-uri/>
+          <localname>date</localname>
+          <collation>http://marklogic.com/collation/codepoint</collation>
+          <range-value-positions>false</range-value-positions>
+        </range-element-attribute-index>
+        
       </range-element-attribute-indexes>
       <range-field-indexes>
 <!--
@@ -182,6 +218,37 @@
           <invalid-values>reject</invalid-values>
         </range-path-index>
 -->
+        <range-path-index>
+          <scalar-type>string</scalar-type>
+          <collation>http://marklogic.com/collation/</collation>
+          <path-expression>publication-reference/document-id/country</path-expression>
+          <range-value-positions>false</range-value-positions>
+          <invalid-values>reject</invalid-values>
+        </range-path-index>
+        <range-path-index>
+          <scalar-type>string</scalar-type>
+          <collation>http://marklogic.com/collation/</collation>
+          <path-expression>inventor/addressbook/address/country</path-expression>
+          <range-value-positions>false</range-value-positions>
+          <invalid-values>reject</invalid-values>
+        </range-path-index>
+        <range-path-index>
+          <scalar-type>string</scalar-type>
+          <collation>http://marklogic.com/collation/</collation>
+          <path-expression>assignee/addressbook/address/country</path-expression>
+          <range-value-positions>false</range-value-positions>
+          <invalid-values>reject</invalid-values>
+        </range-path-index>
+        <range-path-index>
+          <scalar-type>string</scalar-type>
+          <collation>http://marklogic.com/collation/</collation>
+          <path-expression>patcit/document-id/country</path-expression>
+          <range-value-positions>false</range-value-positions>
+          <invalid-values>reject</invalid-values>
+        </range-path-index>
+
+
+
       </range-path-indexes>
 
       <geospatial-element-indexes>

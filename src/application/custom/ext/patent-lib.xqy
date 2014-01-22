@@ -2,7 +2,7 @@ xquery version "1.0-ml";
 
 module namespace m = "http://marklogic.com/roxy/models/patent";
 
-import module namespace u = "http://marklogic.com/roxy/lib/util" at "/app/lib/util.xqy";
+import module namespace u = "http://marklogic.com/roxy/lib/util" at "/application/custom/ext/util.xqy";
 
 declare option xdmp:mapping "false";
 

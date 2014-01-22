@@ -1,10 +1,16 @@
 xquery version "1.0-ml";
+
 module namespace appidentitytransform = "http://marklogic.com/rest-api/transform/appidentitytransform";
-import module namespace extut = "http://marklogic.com/rest-api/lib/extensions-util"
-    at "/MarkLogic/rest-api/lib/extensions-util.xqy";
+
+import module namespace extut = "http://marklogic.com/rest-api/lib/extensions-util" at "/MarkLogic/rest-api/lib/extensions-util.xqy";
+import module namespace html = "http://marklogic.com/roxy/lib/patent-html" at "/application/custom/ext/patent-html-lib.xqy";
+
 declare namespace xsl = "http://www.w3.org/1999/XSL/Transform";
+
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
+
 declare option xdmp:mapping "false";
+
 declare private variable $transform := <xsl:stylesheet version="2.0" exclude-result-prefixes="xdmp xhtml" extension-element-prefixes="xdmp" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:xdmp="http://marklogic.com/xdmp" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:map="http://marklogic.com/xdmp/map" xmlns:search="http://marklogic.com/appservices/search">
   <xdmp:import-module namespace="http://marklogic.com/appservices/search" href="/MarkLogic/appservices/search/search.xqy"/>
   <xsl:param name="context" as="map:map"/>
@@ -62,7 +68,7 @@ declare private variable $transform := <xsl:stylesheet version="2.0" exclude-res
     <div id="content" class="subpage">
       <div id="content-area-container">
         <div id="content-area">
-          <xsl:apply-templates select="child::node()"/>
+          <xsl:copy-of select="child::node()"/>
         </div>
       </div>
     </div>		
@@ -80,14 +86,17 @@ declare private variable $transform := <xsl:stylesheet version="2.0" exclude-res
 </body>
 </html>
 </xsl:template>
+<!--
   <xsl:include href="/application/app-content.xsl"/>
   <xsl:include href="/application/custom/content.xsl"/>
+-->
 </xsl:stylesheet>;
+
 declare function appidentitytransform:transform(
     $context as map:map,
     $params  as map:map,
     $content as document-node()  
 ) as document-node()?
 {
-    extut:execute-transform($transform,$context,$params,$content)
+    extut:execute-transform($transform, $context, $params, document { html:transform-html($content/*) })
 };

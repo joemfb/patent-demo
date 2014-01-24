@@ -4,11 +4,13 @@ module namespace enhance = "http://marklogic.com/roxy/lib/patent-enhance";
 
 import module namespace patent = "http://marklogic.com/roxy/models/patent" at "/application/custom/ext/patent-lib.xqy";
 
+declare namespace pt = "http://example.com/patent";
+
 declare option xdmp:mapping "false";
 
 declare function enhance:transform($content as map:map, $context as map:map) as map:map*
 {
-  let $doc := map:get($content, "value")/us-patent-grant
+  let $doc := map:get($content, "value")/pt:us-patent-grant
   return
     if ($doc)
     then
@@ -29,14 +31,14 @@ declare function enhance:walk-tree($x)
 declare function enhance:transform($x)
 {
   typeswitch($x)
-    case element(date) return
-      element date {
+    case element(pt:date) return
+      element { fn:node-name($x) } {
         $x/@*,
         attribute date { xdmp:parse-yymmdd("yyyyMMDD", $x) ! xs:date(.) },
         $x/fn:data(.)
       }
-    case element (classification-ipcr) return
-      element classification-ipcr {
+    case element (pt:classification-ipcr) return
+      element { fn:node-name($x) } {
         $x/@*,
         attribute code { patent:ipc-string($x) },
         enhance:walk-tree($x)

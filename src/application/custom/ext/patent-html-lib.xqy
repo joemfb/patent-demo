@@ -75,11 +75,53 @@ declare function html:transform-html($x)
       }</div>
       <div class="licensing">
         <h2>Licensing Requests</h2>
+        <table class="licensing-entries ui-widget ui-widget-content">
+          <thead>
+            <tr class="ui-widget-header ">
+              <th class="ui-state-default">Name</th>
+              <th class="ui-state-default">Email</th>
+              <th class="ui-state-default">Comments</th>
+            </tr>
+          </thead>
+        </table>
         <button class="request-licensing">request a license</button>
+        <form class="licensing-form">
+          <fieldset>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
+            <label for="comments">Comments:</label>
+            <textarea name="comments" cols="35" rows="6" id="comments" placeholder="Add your comments ..." class="ui-widget ui-state-default ui-corner-all" xml:space="preserve"></textarea>
+          </fieldset>
+        </form>
       </div>
       <div class="prior-art">
         <h2>Suggested Prior Art</h2>
+        <table class="prior-art-entries ui-widget ui-widget-content">
+          <thead>
+            <tr class="ui-widget-header ">
+              <th class="ui-state-default">Name</th>
+              <th class="ui-state-default">Email</th>
+              <th class="ui-state-default">External Link</th>
+              <th class="ui-state-default">Comments</th>
+              <th class="ui-state-default">Actions</th>
+            </tr>
+          </thead>
+        </table>
         <button class="add-prior-art">add prior art</button>
+        <form class="prior-art-form">
+          <fieldset>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
+            <label for="external-link">External Link: </label>
+            <input type="text" name="external-link" id="external-link" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
+            <label for="comments">Comments:</label>
+            <textarea name="comments" cols="35" rows="6" id="comments" placeholder="Add your comments ..." class="ui-widget ui-state-default ui-corner-all" xml:space="preserve"></textarea>
+          </fieldset>
+        </form>
       </div>
       <div class="additional-info">
         <h2>Additional Information</h2>
@@ -105,25 +147,5 @@ declare function html:transform-html($x)
         </div>
       </div>
     </div>
-    <form class="licensing-form">
-      <fieldset>
-        <label for="name">Name: </label>
-        <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
-        <label for="email">Email: </label>
-        <input type="text" name="email" id="email" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
-        <label for="comments">Comments:</label>
-        <textarea name="comments" cols="35" rows="6" id="comments" placeholder="Add your comments ..." class="ui-widget ui-state-default ui-corner-all" xml:space="preserve"></textarea>
-      </fieldset>
-    </form>
-    <form class="prior-art-form">
-      <fieldset>
-        <label for="name">Name: </label>
-        <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
-        <label for="email">Email: </label>
-        <input type="text" name="email" id="email" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
-        <label for="comments">Comments:</label>
-        <textarea name="comments" cols="35" rows="6" id="comments" placeholder="Add your comments ..." class="ui-widget ui-state-default ui-corner-all" xml:space="preserve"></textarea>
-      </fieldset>
-    </form>
   </div>
 };

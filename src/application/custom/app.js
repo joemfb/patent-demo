@@ -2,7 +2,6 @@
  * This file will survive redeployment.
  */
 
-
 var urlParams = function() {
       //from https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript/2880929#2880929
       var urlParams = {},
@@ -17,6 +16,10 @@ var urlParams = function() {
       }
       return urlParams
     },
+
+    /*
+     * Find a Patent Document by it's publication number
+     */
     findByPatentNum = function(patentNum, target, callback) {
       var searchUri = 'keyvalue?element=doc-number&value=' + patentNum+ '&format=json'
       
@@ -24,6 +27,10 @@ var urlParams = function() {
         callback(data, target)
       })
     },
+
+    /*
+     * Navigate to a patent document by it's publication number
+     */
     navigateToResult = function(data, target) {
       var uri,
           message,
@@ -45,6 +52,50 @@ var urlParams = function() {
         message.delay(750).fadeOut()
       }
     },
+
+    /*
+     * Prepare a json document from user input
+     */
+    prepareDoc = function(data, type) {
+      data.uri = urlParams()["uri"]
+      data.type = type
+      data.username = $('#username').text()
+      return data
+    },
+
+    /*
+     *  save a new json document to ML
+     */
+    saveDoc = function(data, callback) {
+      $.ajax({
+        type: 'POST',
+        url: 'documents?extension=json&directory=/user-content/' + encodeURIComponent(data.type) + '/',
+        data: JSON.stringify(data),
+        contentType: 'application/json',
+        dataType: 'json'
+      }).success(function(data, status, jqXHR) {
+        callback(data)
+      })
+    },
+
+    /*
+     * Update an existing json doc in ML
+     */
+    updateDoc = function(data, uri, callback) {
+      $.ajax({
+        type: 'PUT',
+        url: 'documents?uri=' + encodeURIComponent(uri),
+        data: JSON.stringify(data),
+        contentType: 'application/json',
+        dataType: 'json'
+      }).success(function(data, status, jqXHR) {
+        callback(data)
+      })
+    },
+
+    /*
+     * Convert the output of jQuery.serializeArray() to an object with named properties
+     */
     processFormData = function(formData) {
       var data = {}
 
@@ -54,22 +105,10 @@ var urlParams = function() {
 
       return data
     },
-    prepareDoc = function(data, type) {
-      data.uri = urlParams()["uri"]
-      data.type = type
-      data.username = $('#username').text()
-      return data
-      //return createDoc(data, type)
-    },
-    createDoc = function(data) {
-      $.ajax({
-        type: 'POST',
-        url: 'documents?extension=json&directory=/user-content/' + encodeURIComponent(data.type) + '/',
-        data: JSON.stringify(data),
-        contentType: 'application/json',
-        dataType: 'json'
-      })
-    },
+
+    /*
+     * jQuery UI Dialog options for licensing requests
+     */
     licensingOps = {
       autoOpen: false,
       height: 450,
@@ -79,11 +118,53 @@ var urlParams = function() {
         Cancel: function() {
           $( this ).dialog( "close" );
         },
-        "Create an account": function() { 
-          console.log("created an account")
+        "request a license": function() { 
+          var data,
+              response,
+              button,
+              row
+
+          data = processFormData($(this).serializeArray())
+          data = prepareDoc(data, "license-request")
+
+          console.log(data)
+          //TODO: getResponseHeader('Location')
+          response = {}
+          response.location = "/user-content/prior-art/123456789.json"
+
+          row = $('<tr data-uri="' + response.location  + '">' +
+            '<td class="name">' + data.name + '</td>' +
+            '<td class="email">' + data.email + '</td>' +
+            '<td class="comments">' + data.comments + '</td>' +
+            '<td class="operations"></td>' +
+          '</tr>')
+
+          button = $('<button class="edit-license-request">Edit</button>')
+          row.find('.operations').append(button)
+
+          $('.prior-art-entries').append(row)
+
+          button.click(function() {
+            var obj = {},
+                td = $(this).parent().parent()
+            obj['src-uri'] = td.data('uri')
+
+            td.find('td:not(.operations)').each(function(index, input) {
+              var name = $(input).attr('class')
+              obj[name] = $(input).text()
+            })
+            console.log(obj)
+          })  
+
+          $(this).get(0).reset()
+          $(this).dialog("close");
         }
       }
-    }
+    },
+
+    /*
+     * jQuery UI Dialog options for prior art submissions
+     */
     priorArtOps = {
       autoOpen: false,
       height: 450,
@@ -94,27 +175,82 @@ var urlParams = function() {
           $(this).dialog("close");
         },
         "add prior art": function() {
-          var data = processFormData($(this).serializeArray()),
-              row
+          var data
 
+          data = processFormData($(this).serializeArray())
           data = prepareDoc(data, "prior-art")
+
           console.log(data)
 
-          row = "<tr>" +
-            "<td>" + data.name + "</td>" +
-            "<td>" + data.email + "</td>" +
-            "<td>" + data.comments + "</td>" +
-          "</tr>"
+          //TODO: if exists, update
+          /*
+          saveDoc(data, function(data, jqXHR) {
+            var srcUri = jqXHR.getResponseHeader('Location')
 
-          console.log(row)
+            //TODO: do this regardless of success?
+            priorArtToRow(data, srcUri)
+          */
+            
+            //TODO: remove this
+            response = {}
+            response.location = "/user-content/prior-art/123456789.json"
+            priorArtToRow(data, response.location)
 
-          $(this).get(0).reset()
-          $(this).dialog("close");
+            $(this).get(0).reset()
+            $(this).dialog("close");
+          /*
+          })
+          */
         }
       }
+    },
+
+    priorArtToRow = function(data, srcUri) {
+      var response,
+          button,
+          row
+
+      //TODO: make generic
+      row = $('<tr data-src-uri="' + srcUri  + '">' +
+        '<td class="name">' + data.name + '</td>' +
+        '<td class="email">' + data.email + '</td>' +
+        '<td class="external-link">' + data['external-link'] + '</td>' +
+        '<td class="comments">' + data.comments + '</td>' +
+        '<td class="operations"></td>' +
+      '</tr>')
+
+      button = $('<button class="edit-prior-art">Edit</button>')
+      row.find('.operations').append(button)
+
+      $('.prior-art-entries').append(row)
+
+      button.click(function() {
+        var obj = {},
+            td = $(this).parent().parent()
+        obj['src-uri'] = td.data('src-uri')
+
+        td.find('td:not(.operations)').each(function(index, input) {
+          var name = $(input).attr('class')
+          obj[name] = $(input).text()
+        })
+        console.log(obj)
+
+
+        //to populate form
+        /*
+        $('.prior-art-form :input').each(function(index, input) {
+          input.value = 'blah'
+          console.log(input.name)
+        })
+        */
+
+      })  
     }
 
+// Setup patent-number click handler
+
 $('.patent-number').click(function(e) {
+  //TODO: do something else to pause this process?
   e.preventDefault();
   
   var patentNum = $(this).text()
@@ -124,6 +260,7 @@ $('.patent-number').click(function(e) {
   findByPatentNum(patentNum, $(this), navigateToResult)
 })
 
+// Setup user-input dialogs
 $(".licensing-form").dialog(licensingOps)
 $('.request-licensing').button().click(function() {
   $(".licensing-form").dialog( "open" )
@@ -133,14 +270,6 @@ $('.prior-art-form').dialog(priorArtOps)
 $('.add-prior-art').button().click(function() {
   $('.prior-art-form').dialog( "open" )
 })
-
-//to populate form
-/*
-$('.prior-art-form :input').each(function(index, input) {
-  input.value = 'blah'
-  console.log(input.name)
-})
-*/
 
 //TODO
 //$('.additional-info > div').toggle()

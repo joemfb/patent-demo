@@ -67,7 +67,7 @@
   <xsl:template match="classification-level"><span class="render-classification-level"><xsl:apply-templates/></span></xsl:template>
   <xsl:template match="classification-status"><span class="render-classification-status"><xsl:apply-templates/></span></xsl:template>
   <xsl:template match="classification-value"><span class="render-classification-value"><xsl:apply-templates/></span></xsl:template>
-  <xsl:template match="country"><div class="render-country"><label>Country:</label><xsl:apply-templates/></div></xsl:template>
+  <xsl:template match="country"><span class="render-country"><xsl:apply-templates/></span></xsl:template>
   <xsl:template match="date"><span class="render-date"><xsl:apply-templates/></span></xsl:template>
   <xsl:template match="department"><span class="render-department"><xsl:apply-templates/></span></xsl:template>
   <xsl:template match="doc-number"><span class="render-doc-number"><xsl:apply-templates/></span></xsl:template>

@@ -87,9 +87,7 @@ declare private variable $transform := <xsl:stylesheet version="2.0" exclude-res
         <script src="/application/lib/external/jquery-ui-1.10.4.custom.js" type="text/javascript" xml:space="preserve"></script>
         <!--<script src="/application/lib/external/trunk8.js" type="text/javascript" xml:space="preserve"></script>-->
         <script src="/application/skin.js" type="text/javascript" xml:space="preserve"></script>
-        <script src="/application/app-config.js?9973509351349729704" type="text/javascript" xml:space="preserve"></script>
-        <script src="/application/custom/app-config.js?4529134189821169800" type="text/javascript" xml:space="preserve"></script>
-        <script src="/application/custom/app.js?3537640590273047200" type="text/javascript" xml:space="preserve"></script>
+        <script src="/application/custom/app.js?4925867444361487418" type="text/javascript" xml:space="preserve"></script>
       </body>
     </html>
   </xsl:template>

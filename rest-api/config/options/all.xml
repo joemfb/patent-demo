@@ -15,7 +15,7 @@
   <search:grammar>
     <search:quotation>"</search:quotation>
     <search:implicit>
-      <cts:and-query xmlns:cts="http://marklogic.com/cts" strength="20"/>
+      <cts:and-query strength="20" xmlns:cts="http://marklogic.com/cts"/>
     </search:implicit>
     <search:starter strength="30" apply="grouping" delimiter=")">(</search:starter>
     <search:starter strength="40" apply="prefix" element="cts:not-query">-</search:starter>
@@ -32,13 +32,13 @@
     <search:joiner strength="50" apply="constraint" compare="GE" tokenize="word">GE</search:joiner>
     <search:joiner strength="50" apply="constraint" compare="NE" tokenize="word">NE</search:joiner>
   </search:grammar>
-  <search:constraint name="appl-type">
+  <search:constraint name="type">
     <search:range collation="http://marklogic.com/collation/codepoint" type="xs:string" facet="true">
       <search:facet-option>frequency-order</search:facet-option>
       <search:facet-option>descending</search:facet-option>
       <search:facet-option>limit=10</search:facet-option>
       <search:attribute ns="" name="appl-type"/>
-      <search:element ns="" name="application-reference"/>
+      <search:element ns="http://example.com/patent" name="application-reference"/>
     </search:range>
   </search:constraint>
   <search:constraint name="class">
@@ -47,7 +47,7 @@
       <search:facet-option>descending</search:facet-option>
       <search:facet-option>limit=10</search:facet-option>
       <search:attribute ns="" name="code"/>
-      <search:element ns="" name="classification-ipcr"/>
+      <search:element ns="http://example.com/patent" name="classification-ipcr"/>
     </search:range>
   </search:constraint>
   <search:constraint name="country">
@@ -55,31 +55,31 @@
       <search:facet-option>frequency-order</search:facet-option>
       <search:facet-option>descending</search:facet-option>
       <search:facet-option>limit=10</search:facet-option>
-      <search:element ns="" name="country"/>
+      <search:element ns="http://example.com/patent" name="country"/>
+    </search:range>
+  </search:constraint>
+  <search:constraint name="date">
+    <search:range type="xs:date" facet="true">
+      <search:facet-option>frequency-order</search:facet-option>
+      <search:facet-option>descending</search:facet-option>
+      <search:facet-option>limit=10</search:facet-option>
+      <search:attribute ns="" name="date"/>
+      <search:element ns="http://example.com/patent" name="date"/>
     </search:range>
   </search:constraint>
   <search:operator name="sort">
     <search:state name="relevance">
       <search:sort-order>
-        <search:score/>
-      </search:sort-order>
-    </search:state>
-    <search:state name="appl-type">
-      <search:sort-order direction="descending" type="xs:string" collation="http://marklogic.com/collation/codepoint">
-        <search:attribute ns="" name="appl-type"/>
-        <search:element ns="" name="application-reference"/>
-      </search:sort-order>
-      <search:sort-order>
-        <search:score/>
+	<search:score/>
       </search:sort-order>
     </search:state>
   </search:operator>
   <search:transform-results apply="snippet">
     <search:preferred-elements>
-      <search:element ns="" name="p"/>
-      <search:element ns="" name="claim-text"/>
-      <search:element ns="" name="b"/>
-      <search:element ns="" name="entry"/>
+      <search:element ns="http://example.com/patent" name="p"/>
+      <search:element ns="http://example.com/patent" name="claim-text"/>
+      <search:element ns="http://example.com/patent" name="b"/>
+      <search:element ns="http://example.com/patent" name="othercit"/>
     </search:preferred-elements>
     <search:max-matches>2</search:max-matches>
     <search:max-snippet-chars>150</search:max-snippet-chars>
@@ -89,40 +89,51 @@
   <search:operator name="results">
     <search:state name="compact">
       <search:transform-results apply="snippet">
-        <search:preferred-elements>
-          <search:element ns="" name="p"/>
-          <search:element ns="" name="claim-text"/>
-          <search:element ns="" name="b"/>
-          <search:element ns="" name="entry"/>
-        </search:preferred-elements>
-        <search:max-matches>2</search:max-matches>
-        <search:max-snippet-chars>150</search:max-snippet-chars>
-        <search:per-match-tokens>20</search:per-match-tokens>
+	<search:preferred-elements>
+	  <search:element ns="http://example.com/patent" name="p"/>
+	  <search:element ns="http://example.com/patent" name="claim-text"/>
+	  <search:element ns="http://example.com/patent" name="b"/>
+	  <search:element ns="http://example.com/patent" name="othercit"/>
+	</search:preferred-elements>
+	<search:max-matches>2</search:max-matches>
+	<search:max-snippet-chars>150</search:max-snippet-chars>
+	<search:per-match-tokens>20</search:per-match-tokens>
       </search:transform-results>
     </search:state>
     <search:state name="detailed">
       <search:transform-results apply="snippet">
-        <search:preferred-elements>
-          <search:element ns="" name="p"/>
-          <search:element ns="" name="claim-text"/>
-          <search:element ns="" name="b"/>
-          <search:element ns="" name="entry"/>
-        </search:preferred-elements>
-        <search:max-matches>2</search:max-matches>
-        <search:max-snippet-chars>400</search:max-snippet-chars>
-        <search:per-match-tokens>30</search:per-match-tokens>
+	<search:preferred-elements>
+	  <search:element ns="http://example.com/patent" name="p"/>
+	  <search:element ns="http://example.com/patent" name="claim-text"/>
+	  <search:element ns="http://example.com/patent" name="b"/>
+	  <search:element ns="http://example.com/patent" name="othercit"/>
+	</search:preferred-elements>
+	<search:max-matches>2</search:max-matches>
+	<search:max-snippet-chars>400</search:max-snippet-chars>
+	<search:per-match-tokens>30</search:per-match-tokens>
       </search:transform-results>
     </search:state>
   </search:operator>
+  <search:values name="date">
+    <search:range type="xs:date" facet="true">
+      <search:element ns="http://example.com/patent" name="date"/>
+      <search:attribute ns="" name="date"/>
+    </search:range>
+    <search:aggregate apply="min"/>
+    <search:aggregate apply="max"/>
+  </search:values>
   <search:extract-metadata>
-    <search:qname elem-ns="" elem-name="application-reference" attr-ns="" attr-name="appl-type"/>
-    <search:qname elem-ns="" elem-name="country"/>
-    <search:qname elem-ns="" elem-name="invention-title"/>
-    <search:qname elem-ns="" elem-name="us-claim-statement"/>
-    <search:qname elem-ns="" elem-name="department"/>
-    <search:constraint-value ref="appl-type"/>
+    <search:qname elem-ns="http://example.com/patent" elem-name="application-reference" attr-ns="" attr-name="appl-type"/>
+    <search:qname elem-ns="http://example.com/patent" elem-name="classification-ipcr" attr-ns="" attr-name="code"/>
+    <search:qname elem-ns="http://example.com/patent" elem-name="date" attr-ns="" attr-name="date"/>
+    <search:qname elem-ns="http://example.com/patent" elem-name="country"/>
+    <search:qname elem-ns="http://example.com/patent" elem-name="invention-title"/>
+    <search:qname elem-ns="http://example.com/patent" elem-name="us-claim-statement"/>
+    <search:qname elem-ns="http://example.com/patent" elem-name="department"/>
+    <search:constraint-value ref="type"/>
     <search:constraint-value ref="class"/>
     <search:constraint-value ref="country"/>
+    <search:constraint-value ref="date"/>
   </search:extract-metadata>
   <annotation xmlns="http://marklogic.com/appservices/search">Delta options here</annotation>
 </search:options>

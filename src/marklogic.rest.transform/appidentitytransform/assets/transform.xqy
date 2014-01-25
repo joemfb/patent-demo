@@ -6,6 +6,7 @@ import module namespace extut = "http://marklogic.com/rest-api/lib/extensions-ut
 import module namespace html = "http://marklogic.com/roxy/lib/patent-html" at "/application/custom/ext/patent-html-lib.xqy";
 
 declare namespace xsl = "http://www.w3.org/1999/XSL/Transform";
+declare namespace pt = "http://example.com/patent";
 
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 
@@ -104,5 +105,7 @@ declare function appidentitytransform:transform(
     $content as document-node()  
 ) as document-node()?
 {
-    extut:execute-transform($transform, $context, $params, document { html:transform-html($content/*) })
+    if ($content/pt:*)
+    then extut:execute-transform($transform, $context, $params, document { html:transform-html($content/*) })
+    else $content
 };

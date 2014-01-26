@@ -3,9 +3,24 @@ xquery version "1.0-ml";
 module namespace html = "http://marklogic.com/roxy/lib/patent-html";
 
 declare namespace pt = "http://example.com/patent";
+declare namespace class = "http://example.com/classification";
 declare namespace xhtml = "http://www.w3.org/1999/xhtml";
 
 declare option xdmp:mapping "false";
+
+declare function html:serialize($x)
+{
+  let $stylesheet :=
+    <xsl:stylesheet version="2.0" exclude-result-prefixes="xhtml" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+      <xsl:output method="xhtml" encoding="utf8" omit-xml-declaration="yes" indent="yes"/>
+      <xsl:template match="/">
+        <div>
+          <xsl:copy-of select="child::node()"/>
+        </div>
+      </xsl:template>
+    </xsl:stylesheet>
+  return xdmp:xslt-eval($stylesheet, document { $x })
+};
 
 declare function html:walk-tree($x)
 {
@@ -27,6 +42,36 @@ declare function html:transform($x)
       then <xhtml:div>{ html:walk-tree($x) }</xhtml:div>
       else <xhtml:p>{ html:walk-tree($x) }</xhtml:p>
     case element(pt:claim-ref) return <xhtml:a class="claim-ref" href="{ $x/@idref }">{ html:walk-tree($x) }</xhtml:a>
+    case element(class:ipc-entry) return
+      <xhtml:div class="ipc-entry">
+      {
+        html:transform($x/class:textBody),
+        if ($x/class:ipc-entries/*)
+        then
+          <xhtml:div class="ipc-children">
+            <xhtml:h3>Children</xhtml:h3>
+            <xhtml:ul>{ $x/class:ipc-entries/* ! html:transform(.) }</xhtml:ul>
+          </xhtml:div>
+        else ()
+      }
+      </xhtml:div>
+    case element(class:ipc-entry-ref) return
+      <xhtml:li>
+        <xhtml:a class="ipc-entry-ref" href="{ 'documents?uri=' || $x/class:uri }">{ $x/class:ref-code/fn:string() }</xhtml:a>
+      </xhtml:li>
+    case element(class:titlePart) return
+      <xhtml:div class="claim-title">
+      {
+        html:transform($x/class:text),
+        if ($x/class:entryReference)
+        then
+          <xhtml:ul class="entryReferences">{ $x/class:entryReference ! html:transform(.) }</xhtml:ul>
+        else ()
+      }
+      </xhtml:div>
+    case element(class:text) return <xhtml:span>{ html:walk-tree($x) }</xhtml:span>
+    case element(class:entryReference) return <xhtml:li>{ html:walk-tree($x) }</xhtml:li>
+    case element(class:sref) return <xhtml:a href="#">{ $x/@ref/fn:string() }</xhtml:a>
     case element() return
       if ($x/*)
       then html:walk-tree($x)
@@ -46,11 +91,13 @@ declare function html:transform-html($x)
       <div class="classification">
         <label>Classification:</label>
       {
-        for $class in $x/pt:us-bibliographic-data-grant/pt:classifications-ipcr/pt:classification-ipcr
-        let $str := fn:string-join($class/(pt:section|pt:class|pt:subclass|pt:main-group|pt:subgroup), "")
-        let $TODO := (: symbol-position|classification-value :) ()
-        return
-          <div class="ipc" data-version="{ $class/pt:date/@date }">{ $str }</div>
+        for $class in $x//pt:classification-ipcr
+        (: let $entry := /class:ipc-entry[class:symbol eq $class/@code] :)
+        return 
+          <div class="ipc" data-version="{ $class/pt:date/@date }">
+            <h3>{ $class/@code/fn:string() }</h3>
+            <div>{ (: html:transform($entry) :) }</div>
+          </div>
       }</div>
       <div class="patent-citations">
         <label>Patent Citations:</label>

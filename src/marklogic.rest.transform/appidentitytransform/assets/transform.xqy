@@ -4,9 +4,11 @@ module namespace appidentitytransform = "http://marklogic.com/rest-api/transform
 
 import module namespace extut = "http://marklogic.com/rest-api/lib/extensions-util" at "/MarkLogic/rest-api/lib/extensions-util.xqy";
 import module namespace html = "http://marklogic.com/roxy/lib/patent-html" at "/application/custom/ext/patent-html-lib.xqy";
+import module namespace cj = "http://marklogic.com/roxy/lib/classification-json" at "/application/custom/ext/classification-json-lib.xqy";
 
 declare namespace xsl = "http://www.w3.org/1999/XSL/Transform";
 declare namespace pt = "http://example.com/patent";
+declare namespace class = "http://example.com/classification";
 
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 
@@ -105,5 +107,14 @@ declare function appidentitytransform:transform(
 {
     if ($content/pt:*)
     then extut:execute-transform($transform, $context, $params, document { html:transform-html($content/*) })
-    else $content
+    else
+      if ($content/class:ipc-entry)
+      then
+        if (xdmp:get-request-field("format") eq "json")
+        then document { cj:to-json($content/*) }
+        else
+          if (xdmp:get-request-field("format") eq "xml")
+          then $content
+          else html:serialize(html:transform($content/*))
+      else $content
 };

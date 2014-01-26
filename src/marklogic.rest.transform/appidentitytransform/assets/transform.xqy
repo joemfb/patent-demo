@@ -106,7 +106,7 @@ declare function appidentitytransform:transform(
 ) as document-node()?
 {
     if ($content/pt:*)
-    then extut:execute-transform($transform, $context, $params, document { html:transform-html($content/*) })
+    then extut:execute-transform($transform, $context, $params, document { html:transform-patent($content/*) })
     else
       if ($content/class:ipc-entry)
       then

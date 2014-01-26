@@ -266,11 +266,45 @@ var Util = {
           message.delay(750).fadeOut()
         }
 
+      },
+
+      findClassifications: function() {
+        $('.classification .ipc').each(function(index, item) {
+          Content.findClassification($(item).data('code'), function(data) {
+            console.log(data)
+            $(item).append(data['text-body'])
+
+            $(item).find('.ipc-entry-search').click(Content.findClassificationFromRef)
+          })
+        })
+      },
+
+      findClassification: function(code, callback) {
+        var url = 'keyvalue?element=class:symbol&value=' + code + '&format=json'
+
+        $.get(url, function(data) {
+          var result = data.results[0]
+
+          if (result !== null && result != undefined) {
+            $.get(result.href + '&format=json', function(data) {
+              callback(data)
+            })
+          }
+        })
+      },
+
+      findClassificationFromRef: function(e) {
+        e.preventDefault()
+        Content.findClassification($(e.target).data('code'), function(data) {
+          $(data['text-body']).dialog()
+        })
       }
 
     }
 
 if ( $('.patent-result').length !== 0 ) {
+  Content.findClassifications()  
+
   UserContent.findUserContent()
 
   // Setup patent-number click handler

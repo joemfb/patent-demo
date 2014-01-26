@@ -265,67 +265,67 @@ var Util = {
           target.parent().append(message)
           message.delay(750).fadeOut()
         }
+
       }
 
     }
-    
-// Setup patent-number click handler
-
-$('.patent-number').click(function(e) {
-  //TODO: do something else to pause this process?
-  e.preventDefault()
-  
-  var patentNum = $(this).text()
-  if (/\//.test(patentNum)) {
-    patentNum = patentNum.split('/')[1]
-  }
-  Content.findByPatentNum(patentNum, $(this), Content.navigateToResult)
-})
-
-// Setup user-input dialogs
-$(".licensing-form").dialog({
-  autoOpen: false,
-  height: 450,
-  width: 400,
-  modal: true,
-  buttons: {
-    cancel: function() {
-      $(this).dialog("close")
-    },
-    "request a license": function() {
-      UserContent.processInput($(this).serializeArray(), "license-request")
-      $(this).get(0).reset()
-      $(this).dialog("close")
-    }
-  }
-})
-$('.request-licensing').button().click(function() {
-  $(".licensing-form").dialog( "open" )
-})
-
-$('.prior-art-form').dialog({
-  autoOpen: false,
-  height: 450,
-  width: 400,
-  modal: true,
-  title: "Suggest Prior Art",
-  buttons: {
-    cancel: function() {
-      $(this).dialog("close")
-    },
-    "add prior art": function() {
-      UserContent.processInput($(this).serializeArray(), "prior-art")
-      $(this).get(0).reset()
-      $(this).dialog("close")
-    }
-  }
-})
-$('.add-prior-art').button().click(function() {
-  $('.prior-art-form').dialog( "open" )
-})
 
 if ( $('.patent-result').length !== 0 ) {
   UserContent.findUserContent()
+
+  // Setup patent-number click handler
+  $('.patent-number').click(function(e) {
+    //TODO: do something else to pause this process?
+    e.preventDefault()
+    
+    var patentNum = $(this).text()
+    if (/\//.test(patentNum)) {
+      patentNum = patentNum.split('/')[1]
+    }
+    Content.findByPatentNum(patentNum, $(this), Content.navigateToResult)
+  })
+
+  // Setup user-input dialogs
+  $(".licensing-form").dialog({
+    autoOpen: false,
+    height: 450,
+    width: 400,
+    modal: true,
+    buttons: {
+      cancel: function() {
+        $(this).dialog("close")
+      },
+      "request a license": function() {
+        UserContent.processInput($(this).serializeArray(), "license-request")
+        $(this).get(0).reset()
+        $(this).dialog("close")
+      }
+    }
+  })
+  $('.request-licensing').button().click(function() {
+    $(".licensing-form").dialog( "open" )
+  })
+
+  $('.prior-art-form').dialog({
+    autoOpen: false,
+    height: 450,
+    width: 400,
+    modal: true,
+    title: "Suggest Prior Art",
+    buttons: {
+      cancel: function() {
+        $(this).dialog("close")
+      },
+      "add prior art": function() {
+        UserContent.processInput($(this).serializeArray(), "prior-art")
+        $(this).get(0).reset()
+        $(this).dialog("close")
+      }
+    }
+  })
+  $('.add-prior-art').button().click(function() {
+    $('.prior-art-form').dialog( "open" )
+  })
 }
 
 //TODO

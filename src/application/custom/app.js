@@ -81,7 +81,7 @@ var Util = {
         if (srcUri.length === 0) {
           Repo.saveDoc(data, function(response, status, jqXHR) {
             var url = jqXHR.getResponseHeader('Location')
-            srcUri = Util.urlParams(url)['uri']
+            srcUri = Util.urlParams(url.split('\?')[1])['uri']
             UserContent.displayContent(data, srcUri)
           })
         }
@@ -129,6 +129,10 @@ var Util = {
           $(existing[0]).replaceWith(row)
         }
 
+        if ( !$(selector + '-entries').is(':visible') ) {
+          $(selector + '-entries').show()
+        }
+
         edit.click(function(e) {
           e.preventDefault()
           UserContent.edit(selector, e.target)
@@ -173,7 +177,11 @@ var Util = {
           buttons: {
             delete: function() {
               Repo.deleteDoc(srcUri, function(){
+                var table = tr.parents(selector + '-entries')
                 tr.remove()
+                if (table.find('tbody tr').length === 0) {
+                  table.hide()
+                }
               })
               $( this ).dialog( "close" );
             },
@@ -441,6 +449,7 @@ if ( $('.patent-result').length > 0 ) {
   $('.request-licensing').button().click(function() {
     $(".licensing-form").dialog( "open" )
   })
+  $('.licensing-entries').hide()
 
   $('.prior-art-form').dialog({
     title: "Suggest Prior Art",
@@ -463,6 +472,7 @@ if ( $('.patent-result').length > 0 ) {
   $('.add-prior-art').button().click(function() {
     $('.prior-art-form').dialog( "open" )
   })
+  $('.prior-art-entries').hide()
 }
 
 //add description tooltips to classification facet

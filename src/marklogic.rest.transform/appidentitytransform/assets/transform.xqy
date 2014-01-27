@@ -5,6 +5,7 @@ module namespace appidentitytransform = "http://marklogic.com/rest-api/transform
 import module namespace extut = "http://marklogic.com/rest-api/lib/extensions-util" at "/MarkLogic/rest-api/lib/extensions-util.xqy";
 import module namespace html = "http://marklogic.com/roxy/lib/patent-html" at "/application/custom/ext/patent-html-lib.xqy";
 import module namespace cj = "http://marklogic.com/roxy/lib/classification-json" at "/application/custom/ext/classification-json-lib.xqy";
+import module namespace pj = "http://marklogic.com/roxy/lib/patent-json" at "/application/custom/ext/patent-json-lib.xqy";
 
 declare namespace xsl = "http://www.w3.org/1999/XSL/Transform";
 declare namespace pt = "http://example.com/patent";
@@ -55,8 +56,8 @@ declare private variable $transform := <xsl:stylesheet version="2.0" exclude-res
         <link type="text/css" rel="stylesheet" href="/application/css/style.css" media="screen, print"/>
         <link type="text/css" rel="stylesheet" href="/application/skin.css" media="screen, print"/>
         <link type="text/css" rel="stylesheet" href="/application/app.css" media="screen, print"/>
-        <link type="text/css" rel="stylesheet" href="/application/custom/app.css" media="screen, print"/>
         <link type="text/css" rel="stylesheet" href="/application/lib/external/jqueryui/jquery-ui-1.10.4.custom.css" media="screen, print"/>
+        <link type="text/css" rel="stylesheet" href="/application/custom/app.css" media="screen, print"/>
         <meta name="user" content="{xdmp:get-current-user()}"/>
       </head>
       <body>
@@ -87,7 +88,7 @@ declare private variable $transform := <xsl:stylesheet version="2.0" exclude-res
         <div id="debug"></div>
         <script src="/application/lib/external/jquery-1.7.1.min.js" type="text/javascript" xml:space="preserve"></script>
         <script src="/application/lib/external/jquery-ui-1.10.4.custom.js" type="text/javascript" xml:space="preserve"></script>
-        <!--<script src="/application/lib/external/trunk8.js" type="text/javascript" xml:space="preserve"></script>-->
+        <script src="/application/lib/external/trunk8.js" type="text/javascript" xml:space="preserve"></script>
         <script src="/application/skin.js" type="text/javascript" xml:space="preserve"></script>
         <script src="/application/custom/app.js?4925867444361487418" type="text/javascript" xml:space="preserve"></script>
       </body>
@@ -106,7 +107,10 @@ declare function appidentitytransform:transform(
 ) as document-node()?
 {
     if ($content/pt:*)
-    then extut:execute-transform($transform, $context, $params, document { html:transform-patent($content/*) })
+    then
+      if (xdmp:get-request-field("format") eq "json")
+      then document { pj:to-json($content/*) }
+      else extut:execute-transform($transform, $context, $params, document { html:transform-patent($content/*) })
     else
       if ($content/class:ipc-entry)
       then

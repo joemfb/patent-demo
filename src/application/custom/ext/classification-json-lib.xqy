@@ -49,6 +49,12 @@ declare function cj:to-json($x)
   json:transform-to-json(
     element jsonb:json {
       attribute type { "object" },
+      element jsonb:html {
+        attribute type { "string" },
+        xdmp:quote(
+            html:serialize(
+              html:transform($x)))
+      },
       cj:transform($x/*)
     }
   )

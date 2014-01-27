@@ -26,7 +26,7 @@ var Util = {
         if (uri == null) {
           uri = Util.urlParams()["uri"]
         }
-        searchUrl = 'keyvalue?key=uri&value=' + uri + '&format=json'
+        searchUrl = 'keyvalue?key=doc-uri&value=' + uri + '&format=json'
 
         $.get( searchUrl, function(data) {
           data.results.map(function(item) {
@@ -45,9 +45,8 @@ var Util = {
 
         if (data.type === "prior-art") {
           selector = ".prior-art"
-          row = $('<tr data-src-uri="' + uri  + '">' +
+          row = $('<tr data-uri="' + uri  + '" data-email="' + data.email + '" data-phone="' + data.phone + '">' +
             '<td class="name">' + data.name + '</td>' +
-            '<td class="email">' + data.email + '</td>' +
             '<td class="external-link">' + data['external-link'] + '</td>' +
             '<td class="comments">' + data.comments + '</td>' +
             '<td class="operations"></td>' +
@@ -55,9 +54,11 @@ var Util = {
         }
         else if (data.type === 'license-request') {
           selector = ".licensing",
-          row = $('<tr data-src-uri="' + uri  + '">' +
+          row = $('<tr data-uri="' + uri  + '" data-email="' + data.email + '" data-phone="' + data.phone + '" data-created="' + data.created + '">' +
             '<td class="name">' + data.name + '</td>' +
-            '<td class="email">' + data.email + '</td>' +
+            '<td class="formatted-date">' + new Date(data.created).toLocaleString().split(" ")[0] + '</td>' +
+            '<td class="company">' + data.company + '</td>' +
+            '<td class="description">' + data.description + '</td>' +
             '<td class="comments">' + data.comments + '</td>' +
             '<td class="operations"></td>' +
           '</tr>')
@@ -67,12 +68,12 @@ var Util = {
       },
 
       processInput: function(data, type) {
-        var srcUri = data['src-uri']
+        var srcUri
 
         data = Repo.prepareDoc(data, type)
+        srcUri = data.uri
 
-        //TODO: if exists, update
-        if (srcUri === undefined) {
+        if (srcUri.length === 0) {
           Repo.saveDoc(data, function(response, status, jqXHR) {
             var url = jqXHR.getResponseHeader('Location')
             srcUri = Util.urlParams(url)['uri']
@@ -80,7 +81,7 @@ var Util = {
           })
         }
         else {
-          delete data['src-uri']
+          delete data.uri
 
           Repo.updateDoc(data, srcUri, function(response, status, jqXHR) {
             UserContent.displayContent(data, srcUri)
@@ -95,7 +96,9 @@ var Util = {
           var name = $(td).attr('class')
           obj[name] = $(td).text()
         })
-        obj['src-uri'] = tr.data('src-uri')
+
+        //this only works with single word data-* keys
+        $.extend(true, obj, tr.data())
 
         return obj
       },
@@ -105,12 +108,15 @@ var Util = {
             remove,
             existing
 
-        edit = $('<button class="edit">edit</button>')
-        remove = $('<button class="delete">delete</button>')
+        edit = $('<a href="#" class="edit">edit</a>')
+        remove = $('<a href="#" class="delete">delete</a>')
+        contact = $('<a href="#" class="contact">contact</a>')
 
-        row.find('.operations').append(edit).append(remove)
+        row.find('.operations').append(edit)
+          .append('&nbsp;|&nbsp;').append(remove)
+          .append('&nbsp;|&nbsp;').append(contact)
 
-        existing = $(selector + ' tr[data-src-uri="' + row.data('src-uri') +'"')
+        existing = $(selector + ' tr[data-uri="' + row.data('uri') +'"')
 
         if (existing.length === 0) {
           $(selector + '-entries').append(row)
@@ -119,19 +125,30 @@ var Util = {
         }
 
         edit.click(function(e) {
+          e.preventDefault()
           UserContent.edit(selector, e.target)
         })
 
         remove.click(function(e) {
+          e.preventDefault()
           UserContent.remove(selector, e.target)
+        })
+
+        contact.click(function(e) {
+          e.preventDefault()
+          var tr = $(e.target).parent().parent()
+          $('<div>email: ' + tr.data('email') + '<br/>' + 'phone: ' + tr.data('phone') + '</div>').dialog()
         })
       },
 
       populateForm: function(selector, obj) {
+        //TODO: cleanup
+        //$(selector + ' fieldset input[id="uri"').remove()
         $(selector + ' :input').each(function(index, input) {
           input.value = obj[input.name]
         })
-        $(selector + ' fieldset').append('<input type="hidden" name="src-uri" id="src-uri" value="' + obj['src-uri'] +'"></input>')
+        console.log(obj)
+        //$(selector + ' fieldset').append('<input type="hidden" name="uri" id="uri" value="' + obj.uri +'"></input>')
       },
 
       edit: function(selector, target) {
@@ -146,7 +163,7 @@ var Util = {
 
       remove: function(selector, target){
         var tr = $(target).parent().parent(),
-            srcUri = tr.data('src-uri')
+            srcUri = tr.data('uri')
 
         $("<div/>").dialog({
           resizable: false,
@@ -184,10 +201,9 @@ var Util = {
       //Prepare a json document from user input
       prepareDoc: function(data, type) {
         data = Repo.processFormData(data)
-        data.uri = Util.urlParams()["uri"]
+        data['doc-uri'] = Util.urlParams()["uri"]
         data.type = type
         data.username = $('#username').text()
-        console.log(data)
         return data
       },
 
@@ -271,10 +287,23 @@ var Util = {
       findClassifications: function() {
         $('.classification .ipc').each(function(index, item) {
           Content.findClassification($(item).data('code'), function(data) {
-            console.log(data)
-            $(item).append(data['text-body'])
+            /*
+            var entries = data['ipc-entries'],
+                el
 
-            $(item).find('.ipc-entry-search').click(Content.findClassificationFromRef)
+            console.log(data)
+            el = $('<div/>')
+
+            for (var i = 0; i < entries.length; i++) {
+              el.append( $() )
+            }
+            */
+
+            Content.displayClassification(data, $(item))
+            
+            //$(item).append( $(data.html).find('.ipc-entry') )            
+            //$(item).find('.ipc-entry-search').click(Content.findClassificationFromCode)
+            //$(item).find('.ipc-entry-ref').click(Content.findClassificationFromHref)
           })
         })
       },
@@ -293,10 +322,75 @@ var Util = {
         })
       },
 
-      findClassificationFromRef: function(e) {
+      findClassificationFromCode: function(e) {
         e.preventDefault()
         Content.findClassification($(e.target).data('code'), function(data) {
-          $(data['text-body']).dialog()
+          //$(data.html).find('.ipc-entry').dialog()
+          Content.displayClassification(data, $(e.target))
+        })
+      },
+
+      findClassificationFromHref: function(e) {
+        e.preventDefault()
+        $.get($(e.target).attr('href') + '&format=json', function(data) {
+          //$(data.html).find('.ipc-entry').dialog()
+          Content.displayClassification(data, $(e.target))
+        })
+      },
+
+      displayClassification: function(data, target) {
+        var html = $(data.html).find('.ipc-entry')
+
+        console.log(target[0])
+
+        html.find('.ipc-entry-search').click(Content.findClassificationFromCode)
+        html.find('.ipc-entry-ref').click(Content.findClassificationFromHref)
+
+        // if target is not a dialog, and target already has entries
+        if (target.parents('.ui-dialog-content').length === 0 && target.parents('.ipc').find('.ipc-entry').length > 0) {
+          html.dialog()
+        } else {
+          if (target.hasClass('ipc-entry-search') || target.hasClass('ipc-entry-ref')) {
+            target.parent().append(html)
+          } else {
+            target.append(html)
+          }
+        }
+
+        Content.findPatentsByClassification(target.data('code'), function(data) {
+          var patents = $('<ul class="related-patents"/>'),
+              patent
+
+          for (var i = 0; i < data.results.length; i++) {
+            //exclude current doc
+            if (data.results[i].uri !== Util.urlParams()["uri"]) {
+              Content.getPatentDetails(data.results[i].href, function(details) {
+                var str = '(' + details['doc-number'] + ') - ' + details.title
+                patent = $('<li><a href="' + details.href + '" target="_blank">' + str + '</a></li>') 
+                patents.append(patent)  
+              })
+              
+            }
+          }
+
+          html.append(patents)
+        })
+
+      },
+
+      findPatentsByClassification: function(code, callback) {
+        //A61B0005050000
+        var url = 'keyvalue?element=pt:classification-ipcr&attribute=code&value=' + code + '&format=json'
+
+        $.get(url, function(data) {
+          callback(data)
+        })
+      },
+
+      getPatentDetails: function(url, callback) {
+        $.get(url + '&format=json', function(data) {
+          data.href = url
+          callback(data)
         })
       }
 
@@ -327,6 +421,7 @@ if ( $('.patent-result').length !== 0 ) {
     modal: true,
     buttons: {
       cancel: function() {
+        $(this).get(0).reset()
         $(this).dialog("close")
       },
       "request a license": function() {
@@ -348,6 +443,7 @@ if ( $('.patent-result').length !== 0 ) {
     title: "Suggest Prior Art",
     buttons: {
       cancel: function() {
+        $(this).get(0).reset()
         $(this).dialog("close")
       },
       "add prior art": function() {

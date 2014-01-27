@@ -149,9 +149,11 @@ declare function html:licensing()
     <table class="licensing-entries ui-widget ui-widget-content">
       <thead>
         <tr class="ui-widget-header ">
-          <th class="ui-state-default">Name</th>
-          <th class="ui-state-default">Email</th>
-          <th class="ui-state-default">Comments</th>
+          <th class="name ui-state-default">Name</th>
+          <th class="requested ui-state-default">Requested</th>
+          <th class="company ui-state-default">Company</th>
+          <th class="description ui-state-default">Description</th>
+          <th class="comments ui-state-default">Comments</th>
         </tr>
       </thead>
     </table>
@@ -160,10 +162,18 @@ declare function html:licensing()
       <fieldset>
         <label for="name">Name: </label>
         <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
+        <label for="company">Company: </label>
+        <input type="text" name="company" id="company" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
         <label for="email">Email: </label>
         <input type="text" name="email" id="email" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
-        <label for="comments">Comments:</label>
-        <textarea name="comments" cols="35" rows="6" id="comments" placeholder="Add your comments ..." class="ui-widget ui-state-default ui-corner-all" xml:space="preserve"></textarea>
+        <label for="phone">Phone Number: </label>
+        <input type="text" name="phone" id="phone" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
+        <!--<label for="description">Comments:</label>-->
+        <textarea name="description" cols="45" rows="6" id="comments" placeholder="Describe your intended product ..." class="ui-widget ui-state-default ui-corner-all" xml:space="preserve"></textarea>
+        <!--<label for="comments">Comments:</label>-->
+        <textarea name="comments" cols="45" rows="6" id="comments" placeholder="Additional comments ..." class="ui-widget ui-state-default ui-corner-all" xml:space="preserve"></textarea>
+        <input type="hidden" name="uri" id="uri" value="" xml:space="preserve"></input>
+        <input type="hidden" name="created" id="created" value="" xml:space="preserve"></input>
       </fieldset>
     </form>
   </div>
@@ -176,11 +186,10 @@ declare function html:prior-art()
     <table class="prior-art-entries ui-widget ui-widget-content">
       <thead>
         <tr class="ui-widget-header ">
-          <th class="ui-state-default">Name</th>
-          <th class="ui-state-default">Email</th>
-          <th class="ui-state-default">External Link</th>
-          <th class="ui-state-default">Comments</th>
-          <th class="ui-state-default">Actions</th>
+          <th class="name ui-state-default">Name</th>
+          <th class="email ui-state-default">Email</th>
+          <th class="external-link ui-state-default">External Link</th>
+          <th class="comments ui-state-default">Comments</th>
         </tr>
       </thead>
     </table>
@@ -195,6 +204,8 @@ declare function html:prior-art()
         <input type="text" name="external-link" id="external-link" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
         <label for="comments">Comments:</label>
         <textarea name="comments" cols="35" rows="6" id="comments" placeholder="Add your comments ..." class="ui-widget ui-state-default ui-corner-all" xml:space="preserve"></textarea>
+        <input type="hidden" name="uri" id="uri" xml:space="preserve"></input>
+        <input type="hidden" name="created" id="created" xml:space="preserve"></input>
       </fieldset>
     </form>
   </div>
@@ -205,10 +216,8 @@ declare function html:transform-patent($x)
   <div class="patent-result" xmlns="http://www.w3.org/1999/xhtml">
     <h2 class="patent-title">{ html:transform($x//pt:invention-title) }</h2>
     <div class="patent-contents">
-      <div class="abstract">
-        <h3>Abstract</h3>
-      ` { html:transform($x/pt:abstract) }
-      </div>
+      { (: TODO: why does normal indentation create extra space here? :) }
+      <div class="abstract"><h3>Abstract</h3>{ html:transform($x/pt:abstract) }</div>
       <div class="classification">
         <h3>Classifications</h3>
         { html:transform($x//pt:classification-ipcr) }

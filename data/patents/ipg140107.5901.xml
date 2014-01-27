@@ -1,0 +1,484 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627010-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627010</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13604349</doc-number>
+<date>20120905</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>12</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>711130</main-classification>
+<further-classification>711141</further-classification>
+<further-classification>711E12026</further-classification>
+<further-classification>711E12038</further-classification>
+</classification-national>
+<invention-title id="d2e51">Write-through cache optimized for dependence-free parallel regions</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5822763</doc-number>
+<kind>A</kind>
+<name>Baylor et al.</name>
+<date>19981000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>6457107</doc-number>
+<kind>B1</kind>
+<name>Wynn et al.</name>
+<date>20020900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>2009/0113404</doc-number>
+<kind>A1</kind>
+<name>Takayama et al.</name>
+<date>20090400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>717149</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00004">
+<othercit>Atkinson, et al., &#x201c;The Dragon Processor&#x201d;, In Proceedings of the second international conference on Architectual support for programming languages and operating systems (ASPLOS-II), Randy Katz (Ed.). IEEE Computer Society Press, Los Alamitos, CA, USA, pp. 65-69. DOI=10.1145/36206.36185 http://dx.doi.org/10.1145/36206.36185 (1987).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00005">
+<othercit>DEC Firefly, Wikipedia, http://en.wikipedia.org/wiki/DEC<sub>&#x2014;</sub>Firefly, last printed Feb. 10, 2011, pp. 1-3.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00006">
+<othercit>Chow, J-H, et al., &#x201c;False Sharing Elimination by Selection of Runtime Scheduling Parameters&#x201d;, In Proceedings of the International Conference on Parallel Processing, Sep. 1997, pp. 396-403.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00007">
+<othercit>Jeremiassen, et al., &#x201c;Reducing false sharing on shared memory multiprocessors through compile time data transformations&#x201d;, In Proceedings of the Fifth ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, Jul. 19-21, 1995.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00008">
+<othercit>Kandemir, et al., &#x201c;Reducing False Sharing and Improving Spatial Locality in a Unified Compilation Framework&#x201d;, IEEE Trans. Parallel Distrib. Syst. 14, 4 (Apr. 2003) pp. 337-354.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>14</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>711130</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711141</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>10</number-of-drawing-sheets>
+<number-of-figures>13</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>13025706</doc-number>
+<date>20110211</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8516197</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13604349</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120331232</doc-number>
+<kind>A1</kind>
+<date>20121227</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Eichenberger</last-name>
+<first-name>Alexandre E.</first-name>
+<address>
+<city>Chappaqua</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Gara</last-name>
+<first-name>Alan G.</first-name>
+<address>
+<city>Mount Kisco</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Ohmacht</last-name>
+<first-name>Martin</first-name>
+<address>
+<city>Yorktown Heights</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="004" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Srinivasan</last-name>
+<first-name>Vijayalakshmi</first-name>
+<address>
+<city>New York</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Eichenberger</last-name>
+<first-name>Alexandre E.</first-name>
+<address>
+<city>Chappaqua</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Gara</last-name>
+<first-name>Alan G.</first-name>
+<address>
+<city>Mount Kisco</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Ohmacht</last-name>
+<first-name>Martin</first-name>
+<address>
+<city>Yorktown Heights</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="004" designation="us-only">
+<addressbook>
+<last-name>Srinivasan</last-name>
+<first-name>Vijayalakshmi</first-name>
+<address>
+<city>New York</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Scully, Scott, Murphy &#x26; Presser, P.C.</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="02" rep-type="attorney">
+<addressbook>
+<last-name>Morris, Esq.</last-name>
+<first-name>Daniel P.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>International Business Machines Corporation</orgname>
+<role>02</role>
+<address>
+<city>Armonk</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Bragdon</last-name>
+<first-name>Reginald</first-name>
+<department>2189</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Ruiz</last-name>
+<first-name>Aracelis</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">An apparatus and computer program product for improving performance of a parallel computing system. A first hardware local cache controller associated with a first local cache memory device of a first processor detects an occurrence of a false sharing of a first cache line by a second processor running the program code and allows the false sharing of the first cache line by the second processor. The false sharing of the first cache line occurs upon updating a first portion of the first cache line in the first local cache memory device by the first hardware local cache controller and subsequent updating a second portion of the first cache line in a second local cache memory device by a second hardware local cache controller.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="143.43mm" wi="164.25mm" file="US08627010-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="232.58mm" wi="166.62mm" file="US08627010-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="248.67mm" wi="155.11mm" orientation="landscape" file="US08627010-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="184.57mm" wi="146.13mm" file="US08627010-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="244.77mm" wi="150.62mm" orientation="landscape" file="US08627010-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="237.07mm" wi="189.06mm" orientation="landscape" file="US08627010-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="249.26mm" wi="143.51mm" orientation="landscape" file="US08627010-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="94.23mm" wi="111.51mm" file="US08627010-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="242.23mm" wi="178.82mm" file="US08627010-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="167.89mm" wi="171.11mm" file="US08627010-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="139.02mm" wi="165.95mm" file="US08627010-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CROSS REFERENCE TO RELATED APPLICATION</heading>
+<p id="p-0002" num="0001">This application is a continuation of U.S. patent application Ser. No. 13/025,706, now U.S. Pat. No. 8,516,197,filed Feb. 11, 2011 the entire content and disclosure of which is incorporated herein by reference.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">BACKGROUND</heading>
+<p id="p-0003" num="0002">The present application generally relates to a parallel computing system. More particularly, the present application relates to a cache coherence protocol operated in the parallel computing system.</p>
+<p id="p-0004" num="0003">A traditional parallel computing system does not allow updates to the same cache line address by more than one thread(s) or processor(s) at a time. In other words, if a processor wants to update a cache line in an associated local cache memory device, the traditional parallel computing system must first invalidate the corresponding cache lines in other local cache memory devices. Cache coherent mechanisms are therefore implemented in computing systems to update local cache memory devices, e.g., to invalidate cache lines in local cache memory devices. Therefore, two or more distinct threads and/or processors in the traditional parallel computing system cannot simultaneously update the same cache line address running a cache coherence operation across local cache memory devices. To prevent the simultaneous updates of the same cache line address when accessed by two or more distinct thread(s) or processor(s), the traditional parallel computing system requires more frequent communications (e.g., broadcasting an invalidation notice to other local cache memory devices) between local cache memory devices, and frequently invalidates cache lines in local cache memory devices.</p>
+<heading id="h-0003" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0005" num="0004">The present disclosure describes an apparatus and computer program product for improving performance of a parallel computing system that includes a plurality of processors and at least one shared cache memory device. Each processor may include at least one local cache memory device (e.g., &#x201c;level-1 (L1)&#x201d; cache memory device).</p>
+<p id="p-0006" num="0005">In one embodiment, there is provided an apparatus for improving performance of a parallel computing system. The apparatus comprises a plurality of processors. Each processor has a local cache memory device. Each processor runs program code of a software program region having no data dependency. A local cache memory device of each processor is associated with a hardware local cache controller that updates a cache line in the local cache memory device. A first hardware local cache controller associated with a first local cache memory device of a first processor detects an occurrence of a false sharing of a first cache line by a second processor running the program code and allows the false sharing of the first cache line by the second processor. The false sharing of the first cache line occurring upon updating a first portion of the first cache line in the first local cache memory device by the first hardware local cache controller and subsequent updating a second portion of the first cache line in a second local cache memory device by a second hardware local cache controller.</p>
+<p id="p-0007" num="0006">In a further embodiment, other hardware local cache controllers set false sharing bits corresponding to the first cache line in other local cache memory devices when the first hardware local cache controller updates the first portion of the first cache line in the first local cache memory device.</p>
+<p id="p-0008" num="0007">In a further embodiment, the first hardware local cache controller sets a false sharing bit corresponding to the first cache line in the first local cache memory device when the second hardware local cache memory device updates the second portion of the first cache line in the first cache line in the second local cache memory device, and the second hardware local cache controller sets a false sharing bit corresponding to the first cache line in the second local cache memory device when the first hardware local cache memory device updates the first portion of the first cache line in the first local cache memory device.</p>
+<p id="p-0009" num="0008">In a further embodiment, the first hardware local cache controller and the second hardware local cache controller, in response to the plurality of processors reaching an end of the software program region with no data dependency, invalidating cache lines, in the first local cache memory device and the second local cache memory device, whose false sharing bits are set</p>
+<p id="p-0010" num="0009">In a further embodiment, any writing to a local cache memory is written through to a cache memory device shared by the plurality of processors.</p>
+<p id="p-0011" num="0010">In a further embodiment, the first hardware local cache controller is prevented from setting a false sharing bit of the first local cache memory device, and the other hardware local cache controllers are prevented from invalidating cache lines in local cache memory devices whose false sharing bits are not set.</p>
+<p id="p-0012" num="0011">In a further embodiment, when the first hardware cache controller updates the first portion of the first cache line in the first local cache memory device, the first hardware local cache controller sets a false sharing bit of the first local cache memory device, other hardware local cache controllers set false sharing bits of the corresponding cache lines in other local cache memory devices, and there is no further communication among hardware local cache memory controllers upon a subsequent occurrence of a false sharing on the corresponding cache lines.</p>
+<p id="p-0013" num="0012">In a further embodiment, in response to the processors reaching at an end of the software program region with no data dependency, the first hardware local cache controller completes the updating the cache line in the first local cache memory before one or more of other hardware local cache controllers set false sharing bits of the corresponding cache lines in other local cache memories.</p>
+<p id="p-0014" num="0013">In a further embodiment, in response to the processors reaching at the end of the software program region with no data dependency, the first hardware local cache controller selectively invalidates some of cache lines whose false sharing bits are set.</p>
+<p id="p-0015" num="0014">In a further embodiment, in response to the processors reaching at the end of the software program region with no data dependency, the first hardware local cache controller selectively updates some of cache lines whose false sharing bits are set by fetching valid data from the shared cache memory.</p>
+<p id="p-0016" num="0015">In a further embodiment, to detect the occurrence of the false sharing, the first hardware local cache controller and the second hardware local cache controller use a central directory or snooping technique.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0017" num="0016">The accompanying drawings are included to provide a further understanding of the present invention, and are incorporated in and constitute a part of this specification.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 1</figref> illustrates a flow chart illustrating method steps for improving performance of a parallel computing system according to one embodiment.</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 2</figref> illustrates an exemplary software program region that includes no data dependency in one embodiment.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIGS. 3A-3C</figref> illustrate allowing a false sharing instance in one embodiment.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 4</figref> illustrates a state diagram that allows a false sharing in one embodiment.</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 5A-5B</figref> illustrate exemplary state transitions in one embodiment.</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 6</figref> is a table that summarizes state transitions in one embodiment.</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 7</figref> illustrates an exemplary parallel computing system for implementing the flow chart depicted in FIGS. <b>1</b> and <b>9</b>-<b>10</b> according to one embodiment.</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 8</figref> illustrates flag bits in one embodiment.</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 9</figref> is a flow chart illustrating method steps for improving performance of a parallel computing system according to one embodiment.</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 10</figref> is a flow chart illustrating method steps for improving performance of a parallel computing system according to another embodiment.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0028" num="0027">In one embodiment, <figref idref="DRAWINGS">FIG. 7</figref> illustrates a parallel computing system <b>700</b> (e.g., IBM&#xae; Blue Gene&#xae;/Q, etc.) that includes a plurality of processors <b>705</b>-<b>715</b> (e.g., IBM&#xae; powerPC&#xae; processors, etc.) and a shared cache memory device <b>720</b>. Each processor may include a local cache memory device, e.g., a local cache memory device <b>730</b> in a processor <b>705</b>, a local cache memory device <b>735</b> in a processor <b>710</b>, and a local cache memory device <b>740</b> in a processor <b>715</b>, etc. Each processor may also include a hardware local cache controller per local cache memory device. A hardware local cache controller controls local cache memory read and write operations. For example, a hardware local cache controller <b>745</b> associated with the processor <b>705</b> controls the local cache memory device <b>730</b>, e.g., by setting a flag bit to invalidate a cache line in the local cache memory device <b>730</b>. Similarly, a hardware local cache controller <b>750</b> controls the local cache memory device <b>735</b>. A hardware local cache controller <b>755</b> controls the local cache memory device <b>740</b>. Any update in any local cache memory is written through to the shared cache memory device <b>720</b>, e.g., via a bus or a network <b>725</b>. The shared cache memory device <b>720</b> also includes a hardware cache controller <b>722</b> that controls the shared cache memory device <b>720</b>. A compiler <b>760</b> is provided to transform a high-level programming code to a machine code.</p>
+<p id="p-0029" num="0028">The parallel computing system <b>700</b> may run method steps in <figref idref="DRAWINGS">FIG. 1</figref> to improve its performance. At step <b>100</b> in <figref idref="DRAWINGS">FIG. 1</figref>, upon entering a software program region (e.g., a software &#x201c;for&#x201d; loop <b>200</b> shown in <figref idref="DRAWINGS">FIG. 2</figref>), the compiler <b>760</b> determines whether the software program region includes a data dependency. The compiler knows which part(s) of the software program can be run in parallel, either because a user explicitly requested a particular subset of the software program to run in parallel, or because the compiler analyzed corresponding program code and decided that a specific subset(s) of the software program can be run in parallel. Once, the compiler knows that a part(s) of the program code can be run in parallel, the compiler inserts function calls to a runtime library that will handle creation of parallel tasks (i.e., software program region run in parallel by a plurality of processors). The compiler may insert special instructions where the parallel tasks start and end. In one embodiment, the compiler calls the runtime library that will create the software program region to run in parallel, so the runtime library calls the special instructions just before running of the software program region in parallel and calls the special instructions just after running of the software program region in parallel stops. In another embodiment, the compiler instruments the program code to be run in parallel, so that the first instruction of the software program region run in parallel is one special instruction, and the last instruction of the software program region run in parallel is another special instruction. For example, to determine whether the software loop <b>200</b> includes a data dependency, the compiler may evaluate whether an output of a preceding software program line is used as an input of a subsequent software program line in the software loop <b>200</b>. In the software &#x201c;for&#x201d; loop <b>200</b> in <figref idref="DRAWINGS">FIG. 2</figref>, if two distinct elements in the array &#x201c;b&#x201d; include no same data value, there is no data dependency because an output of preceding loop iteration is not used as an input of subsequent loop iteration. The compiler <b>760</b> further determines start and end boundaries of the software program region with no data dependency, e.g., based on a loop exit condition of the software &#x201c;for&#x201d; loop <b>200</b> in <figref idref="DRAWINGS">FIG. 2</figref>. At step <b>110</b> in <figref idref="DRAWINGS">FIG. 1</figref>, after the compiling, all or some of the processors run the software program region with no data dependency in parallel in response to that the compiler determines that the software program region has no data dependency. For example, at least two different processors run the software &#x201c;for&#x201d; loop <b>200</b> shown in <figref idref="DRAWINGS">FIG. 2</figref>. If there is a data dependency in the software program region, a single processor may run the software program region with the data dependency. While running the software program region with no data dependency in parallel, each processor may make a change in its local cache memory device. However, according to this embodiment, changes in a local cache memory device need not be seen by other local cache memory devices until each processor reaches a barrier (i.e., a point where all participating processors need to arrive, and only then can each processor proceeds with its subsequent running).</p>
+<p id="p-0030" num="0029">As shown at step <b>120</b> in <figref idref="DRAWINGS">FIG. 1</figref>, when all or some of the processors starts to run the software program region with no data dependency in parallel, a hardware local cache controller associated with a local cache memory device of each processor allows a false sharing in the software region. A false sharing refers to updating different portions of the same cache line address in at least two different local cache memories.</p>
+<p id="p-0031" num="0030">An embodiment of allowing the false sharing is described in detail in conjunction with <figref idref="DRAWINGS">FIGS. 3A-3C</figref>. Upon an occurrence of a write operation to a cache line in a local cache memory device, a corresponding hardware local cache controller sets a false sharing bit (&#x201c;false sharing bit&#x201d; <b>300</b> in <figref idref="DRAWINGS">FIG. 3A</figref>) in the corresponding cache line <b>330</b> in that local cache memory device. In one embodiment, all hardware local cache controllers snoop (i.e., monitor) all local cache memory devices. So, upon an occurrence of a write operation to a single local cache memory device, other hardware local cache controllers detect the occurrence of the write operation, e.g., through the snooping, and set corresponding false sharing bits in corresponding cache lines in other local cache memory devices. Thus, in one embodiment, an update in a local cache memory device does not invalidate corresponding cache lines in other local cache memory devices. Since the parallel computing system <b>700</b> allows the false sharing, another processor can subsequently write to a different portion of the same cache line. This subsequent writing to the same cache line also does not invalidate the same cache line(s) in other local cache memory devices. By allowing the false sharing, the parallel computing system <b>700</b> reduces communication overhead between local cache memory devices to invalidate a cache line whenever a write operation to a local cache memory device occurs.</p>
+<p id="p-0032" num="0031">Returning to <figref idref="DRAWINGS">FIG. 1</figref>, at step <b>130</b>, the compiler determines a location in program code where each processor completes the running of the software program region with no data dependency. For example, in <figref idref="DRAWINGS">FIG. 2</figref>, the compiler may determine that each processor completes the running of the software program region, e.g., by evaluating a loop exit condition associated with each processor. More specifically, the compiler determine that the location (e.g., a location <b>210</b> in <figref idref="DRAWINGS">FIG. 2</figref>) in the program code where each processor completes the parallel region correspond to the code just after each processor completes computation of a subsection of original loop iterations &#x201c;0&#x201d; to &#x201c;N&#x2212;1&#x201d; that was assigned to it. At step <b>140</b> in <figref idref="DRAWINGS">FIG. 1</figref>, upon the compiler <b>760</b> detecting that a processor completes the running of the software program region with no data dependency, the compiler inserts a special instruction (or sequence of special instructions) that will indicate to a corresponding hardware local cache controller associated with that processor to invalidates cache line(s), in its associated local cache memory device, whose false sharing bits are set. Thus, in one embodiment, the parallel computing system <b>700</b> invalidates cache line(s) in local cache memory devices whose false sharing bits are set, upon reaching a barrier or upon exiting software program region with no data dependency.</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIGS. 3A-3C</figref> illustrate an exemplary false sharing in one embodiment. Initially, a local cache memory device <b>305</b> and another local cache memory device <b>310</b> have a same cache line <b>330</b>. As shown in <figref idref="DRAWINGS">FIG. 3A</figref>, thread <b>0</b> on a processor <b>0</b> modifies a first portion <b>335</b> in a cache line <b>330</b> in the local cache memory device <b>305</b>. The modification in the local cache memory device <b>305</b> is also written through to the shared cache memory device <b>315</b>. Upon detecting this modification in the local cache memory device <b>305</b>, e.g., through snooping, a hardware local cache controller of a local cache memory device <b>310</b> sets a false sharing bit <b>350</b> of the cache line <b>330</b> in the local cache memory device <b>310</b>. A false sharing bit <b>350</b> denotes that its corresponding cache line in its corresponding local cache memory device has been modified while processors or threads running software program region with no data dependency. Coherence traffic (e.g., cache coherence operations, etc.) between local cache memory devices are prevented while processors or threads running the software program region with no data dependency: any local cache memory device may not have up-to-date data, but each local cache memory device may have its own value. Some time later, shown in <figref idref="DRAWINGS">FIG. 3B</figref>, a thread <b>1</b> on a processor core <b>1</b> modifies a second portion <b>340</b> in the cache line <b>330</b> in a local cache memory device <b>310</b>. This modification includes setting a false sharing bit <b>300</b> of the cache line <b>330</b> in the local cache memory device <b>305</b>. The modification in the local cache memory device <b>310</b> is also written through to the shared cache memory device <b>315</b>. These local modifications performed in local cache memory devices do not invoke a cache coherence operation (e.g., invaliding the cache line <b>330</b>).</p>
+<p id="p-0034" num="0033">While processors run a software program region with no data dependency, no local cache memory device has an up-to-date data. Each local cache memory device has its own data value. Although the parallel computing system <b>700</b> including hardware local cache controllers allows a false sharing (i.e., allowing writes in different portions in a same cache line), the parallel computing system <b>700</b> prevents any subsequent writing on a same portion in a same cache line in the software program region with no data dependency, e.g., by letting the compiler <b>760</b> detect such subsequent writing on the same portion. In the one embodiment, there is one false sharing bit per cache line in a local cache memory device. A false sharing bit is initially set to zero, but is set to one whenever a false sharing and/or local writing occur. In another embodiment, there can be more than one false sharing bit per cache line. For example, the cache line may be divided in several sub-sectors and each sub-sector can be associated with its own false sharing bit.</p>
+<p id="p-0035" num="0034">As shown in <figref idref="DRAWINGS">FIG. 3C</figref>, in one embodiment, upon reaching a barrier, each hardware local cache controller invalidates cache lines, in its associated local cache memory device, whose false sharing bits are set. For example, a hardware local cache controller associated with the local cache memory device <b>305</b> invalidates the cache line <b>330</b> in the local cache memory device <b>305</b>, e.g., by setting a corresponding invalid bit <b>320</b>. Similarly, a hardware local cache controller associated with the local cache memory device <b>310</b> invalidates the cache line <b>330</b> in the local cache memory device <b>310</b>, e.g., by setting a corresponding invalid bit <b>320</b>. In one embodiment, a hardware local cache controller may validate an invalid cache line in its associated local cache memory device, e.g., by fetching data from the shared cache memory device since the shared cache memory device always has valid data due to a cache &#x201c;write through&#x201d; scheme.</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 4</figref> illustrates a state transition diagram <b>400</b> that indicates states of a cache line in a local cache memory device in one embodiment. &#x201c;R&#x201d; refers to a local read event in the local cache memory device. &#x201c;W&#x201d; refers to a local write event in the local cache memory device. &#x201c;oR&#x201d; refers to other read events (other threads requesting to read that cache line in other local cache memory devices). &#x201c;oW&#x201d; refers to other write events (other threads requesting to write that cache line in other local cache memory devices). &#x201c;EOP&#x201d; refers to an end of a parallel region (i.e., an end of a software program region that includes no data dependency). Initially, the cache line in the local cache memory may be in a &#x201c;valid&#x201d; state <b>410</b> (i.e., a state representing that data in the cache line are all valid). Whether the cache line is valid or not may be represented by a valid bit (e.g., a valid bit <b>345</b> in <figref idref="DRAWINGS">FIG. 3A</figref>), e.g., set by a corresponding hardware local cache controller upon fetching a valid data from the shared cache memory device. While the cache line in the local cache memory device is in the valid state, the cache line in the local cache memory device does not make any state transition though there exists an occurrence of a local read event, remote read event (&#x201c;oR&#x201d;), local write event or EOP. A local writing event always generates a remote write event (&#x201c;oW&#x201d;) in same cache lines in other local cache memory devices. If a hardware local cache controller detects &#x201c;oW&#x201d; event occurrence, e.g., through snooping, a corresponding valid cache line in its corresponding local cache memory makes a transition to a false sharing state <b>415</b> (i.e., a state in which a false sharing bit is set). Unlike the traditional parallel computing system, the remote write event (&#x201c;oW&#x201d;) does not cause corresponding cache lines in other local cache memory devices to become invalid. An update in a cache line in a local cache memory device causes corresponding cache lines in other local cache memory devices to makes a transition to the false sharing state <b>415</b>, e.g., by setting the false sharing bit (see <figref idref="DRAWINGS">FIG. 3A</figref>).</p>
+<p id="p-0037" num="0036">While a cache line in a local cache memory device is in the false sharing state <b>415</b>, that cache line in that local cache memory device is still in the false sharing state <b>415</b> upon an occurrence of either a local read event, a local write event that also generates &#x201c;oW&#x201d; event to other local cache memory devices, a remote read event (&#x201c;oR&#x201d;) or a remote write event (&#x201c;oW&#x201d;). While a cache line in a local cache memory device is in the false sharing state <b>415</b>, that cache line in that local cache memory device makes a transition to an invalid state <b>405</b> (i.e., a state that represents data in that cache line is invalid) upon an occurrence of &#x201c;EOP&#x201d; event (e.g., upon reaching a barrier). While a cache line in a local cache memory device is in the invalid state <b>405</b>, that cache line in that local cache memory device is still in the invalid state <b>405</b> upon an occurrence of a remote read event, a remote write event or &#x201c;EOP&#x201d; event. While a cache line in a local cache memory device is in the invalid state <b>405</b>, that cache line in that local cache memory device makes a transition to the valid state <b>410</b> upon an occurrence of a local read event that also causes a remote read event to other local cache memory devices or upon an occurrence of a local write event that also causes a remote write event to other local cache memory devices, e.g., by fetching valid data from the shared cache memory device.</p>
+<p id="p-0038" num="0037"><figref idref="DRAWINGS">FIGS. 5A-B</figref> illustrates exemplary state transitions in two exemplary local cache memory devices that allow false sharing in one exemplary embodiment. In this exemplary embodiment, as shown in a stage <b>500</b>, for a given cache line, a first local cache memory device <b>520</b> is initially in the valid state, and a second local cache memory device <b>525</b> is initially in the valid state. Then, a first processor associated with the first local cache memory device <b>520</b> writes <b>505</b> to a cache line in the first local memory device <b>520</b>. This writing <b>505</b> also generates a remote write event to other local cache memory devices. Thus, upon the occurrence of the writing <b>505</b>, as shown in a stage <b>510</b>, the first local cache memory device <b>520</b> is still in the valid state, but the second local cache memory device <b>525</b> makes a transition to the false sharing state. Note that the second local cache memory device <b>525</b> does not go to the invalid state upon the occurrence of the writing <b>505</b>. As shown in a stage <b>515</b> in <figref idref="DRAWINGS">FIG. 5B</figref>, upon an occurrence of &#x201c;EOP&#x201d; event <b>530</b>, the first local cache memory device <b>520</b> is still in the valid state, but the second local cache memory device <b>525</b> makes a transition to the invalid state.</p>
+<p id="p-0039" num="0038"><figref idref="DRAWINGS">FIG. 6</figref> illustrates a table <b>600</b> that summarizes state transitions in a local cache memory device. While a processor associated with that local cache memory device runs a non-parallel software program region in which processors do not run program in parallel, a cache line in the local cache memory device can go from the valid state <b>410</b> to the valid state <b>410</b>, e.g., upon an occurrence of a local read event. A cache line in the local cache memory device can go from the valid state <b>410</b> to the invalid state <b>405</b>, e.g., upon an occurrence of a remote write event in the non-parallel software program region. A cache line in the local cache memory device can go from the invalid state <b>405</b> to the valid state, e.g., upon an occurrence of a local read event. A cache line in the local cache memory device can go from the invalid state <b>405</b> to the invalid state <b>405</b>, e.g., upon an occurrence of a remote write event.</p>
+<p id="p-0040" num="0039">While a processor associated with a local cache memory device runs a software program region that has no data dependency and that is run in parallel with other processors, a cache line in that local cache memory device can make a transition from the valid state <b>410</b> to the valid state <b>410</b>, e.g., upon an occurrence of a local read event. A cache line in the local cache memory device can make a transition from the valid state <b>410</b> to the invalid state <b>405</b>, e.g., upon an occurrence of a remote write event in the non-parallel software program region. A cache line in the local cache memory device can make a transition from the valid state <b>410</b> to the false sharing state <b>415</b>, e.g., upon an occurrence of a remote write event in the software program region run in parallel. A cache line in the local cache memory device can make a transition from the invalid state <b>405</b> to the valid state, e.g., upon an occurrence of a local read event. A cache line in the local cache memory device can make a transition from the invalid state <b>405</b> to the invalid state <b>405</b>, e.g., upon an occurrence of a remote write event. A cache line in the local cache memory device can make a transition from the invalid state <b>405</b> to the false sharing state <b>415</b>, e.g., upon an occurrence of a local read event and a subsequent occurrence of a remote write event. A cache line in the local cache memory device can make a transition from the false sharing state <b>415</b> to the valid state <b>410</b>, e.g., by fetching valid data from the shared cache memory device. A cache line in the local cache memory device can make a transition from the false sharing state <b>415</b> to the false sharing state <b>415</b>, e.g., upon an occurrence of a local read event in the software program region run in parallel. A cache line in the local cache memory device can make a transition from the false sharing state <b>415</b> to the invalid state <b>405</b>, e.g., upon an occurrence of &#x201c;EOP&#x201d; event in the software program region run in parallel.</p>
+<p id="p-0041" num="0040">In one embodiment, within a software program region that has no data dependency and that can be run by a plurality of processors in parallel, a local read miss causes a corresponding processor to fetch valid data from the shared cache memory device and does not demote (e.g., invalidate or degrade to false sharing state) corresponding cache lines in other local cache memory devices. In that software program region, a local write miss causes a corresponding processor to bring valid data from the shared cache memory device, and does not invalidate corresponding cache lines in other local cache memory devices. In the software program region, a local read event causes the processor to read data from the corresponding local cache memory device. In the software program region, a local write event causes the processor to write data to the corresponding local cache memory device and to write the same data to the shared cache memory device. In that software program region, a hardware local cache controller evicts a cache line in its local cache memory device, e.g., based on known LRU (Least Recently Used) algorithm or other cache line eviction algorithms.</p>
+<p id="p-0042" num="0041">Right before exiting the software program region that has no data dependency and that are run by a plurality of processors in parallel, each hardware local cache controller invalidates cache lines, in its cache memory device, whose false sharing bits are set. Alternatively, a hardware local cache controller may fetch valid data, from the shared cache memory device, that correspond to the cache line in the local cache memory device whose false sharing bit is set.</p>
+<p id="p-0043" num="0042">In one embodiment, the parallel computing system <b>700</b> utilizes three different flag bits (not shown) that represent three different events. A first flag bit may represent a start of the software program region that has no data dependency and that can be run by a plurality of processors in parallel. A compiler may set this first flag bit upon determining that a software program region has no data dependency and can be run in parallel. A second flag bit may represent an end of the software program region that has no data dependency and that is run by a plurality of processors in parallel. A compiler may set this second flag bit upon determining that a processor or a thread exits that software program region. A third flag bit (i.e., false sharing bit) may represent a transition to the false sharing state. There may be a one-bit false sharing bit per one cache line in a local cache memory device. Upon an occurrence of a false sharing, a hardware local cache controller may set this false sharing bit of a corresponding cache line of its local cache memory device.</p>
+<p id="p-0044" num="0043">In one embodiment, a hardware local cache controller may not use a dedicated bit for representing a state of its corresponding local cache memory device, and may instead represent several states using two or more bits. For example, <figref idref="DRAWINGS">FIG. 4</figref> indicates three states, which may be represented by having one bit to indicate whether a status of a cache line is invalid, one bit to indicate whether the status of the cache line is valid, and one bit to indicate whether the status of the cache line is false sharing. Alternatively, a hardware local cache controller may implement these 3 states, e.g., by using two bits, where &#x201c;00&#x201d; indicate that the status of the cache line is invalid, the &#x201c;01&#x201d; indicates that the status of the cache line is valid, and &#x201c;10&#x201d; to indicate that the status of the cache line is false sharing. So, in one embodiment, there may be distinct bits for the valid/invalid/false sharing state. In another embodiment, these three states may be implemented by combination of bits shared with other data being tracked in a local cache memory device.</p>
+<p id="p-0045" num="0044">In one embodiment, within the software program region that has no data dependency and that is run by a plurality of processors in parallel, upon an occurrence of a local write event, the corresponding cache line in the corresponding local cache memory device remains in the valid state. If no false sharing occurs in the cache line, there is no need to invalidate the corresponding cache line in the corresponding local cache memory device at the end of the software program region. However, if a false sharing occurs in the corresponding cache line, e.g., two different processors write to different portions of the same cache line in their local cache memory devices, the corresponding cache line in the corresponding local cache memory device makes a transition to the false sharing state.</p>
+<p id="p-0046" num="0045">In another embodiment, within the software program region that has no data dependency and that is run by a plurality of processors in parallel, upon an occurrence of a local write event that constitutes a false sharing event to other local cache memory devices, the corresponding cache line in the corresponding local cache memory device makes a transition to the false sharing state. In this embodiment, upon a subsequent occurrence of a false sharing in the cache line, there is no need to communicate this subsequent occurrence of the false sharing between local cache memory devices except the first occurrence of the local write event. In this embodiment, at the end of the software program region, hardware local cache controllers invalidate cache lines, in their local cache memory devices, whose false sharing bits are set.</p>
+<p id="p-0047" num="0046">In one embodiment, <figref idref="DRAWINGS">FIG. 9</figref> illustrates a flow chart that describes method steps for setting false sharing bits and invalidating cache lines whose false sharing bits are set. At step <b>900</b>, while the processors run the software program region with no data dependency in parallel, a first hardware local cache controller updates a cache line in a first local cache memory device. At step <b>910</b>, while the processors run the software program region with no data dependency in parallel, other hardware local cache controllers set the false sharing bits of corresponding cache lines in other local cache memory devices. However, as shown at step <b>920</b>, after updating the cache line, while the processors run the software program region with no data dependency in parallel, the first hardware local cache controller is prevented from setting the false sharing bit of the first local cache memory device. At step <b>930</b>, hardware local cache controllers invalidate cache lines in local cache memory devices whose false sharing bits are set, upon the compiler detecting corresponding processors reaching at the end of the software program region with no data dependency. However, as shown at step <b>940</b>, upon corresponding processors reaching at the end of the software program region with no data dependency, the hardware local cache controllers do not invalidate cache lines in local cache memory devices whose false sharing bits are not set.</p>
+<p id="p-0048" num="0047">In another embodiment, <figref idref="DRAWINGS">FIG. 10</figref> illustrates a flow chart that describes method steps for setting false sharing bits and invalidating cache lines whose false sharing bits are set. At step <b>1000</b>, while the processors run the software program region with no data dependency in parallel, a first hardware local cache controller updates a cache line in a first local cache memory device. At step <b>1010</b>, while the processors run the software program region with no data dependency in parallel, other hardware local cache controllers set false sharing bits of the corresponding cache lines in other local cache memory devices. At step <b>1020</b>, after updating the cache line, while the processors run the software program region with no data dependency in parallel, the first hardware local cache controller sets the false sharing bit of the first local cache memory device. Then, as shown in step <b>1030</b>, while the processors run the software program region with no data dependency in parallel, there is no further communication required among hardware local cache memory controllers upon a subsequent occurrence of a false sharing on the corresponding cache lines.</p>
+<p id="p-0049" num="0048">In one embodiment, upon the processors reaching at the end of the software program region with no data dependency, the hardware local cache controller selectively updates some (e.g., one or two or three, etc.) of the cache lines whose false sharing bits are set by fetching valid data from the shared cache memory. Upon the compiler detecting corresponding processors reaching at the end of the software program region with no data dependency, a hardware local cache controller selectively invalidates some (e.g., remainder) of cache lines whose false sharing bits are set. For example, by employing a known LRU (Least Recently Used) algorithm, the hardware local cache controller fetches valid data from the shared cache memory device to the local cache memory device for most recently used cache lines whose false sharing bits are set. The hardware local cache controller invalidates remaining cache lines whose false sharing bits are set. For those remaining cache lines, the hardware local cache controller needs not take any action, and may fetch valid data from the shared cache memory device upon an occurrence of a local read event or local write event on those remaining cache lines.</p>
+<p id="p-0050" num="0049">In a software program region that has a data dependency or that cannot be run in parallel, a local write to a valid cache line in a local cache memory device is written through to the shared cache memory device. In this software program region, while being written through to the shared cache memory devices, other hardware local cache memory devices invalidate the same cache lines in other local cache memory devices. Upon completing the invalidating and issuing the write-through operation, this local write is completed.</p>
+<p id="p-0051" num="0050">In a software program region that has no data dependency and that can be run in parallel, a local write to a valid cache line in a local cache memory device is written through to the shared cache memory device. In this software program region, while being written through to the shared cache memory devices, other hardware local cache memory devices make the same cache lines in other local cache memory devices move to the false sharing state. Upon completing the moving to the false sharing and issuing the write-through operation, this local write is completed.</p>
+<p id="p-0052" num="0051">Alternatively, the local writing can be completed before completing the moving to the false sharing or the being written through. In other words, if a first hardware local cache controller updates a cache line in a first local cache memory device, the first hardware local cache controller completes updating the cache line in the first local cache memory device before some (e.g., one or two, etc.) of other hardware local cache controllers set the false sharing bits of the corresponding cache lines in other local cache memories. The other hardware local cache controllers complete the setting of false sharing bits of the corresponding cache lines in other local cache memories before exiting the software program region with no data dependency. To implement this scheme, a specific series of steps is performed: where each thread (1) starts the software program region that has no data dependency, (2) performs the computations where its local cache may update its cache line prior to some other local cache controllers setting the false sharing bits of the corresponding cache lines, (3) completes the computation of the parallel region, (4) ensures that all of the false sharing notification originating from its local cache controller have completed (i.e. all of the other cache controllers have been notified of all of the corresponding cache lines in which false sharing occurred due to the computation of this thread), (5) performs a synchronization barrier when all of the threads participating to this software program region have reached at the end of the software program region, and (6) performs an end-of-parallel region operation. Using this sequence of operations (1)-(6), it is ensured that there are no pending notifications of false sharing by any of the threads participating to the parallel region with no data dependencies when performing the end-of-parallel operation. To implement the operation (4), the local cache controller keeps track of any pending notification by the local cache controller to any other cache controller endeavoring to set the false sharing bit associated with the corresponding cache lines.</p>
+<p id="p-0053" num="0052">In one embodiment, the parallel computing system <b>700</b> operates a central directory or snooping technique to control all local cache memory devices and the shared cache memory device. Snooping technique refers to a system implemented in which every hardware local cache controller monitors every local cache memory device associated with all respective processors. So, upon an occurrence of a local write event, by employing the snooping technique, hardware local cache controllers can detect the occurrence of every local write event. The central directory may have one tag field corresponding to one cache ID whose data is valid: a local cache memory device described in the tag field has valid data, and corresponding cache lines in other local cache memory devices may be in the false sharing state. Upon a subsequent occurrence of a false sharing on the corresponding cache lines, the parallel computing system <b>700</b> may uses the tag field to move the valid cache line to the false sharing state, e.g., by setting a false sharing bit of that cache line. In other words, the parallel computing system <b>700</b> makes a change only on the valid cache line based on the tag field. Alternatively, each cache line in each local cache memory device has valid bit(s) that indicates whether its data is valid or not. Upon an occurrence of a false sharing event, the parallel computing system <b>700</b> makes changes only on cache lines whose valid bits are set. For example, the parallel computing system <b>700</b> turn off the valid bits of those cache lines and sets the false sharing bits of those cache lines.</p>
+<p id="p-0054" num="0053">As will be appreciated by one skilled in the art, aspects of the present invention may be embodied as a system, method or computer program product. Accordingly, aspects of the present invention may take the form of an entirely hardware embodiment, an entirely software embodiment (including firmware, resident software, micro-code, etc.) or an embodiment combining software and hardware aspects that may all generally be referred to herein as a &#x201c;circuit,&#x201d; &#x201c;module&#x201d; or &#x201c;system.&#x201d; Furthermore, aspects of the present invention may take the form of a computer program product embodied in one or more computer readable medium(s) having computer readable program code embodied thereon.</p>
+<p id="p-0055" num="0054">Any combination of one or more computer readable medium(s) may be utilized. The computer readable medium may be a computer readable signal medium or a computer readable storage medium. A computer readable storage medium may be, for example, but not limited to, an electronic, magnetic, optical, electromagnetic, infrared, or semiconductor system, apparatus, or device, or any suitable combination of the foregoing. More specific examples (a non-exhaustive list) of the computer readable storage medium would include the following: an electrical connection having one or more wires, a portable computer diskette, a hard disk, a random access memory (RAM), a read-only memory (ROM), an erasable programmable read-only memory (EPROM or Flash memory), an optical fiber, a portable compact disc read-only memory (CD-ROM), an optical storage device, a magnetic storage device, or any suitable combination of the foregoing. In the context of this document, a computer readable storage medium may be any tangible medium that can contain, or store a program for use by or in connection with a system, apparatus, or device running an instruction.</p>
+<p id="p-0056" num="0055">A computer readable signal medium may include a propagated data signal with computer readable program code embodied therein, for example, in baseband or as part of a carrier wave. Such a propagated signal may take any of a variety of forms, including, but not limited to, electro-magnetic, optical, or any suitable combination thereof. A computer readable signal medium may be any computer readable medium that is not a computer readable storage medium and that can communicate, propagate, or transport a program for use by or in connection with a system, apparatus, or device running an instruction.</p>
+<p id="p-0057" num="0056">Program code embodied on a computer readable medium may be transmitted using any appropriate medium, including but not limited to wireless, wireline, optical fiber cable, RF, etc., or any suitable combination of the foregoing.</p>
+<p id="p-0058" num="0057">Computer program code for carrying out operations for aspects of the present invention may be written in any combination of one or more programming languages, including an object oriented programming language such as Java, Smalltalk, C++ or the like and conventional procedural programming languages, such as the &#x201c;C&#x201d; programming language or similar programming languages. The program code may run entirely on the user's computer, partly on the user's computer, as a stand-alone software package, partly on the user's computer and partly on a remote computer or entirely on the remote computer or server. In the latter scenario, the remote computer may be connected to the user's computer through any type of network, including a local area network (LAN) or a wide area network (WAN), or the connection may be made to an external computer (for example, through the Internet using an Internet Service Provider).</p>
+<p id="p-0059" num="0058">Aspects of the present invention are described below with reference to flowchart illustrations and/or block diagrams of methods, apparatus (systems) and computer program products according to embodiments of the invention. It will be understood that each block of the flowchart illustrations and/or block diagrams, and combinations of blocks in the flowchart illustrations and/or block diagrams, can be implemented by computer program instructions. These computer program instructions may be provided to a processor of a general purpose computer, special purpose computer, or other programmable data processing apparatus to produce a machine, such that the instructions, which run via the processor of the computer or other programmable data processing apparatus, create means for implementing the functions/acts specified in the flowchart and/or block diagram block or blocks. These computer program instructions may also be stored in a computer readable medium that can direct a computer, other programmable data processing apparatus, or other devices to function in a particular manner, such that the instructions stored in the computer readable medium produce an article of manufacture including instructions which implement the function/act specified in the flowchart and/or block diagram block or blocks.</p>
+<p id="p-0060" num="0059">The computer program instructions may also be loaded onto a computer, other programmable data processing apparatus, or other devices to cause a series of operational steps to be performed on the computer, other programmable apparatus or other devices to produce a computer implemented process such that the instructions which run on the computer or other programmable apparatus provide processes for implementing the functions/acts specified in the flowchart and/or block diagram block or blocks.</p>
+<p id="p-0061" num="0060">The flowchart and block diagrams in the Figures illustrate the architecture, functionality, and operation of possible implementations of systems, methods and computer program products according to various embodiments of the present invention. In this regard, each block in the flowchart or block diagrams may represent a module, segment, or portion of code, which comprises one or more operable instructions for implementing the specified logical function(s). It should also be noted that, in some alternative implementations, the functions noted in the block may occur out of the order noted in the figures. For example, two blocks shown in succession may, in fact, be run substantially concurrently, or the blocks may sometimes be run in the reverse order, depending upon the functionality involved. It will also be noted that each block of the block diagrams and/or flowchart illustration, and combinations of blocks in the block diagrams and/or flowchart illustration, can be implemented by special purpose hardware-based systems that perform the specified functions or acts, or combinations of special purpose hardware and computer instructions.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. An apparatus for improving performance of a parallel computing system, the apparatus comprising:
+<claim-text>a plurality of processors, each processor having a local cache memory device and each processor running program code of a software program region having no data dependency, a local cache memory device of each processor associated with a hardware local cache controller that updates a cache line in the local cache memory device; and</claim-text>
+<claim-text>a first hardware local cache controller associated with a first local cache memory device of a first processor for detecting an occurrence of a false sharing of a first cache line by a second processor running the program code and allowing the false sharing of the first cache line by the second processor, the false sharing of the first cache line occurring upon updating a first portion of the first cache line in the first local cache memory device by the first hardware local cache controller and subsequent updating a second portion of the first cache line in a second local cache memory device by a second hardware local cache controller.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein other hardware local cache controllers set false sharing bits corresponding to the first cache line in other local cache memory devices when the first hardware local cache controller updates the first portion of the first cache line in the first local cache memory device.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the first hardware local cache controller sets a false sharing bit corresponding to the first cache line in the first local cache memory device when the second hardware local cache memory device updates the second portion of the first cache line in the first cache line in the second local cache memory device, and the second hardware local cache controller sets a false sharing bit corresponding to the first cache line in the second local cache memory device when the first hardware local cache memory device updates the first portion of the first cache line in the first local cache memory device.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The apparatus according to <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein the first hardware local cache controller and the second hardware local cache controller, in response to the plurality of processors reaching an end of the software program region with no data dependency, invalidating cache lines, in the first local cache memory device and the second local cache memory device, whose false sharing bits are set.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The apparatus according to <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein in response to two or more processors reaching the end of the software program region with no data dependency, the first hardware local cache controller selectively invalidates one or more of cache lines whose false sharing bits are set.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The apparatus according to <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein in response to the two or more processors reaching the end of the software program region with no data dependency, the first hardware local cache controller selectively updates one or more of cache lines whose false sharing bits are set by fetching valid data from a shared cache memory device.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the region of the software program that includes no data dependency comprises at least one loop with no data dependency.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The apparatus according to <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein to determine whether the loop has no dependency, a compiler evaluates whether an output of a prior iteration is used as an input of a subsequent iteration.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein any writing to a local cache memory device is written through to a cache memory device shared by the plurality of the processors.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the first hardware local cache controller is prevented from setting a false sharing bit of the first local cache memory device, and the other hardware local cache controllers are prevented from invalidating cache lines in local cache memory devices whose false sharing bits are not set.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein when the first hardware cache controller updates the first portion of the first cache line in the first local cache memory device, the first hardware local cache controller sets a false sharing bit of the first cache line in the first local cache memory device, other hardware local cache controllers set false sharing bits of the corresponding cache lines in other local cache memory devices, and there is no further communication among hardware local cache memory controllers upon a subsequent occurrence of a false sharing on the corresponding cache lines.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the first hardware local cache controller completes the updating the first cache line in the first local cache memory device before one or more of other hardware local cache controllers set false sharing bits of the corresponding cache lines in other local cache memory devices, and the one or more of the other hardware local cache controllers set false sharing bits of the corresponding cache lines in other local cache memory devices prior to reaching the end of the software program region with no data dependency.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein to detect the occurrence of the false sharing, the first hardware local cache controller and the second hardware local cache controller use a central directory or snooping technique.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. A computer program product for improving performance of a parallel computing system, the computer program product comprising a storage medium readable by a processing circuit, the storage medium excluding only a propagating signal, the storage medium storing instructions run by the processing circuit for performing a method, the method comprising:
+<claim-text>providing a plurality of processors, each processor having a local cache memory device and each processor running program code of a software program region having no data dependency, a local cache memory device of each processor associated with a hardware local cache controller that updates a cache line in the local cache memory device; and</claim-text>
+<claim-text>detecting, by a first hardware local cache controller associated with a first local cache memory device of a first processor, an occurrence of a false sharing of a first cache line by a second processor and allowing the false sharing of the first cache line by the second processor running the program code, the false sharing of the first cache line occurring upon updating a first portion of the first cache line in the first local cache memory device by the first hardware local cache controller and subsequent updating a second portion of the first cache line in a second local cache memory device by a second hardware local cache controller. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

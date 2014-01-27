@@ -1,0 +1,429 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08625682-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08625682</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13153294</doc-number>
+<date>20110603</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>155</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>04</class>
+<subclass>N</subclass>
+<main-group>7</main-group>
+<subgroup>12</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>37524029</main-classification>
+</classification-national>
+<invention-title id="d2e53">Nonlinear, prediction filter for hybrid video compression</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>7769089</doc-number>
+<kind>B1</kind>
+<name>Chou</name>
+<date>20100800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00002">
+<othercit>US Office Action for related U.S. Appl. No. 11/471,741, Jun. 14, 2011, 11 pgs.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>15</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>37524001</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>37524012</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>37524018</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>37524029</main-classification>
+</classification-national>
+<us-classifications-ipcr>H04N 7/12</us-classifications-ipcr>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>9</number-of-drawing-sheets>
+<number-of-figures>9</number-of-figures>
+</figures>
+<us-related-documents>
+<division>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>11471741</doc-number>
+<date>20060620</date>
+</document-id>
+<parent-status>PENDING</parent-status>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13153294</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</division>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>60692767</doc-number>
+<date>20050621</date>
+</document-id>
+</us-provisional-application>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110293006</doc-number>
+<kind>A1</kind>
+<date>20111201</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Guleryuz</last-name>
+<first-name>Onur G.</first-name>
+<address>
+<city>Sunnyvale</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Guleryuz</last-name>
+<first-name>Onur G.</first-name>
+<address>
+<city>Sunnyvale</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Blakely, Sokoloff, Taylor &#x26; Zafman LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>NTT DoCoMo, Inc.</orgname>
+<role>03</role>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Lee</last-name>
+<first-name>Young</first-name>
+<department>2485</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A method and apparatus for non-linear prediction filtering are described. The method may include performing motion compensation to generate a motion compensated prediction using a block from a previously coded frame. The method may also include performing non-linear filtering on the motion compensated prediction in the transform domain with a non-linear filter as part of a fractional interpolation process to generate a motion compensated non-linear prediction. The method may also include subtracting the motion compensated non-linear prediction from a block in a current frame to produce a residual frame, and coding the residual frame.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="151.21mm" wi="174.50mm" file="US08625682-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="177.88mm" wi="186.52mm" file="US08625682-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="171.87mm" wi="180.51mm" file="US08625682-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="140.89mm" wi="173.14mm" file="US08625682-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="160.70mm" wi="126.24mm" file="US08625682-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="240.62mm" wi="191.69mm" file="US08625682-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="167.72mm" wi="182.12mm" file="US08625682-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="186.27mm" wi="175.68mm" file="US08625682-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="139.02mm" wi="146.98mm" file="US08625682-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="173.82mm" wi="181.78mm" file="US08625682-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">PRIORITY</heading>
+<p id="p-0002" num="0001">The present patent application is a divisional of patent application Ser. No. 11/471,741, titled &#x201c;A Nonlinear, Prediction Filter for Hybrid Video Compression&#x201d;, filed Jun. 20, 2006, which claims priority to and incorporates by reference the corresponding provisional patent application Ser. No. 60/692,767, titled, &#x201c;A Nonlinear, Prediction Filter for Hybrid Video Compression,&#x201d; filed on Jun. 21, 2005.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">FIELD OF THE INVENTION</heading>
+<p id="p-0003" num="0002">The present invention relates to the field of compression and decompression; more particularly, the present invention relates to non-linear prediction filtering in video compression and decompression processing.</p>
+<heading id="h-0003" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0004" num="0003">Hybrid video compression consists of encoding an anchor video frame and then predicatively encoding a set of predicted frames. Predictive encoding uses motion compensated prediction with respect to previously coded frames in order to obtain a prediction error frame followed by the encoding of this prediction error frame (i.e., the residual frame). Anchor frames and prediction errors are encoded using transform coders.</p>
+<p id="p-0005" num="0004"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram of a video encoder. Referring to <figref idref="DRAWINGS">FIG. 1</figref>, a motion compensated (MC) prediction module generates a motion compensated prediction from a previously decoded frame. A first adder subtracts the motion compensated prediction from a current frame to obtain a residual frame. A transform coder converts a residual frame to a coded differential, for example by using a combination of a transform, a quantizer, and an entropy encoder. During decoding, a transform decoder converts the coded differential to a reconstructed residual frame, for example by using a combination of an entropy decoder, an inverse quantizer, and an inverse transform. A second adder adds the reconstructed residual frame to the motion compensated prediction to obtain a reconstructed frame. A delay element &#x201c;Z<sup>&#x2212;1</sup>&#x201d; stores the reconstructed frame for future reference by the MC prediction module.</p>
+<p id="p-0006" num="0005">The generic motion compensated prediction operation is limited to forming predictors for the current frame by using blocks from previously coded frames directly, or by using low-pass filter based interpolations of these blocks. This process forms a good mechanism for exploiting temporal correlations.</p>
+<p id="p-0007" num="0006">There are well-known techniques that improve upon block based motion compensation by utilizing parametric motion models, overlapped motion compensation, various low-pass filter based interpolators, intensity compensation algorithms, etc. However, these solutions are restricted to very specific types of temporal evolutions in video frames and do not provide general solutions. See, for example,</p>
+<p id="p-0008" num="0007">1) Joint Video Team of ITU-T and ISO/IEC JTC 1, &#x201c;Draft ITU T Recommendation and Final Draft International Standard of Joint Video Specification (ITU-T Rec. H.264|ISO/IEC 14496-10 AVC),&#x201d; Joint Video Team (JVT) of ISO/IEC MPEG and ITU-T VCEG, JVT-G050, March 2003; and</p>
+<p id="p-0009" num="0008">2) MPEG4 Verification Model, VM 14.2, pp. 260-264, 1999.</p>
+<p id="p-0010" num="0009">There are a number of drawbacks in related art solutions. For example, prior solutions are limited to taking advantage of very specific types of temporal dependencies among video frames. Once motion estimation is done and candidate blocks in the anchor frame(s) are found, it is assumed that these blocks or their various low-pass filtered forms are the best predictors for the blocks in the predicted frame. Many temporal variations, such as small warps of blocks containing edges, temporally independent variations on otherwise temporally correlated, high frequency rich blocks, etc., are not accounted for by related art solutions. These unaccounted variations cause serious performance penalties as they produce motion compensated differentials that are very difficult to code with the transform coders employed in hybrid video coders.</p>
+<p id="p-0011" num="0010">Furthermore, some specific problematic temporal variations such as specific types of brightness variations have been incorporated into recent video compression standards. However, these solutions are not valid beyond the specific problems for which they are designed. Hence, they do not provide general and robust solutions.</p>
+<p id="p-0012" num="0011">Moreover, some related art typically proceeds with a piecewise smooth frame model under uniform translational motion assumptions and runs into problems whenever actual coded frames deviate from these assumptions.</p>
+<heading id="h-0004" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0013" num="0012">A method and apparatus for non-linear prediction filtering are disclosed. In one embodiment, the method comprises performing motion compensation to generate a motion compensated prediction using a block from a previously coded frame, performing non-linear filtering on the motion compensated prediction in the transform domain with a non-linear filter as part of a fractional interpolation process to generate a motion compensated non-linear prediction, subtracting the motion compensated non-linear prediction from a block in a current frame to produce a residual frame, and coding the residual frame.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0005" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0014" num="0013">The present invention will be understood more fully from the detailed description given below and from the accompanying drawings of various embodiments of the invention, which, however, should not be taken to limit the invention to the specific embodiments, but are for explanation and understanding only.</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram of a video encoder.</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIGS. 2A and 2B</figref> is a block diagram of an enhanced video encoder.</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 3</figref> is a flow diagram of a traditional motion compensated prediction formation process.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 4</figref> is a flow diagram of one embodiment of a process for performing nonlinear prediction formation.</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 5</figref> is a flow diagram of one embodiment for nonlinear prediction process.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 6</figref> is a flow diagram of one embodiment of a nonlinear prediction process.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 7</figref> is a flow diagram of one embodiment of a nonlinear prediction formation process.</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 8</figref> is a block diagram of an exemplary computer system that may perform one or more of the operations described herein.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0006" level="1">DETAILED DESCRIPTION OF THE PRESENT INVENTION</heading>
+<p id="p-0023" num="0022">A method, apparatus and article of manufacture for nonlinear filtering of video frames that enables better hybrid video compression performance are described. The techniques described herein augment the motion compensated prediction process by supplying nonlinear filtering options beyond the well-known low-pass filter based interpolators. At each possible motion vector location, a traditional hybrid encoder will choose one of a set of fractional interpolators implemented using low-pass filters. Additional prediction modifiers take the same blocks from the previously coded frames and apply different nonlinear filters to form better predictors of the current frame.</p>
+<p id="p-0024" num="0023">The disclosed techniques add nonlinear filtering options implemented in transform domain to this set. In one or more embodiments, these nonlinear prediction options are generated by utilizing transform coefficient thresholding, coefficient magnitude based ranking, and their combinations to derive nonlinear filtered predictions in spatial domain. Nonlinear filtering options are efficiently captured in parameters that are sent to the decoder as part of the coded bit stream.</p>
+<p id="p-0025" num="0024">There are a number of benefits and advantages to using the techniques described herein. The described techniques are robust and general, being able to effectively handle a multitude of image region types and a multitude of compression techniques. The derived nonlinear prediction filters adaptively and autonomously develop the proper frequency selectivity for the multitude of image region types by developing low-pass selectivity in smooth image regions, high-pass selectivity in high-frequency regions, etc.</p>
+<p id="p-0026" num="0025">In the following description, numerous details are set forth to provide a more thorough explanation of the present invention. It will be apparent, however, to one skilled in the art, that the present invention may be practiced without these specific details. In other instances, well-known structures and devices are shown in block diagram form, rather than in detail, in order to avoid obscuring the present invention.</p>
+<p id="p-0027" num="0026">Some portions of the detailed descriptions that follow are presented in terms of algorithms and symbolic representations of operations on data bits within a computer memory. These algorithmic descriptions and representations are the means used by those skilled in the data processing arts to most effectively convey the substance of their work to others skilled in the art. An algorithm is here, and generally, conceived to be a self-consistent sequence of steps leading to a desired result. The steps are those requiring physical manipulations of physical quantities. Usually, though not necessarily, these quantities take the form of electrical or magnetic signals capable of being stored, transferred, combined, compared, and otherwise manipulated. It has proven convenient at times, principally for reasons of common usage, to refer to these signals as bits, values, elements, symbols, characters, terms, numbers, or the like.</p>
+<p id="p-0028" num="0027">It should be borne in mind, however, that all of these and similar terms are to be associated with the appropriate physical quantities and are merely convenient labels applied to these quantities. Unless specifically stated otherwise as apparent from the following discussion, it is appreciated that throughout the description, discussions utilizing terms such as &#x201c;processing&#x201d; or &#x201c;computing&#x201d; or &#x201c;calculating&#x201d; or &#x201c;determining&#x201d; or &#x201c;displaying&#x201d; or the like, refer to the action and processes of a computer system, or similar electronic computing device, that manipulates and transforms data represented as physical (electronic) quantities within the computer system's registers and memories into other data similarly represented as physical quantities within the computer system memories or registers or other such information storage, transmission or display devices.</p>
+<p id="p-0029" num="0028">The present invention also relates to apparatus for performing the operations herein. This apparatus may be specially constructed for the required purposes, or it may comprise a general purpose computer selectively activated or reconfigured by a computer program stored in the computer. Such a computer program may be stored in a computer readable storage medium, such as, but is not limited to, any type of disk including floppy disks, optical disks, CD-ROMs, and magnetic-optical disks, read-only memories (ROMs), random access memories (RAMs), EPROMs, EEPROMs, magnetic or optical cards, or any type of media suitable for storing electronic instructions, and each coupled to a computer system bus.</p>
+<p id="p-0030" num="0029">The algorithms and displays presented herein are not inherently related to any particular computer or other apparatus. Various general purpose systems may be used with programs in accordance with the teachings herein, or it may prove convenient to construct more specialized apparatus to perform the required method steps. The required structure for a variety of these systems will appear from the description below. In addition, the present invention is not described with reference to any particular programming language. It will be appreciated that a variety of programming languages may be used to implement the teachings of the invention as described herein.</p>
+<p id="p-0031" num="0030">A machine-readable medium includes any mechanism for storing or transmitting information in a form readable by a machine (e.g., a computer). For example, a machine-readable medium includes read only memory (&#x201c;ROM&#x201d;); random access memory (&#x201c;RAM&#x201d;); magnetic disk storage media; optical storage media; flash memory devices; electrical, optical, acoustical or other form of propagated signals (e.g., carrier waves, infrared signals, digital signals, etc.); etc.</p>
+<p id="h-0007" num="0000">Overview</p>
+<p id="p-0032" num="0031">For the block to be predicted in the predicted frame, a candidate block from the previously coded frames is obtained. In order to enable various filtering operations, this candidate block can be of larger size than the block to be predicted. A candidate block of a size larger than the predicted block is reduced to the same size as the predicted block at the end of the filtering operation. The candidate block is first transformed using a linear transform to obtain its transform coefficients. An overcomplete set of linear transforms can also be used to generate transform coefficients. Candidate block transform coefficients are non-linearly modified in P different ways to produce P sets of coefficients that correspond to P different blocks. Each such set of coefficients is inverse transformed and then possibly reduced in size to obtain P prediction blocks for the block to be predicted. At the encoder, each of these P prediction blocks is compared to the block to be predicted. The best prediction is chosen and a corresponding prediction parameter is determined. The encoder then considers standard prediction options in addition to this non-linear prediction and signals the decoder as to which to use. Based on this signal, the decoder replicates the prediction process and obtains the same prediction block as the encoder.</p>
+<p id="p-0033" num="0032">In one embodiment, the non-linear modifications of candidate block coefficients take the form of thresholding the coefficients, sorting the coefficients based on magnitude and only retaining the largest R percent, indexing the coefficients and only retaining those having the prescribed indices (or those belonging to a given index set), and scaling the coefficients. Various combinations of these operations, while including at least one nonlinear operation, can be applied. A parameter is determined that is sent to the decoder as to which operation has been performed in the case that the encoder decides to use the nonlinear prediction. This parameter can take P different values, i.e., there are P different combined operations that can be done on a candidate block.</p>
+<p id="p-0034" num="0033">In one embodiment, the techniques described herein include a parameter overhead control operation in the form of a prediction scanning and elimination operation is incorporated to determine which of the P operations produce significant differences in the candidate block. In one embodiment, only operations that produce significant differences in the candidate block are considered by the encoder. This operation reduces the number of possible operations from P to Q&#x3c;=P and it can be performed by the decoder as well. Therefore, if the encoder decides to utilize a non-linear prediction, it need only specify a parameter taking Q different values rather than P different values. This controls the amount of overhead bits necessary to include nonlinear prediction efficiently in a rate-distortion sense.</p>
+<p id="p-0035" num="0034">In one embodiment, the decision to use non-linear prediction is made at a block level, where the size of the block is determined by the transform used in the transform coding operation of the hybrid video coder.</p>
+<p id="p-0036" num="0035">In one embodiment, the linear transform applied to the candidate blocks as discussed above is an orthonormal transform, such as, for example, a block n&#xd7;n DCT. Other transforms, such as, for example, non-orthogonal transforms and non-block transforms can also be applied. It is desirable but not necessary for this transform to have a fast implementation so that computations can be carried out in an efficient manner.</p>
+<p id="p-0037" num="0036">Let x (arranged into an M&#xd7;1 vector) denote the block to be predicted. Let y (arranged into an N&#xd7;1 vector) denote a candidate block from the frame used in predicting x. The candidate block y can be of size larger than x so that various filtering and interpolation opeartions are well defined. Let H denote the linear transform as specified in the above paragraph (an N&#xd7;N matrix). The transform coefficients of y are given by d=Hy.</p>
+<p id="p-0038" num="0037">Interpolation operations that correspond to fractional motion used by traditional motion compensated prediction can be defined using this notation. These operations generate F predictions of x given by {circumflex over (x)}<sub>1</sub>, {circumflex over (x)}<sub>2</sub>, . . . , {circumflex over (x)}<sub>F</sub>, where the i<sup>th </sup>prediction is generated by multiplying with a predetermined interpolation matrix A<sub>i </sub>(M&#xd7;N) via
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>{circumflex over (x)}<sub>i</sub>=A<sub>i</sub>y.<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0039" num="0038">In one embodiment, this set is augmented by defining a further set of predictions {circumflex over (x)}<sub>F+1</sub>, {circumflex over (x)}<sub>F+2</sub>, . . . , {circumflex over (x)}<sub>F+Q </sub>based on nonlinear filtering as follows. Let T<sub>1</sub>, T<sub>2</sub>, . . . , T<sub>K </sub>denote a set of thresholds and let R<sub>1</sub>, R<sub>2</sub>, . . . , R<sub>L </sub>denote a set of percentages. Nonlinear prediction {circumflex over (x)}<sub>F+j</sub>, j=1, . . . , K, is generated by thresholding the coefficients in d with threshold T<sub>j</sub>, inverse transforming, and if necessary, by reducing the size of the result so that it matches the size of x. Nonlinear prediction {circumflex over (x)}<sub>F+j</sub>, j=K+1, . . . , K+L, is generated by sorting the coefficients in d in terms of magnitude and zeroing the smallest 100&#x2212;R<sub>j </sub>percent, inverse transforming, and if necessary, by reducing the size of the result so that it matches the size of x. Reducing the size can be accomplished by cropping/sampling or through filtering followed by cropping/sampling. If a block transform is used in generating d, sorting and zeroing can be done in each block of the transform. Further predictions can be obtained by scaling these predictions with a set of scaling constants. Also one can apply the operations in various combinations using at least one nonlinear operation to generate more predictions. Even further predictions can be obtained by applying these operations and combinations to {circumflex over (x)}<sub>i</sub>=A<sub>i</sub>y, i=1, . . . , F, in addition to y, or vice versa by applying A<sub>i</sub>, i=1, . . . , F to the results of these operations. In one embodiment, P predictions are produced.</p>
+<p id="p-0040" num="0039">In one embodiment, the predictions are generated iteratively by adding correction terms to the generated predictions, and reapplying the above operations to the corrected predictions, and so on until a specific number of iterations is carried out. The parameters (thresholds, percentages, index sets, etc.) can be changed in each iteration in a prescribed way.</p>
+<p id="p-0041" num="0040">In one embodiment, in order not to generate trivial predictions, a scanning and elimination operation is used. One such operation is as follows. Each generated prediction is compared to applying the identity predictor to y, i.e., the predictor obtained by not modifying y in any way except for a possible size reduction, to the predictions {circumflex over (x)}<sub>1</sub>, {circumflex over (x)}<sub>2</sub>, . . . , {circumflex over (x)}<sub>F</sub>, and to predictions that were found to be valid up to that point. If the generated prediction is sufficiently different from these predictions, then it becomes a valid prediction; otherwise, it is deleted from the set of predictors. The remaining Q predictions form as set {circumflex over (x)}<sub>F+1</sub>, {circumflex over (x)}<sub>F+2</sub>, . . . , {circumflex over (x)}<sub>F+Q</sub>.</p>
+<p id="p-0042" num="0041">The remaining portions of the motion compensated prediction process are unchanged except that the decoder needs to be notified which of F+Q predictions it should construct rather than just the F predictions in the traditional case. (Since the scanning and elimination operation only uses data that is available to both the encoder and the decoder, the decoder can implement the scanning and elimination operation in parallel and determine the Q additional predictors.) Some parameters such as, for example, the values of the thresholds, percentages, and scaling coefficients can also be signaled to the decoder. Such signaling can be done in a manner well-known in the art.</p>
+<p id="p-0043" num="0042">While the above mentioned filtering procedures that use a single linear transform H provide acceptable performance, better performance can be obtained by using several different linear transforms, H<sub>1</sub>, H<sub>2</sub>, . . . , H<sub>U</sub>. In one embodiment, each of these transforms is used in a filtering procedure of its own to produce prediction estimates {circumflex over (x)}<sub>F+j,1</sub>, {circumflex over (x)}<sub>F+j,2</sub>, . . . , {circumflex over (x)}<sub>F+j,U</sub>. These individual prediction estimates are then combined to form an overall prediction {circumflex over (x)}<sub>F+j </sub>that is better than each of the prediction estimates.</p>
+<p id="h-0008" num="0000">Example of an Encoder and a Decoder</p>
+<p id="p-0044" num="0043">In one embodiment, a video encoder comprises a motion compensation prediction module to perform motion compensation to generate a motion compensated prediction using a block from a previously coded frame, a non-linear prediction filter to perform non-linear filtering on the block in the transform domain with a non-linear filter as part of a fractional interpolation process, an adder (subtractor) to subtract the motion compensated non-linear prediction from a block in a current frame to produce a residual frame, and a coder to code the residual frame.</p>
+<p id="p-0045" num="0044"><figref idref="DRAWINGS">FIG. 2A</figref> is a block diagram of an enhanced video encoder. Referring to <figref idref="DRAWINGS">FIG. 2A</figref>, a motion compensated (MC) prediction module <b>216</b> generates a motion compensated prediction from a previously decoded frame <b>203</b>. A non-linear prediction filter <b>217</b> that augments the motion compensated prediction as described herein to produce better predictions of the frame to be coded.</p>
+<p id="p-0046" num="0045">Adder <b>211</b> subtracts the augmented motion compensated prediction from a current frame <b>201</b> to obtain a residual frame. A transform coder <b>212</b> converts a residual frame to a coded differential <b>202</b> by, for example, using a combination of a transform, a quantizer, and an entropy encoder. During decoding, a transform decoder <b>213</b> converts the coded differential to a reconstructed residual frame by, for example, using a combination of an entropy decoder, an inverse quantizer, and an inverse transform. Adder <b>214</b> adds the reconstructed residual frame to the augmented motion compensated prediction to obtain a reconstructed frame. A delay element &#x201c;Z<sup>&#x2212;1</sup>&#x201d; <b>215</b> stores the reconstructed frame for future reference by MC prediction module <b>216</b>.</p>
+<p id="p-0047" num="0046">In one embodiment, a video decoder comprises a motion compensation unit to generate a predicted block using a block from a previously decoded frame, a non-linear prediction filter to perform non-linear filtering on the predicted block in the transform domain with a non-linear prediction filter as part of a fractional interpolation process to generate a non-linear prediction, a decoder to decode a residual frame, and an adder to add the residual frame to the non-linear prediction</p>
+<p id="p-0048" num="0047"><figref idref="DRAWINGS">FIG. 2B</figref> is a block diagram of an enhanced video decoder. Referring to <figref idref="DRAWINGS">FIG. 2B</figref>, a MC prediction module <b>224</b> generates a motion compensated prediction from a previously decoded frame <b>233</b>. A non-linear prediction filter <b>223</b> augments the motion compensated prediction to produce better predictions of the frame to be decoded. This is done in response to prediction parameters <b>232</b> received from the coded bitstream. A transform decoder <b>221</b> converts the coded differential <b>231</b> to a reconstructed residual frame by, for example, using a combination of an entropy decoder, an inverse quantizer, and an inverse transform. Adder <b>222</b> adds the reconstructed residual frame to the augmented motion compensated prediction to obtain a reconstructed frame that is output from the video decoder. The output may be sent to a display. A delay element &#x201c;Z<sup>&#x2212;1</sup>&#x201d; <b>225</b> also stores the filtered frame for future reference by MC prediction module <b>224</b>.</p>
+<p id="h-0009" num="0000">Non-linear Prediction Filter Operation</p>
+<p id="p-0049" num="0048">In one embodiment, the non-linear prediction filter comprises a forward transform module to apply a transform to the motion compensated prediction to obtain a first set of transform coefficients, a module to perform a non-linear filtering operation in the transform domain to obtain a second set of transform coefficients from the first set, and an inverse transform module to apply an inverse transform to the second set of transform coefficients to generate the motion compensated non-linear prediction.</p>
+<p id="p-0050" num="0049">In one embodiment, the module to perform a non-linear filtering operation in the transform domain comprises a module to perform thresholding on each transform coefficient based on a threshold to identify a set of one or more transform coefficients to change and to modify the first set of transform coefficients to create a second set of transform coefficients by changing transform coefficients in the set of one or more transform coefficients. In another embodiment, the module to perform a non-linear filtering operation in the transform domain comprises a module to sort transform coefficients based on magnitude to identify transform coefficients to change and to modify those transform coefficients to create a second set of transform coefficients. In yet another embodiment, the module to perform a non-linear filtering operation in the transform domain comprises a module to perform percentage filtering on each transform coefficient of the block to identify a set of one or more transform coefficients to change and to modify those transform coefficients to create the second set of transform coefficients. In still another embodiment, the module to perform a non-linear filtering operation in the transform domain comprises a module to assign an index to each transform coefficient in the block, identify a set of one or more transform coefficients to change based on the indices, and modify the first set of transform coefficients to create the second set of transform coefficients by changing transform coefficients in the set of one or more transform coefficients. In yet another embodiment, the module to perform a non-linear filtering operation in the transform domain comprises a module to scale one or more transform coefficients to create the second set of transform coefficients.</p>
+<p id="p-0051" num="0050">In one embodiment, the linear transforms are given by a n&#xd7;n block DCT and all of its n<sup>2 </sup>spatial translations, and n is determined by the size of the video frame. For QCIF resolution frames, n equals four, for CIF resolution frames n equals four or n equals eight, etc. In general, n is expected to get larger for higher resolution video frames.</p>
+<p id="p-0052" num="0051">The operation of the nonlinear prediction filter is described in more detail below.</p>
+<p id="p-0053" num="0052"><figref idref="DRAWINGS">FIG. 3</figref> is a flow diagram of a traditional motion compensated prediction formation process. Referring to <figref idref="DRAWINGS">FIG. 3</figref>, the process includes obtaining a candidate block y from the previously decoded framed (processing block <b>301</b>). Using the candidate block y, processing logic generates F possible interpolation predictions {circumflex over (x)}<sub>i</sub>=A<sub>i</sub>&#xb7;y of the block to be predicted (processing block <b>302</b>). Then, the interpolation predictions {circumflex over (x)}<sub>1 </sub>. . . {circumflex over (x)}<sub>F </sub>are output (processing block <b>303</b>). Thereafter, that process ends.</p>
+<p id="p-0054" num="0053"><figref idref="DRAWINGS">FIG. 4</figref> is a flow diagram of one embodiment of a process for performing nonlinear prediction formation. The process is performed by processing logic that may comprise hardware (circuitry, dedicated logic, etc.), software (such as is run on a general purpose computer system or a dedicated machine), or a combination of both. In one embodiment, the process is performed by a nonlinear prediction filter.</p>
+<p id="p-0055" num="0054">Referring to <figref idref="DRAWINGS">FIG. 4</figref>, the process begins by obtaining a candidate block y from the previously decoded frames (processing block <b>401</b>) and obtaining F traditional motion compensated predictors {circumflex over (x)}<sub>1 </sub>. . . {circumflex over (x)}<sub>F </sub>(processing block <b>402</b>). Using a candidate block y from the previously decoded frames, processing logic obtains an identity predictor (processing block <b>403</b>), which is stored along with the traditional motion compensated predictors {circumflex over (x)}<sub>1 </sub>. . . {circumflex over (x)}<sub>F </sub>in prediction dictionary storage <b>409</b>.</p>
+<p id="p-0056" num="0055">Also using candidate block y, processing logic constructs K thresholding predictions {circumflex over (x)}<sub>F+i </sub>(processing block <b>404</b>) and constructs L percentage predictions {circumflex over (x)}<sub>F+K+I </sub>(processing block <b>405</b>). Processing logic constructs the thresholding predictions using parameters thresholds T<sub>1</sub>, . . . , T<sub>K </sub>and transforms H<sub>1</sub>, . . . , H<sub>U </sub>(<b>408</b>). Similarly, processing logic constructs L percentage predictions using percentages R<sub>1</sub>, . . . , R<sub>L </sub>and transforms H<sub>1</sub>, . . . , H<sub>U </sub>(<b>406</b>).</p>
+<p id="p-0057" num="0056">In one embodiment, thresholding is implemented by hard-thresholding each transform coefficient of y. If transform coefficient has magnitude greater than the threshold, it is unchanged; otherwise it is set to zero. In one embodiment, K and thresholds T<sub>1</sub>, T<sub>2</sub>, . . . , T<sub>K </sub>are determined by the encoder for every frame to be encoded and signaled to the decoder.</p>
+<p id="p-0058" num="0057">In one embodiment, for percentage filtering, L and percentages R<sub>1</sub>, R<sub>2</sub>, . . . , R<sub>L </sub>are determined by the encoder for every frame to be encoded and signaled to the decoder.</p>
+<p id="p-0059" num="0058">The thresholding predictions and the percentage predictions, predictions {circumflex over (x)}<sub>F+j</sub>, j=1, . . . , K+L, are sent to processing block <b>407</b> where processing logic compares each constructed prediction to the predictions stored in prediction dictionary storage <b>409</b>. More specifically, in one embodiment, processing logic tests whether the differences are less than threshold T<sub>Q</sub>. T<sub>Q </sub>can be an increasing function of the quantizer step-size. If not, the prediction is invalid and it is discarded. If the prediction is sufficiently different from all the dictionary elements, based on its comparison to threshold T<sub>Q</sub>, then processing logic declares it valid and adds it to the dictionary to be used in further comparisons.</p>
+<p id="p-0060" num="0059">After all comparisons have been completed, processing logic outputs non-linear predictions {circumflex over (x)}<sub>F+1</sub>, {circumflex over (x)}<sub>F+2</sub>, . . . , {circumflex over (x)}<sub>F+Q </sub>(processing block <b>410</b>) and the process ends.</p>
+<p id="p-0061" num="0060">In one embodiment, nonlinear predictors are compared to the identity predictor, to {circumflex over (x)}<sub>1</sub>, {circumflex over (x)}<sub>2</sub>, . . . , {circumflex over (x)}<sub>F </sub>and to predictions that were found to be valid up to that point as follows. First, a dictionary is constructed using the identity predictor, {circumflex over (x)}<sub>1</sub>, {circumflex over (x)}<sub>2</sub>, . . . , {circumflex over (x)}<sub>F</sub>. Each prediction is compared with each element of the dictionary by calculating the squared error between the prediction and the dictionary element. This squared error is then compared to a threshold T<sub>Q</sub>. If the squared errors with all the dictionary elements are each greater than threshold T<sub>Q</sub>, then the prediction is declared valid and added to the dictionary. Otherwise, the prediction is invalid and is discarded. In one embodiment, the threshold T<sub>Q </sub>is determined as a multiple of the quantizer step size squared; other equivalent parameters may be used.</p>
+<p id="p-0062" num="0061"><figref idref="DRAWINGS">FIG. 5</figref> is a flow diagram of one embodiment for nonlinear prediction process. The process is performed by processing logic that may comprise hardware (circuitry, dedicated logic, etc.), software (such as is run on a general purpose computer system or a dedicated machine), or a combination of both. In one embodiment, the nonlinear prediction processing is performed inside the encoding loop.</p>
+<p id="p-0063" num="0062">Referring to <figref idref="DRAWINGS">FIG. 5</figref>, processing begins by processing logic performing traditional motion compensated prediction formation (processing block <b>501</b>) and nonlinear formation (processing block <b>502</b>) to generate predictions for the frame to be encoded in response to decompressed video frames <b>510</b>. Processing logic performs the nonlinear prediction formation using transforms H<sub>1</sub>, . . . , H<sub>U</sub>, thresholds T<sub>1</sub>, . . . , T<sub>K </sub>and percentages R<sub>1</sub>, . . . , R<sub>L </sub>(<b>511</b>).</p>
+<p id="p-0064" num="0063">After forming the predictions, processing logic chooses the best prediction (processing block <b>503</b>). This is done in response to the frames to be predicted (<b>512</b>). Then processing logic notifies the decoder the chosen prediction <b>514</b> and prediction parameters, thresholds T<sub>1</sub>, . . . , T<sub>K </sub>and percentages R<sub>1</sub>, . . . , R<sub>L </sub>(<b>513</b>). Thereafter, the process ends.</p>
+<p id="p-0065" num="0064"><figref idref="DRAWINGS">FIG. 6</figref> is a flow diagram of one embodiment of a nonlinear prediction process. The process is performed by processing logic that may comprise hardware (circuitry, dedicated logic, etc.), software (such as is run on a general purpose computer system or a dedicated machine), or a combination of both. In one embodiment, the nonlinear prediction process is performed in a coding loop of a video decoder.</p>
+<p id="p-0066" num="0065">Referring to <figref idref="DRAWINGS">FIG. 6</figref>, the process begins by processing logic determining a filter for each block to be predicted (processing block <b>601</b>). In one embodiment, this determination is performed in response to decompressed video frame <b>610</b> and prediction parameters <b>611</b> included in the bitstream by the encoder.</p>
+<p id="p-0067" num="0066">After determining the filter, processing logic performs traditional motion compensation prediction formation (processing block <b>602</b>). The traditional motion compensation prediction formation is performed on the blocks requiring traditional prediction <b>612</b>. Processing logic also performs nonlinear prediction formation (processing block <b>603</b>). In such a case, the nonlinear prediction formation is performed on blocks requiring nonlinear prediction <b>613</b> and transforms H<sub>1</sub>, . . . , H<sub>U</sub>, prediction parameters, thresholds T<sub>1</sub>, . . . , T<sub>K </sub>and percentages R<sub>1</sub>, . . . , R<sub>L </sub>(<b>614</b>).</p>
+<p id="p-0068" num="0067">The outputs of both traditional motion compensated prediction formation and nonlinear prediction formation comprises prediction <b>615</b>, which is the appropriate prediction for each block in the frame to be decoded.</p>
+<p id="p-0069" num="0068"><figref idref="DRAWINGS">FIG. 7</figref> is a flow diagram of one embodiment of a nonlinear prediction formation process. The process is performed by processing logic that may comprise hardware (circuitry, dedicated logic, etc.), software (such as is run on a general purpose computer system or a dedicated machine), or a combination of both.</p>
+<p id="p-0070" num="0069">The process as described generates nonlinear predictions on candidate block y using an overcomplete transform. The present invention is not limited to using overcomplete transforms; other transforms may be used.</p>
+<p id="p-0071" num="0070">Referring to <figref idref="DRAWINGS">FIG. 7</figref>, the process begins by applying a forward transform to a candidate block to generate a first set of transform coefficients d<sub>i</sub>, applying thresholding (or another filtering technique such as, for example, percentage filtering) to modify one or more of the coefficients in the set of coefficients d<sub>i</sub>, and then applying an inverse transform to the transform coefficients of d<sub>i </sub>to generate the prediction (processing block <b>701</b>). In one embodiment, this operation is performed for all blocks in a frame and is done in response to transforms H<sub>1 </sub>, . . . , H<sub>U</sub>, threshold T<sub>K </sub>and percentage R<sub>K</sub>. In one embodiment, threshold T<sub>K </sub>is 2, 3.5, 7.2, or some number &#x3b1; times the quantizer step-size, i.e., &#x3b1;&#x394;, where &#x3b1; could be 0.2, 1, 3.45, 23, etc. The result is a non-linear prediction estimate. This is performed U times, such that U prediction estimates are formed. For an n&#xd7;n block transform, U can be n<sup>2</sup>, U can be set so that the U transforms provide a translation invariant decomposition, or U can be set based on computational complexity constraints.</p>
+<p id="p-0072" num="0071">After performing the filtering operation, processing logic combines the prediction estimates to produce an overall nonlinear prediction {circumflex over (x)}<sub>K </sub>(processing block <b>702</b>). In one embodiment, to combine the individual prediction estimates, the combination is given by weighted averaging of the individual predictions {circumflex over (x)}<sub>F+j,1</sub>, {circumflex over (x)}<sub>F+j,2</sub>, . . . , {circumflex over (x)}<sub>F+j,U</sub>. This can be done with equal weights or using more sophisticated weight determination techniques known in the art, such as those described in, for example, Onur G. Guleryuz, &#x201c;Weighted Overcomplete Denoising,&#x201d; Proc. Asilomar Conference on Signals and Systems, Pacific Grove, Calif., November 2003.</p>
+<p id="h-0010" num="0000">An Example of a Computer System</p>
+<p id="p-0073" num="0072"><figref idref="DRAWINGS">FIG. 8</figref> is a block diagram of an exemplary computer system that may perform one or more of the operations described herein. Referring to <figref idref="DRAWINGS">FIG. 8</figref>, computer system <b>800</b> may comprise an exemplary client or server computer system. Computer system <b>800</b> comprises a communication mechanism or bus <b>811</b> for communicating information, and a processor <b>812</b> coupled with bus <b>811</b> for processing information. Processor <b>812</b> includes a microprocessor, but is not limited to a microprocessor, such as, for example, Pentium&#x2122;, PowerPC&#x2122;, Alpha&#x2122;, etc.</p>
+<p id="p-0074" num="0073">System <b>800</b> further comprises a random access memory (RAM), or other dynamic storage device <b>804</b> (referred to as main memory) coupled to bus <b>811</b> for storing information and instructions to be executed by processor <b>812</b>. Main memory <b>804</b> also may be used for storing temporary variables or other intermediate information during execution of instructions by processor <b>812</b>.</p>
+<p id="p-0075" num="0074">Computer system <b>800</b> also comprises a read only memory (ROM) and/or other static storage device <b>806</b> coupled to bus <b>811</b> for storing static information and instructions for processor <b>812</b>, and a data storage device <b>807</b>, such as a magnetic disk or optical disk and its corresponding disk drive. Data storage device <b>807</b> is coupled to bus <b>811</b> for storing information and instructions.</p>
+<p id="p-0076" num="0075">Computer system <b>800</b> may further be coupled to a display device <b>821</b>, such as a cathode ray tube (CRT) or liquid crystal display (LCD), coupled to bus <b>811</b> for displaying information to a computer user. An alphanumeric input device <b>822</b>, including alphanumeric and other keys, may also be coupled to bus <b>811</b> for communicating information and command selections to processor <b>812</b>. An additional user input device is cursor control <b>823</b>, such as a mouse, trackball, trackpad, stylus, or cursor direction keys, coupled to bus <b>811</b> for communicating direction information and command selections to processor <b>812</b>, and for controlling cursor movement on display <b>821</b>.</p>
+<p id="p-0077" num="0076">Another device that may be coupled to bus <b>811</b> is hard copy device <b>824</b>, which may be used for marking information on a medium such as paper, film, or similar types of media. Another device that may be coupled to bus <b>811</b> is a wired/wireless communication capability <b>825</b> to communication to a phone or handheld palm device.</p>
+<p id="p-0078" num="0077">Note that any or all of the components of system <b>800</b> and associated hardware may be used in the present invention. However, it can be appreciated that other configurations of the computer system may include some or all of the devices.</p>
+<p id="p-0079" num="0078">Whereas many alterations and modifications of the present invention will no doubt become apparent to a person of ordinary skill in the art after having read the foregoing description, it is to be understood that any particular embodiment shown and described by way of illustration is in no way intended to be considered limiting. Therefore, references to details of various embodiments are not intended to limit the scope of the claims which in themselves recite only those features regarded as essential to the invention.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>I claim:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method comprising:
+<claim-text>performing motion compensation to generate a motion compensated prediction using a block from a previously coded frame;</claim-text>
+<claim-text>performing non-linear filtering on the motion compensated prediction in a transform domain with a non-linear filter as part of a fractional interpolation process to generate a motion compensated non-linear prediction, wherein performing non-linear filtering comprises
+<claim-text>applying a transform to the motion compensated prediction to obtain a first set of transform coefficients,</claim-text>
+<claim-text>percentage filtering each transform coefficient of the block by sorting the first set of transform coefficients based on magnitude and identifying a set of one or more transform coefficients to change to zero that are not within a largest percentage of transform coefficients,</claim-text>
+<claim-text>modifying the first set of transform coefficients to create a second set of transform coefficients by zeroing the transform coefficients in the set of one or more transform coefficients, and</claim-text>
+<claim-text>applying an inverse transform to the second set of transform coefficients to generate the motion compensated non-linear prediction; subtracting the motion compensated non-linear prediction from a block in a current frame to produce a residual frame; and</claim-text>
+<claim-text>coding the residual frame.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method defined in <claim-ref idref="CLM-00001">claim 1</claim-ref> further comprising applying non-linear filtering to a previously decoded frame, and wherein performing motion compensation comprises generating the motion compensated prediction using the non-linearly filtered previously decoded frame.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method defined in <claim-ref idref="CLM-00001">claim 1</claim-ref> further comprising adding into a coded bitstream information indicative of the non-linear filter used to filter the motion compensated non-linear prediction.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method defined in <claim-ref idref="CLM-00003">claim 3</claim-ref> further comprising adding information indicative of the transform to signal decoder as to which transform to apply to create the transform coefficients during decoding.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method defined in <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein the non-linear filter is one of a plurality of filters, and further comprising selecting the non-linear filter from among the plurality of filters.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method defined in <claim-ref idref="CLM-00001">claim 1</claim-ref> further comprising:
+<claim-text>generating a plurality of motion compensated non-linear predictions for a video frame; and</claim-text>
+<claim-text>eliminating one or more of the plurality of motion compensated non-linear predictions based on differences with previously found predictions.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein transform coefficients exceed in number candidate block elements.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. An encoder comprising:
+<claim-text>a motion compensation prediction module to perform motion compensation to generate a motion compensated prediction using a block from a previously coded frame;</claim-text>
+<claim-text>a non-linear prediction filter to perform non-linear filtering on the block in a transform domain with a non-linear filter as part of a fractional interpolation process to generate a motion compensated non-linear prediction, wherein the non-linear prediction filter comprises
+<claim-text>a forward transform module to apply a transform to the motion compensated prediction to obtain a first set of transform coefficients,</claim-text>
+<claim-text>a module to perform percentage filtering to each transform coefficient of the block by sorting the first set of transform coefficients based on magnitude and identifying a set of one or more transform coefficients to change to zero that are not within a largest percentage of transform coefficients, and to modify the first set of transform coefficients to create a second set of transform coefficients by zeroing the transform coefficients in the set of one or more transform coefficients, and</claim-text>
+<claim-text>an inverse transform module to apply an inverse transform to the second set of transform coefficients to generate the motion compensated non-linear prediction;</claim-text>
+</claim-text>
+<claim-text>a subtractor to subtract the motion compensated non-linear prediction from a block in a current frame to produce a residual frame; and</claim-text>
+<claim-text>a coder to code the residual frame.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. An article of manufacture having one or more non-transitory computer readable media storing instructions thereon which, when executed by a system, cause the system to perform a method comprising:
+<claim-text>performing motion compensation to generate a motion compensated prediction using a block from a previously coded frame;</claim-text>
+<claim-text>performing non-linear filtering on the motion compensated prediction in a transform domain with a non-linear filter as part of a fractional interpolation process to generate motion compensated non-linear prediction, wherein performing non-linear filtering comprises
+<claim-text>applying a transform to the motion compensated prediction to obtain a first set of transform coefficients,</claim-text>
+<claim-text>percentage filtering each transform coefficient of the block by sorting the first set of transform coefficients based on magnitude and identifying a set of one or more transform coefficients to change to zero that are not within a largest percentage of transform coefficients,</claim-text>
+<claim-text>modifying the first set of transform coefficients to create a second set of transform coefficients by zeroing the transform coefficients in the set of one or more transform coefficients, and</claim-text>
+<claim-text>applying an inverse transform to the second set of transform coefficients to generate the motion compensated non-linear prediction;</claim-text>
+</claim-text>
+<claim-text>subtracting the motion compensated non-linear prediction from a block in a current frame to produce a residual frame; and</claim-text>
+<claim-text>coding the residual frame.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The article of manufacture defined in <claim-ref idref="CLM-00009">claim 9</claim-ref> wherein the method further comprises applying non-linear filtering to a previously decoded frame, and wherein performing motion compensation comprises generating the motion compensated prediction using the non-linearly filtered previously decoded frame.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. A method comprising:
+<claim-text>generating a predicted block using a block from a previously decoded frame;</claim-text>
+<claim-text>performing non-linear filtering on the predicted block in the transform domain with a non-linear prediction filter as part of a fractional interpolation process to generate a non-linear prediction, wherein performing non-linear filtering comprises
+<claim-text>applying a transform to the predicted block to obtain a first set of transform coefficients,</claim-text>
+<claim-text>percentage filtering each transform coefficient of the block by sorting the first set of transform coefficients based on magnitude and identifying a set of one or more transform coefficients to change to zero that are not within a largest percentage of transform coefficients,</claim-text>
+<claim-text>modifying the first set of transform coefficients to create a second set of transform coefficients by zeroing the transform coefficients in the set of one or more transform coefficients, and</claim-text>
+<claim-text>applying an inverse transform to the second set of transform coefficients to generate the non-linear prediction;</claim-text>
+<claim-text>decoding a residual frame; and</claim-text>
+<claim-text>adding the residual frame to the non-linear prediction.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The method defined in <claim-ref idref="CLM-00011">claim 11</claim-ref> wherein non-linear filtering is based on prediction parameters.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The method defined in <claim-ref idref="CLM-00012">claim 12</claim-ref> further comprising determining the non-linear filter based on the prediction parameters.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. An apparatus comprising:
+<claim-text>a motion compensation unit to generate a predicted block using a block from a previously decoded frame;</claim-text>
+<claim-text>a non-linear prediction filter to perform non-linear filtering on the predicted block in a transform domain with a non-linear prediction filter as part of a fractional interpolation process to generate a non-linear prediction, wherein the non-linear prediction filter comprises
+<claim-text>a forward transform module to apply a transform to the predicted block to obtain a first set of transform coefficients,</claim-text>
+<claim-text>a module to perform percentage filtering each transform coefficient of the block by sorting the first set of transform coefficients based on magnitude and identifying a set of one or more transform coefficients to change to zero that are not within a largest percentage of transform coefficients, and to modify the first set of transform coefficients to create a second set of transform coefficients by zeroing the transform coefficients in the set of one or more transform coefficients, and</claim-text>
+<claim-text>an inverse transform module to apply an inverse transform to the second set of transform coefficients to generate the non-linear prediction; a decoder to decode a residual frame; and</claim-text>
+</claim-text>
+<claim-text>an adder to add the residual frame to the non-linear prediction.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. An article of manufacture having one or more non-transitory computer readable media storing instructions thereon which, when executed by a system, cause the system to perform a method comprising:
+<claim-text>generating a predicted block using a block from a previously decoded frame; performing non-linear filtering on the predicted block in a transform domain with a non-linear prediction filter as part of a fractional interpolation process to generate a non-linear prediction, wherein performing non-linear filtering comprises</claim-text>
+<claim-text>applying a transform to the predicted block to obtain a first set of transform coefficients,</claim-text>
+<claim-text>percentage filtering each transform coefficient of the block by sorting the first set of transform coefficients based on magnitude and identifying a set of one or more transform coefficients to change to zero that are not within a largest percentage of transform coefficients,</claim-text>
+<claim-text>modifying the first set of transform coefficients to create a second set of transform coefficients by zeroing the transform coefficients in the set of one or more transform coefficients, and</claim-text>
+<claim-text>applying an inverse transform to the second set of transform coefficients to generate the non-linear prediction;</claim-text>
+<claim-text>decoding a residual frame; and</claim-text>
+<claim-text>adding the residual frame to the non-linear prediction.</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

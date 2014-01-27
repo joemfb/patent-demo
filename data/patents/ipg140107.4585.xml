@@ -1,0 +1,885 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08625673-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08625673</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13412541</doc-number>
+<date>20120305</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>04</class>
+<subclass>N</subclass>
+<main-group>7</main-group>
+<subgroup>12</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>37524016</main-classification>
+<further-classification>37524021</further-classification>
+<further-classification>37524024</further-classification>
+<further-classification>382261</further-classification>
+<further-classification>382275</further-classification>
+<further-classification>382300</further-classification>
+<further-classification>345501</further-classification>
+<further-classification>345561</further-classification>
+<further-classification>345536</further-classification>
+<further-classification>345670</further-classification>
+<further-classification>348584</further-classification>
+<further-classification>348625</further-classification>
+<further-classification>348699</further-classification>
+<further-classification>348 1402</further-classification>
+<further-classification>353122</further-classification>
+</classification-national>
+<invention-title id="d2e51">Method and apparatus for determining motion between video images</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5404447</doc-number>
+<kind>A</kind>
+<name>Drako et al.</name>
+<date>19950400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>345561</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5838391</doc-number>
+<kind>A</kind>
+<name>Kim</name>
+<date>19981100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>348699</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>5867821</doc-number>
+<kind>A</kind>
+<name>Ballantyne et al.</name>
+<date>19990200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>705  2</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6163347</doc-number>
+<kind>A</kind>
+<name>Fajardo</name>
+<date>20001200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>348625</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>6783251</doc-number>
+<kind>B1</kind>
+<name>Belliveau</name>
+<date>20040800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>353122</main-classification></classification-national>
+</us-citation>
+</us-references-cited>
+<number-of-claims>20</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>37524016</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>37524021</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>37524024</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382261</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382275</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382300</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>345501</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>345561</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>345536</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>345670</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>348584</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>348625</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>348699</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>348 1402</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>6</number-of-drawing-sheets>
+<number-of-figures>10</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>11706849</doc-number>
+<date>20070213</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8130837</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13412541</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120269400</doc-number>
+<kind>A1</kind>
+<date>20121025</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Heyward</last-name>
+<first-name>Simon Nicholas</first-name>
+<address>
+<city>Middlesex</city>
+<country>GB</country>
+</address>
+</addressbook>
+<residence>
+<country>GB</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Heyward</last-name>
+<first-name>Simon Nicholas</first-name>
+<address>
+<city>Middlesex</city>
+<country>GB</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<last-name>Garrabrants</last-name>
+<first-name>Michael S.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Imagination Technologies, Ltd.</orgname>
+<role>03</role>
+<address>
+<city>Kings Langley Hertfordshire</city>
+<country>GB</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Truong</last-name>
+<first-name>Thanhnga B</first-name>
+<department>2438</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Systems and methods of determining motion vectors, such as for video encoding, are disclosed. In one example, motion vectors are determined for a current frame, using sampled pixel information from a reference frame. Sampled pixel information is obtained using a sampling pattern. The sampling pattern, in one example, includes subsampling pixels at different rates for horizontal and vertical directions. The subsampling rate can differ, based on an amount of motion represented by a matching block (e.g., the farther a match is found away from an origin of the block, the more subsampling can be done). In another example, a full pixel resolution is maintained proximal an original location of the block; as distance increases in one or more directions, subsampling can begin and/or increase. Sampled pixels can be stored. Interpolation of the sampled pixels can be performed and the sampled and resulting interpolated pixels can be used for comparison.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="124.97mm" wi="151.13mm" file="US08625673-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="176.45mm" wi="116.08mm" file="US08625673-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="168.66mm" wi="155.11mm" file="US08625673-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="223.69mm" wi="155.11mm" file="US08625673-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="225.81mm" wi="141.82mm" file="US08625673-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="112.35mm" wi="131.23mm" file="US08625673-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="205.99mm" wi="134.62mm" file="US08625673-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<p id="p-0002" num="0001">The present invention relates to a method and apparatus for determining motion between a first and second video Image and, in particular, to reducing the number of pixels which are required to be used in order to determine the motion.</p>
+<p id="p-0003" num="0002">Motion video consists of a sequence of image frames. Motion estimation algorithms exploit the fact that these frames do not change significantly in time. Motion vector fields are calculated that describe the displacement of all the pixels in a frame to an earlier frame. The image Is usually divided into a grid so that a single motion vector is associated with a group (block) of pixels to reduce computational complexity.</p>
+<p id="p-0004" num="0003">Motion estimation can be performed using a number of different methods, including, for example:
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0000">
+    <ul id="ul0002" list-style="none">
+        <li id="ul0002-0001" num="0004">Block-matching techniques as described in section II of De Haan, G.; Biezen, P.W.A.C. &#x201c;An efficient true-motion estimator using candidate vectors from a parametric motion model&#x201d; <i>Circuits and Systems for Video Technology</i>, IEEE Transactions on Vol. 8, Issue 1, February 1998, pp. 85-91.</li>
+        <li id="ul0002-0002" num="0005">Gradient based techniques as described in Horn, B. K. P. &#x26; B. G. Schunck, Determining Optical Flow,&#x2019; <i>Artificial Intelligence</i>, Vol. 16, No. 1-3, August 1981, pp. 185-203.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0005" num="0006"><figref idref="DRAWINGS">FIG. 1</figref> illustrates the known block matching technique between a sequence of two images and demonstrates that block-matching motion estimators typically attempt to find a block of pixels (30) in an earlier frame that has a high correlation to an equally sized block of pixels (20) in the current frame. The correlation is usually measured by a form of error function such as the sum of absolute differences (SAD) or the mean squared error (MSE). The displacement between the best matching blocks represents the motion vector (40). &#x2018;Full search&#x2019; motion estimators choose to search for a matching block across the full range of the previous image. However, to reduce computation, most motion estimators reduce the search window for matching. blocks by defining a maximum search area (10) and either perform a full-search within the window or evaluate only a number of &#x2018;candidate&#x2019; blocks. This search area effectively limits the maximum motion vector size that is supported, and hence the fastest motion that can successfully be estimated as shown in <figref idref="DRAWINGS">FIG. 2</figref>.</p>
+<p id="p-0006" num="0007">Motion estimation is useful for several applications including, for example, motion compensated interpolation, where a number of interpolated frames are reconstructed and displayed between original Images in a sequence. This reduces the motion judder of moving objects in the image sequence. The motion vectors here can be defined at any point in time between the two images, for example the midpoint, and are also used to reconstruct the interpolated frame using motion compensation.&#x2022;</p>
+<p id="p-0007" num="0008">A further application is video compression, for example, where spatial and/or temporal redundancy is removed. Motion vectors are again used to describe the displacement of Image pixels between successive frames and, in this application, are transmitted in place of image data, thereby reducing the amount of data needed to represent the image sequence.</p>
+<p id="p-0008" num="0009">Other applications that use motion estimation to enhance video sequences include de-interlacing and noise reduction.</p>
+<p id="p-0009" num="0010">Detection and measurement of motion blur is also relevant to the derivation of motion vectors. Motion blur is an effect that occurs in natural image sequences as cameras attempt to capture moving objects. If an object moves while the camera shutter is open, the film acts as an integrating medium and the motion that has occurred Is visible as a blur along the trajectory of motion. This known effect&#x2019; is shown in <figref idref="DRAWINGS">FIG. 3</figref> and is effectively a low pass filtering operation on the moving image pixels.</p>
+<p id="p-0010" num="0011">The faster object is moving relative to the camera, the greater the motion blur. Since motion blur occurs only along the trajectory, detail present on the moving objects is low-pass filtered in this direction only. This can be seen further in <figref idref="DRAWINGS">FIG. 3</figref> where detail of the front and rear edges of moving vehicles are not visible, whereas the roof and base edges can still be distinguished. The level of sharpness of edges in an area of the image can be used as an indication of the level of motion. If sharp edges are detected in a particular direction, it can be deduced that in a perpendicular direction, fast motion is unlikely.</p>
+<p id="p-0011" num="0012">In order to successfully estimate motion in a wide variety of image sequences, large vector ranges are required. This increases the search area, hence the number of pixels that are required to be available during the calculation and evaluation of motion vectors within this region.</p>
+<p id="p-0012" num="0013">In order to perform motion estimation with large search areas, the transfer of large amounts of pixel information between processing blocks is necessary which demands large bandwidth.</p>
+<p id="p-0013" num="0014">Pixel storage, when incorporated into a hardware implementation, is expensive and bulky therefore it is desirable to reduce the number of available pixels required in the motion estimation and compensation stages.</p>
+<p id="p-0014" num="0015">Some schemes have previously been proposed to reduce the cost of implementing a large search area and these techniques will be known to those skilled in the art. For example U.S. Pat. No. 6,687,303 describes a scheme where neighbouring pixels in blocks to be evaluated are sub-sampled by 4:1 or 2:1. A similar scheme is described in U.S. Pat. No. 6,317,136 and also U.S. Pat. No. 5,982,910 in which 2:1 sub-sampling is performed on incoming pixel data. Simple sub-sampling such as this is successful in reducing complexity, however useful image information is discarded in the process. This can lead to a reduction in the quality of motion&#x2019; estimation as details in the image sequence, that aid the estimation and convergence of vectors, may be lost.</p>
+<p id="p-0015" num="0016">We have appreciated that as the speed of motion of an object in an image increases, the degree of low-pass filtering on the object in the image increases due to the motion blur and less detail is visible along the motion trajectory. Therefore, the faster the motion, the less high frequencies are present in the image at this location. It is known from the sampling theorem that the higher the frequency content in a signal, the higher the sampling rate must be in order to fully reconstruct the signal. It therefore follows that as the speed of motion increases, the lower the required sampling rate becomes.</p>
+<p id="p-0016" num="0017">As an extension of this, objects that are moving in a horizontal direction become blurred along the horizontal only and, similarly, vertically moving objects lose detail in this direction but retain horizontal detail. Therefore, for pixels undergoing motion in a certain direction, there will be relatively low frequency content along this trajectory, while frequency content perpendicular to this direction is maintained. This Implies that the sampling frequency required along the trajectory of motion is lower than that required in the perpendicular direction. Therefore, in order to minimise the loss of important image details, pixels undergoing horizontal motion can be sub-sampled horizontally and pixels undergoing vertical motion can be sub-sampled vertically.</p>
+<p id="p-0017" num="0018">We have appreciated that in order to retain maximum detail in the search area, all pixels should be maintained. However, pixel storage is expensive and the transfer of large amounts of pixel information requires large bandwidth. Images which include objects in motion include blurring and we have appreciated that in such cases the sampling frequency along the direction of motion can be decreased without experiencing a significant loss of image detail.</p>
+<p id="p-0018" num="0019">Preferred embodiments of the invention perform a sub-sampling of the pixels within a search area in a predefined pattern. The pattern of sub sampled pixels vanes throughout the search area in order to reduce the number of pixels that are stored, and, thus, to reduce the processing and memory requirements of the system, while maintaining important image details.</p>
+<p id="p-0019" num="0020">Preferred embodiments of the invention increase the degree of sub-sampling of image pixels as the distance from the centre of the search area increases since pixels of the block which appear furthest from the centre are due to the fastest motion and can be sub sampled without a loss in image detail.</p>
+<p id="p-0020" num="0021">Preferred embodiments of the invention maintain high pixel resolution close to the centre of the search area in order to maintain detail of static or slow moving blocks. The size of this high resolution area may be influenced by the maximum available search-area memory.</p>
+<p id="p-0021" num="0022">The invention in its various aspects will now be defined in the claims, to which reference should now be made.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<p id="p-0022" num="0023">Preferred embodiments of the invention are: now described with reference to the accompanying figures in which:</p>
+<p id="p-0023" num="0024"><figref idref="DRAWINGS">FIG. 1</figref> shows a known block matching motion estimator as used in the prior art.</p>
+<p id="p-0024" num="0025"><figref idref="DRAWINGS">FIG. 2</figref> shows a search area used to estimate motion.</p>
+<p id="p-0025" num="0026"><figref idref="DRAWINGS">FIG. 3</figref> is an image showing blurred movement of an object.</p>
+<p id="p-0026" num="0027"><figref idref="DRAWINGS">FIG. 4</figref> shows an embodiment of the invention incorporated into a television system.</p>
+<p id="p-0027" num="0028"><figref idref="DRAWINGS">FIG. 5</figref> is a block diagram showing the motion estimator.</p>
+<p id="p-0028" num="0029"><figref idref="DRAWINGS">FIG. 6</figref> shows the search area in which the pixels have been subsampled vertically.</p>
+<p id="p-0029" num="0030"><figref idref="DRAWINGS">FIG. 7</figref> shows a search area including subsampling in vertical and horizontal directions.</p>
+<p id="p-0030" num="0031"><figref idref="DRAWINGS">FIG. 8</figref> shows a search area including sampling in vertical and horizontal directions in which pixels diagonally away from the centre are also removed.</p>
+<p id="p-0031" num="0032"><figref idref="DRAWINGS">FIG. 9</figref> shows a search area used in an embodiment of the present invention.</p>
+<p id="p-0032" num="0033"><figref idref="DRAWINGS">FIG. 10</figref> shows an example of a subsampled search area used in an embodiment of the invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<p id="p-0033" num="0034">A preferred embodiment of the invention Is now described when incorporated into a television system with reference to <figref idref="DRAWINGS">FIG. 4</figref>. This embodiment is used to increase the frame rate of High Definition (HD) motion video sequences using motion compensated interpolation. High Definition sequences have increased vertical and horizontal resolution which requires larger vector Omits for describing the motion between frames than for Standard Definition (SD) material.</p>
+<p id="p-0034" num="0035"><figref idref="DRAWINGS">FIG. 4</figref> shows a television system (<b>10</b>). An antenna (<b>20</b>) (or other video input such as a DVD player) supplies a tuner which in turn provides a video signal to the processor (<b>30</b>). A processed video signal is then supplied to a motion estimator unit (<b>40</b>). The motion estimator estimates the direction and degree of motion between frames and preferably provides this data in terms of vectors. The temporal frame rate of the video signal is then increased by feeding a motion compensated interpolator (<b>50</b>) with vectors supplied from the motion estimator in order to construct intermediate frames. The enhanced video signal is then displayed on a display device. (<b>60</b>).</p>
+<p id="p-0035" num="0036">The motion estimation unit (<b>40</b>) which incorporates the invention is described in detail below with reference to <figref idref="DRAWINGS">FIG. 5</figref>. The function of the motion estimation unit (<b>40</b>) is to determine the motion between consecutive frames. This motion is described in terms of a vector. The motion between frames is determined by breaking down each video frame into a series of blocks containing a predefined number of pixels. That block is then compared with blocks of pixels in an adjacent frame in order to determine the motion of the block between the frames using block matching techniques, for example SAD or MSC.</p>
+<p id="p-0036" num="0037">In order to reduce the area of the frame in which block matching Is executed, embodiments of the invention conduct the block comparison within a specific search area of the adjacent frame. Preferably, the search area is centred on the position of the block in the original frame. The size of the search area is selected in dependence on the memory and processing capabilities of the system. As discussed above with reference to <figref idref="DRAWINGS">FIG. 2</figref>, larger search areas allow greater degrees of motion to be detected and so can be used to estimate faster motion. Motion of the block is then determined using block matching techniques within the search area. Preferred embodiments of the invention process each block of the frame.</p>
+<p id="p-0037" num="0038">In order to provide maximum quality of motion estimation, all pixels within a search area would be used and compared with the block in motion. However, pixel storage, when incorporated into hardware implementation, is expensive and, therefore, it is desirable to reduce the number of pixels used in the search area. In order to reduce the number of pixels, embodiments of the invention sub-sample the pixels of the search area.</p>
+<p id="p-0038" num="0039">A number of factors may be taken into account when deciding how to subsample the pixels of the search area, namely
+<ul id="ul0003" list-style="none">
+    <li id="ul0003-0001" num="0000">
+    <ul id="ul0004" list-style="none">
+        <li id="ul0004-0001" num="0040">the direction in which motion estimation is required to be most accurate;</li>
+        <li id="ul0004-0002" num="0041">whether it is acceptable to lose information in order to. reduce the number of pixels;</li>
+        <li id="ul0004-0003" num="0042">the magnitude of motion of the block and</li>
+        <li id="ul0004-0004" num="0043">the location of blocks of pixels within the search area which will be used as comparison blocks.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0039" num="0044">In order to estimate motion most accurately in a particular direction, full resolution of pixels should be maintained in that direction to provide more pixels to be available for block matching calculations. Therefore, if accurate motion estimation in the horizontal direction is required, full resolution can be maintained in the horizontal direction. The number of pixels required to be stored can then be reduced by subsampling in the vertical direction. An example of subsampling pixels in the vertical direction, while maintaining a full resolution in the horizontal direction, is shown in <figref idref="DRAWINGS">FIG. 6</figref>. Such a subsampling pattern could be used for video sequences of natural images in which horizontal movement of objects and motion due to camera pans are more common than vertical motion. Such a pattern enables a high accuracy of motion to be determined in the horizontal direction while reducing pixel storage by subsampling in the vertical direction.</p>
+<p id="p-0040" num="0045">Alternatively, the choice of direction of subsampling may be made on the basis of the direction in which subsampling will have minimum effect on data loss. When blocks of pixels are moving in a particular direction detail can be lost in the direction of motion due to motion blur. Since little information can be gained from the blurred pixels, by subsampling in the direction of motion the number of stored pixels can be reduced without losing significant information. Therefore, if an object le moving in the horizontal direction, subsampling in the horizontal direction can be used without losing significant information. Conversely, if an object is moving in the vertical direction, vertical subsampling can be used without losing significant information. Therefore, the vertical subsampling pixel pattern of <figref idref="DRAWINGS">FIG. 6</figref> can be used for vertical motion in order to reduce the number of pixels stored without losing significant detail.</p>
+<p id="p-0041" num="0046">A further consideration in determining the subsampling pattern is the: expected degree of motion of the block. When a block has moved between image frames, search areas which are centered on the original position of the block include the relevant pixels away from the centre of the search area. Specifically, for horizontal motion the relevant pixels are to the left and right of the centre and for vertical motion the relevant pixels are positioned above and below the centre of the search area. As the speed of motion of the object is increased, the degree of subsampling can be increased without compromising on losing image-detail. Conversely, if there is little or no motion. the relevant pixels required for motion estimation will be positioned predominantly towards the centre of the search area. Since there will be no motion blur for static or slow moving blocks it is desirable not to subsample the pixel data close to the centre of the search area to avoid losing important image detail.</p>
+<p id="p-0042" num="0047">The final selected subsampling pattern may be chosen to allow measurement of static, medium and fast motion. The degree of sub-sampling may be chosen to remain constant outside a central full-resolution area or, preferably, can be increased as the distance increases from the centre of the search area. For example, zones of 2:1 sub-sampling can be used for moderate motion, 4:1 for fast motion and 8:1 for very fast motion. Such a pattern maintains detail when the block is stationary by maintaining a full resolution at the centre of the search area and, as speed of motion increases and the relevant blocks are further from the centre, the loss of information Is limited due to increasing degrees of motion blur.</p>
+<p id="p-0043" num="0048">A further reduction in the pixel storage requirements can be obtained by using a combination of horizontal and vertical subsampling in combination with regions of full resolution. Again, combination of subsampling ratios can be used in different regions of the search area in order to store the minimum number of pixels while experiencing minimum loss of useful information.</p>
+<p id="p-0044" num="0049"><figref idref="DRAWINGS">FIG. 7</figref> is an example of a subsampling pattern which incorporates both vertical and horizontal subsampling of different degrees at different regions of the search area. The embodiment of <figref idref="DRAWINGS">FIG. 7</figref> requires less pixels to be stored than <figref idref="DRAWINGS">FIG. 6</figref> for an equivalent size search area.</p>
+<p id="p-0045" num="0050"><figref idref="DRAWINGS">FIG. 8</figref> shows a further subsampled search area in which diagonal pixels are also removed in order to reduce the pixel storage requirements.</p>
+<p id="h-0001" num="0000">Returning to <figref idref="DRAWINGS">FIG. 5</figref>, for each block in the input frame, a candidate selector (<b>42</b>), chooses a number of candidate motion vectors,</p>
+<p id="p-0046" num="0051">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mover>
+      <mi>C</mi>
+      <mo>&#x2192;</mo>
+    </mover>
+    <mo>=</mo>
+    <mrow>
+      <mo>[</mo>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mi>Cx</mi>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mi>Cy</mi>
+          </mtd>
+        </mtr>
+      </mtable>
+      <mo>]</mo>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+</mrow>
+</math>
+</maths>
+<br/>
+relating to blocks in the defined search area. The set of candidate vectors are supplied to the candidate evaluator (<b>44</b>) to discover the best match. The motion estimator can choose to use all possible motion vectors within the search area or test only a selection of the vectors. This decision is typically made during the design of the system but may be selectable during use. Described here, the candidate evaluator compares vectors to determine the most suitable candidate using the SAD criterion for simplicity, as described by Equation 1,
+</p>
+<p id="p-0047" num="0052">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mrow>
+                <mrow>
+                  <mi>SAD</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mover>
+                        <mi>C</mi>
+                        <mi>_</mi>
+                      </mover>
+                      <mo>,</mo>
+                      <mover>
+                        <mi>x</mi>
+                        <mi>_</mi>
+                      </mover>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>=</mo>
+                <mrow>
+                  <munder>
+                    <mover>
+                      <mo>&#x2211;</mo>
+                      <mi>n</mi>
+                    </mover>
+                    <mrow>
+                      <mi>x</mi>
+                      <mo>&#x2208;</mo>
+                      <mrow>
+                        <mi>B</mi>
+                        <mo>&#x2061;</mo>
+                        <mrow>
+                          <mo>(</mo>
+                          <mover>
+                            <mi>x</mi>
+                            <mo>&#x2192;</mo>
+                          </mover>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                  </munder>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mo>&#xf603;</mo>
+                    <mrow>
+                      <mrow>
+                        <mi>F</mi>
+                        <mo>&#x2061;</mo>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mover>
+                              <mi>x</mi>
+                              <mo>&#x2192;</mo>
+                            </mover>
+                            <mo>,</mo>
+                            <mi>n</mi>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                      <mo>-</mo>
+                      <mrow>
+                        <mi>F</mi>
+                        <mo>&#x2061;</mo>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mrow>
+                              <mover>
+                                <mi>x</mi>
+                                <mo>&#x2192;</mo>
+                              </mover>
+                              <mo>-</mo>
+                              <mover>
+                                <mi>C</mi>
+                                <mi>_</mi>
+                              </mover>
+                            </mrow>
+                            <mo>,</mo>
+                            <mrow>
+                              <mi>n</mi>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                            </mrow>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                    <mo>&#xf604;</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+              <mo>,</mo>
+            </mrow>
+          </mtd>
+          <mtd>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>Equation</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mn>1</mn>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0048" num="0053">where <o ostyle="single">C</o> represents a candidate motion vector,</p>
+<p id="p-0049" num="0054">
+<maths id="MATH-US-00003" num="00003">
+<math overflow="scroll">
+<mrow>
+  <mover>
+    <mi>x</mi>
+    <mi>_</mi>
+  </mover>
+  <mo>=</mo>
+  <mrow>
+    <mo>[</mo>
+    <mtable>
+      <mtr>
+        <mtd>
+          <mi>x</mi>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mi>y</mi>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>]</mo>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+represents the spatial location within the search area, B( <o ostyle="single">x</o>) represents the block of pixels over which evaluation occurs and F( <o ostyle="single">x</o>, n) represents the pixel intensity value at spatial location x and temporal location n.
+</p>
+<p id="p-0050" num="0055">The pixel information F( <o ostyle="single">x</o>, n), is supplied from the current block (<b>48</b>) from the input image data. In order to acquire pixel information from the previous frame, F ( <o ostyle="single">x</o>, n&#x2212;1), the input image data passes through a delay (<b>41</b>) and into the sub-sampling block (<b>47</b>). The process of this block is described in more detail later.</p>
+<p id="p-0051" num="0056">The sub-sampling block provides the search-area memory (<b>43</b>) with sub-sampled pixels which in-turn, via an interpolator (<b>49</b>), provides the candidate evaluator (<b>44</b>) with the necessary pixel information to assess the vector candidates. The subsampled pixels are then compared with the pixel information of the current block using the candidate motion vectors. The candidate with the lowest error function is determined to be the best match for the current block, and the associated motion vector is assigned to the block of pixels.</p>
+<p id="p-0052" num="0057">For this embodiment, the defined search area will allow a maximum vector size of +/1 64 pixels horizontally and +/&#x2212;32 pixels vertically as shown in <figref idref="DRAWINGS">FIG. 9</figref>. In further embodiments different sized search areas may be used depending on the requirements and constraints of the system. With a block size of 16&#xd7;16 pixels, this defines the search area as a set of pixels with dimensions 144&#xd7;80. The sub-sampling block (<b>47</b>) allows a reduced number of pixels to be stored by directionally sub-sampling the pixels in the search area. For this example, horizontal and vertical sub-sampling are utilised and the pixels selected in the sub-sampling operation are shown in <figref idref="DRAWINGS">FIG. 10</figref>. For simplicity, only the right-half of the full search area (<b>10</b>) is shown es the pattern of pixel selection is symmetrical about the origin. The labels indicate the horizontal and vertical pixel coordinates respectively, with reference to the origin at the centre of the block.</p>
+<p id="p-0053" num="0058">Pixels in-between now no longer need to be stored and can instead be estimated during evaluation by the interpolator (<b>49</b>), as shown in <figref idref="DRAWINGS">FIG. 5</figref>. This interpolator performs, for example, a linear interpolation between available pixels although other interpolations could be used. Using the coordinate system. as shown in <figref idref="DRAWINGS">FIG. 10</figref>, if, for example, the pixel within the search area at coordinate (24,9) Is required, an interpolation is performed between pixels (23,0) and (31,0) available from the search area memory as described by Equation 2.</p>
+<p id="p-0054" num="0059">
+<maths id="MATH-US-00004" num="00004">
+<math overflow="scroll">
+  <mrow>
+    <mstyle>
+      <mspace width="37.2em" height="37.2ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <mi>Equation</mi>
+      <mo>&#x2062;</mo>
+      <mstyle>
+        <mspace width="0.8em" height="0.8ex"/>
+      </mstyle>
+      <mo>&#x2062;</mo>
+      <mn>2</mn>
+    </mrow>
+  </mrow>
+</math>
+</maths>
+<maths id="MATH-US-00004-2" num="00004.2">
+<math overflow="scroll">
+  <mtable>
+    <mtr>
+      <mtd>
+        <mrow>
+          <mrow>
+            <mover>
+              <mi>F</mi>
+              <mo>^</mo>
+            </mover>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mn>24</mn>
+                <mo>,</mo>
+                <mi>n</mi>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>=</mo>
+          <mi/>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mrow>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mn>1</mn>
+                  <mo>-</mo>
+                  <mfrac>
+                    <mrow>
+                      <mn>31</mn>
+                      <mo>-</mo>
+                      <mn>24</mn>
+                    </mrow>
+                    <mn>8</mn>
+                  </mfrac>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>F</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>31</mn>
+                    <mo>,</mo>
+                    <mrow>
+                      <mi>n</mi>
+                      <mo>-</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mo>+</mo>
+            <mrow>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mn>1</mn>
+                  <mo>-</mo>
+                  <mfrac>
+                    <mrow>
+                      <mn>24</mn>
+                      <mo>-</mo>
+                      <mn>23</mn>
+                    </mrow>
+                    <mn>8</mn>
+                  </mfrac>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>F</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>23</mn>
+                    <mo>,</mo>
+                    <mrow>
+                      <mi>n</mi>
+                      <mo>-</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd>
+        <mrow>
+          <mo>=</mo>
+          <mi/>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mrow>
+              <mfrac>
+                <mn>1</mn>
+                <mn>8</mn>
+              </mfrac>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>F</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>31</mn>
+                    <mo>,</mo>
+                    <mrow>
+                      <mi>n</mi>
+                      <mo>-</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mo>+</mo>
+            <mrow>
+              <mfrac>
+                <mn>7</mn>
+                <mn>8</mn>
+              </mfrac>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>F</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>23</mn>
+                    <mo>,</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <mi>n</mi>
+                      <mo>-</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mtd>
+    </mtr>
+  </mtable>
+</math>
+</maths>
+</p>
+<p id="p-0055" num="0060">This is trivially extended into a two-stage process for pixels requiring horizontal and vertical interpolation.</p>
+<p id="p-0056" num="0061">Using the sub-sampled search area and the interpolator, pixel information in a large search area can be provided to the candidate evaluation stage of the motion estimator using a reduced number of stored pixels and reduced bandwidth. From the selection of candidates, the best matching vector with the lowest error function is determined and assigned to the current block in the vector memory (<b>46</b>), as shown in <figref idref="DRAWINGS">FIG. 58</figref>.</p>
+<p id="p-0057" num="0062">The vector field from the motion estimator (<b>40</b>) is then used by the motion compensated interpolator (<b>50</b>), as shown in <figref idref="DRAWINGS">FIG. 4</figref>, to reconstruct new frames to increase the frame rate of the video signal. The same search area memory can also be utilised during the motion compensation stage to provide pixels for the reconstructed frame.</p>
+<p id="p-0058" num="0063">It will be clear to those skilled in the art that embodiments of the invention use subsampling to reduce the pixel storage requirements for search areas while maintaining Important Image information which is used to determine the correct motion vectors within video frames. As a result of reducing the number of pixels required to be stored, the bandwidth requirements between the external pixel memory and the internal processing blocks is also reduced.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08625673-20140107-M00001.NB">
+<img id="EMI-M00001" he="7.45mm" wi="76.20mm" file="US08625673-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08625673-20140107-M00002.NB">
+<img id="EMI-M00002" he="9.57mm" wi="76.20mm" file="US08625673-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00003" nb-file="US08625673-20140107-M00003.NB">
+<img id="EMI-M00003" he="7.45mm" wi="76.20mm" file="US08625673-20140107-M00003.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00004 MATH-US-00004-2" nb-file="US08625673-20140107-M00004.NB">
+<img id="EMI-M00004" he="18.37mm" wi="76.20mm" file="US08625673-20140107-M00004.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>I claim:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method of motion estimation for portions of images of an image sequence, comprising:
+<claim-text>receiving, with an input, a current image, which is from a temporal video image sequence;</claim-text>
+<claim-text>determining a block of pixels from the current image, for which motion is to be estimated;</claim-text>
+<claim-text>determining, using a search area selector, a search area within a reference image;</claim-text>
+<claim-text>sampling, using a sampler, pixels of the reference image within the search area according to a sampling pattern comprising subsampling the pixels within the search area of the reference image in one or more of a horizontal and a vertical direction at a subsampling rate positively correlated to an amount of motion of the block of pixels in that direction;</claim-text>
+<claim-text>storing the subsampled pixels of the reference image in a non-transitory medium;</claim-text>
+<claim-text>determining, using a motion estimator, a motion vector for the block of pixels from the current image by
+<claim-text>retrieving at least some of the subsampled pixels of the reference image from the non-transitory medium, and</claim-text>
+<claim-text>identifying, within the search area, a match between the block of pixels from the current image, and a block of pixels within the search area.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising interpolating the retrieved subsampled pixels of the reference image to generate interpolated pixels, and using the interpolated pixels and the retrieved subsampled pixels in the identifying of the match between the block of pixels from the current image, and the block of pixels within the search area.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the sampling pattern used for performing the sampling comprises a plurality of different subsampling rates associated with different portions of the search area, the subsampling rate for each portion of the search area selected so that pixels from the search area are subsampled at a subsampling rate correlated to an amount of movement experienced by the block of pixels.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the sampling pattern comprises increased subsampling in one or more of the horizontal direction and the vertical direction, with increased distance from a reference location in the search area corresponding to a center of the determined block of pixels in the current image.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising sampling the reference image at full resolution around a reference location in the search area corresponding to a center of the determined block of pixels in the current image.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising sampling the reference image according to a sampling pattern that comprises full resolution sampling horizontally, and subsampling vertically.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising sampling the reference image according to a sampling pattern that comprises a plurality of different subsampling rates associated with different portions of the search area, the subsampling rate for each portion of the search area selected so that pixels from the search area are subsampled at a subsampling rate correlated to an amount of movement experienced by the block of pixels.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. A method of video processing, comprising:
+<claim-text>receiving a current image frame;</claim-text>
+<claim-text>generating, using a motion estimator unit, a motion vector for a block of pixels in the current image frame with respect to a matching block of a reference image frame, the generating of the motion vector comprising
+<claim-text>sampling, with a sampler, a search area of the reference image frame according to a sampling pattern,</claim-text>
+<claim-text>the sampling pattern comprising a plurality of sampling rates associated with respective portions of the search area,</claim-text>
+<claim-text>the respective sampling rates determined according to an amount of motion that would be determined if a best matching block to the block of pixels were found in that portion of the search area and comprising at least one subsampling rate, and</claim-text>
+<claim-text>using the sampled pixels in the search area to identify the matching block of the reference image frame.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method of <claim-ref idref="CLM-00008">claim 8</claim-ref>, further comprising interpolating the sampled pixels in the search area to generate interpolated pixels, and using the sampled pixels and the interpolated pixels to identify the matching block.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the sampling pattern comprises subsampling pixels in the search area at different rates in the horizontal direction and the vertical direction, originating from a reference location in the search area corresponding to a center of the determined block of pixels in the current image frame.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The method of <claim-ref idref="CLM-00008">claim 8</claim-ref>, further comprising sampling the reference image frame at full resolution around a reference location in the search area corresponding to a center of the determined block of pixels in the current image.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The method of <claim-ref idref="CLM-00008">claim 8</claim-ref>, further comprising sampling the reference image according to a sampling pattern that comprises full resolution sampling horizontally, and subsampling vertically.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The method of <claim-ref idref="CLM-00008">claim 8</claim-ref>, further comprising sampling the reference image according to a sampling pattern that comprises a plurality of different subsampling rates associated with different portions of the search area, the subsampling rate for each portion of the search area selected so that pixels from the search area are subsampled at a subsampling rate correlated to an amount of movement experienced by the block of pixels.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. A system for video processing, comprising:
+<claim-text>an input for receiving image frames in a sequence of image frames, the image frames comprising a current image frame; and</claim-text>
+<claim-text>a motion estimator for estimating motion for a block of pixels in the current image frame, with respect to a reference image frame, the motion estimator comprising
+<claim-text>a sampler operable to sample a search area of the reference image frame according to a sampling pattern, comprising subsampling the pixels within the search area of the reference image in one or more of a horizontal and a vertical direction at a respective subsampling rate positively correlated to an amount of motion of the block of pixels in that direction;</claim-text>
+<claim-text>a non-transitory medium coupled to the sampler to store subsampled pixels output from the subsampler, and</claim-text>
+<claim-text>a motion vector candidate evaluator coupled to receive subsampled pixels stored in the non-transitory memory, to evaluate motion vector candidates according to an error function, and output a motion vector representing motion of the block of pixels in the current frame, with respect to a block of pixels in the reference frame.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The system of <claim-ref idref="CLM-00014">claim 14</claim-ref>, further comprising a motion vector candidate generator coupled to the motion vector candidate evaluator.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The system of <claim-ref idref="CLM-00014">claim 14</claim-ref>, further comprising an interpolator for interpolating received subsampled pixels of the reference image to generate interpolated pixels and provide the interpolated pixels to the motion vector candidate evaluator, and wherein the motion vector candidate evaluator is operable to use the interpolated pixels and the received subsampled pixels to evaluate motion vector candidates.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The system of <claim-ref idref="CLM-00014">claim 14</claim-ref>, wherein the sampling pattern comprises increasing the subsampling rate in one or more of the horizontal direction and the vertical direction, from a reference location in the search area corresponding to a center of the determined block of pixels in the current image.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The system of <claim-ref idref="CLM-00014">claim 14</claim-ref>, wherein the sampler is further operable to sample the reference image at full resolution around a reference location in the search area corresponding to a center of the determined block of pixels in the current image.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The system of <claim-ref idref="CLM-00014">claim 14</claim-ref>, wherein the sampler is further operable to sample the reference image according to a sampling pattern that comprises full resolution sampling horizontally, and subsampling vertically.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The system of <claim-ref idref="CLM-00014">claim 14</claim-ref>, wherein the sampler is further operable to sample the reference image according to a sampling pattern that comprises a plurality of different subsampling rates associated with different portions of the search area, the subsampling rate for each portion of the search area selected so that pixels from the search area are subsampled at a subsampling rate correlated to an amount of movement experienced by the block of pixels.</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

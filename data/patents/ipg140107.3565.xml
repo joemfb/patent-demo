@@ -1,0 +1,657 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08624630-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08624630</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13575595</doc-number>
+<date>20110418</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>CN</country>
+<doc-number>2010 1 0245170</doc-number>
+<date>20100726</date>
+</priority-claim>
+</priority-claims>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>03</class>
+<subclass>D</subclass>
+<main-group>13</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>327  3</main-classification>
+<further-classification>327 12</further-classification>
+</classification-national>
+<invention-title id="d2e61">Clock and data recovery system, phase adjusting method, and phasedetector</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5799048</doc-number>
+<kind>A</kind>
+<name>Farjad-Rad et al.</name>
+<date>19980800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>6509801</doc-number>
+<kind>B1</kind>
+<name>Lao et al.</name>
+<date>20030100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>6538475</doc-number>
+<kind>B1</kind>
+<name>Johansen et al.</name>
+<date>20030300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>327 12</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>7409027</doc-number>
+<kind>B1</kind>
+<name>Sudjian</name>
+<date>20080800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>7622959</doc-number>
+<kind>B2</kind>
+<name>Yamanaka</name>
+<date>20091100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>327  3</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>2002/0021470</doc-number>
+<kind>A1</kind>
+<name>Savoj</name>
+<date>20020200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00007">
+<othercit>International Search Report for PCT/CN2011/072954, Jul. 14, 2011.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>15</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>327  2</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>327  3</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>327  7</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>327 12</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>327 39</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>327 40</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>327 42</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>327 47</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>327 49</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>375375</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>8</number-of-drawing-sheets>
+<number-of-figures>12</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120293226</doc-number>
+<kind>A1</kind>
+<date>20121122</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Liao</last-name>
+<first-name>Jiansheng</first-name>
+<address>
+<city>Shenzhen</city>
+<country>CN</country>
+</address>
+</addressbook>
+<residence>
+<country>CN</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Cao</last-name>
+<first-name>Shanyong</first-name>
+<address>
+<city>Shenzhen</city>
+<country>CN</country>
+</address>
+</addressbook>
+<residence>
+<country>CN</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Liao</last-name>
+<first-name>Jiansheng</first-name>
+<address>
+<city>Shenzhen</city>
+<country>CN</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Cao</last-name>
+<first-name>Shanyong</first-name>
+<address>
+<city>Shenzhen</city>
+<country>CN</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Foley &#x26; Lardner LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>ZTE Corporation</orgname>
+<role>03</role>
+<address>
+<city>Shenzhen, Guangdong Province</city>
+<country>CN</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Nguyen</last-name>
+<first-name>Hai L</first-name>
+<department>2816</department>
+</primary-examiner>
+</examiners>
+<pct-or-regional-filing-data>
+<document-id>
+<country>WO</country>
+<doc-number>PCT/CN2011/072954</doc-number>
+<kind>00</kind>
+<date>20110418</date>
+</document-id>
+<us-371c124-date>
+<date>20120726</date>
+</us-371c124-date>
+</pct-or-regional-filing-data>
+<pct-or-regional-publishing-data>
+<document-id>
+<country>WO</country>
+<doc-number>WO2012/013051</doc-number>
+<kind>A </kind>
+<date>20120202</date>
+</document-id>
+</pct-or-regional-publishing-data>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Disclosed is a phase discriminator, including: a first XOR gate connected to a trigger and a delay unit, a second XOR gate connected to the trigger and a latch, wherein the first XOR gate is a current mode logic XOR gate, the first XOR gate comprises a first offset current source circuit outputting a first adjustable offset circuit for controlling amplitude of the error signal output by the first XOR gate; and/or, the second XOR gate is a current mode logic XOR gate, the second XOR gate comprises a second offset current source circuit outputting a second adjustable offset circuit for controlling amplitude of reference signal output by the second XOR gate. Also disclosed are a clock and data recovery system and a phase adjustment method. The present invention can prevent introducing noise coupling to the voltage control oscillator (VCO) module.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="122.43mm" wi="339.01mm" file="US08624630-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="228.35mm" wi="170.18mm" file="US08624630-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="208.36mm" wi="149.94mm" orientation="landscape" file="US08624630-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="227.75mm" wi="172.21mm" file="US08624630-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="224.87mm" wi="167.81mm" file="US08624630-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="230.80mm" wi="172.30mm" file="US08624630-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="141.48mm" wi="167.81mm" file="US08624630-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="176.19mm" wi="123.95mm" file="US08624630-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="118.70mm" wi="168.83mm" file="US08624630-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">TECHNICAL FIELD</heading>
+<p id="p-0002" num="0001">The present invention relates to a clock and data recovery system, and particularly, to a clock and data recovery system, a phase adjusting method and a phase discriminator.</p>
+<heading id="h-0002" level="1">BACKGROUND OF THE RELATED ART</heading>
+<p id="p-0003" num="0002">The clock and data recovery system is widely applied in fields such as magnetic disk storage, wireless communication, and optical network communication, etc. <figref idref="DRAWINGS">FIG. 1</figref> is a structural block diagram of a typical clock and data recovery system, including a phase discriminator <b>102</b>, a frequency discriminator <b>104</b>, a charge pump (optional) &#x26; filter <b>103</b>, a voltage control oscillator (VCO) <b>105</b>, a frequency divider <b>106</b>, and a data recovery retimer <b>101</b>.</p>
+<p id="p-0004" num="0003">The frequency discriminator <b>104</b> compares the clock signal outputted by the frequency divider <b>106</b> with the reference clock, the generated error signal generates a control voltage through the charge pump (optional) &#x26; filter <b>103</b> to enable the frequency of VCO <b>105</b> to oscillate around the preset working frequency range. Then the phase discriminator <b>102</b> compares the phase relationship of the input data and the VOC feedback clock, and when the input data and the phase of the feedback clock are locked, the data recovery retimer <b>101</b> restores the data so as to eliminate the jitter and distortion generated during data transmission. Under ideal situation, the effective edge of the clock shall be sampled in the middle of the data so as to achieve the best anti-noise ability, however, during the actual circuit implementation, due to non-ideal situations such as the upper and lower current sources of the charge pump do not match each other, various module devices of the loop mismatch, process errors, etc., the effective edge of the clock usually is not sampled in the middle of the data when the loop is locked. When the loop is locked, the clock and the data have a fixed phase difference which increases the bit error rate. The generation of such phase difference can be equivalent to the situation that there is an offset current source I<sub>offset </sub>inside the charge pump (optional) &#x26; filter <b>103</b>, as shown in <figref idref="DRAWINGS">FIG. 1</figref>. With the change of the error signal and reference signal of the phase discriminator <b>102</b>, this offset current source equivalently charges (or discharges) the filter, causing the control voltage of the VCO to increase (or decrease) and then the clock generated by the VCO deviates from the best sampling point.</p>
+<p id="p-0005" num="0004">In order to realize best sampling, usually a phase adjustment function needs to be added into the loop so as to adjust the phase of the clock or data being locked to achieve minimum bit error rate. Since the frequency of the clock is very high, usually phase adjustment is carried out in the data path, in which a common implementation method is to realize phase adjustment inside the phase discriminator, as shown in <figref idref="DRAWINGS">FIG. 2</figref>. <figref idref="DRAWINGS">FIG. 2</figref> is a block diagram of a typical phase discriminator with Hogge structure and phase adjustment function. The data are outputted as Q<b>1</b> after being triggered by the down edge of a D trigger <b>201</b>, and at the same time, data after being delayed (DATA_D) is obtained after going through a delay unit D<b>1</b> <b>203</b> and a phase adjustment unit <b>204</b>, two paths of signals of Q<b>1</b> and DATA_D are fed into an XOR gate <b>205</b> to generate an error signal (ERROR) representing the phase relationship between the clock and data, in addition, Q<b>1</b> signal is delayed by half of a clock period through a latch <b>202</b> to obtain a signal Q<b>2</b>, and Q<b>1</b> and Q<b>2</b> signals are fed into the XOR gate <b>206</b> to generate a reference signal (REFERENCE) related to data flip, and the error signal and reference signal are fed into the charge pump (optional) &#x26; filter <b>103</b> to obtain the control voltage of the VCO so as to control the clock phase outputted by the VCO. The phase adjustment unit <b>204</b> can directly delay the effective flip edge of the data so as to adjust the pulse width of the ERROR signal and thus achieving the phase adjustment of the output clock of the VCO.</p>
+<p id="p-0006" num="0005">Another phase adjustment method is proposed in U.S. patent Ser. No. 10/159,788. Since the fixed phase difference when being locked can be equivalent to the situation that there is an offset current source I<sub>offset </sub>in a filter <b>108</b> in <figref idref="DRAWINGS">FIG. 3</figref>, the concept of this patent is to insert at the filter a switch current source array controlled by phase adjustment (PHASE_ADJUST) [1:0] and PHASE_ADJUST [3:2] so as to counter the equivalent offset current source I<sub>offset</sub>. <figref idref="DRAWINGS">FIG. 3</figref> is a modular block diagram of this patent, in which the wires of the frequency discrimination portion is ignored. In this patent, a current source array <b>300</b> and a current source array <b>350</b> are added at the VCO control voltage, i.e. at the filter <b>108</b>, the equivalent offset current source I<sub>offset </sub>is countered by the current generated by the current source array <b>300</b> and/or current source array <b>350</b> by way of the selection of PHASE_ADJUST [1:0] and PHASE_ADJUST [3:2] so as to achieve best sampling. A defect of this patent lies in that: the switch array controlled by PHASE_ADJUST [1:0] and PHASE_ADJUST [3:2] is directly connected to the VCO control lines, and the noise generated by the switch and/or introduced externally is easily to be coupled into the key modules of the VCO via a parasitic capacitor or substrate, which makes the output clock phase of the VCO jitter. Another defect of this patent lies in that: the phase adjustment is discontinuous and depends upon how many switch arrays are used, on the one hand it makes the actual best sampling not easy to be realized, and on the other hand, more pin resources will be occupied if the precision requirement on phase adjustment is higher.</p>
+<heading id="h-0003" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0007" num="0006">The technical problem to be solved by the present invention is to provide a phase adjustment method and a phase discriminator, which will not introduce noise coupling into the VCO.</p>
+<p id="p-0008" num="0007">In order to solve the above problem, the present invention provides a phase discriminator, comprising: a trigger, a delay unit, a latch connected to the trigger, a first XOR gate connected to the trigger and the delay unit, a second XOR gate connected to the trigger and the latch, the phase discriminator being used for receiving a data signal and a clock signal and outputting an error signal representing phase relationship between the clock signal and the data signal and a reference signal related to flip of the data signal, wherein</p>
+<p id="p-0009" num="0008">the first XOR gate is a current mode logic XOR gate, the first XOR gate comprises a first offset current source circuit outputting a first adjustable offset current for controlling amplitude of the error signal output by the first XOR gate;</p>
+<p id="p-0010" num="0009">and/or, the second XOR gate is a current mode logic XOR gate, the second XOR gate comprises a second offset current source circuit outputting a second adjustable offset current for controlling amplitude of reference signal output by the second XOR gate.</p>
+<p id="p-0011" num="0010">In this case, the first offset current source circuit or the second offset current source circuit comprises:</p>
+<p id="p-0012" num="0011">a plurality of parallel connected current sources and a plurality of switch units, and each switch unit controls ON or OFF of a current source.</p>
+<p id="p-0013" num="0012">The phase discriminator further comprises a continuous phase adjustment unit, by which the first offset current source circuit and the second offset current source circuit are connected to each other, wherein</p>
+<p id="p-0014" num="0013">the first offset current source circuit comprises: 1 discrete current source I<b>10</b>, N discrete current sources I<b>11</b> to I<b>1</b>N, with I<b>10</b> to I<b>1</b>N forming N+1 parallel connected branches of the first offset current source circuit;</p>
+<p id="p-0015" num="0014">the second offset current source circuit comprises: 1 discrete current source I<b>20</b>, N discrete current sources I<b>21</b> to I<b>2</b>N, with I<b>20</b> to I<b>2</b>N forming N+1 parallel connected branches of the second offset current source circuit, and coupled switch arrays K<b>1</b> to KN, wherein Kj controls discrete current sources I<b>1</b><i>j </i>and I<b>2</b><i>j </i>and enables I<b>2</b><i>j </i>to be OFF when I<b>1</b><i>j </i>is ON and enables I<b>2</b><i>j </i>to be ON when I<b>1</b><i>j </i>is OFF;</p>
+<p id="p-0016" num="0015">the continuous phase adjustment unit is configured to: output two paths of variable currents controlled by a differential voltage, wherein one path is used as a parallel connected branch of the first offset current source circuit and another path is used as a parallel connected branch of the second offset current source circuit, with the two paths of current being equal in size and opposite in direction and controlling the first offset current and the second offset current to generate changes with equal size and opposite directions.</p>
+<p id="p-0017" num="0016">In this case</p>
+<p id="p-0018" num="0017">the first XOR gate is configured to control the amplitude of the error signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the first offset current outputted by the first offset current source circuit is adjusted by way of the following method so as to reduce or increase the amplitude of the error signal:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>I</i><sub>ERR</sub><i>R</i>1*<i>T/</i>2=<i>I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0019" num="0018">where I<sub>ERR </sub>is the first offset current before being adjusted, &#x394;I<sub>ERR </sub>is a difference between the first offset current after being adjusted and the first offset current before being adjusted, the T is a period of the clock signal, and R<b>1</b> is a load resistance of the first offset current source circuit, and</p>
+<p id="p-0020" num="0019">the second XOR gate is configured to control the amplitude of the reference signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the amplitude of the reference signal is kept unchanged, or,</p>
+<p id="p-0021" num="0020">the first XOR gate is configured to control the amplitude of the error signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the amplitude of the error signal is kept unchanged;</p>
+<p id="p-0022" num="0021">the second XOR gate is configured to control the amplitude of the reference signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the second offset current outputted by the second offset current source circuit is adjusted by way of the following method so as to reduce or increase the amplitude of the reference signal:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>I</i><sub>REF</sub><i>R</i>2*<i>T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0023" num="0022">where the &#x394;I<sub>REF </sub>is the difference between the second offset current after being adjusted and the second offset current before being adjusted, and R<b>2</b> is the load resistance of the second offset current source circuit.</p>
+<p id="p-0024" num="0023">Wherein,</p>
+<p id="p-0025" num="0024">the first XOR gate is configured to control the amplitude of the error signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the first offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the error signal:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>2<i>*&#x394;I</i><sub>ERR</sub><i>R</i>1*<i>T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0026" num="0025">where the I<sub>ERR </sub>is the first offset current before being adjusted, the &#x394;I<sub>ERR </sub>is the difference between the first offset current after being adjusted and the first offset current before being adjusted, the T is a period of the clock signal, and the R<b>1</b> is a load resistance of the first offset current source circuit,</p>
+<p id="p-0027" num="0026">the second XOR gate is configured to control the amplitude of the reference signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the second offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the reference signal, and the increased or reduced amplitude of the reference signal is equal to that of the error signal:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>2<i>*&#x394;I</i><sub>REF</sub><i>R</i>2*<i>T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0028" num="0027">where the &#x394;I<sub>ERR </sub>is the difference between the second offset current after being adjusted and the second offset current before being adjusted, and the R<b>2</b> is the load resistance of the second offset current source circuit.</p>
+<p id="p-0029" num="0028">In this case, R<b>1</b>=R<b>2</b>.</p>
+<p id="p-0030" num="0029">In order to solve the above problem, the present invention also provides the clock and data recovery system, comprising a phase discriminator mentioned above.</p>
+<p id="p-0031" num="0030">In order to solve the above problem, the present invention also provides a phase adjustment method applied to the above clock and data recovery system, comprising:</p>
+<p id="p-0032" num="0031">when a clock signal leads or falls behind a data signal, adjusting a first offset current of a first XOR gate and/or a second offset current of a second XOR gate.</p>
+<p id="p-0033" num="0032">Wherein,</p>
+<p id="p-0034" num="0033">the step of adjusting the first offset current of the first XOR gate and/or the second offset current of the second XOR gate comprises: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, amplitude of the reference signal is kept unchanged, and the first offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the error signal:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>I</i><sub>ERR</sub><i>R</i>1*<i>T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0035" num="0034">where the I<sub>ERR </sub>is the first offset current before being adjusted, the &#x394;I<sub>ERR </sub>is the difference between the first offset current after being adjusted and the first offset current before being adjusted, the T is the period of the clock signal, and the R<b>1</b> is the load resistance of the first offset current source circuit;</p>
+<p id="p-0036" num="0035">or, the amplitude of the error signal is kept unchanged, and the second offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the reference signal:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>I</i><sub>REF</sub><i>R</i>2*<i>T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0037" num="0036">where the &#x394;I<sub>REF </sub>is the difference between the second offset current after being adjusted and the second offset current before being adjusted, and R<b>2</b> is the load resistance of the second offset current source circuit.</p>
+<p id="p-0038" num="0037">Wherein,</p>
+<p id="p-0039" num="0038">the step of adjusting the first offset current of the first XOR gate and/or the second offset current of the second XOR gate comprises: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the first offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the error signal:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>2<i>*&#x394;I</i><sub>ERR</sub><i>R</i>1*<i>T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0040" num="0039">where the I<sub>ERR </sub>is the first offset current before being adjusted, the &#x394;I<sub>ERR </sub>is the difference between the first offset current after being adjusted and the first offset current before being adjusted, the T is the period of the clock signal, and the R<b>1</b> is the load resistance of the first offset current source circuit; and</p>
+<p id="p-0041" num="0040">the second offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the reference signal, and the increased or reduced amplitude of the reference signal is equal to that of the error signal:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>2<i>*&#x394;I</i><sub>REF</sub><i>R</i>2*<i>T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0042" num="0041">where the &#x394;I<sub>REF </sub>is the difference between the second offset current after being adjusted and the second offset current before being adjusted, and the R<b>2</b> is the load resistance of the second offset current source circuit.</p>
+<p id="p-0043" num="0042">In this case, R<b>1</b>=R<b>2</b>.</p>
+<p id="p-0044" num="0043">The phase adjustment method and phase discriminator proposed in the present invention can prevent introducing noise coupling into the VCO module and at the same time can realize the true best sampling.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF DRAWINGS</heading>
+<p id="p-0045" num="0044"><figref idref="DRAWINGS">FIG. 1</figref> is a structural block diagram of a typical clock and data recovery system.</p>
+<p id="p-0046" num="0045"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram of a typical phase discriminator with Hogge structure and phase adjustment function.</p>
+<p id="p-0047" num="0046"><figref idref="DRAWINGS">FIG. 3</figref> is a structural block diagram of a phase adjustment method employed in the U.S. Pat. No. 7,386,085B2.</p>
+<p id="p-0048" num="0047"><figref idref="DRAWINGS">FIG. 4</figref> is a block diagram of a phase adjustment solution proposed in the present invention, wherein the phase adjustment is realized inside an XOR gate.</p>
+<p id="p-0049" num="0048"><figref idref="DRAWINGS">FIG. 5</figref> is a typical current mode logic XOR gate.</p>
+<p id="p-0050" num="0049"><figref idref="DRAWINGS">FIG. 6</figref> is the phase relationship between the clock and the data and the output waveforms of the error signal (ERROR) and reference signal (REFERENCE) during best sampling under an ideal situation.</p>
+<p id="p-0051" num="0050"><figref idref="DRAWINGS">FIG. 7</figref> is a phase adjustment method proposed in the present invention in the situation where the clock leads the data.</p>
+<p id="p-0052" num="0051"><figref idref="DRAWINGS">FIG. 8</figref> is another phase adjustment method proposed in the present invention in the situation where the clock leads the data.</p>
+<p id="p-0053" num="0052"><figref idref="DRAWINGS">FIG. 9</figref> is the situation where the clock falls behind the data corresponding to <figref idref="DRAWINGS">FIG. 7</figref>.</p>
+<p id="p-0054" num="0053"><figref idref="DRAWINGS">FIG. 10</figref> is the situation where the clock falls behind the data corresponding to <figref idref="DRAWINGS">FIG. 8</figref>.</p>
+<p id="p-0055" num="0054"><figref idref="DRAWINGS">FIG. 11</figref> is a block diagram of a discrete phase adjustment circuit based on a switch array for the above two adjustment methods proposed in the present invention.</p>
+<p id="p-0056" num="0055"><figref idref="DRAWINGS">FIG. 12</figref> is a block diagram of a circuit which can realize continuous phase adjustment proposed in the present invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">PREFERRED EMBODIMENTS OF THE PRESENT INVENTION</heading>
+<p id="p-0057" num="0056">In order to make the object, technical solution and advantages of the present invention more clear, the embodiments of the present invention will be further described in detail in conjunction with the accompanying drawings. It needs to note that the embodiments of the present application and the features in the embodiments can be combined with each other if there is no conflict.</p>
+<p id="p-0058" num="0057">The core concept of the present invention is to realize the phase adjustment function at the XOR gate of the phase discriminator. Since the phase adjustment is far away from the key modules of the VCO, it will not cause noise coupling.</p>
+<p id="p-0059" num="0058">The present invention provides a phase discriminator, as shown in <figref idref="DRAWINGS">FIG. 4</figref>. The phase adjustment function is mainly realized at two XOR gates <b>404</b> and <b>405</b> based on the Hogge phase discriminator. As shown in <figref idref="DRAWINGS">FIG. 4</figref>, the phase discriminator in the present invention includes: a trigger <b>401</b>, a delay unit <b>402</b>, a latch <b>403</b>, a first XOR gate <b>404</b>, and a second XOR gate <b>405</b>, wherein the first XOR gate <b>404</b> and/or second XOR gate <b>405</b> are/is current mode logic XOR gate(s), wherein</p>
+<p id="p-0060" num="0059">the data is outputted as Q<b>1</b> after being triggered by the down edge of a D trigger <b>401</b>, and at the same time, data after being delayed (DATA_D) is obtained after going through a delay unit <b>402</b>, two paths of signals of Q<b>1</b> and DATA_D are fed into an XOR gate <b>404</b> to generate an error signal (ERROR) representing the phase relationship between the clock and data, in addition, Q<b>1</b> signal is delayed by half of a clock period through a latch <b>403</b> to obtain a signal Q<b>2</b>, and Q<b>1</b> and Q<b>2</b> signals are fed into the XOR gate <b>405</b> to generate a reference signal (REFERENCE) related to data flip, and the error signal and reference signal are fed into the charge pump (optional) &#x26; filter <b>103</b> to obtain the control voltage of the VCO so as to control the clock phase outputted by the VCO.</p>
+<p id="p-0061" num="0060">The first XOR gate <b>404</b> includes the first offset current source circuit outputting the first adjustable offset current for controlling the amplitude of the error signal outputted by the first XOR gate <b>404</b>; and</p>
+<p id="p-0062" num="0061">the second XOR gate <b>405</b> includes the second offset current source circuit outputting the second adjustable offset current for controlling the amplitude of the reference signal outputted by the second XOR gate.</p>
+<p id="p-0063" num="0062">In this case, both the first XOR gate <b>404</b> and the second XOR gate <b>405</b> can be current mode logic XOR gates including adjustable offset current source circuits. Also, one of the first XOR gate <b>404</b> and the second XOR gate <b>405</b> can be a current mode logic XOR gate including an adjustable offset current source circuit and another is a XOR gate including a nonadjustable offset current source circuit.</p>
+<p id="p-0064" num="0063">The result of the current mode logic XOR gate can be made reference to <figref idref="DRAWINGS">FIG. 5</figref>. <figref idref="DRAWINGS">FIG. 5</figref> is a current mode logic XOR gate <b>500</b>, with the output thereof being the XOR operation of two input signals and the amplitude of the output signal (single end) being decided by the product of a current source I<sub>bias </sub><b>501</b> and a resistor R<b>502</b>. Since the phase adjustment function is implemented in the phase discriminator and is far away from the VCO module, noise can be avoided being introduced into the VCO.</p>
+<p id="p-0065" num="0064">The working principle of the circuit shown in <figref idref="DRAWINGS">FIG. 5</figref> is as follows: when the input ends A and B are high or low simultaneously, M<b>5</b> and M<b>2</b> or M<b>6</b> and M<b>3</b> conduct simultaneously so as to decrease the output end OUT, in addition, M<b>1</b> and M<b>5</b>, M<b>4</b> and M<b>6</b> do not conduct simultaneously so as to increase the output end OUT_N, thus, when the inputs are the same, the output of the circuit is low. When A is different from B, for example, A is high and B is low, M<b>5</b> and M<b>1</b> are ON to decrease OUT_N, while since M<b>2</b> and M<b>6</b> are OFF, OUT is caused to be increased, thus the output is high; and when A is low and B is high, M<b>4</b> and M<b>6</b> are ON to decrease OUT_N, while M<b>3</b> and M<b>5</b> are OFF, OUT is caused to be increased, and the output is high.</p>
+<p id="p-0066" num="0065"><figref idref="DRAWINGS">FIG. 6</figref> the phase relationship between the clock and the data and the output waveforms of the error signal (ERROR) and reference signal (REFERENCE) during best sampling under an ideal situation, wherein I<sub>ERR </sub>and I<sub>REF </sub>are offset currents generated by the offset current source generating the error signal and the offset current source generating the reference signal respectively, at this moment, I<sub>ERR</sub>=I<sub>REF</sub>. Assuming that there is a fixed phase difference, as shown by <b>701</b> in <figref idref="DRAWINGS">FIG. 7</figref>, at this moment, the clock leads the data by time T<sub>offset</sub>. Since the offset voltage generated by the equivalent offset current source I<sub>offset </sub>within a period is I<sub>offset</sub>*(T/2&#x2212;T<sub>offset</sub>), the two methods proposed in the present invention counter this part of offset in the XOR gate. The first method is as shown by <b>702</b> in <figref idref="DRAWINGS">FIG. 7</figref>, which can decrease the amplitude of the error signal while ensuring the amplitude of the reference signal not to be changed to meet the following relation, i.e. adjust the first offset current to meet the following equation:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>I</i><sub>ERR</sub><i>R</i>1*<i>T/</i>2<i>=I</i><sub>offset</sub>*(<i>T/</i>2&#x2212;<i>T</i><sub>offset</sub>)=<i>I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset</sub>=CONT&#x2003;&#x2003;(1)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0067" num="0066">As long as the above equation is met, the best sampling condition can be met when the loop is locked. The meaning represented by the above equation is that: it can be seen according to the effects of the average voltage value that the average voltage value I<sub>offset</sub>*(T/2&#x2212;T<sub>offset</sub>) generated within the phase difference T<sub>offset </sub>caused by I<sub>offset </sub>(which should be divided by the period T to obtain the actual average value, however, each item in equation (1) is divided by T, so it is equivalent to that there is no multiplication) can be equivalent to I<sub>offset</sub>*(T/2&#x2212;T<sub>offset</sub>), and this part of average voltage value can also be equivalent by &#x394;I<sub>ERR</sub>R*T/2 generated by way of adjusting the amplitude of the error signal, and the above quantities shall be constant, represented as CONT, when the entire phase locked loop is locked. &#x394;I<sub>ERR </sub>represents the value of the current after the phase adjustment of the first offset current source circuit minus the current size before the phase adjustment, i.e. the current change quantity before and after phase adjustment, wherein R<b>1</b> represents the load resistance of the first offset current source circuit, I<sub>ERR </sub>is the first offset current before being adjusted, and T is the period of the clock signal. In addition, the amplitude of the error signal can also be kept unchanged and the amplitude of the reference signal is increased to adjust the second offset current by way of the following method:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>I</i><sub>REF</sub><i>R</i>2*<i>T/</i>2<i>=I</i><sub>offset</sub>*(<i>T/</i>2<i>&#x2212;T</i><sub>offset</sub>)=<i>I</i><sub>ERR</sub><i>R</i>1<i>*T</i><sub>offset</sub>=CONT<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0068" num="0067">where the &#x394;I<sub>ERR </sub>is the difference between the second offset current after being adjusted and the second offset current before being adjusted, and R<b>2</b> is the load resistance of the second offset current source circuit.</p>
+<p id="p-0069" num="0068">The second method is as shown by <b>802</b> in <figref idref="DRAWINGS">FIG. 8</figref>, and the error signal and reference signal are decreased and increased by the same amplitude respectively so as to meet the following relation:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>2<i>*&#x394;I</i><sub>ERR</sub><i>R</i>1*<i>T/</i>2=2<i>*&#x394;I</i><sub>REF</sub><i>R</i>2*<i>T/</i>2<i>=I</i><sub>offset</sub>*(<i>T/</i>2&#x2212;<i>T</i><sub>offset</sub>)=<i>I</i><sub>ERR</sub><i>R</i>1<i>*T</i><sub>offset</sub>=CONT&#x2003;&#x2003;(2)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0070" num="0069">As long as the above equation is met, the best sampling condition can also be met when the loop is locked.</p>
+<p id="p-0071" num="0070">Of course, the decreased amplitude of the error signal and the increased amplitude of the reference signal can be different, what needs to be ensured is that the average value of the decreased voltage amplitude of the error signal minus the average value of the increased voltage amplitude of the reference signal is equal to the average value of that part of voltage raised by I<sub>offset</sub>.</p>
+<p id="p-0072" num="0071">Another situation where there is phase difference is that the clock falls behind, as shown by <b>901</b> in <figref idref="DRAWINGS">FIG. 9</figref>. At this moment, the clock is behind the data by time T<sub>offset</sub>. The offset voltage generated by the equivalent offset current source I<sub>offset </sub>within a period is I<sub>offset</sub>*(T/2+T<sub>offset</sub>). As shown by <b>902</b> in <figref idref="DRAWINGS">FIG. 9</figref>, the amplitude of the error signal can be increased while ensuring the amplitude of the reference signal not to be changed so as to meet the following relation:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>I</i><sub>ERR</sub><i>R</i>1*<i>T/</i>2<i>=I</i><sub>offset</sub>*(<i>T/</i>2<i>+T</i><sub>offset</sub>)=<i>I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset</sub>=CONT&#x2003;&#x2003;(3)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0073" num="0072">As long as the above equation is met, the best sampling condition can be met when the loop is locked.</p>
+<p id="p-0074" num="0073">Similarly, the amplitude of the reference signal can also be kept unchanged and the amplitude of the error signal is decreased to adjust the second offset current by way of the following method:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>I</i><sub>REF</sub><i>R</i>2*<i>T/</i>2<i>=I</i><sub>offset</sub>*(<i>T/</i>2<i>+T</i><sub>offset</sub>)=<i>I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset</sub>=CONT<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0075" num="0074">where the &#x394;I<sub>REF </sub>is the difference between the second offset current after being adjusted and the second offset current before being adjusted, and R<b>2</b> is the load resistance of the second offset current source circuit.</p>
+<p id="p-0076" num="0075">In addition, as shown by <b>1002</b> in <figref idref="DRAWINGS">FIG. 10</figref>, the error signal and reference signal are decreased and increased by the same amplitude respectively so as to meet the following relation:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>2<i>*&#x394;I</i><sub>ERR</sub><i>R</i>1*<i>T/</i>2=2<i>*&#x394;I</i><sub>REF</sub><i>R</i>2*<i>T/</i>2<i>=I</i><sub>offset</sub>*(<i>T/</i>2<i>+T</i><sub>offset</sub>)=<i>I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset</sub>=CONT&#x2003;&#x2003;(4)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0077" num="0076">As long as the above equation is met, the best sampling condition can also be met when the loop is locked.</p>
+<p id="p-0078" num="0077">Of course, the increased amplitude of the error signal and the decreased amplitude of the reference signal can be different, what needs to be ensured is that the average value of the increased voltage amplitude of the error signal minus the average value of the decreased voltage amplitude of the reference signal is equal to the average value of that part of voltage raised by I<sub>offset</sub>.</p>
+<p id="p-0079" num="0078">In this case, R<b>1</b> can be equal or unequal to R<b>2</b>. In <figref idref="DRAWINGS">FIGS. 7</figref>, <b>8</b>, <b>9</b> and <b>10</b>, R<b>1</b>=R<b>2</b>=R.</p>
+<p id="p-0080" num="0079">In this case, the offset current source circuits in the first XOR gate and/or the second XOR gate can be implemented on the basis of the following circuit:</p>
+<p id="p-0081" num="0080">this offset current source circuit includes a plurality of parallel connected current sources and a plurality of switch units, with each switch unit being used for controlling the ON or OFF of a current source. A particular implementation is as shown in <figref idref="DRAWINGS">FIG. 11</figref>.</p>
+<p id="p-0082" num="0081"><figref idref="DRAWINGS">FIG. 11</figref> is a block diagram of a discrete phase adjustment circuit based on a switch array for the above two adjustment methods proposed in the present invention. As shown in <figref idref="DRAWINGS">FIG. 11</figref>, the circuit mainly consists of mirror current sources I<sub>r</sub>, I<sub>sse</sub>, I<sub>sse0</sub>, I<sub>sse1</sub>, . . . , and I<sub>ssen </sub>and a switch array <b>1101</b>, and the offset current source I<sub>ERR </sub>used for forming the XOR gate generating the error signal meets the following relation:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>I</i><sub>ERR</sub><i>=I</i><sub>sse</sub>+ADJ[0<i>]*I</i><sub>sse</sub>0+ADJ[1<i>]*I</i><sub>sse</sub>1+ . . . +ADJ[<i>n]*Issen</i>&#x2003;&#x2003;(5)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0083" num="0082">Thus, the size of the offset current source I<sub>ERR </sub>of the XOR gate generating the error signal step by step through the ON or OFF of the switch arrays from ADJ[0] to ADJ[n], so as to achieve the object of adjusting the amplitude of the error signal and then adjusting the phase of the VCO feedback clock proposed in the present invention. Of course, this method can also be used for the offset current source I<sub>REF </sub>of XOR gate generating the reference signal or applied to the offset current source I<sub>ERR </sub>of the XOR gate generating the error signal simultaneously and the offset current source I<sub>REF </sub>of XOR gate generating the reference signal, so as to achieve the object of phase adjustment. The higher the precision required by such structure, the more switch arrays required.</p>
+<p id="p-0084" num="0083">In order to further reduce the required switch arrays and achieve real best sampling, further proposed in the present invention is another implementation of the first offset current source circuit and the second offset current source circuit as follows:</p>
+<p id="p-0085" num="0084">the first offset current source circuit comprises: 1 discrete current source I<b>10</b>, N discrete current sources I<b>11</b> to I<b>1</b>N, with I<b>10</b> to I<b>1</b>N forming N+1 parallel connected branches of the first offset current source circuit;</p>
+<p id="p-0086" num="0085">the second offset current source circuit comprises: 1 discrete current source I<b>20</b>, N discrete current sources I<b>21</b> to I<b>2</b>N, with I<b>20</b> to I<b>2</b>N forming N+1 parallel connected branches of the second offset current source circuit, and coupled switch arrays K<b>1</b> to KN, wherein Kj controls discrete current sources I<b>1</b><i>j </i>and I<b>2</b><i>j </i>and enables I<b>2</b><i>j </i>to be OFF when I<b>1</b><i>j </i>is ON and enables I<b>2</b><i>j </i>to be ON when I<b>1</b><i>j </i>is OFF; and</p>
+<p id="p-0087" num="0086">the first offset current source circuit and the second offset current source circuit are connected to each other via a continuous phase adjustment unit, with the continuous phase adjustment unit being used for outputting two paths of variable currents controlled by a differential voltage, wherein one path thereof is used as a parallel branch of the first offset current source circuit and another being used as a parallel branch of the second offset current source circuit, the two paths of currents are equal in size and opposite in direction, and the first offset current and the second offset current are controlled to generate changes with equal size and opposite direction.</p>
+<p id="p-0088" num="0087">An implementation of the above circuit is as shown in <figref idref="DRAWINGS">FIG. 12</figref>, and N=2 is taken as an example for description. <figref idref="DRAWINGS">FIG. 12</figref> mainly includes a coupling switch array <b>1201</b> and a continuous phase adjustment unit <b>1202</b>. In this case, the coupling switch array <b>1201</b> controls the discrete current sources I<sub>01 </sub>and I<sub>02 </sub>in the I<sub>ERR </sub>and I<sub>REF</sub>, and during practical operation, the coupling switch array <b>1201</b> is required to be able to control the discrete current source I<sub>01 </sub>in the right I<sub>REF </sub>to be OFF when the discrete current source I<sub>01 </sub>in the left I<sub>ERR </sub>is ON, and vice versa, when the discrete current source I<sub>01 </sub>in the left I<sub>ERR </sub>is OFF, the discrete current source I<sub>01 </sub>in the right I<sub>REF </sub>is ON. Likewise, same requirements are placed on the discrete current source I<sub>02 </sub>on either side. As such, it can be ensured that the second phase adjustment method proposed in the present invention can be satisfied so as to roughly adjust the phase. The continuous adjustment of the phase is achieved by the continuous phase adjustment unit <b>1202</b>.</p>
+<p id="p-0089" num="0088">The continuous phase adjustment unit <b>1202</b> is a pull current lump current mirror. V<b>1</b> and V<b>2</b> differentially control the current Iss to flow through two branches, and then two mirror tubes on both sides generate two paths of differential currents on I<sub>err</sub><sub><sub2>&#x2014;</sub2></sub><sub>adj </sub>and I<sub>ref</sub><sub><sub2>&#x2014;</sub2></sub><sub>adj </sub>for outputting, so that the I<sub>ERR </sub>and I<sub>REF </sub>achieve current change with equal quantity and reverse phase and the amplitudes of the error signal and the reference signal can change in the opposite direction. Since the two following pairs of mirror tubes match each other, the following relation (6) is met, and the I<sub>err</sub><sub><sub2>&#x2014;</sub2></sub><sub>adj </sub>and I<sub>ref</sub><sub><sub2>&#x2014;</sub2></sub><sub>adj </sub>are controlled by the differential control voltages V<b>1</b> and V<b>2</b> and have continuous changes with equal quantity in the opposite direction, so that the above circuit can achieve the continuous adjustment of the amplitudes of the error signal and the reference signal, thus the second phase adjustment method proposed in the present invention can be ensured to be met so as to continuously adjust the phase. In this case, the differential control voltages V<b>1</b> and V<b>2</b> can be generated by an external circuit and can also be generated by self-adaptive method inside the chip, for example, a pair of differential control voltages can be generated by detecting and judging the bit error rate of the restored data.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>I</i><sub>err</sub><sub><sub2>&#x2014;</sub2></sub><sub>adj</sub><i>+I</i><sub>ref</sub><sub><sub2>&#x2014;</sub2></sub><sub>adh</sub><i>=ISS</i>&#x2003;&#x2003;(6)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>I</i><sub>ERR</sub><i>=&#x394;I</i><sub>REF</sub>&#x2003;&#x2003;(7)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0090" num="0089">The continuous phase adjustment unit shown in <figref idref="DRAWINGS">FIG. 12</figref> is only an example, and other circuits which can generate two paths of currents with equal amplitude and opposite direction also fall into the scope of protection of the present invention.</p>
+<p id="p-0091" num="0090">Of course, the adjustable offset current source circuits shown in <figref idref="DRAWINGS">FIGS. 11 and 12</figref> are only example, which are not limited by the present invention. Adjustable offset current source circuits with other structures also fall into the scope of protection of the present invention.</p>
+<p id="p-0092" num="0091">By way of the adjustment method shown in <figref idref="DRAWINGS">FIG. 12</figref>, the number of switch arrays required can be effectively reduced and real best sampling can be achieved, furthermore, it can also be made a self-adaptive best sampling, i.e. the clock and data recovery system generates a control signal by judging the bit error rate of the restored data to adjust the V<b>1</b> and V<b>2</b> in <figref idref="DRAWINGS">FIG. 12</figref> so as to achieve best sampling and make the bit error rate of the restored data to achieve the required scope.</p>
+<p id="p-0093" num="0092">The present invention also provides a clock and data recovery system, comprising the phase discriminator described in the present invention.</p>
+<p id="p-0094" num="0093">The present invention also provides a phase adjustment method applied to the clock and data recovery system described in the present invention, comprising:</p>
+<p id="p-0095" num="0094">when a clock signal leads or falls behind a data signal, adjusting a first offset current of a first XOR gate and/or a second offset current of a second XOR gate.</p>
+<p id="p-0096" num="0095">In this case, the adjustment step includes: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, amplitude of the reference signal is kept unchanged, and the first offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the error signal:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>I</i><sub>ERR</sub><i>R</i>1*<i>T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0097" num="0096">where I<sub>ERR </sub>is the first offset current before being adjusted, &#x394;I<sub>ERR </sub>is the difference between the first offset current after being adjusted and the first offset current before being adjusted, the T is the period of the clock signal, and R<b>1</b> is the load resistance of the first offset current source circuit;</p>
+<p id="p-0098" num="0097">or, the amplitude of the error signal is kept unchanged, and the second offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the reference signal:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>I</i><sub>REF</sub><i>R</i>2*<i>T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0099" num="0098">where the &#x394;I<sub>REF </sub>is the difference between the second offset current after being adjusted and the second offset current before being adjusted, and R<b>2</b> is the load resistance of the second offset current source circuit.</p>
+<p id="p-0100" num="0099">In this case, the adjustment step includes: when the clock signal leads or is behind the data signal by time T<sub>offset</sub>, the first offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the error signal:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>2<i>*&#x394;I</i><sub>ERR</sub><i>R</i>1*<i>T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0101" num="0100">where I<sub>ERR </sub>is the first offset current before being adjusted, &#x394;I<sub>ERR </sub>is the difference between the first offset current after being adjusted and the first offset current before being adjusted, the T is the period of the clock signal, and R<b>1</b> is the load resistance of the first offset current source circuit; and</p>
+<p id="p-0102" num="0101">the second offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the reference signal, and the increased or reduced amplitude of the reference signal is equal to that of the error signal:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>2<i>*&#x394;I</i><sub>REF</sub><i>R</i>2*<i>T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1*<i>T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0103" num="0102">where the &#x394;I<sub>REF </sub>is the difference between the second offset current after being adjusted and the second offset current before being adjusted, and R<b>2</b> is the load resistance of the second offset current source circuit. In this case, R<b>1</b>=R<b>2</b>. Of course, R<b>1</b> may also be unequal to R<b>2</b>.</p>
+<heading id="h-0006" level="1">INDUSTRIAL APPLICABILITY</heading>
+<p id="p-0104" num="0103">The phase adjustment method and phase discriminator proposed in the present invention can prevent introducing noise coupling into the VCO module and at the same time can realize true best sampling. In addition, the present invention can effectively reduce the number of required switch arrays so as to make the bit error rate of the restored data to reach the required scope.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What we claim is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A phase discriminator, comprising: a trigger, a delay unit, a latch connected to the trigger, a first XOR gate connected to the trigger and the delay unit, a second XOR gate connected to the trigger and the latch, the phase discriminator being used for receiving a data signal and a clock signal and outputting an error signal representing phase relationship between the clock signal and the data signal and a reference signal related to flip of the data signal, wherein
+<claim-text>the first XOR gate is a current mode logic XOR gate, the first XOR gate comprises a first offset current source circuit outputting a first adjustable offset current for controlling amplitude of the error signal output by the first XOR gate;</claim-text>
+<claim-text>and/or, the second XOR gate is a current mode logic XOR gate, the second XOR gate comprises a second offset current source circuit outputting a second adjustable offset current for controlling amplitude of reference signal output by the second XOR gate.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The phase discriminator as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the first offset current source circuit or the second offset current source circuit comprises:
+<claim-text>a plurality of parallel connected current sources and a plurality of switch units, and each switch unit controls ON or OFF of a current source.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The phase discriminator as claimed in <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein
+<claim-text>the first XOR gate is configured to control the amplitude of the error signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the first offset current outputted by the first offset current source circuit is adjusted by way of the following method so as to reduce or increase the amplitude of the error signal:
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>I</i><sub>ERR</sub><i>R</i>1<i>*T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1<i>*T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+<claim-text>where I<sub>ERR </sub>is the first offset current before being adjusted, &#x394;I<sub>ERR </sub>is a difference between the first offset current after being adjusted and the first offset current before being adjusted, the T is a period of the clock signal, and R<b>1</b> is a load resistance of the first offset current source circuit, and</claim-text>
+<claim-text>the second XOR gate is configured to control the amplitude of the reference signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the amplitude of the reference signal is kept unchanged, or,</claim-text>
+<claim-text>the first XOR gate is configured to control the amplitude of the error signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the amplitude of the error signal is kept unchanged;</claim-text>
+<claim-text>the second XOR gate is configured to control the amplitude of the reference signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the second offset current outputted by the second offset current source circuit is adjusted by way of the following method so as to reduce or increase the amplitude of the reference signal:
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>&#x394;I</i><sub>REF</sub><i>R</i>2<i>*T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1<i>*T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+<claim-text>where the &#x394;I<sub>REF </sub>is the difference between the second offset current after being adjusted and the second offset current before being adjusted, and R<b>2</b> is the load resistance of the second offset current source circuit.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. A clock and data recovery system, comprising the phase discriminator as claimed in <claim-ref idref="CLM-00002">claim 2</claim-ref>.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The phase discriminator as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein
+<claim-text>the first XOR gate is configured to control the amplitude of the error signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the first offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the error signal:
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>2<i>*&#x394;I</i><sub>ERR</sub><i>R</i>1<i>*T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1<i>*T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+<claim-text>where the I<sub>ERR </sub>is the first offset current before being adjusted, the &#x394;I<sub>ERR </sub>is the difference between the first offset current after being adjusted and the first offset current before being adjusted, the T is a period of the clock signal, and the R<b>1</b> is a load resistance of the first offset current source circuit,</claim-text>
+<claim-text>the second XOR gate is configured to control the amplitude of the reference signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the second offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the reference signal, and the increased or reduced amplitude of the reference signal is equal to that of the error signal:
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>2<i>*&#x394;I</i><sub>REF</sub><i>R</i>2<i>*T/</i>2<sub>&#x25a1;</sub><i>I</i><sub>ERR</sub><i>R</i>1<i>*T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+<claim-text>where the &#x394;I<sub>ERR </sub>is the difference between the second offset current after being adjusted and the second offset current before being adjusted, and the R<b>2</b> is the load resistance of the second offset current source circuit.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The phase discriminator as claimed in <claim-ref idref="CLM-00005">claim 5</claim-ref>, wherein R<b>1</b>=R<b>2</b>.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. A clock and data recovery system, comprising the phase discriminator as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. A phase adjustment method, applied to the clock and data recovery system as claimed in <claim-ref idref="CLM-00007">claim 7</claim-ref>, comprising:
+<claim-text>when a clock signal leads or falls behind a data signal, adjusting a first offset current of a first XOR gate and/or a second offset current of a second XOR gate.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method as claimed in <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein
+<claim-text>the step of adjusting the first offset current of the first XOR gate and/or the second offset current of the second XOR gate comprises: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, amplitude of the reference signal is kept unchanged, and the first offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the error signal:
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>I</i><sub>ERR</sub><i>R</i>1<i>*T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1<i>*T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+<claim-text>where the I<sub>ERR </sub>is the first offset current before being adjusted, the &#x394;I<sub>ERR </sub>is the difference between the first offset current after being adjusted and the first offset current before being adjusted, the T is the period of the clock signal, and the R<b>1</b> is the load resistance of the first offset current source circuit;</claim-text>
+<claim-text>or, the amplitude of the error signal is kept unchanged, and the second offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the reference signal:
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>I</i><sub>REF</sub><i>R</i>2<i>*T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1<i>*T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+<claim-text>where the &#x394;I<sub>REF </sub>is the difference between the second offset current after being adjusted and the second offset current before being adjusted, and R<b>2</b> is the load resistance of the second offset current source circuit.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method as claimed in <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein
+<claim-text>the step of adjusting the first offset current of the first XOR gate and/or the second offset current of the second XOR gate comprises: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the first offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the error signal:
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>2<i>*&#x394;I</i><sub>ERR</sub><i>R</i>1<i>*T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1<i>*T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+<claim-text>where the I<sub>ERR </sub>is the first offset current before being adjusted, the &#x394;I<sub>ERR </sub>is the difference between the first offset current after being adjusted and the first offset current before being adjusted, the T is the period of the clock signal, and the R<b>1</b> is the load resistance of the first offset current source circuit; and</claim-text>
+<claim-text>the second offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the reference signal, and the increased or reduced amplitude of the reference signal is equal to that of the error signal:
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>2<i>*&#x394;I</i><sub>REF</sub><i>R</i>2<i>*T/</i>2<sub>&#x25a1;</sub><i>I</i><sub>ERR</sub><i>R</i>1<i>*T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+<claim-text>where the &#x394;I<sub>REF </sub>is the difference between the second offset current after being adjusted and the second offset current before being adjusted, and the R<b>2</b> is the load resistance of the second offset current source circuit.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The method as claimed in <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein R<b>1</b>=R<b>2</b>.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The phase discriminator as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein
+<claim-text>the first XOR gate is configured to control the amplitude of the error signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the first offset current outputted by the first offset current source circuit is adjusted by way of the following method so as to reduce or increase the amplitude of the error signal:
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>&#x394;I</i><sub>ERR</sub><i>R</i>1<i>*T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1<i>*T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+<claim-text>where I<sub>ERR </sub>is the first offset current before being adjusted, &#x394;I<sub>ERR </sub>is a difference between the first offset current after being adjusted and the first offset current before being adjusted, the T is a period of the clock signal, and R<b>1</b> is a load resistance of the first offset current source circuit, and</claim-text>
+<claim-text>the second XOR gate is configured to control the amplitude of the reference signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the amplitude of the reference signal is kept unchanged, or,</claim-text>
+<claim-text>the first XOR gate is configured to control the amplitude of the error signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the amplitude of the error signal is kept unchanged;</claim-text>
+<claim-text>the second XOR gate is configured to control the amplitude of the reference signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the second offset current outputted by the second offset current source circuit is adjusted by way of the following method so as to reduce or increase the amplitude of the reference signal:
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>&#x394;I</i><sub>REF</sub><i>R</i>2*<i>T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1<i>*T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+<claim-text>where the &#x394;I<sub>REF </sub>is the difference between the second offset current after being adjusted and the second offset current before being adjusted, and R<b>2</b> is the load resistance of the second offset current source circuit.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The phase discriminator as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising a continuous phase adjustment unit, by which the first offset current source circuit and the second offset current source circuit are connected to each other, wherein
+<claim-text>the first offset current source circuit comprises: 1 discrete current source I<b>10</b>, N discrete current sources I<b>11</b> to I<b>1</b>N, with I<b>10</b> to I<b>1</b>N forming N+1 parallel connected branches of the first offset current source circuit;</claim-text>
+<claim-text>the second offset current source circuit comprises: 1 discrete current source I<b>20</b>, N discrete current sources I<b>21</b> to I<b>2</b>N, with I<b>20</b> to I<b>2</b>N forming N+1 parallel connected branches of the second offset current source circuit, and coupled switch arrays K<b>1</b> to KN, wherein Kj controls discrete current sources I<b>1</b><i>j </i>and I<b>2</b><i>j </i>and enables I<b>2</b><i>j </i>to be OFF when I<b>1</b><i>j </i>is ON and enables I<b>2</b><i>j </i>to be ON when I<b>1</b><i>j </i>is OFF;</claim-text>
+<claim-text>the continuous phase adjustment unit is configured to: output two paths of variable currents controlled by a differential voltage, wherein one path is used as a parallel connected branch of the first offset current source circuit and another path is used as a parallel connected branch of the second offset current source circuit, with the two paths of current being equal in size and opposite in direction and controlling the first offset current and the second offset current to generate changes with equal size and opposite directions.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The phase discriminator as claimed in <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein
+<claim-text>the first XOR gate is configured to control the amplitude of the error signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset </sub>the first offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the error signal:
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>2<i>*&#x394;I</i><sub>ERR</sub><i>R</i>1<i>*T/</i>2<i>=I</i><sub>ERR</sub><i>R</i>1<i>*T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+<claim-text>where the I<sub>ERR </sub>is the first offset current before being adjusted, the &#x394;I<sub>ERR </sub>is the difference between the first offset current after being adjusted and the first offset current before being adjusted, the T is a period of the clock signal, and the R<b>1</b> is a load resistance of the first offset current source circuit,</claim-text>
+<claim-text>the second XOR gate is configured to control the amplitude of the reference signal by way of the following method: when the clock signal is ahead or behind the data signal by time T<sub>offset</sub>, the second offset current is adjusted by way of the following method so as to reduce or increase the amplitude of the reference signal, and the increased or reduced amplitude of the reference signal is equal to that of the error signal:
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>2<i>*&#x394;I</i><sub>REF</sub><i>R</i>2<i>*T/</i>2<sub>&#x25a1;</sub><i>I</i><sub>ERR</sub><i>R</i>1<i>*T</i><sub>offset </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+<claim-text>where the &#x394;I<sub>ERR </sub>is the difference between the second offset current after being adjusted and the second offset current before being adjusted, and the R<b>2</b> is the load resistance of the second offset current source circuit.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. A clock and data recovery system, comprising the phase discriminator as claimed in <claim-ref idref="CLM-00013">claim 13</claim-ref>. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

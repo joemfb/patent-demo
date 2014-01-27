@@ -1,0 +1,779 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08624919-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08624919</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13743991</doc-number>
+<date>20130117</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>09</class>
+<subclass>G</subclass>
+<main-group>5</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>345620</main-classification>
+<further-classification>345581</further-classification>
+<further-classification>345672</further-classification>
+</classification-national>
+<invention-title id="d2e51">Method and system for fast clipping of line segments</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>4623880</doc-number>
+<kind>A</kind>
+<name>Bresenham et al.</name>
+<date>19861100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>4642790</doc-number>
+<kind>A</kind>
+<name>Minshull et al.</name>
+<date>19870200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>4731606</doc-number>
+<kind>A</kind>
+<name>Bantz et al.</name>
+<date>19880300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>5079719</doc-number>
+<kind>A</kind>
+<name>Maillot</name>
+<date>19920100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>5195177</doc-number>
+<kind>A</kind>
+<name>Kamiyama et al.</name>
+<date>19930300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>5357599</doc-number>
+<kind>A</kind>
+<name>Luken</name>
+<date>19941000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>5384903</doc-number>
+<kind>A</kind>
+<name>Herrod</name>
+<date>19950100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>5418897</doc-number>
+<kind>A</kind>
+<name>Capri et al.</name>
+<date>19950500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>5455897</doc-number>
+<kind>A</kind>
+<name>Nicholl et al.</name>
+<date>19951000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>5579459</doc-number>
+<kind>A</kind>
+<name>Jennyc</name>
+<date>19961100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>5613052</doc-number>
+<kind>A</kind>
+<name>Narayanaswami</name>
+<date>19970300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>5777618</doc-number>
+<kind>A</kind>
+<name>Kita et al.</name>
+<date>19980700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>6144338</doc-number>
+<kind>A</kind>
+<name>Davies</name>
+<date>20001100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>6359630</doc-number>
+<kind>B1</kind>
+<name>Morse et al.</name>
+<date>20020300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>6864899</doc-number>
+<kind>B1</kind>
+<name>Barrus et al.</name>
+<date>20050300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>7489318</doc-number>
+<kind>B1</kind>
+<name>Wilt</name>
+<date>20090200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>7705845</doc-number>
+<kind>B1</kind>
+<name>Parikh et al.</name>
+<date>20100400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>8018452</doc-number>
+<kind>B1</kind>
+<name>Dow</name>
+<date>20110900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>2003/0043173</doc-number>
+<kind>A1</kind>
+<name>Wasserman et al.</name>
+<date>20030300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>2005/0270311</doc-number>
+<kind>A1</kind>
+<name>Rasmussen et al.</name>
+<date>20051200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>2007/0096945</doc-number>
+<kind>A1</kind>
+<name>Rasmussen et al.</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>2007/0263007</doc-number>
+<kind>A1</kind>
+<name>Robotham et al.</name>
+<date>20071100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>2008/0155460</doc-number>
+<kind>A1</kind>
+<name>Scott et al.</name>
+<date>20080600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>2010/0002007</doc-number>
+<kind>A1</kind>
+<name>Rajagopalan</name>
+<date>20100100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00025">
+<othercit>Foley et al., &#x201c;Computer Graphics: Principles &#x26; Practice in C&#x201d;, Second Edition, Systems Programming Series, Aug. 14, 1995, pp. 111-130.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00026">
+<othercit>PCT Application No. PCT/CA2009/000571, Written Opinion and ISR dated Aug. 21, 2009.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00027">
+<othercit>U.S. Appl. No. 12/429,414, Notice of Allowance dated Feb. 28, 2012.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00028">
+<othercit>U.S. Appl. No. 13/480,911, Notice of Allowance dated Oct. 30, 2012.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00029">
+<othercit>PCT Patent Application No. PCT/CA2009/000751, International Search Report dated Aug. 21, 2009.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00030">
+<othercit>U.S. Appl. No. 12/476,778, Notice of Allowance dated Oct. 10, 2012.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>20</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>345581</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>345620</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>345624</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>8</number-of-drawing-sheets>
+<number-of-figures>11</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>13480911</doc-number>
+<date>20120525</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8384737</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13743991</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>12429414</doc-number>
+<date>20090424</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8207988</doc-number>
+<date>20120626</date>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13480911</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61078247</doc-number>
+<date>20080703</date>
+</document-id>
+</us-provisional-application>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20130127871</doc-number>
+<kind>A1</kind>
+<date>20130523</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only" applicant-authority-category="assignee">
+<addressbook>
+<orgname>Research In Motion Limited</orgname>
+<address>
+<city>Waterloo</city>
+<country>CA</country>
+</address>
+</addressbook>
+<residence>
+<country>CA</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Rajagopalan</last-name>
+<first-name>Ramgopal</first-name>
+<address>
+<city>Kitchener</city>
+<country>CA</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<last-name>Anishchenko</last-name>
+<first-name>Alexander</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="02" rep-type="attorney">
+<addressbook>
+<orgname>Borden Ladner Gervais LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>BlackBerry Limited</orgname>
+<role>03</role>
+<address>
+<city>Waterloo, Ontario</city>
+<country>unknown</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Yang</last-name>
+<first-name>Ryan R</first-name>
+<department>2679</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A method of static graphics rendering in a mobile device. Panning increments are received for panning a previously rendered frame to a panned frame. A rendering region is then determined based on the panning increments. A candidate line segment or polyline is then clipped to create clipped line segments contained within the rendering region. The clipped line segments can then be rendered, and a portion of the previously rendered frame can be copied, to provide the panned frame.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="224.11mm" wi="113.11mm" file="US08624919-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="210.23mm" wi="180.68mm" file="US08624919-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="142.24mm" wi="146.73mm" file="US08624919-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="197.10mm" wi="133.86mm" orientation="landscape" file="US08624919-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="210.23mm" wi="179.41mm" orientation="landscape" file="US08624919-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="224.96mm" wi="135.21mm" file="US08624919-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="239.69mm" wi="154.43mm" file="US08624919-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="233.26mm" wi="162.73mm" file="US08624919-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="244.77mm" wi="165.95mm" file="US08624919-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">TECHNICAL FIELD</heading>
+<p id="p-0002" num="0001">The present application relates graphics rendering. In particular, the present application relates to a method and system for fast clipping of line segments to render static graphic images.</p>
+<heading id="h-0002" level="1">BACKGROUND DISCUSSION</heading>
+<p id="p-0003" num="0002">Line clipping methods and algorithms are well known in the field of computer graphics. In computer graphics, clipping refers to an optimization step where only portions of the vector or raster image that are visible to the user are drawn. This can save processing time, on parts of the image that do not fall into any visible region of the display. For 2D vector graphics data such as polygons and lines, clipping consists of deciding which of the vector data would be completely visible or completely invisible or partially visible. For the former two cases, the system either completely draws or throws away the respective geometry and for the partially visible case the geometry is &#x2018;cut&#x2019; such that only the visible portion is drawn. For example, a line segment is intersected with the visible boundary of the display to come up with a shorter line segment that is completely contained within the bounds of the display. Hence clipping is used to accelerate the time taken to render graphics to the display.</p>
+<p id="p-0004" num="0003">Well known line clipping methods include the Cohen-Sutherland method, in which, for rectangular windows, the four edges of the clip window are extended, and nine regions are created from their intersection, of which only the middle region (viewport) is visible. The Cohen-Sutherland method includes, excludes or partially includes lines based on the regions in which the endpoints lie. The Liang-Barsky line clipping method is another popular line clipping algorithm. It uses the parametric equation of a line and inequalities describing the range of the clipping window to determine the intersections between the line and the clipping rectangle. While these methods are effective, they still require significant computational resources and time to render each new frame. This is of particular concern in mobile devices where new and more powerful graphics applications are being deployed, and where computational resources and power usage are at a premium.</p>
+<p id="p-0005" num="0004">It is, therefore, desirable to provide a method and system of clipping lines that is quicker and less computationally intensive than previously known methods.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0006" num="0005">Embodiments of the present application will now be described, by way of example only, with reference to the attached Figures, wherein:</p>
+<p id="p-0007" num="0006"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram of an exemplary embodiment of a portable electronic device;</p>
+<p id="p-0008" num="0007"><figref idref="DRAWINGS">FIG. 2</figref> is an exemplary block diagram of a communication subsystem component of <figref idref="DRAWINGS">FIG. 1</figref>;</p>
+<p id="p-0009" num="0008"><figref idref="DRAWINGS">FIG. 3</figref> is a block diagram of an exemplary implementation of a node of a wireless network;</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 4</figref> is a block diagram illustrating components of an exemplary configuration of a host system that the portable electronic device can communicate with;</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 5</figref> is a flowchart of an exemplary method;</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 6</figref> illustrates a panning operation;</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 7</figref> illustrates rectangular clipping of a polyline;</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIGS. 8-10</figref> illustrate clipping a polyline against an L-shaped region; and</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 11</figref> shows the eight cases into which clipped line segments can fall.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0016" num="0015">It will be appreciated that for simplicity and clarity of illustration, where considered appropriate, reference numerals may be repeated among the figures to indicate corresponding or analogous elements. In addition, numerous specific details are set forth in order to provide a thorough understanding of the embodiments described herein. However, it will be understood by those of ordinary skill in the art that the embodiments described herein may be practiced without these specific details. In other instances, well-known methods, procedures and components have not been described in detail so as not to obscure the embodiments described herein. Also, the description is not to be considered as limiting the scope of the embodiments described herein.</p>
+<p id="p-0017" num="0016">The embodiments described herein generally relate to portable electronic devices. Examples of portable electronic devices include mobile or handheld wireless communication devices such as pagers, cellular phones, cellular smart-phones, wireless organizers, personal digital assistants, computers, laptops, handheld wireless communication devices, wirelessly enabled notebook computers and the like.</p>
+<p id="p-0018" num="0017">The portable electronic device may be a two-way communication device with advanced data communication capabilities including the capability to communicate with other portable electronic devices or computer systems through a network of transceiver stations. The portable electronic device may also have the capability to allow voice communication. Depending on the functionality provided by the portable electronic device, it may be referred to as a data messaging device, a two-way pager, a cellular telephone with data messaging capabilities, a wireless Internet appliance, or a data communication device (with or without telephony capabilities). To aid the reader in understanding the structure of the portable electronic device and how it communicates with other devices and host systems, reference will now be made to <figref idref="DRAWINGS">FIGS. 1 through 4</figref>.</p>
+<p id="p-0019" num="0018">Referring first to <figref idref="DRAWINGS">FIG. 1</figref>, shown therein is a block diagram of an exemplary embodiment of a portable electronic device <b>100</b>. The portable electronic device <b>100</b> includes a number of components such as a main processor <b>102</b> that controls the overall operation of the portable electronic device <b>100</b>. Communication functions, including data and voice communications, are performed through a communication subsystem <b>104</b>. Data received by the portable electronic device <b>100</b> can be decompressed and decrypted by a decoder <b>103</b>, operating according to any suitable decompression techniques (e.g. YK decompression, and other known techniques) and encryption techniques (e.g. using an encryption technique such as Data Encryption Standard (DES), Triple DES, or Advanced Encryption Standard (AES)). The communication subsystem <b>104</b> receives messages from and sends messages to a wireless network <b>200</b>. In this exemplary embodiment of the portable electronic device <b>100</b>, the communication subsystem <b>104</b> is configured in accordance with the Global System for Mobile Communication (GSM) and General Packet Radio Services (GPRS) standards. The GSM/GPRS wireless network is used worldwide and it is expected that these standards will be superseded eventually by Enhanced Data GSM Environment (EDGE) and Universal Mobile Telecommunications Service (UMTS). New standards are still being defined, but it is believed that they will have similarities to the network behavior described herein, and it will also be understood by persons skilled in the art that the embodiments described herein are intended to use any other suitable standards that are developed in the future. The wireless link connecting the communication subsystem <b>104</b> with the wireless network <b>200</b> represents one or more different Radio Frequency (RF) channels, operating according to defined protocols specified for GSM/GPRS communications. With newer network protocols, these channels are capable of supporting both circuit switched voice communications and packet switched data communications.</p>
+<p id="p-0020" num="0019">Although the wireless network <b>200</b> associated with portable electronic device <b>100</b> is a GSM/GPRS wireless network in one exemplary implementation, other wireless networks may also be associated with the portable electronic device <b>100</b> in variant implementations. The different types of wireless networks that may be employed include, for example, data-centric wireless networks, voice-centric wireless networks, and dual-mode networks that can support both voice and data communications over the same physical base stations. Combined dual-mode networks include, but are not limited to, Code Division Multiple Access (CDMA) or CDMA2000 networks, GSM/GPRS networks (as mentioned above), and third-generation (3G) networks such as EDGE and UMTS. Some other examples of data-centric networks include WiFi 802.11, Mobitex&#x2122; and DataTAC&#x2122; network communication systems. Examples of other voice-centric data networks include Personal Communication Systems (PCS) networks like GSM and Time Division Multiple Access (TDMA) systems. The main processor <b>102</b> also interacts with additional subsystems such as a Random Access Memory (RAM) <b>106</b>, a flash memory <b>108</b>, a display <b>110</b>, an auxiliary input/output (I/O) subsystem <b>112</b>, a data port <b>114</b>, a trackball <b>115</b>, a keyboard <b>116</b>, a speaker <b>118</b>, a microphone <b>120</b>, short-range communications <b>122</b> and other device subsystems <b>124</b>.</p>
+<p id="p-0021" num="0020">Some of the subsystems of the portable electronic device <b>100</b> perform communication-related functions, whereas other subsystems may provide &#x201c;resident&#x201d; or on-device functions. By way of example, the display <b>110</b>, the trackball <b>115</b> and the keyboard <b>116</b> may be used for both communication-related functions, such as entering a text message for transmission over the network <b>200</b>, and device-resident functions such as a calculator or task list.</p>
+<p id="p-0022" num="0021">The portable electronic device <b>100</b> can send and receive communication signals over the wireless network <b>200</b> after network registration or activation procedures have been completed. Network access is associated with a subscriber or user of the portable electronic device <b>100</b>. To identify a subscriber, a SIM/RUIM card <b>126</b> (i.e. Subscriber Identity Module or a Removable User Identity Module) is inserted into a SIM/RUIM interface <b>128</b> in order to communicate with a network. The SIM/RUIM card <b>126</b> is a type of a conventional &#x201c;smart card&#x201d; that can be used to identify a subscriber of the portable electronic device <b>100</b> and to personalize the portable electronic device <b>100</b>, among other things. In the present embodiment, the portable electronic device <b>100</b> is not fully operational for communication with the wireless network <b>200</b> without the SIM/RUIM card <b>126</b>. By inserting the SIM/RUIM card <b>126</b> into the SIM/RUIM interface <b>128</b>, a subscriber can access all subscribed services. Services may include: web browsing and messaging such as e-mail, voice mail, Short Message Service (SMS), and Multimedia Messaging Services (MMS). More advanced services may include: point of sale, field service and sales force automation. The SIM/RUIM card <b>126</b> includes a processor and memory for storing information. Once the SIM/RUIM card <b>126</b> is inserted into the SIM/RUIM interface <b>128</b>, it is coupled to the main processor <b>102</b>. In order to identify the subscriber, the SIM/RUIM card <b>126</b> can include some user parameters such as an International Mobile Subscriber Identity (IMSI). An advantage of using the SIM/RUIM card <b>126</b> is that a subscriber is not necessarily bound by any single physical portable electronic device. The SIM/RUIM card <b>126</b> may store additional subscriber information for a portable electronic device as well, including datebook (or calendar) information and recent call information. Alternatively, user identification information can also be programmed into the flash memory <b>108</b>.</p>
+<p id="p-0023" num="0022">The portable electronic device <b>100</b> is a battery-powered device and includes a battery interface <b>132</b> for receiving one or more rechargeable batteries <b>130</b>. In at least some embodiments, the battery <b>130</b> can be a smart battery with an embedded microprocessor. The battery interface <b>132</b> is coupled to a regulator (not shown), which assists the battery <b>130</b> in providing power V+ to the portable electronic device <b>100</b>. Although current technology makes use of a battery, future technologies such as micro fuel cells may provide the power to the portable electronic device <b>100</b>.</p>
+<p id="p-0024" num="0023">The portable electronic device <b>100</b> also includes an operating system <b>134</b> and software components <b>136</b> to <b>146</b> which are described in more detail below. The operating system <b>134</b> and the software components <b>136</b> to <b>146</b> that are executed by the main processor <b>102</b> are typically stored in a persistent store such as the flash memory <b>108</b>, which may alternatively be a read-only memory (ROM) or similar storage element (not shown). Those skilled in the art will appreciate that portions of the operating system <b>134</b> and the software components <b>136</b> to <b>146</b>, such as specific device applications, or parts thereof, may be temporarily loaded into a volatile store such as the RAM <b>106</b>. Other software components can also be included, as is well known to those skilled in the art.</p>
+<p id="p-0025" num="0024">The subset of software applications <b>136</b> that control basic device operations, including data and voice communication applications are installed on the portable electronic device <b>100</b> during its manufacture. Other software applications include a message application <b>138</b> that can be any suitable software program that allows a user of the portable electronic device <b>100</b> to send and receive electronic messages. Various alternatives exist for the message application <b>138</b> as is well known to those skilled in the art. Messages that have been sent or received by the user are typically stored in the flash memory <b>108</b> of the portable electronic device <b>100</b> or some other suitable storage element in the portable electronic device <b>100</b>. In at least some embodiments, some of the sent and received messages may be stored remotely from the device <b>100</b> such as in a data store of an associated host system that the portable electronic device <b>100</b> communicates with.</p>
+<p id="p-0026" num="0025">The software applications can further include a device state module <b>140</b>, a Personal Information Manager (PIM) <b>142</b>, and other suitable modules (not shown). The device state module <b>140</b> provides persistence, i.e. the device state module <b>140</b> ensures that important device data is stored in persistent memory, such as the flash memory <b>108</b>, so that the data is not lost when the portable electronic device <b>100</b> is turned off or loses power.</p>
+<p id="p-0027" num="0026">The PIM <b>142</b> includes functionality for organizing and managing data items of interest to the user, such as, but not limited to, e-mail, contacts, calendar events, voice mails, appointments, and task items. PIM applications include, for example, calendar, address book, tasks and memo applications. The PIM applications have the ability to send and receive data items via the wireless network <b>200</b>. PIM data items may be seamlessly integrated, synchronized, and updated via the wireless network <b>200</b> with the portable electronic device subscriber's corresponding data items stored and/or associated with a host computer system. This functionality creates a mirrored host computer on the portable electronic device <b>100</b> with respect to such items. This can be particularly advantageous when the host computer system is the portable electronic device subscriber's office computer system.</p>
+<p id="p-0028" num="0027">The portable electronic device <b>100</b> also includes a connect module <b>144</b>, and an information technology (IT) policy module <b>146</b>. The connect module <b>144</b> implements the communication protocols that are required for the portable electronic device <b>100</b> to communicate with the wireless infrastructure and any host system, such as an enterprise system, that the portable electronic device <b>100</b> is authorized to interface with. Examples of a wireless infrastructure and an enterprise system are given in <figref idref="DRAWINGS">FIGS. 3 and 4</figref>, which are described in more detail below.</p>
+<p id="p-0029" num="0028">The connect module <b>144</b> includes a set of APIs that can be integrated with the portable electronic device <b>100</b> to allow the portable electronic device <b>100</b> to use any number of services associated with the enterprise system. The connect module <b>144</b> allows the portable electronic device <b>100</b> to establish an end-to-end secure, authenticated communication pipe with the host system. A subset of applications for which access is provided by the connect module <b>144</b> can be used to pass IT policy commands from the host system to the portable electronic device <b>100</b>. This can be done in a wireless or wired manner. These instructions can then be passed to the IT policy module <b>146</b> to modify the configuration of the device <b>100</b>. Alternatively, in some cases, the IT policy update can also be done over a wired connection.</p>
+<p id="p-0030" num="0029">Other types of software applications can also be provided on the portable electronic device <b>100</b> and still others can be installed on the portable electronic device <b>100</b>. Such software applications can be third party applications, which are added after the manufacture of the portable electronic device <b>100</b>. Examples of third party applications include games, calculators, utilities, etc.</p>
+<p id="p-0031" num="0030">The additional applications can be loaded onto the portable electronic device <b>100</b> through at least one of the wireless network <b>200</b>, the auxiliary I/O subsystem <b>112</b>, the data port <b>114</b>, the short-range communications subsystem <b>122</b>, or any other suitable device subsystem <b>124</b>. This flexibility in application installation increases the functionality of the portable electronic device <b>100</b> and may provide enhanced on-device functions, communication-related functions, or both. For example, secure communication applications may enable electronic commerce functions and other such financial transactions to be performed using the portable electronic device <b>100</b>.</p>
+<p id="p-0032" num="0031">The data port <b>114</b> enables a subscriber to set preferences through an external device or software application and extends the capabilities of the portable electronic device <b>100</b> by providing for information or software downloads to the portable electronic device <b>100</b> other than through a wireless communication network. The alternate download path may, for example, be used to load an encryption key onto the portable electronic device <b>100</b> through a direct and thus reliable and trusted connection to provide secure device communication.</p>
+<p id="p-0033" num="0032">The data port <b>114</b> can be any suitable port that enables data communication between the portable electronic device <b>100</b> and another computing device. The data port <b>114</b> can be a serial or a parallel port. In some instances, the data port <b>114</b> can be a USB port that includes data lines for data transfer and a supply line that can provide a charging current to charge the battery <b>130</b> of the portable electronic device <b>100</b>.</p>
+<p id="p-0034" num="0033">The short-range communications subsystem <b>122</b> provides for communication between the portable electronic device <b>100</b> and different systems or devices, without the use of the wireless network <b>200</b>. For example, the subsystem <b>122</b> may include an infrared device and associated circuits and components for short-range communication. Examples of short-range communication standards include standards developed by the Infrared Data Association (IrDA), Bluetooth, and the 802.11 family of standards developed by IEEE.</p>
+<p id="p-0035" num="0034">In use, a received signal such as a text message, an e-mail message, Web page download, or any other information is processed by the communication subsystem <b>104</b> and input to the main processor <b>102</b>. The main processor <b>102</b>, in conjunction with a rendering engine <b>105</b>, which can be provided in hardware, software or a combination thereof, will then process the received signal for output to the display <b>110</b> or alternatively to the auxiliary I/O subsystem <b>112</b>. A subscriber may also compose data items, such as e-mail messages, for example, using the keyboard <b>116</b> in conjunction with the display <b>110</b> and possibly the auxiliary I/O subsystem <b>112</b>. The auxiliary subsystem <b>112</b> may include devices such as: a touch screen, mouse, track ball, infrared fingerprint detector, or a roller wheel with dynamic button pressing capability. The keyboard <b>116</b> is preferably an alphanumeric keyboard and/or telephone-type keypad. However, other types of keyboards may also be used. A composed item may be transmitted over the wireless network <b>200</b> through the communication subsystem <b>104</b>.</p>
+<p id="p-0036" num="0035">For voice communications, the overall operation of the portable electronic device <b>100</b> is substantially similar, except that the received signals are output to the speaker <b>118</b>, and signals for transmission are generated by the microphone <b>120</b>. Alternative voice or audio I/O subsystems, such as a voice message recording subsystem, can also be implemented on the portable electronic device <b>100</b>. Although voice or audio signal output is accomplished primarily through the speaker <b>118</b>, the display <b>110</b> can also be used to provide additional information such as the identity of a calling party, duration of a voice call, or other voice call related information.</p>
+<p id="p-0037" num="0036">Referring now to <figref idref="DRAWINGS">FIG. 2</figref>, an exemplary block diagram of the communication subsystem component <b>104</b> is shown. The communication subsystem <b>104</b> includes a receiver <b>150</b>, a transmitter <b>152</b>, as well as associated components such as one or more embedded or internal antenna elements <b>154</b> and <b>156</b>, Local Oscillators (LOs) <b>158</b>, and a processing module such as a Digital Signal Processor (DSP) <b>160</b>. The particular design of the communication subsystem <b>104</b> is dependent upon the communication network <b>200</b> with which the portable electronic device <b>100</b> is intended to operate. Thus, it should be understood that the design illustrated in <figref idref="DRAWINGS">FIG. 2</figref> serves only as one example.</p>
+<p id="p-0038" num="0037">Signals received by the antenna <b>154</b> through the wireless network <b>200</b> are input to the receiver <b>150</b>, which may perform such common receiver functions as signal amplification, frequency down conversion, filtering, channel selection, and analog-to-digital (A/D) conversion. ND conversion of a received signal allows more complex communication functions such as demodulation and decoding to be performed in the DSP <b>160</b>. In a similar manner, signals to be transmitted are processed, including modulation and encoding, by the DSP <b>160</b>. These DSP-processed signals are input to the transmitter <b>152</b> for digital-to-analog (D/A) conversion, frequency up conversion, filtering, amplification and transmission over the wireless network <b>200</b> via the antenna <b>156</b>. The DSP <b>160</b> not only processes communication signals, but also provides for receiver and transmitter control. For example, the gains applied to communication signals in the receiver <b>150</b> and the transmitter <b>152</b> may be adaptively controlled through automatic gain control algorithms implemented in the DSP <b>160</b>.</p>
+<p id="p-0039" num="0038">The wireless link between the portable electronic device <b>100</b> and the wireless network <b>200</b> can contain one or more different channels, typically different RF channels, and associated protocols used between the portable electronic device <b>100</b> and the wireless network <b>200</b>. An RF channel is a limited resource that should be conserved, typically due to limits in overall bandwidth and limited battery power of the portable electronic device <b>100</b>.</p>
+<p id="p-0040" num="0039">When the portable electronic device <b>100</b> is fully operational, the transmitter <b>152</b> is typically keyed or turned on only when it is transmitting to the wireless network <b>200</b> and is otherwise turned off to conserve resources. Similarly, the receiver <b>150</b> is periodically turned off to conserve power until it is needed to receive signals or information (if at all) during designated time periods.</p>
+<p id="p-0041" num="0040">Referring now to <figref idref="DRAWINGS">FIG. 3</figref>, a block diagram of an exemplary implementation of a node <b>202</b> of the wireless network <b>200</b> is shown. In practice, the wireless network <b>200</b> comprises one or more nodes <b>202</b>. In conjunction with the connect module <b>144</b>, the portable electronic device <b>100</b> can communicate with the node <b>202</b> within the wireless network <b>200</b>. In the exemplary implementation of <figref idref="DRAWINGS">FIG. 3</figref>, the node <b>202</b> is configured in accordance with General Packet Radio Service (GPRS) and Global Systems for Mobile (GSM) technologies. The node <b>202</b> includes a base station controller (BSC) <b>204</b> with an associated tower station <b>206</b>, a Packet Control Unit (PCU) <b>208</b> added for GPRS support in GSM, a Mobile Switching Center (MSC) <b>210</b>, a Home Location Register (HLR) <b>212</b>, a Visitor Location Registry (VLR) <b>214</b>, a Serving GPRS Support Node (SGSN) <b>216</b>, a Gateway GPRS Support Node (GGSN) <b>218</b>, and a Dynamic Host Configuration Protocol (DHCP) <b>220</b>. This list of components is not meant to be an exhaustive list of the components of every node <b>202</b> within a GSM/GPRS network, but rather a list of components that are commonly used in communications through the network <b>200</b>.</p>
+<p id="p-0042" num="0041">In a GSM network, the MSC <b>210</b> is coupled to the BSC <b>204</b> and to a landline network, such as a Public Switched Telephone Network (PSTN) <b>222</b> to satisfy circuit switched requirements. The connection through the PCU <b>208</b>, the SGSN <b>216</b> and the GGSN <b>218</b> to a public or private network (Internet) <b>224</b> (also referred to herein generally as a shared network infrastructure) represents the data path for GPRS capable portable electronic devices. In a GSM network extended with GPRS capabilities, the BSC <b>204</b> also contains the Packet Control Unit (PCU) <b>208</b> that connects to the SGSN <b>216</b> to control segmentation, radio channel allocation and to satisfy packet switched requirements. To track the location of the portable electronic device <b>100</b> and availability for both circuit switched and packet switched management, the HLR <b>212</b> is shared between the MSC <b>210</b> and the SGSN <b>216</b>. Access to the VLR <b>214</b> is controlled by the MSC <b>210</b>.</p>
+<p id="p-0043" num="0042">The station <b>206</b> is a fixed transceiver station and together with the BSC <b>204</b> form fixed transceiver equipment. The fixed transceiver equipment provides wireless network coverage for a particular coverage area commonly referred to as a &#x201c;cell&#x201d;. The fixed transceiver equipment transmits communication signals to and receives communication signals from portable electronic devices within its cell via the station <b>206</b>. The fixed transceiver equipment normally performs such functions as modulation and possibly encoding and/or encryption of signals to be transmitted to the portable electronic device <b>100</b> in accordance with particular, usually predetermined, communication protocols and parameters, under control of its controller. The fixed transceiver equipment similarly demodulates and possibly decodes and decrypts, if necessary, any communication signals received from the portable electronic device <b>100</b> within its cell. Communication protocols and parameters may vary between different nodes. For example, one node may employ a different modulation scheme and operate at different frequencies than other nodes.</p>
+<p id="p-0044" num="0043">For all portable electronic devices <b>100</b> registered with a specific network, permanent configuration data such as a user profile is stored in the HLR <b>212</b>. The HLR <b>212</b> also contains location information for each registered portable electronic device and can be queried to determine the current location of a portable electronic device. The MSC <b>210</b> is responsible for a group of location areas and stores the data of the portable electronic devices currently in its area of responsibility in the VLR <b>214</b>. Further, the VLR <b>214</b> also contains information on portable electronic devices that are visiting other networks. The information in the VLR <b>214</b> includes part of the permanent portable electronic device data transmitted from the HLR <b>212</b> to the VLR <b>214</b> for faster access. By moving additional information from a remote HLR <b>212</b> node to the VLR <b>214</b>, the amount of traffic between these nodes can be reduced so that voice and data services can be provided with faster response times and at the same time requiring less use of computing resources.</p>
+<p id="p-0045" num="0044">The SGSN <b>216</b> and the GGSN <b>218</b> are elements added for GPRS support; namely packet switched data support, within GSM. The SGSN <b>216</b> and the MSC <b>210</b> have similar responsibilities within the wireless network <b>200</b> by keeping track of the location of each portable electronic device <b>100</b>. The SGSN <b>216</b> also performs security functions and access control for data traffic on the wireless network <b>200</b>. The GGSN <b>218</b> provides internetworking connections with external packet switched networks and connects to one or more SGSN's <b>216</b> via an Internet Protocol (IP) backbone network operated within the network <b>200</b>. During normal operations, a given portable electronic device <b>100</b> must perform a &#x201c;GPRS Attach&#x201d; to acquire an IP address and to access data services. This requirement is not present in circuit switched voice channels as Integrated Services Digital Network (ISDN) addresses are used for routing incoming and outgoing calls. Currently, all GPRS capable networks use private, dynamically assigned IP addresses, thus requiring the DHCP server <b>220</b> connected to the GGSN <b>218</b>. There are many mechanisms for dynamic IP assignment, including using a combination of a Remote Authentication Dial-In User Service (RADIUS) server and a DHCP server. Once the GPRS Attach is complete, a logical connection is established from a portable electronic device <b>100</b>, through the PCU <b>208</b>, and the SGSN <b>216</b> to an Access Point Node (APN) within the GGSN <b>218</b>. The APN represents a logical end of an IP tunnel that can either access direct Internet compatible services or private network connections. The APN also represents a security mechanism for the network <b>200</b>, insofar as each portable electronic device <b>100</b> must be assigned to one or more APNs and portable electronic devices <b>100</b> cannot exchange data without first performing a GPRS Attach to an APN that it has been authorized to use. The APN may be considered to be similar to an Internet domain name such as &#x201c;myconnection.wireless.com&#x201d;.</p>
+<p id="p-0046" num="0045">Once the GPRS Attach operation is complete, a tunnel is created and all traffic is exchanged within standard IP packets using any protocol that can be supported in IP packets. This includes tunneling methods such as IP over IP as in the case with some IPSecurity (IPsec) connections used with Virtual Private Networks (VPN). These tunnels are also referred to as Packet Data Protocol (PDP) Contexts and there are a limited number of these available in the network <b>200</b>. To maximize use of the PDP Contexts, the network <b>200</b> will run an idle timer for each PDP Context to determine if there is a lack of activity. When a portable electronic device <b>100</b> is not using its PDP Context, the PDP Context can be de-allocated and the IP address returned to the IP address pool managed by the DHCP server <b>220</b>.</p>
+<p id="p-0047" num="0046">Referring now to <figref idref="DRAWINGS">FIG. 4</figref>, shown therein is a block diagram illustrating components of an exemplary configuration of a host system <b>250</b> that the portable electronic device <b>100</b> can communicate with in conjunction with the connect module <b>144</b>. The host system <b>250</b> will typically be a corporate enterprise or other local area network (LAN), but may also be a home office computer or some other private system, for example, in variant implementations. In this example shown in <figref idref="DRAWINGS">FIG. 4</figref>, the host system <b>250</b> is depicted as a LAN of an organization to which a user of the portable electronic device <b>100</b> belongs. Typically, a plurality of portable electronic devices can communicate wirelessly with the host system <b>250</b> through one or more nodes <b>202</b> of the wireless network <b>200</b>.</p>
+<p id="p-0048" num="0047">The host system <b>250</b> comprises a number of network components connected to each other by a network <b>260</b>. For instance, a user's desktop computer <b>262</b><i>a </i>with an accompanying cradle <b>264</b> for the user's portable electronic device <b>100</b> is situated on a LAN connection. The cradle <b>264</b> for the portable electronic device <b>100</b> can be coupled to the computer <b>262</b><i>a </i>by a serial or a Universal Serial Bus (USB) connection, for example. Other user computers <b>262</b><i>b</i>-<b>262</b><i>n </i>are also situated on the network <b>260</b>, and each may or may not be equipped with an accompanying cradle <b>264</b>. The cradle <b>264</b> facilitates the loading of information (e.g. PIM data, private symmetric encryption keys to facilitate secure communications) from the user computer <b>262</b><i>a </i>to the portable electronic device <b>100</b>, and may be particularly useful for bulk information updates often performed in initializing the portable electronic device <b>100</b> for use. The information downloaded to the portable electronic device <b>100</b> may include certificates used in the exchange of messages.</p>
+<p id="p-0049" num="0048">It will be understood by persons skilled in the art that the user computers <b>262</b><i>a</i>-<b>262</b><i>n </i>will typically also be connected to other peripheral devices, such as printers, etc. which are not explicitly shown in <figref idref="DRAWINGS">FIG. 4</figref>. Furthermore, only a subset of network components of the host system <b>250</b> are shown in <figref idref="DRAWINGS">FIG. 4</figref> for ease of exposition, and it will be understood by persons skilled in the art that the host system <b>250</b> will comprise additional components that are not explicitly shown in <figref idref="DRAWINGS">FIG. 4</figref> for this exemplary configuration. More generally, the host system <b>250</b> may represent a smaller part of a larger network (not shown) of the organization, and may comprise different components and/or be arranged in different topologies than that shown in the exemplary embodiment of <figref idref="DRAWINGS">FIG. 4</figref>.</p>
+<p id="p-0050" num="0049">To facilitate the operation of the portable electronic device <b>100</b> and the wireless communication of messages and message-related data between the portable electronic device <b>100</b> and components of the host system <b>250</b>, a number of wireless communication support components <b>270</b> can be provided. In some implementations, the wireless communication support components <b>270</b> can include a management server <b>272</b>, a mobile data server (MDS) <b>274</b>, a web server, such as Hypertext Transfer Protocol (HTTP) server <b>275</b>, a contact server <b>276</b>, and a device manager module <b>278</b>. HTTP servers can also be located outside the enterprise system, as indicated by the HTTP server <b>275</b> attached to the network <b>224</b>. The device manager module <b>278</b> includes an IT Policy editor <b>280</b> and an IT user property editor <b>282</b>, as well as other software components for allowing an IT administrator to configure the portable electronic devices <b>100</b>. In an alternative embodiment, there may be one editor that provides the functionality of both the IT policy editor <b>280</b> and the IT user property editor <b>282</b>. The support components <b>270</b> also include a data store <b>284</b>, and an IT policy server <b>286</b>. The IT policy server <b>286</b> includes a processor <b>288</b>, a network interface <b>290</b> and a memory unit <b>292</b>. The processor <b>288</b> controls the operation of the IT policy server <b>286</b> and executes functions related to the standardized IT policy as described below. The network interface <b>290</b> allows the IT policy server <b>286</b> to communicate with the various components of the host system <b>250</b> and the portable electronic devices <b>100</b>. The memory unit <b>292</b> can store functions used in implementing the IT policy as well as related data. Those skilled in the art know how to implement these various components. Other components may also be included as is well known to those skilled in the art. Further, in some implementations, the data store <b>284</b> can be part of any one of the servers.</p>
+<p id="p-0051" num="0050">In this exemplary embodiment, the portable electronic device <b>100</b> communicates with the host system <b>250</b> through node <b>202</b> of the wireless network <b>200</b> and a shared network infrastructure <b>224</b> such as a service provider network or the public Internet. Access to the host system <b>250</b> may be provided through one or more routers (not shown), and computing devices of the host system <b>250</b> may operate from behind a firewall or proxy server <b>266</b>. The proxy server <b>266</b> provides a secure node and a wireless internet gateway for the host system <b>250</b>. The proxy server <b>266</b> intelligently routes data to the correct destination server within the host system <b>250</b>.</p>
+<p id="p-0052" num="0051">In some implementations, the host system <b>250</b> can include a wireless VPN router (not shown) to facilitate data exchange between the host system <b>250</b> and the portable electronic device <b>100</b>. The wireless VPN router allows a VPN connection to be established directly through a specific wireless network to the portable electronic device <b>100</b>. The wireless VPN router can be used with the Internet Protocol (IP) Version 6 (IPV6) and IP-based wireless networks. This protocol can provide enough IP addresses so that each portable electronic device has a dedicated IP address, making it possible to push information to a portable electronic device at any time. An advantage of using a wireless VPN router is that it can be an off-the-shelf VPN component, and does not require a separate wireless gateway and separate wireless infrastructure. A VPN connection can preferably be a Transmission Control Protocol (TCP)/IP or User Datagram Protocol (UDP)/IP connection for delivering the messages directly to the portable electronic device <b>100</b> in this alternative implementation.</p>
+<p id="p-0053" num="0052">Messages intended for a user of the portable electronic device <b>100</b> are initially received by a message server <b>268</b> of the host system <b>250</b>. Such messages may originate from any number of sources. For instance, a message may have been sent by a sender from the computer <b>262</b><i>b </i>within the host system <b>250</b>, from a different portable electronic device (not shown) connected to the wireless network <b>200</b> or a different wireless network, or from a different computing device, or other device capable of sending messages, via the shared network infrastructure <b>224</b>, possibly through an application service provider (ASP) or Internet service provider (ISP), for example.</p>
+<p id="p-0054" num="0053">The message server <b>268</b> typically acts as the primary interface for the exchange of messages, particularly e-mail messages, within the organization and over the shared network infrastructure <b>224</b>. Each user in the organization that has been set up to send and receive messages is typically associated with a user account managed by the message server <b>268</b>. Some exemplary implementations of the message server <b>268</b> include a Microsoft Exchange&#x2122; server, a Lotus Domino&#x2122; server, a Novell Groupwise&#x2122; server, or another suitable mail server installed in a corporate environment. In some implementations, the host system <b>250</b> may comprise multiple message servers <b>268</b>. The message server provides additional functions including PIM functions such as calendaring, contacts and tasks and supports data storage.</p>
+<p id="p-0055" num="0054">When messages are received by the message server <b>268</b>, they are typically stored in a data store associated with the message server <b>268</b>. In at least some embodiments, the data store may be a separate hardware unit, such as data store <b>284</b>, that the message server <b>268</b> communicates with. Messages can be subsequently retrieved and delivered to users by accessing the message server <b>268</b>. For instance, an e-mail client application operating on a user's computer <b>262</b><i>a </i>may request the e-mail messages associated with that user's account stored on the data store associated with the message server <b>268</b>. These messages are then retrieved from the data store and stored locally on the computer <b>262</b><i>a</i>. The data store associated with the message server <b>268</b> can store copies of each message that is locally stored on the portable electronic device <b>100</b>. Alternatively, the data store associated with the message server <b>268</b> can store all of the messages for the user of the portable electronic device <b>100</b> and only a smaller number of messages can be stored on the portable electronic device <b>100</b> to conserve memory. For instance, the most recent messages (i.e. those received in the past two to three months for example) can be stored on the portable electronic device <b>100</b>.</p>
+<p id="p-0056" num="0055">When operating the portable electronic device <b>100</b>, the user may wish to have e-mail messages retrieved for delivery to the portable electronic device <b>100</b>. The message application <b>138</b> operating on the portable electronic device <b>100</b> may also request messages associated with the user's account from the message server <b>268</b>. The message application <b>138</b> may be configured (either by the user or by an administrator, possibly in accordance with an organization's IT policy) to make this request at the direction of the user, at some pre-defined time interval, or upon the occurrence of some pre-defined event. In some implementations, the portable electronic device <b>100</b> is assigned its own e-mail address, and messages addressed specifically to the portable electronic device <b>100</b> are automatically redirected to the portable electronic device <b>100</b> as they are received by the message server <b>268</b>.</p>
+<p id="p-0057" num="0056">The management server <b>272</b> can be used to specifically provide support for the management of, for example, messages, such as e-mail messages, that are to be handled by portable electronic devices. Generally, while messages are still stored on the message server <b>268</b>, the management server <b>272</b> can be used to control when, if, and how messages are sent to the portable electronic device <b>100</b>. The management server <b>272</b> also facilitates the handling of messages composed on the portable electronic device <b>100</b>, which are sent to the message server <b>268</b> for subsequent delivery.</p>
+<p id="p-0058" num="0057">For example, the management server <b>272</b> may monitor the user's &#x201c;mailbox&#x201d; (e.g. the message store associated with the user's account on the message server <b>268</b>) for new e-mail messages, and apply user-definable filters to new messages to determine if and how the messages are relayed to the user's portable electronic device <b>100</b>. The management server <b>272</b> may also, through an encoder <b>273</b>, compress messages, using any suitable compression technology (e.g. YK compression, and other known techniques) and encrypt messages (e.g. using an encryption technique such as Data Encryption Standard (DES), Triple DES, or Advanced Encryption Standard (AES)), and push them to the portable electronic device <b>100</b> via the shared network infrastructure <b>224</b> and the wireless network <b>200</b>. The management server <b>272</b> may also receive messages composed on the portable electronic device <b>100</b> (e.g. encrypted using Triple DES), decrypt and decompress the composed messages, re-format the composed messages if desired so that they will appear to have originated from the user's computer <b>262</b><i>a</i>, and re-route the composed messages to the message server <b>268</b> for delivery.</p>
+<p id="p-0059" num="0058">Certain properties or restrictions associated with messages that are to be sent from and/or received by the portable electronic device <b>100</b> can be defined (e.g. by an administrator in accordance with IT policy) and enforced by the management server <b>272</b>. These may include whether the portable electronic device <b>100</b> may receive encrypted and/or signed messages, minimum encryption key sizes, whether outgoing messages must be encrypted and/or signed, and whether copies of all secure messages sent from the portable electronic device <b>100</b> are to be sent to a pre-defined copy address, for example.</p>
+<p id="p-0060" num="0059">The management server <b>272</b> may also be adapted to provide other control functions, such as only pushing certain message information or pre-defined portions (e.g. &#x201c;blocks&#x201d;) of a message stored on the message server <b>268</b> to the portable electronic device <b>100</b>. For example, in some cases, when a message is initially retrieved by the portable electronic device <b>100</b> from the message server <b>268</b>, the management server <b>272</b> may push only the first part of a message to the portable electronic device <b>100</b>, with the part being of a pre-defined size (e.g. 2 KB). The user can then request that more of the message be delivered in similar-sized blocks by the management server <b>272</b> to the portable electronic device <b>100</b>, possibly up to a maximum pre-defined message size. Accordingly, the management server <b>272</b> facilitates better control over the type of data and the amount of data that is communicated to the portable electronic device <b>100</b>, and can help to minimize potential waste of bandwidth or other resources.</p>
+<p id="p-0061" num="0060">The MDS <b>274</b> encompasses any other server that stores information that is relevant to the corporation. The mobile data server <b>274</b> may include, but is not limited to, databases, online data document repositories, customer relationship management (CRM) systems, or enterprise resource planning (ERP) applications. The MDS <b>274</b> can also connect to the Internet or other public network, through HTTP server <b>275</b> or other suitable web server such as an File Transfer Protocol (FTP) server, to retrieve HTTP webpages and other data. Requests for webpages are typically routed through MDS <b>274</b> and then to HTTP server <b>275</b>, through suitable firewalls and other protective mechanisms. The web server then retrieves the webpage over the Internet, and returns it to MDS <b>274</b>. As described above in relation to management server <b>272</b>, MDS <b>274</b> is typically provided, or associated, with an encoder <b>277</b> that permits retrieved data, such as retrieved webpages, to be compressed, using any suitable compression technology (e.g. YK compression, and other known techniques), and encrypted (e.g. using an encryption technique such as DES, Triple DES, or AES), and then pushed to the portable electronic device <b>100</b> via the shared network infrastructure <b>224</b> and the wireless network <b>200</b>.</p>
+<p id="p-0062" num="0061">The contact server <b>276</b> can provide information for a list of contacts for the user in a similar fashion as the address book on the portable electronic device <b>100</b>. Accordingly, for a given contact, the contact server <b>276</b> can include the name, phone number, work address and e-mail address of the contact, among other information. The contact server <b>276</b> can also provide a global address list that contains the contact information for all of the contacts associated with the host system <b>250</b>.</p>
+<p id="p-0063" num="0062">It will be understood by persons skilled in the art that the management server <b>272</b>, the MDS <b>274</b>, the HTTP server <b>275</b>, the contact server <b>276</b>, the device manager module <b>278</b>, the data store <b>284</b> and the IT policy server <b>286</b> do not need to be implemented on separate physical servers within the host system <b>250</b>. For example, some or all of the functions associated with the management server <b>272</b> may be integrated with the message server <b>268</b>, or some other server in the host system <b>250</b>. Alternatively, the host system <b>250</b> may comprise multiple management servers <b>272</b>, particularly in variant implementations where a large number of portable electronic devices need to be supported.</p>
+<p id="p-0064" num="0063">The device manager module <b>278</b> provides an IT administrator with a graphical user interface with which the IT administrator interacts to configure various settings for the portable electronic devices <b>100</b>. As mentioned, the IT administrator can use IT policy rules to define behaviors of certain applications on the portable electronic device <b>100</b> that are permitted such as phone, web browser or Instant Messenger use. The IT policy rules can also be used to set specific values for configuration settings that an organization requires on the portable electronic devices <b>100</b> such as auto signature text, WLAN/VoIP/VPN configuration, security requirements (e.g. encryption algorithms, password rules, etc.), specifying themes or applications that are allowed to run on the portable electronic device <b>100</b>, and the like.</p>
+<p id="p-0065" num="0064">As indicated above, the portable electronic device <b>100</b> includes the Personal Information Manager (PIM) <b>142</b> that includes functionality for organizing and managing data items of interest to the user, such as, but not limited to, e-mail, contacts, calendar events, voice mails, appointments, and task items. PIM applications include, for example, calendar, address book, tasks and memo applications.</p>
+<p id="p-0066" num="0065">The graphics in an application such as a map application are represented as polygons and line segments. These are rendered onto the screen with different colors and stroking schemes to display a geographic location. In such applications, a user generally pans (horizontal and/or vertical translational movement) through a vast 2-dimensional (2D) space containing the polygons and line segments or portions thereof. As the underlying line segments, manifested as streets, roads and highways in a map application do not change with the user pan, the present method focuses on rendering only the newly exposed, or &#x201c;clipped&#x201d;, portions.</p>
+<p id="p-0067" num="0066"><figref idref="DRAWINGS">FIG. 5</figref> is a flowchart of the present method. Generally, the present method provides a method of static graphics rendering in a mobile device. As used herein, a &#x201c;static&#x201d; rendering application is defined as a rendering application with no animation content in the rendered scene, such as map and other geographical display applications. In other words, the rendered scene is relatively static from one image frame to the next frame, and there are no moving objects in the scene. Panning increments are received for panning a previously rendered frame to a panned frame (step <b>400</b>). As used herein, &#x201c;panning&#x201d; refers to the action of scanning across an image on a display of the mobile device <b>100</b>. Panning across an image results in translation of the image in the horizontal and/or vertical directions, and may result in the display of previously hidden portions of the image. &#x201c;Panning increments&#x201d; refer to the incremental changes in the horizontal and/or vertical coordinates of the image resulting from the panning operation.</p>
+<p id="p-0068" num="0067">A rendering region is then defined based on the panning increments (step <b>402</b>). The &#x201c;rendering region&#x201d; is a generally L-shaped region in the 2D plane, also referred to herein as the L-region, that includes only the portion of the image that was previously unrendered. The L-shaped region has inner horizontal and vertical boundaries that are collinear with respective horizontal and vertical boundaries of the previously rendered frame and outer boundaries collinear with respective horizontal and vertical boundaries of the panned frame. A candidate line segment or polyline is then clipped against the L-shaped rendering region to create clipped line segments contained within the rendering region (step <b>404</b>). As used herein, a &#x201c;polyline&#x201d; is a series of connected line or arc segments. The clipped line segments can then be rendered (step <b>406</b>), and a portion of the previously rendered frame can be copied (step <b>408</b>), to provide the panned frame. The method can be performed by the rendering engine <b>105</b>, shown in <figref idref="DRAWINGS">FIG. 1</figref>. Rendering speeds can be improved by up to 6 to 8 times when compared to systems not using this technique.</p>
+<p id="p-0069" num="0068">Embodiments of the present method can be represented as a software product stored in a machine-readable medium (also referred to as a computer-readable medium, a processor-readable medium, or a computer usable medium having a computer-readable program code embodied therein). The machine-readable medium can be any suitable tangible medium, including magnetic, optical, or electrical storage medium including a diskette, compact disk read only memory (CD-ROM), memory device (volatile or non-volatile), or similar storage mechanism. The machine-readable medium can contain various sets of instructions, code sequences, configuration information, or other data, which, when executed, cause a processor to perform steps in a method according to an embodiment of the invention. Those of ordinary skill in the art will appreciate that other instructions and operations necessary to implement the described invention can also be stored on the machine-readable medium. Software running from the machine-readable medium can interface with circuitry to perform the described tasks.</p>
+<p id="p-0070" num="0069">Embodiments of the present method will now be described with reference to <figref idref="DRAWINGS">FIGS. 6-10</figref>. <figref idref="DRAWINGS">FIG. 6</figref> shows a candidate polyline <b>440</b> over which a user can pan a frame. The panning operation results in a previously rendered frame <b>450</b> being shifted to a desired new view, as indicated by the panned frame <b>452</b>. The panning operation can consist of a vertical pan, followed optionally by a horizontal pan, or vice versa, or can consist of simultaneous movement in both horizontal and vertical directions. A resultant rendering region, shown as shaded L-region <b>454</b>, is defined by the panning operation.</p>
+<p id="p-0071" num="0070">The L-region <b>454</b> is by definition two rectangles, as shown, that combine to give the shape of an &#x201c;L&#x201d; on the screen. Each rectangle <b>456</b>, <b>458</b> represents a refresh region of the screen display, and is defined by the horizontal and vertical panning increments, indicated by the arrows <b>460</b> and <b>462</b>.</p>
+<p id="p-0072" num="0071">Once the user performs the panning operation, the horizontal and vertical panning increments are captured or received, and are used to compute the L-region <b>454</b>, which represents the effective refresh region on the screen. To clip the polyline <b>440</b> in accordance with the L-region <b>454</b>, a conventional line clipping method, such as the Cohen-Sutherland method, is applied to the polyline <b>440</b> of <figref idref="DRAWINGS">FIG. 6</figref>. This step is illustrated in <figref idref="DRAWINGS">FIG. 7</figref>, where the boundaries of the panned frame <b>452</b> define the rectangular clipping window used in the line clipping operation. It should also be noted that the bounds of the rectangular clipping window conform to the outer edges of the L-region <b>454</b>. The clipped line segments resulting from the clipping operation is shown by the clipped line segments <b>464</b>, <b>466</b>, <b>468</b>.</p>
+<p id="p-0073" num="0072">Once the polyline <b>440</b> is clipped to the rectangular region <b>452</b>, the resulting clipped line segments <b>464</b>, <b>466</b>, <b>468</b> are in turn each clipped against the L-region <b>454</b> to compute a set of L-region clipped line segments <b>470</b>, <b>472</b>, <b>474</b>, as shown in <figref idref="DRAWINGS">FIG. 8</figref>. The L-region clipped line segments <b>470</b>, <b>472</b>, <b>474</b> represent the minimum number of screen pixels requiring a refresh to view the polyline <b>440</b> in the panned frame <b>452</b>. As will be appreciated, once the set of L-region clipped line segments <b>470</b>, <b>472</b>, <b>474</b> has been rendered, the remainder of screen bitmap can be derived or copied from the previously rendered frame <b>450</b>, and can be used to fill in the region of the panned frame that is outside the L-region <b>454</b>. This in effect reduces the total rendering needs of the refresh operation to just the L-region <b>454</b>.</p>
+<p id="p-0074" num="0073">One embodiment for clipping the line segments <b>464</b>, <b>466</b>, <b>468</b> against the L-region <b>454</b> will now be described with reference to <figref idref="DRAWINGS">FIGS. 9 and 10</figref>. For clipping line segments <b>464</b>, <b>466</b>, <b>468</b> to the L-region <b>454</b>, the 2D plane is first divided into four quadrants, and codes are assigned to each quadrant. A code is then computed for each end point of the candidate line segments <b>464</b>, <b>466</b>, <b>468</b>. The computed codes permit each line segment <b>464</b>, <b>466</b>, <b>468</b> to be categorized as line segments intersecting with the L-region boundaries; completely within the L-region boundaries; or completely outside the L-region boundaries. Line segments falling completely within or completely outside the L-region can then be trivially accepted or rejected, respectively, for rendering.</p>
+<p id="p-0075" num="0074">To divide the 2D plane into quadrants or regions, the vertical and horizontal interior line segments <b>480</b> and <b>490</b> forming the L-region are extended, and codes (00), (01), (11) and (10) are assigned to the respective regions. The first digit in the code represents the vertical component V, and the second digit represents the horizontal component H. The codes are assigned to the regions such that those regions falling within the L-region <b>454</b> with respect to the vertical line <b>480</b> are assigned a vertical component of &#x201c;0&#x201d;, and those falling outside the L-region <b>454</b> with respect to the vertical line <b>480</b> are assigned a vertical component of &#x201c;1&#x201d;. Similarly, horizontal components of the region codes are assigned such that those regions falling within the L-region <b>454</b> with respect to the horizontal line <b>490</b> are assigned a horizontal component of &#x201c;0&#x201d;, and those falling outside the L-region <b>454</b> with respect to the horizontal line <b>490</b> are assigned a horizontal component of &#x201c;1&#x201d;.</p>
+<p id="p-0076" num="0075">Codes are then computed for each endpoint of the candidate line segments <b>464</b>, <b>466</b>, <b>468</b>. In the illustrated example shown in <figref idref="DRAWINGS">FIG. 9</figref>, the codes computed for the endpoints of line segment <b>464</b>, <b>466</b>, and <b>468</b> are [P<b>1</b>(01), P<b>2</b>(10)]; [P<b>1</b>(01), P<b>2</b>(11)] and [P<b>1</b>(10), P<b>2</b>(11)], respectively. Once the VH codes are assigned to all the end points of the candidate line segments, each line segment is examined to first determine if it can be trivially accepted or rejected.</p>
+<p id="p-0077" num="0076">As shown in <figref idref="DRAWINGS">FIG. 11</figref>, there are eight distinct cases for classifying a line segment. Each of these eight cases is shown by its respectively numbered line segment in <figref idref="DRAWINGS">FIG. 11</figref>:
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0000">
+    <ul id="ul0002" list-style="none">
+        <li id="ul0002-0001" num="0077">Class 1: P<b>1</b> (11) and P<b>2</b> (11). This implies that both the points are outside the LRegion.</li>
+        <li id="ul0002-0002" num="0078">Class 2: P<b>1</b> (01) and P<b>2</b> (10). This implies that P<b>1</b> lies outside the horizontal region but inside the vertical region and vice versa for P<b>2</b>. This case has two subcases&#x2014;
+        <ul id="ul0003" list-style="none">
+            <li id="ul0003-0001" num="0079">a. The line segment lies completely within the L-region.</li>
+            <li id="ul0003-0002" num="0080">b. The line segment P<b>1</b>P<b>2</b> intersects the L-region boundaries.</li>
+        </ul>
+        </li>
+        <li id="ul0002-0003" num="0081">Class 3: P<b>1</b> (00) and P<b>2</b> (10). This implies that P<b>1</b> is inside both the vertical and horizontal regions and P<b>2</b> inside the horizontal region, which in turn means that the line segment is completely within the L-region.</li>
+        <li id="ul0002-0004" num="0082">Class 4: P<b>1</b> (00) and P<b>2</b> (00). This implies that both P<b>1</b> and P<b>2</b> are inside both the vertical and horizontal regions hence the line segment is also completely within the L-region.</li>
+        <li id="ul0002-0005" num="0083">Class 5: P<b>1</b> (01) and P<b>2</b> (00). This case is similar to case 3. The line segment is contained completely within the L-region by virtue of the containment of P<b>1</b> and P<b>2</b> inside the vertical region.</li>
+        <li id="ul0002-0006" num="0084">Class 6: P<b>1</b> (01) and P<b>2</b> (11). This case implies that P<b>1</b> is contained inside the vertical region and P<b>2</b> outside the L-region and hence the line segment P<b>1</b>P<b>2</b> intersects the L-region at the vertical boundary.</li>
+        <li id="ul0002-0007" num="0085">Class 7: P<b>1</b> (10) and P<b>2</b> (11). This case implies that P<b>1</b> is contained inside the horizontal region and P<b>2</b> outside the L-region and hence the line segment P<b>1</b>P<b>2</b> intersects the L-region at the horizontal boundary.</li>
+        <li id="ul0002-0008" num="0086">Class 8: P<b>1</b> (00) and P<b>2</b> (11). This case implies that P<b>1</b> is contained inside the horizontal as well as the vertical region and P<b>2</b> outside both and hence the line segment P<b>1</b>P<b>2</b> intersects the L-region at either the horizontal or the vertical boundary. This case can also be considered a sub-class of classes <b>7</b> and <b>8</b>.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0078" num="0087">A line segment classified as belonging Class 1 can be trivially rejected, and line segments classified as belonging to Classes <b>3</b>, <b>4</b> or <b>5</b> can be trivially accepted for rendering. Line segments classified in the remaining classes require further processing to determine the portion required to be rendered or refreshed.</p>
+<p id="p-0079" num="0088">As can be seen from the illustrated example, line segments <b>464</b>, <b>466</b>, <b>468</b> are classified in Classes <b>2</b>, <b>6</b> and <b>7</b>, respectively. Hence, further clipping operations are performed on the each of the line segments, as shown in <figref idref="DRAWINGS">FIG. 10</figref>. The line segments <b>464</b>, <b>466</b>, <b>468</b> are first clipped with respect to the vertical line <b>480</b> of the L-region. A line segment is said to be clipped with respect to a line when it is split with respect to the line, and the newly created line segments on one side of the line are retained or accepted. Those portions of the line segments <b>464</b>, <b>466</b>, <b>468</b> that lie on the side of the line <b>480</b> within the L-region <b>454</b> (i.e. clipped line segments <b>492</b> and <b>494</b>) can be retained or accepted for rendering, and can be rendered immediately without further clipping. Those portions which lie to the other side of the line <b>490</b> are further processed by performing another clipping operation with respect to the interior horizontal line <b>490</b> of the L-region <b>454</b>, discarding those newly clipped line segments that fall outside the L-region <b>454</b> and retaining or accepting those that fall within the L-region. In the illustrated example, this results in further accepting newly clipped line segments <b>496</b> and <b>498</b>.</p>
+<p id="p-0080" num="0089">The present method permits line segments and polylines to be clipped in very short time when compared to other line clipping methods. The number of final line segments to render is contained within only a fraction of the total geometry that spans the entire display, since the L-region is typically only 10-25% of the total screen area. As the number of line segments grows, the present method can greatly accelerate rendering by restricting the number of pixels needed to be redrawn in any panning operation.</p>
+<p id="p-0081" num="0090">While the embodiments described herein are directed to particular implementations of the electronic device and method of controlling the electronic device, the above-described embodiments are intended to be examples. It will be understood that alterations, modifications and variations may be effected without departing from the scope of the present disclosure.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. An electronic device, comprising:
+<claim-text>a display; and</claim-text>
+<claim-text>a processor, the processor configured to:
+<claim-text>determine a refresh region and a copy region of a panned frame based on panning increments between the panned frame and a previously rendered frame;</claim-text>
+<claim-text>clip a candidate segment against the refresh region to obtain one or more clipped segments within the refresh region; and</claim-text>
+<claim-text>render the panned frame on the display by rendering the one or more clipped segments in the refresh region of the panned frame and copying a portion of the previously rendered frame to the copy region of the panned frame.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The electronic device of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the panning increments comprise horizontal and vertical panning increments.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The electronic device of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the refresh region is L-shaped.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The electronic device according to <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein determining the L-shaped refresh region comprises determining an L-shaped region having inner horizontal and vertical boundaries collinear with respective horizontal and vertical boundaries of the previously rendered frame and outer boundaries collinear with respective horizontal and vertical boundaries of the panned frame.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The electronic device according to <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein clipping the candidate segment comprises:
+<claim-text>performing a clipping operation on the candidate segment, based on a rectangle determined by the horizontal and vertical boundaries of the panned frame to obtain one or more intermediate segments; and</claim-text>
+<claim-text>clipping the one or more intermediate segments against the L-shaped refresh region to determine the one or more clipped segments.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The electronic device according to <claim-ref idref="CLM-00005">claim 5</claim-ref>, wherein clipping the one or more intermediate segments comprises:
+<claim-text>dividing a 2-dimensional plane containing the candidate segment into four regions with respect to the horizontal and vertical inner boundaries of the L-shaped refresh region;</claim-text>
+<claim-text>determining, for each of the one or more intermediate segments, if said intermediate segment is wholly included or wholly excluded, based upon the respective regions in which the endpoints of said intermediate segment are located; and</claim-text>
+<claim-text>clipping those intermediate segments, that are not wholly included or wholly excluded, with respect to at least one of the horizontal and vertical inner boundaries of the L-shaped refresh region.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The electronic device according to <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein determining, for each of the one or more intermediate segments, if said intermediate segment is wholly included or wholly excluded comprises:
+<claim-text>assigning unique codes to each of the four regions;</claim-text>
+<claim-text>assigning one of the unique codes to each end point of the intermediate segments, based on the region in which the respective end point is located; and</claim-text>
+<claim-text>determining if said intermediate segment is wholly included or wholly excluded based on the unique codes assigned to each respective endpoint.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The electronic device according to <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein assigning unique codes to each of the four regions comprises assigning a respective one of codes (00), (01), (11) and (10) to each of the four regions.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. A computer-implemented method, comprising:
+<claim-text>determining a refresh region and a copy region of a panned frame based on panning increments between the panned frame and a previously rendered frame;</claim-text>
+<claim-text>clipping a candidate segment against the refresh region to obtain one or more clipped segments within the refresh region; and</claim-text>
+<claim-text>rendering the panned frame by rendering the one or more clipped segments in the refresh region of the panned frame and copying a portion of the previously rendered frame to the copy region of the panned frame.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method of <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein the panning increments comprise horizontal and vertical panning increments.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The method of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the refresh region is L-shaped.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The method according to <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein determining the L-shaped refresh region comprises determining an L-shaped region having inner horizontal and vertical boundaries collinear with respective horizontal and vertical boundaries of the previously rendered frame and outer boundaries collinear with respective horizontal and vertical boundaries of the panned frame.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The method according to <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein clipping the candidate segment comprises:
+<claim-text>performing a clipping operation on the candidate segment, based on a rectangle determined by the horizontal and vertical boundaries of the panned frame to obtain one or more intermediate segments; and</claim-text>
+<claim-text>clipping the one or more intermediate segments against the L-shaped refresh region to determine the one or more clipped segments.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The method according to <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein clipping the one or more intermediate segments comprises:
+<claim-text>dividing a 2-dimensional plane containing the candidate segment into four regions with respect to the horizontal and vertical inner boundaries of the L-shaped refresh region;</claim-text>
+<claim-text>determining, for each of the one or more intermediate segments, if said intermediate segment is wholly included or wholly excluded, based upon the respective regions in which the endpoints of said intermediate segment are located; and</claim-text>
+<claim-text>clipping those intermediate segments, that are not wholly included or wholly excluded, with respect to at least one of the horizontal and vertical inner boundaries of the L-shaped refresh region.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The method according to <claim-ref idref="CLM-00014">claim 14</claim-ref>, wherein determining, for each of the one or more intermediate segments, if said intermediate segment is wholly included or wholly excluded comprises:
+<claim-text>assigning unique codes to each of the four regions;</claim-text>
+<claim-text>assigning one of the unique codes to each end point of the intermediate segments, based on the region in which the respective end point is located; and</claim-text>
+<claim-text>determining if said intermediate segment is wholly included or wholly excluded based on the unique codes assigned to each respective endpoint.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The method according to <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein assigning unique codes to each of the four regions comprises assigning a respective one of codes (00), (01), (11) and (10) to each of the four regions.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. A non-transitory computer-readable medium having computer-readable code embodied therein for execution by a processor at a computing device for:
+<claim-text>determining a refresh region and a copy region of a panned frame based on panning increments between the panned frame and a previously rendered frame;</claim-text>
+<claim-text>clipping a candidate segment against the refresh region to obtain one or more clipped segments within the refresh region; and</claim-text>
+<claim-text>rendering the panned frame by rendering the one or more clipped segments in the refresh region of the panned frame and copying a portion of the previously rendered frame to the copy region of the panned frame.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The computer-readable medium according to <claim-ref idref="CLM-00017">claim 17</claim-ref>, wherein determining the refresh region comprises determining an L-shaped region having inner horizontal and vertical boundaries collinear with respective horizontal and vertical boundaries of the previously rendered frame and outer boundaries collinear with respective horizontal and vertical boundaries of the panned frame.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The computer-readable medium according to <claim-ref idref="CLM-00018">claim 18</claim-ref>, wherein clipping the candidate segment comprises:
+<claim-text>performing a clipping operation on the candidate segment, based on a rectangle determined by the horizontal and vertical boundaries of the panned frame to obtain one or more intermediate segments; and</claim-text>
+<claim-text>clipping the one or more intermediate segments against the L-shaped refresh region to determine the one or more clipped segments.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The computer-readable medium according to <claim-ref idref="CLM-00019">claim 19</claim-ref>, wherein clipping the one or more intermediate segments comprises:
+<claim-text>dividing a 2-dimensional plane containing the candidate segment into four regions with respect to the horizontal and vertical inner boundaries of the L-shaped refresh region;</claim-text>
+<claim-text>determining, for each of the one or more intermediate segments, if said intermediate segment is wholly included or wholly excluded, based upon the respective regions in which the endpoints of said intermediate segment are located; and</claim-text>
+<claim-text>clipping those intermediate segments, that are not wholly included or wholly excluded, with respect to at least one of the horizontal and vertical inner boundaries of the L-shaped refresh region. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

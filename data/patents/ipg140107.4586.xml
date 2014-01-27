@@ -1,0 +1,758 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08625674-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08625674</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13754337</doc-number>
+<date>20130130</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>KR</country>
+<doc-number>10-2007-0000710</doc-number>
+<date>20070103</date>
+</priority-claim>
+<priority-claim sequence="02" kind="national">
+<country>KR</country>
+<doc-number>10-2007-0044226</doc-number>
+<date>20070507</date>
+</priority-claim>
+</priority-claims>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>04</class>
+<subclass>N</subclass>
+<main-group>11</main-group>
+<subgroup>02</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>04</class>
+<subclass>N</subclass>
+<main-group>7</main-group>
+<subgroup>50</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classifications-cpc>
+<main-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>H</section>
+<class>04</class>
+<subclass>N</subclass>
+<main-group>7</main-group>
+<subgroup>50</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</main-cpc>
+</classifications-cpc>
+<classification-national>
+<country>US</country>
+<main-classification>37524016</main-classification>
+</classification-national>
+<invention-title id="d2e79">Method and apparatus for estimating motion vector using plurality of motion vector predictors, encoder, decoder, and decoding method</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5594504</doc-number>
+<kind>A</kind>
+<name>Ebrahimi</name>
+<date>19970100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>6020933</doc-number>
+<kind>A</kind>
+<name>Lee</name>
+<date>20000200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>6249548</doc-number>
+<kind>B1</kind>
+<name>Kleihorst et al.</name>
+<date>20010600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6381277</doc-number>
+<kind>B1</kind>
+<name>Chun et al.</name>
+<date>20020400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>6825885</doc-number>
+<kind>B2</kind>
+<name>Bottreau et al.</name>
+<date>20041100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>6925123</doc-number>
+<kind>B2</kind>
+<name>Subramaniyan et al.</name>
+<date>20050800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>2003/0156646</doc-number>
+<kind>A1</kind>
+<name>Hsu et al.</name>
+<date>20030800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>2004/0141555</doc-number>
+<kind>A1</kind>
+<name>Rault et al.</name>
+<date>20040700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>2004/0223548</doc-number>
+<kind>A1</kind>
+<name>Kato et al.</name>
+<date>20041100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>2005/0123043</doc-number>
+<kind>A1</kind>
+<name>Wang et al.</name>
+<date>20050600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>37524012</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>2006/0018381</doc-number>
+<kind>A1</kind>
+<name>Luo et al.</name>
+<date>20060100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>2006/0045186</doc-number>
+<kind>A1</kind>
+<name>Koto et al.</name>
+<date>20060300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>2007/0286286</doc-number>
+<kind>A1</kind>
+<name>Heng et al.</name>
+<date>20071200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>37524016</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>CN</country>
+<doc-number>1592421</doc-number>
+<kind>A</kind>
+<date>20050300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>JP</country>
+<doc-number>81-95956</doc-number>
+<kind>A</kind>
+<date>19960700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>JP</country>
+<doc-number>82-14316</doc-number>
+<kind>A</kind>
+<date>19960800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>JP</country>
+<doc-number>2000-295625</doc-number>
+<kind>A</kind>
+<date>20001000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>JP</country>
+<doc-number>2002-520958</doc-number>
+<kind>A</kind>
+<date>20020700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>JP</country>
+<doc-number>2006-25033</doc-number>
+<kind>A</kind>
+<date>20060100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>JP</country>
+<doc-number>2006-74474</doc-number>
+<kind>A</kind>
+<date>20060300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>JP</country>
+<doc-number>2006-74520</doc-number>
+<kind>A</kind>
+<date>20060300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>KR</country>
+<doc-number>10-2006-0090942</doc-number>
+<kind>A</kind>
+<date>20060800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00023">
+<othercit>Communication from the European Patent Office issued Apr. 16, 2013 in counterpart European Application No. 13155096.4.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00024">
+<othercit>Communication from the European Patent Office issued Apr. 16, 2013 in counterpart European Application No. 13155098.0.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00025">
+<othercit>Communication from the European Patent Office issued Mar. 28, 2013 in counterpart European Application No. 13155099.8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00026">
+<othercit>Communication from the European Patent Office issued Mar. 28, 2013 in counterpart European Application No. 13155100.4.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00027">
+<othercit>Communication from the European Patent Office issued Mar. 28, 2013 in counterpart European Application No. 13155101.2.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00028">
+<othercit>Chinese Office Action issued in Application No. 200780049240.9, dated Jan. 26, 2011.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00029">
+<othercit>Agarwal, et al., &#x201c;Performance complexity trade-offs in H.264 Motion Search&#x201d;, Mar. 10, 2005, pp. 1-9, XP002624458, Retrieved from the Internet: URL:http://scien.stanford.edu/pages/labsite/2005/ee398/projects/reports/Agarwal%20Kim%20Gupta%20-%20Project%20Report%20-%20Performance%20Complexity%20Trandeoff%20H264%20Motion%20Search.pdf.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00030">
+<othercit>Ismaeil, et al., &#x201c;Efficient motion estimation using spatial and temporal motion vector prediction&#x201d;, International Conference on Image Processing, 1999. ICIP 99. Proceedings. 1999&#x2014;Kobe, Japan, vol. 1, Oct. 24, 1999,-Oct. 28, 1999, pp. 70-74, XP010369195, IEEE, Piscataway, NJ, USA, DOI:10.1109/ICIP.1999.821568, ISBN: 978-0-7803-5467-8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00031">
+<othercit>Jung, et al., &#x201c;Competition-Based Scheme for Motion Vector Selection and Coding&#x201d;, ITU Study Group 16&#x2014;Video Coding Experts Group&#x2014;ISO/IEC MPEG &#x26; ITU-T VCEG (ISO/IEC JTC1/SC29/WG11 and ITU-T SG16 Q6, XX, XX, No. VCEG-AC06r1, Aug. 2, 2006, XP030003490.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00032">
+<othercit>Liu, et al., &#x201c;Adaptive Motion Vector Prodiction Based on Spatiotemporal Correlation&#x201d;, Conference on Wireless Communications, Networking and Mobile Computing, 2006. WICOM 2006.International, IEEE, PI, Sep. 1, 2006, pp. 1-4, XP031074482, ISBN: 978-1-4244-0517-6.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00033">
+<othercit>Rehan, et al., &#x201c;A new motion-estimation technique for efficient vide compression&#x201d;, Conference on Communications. Computers and Signal Processing, 1997. 10 Years PACRIM 1987-1997&#x2014;Networking the Pacific Rim. 1997 IEEE Pacific Rim. Victoria, BC, Canada, vol. 1, Aug. 20, 1997-Aug. 22, 1997, pp. 326-329, XP010244980, New York, NY, USA, IEEE, US, DOI: 10.1109/PACRIM.1997.619965, ISBN: 978-0-7803-3905-7.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00034">
+<othercit>Communication dated Feb. 16, 2012 from the State Intellectual Property Office of P.R. China in a counterpart application No. 200780049240.9.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00035">
+<othercit>Communication dated Sep. 11, 2012 issued by the Japanese Patent Office in counterpart Japanese Application No. 2009-544785.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00036">
+<othercit>Communication dated Mar. 29, 2011 in European Application No. 07851807.3.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00037">
+<othercit>Communication dated Apr. 18, 2011 in European Application No. 07851807.3.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00038">
+<othercit>Communication dated Jul. 9, 2013, issued by the Korean Intellectual Property Office in counterpart Korean Application No. 10-2007-0044226.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>7</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>37524016</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>9</number-of-drawing-sheets>
+<number-of-figures>13</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>11964844</doc-number>
+<date>20071227</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8385420</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13754337</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20130142263</doc-number>
+<kind>A1</kind>
+<date>20130606</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only" applicant-authority-category="assignee">
+<addressbook>
+<orgname>Samsung Electronics Co., Ltd.</orgname>
+<address>
+<city>Suwon-si</city>
+<country>KR</country>
+</address>
+</addressbook>
+<residence>
+<country>KR</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Lee</last-name>
+<first-name>Tammy</first-name>
+<address>
+<city>Seoul</city>
+<country>KR</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Han</last-name>
+<first-name>Woo-jin</first-name>
+<address>
+<city>Suwon-Si</city>
+<country>KR</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Sughrue Mion, PLLC</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Samsung Electronics Co., Ltd.</orgname>
+<role>03</role>
+<address>
+<city>Suwon-si</city>
+<country>KR</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Rinehart</last-name>
+<first-name>Mark</first-name>
+<department>2463</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Hopkins</last-name>
+<first-name>Matthew</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Provided are a method and apparatus for estimating a motion vector using a plurality of motion vector predictors, an encoder, a decoder, and a decoding method. The method includes calculating spatial similarities between the current block and the plurality of neighboring partitions around the current block, selecting at least one of the neighboring partitions based on the calculated spatial similarities, and estimating a motion vector of the selected partition as the motion vector of the current block.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="94.06mm" wi="102.19mm" file="US08625674-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="173.06mm" wi="136.57mm" file="US08625674-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="98.72mm" wi="102.28mm" file="US08625674-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="174.33mm" wi="108.20mm" file="US08625674-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="172.89mm" wi="94.91mm" orientation="landscape" file="US08625674-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="170.94mm" wi="99.57mm" orientation="landscape" file="US08625674-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="182.80mm" wi="70.44mm" file="US08625674-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="260.01mm" wi="148.76mm" orientation="landscape" file="US08625674-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="189.15mm" wi="95.50mm" orientation="landscape" file="US08625674-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="73.83mm" wi="79.42mm" file="US08625674-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CROSS-REFERENCE TO RELATED PATENT APPLICATION</heading>
+<p id="p-0002" num="0001">This application is a continuation of U.S. application Ser. No. 11/964,844 filed Dec. 27, 2007, issued as U.S. Pat. No. 8,385,420, which claims priority from Korean Patent Application No. 10-2007-0000710 filed on Jan. 3, 2007 and Korean Patent Application No. 10-2007-0044226 filed on May 7, 2007, the disclosures of which are incorporated herein in their entirety by reference.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0003" num="0002">1. Field of the Invention</p>
+<p id="p-0004" num="0003">Methods and apparatuses consistent with the present invention generally relate to video coding and decoding, and more particularly, to estimating a motion vector using a plurality of motion vector predictors.</p>
+<p id="p-0005" num="0004">2. Description of the Related Art</p>
+<p id="p-0006" num="0005">Inter-frame and intra-frame predictions are widely used video encoding techniques. Intra-frame prediction uses a high correlation between gray levels of adjacent pixels in a single frame. Inter-frame prediction uses similarities between consecutive frames in a video sequence. As long as a sharp change does not occur in a moving picture, many parts of the moving picture change little between consecutive frames. In particular, motion-vector estimation is one of a variety of video encoding techniques used in inter-frame prediction. Motion-vector estimation is designed to process an image by differentially encoding motion vectors obtained by motion estimation. Generally, a motion vector of a block has a close correlation with a motion vector of a neighboring partition. For this reason, the amount of bits to be encoded can be reduced by predicting a motion vector of a current block from the motion vector of a neighboring partition and encoding only a differential vector between these two motion vectors.</p>
+<p id="p-0007" num="0006"><figref idref="DRAWINGS">FIGS. 1A and 1B</figref> illustrate neighboring partitions used for related art motion estimation.</p>
+<p id="p-0008" num="0007">Referring to <figref idref="DRAWINGS">FIG. 1A</figref>, a current macroblock E and its neighboring partitions A, B, and C are the same in shape, and predictive encoding of a motion vector uses the median value of horizontal components and vertical components of motion vectors of a block A located to the left of the current macroblock E, a block B located above the current block E, and a block C located above and to the right of the current block E.</p>
+<p id="p-0009" num="0008">In <figref idref="DRAWINGS">FIG. 1B</figref>, the current macroblock E and its neighboring partitions A, B, and C are different in shape, and the motion vector of the current macroblock E is estimated as follows.</p>
+<p id="p-0010" num="0009">(1) If a neighboring partition located to the left of the current macroblock E is divided into several blocks, a block A located uppermost among those blocks is used for motion estimation. If a neighboring partition located above the current macroblock E is divided into several blocks, a block B located leftmost among those blocks is used for motion estimation. The median value of horizontal components and vertical components of motion vectors of the block A, the block B, and a block C located above and to the right of the current macroblock E is used for predictive encoding of the motion vector of the current macroblock E.</p>
+<p id="p-0011" num="0010">(2) However, if the current macroblock E to be encoded is not a regular square in shape, i.e., the current macroblock E is composed of 16&#xd7;8 or 8&#xd7;16 pixels, the motion vector of the current macroblock E is estimated based on the size of a motion compensation block without using the median value, as follows.</p>
+<p id="p-0012" num="0011">(i) If the current macroblock E is composed of 16&#xd7;8 pixels, the block B located above the current block E and the block A located to the left of the current macroblock E are used for motion estimation.</p>
+<p id="p-0013" num="0012">(ii) If the current macroblock E is composed of 8&#xd7;16 pixels, the block A located to the left of the current macroblock E and the block C located above and to the right of the current block E are used for motion estimation.</p>
+<p id="p-0014" num="0013">(3) In a skip macroblock mode, estimation is performed as described in (1).</p>
+<p id="p-0015" num="0014">As described above, at least one neighboring block may be used for estimation of a motion vector of the current block. However, according to the prior art, only typical neighboring blocks are available and, out of those neighboring blocks, a block that is similar to the current block, i.e., the block having the same motion as the current block, is useful, but the other blocks are not. Therefore, there is a need to use a plurality of other neighboring blocks for accurate estimation as well as those typical neighboring blocks. In this case, processing of information about neighboring blocks used for motion estimation is also required.</p>
+<heading id="h-0003" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0016" num="0015">The present invention provides a method and apparatus for estimating a motion vector, in which useful neighboring partitions are estimated so as to estimate a motion vector of a current block and information about estimated neighboring partitions is processed.</p>
+<p id="p-0017" num="0016">According to one aspect of the present invention, there is provided a method of estimating a motion vector of a current block. The method includes calculating spatial similarities between the current block and a plurality of neighboring partitions around the current block, selecting at least one of the neighboring partitions based on the calculated spatial similarities, and estimating a motion vector of the selected partition as the motion vector of the current block.</p>
+<p id="p-0018" num="0017">During the calculation of the spatial similarities, an average value of pixels of the current block and an average value of pixels of each of the neighboring partitions may be used and the average value of the pixels of the current block may be calculated using pixels that touch the current block from among the pixels of the neighboring partitions.</p>
+<p id="p-0019" num="0018">During the calculation of the spatial similarities, the spatial similarities may be allocated to the neighboring partitions according to a spatial order previously agreed between an encoder and a decoder.</p>
+<p id="p-0020" num="0019">The method may further include transmitting motion information between the motion vector of the current block and the estimated motion vector of the current block and partition information for reconstruction of the motion vector of the current block.</p>
+<p id="p-0021" num="0020">In the estimating, when a plurality of neighboring partitions are selected, a motion vector of one of the selected neighboring partitions may be estimated as the motion vector of the current block.</p>
+<p id="p-0022" num="0021">In the estimating, when a plurality of neighboring partitions are selected, the median value of motion vectors of the selected neighboring partitions may be estimated as the motion vector of the current block.</p>
+<p id="p-0023" num="0022">In the estimating, when a plurality of neighboring partitions are selected, a sum of weighted motion vectors of the selected neighboring partitions may be estimated as the motion vector of the current block.</p>
+<p id="p-0024" num="0023">In the estimating, a motion vector of a partition in a reference frame, which is located in the spatially same position as the current block, may be estimated as the motion vector of the current block.</p>
+<p id="p-0025" num="0024">According to another aspect of the present invention, there is provided a method of estimating a motion vector of a current block. The method includes searching at least one reference frame using motion vectors of a plurality of neighboring partitions around the current block in order to search for blocks corresponding to the current block, calculating similarities between neighboring pixels that are adjacent to each of the found blocks and neighboring pixels that are adjacent to the current block, and estimating one of the motion vectors of the partitions as the motion vector of the current block based on the calculation result.</p>
+<p id="p-0026" num="0025">According to another aspect of the present invention, there is provided a computer-readable recording medium having recorded thereon a program for executing the method.</p>
+<p id="p-0027" num="0026">According to another aspect of the present invention, there is provided an apparatus for estimating a motion vector of a current block using motion vectors of a plurality of neighboring partitions around the current block. The apparatus includes a spatial similarity calculation unit calculating spatial similarities between the current block and the plurality of neighboring partitions around the current block, a partition selection unit selecting at least one of the neighboring partitions based on the calculated spatial similarities, and a motion vector estimation unit estimating a motion vector of the selected partition as the motion vector of the current block.</p>
+<p id="p-0028" num="0027">According to another aspect of the present invention, there is provided a video encoder. The video encoder includes a motion estimation unit generating a current block and a motion vector of each of a plurality of neighboring partitions around the current block, a motion vector estimation unit calculating spatial similarities between the current block and the plurality of neighboring partitions around the current block, selecting at least one of the neighboring partitions based on the calculated spatial similarities, and estimating a motion vector of the selected partition as the motion vector of the current block, and an entropy-coding unit performing entropy-coding on motion information between the motion vector of the current block and the estimated motion vector of the current block and partition information for reconstruction of the motion vector of the current block.</p>
+<p id="p-0029" num="0028">According to another aspect of the present invention, there is provided a video decoder. The video decoder includes an entropy-decoding unit performing entropy-decoding on a residual block, motion information, and partition information from an encoded bitstream, a motion vector estimation unit calculating spatial similarities between a current block and a plurality of neighboring partitions around the current block, selecting at least one of the neighboring partitions based on the calculated spatial similarities, estimating a motion vector of the selected partition as the motion vector of the current block, adding the decoded motion information to the estimated motion vector of the current block in order to reconstruct the motion vector of the current block, and a macroblock reconstruction unit reconstructing the current block from the decoded residual block using the reconstructed motion vector.</p>
+<p id="p-0030" num="0029">According to another aspect of the present invention, there is provided a decoding method. The decoding method includes performing entropy-decoding on a residual block, motion information, and partition information from an encoded bitstream, calculating spatial similarities between a current block and a plurality of neighboring partitions around the current block, selecting at least one of the neighboring partitions based on the calculated spatial similarities, estimating a motion vector of the selected partition as the motion vector of the current block, adding the decoded motion information to the estimated motion vector of the current block in order to reconstruct the motion vector of the current block, and reconstructing the current block from the decoded residual block using the reconstructed motion vector.</p>
+<p id="p-0031" num="0030">According to another aspect of the present invention, there is provided a computer-readable recording medium having recorded thereon a program for executing the decoding method.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0032" num="0031">The above and other aspects of the present invention will become more apparent by describing in detail an exemplary embodiment thereof with reference to the attached drawings in which:</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIGS. 1A and 1B</figref> illustrate neighboring partitions used for conventional motion estimation;</p>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIG. 2</figref> illustrates neighboring partitions used for motion estimation according to an exemplary embodiment of the present invention;</p>
+<p id="p-0035" num="0034"><figref idref="DRAWINGS">FIG. 3A</figref> is a flowchart of a method of estimating a motion vector of a current block according to an exemplary embodiment of the present invention;</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 3B</figref> is a flowchart of a method of estimating a motion vector of a current block according to another exemplary embodiment of the present invention;</p>
+<p id="p-0037" num="0036"><figref idref="DRAWINGS">FIG. 4A</figref> is a view for explaining calculation of spatial similarities between the current block and its neighboring partitions according to an exemplary embodiment of the present invention;</p>
+<p id="p-0038" num="0037"><figref idref="DRAWINGS">FIGS. 4B and 4C</figref> are views for explaining calculation of spatial similarities between neighboring pixels that are adjacent to the current block and neighboring pixels that are adjacent to each reference block that corresponds to the current block according to an exemplary embodiment of the present invention;</p>
+<p id="p-0039" num="0038"><figref idref="DRAWINGS">FIG. 5A</figref> is a block diagram of an apparatus for estimating a motion vector according to an exemplary embodiment of the present invention;</p>
+<p id="p-0040" num="0039"><figref idref="DRAWINGS">FIG. 5B</figref> is a block diagram of an apparatus for estimating a motion vector according to another exemplary embodiment of the present invention;</p>
+<p id="p-0041" num="0040"><figref idref="DRAWINGS">FIG. 6</figref> is a block diagram of an encoder including the apparatus for estimating a motion vector according to an exemplary embodiment of the present invention;</p>
+<p id="p-0042" num="0041"><figref idref="DRAWINGS">FIG. 7</figref> is a block diagram of a decoder according to an exemplary embodiment of the present invention; and</p>
+<p id="p-0043" num="0042"><figref idref="DRAWINGS">FIG. 8</figref> is a flowchart of a decoding method according to an exemplary embodiment of the present invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION OF EXEMPLARY EMBODIMENTS OF THE INVENTION</heading>
+<p id="p-0044" num="0043">Hereinafter, an exemplary embodiment of the present invention will be described in detail with reference to the accompanying drawings. It should be noted that like reference numerals refer to like elements illustrated in one or more of the drawings. It would be obvious to those of ordinary skill in the art that many specifics like elements of a circuit are provided only to facilitate understanding of the present invention and the present invention can be implemented without those specifics. In the following description of the present invention, a detailed description of known functions and configurations incorporated herein will be omitted for conciseness and clarity.</p>
+<p id="p-0045" num="0044"><figref idref="DRAWINGS">FIG. 2</figref> illustrates neighboring partitions used for motion estimation according to an exemplary embodiment of the present invention. Referring to <figref idref="DRAWINGS">FIG. 2</figref>, a motion vector of a current block E can be estimated using not only neighboring partitions A, B, and C according to the related art but also by using other neighboring partitions A<b>1</b>, A<b>2</b>, B<b>1</b>, and B<b>2</b>. The current block E may be a 16&#xd7;16 macroblock and the size of a neighboring partition may be smaller than the current block E and may be one of 16&#xd7;8, 8&#xd7;16, 8&#xd7;4, 4&#xd7;8, and 4&#xd7;4.</p>
+<p id="p-0046" num="0045"><figref idref="DRAWINGS">FIG. 3A</figref> is a flowchart of a method of estimating a motion vector of a current block according to an exemplary embodiment of the present invention, and <figref idref="DRAWINGS">FIG. 4A</figref> is a view for explaining calculation of spatial similarities between the current block and its neighboring partitions according to an exemplary embodiment of the present invention.</p>
+<p id="p-0047" num="0046">Referring to <figref idref="DRAWINGS">FIG. 3A</figref>, an average value of pixels of the current block E and an average value of pixels of each of the neighboring partitions A, B, A<b>1</b>, A<b>2</b>, B<b>1</b>, B<b>2</b>, and C are calculated in operation S<b>300</b>, in order to select neighboring partitions having spatial similarity with the current block E.</p>
+<p id="p-0048" num="0047">In operation S<b>301</b>, the similar neighboring partitions are selected as predictors of the current block using the calculated averages. The predictors are blocks that are to be compared with the current block for obtaining a motion vector difference (MVD).</p>
+<p id="p-0049" num="0048">More specifically, when the average value of pixels of the current block is a first average and the average value of pixels of a neighboring partition is a second average, the neighboring partition is selected as a predictor of the current block if the absolute value of a difference between the first average and the second average is less than a predetermined threshold.</p>
+<p id="p-0050" num="0049">In particular, the average value of pixels of the current block and the average value of pixels of each of a plurality of neighboring partitions around the current block may be used for calculation of a spatial similarity and the average value of pixels of the current block may be calculated using pixels that touch the current block from among the pixels of the neighboring partitions. During calculation of a spatial similarity, the spatial similarity is allocated to each of the neighboring partitions according to a spatial order agreed previously between an encoder and a decoder.</p>
+<p id="p-0051" num="0050">In operation S<b>302</b>, a motion vector of the selected neighboring partition is estimated as the motion vector of the current block. At least two neighboring partitions may have been selected in operation S<b>301</b>, as will be described with reference to <figref idref="DRAWINGS">FIG. 4</figref>.</p>
+<p id="p-0052" num="0051"><figref idref="DRAWINGS">FIG. 4A</figref> is a view for explaining calculation of spatial similarities between the current block and its neighboring partitions according to an exemplary embodiment of the present invention. In <figref idref="DRAWINGS">FIG. 4A</figref>, it is assumed that the current block E is a 16&#xd7;16 macroblock, a neighboring partition A is composed of 8&#xd7;4 pixels, a neighboring partition A<b>1</b> is composed of 8&#xd7;4 pixels, a neighboring partition A<b>2</b> is composed of 8&#xd7;8 pixels, a neighboring partition B is composed of 4&#xd7;8 pixels, a neighboring partition B<b>1</b> is composed of 4&#xd7;8 pixels, a neighboring partition B<b>2</b> is composed of 8&#xd7;8 pixels, and a neighboring partition C is composed of 16&#xd7;8 pixels. In addition, it is assumed that an absolute value of a difference between an average value of pixels of the current block E and an average value of pixels of each of the neighboring partitions A<b>2</b>, B<b>1</b>, and B<b>2</b> is less than a predetermined threshold.</p>
+<p id="p-0053" num="0052">According to an exemplary embodiment of the present invention, a motion vector of the current block E can be estimated as follows in (i), (ii), (iii) or (iv).</p>
+<p id="p-0054" num="0053">(i) One of the neighboring partitions A<b>2</b>, B<b>1</b>, and B<b>2</b> is selected and a motion vector of the selected neighboring partition is estimated as the motion vector of the current block E,</p>
+<p id="p-0055" num="0054">(ii) A combination of the neighboring partitions A<b>2</b>, B<b>1</b>, and B<b>2</b>, e.g., a combination formula <sub>3</sub>C<sub>2</sub>, is selected and the median value of x components and y components of motion vectors of the selected neighboring partitions is estimated as the motion vector of the current block E.</p>
+<p id="p-0056" num="0055">(iii) If motion vectors of the neighboring partitions A<b>2</b>, B<b>1</b>, and B<b>2</b> are MVPA<b>2</b>, MVPB<b>1</b>, and MVPB<b>2</b>, a sum of weighted motion vectors, e.g., &#x3b1;*MVPA<b>2</b>+&#x3b2;*MVPB<b>1</b>+&#x3b3;*MVPB<b>2</b>, is estimated as the motion vector of the current block E.</p>
+<p id="p-0057" num="0056">Information about neighboring partitions, i.e., partition information, complies with a rule previously reserved for a decoder. For example, the partition information may indicate that a motion vector of a neighboring partition located to the left of the current block from among neighboring partitions having spatial similarities with the current block is estimated as the motion vector of the current block or the median value of motion vectors of the neighboring partitions is estimated as the motion vector of the current block. When weights are used, weight coefficients (&#x3b1;, &#x3b2;, &#x3b3;) have to be transmitted to a decoder as a partition type.</p>
+<p id="p-0058" num="0057">(iv) A motion vector of a partition in a reference frame, which is located in a position that spatially corresponds to that of the current block, may be estimated as the motion vector of the current block. A partition in a temporally close reference frame, which is located in a position that spatially corresponds to that of the current block, i.e., the partition in the reference frame, which is located in the spatially same position as the current block, is highly likely to have a motion that is similar to that of the current block. Thus, the motion vector of the partition, which is located in the spatially same position as the current block, may be estimated as the motion vector of the current block.</p>
+<p id="p-0059" num="0058">Information about neighboring partitions, i.e., partition information, complies with a rule previously reserved for a decoder. For example, the partition information may indicate that a motion vector of a neighboring partition located to the left of the current block from among neighboring partitions having spatial similarities with the current block is estimated as the motion vector of the current block or the median value of motion vectors of the neighboring partitions is estimated as the motion vector of the current block. When weights are used, weight coefficients (&#x3b1;, &#x3b2;, &#x3b3;) have to be transmitted to a decoder as a partition type.</p>
+<p id="p-0060" num="0059"><figref idref="DRAWINGS">FIG. 3B</figref> is a flowchart of a method of estimating a motion vector of a current block according to another exemplary embodiment of the present invention, and <figref idref="DRAWINGS">FIGS. 4B and 4C</figref> are views for explaining calculation of spatial similarities between pixels that are adjacent to the current block and pixels that are adjacent to each block that corresponds to the current block according to an exemplary embodiment of the present invention. Referring to <figref idref="DRAWINGS">FIG. 3B</figref>, in operation <b>310</b>, at least one reference frame is searched using motion vectors of the plurality of neighboring partitions A, B, C, A<b>1</b>, A<b>2</b>, B<b>1</b>, B<b>2</b>, and C that are adjacent to a current block <b>410</b> in order to search for blocks <b>420</b> through <b>422</b> that correspond to the current block <b>410</b>. It is assumed that the current block <b>410</b> is the same as the current block E illustrated in <figref idref="DRAWINGS">FIG. 3A</figref>.</p>
+<p id="p-0061" num="0060">The motion vectors of the neighboring partitions A, B, C, A<b>1</b>, A<b>2</b>, B<b>1</b>, B<b>2</b>, and C are estimated as the motion vector of the current block <b>410</b>. For example, the motion vector of the partition A illustrated in <figref idref="DRAWINGS">FIG. 3A</figref> may be an estimated motion vector MVP<b>1</b>, the motion vector of the partition B illustrated in <figref idref="DRAWINGS">FIG. 3A</figref> may be an estimated motion vector MVP<b>2</b>, and the motion vector of the partition C illustrated in <figref idref="DRAWINGS">FIG. 3A</figref> may be an estimated motion vector MVP<b>3</b>.</p>
+<p id="p-0062" num="0061">In operation <b>311</b>, similarities between neighboring pixels <b>423</b> through <b>425</b> that are adjacent to the found blocks <b>420</b> through <b>422</b> corresponding to the current block <b>410</b> and neighboring pixels <b>411</b> that are adjacent to the current block <b>410</b> are calculated.</p>
+<p id="p-0063" num="0062">Preferably, but not necessarily, the similarities may be calculated by calculating sums of absolute differences (SADs) between the pixels <b>423</b> through <b>425</b> and the pixels <b>411</b>.</p>
+<p id="p-0064" num="0063">For SAD calculation in operation <b>311</b>, it is not necessary to use all the neighboring pixels <b>423</b> through <b>425</b> that are adjacent to the blocks <b>420</b> through <b>422</b> corresponding to the current block <b>410</b> and the neighboring pixels <b>411</b> that are adjacent to the current block <b>410</b>. As illustrated in <figref idref="DRAWINGS">FIG. 4C</figref>, the similarities may be calculated by calculating SADs between only some of the neighboring pixels <b>423</b> through <b>425</b> and the neighboring pixels <b>411</b>. In <figref idref="DRAWINGS">FIG. 4C</figref>, among the neighboring pixels <b>423</b> through <b>425</b> and the neighboring pixels <b>411</b>, only neighboring pixels that are located to the left of and above, to the right of and above, and to the left of and below a corresponding block are used to calculate the similarities.</p>
+<p id="p-0065" num="0064">In operation <b>312</b>, one of the motion vectors of the neighboring partitions A, B, C, A<b>1</b>, A<b>2</b>, B<b>1</b>, B<b>2</b>, and C is estimated as the motion vector of the current block based on the similarities calculated in operation <b>311</b>.</p>
+<p id="p-0066" num="0065">If SADs have been calculated for the similarities in operation <b>311</b>, a motion vector used to search for a block that is adjacent to pixels having the smallest SAD is estimated as the motion vector of the current block. For example, if an SAD between the neighboring pixels <b>411</b> of the current block <b>410</b> and the neighboring pixels <b>423</b> of the block <b>420</b> found using the motion vector MVP<b>1</b> is smallest among the calculated SADs and thus a similarity between the neighboring pixels <b>411</b> and the neighboring pixels <b>423</b> is highest, the motion vector used to search for the block <b>410</b>, i.e., the motion vector MVP<b>1</b>, is estimated as the motion vector of the current block.</p>
+<p id="p-0067" num="0066">However, it is not necessary to estimate a motion vector used to search for a block that is adjacent to pixels having the smallest SAD as the motion vector of the current block. In spite of corresponding to the smallest SAD, the motion vector may not be an appropriately estimated motion vector when considering the overall rate-distortion (R-D) cost of the current block. Therefore, N motion vector candidates, i.e., a plurality of motion vector candidates corresponding to smaller SADs, are selected and a motion vector guaranteeing low R-D cost among the selected motion vector candidates is estimated as the motion vector of the current block.</p>
+<p id="p-0068" num="0067">In this case, information indicating which motion vector has among the plurality of motion vector candidates been estimated as the motion vector of the current block has to be transmitted to a decoder.</p>
+<p id="p-0069" num="0068">It is assumed that motion vectors MVP<b>1</b> and MVP<b>2</b> among motion vectors MVP<b>1</b>, MPV<b>2</b>, and MVP<b>3</b> illustrated in <figref idref="DRAWINGS">FIG. 4B</figref> correspond to small SADs and an SAD corresponding to the motion vector MVP<b>1</b> is smaller than an SAD corresponding to the motion vector MVP<b>2</b>. The two motion vectors MVP<b>1</b> and MVP<b>2</b> are estimated as the motion vector of the current block and encoding is performed using the estimated motion vector. As a result of encoding, if it is determined that an R-D cost corresponding to a case where the motion vector MVP<b>2</b> is estimated as the motion vector of the current block is lower than that corresponding to the other case, the motion vector MVP<b>2</b> is estimated as the motion vector of the current block.</p>
+<p id="p-0070" num="0069">As discussed above with reference to <figref idref="DRAWINGS">FIGS. 3B</figref>, <b>4</b>B, and <b>4</b>C, it is not necessary to use the pixels <b>411</b> and the pixels <b>423</b> through <b>425</b> that are immediately adjacent to the borders of the block <b>410</b> and the blocks <b>420</b> through <b>422</b> for similarity calculation. Pixels spaced by a predetermined distance from the borders of the block <b>410</b> and the blocks <b>420</b> through <b>422</b> may also be used as long as they have correlations with the block <b>410</b> and the blocks <b>420</b> through <b>422</b>.</p>
+<p id="p-0071" num="0070">However, those of ordinary skill in the art may understand that the methods described above are only examples and various combinations are available.</p>
+<p id="p-0072" num="0071"><figref idref="DRAWINGS">FIG. 5A</figref> is a block diagram of an apparatus <b>500</b> for estimating a motion vector according to an exemplary embodiment of the present invention. Referring to <figref idref="DRAWINGS">FIG. 5A</figref>, the apparatus <b>500</b> includes a spatial similarity calculation unit <b>501</b>, a partition selection unit <b>502</b>, and a motion vector estimation unit <b>503</b>.</p>
+<p id="p-0073" num="0072">The spatial similarity calculation unit <b>501</b> calculates an average value of pixels of the current block E and an average value of pixels of each of the neighboring partitions A, B, A<b>1</b>, A<b>2</b>, B<b>1</b>, B<b>2</b>, and C around the current block E. The calculated averages are transmitted to the partition selection unit <b>502</b>.</p>
+<p id="p-0074" num="0073">If the average value of the pixels of the current block E is a first average and the average value of the pixels of each of the neighboring partitions A, B, A<b>1</b>, A<b>2</b>, B<b>1</b>, B<b>2</b>, and C is a second average, the partition selection unit <b>502</b> selects a neighboring partition (or neighboring partitions) as a predictor of the current block E when an absolute value of a difference between the first average and the second average corresponding to the neighboring partition is less than a predetermined threshold. Information about the selected neighboring partition(s) is transmitted to the motion vector estimation unit <b>503</b>.</p>
+<p id="p-0075" num="0074">The motion vector estimation unit <b>503</b> estimates the motion vector of the current block E using a motion vector (or motion vectors) of the selected neighboring partition(s) as described above with reference to <figref idref="DRAWINGS">FIGS. 3A and 4A</figref>. At least two neighboring partitions may be selected and motion estimation in this case may be performed as described above with reference to <figref idref="DRAWINGS">FIGS. 3A and 4A</figref>.</p>
+<p id="p-0076" num="0075"><figref idref="DRAWINGS">FIG. 5B</figref> is a block diagram of the apparatus <b>500</b> for estimating a motion vector according to another exemplary embodiment of the present invention. Referring to <figref idref="DRAWINGS">FIG. 5B</figref>, the apparatus <b>500</b> includes a search unit <b>511</b>, a similarity calculation unit <b>512</b>, and a motion vector estimation unit <b>513</b>.</p>
+<p id="p-0077" num="0076">The search unit <b>511</b> searches at least one reference frame using the motion vectors of the plurality of neighboring partitions A, B, C, A<b>1</b>, A<b>2</b>, B<b>1</b>, B<b>2</b>, and C that are adjacent to the current block <b>410</b> in order to search for the blocks <b>420</b> through <b>422</b> corresponding to the current block <b>410</b>. As set forth with reference to <figref idref="DRAWINGS">FIG. 3B</figref>, the current block <b>410</b> is assumed to be the same as the current block E illustrated in <figref idref="DRAWINGS">FIG. 3A</figref>.</p>
+<p id="p-0078" num="0077">The similarity calculation unit <b>512</b> calculates similarities between the neighboring pixels <b>423</b> through <b>425</b> that are adjacent to the found blocks <b>420</b> through <b>422</b>, respectively, and the neighboring pixels <b>411</b> that are adjacent to the current block <b>410</b>.</p>
+<p id="p-0079" num="0078">For similarity calculation, the similarity calculation unit <b>512</b> calculates SADs between the neighboring pixels <b>423</b> through <b>425</b> and the neighboring pixels <b>411</b>.</p>
+<p id="p-0080" num="0079">The motion vector estimation unit <b>513</b> estimates the motion vector of the current block <b>410</b> based on the calculation result obtained by the similarity calculation unit <b>512</b>. Detailed methods for motion vector estimation have already been described with reference to <figref idref="DRAWINGS">FIGS. 3B</figref>, <b>4</b>B, and <b>4</b>C.</p>
+<p id="p-0081" num="0080"><figref idref="DRAWINGS">FIG. 6</figref> is a block diagram of an encoder <b>600</b> including the apparatus <b>500</b> according to an exemplary embodiment of the present invention.</p>
+<p id="p-0082" num="0081">Referring to <figref idref="DRAWINGS">FIG. 6</figref>, an addition unit <b>601</b> calculates a difference between image data of a current frame input from the outside and motion-compensated video data received from a motion compensation unit <b>609</b> and transmits the difference to a frequency conversion unit <b>602</b>. If a current macroblock is subject to inter-mode coding, the addition unit <b>601</b> outputs the difference between the image data input from the outside and the motion-compensated image data to the frequency conversion unit <b>602</b>.</p>
+<p id="p-0083" num="0082">The frequency conversion unit <b>602</b> performs discrete cosine transformation (DCT) on image data received from the addition unit <b>601</b> in order to convert spatial-domain values into frequency-domain values and outputs the conversion frequency-domain values to a quantization unit <b>603</b>.</p>
+<p id="p-0084" num="0083">The quantization unit <b>603</b> quantizes the frequency-domain values received from the frequency conversion unit <b>602</b> and outputs the quantized frequency-domain values to an entropy-coding unit <b>604</b>.</p>
+<p id="p-0085" num="0084">The entropy-coding unit <b>604</b> performs entropy-coding on the quantized frequency-domain values received from the quantization unit <b>603</b>, on motion information, and on partition information received from the apparatus <b>500</b> in order to generate an encoded bitstream.</p>
+<p id="p-0086" num="0085">An inverse quantization unit <b>605</b>, an inverse frequency conversion unit <b>606</b>, a frame storing unit <b>607</b>, a motion estimation unit <b>608</b>, the motion compensation unit <b>609</b>, and the apparatus <b>500</b> constitute a set of modules/devices for motion compensation.</p>
+<p id="p-0087" num="0086">The inverse quantization unit <b>605</b> performs inverse quantization on the quantized frequency-domain values received from the quantization unit <b>603</b> and outputs the inversely quantized frequency-domain values to the inverse frequency conversion unit <b>606</b>.</p>
+<p id="p-0088" num="0087">The inverse frequency conversion unit <b>606</b> converts the inversely quantized frequency-domain values received from the inverse quantization unit <b>605</b> into spatial-domain values and outputs the spatial-domain values to an addition unit <b>606</b><i>a. </i></p>
+<p id="p-0089" num="0088">The addition unit <b>606</b><i>a </i>adds image data output from the inverse frequency conversion unit <b>606</b> to image data received from the motion compensation unit <b>609</b> in order to generate reference image data for motion compensation. The generated reference image data is stored in the frame storing unit <b>607</b>.</p>
+<p id="p-0090" num="0089">The frame storing unit <b>607</b> stores image data of a reference frame received from the addition unit <b>606</b><i>a. </i></p>
+<p id="p-0091" num="0090">The motion estimation unit <b>608</b> performs motion estimation between image data of a current frame input from the outside and image data stored in the frame storing unit <b>607</b> in order to calculate motion vectors. The motion vectors calculated by the motion estimation unit <b>608</b> are transmitted to the motion compensation unit <b>609</b> and the apparatus <b>500</b>.</p>
+<p id="p-0092" num="0091">The motion compensation unit <b>609</b> performs motion compensation on image data stored in the frame storing unit <b>607</b> using the motion vectors calculated by the motion estimation unit <b>608</b> in order to generate motion-compensated image data. The motion-compensated image data is transmitted to the addition unit <b>601</b> and the addition unit <b>606</b><i>a. </i></p>
+<p id="p-0093" num="0092">The apparatus <b>500</b> includes the spatial similarity calculation unit <b>501</b>, the partition selection unit <b>502</b>, and the motion vector estimation unit <b>503</b> as described with reference to <figref idref="DRAWINGS">FIG. 5A</figref>. The spatial similarity calculation unit <b>501</b> calculates an average value of pixels of the current block E and an average value of pixels of each of the neighboring partitions A, B, A<b>1</b>, A<b>2</b>, B<b>1</b>, B<b>2</b>, and C around the current block E.</p>
+<p id="p-0094" num="0093">If the average value of pixels of the current block E is a first average and the average value of pixels of each of the neighboring partitions A, B, A<b>1</b>, A<b>2</b>, B<b>1</b>, B<b>2</b>, and C is a second average, the partition selection unit <b>502</b> selects a neighboring partition (or neighboring partitions) as a predictor of the current block E when an absolute value of a difference between the first average and the second average corresponding to the neighboring partition is less than a predetermined threshold. Information about the selected neighboring partition(s) is transmitted to the motion vector estimation unit <b>503</b>.</p>
+<p id="p-0095" num="0094">The motion vector estimation unit <b>503</b> estimates the motion vector of the current block E using a motion vector (or motion vectors) of the selected neighboring partition(s). The partition information and motion information are output to the entropy-coding unit <b>604</b>. The motion information indicates a difference between the estimated motion vector of the current block and the motion vector of the selected neighboring partition.</p>
+<p id="p-0096" num="0095">These methods have already been described in detail with reference to <figref idref="DRAWINGS">FIGS. 3A and 4A</figref>.</p>
+<p id="p-0097" num="0096">According to another exemplary embodiment of the present invention, the apparatus <b>500</b> includes the search unit <b>511</b>, the similarity calculation unit <b>512</b>, and the motion vector estimation unit <b>513</b> as illustrated in <figref idref="DRAWINGS">FIG. 5B</figref>. The search unit <b>511</b> searches at least one reference frame(s) using the motion vectors of the plurality of neighboring partitions A, B, C, A<b>1</b>, A<b>2</b>, B<b>1</b>, B<b>2</b>, and C that are adjacent to the current block <b>410</b> in order to search for the blocks <b>420</b> through <b>422</b> corresponding to the current block.</p>
+<p id="p-0098" num="0097">The similarity calculation unit <b>512</b> calculates similarities between the neighboring pixels <b>423</b> through <b>425</b> that are adjacent to the found blocks <b>420</b> through <b>422</b>, respectively, and the neighboring pixels <b>411</b> that are adjacent to the current block <b>410</b>. For similarity calculation, the similarity calculation unit <b>512</b> calculates SADs between the neighboring pixels <b>423</b> through <b>425</b> and the neighboring pixels <b>411</b>.</p>
+<p id="p-0099" num="0098">The motion vector estimation unit <b>513</b> estimates the motion vector of the current block <b>410</b> based on the calculation result obtained by the similarity calculation unit <b>512</b>. Partition information and motion information are output to the entropy-coding unit <b>604</b>. The motion information indicates a difference between the estimated motion vector of the current block and the motion vector of the neighboring partition used to estimate the motion vector of the current block.</p>
+<p id="p-0100" num="0099">Detailed methods for motion vector estimation have already been described with reference to <figref idref="DRAWINGS">FIGS. 3B</figref>, <b>4</b>B, and <b>4</b>C.</p>
+<p id="p-0101" num="0100"><figref idref="DRAWINGS">FIG. 7</figref> is a block diagram of a decoder <b>700</b> according to an exemplary embodiment of the present invention, in which the decoder <b>700</b> includes an entropy-decoding unit <b>701</b>, an inverse quantization unit <b>702</b>, an inverse frequency conversion unit <b>703</b>, a frame storing unit <b>704</b>, a motion compensation unit <b>705</b>, an addition unit <b>706</b>, and a motion vector estimation unit <b>707</b>.</p>
+<p id="p-0102" num="0101">Referring to <figref idref="DRAWINGS">FIG. 7</figref>, the entropy-decoding unit <b>701</b> performs entropy-decoding on an encoded bitstream and transmits the entropy-decoded bitstream to the inverse quantization unit <b>703</b> and the motion vector estimation unit <b>707</b>. In particular, in the case of inter-mode coding, the entropy-decoding unit <b>701</b> extracts motion information and partition information associated with the current macroblock and entropy-decoded image data and outputs the extracted image data to the inverse quantization unit <b>702</b> and the extracted motion information and partition information to the motion vector estimation unit <b>707</b>.</p>
+<p id="p-0103" num="0102">The inverse quantization unit <b>702</b> performs inverse quantization on the entropy-decoded image data output from the entropy-decoding unit <b>702</b> and outputs the inversely quantized image data to the inverse frequency conversion unit <b>703</b>.</p>
+<p id="p-0104" num="0103">The inverse frequency conversion unit <b>703</b> converts the inversely quantized image data output from the inverse quantization unit <b>702</b> into spatial-domain values and outputs the spatial-domain values to the addition unit <b>706</b>.</p>
+<p id="p-0105" num="0104">The addition unit <b>706</b> adds the motion-compensated image data received from the motion compensation unit <b>705</b> to the inversely quantized image data received from the inverse frequency conversion unit <b>703</b> in order to generate reconstructed image data. The output of the addition unit <b>706</b> is decoded image data of the current frame.</p>
+<p id="p-0106" num="0105">The frame storing unit <b>704</b> stores image data of a frame, which is output from the addition unit <b>706</b>.</p>
+<p id="p-0107" num="0106">The motion vector estimation unit <b>707</b> estimates a motion vector of the current block using the motion information extracted by the entropy-decoding unit <b>701</b> and a reference block of the frame storing unit <b>704</b>. The estimated motion vectors are output to the motion compensation unit <b>705</b>.</p>
+<p id="p-0108" num="0107">More specifically, the motion vector estimation unit <b>707</b> estimates the motion vector of the current block in the same way as the apparatus <b>500</b> included in the encoder <b>600</b> illustrated in <figref idref="DRAWINGS">FIG. 6</figref> estimates the motion vector. Thus, the motion vector estimation unit <b>707</b> may be configured in the same manner as the apparatus <b>500</b> illustrated in <figref idref="DRAWINGS">FIG. 6</figref>.</p>
+<p id="p-0109" num="0108">The motion compensation unit <b>705</b> applies motion vectors and partition information received from the motion vector estimation unit <b>707</b> to image data of a reference frame stored in the frame storing unit <b>704</b> in order to perform motion compensation. The motion-compensated image data is output to the addition unit <b>706</b>.</p>
+<p id="p-0110" num="0109"><figref idref="DRAWINGS">FIG. 8</figref> is a flowchart of a decoding method according to an exemplary embodiment of the present invention.</p>
+<p id="p-0111" num="0110">Referring to <figref idref="DRAWINGS">FIG. 8</figref>, entropy-decoding is performed on motion information, partition information, and a residual block from an encoded bitstream in operation S<b>801</b>.</p>
+<p id="p-0112" num="0111">In operation S<b>802</b>, a motion vector of the current block is reconstructed using the decoded motion information and partition information. More specifically, spatial similarities between the current block and a plurality of neighboring partitions around the current block are calculated based on the decoded partition information. At least one of the neighboring partitions is selected based on the calculated spatial similarities and a motion vector of the selected neighboring partition is estimated as the motion vector of the current block. Next, the motion information is added to the estimated motion vector in order to reconstruct the motion vector of the current block.</p>
+<p id="p-0113" num="0112">According to another exemplary embodiment of the present invention, at least one reference frame(s) is searched using motion vectors of a plurality of neighboring partitions around the current block, which are determined based on decoded partition information, in order to search for blocks corresponding to the current block. Similarities between neighboring pixels that are adjacent to the found blocks, respectively, and neighboring pixels that are adjacent to the current block are calculated. One of the motion vectors of the neighboring partitions is estimated as the motion vector of the current block based on the calculation result, and decoded motion information is added to the estimated motion vector in order to reconstruct the motion vector of the current block.</p>
+<p id="p-0114" num="0113">In operation S<b>803</b>, the motion vector reconstructed in operation S<b>802</b> is applied to the decoded reference block in order to generate a motion-compensated block. In addition, the residual block is entropy-decoded in operation S<b>801</b> and then undergoes inverse quantization and inverse frequency conversion in order to generate a spatial-domain residual block. The motion-compensated block and the spatial-domain residual block are added together in order to generate the current block.</p>
+<p id="p-0115" num="0114">Since it is apparent that neighboring partitions can also be used for the decoding method and the decoder in order to estimate the motion vector of the current block in the same manner as in the encoder, a detailed description thereof will be omitted.</p>
+<p id="p-0116" num="0115">As described above, according to the exemplary embodiments of the present invention, by estimating useful partitions for estimation of the motion vector of the current block and processing information about the estimated partitions, the amount of information transmitted to the decoder can be reduced.</p>
+<p id="p-0117" num="0116">The present invention can also be embodied as computer-readable code on a computer-readable recording medium. The computer-readable recording medium is any data storage device that can store data which can be thereafter read by a computer system. Examples of computer-readable recording media include read-only memory (ROM), random-access memory (RAM), CD-ROMs, magnetic tapes, floppy disks, and optical data storage devices. The computer-readable recording medium can also be distributed over a network of coupled computer systems so that the computer-readable code is stored and executed in a decentralized fashion.</p>
+<p id="p-0118" num="0117">While the present invention has been particularly shown and described with reference to an exemplary embodiment thereof, it will be understood by those of ordinary skill in the art that various changes in form and detail may be made therein without departing from the spirit and scope of the present invention as defined by the following claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method of estimating a motion vector of a current block, the method comprising:
+<claim-text>selecting at least one partitions, which are compared with the current block for obtaining a motion vector difference, from among a plurality of neighboring partitions around the current block based on spatial similarities between the current block and the plurality of neighboring partitions;</claim-text>
+<claim-text>estimating a motion vector of the selected partition as the motion vector of the current block and generating the motion vector difference; and</claim-text>
+<claim-text>transmitting information on the motion vector difference and partition information for reconstruction of the motion vector of the current block,</claim-text>
+<claim-text>wherein the spatial similarities are obtained based on an average value of pixels of the current block and an average value of pixels of each of the neighboring partitions.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the average value of the pixels of the current block is obtained by using pixels that are contiguous with the current block from among the pixels of the neighboring partitions.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the spatial similarities are allocated to the neighboring partitions according to a spatial order previously agreed between an encoder and a decoder.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein in the estimating, if a plurality of neighboring partitions are selected, a motion vector of one of the selected neighboring partitions is estimated as the motion vector of the current block.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein in the estimating, if a plurality of neighboring partitions are selected, a median value of motion vectors of the selected neighboring partitions is estimated as the motion vector of the current block.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein in the estimating, if a plurality of neighboring partitions are selected, a sum of weighted motion vectors of the selected neighboring partitions is estimated as the motion vector of the current block.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein in the estimating, a motion vector of a partition in a reference frame, which is located in a spatially same position as the current block, is estimated as the motion vector of the current block. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

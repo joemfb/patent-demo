@@ -1,0 +1,1343 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627041-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627041</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12901452</doc-number>
+<date>20101008</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>601</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>12</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>711208</main-classification>
+<further-classification>711100</further-classification>
+<further-classification>711114</further-classification>
+<further-classification>711118</further-classification>
+<further-classification>711141</further-classification>
+<further-classification>711154</further-classification>
+<further-classification>711200</further-classification>
+<further-classification>711206</further-classification>
+</classification-national>
+<invention-title id="d2e53">Efficient line and page organization for compression status bit caching</invention-title>
+<number-of-claims>20</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>711114</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711118</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711141</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711154</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711206</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711100</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711208</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711200</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>14</number-of-drawing-sheets>
+<number-of-figures>14</number-of-figures>
+</figures>
+<us-related-documents>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61250431</doc-number>
+<date>20091009</date>
+</document-id>
+</us-provisional-application>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110087840</doc-number>
+<kind>A1</kind>
+<date>20110414</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Glasco</last-name>
+<first-name>David B.</first-name>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Holmqvist</last-name>
+<first-name>Peter B.</first-name>
+<address>
+<city>Cary</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Lynch</last-name>
+<first-name>George R.</first-name>
+<address>
+<city>Raleigh</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="004" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Marchand</last-name>
+<first-name>Patrick R.</first-name>
+<address>
+<city>Apex</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="005" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Mehra</last-name>
+<first-name>Karan</first-name>
+<address>
+<city>Cary</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="006" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Roberts</last-name>
+<first-name>James</first-name>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="007" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Everitt</last-name>
+<first-name>Cass W.</first-name>
+<address>
+<city>Heath</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="008" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Molnar</last-name>
+<first-name>Steven E.</first-name>
+<address>
+<city>Chapel Hill</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Glasco</last-name>
+<first-name>David B.</first-name>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Holmqvist</last-name>
+<first-name>Peter B.</first-name>
+<address>
+<city>Cary</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Lynch</last-name>
+<first-name>George R.</first-name>
+<address>
+<city>Raleigh</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="004" designation="us-only">
+<addressbook>
+<last-name>Marchand</last-name>
+<first-name>Patrick R.</first-name>
+<address>
+<city>Apex</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="005" designation="us-only">
+<addressbook>
+<last-name>Mehra</last-name>
+<first-name>Karan</first-name>
+<address>
+<city>Cary</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="006" designation="us-only">
+<addressbook>
+<last-name>Roberts</last-name>
+<first-name>James</first-name>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="007" designation="us-only">
+<addressbook>
+<last-name>Everitt</last-name>
+<first-name>Cass W.</first-name>
+<address>
+<city>Heath</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="008" designation="us-only">
+<addressbook>
+<last-name>Molnar</last-name>
+<first-name>Steven E.</first-name>
+<address>
+<city>Chapel Hill</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Patterson &#x26; Sheridan, L.L.P.</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Nvidia Corporation</orgname>
+<role>02</role>
+<address>
+<city>Santa Clara</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Rojas</last-name>
+<first-name>Midys</first-name>
+<department>2188</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">One embodiment of the present invention sets forth a technique for performing a memory access request to compressed data within a virtually mapped memory system comprising an arbitrary number of partitions. A virtual address is mapped to a linear physical address, specified by a page table entry (PTE). The PTE is configured to store compression attributes, which are used to locate compression status for a corresponding physical memory page within a compression status bit cache. The compression status bit cache operates in conjunction with a compression status bit backing store. If compression status is available from the compression status bit cache, then the memory access request proceeds using the compression status. If the compression status bit cache misses, then the miss triggers a fill operation from the backing store. After the fill completes, memory access proceeds using the newly filled compression status information.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="224.28mm" wi="168.74mm" file="US08627041-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="220.81mm" wi="156.38mm" file="US08627041-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="239.52mm" wi="157.82mm" file="US08627041-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="165.78mm" wi="137.75mm" file="US08627041-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="168.32mm" wi="113.62mm" file="US08627041-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="226.40mm" wi="157.56mm" file="US08627041-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="224.87mm" wi="161.04mm" file="US08627041-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="222.84mm" wi="157.14mm" file="US08627041-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="119.80mm" wi="160.53mm" file="US08627041-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="100.67mm" wi="127.85mm" file="US08627041-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="228.01mm" wi="172.13mm" file="US08627041-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="204.39mm" wi="156.13mm" file="US08627041-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="192.19mm" wi="67.31mm" file="US08627041-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="201.51mm" wi="116.42mm" file="US08627041-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="232.41mm" wi="167.56mm" file="US08627041-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CROSS-REFERENCE TO RELATED APPLICATIONS</heading>
+<p id="p-0002" num="0001">This application claims priority benefit to United States provisional patent application titled, &#x201c;Efficient Line and Page Organization for Compression Bit Caching,&#x201d; filed on Oct. 9, 2009 and having Ser. No. 61/250,431.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0003" num="0002">1. Field of the Invention</p>
+<p id="p-0004" num="0003">Embodiments of the invention relate generally to memory systems and more specifically to an efficient line and page organization for compression status bit caching.</p>
+<p id="p-0005" num="0004">2. Description of the Related Art</p>
+<p id="p-0006" num="0005">Performance requirements are continually increasing in data processing systems, conventionally comprising one or more processor chips and attached memory devices organized as independently operating partitions. System performance is generally determined by on-chip data processing performance as well as effective bandwidth to the attached memory devices. One technique for increasing effective memory bandwidth, and therefore overall performance, is to store certain blocks of data within the attached memory in a compressed format. A plurality of both loss-less and lossy compression formats, as well as blocks not subject to any compression may coexist within attached memory. A compression status is associated with each block to specify whether the block of original data is stored uncompressed or using one of the plurality of compression formats. Each compression format advantageously reduces the number of bits needed to represent a block of original data stored in attached memory. A compression status bit set is associated with each block to encode the compression status for the block. Compression status bit sets for all compressible blocks may be stored as a compression status structure within attached memory. Sequential compression status bit sets within the compression status structure correspond to sequential blocks in the attached memory devices. Dedicated circuits coupled to a memory interface module typically perform compression and decompression operations based on compression status for a block being accessed. The memory interface module maps each physical address to one of one or more memory partitions to access a specified block of memory within the partition.</p>
+<p id="p-0007" num="0006">Another technique for increasing effective memory bandwidth is caching, whereby bandwidth demand is shifted from the attached memory devices to on-chip cache storage that provides low latency and high bandwidth access to data. Cache storage is typically organized as cache lines, with each complete cache line being filled or flushed in response to a respective read or write. A cache line is conventionally sized as an integral multiple of an access quantum to attached memory devices. A compression status bit cache is configured to store a plurality of compression status bit sets per cache line, thereby facilitating access to compression status bit sets for sequential physically addressed blocks in attached memory devices. Compression status stored by a given compression status bit set is used to determine compression format and therefore access size for a block of data prior to an access being initiated to the block of data.</p>
+<p id="p-0008" num="0007">Memory management of modern data processing systems typically implements a virtual memory access model for memory clients. Regions of contiguous virtual memory may be allocated and used by the memory clients, with access locality associated with virtual addresses. However, a contiguous range of virtual addresses may map arbitrarily to physical addresses. As such, an arbitrarily large number of compression status bit cache lines may be needed to store compression status bits associated with a given contiguous virtual address range. This can lead to cache fragmentation in the compression status bit cache and relatively inefficient use of associated cache storage, reducing overall efficiency for the processing system.</p>
+<p id="p-0009" num="0008">Accordingly, what is needed in the art is a technique for improving access efficiency for compression status bits in a virtual memory system.</p>
+<heading id="h-0003" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0010" num="0009">One embodiment of the present invention sets forth a method for determining and updating compression status for a virtually addressed unit of data residing within a frame buffer. The method includes selecting a page table entry (PTE) based on a virtual address, the PTE comprising a physical address for the unit of data within the frame buffer and a compression cache tag line, computing a compression cache tag based on the compression cache tag line and a partition count for the frame buffer, and querying a compression cache to determine whether the compression cache tag represents a cache hit. If the compression cache tag represents a cache hit, then one or more compression bits are accessed from a cache line, wherein the one or more compression bits represent a compression status for the unit of data to be used when accessing the unit of data from the frame buffer. If the compression cache tag represents a cache miss, then the cache line is retrieved from memory prior to accessing the designated compression bits within the cache line.</p>
+<p id="p-0011" num="0010">One advantage of embodiments of the present invention is that a processing unit may efficiently access virtually mapped data that is compressed and distributed over an arbitrary number of partitions. Thus, embodiments of the present invention overcome prior art design deficiencies that limit the application of virtual memory mapping in systems having an arbitrary number of memory partitions.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0012" num="0011">So that the manner in which the above recited features of the present invention can be understood in detail, a more particular description of the invention, briefly summarized above, may be had by reference to embodiments, some of which are illustrated in the appended drawings. It is to be noted, however, that the appended drawings illustrate only typical embodiments of this invention and are therefore not to be considered limiting of its scope, for the invention may admit to other equally effective embodiments.</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram illustrating a computer system configured to implement one or more aspects of the present invention;</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram of a parallel processing subsystem for the computer system of <figref idref="DRAWINGS">FIG. 1</figref>, according to one embodiment of the present invention;</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 3A</figref> is a block diagram of a GPC within one of the PPUs of <figref idref="DRAWINGS">FIG. 2</figref>, according to one embodiment of the present invention;</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 3B</figref> is a block diagram of a partition unit within one of the PPUs of <figref idref="DRAWINGS">FIG. 2</figref>, according to one embodiment of the present invention;</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 3C</figref> is a block diagram of a portion of the SPM of <figref idref="DRAWINGS">FIG. 3A</figref>, according to one embodiment of the present invention;</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 3D</figref> is a conceptual diagram of the level two (L2) cache of <figref idref="DRAWINGS">FIG. 3B</figref>, according to one embodiment of the present invention;</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 4</figref> is a conceptual diagram of a graphics processing pipeline that one or more of the PPUs of <figref idref="DRAWINGS">FIG. 2</figref> can be configured to implement, according to one embodiment of the present invention;</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 5</figref> is a conceptual diagram of a virtual address to raw partition address conversion pipeline, according to one embodiment of the present invention;</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 6</figref> is a conceptual diagram of a raw partition address generation pipeline for a compression status bit cache, according to one embodiment of the present invention;</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 7</figref> illustrates a surface mapping unevenly onto a set of partitions, according to one embodiment of the present invention;</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 8</figref> illustrates compression status bit entries within a compression status bit backing store, according to one embodiment of the present invention;</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 9</figref> illustrates a page table entry configured to store a reference to a compression status bit entry for a corresponding physical block, according to one embodiment of the present invention;</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 10A</figref> is a flow diagram of method steps for mapping a virtual address to a local frame buffer address, according to one embodiment of the present invention; and</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 10B</figref> is a flow diagram of method steps for accessing compressed data within the frame buffer based on the local frame buffer address and compression status bit information, according to one embodiment of the present invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0027" num="0026">In the following description, numerous specific details are set forth to provide a more thorough understanding of the present invention. However, it will be apparent to one of skill in the art that the present invention may be practiced without one or more of these specific details. In other instances, well-known features have not been described in order to avoid obscuring the present invention.</p>
+<heading id="h-0006" level="1">System Overview</heading>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram illustrating a computer system <b>100</b> configured to implement one or more aspects of the present invention. Computer system <b>100</b> includes a central processing unit (CPU) <b>102</b> and a system memory <b>104</b> communicating via an interconnection path that may include a memory bridge <b>105</b>. Memory bridge <b>105</b>, which may be, e.g., a Northbridge chip, is connected via a bus or other communication path <b>106</b> (e.g., a HyperTransport link) to an I/O (input/output) bridge <b>107</b>. I/O bridge <b>107</b>, which may be, e.g., a Southbridge chip, receives user input from one or more user input devices <b>108</b> (e.g., keyboard, mouse) and forwards the input to CPU <b>102</b> via path <b>106</b> and memory bridge <b>105</b>. A parallel processing subsystem <b>112</b> is coupled to memory bridge <b>105</b> via a bus or other communication path <b>113</b> (e.g., a PCI Express, Accelerated Graphics Port, or HyperTransport link); in one embodiment parallel processing subsystem <b>112</b> is a graphics subsystem that delivers pixels to a display device <b>110</b> (e.g., a conventional CRT or LCD based monitor). A system disk <b>114</b> is also connected to I/O bridge <b>107</b>. A switch <b>116</b> provides connections between I/O bridge <b>107</b> and other components such as a network adapter <b>118</b> and various add-in cards <b>120</b> and <b>121</b>. Other components (not explicitly shown), including USB or other port connections, CD drives, DVD drives, film recording devices, and the like, may also be connected to I/O bridge <b>107</b>. Communication paths interconnecting the various components in <figref idref="DRAWINGS">FIG. 1</figref> may be implemented using any suitable protocols, such as PCI (Peripheral Component Interconnect), PCI-Express, AGP (Accelerated Graphics Port), HyperTransport, or any other bus or point-to-point communication protocol(s), and connections between different devices may use different protocols as is known in the art.</p>
+<p id="p-0029" num="0028">In one embodiment, the parallel processing subsystem <b>112</b> incorporates circuitry optimized for graphics and video processing, including, for example, video output circuitry, and constitutes a graphics processing unit (GPU). In another embodiment, the parallel processing subsystem <b>112</b> incorporates circuitry optimized for general purpose processing, while preserving the underlying computational architecture, described in greater detail herein. In yet another embodiment, the parallel processing subsystem <b>112</b> may be integrated with one or more other system elements, such as the memory bridge <b>105</b>, CPU <b>102</b>, and I/O bridge <b>107</b> to form a system on chip (SoC).</p>
+<p id="p-0030" num="0029">It will be appreciated that the system shown herein is illustrative and that variations and modifications are possible. The connection topology, including the number and arrangement of bridges, the number of CPUs <b>102</b>, and the number of parallel processing subsystems <b>112</b>, may be modified as desired. For instance, in some embodiments, system memory <b>104</b> is connected to CPU <b>102</b> directly rather than through a bridge, and other devices communicate with system memory <b>104</b> via memory bridge <b>105</b> and CPU <b>102</b>. In other alternative topologies, parallel processing subsystem <b>112</b> is connected to I/O bridge <b>107</b> or directly to CPU <b>102</b>, rather than to memory bridge <b>105</b>. In still other embodiments, I/O bridge <b>107</b> and memory bridge <b>105</b> might be integrated into a single chip. Large embodiments may include two or more CPUs <b>102</b> and two or more parallel processing systems <b>112</b>. The particular components shown herein are optional; for instance, any number of add-in cards or peripheral devices might be supported. In some embodiments, switch <b>116</b> is eliminated, and network adapter <b>118</b> and add-in cards <b>120</b>, <b>121</b> connect directly to I/O bridge <b>107</b>.</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIG. 2</figref> illustrates a parallel processing subsystem <b>112</b>, according to one embodiment of the present invention. As shown, parallel processing subsystem <b>112</b> includes one or more parallel processing units (PPUs) <b>202</b>, each of which is coupled to a local parallel processing (PP) memory <b>204</b>. In general, a parallel processing subsystem includes a number U of PPUs, where U&#x2267;1. (Herein, multiple instances of like objects are denoted with reference numbers identifying the object and parenthetical numbers identifying the instance where needed.) PPUs <b>202</b> and parallel processing memories <b>204</b> may be implemented using one or more integrated circuit devices, such as programmable processors, application specific integrated circuits (ASICs), or memory devices, or in any other technically feasible fashion.</p>
+<p id="p-0032" num="0031">Referring again to <figref idref="DRAWINGS">FIG. 1</figref>, in some embodiments, some or all of PPUs <b>202</b> in parallel processing subsystem <b>112</b> are graphics processors with rendering pipelines that can be configured to perform various tasks related to generating pixel data from graphics data supplied by CPU <b>102</b> and/or system memory <b>104</b> via memory bridge <b>105</b> and bus <b>113</b>, interacting with local parallel processing memory <b>204</b> (which can be used as graphics memory including, e.g., a conventional frame buffer) to store and update pixel data, delivering pixel data to display device <b>110</b>, and the like. In some embodiments, parallel processing subsystem <b>112</b> may include one or more PPUs <b>202</b> that operate as graphics processors and one or more other PPUs <b>202</b> that are used for general-purpose computations. The PPUs may be identical or different, and each PPU may have its own dedicated parallel processing memory device(s) or no dedicated parallel processing memory device(s). One or more PPUs <b>202</b> may output data to display device <b>110</b> or each PPU <b>202</b> may output data to one or more display devices <b>110</b>.</p>
+<p id="p-0033" num="0032">In operation, CPU <b>102</b> is the master processor of computer system <b>100</b>, controlling and coordinating operations of other system components. In particular, CPU <b>102</b> issues commands that control the operation of PPUs <b>202</b>. In some embodiments, CPU <b>102</b> writes a stream of commands for each PPU <b>202</b> to a pushbuffer (not explicitly shown in either <figref idref="DRAWINGS">FIG. 1</figref> or <figref idref="DRAWINGS">FIG. 2</figref>) that may be located in system memory <b>104</b>, parallel processing memory <b>204</b>, or another storage location accessible to both CPU <b>102</b> and PPU <b>202</b>. PPU <b>202</b> reads the command stream from the pushbuffer and then executes commands asynchronously relative to the operation of CPU <b>102</b>.</p>
+<p id="p-0034" num="0033">Referring back now to <figref idref="DRAWINGS">FIG. 2</figref>, each PPU <b>202</b> includes an I/O (input/output) unit <b>205</b> that communicates with the rest of computer system <b>100</b> via communication path <b>113</b>, which connects to memory bridge <b>105</b> (or, in one alternative embodiment, directly to CPU <b>102</b>). The connection of PPU <b>202</b> to the rest of computer system <b>100</b> may also be varied. In some embodiments, parallel processing subsystem <b>112</b> is implemented as an add-in card that can be inserted into an expansion slot of computer system <b>100</b>. In other embodiments, a PPU <b>202</b> can be integrated on a single chip with a bus bridge, such as memory bridge <b>105</b> or I/O bridge <b>107</b>. In still other embodiments, some or all elements of PPU <b>202</b> may be integrated on a single chip with CPU <b>102</b>.</p>
+<p id="p-0035" num="0034">In one embodiment, communication path <b>113</b> is a PCI-EXPRESS link, in which dedicated lanes are allocated to each PPU <b>202</b>, as is known in the art. Other communication paths may also be used. An I/O unit <b>205</b> generates packets (or other signals) for transmission on communication path <b>113</b> and also receives all incoming packets (or other signals) from communication path <b>113</b>, directing the incoming packets to appropriate components of PPU <b>202</b>. For example, commands related to processing tasks may be directed to a host interface <b>206</b>, while commands related to memory operations (e.g., reading from or writing to parallel processing memory <b>204</b>) may be directed to a memory crossbar unit <b>210</b>. Host interface <b>206</b> reads each pushbuffer and outputs the work specified by the pushbuffer to a front end <b>212</b>.</p>
+<p id="p-0036" num="0035">Each PPU <b>202</b> advantageously implements a highly parallel processing architecture. As shown in detail, PPU <b>202</b>(<b>0</b>) includes a processing cluster array <b>230</b> that includes a number C of general processing clusters (GPCs) <b>208</b>, where C&#x2267;1. Each GPC <b>208</b> is capable of executing a large number (e.g., hundreds or thousands) of threads concurrently, where each thread is an instance of a program. In various applications, different GPCs <b>208</b> may be allocated for processing different types of programs or for performing different types of computations. For example, in a graphics application, a first set of GPCs <b>208</b> may be allocated to perform tessellation operations and to produce primitive topologies for patches, and a second set of GPCs <b>208</b> may be allocated to perform tessellation shading to evaluate patch parameters for the primitive topologies and to determine vertex positions and other per-vertex attributes. The allocation of GPCs <b>208</b> may vary dependent on the workload arising for each type of program or computation.</p>
+<p id="p-0037" num="0036">GPCs <b>208</b> receive processing tasks to be executed via a work distribution unit <b>200</b>, which receives commands defining processing tasks from front end unit <b>212</b>. Processing tasks include indices of data to be processed, e.g., surface (patch) data, primitive data, vertex data, and/or pixel data, as well as state parameters and commands defining how the data is to be processed (e.g., what program is to be executed). Work distribution unit <b>200</b> may be configured to fetch the indices corresponding to the tasks, or work distribution unit <b>200</b> may receive the indices from front end <b>212</b>. Front end <b>212</b> ensures that GPCs <b>208</b> are configured to a valid state before the processing specified by the pushbuffers is initiated.</p>
+<p id="p-0038" num="0037">When PPU <b>202</b> is used for graphics processing, for example, the processing workload for each patch is divided into approximately equal sized tasks to enable distribution of the tessellation processing to multiple GPCs <b>208</b>. A work distribution unit <b>200</b> may be configured to produce tasks at a frequency capable of providing tasks to multiple GPCs <b>208</b> for processing. By contrast, in conventional systems, processing is typically performed by a single processing engine, while the other processing engines remain idle, waiting for the single processing engine to complete its tasks before beginning their processing tasks. In some embodiments of the present invention, portions of GPCs <b>208</b> are configured to perform different types of processing. For example a first portion may be configured to perform vertex shading and topology generation, a second portion may be configured to perform tessellation and geometry shading, and a third portion may be configured to perform pixel shading in screen space to produce a rendered image. Intermediate data produced by GPCs <b>208</b> may be stored in buffers to allow the intermediate data to be transmitted between GPCs <b>208</b> for further processing.</p>
+<p id="p-0039" num="0038">Memory interface <b>214</b> includes a number D of partition units <b>215</b> that are each directly coupled to a portion of parallel processing memory <b>204</b>, where D&#x2267;1. As shown, the number of partition units <b>215</b> generally equals the number of dynamic random access memory (DRAM) <b>220</b>. In other embodiments, the number of partition units <b>215</b> may not equal the number of memory devices. Persons skilled in the art will appreciate that DRAM <b>220</b> may be replaced with other suitable storage devices and can be of generally conventional design. A detailed description is therefore omitted. Render targets, such as frame buffers or texture maps may be stored across DRAMs <b>220</b>, allowing partition units <b>215</b> to write portions of each render target in parallel to efficiently use the available bandwidth of parallel processing memory <b>204</b>.</p>
+<p id="p-0040" num="0039">Any one of GPCs <b>208</b> may process data to be written to any of the DRAMs <b>220</b> within parallel processing memory <b>204</b>. Crossbar unit <b>210</b> is configured to route the output of each GPC <b>208</b> to the input of any partition unit <b>215</b> or to another GPC <b>208</b> for further processing. GPCs <b>208</b> communicate with memory interface <b>214</b> through crossbar unit <b>210</b> to read from or write to various external memory devices. In one embodiment, crossbar unit <b>210</b> has a connection to memory interface <b>214</b> to communicate with I/O unit <b>205</b>, as well as a connection to local parallel processing memory <b>204</b>, thereby enabling the processing cores within the different GPCs <b>208</b> to communicate with system memory <b>104</b> or other memory that is not local to PPU <b>202</b>. In the embodiment shown in <figref idref="DRAWINGS">FIG. 2</figref>, crossbar unit <b>210</b> is directly connected with I/O unit <b>205</b>. Crossbar unit <b>210</b> may use virtual channels to separate traffic streams between the GPCs <b>208</b> and partition units <b>215</b>.</p>
+<p id="p-0041" num="0040">Again, GPCs <b>208</b> can be programmed to execute processing tasks relating to a wide variety of applications, including but not limited to, linear and nonlinear data transforms, filtering of video and/or audio data, modeling operations (e.g., applying laws of physics to determine position, velocity and other attributes of objects), image rendering operations (e.g., tessellation shader, vertex shader, geometry shader, and/or pixel shader programs), and so on. PPUs <b>202</b> may transfer data from system memory <b>104</b> and/or local parallel processing memories <b>204</b> into internal (on-chip) memory, process the data, and write result data back to system memory <b>104</b> and/or local parallel processing memories <b>204</b>, where such data can be accessed by other system components, including CPU <b>102</b> or another parallel processing subsystem <b>112</b>.</p>
+<p id="p-0042" num="0041">A PPU <b>202</b> may be provided with any amount of local parallel processing memory <b>204</b>, including no local memory, and may use local memory and system memory in any combination. For instance, a PPU <b>202</b> can be a graphics processor in a unified memory architecture (UMA) embodiment. In such embodiments, little or no dedicated graphics (parallel processing) memory would be provided, and PPU <b>202</b> would use system memory exclusively or almost exclusively. In UMA embodiments, a PPU <b>202</b> may be integrated into a bridge chip or processor chip or provided as a discrete chip with a high-speed link (e.g., PCI-EXPRESS) connecting the PPU <b>202</b> to system memory via a bridge chip or other communication means.</p>
+<p id="p-0043" num="0042">As noted above, any number of PPUs <b>202</b> can be included in a parallel processing subsystem <b>112</b>. For instance, multiple PPUs <b>202</b> can be provided on a single add-in card, or multiple add-in cards can be connected to communication path <b>113</b>, or one or more of PPUs <b>202</b> can be integrated into a bridge chip. PPUs <b>202</b> in a multi-PPU system may be identical to or different from one another. For instance, different PPUs <b>202</b> might have different numbers of processing cores, different amounts of local parallel processing memory, and so on. Where multiple PPUs <b>202</b> are present, those PPUs may be operated in parallel to process data at a higher throughput than is possible with a single PPU <b>202</b>. Systems incorporating one or more PPUs <b>202</b> may be implemented in a variety of configurations and form factors, including desktop, laptop, or handheld personal computers, servers, workstations, game consoles, embedded systems, and the like.</p>
+<heading id="h-0007" level="1">Processing Cluster Array Overview</heading>
+<p id="p-0044" num="0043"><figref idref="DRAWINGS">FIG. 3A</figref> is a block diagram of a GPC <b>208</b> within one of the PPUs <b>202</b> of <figref idref="DRAWINGS">FIG. 2</figref>, according to one embodiment of the present invention. Each GPC <b>208</b> may be configured to execute a large number of threads in parallel, where the term &#x201c;thread&#x201d; refers to an instance of a particular program executing on a particular set of input data. In some embodiments, single-instruction, multiple-data (SIMD) instruction issue techniques are used to support parallel execution of a large number of threads without providing multiple independent instruction units. In other embodiments, single-instruction, multiple-thread (SIMT) techniques are used to support parallel execution of a large number of generally synchronized threads, using a common instruction unit configured to issue instructions to a set of processing engines within each one of the GPCs <b>208</b>. Unlike a SIMD execution regime, where all processing engines typically execute identical instructions, SIMT execution allows different threads to more readily follow divergent execution paths through a given thread program. Persons skilled in the art will understand that a SIMD processing regime represents a functional subset of a SIMT processing regime.</p>
+<p id="p-0045" num="0044">Operation of GPC <b>208</b> is advantageously controlled via a pipeline manager <b>305</b> that distributes processing tasks to streaming multiprocessors (SPMs) <b>310</b>. Pipeline manager <b>305</b> may also be configured to control a work distribution crossbar <b>330</b> by specifying destinations for processed data output by SPMs <b>310</b>.</p>
+<p id="p-0046" num="0045">In one embodiment, each GPC <b>208</b> includes a number M of SPMs <b>310</b>, where M&#x2267;1, each SPM <b>310</b> configured to process one or more thread groups. Also, each SPM <b>310</b> advantageously includes an identical set of functional execution units (e.g., arithmetic logic units, and load-store units, shown as Exec units <b>302</b> and LSUs <b>303</b> in <figref idref="DRAWINGS">FIG. 3C</figref>) that may be pipelined, allowing a new instruction to be issued before a previous instruction has finished, as is known in the art. Any combination of functional execution units may be provided. In one embodiment, the functional units support a variety of operations including integer and floating point arithmetic (e.g., addition and multiplication), comparison operations, Boolean operations (AND, OR, XOR), bit-shifting, and computation of various algebraic functions (e.g., planar interpolation, trigonometric, exponential, and logarithmic functions, etc.); and the same functional-unit hardware can be leveraged to perform different operations.</p>
+<p id="p-0047" num="0046">The series of instructions transmitted to a particular GPC <b>208</b> constitutes a thread, as previously defined herein, and the collection of a certain number of concurrently executing threads across the parallel processing engines (not shown) within an SPM <b>310</b> is referred to herein as a &#x201c;warp&#x201d; or &#x201c;thread group.&#x201d; As used herein, a &#x201c;thread group&#x201d; refers to a group of threads concurrently executing the same program on different input data, with one thread of the group being assigned to a different processing engine within an SPM <b>310</b>. A thread group may include fewer threads than the number of processing engines within the SPM <b>310</b>, in which case some processing engines will be idle during cycles when that thread group is being processed. A thread group may also include more threads than the number of processing engines within the SPM <b>310</b>, in which case processing will take place over consecutive clock cycles. Since each SPM <b>310</b> can support up to G thread groups concurrently, it follows that up to G*M thread groups can be executing in GPC <b>208</b> at any given time.</p>
+<p id="p-0048" num="0047">Additionally, a plurality of related thread groups may be active (in different phases of execution) at the same time within an SPM <b>310</b>. This collection of thread groups is referred to herein as a &#x201c;cooperative thread array&#x201d; (&#x201c;CTA&#x201d;) or &#x201c;thread array.&#x201d; The size of a particular CTA is equal to m*k, where k is the number of concurrently executing threads in a thread group and is typically an integer multiple of the number of parallel processing engines within the SPM <b>310</b>, and m is the number of thread groups simultaneously active within the SPM <b>310</b>. The size of a CTA is generally determined by the programmer and the amount of hardware resources, such as memory or registers, available to the CTA.</p>
+<p id="p-0049" num="0048">Each SPM <b>310</b> contains an L1 cache (not shown) or uses space in a corresponding L1 cache outside of the SPM <b>310</b> that is used to perform load and store operations. Each SPM <b>310</b> also has access to L2 caches within the partition units <b>215</b> that are shared among all GPCs <b>208</b> and may be used to transfer data between threads. Finally, SPMs <b>310</b> also have access to off-chip &#x201c;global&#x201d; memory, which can include, e.g., parallel processing memory <b>204</b> and/or system memory <b>104</b>. It is to be understood that any memory external to PPU <b>202</b> may be used as global memory. Additionally, an L1.5 cache <b>335</b> may be included within the GPC <b>208</b>, configured to receive and hold data fetched from memory via memory interface <b>214</b> requested by SPM <b>310</b>, including instructions, uniform data, and constant data, and provide the requested data to SPM <b>310</b>. Embodiments having multiple SPMs <b>310</b> in GPC <b>208</b> beneficially share common instructions and data cached in L1.5 cache <b>335</b>.</p>
+<p id="p-0050" num="0049">Each GPC <b>208</b> may include a memory management unit (MMU) <b>328</b> that is configured to map virtual addresses into physical addresses. In other embodiments, MMU(s) <b>328</b> may reside within the memory interface <b>214</b>. The MMU <b>328</b> includes a set of page table entries (PTEs) used to map a virtual address to a physical address of a tile and optionally a cache line index. The MMU <b>328</b> may include address translation lookaside buffers (TLB) or caches which may reside within multiprocessor SPM <b>310</b> or the L1 cache or GPC <b>208</b>. The physical address is processed to distribute surface data access locality to allow efficient request interleaving among partition units. The cache line index may be used to determine whether of not a request for a cache line is a hit or miss.</p>
+<p id="p-0051" num="0050">In graphics and computing applications, a GPC <b>208</b> may be configured such that each SPM <b>310</b> is coupled to a texture unit <b>315</b> for performing texture mapping operations, e.g., determining texture sample positions, reading texture data, and filtering the texture data. Texture data is read from an internal texture L1 cache (not shown) or in some embodiments from the L1 cache within SPM <b>310</b> and is fetched from an L2 cache, parallel processing memory <b>204</b>, or system memory <b>104</b>, as needed. Each SPM <b>310</b> outputs processed tasks to work distribution crossbar <b>330</b> in order to provide the processed task to another GPC <b>208</b> for further processing or to store the processed task in an L2 cache, parallel processing memory <b>204</b>, or system memory <b>104</b> via crossbar unit <b>210</b>. A preROP (pre-raster operations) <b>325</b> is configured to receive data from SPM <b>310</b>, direct data to ROP units within partition units <b>215</b>, and perform optimizations for color blending, organize pixel color data, and perform address translations.</p>
+<p id="p-0052" num="0051">It will be appreciated that the core architecture described herein is illustrative and that variations and modifications are possible. Any number of processing units, e.g., SPMs <b>310</b> or texture units <b>315</b>, preROPs <b>325</b> may be included within a GPC <b>208</b>. Further, while only one GPC <b>208</b> is shown, a PPU <b>202</b> may include any number of GPCs <b>208</b> that are advantageously functionally similar to one another so that execution behavior does not depend on which GPC <b>208</b> receives a particular processing task. Further, each GPC <b>208</b> advantageously operates independently of other GPCs <b>208</b> using separate and distinct processing units, L1 caches, and so on.</p>
+<p id="p-0053" num="0052"><figref idref="DRAWINGS">FIG. 3B</figref> is a block diagram of a partition unit <b>215</b> within one of the PPUs <b>202</b> of <figref idref="DRAWINGS">FIG. 2</figref>, according to one embodiment of the present invention. As shown, partition unit <b>215</b> includes a L2 cache <b>350</b>, a frame buffer (FB) DRAM interface <b>355</b>, and a raster operations unit (ROP) <b>360</b>. L2 cache <b>350</b> is a read/write cache that is configured to perform load and store operations received from crossbar unit <b>210</b> and ROP <b>360</b>. Read misses and urgent writeback requests are output by L2 cache <b>350</b> to FB DRAM interface <b>355</b> for processing. Dirty updates are also sent to FB interface <b>355</b> for opportunistic processing. FB interface <b>355</b> interfaces directly with DRAM <b>220</b>, outputting read and write requests and receiving data read from DRAM <b>220</b>.</p>
+<p id="p-0054" num="0053">In graphics applications, ROP <b>360</b> is a processing unit that performs raster operations, such as stencil, z test, blending, and the like, and outputs pixel data as processed graphics data for storage in graphics memory. In some embodiments of the present invention, ROP <b>360</b> is included within each GPC <b>208</b> instead of partition unit <b>215</b>, and pixel read and write requests are transmitted over crossbar unit <b>210</b> instead of pixel fragment data.</p>
+<p id="p-0055" num="0054">The processed graphics data may be displayed on display device <b>110</b> or routed for further processing by CPU <b>102</b> or by one of the processing entities within parallel processing subsystem <b>112</b>. Each partition unit <b>215</b> includes a ROP <b>360</b> in order to distribute processing of the raster operations. In some embodiments, ROP <b>360</b> may be configured to compress z or color data that is written to memory and decompress z or color data that is read from memory.</p>
+<p id="p-0056" num="0055">Persons skilled in the art will understand that the architecture described in <figref idref="DRAWINGS">FIGS. 1</figref>, <b>2</b>, <b>3</b>A, and <b>3</b>B in no way limits the scope of the present invention and that the techniques taught herein may be implemented on any properly configured processing unit, including, without limitation, one or more CPUs, one or more multi-core CPUs, one or more PPUs <b>202</b>, one or more GPCs <b>208</b>, one or more graphics or special purpose processing units, or the like, without departing the scope of the present invention.</p>
+<p id="p-0057" num="0056">In embodiments of the present invention, it is desirable to use PPU <b>122</b> or other processor(s) of a computing system to execute general-purpose computations using thread arrays. Each thread in the thread array is assigned a unique thread identifier (&#x201c;thread ID&#x201d;) that is accessible to the thread during its execution. The thread ID, which can be defined as a one-dimensional or multi-dimensional numerical value controls various aspects of the thread's processing behavior. For instance, a thread ID may be used to determine which portion of the input data set a thread is to process and/or to determine which portion of an output data set a thread is to produce or write.</p>
+<p id="p-0058" num="0057">A sequence of per-thread instructions may include at least one instruction that defines a cooperative behavior between the representative thread and one or more other threads of the thread array. For example, the sequence of per-thread instructions might include an instruction to suspend execution of operations for the representative thread at a particular point in the sequence until such time as one or more of the other threads reach that particular point, an instruction for the representative thread to store data in a shared memory to which one or more of the other threads have access, an instruction for the representative thread to atomically read and update data stored in a shared memory to which one or more of the other threads have access based on their thread IDs, or the like. The CTA program can also include an instruction to compute an address in the shared memory from which data is to be read, with the address being a function of thread ID. By defining suitable functions and providing synchronization techniques, data can be written to a given location in shared memory by one thread of a CTA and read from that location by a different thread of the same CTA in a predictable manner. Consequently, any desired pattern of data sharing among threads can be supported, and any thread in a CTA can share data with any other thread in the same CTA. The extent, if any, of data sharing among threads of a CTA is determined by the CTA program; thus, it is to be understood that in a particular application that uses CTAs, the threads of a CTA might or might not actually share data with each other, depending on the CTA program, and the terms &#x201c;CTA&#x201d; and &#x201c;thread array&#x201d; are used synonymously herein.</p>
+<p id="p-0059" num="0058"><figref idref="DRAWINGS">FIG. 3C</figref> is a block diagram of the SPM <b>310</b> of <figref idref="DRAWINGS">FIG. 3A</figref>, according to one embodiment of the present invention. The SPM <b>310</b> includes an instruction L1 cache <b>370</b> that is configured to receive instructions and constants from memory via L1.5 cache <b>335</b>. A warp scheduler and instruction unit <b>312</b> receives instructions and constants from the instruction L1 cache <b>370</b> and controls local register file <b>304</b> and SPM <b>310</b> functional units according to the instructions and constants. The SPM <b>310</b> functional units include N exec (execution or processing) units <b>302</b> and P load-store units (LSU) <b>303</b>.</p>
+<p id="p-0060" num="0059">SPM <b>310</b> provides on-chip (internal) data storage with different levels of accessibility. Special registers (not shown) are readable but not writeable by LSU <b>303</b> and are used to store parameters defining each CTA thread's &#x201c;position.&#x201d; In one embodiment, special registers include one register per CTA thread (or per exec unit <b>302</b> within SPM <b>310</b>) that stores a thread ID; each thread ID register is accessible only by a respective one of the exec unit <b>302</b>. Special registers may also include additional registers, readable by all CTA threads (or by all LSUs <b>303</b>) that store a CTA identifier, the CTA dimensions, the dimensions of a grid to which the CTA belongs, and an identifier of a grid to which the CTA belongs. Special registers are written during initialization in response to commands received via front end <b>212</b> from device driver <b>103</b> and do not change during CTA execution.</p>
+<p id="p-0061" num="0060">A parameter memory (not shown) stores runtime parameters (constants) that can be read but not written by any CTA thread (or any LSU <b>303</b>). In one embodiment, device driver <b>103</b> provides parameters to the parameter memory before directing SPM <b>310</b> to begin execution of a CTA that uses these parameters. Any CTA thread within any CTA (or any exec unit <b>302</b> within SPM <b>310</b>) can access global memory through a memory interface <b>214</b>. Portions of global memory may be stored in the L1 cache <b>320</b>.</p>
+<p id="p-0062" num="0061">Local register file <b>304</b> is used by each CTA thread as scratch space; each register is allocated for the exclusive use of one thread, and data in any of local register file <b>304</b> is accessible only to the CTA thread to which it is allocated. Local register file <b>304</b> can be implemented as a register file that is physically or logically divided into P lanes, each having some number of entries (where each entry might store, e.g., a 32-bit word). One lane is assigned to each of the N exec units <b>302</b> and P load-store units LSU <b>303</b>, and corresponding entries in different lanes can be populated with data for different threads executing the same program to facilitate SIMD execution. Different portions of the lanes can be allocated to different ones of the G concurrent thread groups, so that a given entry in the local register file <b>304</b> is accessible only to a particular thread. In one embodiment, certain entries within the local register file <b>304</b> are reserved for storing thread identifiers, implementing one of the special registers.</p>
+<p id="p-0063" num="0062">Shared memory <b>306</b> is accessible to all CTA threads (within a single CTA); any location in shared memory <b>306</b> is accessible to any CTA thread within the same CTA (or to any processing engine within SPM <b>310</b>). Shared memory <b>306</b> can be implemented as a shared register file or shared on-chip cache memory with an interconnect that allows any processing engine to read from or write to any location in the shared memory. In other embodiments, shared state space might map onto a per-CTA region of off-chip memory, and be cached in L1 cache <b>320</b>. The parameter memory can be implemented as a designated section within the same shared register file or shared cache memory that implements shared memory <b>306</b>, or as a separate shared register file or on-chip cache memory to which the LSUs <b>303</b> have read-only access. In one embodiment, the area that implements the parameter memory is also used to store the CTA ID and grid ID, as well as CTA and grid dimensions, implementing portions of the special registers. Each LSU <b>303</b> in SPM <b>310</b> is coupled to a unified address mapping unit <b>352</b> that converts an address provided for load and store instructions that are specified in a unified memory space into an address in each distinct memory space. Consequently, an instruction may be used to access any of the local, shared, or global memory spaces by specifying an address in the unified memory space.</p>
+<p id="p-0064" num="0063">The L1 Cache <b>320</b> in each SPM <b>310</b> can be used to cache private per-thread local data and also per-application global data. In some embodiments, the per-CTA shared data may be cached in the L1 cache <b>320</b>. The LSUs <b>303</b> are coupled to a uniform L1 cache <b>371</b>, the shared memory <b>306</b>, and the L1 cache <b>320</b> via a memory and cache interconnect <b>380</b>. The uniform L1 cache <b>371</b> is configured to receive read-only data and constants from memory via the L1.5 Cache <b>335</b>.</p>
+<p id="p-0065" num="0064"><figref idref="DRAWINGS">FIG. 3D</figref> is a conceptual diagram of the level two (L2) cache <b>350</b> of <figref idref="DRAWINGS">FIG. 3B</figref>, according to one embodiment of the present invention. The L2 cache <b>350</b> comprises a ROP crossbar <b>380</b>, and one or more L2 slices <b>390</b>. In one embodiment, four L2 slices <b>390</b>(<b>0</b>)-<b>390</b>(<b>3</b>) are included in the L2 cache <b>350</b>. The L2 cache <b>350</b> receives memory access requests from a crossbar unit <b>210</b> and may receive memory access requests from at least one ROP <b>360</b>. The memory access requests comprise read and write operations performed on memory blocks that may be associated with a data surface. The at least one ROP <b>360</b> presents memory access requests to the ROP crossbar <b>380</b>, which distributes the requests to the L2 slices <b>390</b>. In processing chips with two or more partition units, such as partition units <b>215</b> of <figref idref="DRAWINGS">FIG. 2</figref>, the crossbar unit <b>210</b> routes memory access requests to the two or more partition units, each including an instance of the L2 cache <b>350</b>.</p>
+<p id="p-0066" num="0065">Each L2 slice <b>390</b> within each L2 cache <b>350</b> includes a command crossbar <b>392</b>, a data crossbar <b>394</b>, a compression status bit cache <b>396</b>, and an L2 data cache <b>398</b>. The command crossbar <b>392</b> directs a command portion of a memory access request to the compression status bit cache <b>396</b>. The data crossbar <b>394</b> routes data between the compression status bit cache <b>396</b> and a memory client via the crossbar unit <b>210</b> or the ROP <b>360</b>.</p>
+<p id="p-0067" num="0066">A backing store residing within an external DRAM, such as DRAM <b>220</b> of <figref idref="DRAWINGS">FIG. 2</figref>, comprises a data structure that should provide sufficient compression status bit sets to indicate compression status of all compressed memory blocks also residing in the DRAM. Each compression status bit set indicates compression status for a corresponding block of memory residing in external DRAM, which may be attached to the FB interface <b>355</b>. The compression status bit cache <b>396</b> stores cache lines from the backing store, wherein each cache line includes a plurality of compression status bit sets. One or more cache lines are organized into a cache data store, disposed within the compression status bit cache <b>396</b>. If a compression status bit set associated with a memory access request from a memory client is not currently stored in the cache data store, then a compression status bit cache miss is generated. In response to a compression status bit cache miss, the compression status bit cache <b>396</b> generates a memory access request to the backing store to retrieve a cache line that includes the requested compression status bit set.</p>
+<p id="p-0068" num="0067">In one embodiment, two bits comprise one compression status bit set, wherein each compression status bit set can assume one of four code values given by the two bits. One code value may be used to indicate that a corresponding block of memory is not compressed, while each of the remaining three code values may indicate one of three different compression formats.</p>
+<p id="p-0069" num="0068">The compression status bit cache <b>396</b> may implement any technically feasible tag association scheme and any technically feasible eviction policy. Under normal operation, a memory access request to a compressed surface will pass through the compression status bit cache <b>396</b> in order to determine compression status for the requested block of memory. Based on the compression status, a memory access request is forwarded to the L2 data cache <b>398</b> for processing. A cache hit in the L2 data cache <b>398</b> may be processed locally by the L2 data cache <b>398</b>, while a cache miss in the L2 data cache <b>398</b> results in a memory access request being generated and posted to the FB interface <b>355</b>. Any technically feasible replacement policy and association mechanism may be used within the L2 data cache <b>398</b>.</p>
+<p id="p-0070" num="0069">Importantly, if the L2 data cache <b>398</b> misses, only the number of bits needed by a compressed representation of a corresponding cache line needs to be requested by the L2 data cache <b>398</b>. The number of bits needed for a memory request initiated by the L2 data cache <b>398</b> is indicated by a compression status bit set residing within the compression status bit cache <b>396</b>. By limiting a memory request size to include only bits needed by a compressed representation of a requested block of memory, bandwidth demands on PP memory <b>204</b> are reduced.</p>
+<p id="p-0071" num="0070">Certain memory clients, such as ROP <b>360</b>, are compression aware and are able to directly read and write compressed data. Other clients are compression na&#xef;ve and are not able to process compressed data directly. For example, the GPCs <b>208</b> of <figref idref="DRAWINGS">FIG. 2</figref> are generally not equipped to process compressed data. If a compression aware memory client requests a read or write operation to a compressed block of memory, the L2 cache <b>350</b> may reply with compressed data. If, however, a compression na&#xef;ve memory client requests a read from a compressed block of memory, the L2 cache <b>350</b> decompresses data within the compressed block of memory and returns decompressed data to the na&#xef;ve memory client. In certain instances, a compression na&#xef;ve memory client may only write uncompressed data back to any given block of memory.</p>
+<heading id="h-0008" level="1">Graphics Pipeline Architecture</heading>
+<p id="p-0072" num="0071"><figref idref="DRAWINGS">FIG. 4</figref> is a conceptual diagram of a graphics processing pipeline <b>400</b>, that one or more of the PPUs <b>202</b> of <figref idref="DRAWINGS">FIG. 2</figref> can be configured to implement, according to one embodiment of the present invention. For example, one of the SPMs <b>310</b> may be configured to perform the functions of one or more of a vertex processing unit <b>415</b>, a geometry processing unit <b>425</b>, and a fragment processing unit <b>460</b>. The functions of data assembler <b>410</b>, primitive assembler <b>420</b>, rasterizer <b>455</b>, and raster operations unit <b>465</b> may also be performed by other processing engines within a GPC <b>208</b> and a corresponding partition unit <b>215</b>. Alternately, graphics processing pipeline <b>400</b> may be implemented using dedicated processing units for one or more functions.</p>
+<p id="p-0073" num="0072">Data assembler <b>410</b> processing unit collects vertex data for high-order surfaces, primitives, and the like, and outputs the vertex data, including the vertex attributes, to vertex processing unit <b>415</b>. Vertex processing unit <b>415</b> is a programmable execution unit that is configured to execute vertex shader programs, lighting and transforming vertex data as specified by the vertex shader programs. For example, vertex processing unit <b>415</b> may be programmed to transform the vertex data from an object-based coordinate representation (object space) to an alternatively based coordinate system such as world space or normalized device coordinates (NDC) space. Vertex processing unit <b>415</b> may read data that is stored in L1 cache <b>320</b>, parallel processing memory <b>204</b>, or system memory <b>104</b> by data assembler <b>410</b> for use in processing the vertex data.</p>
+<p id="p-0074" num="0073">Primitive assembler <b>420</b> receives vertex attributes from vertex processing unit <b>415</b>, reading stored vertex attributes, as needed, and constructs graphics primitives for processing by geometry processing unit <b>425</b>. Graphics primitives include triangles, line segments, points, and the like. Geometry processing unit <b>425</b> is a programmable execution unit that is configured to execute geometry shader programs, transforming graphics primitives received from primitive assembler <b>420</b> as specified by the geometry shader programs. For example, geometry processing unit <b>425</b> may be programmed to subdivide the graphics primitives into one or more new graphics primitives and calculate parameters, such as plane equation coefficients, that are used to rasterize the new graphics primitives.</p>
+<p id="p-0075" num="0074">In some embodiments, geometry processing unit <b>425</b> may also add or delete elements in the geometry stream. Geometry processing unit <b>425</b> outputs the parameters and vertices specifying new graphics primitives to a viewport scale, cull, and clip unit <b>450</b>. Geometry processing unit <b>425</b> may read data that is stored in parallel processing memory <b>204</b> or system memory <b>104</b> for use in processing the geometry data. Viewport scale, cull, and clip unit <b>450</b> performs clipping, culling, and viewport scaling and outputs processed graphics primitives to a rasterizer <b>455</b>.</p>
+<p id="p-0076" num="0075">Rasterizer <b>455</b> scan converts the new graphics primitives and outputs fragments and coverage data to fragment processing unit <b>460</b>. Additionally, rasterizer <b>455</b> may be configured to perform z culling and other z-based optimizations.</p>
+<p id="p-0077" num="0076">Fragment processing unit <b>460</b> is a programmable execution unit that is configured to execute fragment shader programs, transforming fragments received from rasterizer <b>455</b>, as specified by the fragment shader programs. For example, fragment processing unit <b>460</b> may be programmed to perform operations such as perspective correction, texture mapping, shading, blending, and the like, to produce shaded fragments that are output to raster operations unit <b>465</b>. Fragment processing unit <b>460</b> may read data that is stored in parallel processing memory <b>204</b> or system memory <b>104</b> for use in processing the fragment data. Fragments may be shaded at pixel, sample, or other granularity, depending on the programmed sampling rate.</p>
+<p id="p-0078" num="0077">Raster operations unit <b>465</b> is a processing unit that performs raster operations, such as stencil, z test, blending, and the like, and outputs pixel data as processed graphics data for storage in graphics memory. The processed graphics data may be stored in graphics memory, e.g., parallel processing memory <b>204</b>, and/or system memory <b>104</b>, for display on display device <b>110</b> or for further processing by CPU <b>102</b> or parallel processing subsystem <b>112</b>. In some embodiments of the present invention, raster operations unit <b>465</b> is configured to compress z or color data that is written to memory and decompress z or color data that is read from memory.</p>
+<heading id="h-0009" level="1">Compression Status Bit Cache and Backing Store</heading>
+<p id="p-0079" num="0078"><figref idref="DRAWINGS">FIG. 5</figref> is a conceptual diagram of a virtual address to raw partition address conversion pipeline <b>500</b>, according to one embodiment of the present invention. The virtual address to raw partition address conversion pipeline <b>500</b> includes a memory management unit (MMU) <b>520</b>, a physical address kind swap swizzle unit (PAKS swizzle) <b>522</b>, a divider <b>524</b>, a partition address unit <b>530</b>, a slice address unit <b>540</b>, and a L2 tag, L2 set unit <b>550</b>. In one embodiment, each GPU <b>208</b> of <figref idref="DRAWINGS">FIG. 2</figref> includes an MMU unit.</p>
+<p id="p-0080" num="0079">The MMU <b>520</b> includes a set of page table entries (PTEs) used to map a virtual address <b>510</b> to a physical address. Each PTE includes, without limitation, virtual address to physical address mapping information, surface kind information, and compression tag line information. The physical address is processed by the PAKS swizzle <b>522</b> to generate a swizzled physical address that distributes access locality to allow efficient request interleaving among partition units. The divider generates a quotient and remainder used by the partition address unit <b>530</b>, the slice address unit <b>540</b>, and the L2 tag, L2 set unit <b>550</b> to compute a unique DRAM address. The partition address unit <b>530</b> computes a partition address <b>532</b> that is used to route a corresponding memory access request to one partition unit <b>215</b> of <figref idref="DRAWINGS">FIG. 2</figref>. The slice address unit <b>540</b> computes a slice address <b>542</b> that is used to route the memory access request to one selected L2 slice <b>390</b> of <figref idref="DRAWINGS">FIG. 3D</figref>.</p>
+<p id="p-0081" num="0080">The L2 tag, L2 set unit <b>550</b> receives a slice-specific physical address comprising a quotient from divider <b>524</b> and an offset address for the memory access request. The L2 tag, L2 set unit <b>550</b> computes an L2 tag and L2 set <b>552</b>, corresponding to a raw partition address that may be used to access a specific DRAM <b>220</b> device. The L2 tag and L2 set <b>552</b> may also be used to query the L2 data cache <b>398</b> of <figref idref="DRAWINGS">FIG. 3D</figref>.</p>
+<p id="p-0082" num="0081"><figref idref="DRAWINGS">FIG. 6</figref> is a conceptual diagram of a raw partition address generation pipeline <b>600</b> for a compression status bit cache, according to one embodiment of the present invention. A compression status bit cache (CSBC) base <b>610</b> comprises an offset address for the backing store of <figref idref="DRAWINGS">FIG. 3D</figref> used to store compression status bits. A cache line number <b>612</b> is arithmetically added to the CSBC base <b>610</b> by adder <b>620</b> to compute a slice-specific physical address that may be processed by an L2 tag, L2 set unit <b>630</b> to generate an L2 tag, L2 set address <b>632</b> corresponding to a raw partition address that may be used to access a specific DRAM <b>220</b> device. The L2 tag, L2 set unit <b>630</b> performs substantially identical computation on the slice-specific physical address versus the L2 tag, L2 set unit <b>550</b> of <figref idref="DRAWINGS">FIG. 5</figref>. Importantly, both the L2 tag, L2 set unit <b>630</b> and L2 tag, L2 set unit <b>550</b> receive slice-specific physical addresses of identical form and perform substantially identical address bit manipulation on the slice-specific physical addresses to generate raw partition addresses of identical form. This symmetry allows both units to address blocks of data within the same partition without address space collisions. In one embodiment, the raw partition address generation pipeline <b>600</b> is implemented within the compression status bit cache <b>396</b> of <figref idref="DRAWINGS">FIG. 3D</figref>.</p>
+<p id="p-0083" num="0082">The cache line number <b>612</b> is derived from the compression tag line information generated by the MMU <b>520</b>. The cache line number <b>612</b> associates a block of compressed memory to a set of associated compression status bits. The cache line number <b>612</b> also serves as a lookup tag used by the compression status bit cache <b>396</b> of <figref idref="DRAWINGS">FIG. 3D</figref>.</p>
+<p id="p-0084" num="0083"><figref idref="DRAWINGS">FIG. 7</figref> illustrates allocation of compression status bit cache backing stores <b>720</b> relative to partition association with attached parallel processor memory <b>204</b>. Each partition unit <b>215</b> includes a compression status bit cache (CSBC) <b>710</b> configured to provide an on-chip, cached version of compression status bits residing in a corresponding CSBC backing store <b>720</b>. In one embodiment, CSBC <b>710</b> comprises plural instances of compression status bit cache <b>396</b> of <figref idref="DRAWINGS">FIG. 3D</figref>, where each instance is associated with an L2 slice <b>390</b>.</p>
+<p id="p-0085" num="0084">Each CSBC backing store <b>720</b> is configured to store compression status bits that should map exclusively to blocks of data residing in the corresponding DRAM <b>220</b>. For example, CSBC backing store <b>720</b>(<b>1</b>) includes compression status bits that map exclusively to DRAM <b>220</b>(<b>1</b>). Additionally, CSBC <b>710</b>(<b>1</b>) caches compression status bits that map exclusively to CSBC backing store <b>720</b>(<b>1</b>). By contrast, compressed surfaces <b>730</b> and <b>740</b> include data that is distributed over DRAM <b>220</b>(<b>0</b>) through DRAM <b>220</b>(D-<b>1</b>), within PP memory <b>204</b>.</p>
+<p id="p-0086" num="0085">Persons skilled in the art will understand that by confining which DRAM <b>220</b> stores compression status bits for blocks of data residing in the same DRAM <b>220</b>, significant additional traffic over crossbar <b>210</b> may be averted, while preserving enhanced memory performance gained by distributing normal memory access requests over multiple partitions.</p>
+<heading id="h-0010" level="1">Efficient Organization for Compression Status Bit Caching</heading>
+<p id="p-0087" num="0086">Embodiments of the present invention set forth a memory subsystem, such as memory interface <b>214</b> of <figref idref="DRAWINGS">FIG. 2</figref>, configured to include a cache that is indirectly virtual address-mapped. The memory subsystem can store certain data in a compressed format to save memory bandwidth. Instead of sending the virtual address together with the physical address to the memory subsystem, each page table entry (PTE) residing in MMU <b>328</b> of <figref idref="DRAWINGS">FIG. 3C</figref> stores a compression tag line label (comptagline) that maps a specific physical page to a compression status bit cache line. The width of the label can be significantly shorter than the full virtual address width because not all virtual memory may be compressible and some bits below the page granularity can be recovered from the physical address.</p>
+<p id="p-0088" num="0087"><figref idref="DRAWINGS">FIG. 8</figref> illustrates compression status bit entries <b>832</b> within compression status bit backing store <b>720</b>, according to one embodiment of the present invention. Base register <b>812</b> specifies a starting address for the compression status bit cache backing store <b>720</b> within a partition of DRAM <b>220</b>. The base register <b>812</b> contains a post-divide two kilo-byte (KB) aligned address. The entries <b>832</b> map to a compression status bit cache (CSBC) line <b>830</b>, which is stored within the CSBC <b>396</b> of <figref idref="DRAWINGS">FIG. 3D</figref>. The CSBC <b>396</b> includes plural CSBC lines <b>830</b> stored in local (on chip) random access memory (RAM). Each compression bit cache <b>396</b> computes a per slice local physical address for each cache line by adding an offset to the base register <b>812</b>. The offset corresponds to quotient <b>822</b> computed from the comptagline <b>810</b> stored in an associated PTE. A particular entry <b>832</b> is selected from a remainder value <b>824</b>. A division operation is performed in a cache line address computation <b>820</b> that generates the quotient <b>822</b> and remainder <b>824</b>. The division operation divides the value of the comptagline <b>810</b> by a number of comptaglines per cache line. The number of comptaglines per cache line depends on the number of L2 slices.</p>
+<p id="p-0089" num="0088">CSBCs <b>710</b> of <figref idref="DRAWINGS">FIG. 7</figref>, each comprising plural instances of compression status bit cache <b>396</b>, store compression status bit data that represents the compression status of corresponding data residing within DRAMs <b>220</b>. This data is typically contiguous in a virtual address space, but may not be physically contiguous due to memory paging. For good locality and to avoid the compression status bit cache <b>710</b> from being fragmented, cache lines <b>830</b> within the compression status bit cache <b>710</b> should correspond to the compression status of virtually contiguous data. However, the memory system operates only on physical address.</p>
+<p id="p-0090" num="0089">Because contiguous virtual pages may store related data, a plurality of contiguous compression tag line labels can map to the same compression bit cache line within the compression status bit cache <b>710</b>. The compression status bit cache lines <b>830</b> should be large enough to generate efficient accesses to memory and to reduce the compression status bit cache tag lookup overhead. The number of physical page labels that map to a compression status bit cache line <b>830</b> is adjusted based on the number of active memory partitions in the system to keep the size of the cache line <b>830</b> constant. Each compression status bit cache <b>710</b> is local to each partition to minimize latency and traffic between partitions. Each compression status bit cache line <b>830</b> resides in internal cache random access memory (RAM) and is organized into multiple sectors, where each sector corresponds to an integral number of physical page labels. Each compression tag line label maps to a single entry <b>832</b>. The internal cache RAM is organized so that each sector forms a RAM word. This organization ensures that each sector can be efficiently accessed in a single cycle.</p>
+<p id="p-0091" num="0090">Each RAM word may store compression status bit information for an integral number of pages, including additional bits that may be used as padding. As illustrated below, use of padding depends on the number of active partitions in the system. Pages that are unevenly distributed across multiple partitions (e.g. due to non-power of two number of partitions in the system) are accommodated by allowing some number of bits in each cache line <b>830</b> to go unused in certain configurations.</p>
+<p id="p-0092" num="0091">One embodiment comprises eight partitions with four L2 slices <b>390</b> each, for a total of 32 independent compression status bit caches <b>396</b>. Each L2 slice <b>390</b> also has an L2 data cache <b>398</b> in addition to the compression status bit cache <b>396</b>. Each compression status bit cache <b>396</b> has on-chip storage for sixteen 512 byte cache lines <b>830</b> (for a total of 8 Kilo-bytes). The compression status bit cache lines are fully associative with respect to comptagline <b>810</b> tags. The compression status bit cache lines <b>830</b> fill and evict in whole units of 512 bytes. Evictions write through the L2 data cache <b>398</b>. Fill requests that miss in the L2 data cache <b>398</b> are returned directly from DRAMs <b>220</b> via FB interface <b>355</b> to the compression status bit cache <b>396</b> without allocating lines in the L2 data cache <b>398</b>. This policy avoids a deadlock if no space is available in the L2 data cache <b>398</b>. Fill requests that hit in the L2 data cache <b>398</b> are returned from the L2 data cache <b>398</b> without issuing a read request to FB interface <b>355</b>. A fill request for a 512 byte (512B) compression status bit line may partially hit and partially miss in the L2 data cache <b>398</b>, resulting in a request to the FB interface <b>355</b>.</p>
+<p id="p-0093" num="0092">In the above embodiment, the compression status bit backing store <b>720</b> can hold up to 16 MB of compression bit data. This corresponds to 32768 cache lines. Each cache line belongs to one compression bit cache slice and the backing store address mapping guarantees that the whole 512B compression bit line falls within the address range cached by the L2 data cache of the same slice. Another embodiment, for example, comprises six partitions with two L2 slices <b>390</b> each, for a total of twelve independent compression status bit caches <b>396</b>. Each L2 slice <b>390</b> also has an L2 data cache <b>398</b> in addition to the compression status bit cache <b>396</b>. Each compression status bit cache <b>396</b> has on-chip storage for fifty-four 1024 byte cache lines <b>830</b> (for a total of 648 Kilo-bytes).</p>
+<p id="p-0094" num="0093">The MMU <b>328</b> maintains a PTE for each virtual memory page. In addition to a physical address, the PTE stores the comptagline <b>810</b> and a &#x201c;kind&#x201d; field. The kind field defines the format of data stored in the associated page and determines if and what type of compression the page supports. The comptagline <b>810</b> tells the compression status bit cache <b>396</b> where the compression status bits of the page are located within a corresponding data store for the compression status bit cache <b>396</b>. Each comptagline <b>810</b> uniquely identifies a CSBC entry <b>832</b> within the CSBC <b>830</b> line. The CSBC entry <b>832</b> comprises the compression status bits for an associated 128 KB page. There is a 1:1 mapping between 128 KB pages and comptaglines. If multiple virtual pages share the same comptagline, they must also share the same physical address.</p>
+<p id="p-0095" num="0094">A PTE may map different sizes of virtual pages. For example, a page could be 4 KB or 128 KB. In one embodiment only 128 KB pages permit compression page kinds. In an alternative embodiment, 4 KB through 128 KB pages permit compression, whereby the same comptagline is considered in combination with additional bits of a page virtual address. For example 4 KB pages can be accommodated by considering the same comptagline and five bits of each virtual address for a page.</p>
+<p id="p-0096" num="0095">A 128 KB page spreads constituent data and corresponding compression bits across all partitions and all L2 slices <b>390</b>. The number of 256B compressible tiles from a page that falls within an L2 slice varies depending on the number of total partitions (and number of L2 slices within a partition). The Table 1, below, illustrates the number of 256B tiles from a 128 KB comptagline that fall within an L2 slice. The maximum number is adjusted to account for all block linear kinds and two 64 KB pages programmed with the same 128 KB comptagline.</p>
+<p id="p-0097" num="0096">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="63pt" align="center"/>
+<colspec colname="2" colwidth="63pt" align="center"/>
+<colspec colname="3" colwidth="91pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="3" rowsep="1">TABLE 1</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Maximum Number</entry>
+<entry>Minimum Number</entry>
+</row>
+<row>
+<entry>Number of</entry>
+<entry>of 256 B</entry>
+<entry>of 256 B</entry>
+</row>
+<row>
+<entry>Partitions</entry>
+<entry>Tiles per Slice</entry>
+<entry>Tiles per Slice</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="63pt" align="center"/>
+<colspec colname="2" colwidth="63pt" align="char" char="."/>
+<colspec colname="3" colwidth="91pt" align="char" char="."/>
+<tbody valign="top">
+<row>
+<entry>1</entry>
+<entry>128</entry>
+<entry>128</entry>
+</row>
+<row>
+<entry>2</entry>
+<entry>64</entry>
+<entry>64</entry>
+</row>
+<row>
+<entry>3</entry>
+<entry>44</entry>
+<entry>40</entry>
+</row>
+<row>
+<entry>4</entry>
+<entry>32</entry>
+<entry>32</entry>
+</row>
+<row>
+<entry>5</entry>
+<entry>28</entry>
+<entry>24</entry>
+</row>
+<row>
+<entry>6</entry>
+<entry>24</entry>
+<entry>20</entry>
+</row>
+<row>
+<entry>7</entry>
+<entry>24</entry>
+<entry>16</entry>
+</row>
+<row>
+<entry>8</entry>
+<entry>16</entry>
+<entry>16</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0098" num="0097">For non-power of two partitions, the number of tiles that fall within a slice will vary. This is accommodated by padding the compression bit backing store such that all slices can store compression bits corresponding to the maximum number of tiles per slice. This leads to some number of unused (wasted) bits being cached by the compression status bit cache.</p>
+<p id="p-0099" num="0098">Zero bandwidth clears (ZBC) associate a compression bit encoding with a programmable value from a table. A ZBC enables setting a whole 256B tile to a constant (clear) value by only updating corresponding compression status bits. When applicable, this technique provides a compression ratio of 1020:1 and results in a significant bandwidth reduction. To support ZBC, each L2 slice <b>390</b> stores a four-bit index in addition to the compression status bits for one 128 KB page, two 64 KB pages or thirty-two 4 KB pages. The ZBC index can only be changed after first verifying that no tile within the page within the slice is referencing the ZBC index. In a preferred embodiment, checking for ZBC index usage is performed in a single clock cycle.</p>
+<p id="p-0100" num="0099">Given the above parameters, a compromise between compression bit cache data store RAM width requirements and minimizing unused cache compression bits for various partition configurations results in a 276-bit wide compression status bit RAM for use within the compression status bit cache <b>396</b>. Table 2, below, shows the number of pages per entry in the data store RAM and the percentage of unused compression status bits for supported partition configurations. Two versions of padding are implemented for the seven-0partition scenario: one for 128 KB VM pages and one for 64 KB pages. The smaller 64 KB pages require additional padding and are generally not very efficient. A special-case packing scheme is implemented for the seven-partition scenario to reduce general inefficiency.</p>
+<p id="p-0101" num="0100">
+<tables id="TABLE-US-00002" num="00002">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="5">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="35pt" align="center"/>
+<colspec colname="3" colwidth="70pt" align="center"/>
+<colspec colname="4" colwidth="28pt" align="center"/>
+<colspec colname="5" colwidth="70pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="5" rowsep="1">TABLE 2</entry>
+</row>
+<row>
+<entry namest="1" nameend="5" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Number of</entry>
+<entry>Pages per Data</entry>
+<entry>Bits per</entry>
+<entry>Percentage of</entry>
+</row>
+<row>
+<entry/>
+<entry>Partitions</entry>
+<entry>Store RAM Entry</entry>
+<entry>Page</entry>
+<entry>Unused Bits</entry>
+</row>
+<row>
+<entry namest="1" nameend="5" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="5">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="35pt" align="center"/>
+<colspec colname="3" colwidth="70pt" align="center"/>
+<colspec colname="4" colwidth="28pt" align="char" char="."/>
+<colspec colname="5" colwidth="70pt" align="char" char="."/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>1</entry>
+<entry>1</entry>
+<entry>260</entry>
+<entry>5.80%</entry>
+</row>
+<row>
+<entry/>
+<entry>2</entry>
+<entry>2</entry>
+<entry>132</entry>
+<entry>4.35%</entry>
+</row>
+<row>
+<entry/>
+<entry>3</entry>
+<entry>3</entry>
+<entry>92</entry>
+<entry>0.00%</entry>
+</row>
+<row>
+<entry/>
+<entry>4</entry>
+<entry>4</entry>
+<entry>68</entry>
+<entry>1.45%</entry>
+</row>
+<row>
+<entry/>
+<entry>5</entry>
+<entry>4</entry>
+<entry>60</entry>
+<entry>13.04%</entry>
+</row>
+<row>
+<entry/>
+<entry>6</entry>
+<entry>5</entry>
+<entry>52</entry>
+<entry>5.80%</entry>
+</row>
+<row>
+<entry/>
+<entry>7</entry>
+<entry>5</entry>
+<entry>52</entry>
+<entry>5.80%</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2002;(64 KB)</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>7</entry>
+<entry>6</entry>
+<entry>44</entry>
+<entry>4.54%</entry>
+</row>
+<row>
+<entry/>
+<entry>(128 KB)</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>8</entry>
+<entry>7</entry>
+<entry>36</entry>
+<entry>8.70%</entry>
+</row>
+<row>
+<entry namest="1" nameend="5" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0102" num="0101">In one embodiment, for each tile associated with each page, the compression status bit cache <b>396</b> stores four ZBC index bits and two compression status bits. A start index of a page within the 256B data store RAM entry is always nibble (four-bit) aligned. In one embodiment, the seven-partition, 64 KB configuration uses the same start index values as the six-partition configuration to minimize associated selection circuitry. The start index indicates where, within the cache line, a particular entry resides.</p>
+<p id="p-0103" num="0102">Table 3, below, lists a start index for compression status bits and ZBC index bits associated with pages within each data store RAM entry. A start index locates an entry <b>832</b>, comprising compression status bits and ZBC index bits, within one cache line <b>830</b>. In one embodiment, the start index indicates where the first bit of the ZBC index bits resides within the data store RAM for a corresponding page.</p>
+<p id="p-0104" num="0103">
+<tables id="TABLE-US-00003" num="00003">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="8">
+<colspec colname="1" colwidth="35pt" align="center"/>
+<colspec colname="2" colwidth="28pt" align="center"/>
+<colspec colname="3" colwidth="21pt" align="center"/>
+<colspec colname="4" colwidth="28pt" align="center"/>
+<colspec colname="5" colwidth="21pt" align="center"/>
+<colspec colname="6" colwidth="28pt" align="center"/>
+<colspec colname="7" colwidth="28pt" align="center"/>
+<colspec colname="8" colwidth="28pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="8" rowsep="1">TABLE 3</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>Number of</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>Partitions</entry>
+<entry>Pg 0</entry>
+<entry>Pg 1</entry>
+<entry>Pg 2</entry>
+<entry>Pg 3</entry>
+<entry>Pg 4</entry>
+<entry>Pg 5</entry>
+<entry>Pg 6</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>1</entry>
+<entry>0</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+</row>
+<row>
+<entry>2</entry>
+<entry>0</entry>
+<entry>132</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+</row>
+<row>
+<entry>3</entry>
+<entry>0</entry>
+<entry>92</entry>
+<entry>184</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+</row>
+<row>
+<entry>4</entry>
+<entry>0</entry>
+<entry>68</entry>
+<entry>136</entry>
+<entry>204</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+</row>
+<row>
+<entry>5</entry>
+<entry>0</entry>
+<entry>60</entry>
+<entry>120</entry>
+<entry>180</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+</row>
+<row>
+<entry>6</entry>
+<entry>0</entry>
+<entry>52</entry>
+<entry>104</entry>
+<entry>156</entry>
+<entry>208</entry>
+<entry>&#x2014;</entry>
+<entry>&#x2014;</entry>
+</row>
+<row>
+<entry>7</entry>
+<entry>0</entry>
+<entry>44</entry>
+<entry>88</entry>
+<entry>132</entry>
+<entry>176</entry>
+<entry>220</entry>
+<entry>&#x2014;</entry>
+</row>
+<row>
+<entry>8</entry>
+<entry>0</entry>
+<entry>36</entry>
+<entry>72</entry>
+<entry>108</entry>
+<entry>144</entry>
+<entry>180</entry>
+<entry>216</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0105" num="0104">Each 512B compression bit cache line <b>830</b> maps to fourteen 276 bit RAM words. This mapping adds an additional 5.66% of unused bits: 14*276=3864, 512*8=4096. The RAM is organized in two 31B wide banks to support 32B granular fills and evicts and 34.5B granular accesses. Each 512B cache line <b>830</b> uses 8 entries from bank 0 and 8 entries from bank 1. The 7 first entries from bank 0 together with 3.5 bytes each from the last entry of bank 1 form 7 276b entries. Similarly, the last 7 entries from bank 1, each together with 3.5 bytes of the last entry from bank 0 for a second set of 7 276b entries. The 6.5 most significant bytes of the two top entries from each bank are unused. This organization is illustrated below in table 4.</p>
+<p id="p-0106" num="0105">
+<tables id="TABLE-US-00004" num="00004">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="56pt" align="center"/>
+<colspec colname="2" colwidth="49pt" align="center"/>
+<colspec colname="3" colwidth="112pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="3" rowsep="1">TABLE 4</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Mapping of Bank to Entry</entry>
+</row>
+<row>
+<entry>512 B Cache Line</entry>
+<entry>34.5 B Entry</entry>
+<entry>BankN[Index]MSB:LSB</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>0</entry>
+<entry>0</entry>
+<entry>{Bank1[7]19:0, Bank0[0]255:0}</entry>
+</row>
+<row>
+<entry>0</entry>
+<entry>1</entry>
+<entry>{Bank1[7]39:20, Bank0[1]255:0}</entry>
+</row>
+<row>
+<entry>. . .</entry>
+<entry>. . .</entry>
+<entry>. . .</entry>
+</row>
+<row>
+<entry>0</entry>
+<entry>6</entry>
+<entry>{Bank1[7]139:120, Bank0[6]255:0}</entry>
+</row>
+<row>
+<entry>0</entry>
+<entry>7</entry>
+<entry>{Bank0[7]19:0, Bank1[0]255:0}</entry>
+</row>
+<row>
+<entry>. . .</entry>
+<entry>. . .</entry>
+<entry>. . .</entry>
+</row>
+<row>
+<entry>0</entry>
+<entry>12&#x2002;</entry>
+<entry>{Bank0[7]119:100, Bank1[5]255:0}</entry>
+</row>
+<row>
+<entry>0</entry>
+<entry>13&#x2002;</entry>
+<entry>{Bank0[7]139:120, Bank1[6]255:0}</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0107" num="0106">For fills and evicts, the banks are addressed directly, where the RAM address is equivalent to the LSBs of the backing store <b>720</b> address and bit <b>3</b> of the backing store <b>720</b> address select the bank. Bank0 is mapped to the first 8&#xd7;32B of each 512B cache line <b>830</b> and bank1 is mapped to the last 8&#xd7;32B. The upper byte of the 32B evict/fill data path is not connected to a bank, but is written as zero on eviction. For fills and evicts, any unused backing store bit is set to zero.</p>
+<p id="p-0108" num="0107">The cache line <b>830</b> number, cache line entry <b>832</b>, and page index within the entry are computed from the comptagline <b>810</b>. The cache line <b>830</b> is the comptagline <b>810</b> divided by the number of comptaglines per cache line. The remainder divided by the number of comptaglines per entry is the entry. The remainder is the page index within the entry.</p>
+<p id="p-0109" num="0108">Cache line=comptagline/comptaglines_per_cache_line</p>
+<p id="p-0110" num="0109">Entry=comptagline % 14;</p>
+<p id="p-0111" num="0110">Index=(comptagline % comptaglines_per_cache_line)/14</p>
+<p id="p-0112" num="0111">Comptaglines_per_entry is equal to pages per entry from table 2. To get comptagline_per_cache line, multiply comptaglines_per_entry by 14. In one embodiment, the divide by fourteen is implemented as binary shifts and adds followed by a correction factor from a table lookup to yield an exact result. The width of comptagline is 17 bits, but this bit width may be adjusted to accommodate a specific implementation.</p>
+<p id="p-0113" num="0112">Each 256B tile has two associated compression bits. The location of the compression bits within the comptagline <b>810</b> is computed from the tile's physical address. The physical address received by L2 has redundant information, such as slice and partition identification number removed. The physical address is made up of two components: the L2 tag and the L2 index (i.e. the set index). This local address is mapped to a compression bit pair by taking the 256B-aligned portion (512B aligned for 64-bit depth kind) of the address modulo the maximum number of compression bits per page per slice. Depending on a particular partition configuration, different modulo operators needed to compute the location of the compression bits within a 128 KB page are given below in Table 5:</p>
+<p id="p-0114" num="0113">
+<tables id="TABLE-US-00005" num="00005">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="35pt" align="center"/>
+<colspec colname="3" colwidth="84pt" align="center"/>
+<colspec colname="4" colwidth="84pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="4" rowsep="1">TABLE 5</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Number of</entry>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>Partitions</entry>
+<entry>Modulo Operator</entry>
+<entry>RTL Implementation</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="35pt" align="center"/>
+<colspec colname="3" colwidth="84pt" align="char" char="."/>
+<colspec colname="4" colwidth="84pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>1</entry>
+<entry>128</entry>
+<entry>Power of two</entry>
+</row>
+<row>
+<entry/>
+<entry>2</entry>
+<entry>64</entry>
+<entry>Power of two</entry>
+</row>
+<row>
+<entry/>
+<entry>3</entry>
+<entry>44</entry>
+<entry>Mod 11 &#x3c;&#x3c; 2</entry>
+</row>
+<row>
+<entry/>
+<entry>4</entry>
+<entry>32</entry>
+<entry>Power of two</entry>
+</row>
+<row>
+<entry/>
+<entry>5</entry>
+<entry>28</entry>
+<entry>Mod 7 &#x3c;&#x3c; 2</entry>
+</row>
+<row>
+<entry/>
+<entry>6</entry>
+<entry>24</entry>
+<entry>Mod 6 &#x3c;&#x3c; 2</entry>
+</row>
+<row>
+<entry/>
+<entry>7</entry>
+<entry>20</entry>
+<entry>Mod 5 &#x3c;&#x3c; 2</entry>
+</row>
+<row>
+<entry/>
+<entry>8</entry>
+<entry>16</entry>
+<entry>Power of two</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0115" num="0114">For 64 KB pages, one bit less can be extracted from the physical address. The lost bit is replaced by an additional virtual address bit piped between MMU and L2. Modulo operators are adjusted for the smaller 64 KB footprint as shown below in table 6. Note that the same modulo operators can be used with a one-bit shift.</p>
+<p id="p-0116" num="0115">
+<tables id="TABLE-US-00006" num="00006">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="49pt" align="center"/>
+<colspec colname="3" colwidth="70pt" align="center"/>
+<colspec colname="4" colwidth="84pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="4" rowsep="1">TABLE 6</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Num Partitions</entry>
+<entry>Modulo operator</entry>
+<entry>RTL Implementation</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="49pt" align="center"/>
+<colspec colname="3" colwidth="70pt" align="char" char="."/>
+<colspec colname="4" colwidth="84pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>1</entry>
+<entry>64</entry>
+<entry>Power of two</entry>
+</row>
+<row>
+<entry/>
+<entry>2</entry>
+<entry>32</entry>
+<entry>Power of two</entry>
+</row>
+<row>
+<entry/>
+<entry>3</entry>
+<entry>22</entry>
+<entry>Mod 11 &#x3c;&#x3c; 1</entry>
+</row>
+<row>
+<entry/>
+<entry>4</entry>
+<entry>16</entry>
+<entry>Power of two</entry>
+</row>
+<row>
+<entry/>
+<entry>5</entry>
+<entry>14</entry>
+<entry>Mod 7 &#x3c;&#x3c; 1</entry>
+</row>
+<row>
+<entry/>
+<entry>6</entry>
+<entry>12</entry>
+<entry>Mod 6 &#x3c;&#x3c; 1</entry>
+</row>
+<row>
+<entry/>
+<entry>7</entry>
+<entry>12</entry>
+<entry>Mod 6 &#x3c;&#x3c; 1</entry>
+</row>
+<row>
+<entry/>
+<entry>8</entry>
+<entry>8</entry>
+<entry>Power of two</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0117" num="0116">In one embodiment, 4 KB pages are only supported for one and two partition configurations. To support 4 KB pages, SW assigns the same comptagline <b>810</b> to up to 32 virtually contiguous pages and 5 additional virtual address bits are piped from MMU <b>328</b> to L2 cache <b>350</b> to compensate for bits that are unavailable via the physical address.</p>
+<p id="p-0118" num="0117">
+<tables id="TABLE-US-00007" num="00007">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="49pt" align="center"/>
+<colspec colname="3" colwidth="70pt" align="center"/>
+<colspec colname="4" colwidth="84pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="4" rowsep="1">TABLE 7</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Num Partitions</entry>
+<entry>Modulo operator</entry>
+<entry>RTL Implementation</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>1</entry>
+<entry>4</entry>
+<entry>Power of two</entry>
+</row>
+<row>
+<entry/>
+<entry>2</entry>
+<entry>2</entry>
+<entry>Power of two</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0119" num="0118">In alternative embodiments, larger CSBCs are supported by reducing the number of cache lines while keeping the overall compression footprint constant. Such embodiments can easily support growing the cache line size by a power of two. Tag matching logic and the number of bytes read on a CSBC miss and written on eviction need to be appropriately modified according to well known logic design principles. However, such embodiments may be implemented according to the cache line data structure described herein.</p>
+<p id="p-0120" num="0119"><figref idref="DRAWINGS">FIG. 9</figref> illustrates a PTE <b>910</b> configured to store a reference to a compression status bit entry <b>830</b> for a corresponding physical block, according to one embodiment of the present invention. The MMU <b>328</b> of <figref idref="DRAWINGS">FIG. 3C</figref> receives a virtual address and selects PTE <b>910</b> based on mapping from the virtual address to physical address (PA) <b>914</b>, stored within PTE <b>910</b>. The PTE <b>910</b> also includes a kind field <b>912</b> configured to indicate which one of a plurality of kinds of data is stored in an associated page of physical memory. The comptagline <b>810</b> is used in an associative lookup by the CSBC <b>396</b> to determine whether cache line <b>830</b> is resident within the CSBC <b>396</b>. As described previously, the comptagline <b>810</b> is also used to address a CSBC entry <b>832</b>. Each CSBC entry <b>832</b> resides within a CSBC line <b>830</b> and comprises compression status bits <b>920</b> and ZBC index bits <b>922</b>. Compression status bits <b>920</b> determine the size of a corresponding memory access transaction to a given partition. ZBC index bits <b>922</b> are an index that selects a constant value for an associated surface.</p>
+<p id="p-0121" num="0120"><figref idref="DRAWINGS">FIG. 10A</figref> is a flow diagram of method steps <b>1000</b> for mapping a virtual address to a local frame buffer address, according to one embodiment of the present invention. Although the method steps <b>1002</b> are described in conjunction with the systems of <figref idref="DRAWINGS">FIGS. 1-7</figref>, persons skilled in the art will understand that any system configured to perform the method steps, in any order, is within the scope of the inventions.</p>
+<p id="p-0122" num="0121">The method begins in step <b>1010</b>, where a GPC <b>208</b> of <figref idref="DRAWINGS">FIG. 2</figref> computes a virtual address that represents a client memory access request. For a two-dimensional graphics surface, the virtual address is computed from a two-dimensional surface coordinate. For a generic memory page, the virtual address corresponds to an address computed by the GPC <b>208</b>. In step <b>1012</b>, the MMU <b>328</b> performs a page table look up to select a particular PTE <b>910</b> corresponding to the virtual address. Importantly, the PTE <b>910</b> includes a kind field <b>912</b>, comptagline field <b>810</b>, and physical address (PA) field <b>914</b> for the virtual address. The comptagline field <b>810</b> is a unique label that associates data in DRAM <b>220</b> that is mapped by the PTE with compression status bits in a corresponding CSBC <b>396</b> that track compression status for the data. After step <b>1012</b> is complete, PTE <b>910</b> is selected. A corresponding kind field <b>912</b> and comptagline field <b>810</b> are then available from the PTE <b>910</b>.</p>
+<p id="p-0123" num="0122">In step <b>1014</b>, the partition address conversion pipeline <b>500</b> of <figref idref="DRAWINGS">FIG. 5</figref> performs a pre-divide address bit swizzle. This step distributes memory transaction workload over partitions units <b>215</b> comprising the memory interface <b>214</b>. In step <b>1016</b>, the divider <b>514</b> within the partition address conversion pipeline <b>500</b> divides pre-divide address bit swizzle results by a number of active partitions. In step <b>1018</b>, the partition address conversion pipeline <b>500</b> performs a post divide swizzle to yield a local frame buffer address comprising a partition number, an L2 slice number, and an L2 slice physical address (padr). The padr represents a local address for use by the L2 cache <b>350</b> to access attached DRAM <b>220</b> via the frame buffer interface <b>355</b>. The method terminates in step <b>1090</b>.</p>
+<p id="p-0124" num="0123"><figref idref="DRAWINGS">FIG. 10B</figref> is a flow diagram of method steps <b>1002</b> for accessing compressed data within the frame buffer based on the local frame buffer address and compression status bit information, according to one embodiment of the present invention. Although the method steps <b>1002</b> are described in conjunction with the systems of <figref idref="DRAWINGS">FIGS. 1-7</figref>, persons skilled in the art will understand that any system configured to perform the method steps, in any order, is within the scope of the inventions. The method steps <b>1002</b> continue method steps <b>1000</b> to complete a memory access to DRAM <b>220</b> by a partition unit <b>215</b>. Persons skilled in the art will understand that a memory access, as referred to herein, may constitute either a read operation or a write operation.</p>
+<p id="p-0125" num="0124">The method begins in step <b>1050</b>, where the CSBC <b>396</b> receives an L2 slice physical address (padr), comptagline, and kind for a client memory access request. In step <b>1052</b>, the CSBC <b>396</b> computes a cache tag for lookup, based on the comptagline and number of active partitions. In step <b>1054</b>, the CSBC <b>396</b> performs a query based on the computed cache tag. In one embodiment, the query is a fully associative lookup relative to tags for currently resident cache lines. Any technically feasible technique may be used to perform the associative lookup. For example, a content addressable memory structure may be configured to perform the associative lookup.</p>
+<p id="p-0126" num="0125">If, in step <b>1060</b>, the associative lookup yields a hit, then the method proceeds to step <b>1070</b>. In step <b>1070</b>, the CSBC <b>396</b> reads compression status bits and ZBC bits from the CSBC data store RAM. An address for the corresponding location within the CSBC data store RAM is computed using the associative lookup results in combination with the comptagline information stored within the respective PTE. In step <b>1072</b>, the CSBC <b>396</b> selects one four-bit ZBC index stored per comptagline slice. The one four-bit ZBC index is selected from a plurality of four-bit ZBC indices stored within a cache line <b>830</b>. In step <b>1074</b>, the CSBC <b>396</b> selects one set of compression bits stored per comptagline slice. The one set of compression bits is selected from a plurality of compression bit sets stored within cache line <b>830</b>.</p>
+<p id="p-0127" num="0126">If, in step <b>1076</b>, the memory access request is not a ZBC access request, then the method proceeds to step <b>1090</b>, where the CSBC <b>396</b> posts an access request to the frame buffer interface <b>355</b> corresponding to the original client memory access request received in step <b>1050</b>. The method terminates in step <b>1090</b>.</p>
+<p id="p-0128" num="0127">Returning to step <b>1076</b>, if the memory access request is a ZBC request, then the method proceeds to step <b>1092</b>, where the CSBC <b>396</b> completes the ZBC request. If the ZBC request is a write request, the CSBC <b>396</b> determines whether the corresponding ZBC index for the write request matches the ZBC index for the associated client memory access. If the write access request matches the ZBC index for the client memory access, then the write is complete with no further action. If the ZBC index for the write access request does not match the ZBC index for the client memory access and the ZBC index is not in use by another memory page, then the ZBC write proceeds. The method terminates in step <b>1092</b>.</p>
+<p id="p-0129" num="0128">Returning to step <b>1060</b>, if the associative lookup yields a miss, then the method proceeds to step <b>1080</b>, where the CSBC <b>396</b> selects a CSBC line <b>830</b> for eviction. Any technically feasible eviction policy may be implemented without departing from the scope of the present invention. In one embodiment, the eviction policy is based on a least recently used (LRU) policy. Unused cache lines are assigned highest priority for eviction, while a non-dirty least recently used cache line has second highest priority. Dirty cache lines must be written out before being evicted and may introduce additional eviction latency. In step <b>1082</b>, the CSBC <b>396</b> computes a fill address for a required cache line <b>810</b> residing in backing store <b>720</b>. In step <b>1084</b>, the CSBC <b>396</b> performs a post-divide address swizzle, as described previously in <figref idref="DRAWINGS">FIG. 5</figref>, to generate a local partition address. In step <b>1086</b>, the CSBC issues a fill request via the L2 cache <b>398</b>. If the miss is to a previously evicted CSBC line, then the line may still reside in the L2 cache <b>398</b>. If the requested CSBC line is still resident within the L2 cache <b>398</b>, then the L2 cache <b>398</b> may be able to fill the fill request without needing to post a request to PP memory <b>204</b>. After the requested CSBC line is filled, the method proceeds to step <b>1052</b>.</p>
+<p id="p-0130" num="0129">In sum, a technique is disclosed for storing compression status of memory pages that are virtually mapped in a memory system comprising an arbitrary number of partitions. The compression status specifies a form of compression, if any, applied to each tile within a given memory page. A virtual address is mapped to a linear physical address via a page table structure using any technically feasible mapping technique. Each PTE is configured to store compression attributes in addition to the linear physical address. The linear physical address is transformed to an L2 partition address using divide and swizzle operations that provide statistical spreading over an arbitrary number of available partitions. The L2 partition address, in combination with the compression attributes, is used to perform an associative query to a compression status bit cache. In a hit scenario, a compression status bit cache entry is retrieved. The entry indicates compression status used for accessing an associated tile. In a miss scenario, a compression status bit cache line fill request is posted to an attached L2 cache. After the fill operation completes, the corresponding compression status bit cache entry is queried to determine a compression status for a requested portion of memory. Once compression status for a portion of memory is available, an access request is posted to frame buffer memory to access the portion of memory.</p>
+<p id="p-0131" num="0130">One advantage of embodiments of the present invention is that a processing unit may efficiently access virtually mapped data that is compressed and distributed over an arbitrary number of partitions. Thus, embodiments of the present invention overcome prior art design deficiencies that limit the application of virtual memory mapping in systems having an arbitrary number of memory partitions. Embodiments of the present invention also improves compression status caching in such systems, enabling an overall memory system that efficiently combines virtual memory mapping and compression while preserving the option of utilizing an arbitrary number of partitions.</p>
+<p id="p-0132" num="0131">One embodiment of the invention may be implemented as a program product for use with a computer system. The program(s) of the program product define functions of the embodiments (including the methods described herein) and can be contained on a variety of computer-readable storage media. Illustrative computer-readable storage media include, but are not limited to: (i) non-writable storage media (e.g., read-only memory devices within a computer such as CD-ROM disks readable by a CD-ROM drive, flash memory, ROM chips or any type of solid-state non-volatile semiconductor memory) on which information is permanently stored; and (ii) writable storage media (e.g., floppy disks within a diskette drive or hard-disk drive or any type of solid-state random-access semiconductor memory) on which alterable information is stored.</p>
+<p id="p-0133" num="0132">The invention has been described above with reference to specific embodiments. Persons skilled in the art, however, will understand that various modifications and changes may be made thereto without departing from the broader spirit and scope of the invention as set forth in the appended claims. The foregoing description and drawings are, accordingly, to be regarded in an illustrative rather than a restrictive sense.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method for determining and updating compression status for a virtually addressed unit of data residing within a frame buffer, the method comprising:
+<claim-text>selecting a page table entry (PTE) based on a virtual address, the PTE comprising a physical address for the unit of data within the frame buffer and a compression cache tag line;</claim-text>
+<claim-text>computing a compression cache tag based on the compression cache tag line and a number of active partitions in the frame buffer;</claim-text>
+<claim-text>querying a compression cache to determine whether the compression cache tag represents a cache hit; and</claim-text>
+<claim-text>if the compression cache tag represents a cache hit, then accessing one or more compression bits from a cache line, wherein the one or more compression bits represent a compression status for the unit of data to be used when accessing the unit of data from the frame buffer, or</claim-text>
+<claim-text>if the compression cache tag represents a cache miss, then retrieving one or more compression bits for storage in an identified cache line.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the step of accessing one or more compression bits comprises:
+<claim-text>identifying a corresponding cache line based on the cache tag; and</claim-text>
+<claim-text>selecting based on the number of active partitions the one or more compression bits from a plurality of bits included within the cache line.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the step of querying comprises performing a fully associative lookup operation of the compression cache tag based on a plurality of resident compression cache tags.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, where the step of retrieving comprises:
+<claim-text>computing a local frame buffer address based on the cache tag; and</claim-text>
+<claim-text>issuing a fill request to a data cache based on the local frame buffer address.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the compression cache tag represents a cache hit, and further comprising the step of accessing the frame buffer based on a local frame buffer address and the compression status of the unit of data.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the step of accessing further comprises reading or writing zero bandwidth clear (ZBC) bits from a cache line corresponding to the cache hit.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the compression cache tag represents a cache hit, and further comprising the steps of determining that the unit of data is represented by a zero bandwidth clear (ZBC) index, and accessing the unit of data.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. A processing subsystem, comprising:
+<claim-text>a frame buffer that includes a plurality of memory devices organized as partitions, wherein each partition has a number of active partitions; and</claim-text>
+<claim-text>a processing unit coupled to the frame buffer and including:
+<claim-text>a processing cluster configured to generate a virtual address corresponding to a unit of data residing in the frame buffer, and</claim-text>
+<claim-text>a memory interface coupled to the processing cluster and to the frame buffer and configured to:
+<claim-text>select a page table entry (PTE) based on the virtual address, the PTE comprising a physical address for the unit of data within the frame buffer and a compression cache tag line,</claim-text>
+<claim-text>compute a compression cache tag based on the compression cache tag line and the number of active partitions for the frame buffer,</claim-text>
+<claim-text>query a compression cache to determine whether the compression cache tag represents a cache hit, and</claim-text>
+<claim-text>if the compression cache tag represents a cache hit, then access one or more compression bits from a cache line, wherein the one or more compression bits represent a compression status for the unit of data to be used when accessing the unit of data from the frame buffer, or</claim-text>
+<claim-text>if the compression cache tag represents a cache miss, then retrieve one or more compression bits for storage in an identified cache line.</claim-text>
+</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The processing subsystem of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein, to access one or more compression bits, the memory interface is further configured to:
+<claim-text>identify a corresponding cache line based on the cache tag; and</claim-text>
+<claim-text>select based on the number of active partitions the one or more compression bits from a plurality of bits included within the cache line.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The processing subsystem of <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein, to query, the memory interface is configured to perform a fully associative lookup operation of the compression cache tag based on a plurality of resident compression cache tags.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The processing subsystem of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein, to retrieve, the memory interface is configured to:
+<claim-text>compute a local frame buffer address based on the cache tag; and</claim-text>
+<claim-text>issue a fill request to a data cache based on the local frame buffer address.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The processing subsystem of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the compression cache tag represents a cache hit, and the memory interface is further configured to access the frame buffer based on a local frame buffer address and the compression status of the unit of data.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The processing subsystem of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein, to access, the memory interface is further configured to access zero bandwidth clear (ZBC) bits from a cache line corresponding to the cache hit.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The processing subsystem of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the compression cache tag represents a cache hit, and the memory interface is further configured to determine that the unit of data is represented by a zero bandwidth clear (ZBC) index, and to access the unit of data.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. A computer system, comprising:
+<claim-text>a system memory; and</claim-text>
+<claim-text>a processing subsystem, comprising:
+<claim-text>a frame buffer that includes a plurality of memory devices organized as partitions, wherein each partition has a number of active partitions, and</claim-text>
+<claim-text>a processing unit coupled to the frame buffer and including:
+<claim-text>a processing cluster configured to generate a virtual address corresponding to a unit of data residing in the frame buffer, and</claim-text>
+<claim-text>a memory interface coupled to the processing cluster and to the frame buffer and configured to:
+<claim-text>select a page table entry (PTE) based on the virtual address, the PTE comprising a physical address for the unit of data within the frame buffer and a compression cache tag line,</claim-text>
+<claim-text>compute a compression cache tag based on the compression cache tag line and the number of active partitions for the frame buffer,</claim-text>
+<claim-text>query a compression cache to determine whether the compression cache tag represents a cache hit, and</claim-text>
+<claim-text>if the compression cache tag represents a cache hit, then access one or more compression bits from a cache line, wherein the one or more compression bits represent a compression status for the unit of data to be used when accessing the unit of data from the frame buffer, or</claim-text>
+<claim-text>if the compression cache tag represents a cache miss, then retrieve one or more compression bits for storage in an identified cache line.</claim-text>
+</claim-text>
+</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The computer system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein, to access one or more compression bits, the memory interface is further configured to:
+<claim-text>identify a corresponding cache line based on the cache tag; and</claim-text>
+<claim-text>select based on the number of active partitions the one or more compression bits from a plurality of bits included within the cache line.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The computer system of <claim-ref idref="CLM-00016">claim 16</claim-ref>, wherein, to query, the memory interface is configured to perform a fully associative lookup operation of the compression cache tag based on a plurality of resident compression cache tags.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The computer system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein, to retrieve, the memory interface is configured to:
+<claim-text>compute a local frame buffer address based on the cache tag; and</claim-text>
+<claim-text>issue a fill request to a data cache based on the local frame buffer address.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The computer system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the compression cache tag represents a cache hit, and the memory interface is further configured to access the frame buffer based on a local frame buffer address and the compression status of the unit of data.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The computer system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein, to access, the memory interface is further configured to read or write zero bandwidth clear (ZBC) bits from a cache line corresponding to the cache hit and to determine that the unit of data is represented by a zero bandwidth clear (ZBC) index, and to access the unit of data.</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

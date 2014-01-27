@@ -1,0 +1,898 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08625451-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08625451</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13111898</doc-number>
+<date>20110519</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>161</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>04</class>
+<subclass>J</subclass>
+<main-group>1</main-group>
+<subgroup>16</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>370252</main-classification>
+<further-classification>370352</further-classification>
+</classification-national>
+<invention-title id="d2e53">Methods, systems, and computer readable media for non intrusive mean opinion score (MOS) estimation based on packet loss pattern</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>2012/0039203</doc-number>
+<kind>A1</kind>
+<name>Hardy</name>
+<date>20120200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>370252</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00002">
+<othercit>&#x201c;Series P: Telephone Transmission Quality, Telephone Installations, Local Line Networks, Methods for Objective and Subjective Assessment of Quality; Amendment 2: Revised Annex A&#x2014;Reference Implementations and Conformance Testing for ITU-T Recs p. 862, p. 862.1, and p. 862.2,&#x201d; ITU&#x2014;T p. 862 Amendment 2 (Nov. 2005).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00003">
+<othercit>&#x201c;Series G: Transmission Systems and Media, Digital Systems and Networks; International Telephone Connvections and Circuits&#x2014;General Definitions; The E-model, a Computational Model for Use in Transmission Planning,&#x201d; ITU-T G.107 (Mar. 2005).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00004">
+<othercit>&#x201c;Series P: Telephone Transmission Quality, Telephone Installations, Local Line Networks; Methods for Objective and Subjective Assessment of Quality; Mapping Function for Transforming p. 862 Raw Result Scores to MOS-LQO,&#x201d; ITU-T p. 862.1 (Nov. 2003).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00005">
+<othercit>&#x201c;Series P: Telephone Transmission Quality, Telephone Installations, Local Line Networks; Methods for Objective and Subjective Assessment of Quality; Perceptual Evaluation of Speech Quality (PESQ): An Objective Method for End-to-End Speech Quality Assessment of Narrow-band Telephone Networks and Speech Codecs,&#x201d; ITU-T p. 862 (Feb. 2001).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00006">
+<othercit>&#x201c;Transmission Systems and Media; General Characteristics of International Telephone Connections and International Telephone Circuits; Transmission Impairments,&#x201d; ITU-T G.113 (Feb. 1996).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>21</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>370252</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370235</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370352</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370233</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370234</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370356-358</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370242</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370244</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370245</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370250</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370253</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>704223</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>704224</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>704225</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>704226</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>709223</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>709224</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>709225</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>709226</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>4</number-of-drawing-sheets>
+<number-of-figures>5</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120294164</doc-number>
+<kind>A1</kind>
+<date>20121122</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Leventu</last-name>
+<first-name>Lucian</first-name>
+<address>
+<city>Bucharest</city>
+<country>RO</country>
+</address>
+</addressbook>
+<residence>
+<country>RO</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Leventu</last-name>
+<first-name>Lucian</first-name>
+<address>
+<city>Bucharest</city>
+<country>RO</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Jenkins, Wilson, Taylor &#x26; Hunt, P.A.</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Ixia</orgname>
+<role>02</role>
+<address>
+<city>Calabasas</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Chery</last-name>
+<first-name>Dady</first-name>
+<department>2461</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Methods, systems, and computer readable media for non-intrusive mean opinion score (MOS) estimation based on packet loss pattern are disclosed. According to one aspect, a method for non-intrusive mean opinion score estimation based on packet loss pattern includes receiving a packet data stream, measuring the packet loss for the received data stream, calculating a probability of packet loss based on the measured packet loss, and calculating an estimated mean opinion score based on the calculated probability of packet loss. In one embodiment, the estimated mean opinion score is calculated using a mathematical function that maps calculated probability of packet loss to mean opinion score. In one embodiment, the mathematical function is a polynomial having coefficients that are selected so that the polynomial closely models reference opinion scores for a range of packet loss probabilities. In one embodiment, the coefficients are determined using a least squares analysis of a dataset that includes reference opinion scores for each of a range of packet loss probabilities. In one embodiment, the reference opinion scores for each of a range of packet loss probabilities are calculated using an intrusive algorithm to analyze lossy data streams that exhibit particular packet loss probabilities and generate mean opinion scores for each of the respective packet loss probabilities.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="231.48mm" wi="171.62mm" file="US08625451-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="216.15mm" wi="191.43mm" file="US08625451-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="239.18mm" wi="178.56mm" file="US08625451-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="216.49mm" wi="173.31mm" orientation="landscape" file="US08625451-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="229.28mm" wi="185.84mm" orientation="landscape" file="US08625451-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">TECHNICAL FIELD</heading>
+<p id="p-0002" num="0001">The subject matter described herein relates to methods and systems for quality of voice evaluation in packet loss environments. More particularly, the subject matter described herein relates to methods, systems, and computer readable media for non-intrusive mean opinion score (MOS) estimation based on packet loss pattern.</p>
+<heading id="h-0002" level="1">BACKGROUND</heading>
+<p id="p-0003" num="0002">Mean opinion score (MOS) is a numerical indication of the perceived quality of received media after compression and/or transmission. The MOS is expressed as a single number in the range 1 to 5, where 1 is lowest perceived audio quality, and 5 is the highest perceived audio quality measurement. Historically, mean opinion scores were generated by averaging the results of a set of standard, subjective tests in which a number of listeners listed to test sentences read aloud by both male and female speakers over the communications medium being tested. This listeners rated the audio quality of the test sentence according to a score ranging from 1 (bad quality or very annoying impairment) to 5 (excellent quality or imperceptible impairment.) A score for the communications medium was calculated as the arithmetic mean of all the individual opinion scores&#x2014;thus the name &#x201c;mean opinion score&#x201d;. Eventually, algorithms were developed that calculated a mean opinion score without the need for human listeners. These algorithms were based on a mathematical analysis of observed or modeled degradation of audio waveforms or test tones, such as samples of human speech.</p>
+<p id="p-0004" num="0003">For example, ITU-T Recommendation G.107, hereinafter referred to as &#x201c;ITU-T G.107&#x201d;, defines what is known as the E-model, which is a computational model for use in transmission planning. This model includes an algorithm to calculate a transmission rating factor, R, which is a numerical value between 0 (extremely low quality) and 100 (extremely high quality.) The algorithm considers factors such as signal to noise ratio, absolute delay, simultaneous and delayed impairments, packet-loss probability, and quantizing distortion. Annex B of ITU-T G.107 also defines a function to map R values between 0 and 100 into MOS values between 1 and 4.5. (The highest R value, 100, is less than the highest MOS value, 5.)</p>
+<p id="p-0005" num="0004">However, the E-model defined in ITU-T G.107 is, as the name suggests, an algorithm for modeling how satisfied or unsatisfied a user will be with a particular communication system, including particular codecs, etc., once that system is built. The E-model gives an estimation of voice transmission quality, which can be transformed to give estimates of customer opinion, but in several places, including Annex C of ITU-T G.107, it is made clear that such estimates are only made for transmission planning purposes and is not suitable for actual (e.g., not modeled) customer opinion prediction.</p>
+<p id="p-0006" num="0005">ITU-T Recommendation P.862, hereinafter referred to as &#x201c;ITU-T P.862&#x201d;, defines a method that is suitable for end-to-end speech quality assessment. This method is called the perceptual evaluation of speech quality, or PESQ. PESQ compares an original signal to a degraded version of the same signal and calculates a numerical score between &#x2212;0.5 and 4.5, which roughly corresponds to a MOS score of between 1.0 and 4.5. PESQ attempts to compensate for delays, frequency distortion, and gain loss introduced into the degraded signal before comparing it to the original signal. The final PESQ score is a linear combination of the average disturbance value and the average asymmetrical disturbance value.</p>
+<p id="p-0007" num="0006">However, PESQ performs its comparison on a decoded data stream; as data packets are received their contents must be extracted and used as input into the PESQ algorithm. An algorithm that operates on the contents of data packets is herein referred to as an &#x201c;intrusive&#x201d; algorithm, because the algorithm must intrude into the contents of the packets. Because the packet contents must be extracted and reassembled in order, intrusive algorithms are computationally more expensive than &#x201c;non-intrusive&#x201d; algorithms, which do not need to have access to the packet contents. ITU-T P.862 acknowledges the intrusive nature of the PESQ algorithm, and Table 2 of ITU-T P.862 specifically lists &#x201c;In-service non-intrusive measurement devices&#x201d; as an application for which PESQ is known to be inaccurate, e.g., that PESQ is not intended for use for non-intrusive measurement devices.</p>
+<p id="p-0008" num="0007">In light of the disadvantages described above, there exists a need for non-intrusive calculation of customer opinion prediction based on actual network performance. Accordingly, there exists a need for methods, systems, and computer readable media for non-intrusive mean opinion score (MOS) estimation based on packet loss pattern.</p>
+<heading id="h-0003" level="1">SUMMARY</heading>
+<p id="p-0009" num="0008">According to one aspect, a method for non-intrusive mean opinion score estimation based on packet loss pattern includes receiving a packet data stream, measuring the packet loss for the received data stream, calculating a probability of packet loss based on the measured packet loss, and calculating an estimated mean opinion score based on the calculated probability of packet loss. In one embodiment, the estimated mean opinion score is calculated using a mathematical function that maps calculated probability of packet loss to mean opinion score. In one embodiment, the mathematical function is a polynomial having coefficients that are selected so that the polynomial closely models reference opinion scores for a range of packet loss probabilities. In one embodiment, the coefficients are determined using a least squares analysis of a dataset that includes reference opinion scores for each of a range of packet loss probabilities. In one embodiment, the reference opinion scores for each of a range of packet loss probabilities are calculated using an intrusive algorithm to analyze lossy data streams that exhibit particular packet loss probabilities and generate mean opinion scores for each of the respective packet loss probabilities.</p>
+<p id="p-0010" num="0009">According to another aspect, the subject matter described herein includes a system for non-intrusive mean opinion score estimation based on packet loss pattern. The system includes a first module for receiving a stream of packet data and determining a probability of packet loss for the received stream and a second module for non-intrusively determining an estimated mean opinion score for the received stream based on the determined probability of packet loss for that stream.</p>
+<p id="p-0011" num="0010">The subject matter described herein can be implemented in software in combination with hardware and/or firmware. For example, the subject matter described herein can be implemented in software executed by a processor. In one exemplary implementation, the subject matter described herein can be implemented using a non-transitory computer readable medium having stored thereon computer executable instructions that when executed by the processor of a computer control the computer to perform steps. Exemplary computer readable media suitable for implementing the subject matter described herein include non-transitory computer-readable media, such as disk memory devices, chip memory devices, programmable logic devices, and application specific integrated circuits. In addition, a computer readable medium that implements the subject matter described herein may be located on a single device or computing platform or may be distributed across multiple devices or computing platforms.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0012" num="0011">Preferred embodiments of the subject matter described herein will now be explained with reference to the accompanying drawings, wherein like reference numerals represent like parts, of which:</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 1</figref> illustrates a simple state machine for modeling packet loss;</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram illustrating an exemplary system for non-intrusive mean opinion score estimation based on packet loss pattern according to an embodiment of the subject matter described herein;</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 3</figref> is a block diagram of a system and method for determining coefficients for a polynomial function that estimates a MOS score for a communications channel having particular packet loss characteristics;</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 4</figref> is a graph showing the results of multiple runs of an intrusive algorithm for determining opinion scores, using the same reference clip and packet loss parameters for each run; and</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 5</figref> is a graph showing the contents of a representative database containing multiple runs of an intrusive algorithm for determining opinion scores, using a range of packet loss parameters.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0018" num="0017">In accordance with the subject matter disclosed herein, methods, systems, and computer readable media are provided for non-intrusive mean opinion score estimation based on packet loss pattern.</p>
+<p id="p-0019" num="0018">Reference will now be made in detail to exemplary embodiments of the present invention, examples of which are illustrated in the accompanying drawings. Wherever possible, the same reference numbers will be used throughout the drawings to refer to the same or like parts.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 1</figref> illustrates a 2-state Markov chain model also known as the Gilbert-Elliot model, which is a simple state machine for modeling packet loss. A lossy network can be modeled as having two states: state &#x201c;0&#x201d;, which represents a &#x201c;good&#x201d; state, i.e., where the packet reaches its destination; and state &#x201c;1&#x201d;, which represents a &#x201c;bad&#x201d; state, i.e., where the packet does not reach its destination, e.g., the packet is lost.</p>
+<p id="p-0021" num="0020">In this model there are defined four separate probabilities: Pr(0|1) is the probability of going from a good state to a bad state, and can be thought of as the likelihood that the network will lose a packet. Pr(0|0) is the probability of remaining in a good state, and can be thought of as the likelihood that the network will not lose a packet. Pr(1|1) is the probability of remaining in a bad state, and can be thought of as the likelihood of the packet loss to happen in bursts. Pr(1|0) is the probability of going from a bad state to a good state, and can be thought of as the likelihood that of the packet loss to not happen in bursts.</p>
+<p id="p-0022" num="0021">Mathematically, if the variable p is used to represent the value of probability Pr(0|1), the value of Pr(0|0) will be 1-p. Likewise, if the variable q is used to represent the value of probability Pr(1|0), the value of Pr(1|1) will be 1-q. The average packet loss rate r equals p/(p+q). The probability q is related to the burstiness of the packet loss, with the probability of getting a burst of length n, equal to q*(1&#x2212;q)^(n&#x2212;1).</p>
+<p id="p-0023" num="0022">Thus, the behavior of a lossy network may be characterized by observing how often on average a packet is dropped, from which the value p may be derived, and by observing how often a dropped packet is part of a sequence of consecutive packets that are also dropped, from which the value q may be derived. Likewise, burst packet loss can be modeled by choosing appropriate values for p and q. Both of these techniques are used in a system and method for non-intrusive mean opinion score estimation based on packet loss pattern, which will now be described. The systems and methods disclosed herein take advantage of an observed correlation between packet loss parameters calculated for a degraded packet data stream and the MOS score calculated for that degraded packet data stream. The MOS score is estimated using a polynomial function having packet loss parameters as variables and that models that observed correlation.</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram illustrating an exemplary system for non-intrusive mean opinion score estimation based on packet loss pattern according to an embodiment of the subject matter described herein. System <b>200</b> includes a first module <b>202</b> that receives a packet data stream S and determines a probability of packet loss the received packet data stream, and a second module <b>204</b> that uses the determined probability of packet loss to generate an estimated MOS score, MOS. Examples of system <b>200</b> include network analyzers, network emulators, etc. Because system <b>200</b> calculates a MOS score based on packet loss probabilities and does not need to know the contents of the received packets, system <b>200</b> is non-intrusive. Thus, system <b>200</b> provides non-intrusive mean opinion score estimation based on packet loss patterns. The low complexity of this method allows good scalability, with the potential to perform thousands of quality of voice analyses concurrently.</p>
+<p id="p-0025" num="0024">In one embodiment, packets that belong to the same stream may be identified by looking at the routing or addressing information in the packet headers. Packets belonging to the same stream may be analyzed to determine packet loss probabilities for that particular stream. In this manner it is possible to characterize the behavior of the communications channel along which a particular data stream has traveled. In the embodiment illustrated in <figref idref="DRAWINGS">FIG. 2</figref>, for example, module <b>202</b> may calculate a probability of packet loss based on observation of packet header information, such as packet sequence numbers, which module <b>202</b> can use to detect the loss of a packet. By noting how often one or more packets are lost, module <b>202</b> can calculate packet loss probabilities, such as the probabilities p and q used in the Gilbert-Elliot model described above.</p>
+<p id="p-0026" num="0025">In one embodiment, module <b>204</b> may, use a mathematical function that maps packet loss probabilities to an estimated opinion score. In one embodiment, the mathematical function is a polynomial function having packet loss probabilities as parameters of or inputs into the function. In the embodiment illustrated in <figref idref="DRAWINGS">FIG. 2</figref>, for example, module <b>204</b> uses the values of p and g as inputs into a module <b>206</b> that implements a mathematical function, &#x192;(p,q), that takes p and g as parameters in an equation that calculates an estimated MOS. An example mathematical function &#x192;(p,q) is shown below:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x192;(<i>p,q</i>)=<i>a</i><sub>0</sub><i>p</i><sup>n</sup><i>+a</i><sub>1</sub><i>p</i><sup>n-1</sup><i>q</i><sup>1</sup><i>+ . . . +a</i><sub>m-1</sub><i>p</i><sup>1</sup><i>q</i><sup>n-1</sup><i>+a</i><sub>m</sub><i>q</i><sup>n </sup><?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+Where {a<sub>i</sub>} are the coefficients of the polynomial. The coefficients should be selected such that output of mathematical function &#x192;(p,q) is a good estimate of the MOS score that would be given to communications channel having packet loss probabilities p and q.
+</p>
+<p id="p-0027" num="0026">One advantage to implementing a polynomial such as described above is that by adjusting the coefficients, a generalized polynomial form can be adapted to accurately estimate the MOS score not only for different values of p and q, but also for different codecs, which may quite different responses to lost packets. For example, one codec may tolerate a high percentage of lost packets but may be less tolerant of lost packets that occur in long bursts. Another codec may tolerate long bursts of lost packets but may be susceptible to high numbers of randomly lost packets. Thus, in the embodiment illustrated in <figref idref="DRAWINGS">FIG. 2</figref>, module <b>202</b> may not only calculate packet loss probabilities, such as p and q, but may also detect the type of codec being used and pass that information to a coefficients database <b>208</b>, which uses that information to select a set of coefficients {a} appropriate for the detected codec. The selected coefficients are then provided to module <b>206</b> for use in equation &#x192;(p,q). In this manner, system <b>200</b> can dynamically adjust the characteristic equation &#x192;(p,q) during run-time operation to give the correct MOS estimate for the particular codec used to encode packet data stream S. How an optimum set of coefficients for a particular codec are determined will now be described.</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 3</figref> is a block diagram of a system and method for determining optimum coefficients for a polynomial function such that the polynomial function accurately estimates the MOS score that would be given to a communications channel having particular packet loss characteristics and using a particular codec. The system illustrated in <figref idref="DRAWINGS">FIG. 3</figref> performs a large number of iterations of a process <b>300</b> which degrades a reference clip or test tone according to a specified packet loss parameter, performs an intrusive opinion scoring algorithm to generate an opinion score for the degraded clip, and stores the association of the packet loss parameter and the resulting opinion score in an experimental database <b>302</b>. The collected data is then subjected to a curve fitting algorithm <b>304</b>, such as the least squares algorithm, which produces a set of coefficients <b>306</b> that optimally models the relationship of the packet loss parameter to the opinion score. This set of coefficients <b>306</b> may then be used by system <b>200</b> to give an estimate of MOS score based on the packet loss observed in incoming data stream S.</p>
+<p id="p-0029" num="0028">In the embodiment illustrated in <figref idref="DRAWINGS">FIG. 3</figref>, the curve fitting algorithm <b>304</b> may be a least squares algorithm, which is used to determine the set of coefficients {a<sub>i</sub>} <b>306</b> that produces an output that best fits the data contained in experimental database <b>302</b>. For example, the opinion estimating module <b>204</b> illustrated in <figref idref="DRAWINGS">FIG. 2</figref> uses a polynomial &#x192;(p,q) to calculate an estimated MOS value. The Taylor series representation of &#x192;(p,q) is:</p>
+<p id="p-0030" num="0029">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mi>f</mi>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo>(</mo>
+      <mrow>
+        <mi>p</mi>
+        <mo>,</mo>
+        <mi>q</mi>
+      </mrow>
+      <mo>)</mo>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <mi>f</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo>(</mo>
+        <mrow>
+          <mn>0</mn>
+          <mo>,</mo>
+          <mn>0</mn>
+        </mrow>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+      <mo>[</mo>
+      <mrow>
+        <mrow>
+          <mi>p</mi>
+          <mo>&#x2062;</mo>
+          <mfrac>
+            <mrow>
+              <mo>&#x2202;</mo>
+              <mrow>
+                <mi>f</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mi>p</mi>
+                    <mo>,</mo>
+                    <mi>q</mi>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mo>&#x2202;</mo>
+              <mi>p</mi>
+            </mrow>
+          </mfrac>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>0</mn>
+              <mo>,</mo>
+              <mn>0</mn>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>+</mo>
+        <mrow>
+          <mi>q</mi>
+          <mo>&#x2062;</mo>
+          <mfrac>
+            <mrow>
+              <mo>&#x2202;</mo>
+              <mrow>
+                <mi>f</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mi>p</mi>
+                    <mo>,</mo>
+                    <mi>q</mi>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mo>&#x2202;</mo>
+              <mi>q</mi>
+            </mrow>
+          </mfrac>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>0</mn>
+              <mo>,</mo>
+              <mn>0</mn>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mo>]</mo>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>2</mn>
+          <mo>!</mo>
+        </mrow>
+      </mfrac>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo>[</mo>
+        <mrow>
+          <mrow>
+            <msup>
+              <mi>p</mi>
+              <mn>2</mn>
+            </msup>
+            <mo>&#x2062;</mo>
+            <mfrac>
+              <mrow>
+                <msup>
+                  <mo>&#x2202;</mo>
+                  <mn>2</mn>
+                </msup>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mi>f</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mi>p</mi>
+                      <mo>,</mo>
+                      <mi>q</mi>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+              <mrow>
+                <mo>&#x2202;</mo>
+                <msup>
+                  <mi>p</mi>
+                  <mn>2</mn>
+                </msup>
+              </mrow>
+            </mfrac>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.em" height="0.ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mn>0</mn>
+                <mo>,</mo>
+                <mn>0</mn>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>+</mo>
+          <mrow>
+            <mi>pq</mi>
+            <mo>&#x2062;</mo>
+            <mfrac>
+              <mrow>
+                <msup>
+                  <mo>&#x2202;</mo>
+                  <mn>2</mn>
+                </msup>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mi>f</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mi>p</mi>
+                      <mo>,</mo>
+                      <mi>q</mi>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+              <mrow>
+                <mrow>
+                  <mo>&#x2202;</mo>
+                  <mi>p</mi>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>&#x2202;</mo>
+                  <mi>q</mi>
+                </mrow>
+              </mrow>
+            </mfrac>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mn>0</mn>
+                <mo>,</mo>
+                <mn>0</mn>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>+</mo>
+          <mrow>
+            <msup>
+              <mi>q</mi>
+              <mn>2</mn>
+            </msup>
+            <mo>&#x2062;</mo>
+            <mfrac>
+              <mrow>
+                <msup>
+                  <mo>&#x2202;</mo>
+                  <mn>2</mn>
+                </msup>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mi>f</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mi>p</mi>
+                      <mo>,</mo>
+                      <mi>q</mi>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+              <mrow>
+                <mo>&#x2202;</mo>
+                <msup>
+                  <mi>q</mi>
+                  <mn>2</mn>
+                </msup>
+              </mrow>
+            </mfrac>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mn>0</mn>
+                <mo>,</mo>
+                <mn>0</mn>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>]</mo>
+      </mrow>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+      <mi>R</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo>(</mo>
+        <mrow>
+          <mi>p</mi>
+          <mo>,</mo>
+          <mi>q</mi>
+        </mrow>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+</p>
+<p id="p-0031" num="0030">Depending on the desired nth degree polynomial a number of terms from Taylor representation will be kept. For a nth degree polynomial of two variables there are m=(n+1)(n+2)/2 coefficients to be estimated, resulting the form of polynomial:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x192;(<i>p,q</i>)=<i>a</i><sub>0</sub><i>p</i><sup>n</sup><i>+a</i><sub>1</sub><i>p</i><sup>n-1</sup><i>q</i><sup>1</sup><i>+ . . . +a</i><sub>m-1</sub><i>p</i><sup>1</sup><i>q</i><sup>n-1</sup><i>+a</i><sub>m</sub><i>q</i><sup>n </sup><?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+The least squares method implemented by curve fitting algorithm <b>304</b> solves over-determined systems by minimizing the squares of the errors:
+</p>
+<p id="p-0032" num="0031">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mrow>
+  <mi>S</mi>
+  <mo>=</mo>
+  <mrow>
+    <munderover>
+      <mo>&#x2211;</mo>
+      <mrow>
+        <mi>i</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mrow>
+      <mi>N</mi>
+    </munderover>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.3em" height="0.3ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <msubsup>
+      <mi>r</mi>
+      <mi>i</mi>
+      <mn>2</mn>
+    </msubsup>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+where r<sub>i</sub>=PESQ<sub>i</sub>&#x2212;&#x192;(p<sub>i</sub>, q<sub>i</sub>). For each entry in the database, r<sub>i </sub>is calculated using the &#x201c;I&#x201d; triplet (p<sub>i</sub>, q<sub>i</sub>, PESQ<sub>i</sub>). An overall square error S is calculated. The minimum for S is found for gradient equal to zero:
+</p>
+<p id="p-0033" num="0032">
+<maths id="MATH-US-00003" num="00003">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mfrac>
+      <mrow>
+        <mo>&#x2202;</mo>
+        <mi>S</mi>
+      </mrow>
+      <mrow>
+        <mo>&#x2202;</mo>
+        <msub>
+          <mi>a</mi>
+          <mi>j</mi>
+        </msub>
+      </mrow>
+    </mfrac>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mn>2</mn>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <munderover>
+            <mo>&#x2211;</mo>
+            <mrow>
+              <mi>i</mi>
+              <mo>=</mo>
+              <mn>1</mn>
+            </mrow>
+            <mi>N</mi>
+          </munderover>
+          <mo>&#x2062;</mo>
+          <mstyle>
+            <mspace width="0.3em" height="0.3ex"/>
+          </mstyle>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <msub>
+              <mi>r</mi>
+              <mi>i</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <mfrac>
+              <mrow>
+                <mo>&#x2202;</mo>
+                <msub>
+                  <mi>r</mi>
+                  <mi>i</mi>
+                </msub>
+              </mrow>
+              <mrow>
+                <mo>&#x2202;</mo>
+                <msub>
+                  <mi>a</mi>
+                  <mi>j</mi>
+                </msub>
+              </mrow>
+            </mfrac>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mo>=</mo>
+      <mrow>
+        <mrow>
+          <mn>2</mn>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <munderover>
+              <mo>&#x2211;</mo>
+              <mrow>
+                <mi>i</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+              <mi>N</mi>
+            </munderover>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <msub>
+                <mi>r</mi>
+                <mi>i</mi>
+              </msub>
+              <mo>&#x2062;</mo>
+              <mfrac>
+                <mrow>
+                  <mo>&#x2202;</mo>
+                  <mrow>
+                    <mi>f</mi>
+                    <mo>&#x2061;</mo>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <msub>
+                          <mi>p</mi>
+                          <mi>i</mi>
+                        </msub>
+                        <mo>,</mo>
+                        <msub>
+                          <mi>q</mi>
+                          <mi>i</mi>
+                        </msub>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <mo>&#x2202;</mo>
+                  <msub>
+                    <mi>a</mi>
+                    <mi>j</mi>
+                  </msub>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mi>j</mi>
+    <mo>=</mo>
+    <mn>1</mn>
+  </mrow>
+  <mo>,</mo>
+  <mi>&#x2026;</mi>
+  <mo>&#x2062;</mo>
+  <mstyle>
+    <mspace width="0.8em" height="0.8ex"/>
+  </mstyle>
+  <mo>,</mo>
+  <mi>m</mi>
+</mrow>
+</math>
+</maths>
+<br/>
+This leads to a system of m equations: A&#xb7;a=B. The solution of the system yields the coefficients {a<sub>i</sub>} <b>306</b>.
+</p>
+<p id="p-0034" num="0033">In one embodiment, the system illustrated in <figref idref="DRAWINGS">FIG. 3</figref> operates independently of the system illustrated in <figref idref="DRAWINGS">FIG. 2</figref>. For example, a provider of network analysis equipment may perform the operations illustrated in <figref idref="DRAWINGS">FIG. 3</figref> for a wide variety of codecs, and generate a different set of coefficients {a} for each codec tested, e.g., {a}<sub>EVRC</sub>, {a}<sub>AMR-WB</sub>, etc. The set or sets of coefficients may then be provided with, stored in, or otherwise incorporated into the network analysis equipment for use during operation of the equipment.</p>
+<p id="p-0035" num="0034">Process <b>300</b> will now be described in some detail. In the embodiment illustrated in <figref idref="DRAWINGS">FIG. 2</figref>, process <b>300</b> makes use of a source of reference clips, such as a reference clips database <b>308</b>, which provides one or more reference clips <b>310</b>. Each reference clip <b>310</b> may be, for example, a sample of male or female voices or other test tone having a complex waveform, such as simulated or machine-generated speech, or music. In one embodiment, reference clip <b>310</b> may be a voice clip in pulse code modulation (PCM) linear format or other suitable format. Reference clip <b>310</b> is encoded by a speech encoder <b>312</b>, which outputs a stream of data packets, such as real-time transport protocol (RTP) packets, containing segments of the encoded reference clip.</p>
+<p id="p-0036" num="0035">These data packets are input into a module <b>314</b> for modeling packet loss according to packet loss parameters. In the embodiment illustrated in <figref idref="DRAWINGS">FIG. 3</figref>, module <b>314</b> implements a 2-state Gilbert-Elliot model, which takes as inputs packet loss parameters p<sub>i </sub>and q<sub>i</sub>, and generates as an output a lossy data packet stream. In alternative embodiments, other packet loss models may be used, and other packet loss parameters may be used, but a system that intends to use the generated coefficients {a} must be designed to analyze an incoming data stream S to determine the same packet loss parameters that were used to generate the coefficients. For example, if module <b>314</b> models packet loss using packet loss parameters j, k, and l, as inputs to the packet loss model, then module <b>202</b> of <figref idref="DRAWINGS">FIG. 2</figref> should provide parameters j, k, and l to module <b>204</b>, and the polynomial function implemented in module <b>206</b> should use j, k, and l as inputs.</p>
+<p id="p-0037" num="0036">The lossy data packet stream is sent to speech decoder <b>316</b>, which converts the data packet stream into a degraded clip <b>318</b>. The format of degraded clip <b>318</b> is usually in the same format as reference clip <b>310</b>, e.g., PCM linear format.</p>
+<p id="p-0038" num="0037">Degraded clip <b>318</b> is then given an opinion score. In one embodiment, reference clip <b>310</b> and degraded clip <b>318</b> are both used as inputs into an opinion scoring module <b>320</b> that calculates an opinion score for degraded clip <b>318</b>. In the embodiment illustrated in <figref idref="DRAWINGS">FIG. 3</figref>, module <b>320</b> implements a PESQ algorithm and outputs a PESQ score for the degraded clip. In one embodiment, opinion scoring module <b>320</b> implements the standardized PESQ-LQ algorithm specified in ITU-T Recommendation P.862.1. The PESQ-LQ score (which is equivalent to a MOS value) so obtained is considered the reference MOS value. The reference MOS value is the target value for a given p, q pair; i.e., for a given value of p and q, the output of mathematical function &#x192;(p,q) should be close to this reference MOS value.</p>
+<p id="p-0039" num="0038">In one embodiment, the output of opinion scoring module <b>320</b> is a tuple <b>322</b> that includes the packet loss parameter(s) and the resulting opinion score. In the embodiment illustrated in <figref idref="DRAWINGS">FIG. 3</figref>, for example, scoring module <b>320</b> produces a tuple <b>322</b> of the form (p, q, PESQ<sub>pq</sub>). These tuples are stored in experimental database <b>302</b>. The operations of process <b>300</b> illustrated in <figref idref="DRAWINGS">FIG. 3</figref> are repeated many times for many different values of p and q. In one embodiment, for example, the values of p and q may be randomly or algorithmically generated. Likewise, one reference clip may be randomly or algorithmically selected from a number of reference clips contained in reference clip database <b>308</b>, or the same reference clip may be used over and over.</p>
+<p id="p-0040" num="0039">In one embodiment, if there are multiple tuples generated with the same p and q values but with different PESQ values, each tuple may be saved independently. Alternatively, the various PESQ values generated for a particular p, q pair may be averaged together, and the mean value of PESQ is stored for the particular p, q pair.</p>
+<p id="p-0041" num="0040">It is noted that the since p and q are probabilities, the overall effect of a particular pair of p and q values may vary with each iteration, even if the same reference clip is used. One reason is that the effect of a dropped packet or packets on a listener's perceived evaluation of speech quality can vary significantly, depending oh whether the dropped packet occurred during an interval of speech or during an interval of silence. Loss of a portion of speech may significantly lower a PESQ score while loss of a portion of silence may have a minimal effect on a PESQ score. This is illustrated in <figref idref="DRAWINGS">FIG. 4</figref>.</p>
+<p id="p-0042" num="0041"><figref idref="DRAWINGS">FIG. 4</figref> is a graph showing the PESQ scores for fifty separate runs of system <b>300</b>, using the same reference clip <b>304</b> and inputting into packet loss modeling module <b>314</b> the same values for p<sub>i </sub>and q<sub>i </sub>for each run. Because module <b>314</b> models packet loss as a probability, the location and number of lost packets was different for each of the fifty runs, which are listed in order from 1 to 50 on the X-axis. The PESO score for each run is shown on the Y-axis. It can be seen that the PESQ scores ranged from a high value of 3.35 (run 43) to a low value of 2.5 (run 48). It may be, for example, that in run 43 the packet loss occurred during periods of silence, in which case the reduction of perceived quality was relatively small, while in run 48, the packet loss occurred within periods of speech, in which the reduction of perceived quality was relatively large.</p>
+<p id="p-0043" num="0042"><figref idref="DRAWINGS">FIG. 5</figref> is a graph in three dimensions showing the PESQ scores for a large number of runs of system <b>300</b>. The bottom of the graph shows values of p and q along the X and Y axis, respectively, and the Z axis shows the PESQ scores. Each point on the graph is represented by a circle. The values for p and q range from 0.0 to 0.2, and the PESQ scores range from 1 through 4. For example, for p=0.04 and q=0.15, the PESQ scores range from 2.5 up to 4.0.</p>
+<p id="p-0044" num="0043">Referring again to <figref idref="DRAWINGS">FIG. 5</figref>, the white stars show the output of mathematical function &#x192;(p,q) for which the least square method was used to calculate coefficients based on the data shown in <figref idref="DRAWINGS">FIG. 5</figref> as black circles. It can be seen that with proper selection of coefficients {a}, the function &#x192;(p,q) produces an estimated MOS value that is within the range of measured MOS values for observed data packet streams exhibiting loss characterized by p,q. In the example illustrated in <figref idref="DRAWINGS">FIG. 5</figref>, the output of &#x192;(p,q) is a MOS value that appears to be the mean of the measured MOS values for each (p,q) pair.</p>
+<p id="p-0045" num="0044">Even for non-degraded data, the overall voice quality is dependent on the particular codec used for the data stream. Since all voice codecs are encoders with loss, the quality will vary based on the algorithm of coding, and the packet loss will have different effects on streams carrying different encoding payloads. Thus, one or more sets of polynomial coefficients may be collected for each codec used. Likewise, a set of polynomial coefficients may be collected for each of set of network conditions other than codec used.</p>
+<p id="p-0046" num="0045">The embodiment illustrated in <figref idref="DRAWINGS">FIG. 3</figref> uses a mathematical function that maps packet loss parameters p and q to an opinion score, but alternate embodiments are contemplated. For example, packet loss parameters other than p and q may be used; a packet loss model other than the Gilbert-Elliot model may be used to create a degraded clip; an opinion algorithm other than PESQ may be used to score the degraded clip; a polynomial of an order or form different from the one described above may be used; a polynomial estimation method other than the least squares algorithm may be used, and so on.</p>
+<p id="p-0047" num="0046">In one embodiment, the data contained in experimental database <b>302</b> (and for which <figref idref="DRAWINGS">FIG. 5</figref> is a representative graph of collected values) may be modeled not with one polynomial &#x192;(p,q) but with multiple polynomials, e.g., in a piece-wise fashion.</p>
+<p id="p-0048" num="0047">In an alternative embodiment, a run-time database may be created that uses p and q as keys and which outputs a value that is equal to the average opinion score calculated during the data collection process shown in block <b>300</b>. In this embodiment, module <b>202</b> may pass values p and q to module <b>204</b>, which, instead of using a polynomial to calculate the MOS value to be output, performs a lookup into the run-time database to retrieve the MOS value associated with the particular p and q used as inputs. In this embodiment, the output of data collection process <b>300</b> is stored in database <b>304</b>, where database <b>304</b> contains only one opinion score per p, q pair. This &#x201c;one key, one value&#x201d; database may be included in or otherwise made available to system <b>200</b>, e.g., MOS estimation module <b>204</b> may receive p and q from module <b>202</b> and use the p, q pair (which are considered a single key) in a query that returns the MOS value for that key.</p>
+<p id="p-0049" num="0048">It will be understood that various details of the subject matter described herein may be changed without departing from the scope of the subject matter described herein. Furthermore, the foregoing description is for the purpose of illustration only, and not for the purpose of limitation.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08625451-20140107-M00001.NB">
+<img id="EMI-M00001" he="18.71mm" wi="76.20mm" file="US08625451-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08625451-20140107-M00002.NB">
+<img id="EMI-M00002" he="8.81mm" wi="76.20mm" file="US08625451-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00003" nb-file="US08625451-20140107-M00003.NB">
+<img id="EMI-M00003" he="8.81mm" wi="76.20mm" file="US08625451-20140107-M00003.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method for non-intrusive mean opinion score estimation based on packet loss pattern, the method comprising:
+<claim-text>receiving a packet data stream;</claim-text>
+<claim-text>measuring the packet loss for the received data stream;</claim-text>
+<claim-text>calculating a probability of packet loss based on the measured packet loss; and</claim-text>
+<claim-text>calculating an estimated mean opinion score based on the calculated probability of packet loss using a function that maps probabilities of packet loss to measured mean opinion scores, wherein the function was derived by generating a plurality of probabilities of packet loss, and, for each generated probability of packet loss: generating, from a reference data stream, a degraded data stream suffering packet loss according to the generated probability, measuring a mean opinion score for the degraded data stream using an intrusive algorithm that operates on the contents of the data packets of the degraded data stream, and determining an association between the generated probability of packet loss and the calculated mean opinion score.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref> where the step of calculating an estimated mean opinion score is performed by a network analyzer or network emulator.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein calculating an estimated mean opinion score based on the calculated probability of packet loss comprises calculating an estimated mean opinion score by using a mathematical function that uses the calculated probability of packet loss as input and that outputs the estimated mean opinion score.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00003">claim 3</claim-ref> wherein the coefficients of the mathematical function are selected such that the estimated mean opinion score produced by the mathematical function for a given probability of packet loss approximates mean opinion scores measured for an observed lossy data packet stream exhibiting the given probability of packet loss.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00004">claim 4</claim-ref> wherein the measured mean opinion scores are part of a database containing data that maps the probabilities of packet loss to measured mean opinion scores.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00005">claim 5</claim-ref> wherein the coefficients of the mathematical function are selected by using the data in the database as input into a least squares method to determine the coefficients of the polynomial.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein measuring a mean opinion score for the degraded data stream comprises comparing the reference data stream to the degraded data stream.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method of <claim-ref idref="CLM-00007">claim 7</claim-ref> wherein measuring a mean opinion score for the degraded data stream comprises applying a perceptual evaluation of speech quality (PESQ) algorithm to compare the reference and degraded data streams.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein measuring the packet loss includes detecting the absence of a packet by detection of a missing packet sequence number.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein calculating a probability of packet loss based on the measured packet loss comprises calculating a probability p that a packet will be lost and calculating a probability (1&#x2212;q) that a subsequent packet will also be lost.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein calculating an estimated mean opinion score based on the calculated probability of packet loss comprises querying a database for associating a probability of packet loss with an estimated mean opinion score, the query containing the calculated probability of packet loss, and receiving from the database an estimated mean opinion score.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. A system for non-intrusive mean opinion score estimation based on packet loss pattern, the system comprising:
+<claim-text>a first module for receiving a stream of packet data and determining a probability of packet loss for the received stream; and</claim-text>
+<claim-text>a second module for determining an estimated mean opinion score for the received stream based on the determined probability of packet loss for that stream using a function that maps probabilities of packet loss to measured mean opinion scores, wherein the function was derived by generating a plurality of probabilities of packet loss, and, for each generated probability of packet loss: generating, from a reference data stream, a degraded data stream suffering packet loss according to the generated probability, measuring a mean opinion score for the degraded data stream using an intrusive algorithm that operates on the contents of the data packets of the degraded data stream, and determining an association between the generated probability of packet loss and the calculated mean opinion score.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The system of <claim-ref idref="CLM-00012">claim 12</claim-ref> wherein at least one of the first and second modules is a component of a network analyzer or network emulator.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The system of <claim-ref idref="CLM-00012">claim 12</claim-ref> wherein the second module determines the estimated mean opinion score by using a mathematical function that maps probability of packet loss to estimated mean opinion score.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The system of <claim-ref idref="CLM-00014">claim 14</claim-ref> wherein coefficients of the mathematical function are selected such that the estimated mean opinion score produced by the mathematical function for a given probability of packet loss approximates mean opinion scores measured for an observed lossy data packet stream exhibiting the given probability of packet loss.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The system of <claim-ref idref="CLM-00015">claim 15</claim-ref> comprising a database for maintaining the association between a probability of packet loss and the measured mean opinion score for a data packet stream exhibiting the given probability of packet loss.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The system of <claim-ref idref="CLM-00016">claim 16</claim-ref> wherein the coefficients of the mathematical function are selected by using the data in the database as input into a least squares method to determine the coefficients of the polynomial.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The system of <claim-ref idref="CLM-00012">claim 12</claim-ref> wherein the measured mean opinion score for the degraded data stream is determined by comparing the reference data stream to the degraded data stream.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The system of <claim-ref idref="CLM-00018">claim 18</claim-ref> wherein a perceptual evaluation of speech quality (PESQ) algorithm is used to compare the reference and degraded data streams.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The system of <claim-ref idref="CLM-00012">claim 12</claim-ref> wherein the second module determines an estimated mean opinion score for a received stream by querying a database for associating a probability of packet loss with an estimated mean opinion score, the query containing the calculated probability of packet loss, and receiving from the database an estimated mean opinion score.</claim-text>
+</claim>
+<claim id="CLM-00021" num="00021">
+<claim-text>21. A non-transitory computer readable medium having stored thereon executable instructions that when executed by the processor of a computer control the computer to perform steps comprising:
+<claim-text>receiving a packet data stream;</claim-text>
+<claim-text>measuring the packet loss for the received data stream;</claim-text>
+<claim-text>calculating a probability of packet loss based on the measured packet loss; and</claim-text>
+<claim-text>calculating an estimated mean opinion score based on the calculated probability of packet loss using a function that maps probabilities of packet loss to measured mean opinion scores, wherein the function was derived by generating a plurality of probabilities of packet loss, and, for each generated probability of packet loss: generating, from a reference data stream, a degraded data stream suffering packet loss according to the generated probability, measuring a mean opinion score for the degraded data stream using an intrusive algorithm that operates on the contents of the data packets of the degraded data stream, and determining an association between the generated probability of packet loss and the calculated mean opinion score.</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

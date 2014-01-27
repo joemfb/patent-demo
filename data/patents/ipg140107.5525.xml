@@ -1,0 +1,978 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626625-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626625</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13168595</doc-number>
+<date>20110624</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20120101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>Q</subclass>
+<main-group>40</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>705 35</main-classification>
+<further-classification>705 36</further-classification>
+</classification-national>
+<invention-title id="d2e43">Trade engine processing of mass quote messages and resulting production of market data</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5297032</doc-number>
+<kind>A</kind>
+<name>Trojan et al.</name>
+<date>19940300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5727165</doc-number>
+<kind>A</kind>
+<name>Ordish et al.</name>
+<date>19980300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>5953503</doc-number>
+<kind>A</kind>
+<name>Mitzenmacher et al.</name>
+<date>19990900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6031577</doc-number>
+<kind>A</kind>
+<name>Ozkan et al.</name>
+<date>20000200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>6088699</doc-number>
+<kind>A</kind>
+<name>Gampper et al.</name>
+<date>20000700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>6131087</doc-number>
+<kind>A</kind>
+<name>Luke et al.</name>
+<date>20001000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>6195024</doc-number>
+<kind>B1</kind>
+<name>Fallon</name>
+<date>20010200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>6278982</doc-number>
+<kind>B1</kind>
+<name>Korhammer et al.</name>
+<date>20010800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>705 36 R</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>6309424</doc-number>
+<kind>B1</kind>
+<name>Fallon</name>
+<date>20011000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>6463470</doc-number>
+<kind>B1</kind>
+<name>Mohaban et al.</name>
+<date>20021000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>6549949</doc-number>
+<kind>B1</kind>
+<name>Bowman-Amuah</name>
+<date>20030400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>6597812</doc-number>
+<kind>B1</kind>
+<name>Fallon et al.</name>
+<date>20030700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>6601104</doc-number>
+<kind>B1</kind>
+<name>Fallon</name>
+<date>20030700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>6604158</doc-number>
+<kind>B1</kind>
+<name>Fallon</name>
+<date>20030800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>6624761</doc-number>
+<kind>B2</kind>
+<name>Fallon</name>
+<date>20030900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>6748457</doc-number>
+<kind>B2</kind>
+<name>Fallon et al.</name>
+<date>20040600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>6950445</doc-number>
+<kind>B2</kind>
+<name>Svanbro et al.</name>
+<date>20050900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>7130913</doc-number>
+<kind>B2</kind>
+<name>Fallon</name>
+<date>20061000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>7143191</doc-number>
+<kind>B2</kind>
+<name>Chuah et al.</name>
+<date>20061100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>7161506</doc-number>
+<kind>B2</kind>
+<name>Fallon</name>
+<date>20070100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>7181608</doc-number>
+<kind>B2</kind>
+<name>Fallon et al.</name>
+<date>20070200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>7321937</doc-number>
+<kind>B2</kind>
+<name>Fallon</name>
+<date>20080100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>7352300</doc-number>
+<kind>B2</kind>
+<name>Fallon</name>
+<date>20080400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>7358867</doc-number>
+<kind>B2</kind>
+<name>Fallon</name>
+<date>20080400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>7376772</doc-number>
+<kind>B2</kind>
+<name>Fallon</name>
+<date>20080500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>7378992</doc-number>
+<kind>B2</kind>
+<name>Fallon</name>
+<date>20080500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>US</country>
+<doc-number>7386046</doc-number>
+<kind>B2</kind>
+<name>Fallon et al.</name>
+<date>20080600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>US</country>
+<doc-number>7395345</doc-number>
+<kind>B2</kind>
+<name>Fallon</name>
+<date>20080700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>US</country>
+<doc-number>7400274</doc-number>
+<kind>B2</kind>
+<name>Fallon et al.</name>
+<date>20080700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>US</country>
+<doc-number>7415530</doc-number>
+<kind>B2</kind>
+<name>Fallon</name>
+<date>20080800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00031">
+<document-id>
+<country>US</country>
+<doc-number>7417568</doc-number>
+<kind>B2</kind>
+<name>Fallon et al.</name>
+<date>20080800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00032">
+<document-id>
+<country>US</country>
+<doc-number>2001/0047473</doc-number>
+<kind>A1</kind>
+<name>Fallon</name>
+<date>20011100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00033">
+<document-id>
+<country>US</country>
+<doc-number>2001/0052038</doc-number>
+<kind>A1</kind>
+<name>Fallon et al.</name>
+<date>20011200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00034">
+<document-id>
+<country>US</country>
+<doc-number>2002/0080871</doc-number>
+<kind>A1</kind>
+<name>Fallon et al.</name>
+<date>20020600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00035">
+<document-id>
+<country>US</country>
+<doc-number>2002/0191692</doc-number>
+<kind>A1</kind>
+<name>Fallon et al.</name>
+<date>20021200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00036">
+<document-id>
+<country>US</country>
+<doc-number>2004/0042506</doc-number>
+<kind>A1</kind>
+<name>Fallon et al.</name>
+<date>20040300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00037">
+<document-id>
+<country>US</country>
+<doc-number>2006/0069635</doc-number>
+<kind>A1</kind>
+<name>Ram et al.</name>
+<date>20060300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>705 37</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00038">
+<document-id>
+<country>US</country>
+<doc-number>2007/0043939</doc-number>
+<kind>A1</kind>
+<name>Fallon et al.</name>
+<date>20070200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00039">
+<document-id>
+<country>US</country>
+<doc-number>2007/0050514</doc-number>
+<kind>A1</kind>
+<name>Fallon</name>
+<date>20070300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00040">
+<document-id>
+<country>US</country>
+<doc-number>2007/0050515</doc-number>
+<kind>A1</kind>
+<name>Fallon</name>
+<date>20070300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00041">
+<document-id>
+<country>US</country>
+<doc-number>2007/0067483</doc-number>
+<kind>A1</kind>
+<name>Fallon</name>
+<date>20070300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00042">
+<document-id>
+<country>US</country>
+<doc-number>2007/0083746</doc-number>
+<kind>A1</kind>
+<name>Fallon et al.</name>
+<date>20070400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00043">
+<document-id>
+<country>US</country>
+<doc-number>2007/0174209</doc-number>
+<kind>A1</kind>
+<name>Fallon et al.</name>
+<date>20070700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00044">
+<document-id>
+<country>US</country>
+<doc-number>2008/0232457</doc-number>
+<kind>A1</kind>
+<name>Fallon et al.</name>
+<date>20080900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00045">
+<document-id>
+<country>US</country>
+<doc-number>2009/0154545</doc-number>
+<kind>A1</kind>
+<name>Fallon et al.</name>
+<date>20090600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00046">
+<document-id>
+<country>EP</country>
+<doc-number>0411748</doc-number>
+<date>19910200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00047">
+<document-id>
+<country>JP</country>
+<doc-number>2002-183446</doc-number>
+<date>20020600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00048">
+<document-id>
+<country>JP</country>
+<doc-number>2002-183450</doc-number>
+<date>20020600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00049">
+<document-id>
+<country>JP</country>
+<doc-number>2002183446</doc-number>
+<date>20020600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00050">
+<document-id>
+<country>JP</country>
+<doc-number>2002-183446</doc-number>
+<date>20021200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00051">
+<othercit>International Search Report from PCT/US04/37238 dated Jun. 13, 2008.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00052">
+<othercit>English Translation of Japanese Office Action from JP 2006-538545 dated Jul. 6, 2010, 3 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00053">
+<othercit>&#x201c;Message Encoding/Decoding Using Templated Parameters&#x201d;, Arun K. Nanda, et al., patent application, 40 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00054">
+<othercit>Canadian Office Action from EP Application No. 2,544,856 dated May 23, 2012, 4 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>15</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>705 35- 40</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>4</number-of-drawing-sheets>
+<number-of-figures>4</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>10903826</doc-number>
+<date>20040730</date>
+</document-id>
+<parent-status>PENDING</parent-status>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13168595</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>60517491</doc-number>
+<date>20031105</date>
+</document-id>
+</us-provisional-application>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110251944</doc-number>
+<kind>A1</kind>
+<date>20111013</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Newell</last-name>
+<first-name>Ron</first-name>
+<address>
+<city>Chicago</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Menon</last-name>
+<first-name>Vijay</first-name>
+<address>
+<city>Chicago</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Malabre</last-name>
+<first-name>Fred</first-name>
+<address>
+<city>Chicago</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="004" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Lobraco</last-name>
+<first-name>Joe</first-name>
+<address>
+<city>Hoffman Estates</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Newell</last-name>
+<first-name>Ron</first-name>
+<address>
+<city>Chicago</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Menon</last-name>
+<first-name>Vijay</first-name>
+<address>
+<city>Chicago</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Malabre</last-name>
+<first-name>Fred</first-name>
+<address>
+<city>Chicago</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="004" designation="us-only">
+<addressbook>
+<last-name>Lobraco</last-name>
+<first-name>Joe</first-name>
+<address>
+<city>Hoffman Estates</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Banner &#x26; Witcoff, Ltd.</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Chicago Mercantile Exchange Inc.</orgname>
+<role>02</role>
+<address>
+<city>Chicago</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Havan</last-name>
+<first-name>Thu Thao</first-name>
+<department>3695</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Systems and methods are provided for processing mass quote messages and generating market data. A mass quote message is received and individual orders are parsed and processed. Individual market data messages are stored in a market data message buffer. After all orders are processed, the contents of the market data message buffer is distributed as a single market data message.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="165.35mm" wi="248.67mm" file="US08626625-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="235.80mm" wi="179.07mm" orientation="landscape" file="US08626625-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="231.82mm" wi="176.02mm" file="US08626625-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="239.01mm" wi="139.70mm" file="US08626625-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="227.50mm" wi="164.00mm" file="US08626625-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<p id="p-0002" num="0001">The present application is a continuation application of U.S. patent application Ser. No. 10/903,826, filed Jul. 30, 2004 and claims priority to U.S. provisional patent application Ser. No. 60/517,491, filed Nov. 5, 2003, the entire disclosure of which is hereby incorporated by reference.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">FIELD OF THE INVENTION</heading>
+<p id="p-0003" num="0002">Aspects of the present invention relate to the processing of mass quote messages that include a plurality of orders. More specifically, aspects of the present invention provide systems and methods for processing mass quote messages and distributing market data.</p>
+<heading id="h-0002" level="1">BACKGROUND</heading>
+<p id="p-0004" num="0003">Current financial instrument trading systems allow traders to combine orders for a group of financial instruments into a single order called a mass quote message. For example, a trader may use a mass quote message when transmitting orders for a group of related option contracts, such as an option series belonging to one option class. With conventional trade engines, each individual order is processed separately and results in the creation of market data. The market data produced for each trade is then distributed to traders and other entities.</p>
+<p id="p-0005" num="0004">As the number of orders and traders increases, the distribution of market data messages can strain computer systems and networks that are used to transmit such messages. The processing of numerous market data messages and associated overhead consumes bandwidth and processing time.</p>
+<p id="p-0006" num="0005">Therefore, there is a need in the art for improved systems and methods for processing mass quote messages and producing and distributing market data messages.</p>
+<heading id="h-0003" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0007" num="0006">The present invention overcomes at least some of the problems and limitations of the prior art by providing systems and methods for processing mass quote messages and producing a single market data message. The orders within a mass quote message are processed and result in the production of market data. The market data is stored in one or more market data message buffers. The contents of the market data message buffer(s) is transmitted as a single market data message. In some embodiment of the invention the mass quote message includes orders spread across different order books. The mass quote messages may be formatted in accordance with one or more of the formats described in U.S. provisional patent application Ser. No. 60/517,491.</p>
+<p id="p-0008" num="0007">In various embodiments, aspects of the present invention can be partially or wholly implemented on a computer-readable medium, for example, by storing computer-executable instructions or modules, or by utilizing computer-readable data structures.</p>
+<p id="p-0009" num="0008">Of course, the methods and systems disclosed herein may also include other additional elements, steps, computer-executable instructions, or computer-readable data structures.</p>
+<p id="p-0010" num="0009">The details of these and other embodiments of the present invention are set forth in the accompanying drawings and the description below. Other features and advantages of the invention will be apparent from the description and drawings, and from the claims.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0011" num="0010">The present invention may take physical form in certain parts and steps, embodiments of which will be described in detail in the following description and illustrated in the accompanying drawings that form a part hereof, wherein:</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 1</figref> shows a computer network system that may be used to implement aspects of the present invention;</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 2</figref> illustrates a system for processing mass quote messages and a distributing corresponding market data in accordance with an embodiment of the invention;</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 3</figref> illustrates a computer implemented method for processing mass quote messages in accordance with an embodiment of the invention; and</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 4</figref> illustrates a computer implemented method of processing mass quote message that includes creating a market data message buffer, in accordance with an embodiment of the invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION</heading>
+<p id="h-0006" num="0000">Exemplary Operating Environment</p>
+<p id="p-0016" num="0015">Aspects of the present invention are preferably implemented with computer devices and computer networks that allow users to exchange trading information. An exemplary trading network environment for implementing trading systems and methods is shown in <figref idref="DRAWINGS">FIG. 1</figref>. An exchange computer system <b>100</b> receives orders and transmits market data related to orders and trades to users. Exchange computer system <b>100</b> may be implemented with one or more mainframe, desktop or other computers. A user database <b>102</b> includes information identifying traders and other users of exchange computer system <b>100</b>. Data may include user names and passwords. An account data module <b>104</b> may process account information that may be used during trades. A match engine module <b>106</b> is included to match bid and offer prices. Match engine module <b>106</b> may be implemented with software that executes one or more algorithms for matching bids and offers. A trade database <b>108</b> may be included to store information identifying trades and descriptions of trades. In particular, a trade database may store information identifying the time that a trade took place and the contract price. An order book module <b>110</b> may be included to compute or otherwise determine current bid and offer prices. A market data module <b>112</b> may be included to collect market data and prepare the data for transmission to users. A risk management module <b>134</b> may be included to compute and determine a user's risk utilization in relation to the user's defined risk thresholds. An order processing module <b>136</b> may be included to decompose delta based and bulk order types for processing by order book module <b>110</b> and match engine module <b>106</b>.)</p>
+<p id="p-0017" num="0016">The trading network environment shown in <figref idref="DRAWINGS">FIG. 1</figref> includes computer devices <b>114</b>, <b>116</b>, <b>118</b>, <b>120</b> and <b>122</b>. Each computer device includes a central processor that controls the overall operation of the computer and a system bus that connects the central processor to one or more conventional components, such as a network card or modem. Each computer device may also include a variety of interface units and drives for reading and writing data or files. Depending on the type of computer device, a user can interact with the computer with a keyboard, pointing device, microphone, pen device or other input device.</p>
+<p id="p-0018" num="0017">Computer device <b>114</b> is shown directly connected to exchange computer system <b>100</b>. Exchange computer system <b>100</b> and computer device <b>114</b> may be connected via a T1 line, a common local area network (LAN) or other mechanism for connecting computer devices. Computer device <b>114</b> is shown connected to a radio <b>132</b>. The user of radio <b>132</b> may be a trader or exchange employee. The radio user may transmit orders or other information to a user of computer device <b>114</b>. The user of computer device <b>114</b> may then transmit the trade or other information to exchange computer system <b>100</b>.</p>
+<p id="p-0019" num="0018">Computer devices <b>116</b> and <b>118</b> are coupled to a LAN <b>124</b>. LAN <b>124</b> may have one or more of the well-known LAN topologies and may use a variety of different protocols, such as Ethernet. Computers <b>116</b> and <b>118</b> may communicate with each other and other computers and devices connected to LAN <b>124</b>. Computers and other devices may be connected to LAN <b>124</b> via twisted pair wires, coaxial cable, fiber optics or other media. Alternatively, a wireless personal digital assistant device (PDA) <b>122</b> may communicate with LAN <b>124</b> or the Internet <b>126</b> via radio waves. PDA <b>122</b> may also communicate with exchange computer system <b>100</b> via a conventional wireless hub <b>128</b>. As used herein, a PDA includes mobile telephones and other wireless devices that communicate with a network via radio waves.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 1</figref> also shows LAN <b>124</b> connected to the Internet <b>126</b>. LAN <b>124</b> may include a router to connect LAN <b>124</b> to the Internet <b>126</b>. Computer device <b>120</b> is shown connected directly to the Internet <b>126</b>. The connection may be via a modem, DSL line, satellite dish or any other device for connecting a computer device to the Internet.</p>
+<p id="p-0021" num="0020">One or more market makers <b>130</b> may maintain a market by providing constant bid and offer prices for a derivative or security to exchange computer system <b>100</b>. Exchange computer system <b>100</b> may also exchange information with other trade engines, such as trade engine <b>138</b>. One skilled in the art will appreciate that numerous additional computers and systems may be coupled to exchange computer system <b>100</b>. Such computers and systems may include clearing, regulatory and fee systems.</p>
+<p id="p-0022" num="0021">The operations of computer devices and systems shown in <figref idref="DRAWINGS">FIG. 1</figref> may be controlled by computer-executable instructions stored on computer-readable medium. For example, computer device <b>116</b> may include computer-executable instructions for receiving order information from a user and transmitting that order information to exchange computer system <b>100</b>. In another example, computer device <b>118</b> may include computer-executable instructions for receiving market data from exchange computer system <b>100</b> and displaying that information to a user.</p>
+<p id="p-0023" num="0022">Of course, numerous additional servers, computers, handheld devices, personal digital assistants, telephones and other devices may also be connected to exchange computer system <b>100</b>. Moreover, one skilled in the art will appreciate that the topology shown in <figref idref="DRAWINGS">FIG. 1</figref> is merely an example and that the components shown in <figref idref="DRAWINGS">FIG. 1</figref> may be connected by numerous alternative topologies.</p>
+<p id="h-0007" num="0000">Mass Quote Message Processing and Market Data Dissemination</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 2</figref> illustrates a system for processing mass quote messages and a distributing corresponding market data in accordance with an embodiment of the invention. A mass quote message <b>202</b> contains a plurality of orders for financial instruments. The financial instruments may be derivative products. Derivative products may include options on futures contracts, futures contracts that are functions of or related to other futures contracts, or other financial instruments that have their price related to or derived from an underlying product. In one embodiment of the invention, the orders are for options contracts that belong to a common option class. Orders may also be for baskets, quadrants, other combinations of financial instruments, etc. Mass quote message <b>202</b> may be received at an exchange. As used herein, an exchange is a place or system that receives and executes orders. The orders in mass quote message <b>202</b> are delivered to appropriate order book objects <b>204</b>, <b>206</b> and <b>208</b>. Each order book object may correspond to a particular financial instrument, such as an option contract and may track or maintain the order book for that financial instrument. The market data produced by each order may be delivered to a market data message buffer <b>210</b> where market data for each order in mass quote message <b>202</b> is compiled. When all of the market data has been received, the contents in market data message buffer <b>210</b> may be distributed to traders and others tracking market data. The transmission may be via the Internet <b>210</b> or other mechanisms connecting traders to an exchange.</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 3</figref> illustrates a computer implemented method for processing mass quote messages in accordance with an embodiment of the invention. First, in step <b>302</b> a mass quote message is received. The mass quote message includes a plurality of orders for financial instruments and may be received at an exchange, match engine or any other location or device that processes orders for financial instruments. Next, in step <b>304</b> a thread iterates through the mass quote message and passes orders to corresponding order book objects. Step <b>304</b> may include sequentially reading all of the orders within the message and passing the orders to corresponding order book objects.</p>
+<p id="p-0026" num="0025">Order book objects process orders and generate market data messages in step <b>306</b>. The processing of orders and generation of market data messages may utilize conventional methods known to those of skill in the art. Each of the market data messages may be stored in a market data message buffer in step <b>308</b>. The use of a market data message buffer facilitates compiling market data messages so that such messages can be distributed together in a single message. Finally, when market data has been received for all orders in the mass quote message, the contents in the market data message buffer is transmitted in step <b>310</b>. Step <b>310</b> may include transmitting a market data message across one or computer, audio, video or data networks.</p>
+<p id="p-0027" num="0026">There are a number of alternative methods for determining when a market data message buffer has received market data for all of the orders in a mass quote message. An input thread may determine how many orders are within a mass quote message and pass this number to the market data message buffer. Mass quote messages may also contain a fixed number of orders such that the market data message buffer only needs to count individual market messages. In another alternative embodiment, the last order within a mass quote message may include a flag or code that signifies to the market data message buffer or other module that the order is the last order. In yet another embodiment of the invention, order book objects may transmit a code to the market data message buffer when each one is done processing the orders that they have received. When the market data message buffer receives a code from each order book object, the buffer knows that it has received market data for each of the orders in the mass quote message. Each order book object may utilize its own thread for processing orders.</p>
+<p id="p-0028" num="0027">Aspects of the invention may also use fixed, single and multiple market data message buffers. For example, each order book object may transmit market data messages to a unique market data message buffer. <figref idref="DRAWINGS">FIG. 4</figref> illustrates a computer implemented method of processing mass quote message that includes creating a market data message buffer, in accordance with an embodiment of the invention. A mass quote message is received in step <b>402</b>. Next, in step <b>404</b>, a market data message buffer is created. Step <b>404</b> may include determining the required size of the buffer and selecting a buffer from a pool of available buffers or allocating memory for the buffer. In an alternative embodiment, step <b>404</b> may include creating a plurality of market data message buffers, such that each order book object that is used to process orders has access to a unique market data message buffer. Of course, two or more order book objects may also share a market data message buffer.</p>
+<p id="p-0029" num="0028">Next, in step <b>406</b> the plurality of orders included within the mass quote message are processed by order book objects. Step <b>406</b> may include generating market data messages for each of the orders with the mass quote message. Each of the market data messages may be stored in a market data message buffer in step <b>408</b>.</p>
+<p id="p-0030" num="0029">In step <b>410</b> it is determined whether the market data message buffer contains market data for all of the plurality of orders. Step <b>410</b> may be performed by using one or more of the processes described above. When all market data has not been received, orders are the processing of orders continues in step <b>412</b>. When all market data has been received, a single market data message containing the market data stored in the market data buffer is transmitted in step <b>414</b>.</p>
+<p id="p-0031" num="0030">In embodiments that use multiple market data message buffers, the contents of the buffers may be transmitted as a single market data message after all of the orders have been processed.</p>
+<p id="p-0032" num="0031">The embodiments described above utilize a mass quote message. In alternative embodiments individual orders may be processed and produce market data that is compiled into a single market data message. A variety of criteria may be used to group orders that produce market data that is ultimately compiled into a single market data message. For example, orders received within a predetermined time period or orders for similar financial instruments received within a predetermined time period may be grouped together such that the resulting market data is transmitted within a single market data message.</p>
+<p id="p-0033" num="0032">The embodiments described above also transmit a single market data message after all orders have been processed. In alternative embodiments of the invention a market data message may be transmitted before all of the orders are processed. For example, the message may be transmitted at a predetermined time after receiving market data from the first order. This allows market data to be distributed even when the processing of one or more orders takes an undue length of time. After a first market data message is transmitted, subsequent market data messages may be transmitted upon receipt of additional market data.</p>
+<p id="p-0034" num="0033">The present invention has been described in terms of preferred and exemplary embodiments thereof. Numerous other embodiments, modifications and variations within the scope and spirit of the invention will occur to persons of ordinary skill in the art from a review of this disclosure. For example, aspects of the invention may be used to process and communicate data other than market data.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>We claim:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method comprising:
+<claim-text>(a) compiling at a processor a group of orders for options contracts that belong to a common option class;</claim-text>
+<claim-text>(b) accessing a first template that defines a message format that includes a plurality of fields separated by delimiters; and</claim-text>
+<claim-text>(c) generating at a processor a single message that includes the group of orders and that is formatted in accordance with the first template.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further including:
+<claim-text>(d) transmitting the single message to a computer device.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the single message is transmitted to a computer device operated by an exchange.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further including receiving the first template from an exchange.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further including generating the first template.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00005">claim 5</claim-ref>, further including transmitting the first template to the exchange.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, further including generating a second template different from the first template.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method of <claim-ref idref="CLM-00007">claim 7</claim-ref>, further including transmitting the second template to the exchange.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method of <claim-ref idref="CLM-00008">claim 8</claim-ref>, further including generating at a computer device a single message that includes the group of orders and that is formatted in accordance with the second template.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method of <claim-ref idref="CLM-00009">claim 9</claim-ref>, further including transmitting to the exchange the single message that includes the group of orders and that is formatted in accordance with the second template.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. A tangible computer-readable medium containing computer-executable instructions that when executed cause a computer device to perform the steps comprising:
+<claim-text>(a) compiling a group of orders for options contracts that belong to a common option class;</claim-text>
+<claim-text>(b) accessing a first template that defines a message format that includes a plurality of fields separated by delimiters; and</claim-text>
+<claim-text>(c) generating at a computer device a single message that includes the group of orders and that is formatted in accordance with the first template.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The tangible computer-readable medium <claim-ref idref="CLM-00011">claim 11</claim-ref>, further including computer-executable instructions that when executed cause a computer device to perform the step comprising:
+<claim-text>(d) transmitting the single message to a computer device.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The tangible computer-readable medium <claim-ref idref="CLM-00012">claim 12</claim-ref>, further including computer-executable instructions that when executed cause a computer device to perform the step comprising generating the first template.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The tangible computer-readable medium <claim-ref idref="CLM-00013">claim 13</claim-ref>, further including computer-executable instructions that when executed cause a computer device to perform the step comprising transmitting the first template to the exchange.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The tangible computer-readable medium <claim-ref idref="CLM-00014">claim 14</claim-ref>, further including computer-executable instructions that when executed cause a computer device to perform the step comprising generating a second template different from the first template. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

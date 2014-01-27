@@ -1,0 +1,693 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627135-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627135</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12856585</doc-number>
+<date>20100814</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>11</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>714  411</main-classification>
+<further-classification>714  41</further-classification>
+</classification-national>
+<invention-title id="d2e43">Management of a distributed computing system through replication of write ahead logs</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5280611</doc-number>
+<kind>A</kind>
+<name>Mohan et al.</name>
+<date>19940100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5566297</doc-number>
+<kind>A</kind>
+<name>Devarakonda et al.</name>
+<date>19961000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714 15</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>6055604</doc-number>
+<kind>A</kind>
+<name>Voigt et al.</name>
+<date>20000400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711117</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>7168001</doc-number>
+<kind>B2</kind>
+<name>Johnson et al.</name>
+<date>20070100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>2007/0006015</doc-number>
+<kind>A1</kind>
+<name>Rao et al.</name>
+<date>20070100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714  4</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>2007/0220059</doc-number>
+<kind>A1</kind>
+<name>Lu et al.</name>
+<date>20070900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00007">
+<othercit>Microsoft Computer Dictionary, Fifth Edition, 2002, Microsoft Press, p. 475.</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00008">
+<othercit>&#x201c;Google Chubby and the Paxos Algorithm&#x201d; by Philipp Lenssen; Date: Thursday, Jul. 24, 2008; http://blogoscoped.com/archive/2008-07-24-n69.html ; (Last Visited Aug. 13, 2010).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00009">
+<othercit>&#x201c;The Chubby lock service for loosely-coupled distributed systems&#x201d; by Mike Burrows, Google Inc. ; (Last Visited Aug. 13, 2010).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00010">
+<othercit>&#x201c;Paxos Made Live&#x2014;An Engineering Perspective&#x201d; by Tushar Chandra, Robert Griesemer, Joshua Redstone Date: Jun. 26, 2007 ; (Last Visited Aug. 13, 2010).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>53</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>None</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>5</number-of-drawing-sheets>
+<number-of-figures>5</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120042196</doc-number>
+<kind>A1</kind>
+<date>20120216</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Aron</last-name>
+<first-name>Mohit</first-name>
+<address>
+<city>Los Altos</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Gupta</last-name>
+<first-name>Diwaker</first-name>
+<address>
+<city>San Francisco</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Aron</last-name>
+<first-name>Mohit</first-name>
+<address>
+<city>Los Altos</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Gupta</last-name>
+<first-name>Diwaker</first-name>
+<address>
+<city>San Francisco</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Raj Abhyanker, P.C.</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="02" rep-type="attorney">
+<addressbook>
+<last-name>Mahboubian</last-name>
+<first-name>Ramin</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Teradata US, Inc.</orgname>
+<role>02</role>
+<address>
+<city>Dayton</city>
+<state>OH</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Maskulinski</last-name>
+<first-name>Michael</first-name>
+<department>2113</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Several methods and a system of a replicated service for write ahead logs are disclosed. In one embodiment, a method includes persisting a state of a distributed system through a write ahead log (WAL) interface. The method also includes maintaining a set of replicas of a WAL through a consensus protocol. In addition, the method includes providing a set of mechanisms for at least one of detection and a recovery from a hardware failure. The method further includes recovering a persistent state of a set of applications. In addition, the method includes maintaining the persistent state across a set of nodes through the hardware failover. In one embodiment, the system may include a WAL interface to persist a state of a distributed system. The system may also include a WAL replication servlet to maintain and/or recover a set of replicas of a WAL.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="169.16mm" wi="252.48mm" file="US08627135-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="260.18mm" wi="189.65mm" orientation="landscape" file="US08627135-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="279.40mm" wi="210.57mm" orientation="landscape" file="US08627135-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="248.67mm" wi="187.79mm" orientation="landscape" file="US08627135-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="260.86mm" wi="191.60mm" orientation="landscape" file="US08627135-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="267.21mm" wi="177.55mm" orientation="landscape" file="US08627135-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">FIELD OF TECHNOLOGY</heading>
+<p id="p-0002" num="0001">This disclosure relates generally to distributed computing systems and, more particularly, to a method, an apparatus and/or a system of persisting a state of the distributed computing system through fault/failure through replication of write ahead logs.</p>
+<heading id="h-0002" level="1">BACKGROUND</heading>
+<p id="p-0003" num="0002">Many services in a distributed computing system may need to maintain a persistent state that can be recovered after software and/or hardware fails. One way to maintain this state may be to write it to a disk on the distributed system. While this approach may work in the case of a software failure, it may not work for a hardware failure. When a hardware system crashes, a writes on the disk is also thereby lost. A system of replicating a state of a node is required in case the hardware of the node fails over.</p>
+<heading id="h-0003" level="1">SUMMARY</heading>
+<p id="p-0004" num="0003">Disclosed are a method, and/or a system of persisting a state of the distributed system through fault/failure through replication of write ahead logs. In one aspect, the method includes persisting a state of a distributed system through a Write Ahead Log (WAL) interface. The method also includes maintaining a set of replicas of a Write Ahead Log (WAL) through a consensus protocol. In addition, the method includes providing a set of mechanisms for at least one of detection and a recovery from a hardware failure. The method further includes recovering a persistent state of a set of applications. In addition, the method includes maintaining the persistent state across a set of nodes through the hardware failover.</p>
+<p id="p-0005" num="0004">The method may further include running an instance of a WAL replication servlet on a set of nodes. In addition, the method may include storing an on-disk state of an application in the WAL. The method may further include managing a set of WALs through the WAL replication servlet. The method may include authorizing a designated node to host a Master of the WAL replication servlet. The method may further include the Master of the replication servlet, responsible for at least one of a managing of a global state, a managing of a lease and a suggesting of an election. The method may also include storing a metadata in a metaWAL on the designated node. In addition, the method may include self-hosting the metaWAL on the WAL replication servlet of the designated node.</p>
+<p id="p-0006" num="0005">The method may include permitting an application to request an individual WAL to the WAL replication servlet. The method may also include creating a primary replica, through the WAL replication servlet, of the individual WAL. In addition, the method may include specifying, through the application, a desired fault tolerance. The method may further include creating, through a master, a set of secondary replicas based on the desired fault tolerance. The method may include establishing consensus between a set of WAL replication servlets through a consensus protocol. The method may also include establishing consensus for a set of replication operations on the WAL replication servlet through the consensus protocol. In addition, the method may include establishing consensus between a set of client data through the consensus protocol. The method may further include using an optimized version of the consensus protocol to minimize a communication overhead.</p>
+<p id="p-0007" num="0006">The method may include creating a metaWAL to bootstrap a WAL replication servlet. The method may also include designating, as a master, the WAL replication servlet hosting the metaWAL. In addition, the method may include electing, through the consensus protocol, a first master as an active master. The method may further include appointing a second and any other masters as a dormant Master. The method may include registering, through the dormant master, a callback for notification from an elected WAL replication servlet on the designated node when at least one record is chosen in the metaWAL. The method may also include detecting, through the callback for notification, writing and other writings performed by the active Master. In addition, the method may include exclusively authorizing a first primary replica of the WAL to write to the WAL. The method may further include electing, through the consensus protocol, a different primary replica of the WAL when the first primary replica fails.</p>
+<p id="p-0008" num="0007">The method may include suggesting an election, through the active Master, when a lease of a current leader WAL expires. The method may also include permitting the application to create a lease-less WAL. The method may include initializing a replication process. The method may also include hosting a metaWAL on a WAL replication servlet on the designated node. In addition, the method may include initializing the metaWAL. The method may further include evaluating a need for a re-election.</p>
+<p id="p-0009" num="0008">The method may include proposing to the metaWAL, through a dormant Master, an election for a next available consensus protocol when a record is in need of an active lease. The method may also include designating the dormant Master as a new active Master when the election succeeds. The method may also include maintaining, through a Master, a persistent state that includes the host and port of a set of WAL replication servlets. In addition, the method may include maintaining, through the Master, a persistent state of a set of one or more lease information. In addition, the method may include writing the lease information to a metaWAL. The method may further include constructing a remainder of the persistent state with an array of information sent back in a set of heartbeat replies by the set of WAL replication servlets.</p>
+<p id="p-0010" num="0009">The method may include, wherein the set of information consists of at least one of an identification information of the servlet, a state information about a configuration of the WAL, a state information about a last chosen view, a state information of an expiration of a WAL, a state information about a desired extension of a lease, a state information of an activity that occurred at a last selection instance and a last chosen selection instance. The method may also include running an alarm handler to perform a set of management activities. The method may include, wherein the set of management activities includes at least one of a creating a set of a secondary WALs, a deleting a secondary WAL, a proposing of an election, a suggesting of a catch up, and a handling of a lease extension request. The method may include issuing a first set of remote procedure calls (RPC), through the master, to create the set of secondary replicas for a particular WAL when a number of secondary replicas for the particular WAL are below a requisite number.</p>
+<p id="p-0011" num="0010">The method may also include issuing a second set of RPCs to delete one or more of the secondary replicas when the number of the secondary replicas is above the requisite number. In addition, the method may include selecting, through the master, a potential leader for a new WAL when the new WAL does not have a leader. The method may further include proposing an election for the new WAL based on the potential leader. The method may include proposing, through the master, to remove a set of dead replicas. The method may also include proposing to add a set of new replicas. In addition, the method may include inspecting, through the master, to determine if a lag between the WAL of a given WAL replication servlet and another WAL replication servlet that hosts the same WAL is greater than a predetermined value. The method may further include making a catch-up proposal to the given servlet when the lag is greater than the predetermined value.</p>
+<p id="p-0012" num="0011">The method may include granting a lease extension for each WAL utilizing a lease. The method may also include communicating directly, through an application, to a WAL replication servlet when a specific WAL requires hosting. In addition, the method may include specifying a set of configuration parameters for the specific WAL. The method may include wherein the configuration parameters is at least one of a leading WAL name, a desired fault tolerance, a value for whether an WAL uses a lease, a reset value on a node reboot, a reset value on a system restart and a value for whether an initial view is formed. The method may also include maintaining, through a WAL replication servlet, a list of consensus instances. In addition, the method may include running a consensus algorithm at a consensus instance. The method may further include selecting a value from one of a user payload and a view change value for each consensus instance. The method may also include wherein the user payload is a value given to the WAL replication servlet by a user.</p>
+<p id="p-0013" num="0012">The method may include wherein the view change value results when an election proposal is made by at least one of a master and a self-generated election proposal by the WAL. The method may also include initiating the election proposal, through the master, when the master receives heartbeat replies indicating that a leader of a last view has expired. In addition, the method may include specifying, through the master, the consensus instance at which an election occurs. The method may further include initiating the election proposal to a leading WAL replication servlet to add or to remove a set of replicas from a current view. The method may include determining, through the master, a special consensus instance at which a particular election must be run. The method may also include running the consensus algorithm on one or more of a selection instance prior to the special consensus instance containing an unchosen value.</p>
+<p id="p-0014" num="0013">The method may also include failing the particular election when at least one of the consensus algorithm run fails to choose a value. In addition, the method may include determining, through a latest chosen view, a set of replicas that participate in the full consensus algorithm. The method may further include running the particular election at the special selection instance. The method may include running the consensus algorithm on a set of consensus instances beyond the special consensus instance. The method may also include minimizing, through an optimized version of the consensus protocol, a communication overhead.</p>
+<p id="p-0015" num="0014">The method may also include ensuring, through a lease, that a leader of a WAL possesses a set of latest information about content of the WAL. In addition, the method may include configuring the WAL to use the lease. The method may further include granting the lease, through a master, in a set of heartbeat messages. The method may include ensuring, through the master, that an election is not proposed to any other primary replicas of the WAL. The method may also include suggesting a re-election to an existing leader to change a set of current replicas. In addition, the method may include generating the lease and an election-suggestion to a WAL replication servlet when an election is proposed. The method may further include securing a new lease for a new leader when the election is won. The method may include ensuring that a particular lease expires at a remote WAL replication servlet prior to expiring at the Master.</p>
+<p id="p-0016" num="0015">The method may also include recording a servlet time in a corresponding clock in the remote WAL replication servlet. In addition, the method may include communicating the servlet time at the remote WAL replication servlet in a set of heartbeat replies to the master. The method may further include generating the particular lease, through the WAL replication servlet, based on the servlet time and duration of the particular lease. The method may include rejecting a write when a particular WAL replication servlet is not a leader of the WAL. The method may also include running a consensus algorithm to generate a value when the particular WAL replication servlet is the leader of the WAL. In addition, the method may include specifying through a user an instance number at a particular consensus instance for the write. The method may further include requiring a leader WAL replication servlet to use an optimized version of the consensus protocol at the consensus instance of an election.</p>
+<p id="p-0017" num="0016">The method may include accepting a value in a second phase of the consensus protocol. In addition, the method may include broadcasting the value in a third phase of the consensus protocol when the value is accepted by a majority. The method may further include transmitting a reply based on the value to a calling application after the second phase. The method may include generating a proposal number for a run of the consensus protocol consisting of a set of criterias. The method may also include assigning a higher value to a proposal number with higher first criteria than a proposal number with lower first criteria. In addition, the method may include determining the higher value, through the second criteria, when the value for the first criteria is the same. The method may further include determining the higher value, through the third criteria, when the value for the first criteria and the value for the second criteria is the same.</p>
+<p id="p-0018" num="0017">The method may include employing the proposal number of a successful election for a subsequent client write. The method may also include selecting a higher proposal number when a different WAL replication servlet is elected as a leader. In addition, the method may include incrementing the first criteria when a leadership changes. The method may further include incrementing the second criteria when a WAL replication servlet restarts. The method may include obtaining information from a last chosen consensus instance in a heartbeat reply. In addition, the method may include requesting a lagging WAL replication servlet, through a Master, to catch up with a set of other WAL replication servlets. The method may further include sending a catch-up suggestion in a next heartbeat reply to the lagging WAL replication servlet.</p>
+<p id="p-0019" num="0018">The method may include transmitting a request, through the lagging WAL replication servlet, to read a set of chosen values from a remote replica when the catch-up suggestion is received. In addition, the method may include committing the set of chosen values to a local physical WAL. The method may further include applying the set of chosen values to an in-memory state. The method may include creating a set of checkpoints, through the WAL interface. The method may also include issuing a start checkpoint when requested by a user. In addition, the method may include writing a set of checkpoint records when requested by the user. The method may further include issuing a finalize checkpoint when requested by the user. The method may include converting, through a replication WAL Record, the start checkpoint and the finalize checkpoint to a set of special corresponding WAL replication values.</p>
+<p id="p-0020" num="0019">The method may also include rolling a current delta sequence of a WAL replication servlet to a subsequent delta sequence simultaneously at an instance prior to a special corresponding replication value of the start checkpoint. In addition, the method may include attaching a set of information of the current delta sequence pertaining to a set of instances following the special corresponding replication value of the start checkpoint to the subsequent delta sequence. The method may further include discarding information of the current delta sequence simultaneously when a checkpoint at the subsequent delta sequence is created. The method may include wherein the set of information of the prior delta sequence pertaining to a set of instances following the special corresponding replication value is one of a prepared instance, an accepted instance, and a committed instance. The method may also include creating a checkpoint file in a WAL at the subsequent delta sequence when a special corresponding WAL replication value of the finalize checkpoint is generated.</p>
+<p id="p-0021" num="0020">In addition, the method may include initiating a recovery exclusively at the subsequent delta sequence. The method may further include ignoring a set of records in the current delta sequence.</p>
+<p id="p-0022" num="0021">In another aspect, a machine-readable medium providing instructions, which when read by a processor, causes the machine to perform operations that includes generating a set of replicas of a Write Ahead Log (WAL), distributing the set of replicas across a set of nodes, maintaining a persistent state across a set of nodes through a consensus protocol.</p>
+<p id="p-0023" num="0022">The machine-readable medium may include requesting, through an application, a creation of an individual WAL. The machine-readable medium may also include creating a primary replica, through a WAL replication servlet, of the individual WAL. In addition, the machine-readable medium may include specifying, through the application, a desired fault tolerance. The machine-readable medium may further include creating a set of secondary replicas based on the desired fault tolerance. The machine-readable medium may include executing a consensus protocol to establish consensus between a set of WAL replication servlets. The machine-readable medium may also include selecting a leader for the set of WAL replication servlets through the consensus protocol. The machine-readable medium may further include using an optimized version of the consensus protocol to minimize a communication overhead.</p>
+<p id="p-0024" num="0023">The machine-readable medium may include creating a set of checkpoints. The machine-readable medium may also include converting a start checkpoint and a finalize checkpoint to a set of special corresponding WAL replication values. The machine-readable medium may also include rolling a current delta sequence of the WAL replication servlet to a subsequent delta sequence simultaneously at an instance prior to a special corresponding replication value of the start checkpoint. In addition, the machine-readable medium may include attaching a set of information of the current delta sequence pertaining to a set of instances following the special corresponding replication value of the start checkpoint to the subsequent delta sequence. The machine-readable medium may further include discarding information of the current delta sequence simultaneously when a checkpoint at the subsequent delta sequence is created.</p>
+<p id="p-0025" num="0024">In yet another aspect, a system includes a Write Ahead Log (WAL) interface to persist a state of a distributed system. The system also includes a WAL replication servlet to maintain and recover a set of replicas of a Write Ahead Log (WAL). In addition, the system includes a consensus protocol to manage the state of the distributed system through a hardware failure. The system may include a Master of the WAL replication servlet on a designated node to perform at least one of a performing a set of management activities, managing a global state a managing of a lease and a suggesting of an election. The system may also includes wherein the set of management activities includes at least one of a creating a set of a secondary WALs, a deleting a secondary WAL, a proposing of an election, a suggesting of a catch-up, and a handling of a lease extension request. The system may further include an optimized version of the consensus protocol to minimize a communication overhead.</p>
+<p id="p-0026" num="0025">The methods and systems disclosed herein may be implemented in any means for achieving various aspects, and may be executed in a form of a machine-readable medium embodying a set of instructions that, when executed by a machine, cause the machine to perform any of the operations disclosed herein. Other features will be apparent from the accompanying drawings and from the detailed description that follows.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE VIEWS OF DRAWINGS</heading>
+<p id="p-0027" num="0026">Example embodiments are illustrated by way of example and not limitation in the figures of accompanying drawings, in which like references indicate similar elements and in which:</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 1</figref> is a system view illustrating an interaction flow in a system, according to one or more embodiments.</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 2</figref> is a detailed view illustrating an architecture flow in the system, according to one or more embodiments.</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 3</figref> is a schematic view illustrating operation of an optimized version of the consensus protocol for replication of a write ahead log (WAL), according to one or more embodiments.</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIGS. 4A-4B</figref> is a critical path flow diagram illustrating operations involved in dynamic replication of WALs, according to one or more embodiments.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<p id="p-0032" num="0031">Other features of the present embodiments will be apparent from accompanying Drawings and from the Detailed Description that follows.</p>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0033" num="0032">Example embodiments, as described below, may be used to provide a method, an apparatus, and/or a system of persisting a state of the distributed system through fault/failure through replication of write ahead logs. Although the present embodiments have been described with reference to specific example embodiments, it will be evident that various modifications and changes may be made to these embodiments without departing from the broader spirit and scope of the various embodiments.</p>
+<p id="p-0034" num="0033">A distributed computing system acting as a server may be configured to serve a large amount of information to a diverse set of nodes, such as a central database for a multi-national corporation, or website. One or more nodes may request information from the distributed computing system acting as a server. By implementing the server functionality across multiple devices, the server as a whole is far less prone to failure due to the increased redundancy. <figref idref="DRAWINGS">FIG. 1</figref> is a System View <b>100</b> illustrating an interaction flow in a system, according to one or more embodiments. The system may include one or more nodes (e.g., peer nodes <b>104</b><sub>A</sub>-<b>104</b><sub>N</sub>) and one or more designated nodes (e.g., designated node <b>102</b><sub>A</sub>, <b>102</b><sub>B</sub>) in communication with the nodes through communication network.</p>
+<p id="p-0035" num="0034">The communication network may include a local area network, a wide area network, and the like. Examples of the nodes may include, but is not limited to data processing devices, including hand-held devices, multi-processor systems, microprocessor based or programmable consumer electronics, network PCs, minicomputers, mainframe computers, and the like. Also, <figref idref="DRAWINGS">FIG. 1</figref> illustrates a distributed computing environment. As will be understood by those skilled in the art, the present invention is applicable to all distributed computing environments and is not intended to be limited in any way by the exemplary distributed computing system of <figref idref="DRAWINGS">FIG. 1</figref> that has been simplified for presentation purposes.</p>
+<p id="p-0036" num="0035">In one or more embodiments, the nodes may be configured to maintain a write ahead log <b>108</b> (WAL) for an application <b>120</b> executed on the nodes. As will be known by those skilled in the art, WAL refers to a system of writing modifications into a log, prior to applying the modifications. The purpose of a WAL can be illustrated by an example. Consider, for instance, a program that is in the middle of performing some operation when the node the program is running on loses power. Upon restart, the program might well need to know whether the operation it was performing succeeded, half-succeeded, or failed. On using the WAL, the program could check the log and compare what it was supposed to be doing when it unexpectedly lost power to what was actually done.</p>
+<p id="p-0037" num="0036">In one or more embodiments, one or more WAL replication servlets (e.g., <b>106</b>A-C) may be installed in each of the nodes in the system to enable replication of the WALs. As used herein, the term &#x201c;replication&#x201d; refers to creating one or more copies of the WAL in one or more nodes in the system. The WAL replication servlet <b>106</b> installed in each of the nodes may maintain and recover a set of replicas of any given WAL. The WAL replication servlet <b>106</b> may enable replication of a given WAL to persist the state of the system, such that whenever a node hosting a given WAL for a given application <b>120</b> fails, a replicated WAL in another node may be used to resume execution of the given application <b>120</b>.</p>
+<p id="p-0038" num="0037">In one or more embodiments, a master <b>122</b> of the WAL replication servlet <b>106</b> may be installed in a designated node to perform a set of management activities, managing a global state, managing of a lease <b>124</b> and/or suggesting of an election <b>130</b>. The designated node may coordinate between the peer nodes. The set of management activities may include, but is not limited to creating <b>118</b> a set of secondary WALs, managing a global state, deleting a secondary WAL, proposing an election <b>130</b>, suggesting of a catch-up <b>190</b>, and/or handling of a lease extension request. In one or more embodiments, a consensus protocol <b>110</b> may be used to replicate any given WAL for the application <b>120</b> in the system.</p>
+<p id="p-0039" num="0038">The distributed computing system referred to herein after as the system, in one or more embodiments may include WAL interface to persist a state of the system. The WAL interface may be operatively coupled to each of the peer nodes in the system. The system further includes the WAL replication servlet <b>106</b> installed in each of the peer nodes to maintain and recover a set of replicas of any given WAL. The WAL replication servlet <b>106</b> enables replication of a given WAL in one or more peer nodes to persist the state of the system, such that whenever a node hosting a given WAL for a given application <b>120</b> fails, a replicated WAL in another node may be used to resume execution of the given application <b>120</b>.</p>
+<p id="p-0040" num="0039">Each of the peer nodes in the system may run an instance of a WAL replication servlet <b>106</b> (WAL replication daemon). Each WAL replication servlet <b>106</b> may store an on-disk state in the WAL. One or more applications (e.g., application <b>120</b>) may request <b>160</b> creation of own WALs by communicating directly with the WAL replication servlet. The WAL replication servlet becomes a primary replica for the WAL when the applications communicate with the WAL replication servlet to create the WAL for the application <b>120</b>. A set of replicas of the WAL may be maintained in the system through the consensus protocol <b>110</b> (e.g., Paxos protocol).</p>
+<p id="p-0041" num="0040">In one or more embodiments a set of mechanisms may be provided for one or more of detection and/or recovery from a hardware failure. In one or more embodiments, a persistent state of a set of applications may be recovered and the persistent state may be maintained across the set of nodes through the hardware failover. In order to maintain the persistent state, an instance of the WAL replication servlet <b>106</b> installed in each of the nodes may be run. An on-disk state of an application <b>120</b> may be stored in the WAL. A set of WALs may be managed through the WAL replication servlet <b>106</b>. In one or more embodiments, a metadata (e.g., list of all peer nodes in the system) for the WAL replication servlet may be stored in a metaWAL <b>140</b> on the designated node. The metaWAL <b>140</b> may be self-hosted on the WAL replication servlet <b>106</b> of the designated node and may be created to bootstrap the WAL replication servlet <b>106</b>.</p>
+<p id="p-0042" num="0041">In one or more embodiments, the application <b>120</b> may be permitted to request <b>160</b> an individual WAL to the WAL replication servlet <b>106</b>. A primary replica may be created, through the WAL replication servlet <b>106</b>, of the individual WAL. A desired fault tolerance may be specified <b>162</b>, through the application <b>120</b> and a set of secondary replicas may be created <b>118</b> through a master based on the desired fault tolerance. At any given time, only one of the nodes may be allowed to perform a write operation on the WAL/the replicated WALs. In one or more embodiments, a consensus may be established between a set of WAL replication servlets <b>106</b>A-C through a consensus protocol <b>110</b>. The consensus may also be established for a set of replication operations on the WAL replication servlet <b>106</b>, between a set of client data through the consensus protocol <b>110</b>.</p>
+<p id="p-0043" num="0042">In one or more embodiments, an optimized version of the consensus protocol <b>110</b> may be employed to minimize a communication overhead. In a consensus algorithm of the consensus protocol <b>110</b>, as will be described further below, any of the nodes can act as a leader and transmit a suggestion for a proposal number to other devices within the distributed computing system. The other nodes can respond with either an indication of the proposal having the largest proposal number for which that node has already voted or an indication that the node has not voted for any previous proposals. Once the leader receives the responses from the other nodes, it can determine one or more functions to propose and request a vote for a proposed function. Each node may vote for the proposal unless the node has, at some time prior to the requested vote, responded to a suggestion for a higher proposal number. If a quorum of nodes votes for the proposal, then the proposal may be accepted, and the leader can transmit a message to all of the nodes requesting that they execute the agreed upon function.</p>
+<p id="p-0044" num="0043">The consensus algorithm requires a large number of nodes to tolerate failures. Specifically, to tolerate F number of failures, the consensus algorithm requires a distributed computing system comprising at least 2F+1 number of nodes (e.g., computing devices). Of the available nodes, only a simple majority may be needed to select commands and to continue proper operation of the system. The remaining nodes can remain unused until one of the nodes selecting commands and operating the system fails. If a node permanently fails, it is desirable to remove it from the set of 2 F+1 nodes, and to replace it with a new node, in order that the consensus algorithm will be able to tolerate F additional failures.</p>
+<p id="p-0045" num="0044">In one or more embodiments, a first master may be elected from among the nodes as an active master <b>122</b> through the consensus protocol <b>110</b>. In one or more embodiments, a second, and/or any other masters may be appointed as a dormant master. A callback for a notification from an elected WAL replication servlet <b>106</b> on the designated node may be registered through the dormant Master, and a callback for at least one record may be chosen in the metaWAL <b>140</b>. In one or more embodiments, a writing performed by the active master <b>122</b> may be determined through the callback for notification. In one or more embodiments, a first primary replica of the WAL to write to the WAL may be exclusively authored.</p>
+<p id="p-0046" num="0045">In one or more embodiments, a different primary replica of the WAL when the first primary replica fails may be elected through the consensus protocol <b>110</b>. The election may be suggested through the active master <b>122</b>, when a lease of a current leader WAL expires. In one or more embodiments, the application <b>120</b> may be permitted to create a lease-less WAL. In one or more embodiments, a replication process may be initialized. A metaWAL <b>140</b> may be hosted on a WAL replication servlet <b>106</b> on the designated node. The metaWAL <b>140</b> may then be initialized and a need for a re-election may be evaluated.</p>
+<p id="p-0047" num="0046">In one or more embodiments, an election for a next available consensus protocol <b>110</b> may be proposed to the metaWAL <b>140</b>, through a dormant master <b>128</b> when a chosen record is in need of an active lease. In one or more embodiments, the dormant master <b>128</b> may be designated as a new active master <b>122</b> when the election succeeds. A persistent state of a host port for a set of WAL replication servlet <b>106</b>s and/or a persistent state of a set of one or more lease information; may be maintained through the master. In one or more embodiments, the lease information may be written to the metaWAL <b>140</b>.</p>
+<p id="p-0048" num="0047">In one or more embodiments, a remainder of the persistent state may be constructed with an array of information sent back in a set of heartbeat replies by the set of WAL replication servlets. The array of information may include, but is not limited to one or more of a servlet identification information, a state information about a configuration of the WAL, a state information about a last chosen view, a state information of an expiration of a WAL, a state information about a desired extension of a lease, a state information of an activity that occurred at a last selection instance and a last chosen selection instance.</p>
+<p id="p-0049" num="0048">In one or more embodiments, an alarm handler may be run to perform a set of management activities. The set of management activities may include, but is not limited to, one or more of a creating a set of secondary WALs, deleting a secondary WAL, proposing of an election, suggesting of a catch-up, and/or handling of a lease extension <b>124</b> request. In one or more embodiments, a first set of remote procedure calls (RPC) may be issued, through the master, to create the set of secondary replicas <b>118</b> for a particular WAL when a number of secondary replicas for the particular WAL are below a requisite number. A second set of RPCs may be issued to delete one or more of the secondary replicas when the number of the secondary replicas is above the requisite number. In one or more embodiments, a potential leader for a new WAL may be selected through the master when the new WAL does not have a leader.</p>
+<p id="p-0050" num="0049">An election may be proposed for the new WAL based on the potential leader. In one or more embodiments, removal of a set of dead replicas and addition of a set of new replicas may be proposed through the master of the WAL replication servlet. In one or more embodiments, it may be inspected, through the Master, to determine if a lag between the WAL of a given WAL replication servlet <b>106</b> and another WAL replication servlet that hosts the same WAL is greater than a predetermined value. In one or more embodiments, a catch-up proposal may be made to the given WAL replication servlet <b>106</b> when the lag is greater than the predetermined value.</p>
+<p id="p-0051" num="0050">A lease extension <b>124</b> may be granted for each WAL utilizing a lease. When a specific WAL requires hosting, a WAL replication servlet <b>106</b> may be directly communicated through an application <b>120</b>. Also, a set of configuration parameters may be specified for the specific WAL. The configuration parameters may include, but is not limited to, one or more of a leading WAL name, a desired fault tolerance, a value for whether a WAL uses a lease, a reset value on a node reboot, a reset value on a system restart and/or a value for whether an initial view is formed. In accordance with the method and system disclosed herein, the distributed system can implement a fault tolerant algorithm while allowing nodes to be added and removed from the system.</p>
+<p id="p-0052" num="0051"><figref idref="DRAWINGS">FIG. 2</figref> is a Detailed View <b>200</b> illustrating an architecture flow in the system, according to one or more embodiments. In one or more embodiments, a list of consensus instances (e.g., consensus instances <b>222</b><sub>A</sub>-<b>222</b><sub>N</sub>) may be maintained through a WAL replication servlet <b>106</b>. A consensus algorithm may be run at a consensus instance. A value may be selected from a user payload <b>230</b> and/or a view change value <b>232</b> for each consensus instance <b>222</b>. The user payload <b>230</b> may be a value given to the WAL replication servlet by a user. A view change value <b>232</b> may result when an election proposal is made by the master and/or a self-generated election proposal by the WAL.</p>
+<p id="p-0053" num="0052">In one or more embodiments, the election proposal may be initiated through the Master, when the Master receives heartbeat replies indicating that a leader of a last view has expired. The consensus instance <b>222</b> at which an election occurs may be specified through the master. The election proposal may be initiated to a leading WAL replication servlet <b>106</b> to add or to remove a set of replicas from a current view. A special consensus instance at which a particular election must be run may be initiated through the master. The consensus algorithm may be run on one or more of a selection instance prior to the special consensus instance containing an unchosen value. The particular election when at least one of the consensus algorithm run fails to choose a value may be failed. A set of replicas that participate in the full consensus algorithm may be determined, through a latest chosen view. The particular election may be run at the special consensus instance.</p>
+<p id="p-0054" num="0053">The consensus algorithm may be run on the set of consensus instances beyond the special consensus instance. A first phase of the consensus algorithm for the set of consensus instances beyond the special consensus instance may be skipped through an optimized version of the consensus protocol <b>110</b>. Further, a second phase of the selection algorithm for the set of selection instances beyond the special consensus instance may be directly proceeded to. In one or more embodiments, it may be ensured, through a lease, that a leader of a WAL possesses a set of latest information about content of the WAL. The WAL may be configured to use the lease. The lease may be granted through a Master, in a set of heartbeat messages.</p>
+<p id="p-0055" num="0054">In one or more embodiments, it may be ensured, through the Master, that an election is not proposed to any other primary replicas of the WAL. A re-election may be suggested to an existing leader to change a set of current replicas. The lease and an election-suggestion may be generated to a WAL replication servlet <b>106</b> when an election is proposed. A new lease may be secured for a new leader when the election is won. In one or more embodiments, it may be ensured that a particular lease expires at a remote WAL replication servlet <b>106</b> prior to expiring at the master. A servlet time may be recorded in a corresponding clock in the remote WAL replication servlet <b>106</b>. The servlet time at the remote WAL replication servlet <b>106</b> may be communicated in a set of heartbeat replies to the master. The particular lease may be generated through the WAL replication servlet, based on the servlet time and duration of the particular lease.</p>
+<p id="p-0056" num="0055">In one or more embodiments, a write may be rejected when a particular WAL replication servlet <b>106</b> is not a leader of the WAL. A consensus algorithm may be run to generate a value when the particular WAL replication servlet <b>106</b> is the leader of the WAL. An instance number may be specified through a user at a particular consensus instance for the write. For instance, once an election processing begins, the WAL replication servlet <b>106</b> figures out the consensus instance <b>222</b> at which this election is to be run. The consensus instance <b>222</b> is either explicitly provided by the WAL replication servlet <b>106</b>, the active master or it may be chosen to be the next one available. The WAL replication servlet <b>106</b> then starts running the consensus algorithm at each consensus instance <b>222</b> before the one that has unchosen values.</p>
+<p id="p-0057" num="0056">If the latest consensus at which a value P is chosen, and the election is to be done at the instance P+E, then the full consensus algorithm shall be run serially at the instances P+1, P+2, . . . , P+E (e.g., P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub>, P<sub>4</sub>, P<sub>5</sub>, and P<sub>6 </sub>as illustrated in <figref idref="DRAWINGS">FIG. 2</figref>) to get values chosen (e.g., V<sub>2</sub>, V<sub>3</sub>, V<sub>4</sub>, V<sub>6</sub>, V<sub>7</sub>, and V<sub>8</sub>). If any of the consensus run fails to choose a value, then the election is failed. At each consensus instance <b>222</b>, the set of replicas that participate in the consensus algorithm is determined by the latest chosen view known at that point. The view configuration information is part of the state of the WAL maintained by the consensus algorithm. Finally, consensus may also run at the election consensus instance P+E. The Prepare phase of the consensus algorithm in this case uses multi-consensus, meaning that is, it is not only done for instance P+E, it is also done for all the consensus instances beyond P+E.</p>
+<p id="p-0058" num="0057">Thus, if the election succeeds, subsequent writes made at consensus instances P+E+1, P+E+2, and so on can skip the prepare phase and directly go to the second round of consensus. In one or more embodiments, a set of checkpoints (e.g., check points C<sub>1</sub>, C<sub>2</sub>) may be created through the WAL interface. A start checkpoint command (startCkpt( )) may be issued when requested by a user. A set of checkpoint records may be written when requested by the user. A finalize checkpoint (finalizeCkpt( )) command may be issued when requested by the user. The start checkpoint and/or the finalize checkpoint may be converted to a set of special corresponding WAL replication values through a replication WAL Record. In one or more embodiments, a current delta sequence <b>220</b> (e.g., D<sub>1</sub>, D<sub>2</sub>, D<sub>3</sub>, D<sub>4</sub>, and D<sub>5</sub>). of a WAL replication servlet <b>106</b> may be rolled to a subsequent delta sequence <b>224</b> (e.g., D<sub>6</sub>, D<sub>7</sub>, D<sub>8</sub>, D<sub>9</sub>, and D<sub>10</sub>) simultaneously at an instance prior to a special corresponding replication value of the start checkpoint.</p>
+<p id="p-0059" num="0058">A set of information of the current delta sequence <b>220</b> pertaining to a set of instances following the special corresponding replication value of the start checkpoint to the subsequent delta sequence <b>224</b> may be attached. The information of the current delta sequence <b>220</b> (e.g., D<sub>1</sub>, D<sub>2</sub>, D<sub>3</sub>, D<sub>4</sub>, and D<sub>5</sub>) may be discarded simultaneously when a checkpoint at the subsequent delta sequence is created. The set of information of the prior delta sequence pertaining to a set of instances following the special corresponding replication value may be a prepared instance, an accepted instance, and/or a committed instance. At any given point, there can be one active checkpoint in the system. Further, all delta sequences before the active checkpoint are no longer used/required by the system.</p>
+<p id="p-0060" num="0059">In one or more embodiments, a checkpoint file may be created in a WAL at the subsequent delta sequence <b>224</b> when a special corresponding WAL replication value of the finalize checkpoint (e.g., checkpoint C<sub>1</sub>) is generated. A recovery may be initiated exclusively at the subsequent delta sequence <b>224</b>. A set of records may be ignored in the current delta sequence <b>220</b>, meaning that if the WAL replication servlet <b>106</b> is currently writing to delta sequence X <b>220</b>, the WAL replication servlet <b>106</b> may now start writing to delta t X+1 <b>224</b>. Once the finalizeCkpt( ) value is chosen, a checkpoint at the delta sequence X+1 <b>224</b> would be created, thus discarding all the earlier information in the delta sequence X <b>220</b> and earlier.</p>
+<p id="p-0061" num="0060">Any information in the delta sequence X <b>220</b> that pertains to instances after the one corresponding to startCkpt( ) is also added again to the delta file at the delta sequence X+1 <b>224</b>, and goes to the next checkpoint so that applications are not blocked. When the finalizeCkpt( ) value gets chosen, the WAL replication servlet <b>106</b> creates a 0 byte checkpoint file in the primary WAL at the delta sequence X+1 <b>224</b>, following which, any recovery will only start at the delta sequence X+1 <b>224</b> and any record in delta file X and earlier are ignored.</p>
+<p id="p-0062" num="0061"><figref idref="DRAWINGS">FIG. 3</figref> is a schematic view illustrating operation of an optimized version of the consensus protocol <b>150</b> for replication of WALs, in accordance with one or more embodiments. In one or more embodiments, a leader WAL replication servlet <b>106</b> is required to use the optimized version of the consensus protocol <b>150</b> at the consensus instance <b>222</b> of an election. In a first stage <b>302</b>, the consensus instance <b>222</b> may be prepared. A value from among multiple values (e.g., V<sub>1</sub>-V<sub>7</sub>) of the consensus instance <b>222</b> of the optimized version of the consensus protocol <b>150</b> may be accepted in a second phase <b>302</b> of the optimized version of the consensus protocol <b>150</b>. The values (e.g., V<sub>1</sub>-V<sub>7</sub>) may correspond to various payloads (e.g., P<sub>1</sub>-P<sub>6</sub>) as illustrated in <figref idref="DRAWINGS">FIG. 3</figref>. The value may be broadcasted in a third phase <b>306</b> of the optimized version of the consensus protocol <b>150</b> when the value is accepted by a majority.</p>
+<p id="p-0063" num="0062">A reply may be transmitted based on the value to a calling application after the second phase <b>304</b>. A proposal number may be generated for a run of the optimized version of the consensus protocol <b>150</b> consisting of a many criterias. In the case of a Paxos protocol, there may be a first criteria, second criteria and third criteria. A higher value may be assigned to a proposal number with higher first criteria than the proposal number with a lower first criteria. The higher value may be determined through the second criteria, when the value for the first criteria is the same. The higher value may be determined through the third criteria, when the value for the first criteria and the value for the second criteria is the same. The proposal number of a successful election may be employed for a subsequent write operation <b>320</b>. A higher proposal number may be selected when a different WAL replication servlet <b>106</b> is elected as a leader.</p>
+<p id="p-0064" num="0063">The first criteria may be incremented when a leadership changes. The second criteria may be incremented when a WAL replication servlet <b>106</b> restarts. An information may be obtained from a last chosen consensus instance in a heartbeat reply. A lagging WAL replication servlet <b>106</b> may be requested through a Master, to catch up with a set of other WAL replication servlets. A catch-up suggestion may be sent in a next heartbeat reply to the lagging WAL replication servlet. In one or more embodiments, a request may be transmitted, through the lagging WAL replication servlet, to read a chosen value <b>310</b>A from a remote replica when the catch-up suggestion is received. Also, at the third stage <b>306</b>, a set of chosen values (e.g., VC<sub>1</sub>-VC<sub>7</sub>) may be committed to a local physical WAL. The chosen values <b>310</b>A-G may be applied to an in-memory state.</p>
+<p id="p-0065" num="0064">Also disclosed herein is a machine-readable medium providing instructions, which when read by a processor cause the machines to perform operations including generating a set of replicas of a Write Ahead Log(WAL), distributing the set of replicas across a set of nodes and maintaining a persistent state across a set of nodes through a consensus protocol. The machine-readable medium may include, but is not limited to, a memory, a transportable medium such as a CD, a DVD, a Blu-ray&#x2122; disc, a floppy disk, or a diskette. By way of example, and not limitation, the machine readable medium may include computer storage media and/or communication media.</p>
+<p id="p-0066" num="0065">The computer storage media may include, but is not limited to, volatile and/or nonvolatile, removable and/or non-removable media implemented in any method or technology for storage of information such as computer readable instructions, data structures, program modules or other data. The computer storage media may include, but is not limited to, RAM, ROM, EEPROM, flash memory or other memory technology, CD-ROM, digital versatile disks (DVD) or other optical disk storage, magnetic cassettes, magnetic tape, magnetic disk storage or other magnetic storage devices, or any other medium which can be used to store the desired information and can be accessed by a machine (e.g., a computing device).</p>
+<p id="p-0067" num="0066">The communication media typically embodies computer readable instructions, data structures, program modules or other data in a modulated data signal such as a carrier wave or other transport mechanism and includes any information delivery media. The operations may also include requesting through an application, a creation of an individual WAL, creating a primary replica, through a WAL replication servlet, of the individual WAL, specifying, through the application, a desired fault tolerance, creating a set of secondary replicas based on the desired fault tolerance, executing a consensus protocol to establish consensus between a set of WAL replication servlets, selecting a leader for the set of WAL replication servlets through the consensus protocol, and using an optimized version of the consensus protocol to minimize a communication overhead.</p>
+<p id="p-0068" num="0067">In one or more embodiments, the operation may further include creating a set of checkpoints, converting a start checkpoint and a finalize checkpoint to a set of special corresponding WAL replication values, rolling a current delta sequence of the WAL replication servlet <b>106</b> to a subsequent delta sequence simultaneously at an instance prior to a special corresponding replication value of the start checkpoint, attaching a set of information of the current delta sequence pertaining to a set of instances following the special corresponding replication value of the start checkpoint to the subsequent delta sequence, and discarding an information of the current delta sequence simultaneously when a checkpoint at the subsequent delta sequence is created.</p>
+<p id="p-0069" num="0068"><figref idref="DRAWINGS">FIGS. 4A-4B</figref> is a critical path flow diagram illustrating operations of dynamic replication of WALs, according to one or more embodiments. In operation <b>402</b>, a WAL replication servlet in a designated node <b>1</b> <b>106</b>A creates a metaWAL <b>140</b>. In operation <b>404</b>, if multiple servlets host metaWAL <b>140</b>, a consensus protocol <b>110</b> is run at the designated node <b>1</b> <b>106</b>A to determine an active master <b>122</b>. In operation <b>406</b>, the consensus protocol <b>110</b> runs an election to choose the active master <b>122</b>. In operation <b>408</b>, an active master <b>122</b>A in designated node <b>1</b> may be chosen through the consensus protocol <b>110</b>. The WAL replication servlet in designated node <b>2</b> becomes a dormant master <b>122</b>B when it is not chosen through the consensus protocol. In operation <b>410</b>, an application <b>120</b> may request creation of a WAL for the application <b>120</b>. In operation <b>412</b>, the application <b>120</b> may specify fault tolerance in WAL creation.</p>
+<p id="p-0070" num="0069">In operation <b>414</b>, the application <b>120</b> may communicate directly to the WAL replication servlet in a peer node. In operation <b>416</b>, the WAL replication servlet in peer node <b>1</b> <b>106</b>B may receive the request from the application <b>120</b>. In operation <b>418</b>, the WAL replication servlet in peer node <b>1</b> <b>106</b>B may create a primary replica for the WAL. In operation <b>420</b>, the active master in the designated node <b>122</b>A may receive the request from the WAL replication servlet in peer node <b>1</b> and may prepare to create secondary replicas. In operation <b>422</b>, the active master in the designated node <b>122</b>A creates secondary replicas in nodes other than peer node <b>1</b>. In operation <b>424</b>, the WAL replication servlet in peer node <b>2</b> <b>106</b>C receives the request from the active master <b>122</b> A and may create and store secondary replica. Also, the WAL replication servlet in designated node <b>1</b> <b>106</b>A receives the request from the active master <b>122</b>A and may create and store the secondary replica.</p>
+<p id="p-0071" num="0070">Although the present embodiments have been described with reference to specific example embodiments, it will be evident that various modifications and changes may be made to these embodiments without departing from the broader spirit and scope of the various embodiments. Accordingly, the specification and drawings are to be regarded in an illustrative rather than a restrictive sense.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method comprising:
+<claim-text>replicating a Write Ahead Log (WAL) hosted on a node of a distributed computing system on at least another node of the distributed computing system, the WAL including at least one application state of at least one application executing on the node of the distributed computing system, wherein replicating the WAL includes: running an instance of a WAL replication servlet on each of the node and the another node; and</claim-text>
+<claim-text>storing, in the WAL, an on-disk state of the application through the WAL replication servlet;</claim-text>
+<claim-text>designating one of the node and the another node to host a master of the WAL replication servlet to coordinate between peer nodes of the distributed computing system;</claim-text>
+<claim-text>coordinating between the node and the at least one other node of the distributed computing system to manage the at least one application state as global state of the distributed computing system, wherein the coordinating between peer nodes includes at least one of managing a global state of the distributed computing system, managing a lease and suggesting an election through the master of the WAL replication servlet; and</claim-text>
+<claim-text>resuming execution of the application on the distributed computing system upon a failure of the node hosting the WAL through the replicated WAL on the at least another node to persist at least the application state of the at least one application on the distributed computing system.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>storing metadata including a list of the peer nodes in a metaWAL on the designated one of the node and the another node; and</claim-text>
+<claim-text>self-hosting the metaWAL on the WAL replication servlet of the designated one of the node and the another node.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00002">claim 2</claim-ref>, further comprising at least one of:
+<claim-text>establishing consensus between the WAL replication servlet on the node and the WAL replication servlet on the another node through a consensus protocol;</claim-text>
+<claim-text>establishing consensus for a replication operation on the WAL replication servlet of at least one of the node and the another node through the consensus protocol;</claim-text>
+<claim-text>establishing consensus between a set of data associated with client devices of the distributed computing system through the consensus protocol; and</claim-text>
+<claim-text>optimizing the consensus protocol to minimize a communication overhead.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00003">claim 3</claim-ref>, further comprising at least one of:
+<claim-text>creating the metaWAL to bootstrap the WAL replication servlet; and</claim-text>
+<claim-text>electing, through the consensus protocol, the master as an active master.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00004">claim 4</claim-ref>, further comprising appointing at least one of the another node and yet another node of the distributed computing system as a dormant master.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00005">claim 5</claim-ref>, further comprising:
+<claim-text>registering, through the dormant master, a callback for notification from an elected WAL replication servlet on the designated one of the node and the another node when at least one record is chosen in the metaWAL; and</claim-text>
+<claim-text>detecting, through the callback for notification, a writing performed by the active master.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, further comprising:
+<claim-text>exclusively authorizing a first primary replica of the WAL to write to the WAL; and</claim-text>
+<claim-text>electing, through the consensus protocol, a different primary replica of the WAL upon a failure of the first primary replica.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, further comprising:
+<claim-text>proposing an election for a next available consensus protocol to the metaWAL through the dormant master when the chosen at least one record is in need of an active lease; and</claim-text>
+<claim-text>designating the dormant master as a Previously Presented active master when the election succeeds.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, further comprising:
+<claim-text>creating a checkpoint through an interface associated with the WAL;</claim-text>
+<claim-text>issuing a start checkpoint when requested;</claim-text>
+<claim-text>writing a checkpoint record when requested; and</claim-text>
+<claim-text>issuing a finalize checkpoint when requested.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method of <claim-ref idref="CLM-00009">claim 9</claim-ref>, further comprising:
+<claim-text>converting, through a replication WAI, record, the start checkpoint and the finalize checkpoint to a special corresponding WAL replication value;</claim-text>
+<claim-text>rolling a current delta sequence of the WAL replication servlet to a subsequent delta sequence simultaneously at an instance prior to the special corresponding WAL replication value of the start checkpoint;</claim-text>
+<claim-text>attaching, to the subsequent delta sequence, information associated with the current delta sequence pertaining to an instance following the special corresponding WAL replication value of the start checkpoint; and</claim-text>
+<claim-text>discarding information of the current delta sequence simultaneously when a checkpoint at the subsequent delta sequence is created.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The method of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the information pertaining to the instance following the special corresponding WAL replication value is one of a prepared instance, an accepted instance and a committed instance.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The method of <claim-ref idref="CLM-00010">claim 10</claim-ref>, further comprising:
+<claim-text>creating a checkpoint file in the WAL at the subsequent delta sequence when the special corresponding WAL replication value of the finalize checkpoint is generated;</claim-text>
+<claim-text>initiating a recovery exclusively at the subsequent delta sequence; and</claim-text>
+<claim-text>ignoring a record in the current delta sequence.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The method of <claim-ref idref="CLM-00004">claim 4</claim-ref>, further comprising:
+<claim-text>suggesting an election, through the active master, when a lease of a current leader WAL expires; and</claim-text>
+<claim-text>permitting the application to create a lease-less WAL.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The method of <claim-ref idref="CLM-00013">claim 13</claim-ref>, further comprising:
+<claim-text>initializing a replication process of the WAL;</claim-text>
+<claim-text>initializing the metaWAL on the WAL replication servlet on the designated one of the node and the another node; and</claim-text>
+<claim-text>evaluating a need for a re-election.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The method of <claim-ref idref="CLM-00003">claim 3</claim-ref>, further comprising:
+<claim-text>maintaining, through the master, a persistent state of a host port for the WAL replication servlets.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The method of <claim-ref idref="CLM-00015">claim 15</claim-ref>, further comprising:
+<claim-text>maintaining, through the master, a persistent state of lease information; and</claim-text>
+<claim-text>writing the lease information to the metaWAL.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The method of <claim-ref idref="CLM-00016">claim 16</claim-ref>, further comprising:
+<claim-text>constructing a remainder of the persistent state with an array of information transmitted in a set of heartbeat replies by the WAL replication servlets.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The method of <claim-ref idref="CLM-00017">claim 17</claim-ref>, wherein the array of information includes at least one of a servlet identification information, a state information about a configuration of the WAL, a state information about a last chosen view, a state information of an expiration of a WAL, a state information about a desired extension of a lease, a state information of an activity that occurred at a last selection instance and a last chosen selection instance.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The method of <claim-ref idref="CLM-00018">claim 18</claim-ref>, further comprising:
+<claim-text>executing an alarm handler to perform a management activity.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The method of <claim-ref idref="CLM-00019">claim 19</claim-ref>, wherein the management activity includes at least one of creating a secondary replica WAL for the WAL, deleting the secondary replica WAL for the WAL, proposing an election, suggesting a catch-up and handling a lease extension request.</claim-text>
+</claim>
+<claim id="CLM-00021" num="00021">
+<claim-text>21. The method of <claim-ref idref="CLM-00020">claim 20</claim-ref>, further comprising:
+<claim-text>issuing a Remote Procedure Call (RPC) through the master to create the secondary replica WAI, for the WAI, when a number of secondary replica WAI,s for the WAL is below a requisite number; and</claim-text>
+<claim-text>issuing another RPC to delete at least one secondary replica WAL when the number of secondary replica WALs is above the requisite number.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00022" num="00022">
+<claim-text>22. The method of <claim-ref idref="CLM-00021">claim 21</claim-ref>, further comprising:
+<claim-text>selecting, through the master, a potential leader for the WAL when the WAL does not have a leader; and</claim-text>
+<claim-text>proposing an election for the WAL based on the potential leader.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00023" num="00023">
+<claim-text>23. The method of <claim-ref idref="CLM-00022">claim 22</claim-ref>, further comprising:
+<claim-text>proposing, through the master, removal of a dead replica WAL; and</claim-text>
+<claim-text>proposing, through the master, addition of a Previously Presented replica WAL.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00024" num="00024">
+<claim-text>24. The method of <claim-ref idref="CLM-00023">claim 23</claim-ref>, further comprising:
+<claim-text>determining, through the master, if a lag between the WAL of a WAL replication servlet and another WAL replication servlet hosting the same WAL is greater than a predetermined value thereof; and</claim-text>
+<claim-text>proposing catch-up to the WAL replication servlet when the lag is greater than the predetermined value.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00025" num="00025">
+<claim-text>25. The method of <claim-ref idref="CLM-00024">claim 24</claim-ref>, further comprising:
+<claim-text>granting extension of a lease for the WAI, when the WAI, is utilizing the lease.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00026" num="00026">
+<claim-text>26. The method of <claim-ref idref="CLM-00003">claim 3</claim-ref>, further comprising:
+<claim-text>maintaining, through the WAL replication servlet, a list of consensus instances;</claim-text>
+<claim-text>running a consensus algorithm at a consensus instance; and</claim-text>
+<claim-text>selecting a value from one of a user payload and a view change value for the consensus instance.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00027" num="00027">
+<claim-text>27. The method of <claim-ref idref="CLM-00026">claim 26</claim-ref>, wherein the user payload is a value given to the WAL replication servlet by a user of the distributed computing system.</claim-text>
+</claim>
+<claim id="CLM-00028" num="00028">
+<claim-text>28. The method of <claim-ref idref="CLM-00026">claim 26</claim-ref>, wherein the view change value results when an election proposal is made by at least one of the master and a self-generated election proposal by the WAL.</claim-text>
+</claim>
+<claim id="CLM-00029" num="00029">
+<claim-text>29. The method of <claim-ref idref="CLM-00028">claim 28</claim-ref>, further comprising:
+<claim-text>initiating the election proposal through the master when the master receives a heartbeat reply indicating that a leader of a last view has expired; and</claim-text>
+<claim-text>specifying through the master the consensus instance at which an election associated with the election proposal occurs.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00030" num="00030">
+<claim-text>30. The method of <claim-ref idref="CLM-00029">claim 29</claim-ref>, further comprising:
+<claim-text>initiating a leading WAL replication servlet to one of: add and remove a replica from a current view.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00031" num="00031">
+<claim-text>31. The method of <claim-ref idref="CLM-00030">claim 30</claim-ref>, further comprising:
+<claim-text>determining, through the master, a special consensus instance at which a particular election must be run.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00032" num="00032">
+<claim-text>32. The method of <claim-ref idref="CLM-00031">claim 31</claim-ref>, further comprising:
+<claim-text>running the consensus algorithm on at least one selection instance prior to the special consensus instance including an unchosen value;</claim-text>
+<claim-text>failing the particular election when the consensus algorithm run fails to choose a value;</claim-text>
+<claim-text>determining, through a latest chosen view, a replica that participates in the consensus algorithm; and</claim-text>
+<claim-text>running the particular election at the special selection instance.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00033" num="00033">
+<claim-text>33. The method of <claim-ref idref="CLM-00032">claim 32</claim-ref>, further comprising:
+<claim-text>executing the consensus algorithm on a consensus instance beyond the special consensus instance; and</claim-text>
+<claim-text>minimizing, through an optimized version of the consensus protocol, the communication overhead.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00034" num="00034">
+<claim-text>34. The method of <claim-ref idref="CLM-00026">claim 26</claim-ref>, further comprising:
+<claim-text>rejecting a write when a particular WAL replication servlet is not a leader of the WAL; and</claim-text>
+<claim-text>running the consensus algorithm to generate a value when the particular WAL replication servlet is the leader of the WAL.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00035" num="00035">
+<claim-text>35. The method of <claim-ref idref="CLM-00034">claim 34</claim-ref>, further comprising specifying an instance number at a particular consensus instance associated with the write.</claim-text>
+</claim>
+<claim id="CLM-00036" num="00036">
+<claim-text>36. The method of <claim-ref idref="CLM-00035">claim 35</claim-ref>, further comprising requiring the leader WAL replication servlet to use an optimized version of the consensus protocol at the consensus instance of the election.</claim-text>
+</claim>
+<claim id="CLM-00037" num="00037">
+<claim-text>37. The method of <claim-ref idref="CLM-00035">claim 35</claim-ref>, further comprising:
+<claim-text>accepting a value in a second phase of the consensus protocol;</claim-text>
+<claim-text>broadcasting the value in a third phase of the consensus protocol when the value is accepted by a majority; and</claim-text>
+<claim-text>transmitting a reply based on the value to the application after the second phase.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00038" num="00038">
+<claim-text>38. The method of <claim-ref idref="CLM-00037">claim 37</claim-ref>, further comprising:
+<claim-text>generating a proposal number for a run of the consensus protocol including a set of criteria;</claim-text>
+<claim-text>assigning a higher value to a proposal number with a higher first criterion than a proposal number with a lower first criterion;</claim-text>
+<claim-text>determining the higher value through the second criterion when the value for the first criterion is the same; and</claim-text>
+<claim-text>determining the higher value through a third criterion when the value for the first criterion and the value for the second criterion is the same.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00039" num="00039">
+<claim-text>39. The method of <claim-ref idref="CLM-00038">claim 38</claim-ref>, further comprising:
+<claim-text>employing the proposal number of a successful election for a subsequent client write;</claim-text>
+<claim-text>selecting a higher proposal number when a different WAL replication servlet is elected as the leader;</claim-text>
+<claim-text>implementing the first criterion when the leadership changes; and</claim-text>
+<claim-text>implementing the second criterion when the WAL replication servlet restarts.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00040" num="00040">
+<claim-text>40. The method of <claim-ref idref="CLM-00035">claim 35</claim-ref>, further comprising:
+<claim-text>obtaining information from a last chosen consensus instance in a heartbeat reply;</claim-text>
+<claim-text>requesting, through the master, a lagging WAL replication servlet to catch up with at least one other WAL replication servlet; and</claim-text>
+<claim-text>sending a suggestion for the catch-up in a succeeding heartbeat reply to the lagging WAL replication servlet.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00041" num="00041">
+<claim-text>41. The method of <claim-ref idref="CLM-00040">claim 40</claim-ref>, further comprising:
+<claim-text>transmitting, through the lagging WAL replication servlet, a request to read a chosen value from a remote replica WAL upon receipt of the catch-up suggestion;</claim-text>
+<claim-text>committing the chosen value to a local physical WAL; and</claim-text>
+<claim-text>applying the chosen value to an in-memory state thereof.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00042" num="00042">
+<claim-text>42. The method of <claim-ref idref="CLM-00003">claim 3</claim-ref>, further comprising:
+<claim-text>ensuring, through a lease, that a leader of the WAL possesses latest information about a content thereof;</claim-text>
+<claim-text>configuring the WAL to use the lease; and</claim-text>
+<claim-text>granting the lease through the master in a set of heartbeat messages.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00043" num="00043">
+<claim-text>43. The method of <claim-ref idref="CLM-00042">claim 42</claim-ref>, further comprising:
+<claim-text>ensuring, through the master, that an election is not proposed to another primary replica of the WAL; and</claim-text>
+<claim-text>suggesting a re-election to an existing leader to change a current replica of the WAL.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00044" num="00044">
+<claim-text>44. The method of <claim-ref idref="CLM-00043">claim 43</claim-ref>, further comprising:
+<claim-text>generating the lease and an election suggestion to the WAL replication servlet when the election is proposed; and</claim-text>
+<claim-text>securing a Previously Presented lease for a Previously Presented leader when the election succeeds.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00045" num="00045">
+<claim-text>45. The method of <claim-ref idref="CLM-00044">claim 44</claim-ref>, further comprising:
+<claim-text>ensuring that the lease expires at a remote WAL replication servlet prior to expiring at the master;</claim-text>
+<claim-text>recording a servlet time in the remote WAL replication servlet;</claim-text>
+<claim-text>communicating the servlet time at the remote WAL replication servlet in a heartbeat reply to the master; and</claim-text>
+<claim-text>generating the lease based on the servlet time and a duration thereof through the WAL replication servlet.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00046" num="00046">
+<claim-text>46. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>permitting the application to request the WAL to the WAL replication servlet;</claim-text>
+<claim-text>creating, through the WAL replication servlet, a primary replica of the WAL; and</claim-text>
+<claim-text>creating, through the master of the WAL replication servlet, at least one secondary replica based on a desired fault tolerance of the distributed computing system.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00047" num="00047">
+<claim-text>47. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising: communicating directly, through the application, to the WAL replication servlet
+<claim-text>when a specific WAL requires hosting; and</claim-text>
+<claim-text>specifying configuration parameters for the specific WAL.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00048" num="00048">
+<claim-text>48. The method of <claim-ref idref="CLM-00047">claim 47</claim-ref>, wherein the configuration parameters include at least one of a leading WAL name, a desired fault tolerance, a value associated with utilization of a lease by the specific WAL, a reset value on a reboot of a node of the distributed computing system configured to host the specific WAL, a reset value of a system restart and a value for whether an initial view is formed.</claim-text>
+</claim>
+<claim id="CLM-00049" num="00049">
+<claim-text>49. A non-transient computer readable medium storing in a tangible form at least computer executable instructions for, the computer executable instructions comprising:
+<claim-text>instructions associated with replicating a WAL hosted on a node of the distributed computing system on at least one another node the distributed computing system, the WAL including at least one state of at least one application executing on the distributed computing system; and</claim-text>
+<claim-text>instructions associated with requesting, through the application, creation of the WAL;</claim-text>
+<claim-text>instructions associated with creating a primary replica of the WAL through a WAL replication servlet;</claim-text>
+<claim-text>instructions associated with specifying, through the application, a desired fault tolerance; and</claim-text>
+<claim-text>instructions associated with creating a secondary replica based on the desired fault tolerance;</claim-text>
+<claim-text>instructions associated with resuming execution of the application on the distributed computing system upon a failure of the node hosting the WAL through the replicated WAL on the at least another node to persist at least the state of the at least one application on the distributed computing system.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00050" num="00050">
+<claim-text>50. The non-transient computer readable medium of <claim-ref idref="CLM-00049">claim 49</claim-ref>, further comprising:
+<claim-text>instructions associated with executing a consensus protocol to establish consensus between the WAL replication servlet and another WAL replication servlet;</claim-text>
+<claim-text>instructions associated with selecting a leader for the WAL, replication servlets through the consensus protocol; and</claim-text>
+<claim-text>instructions associated with optimizing the consensus protocol to minimize a communication overhead.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00051" num="00051">
+<claim-text>51. The non-transient computer readable medium of <claim-ref idref="CLM-00050">claim 50</claim-ref>, further comprising:
+<claim-text>instructions associated with creating a checkpoint;</claim-text>
+<claim-text>instructions associated with converting a starting checkpoint and a finalize checkpoint to an special corresponding WAL replication value;</claim-text>
+<claim-text>instructions associated with rolling a current delta sequence of the WAL replication servlet to a subsequent delta sequence simultaneously at an instance prior to the special corresponding WAL replication value of the starting checkpoint;</claim-text>
+<claim-text>instructions associated with attaching, to the subsequent delta sequence, information of the current delta sequence pertaining to an instance following the special corresponding WAL replication value of the start checkpoint; and</claim-text>
+<claim-text>instructions associated with discarding information of the current delta sequence simultaneously when a checkpoint at the subsequent delta sequence is created.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00052" num="00052">
+<claim-text>52. A distributed computing system comprising:
+<claim-text>a plurality of nodes, wherein each one of the nodes includes one or more processors rendering the distributed computing system operable to:
+<claim-text>replicate a Write Ahead Log (WAL) hosted on a node of a distributed computing system on at least another node of the distributed computing system, the WAL including at least one state of at least one application executing on the distributed computing system; and</claim-text>
+<claim-text>resume execution of the application on the distributed computing system upon a failure of the node hosting the WAL through the replicated WAL on the at least another node to persist at least the state of the at least one application on the distributed computing system,</claim-text>
+</claim-text>
+<claim-text>wherein an instance of a WAL replication servlet is configured to execute on the node and the another node,</claim-text>
+<claim-text>wherein a replica of the WAL is configured to be created through one of the instance of the WAL replication servlet executing on the node and the instance of the WAL replication servlet executing on the another node, and</claim-text>
+<claim-text>wherein a master of the WAL replication servlets is chosen on the one of the node and the another node to perform a management activity associated with the distributed computing system, and wherein the management activity includes at least one of creating a secondary WAL, deleting the secondary WAL, proposing an election, suggesting a catch-up and handling a lease extension request.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00053" num="00053">
+<claim-text>53. The distributed computing system of <claim-ref idref="CLM-00052">claim 52</claim-ref>, the distributed computing system operable to: optimize a consensus protocol for communication associated with WAL replication to minimize a communication overhead.</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

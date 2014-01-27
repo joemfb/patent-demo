@@ -1,0 +1,1906 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08625177-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08625177</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12547624</doc-number>
+<date>20090826</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>2008-218835</doc-number>
+<date>20080827</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<us-term-extension>238</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>03</class>
+<subclass>F</subclass>
+<main-group>3</main-group>
+<subgroup>08</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>358518</main-classification>
+<further-classification>358  19</further-classification>
+<further-classification>358515</further-classification>
+<further-classification>358520</further-classification>
+<further-classification>358527</further-classification>
+<further-classification>382162</further-classification>
+<further-classification>382167</further-classification>
+<further-classification>345590</further-classification>
+<further-classification>345600</further-classification>
+<further-classification>345603</further-classification>
+<further-classification>345604</further-classification>
+</classification-national>
+<invention-title id="d2e71">Image processing apparatus, image forming apparatus, image processing method, and storage medium, each of which performs, on monochrome image data to image display device, or two-color image data, color matching process of reducing differences in color between image to be outputted by image display device and image to be outputted by printing apparatus</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5566001</doc-number>
+<kind>A</kind>
+<name>Saidi et al.</name>
+<date>19961000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5946412</doc-number>
+<kind>A</kind>
+<name>Nishikawa</name>
+<date>19990800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>382162</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>5987221</doc-number>
+<kind>A</kind>
+<name>Bearss et al.</name>
+<date>19991100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6037939</doc-number>
+<kind>A</kind>
+<name>Kashiwagi et al.</name>
+<date>20000300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>6204932</doc-number>
+<kind>B1</kind>
+<name>Haneda et al.</name>
+<date>20010300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>358  19</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>6839151</doc-number>
+<kind>B1</kind>
+<name>Andree et al.</name>
+<date>20050100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>6934054</doc-number>
+<kind>B1</kind>
+<name>Hilsdorf et al.</name>
+<date>20050800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>358  19</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>7085006</doc-number>
+<kind>B2</kind>
+<name>Yokoyama et al.</name>
+<date>20060800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>2002/0167528</doc-number>
+<kind>A1</kind>
+<name>Edge</name>
+<date>20021100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>2003/0044082</doc-number>
+<kind>A1</kind>
+<name>Katayama et al.</name>
+<date>20030300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>2004/0125411</doc-number>
+<kind>A1</kind>
+<name>Tonami et al.</name>
+<date>20040700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>358  21</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>2004/0239995</doc-number>
+<kind>A1</kind>
+<name>Sadowara</name>
+<date>20041200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>358  21</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>2005/0041261</doc-number>
+<kind>A1</kind>
+<name>Narushima et al.</name>
+<date>20050200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>358  19</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>2005/0052540</doc-number>
+<kind>A1</kind>
+<name>Nakami</name>
+<date>20050300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>2005/0254691</doc-number>
+<kind>A1</kind>
+<name>Nakami</name>
+<date>20051100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>2006/0098220</doc-number>
+<kind>A1</kind>
+<name>Oh et al.</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>2006/0158670</doc-number>
+<kind>A1</kind>
+<name>Park</name>
+<date>20060700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>358  19</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>2007/0035706</doc-number>
+<kind>A1</kind>
+<name>Margulis</name>
+<date>20070200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>2007/0153316</doc-number>
+<kind>A1</kind>
+<name>Edge</name>
+<date>20070700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>2007/0280533</doc-number>
+<kind>A1</kind>
+<name>Huang</name>
+<date>20071200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>2008/0001972</doc-number>
+<kind>A1</kind>
+<name>Callway et al.</name>
+<date>20080100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>345660</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>2008/0030816</doc-number>
+<kind>A1</kind>
+<name>Jang</name>
+<date>20080200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>2008/0231903</doc-number>
+<kind>A1</kind>
+<name>Misawa et al.</name>
+<date>20080900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>358  21</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>2008/0285079</doc-number>
+<kind>A1</kind>
+<name>Kurakata</name>
+<date>20081100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>2009/0167872</doc-number>
+<kind>A1</kind>
+<name>Nakami</name>
+<date>20090700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>2010/0085445</doc-number>
+<kind>A1</kind>
+<name>Nakami</name>
+<date>20100400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>CN</country>
+<doc-number>1498494</doc-number>
+<kind>A</kind>
+<date>20040500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>CN</country>
+<doc-number>1669313</doc-number>
+<kind>A</kind>
+<date>20050900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>CN</country>
+<doc-number>101123669</doc-number>
+<kind>A</kind>
+<date>20080200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>JP</country>
+<doc-number>9-44128</doc-number>
+<kind>A</kind>
+<date>19970200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00031">
+<document-id>
+<country>JP</country>
+<doc-number>9-135316</doc-number>
+<kind>A</kind>
+<date>19970500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00032">
+<document-id>
+<country>JP</country>
+<doc-number>11-127360</doc-number>
+<kind>A</kind>
+<date>19990500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00033">
+<document-id>
+<country>JP</country>
+<doc-number>2001-222145</doc-number>
+<kind>A</kind>
+<date>20010800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00034">
+<document-id>
+<country>JP</country>
+<doc-number>2002-232708</doc-number>
+<kind>A</kind>
+<date>20010800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00035">
+<document-id>
+<country>JP</country>
+<doc-number>2002-269550</doc-number>
+<kind>A</kind>
+<date>20020900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00036">
+<document-id>
+<country>JP</country>
+<doc-number>2003-224734</doc-number>
+<kind>A</kind>
+<date>20030800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00037">
+<document-id>
+<country>JP</country>
+<doc-number>2007-28336</doc-number>
+<kind>A</kind>
+<date>20070200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00038">
+<document-id>
+<country>JP</country>
+<doc-number>2008-155373</doc-number>
+<kind>A</kind>
+<date>20080700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00039">
+<othercit>US Office Action for U.S. Appl. No. 12/583,807 mailed Jul. 8, 2011.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00040">
+<othercit>Tanaka et al., &#x201c;Color Calibration System Using Neural Networks&#x201d;, Apr. 2000, Sharp Technical Journal, No. 76, p. 15-19.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00041">
+<othercit>US Office Action for U.S. Appl. No. 12/547,989 mailed Mar. 2, 2012.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00042">
+<othercit>US Office Action for U.S. Appl. No. 12/547,965 mailed Jun. 19, 2012.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00043">
+<othercit>US Office Action for U.S. Appl. No. 12/547,989 mailed Sep. 6, 2012.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00044">
+<othercit>US Office Action for U.S. Appl. No. 12/583,803 mailed Jun. 6, 2012.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00045">
+<othercit>US Office Action for related U.S. Appl. No. 12/547,989 mailed Mar. 1, 2013.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00046">
+<othercit>US Office Action for related U.S. Appl. No. 12/583,803 mailed Mar. 25, 2013.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00047">
+<othercit>U.S. Office Action for related U.S. Appl. No. 12/547,557 mailed Dec. 21, 2012.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00048">
+<othercit>U.S. Final Office Action for related U.S. Appl. No. 12/583,803 mailed Dec. 3, 2012.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00049">
+<othercit>US Advisory Action for related U.S. Appl. No. 12/583,803 mailed Feb. 8, 2013.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00050">
+<othercit>US Office Action, for U.S. Appl. No. 12/754,398 dated Jun. 6, 2013.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00051">
+<othercit>U.S. Office Action mailed Jul. 5, 2013 in related U.S. Appl. No. 12/583,803.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00052">
+<othercit>US Office Action for related U.S. Appl. No. 12/547,557 mailed Jun. 14, 2013.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00053">
+<othercit>US Final Office Action for U.S. Appl. No. 12/547,989 mailed Sep. 13, 2013.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>7</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>None</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>15</number-of-drawing-sheets>
+<number-of-figures>17</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20100053709</doc-number>
+<kind>A1</kind>
+<date>20100304</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Minami</last-name>
+<first-name>Masanori</first-name>
+<address>
+<city>Osaka</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Gotoh</last-name>
+<first-name>Makio</first-name>
+<address>
+<city>Osaka</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Minami</last-name>
+<first-name>Masanori</first-name>
+<address>
+<city>Osaka</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Gotoh</last-name>
+<first-name>Makio</first-name>
+<address>
+<city>Osaka</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Birch, Stewart, Kolasch &#x26; Birch, LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Sharp Kabushiki Kaisha</orgname>
+<role>03</role>
+<address>
+<city>Osaka</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Cato</last-name>
+<first-name>Miya J</first-name>
+<department>2676</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">An image processing apparatus of the present invention includes a color matching section for performing, on monochrome or two-color image data to be supplied to an image display device, a color matching process of reducing differences in color from a single- or two-color image to be outputted by an image display device, and as such, can display a comfortable preview of a single- or two-color image data by reducing differences in color between an image to be previewed and an image to be actually printed.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="250.70mm" wi="180.42mm" file="US08625177-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="255.44mm" wi="178.05mm" orientation="landscape" file="US08625177-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="253.58mm" wi="179.49mm" file="US08625177-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="264.16mm" wi="177.12mm" orientation="landscape" file="US08625177-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="257.39mm" wi="175.68mm" file="US08625177-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="253.07mm" wi="173.14mm" file="US08625177-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="254.51mm" wi="181.95mm" file="US08625177-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="254.00mm" wi="171.28mm" orientation="landscape" file="US08625177-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="262.21mm" wi="173.23mm" orientation="landscape" file="US08625177-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="257.81mm" wi="177.04mm" orientation="landscape" file="US08625177-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="258.40mm" wi="175.18mm" orientation="landscape" file="US08625177-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="259.33mm" wi="176.11mm" orientation="landscape" file="US08625177-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="258.83mm" wi="168.40mm" file="US08625177-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="260.77mm" wi="177.55mm" file="US08625177-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="262.72mm" wi="178.05mm" file="US08625177-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="232.16mm" wi="137.92mm" file="US08625177-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<p id="p-0002" num="0001">This Nonprovisional application claims priority under 35 U.S.C. &#xa7;119(a) on Patent Application No. 2008-218835 filed in Japan on Aug. 27, 2008, the entire contents of which are hereby incorporated by reference.</p>
+<heading id="h-0001" level="1">TECHNICAL FIELD</heading>
+<p id="p-0003" num="0002">The present invention relates to an image processing apparatus, an image forming apparatus, an image processing method, and a computer-readable storage medium containing an image processing program, each of which serves to display a thumbnail or preview of input image data.</p>
+<heading id="h-0002" level="1">BACKGROUND ART</heading>
+<p id="p-0004" num="0003">Some image forming apparatuses such as copying machines and multifunction printers display, in accordance with image data processed according to the type of document and the setting conditions (e.g., print density, enlarging/reducing ratio, single-side printing/duplex printing, margin size), a preview of a single image to be printed or a combination of images to be printed.</p>
+<p id="p-0005" num="0004">Such a preview display is described, for example, in Patent Literature 1. In Patent Literature 1, a monochrome mode in which to copy a monochrome image having only one color (i.e., a black-and-white image such as a document or a monochrome image, such as a flier (leaflet), which has one color) and a full-color mode in which to copy a full-color image having at least two colors are included, and before an image to be copied in the monochrome mode and the full-color mode is recorded onto a sheet of paper, a preview of the image is displayed by a display device.</p>
+<p id="p-0006" num="0005">Further, for example, Patent Literature 2 discloses a technique for generating and displaying a preview image without performing edge enhancement on image data. In Patent Literature 2, RGB luminance signals read by a scanner are converted into CMY density (pixel value) signals by a logarithmic converter circuit. The resulting CMY density signals are processed through a masking/UCR circuit so as to be color-matched to the characteristics of a printer, processed by a circuit for performing image editing such as trimming, painting and enlarging/reducing (zooming) and a spatial filter circuit for performing a smoothing process on a printed-picture document, and then processed by a backward masking circuit for performing a conversion opposite to that performed by the masking/UCR circuit, an anti-logarithmic converter circuit for restoring the CMY density signals to the RGB luminance signals, a 3&#xd7;3 matrix converter circuit for converting the RGB image signals from the color space of the scanner into the color space of the display device, and a gamma correction circuit for correcting the nonlinearity of the display device, whereby the preview of the image data is displayed by the display device.</p>
+<heading id="h-0003" level="1">CITATION LIST</heading>
+<p id="p-0007" num="0006">Patent Literature 1
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0007">Japanese Patent Application Publication, Tokukai, No. 2001-222145 A (Publication Date: Aug. 17, 2001)</li>
+</ul>
+</p>
+<p id="p-0008" num="0008">Patent Literature 2
+<ul id="ul0002" list-style="none">
+    <li id="ul0002-0001" num="0009">Japanese Patent Application Publication, Tokukaihei, No. 9-135316 A (Publication Date: May 20, 1997)</li>
+</ul>
+</p>
+<heading id="h-0004" level="1">SUMMARY OF INVENTION</heading>
+<heading id="h-0005" level="1">Technical Problem</heading>
+<p id="p-0009" num="0010">Patent Literature 1 describes a preview of a monochrome image, but does not describe a correction process in displaying monochrome image data on the display device. This causes a mismatch in color between an image to be printed and an image to be displayed by the display device. Further, Patent Literature 2 does not describe a single- or two-color display of read image data, but when displaying a single- or two-color preview, Patent Literature 2 encounters the following problems (1) and (2):</p>
+<p id="p-0010" num="0011">(1) although Patent Literature 2 describes the masking/UCR circuit, which generates CMYK signals by 4&#xd7;8 matrix calculation in consideration of terms of second degree, and the backward masking circuit, which performs a reverse conversion by 3&#xd7;4 matrix calculation, such a method causes an increase in color difference, thus causing a mismatch in color between an image to be printed and an image to be displayed by the display device; and</p>
+<p id="p-0011" num="0012">(2) the backward masking circuit, the anti-logarithmic converter circuit, and the 3&#xd7;3 matrix converter circuit are provided as image processing circuits for previewing separately from image processing circuits for printing, thus causing an increase in circuit size.</p>
+<p id="p-0012" num="0013">As described above, in single- or two-color printing, the conventional techniques result in differences in color between an image to be displayed for previewing and an image to be actually printed thus causing an increase in circuit size.</p>
+<heading id="h-0006" level="1">Solution to Problem</heading>
+<p id="p-0013" num="0014">The present invention has been made in view of the foregoing problems, and it is an object of the present invention to provide an image processing apparatus and the like capable of displaying a comfortable preview of a single- or two-color image by reducing differences in color between an image to be displayed for previewing and an image to be actually printed.</p>
+<p id="p-0014" num="0015">In order to solve the foregoing problems, an image processing apparatus according to the present invention is an image processing apparatus, having a color conversion section for converting image data into monochrome image data, which supplies the monochrome image data to a printing apparatus for executing image printing and supplies the monochrome image data to an image display device for displaying a preview, the image processing apparatus including: a color matching section for performing, on the monochrome image data to be supplied to the image display device, a color matching process of reducing differences in color between an image to be outputted by the image display device and an image to be outputted by the printing apparatus.</p>
+<p id="p-0015" num="0016">In order to solve the foregoing problems, an image processing apparatus according to the present invention is an image processing apparatus, having a color conversion section for converting image data into two-color image data, which supplies the two-color image data to a printing apparatus for executing image printing and supplies the two-color image data to an image display device for displaying a preview, the image processing apparatus including: a color matching section for performing, on the two-color image data to be supplied to the image display device, a color matching process of reducing differences in color between an image to be outputted by the image display device and an image to be outputted by the printing apparatus.</p>
+<p id="p-0016" num="0017">In order to solve the foregoing problems, an image processing apparatus according to the present invention is an image processing apparatus, including a first color conversion section for converting image data into monochrome converted image data and a second color conversion section for converting the image data into two-color converted image data, which supplies, to a printing apparatus for executing image printing, the converted image data converted by the first or second color conversion section, and which supplies, to an image display device for displaying a preview, the converted image data converted by the first or second color conversion section, the image processing apparatus including: a color matching section for performing, on the converted image data to be supplied to the image display device, a color matching process of reducing differences in color between an image to be outputted by the image display device and an image to be outputted by the printing apparatus.</p>
+<heading id="h-0007" level="1">Advantageous Effects of Invention</heading>
+<p id="p-0017" num="0018">According to the foregoing arrangement, a monochrome image or a two-color image can be printed by supplying the monochrome image data or the two-color image data (converted image data) to the printing apparatus, and a preview of the monochrome image or the two-color image can be displayed by supplying the monochrome image data or the two-color image data to the image display device. Here, on the monochrome image data or the two-color image data to be supplied to the image display device, the color matching process of reducing differences in color between an image to be outputted by the image display device and an image to be outputted by the printing apparatus is performed. This makes it possible to display a comfortable preview of a monochrome image or a two-color image by reducing differences in color between an image to be previewed and an image to be actually printed.</p>
+<p id="p-0018" num="0019">For a fuller understanding of the nature and advantages of the invention, reference should be made to the ensuing detailed description taken in conjunction with the accompanying drawings.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0008" level="1">BRIEF DESCRIPTION OF DRAWINGS</heading>
+<p id="p-0019" num="0020"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram showing an image forming apparatus of the present embodiment and showing the flow of image data in a printing process in a copier mode and a full-color mode.</p>
+<p id="p-0020" num="0021"><figref idref="DRAWINGS">FIG. 2</figref> shows block diagrams showing a part inside of an image processing apparatus (a) performing a printing process in the copier mode and a single-color mode and (b) performing a printing process in the copier mode and a two-color mode.</p>
+<p id="p-0021" num="0022"><figref idref="DRAWINGS">FIG. 3</figref> is a block diagram showing the image forming apparatus of the present embodiment and showing the flow of image data in a preview display process in the copier mode and the full-color mode.</p>
+<p id="p-0022" num="0023"><figref idref="DRAWINGS">FIG. 4</figref> shows block diagrams showing a part inside of the image processing apparatus (a) performing a preview display in the copier mode and the singe-color mode and (b) performing a preview display in the copier mode and the two-color mode.</p>
+<p id="p-0023" num="0024"><figref idref="DRAWINGS">FIG. 5</figref> shows gamma curves, i.e., (a) an example of a gamma curve corresponding to the display characteristics of an image display device and (b) a solid line representing a gamma curve for texts to be sharply displayed and a dotted line representing a gamma curve corresponding to the display characteristics of the image display device.</p>
+<p id="p-0024" num="0025"><figref idref="DRAWINGS">FIG. 6</figref> is a flow chart showing steps of a process that is performed by the image forming apparatus in the copier mode and the full-color mode.</p>
+<p id="p-0025" num="0026"><figref idref="DRAWINGS">FIG. 7</figref> is a block diagram showing the image forming apparatus of the present embodiment and showing the flow of image data in a transmission process in a facsimile transmission mode.</p>
+<p id="p-0026" num="0027"><figref idref="DRAWINGS">FIG. 8</figref> is a block diagram showing the image forming apparatus of the present embodiment and showing the flow of image data in a preview display process in the facsimile transmission mode.</p>
+<p id="p-0027" num="0028"><figref idref="DRAWINGS">FIG. 9</figref> is a block diagram showing the image forming apparatus of the present embodiment and showing the flow of image data in a printing process in a facsimile reception mode.</p>
+<p id="p-0028" num="0029"><figref idref="DRAWINGS">FIG. 10</figref> is a block diagram showing the image forming apparatus of the present embodiment and showing the flow of image data in a preview display process in the facsimile reception mode.</p>
+<p id="p-0029" num="0030"><figref idref="DRAWINGS">FIG. 11</figref> is a block diagram showing a modification of the image forming apparatus of the present embodiment.</p>
+<p id="p-0030" num="0031"><figref idref="DRAWINGS">FIG. 12</figref> is a block diagram detailing a two-color printing process section of the image forming apparatus of the present embodiment.</p>
+<p id="p-0031" num="0032"><figref idref="DRAWINGS">FIG. 13</figref> is a flow chart showing a process that is performed by a data conversion section of the two-color printing process section.</p>
+<p id="p-0032" num="0033"><figref idref="DRAWINGS">FIG. 14</figref> shows a CMY color space, i.e., (a) a plane RYWM in the CMY color space, (b) a cross-section KRWC in the CMY color space, and (c) a perspective view of the CMY color space.</p>
+<p id="p-0033" num="0034"><figref idref="DRAWINGS">FIG. 15</figref> shows a RGB color space, i.e., (a) a plane KRYG in the RGB color space, (b) a plane KRMB in the RGB color space, and (c) a perspective view of the RGB color space.</p>
+<p id="p-0034" num="0035"><figref idref="DRAWINGS">FIG. 16</figref> shows a neural network of an input model.</p>
+<p id="p-0035" num="0036"><figref idref="DRAWINGS">FIG. 17</figref> shows a neural network of an output model.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0009" level="1">DESCRIPTION OF EMBODIMENTS</heading>
+<heading id="h-0010" level="1">Embodiment 1</heading>
+<p id="p-0036" num="0037">One embodiment of an image forming apparatus of the present invention is described below with reference to the attached drawings. <figref idref="DRAWINGS">FIG. 1</figref> is a block diagram schematically showing an arrangement of an image forming apparatus <b>100</b> of the present embodiment.</p>
+<p id="p-0037" num="0038">The image forming apparatus <b>100</b> of the present embodiment is a digital color multifunction printer that executes a mode selected from among a copier mode, a print mode, a facsimile transmission mode, a facsimile reception mode, and an image transmission mode.</p>
+<p id="p-0038" num="0039">The copier mode (copy mode) means a mode in which to read image data (generates image data by scanning a document) and print an image of the image data onto a sheet of paper. The print mode means a mode in which to print, onto a sheet of paper, an image of image data sent from a terminal apparatus connected to the image forming apparatus <b>100</b>. The facsimile transmission mode means: a normal facsimile mode in which to transmit, to an external apparatus via a telephone line, image data obtained by scanning a document; and an Internet facsimile mode in which to transmit an e-mail with the image data attached thereto. The facsimile reception mode means a mode in which to receive image data from an external apparatus by facsimile and print an image of the received image data onto a sheet of paper. The image transmission mode means: (1) a mode (scan to e-mail mode) in which to attach, to an e-mail, image data generated by scanning a document, and transmit the e-mail to a specified address; (2) a mode (scan to ftp mode) in which to transmit, to a folder specified by a user, image data generated by scanning a document; and (3) a mode (scan to usb mode) in which to transmit, to a USB memory mounted in the image forming apparatus <b>100</b>, image data generated by scanning a document. It should be noted that the facsimile transmission mode and the image transmission mode are each classified as above according to the type of image processing operation.</p>
+<p id="p-0039" num="0040">Further, in the copier mode or print mode, the user can select a black-and-white mode in which to output a black-and-white image, a full-color mode in which to output a full-color mage, a single-color mode in which to output a monochrome image having only one color desired by the user, or a two-color mode in which to output a two-color image having black and one color desired by the user.</p>
+<p id="p-0040" num="0041">For example, in cases where the user selects the single-color mode in the copier mode or print mode, the monochromatic image is printed. Further, in cases where the user selects the two-color mode in the copier mode or print mode, the two-color image is printed. It should be noted that in the single-color mode or two-color mode, the user selects his/her desired color from among R (red), G (green), B (blue), C (cyan), M (magenta), and Y (yellow).</p>
+<p id="p-0041" num="0042">Further, according to the present invention it is possible to set an automatic discrimination mode in the copier mode. In the automatic discrimination mode, the image forming apparatus <b>100</b> performs auto color selection (ACS) for judging whether an object to be copied is a color document or a black-and-white document. In the case of a color document, the image forming apparatus <b>100</b> performs an output process in the full-color mode. In the case of a black-and-white document, the image forming apparatus <b>100</b> performs an output process in the black-and-white mode.</p>
+<p id="p-0042" num="0043">As shown in <figref idref="DRAWINGS">FIG. 1</figref>, the image forming apparatus <b>100</b> includes an image input apparatus <b>101</b>, an image processing apparatus <b>102</b>, an image output apparatus <b>103</b>, an image display device <b>104</b>, a receiving device <b>105</b>, a transmitting device <b>106</b>, a storage device <b>107</b>, and a control section <b>108</b>.</p>
+<p id="p-0043" num="0044">The image input apparatus <b>101</b> is image scanning means for generating image data by scanning a document in the copier mode, the facsimile transmission mode, and the image transmission mode. More specifically, the image input apparatus <b>101</b>, which includes a scanner section having a CCD (charge-coupled device), converts light reflected by a document into an electrical signal separated into colors RGB (i.e., into an analog image signal) and sends the electrical signal to the image processing apparatus <b>102</b>.</p>
+<p id="p-0044" num="0045">It should be noted that the image input apparatus <b>101</b> scans a document image in full color in any one of the full-color mode, the single-color mode, and the two-color mode. Further, the image input apparatus <b>101</b> scans a document image in full color even in cases where the image processing apparatus <b>102</b> performs the aforementioned auto color selection.</p>
+<p id="p-0045" num="0046">The image processing apparatus <b>102</b> is an integrated circuit, constituted by an ASIC (application specific integrated circuit), which performs image processing on image data (image signals). As shown in <figref idref="DRAWINGS">FIG. 1</figref>, the image processing apparatus <b>102</b> includes the following blocks: an A/D (analog/digital) conversion section <b>2</b>, a shading correction section <b>3</b>, an input processing section <b>4</b>, an automatic document type discrimination section <b>5</b>, a segmentation process section <b>6</b>, a compression (encode) section <b>7</b>, a segmentation class signal compression (encode) section <b>8</b>, a decompression (decode) section <b>9</b>, a segmentation class signal decompression (decode) section <b>10</b>, an image-quality adjustment section <b>11</b>, a two-color printing process section <b>12</b>, a color correction section <b>13</b>, a black generation and under color removal section <b>14</b>, a spatial filter section <b>15</b>, an enlarging/reducing (zoom process) section <b>16</b>, an output tone correction section <b>17</b>, and a halftone generation section <b>18</b>. Processes that are performed by the blocks of the image processing apparatus <b>102</b> will be detailed later.</p>
+<p id="p-0046" num="0047">In the copier mode, facsimile transmission mode, or image transmission mode, the image processing apparatus <b>102</b> performs image processing on image data sent from the image input apparatus <b>101</b>. In the print mode, the image processing apparatus <b>102</b> performs image processing on image data transmitted from a terminal apparatus. In the facsimile reception mode, the image processing apparatus <b>102</b> performs image processing on image data received from an external apparatus. Then, in the copier mode, print mode, or facsimile reception mode, the image processing apparatus <b>102</b> transmits, to the image output apparatus <b>103</b>, the image data subjected to image processing. In the facsimile transmission mode, the image processing apparatus <b>102</b> transmits, to the transmitting device <b>106</b>, the image data subjected to image processing. Further, in the scan to e-mail mode, which is an image transmission mode, the image processing apparatus <b>102</b> transmits, to a mail processing section (not shown), the image data subjected to image processing. In the scan to ftp mode, which is another image transmission mode, the image processing apparatus <b>102</b> transmits, to a predetermined folder, the image data subjected to image processing. In the scan to usb mode, which is the other image transmission mode, the image processing apparatus <b>102</b> transmits, to a predetermined USB memory, the image data subjected to image processing.</p>
+<p id="p-0047" num="0048">The image output apparatus (printer) <b>103</b> forms, onto a recording medium (e.g., a sheet of paper), an image of image data sent from the image processing apparatus <b>102</b>. An example is an electrophotographic or ink-jet color printer. The term &#x201c;printing&#x201d; in the present embodiment means printing in the print mode, printing in the copier mode, or printing in the facsimile reception mode.</p>
+<p id="p-0048" num="0049">The image display device <b>104</b> is a liquid crystal display provided in an operation panel (not shown) of the image forming apparatus <b>100</b>, and is display means capable of displaying a color image. Further, the image display device <b>104</b>, covered with a touch panel, functions as an input interface of the image forming apparatus <b>100</b>. That is, the image display device <b>104</b> displays a GUI for inputting various commands to the image forming apparatus <b>100</b> and an operation guide.</p>
+<p id="p-0049" num="0050">Further, before execution of printing in the copier mode or facsimile reception mode, the image forming apparatus <b>100</b> of the present embodiment can display, on the image display device <b>104</b>, a preview of an image to be printed. Furthermore, before execution of transmission in the facsimile transmission mode or image transmission mode, the image forming apparatus <b>100</b> of the present embodiment can display, on the image display device <b>104</b>, a preview of an image to be transmitted.</p>
+<p id="p-0050" num="0051">Further, in the copier mode or image transmission mode and the full-color mode, the image display device <b>104</b> displays a preview of a full-color image. In the copier mode or image transmission mode and the single-color mode, the image display device <b>104</b> displays a preview of a monochrome image. In the copier mode or image transmission mode and the two-color mode, the image display device <b>104</b> displays a preview of a two-color image.</p>
+<p id="p-0051" num="0052">The image display device <b>104</b> is not limited to the liquid crystal display, and may be display means other than the liquid crystal display (e.g., an organic EL display or a plasma display).</p>
+<p id="p-0052" num="0053">The receiving device <b>105</b> is a device, connected to a telephone line or the Internet, which receives image data from an external apparatus by facsimile communication. Further, the transmitting device <b>106</b> is a device, connected to a telephone line or the Internet, which transmits, to an external apparatus by facsimile communication, image data inputted to the image input apparatus <b>101</b>.</p>
+<p id="p-0053" num="0054">The storage device <b>107</b> is a hard disk in which image data to be processed in the image processing apparatus <b>102</b> is temporarily stored.</p>
+<p id="p-0054" num="0055">The control section <b>108</b> is a computer including a processor such as a CPU (central processing unit) or a DSP (digital signal processor), and comprehensively controls various types of hardware provided in the image forming apparatus <b>100</b>. Further, the control section <b>108</b> functions to control data transfer between pieces of hardware provided in the image forming apparatus <b>100</b>.</p>
+<p id="p-0055" num="0056">The following details the processes that are executed by the blocks of the image processing apparatus <b>102</b> in the copier mode, the facsimile transmission mode, the facsimile reception mode, and the image transmission mode, respectively. It should be noted that the image processing apparatus <b>102</b> of the present embodiment has a block that operates while a mode a is being used but does not operate while a mode b different from the mode a is being used (the mode a and the mode b each being any one of the copier mode, the facsimile transmission mode, the facsimile reception mode, and the image transmission mode). Further, the image processing apparatus <b>102</b> has a block that varies in processing according to the mode being used. Furthermore, the image processing apparatus <b>102</b> has: a block that, even in the same mode, operates in processing of image data to be printed (transmitted) but does not operate in processing of image data to be previewed; and a block that, even in the same mode, varies between processing of image data to be printed (transmitted) and processing of image data to be previewed. In the following, therefore, the processes that are executed by the blocks of the image processing apparatus <b>102</b> are described according to the type of mode, and those processes which are executed in a printing process (or in a transmission process) and those processes which are executed at the time of a preview display are described separately.</p>
+<p id="p-0056" num="0057">(1) Copier Mode</p>
+<p id="p-0057" num="0058">(1-1) Printing Process (Image Print Job)</p>
+<p id="p-0058" num="0059">In the following, the image processing apparatus <b>102</b> is described with reference to <figref idref="DRAWINGS">FIG. 1</figref>, which shows the flow of image data in the image processing apparatus <b>102</b> performing a printing process in the copier mode and the full-color mode.</p>
+<p id="p-0059" num="0060">The A/D (analog/digital) conversion section <b>2</b> is a block that receives color image signals (RGB analog signals) from the image input apparatus <b>101</b> and converts the color image signals into digital image data (RGB digital signals). The shading correction section <b>3</b> is a block that receives image data form the A/D conversion section <b>2</b> and subjects the image data to a process of removing various distortions generated in illuminating, image-focusing, and image-sensing systems of the image input apparatus <b>101</b>. The input processing section <b>4</b> is a block that receives RGB image data from the shading correction section <b>3</b> and subjects each of the RGB image data to a tone conversion process such as a gamma correction process.</p>
+<p id="p-0060" num="0061">In accordance with RGB image data (RGB density signals) subjected to processing such as gamma correction in the input processing section <b>4</b>, the automatic document type discrimination section <b>5</b> discriminates among types of documents scanned by the image input apparatus <b>101</b>. It should be noted here that the types of documents among which the automatic document type discrimination section <b>5</b> discriminates are a text document, a printed-picture document, a text/printed-picture document containing a text and a printed picture together, and the like. Further, in accordance with the image data, the automatic document type discrimination section <b>5</b> can perform auto color selection (ACS) for judging whether a scanned document is a color document or a black-and-white document and a process for judging whether or not a scanned document is a blank document (a solid-color document). It should be noted that the automatic document type discrimination section <b>5</b> sends the RGB image data to the segmentation process section <b>6</b> and the compression section <b>7</b>.</p>
+<p id="p-0061" num="0062">In accordance with the RGB image data sent from the automatic document type discrimination section <b>5</b>, the segmentation process section <b>6</b> performs a process of judging, for each pixel of the input image, what image area the pixel is classified into and generating a segmentation class signal indicating a result of the judgment. It should be noted here that the types of image areas among which the segmentation process section <b>6</b> discriminates are a black text area, a color text area, a halftone dot area, and the like. The segmentation process may take the form of a process of judging, for each block of pixels, what image area the block is classified into, instead of taking the form of a process of judging, for each pixel, what image area the pixel is classified into.</p>
+<p id="p-0062" num="0063">The compression section <b>7</b> is a block that performs a process of encoding image data (RGB signals) sent from the automatic document type discrimination section <b>5</b>. The encoding is performed, for example, based on JPEG (Joint Photographic Experts Group).</p>
+<p id="p-0063" num="0064">The segmentation class signal compression section <b>8</b> is a block that performs a compression (encode) process on a segmentation class signal generated for each pixel. The compression process in the segmentation class signal compression section <b>8</b> is performed, for example, based on MMR (Modified Modified Reed) or MR (Modified Reed), which is a lossless compression technology.</p>
+<p id="p-0064" num="0065">The control section <b>108</b> receives encoded codes (encoded image data) from the compression section <b>7</b> and segmentation class signal codes (encoded segmentation class signals) from the segmentation class signal compression section <b>8</b>, stores them temporarily in the storage device <b>107</b>, and manages them as filing data. Then, in response to an instruction for a copy output operation, the control section <b>108</b> reads out, from the storage device <b>107</b>, an encoded code and a segmentation class signal code corresponding to the encoded code, and sends them to the decompression section <b>9</b> and the segmentation class signal decompression section <b>10</b>, respectively.</p>
+<p id="p-0065" num="0066">The control section <b>108</b> writes the storage address or data name of the encoded code and the storage address of the segmentation class signal code in a management table in association with each other. That is, the control section <b>108</b> controls reading or writing of encoded codes and segmentation class signal codes with reference to the management table.</p>
+<p id="p-0066" num="0067">The decompression section <b>9</b> decompresses the encoded code into RGB image data by performing a decompression (decode) process on the encoded code. Further, the segmentation class signal decompression section <b>10</b> performs a decompression process on the segmentation class signal code. The resulting segmentation class signal is sent to the black generation and under color removal section <b>14</b>, the spatial filter section <b>15</b>, and the halftone generation section <b>18</b>. Then, the black generation and under color removal section <b>14</b>, the spatial filter section <b>15</b>, and the halftone generation section <b>18</b> select image processing according to the type of image area.</p>
+<p id="p-0067" num="0068">The image-quality adjustment section <b>11</b> receives the RGB image data from the decompression section <b>9</b>, and performs background removal correction on the RGB image data by detecting a background in the RGB image data. Furthermore, the image-quality adjustment section <b>11</b> adjusts RGB balance (color adjustment of red, green, or blue), brightness, and intensity (saturation) in accordance with configuration information inputted by the user from the operation panel (not shown).</p>
+<p id="p-0068" num="0069">Furthermore, in the single-color mode, the image-quality adjustment section <b>11</b> converts the RGB image data into CMY image data complementary to the RGB image data. It should be noted here that the conversion of the RGB data into the CMY image data in the single-color mode is executed by using Eq. (1) below, where the coefficients r<b>1</b> to r<b>3</b> are defined based on [Table 1]. For example, in cases where the user selects cyan as his/her desired color in the single-color mode, the values of r<b>1</b> to r<b>3</b> in the column &#x201c;Cyan&#x201d; are referred to, with the result that r<b>1</b>=1, r<b>2</b>=0, and r<b>3</b>=0 are selected.</p>
+<p id="p-0069" num="0070">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="196pt" align="center"/>
+<colspec colname="2" colwidth="21pt" align="right"/>
+<thead>
+<row>
+<entry namest="1" nameend="2" rowsep="1">TABLE 1</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Eq. (1)</entry>
+</row>
+<row>
+<entry>
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mrow>
+            <mo>(</mo>
+            <mtable>
+              <mtr>
+                <mtd>
+                  <mi>C</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>M</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>Y</mi>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <mrow>
+              <mrow>
+                <mo>(</mo>
+                <mtable>
+                  <mtr>
+                    <mtd>
+                      <mrow>
+                        <mi>r</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mrow>
+                          <mn>1</mn>
+                          <mo>&#xb7;</mo>
+                          <mi>a</mi>
+                        </mrow>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </mtd>
+                    <mtd>
+                      <mrow>
+                        <mi>r</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mrow>
+                          <mn>1</mn>
+                          <mo>&#xb7;</mo>
+                          <mi>a</mi>
+                        </mrow>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>2</mn>
+                      </mrow>
+                    </mtd>
+                    <mtd>
+                      <mrow>
+                        <mi>r</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mrow>
+                          <mn>1</mn>
+                          <mo>&#xb7;</mo>
+                          <mi>a</mi>
+                        </mrow>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>3</mn>
+                      </mrow>
+                    </mtd>
+                  </mtr>
+                  <mtr>
+                    <mtd>
+                      <mrow>
+                        <mi>r</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mrow>
+                          <mn>2</mn>
+                          <mo>&#xb7;</mo>
+                          <mi>a</mi>
+                        </mrow>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </mtd>
+                    <mtd>
+                      <mrow>
+                        <mi>r</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mrow>
+                          <mn>2</mn>
+                          <mo>&#xb7;</mo>
+                          <mi>a</mi>
+                        </mrow>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>2</mn>
+                      </mrow>
+                    </mtd>
+                    <mtd>
+                      <mrow>
+                        <mi>r</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mrow>
+                          <mn>2</mn>
+                          <mo>&#xb7;</mo>
+                          <mi>a</mi>
+                        </mrow>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>3</mn>
+                      </mrow>
+                    </mtd>
+                  </mtr>
+                  <mtr>
+                    <mtd>
+                      <mrow>
+                        <mi>r</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mrow>
+                          <mn>3</mn>
+                          <mo>&#xb7;</mo>
+                          <mi>a</mi>
+                        </mrow>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </mtd>
+                    <mtd>
+                      <mrow>
+                        <mi>r</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mrow>
+                          <mn>3</mn>
+                          <mo>&#xb7;</mo>
+                          <mi>a</mi>
+                        </mrow>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>2</mn>
+                      </mrow>
+                    </mtd>
+                    <mtd>
+                      <mrow>
+                        <mi>r</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mrow>
+                          <mn>3</mn>
+                          <mo>&#xb7;</mo>
+                          <mi>a</mi>
+                        </mrow>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>3</mn>
+                      </mrow>
+                    </mtd>
+                  </mtr>
+                </mtable>
+                <mo>)</mo>
+              </mrow>
+              <mo>&#xd7;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mtable>
+                  <mtr>
+                    <mtd>
+                      <mi>R</mi>
+                    </mtd>
+                  </mtr>
+                  <mtr>
+                    <mtd>
+                      <mi>G</mi>
+                    </mtd>
+                  </mtr>
+                  <mtr>
+                    <mtd>
+                      <mi>B</mi>
+                    </mtd>
+                  </mtr>
+                </mtable>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>+</mo>
+            <mrow>
+              <mo>(</mo>
+              <mtable>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mi>r</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <mn>1</mn>
+                        <mo>&#xb7;</mo>
+                        <mi>c</mi>
+                      </mrow>
+                    </mrow>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mi>r</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <mn>2</mn>
+                        <mo>&#xb7;</mo>
+                        <mi>c</mi>
+                      </mrow>
+                    </mrow>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mi>r</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <mn>3</mn>
+                        <mo>&#xb7;</mo>
+                        <mi>c</mi>
+                      </mrow>
+                    </mrow>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mtext>
+</mtext>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mrow>
+            <mi>a</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mn>1</mn>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <mo>-</mo>
+            <mn>0.23046675</mn>
+          </mrow>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mtext>
+</mtext>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mrow>
+            <mi>a</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mn>2</mn>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <mo>-</mo>
+            <mn>0.79296875</mn>
+          </mrow>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mtext>
+</mtext>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mrow>
+            <mi>a</mi>
+            <mo>&#x2062;</mo>
+            <mn>3</mn>
+          </mrow>
+          <mo>=</mo>
+          <mn>0.0234375</mn>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mtext>
+</mtext>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mi>c</mi>
+          <mo>=</mo>
+          <mn>255</mn>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mstyle>
+        <mspace width="0.3em" height="0.3ex"/>
+      </mstyle>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="42pt" align="center"/>
+<colspec colname="2" colwidth="175pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry>Adjustment</entry>
+<entry>Output Color (Single Color)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="7">
+<colspec colname="1" colwidth="42pt" align="center"/>
+<colspec colname="2" colwidth="28pt" align="center"/>
+<colspec colname="3" colwidth="28pt" align="center"/>
+<colspec colname="4" colwidth="28pt" align="center"/>
+<colspec colname="5" colwidth="21pt" align="center"/>
+<colspec colname="6" colwidth="42pt" align="center"/>
+<colspec colname="7" colwidth="28pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry>Plane</entry>
+<entry>Red</entry>
+<entry>Green</entry>
+<entry>Blue</entry>
+<entry>Cyan</entry>
+<entry>Magenta</entry>
+<entry>Yellow</entry>
+</row>
+<row>
+<entry namest="1" nameend="7" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="7">
+<colspec colname="1" colwidth="42pt" align="center"/>
+<colspec colname="2" colwidth="28pt" align="char" char="."/>
+<colspec colname="3" colwidth="28pt" align="char" char="."/>
+<colspec colname="4" colwidth="28pt" align="char" char="."/>
+<colspec colname="5" colwidth="21pt" align="char" char="."/>
+<colspec colname="6" colwidth="42pt" align="char" char="."/>
+<colspec colname="7" colwidth="28pt" align="char" char="."/>
+<tbody valign="top">
+<row>
+<entry>r1</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>1</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry>0</entry>
+</row>
+<row>
+<entry>r2</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>0</entry>
+</row>
+<row>
+<entry>r3</entry>
+<entry>1</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>1</entry>
+</row>
+<row>
+<entry namest="1" nameend="7" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0070" num="0071">That is, whereas the output from the image-quality adjustment section <b>11</b> in the full-color mode is RGB image data as shown in <figref idref="DRAWINGS">FIG. 1</figref>, the output from the image-quality adjustment section <b>11</b> in the single-color mode is CMY image data as shown in (a) of <figref idref="DRAWINGS">FIG. 2</figref>. It should be noted that the output from the image-quality adjustment section <b>11</b> in the two-color mode is RGB image data as shown in (b) of <figref idref="DRAWINGS">FIG. 2</figref>. (a) of <figref idref="DRAWINGS">FIG. 2</figref> shows some of the blocks of the image processing apparatus <b>102</b> performing a printing process in the copier mode and the single-color mode, and (b) of <figref idref="DRAWINGS">FIG. 2</figref> shows some of the blocks of the image processing apparatus <b>102</b> performing a printing process in the copier mode and the two-color mode.</p>
+<p id="p-0071" num="0072">Further, the adjustment of intensity by the image-quality adjustment section <b>11</b> can be realized by using the matrix of Eq. (1) after varying the values of r<b>1</b> to r<b>3</b> and a<b>1</b> to a<b>3</b> of the matrix. This makes it possible to use the same matrix and the same image processing circuit for the adjustment of intensity and the conversion of image data (from RGB into CMY) in the single-color mode. Therefore, in the present embodiment, the adjustment of intensity and the conversion of image data in the single-color mode are performed by the same processing section (image-quality adjustment section <b>11</b>).</p>
+<p id="p-0072" num="0073">The two-color printing process section <b>12</b> is a block that, in the two color mode, receives RGB image data from the image-quality adjustment section <b>11</b> and converts the RGB image into CMY image data as shown in (b) of <figref idref="DRAWINGS">FIG. 2</figref>. The conversion of the RGB image data into the CMY image data in the two-color mode can be realized, for example, by a technique of [Embodiment 1] or [Embodiment 2] described in Japanese Patent Application Publication, Tokukai, No. 2007-28336 A.</p>
+<p id="p-0073" num="0074">Further, in the full-color mode, as shown in <figref idref="DRAWINGS">FIG. 1</figref>, the two-color printing process section <b>12</b> performs no processing on the image data sent from the image-quality adjustment section <b>11</b> and passes the image data directly on to the color correction section <b>13</b>. Furthermore, in the single-color mode, as shown in (a) of <figref idref="DRAWINGS">FIG. 2</figref>, two-color printing process section <b>12</b> performs no processing on the CMY image data sent from the image-quality adjustment section <b>11</b> and passes the image data directly on to the color correction section <b>13</b>.</p>
+<p id="p-0074" num="0075">The color correction section <b>13</b> is a block that, in the full-color mode, receives RGB image data from the two-color printing process section <b>12</b>, performs a color correction process of converting the RGB image data into CMY image data, and performs a process of improving the color reproducibility of the image data. The color correction process is realized by creating an LUT (look-up table) of input values (RGB) and output values (CMY) associated with one another and looking up the output values in the created LUT.</p>
+<p id="p-0075" num="0076">Further, in the single-color mode or two-color mode, as shown in <figref idref="DRAWINGS">FIG. 2</figref>, the color correction section <b>13</b> performs no processing on the CMY image data sent from the two-color printing process section <b>12</b> and passes the image data directly on to the black generation and under color removal section <b>14</b>.</p>
+<p id="p-0076" num="0077">The black generation and under color removal section <b>14</b> is a block that, in the full-color mode or two-color mode, receives CMY image data from the color correction section <b>13</b>, generates black (K) image data from the CMY image data, and generate new CMY image data by subtracting the black (K) image data from the original CMY image data. Thus, in the full-color mode or two-color mode, as shown in <figref idref="DRAWINGS">FIG. 1</figref> or (b) of <figref idref="DRAWINGS">FIG. 2</figref>, the black generation and under color removal section <b>14</b> converts the CMY image data into four colors of image data CMYK.</p>
+<p id="p-0077" num="0078">Further, in the single-color mode, as shown in (a) of <figref idref="DRAWINGS">FIG. 2</figref>, the black generation and under color removal section <b>14</b> performs no processing on the CMY image data sent from the color correction section <b>13</b> and passes the image data directly on to the subsequent spatial filter section <b>15</b>.</p>
+<p id="p-0078" num="0079">In the full-color mode or two-color mode, the output from the black generation and under color removal section <b>14</b> and the input to and output from each block subsequent to the black generation and under color removal section <b>14</b> are CMYK image data as shown in <figref idref="DRAWINGS">FIG. 1</figref>. Meanwhile, in the single-color mode, the output from the black generation and under color removal section <b>14</b> and the input to and output from each block subsequent to the black generation and under color removal section <b>14</b> are CMY image data unlike in <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0079" num="0080">The spatial filter section <b>15</b> receives the CMYK or CMY image data from the black generation and under color removal section <b>14</b> and performs a spatial filter process (e.g., edge enhancement process, smoothing process) on the image data by a digital filter in accordance with the segmentation class signals. That is, the spatial filter section <b>15</b> executes image processing differently for each image area in accordance with the segmentation class signals.</p>
+<p id="p-0080" num="0081">The enlarging/reducing section <b>16</b> is a block that enlarges or reduces an image in accordance with an enlarging/reducing command (information indicating the zoom ratio of a printed image) inputted by the user from the operation panel (not shown).</p>
+<p id="p-0081" num="0082">The output tone correction section <b>17</b> is a block that receives image data from the enlarging/reducing section <b>16</b> and performs output gamma correction for outputting the image data onto a recording medium such as a sheet of paper. The halftone generation section <b>18</b> executes, by dithering or error diffusion, a tone reproduction process (halftone generation process) necessary for the image output apparatus <b>103</b> to print an image.</p>
+<p id="p-0082" num="0083">Then, the halftone generation section <b>18</b> passes the CMYK or CMY image data on to the image output apparatus <b>103</b>, and the image output apparatus <b>103</b> prints an image of the image data onto a recording medium (e.g., a sheet of paper).</p>
+<p id="p-0083" num="0084">(1-2) Preview Display</p>
+<p id="p-0084" num="0085">Next, the processes that are executed by the blocks of the image processing apparatus <b>102</b> in cases where a preview of an image to be printed is displayed in the copier mode are described with reference to <figref idref="DRAWINGS">FIG. 3</figref>. <figref idref="DRAWINGS">FIG. 3</figref> is a block diagram showing the same image forming apparatus <b>100</b> as in <figref idref="DRAWINGS">FIG. 1</figref> and showing the flow of image data at the time of a preview display process in the copier mode and the full-color mode.</p>
+<p id="p-0085" num="0086">It should be noted that because the A/D (analog/digital) conversion section <b>2</b>, the shading correction section <b>3</b>, the input processing section <b>4</b>, the automatic document type discrimination section <b>5</b>, the segmentation process section <b>6</b>, the compression section <b>7</b>, the segmentation class signal compression section <b>8</b>, the decompression section <b>9</b>, the image-quality adjustment section <b>11</b>, and the two-color printing process section <b>12</b> perform the same processes as in the case of a printing process, such processes will not be described below.</p>
+<p id="p-0086" num="0087">At the time of a preview display, as shown in <figref idref="DRAWINGS">FIG. 3</figref>, the segmentation class signal decompression section <b>10</b> decompresses (decodes) segmentation class signals and passes them on to the spatial filter section <b>15</b> and the output tone correction section <b>17</b>.</p>
+<p id="p-0087" num="0088">In the full-color mode, the color correction section <b>13</b> receives RGB image data in color space of the scanner (image input apparatus <b>101</b>). Then, the color correction section <b>13</b> converts the RGB image data into R&#x2032;G&#x2032;B&#x2032; image data in color space of the image display device <b>104</b>.</p>
+<p id="p-0088" num="0089">That is, the color correction section <b>13</b> converts the RGB image data, which conform to the image scanning characteristics of the scanner, into the R&#x2032;G&#x2032;B&#x2032; image data, which conform to the display characteristics of the display device. It should be noted that the conversion of the RGB image data into the R&#x2032;G&#x2032;B&#x2032; image data is also realized by creating an LUT (look-up table) of input values (RGB) and output values (R&#x2032;G&#x2032;B&#x2032;) associated with one another and looking up the output values in the created LUT.</p>
+<p id="p-0089" num="0090">Moreover, in the full-color mode, the present embodiment uses the same image processing circuit for the conversion of RGB image data into CMYK image data at the time of a printing process and the conversion of RGB image data into R&#x2032;G&#x2032;B&#x2032; image data at the time of a preview display.</p>
+<p id="p-0090" num="0091">As with <figref idref="DRAWINGS">FIG. 1</figref>, <figref idref="DRAWINGS">FIG. 3</figref> shows the image forming apparatus <b>100</b> in the full-color mode. In the full-color mode, the color correction section <b>13</b> receives RGB image data. Meanwhile, in the single-color mode or two-color mode, as shown in <figref idref="DRAWINGS">FIG. 4</figref>, the color correction section <b>13</b> receives CMY image data. (a) of <figref idref="DRAWINGS">FIG. 4</figref> shows some blocks of the image processing apparatus <b>2</b> performing a preview display in the copier mode and the singe-color mode, and (b) of <figref idref="DRAWINGS">FIG. 4</figref> shows some blocks of the image processing apparatus performing a preview display in the copier mode and the two-color mode.</p>
+<p id="p-0091" num="0092">Then, in the single-color mode or two-color mode, the color correction section <b>13</b> converts the CMY image data into R&#x2032;G&#x2032;B&#x2032; image data. That is, the color correction section <b>13</b> converts the CMY image data, which conform to the printing characteristics of the printing process, into the R&#x2032;G&#x2032;B&#x2032; image data, which conform to the display characteristics of the display device. It should be noted that the conversion of the CMY image data into the R&#x2032;G&#x2032;B&#x2032; image data is also realized by creating an LUT (look-up table) of input values (RGB) and output values (R&#x2032;G&#x2032;B&#x2032;) associated with one another and looking up the output values in the created LUT.</p>
+<p id="p-0092" num="0093">In any one of the single-color mode, the two-color mode, and the full-color mode, as shown in <figref idref="DRAWINGS">FIGS. 3 and 4</figref>, the black generation and under color removal section <b>14</b> performs no processing on the R&#x2032;G&#x2032;B&#x2032; image data sent from the color correction section <b>13</b> and passes the image data directly on to the subsequent spatial filter section <b>15</b>.</p>
+<p id="p-0093" num="0094">The spatial filter section <b>15</b> receives the R&#x2032;G&#x2032;B&#x2032; image data from the black generation and under color removal section <b>14</b> and performs a spatial filter process (e.g., edge enhancement process, smoothing process) on the image data by a digital filter in accordance with the segmentation class signals. That is, as in the case of a printing process, the spatial filter section <b>15</b> executes image processing differently for each image area in accordance with the segmentation class signals.</p>
+<p id="p-0094" num="0095">The enlarging/reducing section <b>16</b> performs a downsampling process by which the number of pixels of an image composed of the R&#x2032;G&#x2032;B&#x2032; image data sent from the spatial filter section <b>15</b> is converted into the number of pixels of the image display device <b>104</b> (process by which the number of pixels is reduced). The image display device <b>104</b>, provided in the operation panel of the image forming apparatus <b>100</b>, is lower in resolution than image data to be printed and, usually, is an extremely small display. Therefore, at the time of a preview display, it is necessary to downsample the image data. Further, the enlarging/reducing section <b>16</b> enlarges or reduces the image in accordance with an enlarging/reducing command (information indicating the zoom ratio of a display, e.g., a fixed zoom ratio of 2 to 4 times) inputted from the operation panel (not illustrated) provided in the image forming apparatus.</p>
+<p id="p-0095" num="0096">The output tone correction section <b>17</b> receives the image data from the enlarging/reducing section <b>16</b> and performs output gamma correction on the image data in accordance with the segmentation class signals. More specifically, in accordance with the segmentation class signals, the output tone correction section <b>17</b> selects different gamma curves for different image areas and varies in output gamma correction from one image area to another. For example, for nontext areas, the output tone correction section <b>17</b> selects a gamma curve corresponding to the display characteristics of the image display device <b>104</b>, and for text areas, selects a gamma curve for texts to be sharply displayed. (a) of <figref idref="DRAWINGS">FIG. 5</figref> shows a gamma curve corresponding to the display characteristics of the image display device <b>104</b>, and (b) of <figref idref="DRAWINGS">FIG. 5</figref> shows a solid line representing a gamma curve for texts to be sharply displayed and a dotted line representing a gamma curve corresponding to the display characteristics of the image display device <b>14</b>. The dotted line is shown for comparison with the gamma curve for texts to be sharply displayed.</p>
+<p id="p-0096" num="0097">In the present embodiment, the output tone correction section <b>17</b> selects between the gamma curves in accordance with the segmentation class signals. However, the output tone correction section <b>17</b> may perform output tone correction by using only the gamma curve of (a) of <figref idref="DRAWINGS">FIG. 5</figref>, instead of making selection in accordance with the segmentation class signals.</p>
+<p id="p-0097" num="0098">Then, the halftone generation section <b>18</b> performs no processing on the R&#x2032;G&#x2032;B&#x2032; image data sent from the output tone correction section <b>17</b> and passes the image data directly on to the subsequent image display device <b>104</b>. This allows the image display device <b>104</b> to display, in accordance with the R&#x2032;G&#x2032;B&#x2032; image data, a preview of an image to be copied.</p>
+<p id="p-0098" num="0099">It should be noted that in place of the output tone correction section <b>17</b>, the image-quality adjustment section <b>11</b> may execute output gamma correction.</p>
+<p id="p-0099" num="0100">(1-3) As to Whether the Blocks Operate or do not Operate</p>
+<p id="p-0100" num="0101">As described above, at the time of printing in the full-color mode, the image-quality adjustment section <b>11</b> through the halftone generation section <b>18</b> all operate except for the two-color printing process section <b>12</b> (see <figref idref="DRAWINGS">FIG. 1</figref>). Meanwhile, at the time of a preview display in the full-color mode, the image-quality adjustment section <b>11</b> through the halftone generation section <b>18</b> all operate except for the two-color printing process section <b>12</b>, the black generation and under color removal section <b>14</b>, and the halftone generation section <b>18</b> (see <figref idref="DRAWINGS">FIG. 3</figref>).</p>
+<p id="p-0101" num="0102">Further, at the time of printing in the two-color mode, the image-quality adjustment section <b>11</b> through the halftone generation section <b>18</b> all operate except for the color correction section <b>13</b> (see (b) of <figref idref="DRAWINGS">FIG. 2</figref>). Meanwhile, at the time of a preview display in the two-color mode, the image-quality adjustment section <b>11</b> through the halftone generation section <b>18</b> all operate except for the black generation and under color removal section <b>14</b> and the halftone generation section <b>18</b> (see (b) of <figref idref="DRAWINGS">FIG. 4</figref>).</p>
+<p id="p-0102" num="0103">Furthermore, at the time of printing in the single-color mode, the image-quality adjustment section <b>11</b> through the halftone generation section <b>18</b> all operate except for the two-color printing process section <b>12</b>, the color correction section <b>13</b>, and the black generation and under color removal section <b>14</b> (see (a) of <figref idref="DRAWINGS">FIG. 2</figref>). Meanwhile, at the time of a preview display in the single-color mode, the image-quality adjustment section <b>11</b> through the halftone generation section <b>18</b> all operate except for the two-color printing process section <b>12</b>, the black generation and under color removal section <b>14</b>, and the halftone generation section <b>18</b> (see (a) of <figref idref="DRAWINGS">FIG. 4</figref>).</p>
+<p id="p-0103" num="0104">(1-4) Steps of a Process</p>
+<p id="p-0104" num="0105">Next, an example of steps of a process in the copier mode and the full-color mode is described with reference to <figref idref="DRAWINGS">FIG. 6</figref>. <figref idref="DRAWINGS">FIG. 6</figref> is a flow chart showing an example of steps of a process that is performed by the image forming apparatus in the copier mode and the full-color mode.</p>
+<p id="p-0105" num="0106">In response to a pressing of a start key (YES in S<b>1</b>) in the copier mode, the image forming apparatus <b>100</b> generates RGB analog signals by scanning a document (S<b>2</b>). It is assumed here that prior to the pressing of the start key in S<b>1</b>, the user inputs setting information indicating whether or not a preview display is necessary and thereby sets whether or not the image forming apparatus <b>100</b> performs a preview display.</p>
+<p id="p-0106" num="0107">After S<b>2</b>, the image forming apparatus <b>100</b> converts the RGB analog signals into RGB image data (digital data) (S<b>3</b>), subjects the RGB image data to shading correction (S<b>4</b>), and then subjects the RGB image data to input gamma correction (S<b>5</b>). After S<b>5</b>, the image forming apparatus <b>100</b> performs a document type discrimination process and a segmentation process in accordance with the RGB image data (S<b>6</b>), and then stores the RGB image in the storage device <b>107</b> (S<b>7</b>).</p>
+<p id="p-0107" num="0108">After S<b>7</b>, the image forming apparatus <b>100</b> judges whether or not it has been set to &#x201c;Preview Display: Yes&#x201d; (S<b>8</b>). In cases where it has not been set to &#x201c;Preview Display: Yes&#x201d;, the image forming apparatus <b>100</b> executes Steps S<b>9</b> through S<b>16</b>. In cases where it has been set to &#x201c;Preview Display: Yes&#x201d;, the image forming apparatus <b>100</b> executes Steps S<b>17</b> through S<b>23</b>. In the following, Steps S<b>9</b> through S<b>16</b> are described first, and then Steps S<b>17</b> through S<b>23</b> are described.</p>
+<p id="p-0108" num="0109">In cases where the image forming apparatus <b>100</b> has not been set to &#x201c;Preview Display: Yes&#x201d; (NO in S<b>8</b>), the image forming apparatus <b>100</b> reads out the RGB image data from the storage device <b>107</b>, and then performs an image-quality adjustment process such as background removal correction and adjustment of intensity (S<b>9</b>). After that, the image forming apparatus <b>100</b> converts the RGB image data, which conforms to the characteristics of the scanner, into CMY image data conforming to the characteristics of the printer (S<b>10</b>), and then converts the CMY image data into CMYK image data (S<b>11</b>). After that, the image forming apparatus <b>100</b> performs a spatial filter process on the CMYK image data in accordance with a result of the segmentation process (S<b>12</b>), and then performs an enlarging/reducing process on the CMYK image data (S<b>13</b>). After S<b>13</b>, the image forming apparatus <b>100</b> performs output gamma correction and a tone reproduction process on the CMYK image data (S<b>14</b>, S<b>15</b>), prints an image of the image data on a sheet of paper (S<b>16</b>), and then finishes the process.</p>
+<p id="p-0109" num="0110">In cases where the image forming apparatus <b>100</b> judges, in S<b>8</b>, that it has been set to &#x201c;Preview Display: Yes&#x201d; (YES in S<b>8</b>), the image forming apparatus <b>100</b> reads out the RGB image data from the storage device <b>107</b>, and then performs the same image-quality adjustment process as in S<b>9</b> (S<b>17</b>). After that, the image forming apparatus <b>100</b> converts the RGB image data, which conforms to the characteristics of the scanner, into R&#x2032;G&#x2032;B&#x2032; image data conforming to the characteristics of the display device (S<b>18</b>). After S<b>18</b>, the image forming apparatus <b>100</b> performs a spatial filter process on the R&#x2032;G&#x2032;B&#x2032; image data in accordance with a result of the segmentation process (S<b>19</b>), and then performs a downsampling process on the R&#x2032;G&#x2032;B&#x2032; image data so that the R&#x2032;G&#x2032;B&#x2032; image data conforms to the resolution and size of the display (S<b>20</b>). After S<b>20</b>, the image forming apparatus <b>100</b> performs output gamma correction on the R&#x2032;G&#x2032;B&#x2032; image data in accordance with the result of the segmentation process (S<b>21</b>). After S<b>21</b>, the image forming apparatus <b>100</b> performs a preview display in accordance with the R&#x2032;G&#x2032;B&#x2032; image data (S<b>22</b>). Then, after S<b>22</b>, upon receiving, from the user, a command indicating permission of printing (YES in S<b>23</b>), the image forming apparatus <b>100</b> again reads out the RGB image data from the storage device <b>107</b>, and then performs printing by executing Steps S<b>9</b> through S<b>16</b> in accordance with the image data. On the other hand, after S<b>22</b>, upon receiving, from the user, a command indicating cancellation of printing (NO in S<b>23</b>), the image forming apparatus <b>100</b> finishes the process.</p>
+<p id="p-0110" num="0111">(2) Facsimile Transmission Mode</p>
+<p id="p-0111" num="0112">(2-1) Transmission Process (Image Transmission Job)</p>
+<p id="p-0112" num="0113"><figref idref="DRAWINGS">FIG. 7</figref> is a block diagram showing the same image forming apparatus <b>100</b> as in <figref idref="DRAWINGS">FIG. 1</figref> and showing the flow of image data in a transmission process in the facsimile transmission mode. It should be noted that because the A/D (analog/digital) conversion section <b>2</b>, the shading process section <b>3</b>, the input processing section <b>4</b>, the automatic document type discrimination section <b>5</b>, the segmentation process section <b>6</b>, the compression section <b>7</b>, the segmentation class signal compression section <b>8</b>, and the decompression section <b>9</b> performs the same processes as in the case of the copier mode, such processes will not be described below.</p>
+<p id="p-0113" num="0114">In the facsimile transmission mode, the segmentation class signal decompression section <b>10</b> reads out the segmentation class signal codes from the storage device <b>107</b>, decompresses the segmentation class signal codes, and then transmits the decompressed (decoded) segmentation class signal codes to the spatial filter section <b>15</b>.</p>
+<p id="p-0114" num="0115">The image-quality adjustment section <b>11</b> receives the RGB image data from the decompression section <b>9</b> and converts the RGB image into K image data (a value indicating grayscale). It should be noted that this conversion is performed by using a predetermined matrix of coefficients and Eq. (2) below:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Luminance (Value of <i>K </i>Image Data)=0.299<i>r+</i>0.587<i>g+</i>0.114<i>b</i>&#x2003;&#x2003;Eq. (2)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+where r is the value (density) of red image data, g is the value of green image data, and b is the value of blue image data.
+</p>
+<p id="p-0115" num="0116">The two-color printing process section <b>12</b>, the color correction section <b>13</b>, and the black generation and under color removal section <b>14</b> perform no processing on the K image data (signal) sent from the image-quality adjustment section <b>11</b> and pass the K image data directly on to the subsequent spatial filter section <b>15</b>.</p>
+<p id="p-0116" num="0117">The spatial filter section <b>15</b> performs a spatial filter process (e.g., edge enhancement process, smoothing process) on the K image data by a digital filter in accordance with the segmentation class signals. The enlarging/reducing section <b>16</b> performs an enlarging/reducing process on the K image data in accordance with the transmission resolution. The output tone correction section <b>17</b> performs output gamma correction (gamma correction for output onto a recording medium such as a sheet of paper) on the K image data sent from the enlarging/reducing section <b>16</b>. The halftone generation section <b>18</b> converts the K image data into binarized image data, for example, by error diffusion. Then, the binarized image data are rotated by a rotation process section (not shown) as needed, compressed by a compression/decompression section (not shown) into a predetermined form, and then stored in a memory (not shown).</p>
+<p id="p-0117" num="0118">After that, the transmitting device (e.g., modem) <b>106</b> performs a procedure for transmission to the destination and ensures transmittability to the destination. Then, the transmitting device <b>106</b> reads out the binarized image data, stored in the memory, with the binarized image data compressed in the predetermined form, subjects the binarized image data to necessary processes such as a conversion in compression format, and then transmits the binarized image data in sequence via a communication line.</p>
+<p id="p-0118" num="0119">(2-2) Preview Display</p>
+<p id="p-0119" num="0120"><figref idref="DRAWINGS">FIG. 8</figref> is a block diagram showing the same image forming apparatus <b>100</b> as in <figref idref="DRAWINGS">FIG. 1</figref> and showing the flow of image data in a preview display process in the facsimile transmission mode. The term &#x201c;preview display in the facsimile transmission mode&#x201d; here means a process of displaying a preview of an image to be transmitted by facsimile.</p>
+<p id="p-0120" num="0121">At the time of a preview display, the A/D conversion section <b>2</b>, the shading correction section <b>3</b>, the input processing section <b>4</b>, the automatic document type discrimination section <b>5</b>, the segmentation process section <b>6</b>, the compression section <b>7</b>, the segmentation class signal compression section <b>8</b>, the decompression section <b>9</b>, the segmentation class signal decompression section <b>10</b>, the image-quality adjustment section <b>11</b>, and the spatial filter section <b>15</b> perform the same processes as in the case of a facsimile transmission process; therefore, such processes are not described. Further, as in the case of a facsimile transmission process, the two-color printing process section <b>12</b>, the color correction section <b>13</b>, and the black generation and under color removal section <b>14</b> do not perform any processes.</p>
+<p id="p-0121" num="0122">However, at the time of a preview display, unlike in the case of a transmission process, as shown in <figref idref="DRAWINGS">FIG. 8</figref>, three pieces of K image data (all being equal in value) are transmitted for each pixel all the way from the image-quality adjustment section <b>11</b> to the image display device <b>104</b>. This is because the image display device <b>104</b> is a full-color model and as such requires three values (pieces of image data) for one pixel.</p>
+<p id="p-0122" num="0123">The enlarging/reducing section <b>16</b> performs a downsampling process on the K image data so that the number of pixels of an image composed of the K image data sent from the spatial filter section <b>15</b> conforms to the number of pixels of the display size of the image display device <b>104</b>. Further, the enlarging/reducing section <b>16</b> enlarges or reduces the image in accordance with an enlarging/reducing command (information indication the zoom ratio of a display, e.g., a fixed zoom ratio of 2 to 4 times) inputted from the operation panel (not shown) provided in the image forming apparatus <b>100</b>.</p>
+<p id="p-0123" num="0124">The output tone correction section <b>17</b> receives the K image data from the enlarging/reducing section <b>16</b> and performs gamma correction on the K image data in conformity to the display characteristics of the image display device <b>104</b>. Then, the halftone generation section <b>18</b> performs no processing on the K image data sent from the output tone correction section <b>17</b> and passes the K image data directly on to the subsequence image display device <b>104</b>. This allows the image display device <b>104</b> to display, in accordance with the K image data, a preview of an image to be transmitted by facsimile.</p>
+<p id="p-0124" num="0125">Further, at the time of a preview display process in the facsimile transmission mode, the image-quality adjustment section <b>11</b> converts the RGB image data into three pieces of K image data. However, there is no such limitation in embodiment. For example, it is possible to perform image processing without converting RGB image data into K image data up to the output tone correction section <b>17</b>, to receive the RGB image data from the output tone correction section <b>17</b>, and to convert the RGB image data into K image data by a browser.</p>
+<p id="p-0125" num="0126">(2-3) As to Whether the Blocks Operate or do not Operate</p>
+<p id="p-0126" num="0127">As described above, at the time of a transmission process in the facsimile transmission mode, the image-quality adjustment section <b>11</b> through the halftone generation section <b>18</b> all operate except for the two-color printing process section <b>12</b>, the color correction section <b>13</b>, and the black generation and under color removal section <b>14</b> (see <figref idref="DRAWINGS">FIG. 7</figref>). Meanwhile, at the time of a preview display in the facsimile transmission mode, the image-quality adjustment section <b>11</b> through the halftone generation section <b>18</b> all operate except for the two-color printing process section <b>12</b>, the color correction section <b>13</b>, the black generation and under color removal section <b>14</b>, and the halftone generation section <b>18</b> (see <figref idref="DRAWINGS">FIG. 8</figref>).</p>
+<p id="p-0127" num="0128">(2-4) Steps of a Process</p>
+<p id="p-0128" num="0129">Next, an example of steps of a process in the facsimile transmission mode is described. In cases where the image forming apparatus <b>100</b> receives a fax transmission command from the user with the image forming apparatus <b>100</b> having not been set to &#x201c;Preview Display: Yes&#x201d;, the image forming apparatus <b>100</b> processes image data as shown in <figref idref="DRAWINGS">FIG. 7</figref> and transmits the image data to an external apparatus.</p>
+<p id="p-0129" num="0130">Meanwhile, in cases where the image forming apparatus <b>100</b> receives a fax transmission command from the user with the image forming apparatus <b>100</b> set to &#x201c;Preview Display: Yes&#x201d;, the image forming apparatus <b>100</b> processes image data as shown in <figref idref="DRAWINGS">FIG. 8</figref>, thereby storing the image data in the storage device <b>107</b> and displaying a preview of an image of the image data on the image display device <b>104</b>. Then, when the image forming apparatus <b>100</b> receives a transmission permission command from the user with the preview being displayed, the image forming apparatus <b>100</b> reads out the image data from the storage device <b>107</b>, processes the image data in the decompression section <b>9</b> through the halftone generation section <b>18</b> as shown in <figref idref="DRAWINGS">FIG. 7</figref>, and transmits the image data to an external apparatus via the transmitting device <b>106</b>.</p>
+<p id="p-0130" num="0131">(3) Facsimile Reception Mode</p>
+<p id="p-0131" num="0132">(3-1) Printing Process (Image Print Job)</p>
+<p id="p-0132" num="0133"><figref idref="DRAWINGS">FIG. 9</figref> is a block diagram showing the same image forming apparatus <b>100</b> as in <figref idref="DRAWINGS">FIG. 1</figref> and showing the flow of image data in a printing process in the facsimile reception mode.</p>
+<p id="p-0133" num="0134">In the case of facsimile reception, the receiving device <b>105</b> receives K image data (1 bit) from the source while performing a communication procedure. Then, the K image data received by the receiving device <b>105</b> are decompressed by the compression/decompression section (not shown), rotated by the rotation process section (not shown) as needed, and then subjected to a resolution conversion process by a resolution conversion section (not shown). After that, the image data are stored temporarily in the storage device <b>107</b>.</p>
+<p id="p-0134" num="0135">Furthermore, the image data written in the storage device <b>107</b> are passed on to the decompression section <b>9</b> of the image processing apparatus <b>102</b> by the control section <b>108</b>. The decompression section <b>9</b>, the image-quality adjustment section <b>11</b>, the two-color printing process section <b>12</b>, the color correction section <b>13</b>, the black generation and under color removal section <b>14</b>, the spatial filter section <b>15</b>, the enlarging/reducing section <b>16</b>, the output tone correction section <b>17</b>, and the halftone generation section <b>18</b> perform no processing on the image data sent from the storage device <b>107</b> and pass the image data directly onto the subsequent image output apparatus <b>103</b>. The image output apparatus <b>103</b> forms an image on a recording medium (e.g., a sheet of paper) in accordance with the K image data sent from the halftone generation section <b>18</b>. In the case of a printing process in the facsimile reception mode, image processing is not performed as described above. Therefore, the image data stored in the storage device <b>107</b> may be outputted directly to the image output apparatus <b>103</b>.</p>
+<p id="p-0135" num="0136">(3-2) Preview Display</p>
+<p id="p-0136" num="0137"><figref idref="DRAWINGS">FIG. 10</figref> is a block diagram showing the same image forming apparatus <b>100</b> as in <figref idref="DRAWINGS">FIG. 1</figref> and showing the flow of image data in a preview display process in the facsimile reception mode. The term &#x201c;preview display in the facsimile reception mode&#x201d; here means a process of, before printing an image of image data received by facsimile, displaying a preview of the image to be printed.</p>
+<p id="p-0137" num="0138">Also at the time of a preview display in the facsimile reception mode, as in the case of a printing process in the facsimile reception mode, the image data written in the storage device <b>107</b> are passed on to the decompression section <b>9</b> of the image processing apparatus <b>102</b> by the control section <b>108</b>. The decompression section <b>9</b> performs no processing on the image data sent from the storage device <b>107</b> and passes the image data on to a bit-number conversion process section (not shown). Then, the bit-number conversion process section converts the number of bits of the image data sent from the decompression section <b>9</b> (e.g., from 1 bit to 8 bits), and then passes the image data on to the image-quality adjustment section <b>11</b>. That is, although not shown in <figref idref="DRAWINGS">FIG. 10</figref>, the decompression section <b>9</b> and the image-quality adjustment section <b>11</b> has the bit-number conversion section provided therebetween.</p>
+<p id="p-0138" num="0139">As shown in <figref idref="DRAWINGS">FIG. 10</figref>, for each pixel, the image-quality adjustment section <b>11</b> receives one piece of K image data and generates and outputs three pieces of K image data (all being equal in value). This is because the image display device <b>104</b> is a full-color model and as such requires three values for one pixel.</p>
+<p id="p-0139" num="0140">After that, the two-color printing process section <b>12</b>, the color correction section <b>13</b>, and the black generation and under color removal section <b>14</b> perform no processing on the K image data sent from the image-quality adjustment section <b>11</b> and pass the image data directly on the subsequent spatial filter section <b>15</b>. The spatial filter section <b>15</b> performs a blur (smoothing) process and the like on the K image data with use of a digital filter.</p>
+<p id="p-0140" num="0141">The enlarging/reducing section <b>16</b> performs a downsampling process on the K image data so that the number of pixels of an image of the K image data sent from the spatial filter section <b>15</b> conforms to the number of pixels of the display size of the image display device <b>104</b>. Further, the enlarging/reducing section <b>16</b> enlarges or reduces the image in accordance with an enlarging/reducing command (information indication the zoom ratio of a display, e.g., a fixed zoom ratio of 2 to 4 times) inputted from the operation panel (not shown) provided in the image forming apparatus <b>100</b>.</p>
+<p id="p-0141" num="0142">The output tone correction section <b>17</b> receives the K image data from the enlarging/reducing section <b>16</b> and performs output gamma correction on the K image data in conformity to the display characteristics of the image display device <b>104</b>. Then, the halftone generation section <b>18</b> performs no processing on the K image data sent from the output tone correction section <b>17</b> and passes the K image data directly on to the subsequence image display device <b>104</b>. This allows the image display device <b>104</b> to display, in accordance with the K image data, a preview of an image received by facsimile.</p>
+<p id="p-0142" num="0143">(3-3) As to Whether the Blocks Operate or do not Operate</p>
+<p id="p-0143" num="0144">As described above, at the time of a printing process in the facsimile reception mode, the image-quality adjustment section <b>11</b> through the halftone generation section <b>18</b> do not operate (see <figref idref="DRAWINGS">FIG. 9</figref>). Meanwhile, at the time of a preview display in the facsimile reception mode, the image-quality adjustment section <b>11</b> through the halftone generation section <b>18</b> all operate except the two-color printing process section <b>12</b>, the color correction section <b>13</b>, the black generation and under color removal section <b>14</b>, and the halftone generation section <b>18</b> (see <figref idref="DRAWINGS">FIG. 10</figref>).</p>
+<p id="p-0144" num="0145">(3-4) Steps of a Process</p>
+<p id="p-0145" num="0146">Next, an example of steps of a process in the facsimile reception mode is described. In cases where the image forming apparatus <b>100</b> receives image data by facsimile, the received image data are written temporarily in the storage device <b>107</b>. It should be noted here that there is a time lag between the writing of the image data in the storage device <b>107</b> and printing of an image. In cases where the user inputs a &#x201c;preview command&#x201d; during the time lag, the image data is processed along such a flow as shown in <figref idref="DRAWINGS">FIG. 10</figref>, and a preview of an image of the image data is displayed by the image display device <b>104</b>. Further, when the image is printed, the image data is processed along such a flow as shown in <figref idref="DRAWINGS">FIG. 9</figref>, and the image of the image data is printed by the image output apparatus <b>103</b>.</p>
+<p id="p-0146" num="0147">(4) Image Transmission Mode</p>
+<p id="p-0147" num="0148">(4-1) Transmission Process (Image Transmission Job)</p>
+<p id="p-0148" num="0149">In the case of operation of the image forming apparatus <b>100</b> at the time of a transmission process in the image transmission mode, the image input apparatus <b>101</b>, the A/D (analog/digital) conversion section <b>2</b>, the shading correction section <b>3</b>, the input processing section <b>4</b>, the automatic document type discrimination section <b>5</b>, the segmentation process section <b>6</b>, the compression section <b>7</b>, the segmentation class signal compression section <b>8</b>, and the decompression section <b>9</b> performs the same processes as in the case of the copier mode. It should be noted that the segmentation class signal decompression section <b>10</b> supplies the segmentation class signals to the spatial filter section <b>15</b> and the output tone correction section <b>17</b>.</p>
+<p id="p-0149" num="0150">Then, the image-quality adjustment section <b>11</b> performs a background removal process and color balance adjustment. The color correction section <b>13</b> converts the image data into R&#x2033;G&#x2033;B&#x2033; image data (e.g., sRGB data) conforming to the display characteristics of a commonly-used display device. The spatial filter section <b>15</b> performs a spatial filter process (edge enhancement process, smoothing process) by a digital filter in accordance with the segmentation class signals. The enlarging/reducing section <b>16</b> enlarges or reduces the image. Further, the output tone correction section <b>17</b> performs correction on a text area with use of the gamma curve of (b) of <figref idref="DRAWINGS">FIG. 5</figref>, and performs correction on a nontext area with use the gamma curve of (a) of <figref idref="DRAWINGS">FIG. 5</figref>, for example. The two-color printing process section <b>12</b> and the black generation and under color removal section <b>14</b> perform no processing on the input image data, and each of the blocks passes the image data directly on to the subsequent block. Therefore, the output tone correction section <b>17</b> outputs the R&#x2033;G&#x2033;B&#x2033; image data.</p>
+<p id="p-0150" num="0151">Furthermore, the R&#x2033;G&#x2033;B&#x2033; image data from the output tone correction section <b>17</b> are converted into an image file such as a PDF file by a format conversion process section (not shown). Then, in the scan to e-mail mode, which is an image transmission mode, the image file is attached to an e-mail by the mail processing section (job apparatus; not shown), and the e-mail is transmitted to the destination via a network. Alternatively, in the scan to ftp mode, which is another image transmission mode, the image file is transmitted to a predetermined folder. Alternatively, in the scan to usb mode, which is the other image transmission mode, the image file is transmitted to a predetermined USB memory.</p>
+<p id="p-0151" num="0152">(4-2) Preview Display</p>
+<p id="p-0152" num="0153">In the case of operation of the image forming apparatus <b>100</b> at the time of a preview display in the image transmission mode, the image input apparatus <b>101</b>, the A/D (analog/digital) conversion section <b>2</b>, the shading correction section <b>3</b>, the input processing section <b>4</b>, the automatic document type discrimination section <b>5</b>, the segmentation process section <b>6</b>, the compression section <b>7</b>, the segmentation class signal compression section <b>8</b>, the decompression section <b>9</b>, the segmentation class signal decompression section <b>10</b>, the image-quality adjustment section <b>11</b>, and the two-color printing process section <b>12</b> perform the same processes as in the case of transmission in the image transmission mode.</p>
+<p id="p-0153" num="0154">Then, at the time of a preview display in the image transmission mode, the color correction section <b>13</b> converts the RGB image data into R&#x2032;G&#x2032;B&#x2032; image data conforming to the color space of the image display device <b>104</b>.</p>
+<p id="p-0154" num="0155">After that, as in the case of transmission, the spatial filter section <b>15</b> performs a spatial filter process (edge enhancement process, smoothing process) by a digital filter in accordance with the segmentation class signals. The enlarging/reducing section <b>16</b> performs a downsampling process for a match in size for the image display device <b>104</b>. Further, the output tone correction section <b>17</b> performs correction on a text area with use of the gamma curve of (b) of <figref idref="DRAWINGS">FIG. 5</figref>, and performs correction on a nontext area with use the gamma curve of (a) of FIG. <b>5</b>, for example.</p>
+<p id="p-0155" num="0156">Then, the output tone correction section <b>17</b> supplies the R&#x2032;G&#x2032;B&#x2032; image data to the image display device <b>104</b>, and the image display device <b>104</b> performs a preview display in accordance with the R&#x2032;G&#x2032;B&#x2032; image data.</p>
+<p id="p-0156" num="0157">(5) Modification</p>
+<p id="p-0157" num="0158">In the image forming apparatus <b>100</b> of <figref idref="DRAWINGS">FIG. 1</figref>, the compressed image data (encoded codes) and the segmentation class signal codes are stored in the storage device <b>107</b> in association with one another. However, as in an image forming apparatus <b>100</b><i>a </i>of <figref idref="DRAWINGS">FIG. 11</figref>, there may be such an arrangement that: after the image input apparatus <b>101</b> reads image data, the image data are encoded and stored temporarily in the storage device <b>107</b> before a segmentation process and an automatic document type discrimination process; and the image data are read out from the storage device <b>107</b>, decompressed, and then subjected to a segmentation process and an automatic document type discrimination process.</p>
+<p id="p-0158" num="0159">Further, the image forming apparatus <b>100</b> of <figref idref="DRAWINGS">FIG. 1</figref> may be capable of executing an image filing mode (image filing job) during a job such as the copier mode, the printer mode, the facsimile transmission mode, the facsimile reception mode, or the image transmission mode. The image filing mode is a mode in which to create an image file (e.g., JPEG or TIFF file), during a job such as the copier mode, in accordance with image data obtained by the image input apparatus <b>101</b> or image data received from outside and store the image file in the storage device <b>107</b>.</p>
+<p id="p-0159" num="0160">At the time of filing in the image filing mode, the image data obtained by the image input apparatus <b>101</b> or the image data received from outside are converted into an image file (e.g., JPEG or TIFF file) by the image processing apparatus <b>102</b>. The image filed is sent to a filing processing section (job apparatus; not shown). The filing processing section stores the image file in the storage device <b>107</b>.</p>
+<p id="p-0160" num="0161">Further, in the case of a preview during each job (e.g., the copier mode, the print mode, or the facsimile transmission mode), the image data obtained by the image input apparatus <b>101</b> or the image data received from outside are processed by the image processing apparatus <b>102</b>, and then sent to the image display device <b>104</b>, regardless of the execution of the image filing mode. Furthermore, in the case of a preview during each job, the image processing apparatus <b>102</b> executes the same image processing regardless of the execution of the image filing mode. For example, at the time of a preview display in the copier mode, the image processing apparatus <b>102</b> performs such processes as shown in <figref idref="DRAWINGS">FIG. 3</figref>, regardless of the execution of the image filing mode. Further, at the time of a preview display in the facsimile transmission mode, the image processing apparatus <b>102</b> performs such processes as shown in <figref idref="DRAWINGS">FIG. 8</figref>, regardless of the execution of the image filing mode.</p>
+<p id="p-0161" num="0162">(6) Advantages of the Image Processing Apparatus of the Present Embodiment</p>
+<p id="p-0162" num="0163">The image processing apparatus <b>102</b> of the present embodiment supplies image data to the image output apparatus (job apparatus, printing apparatus) <b>103</b>, which performs a print job (copier mode, print mode), and supplies the image data to the image display device <b>104</b> so that the image display device <b>104</b> displays a preview before the execution of the print job.</p>
+<p id="p-0163" num="0164">Moreover, the image processing apparatus <b>102</b> includes a first image processing section which performs first image processing on image data to be supplied to the image output apparatus <b>103</b>, which performs second image processing on image data to be supplied to the image display device <b>104</b>, the second image processing being different from the first image processing, and which performs the first image processing and the second image processing with use of a common circuit area. An example of the first image processing section is the color correction section <b>13</b> in the copier mode and the full-color mode. This is because the color correction section <b>13</b> uses a common circuit area for a process of conversion from RGB into CMY (first image processing) and a process of conversion from RGB into R&#x2032;G&#x2032;B&#x2032; (second image processing).</p>
+<p id="p-0164" num="0165">This brings about a merit of reducing the circuit size of an image processing circuit even in an image processing apparatus that performs image processing for a printing process or the like and image processing for a preview before the printing process.</p>
+<p id="p-0165" num="0166">Further, in the present embodiment, at the time of printing in the copier mode and the full-color mode, the color correction section <b>13</b> performs a process by which additive image data (RGB) read by the scanner and conforming to the characteristics of the scanner are converted into subtractive image data (CMY) conforming to the characteristics of the image output apparatus <b>103</b>. Meanwhile, at the time of a preview in the copier mode and the full-color mode, the color correction section <b>13</b> performs a process by which the additive image data (RGB) read by the scanner and conforming to the characteristics of the scanner are converted into additive image data (R&#x2032;G&#x2032;B&#x2032;) conforming to the characteristics of the image display device <b>104</b>. That is, at the time of a preview display, the additive image data conforming to the characteristics of the scanner are converted directly into the image data conforming to the characteristics of the image display device <b>104</b>. Therefore, at the time of a preview display in the copier mode and the full-color mode, the image processing apparatus <b>102</b> of the present embodiment performs a single nonlinear conversion from the RGB image data into the R&#x2032;G&#x2032;B&#x2032; image data, but does not perform a plurality of nonlinear conversions as in the arrangement of Japanese Patent Application Publication, Tokukaihei, 9-135316 A (1997), thus making it possible to suppress accumulation of errors in conversion and suppress deterioration in color reproducibility. In Japanese Patent Application Publication, Tokukaihei, 9-135316 A (1997), a total of four conversions are performed, namely the conversion from RGB data into CMY data, the conversion from CMY data into CMYK data, the conversion from CMYK data into CMY data, and the conversion from the CMY data into RGB data, which result in accumulation of errors in conversion and deterioration in color reproducibility.</p>
+<p id="p-0166" num="0167">Further, at the time of a preview in the copier mode and the single-color mode or at the time of a preview in the copier mode and the two-color mode, the present embodiment performs such a nonlinear conversion, but the number of such nonlinear conversions is only two. Therefore, it is possible to better suppress deterioration in color reproducibility than in the arrangement of Japanese Patent Application Publication, Tokukaihei, 9-135316 A (1997), in which a total of four nonlinear conversions are performed.</p>
+<p id="p-0167" num="0168">Furthermore, in the present embodiment, at the time of printing in the copier mode and the full-color mode, the black generation and under color removal section <b>14</b> converts CMY image into CMYK image data; meanwhile, at the time of a preview display in the copier mode and the full-color mode, the black generation and under color removal section <b>14</b> performs no processing on R&#x2032;G&#x2032;B&#x2032; and outputs R&#x2032;G&#x2032;B&#x2032; directly. This makes it possible to simplify the circuit arrangement by using a common image data path in the image processing circuit for printing image data that needs to be converted from CMY into CMYK and preview image data that does not need to be subjected to a black generation and under color removal process.</p>
+<p id="p-0168" num="0169">The image processing apparatus <b>102</b> of the present embodiment can perform image processing based on a result of judgment by the automatic document type discrimination section <b>5</b>, image processing based on a result of processing by the segmentation process section <b>6</b>, and a background removal process. The effects of these processes are reflected in a preview image that is displayed by the image display device <b>104</b>.</p>
+<heading id="h-0011" level="1">Embodiment 2</heading>
+<p id="p-0169" num="0170">In single- or two-color printing, the present embodiment performs a process of reducing differences in color between an image to be previewed and an image to be actually printed. The process is detailed below. An image processing apparatus of the present embodiment is arranged in the same manner as the image processing apparatus <b>102</b> of Embodiment 1.</p>
+<p id="p-0170" num="0171">(1) Printing Process</p>
+<p id="p-0171" num="0172">(1-1) Single-Color Mode</p>
+<p id="p-0172" num="0173">As in Embodiment 1, while the single-color mode is being used, the image-quality adjustment section (color conversion section) <b>11</b> converts image data into single-color image data (monochrome image data, converted image data) according to Eq. (1) above. It should be noted that the image-quality adjustment section <b>11</b> adjusts intensity according to Eq. (3) below. The parameters r<b>1</b>&#x2032; to r<b>3</b>&#x2032; and a<b>11</b> to a<b>33</b> are different from those used for the conversion into the single-color image data. The intensity is adjusted by changing the parameters.</p>
+<p id="p-0173" num="0174">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mo>(</mo>
+          <mtable>
+            <mtr>
+              <mtd>
+                <msup>
+                  <mi>R</mi>
+                  <mi>&#x2032;</mi>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msup>
+                  <mi>G</mi>
+                  <mi>&#x2032;</mi>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msup>
+                  <mi>B</mi>
+                  <mi>&#x2032;</mi>
+                </msup>
+              </mtd>
+            </mtr>
+          </mtable>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <mo>(</mo>
+            <mtable>
+              <mtr>
+                <mtd>
+                  <mrow>
+                    <mi>r</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msup>
+                        <mn>1</mn>
+                        <mi>&#x2032;</mi>
+                      </msup>
+                      <mo>&#xb7;</mo>
+                      <mi>a</mi>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>11</mn>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mrow>
+                    <mi>r</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msup>
+                        <mn>1</mn>
+                        <mi>&#x2032;</mi>
+                      </msup>
+                      <mo>&#xb7;</mo>
+                      <mi>a</mi>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>21</mn>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mrow>
+                    <mi>r</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msup>
+                        <mn>1</mn>
+                        <mi>&#x2032;</mi>
+                      </msup>
+                      <mo>&#xb7;</mo>
+                      <mi>a</mi>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>31</mn>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mrow>
+                    <mi>r</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msup>
+                        <mn>2</mn>
+                        <mi>&#x2032;</mi>
+                      </msup>
+                      <mo>&#xb7;</mo>
+                      <mi>a</mi>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>21</mn>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mrow>
+                    <mi>r</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msup>
+                        <mn>2</mn>
+                        <mi>&#x2032;</mi>
+                      </msup>
+                      <mo>&#xb7;</mo>
+                      <mi>a</mi>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>22</mn>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mrow>
+                    <mi>r</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msup>
+                        <mn>2</mn>
+                        <mi>&#x2032;</mi>
+                      </msup>
+                      <mo>&#xb7;</mo>
+                      <mi>a</mi>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>32</mn>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mrow>
+                    <mi>r</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msup>
+                        <mn>3</mn>
+                        <mi>&#x2032;</mi>
+                      </msup>
+                      <mo>&#xb7;</mo>
+                      <mi>a</mi>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>31</mn>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mrow>
+                    <mi>r</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msup>
+                        <mn>3</mn>
+                        <mi>&#x2032;</mi>
+                      </msup>
+                      <mo>&#xb7;</mo>
+                      <mi>a</mi>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>32</mn>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mrow>
+                    <mi>r</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msup>
+                        <mn>3</mn>
+                        <mi>&#x2032;</mi>
+                      </msup>
+                      <mo>&#xb7;</mo>
+                      <mi>a</mi>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>33</mn>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+          <mo>&#xd7;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mtable>
+              <mtr>
+                <mtd>
+                  <mi>R</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>G</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>B</mi>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>Eq</mi>
+        <mo>.</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mn>3</mn>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0174" num="0175">Accordingly, it is possible to use the same image processing circuit for the adjustment of intensity and the process of conversion of the single-color image data (from RGB into CMY). Thus, the image processing apparatus <b>102</b> uses the same processing section (image-quality adjustment section <b>11</b>) for the adjustment of intensity and the process of image data conversion.</p>
+<p id="p-0175" num="0176">The resulting single-color image data are not processed in the color correction section <b>13</b> or the black generation and under color removal section <b>14</b>, and then processed in the subsequent processing sections and printed out by the image output apparatus <b>103</b>.</p>
+<p id="p-0176" num="0177">(1-2) Two-Color Mode</p>
+<p id="p-0177" num="0178">As in Embodiment 1, while the two-color mode is being used, the two-color printing process section (color conversion section) <b>12</b> converts image data into two-color image data (two-color image data, converted image data). This process in the two-color printing process section <b>12</b> is detailed. The following assumes that the image processing apparatus <b>102</b> receives 8-bit (0 to 255) RGB image data (input image data), that the image processing apparatus <b>102</b> outputs 8-bit (0 to 255) CMYK image data (output image data), that the red (R) component is extracted from the input image data (RGB), and that printing is made only in red (R) and black (K).</p>
+<p id="p-0178" num="0179">As shown in <figref idref="DRAWINGS">FIG. 12</figref>, the two-color printing process section <b>12</b> includes: one-dimensional look-up tables (1D-LUT) <b>121</b>R, <b>121</b>G, and <b>121</b>B for converting R, G, and B, respectively; a data conversion section <b>122</b>; and an arithmetic color conversion section <b>123</b>.</p>
+<p id="p-0179" num="0180">As shown in <figref idref="DRAWINGS">FIG. 12</figref>, the RGB image data (RGB data) are first converted into R<sub>1</sub>G<sub>1</sub>B<sub>1 </sub>image data (R<sub>1</sub>G<sub>1</sub>B<sub>1 </sub>data) by the 1D-LUTs <b>121</b>R, <b>121</b>G, and <b>121</b>B with use of the one-dimensional LUTs, respectively. Next, the R<sub>1</sub>G<sub>1</sub>B<sub>1 </sub>data are inputted to the data conversion section <b>122</b>. The process in the data conversion section <b>122</b> is described with reference to a flow chart shown in <figref idref="DRAWINGS">FIG. 13</figref>.</p>
+<p id="p-0180" num="0181">First, upon receiving the R<sub>1</sub>G<sub>1</sub>B<sub>1 </sub>data (S<b>31</b>), the data conversion section <b>122</b> outputs the R<sub>1 </sub>data (red component) of the R<sub>1</sub>G<sub>1</sub>B<sub>1 </sub>data directly as R<sub>2 </sub>data and takes the average of the G<sub>1 </sub>data (green component) and the B<sub>1 </sub>data (blue component) (S<b>32</b>).</p>
+<p id="p-0181" num="0182">(c) of <figref idref="DRAWINGS">FIG. 14</figref> represents a CMY color space. (Although the input image data are RGB data, the color space of the first color system is a CMY color space since the primary colors are CMY.) In S<b>32</b> above, all the R<sub>1</sub>G<sub>1</sub>B<sub>1 </sub>data are mapped onto the plane KRWC as shown in (a) of <figref idref="DRAWINGS">FIG. 14</figref>, which is an overhead view of the plane RYWM of (c) of <figref idref="DRAWINGS">FIG. 14</figref>. This means that all the R<sub>1</sub>G<sub>1</sub>B<sub>1 </sub>data are mapped onto the hues R and C across the achromatic color axis (K-W).</p>
+<p id="p-0182" num="0183">Next, back in <figref idref="DRAWINGS">FIG. 13</figref>, the size of the R<sub>2 </sub>data and the size the averaged G<sub>2 </sub>(or B<sub>2</sub>) data are compared with each other, whereby an R-K reproduction area is determined (S<b>33</b>). The determination of the R-K reproduction area is made as follows:</p>
+<p id="p-0183" num="0184">(1) In cases where the G<sub>2 </sub>data is greater than the R<sub>2 </sub>data, it is determined that the points (R<sub>2</sub>, G<sub>2</sub>, B<sub>2</sub>) are outside of the area of the triangular plane KRW; and</p>
+<p id="p-0184" num="0185">(2) In cases where the G<sub>2 </sub>data is not greater than the R<sub>2 </sub>data, it is determined that the points (R<sub>2</sub>, G<sub>2</sub>, B<sub>2</sub>) are inside of the area of the triangular plane KRW. The triangular plane KRW is formed by connecting the achromatic color axis with the vertex R, which is one of the vertices of the CMY color space other than the achromatic color axis.</p>
+<p id="p-0185" num="0186">In cases where the determination (1) is made in the plane KRWC of (c) of <figref idref="DRAWINGS">FIG. 14</figref> (YES in S<b>33</b>), the point (R<sub>2</sub>, G<sub>2</sub>, B<sub>2</sub>), which are outside of a hatching area of (b) of <figref idref="DRAWINGS">FIG. 14</figref> (i.e., outside of the area of the triangular plane KRW), are mapped onto the achromatic color axis (K-W) in parallel with RW (or KC) (S<b>34</b>) in the flow shown in <figref idref="DRAWINGS">FIG. 13</figref>. In this case, the points (R<sub>2</sub>, G<sub>2</sub>, B<sub>2</sub>) are mapped in the direction of arrows of (b) of <figref idref="DRAWINGS">FIG. 14</figref>. That is, the G<sub>2 </sub>data and the B<sub>2 </sub>data all become identical to the R<sub>2 </sub>data. After that, the R<sub>2</sub>G<sub>2</sub>B<sub>2 </sub>data are outputted (S<b>35</b>).</p>
+<p id="p-0186" num="0187">In cases where the determination (2) is made in the plane KRWC of (c) of <figref idref="DRAWINGS">FIG. 14</figref> (NO in S<b>33</b>), the hatching area (triangular plane KRW) is already constituted by R and K. Therefore, in the flow shown in <figref idref="DRAWINGS">FIG. 13</figref>, the process proceeds directly to S<b>35</b>, whereby the R<sub>2</sub>G<sub>2</sub>B<sub>2 </sub>data are outputted directly. In cases where the G<sub>2 </sub>data and the R<sub>2 </sub>data are equal, the determinations (1) and (2) both produce the same results, whereby the points (R<sub>2</sub>, G<sub>2</sub>, B<sub>2</sub>) are on the achromatic color axis. However, in the present embodiment, such a case is included in the determination (2).</p>
+<p id="p-0187" num="0188">The reason why it can be determined, from the magnitude relation between the R<sub>2 </sub>data and the G<sub>2 </sub>data (or B<sub>2 </sub>data), whether the points (R<sub>2</sub>, G<sub>2</sub>, B<sub>2</sub>) are inside or outside of the triangular plane KRW in the plane KRWC is explained with reference to <figref idref="DRAWINGS">FIG. 15</figref>. (c) of <figref idref="DRAWINGS">FIG. 15</figref> is a perspective view of an RGB color space. (a) of <figref idref="DRAWINGS">FIG. 15</figref> shows a plane KRYG of (c) of <figref idref="DRAWINGS">FIG. 15</figref>. (b) of <figref idref="DRAWINGS">FIG. 15</figref> shows a plane (cross-section) KRMB of (c) of <figref idref="DRAWINGS">FIG. 15</figref>.</p>
+<p id="p-0188" num="0189">First, as shown in (a) of <figref idref="DRAWINGS">FIG. 15</figref>, the plane KRYG is divided according to the magnitude of the R data and the G data into an area where R&#x3e;G and an area where R&#x3c;G. Next, as shown in (b) of <figref idref="DRAWINGS">FIG. 15</figref>, the plane KRMB is divided according to the magnitude of the R data and the B data into an area where R&#x3e;B and an area where R&#x3c;B. Accordingly, R&#x3e;G and R&#x3e;B in an area inside of the triangular plane KRW of (c) of <figref idref="DRAWINGS">FIG. 15</figref>, and R&#x3c;G and R&#x3c;B in an area outside of the triangular plane KRW (inside of a triangular plane KWC). As evidenced by S<b>32</b> of the flow shown in <figref idref="DRAWINGS">FIG. 13</figref>, the G<sub>2 </sub>data and the B<sub>2 </sub>data always take on the same values. Therefore, it is only necessary to compare either the G<sub>2 </sub>data or the B<sub>2 </sub>data to the R<sub>2 </sub>data in determining whether or not the points (R<sub>2</sub>, G<sub>2</sub>, B<sub>2</sub>) are inside of the triangular plane KRW.</p>
+<p id="p-0189" num="0190">Finally, all the R<sub>1</sub>G<sub>1</sub>B<sub>1 </sub>data are mapped onto the triangular plane KRW as shown in (c) of <figref idref="DRAWINGS">FIG. 14</figref>. This means that the mapping of the input image data onto the hatching area causes all the R<sub>1</sub>G<sub>1</sub>B<sub>1 </sub>data to be the R<sub>2</sub>G<sub>2</sub>B<sub>2 </sub>data, which include only a red component and a black component.</p>
+<p id="p-0190" num="0191">Similarly, the R<sub>1</sub>G<sub>1</sub>B<sub>1 </sub>data can be made R<sub>2</sub>G<sub>2</sub>B<sub>2 </sub>data including only either a green or blue component and a black component.</p>
+<p id="p-0191" num="0192">The arithmetic color conversion section <b>123</b> of <figref idref="DRAWINGS">FIG. 12</figref> converts the R<sub>2</sub>G<sub>2</sub>B<sub>2 </sub>data into CMY data as shown in the following equations:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>C=</i>255&#x2212;<i>R</i><sub>2 </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>M=</i>255&#x2212;<i>G</i><sub>2 </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>Y=</i>255&#x2212;<i>B</i><sub>2 </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0192" num="0193">As explained in Embodiment 1, in the case of a printing process in the single-color mode, the color correction section <b>13</b> performs no processing. The black generation and under color removal section <b>14</b> calculates the minimum value of CMY, subtracts the minimum value from CMY, and output the minimum value as a K signal.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>MIN=Minimum Value of <i>CMY </i><?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>C&#x2032;=C</i>&#x2212;MIN<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>M&#x2032;=M</i>&#x2212;MIN<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>Y&#x2032;=Y</i>&#x2212;MIN<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>K</i>=MIN<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0193" num="0194">Furthermore, the processing sections subsequent to the black generation and under color removal section <b>14</b> perform processing, and the image output apparatus <b>103</b> performs printing.</p>
+<p id="p-0194" num="0195">(2) Preview Display (Single-Color Mode, Two-Color Mode)</p>
+<p id="p-0195" num="0196">In the single-color mode, the process of conversion of image data into single-color image data (CMY) by the image-quality adjustment section <b>11</b> is the same as in the case of a printing process. In the two-color mode, the process of conversion of image data into two-color image data (CMY) by the two-color printing process section <b>12</b> is the same as in the case of a printing process.</p>
+<p id="p-0196" num="0197">As shown in <figref idref="DRAWINGS">FIG. 4</figref>, at the time of a preview display in the single-color mode or two-color mode, the image data are processed by the color correction section (color matching section) <b>13</b> after being converted into single-color image data or two-color image data. This process is detailed. The color correction section <b>13</b> performs a color matching process by creating a color correction (matching) LUT of input signals (input values) and output signals (output values) associated with one another and calculating the output signals with reference to the created color correction LUT. The color correction LUT is selected from among color correction LUTs respectively dedicated to a preview display in the single-color mode and a preview display in the two-color mode according to the color selected at the time.</p>
+<p id="p-0197" num="0198">A color correction LUT for printing can be created by utilizing the &#x201c;Color Calibration [Correction] System Using Neural Networks&#x201d; described on pages 15 to 19 of <i>Sharp Technical Journal </i>No. 76 (April 2000). An input model neural network is realized by a neural network having learned the correspondence between the RGB signals, which constitute the color space of the image input apparatus <b>101</b>, and the L*a*b* (CIELAB) values. An output model neural network is realized by a neural network having learned the correspondence between L*a*b* and CMY, which constitute the color space of the image output apparatus <b>103</b>. By integrating these models, a color correction LUT for converting input RGB signals into output CMY signals is created.</p>
+<p id="p-0198" num="0199">At the time of a preview display in the single-color mode, the image-quality adjustment section <b>11</b> creates CMY signals. Alternatively, at the time of a preview display in the two-color mode, the two-color printing process section <b>12</b> creates CMY signals. Therefore, the color correction section <b>13</b> converts the CMY signals into RGB (R&#x2032;G&#x2032;B&#x2032;) signals for display in the image display device <b>104</b>.</p>
+<p id="p-0199" num="0200">In the single-color mode or two-color mode, a color correction LUT for preview display can be created in the same manner as the color correction LUT for printing. Since the color correction section <b>13</b> receives CMY signals, an input model neural network is realized by a neural network, shown in <figref idref="DRAWINGS">FIG. 16</figref>, which has learned the correspondence between the CMY signals, which are the color reproduction characteristics of the image output apparatus <b>103</b>, and the L*a*b* (CIELAB) values. It should be noted here that the characteristics of the image output apparatus <b>103</b> are obtained from the relationship between the CMY signals and the CIE 1976 L*a*b* signals by outputting a patch from the image output apparatus <b>103</b> and measuring the colors of the patch, and then learned by the neural network. An output model neural network is realized by a neural network, shown in <figref idref="DRAWINGS">FIG. 17</figref>, which has learned the correspondence between L*a*b*, which are the color reproduction characteristics of the image display device <b>104</b>, and RGB. Further, the characteristics of the image display device <b>104</b> are obtained from the relationship between the RGB signals and the CIE 1976 L*a*b* signals by measuring various colors displayed by the image display device <b>104</b>, and then learned by the neural network. By integrating these models, the color correction LUT for preview display can be created. Use of the color correction LUT for preview display makes it possible to find the relationship between the CMY signals and the RGB signals. That is, by reading out, from the color correction LUT, values corresponding to the CMY signals to be received by the color correction section <b>13</b>, the CMY signals can be converted into RGB (R&#x2032;G&#x2032;B&#x2032;) signals for display in the image display device <b>104</b>.</p>
+<p id="p-0200" num="0201">As described above, by performing a color conversion in the color correction section <b>13</b> at the time of a preview display in the single-color mode or two-color mode, the image processing apparatus <b>102</b> can realize a preview display of an image matched in color to an image to be printed out from the image output apparatus <b>103</b> at the time of a printing process in the single-color mode or at the time of a printing process in the two-color mode, without having a separate processing circuit dedicated to previewing images.</p>
+<p id="p-0201" num="0202">In the case of use of the facsimile transmission mode or image transmission mode in the single-color mode or two-color mode, the process in the color correction section can be applied at the time of a preview display.</p>
+<p id="p-0202" num="0203">The present embodiment can be achieved by storing, in a computer-readable storage medium containing control program code (executable program, intermediate code program, or source program) to be executed by a computer, an image processing method for displaying a preview of such a single- or two-color image by reducing differences in color between an image to be previewed and an image to be actually printed. This makes it possible to provide a portable storage medium containing a program for the image processing method.</p>
+<p id="p-0203" num="0204">In the present embodiment, the storage medium may be a memory (not shown) for processing in a microcomputer. For example, the storage medium may be a program medium such as a ROM per se. Alternatively, the storage medium may be a program medium that can read by inserting the storage medium into a program reading device provided as an external storage device (not shown).</p>
+<p id="p-0204" num="0205">In either case, the contained program code may be arranged to be accessible to a microprocessor that will execute the program code. Alternatively, the program code may be arranged to be read and then downloaded to a program storage area (not shown) of the microcomputer. It is assumed that the download program is stored in advance in the main apparatus.</p>
+<p id="p-0205" num="0206">It should be noted here that the program medium is a storage medium arranged to be separable from the main body. The storage medium may be, for example, a tape, such as a magnetic tape or a cassette tape; a magnetic disk, such as a flexible disk or a hard disk, or an optical disk, such as CD-ROM/MO/MD/DVD; a card, such as an IC card (memory card) or an optical card; or a semiconductor memory, such as a mask ROM/EPROM (erasable programmable read-only memory)/EEPROM (electrically erasable programmable read-only memory)/flash ROM. All these storage media hold a program in a fixed manner.</p>
+<p id="p-0206" num="0207">Alternatively, since the present embodiment is a system configuration connectable to communication networks including the Internet, the program medium may be a medium carrying the program code in a flowing manner as in the downloading of a program over a communication network. Further, when the program code is downloaded over a communications network in this manner, the download program may be stored in advance in the main apparatus or installed from another storage medium. The present invention can be realized in the form of a computer data signal, embedded in a carrier wave, in which the program code is embodied electronically. The storage medium is read by a digital color image forming apparatus or a program reading device provided in a computer system, whereby the aforementioned image processing method is executed.</p>
+<p id="p-0207" num="0208">As described above, an image processing apparatus according to the present invention is an image processing apparatus, having a color conversion section for converting image data into monochrome image data, which supplies the monochrome image data to a printing apparatus for executing image printing and supplies the monochrome image data to an image display device for displaying a preview, the image processing apparatus including: a color matching section for performing, on the monochrome image data to be supplied to the image display device, a color matching process of reducing differences in color between an image to be outputted by the image display device and an image to be outputted by the printing apparatus.</p>
+<p id="p-0208" num="0209">As described above, an image processing apparatus according to the present invention is an image processing apparatus, having a color conversion section for converting image data into two-color image data, which supplies the two-color image data to a printing apparatus for executing image printing and supplies the two-color image data to an image display device for displaying a preview, the image processing apparatus including: a color matching section for performing, on the two-color image data to be supplied to the image display device, a color matching process of reducing differences in color between an image to be outputted by the image display device and an image to be outputted by the printing apparatus.</p>
+<p id="p-0209" num="0210">As described above, an image processing apparatus according to the present invention is an image processing apparatus, including a first color conversion section for converting image data into monochrome converted image data and a second color conversion section for converting the image data into two-color converted image data, which supplies, to a printing apparatus for executing image printing, the converted image data converted by the first or second color conversion section, and which supplies, to an image display device for displaying a preview, the converted image data converted by the first or second color conversion section, the image processing apparatus including: a color matching section for performing, on the converted image data to be supplied to the image display device, a color matching process of reducing differences in color between an image to be outputted by the image display device and an image to be outputted by the printing apparatus.</p>
+<p id="p-0210" num="0211">According to the foregoing arrangement, a monochrome image or a two-color image can be printed by supplying the monochrome image data or the two-color image data (converted image data) to the printing apparatus, and a preview of the monochrome image or the two-color image can be displayed by supplying the monochrome image data or the two-color image data to the image display device. Here, on the monochrome image data or the two-color image data to be supplied to the image display device, the color matching process of reducing differences in color between an image to be outputted by the image display device and an image to be outputted by the printing apparatus is performed. This makes it possible to display a comfortable preview of a monochrome image or a two-color image by reducing differences in color between an image to be previewed and an image to be actually printed.</p>
+<p id="p-0211" num="0212">In addition to the foregoing arrangement, the image processing apparatus according to the present invention may be arranged such that: the image display device displays RGB image data; the color conversion section converts RGB image data into CMY image data; and the color matching section converts the CMY image data into RGB image data in accordance with characteristics of the image processing apparatus and characteristics of the image display device.</p>
+<p id="p-0212" num="0213">According to the foregoing arrangement, an image whose preview is displayed by the image display device is subjected to the color matching process in accordance with the characteristics of the image processing apparatus and the characteristics of the image display device. This makes it possible to display a comfortable preview by reducing differences in color from an image to be printed.</p>
+<p id="p-0213" num="0214">In addition to the foregoing arrangement, the image processing apparatus according to the present invention may be arranged such that: the image display device displays RGB image data; the first and second color conversion sections convert the RGB image data into CMY image data; and the color matching section converts the CMY image data into RGB image data in accordance with characteristics of the image processing apparatus and characteristics of the image display device.</p>
+<p id="p-0214" num="0215">According to the foregoing arrangement, an image whose preview is displayed by the image display device is subjected to the color matching process in accordance with the characteristics of the image processing apparatus and the characteristics of the image display device. This makes it possible to display a comfortable preview by reducing differences in color from an image to be printed.</p>
+<p id="p-0215" num="0216">The image processing apparatus according to the present invention may be arranged to further include a color correction section for performing color correction on three or more colors of image data that are supplied to the printing apparatus, wherein the color correction section serves also as the color matching section. According to the foregoing arrangement, the color correction section, which has conventionally been provided in the image processing apparatus, is used also as the color matching section, whereby an increase in circuit size can be inhibited without the need for another circuit for performing a color matching process on the image data (monochrome image data, two-color image data, converted image data) to be supplied to the image display device.</p>
+<p id="p-0216" num="0217">As described above, an image forming apparatus according to the present invention includes: an image processing apparatus as set forth in any of the foregoing; a printing apparatus; and an image display device for displaying a preview. The foregoing arrangement makes it possible to provide an image forming apparatus capable of reducing differences in color of an image between image data printed in monochrome or two colors and image data whose preview is displayed by an image display device.</p>
+<p id="p-0217" num="0218">As described above, an image processing method according to the present invention is an image processing method including a step of converting image data into monochrome image data, a step of supplying the monochrome image data to a printing apparatus for executing image printing, and a step of supplying the monochrome image data to an image display device for displaying a preview, the image processing method including: a color matching step of performing, on the monochrome image data to be supplied to the image display device, a color matching process of reducing differences in color between an image to be outputted by the image display device and an image to be outputted by the printing apparatus.</p>
+<p id="p-0218" num="0219">The method, which brings about the same effect as the above image processing apparatus, makes it possible to display a comfortable preview of a monochrome image by reducing differences in color between an image to be previewed and an image to be actually printed.</p>
+<p id="p-0219" num="0220">As described above, an image processing method according to the present invention is an image processing method including a step of converting image data into two-color image data, a step of supplying the two-color image data to a printing apparatus for executing image printing, and a step of supplying the two-color image data to an image display device for displaying a preview, the image processing method including: a color matching step of performing, on the two-color image data to be supplied to the image display device, a color matching process of reducing differences in color between an image to be outputted by the image display device and an image to be outputted by the printing apparatus.</p>
+<p id="p-0220" num="0221">The method, which brings about the same effect as the above image processing apparatus, makes it possible to display a comfortable preview of a two-color image by reducing differences in color between an image to be previewed and an image to be actually printed.</p>
+<p id="p-0221" num="0222">An image processing method according to the present invention is an image processing method including a step of converting image data into monochrome converted image data or converting the image data into two-color converted image data, a step of supplying, to a printing apparatus for executing image printing, the converted image data converted by the first or second color conversion section, and a step of supplying, to an image display device for displaying a preview, the converted image data converted by the first or second color conversion section, the image processing method including: a color matching step of performing, on the converted image data to be supplied to the image display device, a color matching process of reducing differences in color between an image to be outputted by the image display device and an image to be outputted by the printing apparatus.</p>
+<p id="p-0222" num="0223">The method, which brings about the same effect as the above image processing apparatus, makes it possible to display a comfortable preview of a monochrome image or a two-color image by reducing differences in color between an image to be previewed and an image to be actually printed.</p>
+<p id="p-0223" num="0224">Further, an image processing apparatus of the present invention can be realized by a computer. In this case, an image processing program for realizing the image processing apparatus on a computer by causing the computer to function as each section of the image processing apparatus and a computer-readable storage medium containing the image processing program are also encompassed in the scope of the present invention.</p>
+<p id="p-0224" num="0225">These arrangements make it possible to realize the same effect as the image processing apparatus by causing a computer to read and execute the image processing program.</p>
+<p id="p-0225" num="0226">The embodiments and concrete examples of implementation discussed in the foregoing detailed explanation serve solely to illustrate the technical details of the present invention, which should not be narrowly interpreted within the limits of such embodiments and concrete examples, but rather may be applied in many variations within the spirit of the present invention, provided such variations do not exceed the scope of the patent claims set forth below. Further, the numerical values outside of the ranges shown in this specification are encompassed in the present invention as long as such ranges are rational ranges that do not defeat the purpose of the present invention.</p>
+<heading id="h-0012" level="1">INDUSTRIAL APPLICABILITY</heading>
+<p id="p-0226" num="0227">An image processing apparatus of the present invention can be used for apparatuses for processing image data and, in particular, for multifunction printers, copying machines, printers, and facsimile machines.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08625177-20140107-M00001.NB">
+<img id="EMI-M00001" he="26.50mm" wi="54.69mm" file="US08625177-20140107-M00001.TIF" alt="embedded image " img-content="table" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08625177-20140107-M00002.NB">
+<img id="EMI-M00002" he="12.36mm" wi="76.20mm" file="US08625177-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>The invention claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. An image processing apparatus, having a color conversion section for converting image data into monochrome image data, which supplies the monochrome image data to a printing apparatus for executing image printing and supplies the monochrome image data to an image display device for displaying a preview,
+<claim-text>the image processing apparatus comprising:</claim-text>
+<claim-text>a color matching section for performing, on the monochrome image data to be supplied to the image display device, a color matching process of reducing differences in color between an image to be outputted by the image display device and an image to be outputted by the printing apparatus; and</claim-text>
+<claim-text>a color correction section for performing color correction on three or more colors of image data that are supplied to the printing apparatus,</claim-text>
+<claim-text>the image display device displaying RGB image data, and</claim-text>
+<claim-text>the color correction section and the color matching section being realized by a common circuit, and the image processing apparatus including no preview processing circuit for generating a preview image, and</claim-text>
+<claim-text>in a case where the preview is displayed, the color conversion section converting RGB image data into CMY monochrome image data, and the color matching section converting the CMY monochrome image data into RGB monochrome image data in accordance with characteristics of the printing apparatus and characteristics of the image display device,</claim-text>
+<claim-text>in a case where the image printing is executed, the color conversion section converting the RGB image data into the CMY monochrome image data, and the color correction section performing no processing on the CMY monochrome image data.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The image processing apparatus as set forth in <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising an image-quality adjustment section for performing adjustment of image quality of the image data including color balance adjustment, wherein the color conversion section and the image-quality adjustment section are realized by a common circuit, and
+<claim-text>in a single-color mode in which the monochrome image data is outputted, the image-quality adjustment section converts the RGB image data into the CMY monochrome image data.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. An image forming apparatus comprising:
+<claim-text>an image processing apparatus as set forth in <claim-ref idref="CLM-00001">claim 1</claim-ref>;</claim-text>
+<claim-text>a printing apparatus; and</claim-text>
+<claim-text>an image display device for displaying a preview.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. A non-transitory computer-readable storage medium containing an image processing program for operating an image processing apparatus as set forth in <claim-ref idref="CLM-00001">claim 1</claim-ref>, the image processing program causing a computer to function as each section of the image processing apparatus.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. An image processing apparatus, having a color conversion section for converting image data into two-color image data, which supplies the two-color image data to a printing apparatus for executing image printing and supplies the two-color image data to an image display device for displaying a preview,
+<claim-text>the image processing apparatus comprising:</claim-text>
+<claim-text>a color matching section for performing, on the two-color image data to be supplied to the image display device, a color matching process of reducing differences in color between an image to be outputted by the image display device and an image to be outputted by the printing apparatus; and</claim-text>
+<claim-text>a color correction section for performing color correction on three or more colors of image data that are supplied to the printing apparatus,</claim-text>
+<claim-text>the image display device displaying RGB image data, and</claim-text>
+<claim-text>the color correction section and the color matching section being realized by a common circuit, and the image processing apparatus including no preview processing circuit for generating a preview image, and</claim-text>
+<claim-text>in a case where the preview is displayed, the color conversion section converting RGB image data into CMY two-color image data, and the color matching section converting the CMY two-color image data into RGB two-color image data in accordance with characteristics of the printing apparatus and characteristics of the image display device,</claim-text>
+<claim-text>in a case where the image printing is executed, the color conversion section converting the RGB image data into the CMY two-color image data, and the color correction section performing no processing on the CMY two-color image data.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. An image forming apparatus comprising:
+<claim-text>an image processing apparatus as set forth in <claim-ref idref="CLM-00005">claim 5</claim-ref>;</claim-text>
+<claim-text>a printing apparatus; and</claim-text>
+<claim-text>an image display device for displaying a preview.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. A non-transitory computer-readable storage medium containing an image processing program for operating an image processing apparatus as set forth in <claim-ref idref="CLM-00005">claim 5</claim-ref>, the image processing program causing a computer to function as each section of the image processing apparatus. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

@@ -1,0 +1,3423 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08625921-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08625921</doc-number>
+<kind>B1</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12566782</doc-number>
+<date>20090925</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>853</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>K</subclass>
+<main-group>9</main-group>
+<subgroup>40</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>382260</main-classification>
+</classification-national>
+<invention-title id="d2e53">Method for image processing using local statistics convolution</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>2007/0236517</doc-number>
+<kind>A1</kind>
+<name>Kimpe</name>
+<date>20071000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>345690</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2008/0091757</doc-number>
+<kind>A1</kind>
+<name>Ingrassia et al.</name>
+<date>20080400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>708490</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>2008/0298680</doc-number>
+<kind>A1</kind>
+<name>Miller et al.</name>
+<date>20081200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>382168</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>2010/0195905</doc-number>
+<kind>A1</kind>
+<name>Richter</name>
+<date>20100800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>382167</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00005">
+<othercit>Chen, Jiawen, et al, &#x201c;Real-time Edge-Aware Image Processing with the Bilateral Grid&#x201d;, Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology, Jul. 2007.</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>17</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>345606</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>345475</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>345538</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>348538</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>348672</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>348E13065</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>348 E7012</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>358522</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>358525</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382168</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382169</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382170</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382171</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382172</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382205</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382260</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382279</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382300</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>386271</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>700189</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>700252</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>702180</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>704265</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>708  5</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>708290</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>708313</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>708315</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>708420</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>708813</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>708847</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>3</number-of-drawing-sheets>
+<number-of-figures>7</number-of-figures>
+</figures>
+<us-related-documents>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61100604</doc-number>
+<date>20080926</date>
+</document-id>
+</us-provisional-application>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Kokemohr</last-name>
+<first-name>Nils</first-name>
+<address>
+<city>Hamburg</city>
+<country>DE</country>
+</address>
+</addressbook>
+<residence>
+<country>DE</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Kokemohr</last-name>
+<first-name>Nils</first-name>
+<address>
+<city>Hamburg</city>
+<country>DE</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>IP Spring</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Google Inc.</orgname>
+<role>02</role>
+<address>
+<city>Mountain View</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Cunningham</last-name>
+<first-name>Gregory F</first-name>
+<department>2667</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A method for filtering a digital image, comprising segmenting the digital image into a plurality of tiles; computing tile histograms corresponding to each of the plurality of tiles; deriving a plurality of tile transfer functions from the tile histograms preferably using 1D convolutions; interpolating a tile transfer function from the plurality of tile transfer functions; and filtering the digital image with the interpolated tile transfer function. Many filters otherwise difficult to conceive or to implement are possible with this method, including an edge-preserving smoothing filter, HDR tone mapping, edge invariant gradient or entropy detection, image upsampling, and mapping coarse data to fine data.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="102.79mm" wi="110.74mm" file="US08625921-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="206.25mm" wi="172.13mm" file="US08625921-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="219.46mm" wi="187.03mm" file="US08625921-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="128.10mm" wi="168.15mm" file="US08625921-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CROSS REFERENCE TO RELATED APPLICATION</heading>
+<p id="p-0002" num="0001">The present Application claims the benefit of U.S. Provisional Patent Application No. 61/100,604 titled &#x201c;Method for Image Processing Using Local Statistics Convolution&#x201d; filed Sep. 26, 2008, the content of which is incorporated by reference in this disclosure in its entirety.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">BACKGROUND</heading>
+<p id="p-0003" num="0002">This disclosure relates to digital image filtering, based on applying 1D convolution kernels to 1D local histogram data, and is thereby very different from the conventional idea of applying 2D convolution kernels to 2D image data.</p>
+<p id="p-0004" num="0003">One major application of this image filtering domain is to enhance local contrast in an image. One conventional approach of doing this is to spread the values of the image signal so that the lowest appearing value is forced to 0.0 and the highest appearing value is forced to 1.0. If this is done for the entire image, this is an old, well-established approach. This can also be done locally, that is tile-by-tile, which is also not a novel approach. Another approach tries to find a local upper bound and a local lower bound of the image signal, which can be understood as a locally dependent &#x201c;lowest value&#x201d; and a locally dependent &#x201c;highest value&#x201d;, so that the image signal is then spread so that the lower boundary is set to 0.0 and the upper boundary is set to 1.0. The downside is that this system creates artifacting and may take a long time to process.</p>
+<p id="p-0005" num="0004">There is a high demand in the field of image processing for edge preserving smoothing filters. An old, known filter of this kind is the median filter, as it leaves strong edges in the image without blurring them, while small details are erased. Another representative filter of the class of edge preserving smoothing is the bilateral filter, which is a derivation of the Gaussian blur filter. It has a wide usage for photographic and analytic image processing. Its downside is that a fast and efficient implementation is not easily possible.</p>
+<heading id="h-0003" level="1">SUMMARY</heading>
+<p id="p-0006" num="0005">The invention surmounts these deficiencies in the prior art by providing a method for using 1D-convolution of histogram data to construct fast and efficient image filters. The histogram-convolution based image enhancements of the invention can be performed with minimal memory and processing requirements, and make extensive and fast use of a large range of filters.</p>
+<p id="p-0007" num="0006">Presented herein is a system that we name bilateral histogram equalization, which is a histogram equalization that spreads the image signal to span a range from 0.0 to 1.0 within the context of local objects in an image, that is for every pixel a lower boundary is established concerning only the peak of the local histogram that this pixel belongs to, and a higher boundary is established in similar fashion. Within the context of this disclosure, using 1D convolutions on 1D histogram data, this can be done without explicitly determining said boundaries; instead, an equation is provided in direct form that directly treats the signal so that each object in the image spans a contrast range of 0.0 to 1.0. This is not merely a formal difference, it also leads to different results, as pixel neighborhood issues dont play a role in this approach, and the computation is also faster.</p>
+<p id="p-0008" num="0007">An advantage of the system disclosed herein is that an edge-preserving smoothing filter can be implemented where, again, pixel neighborhood issues play no role and therefore many artifact problems are eliminated. The EPS filter introduced in this disclosure does again function on the idea of applying 1D convolution kernels to 1D histogram data. In its results it compares to a bilateral filter, while the processing herein takes place very fast, and full flexibility with respect to the convolution in signal domain is possible, unlike other fast embodiments.</p>
+<p id="p-0009" num="0008">This disclosure also describes a large amount of other filters using the said philosophy of 1D convolution kernels on 1D statistical image data in order to create a Tile Transfer Function, also called a Region Transfer Function, that can be used to enhance an image. Many of these filters would be difficult to conceive or to implement without the system disclosed herein. For instance, an edge-preserving smoothing filter is easily implemented with this concept. Other applications include HDR tone mapping, edge invariant gradient or entropy detection, image upsampling, mapping coarse data to fine data, and more. Since mostly 1D kernels are computed on histogram data, only little processing power is required, so that all filters in this disclosure run in linear time.</p>
+<p id="p-0010" num="0009">A method is disclosed for filtering a digital image comprising a first plurality of pixels, comprising segmenting the first plurality of pixels into a first plurality of regions; computing a first plurality of regional histograms by calculating a regional histogram corresponding to each region in the first plurality of regions; computing a first plurality of regional transfer functions by calculating for each region in the first plurality of regions a regional transfer function comprising a convolution of the corresponding regional histogram with a first convolution kernel; deriving an image transfer function by interpolation of two or more of the first plurality of regional transfer functions; and filtering the digital image by applying the image transfer function to each of the first plurality of pixels. The first plurality of pixels may comprise the entire digital image. Optionally, the regions may be chosen so that they do not overlap, and each pixel is contained within a single region.</p>
+<p id="p-0011" num="0010">In one embodiment, interpolation comprises selecting a pixel having a luminosity value from a first region of the first plurality of regions; computing a plurality of single value results by inputting the selected pixel's luminosity value into each of a second plurality of regional transfer functions, said second plurality including regional transfer functions corresponding to regions not comprising the selected pixel; and interpolating a resulting value for the selected pixel as a function of the plurality of single value results.</p>
+<p id="p-0012" num="0011">The first convolution kernel could be a Gaussian function. Preferably, the first convolution kernel is one-dimensional.</p>
+<p id="p-0013" num="0012">The regional transfer function may also be a function of a second convolution comprising the convolution of the corresponding regional histogram with a second convolution kernel. Optionally, the first convolution kernel is a Gaussian function, and the second convolution kernel is a product of a Gaussian function and a step function. The second convolution may optionally be weighted by pixel luminosity.</p>
+<p id="p-0014" num="0013">The regional histograms may be function of luminosity, or of other characteristics such as pixel difference, color, depth along a z-axis, or of saturation.</p>
+<p id="p-0015" num="0014">Another embodiment for filtering a digital image comprising a first plurality of pixels is provided, each pixel having a luminosity value and being within a neighborhood comprising a second plurality of pixels, the neighborhood having an extent, comprising selecting a pixel from the first plurality of pixels; calculating a new luminosity value for the selected pixel as a function of the ratio of the number of pixels in the neighborhood that fulfill a given condition to the total number of pixels in the neighborhood, the condition comprising a luminance comparison against said pixel; and repeating the calculating step until the luminosity values of each of the first plurality of pixels has been calculated. The first plurality of pixels could comprise the entire digital image. In one embodiment, the extent of the neighborhood is defined by a distance function, such as a spatial distance, a vector difference, or a colormetrical distance. The pixel numbers in the ratio may be weighted, such that pixels with a low distance to the selected pixel receiving a high weight and pixels with a high distance to the selected pixel receiving a low weight.</p>
+<p id="p-0016" num="0015">A program storage device readable by a machine, tangibly embodying a program of instructions executable by the machine to perform method steps to transform a digital image comprising a first plurality of pixels is also provided.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 1</figref> is a representation of one embodiment of the methods of the invention.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 2</figref> is a representation of a digital image in which a histogram has been found for a portion of the image.</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 3</figref> is graph showing the relationship of the histogram to the edge preserving filter.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 4</figref> is a set of representations of digital images showing the result of applying different filters.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 5</figref> is a set of three representations of a digital image (left), showing the comparison of a prior art highlights filter (middle) and a bilateral histogram equalization according to the invention (right).</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 6</figref> is an example of a three-dimensional histogram.</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 7</figref> illustrates how equation 30 can be imagined within the signal domain.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION</heading>
+<p id="h-0006" num="0000">1 Introduction</p>
+<p id="p-0024" num="0023">The general idea in this disclosure is based on separating the image into tiles, also called regions. These tiles can have dimensions of 5&#xd7;5 pixels up to &#x2153;rd of the image dimensions, depending on the application. For each of these tiles (or regions) a so-called tile transfer function, or region transfer function, is found so that if an image has 100 tiles, we will compute 100 local transfer functions. These functions are then used to map, for instance, input luminosities to output luminosities. To avoid a tiling effect (that is, visible edges along the margins of the tiles), the tile transfer functions need to be interpolated when they are applied to the final image.</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 1</figref> illustrates this concept. In (1), The image I is separated into tiles I<sub>1,1 </sub>. . . I<sub>X,Y </sub>. . . I<sub>MaxX,MaxY</sub>. In (2), for each tile a histogram is computed. Then, in (3), for each histogram a tile transfer function &#x192; (x) is derived from the histogram. In (4), an interpolation takes place between the tile transfer functions and the resulting pixels are computed. For example, J<sub>x,y</sub>=Interpolation(&#x192;<sub>X&#x2212;1,Y&#x2212;1</sub>,&#x192;<sub>X+1,Y+1</sub>)(I<sub>x,y</sub>).</p>
+<p id="p-0026" num="0025">Between step (2) and step (3), convolution kernels are applied to the histograms in order to obtain the tile transfer functions. While in conventional image editing, 2D convolution kernels are applied to 2D image data, here 1D convolution kernels are applied to 1D histogram data. This introduces new possibilities for image filtering, while the same time much less processing power is required, since the convolution is performed on a much smaller data set. In most cases, the calculation of the tile transfer functions requires less operations than the image has pixels, so the most processing intense steps are the calculation of the histograms (2) and the application of the tile transfer functions (4), which are both linear. Some of the filters introduced in this disclosure are an Edge Preserving Smoothing filter, a Bilateral Histogram Equalization filter, useful as a HDR tone mapper, an Edge-Ignoring Entropy Detector, a filter to map coarse data onto fine data, and a filter to measure soft image gradients, invariant to strong edges.</p>
+<p id="p-0027" num="0026">The concept introduced herein is referred to as the LSC filter domain. LSC stands for &#x201c;Local Statistics Convolution&#x201d;; this term was chosen because the convolution of histogram data is an important concept for all of the described filters.</p>
+<p id="h-0007" num="0000">1.1 Terminology &#x26; Conventions</p>
+<p id="p-0028" num="0027">The following conventions are used herein:
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0028">I is the original image.</li>
+    <li id="ul0001-0002" num="0029">&#x130; and &#xcf; are processing results of applying a filter to I.</li>
+    <li id="ul0001-0003" num="0030">J is typically the resulting image.</li>
+    <li id="ul0001-0004" num="0031">(x, y) denote a pixel coordinate, I<sub>x,y </sub>and J<sub>x,y </sub>denote pixels within I and J.</li>
+    <li id="ul0001-0005" num="0032">a will denote the edge length of an image tile, the tile size being a&#xd7;a.</li>
+    <li id="ul0001-0006" num="0033">(X, Y) denote the coordinate of an image tile.</li>
+    <li id="ul0001-0007" num="0034">i denotes a pixel intensity.</li>
+    <li id="ul0001-0008" num="0035">h<sub>X,Y</sub>( ) denotes a histogram of the tile at (X, Y). Sometimes we will omit the indices, so that a tile histogram is noted as h( ).</li>
+    <li id="ul0001-0009" num="0036">&#x192;<sub>X,Y</sub>( ) will denote a tile transfer function.</li>
+    <li id="ul0001-0010" num="0037">{tilde over (&#x192;)}<sub>x,y</sub>( ) is an interpolated tile transfer function for the pixel (x, y).</li>
+    <li id="ul0001-0011" num="0038">Id stands for the identity function Id(t)=t.</li>
+    <li id="ul0001-0012" num="0039">&#x2218; stands for the convolution operator.</li>
+    <li id="ul0001-0013" num="0040">gauss stands for a Gaussian kernel, often being 1D in this disclosure.</li>
+    <li id="ul0001-0014" num="0041">blur stands for a blurring kernel, for instance a Gaussian or box filter.</li>
+    <li id="ul0001-0015" num="0042">&#x2207; is the gradient operator, being &#x3b4;I/&#x3b4;x&#xd7;&#x3b4;I/&#x3b4;y.
+<br/>
+2 LSC Filtering
+</li>
+</ul>
+</p>
+<p id="p-0029" num="0043">The histogram of an image</p>
+<p id="p-0030" num="0044">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <msub>
+            <mi>h</mi>
+            <mi>i</mi>
+          </msub>
+          <mo>=</mo>
+          <mrow>
+            <munder>
+              <mo>&#x2211;</mo>
+              <mrow>
+                <mi>x</mi>
+                <mo>,</mo>
+                <mi>y</mi>
+              </mrow>
+            </munder>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mi>&#x3b4;</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msub>
+                    <mi>I</mi>
+                    <mrow>
+                      <mi>x</mi>
+                      <mo>,</mo>
+                      <mi>y</mi>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mi>i</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>;</mo>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>1</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+contains cumulated data of all image features, that is, h<sub>i </sub>provides the amount of pixels of the intensity i. Note that &#x3b4;( ) is an operator evaluating to 1 if its expression is true, and zero otherwise. However, finding such a histogram h is often worthless, as one will find all features of an image, being often hundreds of objects and shades, combined in one histogram.
+</p>
+<p id="p-0031" num="0045">However, when finding the histogram of a small portion in an image, let's say
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>I</i><sub>aX . . . aX+a&#x2212;1,aY . . . aY+a&#x2212;1 </sub><?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+it is much more likely that the tile histogram will provide more insights, as the smaller histogram is more likely to contain only one, two, three or four objects. So the assumption can be made that tile histograms in an image have fewer and more clearly defined peaks. A tile histogram is shown in <figref idref="DRAWINGS">FIG. 2</figref>.
+</p>
+<p id="p-0032" num="0046">Let us now divide the image I into a set of sub-histograms h<sub>1,1</sub>, h<sub>1,2</sub>, h<sub>1,3 </sub>h<sub>max</sub><sub><sub2>x</sub2></sub><sub>max</sub><sub><sub2>y </sub2></sub>so that h<sub>X,Y,i </sub>provides the amount of pixels with the luminosity i in the tile X, Y within the image. We now have divided the image into tiles and calculated histograms for each of the tiles. As these histograms are local, they contain only few statistical values of a local neighborhood.</p>
+<p id="h-0008" num="0000">2.1 The LSC Filter&#x2014;Image blurring</p>
+<p id="p-0033" num="0047">A basic LSC filter is applying a blur within the LSC filter domain, therefore it is a good introduction to LSC filtering. Let us define a function &#x192;<sub>average</sub>(h<sub>X,Y</sub>) that calculates the average of the histogram h<sub>X,Y</sub>:</p>
+<p id="p-0034" num="0048">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <msub>
+            <mi>f</mi>
+            <mi>average</mi>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msub>
+                <mi>h</mi>
+                <mrow>
+                  <mi>X</mi>
+                  <mo>,</mo>
+                  <mi>Y</mi>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <mi>i</mi>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mfrac>
+          <mrow>
+            <munder>
+              <mo>&#x2211;</mo>
+              <mi>j</mi>
+            </munder>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mi>jh</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mi>j</mi>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mrow>
+            <munder>
+              <mo>&#x2211;</mo>
+              <mi>j</mi>
+            </munder>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mi>h</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mi>j</mi>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mfrac>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>2</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0035" num="0049">Note in equation (2) that the cumulated values of h<sub>i </sub>(the expression under the fraction) is no different from a<sup>2</sup>, a being the edge length of a local image tile.</p>
+<p id="p-0036" num="0050">As is easy to see, &#x192;<sub>X,Y,i </sub>is constant for i and varies only from tile to tile, providing an average for each tile contents. Let's replace every pixel in I with the respective value in &#x192;<sub>X,Y</sub>:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>J</i><sub>x</sub>=&#x192;(&#x250c;<i>x/a&#x2510;,&#x250c;y/a&#x2510;,I</i><sub>x,y</sub>)&#x2003;&#x2003;(3)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0037" num="0051">This will lead, obviously, to a mosaicking effect, resulting in an image with one uniform gray level for each tile of a size of a&#xd7;a pixels. However, performing a bilinear, Gaussian, bicubic or cosine interpolation between the tiles will lead more or less to a blurry image with a large blurring radius of the magnitude of a.</p>
+<p id="h-0009" num="0000">2.2 EPS Filtering</p>
+<p id="p-0038" num="0052">Multiplying each histogram entry with its index (equal to multiplying the histogram with the identity function) and dividing it by the sum of the histogram entries leads to the average intensity. This constrains the focus to a bandwidth within the signal domain, resulting in an average value representative for a certain reference color i:</p>
+<p id="p-0039" num="0053">
+<maths id="MATH-US-00003" num="00003">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <msub>
+            <mi>f</mi>
+            <mrow>
+              <mi>EPS</mi>
+              <mo>,</mo>
+              <mi>X</mi>
+              <mo>,</mo>
+              <mi>Y</mi>
+            </mrow>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>i</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mi>h</mi>
+                  <mo>&#xb7;</mo>
+                  <mi>Id</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mo>&#x2218;</mo>
+              <mi>gauss</mi>
+            </mrow>
+            <mrow>
+              <mi>h</mi>
+              <mo>&#x2218;</mo>
+              <mi>gauss</mi>
+            </mrow>
+          </mfrac>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>i</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>4</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0040" num="0054">Equation 4 above divides a blurred version of h&#xb7;Id, that is, a histogram where its entries are multiplied with its index, by a blurred version of the histogram itself. Note that ogauss denotes a 1D-convolution with a Gaussian filter. Note that equation 4 is in its idea identical to equation 2, with the difference that the average calculated for every i is constrained within the signal domain.</p>
+<p id="p-0041" num="0055">Applying equation 4 to every pixel in the image will result in a detail reduction per tile. We'll from here on call functions like &#x192;<sub>EPS </sub>a tile transfer function, or briefly TTF. This function, if applied to each pixel in the tile, will reduce details. As shown in <figref idref="DRAWINGS">FIG. 3</figref>, f<sub>EPS </sub>(dashed line) plateaus where h( ) (solid line) has peaks, and the center of these peaks coincides with the identity (dotted line). This basically means that image areas belonging to one peak are smoothed by the TTF, where the average of the original values is about identical to the average of the smoothened areas.</p>
+<p id="p-0042" num="0056">However, it goes without saying that this leads to strong tiling artifacts. Prior art solutions include calculating a local histogram for every pixel, while the present invention performs an interpolation between the tile transfer functions.</p>
+<p id="p-0043" num="0057">Given a pixel x, y, the tile edge length a, an image I, a set of tile transfer functions &#x192;<sub>X,Y</sub>(i), then an interpolation could for instance be:</p>
+<p id="p-0044" num="0058">
+<maths id="MATH-US-00004" num="00004">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <msub>
+            <mover>
+              <mi>f</mi>
+              <mo>~</mo>
+            </mover>
+            <mrow>
+              <mi>x</mi>
+              <mo>,</mo>
+              <mi>y</mi>
+            </mrow>
+          </msub>
+          <mo>=</mo>
+          <mrow>
+            <munder>
+              <mo>&#x2211;</mo>
+              <mrow>
+                <mi>X</mi>
+                <mo>,</mo>
+                <mi>Y</mi>
+              </mrow>
+            </munder>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <msub>
+                <mi>f</mi>
+                <mrow>
+                  <mi>X</mi>
+                  <mo>,</mo>
+                  <mi>Y</mi>
+                </mrow>
+              </msub>
+              <mo>&#xb7;</mo>
+              <mrow>
+                <mi>&#x3c9;</mi>
+                <mo>(</mo>
+                <mfrac>
+                  <msqrt>
+                    <mrow>
+                      <msup>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mi>x</mi>
+                            <mo>-</mo>
+                            <mi>aX</mi>
+                            <mo>+</mo>
+                            <mfrac>
+                              <mi>a</mi>
+                              <mn>2</mn>
+                            </mfrac>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                        <mn>2</mn>
+                      </msup>
+                      <mo>+</mo>
+                      <msup>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mi>y</mi>
+                            <mo>-</mo>
+                            <mi>aY</mi>
+                            <mo>+</mo>
+                            <mfrac>
+                              <mi>a</mi>
+                              <mn>2</mn>
+                            </mfrac>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                        <mn>2</mn>
+                      </msup>
+                    </mrow>
+                  </msqrt>
+                  <mi>a</mi>
+                </mfrac>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mtext>
+</mtext>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mi>with</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mtext>
+</mtext>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mrow>
+            <mi>&#x3c9;</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mi>d</mi>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mi>&#x3c3;</mi>
+                <mo>&#x2062;</mo>
+                <msqrt>
+                  <mrow>
+                    <mn>2</mn>
+                    <mo>&#x2062;</mo>
+                    <mi>&#x3c0;</mi>
+                  </mrow>
+                </msqrt>
+              </mrow>
+            </mfrac>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mi>exp</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mrow>
+                    <mo>-</mo>
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>2</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>&#x2062;</mo>
+                  <msup>
+                    <mrow>
+                      <mo>(</mo>
+                      <mfrac>
+                        <mi>d</mi>
+                        <mi>&#x3c3;</mi>
+                      </mfrac>
+                      <mo>)</mo>
+                    </mrow>
+                    <mn>2</mn>
+                  </msup>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>5</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0045" num="0059">Obviously, a Gaussian interpolation is provided above with sigma being the standard deviation, while the unit of the standard deviation in this case is not pixel size, but tile size. We found that from all possible interpolations performed between tile transfer functions:
+<ul id="ul0002" list-style="none">
+    <li id="ul0002-0001" num="0000">
+    <ul id="ul0003" list-style="none">
+        <li id="ul0003-0001" num="0060">bilinear works fast and well, but not superb</li>
+        <li id="ul0003-0002" num="0061">cosine can create artifacts in soft gradients</li>
+        <li id="ul0003-0003" num="0062">bicubic works mediocre</li>
+        <li id="ul0003-0004" num="0063">Gaussian (see equation 5) works optimal, even if interpolation takes place on as few as 5&#xd7;5 or even 3&#xd7;3 tiles.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0046" num="0064">We find that bicubic does not work optimally as said interpolation attempts to maintain optimal detail through the interpolation, which is not wanted here, since a smoothing effect is desired. Therefore we suggest Gaussian interpolation.</p>
+<p id="p-0047" num="0065">We denote &#x192;<sub>X,Y</sub>( ) as the TTF of a given tile (X,Y), while we will denote {tilde over (&#x192;)}<sub>x,y</sub>( ) as the already interpolated function that varies from pixel to pixel. Note that when Gaussian kernels are used for the histogram convolution as well as for the spatial interpolation, {tilde over (&#x192;)}<sub>x,y</sub>(i) will be smooth with respect to variations of x, y and i.</p>
+<p id="p-0048" num="0066">The process shown herein provides a fast way for EPS filtering at a speed of O(n), since the creation of the histograms h<sub>X,Y </sub>requires a single pixel-read operation for each pixel in the image. Creation of the tile transfer function TTF, for instance as in equation 4, requires almost no processing time, as it is performed on 1D data, which is typically much less data than the image data. Finally, the values found in the TTF of 2&#xd7;2, 3&#xd7;3 or 5&#xd7;5 adjacent tiles need to be interpolated, which consumes the most processing time, but still can be performed in linear time. (Even large softening radii can be simulated by increasing a as opposed to increasing &#x3c3;.) Note that while equation 5 suggests for every pixel in the image the interpolation of the entire function, of course only a single element of the function needs to be interpolated.</p>
+<p id="p-0049" num="0067">Since large as well as small radii can typically be simulated with an interpolation between a constant number of tiles, the processing requirements are linear, that is, regardless of image size and convolution kernel a complexity magnitude of O(n) can be achieved where n is the amount of pixels in the image. LSC processing will only exceed these limits when a very high resolution of the histograms in the intensity domain is desired, so that the histogram entries exceed the number of pixels within a tile, but those appear to be rare corner cases.</p>
+<p id="h-0010" num="0000">2.3 Generalization of the LSC concept</p>
+<p id="p-0050" num="0068">In general, the idea of LSC filtering is now as follows:
+<ul id="ul0004" list-style="none">
+    <li id="ul0004-0001" num="0000">
+    <ul id="ul0005" list-style="none">
+        <li id="ul0005-0001" num="0069">separate the image into tiles of dimensions a&#xd7;a;</li>
+        <li id="ul0005-0002" num="0070">calculate local statistics (e.g., a histogram) for each of said tiles;</li>
+        <li id="ul0005-0003" num="0071">derive TTF from the local statistics of each tile, for instance by applying convolution filters to the histograms;</li>
+        <li id="ul0005-0004" num="0072">interpolate between TTF of adjacent tiles; and</li>
+        <li id="ul0005-0005" num="0073">apply the interpolated TTF to the image.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0051" num="0074">As introduced above, this allows, for example, for fast EPS filtering. However, the way the statistics are collected per tile (1D as shown, or 3D for color images) can be varied, and of course the creation of the TTF provides as well for many options. The following sections will introduce more applications of LSC filtering.</p>
+<p id="h-0011" num="0000">2.4 Rarity Operator</p>
+<p id="p-0052" num="0075">The LSC framework provides for a fast method to determine how &#x201c;rare&#x201d; a pixel's value is within its neighborhood. While determining the rarity of a single pixel color within an image is easy, determining the same value for all pixels within a certain neighborhood in efficient time and based on robust statistics isn't. With the following TTF:</p>
+<p id="p-0053" num="0076">
+<maths id="MATH-US-00005" num="00005">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <msub>
+            <mi>f</mi>
+            <mi>rarity</mi>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mi>X</mi>
+              <mo>,</mo>
+              <mi>Y</mi>
+              <mo>,</mo>
+              <mi>i</mi>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mi>log</mi>
+          <mo>&#x2062;</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msub>
+                    <mi>h</mi>
+                    <mrow>
+                      <mi>X</mi>
+                      <mo>,</mo>
+                      <mi>Y</mi>
+                    </mrow>
+                  </msub>
+                  <mo>&#x2218;</mo>
+                  <mi>blur</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mi>i</mi>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>6</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0054" num="0077">where the term (h<sub>X,Y</sub>&#x2218;blur)(i) is to be understood as the i'th value of the function h<sub>X,Y </sub>convolved with a blurring kernel, will provide a value for how rare the given pixel's value is within a spatial range of a (see equation 5) while a tolerance within the signal domain is provided by the standard deviation of the kernel blur.</p>
+<p id="h-0012" num="0000">2.5 Non-Edge Sensitive High Pass Filter</p>
+<p id="p-0055" num="0078">The following TTF:</p>
+<p id="p-0056" num="0079">
+<maths id="MATH-US-00006" num="00006">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>f</mi>
+          <mrow>
+            <mi>highpass</mi>
+            <mo>,</mo>
+            <mi>X</mi>
+            <mo>,</mo>
+            <mi>Y</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mi>Id</mi>
+          <mo>-</mo>
+          <mfrac>
+            <mrow>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mi>h</mi>
+                  <mo>&#xb7;</mo>
+                  <mi>Id</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mo>&#x2218;</mo>
+              <mi>gauss</mi>
+            </mrow>
+            <mrow>
+              <mi>h</mi>
+              <mo>&#x2218;</mo>
+              <mi>gauss</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>7</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0057" num="0080">provides a filter for extracting the high pass out of an image while strong edges are ignored. Typically, this will extract the structure of an image (fine branches in a tree, fur of an animal, fine cloud structures) while not providing extreme values for strong edges (like the transition from a building to the sky). Similarly, the tile transfer function</p>
+<p id="p-0058" num="0081">
+<maths id="MATH-US-00007" num="00007">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>f</mi>
+          <mrow>
+            <mrow>
+              <mi>icrease</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.8em" height="0.8ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mi>structure</mi>
+            </mrow>
+            <mo>,</mo>
+            <mi>X</mi>
+            <mo>,</mo>
+            <mi>Y</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mi>Id</mi>
+          <mo>+</mo>
+          <mrow>
+            <mi>&#x3b3;</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mi>Id</mi>
+                <mo>-</mo>
+                <mfrac>
+                  <mrow>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mi>h</mi>
+                        <mo>&#xb7;</mo>
+                        <mi>Id</mi>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <mo>&#x2218;</mo>
+                    <mi>gauss</mi>
+                  </mrow>
+                  <mrow>
+                    <mi>h</mi>
+                    <mo>&#x2218;</mo>
+                    <mi>gauss</mi>
+                  </mrow>
+                </mfrac>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>8</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0059" num="0082">will emphasize the image's structure by the factor provided in &#x3b3;. <figref idref="DRAWINGS">FIG. 4</figref> shows a digital image (top left) filtered with an EPS (top right), the result of equation 7 (bottom left) and the result of equation 8 with &#x3b3;=0.8 (bottom right).</p>
+<p id="h-0013" num="0000">2.6 Entropy Filter</p>
+<p id="p-0060" num="0083">Determining the entropy of an image is easy, and many local entropy operators have been suggested. However, to our knowledge, no entropy filters are known that are edge-preserving. That is, most entropy filters analyze an image area of n&#xd7;n pixels around a given pixel x, y, determine the entropy of that area, and assign said entropy to the coordinate x, y. This will lead to the effect that a small patch of blue sky that's surrounded by branches of a tree will have a high entropy, while a remote area of the same sky will have a low entropy. Sometimes, this will be the desired behavior, sometimes it would be desired that all pixels of the sky lead to about the same entropy. The following tile transfer function can be used:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3b8;<sub>entropy,X,Y</sub>(<i>h</i><sub>X,Y</sub><i>,i</i>)=&#x3c3;<sub>i</sub>&#x2003;&#x2003;(9)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+with &#x3c3;<sub>i </sub>being the standard deviation of:
+</p>
+<p id="p-0061" num="0084">
+<maths id="MATH-US-00008" num="00008">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mi>g</mi>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo>(</mo>
+      <mi>j</mi>
+      <mo>)</mo>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <mi>h</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo>(</mo>
+        <mi>j</mi>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+    <mo>*</mo>
+    <mrow>
+      <mi>exp</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo>(</mo>
+        <mrow>
+          <mrow>
+            <mo>-</mo>
+            <mn>1</mn>
+          </mrow>
+          <mo>&#x2062;</mo>
+          <mstyle>
+            <mtext>/</mtext>
+          </mstyle>
+          <mo>&#x2062;</mo>
+          <mn>2</mn>
+          <mo>&#x2062;</mo>
+          <mfrac>
+            <msup>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mi>j</mi>
+                  <mo>-</mo>
+                  <mi>i</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mn>2</mn>
+            </msup>
+            <mi>&#x3c8;</mi>
+          </mfrac>
+        </mrow>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+where &#x3c8; is the standard deviation of the superimposed filter, so that generally &#x3c3;<sub>i</sub>&#x2266;&#x3c8;. This means that &#x3c8; defines the &#x2018;window&#x2019; in which an entropy can be detected, that is:
+<ul id="ul0006" list-style="none">
+    <li id="ul0006-0001" num="0000">
+    <ul id="ul0007" list-style="none">
+        <li id="ul0007-0001" num="0085">no variances in a structure (plain sky) will lead to a low entropy</li>
+        <li id="ul0007-0002" num="0086">variations in a structure within the magnitude of &#x3c8; will lead to a higher entropy</li>
+        <li id="ul0007-0003" num="0087">variations in a structure greater than the magnitude of &#x3c8; (such the black letters on white paper) will not affect the entropy.
+<br/>
+2.6.1 Alternative Entropy Finding
+</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0062" num="0088">An alternative approach to finding an entropy is as follows:</p>
+<p id="p-0063" num="0089">
+<maths id="MATH-US-00009" num="00009">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mrow>
+                <mi>h</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>i</mi>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>=</mo>
+              <mrow>
+                <mo>&#x2211;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mi>&#x3b4;</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <msub>
+                        <mi>I</mi>
+                        <mrow>
+                          <mi>x</mi>
+                          <mo>,</mo>
+                          <mi>y</mi>
+                        </mrow>
+                      </msub>
+                      <mo>=</mo>
+                      <mi>i</mi>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mrow>
+                <mi>k</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>i</mi>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>=</mo>
+              <mrow>
+                <mo>&#x2211;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mrow>
+                    <mi>u</mi>
+                    <mo>&#x2061;</mo>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mo>&#xf603;</mo>
+                        <mrow>
+                          <msub>
+                            <mi>I</mi>
+                            <mrow>
+                              <mi>x</mi>
+                              <mo>,</mo>
+                              <mi>y</mi>
+                            </mrow>
+                          </msub>
+                          <mo>-</mo>
+                          <msub>
+                            <mi>I</mi>
+                            <mrow>
+                              <mrow>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mn>1</mn>
+                              </mrow>
+                              <mo>,</mo>
+                              <mi>y</mi>
+                            </mrow>
+                          </msub>
+                        </mrow>
+                        <mo>&#xf604;</mo>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                  <mo>*</mo>
+                  <mrow>
+                    <mi>&#x3b4;</mi>
+                    <mo>&#x2061;</mo>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <msub>
+                          <mi>I</mi>
+                          <mrow>
+                            <mi>x</mi>
+                            <mo>,</mo>
+                            <mi>y</mi>
+                          </mrow>
+                        </msub>
+                        <mo>=</mo>
+                        <mi>i</mi>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <msub>
+                <mi>f</mi>
+                <mrow>
+                  <mi>entropy</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>2</mn>
+                </mrow>
+              </msub>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mi>k</mi>
+                  <mo>&#x2218;</mo>
+                  <mi>blur</mi>
+                </mrow>
+                <mrow>
+                  <mi>h</mi>
+                  <mo>&#x2218;</mo>
+                  <mi>blur</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>10</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0064" num="0090">In equation 10, sums of pixel neighbor differences are divided by the amount of pixels of that color, where both again are convolved with a 1D blurring filter. The function u( ) can be used to dampen pixel differences that are likely to be hard edges in the image and unlikely to be structure-related pixel differences, where u( ) can be a weighting function, such as u(x)= or u(x)=x in the trivial case.</p>
+<p id="h-0014" num="0000">2.6.2 Usages for Entropy</p>
+<p id="p-0065" num="0091">The Entropy can be used to modify an image. For instance, the image can be made more pleasing by lightening those areas that have a high entropy and darkening the others. Imagine a person being photographed against a sky, where the sky has a low entropy and the person has a high entropy&#x2014;accentuating the person by increasing his/her brightness while darkening the background will make the image more pleasing.</p>
+<p id="p-0066" num="0092">Conventional entropy filters will not be able to perform this task, as they'd add a soft, large, defocused glow to the edges within the image (remember that conventional entropy filters detect a high entropy a few pixels to either side of dominant edges), so the technique of changing the illumination based on entropy will only work if the entropy is detected in an edge-preserving fashion (as suggested in here).</p>
+<p id="h-0015" num="0000">2.7 Local Histogram Equalization</p>
+<p id="p-0067" num="0093">The concept of histogram equalization is well known. The idea is to redistribute the color intensities in an image with the formula:</p>
+<p id="p-0068" num="0094">
+<maths id="MATH-US-00010" num="00010">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>f</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>r</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <msubsup>
+                <mo>&#x222b;</mo>
+                <mn>0</mn>
+                <mi>T</mi>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mi>h</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>i</mi>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.2em" height="0.2ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>&#x2146;</mo>
+                  <mi>i</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mrow>
+              <msubsup>
+                <mo>&#x222b;</mo>
+                <mn>0</mn>
+                <mn>1</mn>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mi>h</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>i</mi>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.2em" height="0.2ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>&#x2146;</mo>
+                  <mi>i</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mfrac>
+          <mo>&#xb7;</mo>
+          <mn>256</mn>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>11</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0069" num="0095">If &#x192;( ) is being applied to all pixels in the image, each luminosity will appear with the same likelihood in the image. This is sometimes a wanted effect, sometimes this effect has disastrous side-effects to the image&#x2014;particularly when one gray level is dominant (like a plain white surface), whose intensity values will then be distributed over a wide range of values, even if the image resolution (resp. dynamic range) doesn't provide a sufficient PSNR for this kind of operation.</p>
+<p id="p-0070" num="0096">The equation:</p>
+<p id="p-0071" num="0097">
+<maths id="MATH-US-00011" num="00011">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>f</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>r</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <msubsup>
+                <mo>&#x222b;</mo>
+                <mn>0</mn>
+                <mi>r</mi>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mi>u</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mi>h</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mi>i</mi>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.2em" height="0.2ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>&#x2146;</mo>
+                  <mi>i</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mrow>
+              <msubsup>
+                <mo>&#x222b;</mo>
+                <mn>0</mn>
+                <mn>1</mn>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mi>u</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mi>h</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mi>i</mi>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.2em" height="0.2ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>&#x2146;</mo>
+                  <mi>i</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mfrac>
+          <mo>&#xb7;</mo>
+          <mn>256</mn>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>12</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0072" num="0098">will not have these deficiencies. The limiting function u( ) is defined as earlier in this document, for instance, u( ) can be a square root. This will ensure that the equalization will affect mostly those areas with low values in the histogram; in other words: the function above will modify the histogram so that gaps between the histogram's peaks will be filled up, while peaks remain peaks of about the same shape, leading to more natural structures.</p>
+<p id="p-0073" num="0099">Now applying equation 12 tile-wise as shown in equation 2 (calculating tiles of histograms) and 5 (interpolating between transfer functions) will result to a locally adaptive histogram equalization. Note that we suggest for better effects a large tile size in the image, such as 10%-20% of the image dimensions.</p>
+<p id="h-0016" num="0000">2.8 Bilateral Histogram Equalization</p>
+<p id="p-0074" num="0100">The implementation as shown in equation 12 will have a haloing issue, which could be avoided by using very large tiles. (Halos of a magnitude of 33% to 50% of the image dimensions are not perceived as halos by the human eye). However, this limits the filter's ability to enhance images locally, particularly counter-light effects of a magnitude smaller than 33%-50% of the image size will not be corrected. So a smaller tile size is desired while not producing halos along strong edges.</p>
+<p id="p-0075" num="0101">It is preferable to introduce a bilateral dependency, noted as:</p>
+<p id="p-0076" num="0102">
+<maths id="MATH-US-00012" num="00012">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>f</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>r</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <msubsup>
+                <mo>&#x222b;</mo>
+                <mn>0</mn>
+                <mi>r</mi>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow>
+                      <mi>u</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mi>h</mi>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <mi>exp</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mrow>
+                            <mrow>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                            </mrow>
+                            <mo>/</mo>
+                            <mn>2</mn>
+                          </mrow>
+                          <mo>&#x2062;</mo>
+                          <mfrac>
+                            <msup>
+                              <mrow>
+                                <mo>(</mo>
+                                <mrow>
+                                  <mi>i</mi>
+                                  <mo>-</mo>
+                                  <mi>r</mi>
+                                </mrow>
+                                <mo>)</mo>
+                              </mrow>
+                              <mn>2</mn>
+                            </msup>
+                            <mi>&#x3c3;</mi>
+                          </mfrac>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>i</mi>
+                  <mo>)</mo>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.2em" height="0.2ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>&#x2146;</mo>
+                  <mi>i</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mrow>
+              <msubsup>
+                <mo>&#x222b;</mo>
+                <mn>0</mn>
+                <mn>1</mn>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow>
+                      <mi>u</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mi>h</mi>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <mi>exp</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mrow>
+                            <mrow>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                            </mrow>
+                            <mo>/</mo>
+                            <mn>2</mn>
+                          </mrow>
+                          <mo>&#x2062;</mo>
+                          <mfrac>
+                            <msup>
+                              <mrow>
+                                <mo>(</mo>
+                                <mrow>
+                                  <mi>i</mi>
+                                  <mo>-</mo>
+                                  <mi>r</mi>
+                                </mrow>
+                                <mo>)</mo>
+                              </mrow>
+                              <mn>2</mn>
+                            </msup>
+                            <mi>&#x3c3;</mi>
+                          </mfrac>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>i</mi>
+                  <mo>)</mo>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.2em" height="0.2ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>&#x2146;</mo>
+                  <mi>i</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mfrac>
+          <mo>&#xb7;</mo>
+          <mn>256</mn>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>13</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+which is similar to:
+</p>
+<p id="p-0077" num="0103">
+<maths id="MATH-US-00013" num="00013">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>f</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>r</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <mrow>
+                <mi>u</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>h</mi>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>&#x2218;</mo>
+              <mi>leftgauss</mi>
+            </mrow>
+            <mrow>
+              <mrow>
+                <mi>u</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>h</mi>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>&#x2218;</mo>
+              <mi>gauss</mi>
+            </mrow>
+          </mfrac>
+          <mo>&#xb7;</mo>
+          <mn>256</mn>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>14</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0078" num="0104">where the magnitude (&#x3c3;) of the Gaussian bell curve used for convolution needs to be of a high magnitude, so for instance if images with values reaching from [0 . . . 255] are given, a &#x3c3; of 50 . . . 150 may be adequate. The convolution kernel leftgauss is meant to be a Gaussian kernel where all values to the right of its center are forced to zero. This can be done by a product of the Gaussian function and a step function with zero for all positive values. Of course, in analogous fashion a rightgauss kernel could be constructed with a step function with zero for all negative values, and then inverted.</p>
+<p id="p-0079" num="0105">The idea of the above given equations is to detect for a given pixel's luminosity if it belongs to the lower, middle or higher part of its peak in the histogram. The Gauss functions are used to fade out remote, unwanted peaks, and then the integral of the area to the left of i is divided by the entire integral. That provides information how the input luminosity i relates to the luminosities of the entire peak.</p>
+<p id="p-0080" num="0106">This is to say that equations 13 and 14 are examples of functions that may be used to calculate a new luminosity value of a selected pixel as a function of the ratio of the number of pixels in the neighborhood that fulfill a given condition to the total number of pixels in the neighborhood. The condition in this case comprises a luminance comparison, in which the function selects for pixels that are brighter (or darker) than the selected pixel.</p>
+<p id="p-0081" num="0107">The neighborhood could be chosen as appropriate, and the extent of the neighborhood could be defined with a distance function. The distance function could comprise one or more of a spatial distance, a vector difference, or a colormetrical distance. The distance function could be used to weight the number of pixels, so that pixels with a low distance to the selected pixel receive a high weight and pixels with a high distance to the selected pixel receive a low weight. Note that in the LSC system, the convolution of the histogram data with a 1D kernel is one fast way to weight pixels based on the abovementioned distance with respect to luminance. All or part of the image could be processed by using these equations repeatedly.</p>
+<p id="p-0082" num="0108">This also is a very good HDR tone mapping operator, as its results look often natural and as the TTF automatically maps the input signal to a predefined range, regardless what the distribution of the input signals is. <figref idref="DRAWINGS">FIG. 5</figref> shows a digital image (left) that has been filtered with a prior art highlights and shadows correction (center), and a bilateral histogram equalization according to the present invention (right).</p>
+<p id="p-0083" num="0109">A fundamental difference between this HDR tone mapper and the majority of prior art tone mappers is that conventional tone mappers try to relate a pixel to its surrounding average luminosity, namely the &#x201c;adaption luminance.&#x201d; Said adaption luminance is a scalar value and carries no information about the local structure. This tone mapper puts each pixel not only into relation to an average luminance, but in relation to the entire surrounding peak, including its center and its broadness.</p>
+<p id="h-0017" num="0000">2.9 Artifact Free Depth-Map Image Blurring</p>
+<p id="p-0084" num="0110">Imagine an image with a candle in front of a patterned wall, the candle being at a distance of 5 cm from the camera, the wall being at 15 cm from the camera, and further imagine this image to be recorded with a 3D camera recording depth information. So, in addition to the colors red, green, and blue, there would be a depth map D<sub>x,y </sub>showing low values for the candle and high values for the wall, representing distances from the camera.</p>
+<p id="p-0085" num="0111">If now the task is to blur the background behind the candle, the most convenient way would be to blur the image and to replace all pixels with a depth value D<sub>x,y</sub>=15 cm, with the blurred image. However, this will create a halo around the candle, since part of the blurry candle will be written into the background.</p>
+<p id="p-0086" num="0112">We believe this issue can be solved with the LSC approach. An option is to create for each image tile [X, Y] a histogram that doesn't map pixel count based on luminosity, but on depth. Subtotal, we will need the following histograms for each tile (we omit the tile indices X,Y):</p>
+<p id="p-0087" num="0113">
+<maths id="MATH-US-00014" num="00014">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <msub>
+            <mi>h</mi>
+            <mi>R</mi>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>d</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <munder>
+            <mo>&#x2211;</mo>
+            <mrow>
+              <mi>x</mi>
+              <mo>,</mo>
+              <mi>y</mi>
+            </mrow>
+          </munder>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <msub>
+              <mi>I</mi>
+              <mrow>
+                <mi>R</mi>
+                <mo>,</mo>
+                <mi>x</mi>
+                <mo>,</mo>
+                <mi>y</mi>
+              </mrow>
+            </msub>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mi>&#x3b4;</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msub>
+                    <mi>D</mi>
+                    <mrow>
+                      <mi>x</mi>
+                      <mo>,</mo>
+                      <mi>y</mi>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mi>d</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>15</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0088" num="0114">h<sub>G</sub>( ) and h<sub>B</sub>( ) can be calculated in a similar way.</p>
+<p id="p-0089" num="0115">
+<maths id="MATH-US-00015" num="00015">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>C</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>d</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <munder>
+            <mo>&#x2211;</mo>
+            <mrow>
+              <mi>x</mi>
+              <mo>,</mo>
+              <mi>y</mi>
+            </mrow>
+          </munder>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mi>&#x3b4;</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <msub>
+                  <mi>D</mi>
+                  <mrow>
+                    <mi>x</mi>
+                    <mo>,</mo>
+                    <mi>y</mi>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mi>d</mi>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>16</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0090" num="0116">The three functions h<sub>R</sub>, h<sub>G </sub>and h<sub>B </sub>hold now accumulated luminances, categorized by the depth value d, where the histogram C holds accumulated pixel counts per tile, categorized by the depth value d.</p>
+<p id="p-0091" num="0117">Now a blurred version of the image can be processed by the following TTF:</p>
+<p id="p-0092" num="0118">
+<maths id="MATH-US-00016" num="00016">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <msub>
+            <mi>f</mi>
+            <mrow>
+              <mi>depthblur</mi>
+              <mo>,</mo>
+              <mi>R</mi>
+              <mo>,</mo>
+              <mi>X</mi>
+              <mo>,</mo>
+              <mi>Y</mi>
+            </mrow>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>d</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msub>
+                      <mi>h</mi>
+                      <mi>R</mi>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.6em" height="0.6ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mi>&#x2022;</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.6em" height="0.6ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mi>gauss</mi>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>d</mi>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>+</mo>
+              <mi>&#x3b5;</mi>
+            </mrow>
+            <mrow>
+              <mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mi>C</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.6em" height="0.6ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mi>&#x2022;</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.6em" height="0.6ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mi>gauss</mi>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>d</mi>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>+</mo>
+              <mi>&#x3b5;</mi>
+            </mrow>
+          </mfrac>
+          <mo>.</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>17</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0093" num="0119">The function &#x192;<sub>depthblur,R,X,Y </sub>will now produce a blurred value for the red channel for the current tile X, Y for each depth d. The calculation of the green and blue channel is equivalent. For instance, if the current tile X, Y may contain a red candle at 5 cm distance from the camera, while containing a blue background at 15 cm from the camera, then &#x192;<sub>depthblur,X,Y</sub>(5) will deliver the average of the candle's red pixels, while &#x192;<sub>depthblur,X,Y</sub>(15) will deliver the average of the background.</p>
+<p id="p-0094" num="0120">Note that the spatial blurring radius will be determined by the underlying tile size a&#xd7;a, while the Gaussian filter provided in equation 17 will determine how far pixels have to be away from one another along the 3rd dimension D<sub>x,y </sub>in order to not be convolved with one another. So if in our example the background should not be mixed with the candle, the Gaussian kernel gauss should extend over less than 10 cm. Note that in this example very small tile sizes can be used, for instance a=5 to achieve not-too-large blurring radii, in which case it will be likely that CO is a very sparse histogram. For that case, &#x3b5; in equation 17 avoids division by zero.</p>
+<p id="p-0095" num="0121">Applying the TTF &#x192;<sub>depthblur</sub>( ) to the image as shown in equation 5 will lead to a blurred image where objects close to the camera will not &#x2018;smear&#x2019; into objects far away from the camera during the blurring process. This image can then be blended with the original image based on the depth map D<sub>x,y </sub>where the above described artifacts should not occur.</p>
+<p id="p-0096" num="0122">Note that the size of the Gaussian kernel in equation 5 can be varied based upon the current pixel's depth D<sub>x,y</sub>, while the Gaussian kernel in equation 17 may be varied, for instance to achieve that objects at 5 cm and 15 cm distance from the camera will not blend into one another, while objects at 105 cm and 115 cm distance from the camera actually do blend into one another.</p>
+<p id="h-0018" num="0000">2.9.1 More Observations to Depth-Maps</p>
+<p id="p-0097" num="0123">Let us examine some properties of the 1D convolutions. The Gaussian kernel does not drop to zero, that is the Gaussian bell curve is always &#x3e;0. (Note that this is not the case with many pseudo-Gaussian filters which are often used for speed reasons). This characteristic of the Gaussian function means that sparse, positive datasets will also not contain any zeros after being convolved with a Gaussian function. Of course, this can only be observed when floating point numbers are used in the implementation.</p>
+<p id="p-0098" num="0124">This has some interesting implications. The first implication is that the tile size can be reduced dramatically. For instance, with a tile size of 4&#xd7;4 pixels, the histogram won't have more than 16 entries, 256-16 or more will remain empty. However, even if such a sparse histogram is used, functions like &#x192;<sub>EPs </sub>or &#x192;<sub>3DBlur </sub>will be defined for the domain of [0 . . . 255] and they will be smooth. Therefore the filters herein work as well with small tile sizes.</p>
+<p id="p-0099" num="0125">The second implication is that all tile transfer functions suggested in this disclosure can be evaluated for parameters not occurring in the image. So for instance, &#x192;<sub>depthblur </sub>can be evaluated for every location in the image and for every 3D depth D. This means that we have a volumetric information for every spatial position of the image suggesting a &#x201c;most likely color.&#x201d; For instance, imagine again an image with a red candle in front of a blue wall, the candle at 5 cm distance and the wall at 15 cm distance, and imagine that the pixel coordinate (100,100) is in the middle of the candle. Then evaluating the function &#x192;<sub>depthblur</sub>(100, 100, 5 cm) will, obviously, lead to a red value, while &#x192;<sub>depthblur</sub>(100, 100, 15 cm) will provide a color that is assumed to be behind the candle, in this case most likely blue.</p>
+<p id="p-0100" num="0126">This allows us to determine for every location within the 3D space over the image a most likely color. This can be helpful to complete a 3D scenario that has been recorded incompletely due to the limited perspective of the camera.</p>
+<p id="p-0101" num="0127">Additionally, we can make an assumption on where likely surfaces are. (For instance in order to receive an assumption on the surface data of the wall behind the candle where it was not recorded by the camera). Let us define:</p>
+<p id="p-0102" num="0128">
+<maths id="MATH-US-00017" num="00017">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <msub>
+            <mi>h</mi>
+            <mi>pixelcount</mi>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>d</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <munder>
+            <mo>&#x2211;</mo>
+            <mrow>
+              <mi>x</mi>
+              <mo>,</mo>
+              <mi>y</mi>
+            </mrow>
+          </munder>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mrow>
+              <mi>&#x3b4;</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msub>
+                    <mi>D</mi>
+                    <mrow>
+                      <mi>x</mi>
+                      <mo>,</mo>
+                      <mi>y</mi>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mi>d</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>.</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>18</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0103" num="0129">Then we receive:</p>
+<p id="p-0104" num="0130">
+<maths id="MATH-US-00018" num="00018">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <msub>
+            <mi>f</mi>
+            <mrow>
+              <mi>depthdensity</mi>
+              <mo>,</mo>
+              <mi>X</mi>
+              <mo>,</mo>
+              <mi>Y</mi>
+            </mrow>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>d</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msub>
+                    <mi>h</mi>
+                    <mi>pixelcount</mi>
+                  </msub>
+                  <mo>&#xb7;</mo>
+                  <mi>Id</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.6em" height="0.6ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mi>&#x2022;</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.6em" height="0.6ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mi>gauss</mi>
+            </mrow>
+            <mrow>
+              <msub>
+                <mi>h</mi>
+                <mi>pixelcount</mi>
+              </msub>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.6em" height="0.6ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mi>&#x2022;</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.6em" height="0.6ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mi>gauss</mi>
+            </mrow>
+          </mfrac>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mrow>
+              <mo>(</mo>
+              <mi>d</mi>
+              <mo>)</mo>
+            </mrow>
+            <mo>.</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>19</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0105" num="0131">Now while h<sub>pixelcount </sub>holds 1D statistics of pixel count versus depth per each tile, the function &#x192;<sub>depthdensity,X,Y </sub>has plateaus where &#x192;<sub>pixelcount </sub>has peaks, and it is smooth. Particularly {tilde over (&#x192;)}<sub>depthdensity,x,y </sub>(the interpolated version, see above) is smooth within spatial and depth domain.</p>
+<p id="p-0106" num="0132">Now the expression</p>
+<p id="p-0107" num="0133">
+<maths id="MATH-US-00019" num="00019">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msubsup>
+          <mover>
+            <mi>f</mi>
+            <mo>~</mo>
+          </mover>
+          <mrow>
+            <mi>depthdensity</mi>
+            <mo>,</mo>
+            <mi>x</mi>
+            <mo>,</mo>
+            <mi>y</mi>
+          </mrow>
+          <mi>&#x2033;</mi>
+        </msubsup>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <mn>0</mn>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.8em" height="0.8ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mi>and</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.8em" height="0.8ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <msubsup>
+              <mover>
+                <mi>f</mi>
+                <mo>~</mo>
+              </mover>
+              <mrow>
+                <mi>depthdensity</mi>
+                <mo>,</mo>
+                <mi>x</mi>
+                <mo>,</mo>
+                <mi>y</mi>
+              </mrow>
+              <mi>&#x2032;&#x2032;&#x2032;</mi>
+            </msubsup>
+          </mrow>
+          <mo>&#x3e;</mo>
+          <mn>0</mn>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>20</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0108" num="0134">defines a manifold that will be a smooth surface within the 3D space that does not have holes and that will suggest a location of a surface within the 3D space even for those locations in the image that were not recorded, e.g., the wall behind the candle, or the backside of the candle. Note, though, that the precision of the routine is limited to a, a being the tile size.</p>
+<p id="p-0109" num="0135">Note that a different definition would be (h<sub>pixelcount</sub>&#x2218;gauss)&#x2032;=0 and (h<sub>pixelcount</sub>&#x2218;gauss)&#x2033;&#x3c;0, which is longer to write down but a little easier to implement.</p>
+<p id="p-0110" num="0136">Now with equations 20 and 17, we will have information for likely-to-exist surfaces and for most-likely colors at the location of those surfaces. This will allow us to rotate the recorded 3D image by a few degrees and to inpaint the then missing regions.</p>
+<p id="h-0019" num="0000">2.10 Mapping Imprecise Information to High Resolution Data</p>
+<p id="p-0111" num="0137">It often occurs that a camera captures good luminosity data but additional data (chrominance, 3D depth, infrared temperature, etc.) with a lower spatial resolution. We call the former fine data and the latter rough data. For many purposes it might be desirable to upsample the rough data to the resolution of the fine data while reproducing the fine data edges in the upsampled channel.</p>
+<p id="p-0112" num="0138">Let</p>
+<p id="p-0113" num="0139">
+<maths id="MATH-US-00020" num="00020">
+<math overflow="scroll">
+<msubsup>
+  <mi>I</mi>
+  <mrow>
+    <mi>x</mi>
+    <mo>,</mo>
+    <mi>y</mi>
+  </mrow>
+  <mi>fine</mi>
+</msubsup>
+</math>
+</maths>
+<br/>
+denote the fine image data and
+</p>
+<p id="p-0114" num="0140">
+<maths id="MATH-US-00021" num="00021">
+<math overflow="scroll">
+<msubsup>
+  <mi>I</mi>
+  <mrow>
+    <mi>x</mi>
+    <mo>,</mo>
+    <mi>y</mi>
+  </mrow>
+  <mi>rought</mi>
+</msubsup>
+</math>
+</maths>
+<br/>
+the trivial upsampled rough channel. In the following we only consider coordinates x, y in the fine resolution. As in the above the image is divided into tiles. Let
+</p>
+<p id="p-0115" num="0141">
+<maths id="MATH-US-00022" num="00022">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>r</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>i</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>:=</mo>
+        <mrow>
+          <munder>
+            <mo>&#x2211;</mo>
+            <mrow>
+              <mi>x</mi>
+              <mo>,</mo>
+              <mi>y</mi>
+            </mrow>
+          </munder>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mrow>
+              <mi>&#x3b4;</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msubsup>
+                    <mi>I</mi>
+                    <mrow>
+                      <mi>x</mi>
+                      <mo>,</mo>
+                      <mi>y</mi>
+                    </mrow>
+                    <mi>fine</mi>
+                  </msubsup>
+                  <mo>=</mo>
+                  <mi>i</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>&#xb7;</mo>
+            <msubsup>
+              <mi>I</mi>
+              <mrow>
+                <mi>x</mi>
+                <mo>,</mo>
+                <mi>y</mi>
+              </mrow>
+              <mi>rough</mi>
+            </msubsup>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>21</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+denote the function taking fine channel intensities to there corresponding cumulated rough channel intensities and
+</p>
+<p id="p-0116" num="0142">
+<maths id="MATH-US-00023" num="00023">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <msub>
+            <mi>f</mi>
+            <mrow>
+              <mi>f</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.3em" height="0.3ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mn>2</mn>
+              <mo>&#x2062;</mo>
+              <mi>r</mi>
+            </mrow>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>i</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>:=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <mi>r</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.6em" height="0.6ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mi>&#x2022;</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.6em" height="0.6ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mi>gauss</mi>
+            </mrow>
+            <mrow>
+              <mi>h</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.6em" height="0.6ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mi>&#x2022;</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.6em" height="0.6ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mi>gauss</mi>
+            </mrow>
+          </mfrac>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>i</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>22</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+denote a TTF taking fine data intensities to rough data intensities. As in the previous sections the tile indices are omitted for the sake of readability. &#x192;<sub>f2r </sub>might be understood as the average rough channel value belonging to a given fine channel value on a specific tile. Equation (22) is very similar to (4). The only difference is the we distribute averaged rough channel data instead of averaged fine channel data.
+</p>
+<p id="p-0117" num="0143">Using (22) as a TTF in (5) results in a new channel J<sub>x,y </sub>approximating the values of I<sup>rough </sup>and the edges of I<sup>fine</sup>.</p>
+<p id="p-0118" num="0144">Applications can be many:</p>
+<p id="p-0119" num="0145">(1) Imagine a camera that captures mainly luminosity information (i.e., sensor elements with no color filter connected) and only sparse color information. Then the rough chrominance data can be mapped to the fine luminance data.</p>
+<p id="p-0120" num="0146">(2) Imagine a camera that records a natural image with a fine resolution and 3D depth data with a rough, poor resolution; then equation 21 can be used to map the poor 3D data to the fine color/luminance data.</p>
+<p id="p-0121" num="0147">(3) A camera recording other spectral information (infrared, UV) with lower precision than the visible light bands can use said algorithm to map the rough data to the fine data.</p>
+<p id="p-0122" num="0148">(4) Conversely, if a camera records precise information in a non-visible band, this band can be used to map the rough, visible data to the fine data.</p>
+<p id="p-0123" num="0149">&#x201c;Roughness&#x201d; does not necessarily need to mean lower resolution, it can also mean that the rough data have a greater expected signal error (noise) or spatial error (distortion), or all of the three.</p>
+<p id="h-0020" num="0000">2.11 Edge Invariant 3D Gradient Field</p>
+<p id="p-0124" num="0150">It is theoretically possible to find detect surface orientation within 3D space from looking at the gradients in a 2D image. However, nature is far too complex for these simple assumptions, so real 3D construction in real-word conditions is not really possible.</p>
+<p id="p-0125" num="0151">However, some simple image processes (such as pseudo-relighting) can be per-formed by using the image's luminosity gradient instead of the 3D gradient, that is
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>g</i><sub>x,y</sub><i>=&#x2207;I</i><sub>xy</sub>&#x2003;&#x2003;(23)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0126" num="0152">However, imagine an image with a ball in front of a candle. Both the ball and the candle will have smooth gradients, but along the edge between ball and candle the gradient &#x2207;I is quite extreme due to abrupt image changes. Typically, this is a gradient that is present in the image, but that we do not want to obtain. While things are simple in an image with a ball and a candle, one will receive large amounts of gradients that are undesired if images get more complex (trees, clouds, eye lashes, hair), that is most real world images.</p>
+<p id="p-0127" num="0153">So it would be beneficial to find an algorithm that spots soft/continuous gradients within the image while ignoring edges between objects.</p>
+<p id="p-0128" num="0154">Let's take an image I, being separated into tiles of dimensions a&#xd7;a, while the tiles may be smaller here than in the preceding examples, such as 15&#xd7;15 pixels. Now we can make the following assumptions:
+<ul id="ul0008" list-style="none">
+    <li id="ul0008-0001" num="0000">
+    <ul id="ul0009" list-style="none">
+        <li id="ul0009-0001" num="0155">In each tile, there are about one to three different image objects</li>
+        <li id="ul0009-0002" num="0156">Each image object has, within a tile, about one level of luminosity</li>
+        <li id="ul0009-0003" num="0157">If adjacent tiles have same clusters of gray levels, these belong to the same object</li>
+        <li id="ul0009-0004" num="0158">If adjacent tiles have similar, but slightly different clusters of gray levels, this is an indication for a gradient.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0129" num="0159">Observing the TTF &#x192;<sub>EPs </sub>in equation 4, we find that &#x192;<sub>EPs</sub>(i) provides the average luminosity of the peak in the histogram that i belongs to. Therefore,
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x192;<sub>gradient</sub>(<i>X,Y,i</i>)=&#x2207;&#x192;<sub>EPS</sub>(<i>X,Y,i</i>)<i>dXdY</i>&#x2003;&#x2003;(24)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0130" num="0160">provides a measure for the gradient for a given luminosity in a given image tile. Note that the gradient operator is being calculated in direction of X and Y, the smallest discretization is the tile size, so only gradients of the magnitude of a will be detected. (Of course, one could detect the gradient based on {tilde over (&#x192;)}<sub>EPS </sub>which is defined for each pixel, but that would provide no finer data, since the minimum wavelength occurring in all {tilde over (&#x192;)} is a.) The same time, a gradient will be provided for every tile and for every luminosity i, even if a tile doesn't contain all possible luminosities. So in order to detect the gradient of a given pixel somewhere in the image, &#x192;<sub>gradient</sub>( ) needs to be evaluated applying the LSC interpolation methods as shown in equations 5.</p>
+<p id="h-0021" num="0000">2.12 Upsampling Using LSC</p>
+<p id="p-0131" num="0161">Imagine a low resolution of an image with black letters in front of white paper. Common techniques to upsample an image (for instance to double the image's spatial resolution in X and Y direction) include adding additional pixels for every original pixel in the optimal case, typically even more. Typically, if interpolation takes place between dark and bright pixels, interpolated pixels will often be of a gray level between dark and bright. This will lead to many gray pixels along the edges of detail, so that the image will be perceived as being blurry after the up-sampling. Some enhancements to this have been suggested, but many of the enhanced upscaling routines are slow or their results include blurriness, halos, or both.</p>
+<p id="p-0132" num="0162">We note I as the input image, &#x130; as a conventionally interpolated image (for instance bilinear), &#x130; having more pixels than I, and &#xcf; our desired result, that is an image of the same dimensions of &#x130; but with less of a blurry-edges effect. If (x, y) is a coordinate in I, (x&#x2032;, y&#x2032;) is the corresponding coordinate in &#x130; and &#xcf;. (Note that in the realm of image upsampling, it is common to deal with fractional pixel coordinates.) &#xcf; can then be computed as follows:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>&#xcf;</i><sub>x&#x2032;y&#x2032;</sub>=&#x192;<sub>EPS(I)</sub>(<i>&#x130;</i><sub>x&#x2032;,y&#x2032;</sub>)&#x2003;&#x2003;(25)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0133" num="0163">where &#x192;<sub>EPS </sub>needs to be derived from the original image I as in equation 4. This will ensure that only the original image's pixels with the coordinate's (x, y) will contribute to the TTF &#x192;<sub>EPS</sub>, so that &#x192;<sub>EPS </sub>will plateau along the peaks of the original image's histogram. Therefore, if &#x192;<sub>EPS </sub>is applied to the newly interpolated pixels of &#x130;, gray-level pixels will be transformed towards the peaks dominant in the original image.</p>
+<p id="p-0134" num="0164">Experiments have shown that in this scenario, a small tile size produces good results. Also, when tile sizes are around 5&#xd7;5 pixels, an interpolation as proposed in Equation 5 is not even necessary, as the resulting tiling artifacts are barely visible. Note, though, that the convolution that needs to be performed for each tile as in equation 4 will consume some processing power. This can be accelerated by discretizing the histogram to about only 30 levels of gray, where domain of the histograms (and therefore of &#x192;<sub>EPS</sub>) is limited to the pixels actually present in said tile. Often the histograms need surprisingly few levels of discretization.</p>
+<p id="h-0022" num="0000">3 Enhancements to LSC Filtering</p>
+<p id="p-0135" num="0165">This section deals with enhancements to the LSC filtering that apply to most of the filters introduced in section 2.</p>
+<p id="h-0023" num="0000">3.1 Color Dependent LSC Filtering</p>
+<p id="p-0136" num="0166">Instead of creating 1D-Histograms with only a luminance dimension, we also can create histograms that are three-dimensional, such as &#x3c;L*a*b&#x3e; instead of just luminance.</p>
+<p id="p-0137" num="0167"><figref idref="DRAWINGS">FIG. 6</figref> shows such a three-dimensional histogram, where pixel counts are not mapped solely against their luminance, but against Luminance and two chrominances. Convolution needs to take place in three directions, which doesn't introduce any additional magnitudes of processing power, since the Gaussian filter is separable. However, due to memory efficiency we suggest to limit the dimensions of a 3D histogram to 6-12 entries for the color directions and to 20-100 entries for each luminance. Then, to avoid artifacting, during readout of the histogram a bilinear interpolation in three directions is suggested.</p>
+<p id="p-0138" num="0168">Most equations in this document will work with three-dimensional histograms accordingly. Note that in a multiplication like Id&#xb7;h( ) each entry of the histogram will need to be multiplied with the pixel's luminosity, disregarding chrominances.</p>
+<p id="p-0139" num="0169">Replacing 1D histograms with 3D histograms has many benefits. Basically, TTF like &#x192;<sub>EPS</sub>( ) or equations 13, 9 and 10, are capable of putting a &#x201c;&#x2018;focus&#x201d;&#x2019; on a certain band of luminosity. In the example of &#x192;<sub>EPS</sub>, an average value for each band of luminosity is found (the band being defined by the 1D gauss filter). This can be refined by using a 3D histogram. Then the operations work on a local neighborhood as well as on a confined color space, being confined by luminance and chrominance.</p>
+<p id="p-0140" num="0170">One of the benefits thereof is that the TTF will be able to perform a filtering operation specific to one color, region and luminosity, while ignoring other colors in the same region and of the same luminosity. For instance, if equation 13 is implemented with a 3D histogram, the local, bilateral equalization can be performed individually for the blue sky and individually for the green meadow, even if both have the same luminosity. Or with respect to entropy finding, if a 3D histogram is used, the presence of same-luminosity but differently colored objects will not affect the detection of the entropy of a given object.</p>
+<p id="h-0024" num="0000">3.2 Plateau Sensitive LSC Filtering</p>
+<p id="p-0141" num="0171">If it is known that the image is blurry, then&#x2014;let's say&#x2014;a hair will consist of a dark center and a gray, blurry margin. This margin is not a wanted image area, as it is not representative for image contents, it's only representative for the image's blurriness. Therefore we suggest that the histograms be weighted with</p>
+<p id="p-0142" num="0172">
+<maths id="MATH-US-00024" num="00024">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>K</mi>
+          <mrow>
+            <mi>x</mi>
+            <mo>,</mo>
+            <mi>y</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mi>log</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mo>&#xf603;</mo>
+                <mrow>
+                  <mo>&#x2207;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <msub>
+                      <mi>I</mi>
+                      <mi>xy</mi>
+                    </msub>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>&#xf604;</mo>
+              </mrow>
+            </mfrac>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>26</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0143" num="0173">where kappa is a measure for the likelihood that an image pixel's color is representative of an image feature opposed to a blurry edge between two features.</p>
+<p id="h-0025" num="0000">3.3 Gradient Constrained Post Filtering</p>
+<p id="p-0144" num="0174">The idea of gradient constrained post filtering is based on the observation that functions such as &#x192;<sub>EPS </sub>or in equation 11 can have sections where &#x192;&#x2032;(x)&#x3c;&#x3b5; including even &#x192;&#x2032;(x)&#x3c;0. In those cases image structures may get lost or turned into negative. This may lead to a loss of structure at local areas within the image, these areas rarely exceeding a few percent of the total image area.</p>
+<p id="p-0145" num="0175">This can be fixed by identifying above described areas and ensuring that the resulting image J has at least a n-level-step gradient, while n is the original image's gradient constrained to the bounds of [&#x2212;4 . . . 4], for instance. Since this is a weak condition, this refinement does not require but high-frequency adjustments in the image, it is typically very local, and therefore the gradients can be fixed by ensuring this condition to be true first line-wise, then column-wise.</p>
+<p id="p-0146" num="0176">In other words, what's needed is an algorithm that processes the image line by line and determines if unwanted flat structures have occurred, and if so, forces the pixel differences to be at least the one of the original image, or at least 4 levels of luminosity change in the same direction, whichever is lower, and repeat the same for every column.</p>
+<p id="p-0147" num="0177">Another solution is to process the TTFs value by value and, while processing each TTF, ensuring that the derivative of the TTF is within an interval of [a, b], such as [0.25, 4]. This proves to be a helpful method to avoid extreme or negative contrasts. As the results may be (unwantedly) different depending on whether the TTF is passed from left-to-right or from right-to-left, it is preferable to compute the result in both directions and interpolate in between the two results. Typically, all TTFs of an image have much fewer entries than the image has pixels, so processing resources are not an issue.</p>
+<p id="h-0026" num="0000">4 Comparison of LSC Filter Domain to Other Image Domains</p>
+<p id="p-0148" num="0178">We use the language LSC Filter Domain to describe the class of the filters found herein. Unlike filters being applied to images' Fourier components (Frequency Domain), wavelet components (Wavelet Domain) or gradients (Gradient Domain), the filters provided in this disclosure are not being applied to the image in a different, bijective representation of itself. Therefore the conventional model of (1) transforming the image into a complete, different representation of the original image, (2) applying filters to the coefficients of the new representation, and (3) converting the image back does not hold true for the LSC filter domain. However, we still decided to name the concept provided in this disclosure a &#x201c;filter domain,&#x201d; since the suggested technique allows us to:
+<ul id="ul0010" list-style="none">
+    <li id="ul0010-0001" num="0000">
+    <ul id="ul0011" list-style="none">
+        <li id="ul0011-0001" num="0179">express filters based on a different domain (a 1D field of accumulated pixel values versus a 2D field of frequencies, gradients or signal intensities)</li>
+        <li id="ul0011-0002" num="0180">find short expressions for filters that would be complicated, in-comprehensive in signal domain</li>
+        <li id="ul0011-0003" num="0181">use a new mind-set for filters that facilitates the creation of new filters. (For instance, the filter provided in equation 24 would be very difficult to come up with in the spatial image domain).</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0149" num="0182">Therefore, we name the concept found herein a filterdomain, while this does not mean that it is based on a complete image transform.</p>
+<p id="p-0150" num="0183">Often times, a parallel expression for a filter in signal domain can be found for expressions in the LSC filter domain. The following LSC filter domain TTF:</p>
+<p id="p-0151" num="0184">
+<maths id="MATH-US-00025" num="00025">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mi>f</mi>
+        <mo>=</mo>
+        <mfrac>
+          <mrow>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mi>h</mi>
+                <mo>&#xb7;</mo>
+                <mi>Id</mi>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.6em" height="0.6ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mi>&#x2022;</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.6em" height="0.6ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mi>gauss</mi>
+          </mrow>
+          <mrow>
+            <mi>h</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.6em" height="0.6ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mi>&#x2022;</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.6em" height="0.6ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mi>gauss</mi>
+          </mrow>
+        </mfrac>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>27</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+which is identical to equation 4 would need to be expressed in spatial domain as:
+</p>
+<p id="p-0152" num="0185">
+<maths id="MATH-US-00026" num="00026">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msubsup>
+          <mi>I</mi>
+          <mrow>
+            <msup>
+              <mi>x</mi>
+              <mi>&#x2032;</mi>
+            </msup>
+            <mo>,</mo>
+            <msup>
+              <mi>y</mi>
+              <mi>&#x2032;</mi>
+            </msup>
+          </mrow>
+          <mi>&#x2032;</mi>
+        </msubsup>
+        <mo>=</mo>
+        <mrow>
+          <munder>
+            <mo>&#x2211;</mo>
+            <mrow>
+              <mi>x</mi>
+              <mo>,</mo>
+              <mi>y</mi>
+            </mrow>
+          </munder>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <msub>
+              <mi>I</mi>
+              <mrow>
+                <mi>x</mi>
+                <mo>,</mo>
+                <mi>y</mi>
+              </mrow>
+            </msub>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mi>g</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mo>&#xf605;</mo>
+                  <mrow>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mi>x</mi>
+                        <mo>,</mo>
+                        <mi>y</mi>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <mo>-</mo>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <msup>
+                          <mi>x</mi>
+                          <mi>&#x2032;</mi>
+                        </msup>
+                        <mo>,</mo>
+                        <msup>
+                          <mi>y</mi>
+                          <mi>&#x2032;</mi>
+                        </msup>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                  <mo>&#xf606;</mo>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mrow>
+                <mi>g</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mo>&#xf605;</mo>
+                    <mrow>
+                      <mrow>
+                        <mi>I</mi>
+                        <mo>&#x2061;</mo>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mi>x</mi>
+                            <mo>,</mo>
+                            <mi>y</mi>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                      <mo>-</mo>
+                      <mrow>
+                        <mi>I</mi>
+                        <mo>&#x2061;</mo>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <msup>
+                              <mi>x</mi>
+                              <mi>&#x2032;</mi>
+                            </msup>
+                            <mo>,</mo>
+                            <msup>
+                              <mi>y</mi>
+                              <mi>&#x2032;</mi>
+                            </msup>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                    <mo>&#xf606;</mo>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>.</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>28</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0153" num="0186">Also, the LSC domain filter TTF:</p>
+<p id="p-0154" num="0187">
+<maths id="MATH-US-00027" num="00027">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mi>f</mi>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <mi>h</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.6em" height="0.6ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mi>&#x2022;</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.6em" height="0.6ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mi>leftgauss</mi>
+            </mrow>
+            <mrow>
+              <mi>h</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.6em" height="0.6ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mi>&#x2022;</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.6em" height="0.6ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mi>gauss</mi>
+            </mrow>
+          </mfrac>
+          <mo>&#xb7;</mo>
+          <mn>256</mn>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>29</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0155" num="0188">which is a simplified version of equation 13, is similar to the following expression in spatial domain:</p>
+<p id="p-0156" num="0189">
+<maths id="MATH-US-00028" num="00028">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msubsup>
+          <mi>I</mi>
+          <mrow>
+            <mi>x</mi>
+            <mo>,</mo>
+            <mi>y</mi>
+          </mrow>
+          <mi>&#x2032;</mi>
+        </msubsup>
+        <mo>=</mo>
+        <mfrac>
+          <mtable>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <munder>
+                    <mo>&#x2211;</mo>
+                    <mrow>
+                      <msup>
+                        <mi>x</mi>
+                        <mi>&#x2032;</mi>
+                      </msup>
+                      <mo>,</mo>
+                      <mrow>
+                        <msup>
+                          <mi>y</mi>
+                          <mi>&#x2032;</mi>
+                        </msup>
+                        <mo>&#x2062;</mo>
+                        <mrow>
+                          <mo>&#x2200;</mo>
+                          <mrow>
+                            <mrow>
+                              <mi>I</mi>
+                              <mo>&#x2061;</mo>
+                              <mrow>
+                                <mo>(</mo>
+                                <mrow>
+                                  <msup>
+                                    <mi>x</mi>
+                                    <mi>&#x2032;</mi>
+                                  </msup>
+                                  <mo>,</mo>
+                                  <msup>
+                                    <mi>y</mi>
+                                    <mi>&#x2032;</mi>
+                                  </msup>
+                                </mrow>
+                                <mo>)</mo>
+                              </mrow>
+                            </mrow>
+                            <mo>&#x2264;</mo>
+                            <mrow>
+                              <mi>I</mi>
+                              <mo>&#x2061;</mo>
+                              <mrow>
+                                <mo>(</mo>
+                                <mrow>
+                                  <mi>x</mi>
+                                  <mo>,</mo>
+                                  <mi>y</mi>
+                                </mrow>
+                                <mo>)</mo>
+                              </mrow>
+                            </mrow>
+                          </mrow>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                  </munder>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mrow>
+                      <mi>I</mi>
+                      <mo>(</mo>
+                      <mstyle>
+                        <mspace width="0.em" height="0.ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <mi>x</mi>
+                        <mo>,</mo>
+                        <mstyle>
+                          <mspace width="0.em" height="0.ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mi>y</mi>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.em" height="0.ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <mi>g</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.em" height="0.ex"/>
+                      </mstyle>
+                      <mo>(</mo>
+                      <mstyle>
+                        <mspace width="0.em" height="0.ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <mo>&#xf605;</mo>
+                        <mrow>
+                          <mrow>
+                            <mo>(</mo>
+                            <mrow>
+                              <mi>x</mi>
+                              <mo>,</mo>
+                              <mi>y</mi>
+                            </mrow>
+                            <mo>)</mo>
+                          </mrow>
+                          <mo>-</mo>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                  </mrow>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mrow>
+                    <mrow>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <msup>
+                            <mi>x</mi>
+                            <mi>&#x2032;</mi>
+                          </msup>
+                          <mo>,</mo>
+                          <msup>
+                            <mi>y</mi>
+                            <mi>&#x2032;</mi>
+                          </msup>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                      <mo>&#xf606;</mo>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.em" height="0.ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mi>g</mi>
+                    <mo>(</mo>
+                    <mrow>
+                      <mo>&#xf605;</mo>
+                      <mrow>
+                        <mrow>
+                          <mi>I</mi>
+                          <mo>&#x2061;</mo>
+                          <mrow>
+                            <mo>(</mo>
+                            <mrow>
+                              <mi>x</mi>
+                              <mo>,</mo>
+                              <mi>y</mi>
+                            </mrow>
+                            <mo>)</mo>
+                          </mrow>
+                        </mrow>
+                        <mo>-</mo>
+                        <mrow>
+                          <mi>I</mi>
+                          <mo>(</mo>
+                          <mrow>
+                            <msup>
+                              <mi>x</mi>
+                              <mi>&#x2032;</mi>
+                            </msup>
+                            <mo>,</mo>
+                            <msup>
+                              <mi>y</mi>
+                              <mi>&#x2032;</mi>
+                            </msup>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                      <mo>&#xf606;</mo>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+          <mtable>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <munder>
+                    <mo>&#x2211;</mo>
+                    <mrow>
+                      <msup>
+                        <mi>x</mi>
+                        <mi>&#x2032;</mi>
+                      </msup>
+                      <mo>,</mo>
+                      <msup>
+                        <mi>y</mi>
+                        <mi>&#x2032;</mi>
+                      </msup>
+                    </mrow>
+                  </munder>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mrow>
+                      <mi>I</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mi>x</mi>
+                          <mo>,</mo>
+                          <mi>y</mi>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <mi>g</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mo>&#xf605;</mo>
+                          <mrow>
+                            <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                <mi>x</mi>
+                                <mo>,</mo>
+                                <mi>y</mi>
+                              </mrow>
+                              <mo>)</mo>
+                            </mrow>
+                            <mo>-</mo>
+                            <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                <msup>
+                                  <mi>x</mi>
+                                  <mi>&#x2032;</mi>
+                                </msup>
+                                <mo>,</mo>
+                                <msup>
+                                  <mi>y</mi>
+                                  <mi>&#x2032;</mi>
+                                </msup>
+                              </mrow>
+                              <mo>)</mo>
+                            </mrow>
+                          </mrow>
+                          <mo>&#xf606;</mo>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <mi>g</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mo>&#xf605;</mo>
+                          <mrow>
+                            <mrow>
+                              <mi>I</mi>
+                              <mo>&#x2061;</mo>
+                              <mrow>
+                                <mo>(</mo>
+                                <mrow>
+                                  <mi>x</mi>
+                                  <mo>,</mo>
+                                  <mi>y</mi>
+                                </mrow>
+                                <mo>)</mo>
+                              </mrow>
+                            </mrow>
+                            <mo>-</mo>
+                            <mrow>
+                              <mi>I</mi>
+                              <mo>&#x2061;</mo>
+                              <mrow>
+                                <mo>(</mo>
+                                <mrow>
+                                  <msup>
+                                    <mi>x</mi>
+                                    <mi>&#x2032;</mi>
+                                  </msup>
+                                  <mo>,</mo>
+                                  <msup>
+                                    <mi>y</mi>
+                                    <mi>&#x2032;</mi>
+                                  </msup>
+                                </mrow>
+                                <mo>)</mo>
+                              </mrow>
+                            </mrow>
+                          </mrow>
+                          <mo>&#xf606;</mo>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                  </mrow>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mfrac>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>30</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0157" num="0190">with g( ) being a Gaussian bell function. As it is easy to see, the expressions in spatial domain (eq. 28, eq. 30) are not only less convenient to discuss and to comprehend than the expressions in LSC filter domain (eq. 27, eq. 29), they are also very processing intense to compute in spatial domain. <figref idref="DRAWINGS">FIG. 7</figref> illustrates how equation 30 can be imagined within the signal domain: The average luminosity of the lower half of the depicted sphere is divided by the average luminosity of all pixels within the sphere. Here, the pixels are to be understood as a &#x201c;particle cloud,&#x201d; where a position of a pixel is defined by its spatial coordinates and its luminosity.</p>
+<p id="p-0158" num="0191">All features disclosed in the specification, and all the steps in any method or process disclosed, may be combined in any combination, except combinations where at least some of such features and/or steps are mutually exclusive. Each feature disclosed in the specification, including the claims, abstract, and drawings, can be replaced by alternative features serving the same, equivalent or similar purpose, unless expressly stated otherwise. Thus, unless expressly stated otherwise, each feature disclosed is one example only of a generic series of equivalent or similar features.</p>
+<p id="p-0159" num="0192">This invention is not limited to particular hardware described herein, and any hardware presently existing or developed in the future that permits processing of digital images using the method disclosed can be used, including for example, a digital camera system, or a phone enabled cellular telephone.</p>
+<p id="p-0160" num="0193">A program storage device readable by a machine is provided, tangibly embodying a program of instructions executable by the machine to perform the steps described herein. This could be, for example, a computer readable medium.</p>
+<p id="p-0161" num="0194">The term memory block refers to any possible computer-related image storage structure known to those skilled in the art, including but not limited to RAM, processor cache, hard drive, or combinations of those, including dynamic memory structures. Prefer-ably, the methods and application program interface disclosed will be embodied in a program of instructions (not shown) either by coding in a high level language.</p>
+<p id="p-0162" num="0195">Any currently existing or future developed program storage device suitable for reading by a machine can be used to store the programs embodying the afore-described interface, methods and algorithms, including, but not limited to hard drives, floppy disks, digital tape, flash cards, compact discs, and DVD's. The program storage device can comprise more than one device, such as two linked hard drives. This invention is not limited to the particular hardware used herein, and any hardware currently existing or developed in the future that permits image processing can be used.</p>
+<p id="p-0163" num="0196">As used herein, the terms tile histogram and regional histogram, tile transfer function and regional histogram function, and interpolated tile transfer function and image transfer function, are, respectively, synonyms.</p>
+<p id="p-0164" num="0197">Also, any element in a claim that does not explicitly state &#x201c;means for&#x201d; performing a specified function or &#x201c;step for&#x201d; performing a specified function, should not be interpreted as a &#x201c;means&#x201d; or &#x201c;step&#x201d; clause as specified in 35 U.S.C. &#xa7;112.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08625921-20140107-M00001.NB">
+<img id="EMI-M00001" he="7.45mm" wi="76.20mm" file="US08625921-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08625921-20140107-M00002.NB">
+<img id="EMI-M00002" he="12.70mm" wi="76.20mm" file="US08625921-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00003" nb-file="US08625921-20140107-M00003.NB">
+<img id="EMI-M00003" he="7.03mm" wi="76.20mm" file="US08625921-20140107-M00003.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00004" nb-file="US08625921-20140107-M00004.NB">
+<img id="EMI-M00004" he="26.50mm" wi="76.20mm" file="US08625921-20140107-M00004.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00005" nb-file="US08625921-20140107-M00005.NB">
+<img id="EMI-M00005" he="7.03mm" wi="76.20mm" file="US08625921-20140107-M00005.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00006" nb-file="US08625921-20140107-M00006.NB">
+<img id="EMI-M00006" he="7.03mm" wi="76.20mm" file="US08625921-20140107-M00006.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00007" nb-file="US08625921-20140107-M00007.NB">
+<img id="EMI-M00007" he="7.03mm" wi="76.20mm" file="US08625921-20140107-M00007.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00008" nb-file="US08625921-20140107-M00008.NB">
+<img id="EMI-M00008" he="7.79mm" wi="76.20mm" file="US08625921-20140107-M00008.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00009" nb-file="US08625921-20140107-M00009.NB">
+<img id="EMI-M00009" he="16.93mm" wi="76.20mm" file="US08625921-20140107-M00009.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00010" nb-file="US08625921-20140107-M00010.NB">
+<img id="EMI-M00010" he="11.68mm" wi="76.20mm" file="US08625921-20140107-M00010.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00011" nb-file="US08625921-20140107-M00011.NB">
+<img id="EMI-M00011" he="11.26mm" wi="76.20mm" file="US08625921-20140107-M00011.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00012" nb-file="US08625921-20140107-M00012.NB">
+<img id="EMI-M00012" he="14.82mm" wi="76.20mm" file="US08625921-20140107-M00012.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00013" nb-file="US08625921-20140107-M00013.NB">
+<img id="EMI-M00013" he="7.03mm" wi="76.20mm" file="US08625921-20140107-M00013.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00014" nb-file="US08625921-20140107-M00014.NB">
+<img id="EMI-M00014" he="7.45mm" wi="76.20mm" file="US08625921-20140107-M00014.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00015" nb-file="US08625921-20140107-M00015.NB">
+<img id="EMI-M00015" he="7.45mm" wi="76.20mm" file="US08625921-20140107-M00015.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00016" nb-file="US08625921-20140107-M00016.NB">
+<img id="EMI-M00016" he="7.03mm" wi="76.20mm" file="US08625921-20140107-M00016.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00017" nb-file="US08625921-20140107-M00017.NB">
+<img id="EMI-M00017" he="7.45mm" wi="76.20mm" file="US08625921-20140107-M00017.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00018" nb-file="US08625921-20140107-M00018.NB">
+<img id="EMI-M00018" he="7.45mm" wi="76.20mm" file="US08625921-20140107-M00018.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00019" nb-file="US08625921-20140107-M00019.NB">
+<img id="EMI-M00019" he="4.57mm" wi="76.20mm" file="US08625921-20140107-M00019.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00020" nb-file="US08625921-20140107-M00020.NB">
+<img id="EMI-M00020" he="4.23mm" wi="76.20mm" file="US08625921-20140107-M00020.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00021" nb-file="US08625921-20140107-M00021.NB">
+<img id="EMI-M00021" he="4.23mm" wi="76.20mm" file="US08625921-20140107-M00021.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00022" nb-file="US08625921-20140107-M00022.NB">
+<img id="EMI-M00022" he="7.45mm" wi="76.20mm" file="US08625921-20140107-M00022.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00023" nb-file="US08625921-20140107-M00023.NB">
+<img id="EMI-M00023" he="6.35mm" wi="76.20mm" file="US08625921-20140107-M00023.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00024" nb-file="US08625921-20140107-M00024.NB">
+<img id="EMI-M00024" he="7.03mm" wi="76.20mm" file="US08625921-20140107-M00024.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00025" nb-file="US08625921-20140107-M00025.NB">
+<img id="EMI-M00025" he="7.03mm" wi="76.20mm" file="US08625921-20140107-M00025.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00026" nb-file="US08625921-20140107-M00026.NB">
+<img id="EMI-M00026" he="7.45mm" wi="76.20mm" file="US08625921-20140107-M00026.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00027" nb-file="US08625921-20140107-M00027.NB">
+<img id="EMI-M00027" he="7.03mm" wi="76.20mm" file="US08625921-20140107-M00027.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00028" nb-file="US08625921-20140107-M00028.NB">
+<img id="EMI-M00028" he="21.84mm" wi="76.20mm" file="US08625921-20140107-M00028.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>I claim:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method for filtering a digital image comprising a first plurality of pixels, the method comprising:
+<claim-text>segmenting the first plurality of pixels into a first plurality of regions;</claim-text>
+<claim-text>computing a first plurality of regional histograms by calculating a regional histogram corresponding to each region in the first plurality of regions;</claim-text>
+<claim-text>computing a first plurality of regional transfer functions by calculating for each region in the first plurality of regions a regional transfer function comprising a convolution of the corresponding regional histogram with a first convolution kernel;</claim-text>
+<claim-text>deriving an image transfer function by interpolation of two or more of the first plurality of regional transfer functions; and</claim-text>
+<claim-text>filtering the digital image by applying the image transfer function to each of the first plurality of pixels.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, where the first plurality of pixels comprises the entire digital image.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00002">claim 2</claim-ref>, where the regions are non-overlapping, and each pixel of the first plurality of pixels is contained within a region.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, where the interpolation of the regional transfer functions comprises:
+<claim-text>selecting a pixel having a luminosity value from a first region of the first plurality of regions;</claim-text>
+<claim-text>computing a plurality of single value results by inputting the selected pixel's luminosity value into each of a second plurality of regional transfer functions, said second plurality including regional transfer functions corresponding to regions not comprising the selected pixel; and</claim-text>
+<claim-text>interpolating a resulting value for the selected pixel as a function of the plurality of single value results.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, where the first convolution kernel is a Gaussian function.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, where the first convolution kernel is one-dimensional.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, where the regional transfer function is also a function of a second convolution comprising the convolution of the corresponding regional histogram with a second convolution kernel.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method of <claim-ref idref="CLM-00007">claim 7</claim-ref>, where the first convolution kernel is a Gaussian function, and the second convolution kernel is a product of a Gaussian function and a step function.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method of <claim-ref idref="CLM-00007">claim 7</claim-ref>, where the second convolution is weighted by pixel luminosity.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, where the plurality of regional histograms are a function of luminosity, of pixel difference, of color, of depth along a z-axis, or of saturation.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. A method for filtering a digital image comprising a first plurality of pixels, each pixel having a luminosity value and being within a neighborhood comprising a second plurality of pixels, the neighborhood having an extent, the method comprising:
+<claim-text>selecting, using one or more processors programmed to perform the method, a pixel from the first plurality of pixels;</claim-text>
+<claim-text>calculating, using the one or more processors, a new luminosity value for the selected pixel as a function of the ratio of the number of pixels in the neighborhood that fulfill a given condition to the total number of pixels in the neighborhood, the condition comprising a luminance comparison against said pixel;</claim-text>
+<claim-text>storing, using the one or more processors, the new luminosity value for the selected pixel; and</claim-text>
+<claim-text>repeating the calculating step and the storing step until a new luminosity value for each of the first plurality of pixels has been calculated.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The method of <claim-ref idref="CLM-00011">claims 11</claim-ref>, where the first plurality of pixels comprises the entire digital image.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The method of <claim-ref idref="CLM-00011">claims 11</claim-ref>, where the extent of the neighborhood is defined by a distance function.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The method of <claim-ref idref="CLM-00013">claim 13</claim-ref>, where the distance function comprises one or more of a spatial distance, a vector difference, or a colormetrical distance.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The method of <claim-ref idref="CLM-00013">claim 13</claim-ref>, where said pixel numbers in the ratio are weighted, pixels with a low distance to the selected pixel receiving a high weight and pixels with a high distance to the selected pixel receiving a low weight.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. A program storage device readable by a machine, tangibly embodying a program of instructions executable by the machine to perform method steps to transform a digital image comprising a first plurality of pixels, said method steps comprising:
+<claim-text>segmenting the first plurality of pixels into a first plurality of regions;</claim-text>
+<claim-text>computing a first plurality of regional histograms by calculating a regional histogram corresponding to each region in the first plurality of regions;</claim-text>
+<claim-text>computing a first plurality of regional transfer functions by calculating for each region in the first plurality of regions a regional transfer function comprising a convolution of the corresponding regional histogram with a first convolution kernel;</claim-text>
+<claim-text>deriving an image transfer function by interpolation of two or more of the first plurality of regional transfer functions; and</claim-text>
+<claim-text>filtering the digital image by applying the image transfer function to each of the first plurality of pixels.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. A method for filtering a digital image comprising steps for:
+<claim-text>segmenting the digital image into a plurality of tiles;</claim-text>
+<claim-text>computing tile histograms corresponding to each of the plurality of tiles;</claim-text>
+<claim-text>deriving a plurality of tile transfer functions from the tile histograms;</claim-text>
+<claim-text>interpolating a tile transfer function from the plurality of tile transfer functions; and</claim-text>
+<claim-text>filtering the digital image with the interpolated tile transfer function.</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

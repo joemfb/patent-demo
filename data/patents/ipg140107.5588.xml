@@ -1,0 +1,596 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626688-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626688</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12522828</doc-number>
+<date>20071106</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>2007-004458</doc-number>
+<date>20070112</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<us-term-extension>527</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>17</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>28</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>17</main-group>
+<subgroup>30</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>N</subclass>
+<main-group>5</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>706 45</main-classification>
+<further-classification>711108</further-classification>
+</classification-national>
+<invention-title id="d2e71">Pattern matching device and method using non-deterministic finite automaton</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>6990552</doc-number>
+<kind>B2</kind>
+<name>Abdat</name>
+<date>20060100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711108</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>7260558</doc-number>
+<kind>B1</kind>
+<name>Cheng et al.</name>
+<date>20070800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>706 12</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>7305391</doc-number>
+<kind>B2</kind>
+<name>Wyschogrod et al.</name>
+<date>20071200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  1  1</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>7502769</doc-number>
+<kind>B2</kind>
+<name>Nugent</name>
+<date>20090300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>706 26</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>7975305</doc-number>
+<kind>B2</kind>
+<name>Rubin et al.</name>
+<date>20110700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>726 25</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>JP</country>
+<doc-number>1991119397</doc-number>
+<kind>A</kind>
+<date>19910500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>JP</country>
+<doc-number>2921119</doc-number>
+<kind>B</kind>
+<date>19990400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>JP</country>
+<doc-number>2003308333</doc-number>
+<kind>A</kind>
+<date>20031000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>JP</country>
+<doc-number>2005122444</doc-number>
+<kind>A</kind>
+<date>20050500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>JP</country>
+<doc-number>2005242672</doc-number>
+<kind>A</kind>
+<date>20050900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>JP</country>
+<doc-number>2005242997</doc-number>
+<kind>A</kind>
+<date>20050900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>WO</country>
+<doc-number>2006061899</doc-number>
+<kind>A</kind>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00013">
+<othercit>International Search Report for PCT/JP2007/071526 mailed Feb. 5, 2008.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00014">
+<othercit>R. Sidhu et al., &#x201c;Fast Regular Expression Matching using FPGAs&#x201d;, Field-Programmable Custom Computing Machines (FCCM), Rohnert Park, CA, USA, Apr. 2001.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>4</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>None</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>8</number-of-drawing-sheets>
+<number-of-figures>15</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20100049713</doc-number>
+<kind>A1</kind>
+<date>20100225</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Ichino</last-name>
+<first-name>Kiyohisa</first-name>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Ichino</last-name>
+<first-name>Kiyohisa</first-name>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>NEC Corporation</orgname>
+<role>03</role>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Chaki</last-name>
+<first-name>Kakali</first-name>
+<department>2122</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Pellett</last-name>
+<first-name>Daniel</first-name>
+</assistant-examiner>
+</examiners>
+<pct-or-regional-filing-data>
+<document-id>
+<country>WO</country>
+<doc-number>PCT/JP2007/071526</doc-number>
+<kind>00</kind>
+<date>20071106</date>
+</document-id>
+<us-371c124-date>
+<date>20090710</date>
+</us-371c124-date>
+</pct-or-regional-filing-data>
+<pct-or-regional-publishing-data>
+<document-id>
+<country>WO</country>
+<doc-number>WO2008/084594</doc-number>
+<kind>A </kind>
+<date>20080717</date>
+</document-id>
+</pct-or-regional-publishing-data>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Provided is a pattern matching device comprising memories. On each of the combinations of the values of an N number (N: a natural number) of pattern detection signals outputted from a circuited NFA (Non-deterministic Finite Automaton), the memories store both identifiers indicating patterns corresponding to effective patterns of the N number of pattern detection signals and flags indicating the definitions of the combinations, individually in addresses set according to the combinations. Further comprised are an address creating unit for determining the address of the memory corresponding to the combination of the values of the pattern detection signals, by using the combination of the values of the pattern detection signals outputted from the circuited NFA, and a read control unit for reading the identifiers and the flags stored in the address from the memories while incrementing the addresses determined by the address creating unit, until the flags take a specific value.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="112.01mm" wi="175.43mm" file="US08626688-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="196.93mm" wi="169.33mm" file="US08626688-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="109.64mm" wi="157.48mm" file="US08626688-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="184.66mm" wi="167.05mm" file="US08626688-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="204.13mm" wi="177.29mm" file="US08626688-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="198.80mm" wi="159.60mm" file="US08626688-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="84.67mm" wi="162.39mm" file="US08626688-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="243.50mm" wi="164.25mm" file="US08626688-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="207.94mm" wi="172.72mm" file="US08626688-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<p id="p-0002" num="0001">This application is the National Phase of PCT/JP2007/071526, filed Nov. 6, 2007, which claims priority to Japanese Patent Application No. 2007-004458, filed on Jan. 12, 2007, which is incorporated herein by reference in its entirety.</p>
+<heading id="h-0001" level="1">TECHNICAL FIELD</heading>
+<p id="p-0003" num="0002">The present invention relates to a pattern matching device and method which determines whether or not a specific pattern exists in input data.</p>
+<heading id="h-0002" level="1">BACKGROUND ART</heading>
+<p id="p-0004" num="0003">Pattern matching for determining whether or not a specific pattern exists in input data is an elemental technology in the field of information processing, and its applications are wide-ranging. For example, these applications include text search in a word processor, DNA analysis in biotechnology, detection of a computer virus lurking in email, and so forth.</p>
+<p id="p-0005" num="0004">As one means for implementing pattern matching, there is a method using a finite automaton (alias: a finite state device and a finite state machine).</p>
+<p id="p-0006" num="0005">A finite automaton for pattern matching is created from a pattern or a set of patterns.</p>
+<p id="p-0007" num="0006">As an example, an NFA (Non-deterministic Finite Automaton) and a DFA (Deterministic Finite Automaton) that accepts three types of patterns &#x201c;ABC&#x201d;, &#x201c;CAB&#x201d;, and &#x201c;ABCD&#x201d; will be described.</p>
+<p id="p-0008" num="0007"><figref idref="DRAWINGS">FIG. 1</figref> is a view showing one example of an NFA. Also, <figref idref="DRAWINGS">FIG. 2</figref> is a view showing one example of a DFA. The difference between the NFA and the DFA will be described later.</p>
+<p id="p-0009" num="0008">A finite automaton for pattern matching starts from an initial state, and makes a transition to the next state through a branch corresponding to an input character. When a state (shown by double circles in the drawing) corresponding to the last character is reached, it is considered that a pattern is detected.</p>
+<p id="p-0010" num="0009">The above operation is repeatedly performed for all the characters from the beginning to the end of a text.</p>
+<p id="p-0011" num="0010">There are two expression types of finite automaton: NFA and DFA.</p>
+<p id="p-0012" num="0011">The DFA is a finite automaton where once the current state and an input are determined, the next state is uniquely determined, as indicated by the word &#x201c;deterministic&#x201d;. Meanwhile, the NFA is a finite automaton where the next state is not uniquely determined.</p>
+<p id="p-0013" num="0012">For example, when putting a focus on the NFA as shown in <figref idref="DRAWINGS">FIG. 1</figref> that is in state 0, there are three states: state 0, state 1, and state 2 as transition destinations corresponding to an input character &#x2018;A&#x2019;.</p>
+<p id="p-0014" num="0013">In a case where the NFA is operated on a sequential processing computer, when there exists a plurality of transition destinations from any given state, this state is put on a stack, and then one of the plurality of transition destinations is selected to make a state transition. Then, the NFA is tracked until there is no state transition or the end of the text is reached.</p>
+<p id="p-0015" num="0014">Afterwards, one of the states is extracted from the stack, a return is made to that state, and a transition destination different from the previous one is selected and a state transition is made.</p>
+<p id="p-0016" num="0015">The above operation is repeated until the stack becomes empty.</p>
+<p id="p-0017" num="0016">In the case where the NFA is operated on a sequential processing computer as described above, the behavior of turning back to a past state and restarting a state transition, that is, a backtracking is generated. Due to the effect of backtracking, the search speed based on the NFA is lower than that based on the DFA.</p>
+<p id="p-0018" num="0017">Meanwhile, the number of states and number of state transitions (number of branches) included in the DFA tend to be greater than those of the DFA. Therefore, the size of a memory for storing the DFA is greater than that of the NFA. Also, it is known that a large amount of computational effort is needed to create the DFA.</p>
+<p id="p-0019" num="0018">As discussed above, the only one downside with the NFA is a decrease in search speed caused by backtracking. Backtracking is generated by the restriction in which a plurality of transition destinations cannot be simultaneously searched in the sequential processing computer. That is, parallel processing is required to suppress backtracking.</p>
+<p id="p-0020" num="0019">Consequently, a method for representing an NFA by combinations of flip-flops and various gates (AND or OR), burying these combinations as a circuit in a device, such as an LSI, and performing pattern matching using the circuit is suggested in a paper titled &#x201c;Fast Regular Expression Matching using FPGAs&#x201d; by R. Sidhu and V. K. Prasanna, Field-Programmable Custom Computing Machines (FCCM), Rohnert Park, Calif., USA, April 2001.</p>
+<p id="p-0021" num="0020">By circuitizing the NFA as described above, backtracking, which is the drawback of the NFA, can be solved. This is because all the flip-flops and the gates are operable in parallel in the circuit.</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 3</figref> is a view showing one example of input patterns. Also, <figref idref="DRAWINGS">FIG. 4</figref> is a view showing an NFA for accepting the patterns as shown in <figref idref="DRAWINGS">FIG. 3</figref>. Also, <figref idref="DRAWINGS">FIG. 5</figref> is a view showing one example of a circuit diagram representing the NFA as shown in <figref idref="DRAWINGS">FIG. 4</figref> by flip-flops and gates.</p>
+<p id="p-0023" num="0022">A regular expression is included in the three patterns &#x201c;AB*C&#x201d;, &#x201c;A[B|C]&#x201d;, and &#x201c;CAB&#x201d; as shown in <figref idref="DRAWINGS">FIG. 3</figref>. A regular expression is an expression that can define simple patterns.</p>
+<p id="p-0024" num="0023">&#x201c;B*&#x201d; included in the first pattern &#x201c;AB*C&#x201d; represents a sequence of zero or more Bs. Hence, the first pattern matches text &#x201c;AC&#x201d;, &#x201c;ABC&#x201d;, &#x201c;ABBC&#x201d;, and so forth.</p>
+<p id="p-0025" num="0024">&#x201c;[B|C]&#x201d; included in the second pattern &#x201c;A[B|C]&#x201d; represents B or C. Hence, the second pattern matches text &#x201c;AB&#x201d; and &#x201c;AC&#x201d;.</p>
+<p id="p-0026" num="0025">As shown in <figref idref="DRAWINGS">FIG. 5</figref>, an input of an NFA circuit <b>10</b> is character <b>22</b> which is an element of text <b>20</b> that is to be searched. The text <b>20</b> are sequentially given one by one to the NFA circuit <b>10</b> characters <b>22</b> starting from the leading character as characters <b>22</b>.</p>
+<p id="p-0027" num="0026">The NFA circuit <b>10</b> sets a pattern detection signal <b>30</b>-X (1&#x2266;X&#x2266;3) to 1 each time it detects an X-th pattern. Meanwhile, other pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-<b>3</b> are set to 0. Also, two or more of the pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-<b>3</b> may become 1 at the same time due to the non-deterministic characteristic of the NFA.</p>
+<p id="p-0028" num="0027">The circuitization of the NFA as shown in <figref idref="DRAWINGS">FIG. 4</figref> is carried out through a state circuitization step and a state transition circuitization step.</p>
+<p id="p-0029" num="0028">In the state circuitization step, one state of the NFA is replaced by one flip-flop. When the state is effective, an output value of the corresponding flip-flop is 1.</p>
+<p id="p-0030" num="0029">A comparator for comparing a character that is a transition condition (=character given to a branch of the NFA) and a character <b>22</b> is placed in the state transition circuitization step. When both characters match, the comparator outputs 1.</p>
+<p id="p-0031" num="0030">A logical AND of the output of the comparator and the output of the flip-flop of a transition source is taken, and the logical AND is used as an input of the flip-flop of a transition destination. Also, when there exists a transition from a plurality of states to one state, a logical OR of the logical ANDs from a plurality of transition sources is taken, and the logical OR is used as an input of the flip-flop of a transition destination.</p>
+<p id="p-0032" num="0031">A pattern matching method using a circuitized NFA has an advantage of providing very fast search speed since a dedicated circuit for searching for desired patterns is configured.</p>
+<p id="p-0033" num="0032">However, the pattern matching method using a circuitized NFA has a problem in which if a plurality of patterns exist, it is difficult to identify patterns that match text.</p>
+<p id="p-0034" num="0033">Hereinafter, this problem will be described in detail.</p>
+<p id="p-0035" num="0034">The most simple pattern identification method is to find the values of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N outputted by the NFA circuit <b>10</b> as shown in <figref idref="DRAWINGS">FIG. 5</figref> individually. Here, N is the number of patterns.</p>
+<p id="p-0036" num="0035">If the value of a pattern detection signal <b>30</b>-X (1&#x2266;X&#x2266;N) is 1, this means that the X-th pattern is detected. In this method, there is a need to provide a circuit for checking all the values of 10000 pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-<b>10000</b>, assuming that the number of patterns is 10000. Thus, when the number of patterns is large, the feasibility of this method is low in terms of gate size, wiring capacity, and operation speed.</p>
+<p id="p-0037" num="0036">Consequently, as a more advanced pattern identification method, a conventional method using a priority encoder is disclosed in a paper titled &#x201c;The design and implementation of a NFA pattern matching circuit for NIDS&#x201d; by Ono Masato (Graduate School of System and Information Technology, University of Tsukuba) et all, IEIC Technical Report CPSY2004-17 (Institute of Electronics, Information and Communication Engineers).</p>
+<p id="p-0038" num="0037">The priority encoder is a circuit for encoding an input bit string to a numerical value. Generally, input N bits are converted into a numerical value between 0 and (N&#x2212;1), and the numerical value after encoding is represented by log 2(N) bits.</p>
+<p id="p-0039" num="0038">Even when a plurality of bits in an input bit string becomes 1, each bit is given a priority to determine an output value. If a bit with a high priority is 1, a bit with a priority lower than that is ignored.</p>
+<p id="p-0040" num="0039">If no regular expression is included in the pattern, a bit string of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N is encoded to a numerical value by using the priority encoder, and the type of the pattern included in the text can be identified by referring to the numerical value after encoding.</p>
+<p id="p-0041" num="0040">For example, when N=8192, the numerical value after encoding is between 0 and 8192 and is represented in 13 bits (log 2(8192)=13).</p>
+<p id="p-0042" num="0041">That is, there is no need to directly refer to 8192 pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-<b>8192</b>, so the circuit scale is reduced.</p>
+<p id="p-0043" num="0042">However, in the conventional method using a priority encoder, it is not always possible to identify the type of pattern in a case where a regular expression is included in the pattern.</p>
+<p id="p-0044" num="0043">The reason for this will be described below by using a concrete example.</p>
+<p id="p-0045" num="0044">As described above, when using a priority encoder, a priority should be defined for each input bit. In other words, if a priority cannot be uniquely defined for each bit, the type of pattern included in the text cannot be accurately identified by referring to the numerical value after encoding.</p>
+<p id="p-0046" num="0045"><figref idref="DRAWINGS">FIG. 6</figref> is a view showing combinations of values of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-<b>3</b> outputted by the NFA circuit <b>10</b> as shown in <figref idref="DRAWINGS">FIG. 5</figref>.</p>
+<p id="p-0047" num="0046">When putting a focus on the columns of pattern detection signal <b>30</b>-<b>1</b> and pattern detection signal <b>30</b>-<b>2</b> of input table <b>15</b> as shown in <figref idref="DRAWINGS">FIG. 6</figref>, there are four combinations of their values: 00, 01, 10, and 11. This means that either one or both of the values of pattern detection signal <b>30</b>-<b>1</b> and pattern detection signal <b>30</b>-<b>2</b> may be 1.</p>
+<p id="p-0048" num="0047">That is, it can be seen that because pattern detection signal <b>30</b>-<b>1</b> and pattern detection signal <b>30</b>-<b>2</b> are not in a subordinate relationship, priorities between them cannot be determined.</p>
+<p id="p-0049" num="0048">As explained above, in a pattern matching method using a circuitized NFA, no practical method has been established for identifying a pattern that matches text in a case where a regular expression is included in the pattern.</p>
+<heading id="h-0003" level="1">DISCLOSURE OF THE INVENTION</heading>
+<p id="p-0050" num="0049">The present invention has been made taking into consideration the problem of the background art, and it is an object of the present invention to provide a pattern matching device and method which can identify all types of patterns that match text.</p>
+<p id="p-0051" num="0050">To achieve the above object, there is provided a pattern matching device according to the present invention, including: memories for storing both identifiers indicating patterns corresponding to effective patterns of an N number of pattern detection signals and flags indicating the definitions of combinations, individually in addresses set according to the combinations, on each of the combinations of the values of the N number (N: a natural number) of pattern detection signals outputted from a circuited NFA (Non-deterministic Finite Automaton); an address creating unit for determining the address of the memory corresponding to the combination of the values of the pattern detection signals, by using the combination of the values of the pattern detection signals outputted from the circuited NFA; and a read control unit for reading the identifiers and the flags stored in the address continuously while incrementing the addresses determined by the address creating unit, until the flags take a specific value.</p>
+<p id="p-0052" num="0051">In the present invention thus constructed, on each of the combinations of the values of an N number of pattern detection signals outputted from a circuited NFA, both identifiers indicating patterns corresponding to effective patterns of the N number of pattern detection signals and flags indicating the definitions of the combinations of the values of an N number of pattern detection signals, are stored individually in addresses in memories set according to the combinations. Afterward, when the values of the pattern detection signals are outputted from the circuited NFA, the address creating unit determines the address of the memory corresponding to the combination of the values of the pattern detection signals by using the combination, and the read control unit reads the identifiers and the flags stored in the address continuously while incrementing the addresses determined by the address creating unit, until the flags read out from the memory take a specific value.</p>
+<p id="p-0053" num="0052">It is possible to identify the type of pattern that matches text because the present invention includes: memories for storing both identifiers indicating patterns corresponding to effective patterns of an N number of pattern detection signals and flags indicating the definitions of combinations, individually in addresses set according to the combinations, on each of the combinations of the values of the N number of pattern detection signals outputted from a circuited NFA; an address creating unit for determining the address of the memory corresponding to the combination of the values of the pattern detection signals, by using the combination of the values of the pattern detection signals outputted from the circuited NFA; and a read control unit for reading the identifiers and the flags stored in the address continuously while incrementing the addresses determined by the address creating unit, until the flags take a specific value.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">DESCRIPTION OF DRAWINGS</heading>
+<p id="p-0054" num="0053"><figref idref="DRAWINGS">FIG. 1</figref> is a view showing one example of an NFA;</p>
+<p id="p-0055" num="0054"><figref idref="DRAWINGS">FIG. 2</figref> is a view showing one example of a DFA;</p>
+<p id="p-0056" num="0055"><figref idref="DRAWINGS">FIG. 3</figref> is a view showing one example of input patterns;</p>
+<p id="p-0057" num="0056"><figref idref="DRAWINGS">FIG. 4</figref> is a view showing an NFA for accepting the patterns as shown in <figref idref="DRAWINGS">FIG. 3</figref>;</p>
+<p id="p-0058" num="0057"><figref idref="DRAWINGS">FIG. 5</figref> is a view showing one example of a circuit diagram representing the NFA as shown in <figref idref="DRAWINGS">FIG. 4</figref> by flip-flops and gates;</p>
+<p id="p-0059" num="0058"><figref idref="DRAWINGS">FIG. 6</figref> is a view showing combinations of values of pattern detection signals outputted from the NFA circuit as shown in <figref idref="DRAWINGS">FIG. 5</figref>;</p>
+<p id="p-0060" num="0059"><figref idref="DRAWINGS">FIG. 7</figref> is a block diagram showing one exemplary embodiment of a pattern matching device according to the present invention;</p>
+<p id="p-0061" num="0060"><figref idref="DRAWINGS">FIG. 8</figref> is a flowchart for explaining a method for obtaining a NFA circuit, an address creating unit, contents of a pattern ID memory, and contents of a termination flag memory as shown in <figref idref="DRAWINGS">FIG. 7</figref>;</p>
+<p id="p-0062" num="0061"><figref idref="DRAWINGS">FIG. 9</figref> is a view showing a DFA converted from the NFA as shown in <figref idref="DRAWINGS">FIG. 4</figref>;</p>
+<p id="p-0063" num="0062"><figref idref="DRAWINGS">FIG. 10</figref> is a view showing how the contents of the pattern ID memory, termination flag memory, and index as shown in <figref idref="DRAWINGS">FIG. 7</figref> are created from an input table corresponding to the three patterns as shown in <figref idref="DRAWINGS">FIG. 3</figref>;</p>
+<p id="p-0064" num="0063"><figref idref="DRAWINGS">FIG. 11</figref> is a view showing a detailed algorithm programmatically representing step S<b>102</b> of the flowchart of <figref idref="DRAWINGS">FIG. 8</figref>;</p>
+<p id="p-0065" num="0064"><figref idref="DRAWINGS">FIG. 12</figref> is a view showing a truth value table of the address creating unit as shown in <figref idref="DRAWINGS">FIG. 7</figref> as being constructed of an input table and an index;</p>
+<p id="p-0066" num="0065"><figref idref="DRAWINGS">FIG. 13</figref> is a view showing one example of a circuit diagram of the address creating unit satisfying the truth value table as shown in <figref idref="DRAWINGS">FIG. 12</figref>;</p>
+<p id="p-0067" num="0066"><figref idref="DRAWINGS">FIG. 14</figref> is one example of a timing chart chronologically showing changes in signals in the pattern matching device as shown in <figref idref="DRAWINGS">FIG. 7</figref>; and</p>
+<p id="p-0068" num="0067"><figref idref="DRAWINGS">FIG. 15</figref> is a flowchart showing an operation of a read control unit as shown in <figref idref="DRAWINGS">FIG. 7</figref>.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">BEST MODE FOR CARRYING OUT THE INVENTION</heading>
+<p id="p-0069" num="0068">An exemplary embodiment of the present invention is explained hereinafter with reference to the accompanying drawings. In the present invention, data that is a target for pattern matching is called &#x2018;text&#x2019;. Also, text and a pattern are comprised of an array of one or more &#x2018;characters&#x2019;. The characters are not limited to human-recognizable ones, but may be simple numerical values (binary).</p>
+<p id="p-0070" num="0069"><figref idref="DRAWINGS">FIG. 7</figref> is a block diagram showing one exemplary embodiment of a pattern matching device according to the present invention.</p>
+<p id="p-0071" num="0070">In this exemplary embodiment, pattern matching device <b>1</b> comprises, as shown in <figref idref="DRAWINGS">FIG. 1</figref>, NFA circuit <b>10</b>, address creating unit <b>11</b>, read control unit <b>12</b>, pattern ID memory <b>13</b>, and termination flag memory <b>14</b>. As well, text <b>20</b> is inputted, and whenever a pattern is found on text <b>20</b>, pattern ID <b>21</b>, which is an identifier associated with the pattern, is outputted. As for text <b>20</b>, characters <b>22</b>, starting from the leading character, are sequentially given one by one to pattern matching device <b>1</b>.</p>
+<p id="p-0072" num="0071">NFA circuit <b>10</b> is a NFA which is circuitized by using the method described in the background art as shown in <figref idref="DRAWINGS">FIG. 5</figref>. For example, NFA circuit <b>10</b> is one which is circuitized by using the method stated in the paper titled &#x201c;Fast Regular Expression Matching using FPGAs&#x201d; by R. Sidhu and V. K. Prasanna, Field-Programmable Custom Computing Machines (FCCM), Rohnert Park, Calif., USA, April 2001. An input of NFA circuit <b>10</b> is character <b>22</b> which is an element of text <b>20</b>. NFA circuit <b>10</b> sets pattern detection signal <b>30</b>-X (1&#x2266;X&#x2266;N) to 1 each time it detects an X-th pattern. Meanwhile, other pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N are set to 0. Here, N is the number of patterns and is a natural number. Meanwhile, two or more of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N may become 1 at the same time due to the non-deterministic characteristic of the NFA.</p>
+<p id="p-0073" num="0072">Address creating unit <b>11</b> calculates start address <b>31</b> corresponding to a combination of values of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N. Start address <b>31</b> is an address where reading is to begin in pattern ID memory <b>13</b> and termination flag memory <b>14</b>. Address creating unit <b>11</b> depends on patterns, and is designed from patterns by a method to be described later.</p>
+<p id="p-0074" num="0073">Read control unit <b>12</b> receives start addresses <b>31</b> from address creating unit <b>11</b>, and creates addresses <b>32</b> that are to be given to pattern ID memory <b>13</b> and termination flag memory <b>14</b>. Then, addresses <b>32</b> are incremented until termination flags <b>33</b> read out from termination flag memory <b>14</b> become 1. Meanwhile, termination flags <b>33</b> are flags indicating the definitions of the combinations of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N.</p>
+<p id="p-0075" num="0074">Pattern ID memory <b>13</b> read the contents of the memory corresponding to addresses <b>32</b> and outputs them as pattern IDs <b>21</b>, under the control of read control unit <b>12</b>.</p>
+<p id="p-0076" num="0075">Termination flag memory <b>14</b> read the contents of the memory corresponding to addresses <b>32</b> and outputs them as termination flags <b>33</b> under the control of read control unit <b>12</b>.</p>
+<p id="p-0077" num="0076">The contents of pattern ID memory <b>13</b> and termination flag memory <b>14</b> are dependent on patterns, and are created from patterns by a method to be described later.</p>
+<p id="p-0078" num="0077">While this exemplary embodiment deals with pattern ID memory <b>13</b> and termination flag memory <b>14</b> separately, they may be included in the physically same memory.</p>
+<p id="p-0079" num="0078">Hereinafter, a method for designing and determining the above-described NFA circuit <b>10</b>, address creating unit <b>11</b>, contents of pattern memory <b>13</b>, and contents of termination flag memory <b>14</b>, respectively, from patterns will be described with reference to a flowchart.</p>
+<p id="p-0080" num="0079"><figref idref="DRAWINGS">FIG. 8</figref> is a flowchart for explaining a method for obtaining NFA circuit <b>10</b>, address creating unit <b>11</b>, contents of pattern ID memory <b>13</b>, and contents of termination flag memory <b>14</b> as shown in <figref idref="DRAWINGS">FIG. 7</figref>.</p>
+<p id="p-0081" num="0080">First, in step S<b>100</b>, NFA circuit <b>10</b> is designed from a pattern. This design technique is well known and has already been described in the background art.</p>
+<p id="p-0082" num="0081">Next, in step S<b>101</b>, input table <b>15</b> having all combinations of possible values of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N listed therein, is created. Pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N each take a binary value of 0 or 1, so they have up to an N-th power of 2 of combinations.</p>
+<p id="p-0083" num="0082">However, not all of the N-th power of 2 of combinations is practically possible in practice. A combination of possible values of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N is uniquely determined by a pattern. An appropriate method for obtaining a combination is to convert the NFA obtained in step S<b>100</b> into a DFA. The NFA can be converted into a DFA by a well-known algorithm, such as subset construction.</p>
+<p id="p-0084" num="0083"><figref idref="DRAWINGS">FIG. 9</figref> is a view showing a DFA converted from the NFA as shown in <figref idref="DRAWINGS">FIG. 4</figref>.</p>
+<p id="p-0085" num="0084">In <figref idref="DRAWINGS">FIG. 9</figref>, an ellipse represents a DFA state, and one or more numbers included in the ellipse represent the numbers of NFA states, respectively. That is, each DFA state consists of one or more sets of NFA states.</p>
+<p id="p-0086" num="0085">For example, a DFA state {0, 1, 2} of <figref idref="DRAWINGS">FIG. 9</figref> means that NFA states &#x201c;0&#x201d;, &#x201c;1&#x201d;, and &#x201c;2&#x201d; are effective at the same time, and the other NFA states are ineffective. Thus, when a transition is made to the DFA state {0, 1, 2}, NFA circuit <b>10</b> is subject to the following equations:
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0000">
+    <ul id="ul0002" list-style="none">
+        <li id="ul0002-0001" num="0086">value of pattern detection signal <b>30</b>-<b>1</b> corresponding to NFA state &#x201c;1&#x201d;=1</li>
+        <li id="ul0002-0002" num="0087">value of pattern detection signal <b>30</b>-<b>2</b> corresponding to NFA state &#x201c;2&#x201d;=1</li>
+        <li id="ul0002-0003" num="0088">value of pattern detection signal <b>30</b>-<b>3</b> corresponding to NFA state &#x201c;3&#x201d;=0</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0087" num="0089">That is, each DFA state corresponds to one of the combinations of the values of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N.</p>
+<p id="p-0088" num="0090">Because of this, all of the combinations of the values of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N can be acquired by obtaining a DFA.</p>
+<p id="p-0089" num="0091">Input table <b>15</b> is a table in which all of the combinations of the values of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N are arranged in rows. The rows corresponding to pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N whose values are all zero are placed in the first column of input table <b>15</b>. The second and subsequent rows of input table <b>15</b> are placed in random order.</p>
+<p id="p-0090" num="0092"><figref idref="DRAWINGS">FIG. 10</figref> is a view showing how pattern ID memory <b>13</b>, termination flag memory <b>14</b>, and contents of an index as shown in <figref idref="DRAWINGS">FIG. 7</figref> are created from an input table corresponding to the three patterns as shown in <figref idref="DRAWINGS">FIG. 3</figref>.</p>
+<p id="p-0091" num="0093">In step S<b>102</b>, contents of pattern ID memory <b>13</b>, contents of termination flag memory <b>14</b>, and index <b>16</b> are respectively created based on input table <b>15</b>.</p>
+<p id="p-0092" num="0094">Index <b>16</b> is a temporary one dimensional array created during calculation in the flowchart as shown in <figref idref="DRAWINGS">FIG. 8</figref>, and is not a component of pattern matching device <b>1</b>. Index <b>16</b> has an M-number of cells, and each cell stores the addresses of pattern ID memory <b>13</b> and termination flag memory <b>14</b>. Here, M is the number of rows of input table <b>15</b>, that is, the number of the combinations of the values of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N.</p>
+<p id="p-0093" num="0095"><figref idref="DRAWINGS">FIG. 11</figref> is a view showing a detailed algorithm programmatically representing step S<b>102</b> of the flowchart of <figref idref="DRAWINGS">FIG. 8</figref>.</p>
+<p id="p-0094" num="0096">The meanings of variables appearing in algorithm A<b>102</b> are as follows.
+<ul id="ul0003" list-style="none">
+    <li id="ul0003-0001" num="0000">
+    <ul id="ul0004" list-style="none">
+        <li id="ul0004-0001" num="0097">index[X](0&#x2266;X&#x2266;M) . . . value of (X+1)-th cell of index <b>16</b></li>
+        <li id="ul0004-0002" num="0098">input[X][Y](0&#x2266;X&#x3c;M, 0&#x2266;Y&#x3c;N) . . . value of (Y+1)-th cell of (X+1)-th row of input table <b>15</b></li>
+        <li id="ul0004-0003" num="0099">pattern_id[X](X&#x2267;0) . . . contents of address &#x201c;X&#x201d; of pattern ID memory <b>13</b></li>
+        <li id="ul0004-0004" num="0100">termination_flag[X](X&#x2267;0) . . . contents of address &#x201c;X&#x201d; of termination flag memory <b>14</b></li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0095" num="0101">Algorithm A<b>102</b> will be expressed in language as follows.</p>
+<p id="p-0096" num="0102">For each row of input table <b>15</b>, if a value of a cell corresponding to pattern detection signal <b>30</b>-X (1&#x2266;X&#x2266;N) is 1, the ID of an X-th pattern is added in pattern ID memory <b>13</b>.</p>
+<p id="p-0097" num="0103">Further, if the cell is the last cell whose value is 1, 1 is added to termination flag memory <b>14</b>, and if not, 0 is added thereto.</p>
+<p id="p-0098" num="0104">The above process is carried out in order from the first row to the last row of input table <b>15</b>.</p>
+<p id="p-0099" num="0105">Writing of pattern ID memory <b>13</b> and termination flag memory <b>14</b> starts from address &#x201c;1&#x201d;. That is, the contents of address &#x201c;0&#x201d; of pattern ID memory <b>13</b> and termination flag memory <b>14</b> are incertitude.</p>
+<p id="p-0100" num="0106">In addition, in the processing of the X-th row (1&#x2266;X&#x2266;N) of input table <b>15</b>, when a value is first written in pattern ID memory <b>13</b> and termination flag memory <b>14</b>, the written address is substituted into the X-th cell of index <b>16</b>.</p>
+<p id="p-0101" num="0107">In this way, as shown in <figref idref="DRAWINGS">FIG. 10</figref>, on each of the combinations of the values of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N outputted from NFA circuit <b>10</b>, pattern ID memory <b>13</b> and termination flag memory <b>14</b> store pattern IDs indicating patterns corresponding to effective ones of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N and termination flags indicating terminations that define the combinations, individually in addresses set according to the combinations.</p>
+<p id="p-0102" num="0108">Next, in step S<b>103</b>, truth value table <b>17</b> is created from input table <b>15</b> and index <b>16</b>. The truth value table in a logic circuit shows input values and their corresponding output values in a table form.</p>
+<p id="p-0103" num="0109"><figref idref="DRAWINGS">FIG. 12</figref> is a view showing a truth value table of address creating unit <b>11</b> as shown in <figref idref="DRAWINGS">FIG. 7</figref> as being constructed of an input table and an index.</p>
+<p id="p-0104" num="0110">As shown in <figref idref="DRAWINGS">FIG. 12</figref>, the input of truth value table <b>17</b> is pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-N, and the output thereof is start address <b>31</b>. Further, combinations of input values of truth value table <b>17</b> are input table <b>15</b>, and their corresponding output values are index <b>16</b>.</p>
+<p id="p-0105" num="0111">Moreover, a combination of input values not defined in input table <b>15</b>, that is, a combination of impossible values of pattern detection signals is treated as a redundant input. An output value corresponding to the redundant input is treated as optional (Don't care).</p>
+<p id="p-0106" num="0112">For example, truth value table <b>17</b> created from input table <b>15</b> and index <b>16</b> as shown in <figref idref="DRAWINGS">FIG. 10</figref> is shown below <figref idref="DRAWINGS">FIG. 12</figref>.</p>
+<p id="p-0107" num="0113">Next, in step S<b>104</b>, address creating unit <b>11</b> is designed from truth value table <b>17</b>. Address creating unit <b>11</b> is a logic circuit that satisfies truth value table <b>17</b>.</p>
+<p id="p-0108" num="0114"><figref idref="DRAWINGS">FIG. 13</figref> is a view showing one example of a circuit diagram of address creating unit <b>11</b> satisfying truth value table <b>17</b> as shown in <figref idref="DRAWINGS">FIG. 12</figref>.</p>
+<p id="p-0109" num="0115">Generally, in order to design a logic circuit from a truth value table, a procedure of deriving a logical expression simplified by logically reducing the truth value table is carried out. In particular, since redundant inputs exist in truth value table <b>17</b>, this makes it easy to obtain a compact logic circuit by logical reduction.</p>
+<p id="p-0110" num="0116">In this way, when determining start address <b>31</b> from the combinations of the values of pattern detection signals, the scale of a circuit for determining an address can be made smaller by treating the combination of impossible values of pattern detection signals as a redundant input.</p>
+<p id="p-0111" num="0117">Typical well-known methods of logical reduction include the Karnaugh map, Quine method, and the Quine McCluskey method. These are the basics of digital electronic circuit design and are general knowledge in this field, so description thereof will be omitted.</p>
+<p id="p-0112" num="0118">Hereinafter, an operation of pattern matching device <b>1</b> as shown in <figref idref="DRAWINGS">FIG. 7</figref> will be described in detail by way of concrete example.</p>
+<p id="p-0113" num="0119">In this example, these patterns &#x201c;AB*C&#x201d;, &#x201c;A[B|C]&#x201d;, and &#x201c;CAB&#x201d; as shown in <figref idref="DRAWINGS">FIG. 3</figref> are used. Further, it is assumed that text <b>20</b> is a character string &#x201c;ACAB&#x201d; consisting of four characters. That is, &#x201c;A&#x201d;, &#x201c;C&#x201d;, &#x201c;A&#x201d;, and &#x201c;B&#x201d;, as characters <b>22</b>, are sequentially given to pattern matching device <b>1</b>.</p>
+<p id="p-0114" num="0120">According to the method in the above-described exemplary embodiment, NFA circuit <b>10</b> corresponding to these three patterns, address creating unit <b>11</b>, and contents of pattern ID memory <b>13</b> and termination flag memory <b>14</b> are created as shown in <figref idref="DRAWINGS">FIGS. 5</figref>, <b>13</b>, and <b>10</b>, respectively.</p>
+<p id="p-0115" num="0121">Hereinafter, an operation in which, whenever a pattern is detected among text <b>20</b>, pattern matching device <b>1</b> outputs a pattern ID associated with the pattern, will be described.</p>
+<p id="p-0116" num="0122"><figref idref="DRAWINGS">FIG. 14</figref> is one example of a timing chart chronologically showing changes in signals in pattern matching device <b>1</b> as shown in <figref idref="DRAWINGS">FIG. 7</figref>. In this example, the respective values of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-<b>3</b>, start addresses <b>31</b>, addresses <b>32</b>, termination flags <b>33</b>, and pattern IDs <b>21</b> are written in chronological order.</p>
+<p id="p-0117" num="0123">First, a description is given of an operation when the first character &#x201c;A&#x201d; of text <b>20</b> is inputted into pattern matching device <b>1</b>.</p>
+<p id="p-0118" num="0124">&#x201c;A&#x201d; as character <b>22</b> is given to NFA circuit as shown in <figref idref="DRAWINGS">FIG. 5</figref>, NFA circuit <b>10</b> outputs pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-<b>3</b>, and the values thereof are all zero.</p>
+<p id="p-0119" num="0125">Pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-<b>3</b> are inputted into address creating unit <b>11</b>, and 0 is outputted as start addresses <b>32</b>. Start addresses <b>32</b> are given to read control unit <b>12</b>.</p>
+<p id="p-0120" num="0126">Now, an operation of read control unit <b>12</b> will be described.</p>
+<p id="p-0121" num="0127"><figref idref="DRAWINGS">FIG. 15</figref> is a flowchart showing an operation of read control unit <b>12</b> as shown in <figref idref="DRAWINGS">FIG. 7</figref>.</p>
+<p id="p-0122" num="0128">First, in step S<b>200</b>, start address <b>31</b> is acquired from address creating unit <b>11</b>.</p>
+<p id="p-0123" num="0129">Next, in step S<b>201</b>, the value of start address <b>31</b> is determined to be 0 or not, and if it is 0, then the flow returns to step S<b>200</b>. If it is other than 0, acquired start address <b>31</b> is substituted into address <b>32</b> in step S<b>202</b>.</p>
+<p id="p-0124" num="0130">Between step S<b>202</b> and step S<b>203</b>, pattern ID memory <b>13</b> and termination flag memory <b>14</b> read the contents of the memories corresponding to address <b>32</b> and output them as pattern ID <b>21</b> and termination flag <b>33</b>, respectively, under the control of read control unit <b>12</b>.</p>
+<p id="p-0125" num="0131">In step S<b>203</b>, read control unit <b>12</b> receives read termination flag <b>33</b>.</p>
+<p id="p-0126" num="0132">Thereafter, in step S<b>204</b>, the value of termination flag <b>33</b> is determined to be 1 or not, and if it is 1, then the flow returns to step S<b>200</b>. If it is other than 1, the contents of address <b>32</b> are incremented by 1 in step S<b>205</b> and the flow returns to step S<b>203</b>.</p>
+<p id="p-0127" num="0133">The description now returns to the description of the operation of pattern matching device <b>1</b>.</p>
+<p id="p-0128" num="0134">As described above, when &#x201c;A&#x201d;, as character <b>22</b>, is inputted, the value of start address <b>32</b> is 0.</p>
+<p id="p-0129" num="0135">At this time, in read control unit <b>12</b>, the condition of step S<b>201</b> as shown in <figref idref="DRAWINGS">FIG. 15</figref> is established and thus the flow immediately returns to step S<b>200</b>, and the process corresponding to the first character of text <b>20</b> is finished.</p>
+<p id="p-0130" num="0136">At this point of time, no pattern is detected, and no pattern ID <b>21</b> is outputted.</p>
+<p id="p-0131" num="0137">Continuously, a description is given of an operation when &#x201c;C&#x201d;, which is the second character of text <b>20</b>, is inputted into pattern matching device <b>1</b>.</p>
+<p id="p-0132" num="0138">If &#x201c;C&#x201d; as character <b>22</b> is given to NFA circuit <b>10</b> as shown in <figref idref="DRAWINGS">FIG. 5</figref>, the values of pattern detection signals <b>30</b>-<b>1</b>&#x2dc;<b>30</b>-<b>3</b> are 1, 1, and 0 in sequence.</p>
+<p id="p-0133" num="0139">At this time, address creating unit <b>11</b> outputs 2 as start address <b>32</b>.</p>
+<p id="p-0134" num="0140">In read control unit <b>12</b>, because the value of start address <b>32</b> is other than 0, the condition of step S<b>201</b> as shown in <figref idref="DRAWINGS">FIG. 15</figref> is not established and the flow proceeds to step S<b>202</b>, and the value of start address <b>31</b>, i.e, 2 is substituted into address <b>32</b>.</p>
+<p id="p-0135" num="0141">Referring to <figref idref="DRAWINGS">FIG. 10</figref>, the contents of the memory corresponding to address &#x201c;2&#x201d; of pattern ID memory <b>13</b> is the ID of the first pattern, and hence the ID of the first pattern is outputted as pattern ID <b>21</b>.</p>
+<p id="p-0136" num="0142">Further, because the contents of the memory corresponding to address &#x201c;2&#x201d; of termination flag memory <b>14</b> are 0, the value of termination flag <b>33</b> is 0. Since the value of termination flag <b>33</b> is 0, the condition of step S<b>204</b> as shown in <figref idref="DRAWINGS">FIG. 15</figref> is not established and the flow proceeds to step S<b>205</b>, and 1 is added to address <b>32</b> to make it 3.</p>
+<p id="p-0137" num="0143">In the same way as previously, referring to <figref idref="DRAWINGS">FIG. 10</figref>, the contents of the memory corresponding to address &#x201c;3&#x201d; of pattern ID memory <b>13</b> are the ID of the second pattern, and hence the ID of the second pattern is outputted as pattern ID <b>21</b>.</p>
+<p id="p-0138" num="0144">Further, because the contents of the memory corresponding to address &#x201c;3&#x201d; of termination flag memory <b>14</b> are 1, the value of termination flag <b>33</b> is 1. Since the value of termination flag <b>33</b> is not 0, the condition of step S<b>204</b> is established and the flow returns to step S<b>200</b>, and the process corresponding to the second character of text <b>20</b> is finished.</p>
+<p id="p-0139" num="0145">An operation when the third character A and fourth character B of text <b>20</b> are inputted into pattern matching device <b>1</b> is identical to the above-described operation.</p>
+<p id="p-0140" num="0146">As described above, although the present invention has been described in conjunction with the exemplary embodiment thereof, the present invention is not limited to the above exemplary embodiment. Various modifications that one skilled in the art can understand can be applied to the configuration or details of the present invention without departing from the scope of the present invention.</p>
+<p id="p-0141" num="0147">This application claims a priority based on Japanese Patent Application No. 2007-004458 filed on Jan. 12, 2007, the entire contents of which are incorporated herein by reference.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>The invention claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A pattern matching device for identifying a pattern, comprising:
+<claim-text>a first memory that stores an identifier corresponding to an address which is set according to each combination of values of pattern detection signals, wherein the identifier indicates the pattern of an effective pattern detection signal which is included in the pattern detection signals;</claim-text>
+<claim-text>a second memory that stores a flag corresponding to the address, wherein the flag indicates a definition of each of the combinations;</claim-text>
+<claim-text>an address creating unit that determines a start address based on a combination of values of pattern detection signals outputted from a circuited NFA (Non-deterministic Finite Automaton); and</claim-text>
+<claim-text>a read control unit that reads the identifier from the first memory and the flag from a second memory corresponding to the start address and increments the start address, wherein the read control unit continues to read the identifier and the flag, and to increment the start address until the flag takes a specific value.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The pattern matching device of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the address creating unit treats a combination of impossible values of the pattern detection signals as redundant input, when the address creating unit determines the start address.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. A pattern matching method for identifying a pattern, comprising:
+<claim-text>storing in a first memory an identifier corresponding to an address which is set according to each combination of values of pattern detection signals, wherein the identifier indicates the pattern of an effective pattern detection signal which is included in the pattern detection signals;</claim-text>
+<claim-text>storing in a second memory a flag corresponding to the address, wherein the flag indicates a definition of each of the combinations;</claim-text>
+<claim-text>determining a start address based on a combination of values of pattern detection signals outputted from a circuited NFA (Non-deterministic Finite Automaton); and</claim-text>
+<claim-text>reading the identifier from the first memory and the flag from the second memory corresponding to the start address and incrementing the start address, and continuing to read the identifier and the flag, and to increment the start address until the flag takes a specific value.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The pattern matching method of <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein a combination of impossible values of the pattern detection signals is treated as redundant input, when determining the start address. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

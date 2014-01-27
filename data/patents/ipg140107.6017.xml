@@ -1,0 +1,1120 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627140-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627140</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13079155</doc-number>
+<date>20110404</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>2010-103911</doc-number>
+<date>20100428</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<us-term-extension>353</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>11</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>714  613</main-classification>
+</classification-national>
+<invention-title id="d2e71">Failure management method and computer</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>3814919</doc-number>
+<kind>A</kind>
+<name>Repton et al.</name>
+<date>19740600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714 25</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5265227</doc-number>
+<kind>A</kind>
+<name>Kohn et al.</name>
+<date>19931100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711207</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>2002/0180778</doc-number>
+<kind>A1</kind>
+<name>Proudler</name>
+<date>20021200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>345734</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>2010/0030975</doc-number>
+<kind>A1</kind>
+<name>Murray et al.</name>
+<date>20100200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711154</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>2010/0251066</doc-number>
+<kind>A1</kind>
+<name>Radke</name>
+<date>20100900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714752</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>2010/0281202</doc-number>
+<kind>A1</kind>
+<name>Abali et al.</name>
+<date>20101100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711103</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00007">
+<othercit>IntelR 64 and IA-32 Architectures Software Developer's Manual, vol. 3A: System Programming Guide Part 1, Chapter15.6: Recovery of Uncorrected Recoverable (UCR) Errors, Jun. 2009.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00008">
+<othercit>Building IT Server Solutions on Intel Microarchitecture (Nehalem-EX)-based Platforms Featuring Windows Server 2008 R2 and Hyper-V. Intel Developer Forum 2009.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>10</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>714  613</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>714 53</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>17</number-of-drawing-sheets>
+<number-of-figures>26</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110271152</doc-number>
+<kind>A1</kind>
+<date>20111103</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Hattori</last-name>
+<first-name>Naoya</first-name>
+<address>
+<city>Yokohama</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Moriki</last-name>
+<first-name>Toshiomi</first-name>
+<address>
+<city>Kokubunji</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Yasuda</last-name>
+<first-name>Yoshiko</first-name>
+<address>
+<city>Tokorozawa</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Hattori</last-name>
+<first-name>Naoya</first-name>
+<address>
+<city>Yokohama</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Moriki</last-name>
+<first-name>Toshiomi</first-name>
+<address>
+<city>Kokubunji</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Yasuda</last-name>
+<first-name>Yoshiko</first-name>
+<address>
+<city>Tokorozawa</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Mattingly &#x26; Malur, PC</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Hitachi, Ltd.</orgname>
+<role>03</role>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Leibovich</last-name>
+<first-name>Yair</first-name>
+<department>2114</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A failure management method for a computer including a processor, and a memory connected to the processor, and in which the processor containing a memory protection function, executes a first software program and a second software program monitoring the operation of the first software program, and the second software program retains error information including address information and access-related information; and the method implemented by the by the second software program includes a step for detecting the occurrence of errors in the memory; and a step for prohibiting access to the address of the memory where the error occurred, and monitoring the access state; and a step for executing the failure processing when accessing by the first software program of the address of the memory where the error occurred was detected.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="156.63mm" wi="272.12mm" file="US08627140-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="206.93mm" wi="162.81mm" file="US08627140-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="252.73mm" wi="174.84mm" file="US08627140-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="135.13mm" wi="178.56mm" file="US08627140-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="273.05mm" wi="155.62mm" orientation="landscape" file="US08627140-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="221.32mm" wi="134.03mm" file="US08627140-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="220.98mm" wi="166.03mm" file="US08627140-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="260.52mm" wi="158.75mm" file="US08627140-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="264.33mm" wi="155.62mm" file="US08627140-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="262.30mm" wi="149.35mm" file="US08627140-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="261.62mm" wi="160.87mm" file="US08627140-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="223.10mm" wi="155.02mm" file="US08627140-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="236.56mm" wi="159.26mm" file="US08627140-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="205.66mm" wi="166.12mm" file="US08627140-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="209.30mm" wi="168.49mm" file="US08627140-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="164.93mm" wi="118.11mm" file="US08627140-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00016" num="00016">
+<img id="EMI-D00016" he="242.57mm" wi="163.15mm" file="US08627140-20140107-D00016.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00017" num="00017">
+<img id="EMI-D00017" he="210.48mm" wi="155.62mm" file="US08627140-20140107-D00017.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">CLAIM OF PRIORITY</heading>
+<p id="p-0002" num="0001">The present application claims priority from Japanese patent application JP 2010-103911 filed on Apr. 28, 2010, the content of which is hereby incorporated by reference into this application.</p>
+<heading id="h-0002" level="1">FIELD OF THE INVENTION</heading>
+<p id="p-0003" num="0002">The present invention relates to a computer system, and relates in particular to technology for concealing uncorrectable errors in applications and in the OS running on the computer.</p>
+<heading id="h-0003" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0004" num="0003">Along with expanded open server performance and functions, the comparatively inexpensive and high-performance Xeon (registered trademark, same hereafter) server containing the Xeon CPU made by the Intel Corporation (registered trademark, same hereafter) has become the mainstream in corporate IT systems. The Xeon CPU contains numerous internal CPU core that boost processing performance of the server as a whole and by 2010 each CPU package is expected to include 8 cores.</p>
+<p id="p-0005" num="0004">Virtual server technology is a widely utilized method for efficiently operating the CPU cores within the Xeon server. In this server technology, multiple virtual server environments (virtual machines, VMs) are generated on a single actual (hardware) Xeon server and the OS and applications are operated in these VMs. In recent years, users operating ten to dozens of VMs in standard Xeon servers have become common.</p>
+<p id="p-0006" num="0005">However as more and more VMs are operated on the single actual hardware server, the risk of VM operation stopping due to a server component failure becomes drastic. Encoding by ECC (Error Correcting Code) for example is applied to data in the memory but if a UE (Uncorrectable Error) such as a 2-bit error occurs then the Xeon server of the related art is seen as having a fatal error and operation of all VMs on that server operation must be stopped.</p>
+<p id="p-0007" num="0006">In contrast, in the Xeon CPU (Nehalem-EX) scheduled for market shipment in 2010, the failure management was redesigned on the architecture level (See for example, IntelR 64 and IA-32 Architectures Software Developer's Manual 3A Chapter 15.6 Recovery of Uncorrected Recoverable (UCR) Errors) and a mechanism to trace error data and perform error correction was added based on Poisoning. Here &#x201c;Poisoning&#x201d; is a function to generate error data (poison) that is assigned a specified graph or syndrome pattern (decoding symbol error pattern) when the hardware detects an UE, and to perform failure management at the point in time that the software reads the poison. If the poison was eliminated by overwriting, then the software can no longer read the poison so no failure management is performed.</p>
+<p id="p-0008" num="0007">To carry out UE detection and failure management, the Nehalem-EX contains a core section to execute commands and an uncore section to exchange data between the memory and the I/O. The core and the uncore sections handle different UE levels within the Nehalem-EX.
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0008">(1) The core section detects UE relating to memory readout. caused by executing commands. In this case the core section conveys a fatal error message to the software and system operation stops, causing all software on the applicable server to stop.</li>
+    <li id="ul0001-0002" num="0009">(2) The uncore section detects UE relating to a scrubbing process that periodically reads-out/rewrites the memory, and does write back of data onto the memory from the cache. In this case, after generating the poison, the uncore section conveys a recoverable error message to the software.</li>
+</ul>
+</p>
+<p id="p-0009" num="0010">Therefore, when using Nehalem-EX, all of the UE detected by the core usually end in failure management processing such as system stoppage.</p>
+<p id="p-0010" num="0011">However if the uncore detects an UE, then the uncore conveys position information on the failed component to the software to allow overall server system operation to continue. The hypervisor for example controls the VM when notified of a recoverable error and at the IDF 2009 (Intel Developer Forum) an application was announced that stops only the VM containing the failure component (See for example, Building IT Server Solutions on Intel Microarchitecture (Nehalem-EX)-based Platforms Featuring Windows Server 2008 R2 and Hyper-V. Intel Developer Forum 2009). This technology moreover applies to the OS so an application of this technology was also announced where the OS stops just the application containing the failed memory under the same conditions.</p>
+<heading id="h-0004" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0011" num="0012">The above described scrubbing and write back processes that act on the installed memory regions. The related art therefore has the problem that all related VM on the Xeon server are stopped when a UE is detected in the memory regions (a) below.</p>
+<p id="h-0005" num="0000">(a) Non-Initialized Memory Regions Among the Heap and Stack Regions.</p>
+<p id="p-0012" num="0013">The (a) memory regions are utilized after initializing the OS or application. So no fatal errors occur because none of the UE detected during write back or scrubbing are read out by the core. Essentially there should therefore be no need to immediately stop a VM or application including the applicable region.</p>
+<p id="p-0013" num="0014">However, the hypervisor (or virtual machine monitor VMM) generally cannot judge whether an OS or application memory is initialized or not initialized. The hypervisor first confirms whether a fatal error has occurred or not when poison is read out from the OS or application. Taking failure management measures such as shutting down the VM when a UE was detected was therefore unavoidable in order to prevent a future fatal error. Consequently, operation of other VM unrelated to the error and not requiring immediate stoppage was also stopped because the error range could not be limited.</p>
+<p id="p-0014" num="0015">The OS was also unable to judge whether an application memory was initialized or not initialized and therefore had the same problem.</p>
+<p id="p-0015" num="0016">Limiting the failure range in the Xeon server requires meeting the following three conditions.</p>
+<p id="p-0016" num="0017">First Condition: Judge whether the detected UE is a TRUE DUE where poison was read out; or a FALSE DUE where no Poison was read out (DUE: Detected Uncorrectable Error).</p>
+<p id="p-0017" num="0018">Second Condition: Avoid stopping the system even after confirming a TRUE DUE from read out of Poison utilizing the Xeon CPU that tends to stop the system due to Poison readout.</p>
+<p id="p-0018" num="0019">Third Condition: Continue to operate the VM and applications in the case of a FALSE DUE where no poison was read out.</p>
+<p id="p-0019" num="0020">Satisfying all of these conditions in order to limit the failure range is the essential issue.</p>
+<p id="p-0020" num="0021">A representative aspect of the present invention is given as follows. Namely, a failure management method for a computer including a processor, and a memory connected to the processor; and uniquely featured in that the processor contains a memory protection function to prohibit access to a specified address of the memory; to execute a first software program stored in the memory, and to execute a second software program for monitoring the execution of the first software program stored in the memory; and the second software program retains address information on the memory address where the error occurred, and error information including access-related information on the access state of the address; and the method includes a first step in which the second software program detects an error occurring in the memory; and a second step in which the second software program adds the memory address where the error occurred to the error information; and a third step in which the second software program prohibits access to the memory address where the error occurred by changing the memory protection function setting and by monitoring the access state to the memory address where the error occurred; and a fourth step in which the second software program executes failure management processing when access to the memory address where the error occurred by the first software program was detected.</p>
+<p id="p-0021" num="0022">The present invention is capable of discriminating the type of error by whether there is reading or writing in the memory by the first software program and, limiting the effects of the error to the first software program using the applicable memory when there is no writing by the first software program; and continuing the first software program processing when there is no writing by the first software program. The present invention therefore limits the range of error effects even in processors that stop the system during readout of an address in the memory where an error occurred.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0006" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0022" num="0023"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram showing the structure of the virtual machine system of the embodiment of this invention;</p>
+<p id="p-0023" num="0024"><figref idref="DRAWINGS">FIG. 2</figref> is a stack drawing showing essential sections of the software and hardware of the virtual machine system of the embodiment of this invention;</p>
+<p id="p-0024" num="0025"><figref idref="DRAWINGS">FIG. 3</figref> is a diagram showing one example of the I/O assignment table in the embodiment of this invention;</p>
+<p id="p-0025" num="0026"><figref idref="DRAWINGS">FIG. 4</figref> is a drawing showing an example of the Poison table in the embodiment of this invention;</p>
+<p id="p-0026" num="0027"><figref idref="DRAWINGS">FIG. 5A</figref> is a drawing showing an example of the CPU memory map and protection table in the embodiment of this invention;</p>
+<p id="p-0027" num="0028"><figref idref="DRAWINGS">FIG. 5B</figref> is a drawing showing an example of the I/O memory map and protection table in the embodiment of this invention;</p>
+<p id="p-0028" num="0029"><figref idref="DRAWINGS">FIG. 6</figref> is a drawing showing an example of the memory managed by the hypervisor in the embodiment of this invention;</p>
+<p id="p-0029" num="0030"><figref idref="DRAWINGS">FIG. 7A</figref> is a drawing showing memory map transitions in each process that eliminates Poison from the error detection in the embodiment of this invention;</p>
+<p id="p-0030" num="0031"><figref idref="DRAWINGS">FIG. 7B</figref> is a drawing showing memory map transitions in each process that eliminates Poison from the error detection in the embodiment of this invention;</p>
+<p id="p-0031" num="0032"><figref idref="DRAWINGS">FIG. 7C</figref> is a diagram showing memory map transitions in each process that eliminates Poison from the error detection in the embodiment of this invention;</p>
+<p id="p-0032" num="0033"><figref idref="DRAWINGS">FIG. 8A</figref> is a drawing showing the state of the page within the memory at each stage in eliminating Poison from the detected memory error that occurred in the direct I/O of the virtual machine in the embodiment of this invention;</p>
+<p id="p-0033" num="0034"><figref idref="DRAWINGS">FIG. 8B</figref> is a drawing showing the state of the page within the memory at each stage in eliminating Poison from the detected memory error that occurred in the direct I/O of the virtual machine in the embodiment of this invention;</p>
+<p id="p-0034" num="0035"><figref idref="DRAWINGS">FIG. 8C</figref> is a drawing showing the state of the page within the memory at each stage in eliminating Poison from the detected memory error that occurred in the direct I/O of the virtual machine in the embodiment of this invention;</p>
+<p id="p-0035" num="0036"><figref idref="DRAWINGS">FIG. 9A</figref> is a drawing showing the state of the page within the memory at each stage in eliminating Poison from the detected memory error that occurred in the indirect I/O of the virtual machine in the embodiment of this invention;</p>
+<p id="p-0036" num="0037"><figref idref="DRAWINGS">FIG. 9B</figref> is a drawing showing the page state within the memory at each stage in eliminating Poison from the detected memory error that occurred in the indirect I/O of the virtual machine in the embodiment of this invention;</p>
+<p id="p-0037" num="0038"><figref idref="DRAWINGS">FIG. 9C</figref> is a drawing showing the state of the page within the memory at each stage in eliminating Poison from the detected memory error that occurred in the indirect I/O of the virtual machine in the embodiment of this invention;</p>
+<p id="p-0038" num="0039"><figref idref="DRAWINGS">FIG. 10A</figref> is a drawing showing the state of the page within the memory at each stage in eliminating Poison from the detected cache error in the virtual machine in the embodiment of this invention;</p>
+<p id="p-0039" num="0040"><figref idref="DRAWINGS">FIG. 10B</figref> is a drawing showing the state of the page within the memory at each stage in eliminating Poison from the detected cache error (in the virtual machine) in the embodiment of this invention;</p>
+<p id="p-0040" num="0041"><figref idref="DRAWINGS">FIG. 10C</figref> is a drawing showing the state of the page within the memory at each stage in eliminating Poison from the detected cache error (in the virtual machine) in the embodiment of this invention;</p>
+<p id="p-0041" num="0042"><figref idref="DRAWINGS">FIG. 11</figref> is a flowchart showing an overall image of the error processing executed by the hypervisor of the embodiment of this invention;</p>
+<p id="p-0042" num="0043"><figref idref="DRAWINGS">FIG. 12</figref> is a flowchart showing the processing during cache and memory error detection executed in S<b>1040</b> of the embodiment of this invention;</p>
+<p id="p-0043" num="0044"><figref idref="DRAWINGS">FIG. 13</figref> is a flowchart for describing the judgment processing for allowing or prohibiting the limiting of the error effect range executed in S<b>1110</b> of the embodiment of this invention;</p>
+<p id="p-0044" num="0045"><figref idref="DRAWINGS">FIG. 14</figref> is a flowchart for describing processing for handling readout of the memory protect region executed in S<b>1050</b> of the embodiment of this invention;</p>
+<p id="p-0045" num="0046"><figref idref="DRAWINGS">FIG. 15</figref> is a flowchart for describing processing for handling I/O device error executed in S<b>1070</b> of the embodiment of this invention;</p>
+<p id="p-0046" num="0047"><figref idref="DRAWINGS">FIG. 16</figref> is a flowchart for describing processing in response to writing in the protect region executed in S<b>1060</b> of the embodiment of this invention; and</p>
+<p id="p-0047" num="0048"><figref idref="DRAWINGS">FIG. 17</figref> is a flowchart for describing the processing executed in S<b>1570</b> to restore the normal operation of the embodiment of this invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0007" level="1">DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS</heading>
+<p id="p-0048" num="0049">The embodiments of the present invention are described next while referring to the accompanying drawings.</p>
+<p id="p-0049" num="0050">In this embodiment, the hypervisor executes the processing of this invention. The hypervisor is compatible with the supervisor software and the OS and applications are compatible with the user software. Moreover uncorrectable errors are also referred to as failures.</p>
+<p id="h-0008" num="0000">Hardware Structure</p>
+<p id="p-0050" num="0051"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram showing the structure of the virtual machine system of the embodiment of this invention.</p>
+<p id="p-0051" num="0052">The hardware machine <b>10</b> includes one or more CPUs <b>70</b>-<b>1</b> through <b>70</b>-n containing error detection functions. These CPUs <b>70</b>-<b>1</b> through <b>70</b>-n are connected via an inter-chip interface <b>820</b> such as a QPI (QUICK Path InterConnect) or SMI (Scalable Memory InterConnect) to an IOH (I/O Hub) <b>800</b> and a memory <b>90</b>.</p>
+<p id="p-0052" num="0053">The IOH <b>800</b> is connected via a bus <b>840</b> such as PCI express to the I/O device <b>60</b>. The I/O device <b>60</b> includes a network adapter connected to the LAN<b>860</b>, a SCSI adapter connected to the disk device <b>870</b>, etc; a fiber channel adapter connected to a SAN<b>890</b> (Storage area network); and a graphic controller connected to the console <b>80</b>. There may be one or multiple I/O devices <b>60</b>.</p>
+<p id="p-0053" num="0054">The CPU <b>70</b> accesses the memory <b>90</b> via the inter-chip interface <b>820</b>, and executes the specified processing after accessing the I/O device <b>60</b> from the IOH <b>800</b>.</p>
+<p id="p-0054" num="0055">In the example shown in <figref idref="DRAWINGS">FIG. 1</figref>, the hardware machine <b>10</b> contains only one I/O device <b>60</b>; however, the hardware machine <b>10</b> may contain multiple I/O devices <b>60</b>.</p>
+<p id="p-0055" num="0056">The memory <b>90</b> stores information required in drder to execute the applicable program or programs executed by the CPU <b>70</b>. As shown in <figref idref="DRAWINGS">FIG. 1</figref>, the hypervisor <b>20</b> loaded in the memory <b>90</b> executes the respective guests <b>40</b>-<b>1</b> through <b>40</b>-n on the virtual machine <b>1</b> (<b>30</b>-<b>1</b>) through virtual machine n (<b>30</b>-n) that are elements of the applicable hypervisor <b>20</b> contained in the memory <b>90</b>. Here the guest is a general name indicating the OS and application.</p>
+<p id="p-0056" num="0057">Hereafter, the general term CPU <b>70</b> is used if not discriminating between the CPU <b>70</b>-<b>1</b> through <b>70</b>-n. The general term virtual machine <b>30</b> is used if not discriminating between the virtual machine <b>1</b> (<b>30</b>-<b>1</b>) through virtual machine n (<b>30</b>-n). The general term guest <b>40</b> is used if not discriminating between the guests <b>40</b>-<b>1</b> through <b>40</b>-n.</p>
+<p id="h-0009" num="0000">Software Structure</p>
+<p id="p-0057" num="0058">Essential sections configuring the software for achieving the virtual machine <b>30</b> in the hardware machine <b>10</b> as well as the hardware elements for control are described while referring to <figref idref="DRAWINGS">FIG. 2</figref>.</p>
+<p id="p-0058" num="0059"><figref idref="DRAWINGS">FIG. 2</figref> is a stack drawing showing essential sections of the software and hardware of the virtual machine system of the embodiment of this invention.</p>
+<p id="p-0059" num="0060">A hypervisor <b>20</b> operating on the hardware machine <b>10</b> controls one or more virtual machines <b>30</b>.</p>
+<p id="p-0060" num="0061">The virtual machine <b>30</b> contains a virtual CPU <b>300</b> implemented by the (hardware) CPU <b>70</b>, a virtual I/O device <b>310</b> implemented by the I/O device <b>60</b>, and a guest memory <b>320</b> implemented by a memory <b>90</b>. The guest <b>40</b> operates in the virtual machine <b>30</b>.</p>
+<p id="p-0061" num="0062">The hypervisor <b>20</b> contains an I/O assignment table <b>200</b>, an emulator <b>210</b>, a failure management unit <b>220</b>, and the memory mapping units <b>240</b>-<b>1</b> through <b>240</b>-n.</p>
+<p id="p-0062" num="0063">The I/O assignment table <b>200</b> stores the I/O device <b>60</b> assignment states in the virtual machine <b>30</b>. The I/O assignment table <b>200</b> is described in detail later on while referring to <figref idref="DRAWINGS">FIG. 3</figref>.</p>
+<p id="p-0063" num="0064">An emulator <b>210</b> implements the virtual CPU <b>300</b>, the virtual I/O device <b>310</b> and the guest memory <b>320</b>.</p>
+<p id="p-0064" num="0065">The failure management unit <b>220</b> executes processing to deal with the failure that occurred. The failure management unit <b>220</b> includes a Poison table <b>230</b>.</p>
+<p id="p-0065" num="0066">The Poison table <b>230</b> stores the Poison position and the access state. The Poison table <b>230</b> is described in detail later on using <figref idref="DRAWINGS">FIG. 4</figref>.</p>
+<p id="p-0066" num="0067">The memory mapping unit <b>240</b>-<b>1</b> manages assignment of the memory <b>90</b> to the virtual machine <b>1</b> (<b>30</b>-<b>1</b>). The memory mapping unit <b>240</b>-<b>1</b> sets the handling of the guest memory <b>320</b> and the memory <b>90</b>, and stores two types of memory maps and protection tables for setting access rights. More specifically, the memory mapping unit <b>240</b>-<b>1</b> contains an I/O memory map &#x26; protection table <b>260</b>-<b>1</b> and a CPU memory map &#x26; protection table <b>250</b>-<b>1</b>. The CPU memory map &#x26; protection table <b>250</b>-<b>1</b> is applied to the CPU <b>70</b>. The I/O memory map &#x26; protection table <b>260</b>-<b>1</b> applies to the I/O device <b>60</b>.</p>
+<p id="p-0067" num="0068">The memory mapping unit <b>240</b>-<b>1</b> may include the CPU memory map &#x26; protection table <b>250</b>-<b>1</b> and the I/O memory map &#x26; protection table <b>260</b>-<b>1</b> as one table.</p>
+<p id="p-0068" num="0069">The other memory mapping units <b>240</b>-<b>2</b> through <b>240</b>-n are the same structure.</p>
+<p id="p-0069" num="0070">The term memory mapping unit <b>240</b> is hereafter utilized if not discriminating among the memory mapping units <b>240</b>-<b>1</b>-<b>240</b>-n. The terms I/O memory map &#x26; protection table <b>260</b> and CPU memory map &#x26; protection table <b>250</b> are utilized if not discriminating among the I/O memory map &#x26; protection table <b>260</b>-<b>1</b> and a CPU memory map &#x26; protection table <b>250</b>-<b>1</b>.</p>
+<p id="p-0070" num="0071">The hardware machine <b>10</b> contains the CPU <b>70</b>, the I/O device <b>60</b> and the memory <b>90</b>.</p>
+<p id="p-0071" num="0072">The CPU <b>70</b> contains the memory protection function <b>101</b>, the memory controller <b>100</b> and the cache <b>105</b>.</p>
+<p id="p-0072" num="0073">The memory protection function <b>101</b> controls access and performs address conversion in the guest memory <b>320</b>. The memory protection function <b>101</b> searches the CPU memory map &#x26; protection table <b>250</b> and if the guest <b>40</b> is accessing (reading or writing) the guest memory <b>320</b> then the memory protection function <b>101</b> judges the corresponding host address and whether to allow or prohibit access. If the decision is that access is prohibited, then the memory protection function <b>101</b> notifies the failure management unit <b>220</b> of the unauthorized access.</p>
+<p id="p-0073" num="0074">The memory protection function <b>101</b> in other words, is a function to protection an applicable range in order to prohibit access to a specified access range in the memory <b>90</b>, and a function to monitor access to the applicable address range.</p>
+<p id="p-0074" num="0075">The memory controller <b>100</b> controls the reading and writing on the memory <b>90</b>. The memory controller <b>100</b> contains a memory failure detection function <b>102</b> and a scrubbing function <b>104</b>.</p>
+<p id="p-0075" num="0076">During readout of data from the memory <b>90</b>, the memory failure function <b>102</b> checks the validity of error detection code that the memory controller <b>100</b> attached to the data. Here, this error detection code is data that the memory controller <b>100</b> attached to the data written into the memory <b>90</b> by the memory controller <b>100</b>.</p>
+<p id="p-0076" num="0077">When an uncorrectable error was detected, the memory failure detection function <b>102</b> stores the Poison in the memory <b>90</b> and also notifies the failure management unit <b>220</b> that the Poison was stored.</p>
+<p id="p-0077" num="0078">The scrubbing function <b>104</b> checks the data stored in the memory <b>90</b> that is separate from the software operation.</p>
+<p id="p-0078" num="0079">The cache <b>105</b> stores a portion of the data from the memory <b>90</b>. This cache <b>105</b> contains a cache error detection function <b>107</b> and a line invalidator function <b>108</b>.</p>
+<p id="p-0079" num="0080">The cache error detection function <b>107</b> checks the validity of error detection coding attached by the cache <b>105</b> as needed. The cache <b>105</b> attaches the error detection coding to the stored data. If the cache error detection function <b>107</b> finds an error in the timing that the data was written back onto the memory <b>90</b>, it stores Poison in the memory <b>90</b> and also notifies the failure management unit <b>220</b> that Poison was stored.</p>
+<p id="p-0080" num="0081">The line invalidator function <b>108</b> invalidates the cache line that generated a cache error.</p>
+<p id="p-0081" num="0082">The I/O device <b>60</b> contains an address translation function <b>115</b>, I/O error detection function <b>110</b>, and a DMA pause function <b>117</b>.</p>
+<p id="p-0082" num="0083">The address translation function <b>115</b> calculates the memory <b>90</b> address corresponding to the guest memory <b>320</b>. The address translation function <b>115</b> searches the I/O memory map &#x26; protection table <b>260</b>, and judges the corresponding host address if the I/O device <b>60</b> accesses the guest memory <b>320</b>.</p>
+<p id="p-0083" num="0084">When there was Poison in results from data readout from the memory <b>90</b>, the I/O error detection function <b>110</b> notifies the CPU <b>70</b> via the IOH <b>800</b> that an error has occurred.</p>
+<p id="p-0084" num="0085">The DMA pause function <b>117</b> places access to the guest memory <b>320</b> on hold.</p>
+<p id="p-0085" num="0086">The memory <b>90</b> is managed while sub-divided into a normal assignment memory <b>130</b> and a standby memory <b>120</b>.</p>
+<p id="p-0086" num="0087">The normal assignment memory <b>130</b> is memory assigned to the virtual machine <b>30</b>. The standby memory <b>120</b> is memory utilized when an error occurs.</p>
+<p id="p-0087" num="0088">The normal assignment memory <b>130</b> includes an error page <b>160</b> containing Poison, and a normal page <b>170</b> that does not contain Poison.</p>
+<p id="p-0088" num="0089">The standby memory <b>120</b> contains a substitute page <b>140</b> assigned instead of the memory where the error occurred; and the temporary page <b>150</b> that temporarily stores the values utilized to overwrite the Poison by the guest <b>40</b>. Here, a page signifies the minimum unit of assigned memory and the size of a page in this embodiment is assumed to be &#x201c;4 Kbytes.&#x201d; The size of the Poison is assumed to be &#x201c;8 bytes.&#x201d;</p>
+<p id="p-0089" num="0090"><figref idref="DRAWINGS">FIG. 3</figref> is a diagram showing one example of the I/O assignment table <b>200</b> in the embodiment of this invention.</p>
+<p id="p-0090" num="0091">The I/O assignment table <b>200</b> stores the assignment states of each I/O device <b>60</b> in all the virtual machines <b>30</b>. In the example in <figref idref="DRAWINGS">FIG. 3</figref>, the I/O assignment table <b>200</b> stores the assignment states for I/O devices <b>1</b>-m, that correspond to the virtual machine <b>1</b> (<b>30</b>-<b>1</b>) to virtual machine n (<b>30</b>-n).</p>
+<p id="p-0091" num="0092">There are three assignment states; &#x201c;Direct I/O&#x201d;, &#x201c;Indirect I/O&#x201d; and &#x201c;None&#x201d;.</p>
+<p id="p-0092" num="0093">The &#x201c;Direct I/O&#x201d; is an assignment state where the I/O device <b>60</b> can directly operate the guest memory <b>320</b> by utilizing DMA (Direct Memory Access), etc.</p>
+<p id="p-0093" num="0094">The &#x201c;Indirect I/O&#x201d; is a state where the hypervisor <b>20</b> operates the guest memory <b>320</b>, instead of the I/O device <b>60</b> directly operating the guest memory <b>320</b>.</p>
+<p id="p-0094" num="0095">The &#x201c;None&#x201d; state signifies there are no I/O device <b>60</b> assignments.</p>
+<p id="p-0095" num="0096">In this embodiment, a virtual machine <b>30</b> containing one or more I/O devices <b>60</b> assigned as direct I/O, is described as a direct I/O virtual machine. A virtual machine containing only I/O devices <b>60</b> assigned as indirect I/O is described as an indirect I/O virtual machine.</p>
+<p id="p-0096" num="0097">The hypervisor <b>20</b> may retain the information in a format other than the I/O assignment table <b>200</b> if the correspondence between the virtual machine <b>30</b> and the I/O device <b>60</b> is known.</p>
+<p id="p-0097" num="0098"><figref idref="DRAWINGS">FIG. 4</figref> is a diagram showing an example of the Poison table <b>230</b> in the embodiment of this invention.</p>
+<p id="p-0098" num="0099">The Poison table <b>230</b> contains an error type <b>400</b>, a virtual machine No. <b>410</b>, a guest address <b>420</b>, an error page address <b>430</b>, a substitute page address <b>440</b>, a temporary page address <b>450</b>, a Poison bitmap <b>460</b>, and an elimination bitmap <b>470</b>.</p>
+<p id="p-0099" num="0100">The error type <b>400</b> stores the type of detected error and the virtual machine <b>30</b> layout. There are four error types <b>400</b>. These four types are the &#x201c;Cache&#x201d;, the &#x201c;Memory (indirect I/O)&#x201d;, &#x201c;Memory (direct I/O)&#x201d; and &#x201c;Normal&#x201d;.</p>
+<p id="p-0100" num="0101">The &#x201c;Cache&#x201d; is an error conveyed by the cache error detection function <b>107</b>. The &#x201c;Memory (indirect I/O)&#x201d; is an error in the memory assigned to the indirect I/O virtual machine <b>30</b> and that is conveyed by the memory failure detection function <b>102</b>. The &#x201c;Memory (direct I/O)&#x201d; is an error in memories assigned to the direct I/O virtual machine <b>30</b> and conveyed by the memory failure detection function <b>102</b>. The &#x201c;Normal&#x201d; error is a state where no errors occurred.</p>
+<p id="p-0101" num="0102">The virtual machine No. <b>410</b> stores the identifier (serial number) for identifying the virtual machine <b>30</b>.</p>
+<p id="p-0102" num="0103">The guest address <b>420</b> stores the address of the guest memory <b>320</b>. The error page address <b>430</b> stores the address of the error page <b>160</b>. The substitute page address <b>440</b> stores the address of the substitute page <b>140</b>. The temporary page address <b>450</b> stores the address of the temporary page <b>150</b>.</p>
+<p id="p-0103" num="0104">The Poison bitmap <b>460</b> stores the position of the Poison within the page. The Poison bitmap <b>460</b> is a bitmap where one bit corresponds to each one byte on the error page <b>160</b>; and sets a &#x201c;1&#x201d; on bits corresponding to the address where the Poison is stored within the page.</p>
+<p id="p-0104" num="0105">The elimination bitmap <b>470</b> stores the position of the Poison overwritten within the page. The elimination bitmap <b>470</b> is a bitmap where one bit corresponds to each one byte on the error page <b>160</b>; and sets a &#x201c;1&#x201d; bit on the corresponding address when writing was detected on the address where Poison was stored.</p>
+<p id="p-0105" num="0106">The Poison table <b>230</b> is rewritten when an error is conveyed to the failure management unit <b>220</b>, and when the guest <b>40</b> overwrote the Poison. The Poison table <b>230</b> is also searched when adding a virtual machine <b>30</b>, and is utilized for assigning the memory <b>90</b> where errors have not occurred.</p>
+<p id="p-0106" num="0107">The hypervisor <b>20</b> utilizes the Poison bitmap <b>460</b> and the elimination bitmap <b>470</b> to decide whether or not there is writing on the address where the Poison is stored or in other words can judge if there is an access pattern.</p>
+<p id="p-0107" num="0108">If information on the error is known, then the hypervisor <b>20</b> may retain the information in a format other than the Poison table <b>230</b>.</p>
+<p id="p-0108" num="0109"><figref idref="DRAWINGS">FIG. 5A</figref> is a diagram showing an example of the CPU memory map and protection table <b>250</b> in the embodiment of this invention. <figref idref="DRAWINGS">FIG. 5B</figref> is a drawing showing an example of the I/O memory map and protection table <b>260</b> in the embodiment of this invention;</p>
+<p id="p-0109" num="0110">The CPU memory map and protection table <b>250</b> and the I/O memory map and protection table <b>260</b> shown in <figref idref="DRAWINGS">FIG. 5A</figref> and <figref idref="DRAWINGS">FIG. 5B</figref> are identical structures.</p>
+<p id="p-0110" num="0111">The CPU memory map and protection table <b>250</b> and the I/O memory map and protection table <b>260</b> retain one entry on each page.</p>
+<p id="p-0111" num="0112">The CPU memory map and protection table <b>250</b> includes a guest address <b>500</b>, a host address <b>510</b> and access right <b>520</b>. The I/O memory map and protection table <b>260</b> includes a guest address <b>530</b>, a host address <b>540</b>, and access right <b>550</b>.</p>
+<p id="p-0112" num="0113">The guest addresses <b>500</b> and <b>530</b> store the address for the guest memory <b>320</b>. The guest addresses <b>500</b> and <b>530</b> are identical to the guest address <b>420</b>. The host addresses <b>510</b>, <b>540</b> store the address for the memory <b>90</b>. The address rights <b>520</b> and <b>550</b> store the access rights to the memory. The access right <b>520</b> stores the &#x201c;PERMIT&#x201d; or &#x201c;PROHIBIT&#x201d;.</p>
+<p id="p-0113" num="0114">If the hypervisor <b>20</b> knows how the guest address corresponds to the host address then it can retain the information in a format other than the CPU memory map and protection table <b>250</b> and the I/O memory map and protection table <b>260</b>.</p>
+<p id="p-0114" num="0115"><figref idref="DRAWINGS">FIG. 6</figref> is a diagram showing an example of the memory <b>90</b> managed by the hypervisor <b>20</b> in the embodiment of this invention.</p>
+<p id="p-0115" num="0116">The hypervisor <b>20</b> manages the memory <b>90</b> assignments. The hypervisor <b>20</b> assigns regions on the memory <b>90</b> where the applicable hypervisor <b>20</b> is itself is located, and regions used by the virtual machine <b>30</b>. The hypervisor <b>20</b> as shown in <figref idref="DRAWINGS">FIG. 6</figref> for example, assigns the addresses AD<b>0</b>-AD<b>1</b> to its own hypervisor <b>20</b>, and assigns the addresses AD<b>1</b>-AD<b>2</b> to the virtual machine <b>1</b> (<b>30</b>-<b>1</b>) and the addresses AD<b>3</b>-AD<b>4</b> to the virtual machine n (<b>30</b>-n).</p>
+<p id="p-0116" num="0117">The guest (OS) <b>40</b> is assigned to the regions where each of the virtual machines <b>30</b> is assigned.</p>
+<p id="p-0117" num="0118">The I/O assignment table <b>200</b>, the emulator <b>210</b>, the failure management unit <b>220</b>, and the memory mapping unit <b>240</b> are assigned to the region used by the hypervisor <b>20</b>. Error types whose extent of impact can be limited</p>
+<p id="p-0118" num="0119">This embodiment processes by error location, both errors in memory elements detected by scrubbing (hereafter described as memory errors); and errors in the cache detected during write back into the memory <b>90</b> from the cache <b>105</b> (hereafter described as cache errors). Conditions for error handling in this embodiment are described next (Table 1).</p>
+<p id="p-0119" num="0120">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="6">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="7pt" align="center"/>
+<colspec colname="2" colwidth="28pt" align="center"/>
+<colspec colname="3" colwidth="42pt" align="center"/>
+<colspec colname="4" colwidth="42pt" align="center"/>
+<colspec colname="5" colwidth="84pt" align="center"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="5" rowsep="1">TABLE 1</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="5" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>Function of actual</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>Virtual</entry>
+<entry/>
+<entry>hardware</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Error</entry>
+<entry>Machine</entry>
+<entry/>
+<entry>machine/hypervisor as</entry>
+</row>
+<row>
+<entry/>
+<entry>#</entry>
+<entry>Location</entry>
+<entry>Type</entry>
+<entry>Error Range</entry>
+<entry>precondition</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="5" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>1</entry>
+<entry>Memory</entry>
+<entry>Direct</entry>
+<entry>Only 1</entry>
+<entry>Pause the DMA</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>I/O</entry>
+<entry>poison</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>2</entry>
+<entry/>
+<entry>Indirect</entry>
+<entry>No error in</entry>
+<entry>&#x2014;</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>I/O</entry>
+<entry>substitute</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>page</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>3</entry>
+<entry>Cache</entry>
+<entry>&#x2014;</entry>
+<entry>No error in</entry>
+<entry>Separate the error line</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>temporary</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>page</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="5" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0120" num="0121">The virtual machine type here indicates the assignment state of the I/O device <b>60</b> in the virtual machine <b>30</b>. The direct I/O virtual machine <b>30</b> is a virtual machine <b>30</b> on which DMA (Direct Memory Access) of the guest memory <b>320</b> from one or more I/O devices <b>60</b> is allowed. The indirect I/O virtual machine <b>30</b> is a virtual machine <b>30</b> where DMA of the guest memory <b>320</b> from the I/O device <b>60</b> is not permitted whatsoever. Only the hypervisor <b>20</b> can operate the guest memory <b>320</b> on the indirect I/O virtual machine <b>30</b>.</p>
+<p id="p-0121" num="0122">In this embodiment, only the simple case is covered where only a single Poison (8 bytes) is generated on a page when a memory error has occurred on the direct I/O virtual machine <b>30</b>.</p>
+<p id="p-0122" num="0123">For purposes of simplicity, there is no processing of the following dual errors (dual failures). Namely, if a memory error occurs in the indirect I/O virtual machine <b>30</b>, and also an error occurs in the substitute page <b>140</b> then the embodiment see these errors as a dual error and no response is made. Moreover cache errors occurring in the temporary page <b>150</b> are seen as dual errors and no response is made. A cache error and a memory error occurring on the same page are also seen as a dual error and no response is made.</p>
+<p id="p-0123" num="0124">The operation of this embodiment assumes that the I/O device <b>60</b> contains a DMA pause function <b>117</b> to temporarily stop DMA of the guest memory <b>320</b>. Another precondition for this embodiment operation is that the CPU <b>70</b> contains a line invalidator function <b>108</b> to automatically stop usage of a cache line having an error.</p>
+<p id="p-0124" num="0125">The present embodiment processes the three cases (Table 1) however the embodiment can also process two of the cases or one of the cases if the respective judgment conditions for identifying each case are omitted.</p>
+<p id="h-0010" num="0000">Method for Implementing the Guest Memory in the Failure Processing</p>
+<p id="p-0125" num="0126">The guest memory <b>320</b> transition in the each process for eliminating Poison from error detection is described next.</p>
+<p id="p-0126" num="0127"><figref idref="DRAWINGS">FIG. 7A</figref>, <figref idref="DRAWINGS">FIG. 7B</figref>, and <figref idref="DRAWINGS">FIG. 7C</figref> are diagrams showing memory map transitions in each process to eliminate Poison from the error detection.</p>
+<p id="p-0127" num="0128">Each figure shows the corresponding relation between the guest address <b>500</b> and the host address <b>510</b>. <figref idref="DRAWINGS">FIG. 7A</figref> is a memory map (<b>1</b>) expressing the state where the specified page of guest address <b>500</b> is mapped on the error page <b>160</b>.</p>
+<p id="p-0128" num="0129"><figref idref="DRAWINGS">FIG. 7B</figref> is a memory map (<b>2</b>) expressing the state where access of the error page <b>160</b> by the guest <b>40</b> is prohibited.</p>
+<p id="p-0129" num="0130"><figref idref="DRAWINGS">FIG. 7C</figref> is a memory map (<b>3</b>) expressing the state where the map destination of the specified page of guest address <b>500</b> is changed into the substitute page <b>140</b>.</p>
+<p id="p-0130" num="0131">Hereafter, the memory map shown in <figref idref="DRAWINGS">FIG. 7A</figref> is described as memory map (<b>1</b>); the memory map shown in <figref idref="DRAWINGS">FIG. 7B</figref> is described as memory map (<b>2</b>), and the memory map shown in <figref idref="DRAWINGS">FIG. 7C</figref> is described as memory map (<b>3</b>).</p>
+<p id="p-0131" num="0132"><figref idref="DRAWINGS">FIG. 8A</figref>, <figref idref="DRAWINGS">FIG. 8B</figref>, and <figref idref="DRAWINGS">FIG. 8C</figref> are diagrams showing the state of the page within the memory <b>90</b> at each stage from detection of the memory error that occurred in the direct I/O virtual machine <b>30</b> to eliminate poison in the embodiment of the present invention.</p>
+<p id="p-0132" num="0133">In each of these states, the error page <b>160</b> including the Poison <b>700</b>, and the substitute page <b>140</b> assigned instead of the error page <b>160</b> are both handled together as a pair.</p>
+<p id="p-0133" num="0134"><figref idref="DRAWINGS">FIG. 8A</figref> shows the state (a) of each page immediately after the error has occurred. All data on the substitute page <b>140</b> is &#x201c;0&#x201d; immediately after being assigned.</p>
+<p id="p-0134" num="0135"><figref idref="DRAWINGS">FIG. 8B</figref> shows the state (b) where the guest <b>40</b> has utilized the CPU <b>70</b> in order to overwrite a portion of the 8 byte Poison <b>700</b>. In this case, the data (update data <b>720</b>) used to overwrite onto the Poison <b>700</b> is stored in the substitute page <b>140</b>. The values overwritten onto the normal data <b>710</b> on the other hand are stored in the error page <b>160</b>.</p>
+<p id="p-0135" num="0136">In the state (b) when the guest <b>40</b> utilized the CPU <b>70</b> to read the normal data (data other than Poison <b>700</b>) <b>710</b> within the error page <b>160</b>, the hypervisor <b>20</b> reads out the error page <b>160</b> and responds. Moreover, in the state (b) when the guest <b>40</b> utilized the CPU <b>70</b> to read out the update data <b>720</b> within the substitute page <b>140</b>, the hypervisor <b>20</b> reads the substitute page <b>140</b> and responds. Also, in the state (b) when the I/O device <b>60</b> reads the normal data <b>710</b> or the Poison <b>700</b>, the data within the error page <b>160</b> is read out unchanged.</p>
+<p id="p-0136" num="0137"><figref idref="DRAWINGS">FIG. 8C</figref> shows the state (c) after the guest <b>40</b> has rewritten all the Poison <b>700</b> within the page. Data (normal data <b>710</b>) other than the Poison <b>700</b> contained within the error page <b>160</b> is merged with the substitute page <b>140</b> as shown in <figref idref="DRAWINGS">FIG. 8C</figref>.</p>
+<p id="p-0137" num="0138">Table 2 shows the relation between memory map transitions and page status when a memory error has occurred in the direct I/O virtual machine <b>30</b>.</p>
+<p id="p-0138" num="0139">
+<tables id="TABLE-US-00002" num="00002">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="1" colwidth="56pt" align="left"/>
+<colspec colname="2" colwidth="70pt" align="center"/>
+<colspec colname="3" colwidth="56pt" align="center"/>
+<colspec colname="4" colwidth="35pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="4" rowsep="1">TABLE 2</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>CPU Memory</entry>
+<entry>I/O Memory</entry>
+<entry>Page</entry>
+</row>
+<row>
+<entry/>
+<entry>Protection</entry>
+<entry>Protection</entry>
+<entry>Status</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>(1) Before error</entry>
+<entry>Memory map (1)</entry>
+<entry>Memory map (1)</entry>
+<entry>(a)</entry>
+</row>
+<row>
+<entry>occurs</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>(2) During failure</entry>
+<entry>Memory map (2)</entry>
+<entry>Memory map (1)</entry>
+<entry>(b)</entry>
+</row>
+<row>
+<entry>processing</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>(3) During restore</entry>
+<entry>Memory map (2)</entry>
+<entry>Memory map (1)</entry>
+<entry>(c)</entry>
+</row>
+<row>
+<entry>processing</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>(4) After restore</entry>
+<entry>Memory map (3)</entry>
+<entry>Memory map (3)</entry>
+<entry>(d)</entry>
+</row>
+<row>
+<entry>processing</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0139" num="0140">The memory map (<b>1</b>) is applied in the initial state, and the guest address <b>500</b> can then access the error page <b>160</b> containing the Poison <b>700</b>. When the guest <b>40</b> reads the Poison <b>700</b> in this state, a fatal error occurs and the system stops.</p>
+<p id="p-0140" num="0141">To avoid a system stoppage, the hypervisor <b>20</b> applies a memory map (<b>2</b>) to the CPU <b>70</b>, and prohibits accessing of the error page <b>160</b> by the CPU <b>70</b> while the guest <b>40</b> is operating. Processing by the failure management unit <b>220</b> is in this way implemented just prior to reading and writing by the guest <b>40</b>. In order to prevent a fatal error from occurring, the memory map (<b>1</b>) is applied to the I/O device <b>60</b> until restore processing is completed, and the memory map (<b>3</b>) is applied after restoration.</p>
+<p id="p-0141" num="0142">Settings to prohibit accessing the CPU <b>70</b> are canceled when overwriting of Poison by the guest <b>40</b> has eliminated the Poison. Usage of the error page <b>160</b> is stopped and the memory map (<b>3</b>) to which the substitute page <b>140</b> is assigned is now applied.</p>
+<p id="p-0142" num="0143">After restoring, the memory map (<b>3</b>) is applied as shown in <figref idref="DRAWINGS">FIG. 7C</figref> so that the guest <b>40</b> can perform memory operations on the substitute page <b>140</b> after elimination of Poison.</p>
+<p id="p-0143" num="0144"><figref idref="DRAWINGS">FIG. 9A</figref>, <figref idref="DRAWINGS">FIG. 9B</figref> and <figref idref="DRAWINGS">FIG. 9C</figref> are diagrams showing the page state within the memory <b>90</b> at each stage from the detected memory error generated by the indirect I/O virtual machine <b>30</b> to eliminate Poison in the embodiment of this invention.</p>
+<p id="p-0144" num="0145">In each of these states, the error page <b>160</b> including the Poison <b>700</b>, and the substitute page <b>140</b> assigned instead of the error page <b>160</b> are both handled together as a pair.</p>
+<p id="p-0145" num="0146"><figref idref="DRAWINGS">FIG. 9A</figref> shows the state (d) of each page immediately after the error has occurred. The normal data <b>710</b> is copied onto the substitute page <b>140</b> immediately after assignment and all data in the region corresponding to the Poison is at &#x201c;0&#x201d;.</p>
+<p id="p-0146" num="0147"><figref idref="DRAWINGS">FIG. 9B</figref> shows the state (e) in which the guest <b>40</b> has utilized the CPU <b>70</b> to overwrite a portion of the eight byte Poison <b>700</b>. In this case, the values overwriting the update data <b>720</b> and the normal data <b>710</b> are both stored in the substitute page <b>140</b>.</p>
+<p id="p-0147" num="0148">In the state in (e) when the guest <b>40</b> utilized the CPU <b>70</b> to read the normal data (data other than Poison <b>700</b>) <b>710</b> within the error page <b>160</b>, the hypervisor <b>20</b> reads the error page <b>160</b> and responds. Moreover, in the state (e) when the guest <b>40</b> utilized the CPU <b>70</b> to read the update data <b>720</b> of substitute page <b>140</b>, the hypervisor <b>20</b> reads the substitute page <b>140</b> in response.</p>
+<p id="p-0148" num="0149">The (f) in <figref idref="DRAWINGS">FIG. 9C</figref> indicates the state after the guest <b>40</b> rewrites all the Poison <b>700</b> within the page.</p>
+<p id="p-0149" num="0150">Table 3 shows the relation between memory map transitions and page state when a memory error has occurred in the indirect I/O virtual machine <b>30</b>.</p>
+<p id="p-0150" num="0151">
+<tables id="TABLE-US-00003" num="00003">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="5">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="56pt" align="left"/>
+<colspec colname="2" colwidth="70pt" align="center"/>
+<colspec colname="3" colwidth="42pt" align="center"/>
+<colspec colname="4" colwidth="35pt" align="center"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="4" rowsep="1">TABLE 3</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="4" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>CPU Memory</entry>
+<entry>I/O Memory</entry>
+<entry>Page</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Protection</entry>
+<entry>Protection</entry>
+<entry>Status</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="4" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>(1) Before error</entry>
+<entry>Memory map (1)</entry>
+<entry>&#x2014;</entry>
+<entry>(d)</entry>
+</row>
+<row>
+<entry/>
+<entry>occurs</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>(2) During failure</entry>
+<entry>Memory map (2)</entry>
+<entry>&#x2014;</entry>
+<entry>(e)</entry>
+</row>
+<row>
+<entry/>
+<entry>processing</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>(3) During restore</entry>
+<entry>Memory map (2)</entry>
+<entry>&#x2014;</entry>
+<entry>(f)</entry>
+</row>
+<row>
+<entry/>
+<entry>processing</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>(4) After restore</entry>
+<entry>Memory map (3)</entry>
+<entry>&#x2014;</entry>
+<entry>(f)</entry>
+</row>
+<row>
+<entry/>
+<entry>processing</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="4" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0151" num="0152">There is no processing performed here on the I/O device <b>60</b>.</p>
+<p id="p-0152" num="0153">The memory map (<b>1</b>) is applied in the initial state in the CPU <b>70</b>, and the guest address <b>500</b> can then access the error page <b>160</b> containing the Poison <b>700</b>. When the guest <b>40</b> reads the Poison <b>700</b> in this state, a fatal error occurs and the system stops.</p>
+<p id="p-0153" num="0154">To avoid a system stoppage, the hypervisor <b>20</b> applies a memory map (<b>2</b>) to the CPU <b>70</b>, and prohibits accessing of the error page <b>160</b> by the CPU <b>70</b> while the guest <b>40</b> is operating. Processing by the failure management unit <b>220</b> is in this way implemented just prior to reading and writing by the guest <b>40</b>.</p>
+<p id="p-0154" num="0155">After restoration, the memory map (<b>3</b>) is applied as shown in <figref idref="DRAWINGS">FIG. 9C</figref> so that the guest <b>40</b> can perform memory operations on the substitute page <b>140</b> after elimination of Poison.</p>
+<p id="p-0155" num="0156"><figref idref="DRAWINGS">FIG. 10A</figref>, <figref idref="DRAWINGS">FIG. 10B</figref> and <figref idref="DRAWINGS">FIG. 10C</figref> are diagrams showing the state of the page within the memory <b>90</b> at each stage from the detected cache error to eliminate poison in the virtual machine in the embodiment of this invention.</p>
+<p id="p-0156" num="0157">In each state, the error page <b>160</b> including the Poison <b>700</b>, and the temporary page <b>150</b> temporarily retaining the update data <b>720</b> are both handled together as a pair.</p>
+<p id="p-0157" num="0158"><figref idref="DRAWINGS">FIG. 10A</figref> shows the state (g) immediately after the error has occurred. All data within the temporary page <b>150</b> immediately after assignment is at &#x201c;0&#x201d;.</p>
+<p id="p-0158" num="0159"><figref idref="DRAWINGS">FIG. 10B</figref> shows the state (h) in which the guest <b>40</b> has utilized the CPU <b>70</b> to overwrite a portion of the eight byte Poison <b>700</b>. The update data <b>720</b> is stored within the temporary page <b>150</b> to deal with the cache error. This measure is implemented so the guest <b>40</b> can perform rewrite correctly even of Poison <b>700</b> that cannot be rewritten in byte units. The overwritten normal data <b>710</b> values are stored in the error page <b>160</b>.</p>
+<p id="p-0159" num="0160">In the state in (h), when the guest <b>40</b> utilized the CPU<b>70</b> to read the normal data <b>710</b> within the error page <b>160</b>, the hypervisor <b>20</b> reads the error page <b>160</b> and responds. Also, in the state (h) when the guest <b>40</b> utilized the CPU <b>70</b> to read the update data <b>720</b> corresponding to just a portion of the overwritten Poison, then the hypervisor <b>20</b> reads the temporary page <b>150</b> in response.</p>
+<p id="p-0160" num="0161"><figref idref="DRAWINGS">FIG. 10C</figref> shows the state (i) after the guest <b>40</b> overwrites the entire eight bytes of Poison <b>700</b>. As shown in <figref idref="DRAWINGS">FIG. 10C</figref>, the update data <b>720</b> stored in the temporary page <b>150</b> is written onto the Poison <b>700</b> contained in the error page <b>160</b>.</p>
+<p id="p-0161" num="0162">Table 4 shows the relation between memory map transitions and page state when a cache error has occurred.</p>
+<p id="p-0162" num="0163">
+<tables id="TABLE-US-00004" num="00004">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="1" colwidth="56pt" align="left"/>
+<colspec colname="2" colwidth="70pt" align="center"/>
+<colspec colname="3" colwidth="56pt" align="center"/>
+<colspec colname="4" colwidth="35pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="4" rowsep="1">TABLE 4</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>CPU Memory</entry>
+<entry>I/O Memory</entry>
+<entry>Page</entry>
+</row>
+<row>
+<entry/>
+<entry>Protection</entry>
+<entry>Protection</entry>
+<entry>Status</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>(1) Before error</entry>
+<entry>Memory map (1)</entry>
+<entry>Memory map (1)</entry>
+<entry>(g)</entry>
+</row>
+<row>
+<entry>occurs</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>(2) During failure</entry>
+<entry>Memory map (2)</entry>
+<entry>Memory map (1)</entry>
+<entry>(h)</entry>
+</row>
+<row>
+<entry>processing</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>(3) During restore</entry>
+<entry>Memory map (2)</entry>
+<entry>Memory map (1)</entry>
+<entry>(i)</entry>
+</row>
+<row>
+<entry>processing</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>(4) After restore</entry>
+<entry>Memory map (1)</entry>
+<entry>Memory map (1)</entry>
+<entry>(i)</entry>
+</row>
+<row>
+<entry>processing</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0163" num="0164">The memory map (<b>1</b>) is applied in the initial state, and the guest address <b>500</b> can then access the error page <b>160</b> containing the Poison <b>700</b>. When the guest <b>40</b> reads the Poison <b>700</b> in this state, a fatal error occurs and the system stops.</p>
+<p id="p-0164" num="0165">To avoid a system stoppage, the hypervisor <b>20</b> applies a memory map (<b>2</b>) to the CPU <b>70</b>, and prohibits accessing of the error page <b>160</b> by the CPU <b>70</b> while the guest <b>40</b> is operating. Processing by the failure management unit <b>220</b> is in this way implemented just prior to reading and writing by the guest <b>40</b>. The memory map (<b>1</b>) is applied to the I/O device <b>60</b> until restore processing is completed because no fatal error occurs.</p>
+<p id="p-0165" num="0166">One example of the failure processing executed by the hypervisor <b>20</b> is described next while referring to the flowchart.</p>
+<p id="h-0011" num="0000">Failure Processing Overview</p>
+<p id="p-0166" num="0167"><figref idref="DRAWINGS">FIG. 11</figref> is a flowchart showing an overall image of the failure processing executed by the hypervisor <b>20</b> of the embodiment of this invention.</p>
+<p id="p-0167" num="0168">The processing from calling up the hypervisor <b>20</b> whenever an error is detected until the guest <b>40</b> operation restarts is described next utilizing this flowchart. Only sections relating to the failure processing are described in detail and all other processing is implemented during S<b>1080</b>.</p>
+<p id="p-0168" num="0169">The hypervisor <b>20</b> receives from the CPU <b>70</b> the cause of the call up of that hypervisor <b>20</b>, and decides whether or not the applicable cause is detection of an uncorrectable error (S<b>1000</b>). More specifically, the hypervisor <b>20</b> decides if the cause of the call up was detection of a memory error during scrubbing, or detection of a cache error during write back.</p>
+<p id="p-0169" num="0170">The memory failure detection function <b>102</b> detects memory errors during scrubbing and the cache error detection function <b>107</b> detects cache errors during writeback.</p>
+<p id="p-0170" num="0171">If decided that the cause of the hypervisor <b>20</b> call up was detection of an uncorrectable error, then the hypervisor <b>20</b> performs processing (S<b>1040</b>) such as assigning a substitute page <b>140</b>, or changing the memory protection settings when an error was detected in the cache <b>105</b> and the memory <b>90</b> and proceeds to S<b>1080</b>. The processing performed in S<b>1040</b> is described later on using <figref idref="DRAWINGS">FIG. 12</figref>.</p>
+<p id="p-0171" num="0172">If decided that the cause of the hypervisor <b>20</b> call up was not detection of an uncorrectable error then the hypervisor <b>20</b> decides whether or not the call up of the hypervisor <b>20</b> itself was for reading of a protected region (S<b>1010</b>). More specifically, the hypervisor <b>20</b> decided if the cause of the call up was reading of the protected guest memory <b>320</b> (including error page <b>160</b>) by the guest <b>40</b>.</p>
+<p id="p-0172" num="0173">If decided that the cause of the hypervisor <b>20</b> call up was read out of a protected region then the hypervisor <b>20</b> executes processing to deal with reading of a protected region such as deciding whether or not the Poison <b>700</b> was read out or showing the error in the virtual machine <b>30</b> (S<b>1050</b>) and proceeds to S<b>1080</b>. The processing executed in S<b>1050</b> is described later on using <figref idref="DRAWINGS">FIG. 14</figref>.</p>
+<p id="p-0173" num="0174">If decided that the cause of the hypervisor <b>20</b> call up was not reading out a protected region, then the hypervisor <b>20</b> decides whether or not the cause of the call up was writing onto a protected region (S<b>1020</b>). More specifically, the hypervisor <b>20</b> decides whether or not there is writing by the guest <b>40</b> into the protected guest memory <b>320</b> (including error page <b>160</b>).</p>
+<p id="p-0174" num="0175">If decided there was writing onto the protected region, then the hypervisor <b>20</b> executed processing to deal with the writing in the protected region such as canceling the memory protection (S<b>1060</b>) and proceeds to S<b>1080</b>. The processing executed in S<b>1060</b> is described later on using <figref idref="DRAWINGS">FIG. 16</figref>.</p>
+<p id="p-0175" num="0176">If decided there was no writing onto the protected region, then the hypervisor <b>20</b> decides whether or not the cause of the hypervisor <b>20</b> call up was detection of an uncorrectable error in the I/O device <b>60</b> (S<b>1030</b>).</p>
+<p id="p-0176" num="0177">The I/O error detection function <b>110</b> detects uncorrectable errors in the I/O device <b>60</b>.</p>
+<p id="p-0177" num="0178">If decided that the cause of hypervisor <b>20</b> call up was not the detection of an uncorrectable error in the I/O device <b>60</b>, then the hypervisor <b>20</b> proceeds to S<b>1080</b>.</p>
+<p id="p-0178" num="0179">If decided that the hypervisor <b>20</b> call up was due to an uncorrectable error in the I/O device <b>60</b>, then the hypervisor <b>20</b> executes processing to deal with the I/O device error such as specifying the virtual machine <b>30</b> assigned I/O device that detected the error, and showing the error in the virtual machine <b>30</b> (S<b>1070</b>), and proceeds to S<b>1080</b>. The processing executed in S<b>1070</b> is described later on using <figref idref="DRAWINGS">FIG. 15</figref>.</p>
+<p id="p-0179" num="0180">The hypervisor <b>20</b> executes normal processing not related to the failure processing and restarts the guest <b>40</b> (S<b>1080</b>), and terminates the processing.</p>
+<p id="h-0012" num="0000">Processing when a Cache and Memory Error was Detected</p>
+<p id="p-0180" num="0181"><figref idref="DRAWINGS">FIG. 12</figref> is a flowchart showing the processing during cache and memory failure or error detection executed in S<b>1040</b> of the embodiment of this invention.</p>
+<p id="p-0181" num="0182">The hypervisor <b>20</b> utilizes the memory mapping units <b>240</b> to accept the memory address of the region where the Poison was generated from the CPU <b>70</b>, and decides whether or not the destination for assigning the applicable memory address is an unused region that is not yet assigned or is a region of the hypervisor <b>20</b> (S<b>1100</b>).</p>
+<p id="p-0182" num="0183">If decided the assignment destination of the memory address is an unused region that not yet assigned then no effects from this Poison will occur in the applicable unassigned region so the hypervisor <b>20</b> terminates the processing. If decided the assignment destination of the memory address is a region of the hypervisor <b>20</b> then the hypervisor <b>20</b> terminates the processing expecting that the region will be overwritten before the applicable Poison is read out.</p>
+<p id="p-0183" num="0184">If decided the assignment destination of the memory address is not an unused region or a hypervisor <b>20</b> region, then the hypervisor <b>20</b> decides whether to permit or prohibit limiting the error effect range that occurred (S<b>1110</b>). The processing for implementing S<b>1110</b> is described later on utilizing <figref idref="DRAWINGS">FIG. 13</figref>.</p>
+<p id="p-0184" num="0185">Based on the decision results from S<b>1110</b>, the hypervisor <b>20</b> decides whether or not to limiting the error effects that occurred is possible (S<b>1120</b>).</p>
+<p id="p-0185" num="0186">If decided that limiting the effects of the error that occurred is not possible, the hypervisor <b>20</b> shows the effects of the error on the virtual machine <b>30</b> in which the memory address where the Poison was generated (S<b>1210</b>) and terminates the processing. The means for showing the effects may be a shutdown of the virtual machine <b>30</b>, or conveying the error break-in to the guest <b>40</b>.</p>
+<p id="p-0186" num="0187">If decided that limiting the error effect range that occurred is possible, then the hypervisor <b>20</b> registers the range of the Poison in the Poison table <b>230</b> (S<b>1130</b>).</p>
+<p id="p-0187" num="0188">More specifically, the hypervisor <b>20</b> stores the error type and the I/O assignment configuration of the virtual machine in the error type <b>400</b>, and stores the information respectively in the virtual machine No. <b>410</b> and the error page address <b>430</b>. The hypervisor <b>20</b> also stores the range of the Poison, and the offset in the page of the memory address where the Poison was generated, into the Poison bitmap <b>460</b>, and clears the elimination bitmap <b>470</b> to zero. The hypervisor <b>20</b> further searches the CPU memory map &#x26; protection table <b>250</b>, and identifies the guest address corresponding to the error page address <b>430</b>, and stores the applicable guest address in the guest address <b>420</b>.</p>
+<p id="p-0188" num="0189">The hypervisor <b>20</b> starts memory protection of the error page per the CPU <b>70</b> by changing the memory protection function <b>101</b> settings (S<b>1140</b>). More specifically, the hypervisor <b>20</b> changes the entry access right <b>520</b> for the corresponding CPU memory map &#x26; protection table <b>250</b> from &#x201c;PERMIT&#x201d; to &#x201c;PROHIBIT.&#x201d;</p>
+<p id="p-0189" num="0190">The hypervisor <b>20</b> decides whether or not the error that occurred is a memory error (S<b>1150</b>) or in other words, branches the processing according to the type of error.</p>
+<p id="p-0190" num="0191">If decided the error is a cache error then the hypervisor <b>20</b> places the temporary page <b>150</b> holding the temporarily accumulated writing in byte units relative to the Poison, on the standby memory <b>120</b> (S<b>1200</b>) and terminates the processing. More specifically, the hypervisor <b>20</b> stores the address of temporary page <b>150</b> into the temporary address <b>450</b> of the Poison table <b>230</b>. The states in the error page <b>160</b> change as shown in <figref idref="DRAWINGS">FIG. 10A</figref> through <figref idref="DRAWINGS">FIG. 10C</figref>.</p>
+<p id="p-0191" num="0192">If decided the error is a memory error then the hypervisor <b>20</b> places the substitute page <b>140</b> used instead of the memory <b>90</b> where the error occurred, into the standby memory <b>120</b> (S<b>1160</b>). The hypervisor <b>20</b> stores the address of the secured substitute page <b>140</b> into the substitute page address <b>440</b> in the Poison table <b>230</b>.</p>
+<p id="p-0192" num="0193">The hypervisor <b>20</b> decides whether or not the virtual machine <b>30</b> is the direct I/O virtual machine <b>30</b> or not (S<b>1170</b>). In other words, the hypervisor <b>20</b> branches the processing according to the configuration virtual machine <b>30</b> assigned to the memory <b>90</b> where the error occurred.</p>
+<p id="p-0193" num="0194">If decided that the virtual machine assigned with the memory where the error occurred is the direct I/O virtual machine <b>30</b>, then the hypervisor <b>20</b> terminates the process. The states of the error page <b>160</b> change as shown in <figref idref="DRAWINGS">FIG. 8A</figref> through <figref idref="DRAWINGS">FIG. 8C</figref>.</p>
+<p id="p-0194" num="0195">If decided that the virtual machine assigned with the memory where the error occurred is the indirect I/O virtual machine <b>30</b>, then the hypervisor <b>20</b> merges the normal data <b>710</b> contained in the error page <b>160</b> with the substitute page <b>150</b> as shown in <figref idref="DRAWINGS">FIG. 9A</figref> (S<b>1180</b>) and terminates the process. The error page <b>160</b> is changed as shown in <figref idref="DRAWINGS">FIG. 9A</figref> through <figref idref="DRAWINGS">FIG. 9C</figref>.</p>
+<p id="p-0195" num="0196"><figref idref="DRAWINGS">FIG. 13</figref> is a flowchart for describing the judgment processing to permit or prohibit the limiting of the error effect range executed in S<b>1110</b> of the embodiment of this invention.</p>
+<p id="p-0196" num="0197">In order to simplify the equipment of this embodiment, the detection of FALSE DUE for errors grouped as dual failures (or dual errors) is abandoned, and normal operation of the virtual machine <b>30</b> is quit at the point in time the error is detected. In other words, a dual failure will stop the virtual machine <b>30</b>.</p>
+<p id="p-0197" num="0198">The hypervisor <b>20</b> decides whether or not the error that occurred is a memory error (S<b>1220</b>). Namely the hypervisor <b>20</b> branches the processing according to the type of error that occurred.</p>
+<p id="p-0198" num="0199">If decided that the error that occurred is a memory error, then the hypervisor <b>20</b> further decides whether or not the virtual machine <b>30</b> assigned by the memory <b>90</b> where the error occurred is a direct I/O virtual machine <b>30</b> or not (S<b>1235</b>). The hypervisor <b>20</b> in other words, branches the processing according to the type of virtual machine <b>30</b> assigned by the memory <b>90</b> where the error occurred.</p>
+<p id="p-0199" num="0200">If decided that the virtual machine <b>30</b> assigned by the memory <b>90</b> where the error occurred is a direct I/O virtual machine <b>30</b>, then the hypervisor <b>20</b> confirms the number of Poison that occurred in the memory <b>90</b>, and decides whether or not the memory error includes two or more Poison (S<b>1240</b>).</p>
+<p id="p-0200" num="0201">If decided that the memory error includes two or more Poison, then no FALSE DUE is detected in the present embodiment, so the hypervisor <b>20</b> decides that limiting the error effect range is impossible (S<b>1260</b>) and terminates the process.</p>
+<p id="p-0201" num="0202">If decided that the memory error includes only one Poison, or in other words that the region size of the Poison is 8 bytes, then the hypervisor <b>20</b> searches the Poison table <b>230</b> and further decides whether or not a second error has occurred on the page already judged as the error page <b>160</b> (S<b>1245</b>).</p>
+<p id="p-0202" num="0203">If decided that a second error has occurred on the page already judged as the error page <b>160</b>, then the hypervisor <b>20</b> proceeds to S<b>1260</b>, decides that limiting the error effect range is impossible and terminates the process.</p>
+<p id="p-0203" num="0204">If decided that the virtual machine <b>30</b> is the indirect I/O virtual machine <b>30</b> in step <b>1235</b>, or decided in S<b>1245</b>, that a second error has not occurred on the page already judged as error page <b>160</b>, then the hypervisor <b>20</b> searches the Poison table <b>230</b>, and decides whether or not a further error has occurred on a page already judged as the substitute page <b>140</b> (S<b>1250</b>).</p>
+<p id="p-0204" num="0205">If decided that an error has occurred on the page already judged as the substitute page <b>140</b>, then the hypervisor <b>20</b> proceeds to S<b>1260</b>, decides that limiting the error effect range is impossible and terminates the process.</p>
+<p id="p-0205" num="0206">If decided that no further error has occurred on the page already judged as the substitute page <b>140</b>, then the hypervisor <b>20</b> searches the Poison table <b>230</b>, and decides whether or not there is a previous cache error on the page where the Poison occurred (S<b>1270</b>).</p>
+<p id="p-0206" num="0207">If decided that there was a previous cache error on the page where the Poison occurred, the hypervisor <b>20</b> proceeds to S<b>1260</b>, decides that limiting the error effect range is impossible and terminates the process.</p>
+<p id="p-0207" num="0208">If decided that there was no previous cache error on the page where the Poison occurred, then the hypervisor <b>20</b> decides that limiting the error effect range is possible (S<b>1255</b>) and terminates the process.</p>
+<p id="p-0208" num="0209">In S<b>1220</b>, if decided that the error that occurred is a cache error, then the hypervisor <b>20</b> searches the Poison table <b>230</b>, and decides whether or not a further error has occurred on the page already set as the temporary page <b>150</b> (S<b>1225</b>).</p>
+<p id="p-0209" num="0210">If decided that a further error has occurred on the page set as the temporary page <b>150</b>, then the hypervisor decides that limiting the error effect range is impossible (S<b>1230</b>) and terminates the process.</p>
+<p id="p-0210" num="0211">If decided that no further error has occurred on the page set as the temporary page <b>150</b>, then the hypervisor <b>20</b> searches the Poison table <b>230</b>, and decides whether or not there is a previous memory error on the page where the Poison occurred (S<b>1265</b>).</p>
+<p id="p-0211" num="0212">If decided that there was a previous memory error on the page where the Poison occurred, the hypervisor <b>20</b> proceeds to S<b>1230</b>, decides that limiting the error effect range is impossible and terminates the process.</p>
+<p id="p-0212" num="0213">If decided that there was no previous memory error on the page where the Poison occurred, then the hypervisor <b>20</b> proceeds to S<b>1255</b>, decides that limiting the error effect range is possible and terminates the process.</p>
+<p id="h-0013" num="0000">Processing for Reading the Error Page</p>
+<p id="p-0213" num="0214"><figref idref="DRAWINGS">FIG. 14</figref> is a flowchart for describing the processing for handling readout of the protect region of the memory <b>90</b> executed in S<b>1050</b> of the embodiment of this invention.</p>
+<p id="p-0214" num="0215">The hypervisor <b>20</b> decides whether or not the guest <b>40</b> is attempting to read out the Poison data not overwritten by the update data <b>720</b> (S<b>1400</b>).</p>
+<p id="p-0215" num="0216">More specifically, the hypervisor <b>20</b> searches the Poison table <b>230</b> and inspects in byte units, the access pattern to the memory address that the guest <b>40</b> is attempting to read out. If the bytes with a &#x201c;1&#x201d; in the Poison bitmap <b>460</b>, and &#x201c;0&#x201d; in the elimination bitmap <b>470</b> are included in the memory address where the guest <b>40</b> attempted read out; then the hypervisor <b>20</b> decides that the guest <b>40</b> is attempting to read out Poison <b>700</b> not overwritten by the update data <b>720</b>.</p>
+<p id="p-0216" num="0217">If decided that the guest <b>40</b> is attempting to read out update data <b>720</b> not overwritten by Poison <b>700</b> then the hypervisor <b>20</b>, shows the error effect (S<b>1410</b>) into the virtual machine <b>30</b> operated by the guest <b>40</b> attempting to read the Poison <b>700</b>, and terminates the process. The method for showing the effects may be shutting down the virtual machine or may be conveying the error break-in (interrupt) to the guest <b>40</b>.</p>
+<p id="p-0217" num="0218">If decided that the guest <b>40</b> is attempting to read out data other than the Poison <b>700</b> (normal data <b>710</b> or update data <b>720</b>) then the hypervisor <b>20</b> decides that the error that occurred was a memory error (S<b>1420</b>). Namely, the hypervisor <b>20</b> branches the processing according to the type of error. Branching the processing is performed because there are different pages storing data other than the Poison <b>700</b>, according to the type of error that occurred (See <figref idref="DRAWINGS">FIG. 8A-FIG</figref>. <b>8</b>C, <figref idref="DRAWINGS">FIG. 9A-FIG</figref>. <b>9</b>C, and <figref idref="DRAWINGS">FIG. 10A-FIG</figref>. <b>10</b>C).</p>
+<p id="p-0218" num="0219">If decided that the error that occurred was a memory error, then the hypervisor <b>20</b> decides whether or not the virtual machine <b>30</b> is a direct I/O virtual machine <b>30</b> (S<b>1430</b>). The hypervisor <b>20</b> in other words branches the processing according to the type of virtual machine <b>30</b> assigned by the memory <b>90</b> where the error occurred. Branching the processing is performed because there are different pages storing data other than the Poison <b>700</b> among the direct I/O virtual machine <b>30</b> and the indirect I/O virtual machine <b>30</b> (See <figref idref="DRAWINGS">FIG. 8A-FIG</figref>. <b>8</b>C, <figref idref="DRAWINGS">FIG. 9A-FIG</figref>. <b>9</b>C).</p>
+<p id="p-0219" num="0220">If decided that the virtual machine <b>30</b> is an indirect I/O virtual machine <b>30</b>, then normal data <b>710</b> and the update data <b>720</b> are both present in the substitute page <b>140</b> (See <figref idref="DRAWINGS">FIG. 9A-FIG</figref>. <b>9</b>C), so the hypervisor <b>20</b> reads out the substitute page <b>140</b> in response (S<b>1460</b>) and terminates the process.</p>
+<p id="p-0220" num="0221">If decided that the virtual machine <b>30</b> is a direct I/O virtual machine <b>30</b>, then the hypervisor <b>20</b> decides whether or not the read out data is data (update data <b>720</b>) overwritten among the Poison (S<b>1440</b>). This decision is made because the direct I/O virtual machine <b>30</b> stores the normal data <b>710</b> and the update data <b>720</b> on separate pages (See <figref idref="DRAWINGS">FIG. 8A-FIG</figref>. <b>8</b>C).</p>
+<p id="p-0221" num="0222">More specifically, the hypervisor <b>20</b> searches the Poison table <b>230</b> and inspects in byte units, the access pattern for the memory address the guest <b>40</b> attempted to read out. If a byte &#x201c;<b>1</b>&#x201d; in the Poison bitmap <b>460</b>, and a byte &#x201c;<b>1</b>&#x201d; in the elimination bitmap <b>470</b> are read out then this result signifies read out of the update data <b>720</b> so the hypervisor <b>20</b> decides that the read out is data (update data <b>720</b>) overwritten among the Poison.</p>
+<p id="p-0222" num="0223">If decided this is the read out of overwritten data (update data <b>720</b>) among the Poison in the loaded data then the hypervisor <b>20</b> reads out the substitute page <b>140</b> where the update data <b>720</b> is stored as a response (S<b>1450</b>) and terminates the process.</p>
+<p id="p-0223" num="0224">If there is data other than overwritten data (update data <b>720</b>) among the poison or namely, if the byte read out from the Poison bitmap <b>460</b> is &#x201c;0&#x201d;, then this byte signifies a normal readout, so the hypervisor <b>20</b> reads out the error page <b>160</b> storing the normal data <b>710</b> for the direct I/O virtual machine <b>30</b> in response (S<b>1460</b>) and terminates the process.</p>
+<p id="p-0224" num="0225">In S<b>1420</b> when the error that occurred is decided to be a cache error, the hypervisor <b>20</b> decides whether or not this is reading of the update data <b>720</b> temporarily stored in the temporary page <b>150</b> (S<b>1470</b>). This decision is made because in the case of a cache error the normal data <b>710</b> and the update data <b>720</b> are stored in separate pages (See <figref idref="DRAWINGS">FIG. 10A-FIG</figref>. <b>10</b>C).</p>
+<p id="p-0225" num="0226">More specifically, the hypervisor <b>20</b> searches the Poison table <b>230</b> and inspects in byte units the access pattern to the memory address that the guest <b>40</b> is attempting to read out. The hypervisor <b>20</b> inspects whether or not there is a byte with &#x201c;0&#x201d; in the elimination bitmap <b>470</b> only in the case where a byte with &#x201c;1&#x201d; is read out in the Poison bitmap <b>460</b> and a byte &#x201c;<b>1</b>&#x201d; from the elimination bitmap <b>470</b>, and; and further in the case of an eight bytes (addresses <b>8</b>n to <b>8</b>n+7) array including the applicable address.</p>
+<p id="p-0226" num="0227">If the applicable conditions are satisfied, then the hypervisor <b>20</b> decides there is read out of the update data <b>720</b> stored temporarily in the temporary page <b>150</b>.</p>
+<p id="p-0227" num="0228">If decided that there is no read out of the update data <b>720</b> stored temporarily in the temporary page <b>150</b>, then the hypervisor <b>20</b> proceeds to S<b>1460</b>, reads out the error page <b>160</b> storing the normal data <b>170</b> for the direct I/O virtual machine <b>30</b> in response, and terminates the processing.</p>
+<p id="p-0228" num="0229">If decided that there is read out of the update data <b>720</b> stored temporarily in the temporary page <b>150</b>, the hypervisor <b>20</b> reads out the temporary page <b>150</b> in response (S<b>1480</b>), and terminates the processing.</p>
+<p id="p-0229" num="0230">The read out update data <b>720</b> stored temporarily in the temporary page <b>150</b>, is read out update data <b>720</b> or the normal data <b>710</b> stored in the error page <b>160</b>, then the hypervisor <b>20</b> reads out (reads out) the error page <b>160</b> where the normal data <b>710</b> is stored for the direct I/O virtual machine <b>30</b> and replies. Processing when an I/O error is detected</p>
+<p id="p-0230" num="0231"><figref idref="DRAWINGS">FIG. 15</figref> is a flowchart for describing the processing executed in S<b>1070</b> for handling I/O device errors in the embodiment of this invention.</p>
+<p id="p-0231" num="0232">The hypervisor <b>20</b> analyzes the error information acquired from the I/O device <b>60</b> and specifies the I/O device <b>60</b> where the error was detected (S<b>1300</b>).</p>
+<p id="p-0232" num="0233">The processing from S<b>1320</b> to S<b>1350</b> is repeatedly performed for each virtual machine <b>30</b>.</p>
+<p id="p-0233" num="0234">The hypervisor <b>20</b> searches the I/O assignment table <b>200</b>, and decides whether or not it is the virtual machine <b>30</b> to which the I/O device <b>60</b> where the error was detected is assigned (S<b>1330</b>).</p>
+<p id="p-0234" num="0235">If decided that it is the virtual machine <b>30</b> in which the I/O device <b>60</b> where the error was detected was assigned, then the hypervisor <b>20</b> shows the effects of the error in the virtual machine <b>30</b>. The means for showing the effects may be a shutdown of the virtual machine <b>30</b>, or conveying the error break-in (interrupt) to the guest.</p>
+<p id="p-0235" num="0236">If decided as not the virtual machine <b>30</b> in which I/O device <b>60</b> where the error was detected was assigned then the hypervisor <b>20</b> decides whether or not processing was completed on all the virtual machines, and terminates the processing when completed on all the virtual machines.</p>
+<p id="h-0014" num="0000">Processing in Response to Writing in the Error Page</p>
+<p id="p-0236" num="0237"><figref idref="DRAWINGS">FIG. 16</figref> is a flowchart for describing the processing in response to writing in the protect region executed in S<b>1060</b> of the embodiment of this invention.</p>
+<p id="p-0237" num="0238">The hypervisor <b>20</b> decides whether or not the guest <b>40</b> is attempting to write data on the Poison <b>700</b> (S<b>1500</b>). The hypervisor <b>20</b> in other words judges whether or not there is writing of the update data <b>720</b>.</p>
+<p id="p-0238" num="0239">More specifically, the hypervisor <b>20</b> searches the Poison table <b>230</b> and inspects in byte units, the access pattern of the memory address that the guest <b>40</b> is attempting to write in. The hypervisor <b>20</b> decides there is writing in the Poison <b>700</b> if there is a &#x201c;1&#x201d; in the Poison bitmap <b>460</b> and a &#x201c;0&#x201d; in the elimination bit <b>470</b>.</p>
+<p id="p-0239" num="0240">If decided that the guest <b>40</b> is attempting to write data on the Poison <b>700</b> then the hypervisor <b>20</b> decides whether or not the error that occurred is a memory error (S<b>1510</b>). Namely, the hypervisor <b>20</b> branches the processing according to the type of error that occurred. The processing is branched because there are different pages storing the update data <b>720</b> (See <figref idref="DRAWINGS">FIG. 8A-FIG</figref>. <b>8</b>C, <figref idref="DRAWINGS">FIG. 9A-FIG</figref>. <b>9</b>C, and <figref idref="DRAWINGS">FIG. 10A-FIG</figref>. <b>10</b>C).</p>
+<p id="p-0240" num="0241">If the error that occurred is decided to be a cache error (See <figref idref="DRAWINGS">FIG. 10A-FIG</figref>. <b>10</b>C) then the hypervisor <b>20</b> stores the update data <b>720</b> the guest <b>40</b> is attempting to write in the temporary page <b>150</b> in order to allow updating the bite units in the Poison <b>700</b> (S<b>1520</b>).</p>
+<p id="p-0241" num="0242">The hypervisor <b>20</b> changes the elimination bitmap <b>470</b> in Poison table <b>230</b> to a &#x201c;1&#x201d; in the memory address range written by the guest <b>40</b> (S<b>1530</b>).</p>
+<p id="p-0242" num="0243">The hypervisor <b>20</b> decides whether or not the Poison <b>700</b> was eliminated (S<b>1540</b>). In other words, the hypervisor <b>20</b> decides whether or not all of the Poison was overwritten.</p>
+<p id="p-0243" num="0244">In S<b>1540</b>, when the page internally contains plural Poison <b>700</b>, the hypervisor <b>20</b> decides the Poison <b>700</b> was eliminated when the first Poison <b>700</b> was eliminated.</p>
+<p id="p-0244" num="0245">More specifically, the hypervisor <b>20</b> searches the elimination bitmap <b>470</b>, and inspects the eight bits of overwritten Poison <b>700</b> by one byte each. If the eight bytes are all eliminated for the first time (applicable bits in the elimination bitmap <b>470</b> are all &#x201c;1&#x201d;) due to writing by the guest <b>40</b>, then the hypervisor <b>20</b> decides the Poison <b>700</b> was eliminated.</p>
+<p id="p-0245" num="0246">If decided the Poison <b>700</b> was not eliminated, then the hypervisor <b>20</b> terminates the processing.</p>
+<p id="p-0246" num="0247">If decided the Poison <b>700</b> was eliminated, the hypervisor <b>20</b> copies the update data <b>720</b> stored in the temporary page <b>150</b> for the eliminated Poison (S<b>1550</b>) into the error page <b>160</b>. This processing corresponds to that in <figref idref="DRAWINGS">FIG. 10C</figref>.</p>
+<p id="p-0247" num="0248">The hypervisor <b>20</b> decides whether or not all of the Poison <b>700</b> within the page was eliminated (S<b>1560</b>).</p>
+<p id="p-0248" num="0249">More specifically, the hypervisor <b>20</b> searches the Poison bitmap <b>460</b> and the elimination bitmap <b>460</b>, and inspects the entire page. If the Poison bitmap <b>460</b> and the elimination bitmap <b>460</b> are a match, then the hypervisor <b>20</b> decides that writing by the guest <b>40</b> has eliminated all the Poison <b>700</b> within the page.</p>
+<p id="p-0249" num="0250">If decided that not all of the Poison <b>700</b> within the page was eliminated then the hypervisor <b>20</b> terminates the processing.</p>
+<p id="p-0250" num="0251">If decided that all the Poison <b>700</b> within the page was eliminated, then the hypervisor <b>20</b> executes processing such as changing the memory map or canceling the memory protection to end the failure processing (S<b>1570</b>), and terminates the processing.</p>
+<p id="p-0251" num="0252">In S<b>1510</b>, if decided that the error that occurred is a memory error then the hypervisor <b>20</b> writes the update data <b>720</b> that the guest <b>40</b> is attempting to write, into the substitute page <b>140</b> in order to avoid writing onto a page that is not reliable due to containing the Poison <b>700</b> (S<b>1580</b>). Namely in case of a memory error, the update data <b>720</b> for the direct I/O virtual machine <b>30</b> and the indirect I/O virtual machine <b>30</b> is stored in the substitute page <b>140</b> (See <figref idref="DRAWINGS">FIG. 8B</figref> and <figref idref="DRAWINGS">FIG. 9B</figref>).</p>
+<p id="p-0252" num="0253">The hypervisor <b>20</b> changes the elimination bitmap <b>470</b> in the Poison table <b>230</b> to a &#x201c;1&#x201d; in the memory address range written by the guest <b>40</b> (S<b>1590</b>), and proceeds to S<b>1560</b>.</p>
+<p id="p-0253" num="0254">In S<b>1500</b>, when decided that the guest <b>40</b> is attempting to write normal data <b>710</b>, the hypervisor <b>20</b> decides whether or not the error that occurred is a memory error (S<b>1600</b>). The hypervisor in other words branches out the processing according to the type of error that occurred. The reason is that the normal data <b>710</b> is written on different pages according to the type of error that occurred.</p>
+<p id="p-0254" num="0255">If decided that the error that occurred is a memory error, then the hypervisor <b>20</b> decides whether or not the virtual machine <b>30</b> is the direct I/O virtual machine <b>30</b> (S<b>1610</b>). Namely, the hypervisor <b>20</b> branches the processing according to the type of virtual machine <b>30</b>. The reason the processing is branched out is because the normal data <b>710</b> is written on different pages for the direct I/O virtual machine <b>30</b> and the indirect I/O virtual machine <b>30</b> (See <figref idref="DRAWINGS">FIG. 8A-FIG</figref>. <b>8</b>C and <figref idref="DRAWINGS">FIG. 9A-FIG</figref>. <b>9</b>C).</p>
+<p id="p-0255" num="0256">If decided that the virtual machine <b>30</b> is the direct I/O virtual machine <b>30</b>, then the hypervisor <b>20</b> writes the normal data <b>710</b> the guest <b>40</b> is attempting to write, in the stored error page <b>160</b> (S<b>1620</b>), and terminates the processing (<figref idref="DRAWINGS">FIG. 8A-FIG</figref>. <b>8</b>C).</p>
+<p id="p-0256" num="0257">If decided that the virtual machine <b>30</b> is the indirect I/O virtual machine <b>30</b>, then the hypervisor <b>20</b> writes the normal data <b>710</b> that guest <b>40</b> is attempting to write, into the substitute page <b>140</b> (S<b>1630</b>), and terminates the processing (See <figref idref="DRAWINGS">FIG. 9A-FIG</figref>. <b>9</b>C).</p>
+<p id="p-0257" num="0258">In S<b>1600</b>, when decided that the error that occurred is a cache error, then the hypervisor <b>20</b> proceeds to S<b>1620</b>, and writes the normal data <b>710</b> that the guest <b>40</b> is attempting to write, into the error page <b>160</b>, and terminates the processing (See <figref idref="DRAWINGS">FIG. 10A-FIG</figref>. <b>10</b>C).</p>
+<p id="p-0258" num="0259"><figref idref="DRAWINGS">FIG. 17</figref> is a flowchart for describing the processing executed in S<b>1570</b> to restore the normal operation of the embodiment of this invention.</p>
+<p id="p-0259" num="0260">The hypervisor <b>20</b> decides whether or not the error that occurred is a memory error (S<b>1700</b>). The hypervisor <b>20</b> in other words branches the processing according to the type of error that occurred.</p>
+<p id="p-0260" num="0261">If decided that the error that occurred is a memory error then the hypervisor decides whether or not the virtual machine <b>30</b> is the direct I/O virtual machine <b>30</b> (S<b>1710</b>). Namely, the hypervisor <b>20</b> branches the processing according to the type of virtual machine <b>30</b>. The processing is branched because the memory map is different after recovery from the error. (See Tables 2-4, <figref idref="DRAWINGS">FIG. 8C</figref> and <figref idref="DRAWINGS">FIG. 9C</figref>, and <figref idref="DRAWINGS">FIG. 10C</figref>.).</p>
+<p id="p-0261" num="0262">If decided that the virtual machine <b>30</b> is the direct I/O virtual machine <b>30</b>, then in S<b>1720</b>-S<b>1760</b>, the hypervisor <b>20</b> uses the DMA pause function <b>117</b> to temporarily stop access to the guest memory <b>320</b> from the I/O device <b>60</b> and changes the data in the memory <b>90</b> and the memory map &#x26; protection table during the period that access is stopped.</p>
+<p id="p-0262" num="0263">More specifically, the hypervisor <b>20</b> uses the DMA pause function <b>117</b> to temporarily stop DMA of the guest memory <b>320</b> from the I/O device <b>60</b> (S<b>1720</b>).</p>
+<p id="p-0263" num="0264">The hypervisor <b>20</b> then copies the normal data <b>710</b> contained in error page <b>160</b>, into the substitute page <b>140</b> (S<b>1730</b>).</p>
+<p id="p-0264" num="0265">The hypervisor <b>20</b> changes the settings in the CPU memory map &#x26; protection table <b>250</b> and the I/O memory map &#x26; protection table <b>260</b>, and assigns the substitute page <b>140</b> instead of the error page <b>160</b> (S<b>1740</b>).</p>
+<p id="p-0265" num="0266">The hypervisor <b>20</b> then changes the settings in the CPU memory map &#x26; protection table <b>250</b>, and cancels the memory protection by the access prohibit settings that were applied to the error page <b>160</b> (S<b>1750</b>).</p>
+<p id="p-0266" num="0267">The hypervisor <b>20</b> then restarts. DMA by cancelling the previously set DMA stoppage (S<b>1760</b>) and terminates the processing.</p>
+<p id="p-0267" num="0268">In S<b>1700</b>, when decided that the error that occurred is a cache error, the hypervisor <b>20</b> releases the no longer needed temporary page <b>150</b> along with elimination of all the Poison (S<b>1790</b>).</p>
+<p id="p-0268" num="0269">The hypervisor <b>20</b> changes the settings in the CPU memory map &#x26; protection table <b>250</b> and the I/O memory map &#x26; protection table <b>260</b>, and assigns the substitute page <b>140</b> instead of the error page <b>160</b> (S<b>1770</b>).</p>
+<p id="p-0269" num="0270">The hypervisor <b>20</b> then changes the settings in the CPU memory map &#x26; protection table <b>250</b>, and cancels the memory protection by the access prohibit settings that were applied to the error page <b>160</b> (S<b>1780</b>) and terminates the processing.</p>
+<p id="h-0015" num="0000">Conclusion</p>
+<p id="p-0270" num="0271">In the embodiment of the present invention, the hypervisor <b>20</b> monitors the memory reading and writing by the guest <b>40</b> and is capable of identifying between a TRUE DUE where the guest <b>40</b> reads out Poison, and a FALSE DUE where the guest <b>40</b> does not read out Poison. Moreover, the hypervisor <b>20</b> stops the operation of the guest <b>40</b> just prior to read out and so can avoid a system stoppage even after an actual TRUE DUE. Further, if a FALSE DUE by the guest writing was verified then the monitoring can be canceled and the guest operation resumed so that operation of the VM and application can continue. These effects rendered by the present invention can therefore limit the error effect range in the Xeon CPU that is normally vulnerable to system stoppages when Poison is read out.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A failure management method for a computer including a processor, and a memory connected to the processor,
+<claim-text>the processor having a memory protection function to prohibit access to a specified address in the memory, and operating a first software program stored in the memory and a second software program stored in the memory to monitor operation of the first software program, and</claim-text>
+<claim-text>the second software program retaining error information including address information on the memory address where the error occurred, and access-related information on the access state of the address,</claim-text>
+<claim-text>the method comprising the steps of:</claim-text>
+<claim-text>(1) detecting, by the second software program, an error occurring in the memory;</claim-text>
+<claim-text>(2) adding, by the second software program, the memory address where the error occurred to the error information;</claim-text>
+<claim-text>(3) prohibiting, by the second software program, access to the memory where the error occurred by changing the settings on the memory protection function, and monitoring the access state to the memory address where the error occurred;</claim-text>
+<claim-text>(4) executing, by the second software program, failure processing when access is detected by the first software program to the memory address where the error occurred,</claim-text>
+<claim-text>wherein the step (4) further includes the steps of:</claim-text>
+<claim-text>(5) deciding whether or not the access to the memory address where the error occurred by the first software program is reading out the memory address where the error occurred, or is writing in the memory address where the error occurred; and</claim-text>
+<claim-text>(6) deciding the access state of the address detected in the reading out by the first software program based on the error information when the access by the first software program is reading out the memory address where the error occurred; and</claim-text>
+<claim-text>(7) executing the failure processing based on the decision results.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The failure management method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the access-related information contained in the error information storing either a first access information indicating there was writing in the memory address where the error occurred or a second access information indicating there was no writing in the memory address where the error occurred, and
+<claim-text>wherein the step (2) further includes the step of:
+<claim-text>(8) adding the second access information along with the memory address where the error occurred to the error information,</claim-text>
+</claim-text>
+<claim-text>wherein the step (4) further includes the step of:
+<claim-text>(9) changing the access-related information from the second access information to the first access information when deciding that access by the first software program was writing in the memory address where the error occurred,</claim-text>
+</claim-text>
+<claim-text>wherein the step (6) further includes the step of:
+<claim-text>(10) deciding whether or not the access-related information is the first access information or the second access information; and</claim-text>
+</claim-text>
+<claim-text>wherein the step (7) further includes the step of:
+<claim-text>(11) executing the failure processing based on the access-related information being the second access information.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The failure management method according to <claim-ref idref="CLM-00002">claim 2</claim-ref>,
+<claim-text>wherein the step (9) further includes the steps of:
+<claim-text>(12) retaining data written in the memory address where the error occurred; and</claim-text>
+<claim-text>(13) allowing access by the first software program to the memory address when the access-related information is the first access information, by changing the settings of the memory protection function.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The failure management method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, the memory including a first memory region utilized by the first software program, and a second memory region utilized when executing the failure processing,
+<claim-text>wherein the step (2) further includes the step of:</claim-text>
+<claim-text>(14) assigning the second memory region to the first software program.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The failure management method according to <claim-ref idref="CLM-00004">claim 4</claim-ref>,
+<claim-text>wherein the step (2) further includes the step of:</claim-text>
+<claim-text>(15) storing the data stored in the first memory region into the second memory region.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. A computer including a processor, and a memory connected to the processor,
+<claim-text>wherein the processor contains a memory protection function to prohibit access to a specified address in the memory, and executes a first software program stored in the memory and a second software program stored in the memory to monitor operation of the first software grogram,</claim-text>
+<claim-text>wherein the processor detects errors occurring in the memory by executing the second software program, and retains error information including address information on the memory address where the error occurred, and access-related information on the access state of the address,</claim-text>
+<claim-text>wherein the processor adds the memory address where the error occurred to the error information by executing the second software program, and</claim-text>
+<claim-text>wherein the processor prohibits access to the memory where the error occurred by executing the second software program by changing the settings on the memory protection function, and monitors the access state to the memory address of the memory where the error occurred,</claim-text>
+<claim-text>wherein the processor executes the failure processing when detecting access by the first software grogram to the memory address where the error occurred,</claim-text>
+<claim-text>wherein the processor decides whether or not the access by the first software grogram is a readout of the memory address where the error occurred or writing of the memory address where the error occurred when the access by the first software program to the memory address where the error occurred is detected,</claim-text>
+<claim-text>wherein the processor decides the access state of the address where readout by the first software program was detected based on the error information when the processor decides that the access by the first software program of the memory address where the error that occurred was readout, and</claim-text>
+<claim-text>wherein the processor executes failure processing based on the decision results.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The computer according to <claim-ref idref="CLM-00006">claim 6</claim-ref>,
+<claim-text>wherein the processor stores either a first access information indicating there was writing in the memory address where the error occurred, or a second access information indicating there was no writing on the memory address where the error occurred, in the access-related information contained in the error information;</claim-text>
+<claim-text>wherein the processor adds the second access information to the access-related information for the applicable memory address by executing the second software program, when adding the memory address where the error occurred;</claim-text>
+<claim-text>wherein the processor changes the access-related information from a second access information to a first access information when deciding that the access by the first software program to the memory address where the error occurred, was writing;</claim-text>
+<claim-text>wherein the processor decides whether the access-related information is either the first access information or the second access information, when deciding that the access state of the address where readout by the first software program was detected; and</claim-text>
+<claim-text>wherein the processor executes the failure processing based on the access-related information being the second access information.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The computer according to <claim-ref idref="CLM-00007">claim 7</claim-ref>,
+<claim-text>wherein the processor retains data written in the memory address where the error occurred when decided that the access by the first software program of the memory address where the error occurred was writing, and</claim-text>
+<claim-text>wherein the processor changes the settings of the memory protection function to allow access by the first software program to the memory address when the access-related information is the first access information.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The computer according to <claim-ref idref="CLM-00006">claim 6</claim-ref>,
+<claim-text>wherein the memory includes a first memory region utilized by the first software program, and a second memory region utilized when executing the failure processing; and</claim-text>
+<claim-text>wherein the processor executes the second software program to assign the first software program to the second memory region after adding the memory address where the error occurred.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The computer according to <claim-ref idref="CLM-00009">claim 9</claim-ref>,
+<claim-text>wherein the processor executes the second software program to store the data stored in the first memory region into the second memory region after adding the memory address of the memory where the error occurred to the error information. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

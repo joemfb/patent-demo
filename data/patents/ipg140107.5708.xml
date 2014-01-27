@@ -1,0 +1,1025 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626810-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626810</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12781467</doc-number>
+<date>20100517</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>870</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>17</main-group>
+<subgroup>10</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>15</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>708319</main-classification>
+<further-classification>708215</further-classification>
+<further-classification>708405</further-classification>
+</classification-national>
+<invention-title id="d2e53">Method and system for finite impulse response (FIR) digital filtering</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>6625629</doc-number>
+<kind>B1</kind>
+<name>Garcia</name>
+<date>20030900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>6741706</doc-number>
+<kind>B1</kind>
+<name>McGrath et al.</name>
+<date>20040500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>6973403</doc-number>
+<kind>B1</kind>
+<name>Preuss</name>
+<date>20051200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>708405</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>7290021</doc-number>
+<kind>B2</kind>
+<name>Gray</name>
+<date>20071000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>708300</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00005">
+<othercit>Jason R. Vandekieft, &#x201c;Computational Improvements to Linear Convolution with Multirate Filtering Methods&#x201d;, University of Miami School of Music research project, approved by Prof. W. Pirkle, Prof. K. Pohlmann, and Dr. J. Collins, Coral Gables, FL, Apr. 30, 1998, pp. 1-10, available at http://www.music.miami.edu/programs/mue/Research/janvdekieft/jvtitle.htm.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00006">
+<othercit>Guillermo Garcia, &#x201c;Optimal Filter Partition for Efficient Convolution with Short Input/Output Delay&#x201d;, Audio Engineering Society 113th Convention, Convention Paper 5660, Los Angeles, CA, Oct. 5-8, 2002, pp. 1-9.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00007">
+<othercit>Grant R. Griffin, &#x201c;FIR Filter Basics&#x201d;, Dec. 15, 2009, pp. 1-2, available at http://www.dspguru.com/book/export/html/4.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>13</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>708300-323</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>6</number-of-drawing-sheets>
+<number-of-figures>9</number-of-figures>
+</figures>
+<us-related-documents>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61178554</doc-number>
+<date>20090515</date>
+</document-id>
+</us-provisional-application>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20100293214</doc-number>
+<kind>A1</kind>
+<date>20101118</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Longley</last-name>
+<first-name>Lester Anderson</first-name>
+<address>
+<city>Atlanta</city>
+<state>GA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Longley</last-name>
+<first-name>Lester Anderson</first-name>
+<address>
+<city>Atlanta</city>
+<state>GA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<last-name>Marshall, Jr.</last-name>
+<first-name>Robert D.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="02" rep-type="attorney">
+<addressbook>
+<last-name>Brady</last-name>
+<first-name>W. James</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="03" rep-type="attorney">
+<addressbook>
+<last-name>Telecky, Jr.</last-name>
+<first-name>Frederick J.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Texas Instruments Incorporated</orgname>
+<role>02</role>
+<address>
+<city>Dallas</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Mai</last-name>
+<first-name>Tan V.</first-name>
+<department>2193</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A method for finite impulse response (FIR) digital filtering is provided that includes generating a frequency domain sample block from an input sample block of length L, adding the computed frequency domain sample block to a reverse time-ordered set of previously generated frequency domain sample blocks as a newest frequency domain sample block, computing a spectral multiplication of each of K newest frequency domain sample blocks in the reverse time-ordered set with a corresponding frequency domain filter block in a time-ordered set of K frequency domain filter blocks of a FIR filter, adding the K results of the K spectral multiplications to generate an output spectral block, inverse transforming the output spectral block to generate a time domain output block, and outputting L filtered output samples from the time domain output block.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="239.52mm" wi="153.84mm" file="US08626810-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="259.67mm" wi="181.44mm" file="US08626810-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="261.96mm" wi="179.83mm" file="US08626810-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="270.34mm" wi="186.94mm" file="US08626810-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="269.49mm" wi="182.96mm" orientation="landscape" file="US08626810-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="269.16mm" wi="189.15mm" file="US08626810-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="214.46mm" wi="175.68mm" file="US08626810-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CROSS-REFERENCE TO RELATED APPLICATIONS</heading>
+<p id="p-0002" num="0001">This application claims benefit of U.S. Provisional Patent Application Ser. No. 61/178,554, filed May 15, 2009, which is incorporated herein by reference in its entirety.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0003" num="0002">Digital filters are often important components of audio and video processing systems. One type of digital filter often used in such systems is a finite impulse response (FIR) filter. A typical FIR filter is a linear-phase filter that delays the input signal without distorting the phase of the input signal. The delay on the input signal may be implemented as a set of memory elements, i.e., a delay line, that store the delayed elements of the FIR calculation.</p>
+<p id="p-0004" num="0003">In general, a FIR filter operates by convolving the input signal with the impulse response, i.e., the set of coefficients, of the filter. In implementation, different techniques may be used to perform the convolution such as, for example, direct time domain convolution, single-block convolution, multi-block convolution, and frequency-domain delay line (FDL) convolution. While there is no inherent latency in direct time domain convolution, the computational cost may be high for long convolutions as the computation cost increases linearly with the length of the filter. Thus, direct time domain convolution may be unsuitable for real-time filtering.</p>
+<p id="p-0005" num="0004">Single-block convolution, also referred to as frequency domain block convolution, is based on the fact that multiplication in the frequency domain is equivalent to circular convolution in the time domain. Since this technique uses circular convolution, a Discrete Fourier Transform (DFT) is used. The DFT may be implemented with a Fast Fourier Transform (FFT) algorithm. Two well-known techniques for single block convolution are referred to as &#x201c;overlap-save&#x201d; and &#x201c;overlap-add.&#x201d; Each of these techniques computes the DFT of the input sample block, multiplies the result by the DFT of the entire impulse response, and obtains a time-domain output block of samples by performing the inverse transform of the result of the multiplication. The DFT of the impulse response may be pre-computed. The computational cost of these techniques increase logarithmically with the length of the filter, rather than linearly. However, these techniques have an inherent input to output latency equal to the length of the block as the input sample block must be full before beginning computation. Thus, single-block convolution may also be unsuitable for real-time filtering due to the high latency.</p>
+<p id="p-0006" num="0005">Multi-block convolution may be used to reduce the latency while keeping the computational cost at an acceptable level. In multi-block convolution, the filter is divided into shorter blocks, frequency-domain block convolutions are performed on the shorter blocks, and the outputs of the convolutions are summed to obtain the filtered result. The length of the filter blocks may be chosen according to different criteria, such as a desired latency.</p>
+<p id="p-0007" num="0006">In FDL convolution, similar to multi-block convolution, the filter is divided into shorter blocks, and a DFT of each block is calculated using an FFT algorithm. A DFT of the input sample block is also performed using an FFT algorithm, the DFT of the input sample block is spectrally multiplied with the DFTs of each of the filter blocks, and the blocks resulting from the spectral multiplications are overlap-added to generate an output spectral block, and an inverse FFT is performed on the output spectral block to create a time domain output block. The length of the filter blocks maybe chosen, for example, to minimize the computational cost of FDL convolution. FDL convolution is describe in more detail in U.S. Pat. No. 6,625,629, entitled &#x201c;System and Method for Signal Processing Using an Improved Convolution Technique,&#x201d; filed on May 23, 2000.</p>
+<p id="p-0008" num="0007">While digital FIR filters using known convolution techniques may be adequate for many audio and video applications, there is an ever present demand for faster and more complex digital signal processing in such applications. Accordingly, improvements in digital FIR filters are needed.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0009" num="0008">Particular embodiments in accordance with the invention will now be described, by way of example only, and with reference to the accompanying drawings:</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 1</figref> shows a block diagram of a digital system in accordance with one or more embodiments of the invention;</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 2</figref> shows a block diagram of a FIR filter in accordance with one or more embodiments of the invention;</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 3</figref> shows a flow diagram of a method in accordance with one or more embodiments of the invention;</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIGS. 4A-4E</figref> show examples in accordance with one or more embodiments of the invention; and</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 5</figref> shows an illustrative digital system in accordance with one or more embodiments of the invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION OF EMBODIMENTS OF THE INVENTION</heading>
+<p id="p-0015" num="0014">Specific embodiments of the invention will now be described in detail with reference to the accompanying figures. Like elements in the various figures are denoted by like reference numerals for consistency.</p>
+<p id="p-0016" num="0015">Certain terms are used throughout the following description and the claims to refer to particular system components. As one skilled in the art will appreciate, components in digital systems may be referred to by different names and/or may be combined in ways not shown herein without departing from the described functionality. This document does not intend to distinguish between components that differ in name but not function. In the following discussion and in the claims, the terms &#x201c;including&#x201d; and &#x201c;comprising&#x201d; are used in an open-ended fashion, and thus should be interpreted to mean &#x201c;including, but not limited to . . . .&#x201d; Also, the term &#x201c;couple&#x201d; and derivatives thereof are intended to mean an indirect, direct, optical, and/or wireless electrical connection. Thus, if a first device couples to a second device, that connection may be through a direct electrical connection, through an indirect electrical connection via other devices and connections, through an optical electrical connection, and/or through a wireless electrical connection.</p>
+<p id="p-0017" num="0016">In the following detailed description of embodiments of the invention, numerous specific details are set forth in order to provide a more thorough understanding of the invention. However, it will be apparent to one of ordinary skill in the art that the invention may be practiced without these specific details. In other instances, well-known features have not been described in detail to avoid unnecessarily complicating the description. In addition, although method steps may be presented and described herein in a sequential fashion, one or more of the steps shown and described may be omitted, repeated, performed concurrently, performed at different times, and/or performed in a different order than the order shown in the figures and/or described herein. Accordingly, embodiments of the invention should not be considered limited to the specific ordering of steps shown in the figures and/or described herein.</p>
+<p id="p-0018" num="0017">Certain symbols are used throughout the following description, the drawings, and the claims to refer to particular aspects of embodiments of the invention. As one skilled in the art will appreciate, different symbols may be used without departing from the described functionality. Table 1 defines the symbols used herein.</p>
+<p id="p-0019" num="0018">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="77pt" align="left"/>
+<colspec colname="2" colwidth="140pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="2" rowsep="1">TABLE 1</entry>
+</row>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>Symbol</entry>
+<entry>Description</entry>
+</row>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>NH</entry>
+<entry>Length of the impulse response of a FIR filter</entry>
+</row>
+<row>
+<entry>M</entry>
+<entry>Length of a filter block</entry>
+</row>
+<row>
+<entry>K = ceil(NH &#xf7; M)</entry>
+<entry>Number of filter blocks</entry>
+</row>
+<row>
+<entry>L</entry>
+<entry>Length of an input sample block; L = M</entry>
+</row>
+<row>
+<entry>N</entry>
+<entry>Number of points in DFT (Discrete Fourier</entry>
+</row>
+<row>
+<entry/>
+<entry>Transform); N &#x2267; L + M &#x2212; 1</entry>
+</row>
+<row>
+<entry>h(n), n = 0, . . . ,</entry>
+<entry>FIR filter coefficients (filter impulse response)</entry>
+</row>
+<row>
+<entry>NH &#x2212; 1; h(n) = 0, n =</entry>
+</row>
+<row>
+<entry>NH, . . . , K &#xb7; M</entry>
+</row>
+<row>
+<entry>h<sub>k</sub>(m) = h(m + k &#xb7; M),</entry>
+<entry>k<sup>th </sup>(non-overlapping) segment of h(&#xb7;)</entry>
+</row>
+<row>
+<entry>m = 0, . . . , M &#x2212; 1;</entry>
+</row>
+<row>
+<entry>k = 0, . . . , K &#x2212; 1;</entry>
+</row>
+<row>
+<entry>h<sub>k</sub>(m) = 0,</entry>
+</row>
+<row>
+<entry>m = M, . . . , N &#x2212; 1</entry>
+</row>
+<row>
+<entry>H<sub>k</sub>(n), n = 0, . . . , N &#x2212; 1</entry>
+<entry>DFT<sub>N</sub>{h<sub>k</sub>(&#xb7;)}</entry>
+</row>
+<row>
+<entry>x(n), n = 0, 1, 2, . . . ;</entry>
+<entry>(discrete-time) input signal</entry>
+</row>
+<row>
+<entry>x(n) = 0, n &#x3c; 0</entry>
+</row>
+<row>
+<entry>x<sub>j</sub>(n) = x(n + (j +</entry>
+<entry>j<sup>th </sup>segment of x(&#xb7;) - note that segments overlap</entry>
+</row>
+<row>
+<entry>1) &#xb7; L &#x2212; N),</entry>
+</row>
+<row>
+<entry>n = 0, . . . , N &#x2212; 1</entry>
+</row>
+<row>
+<entry>X<sub>j</sub>(n), n = 0, . . . , N &#x2212; 1</entry>
+<entry>DFT<sub>N</sub>{x<sub>j</sub>(&#xb7;)}</entry>
+</row>
+<row>
+<entry>Y<sub>j</sub>(n), n = 0, . . . , N &#x2212; 1</entry>
+<entry>sum[k = 0, . . . , K &#x2212; 1 of X<sub>j&#x2212;k</sub>(n) &#xb7;</entry>
+</row>
+<row>
+<entry/>
+<entry>H<sub>k</sub>(n)], n = 0, . . . , N &#x2212; 1</entry>
+</row>
+<row>
+<entry>y<sub>j</sub>(n), n = 0, . . . , N &#x2212; 1</entry>
+<entry>Re[IDFT<sub>N</sub>{Y<sub>j</sub>(&#xb7;)}] - real part of inverse DFT</entry>
+</row>
+<row>
+<entry>y(n) = y<sub>j</sub>(n &#x2212; (j +</entry>
+<entry>(discrete time) output signal</entry>
+</row>
+<row>
+<entry>1) &#xb7; L + N),</entry>
+</row>
+<row>
+<entry>j = floor(n &#xf7; L)</entry>
+</row>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0020" num="0019">In general, embodiments of the invention provide for finite impulse response (FIR) filtering using a novel form of multi-block convolution with a delay line for blocks of transformed input samples, i.e., frequency domain sample blocks. The coefficients representing the impulse response of a FIR filter of length NH are segmented into K time domain filter blocks of length M. These time domain filter blocks are then transformed using an N-point Discrete Fourier Transform (DFT) into K frequency domain filter blocks. Input sample blocks of length L=M are received and transformed into frequency domain sample blocks using an N-point DFT. At each cycle of the filtering process, a new frequency domain sample block is generated and the previously computed frequency domain sample blocks are moved down a delay line to accommodate the new frequency domain sample block. Then, the newest K frequency domain sample blocks in the delay line are spectrally multiplied by corresponding frequency domain filter blocks, and the K results of the spectral multiplies are added to generate an output spectral block. An N-point inverse DFT is performed on the output spectral block to generate a time domain output block. N&#x2212;L samples are then discarded from the time domain output block to generate a block of filtered output samples of the same length as an input sample block.</p>
+<p id="p-0021" num="0020">Embodiments of the invention may require less computation time than direct time domain convolution and have less input-to-output latency than single-block convolution techniques such as overlap-add and overlap-save. Further, embodiments of the invention may require fewer memory accesses and minimize memory requirements as compared to frequency-domain delay line (FDL) convolution through the use of a single delay line, e.g., a single buffer, for frequency domain sample blocks as compared to the use of multiple delay lines, e.g., multiple buffers, to store outputs of the spectral multiplications. In one or more embodiments of the invention, the delay line for the frequency domain sample blocks is implemented such that the blocks are stored in the delay line only when created and need not be copied or moved again. For example, the newest frequency domain sample block can overwrite the oldest block in the delay line in memory and a circular array of pointers can be used to access the blocks in creation time order.</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 1</figref> shows a block diagram of a digital system (<b>100</b>) implementing FIR filtering in accordance with one or more embodiments of the invention. The digital system (<b>100</b>) includes a processor (<b>102</b>) and a memory (<b>104</b>) storing an input buffer (<b>106</b>), a frequency domain sample buffer (<b>108</b>), an output buffer (<b>112</b>), and frequency domain filter blocks (<b>110</b>). The digital system (<b>100</b>) may be implemented in any suitable combination of software, firmware, and hardware, such as, for example, one or more digital signal processors (DSPs), microprocessors, discrete logic, application specific integrated circuits (ASICs), field-programmable gate arrays (FPGAs), etc. The digital system (<b>100</b>) may operate on one or more computer systems at one or more locations. If the processor is implemented in software, the processor may be loaded and executed on a DSP, a general purpose microprocessor, or any other suitable processing component.</p>
+<p id="p-0023" num="0022">The memory (<b>104</b>) may be any suitable combination of memory devices and may include both on-chip memory and external memory. The various buffers (<b>106</b>, <b>108</b>, <b>112</b>) and the frequency domain filter blocks (<b>110</b>) may be stored in either on-chip memory or external memory. For example, for computational efficiency, the frequency domain sample buffer (<b>108</b>) and the frequency domain filter blocks (<b>110</b>) may be in on-chip memory while the input buffer (<b>106</b>) and output buffer (<b>112</b>) may be in external memory.</p>
+<p id="p-0024" num="0023">An input signal of samples to be filtered, e.g., a sequence of audio samples, is received by the digital system (<b>100</b>) in the input buffer (<b>106</b>) and communicated to the processor (<b>102</b>). The input signal may be received in the input buffer (<b>106</b>) from any suitable component or device such as, for example, an analog-to-digital converter, a signal generation device, or another signal processing component. The samples in the input buffer (<b>106</b>) may be communicated to the processor (<b>102</b>) as blocks of L samples.</p>
+<p id="p-0025" num="0024">The frequency domain filter blocks (<b>110</b>) are frequency domain representations of the impulse response of the filter. The frequency domain filter blocks (<b>110</b>) are generated by segmenting the coefficients of the filter into K time domain filter blocks of length M and performing an N-point DFT on each of the time domain filter blocks to generate the K frequency domain filter blocks (<b>110</b>). In one or more embodiments of the invention, the frequency domain filter blocks (<b>110</b>) are computed prior to use in filtering the input signal and stored in memory (<b>104</b>). This computation may be performed on another digital system or on the digital system (<b>100</b>). In some embodiments of the invention, the frequency domain filter blocks (<b>110</b>) are computed at various times during the filtering process as the impulse response of the filter changes. Filter segmentation and generation of frequency domain filter blocks are described in more detail below.</p>
+<p id="p-0026" num="0025">The frequency domain sample buffer (<b>108</b>) provides the delay line of the filter. As such, the frequency domain sample buffer (<b>108</b>) stores frequency domain sample blocks generated from the input sample blocks. The frequency domain sample blocks are stored in the frequency domain sample buffer (<b>108</b>) such that the blocks may be accessed according to the order in which they are generated. That is, the frequency domain sample blocks in the frequency domain sample buffer (<b>108</b>) represent a reverse time-ordered set (newest to oldest) of frequency domain sample blocks. The frequency domain sample buffer (<b>108</b>) may be, for example, a circular buffer that implements &#x201c;movement&#x201d; of the frequency domain sample blocks through the delay line without having to move the blocks in memory. Alternatively, a circular array of pointers into the frequency domain sample buffer (<b>108</b>) may be used to implement the movement without having actual movement of the blocks. In one or more embodiments of the invention, the frequency domain sample buffer (<b>108</b>) is sized to store K frequency domain sample blocks.</p>
+<p id="p-0027" num="0026">The processor (<b>102</b>) receives an input sample block of L samples from the input buffer (<b>106</b>) and extends the input sample block to generate an extended sample block of length N. In the extended sample block, N&#x2212;L values precede the L samples from the input sample block. Of the N&#x2212;L values used to extend the input sample block, M&#x2212;1 of the values are taken from the input sample block immediately preceding the current input sample block. The remaining N&#x2212;L&#x2212;M+1 values of the N&#x2212;L may be any suitable numbers, e.g., 0. In some embodiments of the invention, all of the N&#x2212;L values are taken from the input sample block immediately preceding the current input sample block. That is, input sample blocks are overlapped to generate extended sample blocks. An example of overlapping is discussed below in reference to <figref idref="DRAWINGS">FIG. 3</figref> and <figref idref="DRAWINGS">FIG. 4D</figref>.</p>
+<p id="p-0028" num="0027">The processor (<b>102</b>) then computes an N-point DFT of the extended sample block to generate a frequency domain sample block and stores the frequency domain sample block in the frequency domain sample buffer (<b>108</b>) as the newest frequency domain sample block in the delay line. The N-point DFT may be implemented in accordance with a suitable Fast Fourier Transform (FFT) algorithm. The generated frequency domain sample block may replace the oldest frequency domain sample block in the frequency domain sample buffer (<b>108</b>).</p>
+<p id="p-0029" num="0028">The processor then performs K spectral multiplications of newest K frequency domain sample blocks in the frequency domain sample buffer (<b>108</b>) with corresponding frequency domain filter blocks. That is, the newest frequency domain sample block is spectrally multiplied with the frequency domain filter block representing the first M coefficients of the filter, the second newest frequency domain sample block is spectrally multiplied with the frequency domain filter block representing the second M coefficients of the filter, etc. For example, assume K=4. The four frequency domain filter blocks are H<sub>0</sub>, H<sub>1</sub>, H<sub>2</sub>, and H<sub>3 </sub>where H<sub>0 </sub>represents the first M coefficients of the filter and H<sub>3 </sub>represents the final M coefficients of the filter. The four frequency domain sample blocks are X<sub>j-3</sub>, X<sub>j-2</sub>, X<sub>j-1</sub>, and X<sub>j </sub>where X<sub>j </sub>represents the newest frequency domain sample block in the delay line and X<sub>j-3 </sub>represents the oldest frequency domain sample block in the delay line. That is, the time order of the frequency domain blocks in the delay line from oldest to newest is X<sub>j</sub>, X<sub>j-1</sub>, X<sub>j-2</sub>, X<sub>j-3</sub>. In this example, X<sub>j-3 </sub>is spectrally multiplied with H<sub>3</sub>, X<sub>j-2 </sub>is spectrally multiplied with H<sub>2</sub>, etc.</p>
+<p id="p-0030" num="0029">The processor then adds the K results of the K spectral multiplications to generate an output spectral block and computes an N-point inverse DFT of the output spectral block to generate a time domain output block. The N-point inverse DFT may be implemented in accordance with a suitable inverse FFT algorithm. Finally, the processor discards the initial N&#x2212;L samples in the time domain sample block to generate a block of L filtered output samples and stores the block in the output buffer (<b>112</b>) for communication to another suitable component or device such as, for example, a signal reproduction device, a digital-to-analog converters, or another signal processing component.</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIG. 2</figref> shows a block diagram of an example FIR filter (<b>200</b>) in accordance with one or more embodiments of the invention. Note that while the description of this example uses the words &#x201c;shift&#x201d; or &#x201c;move&#x201d; or derivative thereof in describing the operation of the filter, no actual shifting or movement of data may occur in embodiments of the invention. This examples assumes that K=4, i.e., that the coefficients of the filter are segmented into four time domain filter blocks and four frequency domain filter blocks are generated by transforming the four time domain filter blocks into frequency domain filter blocks by application of an N-point DFT. The delay line (<b>202</b>) of the FIR filter (<b>200</b>) accordingly includes four delay elements. These delay elements are used to store frequency domain sample blocks in the order they are generated. That is, the top or first delay element will store the newest frequency domain sample block and the bottom or fourth delay element will store the oldest frequency domain sample block. These delay elements may be initialized with suitable values to be used in the spectral multiplications until a frequency domain filter block is moved down the delay line (<b>202</b>) into a delay element.</p>
+<p id="p-0032" num="0031">Each of the spectral multiply elements spectrally multiplies the frequency domain sample block stored in the corresponding delay element with a frequency domain filter block. The frequency domain filter blocks are applied in reverse time order to the frequency domain sample blocks moving through the delay line (<b>202</b>). More specifically, the impulse response of the filter is a function of time. Thus, the time domain filter blocks of the filter also have a time ordering, and this ordering applies to the frequency domain filter blocks as well. In the application of convolution, the impulse response is time-reversed as it is applied to the input signal such that the newest or latest input sample block is filtered by the initial segment of the impulse response and the oldest or earliest input sample block is filtered by the last segment of the impulse response. In effect, the frequency domain filter blocks represent a time-ordered set of filter blocks and they are applied in increasing time order to frequency domain signal blocks in decreasing time order in the delay line. Accordingly, the top spectral multiply element is associated with, i.e., uses or applies, the frequency domain filter block representing the first M coefficients of the filter, the next spectral multiply element is associated with the frequency domain filter block representing the second M coefficients of the filter, etc.</p>
+<p id="p-0033" num="0032">In operation, at each cycle of the filter (<b>200</b>), L input samples are taken in and L filtered output samples are produced. The L input samples are extended as previously described to form an extended sample block of length N. The extended sample block is then transformed into a frequency domain sample block by application of an N-point DFT implemented by a suitable FFT algorithm. The contents of each delay element in the delay line (<b>202</b>) are shifted down to the next delay element and the frequency domain sample block is then stored in the top delay element of the delay line (<b>202</b>).</p>
+<p id="p-0034" num="0033">Each of the spectral multiply elements then performs a spectral multiplication of the frequency domain sample block in the corresponding delay element with the frequency domain filter block associated with the respective spectral multiply element. The spectral multiply elements may operate sequentially, concurrently, in parallel, or any combination thereof. The outputs of the spectral multiply elements are then added to generate an output spectral block. In some embodiments of the invention, the spectral multiplications and the addition of the outputs are performed sequentially. That is, the initial spectral multiply element produces a result and that result is accumulated in a memory location. The next spectral multiply element produces a result and that result is added to the result of the previous spectral multiple element. This accumulation process continues until the outputs of all of the spectral multiplies are added to the memory location. Once the output spectral block is generated, it is then transformed into a time domain output block by application of an N-point inverse DFT implement by a suitable inverse FFT algorithm. L output samples are then extracted from the time domain output block.</p>
+<p id="p-0035" num="0034"><figref idref="DRAWINGS">FIG. 3</figref> shows a flow diagram of a method for FIR filtering of an input signal of samples. Initially, the impulse response, i.e., the coefficients of the filter, is segmented into K non-overlapping time domain filter blocks (<b>300</b>). Any suitable segmentation technique may be used. For example, the impulse response may be segmented into equal length blocks. The length of each time domain filter block is M. <figref idref="DRAWINGS">FIG. 4A</figref> shows an example of segmentation of the filter coefficients. Note that if M is not a factor of the length NH of the impulse response, i.e., the number of coefficients, the Kth time domain filter block is extended to length M with suitable values, e.g., 0.</p>
+<p id="p-0036" num="0035">An N-point DFT of each time domain filter block is computed to generate K frequency domain filter blocks (<b>302</b>). As is illustrated in the example of <figref idref="DRAWINGS">FIG. 4B</figref>, each time domain filter block of length M is zero-padded to length N prior to computation of the N-point DFT. The resulting K frequency domain filter blocks are then stored for use during filtering of samples of an input signal. The N-point DFT may be implemented with any suitable FFT algorithm.</p>
+<p id="p-0037" num="0036">Tradeoffs between computational efficiency and memory usage may be considered in selecting the values of N, M, K, and L for a particular embodiment. If N is large, then all other things being equal, more memory will be used than with a smaller value of N but there may be greater computation efficiency. That is, total memory use goes up with increasing DFT size but MIPS tends to go down. In addition, a larger N value may cause longer input to output latency than a smaller N value. However, the relationship N&#x2267;L+M&#x2212;1 must hold. Further, L is required to be the same as M. In some embodiments of the invention, L=M=N/2.</p>
+<p id="p-0038" num="0037"><figref idref="DRAWINGS">FIG. 4C</figref> shows an example of segmentation of a filter having length NH=4096, an FFT size N=1024, and a filter block length M=512, resulting in a number of filter blocks K=8. The eight graphs illustrate the segmentation in eight time domain filter blocks. The X-axis of each graph is the sample number of the impulse response. Thus, the whole impulse response is the top left block concatenated with the one below it followed by the one below that, etc. As can be seen from the graphs, the signal goes from a large value to a small value which is typical of an impulse response of a reverberant environment. As time delay goes on, there is less and less energy. Each of these time domain filter blocks would be transformed by the 1024-point FFT to generate eight frequency domain filter blocks.</p>
+<p id="p-0039" num="0038">Referring again to <figref idref="DRAWINGS">FIG. 3</figref>, an input sample block of L input samples is received (<b>304</b>). Then, an N-point DFT of the input sample block is computed to generate a frequency domain sample block (<b>306</b>). More specifically, the input sample block is extended by N&#x2212;L values to generate an extended sample block of length N, and the N-point DFT is applied to the extended sample block to generate the frequency domain sample block. The N-point DFT may be implemented with any suitable FFT algorithm.</p>
+<p id="p-0040" num="0039">In the extended sample block, N&#x2212;L values precede the L samples from the input sample block. Of the N&#x2212;L values used to extend the input sample block, M&#x2212;1 of the values are taken from the input sample block immediately preceding the current input sample block. The remaining N&#x2212;L&#x2212;M+1 values of the N&#x2212;L may be any suitable numbers, e.g., 0. In some embodiments of the invention, all of the N&#x2212;L values are taken from the input sample block immediately preceding the current input sample block. That is, input sample blocks are overlapped to generate extended sample blocks. <figref idref="DRAWINGS">FIG. 4D</figref> shows an example of this overlapping. Further, <figref idref="DRAWINGS">FIG. 4E</figref> shows an example of performing the N-point DFT on extended sample blocks generated by overlapping the input sample blocks. Note that the initial input sample block is zero-padded since there is no overlap with a preceding input sample block.</p>
+<p id="p-0041" num="0040">Referring again to <figref idref="DRAWINGS">FIG. 3</figref>, the generated frequency domain sample block is then added to a reverse time-ordered set of K previously generated frequency domain sample blocks as the newest frequency domain sample block (<b>308</b>). In some embodiments of the invention, the oldest frequency domain sample block is removed from the reverse time-ordered set when the generated frequency domain sample block is added. In some embodiments of the invention, this removal is accomplished by replacing the oldest frequency domain sample block in the reverse time-ordered set with the generated frequency domain sample block.</p>
+<p id="p-0042" num="0041">Spectral multiplication of the K frequency domain sample blocks and the K frequency domain filter blocks is then performed. More specifically, each frequency domain sample block is spectral multiplied with a corresponding frequency domain filter block. The correspondence between the frequency domain filter blocks and the frequency domain sample blocks, i.e., the reverse time order application of the filter blocks to the sample blocks, is as was previously described herein. Note that this description assumes the existence of preciously computed frequency domain sample blocks. One of ordinary skill in the art will understand that until K frequency domain sample blocks have been generated during the processing of the input signal, other suitable values may be used in the respective multiplications.</p>
+<p id="p-0043" num="0042">The K results of the K spectral multiplications are then added to generate an output spectral block (<b>312</b>). An N-point inverse DFT of the output spectral block is then computed to generate a time domain output block (<b>314</b>). The N-point inverse DFT may be implemented in accordance with a suitable inverse FFT algorithm. N&#x2212;L samples of the time domain output block are then discarded to generate L filtered output samples and the filtered samples are output (<b>316</b>). In one or more embodiments of the invention, the last L samples of the output block are output. The filtering process (<b>304</b>-<b>316</b>) is repeated until all input sample blocks are processed (<b>318</b>).</p>
+<p id="p-0044" num="0043">Table 2 is a pseudo code describing of a method of FIR filtering in accordance with one or more embodiments of the invention. This pseudo code is expressed using MATLAB syntax and operations and should be understood by one of ordinary skill in the art having a working knowledge of MATLAB and/or access to a MATLAB programming guide with reference to the definitions in Table 1 and the comments in the pseudo code.</p>
+<p id="p-0045" num="0044">
+<tables id="TABLE-US-00002" num="00002">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" rowsep="1">TABLE 2</entry>
+</row>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>function sigOut = fftfil( sig, fil, N)</entry>
+</row>
+<row>
+<entry>%FFTFIL applies (FIR) filter &#x201c;fil&#x201d; to signal &#x201c;sig&#x201d; using FFT-based</entry>
+</row>
+<row>
+<entry>&#x201c;overlap-save&#x201d; method</entry>
+</row>
+<row>
+<entry>%&#x2003;fftfil( sig, fil [, N])</entry>
+</row>
+<row>
+<entry>%&#x2003;sig -- (mono) input signal (vector)</entry>
+</row>
+<row>
+<entry>%&#x2003;fil -- (FIR) filter</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="28pt" align="left"/>
+<colspec colname="2" colwidth="189pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>%</entry>
+<entry>N -- FFT size (default: 1024)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>% .............................................................................</entry>
+</row>
+<row>
+<entry>if( !( nargin &#x3e;= 1))</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>usage( &#x2018;fftfil( sig, fil [, N])&#x2019;);</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>else</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>if( !( nargin &#x3e;= 3))</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="28pt" align="left"/>
+<colspec colname="1" colwidth="189pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>N = 1024;</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>end % if</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>end % if</entry>
+</row>
+<row>
+<entry>% .............................................................................</entry>
+</row>
+<row>
+<entry>if( !( columns( sig) &#x3c;= rows( sig)))</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>sig = sig&#x2019;; % assure sig is col vector</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>end % if</entry>
+</row>
+<row>
+<entry>if( !( columns( sig) == 1))</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>error( &#x2018;&#x201c;sig&#x201d; must be mono signal&#x2019;);</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>end % if</entry>
+</row>
+<row>
+<entry>% .............................................................................</entry>
+</row>
+<row>
+<entry>if( !( nargin &#x3e;= 2</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="28pt" align="left"/>
+<colspec colname="1" colwidth="189pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>&#x26;&#x26; is_struct( fil)</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x26;&#x26; struct_contains( fil, &#x2018;num&#x2019;)</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x26;&#x26; length( fil.num) == 1</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x26;&#x26; length( fil.num.c) &#x3e;= 1</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x26;&#x26; !struct_contains( fil, &#x2018;den&#x2019;) ))</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>error( &#x2018;&#x201c;fil&#x201d; must be FIR filter&#x2019;);</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>end % if</entry>
+</row>
+<row>
+<entry>h = fil.num.c&#x2019;; % filter coeffs.</entry>
+</row>
+<row>
+<entry>if( !( columns( h) &#x3c;= rows( h)))</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>h = h&#x2019;; % assure h is col vector</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>end % if</entry>
+</row>
+<row>
+<entry>NH= length( h); % (total) filter length</entry>
+</row>
+<row>
+<entry>% .............................................................................</entry>
+</row>
+<row>
+<entry>if( NH &#x3c;= N/2 +1)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>M = NH; % (single segment)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>else</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>M = N/2; % filter segment length</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>end % if</entry>
+</row>
+<row>
+<entry>K = ceil( NH / M); % no. of filter segments to be processed</entry>
+</row>
+<row>
+<entry>h = [h ; zeros( K*M&#x2212;NH, 1)]; % pad h to multiple of M</entry>
+</row>
+<row>
+<entry>h = reshape( h, M, K); % K cols, each of length M</entry>
+</row>
+<row>
+<entry>% for *each* of K cols of h:</entry>
+</row>
+<row>
+<entry>%&#x2003;zero-pads from length M to length N,</entry>
+</row>
+<row>
+<entry>%&#x2003;then calcs FFT (of each col of (new) length N)</entry>
+</row>
+<row>
+<entry>H = fft( h, N);</entry>
+</row>
+<row>
+<entry>% .............................................................................</entry>
+</row>
+<row>
+<entry>if( K == 1)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>for j = 1:31</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="28pt" align="left"/>
+<colspec colname="1" colwidth="189pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>if( ~(2{circumflex over (&#x2009;)}j &#x3c;= N&#x2212;M +1)) % find smallest j which is &#x201c;too big&#x201d;, then</entry>
+</row>
+<row>
+<entry/>
+<entry>use previous</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="42pt" align="left"/>
+<colspec colname="1" colwidth="175pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>L = 2{circumflex over (&#x2009;)}(j&#x2212;1); % no. of outputs per processing</entry>
+</row>
+<row>
+<entry/>
+<entry>block break;</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="28pt" align="left"/>
+<colspec colname="1" colwidth="189pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>end; % fi</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>end; % for</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>else % multi-block processing</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>L = M; % I/O shifts must match filter segmentation</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>end % if</entry>
+</row>
+<row>
+<entry>% prepend (col) zeros s.t. 1st non-zero output is last L samples of 1st</entry>
+</row>
+<row>
+<entry>block</entry>
+</row>
+<row>
+<entry>x = [zeros( N&#x2212;L,1); sig];</entry>
+</row>
+<row>
+<entry>X = zeros( N,K); % K cols</entry>
+</row>
+<row>
+<entry>sigOut = zeros( 0); % empty array</entry>
+</row>
+<row>
+<entry>n = length( sig);</entry>
+</row>
+<row>
+<entry>while( n &#x3e; 0) % L inputs / outputs per iteration</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>nOut = min( L,n);</entry>
+</row>
+<row>
+<entry/>
+<entry>X = shift( X, 1, 2); % right-shifts matrix X by 1 col (dim=2)</entry>
+</row>
+<row>
+<entry/>
+<entry>X(:,1) = fft( x( 1: N&#x2212;L+nOut), N);</entry>
+</row>
+<row>
+<entry/>
+<entry>% circular shift can be used, since fft input &#x201c;controlled&#x201d;</entry>
+</row>
+<row>
+<entry/>
+<entry>x = shift( x, &#x2212;L); % use negative value for left shift</entry>
+</row>
+<row>
+<entry/>
+<entry>Y = zeros( N,1); % col</entry>
+</row>
+<row>
+<entry/>
+<entry>for k = 1:K</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="28pt" align="left"/>
+<colspec colname="1" colwidth="189pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Y += H(:,k) .* X(:,k); % col += col x col</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>end % for</entry>
+</row>
+<row>
+<entry/>
+<entry>y = real( ifft( Y, N));</entry>
+</row>
+<row>
+<entry/>
+<entry>sigOut = [sigOut; y( N&#x2212;L+1: N&#x2212;L+nOut)];</entry>
+</row>
+<row>
+<entry/>
+<entry>n &#x2212;= nOut;</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>end % while</entry>
+</row>
+<row>
+<entry>% .............................................................................</entry>
+</row>
+<row>
+<entry>end % function</entry>
+</row>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0046" num="0045">Embodiments of the systems and methods described herein may be provided on any of several types of digital systems: digital signal processors (DSPs), general purpose programmable processors, application specific circuits, or systems on a chip (SoC) such as combinations of a DSP and a reduced instruction set (RISC) processor together with various specialized programmable accelerators. A stored program in an onboard or external (flash EEP) ROM or RAM may be used to implement the FIR filter processing. Analog-to-digital converters and digital-to-analog converters provide coupling to the real world, modulators and demodulators (plus antennas for air interfaces) can provide coupling for transmission waveforms, and packetizers can provide formats for transmission over networks such as the Internet.</p>
+<p id="p-0047" num="0046">The techniques described in this disclosure may be implemented in hardware, software, firmware, or any combination thereof. If implemented in software, the software may be executed in one or more processors, such as a microprocessor, application specific integrated circuit (ASIC), field programmable gate array (FPGA), or digital signal processor (DSP). The software that executes the techniques may be initially stored in a computer-readable medium such as compact disc (CD), a diskette, a tape, a file, memory, or any other computer readable storage device and loaded and executed in the processor. In some cases, the software may also be sold in a computer program product, which includes the computer-readable medium and packaging materials for the computer-readable medium. In some cases, the software instructions may be distributed via removable computer readable media (e.g., floppy disk, optical disk, flash memory, USB key), via a transmission path from computer readable media on another digital system, etc.</p>
+<p id="p-0048" num="0047">Embodiments of the methods and encoders as described herein may be implemented for virtually any type of digital system (e.g., a desk top computer, a laptop computer, a handheld device such as a mobile (i.e., cellular) phone, a personal digital assistant, a digital camera, an automotive sound equalization system, etc. <figref idref="DRAWINGS">FIG. 5</figref> shows a digital system (<b>500</b>) (e.g., a personal computer) suitable for implementing embodiments of the methods and systems described herein. The digital system (<b>500</b>) includes a processor (<b>502</b>), associated memory (<b>504</b>), a storage device (<b>506</b>), and numerous other elements and functionalities typical of digital systems (not shown). In one or more embodiments of the invention, a digital system may include multiple processors and/or one or more of the processors may be digital signal processors. The digital system (<b>500</b>) may also include input means, such as a keyboard (<b>508</b>) and a mouse (<b>510</b>) (or other cursor control device), and output means, such as a monitor (<b>512</b>) (or other display device). The digital system (<b>500</b>) may be connected to a network (<b>514</b>) (e.g., a local area network (LAN), a wide area network (WAN) such as the Internet, a cellular network, any other similar type of network and/or any combination thereof) via a network interface connection (not shown). Those skilled in the art will appreciate that the input and output means may take other forms.</p>
+<p id="p-0049" num="0048">Further, those skilled in the art will appreciate that one or more elements of the aforementioned digital system (<b>500</b>) may be located at a remote location and connected to the other elements over a network. Further, embodiments of the invention may be implemented on a distributed system having a plurality of nodes, where each portion of the system and software instructions may be located on a different node within the distributed system. In one embodiment of the invention, the node may be a digital system. Alternatively, the node may be a processor with associated physical memory. The node may alternatively be a processor with shared memory and/or resources.</p>
+<p id="p-0050" num="0049">Software instructions to perform embodiments of the invention may be stored on a computer readable medium such as a compact disc (CD), a diskette, a tape, a file, memory, or any other computer readable storage device. The software instructions may be distributed to the digital system (<b>500</b>) via removable computer readable media (e.g., floppy disk, optical disk, flash memory, USB key), via a transmission path from computer readable media on another digital system, etc.</p>
+<p id="p-0051" num="0050">While the invention has been described with respect to a limited number of embodiments, those skilled in the art, having benefit of this disclosure, will appreciate that other embodiments can be devised which do not depart from the scope of the invention as disclosed herein. Accordingly, the scope of the invention should be limited only by the attached claims. It is therefore contemplated that the appended claims will cover any such modifications of the embodiments as fall within the true scope and spirit of the invention.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A computer readable medium storing executable instructions which, when executed by a processor, cause the processor to perform a method for finite impulse response (FIR) digital filtering, the method comprising:
+<claim-text>receiving an input sample block of L input samples of a signal;</claim-text>
+<claim-text>extending the input sample block to generate an extended sample block of length N, wherein the L input samples are preceded by N&#x2212;L values;</claim-text>
+<claim-text>computing an N-point Discrete Fourier Transform (DFT) of the extended sample block to generate a frequency domain sample block;</claim-text>
+<claim-text>adding the computed frequency domain sample block to a reverse time-ordered set of previously generated frequency domain sample blocks as a newest frequency domain sample block in the reverse time-ordered set;</claim-text>
+<claim-text>computing a spectral multiplication of each of K newest frequency domain sample blocks in the reverse time-ordered set of previously generated frequency domain sample blocks with a corresponding frequency domain filter block in a time-ordered set of K frequency domain filter blocks of a FIR filter;</claim-text>
+<claim-text>adding the K results of the K spectral multiplications to generate an output spectral block;</claim-text>
+<claim-text>computing an N-point inverse DFT of the output spectral block to generate a time domain output block; and</claim-text>
+<claim-text>discarding N&#x2212;L samples in the time domain output block to generate L filtered output samples,</claim-text>
+<claim-text>wherein NH is a length of the FIR filter, M is a length of each of K time domain filter blocks of the FIR filter, L=M, K=ceil (NH/M), and N&#x2267;L+M&#x2212;1.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The computer readable medium of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the N&#x2212;L values are N&#x2212;L samples from another input sample block immediately preceding the input sample block.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The computer readable medium of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein L=M=N/2.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The computer readable medium of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the method further comprises:
+<claim-text>segmenting an impulse response of the FIR filter into K time domain filter blocks; and</claim-text>
+<claim-text>computing an N-point Discrete Fourier Transform (DFT) of each of the K time domain filter blocks to generate the K frequency domain filter blocks.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The computer readable medium of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein adding the computed frequency domain sample block comprises removing an oldest frequency domain sample block from the reverse time-ordered set.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The computer readable medium of <claim-ref idref="CLM-00005">claim 5</claim-ref>, wherein removing an oldest frequency domain sample block comprises replacing the oldest frequency domain sample block with the computed frequency domain sample block.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The computer readable medium of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the N-point DFT is implemented with a Fast Fourier Transform (FFT) algorithm and the N-point inverse DFT is implemented with an inverse FFT algorithm.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. A digital system comprising:
+<claim-text>a processor; and</claim-text>
+<claim-text>a memory storing software instructions, wherein when executed by the digital signal processor, the software instructions cause the digital system to perform a method for finite impulse response (FIR) digital filtering, the method comprising:
+<claim-text>receiving an input sample block of L input samples of a signal;</claim-text>
+<claim-text>extending the input sample block to generate an extended sample block of length N, wherein the L input samples are preceded by N&#x2212;L values;</claim-text>
+<claim-text>computing an N-point Discrete Fourier Transform (DFT) of the extended sample block to generate a frequency domain sample block;</claim-text>
+<claim-text>adding the computed frequency domain sample block to a reverse time-ordered set of previously generated frequency domain sample blocks as a newest frequency domain sample block in the reverse time-ordered set;</claim-text>
+<claim-text>computing a spectral multiplication of each of K newest frequency domain sample blocks in the reverse time-ordered set of previously generated frequency domain sample blocks with a corresponding frequency domain filter block in a time-ordered set of K frequency domain filter blocks of a FIR filter;</claim-text>
+<claim-text>adding the K results of the K spectral multiplications to generate an output spectral block;</claim-text>
+<claim-text>computing an N-point inverse DFT of the output spectral block to generate a time domain output block; and</claim-text>
+<claim-text>discarding N-L samples in the time domain output block to generate L filtered output samples,
+<claim-text>wherein NH is a length of the FIR filter, M is a length of each of K time domain filter blocks of the FIR filter, L=M, K=ceil (NH/M), and N&#x2267;L+M&#x2212;1.</claim-text>
+</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The digital system of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the N&#x2212;L values are N&#x2212;L samples from another input sample block immediately preceding the input sample block.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The digital system of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein L=M=N/2.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The digital system of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the method further comprises:
+<claim-text>segmenting an impulse response of the FIR filter into K time domain filter blocks; and</claim-text>
+<claim-text>computing an N-point Discrete Fourier Transform (DFT) of each of the K time domain filter blocks to generate the K frequency domain filter blocks.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The digital system of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein adding the computed frequency domain sample block comprises removing an oldest frequency domain sample block from the reverse time-ordered set.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The digital system of <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein removing an oldest frequency domain sample block comprises replacing the oldest frequency domain sample block with the computed frequency domain sample block.</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

@@ -1,0 +1,2458 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="USRE044697-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>RE044697</doc-number>
+<kind>E1</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="reissue">
+<document-id>
+<country>US</country>
+<doc-number>13603137</doc-number>
+<date>20120904</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20130101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>21</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>713189</main-classification>
+<further-classification>713190</further-classification>
+<further-classification>713193</further-classification>
+<further-classification>380 28</further-classification>
+<further-classification>380 33</further-classification>
+<further-classification>380 52</further-classification>
+</classification-national>
+<invention-title id="d2e43">Encryption processor with shared memory interconnect</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>3098153</doc-number>
+<kind>A</kind>
+<name>Heijn</name>
+<date>19630700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>4004089</doc-number>
+<kind>A</kind>
+<name>Richard et al.</name>
+<date>19770100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>4274085</doc-number>
+<kind>A</kind>
+<name>Marino, Jr.</name>
+<date>19810600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>4306289</doc-number>
+<kind>A</kind>
+<name>Lumley</name>
+<date>19811200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>4439839</doc-number>
+<kind>A</kind>
+<name>Kneib et al.</name>
+<date>19840300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>4484025</doc-number>
+<kind>A</kind>
+<name>Ostermann et al.</name>
+<date>19841100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>4598170</doc-number>
+<kind>A</kind>
+<name>Piosenka et al.</name>
+<date>19860700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>4641238</doc-number>
+<kind>A</kind>
+<name>Kneib</name>
+<date>19870200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>4747139</doc-number>
+<kind>A</kind>
+<name>Taaffe</name>
+<date>19880500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>4809169</doc-number>
+<kind>A</kind>
+<name>Sfarti et al.</name>
+<date>19890200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>4922418</doc-number>
+<kind>A</kind>
+<name>Dolecek</name>
+<date>19900500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>5038282</doc-number>
+<kind>A</kind>
+<name>Gilbert et al.</name>
+<date>19910800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>5109506</doc-number>
+<kind>A</kind>
+<name>Begun</name>
+<date>19920400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714 23</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>5239654</doc-number>
+<kind>A</kind>
+<name>Ing-Simmons et al.</name>
+<date>19930800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>5301340</doc-number>
+<kind>A</kind>
+<name>Cook</name>
+<date>19940400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>5343416</doc-number>
+<kind>A</kind>
+<name>Eisig et al.</name>
+<date>19940800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>5475856</doc-number>
+<kind>A</kind>
+<name>Kogge</name>
+<date>19951200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>5524250</doc-number>
+<kind>A</kind>
+<name>Chesson et al.</name>
+<date>19960600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>5546343</doc-number>
+<kind>A</kind>
+<name>Elliott et al.</name>
+<date>19960800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>5627966</doc-number>
+<kind>A</kind>
+<name>Hanko</name>
+<date>19970500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>5636351</doc-number>
+<kind>A</kind>
+<name>Lee</name>
+<date>19970600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>5675164</doc-number>
+<kind>A</kind>
+<name>Brunner et al.</name>
+<date>19971000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>257331</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>5694143</doc-number>
+<kind>A</kind>
+<name>Fielder et al.</name>
+<date>19971200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>5708836</doc-number>
+<kind>A</kind>
+<name>Wilkinson et al.</name>
+<date>19980100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>5724422</doc-number>
+<kind>A</kind>
+<name>Shang et al.</name>
+<date>19980300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>5808928</doc-number>
+<kind>A</kind>
+<name>Miyoshi</name>
+<date>19980900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>708628</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>US</country>
+<doc-number>5864683</doc-number>
+<kind>A</kind>
+<name>Boebert et al.</name>
+<date>19990100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>US</country>
+<doc-number>5892960</doc-number>
+<kind>A</kind>
+<name>Seide</name>
+<date>19990400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>US</country>
+<doc-number>5907714</doc-number>
+<kind>A</kind>
+<name>Boutaud et al.</name>
+<date>19990500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>US</country>
+<doc-number>5917912</doc-number>
+<kind>A</kind>
+<name>Ginter et al.</name>
+<date>19990600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00031">
+<document-id>
+<country>US</country>
+<doc-number>5926546</doc-number>
+<kind>A</kind>
+<name>Maeda et al.</name>
+<date>19990700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00032">
+<document-id>
+<country>US</country>
+<doc-number>5987124</doc-number>
+<kind>A</kind>
+<name>Matyas, Jr. et al.</name>
+<date>19991100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00033">
+<document-id>
+<country>US</country>
+<doc-number>6434699</doc-number>
+<kind>B1</kind>
+<name>Jones et al.</name>
+<date>20020800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00034">
+<document-id>
+<country>US</country>
+<doc-number>2001/0024502</doc-number>
+<kind>A1</kind>
+<name>Ohkuma et al.</name>
+<date>20010900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00035">
+<document-id>
+<country>DE</country>
+<doc-number>40 16 203</doc-number>
+<kind>A1</kind>
+<date>19911100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00036">
+<document-id>
+<country>EP</country>
+<doc-number>0 239 899</doc-number>
+<kind>A1</kind>
+<date>19871000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00037">
+<document-id>
+<country>EP</country>
+<doc-number>0 395 348</doc-number>
+<kind>A2</kind>
+<date>19901000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00038">
+<document-id>
+<country>EP</country>
+<doc-number>0 577 483</doc-number>
+<kind>A1</kind>
+<date>19940100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00039">
+<document-id>
+<country>EP</country>
+<doc-number>0654733</doc-number>
+<kind>A1</kind>
+<date>19940700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00040">
+<document-id>
+<country>GB</country>
+<doc-number>2 172 129</doc-number>
+<kind>A</kind>
+<date>19860900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00041">
+<document-id>
+<country>GB</country>
+<doc-number>2 215 496</doc-number>
+<kind>A</kind>
+<date>19890900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00042">
+<document-id>
+<country>JP</country>
+<doc-number>62-271016</doc-number>
+<date>19871100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00043">
+<document-id>
+<country>JP</country>
+<doc-number>64-003734</doc-number>
+<date>19890100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00044">
+<document-id>
+<country>JP</country>
+<doc-number>03-129384</doc-number>
+<date>19910600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00045">
+<document-id>
+<country>JP</country>
+<doc-number>06-214760</doc-number>
+<kind>A</kind>
+<date>19940800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00046">
+<document-id>
+<country>JP</country>
+<doc-number>07-200260</doc-number>
+<date>19950800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00047">
+<document-id>
+<country>JP</country>
+<doc-number>08-123670</doc-number>
+<kind>A</kind>
+<date>19960500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00048">
+<document-id>
+<country>JP</country>
+<doc-number>11-506230</doc-number>
+<kind>A</kind>
+<date>19990600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00049">
+<document-id>
+<country>WO</country>
+<doc-number>WO 89/07375</doc-number>
+<date>19890800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00050">
+<document-id>
+<country>WO</country>
+<doc-number>WO 91/18460</doc-number>
+<date>19911100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00051">
+<document-id>
+<country>WO</country>
+<doc-number>WO 97/09705</doc-number>
+<date>19970300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00052">
+<document-id>
+<country>WO</country>
+<doc-number>WO 99/14881</doc-number>
+<date>19990300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00053">
+<document-id>
+<country>WO</country>
+<doc-number>WO 99/34514</doc-number>
+<date>19990700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00054">
+<document-id>
+<country>WO</country>
+<doc-number>WO 99/44329</doc-number>
+<kind>A2</kind>
+<date>19990900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00055">
+<othercit>&#x201c;Intel Architecture Software Developer's Manual, vol. 1: Basic Architecture&#x201d;, Intel, 283 pp. (1997).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00056">
+<othercit>&#x201c;Intel Architecture Software Developer's Manual, vol. 2: Instruction Set Reference&#x201d;, Intel, 566 pp. (1997).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00057">
+<othercit>&#x201c;Pentium Processor Family Developer's Manual, vol. 3: Architecture and Programming Manual&#x201d;, Intel, 1032 pp. (1995).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00058">
+<othercit>&#x201c;Pentium Processor Family Developer's Manual&#x201d;, Intel, 609 pp. (1997).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00059">
+<othercit>Butter, A., et al., &#x201c;High Performance Cryptographic Hardware Using Pipelined Data Encryption Standard Units,&#x201d; <i>IBM Technical Disclosure Bulletin, </i>38(1): 503-507 (Jan. 1995).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00060">
+<othercit>International Search Report in International Application No. PCT/CA99/00176, 5 pages, mailed Dec. 3, 1999.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00061">
+<othercit>International Preliminary Examination Report in International Application No. PCT/CA99/00176, 22 pages, mailed Jul. 6, 2000.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00062">
+<othercit>Wolter, Stefan et al., &#x201c;On the VLSI Implementation of the International Data Encryption Algorithm IDEA,&#x201d; IEEE International Symposium on Circuits and Systems (ISCAS), Seattle, WA, Apr. 30-May 3, 1995., vol. 1, Apr. 30, 1995, pp. 397-400.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00063">
+<othercit>Sauerbrey, J., &#x201c;A Modular Exponentiation Unit Based on Systolic Arrays,&#x201d; Advances in Cryptology&#x2014;Auscrpyt, Gold Coast, Queensland, Dec. 13-16, 1992, conf. 3, Dec. 13, 1992, pp. 505-516.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00064">
+<othercit>Barrett, Paul, &#x201c;Implementing The Rivest Shamir and Adleman Public Key Encryption Algorithm on a Standard Digital Signal Processor,&#x201d; Computer Security LTD, Aug. 1986, pp. 311-323.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00065">
+<othercit>Montgomery, Peter L., &#x201c;Modular Multiplication Without Trial Division,&#x201d; <i>Mathematics of Computation, </i>vol. 44, No. 170, Apr. 1985, pp. 519-521.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00066">
+<othercit>Jones, D. et al., &#x201c;A Time-Multiplexed FPGA Architecture for Logic Emulation,&#x201d; Proceedings of the IEEE 1995 Custom Integrated Circuits Conference, May 1995, pp. 495-498.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00067">
+<othercit>Mirsky, Ethan et al., &#x201c;Matrix: A Reconfigurable Computing Architecture with Configurable Instruction Distribution and Deployable Resources,&#x201d; IEEE Symposium on FPGA's For Custom Computing Machines, Published at FCCM '96, Apr. 17-19, 1996, pp. 1-10.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00068">
+<othercit>Chen, Dev C., &#x201c;A Reconfigurable Multiprocessor IC for Rapid Prototyping of Algorithmic-Specific High-Speed DSP Data Paths,&#x201d; <i>IEEE Journal of Solid-State Circuits, </i>vol. 27, No. 12, Dec. 1992, pp. 1895-1904.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00069">
+<othercit>Yeung, Alfred K. et al., &#x201c;A 2.4GOPS Data-Driven Reconfigurable Multiprocessor IC for DSP,&#x201d; IEEE International Solid-State Circuits Conference, ISSCC95, Feb. 16, 1995, Session 6, Digital Design Elements, Paper TA 6.3, 3 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>67</number-of-claims>
+<us-exemplary-claim>62</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>None</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>12</number-of-drawing-sheets>
+<number-of-figures>19</number-of-figures>
+</figures>
+<us-related-documents>
+<reissue>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>09032029</doc-number>
+<date>19980227</date>
+</document-id>
+<parent-status>GRANTED</parent-status>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>6088800</doc-number>
+<date>20000711</date>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13603137</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</reissue>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Jones</last-name>
+<first-name>David E.</first-name>
+<address>
+<city>Ottawa</city>
+<country>CA</country>
+</address>
+</addressbook>
+<residence>
+<country>CA</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>O'Connell</last-name>
+<first-name>Cormac M.</first-name>
+<address>
+<city>Carp</city>
+<country>CA</country>
+</address>
+</addressbook>
+<residence>
+<country>CA</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Jones</last-name>
+<first-name>David E.</first-name>
+<address>
+<city>Ottawa</city>
+<country>CA</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>O'Connell</last-name>
+<first-name>Cormac M.</first-name>
+<address>
+<city>Carp</city>
+<country>CA</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Browdy and Neimark, PLLC</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Mosaid Technologies Incorporated</orgname>
+<role>03</role>
+<address>
+<city>Ottawa, Ontario</city>
+<country>CA</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Lanier</last-name>
+<first-name>Benjamin</first-name>
+<department>2432</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">An encryption chip is programmable to process a variety of secret key and public key encryption algorithms. The chip includes a pipeline of processing elements, each of which can process a round within a secret key algorithm. Data is transferred between the processing elements through dual port memories. A central processing unit allows for processing of very wide data words from global memory in single cycle operations. An adder circuit is simplified by using plural relatively small adder circuits with sums and carries looped back in plural cycles. Multiplier circuitry can be shared between the processing elements and the central processor by adapting the smaller processing element multipliers for concatenation as a very wide central processor multiplier.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="130.39mm" wi="150.20mm" file="USRE044697-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="145.29mm" wi="170.01mm" file="USRE044697-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="152.57mm" wi="165.69mm" file="USRE044697-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="183.81mm" wi="164.42mm" file="USRE044697-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="233.26mm" wi="154.86mm" orientation="landscape" file="USRE044697-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="230.63mm" wi="167.72mm" file="USRE044697-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="235.29mm" wi="148.25mm" orientation="landscape" file="USRE044697-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="233.60mm" wi="135.13mm" file="USRE044697-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="231.65mm" wi="156.97mm" file="USRE044697-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="192.70mm" wi="164.17mm" file="USRE044697-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="237.24mm" wi="160.87mm" orientation="landscape" file="USRE044697-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="156.80mm" wi="162.14mm" file="USRE044697-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="235.29mm" wi="167.72mm" file="USRE044697-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0002" num="0001">Before the advent of the Internet, corporate data networks typically consisted of dedicated telecommunications lines leased from a public telephone company. Since the hardware implementation of the data networks was the exclusive property of the telephone company, a regulated utility having an absolute monopoly on the medium, security was not much of a problem; the single provider was contractually obligated to be secure, and the lack of access to the switching network from outside made it more or less resistant to external hacking and tampering.</p>
+<p id="p-0003" num="0002">Today, more and more enterprises are discovering the value of the Internet which is currently more widely deployed than any other single computer network in the world and is therefore readily available for use by a multi-national corporate network. Since it is also a consumer-level product, Internet access can usually be provided at much lower cost than the same service provided by dedicated telephone company network. Finally, the availability of the Internet to the end user makes it possible for individuals to easily access the corporate network from home, or other remote locations.</p>
+<p id="p-0004" num="0003">The Internet however, is run by public companies, using open protocols, and in-band routing and control that is open to scrutiny. This environment makes it a fertile proving ground for hackers. Industrial espionage is a lucrative business today, and companies that do business on the Internet leave themselves open to attack unless they take precautions.</p>
+<p id="p-0005" num="0004">Several standards exist today for privacy and strong authentication on the Internet. Privacy is accomplished through encryption/decryption. Typically, encryption/decryption is performed based on algorithms which are intended to allow data transfer over an open channel between parties while maintaining the privacy of the message contents. This is accomplished by encrypting the data using an encryption key by the sender and decrypting it using a decryption key by the receiver (sometimes, the encryption and decryption keys are the same).</p>
+<p id="h-0002" num="0000">Types of Encryption Algorithms</p>
+<p id="p-0006" num="0005">Encryption algorithms can be classified into public-key and secret key algorithms. In secret-key algorithms, both keys are secret whereas in public-key algorithms, one of the keys is known to the general public. Block ciphers are representative of the secret-key cryptosystems in use today. Usually, for block ciphers, the encryption key is the same as the decryption key. A block cipher takes a block of data, typically 32-128 bits, as input and produces the same number of bits as output. The encryption and decryption are performed using a key, anywhere from 56-128 bits in length. The encryption algorithm is designed such that it is very difficult to decrypt a message without knowing the key.</p>
+<p id="p-0007" num="0006">In addition to block ciphers, Internet security protocols also make heavy use of public-key algorithms. A public key cryptosystem such as the Rivest, Shamir, Adelman (RSA) cryptosystem described in U.S. Pat. No. 5,144,667 issued to Pogue and Rivest uses two keys, only one of which is made public. Once someone publishes a key, anyone may send that person a secret message using that key. However, decryption of the message can only be accomplished by use of the secret key. The advantage of such public-key encryption is secret keys do not need to be distributed to all parties of a conversation beforehand. In contrast, if only secret-key encryption were used, multiple secret keys would have to be generated, one for each party intended to receive the message, and each secret key would have to be privately communicated. Attempting to communicate the secret key privately results in the same problem as in sending the message itself using only secret-key encryption; this is called the key distribution problem.</p>
+<p id="p-0008" num="0007">Key exchange is another application of public-key techniques. In a key exchange protocol, two parties can agree on a secret key even if their conversation is intercepted by a third party. The Diffie-Hellman exponential key exchange, described in U.S. Pat. No. 4,200,770, is an example of such a protocol.</p>
+<p id="p-0009" num="0008">Most public-key algorithms, such as RSA and Diffie-Hellman key exchange, are based on modular exponentiation, which is the computation of &#x3b1;<sup>x </sup>mod p. This expression means &#x201c;multiply &#x3b1; by itself x times, divide the answer by p, and take the remainder.&#x201d; This computation is very expensive to perform, for the following reason. In order to perform this operation, many repeated multiplications and divisions are required, although techniques such as Montgomery's method, described in &#x201c;Modular Multiplication Without Trial Division,&#x201d; from Mathematics of Computation, Vol. 44, No. 170 of April 1985, can reduce the number of divisions required. In addition, the numbers used are very large (typically 1024 bits or more), so the multiply and divide instructions found in common CPUs cannot be used directly. Instead, special algorithms that break down the large multiplications and divisions into operations small enough to be performed on a CPU must be used. These algorithms usually have a run time proportional to the square of the number of machine words involved. These factors result in multiplication of large numbers being a very slow operation. For example, a Pentium&#xae; can perform a 32&#xd7;32-bit multiply in 10 clock cycles. A 2048-bit number can be represented in 64 32-bit words. A 2048&#xd7;2048-bit multiply requires 64&#xd7;64 separate 32&#xd7;32-bit multiplications, which takes 40960 clocks on the Pentium. An exponentiation with a 2048-bit exponent requires up to 4096 multiplications if done in the normal way, which requires about 167 million clock cycles. If the Pentium is running at 166 MHZ, the entire operation requires roughly one second. This example does not consider the time required to perform the divisions, either! Clearly, a common CPU such as a Pentium cannot expect to do key generation and exchange at any great rate.</p>
+<p id="p-0010" num="0009">Because public-key algorithms are so computationally intensive, they are typically not used to encrypt entire messages. Instead, private-key cryptosystems are used for message transfer. The private key used to encrypt the message, called the session key, is chosen at random and encrypted using a public key. The encrypted session key, as well as the encrypted message, are then sent to the other party. The other party uses its secret key to decrypt the session key, at which point the message may be decrypted using the session key. A different session key is used for each communication, so that if one session key is ever broken, only the one message encrypted with it may be read. This public-key/private-key method can also be used to protect continuous communications, such as interactive terminal sessions that never terminate in normal operation. In this case, the session key is periodically changed (e.g. once an hour) by repeating the public-key generation technique. Again, frequent changing of the session key limits the amount of data compromised if the encryption is broken.</p>
+<p id="h-0003" num="0000">Prior Art</p>
+<p id="p-0011" num="0010">Network-level encryption devices, allowing access to corporate networks using a software-based solution are experiencing widespread usage. Products such as Raptor Eagle Remote and others perform encryption entirely in software. The software limits the encryptor's throughput. Session key generation using public-key techniques may take several minutes. For this reason, session keys are not re-generated as often as some people would like. However, software does have the advantage that the encryption algorithms are easily changed in response to advances in the field.</p>
+<p id="p-0012" num="0011">Other devices use a combination of hardware and software. For example, the Northern Telecom (now Entrust) Sentinel X.25 encryption product uses a DES chip produced by AMD to perform the DES secret-key encryption. Hardware implementations of DES are much faster, since DES was designed for efficient implementation in hardware. A transposition that takes many CPU instructions in software can be done using parallel special-purpose lookup tables and wiring.</p>
+<p id="p-0013" num="0012">The Sentinel also makes use of a Motorola DSP56000 processor to perform the public-key operations. At the time, the single-cycle multiplication ability of the DSP made this approach significantly faster than implementing the public-key algorithms on regular CISC microprocessors.</p>
+<p id="p-0014" num="0013">Most hardware encryption devices are severely limited in the number of algorithms that they can implement. For example, the AMD chip used in the Sentinel performs only DES. More recent devices, from Hi/Fn can perform DES and RC4. However, if you need to implement either RC5 or IDEA, then you would need to use another product.</p>
+<heading id="h-0004" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0015" num="0014">A preferred high-performance programmable network encryption device, integrated into a single chip, is a parallel-pipelined processor system whose instruction set is optimized for common encryption algorithms. The present invention realizes the advantages of both hardware and software approaches. Since the processor is a programmable processor, any encryption algorithm may be implemented, contrary to a hardware implemented encryption processor which is dedicated to executing only one algorithm. However, the processor's architecture permits parallel computations of a nature useful for encryption, so its performance more closely approximates that of a dedicated hardware device.</p>
+<p id="p-0016" num="0015">In accordance with a preferred implementation of the invention, an electronic encryption device comprises an array of processing elements. Each processing element comprises an instruction memory for storing a round of an encryption algorithm, the round comprising a sequence of instructions. The processing element also includes a processor for implementing the round from the instruction memory and data storage for storing encryption data operands and encrypted data resulting from implementing the round. Each processing element of the array implements one of the rounds and transfers results to successive processing elements such that the array of processing elements implements successive rounds of the encryption algorithm in a processing element pipeline.</p>
+<p id="p-0017" num="0016">In a preferred embodiment, the data storage has a portion thereof which is shared between adjacent processing elements of the linear array for transfer of data between adjacent processing elements of the linear array. The shared data storage is preferably comprised of dual port memories but may also comprise shared registers.</p>
+<p id="p-0018" num="0017">The preferred processing element comprises a control unit and an ALU. The control unit, ALU, instruction memory and data storage, including local data memory and shared data memory, are connected to a local processing element bus. The local bus is segmented by a switch into a local instruction bus segment, connecting the instruction memory and the control unit, and a local data bus segment connecting the ALU, local data memory and shared data memory. The switch permits either independent simultaneous operation on the two local bus segments or a communication between the two bus segments. Each processing element further comprises a multiplier for performing multiplication operations within the processing element.</p>
+<p id="p-0019" num="0018">The preferred encryption device further comprises a global random access memory and a global bus through which data is transferred between the global random access memory and the processing element data storage. A central processor is coupled to the global bus for processing data words which are wider than data words processed by the processing elements. The multipliers of the plural processing elements may be adapted for concatenation as segments of a wider multiplier used by the central processor. Preferably, each multiplier comprises partial product adders having input selection circuitry for selecting a first set of inputs when operating as an individual multiplier and a second set of inputs, including inputs from adjacent processing elements, when concatenated.</p>
+<p id="p-0020" num="0019">Preferably, the central processor comprises a novel adder. In the adder, each of plural adder segments has a carry output and a sum output and each of the adder segments processes a segment of each of two operands. Selectors select the carry outputs as carry inputs to successive adder segments for successive clock cycles so long as any carry results in an adder cycle. Selectors also select each sum output as an operand input to the same adder segment. Accordingly, so long as any carry results in an adder cycle, the sum output of an adder is fed back to its input, and the adder segment receives a carry input generated as a carry output from a preceding segment in a preceding cycle.</p>
+<p id="p-0021" num="0020">Preferably, each processing element performs a modular adjust operation to compute M mod N without using a divide circuit. Each processing element also performs a modulo add/subtract operation to compute A&#xb1;B mod N. Further, each processing element performs a modulo multiply operation to compute A&#xd7;B mod N.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0005" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0022" num="0021">The foregoing and other objects, features and advantages of the invention will be apparent from the following more particular description of preferred embodiments of the invention, as illustrated in the accompanying drawings in which like reference characters refer to the same parts throughout the different views. The drawings are not necessarily to scale, emphasis instead being placed upon illustrating the principles of the invention.</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIGS. 1A and 1B</figref> are block diagrams of potential applications of the present invention.</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram of an encryption chip embodying the present invention.</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 3</figref> is a block diagram of a processing element in the encryption chip of <figref idref="DRAWINGS">FIG. 2</figref>.</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 4</figref> illustrates a preferred chip layout of the circuitry of <figref idref="DRAWINGS">FIGS. 2 and 3</figref>.</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 5</figref> illustrates the processing element of <figref idref="DRAWINGS">FIG. 3</figref> redrawn to correspond to the layout of <figref idref="DRAWINGS">FIGS. 4</figref> and to illustrate the PE local bus and global bus connections.</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 6</figref> illustrates an adder circuit used in the PK ALU of <figref idref="DRAWINGS">FIG. 2</figref>.</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 7</figref> illustrates a full adder symbol used in a multiplier of the PK ALU.</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 8</figref> illustrates processing in the first stage of a 4&#xd7;4 multiplier using full adders.</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIG. 9</figref> illustrates three stages of the 4&#xd7;4 multiplier.</p>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIG. 10</figref> illustrates the adders of a wide multiplier with the adders of the 4&#xd7;4 multiplier overlaid thereon.</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIG. 11</figref> is a block diagram of a 4&#xd7;4 multiplier adapted to be concatenated with like multipliers in a wide word length multiplier of <figref idref="DRAWINGS">FIG. 10</figref>.</p>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIG. 12</figref> illustrates a conventional implementation of an 8-bit adder using full adders.</p>
+<p id="p-0035" num="0034"><figref idref="DRAWINGS">FIG. 13</figref> is a conventional implementation of a carry lookahead adder.</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 14</figref> is a block diagram illustration of a DES encryption round.</p>
+<p id="p-0037" num="0036"><figref idref="DRAWINGS">FIGS. 15A-D</figref> are functional diagrams illustrating modular add, subtract, adjust and combination of all three operations according to embodiments of the present invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0006" level="1">DETAILED DESCRIPTION OF THE INVENTION</heading>
+<p id="p-0038" num="0037">The encryption chip of the present invention may be programmed to perform common data encryption and decryption algorithms on one or more data streams in any application. The principal purpose of the encryption chip is to perform high speed data encryption using algorithms that are expected to be in use on the Internet, at data rates of 100-2000 Mbps.</p>
+<p id="p-0039" num="0038">Example applications are illustrated in <figref idref="DRAWINGS">FIGS. 1A and 12</figref>. In <figref idref="DRAWINGS">FIG. 1A</figref>, data from a source <b>22</b> is encrypted in an encryption chip <b>24</b> before the data is passed into a public network <b>26</b>. The data is then decrypted in encryption chip <b>28</b> before being forwarded to a destination <b>30</b>. In one embodiment, the source and the destination are themselves networks such as local area networks. In that case, the encryption chips provide a secure path between the local area networks and the public network <b>26</b>.</p>
+<p id="p-0040" num="0039">In a link encryption application illustrated in <figref idref="DRAWINGS">FIG. 1B</figref>, data transferred within each link between routers is encrypted. In that case, encrypted data received at a router <b>32</b> between links must first be decrypted in an encryption chip <b>34</b>, and the data is re-encrypted in accordance with the encryption algorithm of the next link in an encryption chip <b>36</b>.</p>
+<p id="p-0041" num="0040">Three main secret-key block encryption algorithms are in common use today: DES, RC5 and IDEA. The first two algorithms are standard Internet Protocol SECurity IPSEC standard algorithms. IDEA is the algorithm used by PGP, a popular email encryption program.</p>
+<p id="p-0042" num="0041">Typically, block algorithms consist of a number of rounds; each round is a sequence of operations in an encryption algorithm. Anywhere from 8-32 rounds are required to completely implement an encryption algorithm. The operations performed by each round are often the same, although they need not be. In software, each round is implemented with a few machine instructions. In hardware, each round is implemented with dedicated circuitry. The hardware is typically pipelined, with each round being implemented in its own pipeline stage.</p>
+<p id="p-0043" num="0042"><figref idref="DRAWINGS">FIG. 2</figref> illustrates an integrated chip solution, henceforth referred to as the encryption chip, according to an embodiment of the present invention. Although the encryption chip implies the chip can perform encryption, it should be noted that the chip is also designed to perform decryption and message digest functions as well.</p>
+<p id="p-0044" num="0043">Data enters the encryption chip through an input stage <b>40</b>, which receives network data, typically as a serial bit stream. Ethernet, ATM or any other serialized format may be used. The input stage converts the serial data stream to block-aligned data suitable for processing as an input to an encryption/decryption pipeline. The size of the input blocks is programmable. In the preferred embodiment illustrated in <figref idref="DRAWINGS">FIG. 2</figref>, the pipeline is made up of a plurality of processing elements <b>37</b> arranged in a linear array, each containing an instruction memory, a register file, an ALU, local and shared data memory, and control circuitry. Each of the processing elements is designed to process 32-bit wide data words. The encrypted data is taken from the last processing element in the pipeline into an output stage <b>42</b>, which converts the block data back into a serial stream format and forwards the data over the network or to a local destination.</p>
+<p id="p-0045" num="0044">Data can be transferred among non-adjacent processing elements and/or other elements within the encryption ship via a global data bus <b>38</b>. Also connected to the global data bus <b>38</b> is I/O communication logic <b>54</b>, which allows communication with a host CPU (not shown). Host CPU communication is required to program the encryption chip prior to use. Global random access memory (RAM) <b>44</b> is also connected to the global data bus <b>38</b>, allowing global communication among the processing elements. A control CPU <b>52</b> synchronizes the operations of the encryption pipeline processors. This CPU may be implemented using any available embedded CPU core such as MIPS, ARM or ARC. Furthermore, to allow processing of algorithms which utilize very wide operands such as public-key encryption algorithms, a public-key (PK) core processor <b>46</b> is connected to the control CPU <b>52</b>. The PK core includes a register file <b>48</b> consisting of 8-16 512-bit wide registers as well as a PK ALU <b>50</b>. The PK core processor can make data transfers to and from the global RAM <b>44</b> over a 512-bit bus in one system clock cycle. 512-bit operands are processed in the ALU <b>50</b>, typically in 2-32 clock cycles. The PK core ALU <b>50</b> is a coprocessor controlled by the control CPU <b>52</b>, performing only arithmetic and logic operations along with loads and stores. Other instructions necessary for implementing PK algorithms can be executed within the control CPU <b>52</b>.</p>
+<p id="p-0046" num="0045">The encryption chip implements the code for each round of a secret key algorithm in a separate processing element of the pipeline. Once computed upon, data from one PE is transferred to the next PE where the next round is implemented. The first PE is then free to process an encryption round for the next block of data coming in. The pipeline process continues for the remaining PE's. The time required to encrypt a block using this architecture is therefore equal to the time required to encrypt one round.</p>
+<p id="p-0047" num="0046">Many block algorithms use one set of operations to encrypt the data, and a separate set of operations to expand the key. Key expansion is the process of transforming a relatively small key (56-128 bits) into a larger number (512 bits or more) with statistically random properties. This expanded key is distributed into smaller subkeys, where a different portion of the expanded key is used for each round. It is important to note that the expanded key does not change with the data. Therefore, since it is not in the critical path, it can be pre-computed and stored in memory. The sample code discussed later assumes that key information has been pre-computed and stored in the local data memories of each PE.</p>
+<p id="p-0048" num="0047">The basic application of a block algorithm transforms a block of plaintext (unencrypted information) into a similar-sized block of ciphertext (encrypted information) and vice-versa. This operating mode is known as electronic codebook (ECB) mode. Due to its many inherent security weaknesses, methods of introducing feedback into the encryption by cycling some of the basic output back into the input are commonly used. The encryption chip uses the global data bus <b>38</b> to perform cipher feedback (CFB). In ECB mode, a new block of data can be encrypted once per pipeline cycle, which can be 10-100 instructions. However, in CFB mode, each datum must pass through the pipeline multiple times. This mode substantially reduces throughput on a single channel. However, peak performance can be achieved by encrypting multiple data channels, interleaved in the pipeline.</p>
+<p id="p-0049" num="0048">A block diagram of one individual processing element PE according to an embodiment of the present invention is shown in <figref idref="DRAWINGS">FIG. 3</figref>. The processing element <b>37</b>, consists of an ALU <b>56</b> operating on 32-bit words from a register file <b>58</b> made up of 8-16 32-bit registers. The register file <b>58</b> and ALU <b>56</b> are controlled by a control unit <b>60</b> which decodes instructions from a processing element instruction memory <b>62</b>. Each processing element instruction memory stores at least one round of an encryption algorithm, where a round is defined as a sequence of instructions in an encryption algorithm. The PE data memory space accessible by each processing element is divided into four areas: a local PE memory <b>64</b> (in <figref idref="DRAWINGS">FIG. 3</figref>, designated as PE<sub>n </sub>local memory), a shared memory <b>66</b> (in <figref idref="DRAWINGS">FIG. 3</figref>, designated as PE<sub>n,n&#x2212;1 </sub>shared memory shared between the n-th and n&#x2212;1-th processing element), and a second shared memory <b>68</b> (in <figref idref="DRAWINGS">FIG. 3</figref>, designated as PE<sub>n+1,n </sub>shared memory shared between the n+1-st and n-th processing element), and the global memory <b>44</b> as described with reference to <figref idref="DRAWINGS">FIG. 2</figref>, which is accessible to all PEs. All of these memories are mapped into the address space of a processing element, say the n-th processing element. No special instructions are required to access any type of memory; all memories are accessible by all memory access instructions.</p>
+<p id="p-0050" num="0049">The memories <b>66</b> and <b>68</b> of a processing element are dual port SRAMs and are shared with the PE of the previous and next pipe stage, respectively. Note that a PE's next-neighbor memory is the same as the next PE's previous-neighbor memory.</p>
+<p id="p-0051" num="0050">These dual ported SRAMs are used to propagate data through the pipeline stages. One processing element writes data to be transferred into its associated next-neighbor shared memory. Then the next-neighbor processing element reads the stored data from its previous-neighbor shared memory, which as described before, is one and the same as the previous processing element's next-neighbor shared memory. Since the memories are dual-ported, there are no timing restrictions on accesses. Synchronization of accesses is performed using static scheduling of machine instructions by the software author or compiler. Furthermore, since the global bus is not used for communication between adjacent PEs, the PEs may all communicate concurrently.</p>
+<p id="p-0052" num="0051">The global memory <b>44</b> is connected to the global communication bus. Only one processing element is allowed to access the global memory <b>44</b> at any one time. This memory is used to pass data between non-adjacent processing elements, for example, during feedback encryption algorithms and can serve as supplemental storage for individual processing elements.</p>
+<p id="p-0053" num="0052">The PE instruction memory <b>62</b> has an instruction set resembling that of a modern RISC processor integer unit. The instruction set is more or less orthogonal in that any register can be used as an operand to any instruction. No floating-point or memory management support need be provided, since neither are useful in encryption. However, the instruction set contains the following useful enhancements: a modular addition/subtraction instruction, a modular multiplication instruction and a modulo adjust instruction.</p>
+<p id="p-0054" num="0053">The modular addition/subtraction instruction computes A&#xb1;B mod N (the number &#x201c;M mod N&#x201d; is the remainder when M is divided by N). <figref idref="DRAWINGS">FIGS. 15A through 15D</figref> illustrate the combination of the modular add, subtract and adjust into one 3-in-1 modulo arithmetic unit.</p>
+<p id="p-0055" num="0054"><figref idref="DRAWINGS">FIG. 15A</figref> illustrates the modular add operation. If the two numbers to be added, A and B, are both less than N, then their sum from adder <b>120</b> can be reduced modulo N by subtracting N in subtractor <b>122</b>, and then selecting through the multiplexer <b>124</b> either the output of the subtractor or the original number, depending on the sign of the difference. Similarly, in the case of a modular subtract operation as shown in <figref idref="DRAWINGS">FIG. 15B</figref>, if the two numbers A and B are less than N, then their difference modulo N can be computed by adding N in adder <b>126</b> if the difference from subtractor <b>128</b> is negative or by selecting the difference through multiplexor <b>130</b> if the difference is positive. Note that both the modulo add and modulo subtract do not require division. However, they do require two additions in series (one to compute the sum/difference, and one to reduce modulo N). If the double-addition impacts the critical path, then the reduction modulo N can be encoded as a separate instruction, which is called the &#x201c;modulo adjust&#x201d; instruction.</p>
+<p id="p-0056" num="0055">The modulo adjust instruction, illustrated in <figref idref="DRAWINGS">FIG. 15C</figref>, computes M mod N, given that M is either a sum or a difference of A and B, both already reduced to mod N. If M is negative, the logic <b>132</b> causes adder/subtractor <b>134</b> to add N to M to produce the result through multiplexor <b>136</b>. If M is positive, then logic <b>132</b> causes subtraction of N, and returns the difference if it is positive or M if the difference is negative. This instruction may be used in conjunction with sum and difference instructions to render the modular addition/subtraction instruction unnecessary.</p>
+<p id="p-0057" num="0056">In <figref idref="DRAWINGS">FIG. 15D</figref>, the 3-in-1 arithmetic unit combines the modulo add, modulo subtract and modulo adjust into a single unit which is implemented within each processing element. Under control of logic <b>144</b> responding to an instruction (modular add, subtract or adjust) and most significant bit (MSB) sign inputs, adder/subtractor <b>138</b> serves the function of either of devices <b>120</b> and <b>128</b>, and adder/subtractor <b>140</b> serves the function of any of devices <b>122</b>, <b>126</b> and <b>134</b>. Multiplexor <b>142</b> corresponds to devices <b>124</b>, <b>130</b> and <b>136</b>. In the modulo adjust operation, M is applied to the A input and the B input is set at zero. This combined unit is most efficient in area at the cost of speed. This combined unit is also useful in implementing Montgomery's method for modular multiplication without trial division, &#x201c;Modular Multiplication Without Trial Division,&#x201d; by Peter L. Montgomery, Mathematics of Computation, Vol. 44, No. 170, April 1985, pages 519-521.</p>
+<p id="p-0058" num="0057">Although modular addition and subtraction can be performed on conventional processors using only 2-3 instructions, the inclusion of these instructions as special functions of the encryption chip instruction set offers a minor speedup for the specific case of encryption algorithms.</p>
+<p id="p-0059" num="0058">The modular multiplication instruction computes A*B mod N. The multiplier used for this instruction will be described in more detail below. The encryption chip provides a full modular multiply instruction, for reasons which will become clear below.</p>
+<p id="p-0060" num="0059">Table 1 gives a representative sample of the instruction set of the PEs to be used in subsequent examples. Other conventional RISC instructions may also be implemented.</p>
+<p id="p-0061" num="0060">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" rowsep="1">TABLE 1</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>Sample Instruction Set</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="56pt" align="left"/>
+<colspec colname="2" colwidth="147pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Instruction</entry>
+<entry>Description</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>load rn,addr</entry>
+<entry>Load register n with memory</entry>
+</row>
+<row>
+<entry/>
+<entry>store rn,addr</entry>
+<entry>Store register n in memory</entry>
+</row>
+<row>
+<entry/>
+<entry>xor r1, r2, r3</entry>
+<entry>r1 = r2 xor r3</entry>
+</row>
+<row>
+<entry/>
+<entry>add r1, r2, r3</entry>
+<entry>r1 = r2 + r3</entry>
+</row>
+<row>
+<entry/>
+<entry>rol r1, r2, r3</entry>
+<entry>r1 = r2 &#x3c;&#x3c;&#x3c; r3 (&#x3c;&#x3c;&#x3c; is the Java operator for a </entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>rotate instruction. For a 32-bit operand, </entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>bit 31 rotates to bit position 0)</entry>
+</row>
+<row>
+<entry/>
+<entry>xor r1, addr</entry>
+<entry>r1 = r1 xor memory[addr]r1 = r1</entry>
+</row>
+<row>
+<entry/>
+<entry>add r1, addr</entry>
+<entry>+ memory[addr]</entry>
+</row>
+<row>
+<entry/>
+<entry>rol r1, addr</entry>
+<entry>r1 = r1 &#x3c;&#x3c;&#x3c; memory[addr]</entry>
+</row>
+<row>
+<entry/>
+<entry>moda r1, r2</entry>
+<entry>Modulo adjust: r1 = r1 mod r2, where r1</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>is result of modular add or multiply</entry>
+</row>
+<row>
+<entry/>
+<entry>moda r1, addr</entry>
+<entry>r1 = r1 mod memory[addr</entry>
+</row>
+<row>
+<entry/>
+<entry>mul r1, r2, r3</entry>
+<entry>Multiply: r1 = r2 &#xd7; r3, performed in 32 bits.</entry>
+</row>
+<row>
+<entry/>
+<entry>mulm</entry>
+<entry>Modular multiply: r1 = r2 &#xd7; r3 mod r4.</entry>
+</row>
+<row>
+<entry/>
+<entry>r1, r2, r3, r4</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>Jump label</entry>
+<entry>Transfer control unconditionally to label</entry>
+</row>
+<row>
+<entry/>
+<entry>sync label</entry>
+<entry>Pipeline sync: wait until all PEs have arrived</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>at a &#x201c;sync&#x201d; instruction, then branch to label</entry>
+</row>
+<row>
+<entry/>
+<entry>Dbra rn, label</entry>
+<entry>rn = rn &#x2212; 1; if rn ! = 0 then jump to label</entry>
+</row>
+<row>
+<entry/>
+<entry>cbra r1 cond</entry>
+<entry>Compare and branch: compare r1 and r2,</entry>
+</row>
+<row>
+<entry/>
+<entry>r2, label</entry>
+<entry>and branch to label if condition is true.</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>&#x201c;Cond&#x201d; is one of ==, !=, &#x3c;, &#x3e;, &#x3c;= or &#x3e;=.</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+Layout Issues
+</p>
+<p id="p-0062" num="0061">A general layout of the encryption chip is illustrated in <figref idref="DRAWINGS">FIG. 4</figref>, assuming 16 processing elements and a 512-bit wide public key PK core unit. The PK core word width of 512 bits was chosen due to its layout convenience. A width of 1024 bits for example, would require more silicon area but would also double performance.</p>
+<p id="p-0063" num="0062">The individual elements can be compared to the elements of <figref idref="DRAWINGS">FIGS. 2 and 3</figref>. Sixteen of the processing elements are linearly arranged in a column in the large region of the layout to the lower left, one being shown in detail. The shared multiplier element <b>70</b> is shown associated with the illustrated processing element. As previously described, a 32&#xd7;32 multiplier segment <b>70</b> is associated with each processing element for performing 32-bit multiplications within the respective processing elements. Alternatively, the multiplier elements <b>70</b> can be concatenated to serve as a wide 512&#xd7;32 bit multiplier for the public-key ALU <b>50</b>. The public-key PK ALU <b>50</b> is located to the right of the secret-key SK elements, made up of the processing elements as described above. Next to the PK ALU is the PK register file <b>48</b>. Together, the PK ALU <b>50</b> and the PK register file <b>48</b> make up the PK processing core, identified in <figref idref="DRAWINGS">FIG. 2</figref> as <b>46</b>. To the right of the PK core is located the global memory (RAM) <b>44</b>. Along the top of the chip are the control CPU <b>52</b>, the communication logic <b>54</b> and the input and output processing blocks <b>40</b> and <b>42</b>. The global data bus <b>38</b> links the SK elements, the PK core <b>46</b>, the global RAM <b>44</b>, the communication logic <b>54</b> and the control CPU <b>52</b>.</p>
+<p id="p-0064" num="0063">The layout of a typical processing element with the local bus connections is shown in <figref idref="DRAWINGS">FIG. 5</figref>. All components of a processing element may communicate via a local processing element data bus <b>72</b>, which handles all the memory&#x2014;register transfers. Note that the next-neighbor shared PE memory <b>68</b> is laid out in line with the other elements of the illustrated processing element, whereas, the previous-neighbor shared PE memory <b>66</b> is laid out in line with the elements of the previous-neighbor processing element. For programming and testing purposes, all PE memories are accessible from the global bus <b>38</b>. A switch <b>74</b> normally disconnects the local bus <b>72</b> from the global bus <b>38</b> but may be selectively closed to enable data transfer between the local RAM <b>64</b> and the global RAM <b>44</b>. Another switch <b>76</b> allows the local bus <b>72</b> to be segmented into independent segments such that the control unit <b>60</b> can read instructions from the RAM <b>62</b> simultaneously with transfer of data on the bus <b>72</b>. As such, operations within the processing element may be pipelined with one instruction being processed in the control unit while a prior instruction is executed in the PE ALU <b>56</b>. During execution of encryption code, switches <b>74</b> and <b>76</b> are normally open, so that instruction fetches from the instruction RAM may proceed concurrently with data fetches from the data memories and register file.</p>
+<p id="p-0065" num="0064">Many multiprocessor architectures have been proposed. Most of them are designed for general-purpose multiprocessing, so communication between processing elements is usually done using a switching matrix that can be dynamically configured to switch data from any one PE to any other. These switch designs are extremely complex. Since they are not required for encryption, an embodiment of the present invention uses a simpler linear arrangement of the PEs with much less switching circuitry.</p>
+<p id="p-0066" num="0065">In addition, the use of shared memory as the interconnect technique rather than I/O ports as documented in the literature produces a much simpler and more powerful programming model. Consider two PEs, A and B, connected with a single 32-bit I/O port. In order for A to transfer multiple words of data to B, A must write each word to the I/O port and wait for B to read it. In contrast, if A and B are connected by a shared memory large enough to hold all words of the communication, then A may write out its data without waiting for B to read any. Furthermore, PE B has the freedom to read the words out in any order, or to pick and choose from the data as required by the job at hand. Finally, it should be noted that if some of the shared memory is not required for communication, then it may be used as an extension of the local memory to provide additional local work space.</p>
+<p id="h-0007" num="0000">Public Key Support</p>
+<p id="p-0067" num="0066">Efficient public-key encryption requires efficient modular exponentiation, provided by the public-key co-processor. This unit comprises the following items:
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0000">
+    <ul id="ul0002" list-style="none">
+        <li id="ul0002-0001" num="0067">PK register file <b>48</b>, consisting of 16 512-bit wide registers</li>
+        <li id="ul0002-0002" num="0068">PK 512&#xd7;32-bit multiplier <b>70</b> made up of concatenated SK multiplier elements (this unit can perform a 512&#xd7;512 multiply in only 32 clock cycles)</li>
+        <li id="ul0002-0003" num="0069">PK 512-bit adder ALU <b>50</b> which can perform addition in 2-16 cycles, typically no more than 2</li>
+        <li id="ul0002-0004" num="0070">global memory <b>44</b> organized for 512-bit parallel access from the PK coprocessor for loading and storing 512-bit words in a single clock cycle</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0068" num="0071">The PK core processor accelerates modular multiplication by performing it using 512-bit words. A 512&#xd7;512 multiply operation using the PK unit of the invention would be implemented by performing 16 512&#xd7;32 multiplies using the concatenated multiplier elements of the 16 processing elements described below. Assuming each multiply requires 2 clock cycles and 16 such multiplies are required, a 512&#xd7;512 multiply would require 32 clock cycles and a 2048&#xd7;2048 multiply would require only 512 clock cycles. The full modular exponentiation operation, requiring 4096 multiplies, would take a total of 2 million clock cycles. This represents an 80 fold improvement to the Pentium example discussed earlier. The performance improvement of PK algorithms is expected to be similar. This represents a significant performance gain compared to the prior art, and will enable more frequent changing of session keys, thereby increasing security.</p>
+<p id="h-0008" num="0000">512-bit Adder</p>
+<p id="p-0069" num="0072">Adders are not shared between the public key PK and secret key SK units. Rather, since addition and logic operations are common for both PK and SK, each unit has its own adder, so that operations may proceed concurrently.</p>
+<p id="p-0070" num="0073">Within the public-key PK ALU <b>50</b>, a 512-bit single cycle adder would be extremely complex and would add substantially to the critical path time of the ALU. Accordingly, the 512-bit adder in the ALU <b>50</b> is formed of 16 32-bit adders as illustrated in <figref idref="DRAWINGS">FIG. 6</figref>. In operation, the AND-gate <b>78</b> and multiplexer <b>80</b> initially apply two 32-bit operand segments to each of the 32-bit adders A0-A15. Note that the AND-gate <b>78</b> represents a 32-bit wide operation. Each 32-bit adder computes a 32-bit sum along with a carry output. The carry output of one adder is connected through a D flip-flop <b>79</b> to the carry input of the next. If a carry is generated in the first cycle, then it is clocked into the flip-flop where it is available as a carry input for the next clock cycle. Each sum is returned to one input of the same adder through a D flip-flop <b>81</b> and multiplexer <b>80</b>; the other input of the adder is held at zero using the AND gate <b>78</b> during successive clock cycles. The step of adding back the sum as a carry input for each adder is repeated as long as any carry results at the output of any of the 32-bit adders.</p>
+<p id="p-0071" num="0074">The operation of the 512-bit adder can be better understood with reference to the following example using four 4-bit binary words instead of the 16 32-bit words of the actual implementation.</p>
+<p id="p-0072" num="0075">
+<tables id="TABLE-US-00002" num="00002">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="6">
+<colspec colname="1" colwidth="35pt" align="left"/>
+<colspec colname="2" colwidth="21pt" align="char"/>
+<colspec colname="3" colwidth="35pt" align="char"/>
+<colspec colname="4" colwidth="21pt" align="char"/>
+<colspec colname="5" colwidth="35pt" align="char"/>
+<colspec colname="6" colwidth="70pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="6" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>Add:</entry>
+<entry>1101</entry>
+<entry>0110</entry>
+<entry>1001</entry>
+<entry>1011</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>0001</entry>
+<entry>0101</entry>
+<entry>1100</entry>
+<entry>1011</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>01110</entry>
+<entry>01011</entry>
+<entry>10101</entry>
+<entry>10110</entry>
+<entry>carry-outs are 0,0,1,1</entry>
+</row>
+<row>
+<entry/>
+<entry>1110</entry>
+<entry>1011</entry>
+<entry>0101</entry>
+<entry>0110</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>0</entry>
+<entry>1</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry>previous carries</entry>
+</row>
+<row>
+<entry/>
+<entry>1110</entry>
+<entry>1100</entry>
+<entry>0110</entry>
+<entry>0110</entry>
+<entry>final sum</entry>
+</row>
+<row>
+<entry namest="1" nameend="6" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0073" num="0076">Note that two additions were required to arrive at the final sum where no further carries resulted. This is a typical case. Since the adder is being used for encryption operations, it is safe to assume that the numbers being added are more or less randomly distributed. The probability of a carry-out after the first add is quite high. However, the probability that a carry, added back in as a least significant bit, will result in another carry from the most significant bit is quite low. For this reason, most add operations are expected to take only two clock cycles.</p>
+<p id="p-0074" num="0077">Returning to the original problem of constructing a 512-bit adder, if a standard carry lookahead or carry bypass adder design were used, the critical path through the adder would be quite long, since the carry must propagate through some optimized circuitry that operates on 512 bits. This adder would be quite large and slow. In contrast, in one embodiment of the present invention, a 512-bit adder is composed of 32-bit adders, whose design is well-known today and has been well optimized. The maximum clock speed of an individual 32-bit adder is expected to be more than twice that of a 512-bit carry lookahead design. Thus, the two-or-more cycle adder according to the invention, would on average operate faster than a large 512-bit adder, while consuming less chip area.</p>
+<p id="p-0075" num="0078">In a worst case, as illustrated below, it is possible that 16 cycles would be required to completely compute the final sum without carries, for 16 32-bit adders implementation. Using the 4-bit binary word example once again for illustrative purposes:</p>
+<p id="p-0076" num="0079">
+<tables id="TABLE-US-00003" num="00003">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="6">
+<colspec colname="1" colwidth="28pt" align="left"/>
+<colspec colname="2" colwidth="21pt" align="char"/>
+<colspec colname="3" colwidth="35pt" align="char"/>
+<colspec colname="4" colwidth="21pt" align="char"/>
+<colspec colname="5" colwidth="35pt" align="char"/>
+<colspec colname="6" colwidth="77pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="6" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>Add:</entry>
+<entry>1111</entry>
+<entry>1111</entry>
+<entry>1111</entry>
+<entry>1111</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>0000</entry>
+<entry>0000</entry>
+<entry>0000</entry>
+<entry>0001</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>01111</entry>
+<entry>01111</entry>
+<entry>01111</entry>
+<entry>10000</entry>
+<entry>1st carry-outs are 0,0,0,1</entry>
+</row>
+<row>
+<entry/>
+<entry>1111</entry>
+<entry>1111</entry>
+<entry>1111</entry>
+<entry>0000</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>0</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>01111</entry>
+<entry>01111</entry>
+<entry>10000</entry>
+<entry>00000</entry>
+<entry>2nd carry-outs are 0,0,1,0</entry>
+</row>
+<row>
+<entry/>
+<entry>1111</entry>
+<entry>1111</entry>
+<entry>0000</entry>
+<entry>0000</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>0</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>01111</entry>
+<entry>10000</entry>
+<entry>00000</entry>
+<entry>00000</entry>
+<entry>3rd carry-outs are 0,1,0,0</entry>
+</row>
+<row>
+<entry/>
+<entry>1111</entry>
+<entry>0000</entry>
+<entry>0000</entry>
+<entry>0000</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>1</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>10000</entry>
+<entry>0000</entry>
+<entry>0000</entry>
+<entry>0000</entry>
+</row>
+<row>
+<entry namest="1" nameend="6" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0077" num="0080">Four additions were required. In general, for n groups of numbers, at most, n additions will be required.</p>
+<p id="h-0009" num="0000">512&#xd7;32 Multiplier</p>
+<p id="p-0078" num="0081">Multipliers are large in area. Each secret-key processing element must contain its own multiplier in order to implement any secret key algorithm requiring multiplication, for example IDEA which will be discussed in more detail below. The area taken by each PE multiplier collectively is significant and as a result, use of this area is made in implementing the 512&#xd7;32-bit public key multiplier. To save area, the large 512&#xd7;32 multiplier is implemented by concatenating the 16 32&#xd7;32 multipliers in each secret key processing element. In other words, the secret and public key units can share the multiplier elements, as is illustrated in the layout of the chip in <figref idref="DRAWINGS">FIG. 4</figref>. Use of the multiplier elements must therefore be coordinated between the secret key processing elements and the PK core processor since the PK core processor cannot perform a multiply operation when any one of the secret key processing elements is itself independently performing a multiply operation.</p>
+<p id="p-0079" num="0082">To illustrate the concatenation of the multipliers, a simple design of a combination 4&#xd7;4/4&#xd7;N multiplier is illustrated below. Note that more advanced techniques of multiplier design such as Booth encoding and 4:2 compressors are available. The following example provides a simple presentation:</p>
+<p id="p-0080" num="0083">
+<tables id="TABLE-US-00004" num="00004">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="8">
+<colspec colname="1" colwidth="28pt" align="center"/>
+<colspec colname="2" colwidth="7pt" align="center"/>
+<colspec colname="3" colwidth="42pt" align="center"/>
+<colspec colname="4" colwidth="7pt" align="center"/>
+<colspec colname="5" colwidth="35pt" align="center"/>
+<colspec colname="6" colwidth="7pt" align="center"/>
+<colspec colname="7" colwidth="35pt" align="center"/>
+<colspec colname="8" colwidth="56pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="8" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>1 </entry>
+<entry>0 </entry>
+<entry>1 </entry>
+<entry>1</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>&#xd7; </entry>
+<entry>0 </entry>
+<entry>1</entry>
+<entry>0 </entry>
+<entry>0</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>0 </entry>
+<entry>0</entry>
+<entry>0 </entry>
+<entry>0</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>1</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>1</entry>
+<entry/>
+<entry>Partial Products</entry>
+</row>
+<row>
+<entry/>
+<entry>1</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>1</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>1</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>0</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+Single-digit multiplication can be easily implemented by using an AND gate. The result, when using two 4-bit operands, consists of 16 bits of partial product. These partial products must be added together efficiently. The partial products could, for example, be added using two 4-bit and one 6-bit full adder, but they would take a substantial time to perform the addition of the partial products, since the carry may have to propagate through several adders. The overall result of such an adder implementation would be too slow. A better approach would consist of an adder whose carry has to go through fewer stages.
+</p>
+<p id="p-0081" num="0084">The basic component of the preferred multiplier is a full adder, a circuit that takes three inputs and outputs the two-bit sum of their inputs. A full adder is illustrated using the symbol in <figref idref="DRAWINGS">FIG. 7</figref>. The use of squares instead of binary numbers is for generality and convenience. The three squares at the top show the three inputs of the full adder. The two squares at the bottom show the sum and carry outputs. The carry is to the lower left to indicate its place value is twice that of the sum. The first stage of the addition of a 4&#xd7;4 multiplier is illustrated in <figref idref="DRAWINGS">FIG. 8</figref>. Above the summing line, 16 squares, some shown in black, some as white boxes, represent the bits of a partial product which has to be added. The bits shown in black will be added in the first stage using four full adders <b>82</b>. The bits shown as white boxes are not to be added in the first stage, but simply transferred down as shown with the arrows in <figref idref="DRAWINGS">FIG. 8</figref>, in preparation for the next addition stage. The sum of the adders in the first stage is shown below the summing line. The second stage is shown in <figref idref="DRAWINGS">FIG. 9</figref>. Arrows once again indicate bits which are not operated on during this current stage and simply transferred down, while black boxes denote bits that are to be added in this current (second) stage. Once again, four full adders <b>84</b> are used to add the black box elements. At the output of the second stage produced by the full adders <b>84</b>, there are two numbers which now must be added with a regular 4-bit carrying adder <b>86</b>.</p>
+<p id="p-0082" num="0085">A comparison of the performance of various adder and multiplier architectures helps to illustrate the advantages of the multiplier according to the present invention. A naive implementation of a 4-bit adder consists of four full adders A0-A3 in series as shown in <figref idref="DRAWINGS">FIG. 12</figref>. In this design, the carry out C<sub>out </sub>of the rightmost adder could potentially affect every one of the adder stages to the left of it. The critical path in this design is therefore four adder stages. Since the typical full adder consists of two or more logic stages, the total gate delay of an four-bit adder could exceed 8 stages.</p>
+<p id="p-0083" num="0086">An improved four-bit adder is a carry lookahead design. A three-bit carry lookahead adder is shown in <figref idref="DRAWINGS">FIG. 13</figref>. A four-bit design is only a little more complex. A detailed discussion of operation of the AND gates <b>102</b>, OR gates <b>104</b> and Exclusive-OR gates <b>106</b> is not presented since this is a well known circuit. The advantage of a carry lookahead adder is that carries propagate to final sum bits in only four logic gates. More complex designs for wider numbers have more stages of logic, but they are still faster than a carry chain design.</p>
+<p id="p-0084" num="0087">In the full 4&#xd7;4 multiplier, the carry save design creates a critical path through two full adders, plus the final carry lookahead adder. An implementation using only full adders would have a longer critical path since a naive adder using chained carries is slower than the carry lookahead adder. Finally, if we used full carry lookahead adders in the first two stages of the partial product summation, then the resulting multiplier would again be slower, since carry lookahead adders are slower than individual full adders. Note that the multiplier design according to the present invention never propagates a carry from one adder to another at the same partial product level. In this manner, the critical path through the multiplier is sure to include no more than two full adders in the first two stages of partial product summation.</p>
+<p id="p-0085" num="0088"><figref idref="DRAWINGS">FIG. 10</figref> illustrates a much wider 4&#xd7;N multiplier. The large black boxes <b>82</b>, <b>84</b>,<b>86</b> denote the same full adder hardware that was used in <figref idref="DRAWINGS">FIG. 9</figref>. Note that full adders are necessary in this case, since in each circumstance, three inputs are being added together. In <figref idref="DRAWINGS">FIG. 9</figref>, simpler circuitry could have been used since not all circumstances required the addition of three inputs. However, in order to create a system which can handle a 4&#xd7;N case, full adders are preferably used for all stages with some additional circuitry to determine how to treat a case with fewer than three inputs. Dual mode adders are therefore created, some having a multiplexer feeding one of their inputs to select between the output of a previous stage or a single bit partial product.</p>
+<p id="p-0086" num="0089"><figref idref="DRAWINGS">FIG. 11</figref> illustrates the full adders A required to implement the boxed regions <b>82</b>,<b>84</b>,<b>86</b> of <figref idref="DRAWINGS">FIG. 10</figref> with respective carry outputs at the lower left. In the preferred implementation, each adder A is a full adder. Some of the adders have only two inputs in the 4&#xd7;4 case (i.e. the secret key case), while other adders have three inputs in the 4&#xd7;N case (i.e. the public key case). The two input adders must have their third input gated with an enable signal. Some adders also require a multiplexer to provide one of their inputs to select between the output of a previous stage or a single-bit partial product. The carry-lookahead adder <b>86</b> on the bottom requires a carry-out every four positions to generate the last bit of the product in the 4&#xd7;4 case.</p>
+<p id="p-0087" num="0090">In <figref idref="DRAWINGS">FIG. 11</figref>, the partial products of a 4&#xd7;4 multiplier have been labeled to correspond with the following partial product scenario:</p>
+<p id="p-0088" num="0091">
+<tables id="TABLE-US-00005" num="00005">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="8">
+<colspec colname="offset" colwidth="21pt" align="left"/>
+<colspec colname="1" colwidth="28pt" align="left"/>
+<colspec colname="2" colwidth="28pt" align="left"/>
+<colspec colname="3" colwidth="28pt" align="left"/>
+<colspec colname="4" colwidth="28pt" align="left"/>
+<colspec colname="5" colwidth="28pt" align="left"/>
+<colspec colname="6" colwidth="28pt" align="left"/>
+<colspec colname="7" colwidth="28pt" align="left"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="7" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>A</entry>
+<entry>B</entry>
+<entry>C</entry>
+<entry>D</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>E</entry>
+<entry>F</entry>
+<entry>G</entry>
+<entry>H</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>I </entry>
+<entry>J</entry>
+<entry>K</entry>
+<entry>L</entry>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>M</entry>
+<entry>N</entry>
+<entry>O</entry>
+<entry>P</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="7" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0089" num="0092">For a 4&#xd7;N multiplier, the neighboring partial products must also be considered. They are labeled in <figref idref="DRAWINGS">FIG. 11</figref> according to the following scenario:</p>
+<p id="p-0090" num="0093">
+<tables id="TABLE-US-00006" num="00006">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="8">
+<colspec colname="1" colwidth="14pt" align="center"/>
+<colspec colname="2" colwidth="42pt" align="center"/>
+<colspec colname="3" colwidth="14pt" align="center"/>
+<colspec colname="4" colwidth="42pt" align="center"/>
+<colspec colname="5" colwidth="14pt" align="center"/>
+<colspec colname="6" colwidth="42pt" align="center"/>
+<colspec colname="7" colwidth="14pt" align="center"/>
+<colspec colname="8" colwidth="35pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="8" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry>D&#x2032;</entry>
+<entry/>
+<entry>A</entry>
+<entry>B</entry>
+<entry>C</entry>
+<entry>D</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>E</entry>
+<entry>F</entry>
+<entry>G</entry>
+<entry>H</entry>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>I </entry>
+<entry>J </entry>
+<entry>K</entry>
+<entry>L</entry>
+<entry>I&#x2032;</entry>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>M</entry>
+<entry>N</entry>
+<entry>O</entry>
+<entry>P</entry>
+<entry>M&#x2032;</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0091" num="0094">Note that D&#x2032; is the neighboring (either to the left or to the right) equivalent of D. The 8-bit final sum is indicated as S7,S6,S5,S4,S3,S2,S1,S0 and the three lower-order bits of the left-hand neighbor's sum are S2&#x2032;,S1&#x2032;,S0&#x2032;. The 2:1 multiplexer <b>88</b> has a selection signal Sel. In general, if Sel is logic 1, then the left input is passed to the output of the multiplexer; otherwise, if Sel is logic 0, the right input is passed to the output of the multiplexer. The Sel signal is also used to gate the AND gates <b>90</b>. When Sel is logic 1, the other input to the AND gate is passed to the output; otherwise, with Sel at logic 0, the AND gates <b>90</b> are disabled and pass a logic 0 regardless of the value of the other input. Thus, in the implementation of <figref idref="DRAWINGS">FIG. 11</figref>, if Sel is logic 1, a segment of a 4&#xd7;N multiplier can be implemented, with product appearing on outputs S6-S3. If Sel is logic 0, a 4&#xd7;4 multiplier is implemented, with the 8-bit product appearing on outputs S7-S0. As such, the implementation of <figref idref="DRAWINGS">FIG. 11</figref> illustrates a secret key multiplier element which can also be utilized as an multiplier element, which when concatenated with other like multiplier elements, will be used to implement the much wider width public key multiplier.</p>
+<p id="h-0010" num="0000">Example Implementations</p>
+<p id="p-0092" num="0095">Example implementations of common encryption algorithms will be now described with reference to the encryption chip preferred embodiment discussed above. RC5 is perhaps one of the simplest encryption algorithms to implement. It basically utilizes three types of operations: XOR, additions and rotations, all supportable by any one of the processing elements discussed above, as shown in Table 1. Although RC5 has a variable length block, most commonly, each round of the RC5 algorithm operates on a 64-bit data block plus a key value stored in Si1 and Si2 which are constants within each processing element, depending only on the round and the key. To encrypt data, a 64-bit input block is split into two 32-bit words which are then stored in locations A and B in the previous-neighbor memory, the output block is to be written to A_next and B_next in the next-neighbor memory. An example of a round of the RC5 encryption algorithm follows:</p>
+<p id="p-0093" num="0096">
+<tables id="TABLE-US-00007" num="00007">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="84pt" align="left"/>
+<colspec colname="2" colwidth="133pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Loop:</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r1, A</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;xor r1, B</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;rol r1, B</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;add r1, Si1</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;store r1, A_next</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r2, B</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;xor r2, r2, r1</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;rol r2, r2, r1</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;add r2, Si2</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;store r2, B_next</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;sync Loop</entry>
+</row>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+Each round requires 11 clock cycles. If the encryption chip is designed using a logic process that can run up to 400 MHZ, then 36 million blocks can be encrypted per second, or 288 MB/s in ECB mode. If we assume 12 rounds (a typical case for RC5), then compared to a conventional CPU running at the same clock speed, the concurrent execution of multiple PEs according to an embodiment of the present invention results in a 12-fold performance improvement over the conventional software implementation.
+</p>
+<p id="p-0094" num="0097">IDEA is one of the most secure block algorithms available and has a substantially more complex structure. It operates on 64-bit plaintext blocks. A 128-bit key is used. The same algorithm is used both for encryption and decryption. The main philosophy of the algorithm is to mix operations from different algebraic groups, operations such as XOR, addition modulo 2<sup>16</sup>, and multiplication modulo 2<sup>16</sup>+1. These operations are used to operate on 16-bit blocks.</p>
+<p id="p-0095" num="0098">IDEA therefore makes use of both modular multiplication and addition, which are expensive operations in software. The multiplication is complicated by IDEA's treatment of zero: in a multiply, a zero is interpreted as (&#x2212;1) modulo 65537. Assuming that the value 65537 has been pre-loaded into register r8 of the processing element's register file, and that register r0 contains zero, the following multiplication macro is presented for illustrative purposes:</p>
+<p id="p-0096" num="0099">
+<tables id="TABLE-US-00008" num="00008">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="63pt" align="left"/>
+<colspec colname="2" colwidth="154pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>MACRO MMULT (A,B,RESULT)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="42pt" align="left"/>
+<colspec colname="2" colwidth="35pt" align="left"/>
+<colspec colname="3" colwidth="140pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry>cbra A == r0, L1</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>load RESULT, #1</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>sub RESULT, B, RESULT</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>jump L2</entry>
+</row>
+<row>
+<entry/>
+<entry>L1:</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>cbra B == r0, L3</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>load RESULT, #1</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>sub RESULT, A, RESULT</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>jump L2</entry>
+</row>
+<row>
+<entry/>
+<entry>L3:</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>mulm A, B, RESULT, r8</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>andi #0xFFFF, RESULT</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="42pt" align="left"/>
+<colspec colname="2" colwidth="21pt" align="left"/>
+<colspec colname="3" colwidth="154pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>L2:</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>ENDMACRO</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+Each round of IDEA consists of modular multiplications, modular addition and exclusive-OR. The 128-bit key is broken down into subkeys. Each processing element's subkey is a function solely of the key and the processing element, and therefore can be computed in advance and stored in the PE. The plaintext input to IDEA consists of four 16-bit sub-blocks X1 through X4, as indicated earlier. Each round uses six subkeys K1 through K6, and can be coded as follows:
+</p>
+<p id="p-0097" num="0100">
+<tables id="TABLE-US-00009" num="00009">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="84pt" align="left"/>
+<colspec colname="2" colwidth="133pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Loop:</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r1, X1</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r9, K1</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;MMULT r1, r9, r1</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r2, X2</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r9, K2</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;MMULT r2, r9, r2</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r3, X3</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r9, K3</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;MMULT r3, r9, r3</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r4, X4</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r9, K4</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;MMULT r4, r9, r4</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;xor r5, r1, r3</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;xor r6, r2, r4</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r9, K5</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;MMULT r5, r9, r5</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;add r6, r5</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;and r6, #0xFFFF</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r9, K6</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;MMULT r6, r9, r6</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;add r5, r6</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;and r5, #0xFFFF</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;xor r1, r6, r1</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;xor r3, r6, r3</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;xor r2, r5, r2</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;xor r4, r3, r4</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;store r1, X1_next</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;store r2, X3_next</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;store r3, X2_next</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;store r4, X4_next</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;sync Loop</entry>
+</row>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+Since IDEA has eight rounds, the encryption chip hardware implementation according to an embodiment of the present invention accelerates the execution by a factor of eight or more. Additional acceleration is provided by the modular multiply instruction which is not available on most microprocessors. The above code requires roughly 50 clock cycles to perform one round. At 400 MHZ, the encryption chip can encrypt with IDEA at a rate of 64 MB/s, about three times faster than a 25 MHZ hardware implementation developed at ETH University in Zurich.
+</p>
+<p id="p-0098" num="0101">Data Encryption Standard, or DES, was originally designed for hardware implementation, and is therefore the most difficult to implement in software. Nevertheless, it can easily be coded in the encryption chip, according to an embodiment of the present invention.</p>
+<p id="p-0099" num="0102">Like the previous two algorithms, DES is also a block cipher encrypting data in 64-bit blocks. A 64-bit block of plaintext is the input and a 64-bit ciphertext is the output. Once again, both encryption and decryption use the same algorithm, making DES a symmetrical algorithm. DES creates subkeys from a single key, in this case 56 bits. The subkeys are a function of the PE and the 56-bit key, so they can be computed in advance.</p>
+<p id="p-0100" num="0103">The basic concept behind DES, as illustrated in <figref idref="DRAWINGS">FIG. 14</figref>, consists of a substitution followed by a permutation on the text based on the key. The following operations make up the core of DES:
+<ul id="ul0003" list-style="none">
+    <li id="ul0003-0001" num="0000">
+    <ul id="ul0004" list-style="none">
+        <li id="ul0004-0001" num="0104">Expansion: The 64-bit block is divided into two 32-bit pieces <b>108</b>,<b>110</b>. One piece is unaffected by the encryption. (The pieces are operated on every other round.) The piece that is affected is divided into eight groups of four bits. Each group is expanded by copying the two bits adjacent to it.</li>
+        <li id="ul0004-0002" num="0105">Each expanded group is XOR'ed at <b>112</b> with a subkey.</li>
+        <li id="ul0004-0003" num="0106">The six-bit result of the XOR is used to index a 64-entry&#xd7;4-bit lookup table <b>114</b> called an S-box. Each of the eight groups uses its own S-box.</li>
+        <li id="ul0004-0004" num="0107">The output from the S-boxes is permuted at <b>116</b>: the bits are scrambled. Eight outputs yield 32 bits.</li>
+        <li id="ul0004-0005" num="0108">The 32-bit output is XOR'ed at <b>118</b> with the other 32-bit half of the block.
+<br/>
+The operations can be coded as follows: expansion is performed by copying the input word, and masking bits such that there are two words: one representing even-numbered S-box inputs and one representing odd-numbered S-box inputs. The two words are XOR'ed with key information. The result is used to index the S-box lookup table. The data in each S-box is pre-permuted, so that the output of the S-box is 32-bit data. The final value is the logical OR of all components. Sample code follows:
+</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0101" num="0109">
+<tables id="TABLE-US-00010" num="00010">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="84pt" align="left"/>
+<colspec colname="2" colwidth="133pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Loop:</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r1,A</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r2,B</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r3,r2</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;store r2, A_next</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;and r2,#0xF9F9F9F9</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;and r3,#0x9F9F9F9F</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;xor r2,K1</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;xor r3,K2</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r5,r0</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r4,r3</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;rol r4,#1</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;and r4,#0x3f</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;or r5, [r4 + S1]</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r4,r2</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;ror r4,#3</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;and r4,#0x3f</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;or r5, [r4 + S2]</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r4,r3</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;rol r4,#7</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;and r4,#0x3f</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;or r5, [r4 + S3]</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r4,r2</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;ror r4,#11</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;and r4,#0x3f</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;or r5, [r4 + S4]</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r4,r3</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;rol r4,#15</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;and r4,#0x3f</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;or r5, [r4 + S5]</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r4,r2</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;ror r4,#19</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;and r4,#0x3f</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;or r5, [r4 + S6]</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r4,r3</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;rol r4,#23</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;and r4,#0x3f</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;or r5, [r4 + S7]</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;load r4,r2</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;ror r4,#27</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;and r4,#0x3f</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;or r5, [r4 + S8]</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;xor r5,r1,r5</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;store r5,B_next</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;sync Loop</entry>
+</row>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+This sample code requires 44 clock cycles to perform one round. At 400 MHZ, a data rate of 72 MB/s can be achieved. This rate compares favorably with hardware implementations of DES available in the mid-1990's, that encrypt at rates ranging from 1-35 MB/s. VLSI Technology's VM007 can encrypt up to 200 MB/s.
+</p>
+<p id="p-0102" num="0110">In each of the above cases, performance has been shown to be much faster than a software implementation on a conventional CPU, but slower than a dedicated hardware implementation. The advantage of this invention over the hardware implementations is that the encryption chip is programmable, so that it may implement any algorithm, including those that have yet to be conceived.</p>
+<p id="p-0103" num="0111">Although no specific public key algorithm examples have been given, it should be noted that similar improvements over existing approaches will result by employing the techniques as discussed in the preferred embodiment of the present invention.</p>
+<heading id="h-0011" level="1">EQUIVALENTS</heading>
+<p id="p-0104" num="0112">While this invention has been particularly shown and described with references to preferred embodiments thereof, it will be understood by those skilled in the art that various changes in form and details may be made therein without departing from the spirit and scope of the invention as defined by the appended claims. Those skilled in the art will recognize or be able to ascertain using no more than routine experimentation, many equivalents to the specific embodiments of the invention described specifically herein. Such equivalents are intended to be encompassed in the scope of the claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. An electronic encryption device comprising, on a single chip, an array of processing elements, each processing element comprising:
+<claim-text>an instruction memory for storing a round of an encryption algorithm, the round comprising a sequence of instructions;</claim-text>
+<claim-text>a processor for implementing the round from the instruction memory;</claim-text>
+<claim-text>data storage for storing encryption data operands and encrypted data resulting from implementing the round;</claim-text>
+<claim-text>processing elements of the array each implementing one of the rounds and transferring results to successive processing elements such that the array of processing elements implements successive rounds of the encryption algorithm in a processing element pipeline.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. An electronic encryption device as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein the data storage has a portion thereof which is shared between adjacent processing elements of the linear array for transfer of data between adjacent processing elements of the linear array.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. An electronic encryption device as claimed in <claim-ref idref="CLM-00002">claim 2</claim-ref> wherein each processing element comprises a control unit and an ALU, the control unit, instruction memory and data storage being connected to a local processing element data bus, the local data bus being segmented into two independent portions by a switch; the control unit and instruction memory being connected to one of the segments, and the ALU and data storage being connected to the other of the segments.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. An electronic encryption device as claimed in <claim-ref idref="CLM-00002">claim 2</claim-ref> wherein each processing element comprises a control unit and an ALU, the control unit, instruction memory, local data memory and shared data storage connected to a local processing element bus, the local bus being segmented by a switch into a local instruction bus segment connecting the instruction memory and the control unit, and a local data bus segment connecting the ALU, local data memory and shared data storage, the switch permitting either independent simultaneous operation on the two local bus segments, or a communication between the two bus segments.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. An electronic encryption device as claimed in <claim-ref idref="CLM-00004">claim 4</claim-ref> wherein each processing element further comprises a multiplier for performing multiplication operations within the processing element.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. An electronic encryption device as claimed in <claim-ref idref="CLM-00002">claim 2</claim-ref> wherein, during the implementation of the encryption algorithm, each processing element in the pipeline writes resulting data into the data storage shared with the subsequent processing element for direct access by the subsequent processing element.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. An electronic encryption device as claimed in <claim-ref idref="CLM-00002">claim 2</claim-ref> wherein the shared data storage of the processing elements are comprised of dual port memories shared between adjacent processing elements of the linear array for transfer of data between adjacent processing elements of the linear array.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. An electronic encryption device as claimed in <claim-ref idref="CLM-00007">claim 7</claim-ref> wherein each processor comprises a control unit and an ALU, the control unit, ALU, instruction memory, local data memory and shared data storage being connected to a local processing element data bus, the local data bus being segmented into two independent segments by a switch; the control unit and instruction memory being connected to one of the segments and the ALU, local data memory and shared data storage being connected to the other of the segments.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. An electronic encryption device as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein each processing element further comprises a multiplier for performing multiplication operations within the processing element.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. An electronic encryption device as claimed in <claim-ref idref="CLM-00009">claim 9</claim-ref> wherein the multipliers of plural processing elements are adapted for concatenation as segments of a wider multiplier.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. An electronic encryption device as claimed in <claim-ref idref="CLM-00010">claim 10</claim-ref> wherein each multiplier comprises partial product adders having input selection circuitry for selecting a first set of inputs when operating as an individual multiplier, and a second set of inputs, including inputs from adjacent processing elements, when concatenated.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. An electronic encryption device as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein each processor comprises a control unit and an ALU, the control unit, ALU, instruction memory, local data memory and shared data storage being connected to a local processing element data bus, the local data bus being segmented into two independent segments by a switch; the control unit and instruction memory being connected to one of the segments and the ALU, local data memory and shared data storage being connected to the other of the segments.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. An electronic encryption device as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref> further comprising a global random access memory and a global bus through which data is transferred between the global random access memory and the processing element data storage.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. An electronic encryption device as claimed in <claim-ref idref="CLM-00013">claim 13</claim-ref> further comprising a central processor coupled to the global bus for processing data words which are wider than data words processed by the processing elements.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. An electronic encryption device as claimed in <claim-ref idref="CLM-00014">claim 14</claim-ref> wherein each processing element further comprises a multiplier for performing multiplication operations within the processing element.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. An electronic encryption device as claimed in <claim-ref idref="CLM-00015">claim 15</claim-ref> wherein the multipliers of plural processing elements are adapted for concatenation as segments of a wider multiplier.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. An electronic encryption device as claimed in <claim-ref idref="CLM-00016">claim 16</claim-ref> wherein each multiplier comprises partial product adders having input selection circuitry for selecting a first set of inputs when operating as an individual multiplier, and a second set of inputs, including inputs from adjacent processing elements, when concatenated.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. An electronic encryption device as claimed in <claim-ref idref="CLM-00013">claim 13</claim-ref> wherein the central processor comprises an adder comprising:
+<claim-text>plural adder segments, each of the plural adder segments having a carry output and a sum output, each of the plural adder segments processing a segment of each of two operands;</claim-text>
+<claim-text>carry selectors to select the carry outputs as carry inputs to successive adder segments and for successive clock cycles so long as any carry results in an adder cycle; and</claim-text>
+<claim-text>operand selectors to select each sum output as an operand input to the same adder segment for successive clock cycles so long as any carry results in an adder cycle.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. An electronic encryption device as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein each processor of each processing element performs a modulo adjust operation to compute M mod N.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. An electronic encryption device as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein each processor of each processing element performs a modulo add or subtract operation to compute A&#xb1;B mod N.</claim-text>
+</claim>
+<claim id="CLM-00021" num="00021">
+<claim-text>21. An electronic encryption device as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein each processor of each processing element performs a modulo multiply operation to compute A&#xd7;B mod N.</claim-text>
+</claim>
+<claim id="CLM-00022" num="00022">
+<claim-text>22. An electronic encryption device as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein the encryption device further comprises an adder comprising:
+<claim-text>plural adders segments, each of the plural adder segments having a carry output and a sum output, each of the plural adder segments processing a segment of each of two operands; and</claim-text>
+<claim-text>carry selectors to select the carry outputs as carry inputs to successive adder segments for successive clock cycles so long as any carry results in an adder cycle;</claim-text>
+<claim-text>operand selectors to select each sum output as an operand input to the same adder segment for successive clock cycles so long as any carry results in an adder cycle.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00023" num="00023">
+<claim-text>23. An electronic encryption device comprising, on a single chip, a linear array of processing elements, each processing element comprising:
+<claim-text>an instruction memory for storing code required to implement at least a round of an encryption algorithm;</claim-text>
+<claim-text>a processor for processing the round from the instruction memory;</claim-text>
+<claim-text>local data memory;</claim-text>
+<claim-text>shared data storage between two adjacent processing elements;</claim-text>
+<claim-text>processing elements of the linear array each implementing one of the rounds and transferring results to successive processing elements such that the linear array of processing elements processes successive rounds of the encryption algorithm in a processing element pipeline.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00024" num="00024">
+<claim-text>24. An electronic encryption device as claimed in <claim-ref idref="CLM-00023">claim 23</claim-ref> wherein, during the implementation of the encryption algorithm, each processing element in the pipeline writes resulting data into the data memory shared with the subsequent processing element for direct access by the subsequent processing element.</claim-text>
+</claim>
+<claim id="CLM-00025" num="00025">
+<claim-text>25. An encryption data processing system comprising a linear array of processing elements, each processing element comprising:
+<claim-text>an instruction memory;</claim-text>
+<claim-text>a processor for processing instructions from the instruction memory;</claim-text>
+<claim-text>data memory;</claim-text>
+<claim-text>data memories of the processing elements of the linear array comprising dual port memories shared between adjacent processing elements for transfer of data between adjacent processing elements of the linear array.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00026" num="00026">
+<claim-text>26. An electronic encryption system as claimed in <claim-ref idref="CLM-00025">claim 25</claim-ref> wherein each processor comprises a control unit and an ALU, the control unit, ALU, instruction memory, data memories of the processing elements being connected to a local processing element data bus, the local data bus being segmented into two independent portions by a switch; the control unit and instruction memory being connected to one of the segments and the ALU and local and shared data memories being connected to the other of the segments.</claim-text>
+</claim>
+<claim id="CLM-00027" num="00027">
+<claim-text>27. An electronic encryption system as claimed in <claim-ref idref="CLM-00025">claim 25</claim-ref> wherein each processing element further comprises a multiplier for performing multiplication operations within the processing element.</claim-text>
+</claim>
+<claim id="CLM-00028" num="00028">
+<claim-text>28. An electronic encryption system as claimed in <claim-ref idref="CLM-00027">claim 27</claim-ref> wherein the multipliers of plural processing elements are adapted for concatenation as segments of a wider multiplier.</claim-text>
+</claim>
+<claim id="CLM-00029" num="00029">
+<claim-text>29. An electronic encryption system as claimed in <claim-ref idref="CLM-00028">claim 28</claim-ref> wherein each multiplier comprises partial product adders having input selection circuitry for selecting a first set of inputs when operating as an individual multiplier, and a second set of inputs, including inputs from adjacent processing elements, when concatenated.</claim-text>
+</claim>
+<claim id="CLM-00030" num="00030">
+<claim-text>30. An electronic encryption system as claimed in <claim-ref idref="CLM-00025">claim 25</claim-ref> further comprising a global random access memory and a global bus through which data is transferred between the global random access memory and the processing element data memories.</claim-text>
+</claim>
+<claim id="CLM-00031" num="00031">
+<claim-text>31. An electronic encryption system as claimed in <claim-ref idref="CLM-00030">claim 30</claim-ref> further comprising a central processor coupled to the global bus for processing data words which are wider than data words processed by the processing elements.</claim-text>
+</claim>
+<claim id="CLM-00032" num="00032">
+<claim-text>32. An electronic encryption system as claimed in <claim-ref idref="CLM-00031">claim 31</claim-ref> further comprising a multiplier for performing multiplication operations within the processing element.</claim-text>
+</claim>
+<claim id="CLM-00033" num="00033">
+<claim-text>33. An electronic encryption system as claimed in <claim-ref idref="CLM-00032">claim 32</claim-ref> wherein the multipliers of plural processing elements are adapted for concatenation as segments of a wider multiplier.</claim-text>
+</claim>
+<claim id="CLM-00034" num="00034">
+<claim-text>34. An electronic encryption system as claimed in <claim-ref idref="CLM-00033">claim 33</claim-ref> wherein each multiplier comprises partial product adders having input selection circuitry for selecting a first set of inputs when operating as an individual multiplier, and a second set of inputs, including inputs from adjacent processing elements, when concatenated.</claim-text>
+</claim>
+<claim id="CLM-00035" num="00035">
+<claim-text>35. An electronic encryption system as claimed in <claim-ref idref="CLM-00031">claim 31</claim-ref> wherein the central processor comprises an adder comprising:
+<claim-text>plural adder segments, each of the plural adder segments having a carry output and a sum output, each of the plural adder segments processing a segment of each of two operands;</claim-text>
+<claim-text>carry selectors to select the carry outputs as carry inputs to successive adder segments for successive clock cycles so long as any carry results in an adder cycle; and</claim-text>
+<claim-text>operand selectors to select each sum output as an operand input to the same adder segment for successive clock cycles so long as any carry results in an adder cycle.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00036" num="00036">
+<claim-text>36. An electronic encryption system as claimed in <claim-ref idref="CLM-00025">claim 25</claim-ref> wherein each processor of each processing element performs a modulo adjust operation to compute M mod N.</claim-text>
+</claim>
+<claim id="CLM-00037" num="00037">
+<claim-text>37. An electronic encryption system as claimed in <claim-ref idref="CLM-00025">claim 25</claim-ref> wherein each processor of each processing element performs a modulo add or subtract operation to compute A&#xb1;B mod N.</claim-text>
+</claim>
+<claim id="CLM-00038" num="00038">
+<claim-text>38. An electronic encryption system as claimed in <claim-ref idref="CLM-00025">claim 25</claim-ref> wherein each processor of each processing element performs a modulo multiply operation to compute A&#xd7;B mod N.</claim-text>
+</claim>
+<claim id="CLM-00039" num="00039">
+<claim-text>39. An electronic encryption system as claimed in <claim-ref idref="CLM-00025">claim 25</claim-ref> wherein the encryption device further comprises an adder comprising:
+<claim-text>plural adder segments, each of the plural adder segments having a carry output and a sum output, each of the plural adder segments processing a segment of each of two operands;</claim-text>
+<claim-text>carry selectors to select the carry outputs as carry inputs to successive adder segments for successive clock cycles so long as any carry results in an adder cycle; and</claim-text>
+<claim-text>operand selectors to select each sum output as an operand input to the same adder segment for successive clock cycles so long as any carry results in an adder cycle.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00040" num="00040">
+<claim-text>40. An electronic encryption device as claimed in <claim-ref idref="CLM-00025">claim 25</claim-ref> wherein, during the implementation of the encryption algorithm, each processing element in the pipeline writes resulting data into the data memory shared with the subsequent processing element for direct access by the subsequent processing element.</claim-text>
+</claim>
+<claim id="CLM-00041" num="00041">
+<claim-text>41. A multiplier circuit comprising:
+<claim-text>a plurality of multiplier segments, each receiving operand words of a first length; and</claim-text>
+<claim-text>input selectors which select a first set of inputs when the multiplier segments operate as individual multipliers and a second set of inputs to concatenate the multiplier segments as a wider multiplier operating on operands of a second word length<?insert-start id="REI-00001"  date="20140107" ?>,</claim-text>
+<claim-text>wherein the first word length is 32 bits and the second word length is 512 bits<?insert-end id="REI-00001" ?>.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00042" num="00042">
+<claim-text>42. A multiplier as claimed in <claim-ref idref="CLM-00041">claim 41</claim-ref> wherein each multiplier segment comprises partial product adders.</claim-text>
+</claim>
+<claim id="CLM-00043" num="00043">
+<claim-text><?delete-start id="REI-00002"  date="20140107" ?>43. An adder comprising:
+<claim-text>plural adder segments, each having a carry output and a sum output, each of the adder segments processing a segment of each of two operands;</claim-text>
+<claim-text>carry selectors to select the carry outputs as carry input to successive adder segments for successive clock cycles so long as any carry results in an adder cycle; and</claim-text>
+<claim-text>operand selectors to select each carry output as an operand input to the same adder segment for successive clock cycles so long as any carry results in an adder cycle.<?delete-end id="REI-00002" ?></claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00044" num="00044">
+<claim-text>44. An electronic encryption device comprising, on a single chip:
+<claim-text>a linear array of processing elements, each comprising an instruction store, data storage, and a processor which processes a sequence of instructions from the instruction store to operate on data words of a first length, the data storage of the processing elements including dual port memories shared between adjacent processing elements for transfer of data between adjacent processing elements of the array, the processing elements of the linear array having stored in their instruction stores respective rounds of an encryption algorithm and transferring results of the rounds to successive processing elements such that the linear array of processing elements processes successive rounds of the encryption algorithm in a processing element pipeline;</claim-text>
+<claim-text>a global random access memory;</claim-text>
+<claim-text>a global bus to which data is transferred between the global random access memory and the processing element data memories; and</claim-text>
+<claim-text>a public key encryption processor operating on data words of a second length at least an order of magnitude longer than the first length, the public key processor accessing global random access memory in word lengths of the second length.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00045" num="00045">
+<claim-text>45. An electronic encryption device comprising, on a single chip, an array of processing elements, each processing element comprising:
+<claim-text>instruction memory means for storing a round of an encryption algorithm;</claim-text>
+<claim-text>processor means for implementing the round from the instruction memory; and</claim-text>
+<claim-text>data storage means for storing encryption data operands and encrypted data resulting from implementing the round.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00046" num="00046">
+<claim-text>46. An electronic encryption device as claimed in <claim-ref idref="CLM-00045">claim 45</claim-ref> wherein the data storage means has a portion thereof which is shared between adjacent processing elements of the linear array for transfer of data between adjacent processing elements of the linear array.</claim-text>
+</claim>
+<claim id="CLM-00047" num="00047">
+<claim-text>47. An electronic encryption device as claimed in <claim-ref idref="CLM-00046">claim 46</claim-ref> further comprising global random access memory means and a global bus means through which data is transferred between the global random access memory means and the processing element data storage means.</claim-text>
+</claim>
+<claim id="CLM-00048" num="00048">
+<claim-text>48. An electronic encryption device as claimed in <claim-ref idref="CLM-00047">claim 47</claim-ref> further comprising central processing means coupled to the global bus means for processing data words which are wider than the data words processed by the processing elements.</claim-text>
+</claim>
+<claim id="CLM-00049" num="00049">
+<claim-text>49. A method of encryption comprising:
+<claim-text>in an electronic circuit on a single chip, receiving data to be encrypted;</claim-text>
+<claim-text>applying the data to a pipeline of data processing elements on the chip, each processing element processing an encryption round <?insert-start id="REI-00003"  date="20140107" ?>from a block cipher algorithm <?insert-end id="REI-00003" ?>and transferring results to successive processing elements such that the processing elements implement successive rounds of the encryption algorithm in a processing element pipeline.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00050" num="00050">
+<claim-text>50. A method as claimed in <claim-ref idref="CLM-00049">claim 49</claim-ref> wherein results are transferred to successive processing elements through shared memory.</claim-text>
+</claim>
+<claim id="CLM-00051" num="00051">
+<claim-text>51. A method as claimed in <claim-ref idref="CLM-00050">claim 50</claim-ref> further comprising processing encryption algorithms on the chip in a central processor coupled to the processing elements through a global bus, the central processor processing data words which are wider than data words processed by the processing elements.</claim-text>
+</claim>
+<claim id="CLM-00052" num="00052">
+<claim-text>52. A method as claimed in <claim-ref idref="CLM-00049">claim 49</claim-ref> further comprising processing encryption algorithms on the chip in a central processor coupled to the processing elements through a global bus, the central processor processing data words which are wider than data words processed by the processing elements.</claim-text>
+</claim>
+<claim id="CLM-00053" num="00053">
+<claim-text><?insert-start id="REI-00004"  date="20140107" ?>53. The multiplier as claimed in claim 41 wherein providing the multiplier segments operate as individual multipliers each individual multiplier is configured to operate as a first length by first length multiplier.<?insert-end id="REI-00004" ?></claim-text>
+</claim>
+<claim id="CLM-00054" num="00054">
+<claim-text><?insert-start id="REI-00005"  date="20140107" ?>54. The multiplier as claimed in claim 41 wherein the wider multiplier is configured to operate as a first length by first length times a number of the plurality of multiplier segments multiplier.<?insert-end id="REI-00005" ?></claim-text>
+</claim>
+<claim id="CLM-00055" num="00055">
+<claim-text><?insert-start id="REI-00006"  date="20140107" ?>55. The multiplier as claimed in claim 41 wherein the second word length is equal to the first length times a number of the plurality of multiplier segments.<?insert-end id="REI-00006" ?></claim-text>
+</claim>
+<claim id="CLM-00056" num="00056">
+<claim-text><?insert-start id="REI-00007"  date="20140107" ?>56. The multiplier as claimed in claim 55 wherein the wider multiplier provides an output having a length equal to the first length plus the second length.<?insert-end id="REI-00007" ?></claim-text>
+</claim>
+<claim id="CLM-00057" num="00057">
+<claim-text><?insert-start id="REI-00008"  date="20140107" ?>57. The multiplier as claimed in claim 41 wherein each of the multiplier segments is configured to receive a first operand word of the first length and a second operand word of the first length.<?insert-end id="REI-00008" ?></claim-text>
+</claim>
+<claim id="CLM-00058" num="00058">
+<claim-text><?insert-start id="REI-00009"  date="20140107" ?>58. The multiplier as claimed in claim 57 wherein each of the multiplier segments comprises:
+<claim-text>a plurality of AND gates,</claim-text>
+<claim-text>each AND gate configured to:
+<claim-text>receive a first bit from the first operand word,</claim-text>
+<claim-text>receive a second bit from the second operand word, and</claim-text>
+<claim-text>provide one of a set of partial products.<?insert-end id="REI-00009" ?></claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00059" num="00059">
+<claim-text><?insert-start id="REI-00010"  date="20140107" ?>59. The multiplier as claimed in claim 58 wherein each of the multiplier segments comprises:
+<claim-text>a plurality of partial product adders, and</claim-text>
+<claim-text>input selection circuitry configured to select the set of partial products as inputs to the partial product adders when operating as an individual multiplier, or a second set of inputs including partial products from an adjacent multiplier segment when concatenated.<?insert-end id="REI-00010" ?></claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00060" num="00060">
+<claim-text><?insert-start id="REI-00011"  date="20140107" ?>60. The multiplier as claimed in claim 59 wherein each of the plurality of partial product adders comprises three stages, wherein the first and second stages comprise full adders and the third stage comprises a carry look-ahead adder.<?insert-end id="REI-00011" ?></claim-text>
+</claim>
+<claim id="CLM-00061" num="00061">
+<claim-text><?insert-start id="REI-00012"  date="20140107" ?>61. The multiplier as claimed in claim 41 wherein each of the plurality of multiplier segments is configurable to operate as a 4 by 4 multiplier.<?insert-end id="REI-00012" ?></claim-text>
+</claim>
+<claim id="CLM-00062" num="00062">
+<claim-text><?insert-start id="REI-00013"  date="20140107" ?>62. A multiplier circuit comprising:
+<claim-text>a plurality of multiplier segments, each receiving operand words of a first length; and</claim-text>
+<claim-text>input selectors which select a first set of inputs when the multiplier segments operate as individual multipliers and a second set of inputs to concatenate the multiplier segments as a wider multiplier operating on operands of a second word length,</claim-text>
+<claim-text>wherein at least one multiplier segment includes a gate configured to receive a select signal and a partial product signal from a neighboring multiplier segment, the select signal enabling the gate when the multiplier segments are concatenated to pass the partial product signal to a summation logic circuit, the select signal disabling the gate when the multiplier segments operate as individual multipliers to disable the passing of the partial product signal.<?insert-end id="REI-00013" ?></claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00063" num="00063">
+<claim-text><?insert-start id="REI-00014"  date="20140107" ?>63. A multiplier as claimed in claim 62 wherein the gate is an AND gate, the select signal is logic 1 when the multiplier segments are concatenated, and the select signal is logic 0 when the multiplier segments operate as individual multipliers.<?insert-end id="REI-00014" ?></claim-text>
+</claim>
+<claim id="CLM-00064" num="00064">
+<claim-text><?insert-start id="REI-00015"  date="20140107" ?>64. A multiplier circuit comprising:
+<claim-text>a plurality of multiplier segments, each receiving operand words of a first length; and</claim-text>
+<claim-text>input selectors which select a first set of inputs when the multiplier segments operate as individual multipliers and a second set of inputs to concatenate the multiplier segments as a wider multiplier operating on operands of a second word length,</claim-text>
+<claim-text>wherein at least one multiplier segment includes a plurality of gates each receiving a select signal and a respective one of a plurality of partial product signals from a neighboring multiplier segment, the select signal enabling the gates when the multiplier segments are concatenated to pass the partial product signals to a summation logic circuit, the select signal disabling the gates when the multiplier segments operate as individual multipliers to disable the passing of the partial product signals.<?insert-end id="REI-00015" ?></claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00065" num="00065">
+<claim-text><?insert-start id="REI-00016"  date="20140107" ?>65. A multiplier as claimed in claim 64 wherein the plurality of gates are AND gates, the select signal is logic 1 when the multiplier segments are concatenated, and the select signal is logic 0 when the multiplier segments operate as individual multipliers.<?insert-end id="REI-00016" ?></claim-text>
+</claim>
+<claim id="CLM-00066" num="00066">
+<claim-text><?insert-start id="REI-00017"  date="20140107" ?>66. A multiplier circuit comprising:
+<claim-text>a plurality of multiplier segments, each receiving operand words of a first length; and</claim-text>
+<claim-text>input selectors which select a first set of inputs when the multiplier segments operate as individual multipliers and a second set of inputs to concatenate the multiplier segments as a wider multiplier operating on operands of a second word length,</claim-text>
+<claim-text>wherein at least one multiplier segment includes a multiplexer receiving a select signal, a sum signal from a neighboring multiplier segment, and a partial product signal, the select signal enabling the multiplexer when the multiplier segments are concatenated to pass the sum signal to a summation logic circuit, the select signal enabling the multiplexer when the multiplier segments operate as individual multipliers to pass the partial product signal to the summation logic circuit.<?insert-end id="REI-00017" ?></claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00067" num="00067">
+<claim-text><?insert-start id="REI-00018"  date="20140107" ?>67. A multiplier circuit comprising:
+<claim-text>a plurality of multiplier segments, each receiving operand words of a first length; and</claim-text>
+<claim-text>input selectors which select a first set of inputs when the multiplier segments operate as individual multipliers and a second set of inputs to concatenate the multiplier segments as a wider multiplier operating on operands of a second word length,</claim-text>
+<claim-text>wherein at least one multiplier segment includes a plurality of multiplexers each receiving a select signal, a respective one of a plurality of sum signals from a neighboring multiplier segment, and a respective one of a plurality of partial product signals, the select signal enabling the multiplexers when the multiplier segments are concatenated to pass the sum signals to a summation logic circuit, the select signal enabling the multiplexers when the multiplier segments operate as individual multipliers to pass the partial product signals to the summation logic circuit.<?insert-end id="REI-00018" ?></claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00068" num="00068">
+<claim-text><?insert-start id="REI-00019"  date="20140107" ?>68. An electronic encryption device as claimed in claim 45, in which said processor means comprises a memory which is shared between adjacent processing elements of the array of processing elements for transfer of data between adjacent processing elements of the array.<?insert-end id="REI-00019" ?></claim-text>
+</claim>
+</claims>
+</us-patent-grant>

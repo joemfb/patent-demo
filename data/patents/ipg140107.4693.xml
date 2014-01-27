@@ -1,0 +1,1600 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08625782-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08625782</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12703150</doc-number>
+<date>20100209</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>908</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>04</class>
+<subclass>L</subclass>
+<main-group>9</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>380 28</main-classification>
+<further-classification>708422</further-classification>
+</classification-national>
+<invention-title id="d2e53">Method for privacy-preserving computation of edit distance of symbol sequences</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5757959</doc-number>
+<kind>A</kind>
+<name>Lopresti</name>
+<date>19980500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>382186</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>7107524</doc-number>
+<kind>B2</kind>
+<name>Lin et al.</name>
+<date>20060900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>715234</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>7856100</doc-number>
+<kind>B2</kind>
+<name>Wang et al.</name>
+<date>20101200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>380 30</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>7860244</doc-number>
+<kind>B2</kind>
+<name>Kerschbaum</name>
+<date>20101200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>380 30</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>8130947</doc-number>
+<kind>B2</kind>
+<name>Kerschbaum et al.</name>
+<date>20120300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>380 28</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>8271796</doc-number>
+<kind>B2</kind>
+<name>Diamond</name>
+<date>20120900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>713180</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>2006/0245587</doc-number>
+<kind>A1</kind>
+<name>Pinkas et al.</name>
+<date>20061100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>380 28</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>2009/0313463</doc-number>
+<kind>A1</kind>
+<name>Pang et al.</name>
+<date>20091200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>713150</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>2011/0154016</doc-number>
+<kind>A1</kind>
+<name>Niccolini et al.</name>
+<date>20110600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>713150</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00010">
+<othercit>Atallah et al, &#x201c;Secure and Private Sequence Comparisons&#x201d; [Online], Oct. 30, 2003 [Retrieved on: Oct. 18, 2010], WPES '03: Proceedings of the 2003 ACM workshop on privacy in the electronic society, pp. 39-44, ACM Press [Retrieved from: http://www.cis.syr.edu/&#x2dc;wedu/Research/paper/wpes03.pdf ].</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00011">
+<othercit>Ravikumar et al, &#x201c;A Secure Protocol for computing String Distance Metrics&#x201d; [Online], Workshop on Privacy, Security and Data Mining 2004 (at ICDM 2004) [Retrieved on: Oct. 19, 2012], ACM [www.acm.org], [Retreived from: http://www.cs.cmu.edu/&#x2dc;wcohen/postscript/psdm-2004.pdf].</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00012">
+<othercit>Scannapieco et al, &#x201c;Privacy Preserving Schema and Data Matching&#x201d; [Online], Jun. 12-14, 2007 [ Retrieved on: Oct. 19, 2012], ACM [www.acm.org], SIGMOD 2007 [ Retrieved from: http://delivery.acm.org/10.1145/1250000/1247553/p653-scannapieco.pdf ].</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00013">
+<othercit>Atallah et al, &#x201c;Secure outsourcing of sequence comparisons&#x201d; [Online], Mar. 8, 2005 [Retrieved on: Oct. 18, 2012], Springer-Verlag [www.springerlink.com], [Retrieved from: http://www.springerlink.com/content/p2w67106182m1k1n/fulltext.pdf ].</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00014">
+<othercit>Melchor et al, &#x201c;A Collusion-Resistant Distributed Scalar Product Protocol With Application to Privacy-Preserving Computation of Trust&#x201d; [Online], The Eighth IEEE International Symposium on Network Computing and Applications, Jul. 9-11, 2009 [Retrieved on: Aug. 22, 2013], www.ieee.org, pp. 140-147 [Retrieved from: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&#x26;arnumber=5190365 ].</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>11</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>380267</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>380 42</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>380282</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>380285</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>380 28</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>380 30</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>708100</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>708200-201</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>708207-209</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>708230-232</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>708236</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>708250</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>708422-424</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>7</number-of-drawing-sheets>
+<number-of-figures>7</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110194691</doc-number>
+<kind>A1</kind>
+<date>20110811</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Rane</last-name>
+<first-name>Shantanu</first-name>
+<address>
+<city>Cambridge</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Sun</last-name>
+<first-name>Wei</first-name>
+<address>
+<city>Boston</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Rane</last-name>
+<first-name>Shantanu</first-name>
+<address>
+<city>Cambridge</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Sun</last-name>
+<first-name>Wei</first-name>
+<address>
+<city>Boston</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<last-name>Brinkman</last-name>
+<first-name>Dirk</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="02" rep-type="attorney">
+<addressbook>
+<last-name>Vinokur</last-name>
+<first-name>Gene</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Mitsubishi Electric Research Laboratories, Inc.</orgname>
+<role>02</role>
+<address>
+<city>Cambridge</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Blair</last-name>
+<first-name>April Y</first-name>
+<department>2492</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Shepperd</last-name>
+<first-name>Eric W</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Embodiments of the invention discloses a system and a method for determining an encrypted edit distance as an encryption of a minimum cost of transformation of a first sequence into a second sequence based on an insertion cost, a deletion cost, and a substitution cost. The method determines recursively a current element of the matrix as an encryption of a minimum of a first element, a second element, and a third element to produce the dynamic programming solution, wherein the first element represents the insertion cost, the second element represents the deletion cost, and the third element represents the substitution costs, and wherein the current element, the first element, the second element, and the third element are homomorphically encrypted with a public key; and selects the dynamic programming solution as the encrypted edit distance, wherein steps of the method are performed by a first processor and a second processor.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="206.67mm" wi="248.07mm" file="US08625782-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="207.60mm" wi="185.84mm" orientation="landscape" file="US08625782-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="155.70mm" wi="168.57mm" orientation="landscape" file="US08625782-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="231.31mm" wi="171.70mm" orientation="landscape" file="US08625782-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="247.40mm" wi="205.74mm" orientation="landscape" file="US08625782-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="233.93mm" wi="183.30mm" orientation="landscape" file="US08625782-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="224.96mm" wi="195.41mm" orientation="landscape" file="US08625782-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="237.74mm" wi="194.82mm" orientation="landscape" file="US08625782-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">FIELD OF THE INVENTION</heading>
+<p id="p-0002" num="0001">This invention relates generally to determining an edit distance between two symbol sequences, and more particularly to determining securely an encrypted edit distance between two symbol sequences.</p>
+<heading id="h-0002" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0003" num="0002">An edit distance, also called Levenshtein distance, between two symbol sequences is typically defined as the minimum number of edit operations required to transform a first sequence to a second sequence, with the allowable edit operations being insertion, deletion, or substitution of a single symbol at a time. The symbols can be bits, characters, numbers, glyphs, deoxyribonucleic acid (DNA) nucleotides, optical character recognition (OCR) characters, or fingerprint minutia maps, to name but a few examples.</p>
+<p id="p-0004" num="0003">The edit distance is an important measure in a number of bioinformatics and data-mining applications. Further, the length of the longest subsequence that is common to two input sequences is related to the edit distance. For example, the longest common subsequence in two input character strings &#x201c;JANUARY&#x201d; and &#x201c;FEBRUARY&#x201d; is &#x201c;UARY&#x201d;.</p>
+<p id="p-0005" num="0004">The edit distance and the length of the longest common subsequence can both be determined via dynamic programming, e.g., using Wagner-Fischer or Needleman-Wunsch methods. If the lengths of the symbol sequences are n and m respectively, the dynamic programming solution involves determining the entries of a matrix of size n&#xd7;m.</p>
+<p id="p-0006" num="0005"><figref idref="DRAWINGS">FIG. 1</figref> shows pseudocode for a function EditDistance that takes two input character strings, s of length m, and t of length n, and computes the edit distance between those two strings.</p>
+<p id="p-0007" num="0006"><figref idref="DRAWINGS">FIG. 2</figref> shows a matrix <b>210</b> used by the dynamic programming solution for two character strings &#x201c;FAST&#x201d; <b>230</b> and &#x201c;FIRST&#x201d; <b>240</b>. Elements of the matrix are determined recursively based on values of previously determined elements. At the end, the bottom-right element of the matrix provides the edit distance <b>220</b>.</p>
+<p id="p-0008" num="0007">However, the dynamic programming solution does not provide privacy. If two processors use the dynamic programming solution to find the edit distance between the sequences, each processor knows all the symbols from each string. In some applications, it is necessary to determine the edit distance without disclosing the symbols from the sequences.</p>
+<p id="p-0009" num="0008">In an example of such applications that require privacy, a first processor that stores information about a patient whose DNA sequence is to be examined for susceptibility to genetic disorders, using for example the Smith-Waterman algorithm. A second processor has a database of sequences corresponding to these disorders. The patient information is not to be revealed to the second processor in order to preserve the privacy of the patient. Similarly, the second processor does not want to reveal the database to protect the business, since isolating the sequences in the database may have required significant research, time and investment. Nevertheless, the second processor and the first processor need to determine the edit distance between DNA sequence of the patient and DNA sequences stored in the database to determine if the DNA sequence of the patient approximately matches any of the diagnostic DNA sequences in the database of the second processor. DNA profiling in forensic sciences has similar privacy requirements.</p>
+<p id="p-0010" num="0009">Determining the edit distance under privacy constraints can use secure multiparty computation (SMC). In SMC, two parties can securely compute any function of their inputs as long as that function can be expressed as an algebraic circuit. However, solutions of two-party computation problem, in which outputs and inputs are related by an algebraic circuit, are complicated to implement, even for a very small number of input sequences. Specifically, those methods rely on oblivious transfer protocols which have high computational complexity, and a high communication overhead. For a practical solution to problems, such as the DNA matching problems described above, it is necessary to devise secure protocols, which have manageable computational complexity and require a relatively small number of encrypted transmissions amongst the two parties.</p>
+<p id="p-0011" num="0010">For example, one method determines the edit distance securely using a third semi-honest but trusted processor. However, the third processor is not always available. Furthermore, the third processor can collude with one of the processors and thereby discover the sequences processed by the other processor.</p>
+<p id="p-0012" num="0011">Another method discloses a two-party symmetric protocol, i.e., two processors incur exactly equal protocol overhead in terms of computational complexity and communication. At the end of the protocol, the two processors each possess additive shares of the m&#xd7;n matrix described above, from which the edit distance is obtained. However, that method requires a large number of encrypted transmissions between the processors. Moreover, the method works efficiently only for a very limited variety of substitution costs.</p>
+<p id="p-0013" num="0012">Accordingly, there is a need to find a computationally efficient method for determining securely an encrypted edit distance between two symbol sequences.</p>
+<heading id="h-0003" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0014" num="0013">The embodiments of the invention disclose a minimum-finding method configured to determine an encryption of a minimum of numbers in homomorphically encrypted form.</p>
+<p id="p-0015" num="0014">One embodiment of the invention discloses a method for determining an encrypted edit distance as an encryption of a minimum cost of transformation of a first sequence into a second sequence based on an insertion cost, a deletion cost, and a substitution cost. The method determines recursively a current element of the matrix as an encryption of a minimum of a first element, a second element, and a third element to produce the dynamic programming solution, wherein the first element represents the insertion cost, the second element represents the deletion cost, and the third element represents the substitution costs, and wherein the current element, the first element, the second element, and the third element are homomorphically encrypted with a public key. The method selects the dynamic programming solution as the encrypted edit distance. Steps of the method are performed by a first processor and a second processor, such that the first sequence is stored only at the first processor and is kept private from the second processor, and the second sequence is stored only at the second processor and is kept private from the first processor.</p>
+<p id="p-0016" num="0015">Another embodiment of the invention discloses a system configured to determine an encrypted edit distance as an encryption of a minimum cost of transformation of a first sequence into a second sequence based on an insertion cost, a deletion cost, and a substitution cost, wherein the minimum cost is a dynamic programming solution of a matrix, wherein elements of the matrix are determined recursively based on values of previously determined elements.</p>
+<p id="p-0017" num="0016">The system includes a first processor configured to interact with a second processor to determine a current element of the matrix as an encryption of a minimum of a first element, a second element, and a third element, wherein the first element represents the insertion cost, the second element represents the deletion cost, and the third element represents the substitution costs, and wherein the current element, the first element, the second element, and the third element are homomorphically encrypted with a public key.</p>
+<p id="p-0018" num="0017">The system further includes a second processor configured to determine the first element, the second element, and the third element based on properties of additive homomorphic encryption, wherein the first sequence is stored only at the first processor and is kept private from the second processor, and the second sequence is stored only at the second processor and is kept private from the first processor; means for determining recursively the dynamic programming solution; and means for selecting the dynamic programming solution as the encrypted edit distance.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 1</figref> is pseudocode of a prior art function EditDistance that takes two input symbol sequences, s of length m, and t of length n, and computes the edit distance between those two input sequences.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 2</figref> is a matrix <b>210</b> used by a dynamic programming solution for two character strings &#x201c;FAST&#x201d; and &#x201c;FIRST;&#x201d;</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 3</figref> is a schematic of a method for determining securely an encrypted edit distance according to embodiments of the invention;</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIGS. 4-5</figref> are block diagrams of a method for determining an encryption of a minimum number in a set of encrypted numbers according to embodiments of the invention; and</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 6-7</figref> are pseudocode of a method for determining substitution cost according to embodiments of the invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENT</heading>
+<p id="p-0024" num="0023">Encrypted Edit Distance</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 3</figref> shows a schematic of a method <b>300</b> determining securely an encrypted edit distance <b>345</b> as an encryption of a minimum cost of transformation of a first sequence <b>315</b> of symbols into a second sequence <b>325</b> of symbols. The cost of transformation is determined based on an insertion cost <b>332</b>, a deletion cost <b>334</b>, and a substitution cost <b>336</b>, as described in more details below. As defined herein, the insertion cost is a cost of inserting a symbol into the second sequence, the deletion cost is a cost of deleting the symbol from the second sequence, and the substitution cost is a cost of substituting the symbol from the second sequence with a symbol from the first sequence.</p>
+<p id="p-0026" num="0025">The symbols in the sequences <b>315</b> and <b>325</b> can be, e.g., bits, characters, numbers, and DNA nucleotides. In various embodiments of the invention, the substitution cost, the insertion cost and the deletion cost are constant or dependent on the symbol being substituted, inserted or deleted.</p>
+<p id="p-0027" num="0026">Steps of the method <b>300</b> are performed by a first processor <b>310</b> and a second processor <b>320</b>, such that the first sequence is stored only at the first processor, and the second sequence is stored only at the second processor. Data transmitted <b>330</b> between the first and second processors are homomorphically encrypted with a public key <b>360</b>. The public key is available to both the first and second processors. However, only the first processor has the private key <b>350</b>, and thus, only the first processor is able to decrypt the symbols.</p>
+<p id="p-0028" num="0027">Embodiments of the invention formulate a minimum cost of transformation as a dynamic programming solution of a system, i.e., a matrix <b>326</b>. Encrypted (&#x3b6;) elements of the matrix are determined recursively based on values of previously determined elements.</p>
+<p id="p-0029" num="0028">The first sequence x={x<sub>i</sub>}<sub>i=1</sub><sup>n </sup>and the second sequence y={y<sub>j</sub>}<sub>j=1</sub><sup>m </sup>are inputs to the method <b>300</b>. The symbols x<sub>i </sub>and y<sub>j </sub>belong to finite alphabet set A (not shown). For convenience, the subsequence {x<sub>i</sub>}<sub>i=a</sub><sup>b </sup>is shown as {x}<sub>i=a</sub><sup>b</sup>, where the indices a, b are within proper limits, the insertion cost of a symbol Y<sub>k </sub>is I(y<sub>k</sub>), the deletion cost of a symbol X<sub>k </sub>with a symbol Y<sub>i </sub>is S(x<sub>k</sub>, y<sub>i</sub>), wherein k, and i are indices of the symbols in the sequences.</p>
+<p id="p-0030" num="0029">The insertion cost I(y<sub>k</sub>), the deletion cost D(x<sub>k</sub>), and the substitution cost S(x<sub>k</sub>, y<sub>i</sub>) vary among different embodiments.</p>
+<p id="p-0031" num="0030">If M(i, j) is the minimal cost of transforming a subsequence x<sub>1</sub><sup>i </sup>into a subsequence y<sub>1</sub><sup>j</sup>, then for 1&#x2266;i&#x2266;n and 1&#x2266;j&#x2266;m;</p>
+<p id="p-0032" num="0031">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mrow>
+            <mrow>
+              <mi>M</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mn>0</mn>
+                  <mo>,</mo>
+                  <mn>0</mn>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mo>,</mo>
+          <mrow>
+            <mrow>
+              <mi>M</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mn>0</mn>
+                  <mo>,</mo>
+                  <mi>j</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>=</mo>
+            <mrow>
+              <munderover>
+                <mo>&#x2211;</mo>
+                <mrow>
+                  <mi>k</mi>
+                  <mo>=</mo>
+                  <mn>1</mn>
+                </mrow>
+                <mi>j</mi>
+              </munderover>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>I</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mi>k</mi>
+                  </msub>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mo>,</mo>
+          <mrow>
+            <mrow>
+              <mi>M</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mi>i</mi>
+                  <mo>,</mo>
+                  <mn>0</mn>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>=</mo>
+            <mrow>
+              <munderover>
+                <mo>&#x2211;</mo>
+                <mrow>
+                  <mi>k</mi>
+                  <mo>=</mo>
+                  <mn>1</mn>
+                </mrow>
+                <mi>i</mi>
+              </munderover>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>D</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mi>k</mi>
+                  </msub>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mtext>
+</mtext>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mrow>
+            <mi>M</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mi>i</mi>
+                <mo>,</mo>
+                <mi>j</mi>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <mi>min</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mtable>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mrow>
+                        <mi>M</mi>
+                        <mo>&#x2061;</mo>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mi>i</mi>
+                            <mo>-</mo>
+                            <mrow>
+                              <mn>1</mn>
+                              <mo>,</mo>
+                              <mi>j</mi>
+                            </mrow>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                      <mo>+</mo>
+                      <mrow>
+                        <mi>D</mi>
+                        <mo>&#x2061;</mo>
+                        <mrow>
+                          <mo>(</mo>
+                          <msub>
+                            <mi>x</mi>
+                            <mi>i</mi>
+                          </msub>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mrow>
+                        <mi>M</mi>
+                        <mo>&#x2061;</mo>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mrow>
+                              <mi>i</mi>
+                              <mo>,</mo>
+                              <mi>j</mi>
+                            </mrow>
+                            <mo>-</mo>
+                            <mn>1</mn>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                      <mo>+</mo>
+                      <mrow>
+                        <mi>I</mi>
+                        <mo>&#x2061;</mo>
+                        <mrow>
+                          <mo>(</mo>
+                          <msub>
+                            <mi>y</mi>
+                            <mi>j</mi>
+                          </msub>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mrow>
+                        <mi>M</mi>
+                        <mo>&#x2061;</mo>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mi>i</mi>
+                            <mo>-</mo>
+                            <mrow>
+                              <mn>1</mn>
+                              <mo>,</mo>
+                              <mi>j</mi>
+                            </mrow>
+                            <mo>-</mo>
+                            <mn>1</mn>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                      <mo>+</mo>
+                      <mrow>
+                        <mi>S</mi>
+                        <mo>&#x2061;</mo>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <msub>
+                              <mi>x</mi>
+                              <mi>i</mi>
+                            </msub>
+                            <mo>,</mo>
+                            <msub>
+                              <mi>y</mi>
+                              <mi>j</mi>
+                            </msub>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>1</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0033" num="0032">As described above, the elements of the matrix in Equation (1) are determined recursively, i.e., M(i, j) are computed using M(i&#x2212;1, j), M(i,j&#x2212;1) and M(i&#x2212;1,j&#x2212;1). Further, the edit distance M(n, m) is the minimal cost of transforming the first sequence x<sub>1</sub><sup>n </sup>to the second sequence y<sub>1</sub><sup>m</sup>. In the example shown in <figref idref="DRAWINGS">FIG. 3</figref>, the edit distance <b>340</b> between the character strings &#x201c;FAST&#x201d; and &#x201c;FIRST&#x201d; is M(4, 5)=2.</p>
+<p id="p-0034" num="0033">The method <b>300</b> determines elements of the matrix in encrypted domain at the second processor, and the second processor cannot decrypt values of the elements without the private key. Embodiments of the invention are based on the realization that it is possible to securely determine a minimum number from the set of encrypted numbers based on properties of semantically secure homomorphic encryption.</p>
+<p id="p-0035" num="0034">The dynamic programming solution <b>345</b> is selected as the encrypted edit distance. The encrypted edit distance can be stored in a memory (not shown) and/or transmitted to the first processor for the decryption with the private key.</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 5</figref> shows the determination of the edit distance reduced to computing M(i, j) according to Equation (1). For every i and j, 1&#x2266;i&#x2266;n, 1&#x2266;j&#x2266;m, of the first sequence and the second sequence, respectively, the first and second processors determine, using a minimum-finding method <b>400</b>, a current element <b>460</b> of the matrix as an encryption of a minimum of a first element <b>510</b>, a second element <b>520</b>, and a third element <b>530</b>, wherein the first element represents the insertion cost <b>332</b>, the second element represents the deletion cost <b>334</b>, and the third element represents the substitution costs <b>336</b>, and wherein the current element, the first element, the second element, and the third element are homomorphically encrypted <b>540</b> with the public key <b>360</b>. The encrypted value of the current element M(i,j) is determined according to
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3be;(min{<i>M</i>(<i>i&#x2212;</i>1<i>,j&#x2212;</i>1)+<i>S</i>(<i>x</i><sub>i</sub><i>,y</i><sub>i</sub>),<i>M</i>(<i>i&#x2212;</i>1<i>,j</i>)+<i>D</i>(<i>x</i><sub>i</sub>),<i>M</i>(<i>i,j&#x2212;</i>1)+<i>I</i>(<i>y</i><sub>j</sub>)})=&#x3be;(<i>M</i>(<i>i,j</i>))<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0037" num="0036">The encryptions of the values M(i&#x2212;1,j&#x2212;1) <b>344</b>, M(i,j&#x2212;1) <b>346</b> and M(i&#x2212;1,j) <b>342</b> are determined by previous iteration of the method <b>300</b>. Encryption of the insertion cost I(y<sub>j</sub>), i.e., &#x3be;(I(y<sub>j</sub>)), is transmitted from the first processor to the second processor. The deletion cost D(X<sub>i</sub>), and hence an encryption &#x3be;(D(x<sub>i</sub>)) is available to the second processor. Encryption of the substitution cost S(x<sub>i</sub>, y<sub>j</sub>), i.e., &#x3be;(S(x<sub>i</sub>, y<sub>j</sub>)) is provided or determined dynamically as described below.</p>
+<p id="p-0038" num="0037">The first element representing the insertion cost is determined based on properties of additive homomorphic encryption according to
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3be;(<i>I</i>(<i>y</i><sub>j</sub>))&#x3be;(<i>M</i>(<i>i,j&#x2212;</i>1))=&#x3be;(<i>I</i>(<i>y</i><sub>j</sub>)+<i>M</i>(<i>i,j&#x2212;</i>1)).<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0039" num="0038">The second element representing the deletion cost is determined based on properties of additive homomorphic encryption according to
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3be;(<i>D</i>(<i>x</i><sub>i</sub>))&#x3be;(<i>M</i>(<i>i&#x2212;</i>1<i>,j</i>))=&#x3be;(<i>D</i>(<i>x</i><sub>i</sub>)+<i>M</i>(<i>i&#x2212;</i>1<i>,j</i>)).<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0040" num="0039">The third element representing the substitution cost is determined based on properties of additive homomorphic encryption according to
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3be;(<i>S</i>(<i>x</i><sub>i</sub><i>,y</i><sub>j</sub>))&#x3be;(<i>M</i>(<i>i&#x2212;</i>1<i>,j&#x2212;</i>1))=&#x3be;(<i>S</i>(<i>x</i><sub>i</sub><i>,y</i><sub>j</sub>)+<i>M</i>(<i>i&#x2212;</i>1<i>,j&#x2212;</i>1)).<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0041" num="0040">Then, the minimum-finding method receives <b>550</b> as inputs the first element, the second element and the third element, and determines the current element as encrypted value of the minimum. In the embodiments, the current element, the first element, the second element, and the third element are homomorphically encrypted with the public key.</p>
+<p id="p-0042" num="0041">In some embodiments, representation of the substitution cost for an initial element M(1, 1), i.e., M(0, 0)+S(x<sub>1</sub>, y<sub>1</sub>), is less than or equal to both elements M(0, 1) and M(1, 0) for all possible x<sub>1</sub>, y<sub>1</sub>. Moreover, the insertion and the deletion costs are equal for all symbols and known to both processors. One such commonly occurring example is shown in <figref idref="DRAWINGS">FIGS. 2 and 3</figref>, in which M(0, 0)=0, S(x<sub>1</sub>, y<sub>1</sub>)=1, In this embodiment, the insertion and the deletion cost for any symbol is 1, so both processors know that M(0, 1)=M(1, 0)=1. Accordingly, the encryption of the element M(1, 1) is not determined using the minimum-finding method.</p>
+<p id="p-0043" num="0042">In this embodiment, the second processor determines the initial encrypted element according to &#x3be;(M(1, 1))=&#x3be;(S(x<sub>1</sub>, y<sub>1</sub>)) using appropriate substitution cost. In different embodiments, the encryption of the substitution cost is either predetermined, or computed dynamically as described below.</p>
+<p id="p-0044" num="0043">After determining recursively the encryption of each element in the matrix M, in one embodiment, the second processor transmits a value of the encrypted edit distance &#x3be;(M(n,m)) to the first processor. The first processor decrypts this value and obtains the edit distance between two sequences x<sub>1</sub><sup>n </sup>and y<sub>1</sub><sup>m</sup>. In one embodiment, the first processor transmits the value of the edit distance back to the second processor. Thus, the edit distance is determined without violating privacy, i.e., the first signal is known only to the first processor, and the second signal is known only to the second processor.</p>
+<p id="p-0045" num="0044">Homomorphic Encryption</p>
+<p id="p-0046" num="0045">Let P be a set of plaintexts associated with a binary operator <sup>&#xb7;</sup>P, and H be a set of ciphertexts associated with a binary operator <sup>&#xb7;</sup>H.</p>
+<p id="p-0047" num="0046">Definition 1 A mapping &#x3be;: P&#x2192;H is homomorphic if the following holds for all a, b&#x3b5;P,
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3be;(<i>a&#xb7;</i><sub>P</sub><i>b</i>)=&#x3be;(<i>a</i>)&#xb7;<sub>H</sub>&#x3be;(<i>b</i>).<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0048" num="0047">The embodiments use homomorphic cryptosystems in which the operator <sup>&#xb7;</sup>P is the addition operator and the operator <sup>&#xb7;</sup>H is the multiplication operator. Such cryptosystems are sometimes referred to as additively homomorphic, e.g., Benaloh and Paillier cryptosystems. Both these cryptosystems are semantically secure, i.e., repeated encryptions of the same plaintext result in different ciphertexts. Embodiments of the invention use a variety of semantically secure additively homomorphic cryptosystems. As an example, the Paillier cryptosystem is briefly summarized below.</p>
+<p id="p-0049" num="0048">Configuration:</p>
+<p id="p-0050" num="0049">Select two large prime numbers p,q, and let N=pq. Denote by Z<sub>N</sub><sub><sup2>2</sup2></sub>*&#x2282;Z<sub>N</sub><sub><sup2>2</sup2></sub>={0, 1, . . . , N<sup>2</sup>&#x2212;1} the set of non-negative integers that have multiplicative inverses modulo N<sup>2</sup>. Select g&#x3b5;Z<sub>N</sub><sub><sup2>2 </sup2></sub>such that gcd(L(g<sup>&#x3bb;</sup> mod N<sup>2</sup>), N)=1, where &#x3bb;=lcm(p&#x2212;1, q&#x2212;1), and</p>
+<p id="p-0051" num="0050">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mi>L</mi>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo>(</mo>
+      <mi>x</mi>
+      <mo>)</mo>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mfrac>
+      <mrow>
+        <mi>x</mi>
+        <mo>-</mo>
+        <mn>1</mn>
+      </mrow>
+      <mi>N</mi>
+    </mfrac>
+    <mo>.</mo>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+Let (N,g) be the public key, and (p,q) be the private key.
+</p>
+<p id="p-0052" num="0051">Encryption:</p>
+<p id="p-0053" num="0052">Let m&#x3b5;Z<sub>N </sub>be a plaintext. Then, the ciphertext is given by
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3be;<sub>r</sub>(<i>m</i>)=<i>g</i><sup>m</sup><i>&#xb7;r</i><sup>N </sup>mod <i>N</i><sup>2</sup>&#x2003;&#x2003;(2)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+where r&#x3b5;Z<sub>N</sub>* is a number selected at random.
+</p>
+<p id="p-0054" num="0053">Decryption:</p>
+<p id="p-0055" num="0054">Let c&#x3b5;Z<sub>N</sub><sub><sup2>2 </sup2></sub>be a ciphertext. Then, the corresponding plaintext is determined according to</p>
+<p id="p-0056" num="0055">
+<maths id="MATH-US-00003" num="00003">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>&#x3c8;</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msub>
+                <mi>&#x3be;</mi>
+                <mi>r</mi>
+              </msub>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mi>m</mi>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <mi>L</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msup>
+                    <mi>c</mi>
+                    <mi>&#x3bb;</mi>
+                  </msup>
+                  <mo>&#x2062;</mo>
+                  <mi>mod</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <msup>
+                    <mi>N</mi>
+                    <mn>2</mn>
+                  </msup>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi>L</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msup>
+                    <mi>g</mi>
+                    <mi>&#x3bb;</mi>
+                  </msup>
+                  <mo>&#x2062;</mo>
+                  <mi>mod</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <msup>
+                    <mi>N</mi>
+                    <mn>2</mn>
+                  </msup>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+          <mo>=</mo>
+          <mrow>
+            <mi>m</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mi>mod</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mi>N</mi>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>3</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0057" num="0056">The decryption works irrespective of the value of the number r used during the encryption. Since the number r can be chosen at random for every encryption, the Paillier cryptosystem is probabilistic, and therefore semantically secure, i.e., r<sub>1</sub>&#x2260;r<sub>2</sub><img id="CUSTOM-CHARACTER-00001" he="2.79mm" wi="2.79mm" file="US08625782-20140107-P00001.TIF" alt="custom character" img-content="character" img-format="tif"/>&#x3be;<sub>r</sub><sub><sub2>1</sub2></sub>(x)&#x2260;&#x3be;<sub>r</sub><sub><sub2>2</sub2></sub>(x).</p>
+<p id="p-0058" num="0057">Also, the properties of the mapping according to Equation (2) from the plaintext set (Z<sub>N</sub>,+) to the ciphertext set (Z<sub>N</sub><sub><sup2>2</sup2></sub>*,&#xb7;) satisfy the following relations
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3c8;(&#x3be;<sub>r</sub><sub><sub2>1</sub2></sub>(<i>m</i><sub>1</sub>)&#x3be;<sub>r</sub><sub><sub2>1</sub2></sub>(<i>m</i><sub>2</sub>)mod <i>N</i><sup>2</sup>)=<i>m</i><sub>1</sub><i>+m</i><sub>2 </sub>mod <i>N,</i>&#x2003;&#x2003;(4)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3c8;([&#x3be;<sub>r</sub>(<i>m</i><sub>1</sub>)]<sup>m</sup><sup><sub2>2 </sub2></sup>mod <i>N</i><sup>2</sup>)=<i>m</i><sub>1</sub><i>m</i><sub>2 </sub>mod <i>N,</i>&#x2003;&#x2003;(5)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+wherein m<sub>1 </sub>and m<sub>2 </sub>are any two integer messages, which are encrypted using the cryptosystem described above. The subscripts r<sub>1</sub>, r above represent the parameter &#x2018;r&#x2019; in Equation (2) and are selected at the time of encryption, such that different values of &#x2018;r&#x2019; in Equation (2) result in a different ciphertext. By changing the value of &#x2018;r&#x2019; at every encryption, Paillier encryption achieves semantic security. In this description, the subscripts &#x2018;r&#x2019; are omitted for simplicity of notation, when the notion of the semantic security is not relevant.
+</p>
+<p id="p-0059" num="0058">Some embodiments of the invention use Paillier encryption. However, other embodiments use other semantically secure additively homomorphic schemes.</p>
+<p id="p-0060" num="0059">Minimum-Finding Method</p>
+<p id="p-0061" num="0060"><figref idref="DRAWINGS">FIG. 4</figref> shows a block diagram of a method <b>400</b> for determining the encryption of a minimum number in a set of encrypted numbers according to embodiments of the invention. The method <b>400</b> is used by the embodiments of the invention to determine the current element of the matrix as the encryption of the minimum of the first, the second, and the third elements.</p>
+<p id="p-0062" num="0061">For example, the second processor <b>320</b> stores a set of numbers in homomorphically encrypted form &#x3be;<sub>r</sub><sub><sub2>i</sub2></sub>(a<sub>i</sub>), e.g., &#x3be;<sub>r</sub><sub><sub2>1</sub2></sub>(a<sub>1</sub>), &#x3be;<sub>r</sub><sub><sub2>2</sub2></sub>(a<sub>2</sub>), . . . , &#x3be;<sub>r</sub><sub><sub2>L</sub2></sub>(a<sub>L</sub>) <b>410</b> of L numbers a<sub>1</sub>, a<sub>2</sub>, . . . , a<sub>L</sub>. The minimum-finding method allows the second processor to determine the encryption of the minimum of these numbers, i.e., &#x3be;<sub>r</sub>(min<sub>i</sub>{a<sub>i</sub>}) <b>460</b> for some coefficient r&#x3b5;Z<sub>N</sub>*. The method <b>400</b> does not allow the second processor to discover a<sub>i</sub>, or any information about the index or value of the minimum.</p>
+<p id="p-0063" num="0062">Similarly, the first processor does not discover any information about the numbers a<sub>i</sub>, a<sub>2</sub>, . . . , a<sub>L</sub>. The steps of the method are as follows:</p>
+<p id="p-0064" num="0063">The second processor selects positive integers &#x3bc; and &#x3b1; <b>450</b> at random, i.e., &#x3bc; is a scaling constant and &#x3b1; is an integer shift selected at random. For the Paillier cryptosystem, to ensure that &#x3bc; can later be removed, the second processor chooses &#x3bc; at random from the set Z<sub>N</sub>*. The second processor then obtains an encryption &#x3be;<sub>r</sub><sub><sub2>0</sub2></sub>(&#x3b1;) <b>451</b> using the public key <b>360</b>, determines an encrypted summation &#x3be;<sub>r&#x2032;</sub><sub><sub2>i</sub2></sub>(&#x3bc;a<sub>i</sub>+&#x3b1;)=(&#x3be;<sub>r</sub><sub><sub2>i</sub2></sub>(a<sub>i</sub>))<sup>&#x3bc;</sup>&#x3be;<sub>r</sub><sub><sub2>0</sub2></sub>(&#x3b1;) <b>420</b> for i=1, 2, . . . , L producing a set of encrypted summations <b>420</b> and transmits <b>425</b> the set of encrypted summations to the first processor. For the Paillier cryptosystem, the encryption coefficient r&#x2032;<sub>i</sub>=r<sub>i</sub>r<sub>0</sub>, and the second processor can not determine the encryption coefficient r&#x2032;<sub>i </sub>without knowing the encryption coefficient r<sub>i</sub>.
+<br/>
+The first processor decrypts the numbers with the private key <b>350</b>, determines the minimum given by min<sub>i</sub>{&#x3bc;a<sub>i</sub>}+&#x3b1; <b>430</b> and then re-encrypts the result with the public key to produce an encrypted minimum &#x3be;<sub>r</sub><sub><sub2>B</sub2></sub>(min<sub>i</sub>{&#x3bc;a<sub>i</sub>}+&#x3b1;) <b>460</b> and transmits <b>465</b> the encrypted minimum back to the second processor. The second processor computes &#x3be;<sub>r</sub><sub><sub2>0</sub2></sub>(&#x2212;&#x3b1;) <b>452</b>, and determines &#x3be;<sub>r</sub><sub><sub2>B</sub2></sub>(min<sub>i</sub>{&#x3bc;a<sub>i</sub>}+&#x3b1;)&#x3be;<sub>r</sub><sub><sub2>0</sub2></sub>(&#x2212;&#x3b1;)=&#x3be;<sub>r</sub>(min<sub>i</sub>{&#x3bc;a<sub>i</sub>}) <b>470</b>.
+</p>
+<p id="p-0065" num="0064">Note that, with very high probability, &#x3be;<sub>r</sub>(min<sub>i</sub>{&#x3bc;a<sub>i</sub>}) is not equal to any one of the encryptions &#x3be;<sub>r</sub><sub><sub2>i</sub2></sub>(a<sub>i</sub>), because the first processor selects a random encryption coefficient r<sub>B </sub>unknown to the second processor, which makes the encryption semantically secure. This ensures that, when the second processor obtains the encryption of the minimum, the index of the minimum in the original sequence &#x3be;<sub>r</sub><sub><sub2>1</sub2></sub>(a<sub>1</sub>), &#x3be;<sub>r</sub><sub><sub2>2</sub2></sub>(a<sub>2</sub>), . . . , &#x3be;<sub>r</sub><sub><sub2>L</sub2></sub>(a<sub>L</sub>) remains hidden from the second processor.</p>
+<p id="p-0066" num="0065">4. The second processor determines <b>480</b>, which is the encrypted minimum <b>460</b> according to
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>(&#x3be;<sub>r</sub>(min<sub>i</sub><i>{&#x3bc;a</i><sub>i</sub>}))<sup>1/&#x3bc;</sup>=(&#x3be;<sub>r</sub>(&#x3bc;min<sub>i</sub><i>{a</i><sub>i</sub>}))<sup>1/&#x3bc;</sup>=&#x3be;<sub>r</sub>(min<sub>i</sub><i>{a</i><sub>i</sub>})<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0067" num="0066">Note that the use of positive integers &#x3bc; and &#x3b1; prevents the first processor from discovering any information of the numbers a<sub>i</sub>. Further, due to semantic security, the second processor cannot discover the index &#x2018;i&#x2019; of the minimum. Finally, since the second processor does not have the decryption key, the second processor cannot determine the actual value of the minimum.</p>
+<p id="p-0068" num="0067">To determine the edit distance, the minimum-finding method is performed with three values, i.e., L=3 above. In one embodiment, each symbol has positive insertion and deletion costs, and non-negative substitution costs.</p>
+<p id="p-0069" num="0068">In other embodiments, some symbols have a negative or zero insertion cost and/or negative or zero deletion cost. Additionally or alternatively, all the three entries corresponding to the insertion cost, deletion cost and substitution cost can be equal. In such cases, even though the first processor cannot determine values of the variable &#x3bc; and &#x3b1;, the first processor can determine the minimum value based on the insertion cost of each symbol.</p>
+<p id="p-0070" num="0069">In such embodiments, the second processor appends two or more &#x201c;dummy&#x201d; variables to the vector, &#x3be;<sub>r</sub><sub><sub2>1</sub2></sub>(a<sub>1</sub>), &#x3be;<sub>r</sub><sub><sub2>2</sub2></sub>(a<sub>2</sub>), . . . , &#x3be;<sub>r</sub><sub><sub2>L</sub2></sub>(a<sub>L</sub>), i.e., L&#x3e;3. In each iteration of minimum-finding method, different dummy variables and/or number of the dummy variables are used, in order to prevent the first processor from obtaining any information about the dummy variables. Then, after decrypting and determining the minimum, the first processor determines and transmits one or more encrypted values to the second processor.</p>
+<p id="p-0071" num="0070">For example, in some embodiments, the second processor appends dummy variables &#x3be;(A) and &#x3be;(B) to the vector &#x3be;<sub>r</sub><sub><sub2>1</sub2></sub>(a<sub>1</sub>), &#x3be;<sub>r</sub><sub><sub2>2</sub2></sub>(a<sub>2</sub>), . . . , &#x3be;<sub>r</sub><sub><sub2>L</sub2></sub>(a<sub>L</sub>) where a variable A is large and a variable B is small compared with all values of the a<sub>i</sub>. Then, the second processor requests the encryptions of the two smallest values from the first processor, specifying which value is the smallest and which value is the second smallest.</p>
+<p id="p-0072" num="0071">Since the first processor knows that the smallest value corresponds to the variable B, the second processor discards the encrypted element corresponding to the index of the minimum value received from the first processor, and selects the encryption of the second smallest value as the encrypted value of the true minimum.</p>
+<p id="p-0073" num="0072">In some embodiments, instead of having a common constant &#x3b1;, the second processor uses &#x3bc; as a power of 2 and selects various unequal constants &#x3b1;<sub>1</sub>, &#x3b1;<sub>2</sub>, . . . , &#x3b1;<sub>L </sub>such that &#x3b1;<sub>i</sub>&#x3c;&#x3bc; for all i=1, 2, . . . , L. The second processor transmits the encryptions &#x3be;(&#x3bc;a<sub>i</sub>+&#x3b1;<sub>i</sub>) to the first processor. Then, the first processor decrypts the encryption and determines a minimum min<sub>i </sub>&#x3bc;a<sub>i</sub>+&#x3b1;<sub>i</sub>. However, instead of transmitting back the encryption of the minimum, the first processor converts the minimum to binary, encrypts each bit and transmits the encrypted bits to the second processor. Since the second processor selected the values of &#x3b1;<sub>1</sub>, &#x3b1;<sub>2</sub>, . . . , &#x3b1;<sub>L</sub>, the second processor knows exactly how many bits have been utilized for the &#x3b1;<sub>i </sub>and knows that the remaining bits have been utilized for the desired minimum value scaled by &#x3bc;. Note that there is no overlap between these bits because &#x3b1;<sub>i</sub>&#x3c;&#x3bc; for all i=1, 2, . . . , L. So, using the properties of homomorphic encryption, the second processor obtains the bits corresponding to the minimum value scaled by &#x3bc;. Then, the second processor reverses the multiplication by &#x3bc;. The first processor is prevented from knowing the value of the minimum, even when one or more of the a<sub>i </sub>values are equal.</p>
+<p id="p-0074" num="0073">Determining Substitution Costs</p>
+<p id="p-0075" num="0074">Embodiments of the invention determine the current element of the matrix as an encryption of the minimum of elements representing the insertion cost, the deletion cost, and the substitution costs. In different embodiments the insertion cost, the deletion cost, and the substitution cost are predefined, determined dynamically, or a combination thereof is used.</p>
+<p id="p-0076" num="0075">For example, in one embodiment, the insertion cost, the deletion cost, and the substitution costs are predefined. In one variation of these embodiments all costs are integer values. In another embodiment, the insertion and the deletion costs are predefined, but the substitution cost is determined dynamically. In one variation of this embodiment, the substitution cost is determined based on values of the symbols to be substituted.</p>
+<p id="p-0077" num="0076">Constant Substitution Cost</p>
+<p id="p-0078" num="0077">In one embodiment, the substitution cost is a constant when the symbols of the first and the second sequences are different, and zero when the symbols are identical. One variation of this embodiment, maps the symbols in the alphabet to an integer set {1, 2, 3, . . . , Q}, wherein Q is the size of the alphabet set. For example, for DNA sequences with symbols A,T, C, G the size Q=4. The substitution cost in this embodiment is S(a, b)=0 if a=b and S(a, b)=1 if a&#x2260;b, wherein a is a symbol of the first sequence, and b is a symbol of the second sequence.</p>
+<p id="p-0079" num="0078"><figref idref="DRAWINGS">FIG. 6</figref> shows pseudocode of a method for determining a constant substitution cost according to following steps.
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0000">
+    <ul id="ul0002" list-style="none">
+        <li id="ul0002-0001" num="0079">1. The first processor converts the symbol &#x2018;a&#x2019; of the first string to a first binary sequence of length Q having first &#x2018;a&#x2019; bits equal to 1 and the last Q&#x2212;a bits equal to 0. The bits from the first binary string are defined as a<sub>i</sub>, where i goes from 1 to Q. Similarly, the second processor converts the symbol &#x2018;b&#x2019; of the second sequence to a second binary sequence of length Q having the first &#x2018;b&#x2019; bits equal to 1 and the last Q&#x2212;b bits equal to 0.</li>
+        <li id="ul0002-0002" num="0080">2. The first processor transmits the encryption of each bit in the first binary sequence to the second processor.</li>
+        <li id="ul0002-0003" num="0081">3. The second processor computes a 2&#xd7;2 determinant from the first and second bits from the second binary string, and the first and second encrypted bits from the first binary sequence according to &#x3be;(U<sub>1</sub>)=&#x3be;(a<sub>1</sub>b<sub>2</sub>&#x2212;a<sub>2</sub>b<sub>1</sub>)=&#x3be;(a<sub>1</sub>b<sub>2</sub>)&#x3be;(&#x2212;a<sub>2</sub>b<sub>1</sub>)=[&#x3be;(b<sub>2</sub>) raised to the power a<sub>1</sub>]*[&#x3be;(b<sub>1</sub>) raised to the power (&#x2212;a<sub>2</sub>)].</li>
+        <li id="ul0002-0004" num="0082">4. The second processor repeats the previous step for the second and third bits from both binary sequences, then the third and fourth bits, and so on until the entire sequence of length Q is exhausted. Thus, the second processor determines the encrypted 2&#xd7;2 determinants &#x3be;(U<sub>1</sub>), &#x3be;(U<sub>2</sub>), . . . , &#x3be;(U<sub>Q-1</sub>).</li>
+        <li id="ul0002-0005" num="0083">5. The second processor computes a sum of determinants &#x3be;(U) as &#x3a0;<sub>i</sub>&#x3be;(U<sub>i</sub>)=&#x3be;(&#x3a3;<sub>i</sub>U<sub>i</sub>) where i varies from 1 to Q&#x2212;1. This uses the property of additive homomorphic encryption.</li>
+        <li id="ul0002-0006" num="0084">6. The second processor selects a number d at random, and computes &#x3be;(U+d)=&#x3be;(U)&#x3be;(d) and transmits the result to the first processor.</li>
+        <li id="ul0002-0007" num="0085">7. The first processor decrypts the two numbers, determines the product (U+d)<sup>2</sup>=U&#x2032;, encrypts the product U&#x2032; and transmits &#x3be;(U&#x2032;) back to the second processor.</li>
+        <li id="ul0002-0008" num="0086">8. The second processor computes &#x3be;(U&#x2032;)&#x3be;(&#x2212;2dU)&#x3be;(&#x2212;d<sup>2</sup>)=&#x3be;(U&#x2032;&#x2212;2dU&#x2212;d<sup>2</sup>)=&#x3be;(U<sup>2</sup>).</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0080" num="0087">By construction, U=0, 1 or &#x2212;1. Therefore, U<sup>2 </sup>is either 0 or 1 depending on whether the symbols &#x2018;a&#x2019; and &#x2018;b&#x2019; are the same or different respectively. Thus, &#x3be;(U<sup>2</sup>) provides the encrypted value of the substitution cost. The second processor only obtains the encrypted substitution cost but not the actual substitution cost since the second processor does not have the decryption key. The first processor knows nothing, due to lack of knowledge of the number &#x201c;d.&#x201d;</p>
+<p id="p-0081" num="0088">Absolute Distance Substitution Cost</p>
+<p id="p-0082" num="0089">In another embodiment, the substitution cost is an absolute distance between symbols of the first and the second sequence, i.e., if the symbols are &#x2018;a&#x2019; and &#x2018;b&#x2019; respectively, then the substitution cost S(a, b)=|a &#x2212;b|. Similarly to the aforementioned embodiment, the symbols in the alphabet are mapped to an integer set {1, 2, 3, . . . , Q}.According to the minimization protocol, the first processor can determine the encryption of the substitution cost. The second processor cannot.</p>
+<p id="p-0083" num="0090"><figref idref="DRAWINGS">FIG. 7</figref> shows pseudocode of a method for determining an absolute distance substitution cost according to following steps.
+<ul id="ul0003" list-style="none">
+    <li id="ul0003-0001" num="0000">
+    <ul id="ul0004" list-style="none">
+        <li id="ul0004-0001" num="0091">1. The first processor converts the symbol &#x2018;a&#x2019; of the first sequence to a first binary sequence of length Q having a first &#x2018;a&#x2019; bits equal to 1 and the last Q&#x2212;a bits equal to 0. The bits from the first binary sequence are defined as a<sub>i</sub>, where i ranges from 1 to Q. Similarly, the second processor converts the symbol &#x2018;b&#x2019; of the second sequence to a second binary sequence of length Q having the first &#x2018;b&#x2019; bits equal to, 1 and the last Q&#x2212;b bits equal to 0.</li>
+        <li id="ul0004-0002" num="0092">2. The first processor transmits encryption of each bit in the binary sequence to the second processor.</li>
+        <li id="ul0004-0003" num="0093">3. The second processor determines encryption of the substitution cost &#x3be;(S(a, b)) based on the properties of additive homomorphic encryption according to</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0084" num="0094">
+<maths id="MATH-US-00004" num="00004">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mn>4.</mn>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.8em" height="0.8ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <mi>&#x3be;</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo>(</mo>
+        <mrow>
+          <mi>S</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mi>a</mi>
+              <mo>,</mo>
+              <mi>b</mi>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <mi>&#x3be;</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo>(</mo>
+        <mrow>
+          <mo>&#xf603;</mo>
+          <mrow>
+            <mi>a</mi>
+            <mo>-</mo>
+            <mi>b</mi>
+          </mrow>
+          <mo>&#xf604;</mo>
+        </mrow>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mi>&#x3be;</mi>
+        <mo>(</mo>
+        <mrow>
+          <munder>
+            <mo>&#x2211;</mo>
+            <mi>i</mi>
+          </munder>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <msub>
+              <mi>a</mi>
+              <mi>i</mi>
+            </msub>
+            <mo>&#x2295;</mo>
+            <msub>
+              <mi>b</mi>
+              <mi>i</mi>
+            </msub>
+          </mrow>
+        </mrow>
+        <mo>)</mo>
+      </mrow>
+      <mo>=</mo>
+      <mrow>
+        <mrow>
+          <mi>&#x3be;</mi>
+          <mo>(</mo>
+          <mrow>
+            <mrow>
+              <munder>
+                <mo>&#x2211;</mo>
+                <mi>i</mi>
+              </munder>
+              <mo>&#x2062;</mo>
+              <msub>
+                <mi>a</mi>
+                <mi>i</mi>
+              </msub>
+            </mrow>
+            <mo>+</mo>
+            <msub>
+              <mi>b</mi>
+              <mi>i</mi>
+            </msub>
+            <mo>-</mo>
+            <mrow>
+              <mn>2</mn>
+              <mo>&#x2062;</mo>
+              <msub>
+                <mi>a</mi>
+                <mi>i</mi>
+              </msub>
+              <mo>&#x2062;</mo>
+              <msub>
+                <mi>b</mi>
+                <mi>i</mi>
+              </msub>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <mrow>
+              <mi>&#x3be;</mi>
+              <mo>(</mo>
+              <mrow>
+                <munder>
+                  <mo>&#x2211;</mo>
+                  <mi>i</mi>
+                </munder>
+                <mo>&#x2062;</mo>
+                <msub>
+                  <mi>a</mi>
+                  <mi>i</mi>
+                </msub>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mi>&#x3be;</mi>
+              <mo>(</mo>
+              <mrow>
+                <munder>
+                  <mo>&#x2211;</mo>
+                  <mi>i</mi>
+                </munder>
+                <mo>&#x2062;</mo>
+                <msub>
+                  <mi>b</mi>
+                  <mi>i</mi>
+                </msub>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mi>&#x3be;</mi>
+              <mo>(</mo>
+              <mrow>
+                <munder>
+                  <mo>&#x2211;</mo>
+                  <mi>i</mi>
+                </munder>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mrow>
+                    <mo>-</mo>
+                    <mn>2</mn>
+                  </mrow>
+                  <mo>&#x2062;</mo>
+                  <msub>
+                    <mi>a</mi>
+                    <mi>i</mi>
+                  </msub>
+                  <mo>&#x2062;</mo>
+                  <msub>
+                    <mi>b</mi>
+                    <mi>i</mi>
+                  </msub>
+                </mrow>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <mrow>
+              <munderover>
+                <mo>&#x220f;</mo>
+                <mrow>
+                  <mi>i</mi>
+                  <mo>=</mo>
+                  <mn>1</mn>
+                </mrow>
+                <mi>Q</mi>
+              </munderover>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mi>&#x3be;</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <msub>
+                      <mi>a</mi>
+                      <mi>i</mi>
+                    </msub>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <munderover>
+                    <mo>&#x220f;</mo>
+                    <mrow>
+                      <mi>i</mi>
+                      <mo>=</mo>
+                      <mn>1</mn>
+                    </mrow>
+                    <mi>Q</mi>
+                  </munderover>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mrow>
+                      <mi>&#x3be;</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <msub>
+                          <mi>b</mi>
+                          <mi>i</mi>
+                        </msub>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <munderover>
+                        <mo>&#x220f;</mo>
+                        <mrow>
+                          <mi>i</mi>
+                          <mo>=</mo>
+                          <mn>1</mn>
+                        </mrow>
+                        <mi>Q</mi>
+                      </munderover>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <mi>&#x3be;</mi>
+                        <mo>&#x2061;</mo>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mrow>
+                              <mo>-</mo>
+                              <mn>2</mn>
+                            </mrow>
+                            <mo>&#x2062;</mo>
+                            <msub>
+                              <mi>a</mi>
+                              <mi>i</mi>
+                            </msub>
+                            <mo>&#x2062;</mo>
+                            <msub>
+                              <mi>b</mi>
+                              <mi>i</mi>
+                            </msub>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mo>=</mo>
+            <mrow>
+              <munderover>
+                <mo>&#x220f;</mo>
+                <mrow>
+                  <mi>i</mi>
+                  <mo>=</mo>
+                  <mn>1</mn>
+                </mrow>
+                <mi>Q</mi>
+              </munderover>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mi>&#x3be;</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <msub>
+                      <mi>a</mi>
+                      <mi>i</mi>
+                    </msub>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <munderover>
+                    <mo>&#x220f;</mo>
+                    <mrow>
+                      <mi>i</mi>
+                      <mo>=</mo>
+                      <mn>1</mn>
+                    </mrow>
+                    <mi>Q</mi>
+                  </munderover>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mrow>
+                      <mi>&#x3be;</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <msub>
+                          <mi>b</mi>
+                          <mi>i</mi>
+                        </msub>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <munderover>
+                        <mo>&#x220f;</mo>
+                        <mrow>
+                          <mi>i</mi>
+                          <mo>=</mo>
+                          <mn>1</mn>
+                        </mrow>
+                        <mi>Q</mi>
+                      </munderover>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <msup>
+                          <mrow>
+                            <mi>&#x3be;</mi>
+                            <mo>&#x2061;</mo>
+                            <mrow>
+                              <mo>(</mo>
+                              <msub>
+                                <mi>b</mi>
+                                <mi>i</mi>
+                              </msub>
+                              <mo>)</mo>
+                            </mrow>
+                          </mrow>
+                          <mrow>
+                            <mrow>
+                              <mo>-</mo>
+                              <mn>2</mn>
+                            </mrow>
+                            <mo>&#x2062;</mo>
+                            <msub>
+                              <mi>a</mi>
+                              <mi>i</mi>
+                            </msub>
+                          </mrow>
+                        </msup>
+                        <mo>.</mo>
+                      </mrow>
+                    </mrow>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+</p>
+<p id="p-0085" num="0095">Polynomial Function Substitution Cost</p>
+<p id="p-0086" num="0096">In another embodiment, the substitution cost is a result of an application of a polynomial function to the symbols of the two sequences, as described in U.S. patent application Ser. No. 12/495,721, incorporated herein by reference. For example, the second processor stores an integer a and the first processor stores an integer b. The embodiment determines, at the second processor, the substitution cost S(a,b)=&#x3a3;<sub>i,j</sub>c<sub>ij</sub>a<sup>i</sup>b<sup>j </sup>in encrypted form.</p>
+<p id="p-0087" num="0097">The substitution cost S (a,b)=(a&#x2212;b)<sup>s </sup>is a polynomial of degree s in b, i.e., 0&#x2266;j&#x2266;s. Thus, the second processor determines the substitution cost &#x3be;<sub>r</sub>(&#x3a3;<sub>i,j</sub>c<sub>ij</sub>a<sup>i</sup>b<sup>j</sup>) for some encryption coefficient r&#x3b5;Z<sub>N</sub>*. The second processor is not able to decrypt the substitution cost because the second processor does not possess the private key. The first processor knows only the value of integer b. The steps are as follows:
+<ul id="ul0005" list-style="none">
+    <li id="ul0005-0001" num="0000">
+    <ul id="ul0006" list-style="none">
+        <li id="ul0006-0001" num="0098">1. For 0&#x2266;j&#x2266;s, the first processor encrypts, b<sub>j </sub>and transmits &#x3be;<sub>r</sub><sub><sub2>B</sub2></sub>(b<sup>j</sup>) to the second processor.</li>
+        <li id="ul0006-0002" num="0099">2. The second processor based on values of c<sub>i,j </sub>and a, determines</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0088" num="0100">
+<maths id="MATH-US-00005" num="00005">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <msub>
+            <mi>&#x3be;</mi>
+            <mi>r</mi>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mi>S</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mi>a</mi>
+                  <mo>,</mo>
+                  <mi>b</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <msub>
+              <mi>&#x3be;</mi>
+              <mi>r</mi>
+            </msub>
+            <mo>(</mo>
+            <mrow>
+              <munder>
+                <mo>&#x2211;</mo>
+                <mrow>
+                  <mi>i</mi>
+                  <mo>,</mo>
+                  <mi>j</mi>
+                </mrow>
+              </munder>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <msub>
+                  <mi>c</mi>
+                  <mi>ij</mi>
+                </msub>
+                <mo>&#x2062;</mo>
+                <msup>
+                  <mi>a</mi>
+                  <mi>i</mi>
+                </msup>
+                <mo>&#x2062;</mo>
+                <msup>
+                  <mi>b</mi>
+                  <mi>j</mi>
+                </msup>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <munder>
+              <mo>&#x220f;</mo>
+              <mrow>
+                <mi>i</mi>
+                <mo>,</mo>
+                <mi>j</mi>
+              </mrow>
+            </munder>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <msup>
+                <mrow>
+                  <msub>
+                    <mi>&#x3be;</mi>
+                    <msub>
+                      <mi>r</mi>
+                      <mi>B</mi>
+                    </msub>
+                  </msub>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <msup>
+                      <mi>b</mi>
+                      <mi>j</mi>
+                    </msup>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <msub>
+                    <mi>c</mi>
+                    <mi>ij</mi>
+                  </msub>
+                  <mo>&#x2062;</mo>
+                  <msup>
+                    <mi>a</mi>
+                    <mi>i</mi>
+                  </msup>
+                </mrow>
+              </msup>
+              <mo>.</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>6</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0089" num="0101">This method incurs a significantly lower computation and communication overhead for polynomial evaluation compared with the methods based on oblivious transfer. Methods based on the oblivious transfer become extremely complex and incur a large transmission overhead even for very simple polynomials.</p>
+<p id="p-0090" num="0102">Longest Common Subsequence</p>
+<p id="p-0091" num="0103">One embodiment of the invention determines the length of the longest common subsequence between the first and the second sequences. This embodiment is similar in many respects to the embodiments for determining the edit distance. There are only two main differences:</p>
+<p id="p-0092" num="0104">First, instead of computing minimum of three elements at each step of the method, the embodiment determines a maximum of three elements. For example, for numerical values, the two processors reverse the signs of all the values, and use the minimum-finding method described above.</p>
+<p id="p-0093" num="0105">Second, instead of selecting the edit distance as the last element M(n, m) of the matrix, we search the entire matrix and find the maximal element in the matrix. An encryption of the maximal element can be found by reversing the sign of each element in the matrix M and applying the minimization protocol described earlier. Then, the obtained result is sent to the first processor who decrypts it to obtain the maximal element. This maximal element gives the length of the longest common subsequence. This means that after computing the entire matrix, the two processors perform one more maximum-finding protocol with mn encrypted elements to obtain the desired result, which is the encryption of the length of the longest common subsequence.</p>
+<p id="p-0094" num="0106">Although the invention has been described by way of examples of preferred embodiments, it is to be understood that various other adaptations and modifications may be made within the spirit and scope of the invention. Therefore, it is the object of the appended claims to cover all such variations and modifications as come within the true spirit and scope of the invention.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08625782-20140107-M00001.NB">
+<img id="EMI-M00001" he="22.61mm" wi="76.20mm" file="US08625782-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08625782-20140107-M00002.NB">
+<img id="EMI-M00002" he="6.01mm" wi="76.20mm" file="US08625782-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00003" nb-file="US08625782-20140107-M00003.NB">
+<img id="EMI-M00003" he="7.45mm" wi="76.20mm" file="US08625782-20140107-M00003.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00004" nb-file="US08625782-20140107-M00004.NB">
+<img id="EMI-M00004" he="34.97mm" wi="76.20mm" file="US08625782-20140107-M00004.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00005" nb-file="US08625782-20140107-M00005.NB">
+<img id="EMI-M00005" he="7.79mm" wi="76.20mm" file="US08625782-20140107-M00005.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>We claim:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method for determining an encrypted edit distance as an encryption of a minimum cost of transformation of a first sequence into a second sequence based on an insertion cost, a deletion cost, and a substitution cost, comprising steps of:
+<claim-text>formulating the minimum cost as a dynamic programming solution of a matrix, wherein elements of the matrix are determined recursively based on values of previously determined elements;</claim-text>
+<claim-text>determining a current element of the matrix as an encryption of a minimum of a first element, a second element, and a third element, wherein the first element represents the insertion cost, the second element represents the deletion cost, and the third element represents the substitution costs, and wherein the current element, the first element, the second element, and the third element are homomorphically encrypted with a public key;</claim-text>
+<claim-text>determining the current element using a minimum-finding method, wherein the minimum-finding method is configured to determine an encryption of a minimum of numbers in homomorphically encrypted form;</claim-text>
+<claim-text>determining, for each of the first element, the second element, and the third element, an encrypted summation producing a set of encrypted summations, wherein the encrypted summation is determined according to
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3be;<sub>r&#x2032;</sub><sub><sub2>i</sub2></sub>(&#x3bc;<i>a</i><sub>i</sub>+&#x3b1;)=(&#x3be;<sub>r</sub><sub><sub2>i</sub2></sub>(<i>a</i><sub>i</sub>))<sup>&#x3bc;</sup>&#x3be;<sub>r</sub><sub><sub2>0</sub2></sub>(&#x3b1;),<?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+</claim-text>
+<claim-text>wherein i=1, 2, . . . L, and L=3, &#x3bc; is a scaling constant and &#x3b1; is an integer shift selected at random, r<sub>i</sub>, r<sub>0 </sub>are encryption coefficients selected at random, an encryption coefficient r&#x2032;<sub>i</sub>=r<sub>i</sub>r<sub>0</sub>, and &#x3be;(.) is an encryption function;
+<claim-text>transmitting from the second processor to the first processor the set of encrypted summations, wherein the first processor is configured to decrypt, the encrypted summation using a private key, to determine a minimum from the set of encrypted summations, and to encrypt the minimum with the public key to produce the current element; and</claim-text>
+<claim-text>receiving by the second processor the current element transmitted from the first processor;</claim-text>
+<claim-text>repeating the determining recursively to produce the dynamic programming solution;</claim-text>
+<claim-text>selecting the dynamic programming solution as the encrypted edit distance, wherein steps of the method are performed by a first processor and a second processor, such that the first sequence is stored only at a memory connected to the first processor and is kept private from the second processor, and the second sequence is stored only at a memory connected to the second processor and is kept private from the first processor;</claim-text>
+<claim-text>providing the public key to the first processor and to the second processor;</claim-text>
+<claim-text>providing a private key only to the first processor;</claim-text>
+<claim-text>transmitting the encrypted edit distance to the first processor; and</claim-text>
+<claim-text>decrypting the encrypted edit distance with the private key, wherein a distribution of computational tasks and computational complexity between the first and second processors is unequal, wherein the method is performed in the first and second processors.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the determining is based on properties of semantically secure homomorphic encryption.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>determining an initial element of the matrix as the substitution cost, wherein the first element is a first symbol of the first sequence, and the second element is a first symbol of the second sequence.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>determining the current element according to
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3be;(min{<i>M</i>(<i>i&#x2212;</i>1<i>,j&#x2212;</i>1)+<i>S</i>(<i>x</i><sub>i</sub><i>,y</i><sub>j</sub>),<i>M</i>(<i>i&#x2212;</i>1<i>,j</i>)+<i>D</i>(<i>x</i><sub>i</sub>),<i>M</i>(<i>i,j&#x2212;</i>1)+<i>I</i>(<i>y</i><sub>j</sub>)})=&#x3be;(<i>M</i>(<i>i,j</i>)),<?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+</claim-text>
+<claim-text>wherein &#x3be;(.) is an encryption function, M(i,j) is the current element, I(y<sub>j</sub>) is the insertion cost of a symbol y<sub>j</sub>, D(x<sub>i</sub>) is the deletion cost of a symbol x<sub>i</sub>, and S(x<sub>i</sub>,y<sub>i</sub>) is the cost of substitution of the symbol x<sub>i </sub>with the symbol y<sub>j</sub>, and wherein i,j are indices of the symbols in the sequences.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00004">claim 4</claim-ref>, further comprising:
+<claim-text>determining the first element based on properties of additive homomorphic encryption according to
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3be;(<i>I</i>(<i>y</i><sub>j</sub>))&#x3be;(<i>M</i>(<i>i,j&#x2212;</i>1))=&#x3be;(<i>I</i>(<i>y</i><sub>j</sub>)+<i>M</i>(<i>i,j&#x2212;</i>1));<?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+<claim-text>determining the second element based on properties of additive homomorphic encryption according to
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3be;(<i>D</i>(<i>x</i><sub>i</sub>))&#x3be;(<i>M</i>(<i>i&#x2212;</i>1<i>,j</i>))=&#x3be;(<i>D</i>(<i>x</i><sub>i</sub>)+<i>M</i>(<i>i&#x2212;</i>1<i>,j</i>)); and<?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+<claim-text>determining the third element based on properties of additive homomorphic encryption according to
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3be;(<i>S</i>(<i>x</i><sub>i</sub><i>,y</i><sub>j</sub>))&#x3be;(<i>M</i>(<i>i&#x2212;</i>1<i>,j&#x2212;</i>1))=&#x3be;(<i>S</i>(<i>x</i><sub>i</sub><i>,y</i><sub>j</sub>)+<i>M</i>(<i>i&#x2212;</i>1<i>,j&#x2212;</i>1)).<?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00005">claim 5</claim-ref>, further comprising:
+<claim-text>transmitting the first element, the second element, and the third element to the first processor.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>selecting the scaling constant &#x3bc; as a power of 2;</claim-text>
+<claim-text>selecting by the second processor different integer shifts &#x3b1;<sub>i</sub>, i=1, 2, 3 for the first element, the second element and third element such that each integer shift is less than the scaling constant,</claim-text>
+<claim-text>transmitting from the second processor to the first processor the set of encrypted summations, wherein the first processor is configured to decrypt the encrypted summation using a private key, to determine a minimum from the set of encrypted summations, to convert the minimum to binary form, and to encrypt the minimum to produce encrypted bits;</claim-text>
+<claim-text>receiving by the second processor the encrypted bits from the first processor; and</claim-text>
+<claim-text>selecting only relevant bits from the encrypted bits based on the integer shifts &#x3b1;<sub>i </sub>and the scaling constant &#x3bc;.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the substitution cost is a polynomial function of a symbol from the first sequence and the symbol from the second sequence.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the substitution cost is an absolute distance between a symbol from the first sequence and the symbol from the second sequence.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the substitution cost is a constant when a symbol from the first sequence is different from the symbol from the second sequence, and zero when the symbol from the first sequence is identical to the symbol from the second sequence.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>determining a length of longest common subsequence between the first sequence and the second sequence. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

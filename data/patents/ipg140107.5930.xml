@@ -1,0 +1,533 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627039-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627039</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13292256</doc-number>
+<date>20111109</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>233</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>12</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>711203</main-classification>
+<further-classification>711  3</further-classification>
+<further-classification>711136</further-classification>
+<further-classification>711160</further-classification>
+</classification-national>
+<invention-title id="d2e53">Effective memory clustering to minimize page fault and optimize memory utilization</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>6094715</doc-number>
+<kind>A</kind>
+<name>Wilkinson et al.</name>
+<date>20000700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>7389399</doc-number>
+<kind>B2</kind>
+<name>Terrell et al.</name>
+<date>20080600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711203</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>7424592</doc-number>
+<kind>B1</kind>
+<name>Karr et al.</name>
+<date>20080900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711203</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>2004/0162952</doc-number>
+<kind>A1</kind>
+<name>Feind et al.</name>
+<date>20040800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00005">
+<othercit>Shacham, et al., On the Effectiveness of Address-Space Randomization, CCS '04, Oct. 25-29, 2004, Washington, DC, USA, pp. 298-307.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00006">
+<othercit>Azimi, et al., PATH: Page Access Tracking to Improve Memory Management, ISMM '07, Oct. 21-22, 2007, Montreal, Quebec, Canada, pp. 31-42.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00007">
+<othercit>Manassiev, et al., Exploiting Distributed Version Concurrency in a Transactional Memory Cluster, PPoPP '06, Mar. 29-31, 2006, New York, New York, USA, pp. 198-208.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>25</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>711203</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711136</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711160</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711  3</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>15</number-of-drawing-sheets>
+<number-of-figures>18</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation-in-part>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>12421879</doc-number>
+<date>20090410</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8078826</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13292256</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation-in-part>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120060013</doc-number>
+<kind>A1</kind>
+<date>20120308</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Mukherjee</last-name>
+<first-name>Maharaj</first-name>
+<address>
+<city>Wappingers Falls</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Mukherjee</last-name>
+<first-name>Maharaj</first-name>
+<address>
+<city>Wappingers Falls</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Cahn &#x26; Samuels, LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>International Business Machines Corporation</orgname>
+<role>02</role>
+<address>
+<city>Armonk</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Dinh</last-name>
+<first-name>Son</first-name>
+<department>2824</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">An embodiment of the invention provides a method for organizing data addresses within a virtual address space to reduce the number of data fetches to a cloud computing environment. More specifically, data access requests to the cloud computing environment are monitored to identifying data addresses having similar properties. Multi-dimensional clusters are created based on the monitoring to group the data addresses having similar properties. A memory page is created from a multi-dimensional cluster, wherein the creating of the memory page includes creating a cross-sectional partition from the multi-dimensional cluster. The multi-dimensional clusters and the memory page are stored in the cloud computing environment. A request for a data object in the cloud computing environment is received from a user interface. The data address corresponding to the data object is identified and mapped to the multi-dimensional cluster and/or the memory page. The memory page is transferred to the user interface.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="164.08mm" wi="205.74mm" file="US08627039-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="211.75mm" wi="183.98mm" orientation="landscape" file="US08627039-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="212.09mm" wi="169.33mm" orientation="landscape" file="US08627039-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="201.85mm" wi="149.35mm" orientation="landscape" file="US08627039-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="215.90mm" wi="213.61mm" orientation="landscape" file="US08627039-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="117.94mm" wi="152.15mm" orientation="landscape" file="US08627039-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="190.16mm" wi="115.49mm" orientation="landscape" file="US08627039-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="215.90mm" wi="147.83mm" orientation="landscape" file="US08627039-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="208.87mm" wi="159.17mm" orientation="landscape" file="US08627039-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="215.90mm" wi="186.94mm" orientation="landscape" file="US08627039-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="215.90mm" wi="164.17mm" orientation="landscape" file="US08627039-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="215.90mm" wi="202.18mm" orientation="landscape" file="US08627039-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="215.90mm" wi="174.75mm" orientation="landscape" file="US08627039-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="215.90mm" wi="186.10mm" orientation="landscape" file="US08627039-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="204.98mm" wi="213.02mm" orientation="landscape" file="US08627039-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="215.90mm" wi="171.87mm" orientation="landscape" file="US08627039-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<p id="p-0002" num="0001">The present application is a Continuation-In-Part patent application of U.S. Ser. No. 12/421,879 filed Apr. 10, 2009, the entirety of which is incorporated herein by reference.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND</heading>
+<p id="p-0003" num="0002">The present invention is in the field of systems, methods, and computer program products for effective memory clustering to minimize page faults and optimize memory utilization. The present invention is applicable in the field of distributed storage as well as storage associated with cloud computing.</p>
+<p id="p-0004" num="0003">When a request for data is received by the CPU, all of the pages available in the cache are searched. If the requested data is not available, the next lower level of the memory hierarchy is searched until the page containing the data is located. The page containing the requested data is then fetched and stored at each hierarchy level up to the cache. If the cache or any memory level in the hierarchy is full, the recently obtained page replaces an existing page. The CPU then accesses the data from the cache.</p>
+<p id="p-0005" num="0004">In many applications involving multidimensional data, the memory associativity includes more than row and column associativity. Examples of such applications include large data mining applications in multidimensional data space. Applications running on a multi-threaded, multi-process, and/or multi-core system may also have memory associativity in addition to row and column associativity. Data paging involving only row or column association may pull in only a small subset of data up and down the memory hierarchy. This may lead numerous page faults and slower computer processing.</p>
+<heading id="h-0002" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0006" num="0005">An embodiment of the invention provides a system and method for organizing data addresses within a virtual address space to reduce the number of data fetches to a cloud computing environment. More specifically, an analyzer module monitors data access requests to the cloud computing environment, the monitoring including identifying data addresses in the cloud computing environment having similar properties. A processor module connected to the analyzer module creates multi-dimensional clusters based on the monitoring to group the data addresses having similar properties. The processor module also creates a memory page from a multi-dimensional cluster of the multi-dimensional clusters, wherein the creating of the memory page includes creating a cross-sectional partition from the multi-dimensional cluster. The multi-dimensional clusters and the memory page are stored in the cloud computing environment.</p>
+<p id="p-0007" num="0006">A request from a user interface connected to the processor module is received, wherein the request includes a request for a data object in the cloud computing environment. A mapping module connected to the processor module identifies the data address corresponding to the data object and maps the data address to the multi-dimensional cluster and/or the memory page. The processor module transfers the memory page to the user interface.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE SEVERAL VIEWS OF THE DRAWINGS</heading>
+<p id="p-0008" num="0007">The present invention is described with reference to the accompanying drawings. In the drawings, like reference numbers indicate identical or functionally similar elements.</p>
+<p id="p-0009" num="0008"><figref idref="DRAWINGS">FIG. 1</figref> illustrates a flow diagram of a method for effective memory clustering to minimize page faults and optimize memory utilization according to an embodiment of the invention;</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 2</figref> illustrates a memory hierarchy scheme according to an embodiment of the invention;</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 3</figref> illustrates a cluster according to an embodiment of the invention;</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 4</figref> illustrates a cluster according to another embodiment of the invention;</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 5</figref> is a flowchart illustrating a method of clustering according to another embodiment of the invention;</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 6</figref> illustrates a cluster in a virtual address space according to another embodiment of the invention;</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 7</figref> illustrates the major axis of the cluster in <figref idref="DRAWINGS">FIG. 6</figref>;</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 8</figref> illustrates a memory page according to an embodiment of the invention;</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 9</figref> illustrates a cluster in a virtual address space according to another embodiment of the invention;</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 10</figref> illustrates memory pages sliced from the cluster illustrated in <figref idref="DRAWINGS">FIG. 8</figref>;</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 11</figref> illustrates a system for performing a method for organizing data addresses within a virtual address space according to another embodiment of the invention;</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 12</figref> illustrates a computer program product according to an embodiment of the invention;</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 13</figref> illustrates the architecture of a cloud storage environment according to an embodiment of the invention;</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 14</figref> is a flow diagram illustrating a method of organizing data addresses within a virtual address space within a cloud storage environment according to an embodiment of the invention;</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 15</figref> is a flow diagram illustrating a method for organizing data addresses within a virtual address space to reduce the number of data fetches to a cloud computing environment according to an embodiment of the invention;</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 16</figref> depicts a cloud computing node according to an embodiment of the present invention;</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 17</figref> depicts a cloud computing environment according to an embodiment of the present invention; and</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 18</figref> depicts abstraction model layers according to an embodiment of the present invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0027" num="0026">Exemplary, non-limiting, embodiments of the present invention are discussed in detail below. While specific configurations are discussed to provide a clear understanding, it should be understood that the disclosed configurations are provided for illustration purposes only. A person of ordinary skill in the art will recognize that other configurations may be used without departing from the spirit and scope of the invention.</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 1</figref> provides a general overview of one method for memory utilization according to an embodiment of the invention. Details of this and other embodiments of the invention are described below with reference to <figref idref="DRAWINGS">FIGS. 2-11</figref>. A method <b>100</b> monitors data access requests to secondary storage and identifies data addresses in secondary storage having similar properties (<b>110</b>). Multi-dimensional clusters are created based on the monitoring to group the data addresses having similar properties (<b>120</b>). A memory page is created from a multi-dimensional cluster, wherein a cross-sectional partition is created (sliced) from the multi-dimensional cluster (<b>130</b>). The method <b>100</b> receives a request for a data object in secondary storage (<b>140</b>) and identifies a data address corresponding to the requested data object (<b>150</b>). The data address is mapped to the multi-dimensional cluster and/or the memory page (<b>160</b>); and, the memory page is transferred to a data cache in primary storage (<b>170</b>).</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 2</figref> illustrates a memory hierarchy scheme <b>200</b> including a CPU <b>210</b> and primary storage units (cache <b>220</b>, on-chip memory <b>230</b>, and on-board memory <b>240</b> (e.g., RAM)). The memory hierarchy scheme <b>200</b> also includes secondary storage units (hard drives <b>250</b> and distributed memory <b>260</b> (e.g., server-based, cloud-based)). The speed of memory access by the CPU <b>210</b> increases up the memory hierarchy scheme <b>200</b>; and, the unit cost decreases down the memory hierarchy scheme <b>200</b>. The process of transferring data from secondary storage to primary storage is referred to as &#x201c;paging&#x201d;. Virtual memory schemes use paging to store data that does not fit into physical RAM.</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 3</figref> illustrates clusters <b>300</b>A and <b>300</b>B of data addresses <b>310</b> according to an embodiment of the invention. Each data address <b>310</b> corresponds to a data object in secondary storage (e.g., a first hard drive and a second hard drive). The clusters <b>300</b>A, <b>300</b>B are created based on monitored data access requests to secondary storage, wherein data addresses <b>310</b> having similar properties (e.g., location, access frequency, relationships with other data addresses) are grouped together. In at least one embodiment of the invention, clusters are updated to reflect changes in data access patterns. Specifically, the data addresses <b>310</b> are un-clustered, and subsequently re-clustered based on updated monitoring of the data access requests.</p>
+<p id="p-0031" num="0030">In at least one embodiment of the invention, clustering of the data addresses <b>310</b> is performed using distance metrics, for example, the L1 metric or the Manhattan distance, the L2 metric or Euclidean, or the L<sub>infinity </sub>or the Maximum metric. <figref idref="DRAWINGS">FIG. 3</figref> illustrates two clusters of the same data addresses: a two-dimensional convex hull cluster <b>300</b>A and an ellipsoid cluster <b>300</b>B. <figref idref="DRAWINGS">FIG. 4</figref> illustrates a three-dimensional convex hull cluster <b>400</b> (also referred to as a gift wrapper or polyhedron cluster). The three-dimensional convex hull cluster <b>400</b> includes the tightest (i.e., most closely related) grouping of data addresses <b>310</b>; the grouping in the ellipsoid cluster <b>300</b>B is less tight.</p>
+<p id="p-0032" num="0031">In one embodiment of the invention, the clusters are created by identifying one or more orthogonal bounding boxes that enclose the data addresses <b>310</b>. The clustering of the data addresses <b>310</b> does not have to be exact. An appropriate approximation of the two-dimensional convex hull cluster <b>300</b>A, the ellipsoid cluster <b>300</b>B, or the three-dimensional convex hull cluster <b>400</b> may be used.</p>
+<p id="p-0033" num="0032">At least one embodiment of the invention utilizes inclusion tests to determine whether a data address is located within a cluster. In a two dimensional area, an infinite line is written in the equation: px+qy=v, where x and y correspond to the X and Y dimensions, respectively. This line divides the X-Y plane into two halves. Any points on one half satisfies the inequality px+qy&#x3e;v. Points on the other side satisfy the inequality: px+qy&#x3c;v. A convex polygon with n sides is expressed by a set of inequalities of the form {(pi)x+(qi)y&#x3c;(vi), for i=1, . . . , n}.</p>
+<p id="p-0034" num="0033">Similarly, in a three-dimensional area, an infinite plane is defined by the equation: px+qy+ry=n. This line divides the X-Y-Z three dimensional space into two halves. Any points on one half satisfies the inequality px+qy+rz&#x3e;n. Points on the other side of the plane satisfy the inequality: px+qy+rz&#x3c;n. A convex polyhedron with n surfaces is expressed by a set of inequalities of the form {(pi)x+(qi)y&#x3c;(vi), for i=1, . . . , n}.</p>
+<p id="p-0035" num="0034">In a hyperspace with m dimensions {x_j, j=1, . . . , m}, a hyperplane is defined in terms of m dimensions as: (a<b>1</b>)(x<b>1</b>)+(a<b>2</b>)(x<b>2</b>)+(a<b>3</b>)(x<b>3</b>)+ . . . +(am)(xm)=v. Any points on one half satisfy the inequality (a<b>1</b>)(x<b>1</b>)+(a<b>2</b>)(x<b>2</b>)+(a<b>3</b>)(x<b>3</b>)+ . . . +(am)(xm)&#x3e;v. Points on the other side satisfy the inequality: (a<b>1</b>)(x<b>1</b>)+(a<b>2</b>)(x<b>2</b>)+(a<b>3</b>)(x<b>3</b>)+ . . . +(am)(xm)&#x3c;v. The above is also written in a Vector Notation: ax&#x3c;v. Where a=[a<b>1</b>, a<b>2</b>, a<b>3</b>, . . . , am], x=[x<b>1</b>, x<b>2</b>, x<b>3</b>, . . . , xm], and v=[v<b>1</b>, v<b>2</b>, v<b>3</b>, . . . , vm]. The cluster is therefore represented by a convex polyhedron. Any point that is inside the cluster satisfies the equation ax&#x3c;v.</p>
+<p id="p-0036" num="0035">Similar concepts are applied in the case of an ellipsoid. In two dimensions, an ellipse is defined as (x&#x2212;h)<sup>2</sup>/a<sup>2</sup>+(y&#x2212;k)<sup>2</sup>/b<sup>2</sup>=1. Point (h, k) defines the center of the ellipse; and, a and b define the aspect ratio. Points within the ellipse satisfy the inequality: (x&#x2212;h)<sup>2</sup>/a<sup>2</sup>+(y&#x2212;k)<sup>2</sup>/b<sup>2</sup>&#x3c;1. In the case of three-dimensional ellipsoids, points within the ellipsoid satisfy the inequality: (x&#x2212;h)<sup>2</sup>/a<sup>2</sup>+(y&#x2212;k)<sup>2</sup>/b<sup>2</sup>+(z&#x2212;g)<sup>2</sup>/c<sup>2</sup>&#x3c;1. In case of an m dimensional hyperspace, points within an ellipsoid satisfy the inequality (x&#x2212;x<sub>0</sub>)<sup>T</sup>M(x&#x2212;x<sub>0</sub>)&#x3c;d<sup>2</sup>. Here, x=[x<b>1</b>, x<b>2</b>, . . . , xm] and is an m-dimensional vector; x<sub>0</sub>=[x<b>01</b>, x<b>02</b>, . . . , x<b>0</b><i>m</i>] and denotes the center of the ellipse; and, d=[d<b>1</b>, d<b>2</b>, . . . , dm] and denotes the radius of the ellipse. M is a m&#xd7;m matrix denoting the m-dimensional aspect ratio as well as the orientation of the ellipsoid. A data address is within a three-dimensional convex hull cluster if ax&#x3c;v. Here, a=[a<b>1</b>, a<b>2</b>, a<b>3</b>, . . . , am]; x=[x<b>1</b>, x<b>2</b>, x<b>3</b>, . . . , xm]; and, v=[v<b>1</b>, v<b>2</b>, v<b>3</b>, . . . , vm].</p>
+<p id="p-0037" num="0036">Although convex hulls of clusters are illustrated in <figref idref="DRAWINGS">FIGS. 3 and 4</figref>, other types of tight clusters can be created. In one embodiment, ellipsoidal or spherical clusters in a D-dimensional space (D&#x2267;2) are used to partition the virtual address space. In another embodiment, clusters are modeled with convex functions, such as the Gaussian function.</p>
+<p id="p-0038" num="0037">Supervised clustering and/or unsupervised clustering are utilized to create clusters. In supervised clustering, the number of clusters is known a-priori. In un-supervised clustering, the number of clusters is not known a-priori. A clustering algorithm decides the best number of clusters based on the distance metric or other specified properties.</p>
+<p id="p-0039" num="0038">According to one embodiment of the invention, <figref idref="DRAWINGS">FIG. 5</figref> is a flowchart illustrating a method of clustering based on calibration data. A method <b>500</b> approximates a number of clusters by applying an unsupervised clustering approach, e.g., a grid based clustering approach (<b>510</b>). The method <b>500</b> then smoothes the number of clusters by applying a supervised clustering approach (<b>520</b>).</p>
+<p id="p-0040" num="0039">By applying an unsupervised clustering approach, the method <b>500</b> decides a set of variables for a spatial grid (<b>511</b>). The variables include, among others: a dimensional variable from model calibration with a minimum and maximum value; the number of divisions for each dimension (e.g., a number (e.g., 10) to bin or separate process parameters obtained from model calibration); and, a minimum number of points in a grid (e.g., 0.2% of the total number of data points for a grid to be eliminated). The points may be image parameters or process parameters associated with the calibration data points.</p>
+<p id="p-0041" num="0040">The space of process parameters, in all the given dimensions, is divided into a spatial grid according to the decided division (<b>512</b>). Within each grid block, the number of process parameters or data points is counted (<b>513</b>). If the number of points or process parameters inside a grid is less than the decided minimum number of points and whose neighbors also have points less than the minimum number, the grid block is eliminated (<b>514</b>).</p>
+<p id="p-0042" num="0041">The remaining grid blocks are combined into clusters, where each cluster is separated from its neighbors by eliminated grid blocks (<b>515</b>). The clusters are smoothed by a supervised clustering approach (<b>520</b>). In one embodiment, convex hulls and/or ellipsoids corresponding to the clusters are used to create smoothed tight clusters (<b>521</b>).</p>
+<p id="p-0043" num="0042"><figref idref="DRAWINGS">FIG. 6</figref> illustrates a three-dimensional cluster <b>610</b> in a virtual address space <b>600</b>. The virtual address space <b>600</b> includes physical storage components in both primary storage (e.g., L1 cache, L2 cache, RAM) and secondary storage (e.g., hard drives). The virtual address space <b>600</b> extends physical memory size onto secondary storage while giving a software application running on the computer system the impression that it is using contiguous working memory. An embodiment of the invention identifies a major axis <b>612</b>, a minor axis <b>614</b>, and a minor axis <b>616</b> of the cluster <b>610</b>. The major axis <b>612</b> is the longest diameter of the cluster <b>610</b>. Thus, the major axis <b>612</b> runs through the center of the cluster <b>610</b> with its ends being at the widest points of the cluster <b>610</b>.</p>
+<p id="p-0044" num="0043">More specifically, the major axis is determined by the straight line that connects the two points of the highest curvature of the ellipse. The curvature of a surface is defined by the parametric derivative of the surface, such as ellipsoid. In an m-dimensional ellipsoid defined by (x&#x2212;x<sub>0</sub>)<sup>T</sup>M (x&#x2212;x<sub>0</sub>)&#x3c;d<sup>2</sup>, the major axis is defined by the first eigenvector of the Matrix M.</p>
+<p id="p-0045" num="0044"><figref idref="DRAWINGS">FIG. 7</figref> is a diagram illustrating the cluster <b>610</b> reoriented with respect to the major axis <b>612</b>. Having identified the major axis <b>612</b> of the cluster <b>610</b>, the cluster <b>610</b> can be partitioned to maximize the number of data points (e.g., data addresses <b>610</b>) located within each partition. More specifically, an embodiment of the invention creates one or more two-dimensional memory pages from the cluster by partitioning the cluster along the major axis. As illustrated in <figref idref="DRAWINGS">FIG. 8</figref>, a two-dimensional memory page <b>800</b> is created by taking a cross-sectional partition (also referred to as a &#x201c;slice&#x201d;) of the cluster <b>610</b>. In order to maximize the number of data addresses <b>310</b> in the memory page <b>800</b>, the partition is parallel to the major axis <b>612</b> of the cluster <b>610</b>. When the memory page <b>800</b> is subsequently moved to the cache, as described more fully below, the number of data addresses <b>310</b> and corresponding data objects retrieved is maximized.</p>
+<p id="p-0046" num="0045">As described above, if a requested data object cannot be found in the memory cache, each lower storage component in the virtual address space is searched until the requested data object is found. When the requested data object is found, the data address corresponding to the requested data object is identified. The data address is mapped to the cluster and/or the memory page that contains the data address. The memory page is then moved (i.e., fetched) to the cache in primary storage. For example, if the requested data object has a corresponding data address located in the memory page <b>800</b>, the memory page <b>800</b> is copied to the cache and stored in each lower storage component in the virtual address space.</p>
+<p id="p-0047" num="0046">Accordingly, the embodiments of the invention can increase the speed and efficiency of data retrieval from secondary storage. Requests for data typically require more than one data object. As such, multiple data addresses and often times multiple fetches to secondary storage are required to fulfill a data access request. The embodiments herein partition the cluster along the major axis to maximize the number of data addresses located within each memory page. Thus, fewer memory pages, and consequently fewer fetches to secondary storage may be required to satisfy a data access request.</p>
+<p id="p-0048" num="0047">For example, <figref idref="DRAWINGS">FIG. 9</figref> illustrates a three-dimensional cluster <b>910</b> in a virtual address space <b>900</b>. As further illustrated in <figref idref="DRAWINGS">FIG. 10</figref>, memory pages <b>1000</b>, <b>1010</b>, <b>1020</b>, and <b>1030</b> are created from partitions that are &#x201c;sliced&#x201d; along the X-Z axis of the virtual address space <b>900</b>. The partitions are not parallel to the major axis of the cluster <b>910</b>. A combined total of 27 data addresses are retrieved from the four memory pages (i.e., memory pages <b>1000</b>, <b>1010</b>, <b>1020</b>, and <b>1030</b>). Conversely, as illustrated in <figref idref="DRAWINGS">FIG. 8</figref>, an embodiment of the invention retrieves the memory page <b>800</b>, which is created from a partition taken along the major axis of the cluster <b>610</b>. The single memory page <b>800</b> includes 34 data addresses, whereas the four memory pages in <figref idref="DRAWINGS">FIG. 10</figref> include a combined total of only 27 data addresses.</p>
+<p id="p-0049" num="0048"><figref idref="DRAWINGS">FIG. 11</figref> illustrates a system <b>1100</b> for organizing data addresses within a virtual address space according to an embodiment of the invention. An analyzer module <b>1110</b> is provided to monitor data access requests to a secondary storage module and identify data addresses in the secondary storage module having similar properties. A processing module <b>1120</b> creates multi-dimensional clusters (e.g., two-dimensional convex hull cluster, ellipsoid cluster, three-dimensional convex hull cluster) in the virtual address space based on the monitoring to group the data addresses having similar properties. The processing module <b>1120</b> also creates a memory page from a multi-dimensional cluster, including creating a cross-sectional partition from the multi-dimensional cluster. In at least one embodiment, the processing module <b>1120</b> identifies a major axis in the multi-dimensional cluster, wherein the cross-sectional partition is parallel to the major axis. A user interface <b>1130</b> sends a request for a data object in the secondary storage module to the processing module <b>1120</b>; and, a data address corresponding to the requested data object is identified via a mapping module <b>1140</b>. The mapping module <b>1140</b> maps the identified data address to the multi-dimensional cluster and/or the memory page; and, the processing module <b>1120</b> transfers the memory page to a data cache in primary storage. Additionally, the processing module <b>1120</b> receives updated monitoring of the data access requests from the analyzer module <b>1110</b>, un-clusters the data addresses, and re-clusters the data addresses based on the updated monitoring of the data access requests.</p>
+<p id="p-0050" num="0049">In another embodiment where networked storage or networked virtualized storage is utilized, such as in the case of a cloud storage infrastructure, at least one of the cloud servers identifies a data address corresponding to the requested data object. The data address is mapped to the multi-dimensional cluster and/or the memory page residing in at least one of the networked storage or a networked virtualized storage, as in case of a cloud storage infrastructure. The memory page is transferred to a data cache in primary storage via at least one of the cloud servers. In at least one embodiment of the invention, updated monitoring of the data access requests is received. The data addresses are un-clustered and re-clustered based on the updated monitoring of the data access requests.</p>
+<p id="p-0051" num="0050">In a hierarchic memory, the data at the lowest level can be stored in a single location or in a distributed environment, where the several storage spaces are connected over the network. As used herein, the term &#x201c;connected&#x201d; includes operationally connected, logically connected, in communication with, physically connected, engaged, coupled, contacts, linked, affixed, and attached. The storage can also be done in a cloud environment where the application at the top most level of the hierarchy is ambivalent of where the data is stored at the lowest level of the hierarchy. Cloud storage is a model of networked online storage where data is stored on virtualized pools of storage which are generally hosted by third parties. Hosting companies operate large data centers; and people who require their data to be hosted buy or lease storage capacity from them and use it for their storage needs. The data center operators, in the background, virtualize the resources according to the requirements of the customer and expose them as storage pools, which the customers can themselves use to store files or data objects. Physically, the resource may span across multiple servers.</p>
+<p id="p-0052" num="0051"><figref idref="DRAWINGS">FIG. 13</figref> illustrates the architecture of a cloud storage environment according to an embodiment of the invention, wherein a user computer <b>1350</b> accesses a secondary storage. Cloud server <b>1300</b> includes a user interaction interface <b>1301</b>. In case of a cloud storage <b>1306</b>, the data may reside in the network and the user is ambivalent to the exact location of the data in the internet. The service of the data storage and access may be provided by a third party and the user may be metered and monitored for the access and usage of cloud storage <b>1306</b> via monitoring and metering module <b>1305</b>. There may be other applications associated with the access of the data such as a cloud system management <b>1302</b> and a catalog of applications <b>1304</b> that the user may have access to, as well as a provisioning tool <b>1303</b> that makes the final connection to the cloud storage <b>1306</b>. The services catalog <b>1304</b> and monitoring and metering module <b>1305</b> may also involve secured access to the data storage and maintain and monitor a secured access.</p>
+<p id="p-0053" num="0052">In the case of a cloud environment, several data storage spaces can be connected by one or more cloud storage servers. Several cloud storage servers may also be interconnected to create an inter, or intra-cloud infrastructure. Accessing the relevant subset of data from a networked or cloud storage environment is even more challenging since the access of the data is also severely limited by the speed of the network.</p>
+<p id="p-0054" num="0053"><figref idref="DRAWINGS">FIG. 14</figref> is a flow diagram illustrating a method for organizing data addresses within a virtual address space residing within a cloud storage environment according to an embodiment of the invention. A request for data access is sent by a user that is not part of the cloud system (<b>1410</b>). A cloud server receives the request (<b>1420</b>). An analyzer module monitors data access requests to a cloud storage module and identifies data addresses in the cloud storage module having similar properties (<b>1430</b>). A processing module creates multi-dimensional clusters (e.g., two-dimensional convex hull cluster, ellipsoid cluster, three-dimensional convex hull cluster) in the virtual address space based on the monitoring to group the data addresses having similar properties within the cloud storage (<b>1440</b>). The processing module also creates a memory page from a multi-dimensional cluster within the cloud storage, including creating a cross-sectional partition from the multi-dimensional cluster (<b>1450</b>). In at least one embodiment, the processing module identifies a major axis in the multi-dimensional cluster, wherein the cross-sectional partition is parallel to the major axis.</p>
+<p id="p-0055" num="0054">A user interface sends a request for a data object in the secondary storage module through the cloud server, which is received by the processing module (<b>1460</b>). A data address corresponding to the requested data object is identified via a mapping module (<b>1470</b>). The mapping module maps the identified data address to the multi-dimensional cluster and/or the memory page (<b>1480</b>); and, the processing module transfers the memory page to the requesting application through the cloud server (<b>1490</b>). In at least one embodiment, the processing module receives updated monitoring of the data access requests from the analyzer module, un-clusters the data addresses, and re-clusters the data addresses based on the updated monitoring of the data access requests.</p>
+<p id="p-0056" num="0055"><figref idref="DRAWINGS">FIG. 15</figref> is a flow diagram illustrating a method for organizing data addresses within a virtual address space to reduce the number of data fetches to a cloud computing environment according to an embodiment of the invention. Data access requests to a cloud computing environment are monitored (<b>1510</b>), wherein one or more cloud servers identify data addresses in the cloud computing environment having similar properties (e.g., similar locations and/or similar access frequency).</p>
+<p id="p-0057" num="0056">Multi-dimensional clusters are created in a virtual address space based on the monitoring to group the data addresses having similar properties (<b>1520</b>). The multi-dimensional clusters include a two-dimensional convex hull cluster, an ellipsoid cluster, and/or a three-dimensional convex hull cluster. The major axis of a multi-dimensional cluster is identified by identifying the longest diameter of the multi-dimensional cluster.</p>
+<p id="p-0058" num="0057">A two-dimensional memory page is created from the multi-dimensional cluster (<b>1530</b>) by creating a cross-sectional partition from the multi-dimensional cluster. In at least one embodiment, the cross-sectional partition is parallel to the major axis of the multi-dimensional cluster, which increases the number of data addresses in the memory page. The multi-dimensional clusters and memory page are stored in the cloud computing environment (<b>1540</b>).</p>
+<p id="p-0059" num="0058">A request for a data object in the cloud computing environment is received from a user interface (<b>1550</b>); and, a data address corresponding to the data object is identified (<b>1560</b>). The data address is mapped to the multi-dimensional cluster and/or the memory page (<b>1570</b>). The memory page is transferred to the user interface (<b>1580</b>). In at least one embodiment, the memory page is also transferred to the data cache via one or more cloud servers. Updated monitoring of the data access requests is received; and, the data addresses are un-clustering and re-clustering based on the updated monitoring.</p>
+<p id="p-0060" num="0059">As will be appreciated by one skilled in the art, the present invention may be embodied as a system, method or computer program product. Accordingly, the present invention may take the form of an entirely hardware embodiment, an entirely software embodiment (including firmware, resident software, micro-code, etc.) or an embodiment combining software and hardware aspects that may all generally be referred to herein as a &#x201c;circuit,&#x201d; &#x201c;module&#x201d; or &#x201c;system.&#x201d; Furthermore, the present invention may take the form of a computer program product embodied in any tangible medium of expression having computer usable program code embodied in the medium.</p>
+<p id="p-0061" num="0060">Any combination of one or more computer usable or computer readable medium(s) may be utilized. The computer-usable or computer-readable medium may be, for example but not limited to, an electronic, magnetic, optical, electromagnetic, infrared, or semiconductor system, apparatus, device, or propagation medium. More specific examples (a non-exhaustive list) of the computer-readable medium would include the following: an electrical connection having one or more wires, a portable computer diskette, a hard disk, a random access memory (RAM), a read-only memory (ROM), an erasable programmable read-only memory (EPROM or Flash memory), an optical fiber, a portable compact disc read-only memory (CDROM), an optical storage device, a transmission media such as those supporting the Internet or an intranet, or a magnetic storage device. Note that the computer-usable or computer-readable medium could even be paper or another suitable medium upon which the program is printed, as the program can be electronically captured, via, for instance, optical scanning of the paper or other medium, then compiled, interpreted, or otherwise processed in a suitable manner, if necessary, and then stored in a computer memory. In the context of this document, a computer-usable or computer-readable medium may be any medium that can contain, store, communicate, propagate, or transport the program for use by or in connection with the instruction execution system, apparatus, or device. The computer-usable medium may include a propagated data signal with the computer-usable program code embodied therewith, either in baseband or as part of a carrier wave. The computer usable program code may be transmitted using any appropriate medium, including but not limited to wireless, wireline, optical fiber cable, RF, etc.</p>
+<p id="p-0062" num="0061">Computer program code for carrying out operations of the present invention may be written in any combination of one or more programming languages, including an object oriented programming language such as Java, Smalltalk, C++ or the like and conventional procedural programming languages, such as the &#x201c;C&#x201d; programming language or similar programming languages. The program code may execute entirely on the user's computer, partly on the user's computer, as a stand-alone software package, partly on the user's computer and partly on a remote computer or entirely on the remote computer or server. In the latter scenario, the remote computer may be connected to the user's computer through any type of network, including a local area network (LAN) or a wide area network (WAN), or the connection may be made to an external computer (for example, through the Internet using an Internet Service Provider).</p>
+<p id="p-0063" num="0062">The present invention is described with reference to flowchart illustrations and/or block diagrams of methods, apparatus (systems) and computer program products according to embodiments of the invention. It will be understood that each block of the flowchart illustrations and/or block diagrams, and combinations of blocks in the flowchart illustrations and/or block diagrams, can be implemented by computer program instructions. These computer program instructions may be provided to a processor of a general purpose computer, special purpose computer, or other programmable data processing apparatus to produce a machine, such that the instructions, which execute via the processor of the computer or other programmable data processing apparatus, create means for implementing the functions/acts specified in the flowchart and/or block diagram block or blocks.</p>
+<p id="p-0064" num="0063">These computer program instructions may also be stored in a computer-readable medium that can direct a computer or other programmable data processing apparatus to function in a particular manner, such that the instructions stored in the computer-readable medium produce an article of manufacture including instruction means which implement the function/act specified in the flowchart and/or block diagram block or blocks. The computer program instructions may also be loaded onto a computer or other programmable data processing apparatus to cause a series of operational steps to be performed on the computer or other programmable apparatus to produce a computer implemented process such that the instructions which execute on the computer or other programmable apparatus provide processes for implementing the functions/acts specified in the flowchart and/or block diagram block or blocks.</p>
+<p id="p-0065" num="0064">Referring now to <figref idref="DRAWINGS">FIG. 12</figref>, a representative hardware environment for practicing at least one embodiment of the invention is depicted. This schematic drawing illustrates a hardware configuration of an information handling/computer system in accordance with at least one embodiment of the invention. The system comprises at least one processor or central processing unit (CPU) <b>710</b>. The CPUs <b>710</b> are interconnected via system bus <b>712</b> to various devices such as a random access memory (RAM) <b>174</b>, read-only memory (ROM) <b>716</b>, and an input/output (I/O) adapter <b>718</b>. The I/O adapter <b>718</b> can connect to peripheral devices, such as disk units <b>711</b> and tape drives <b>713</b>, or other program storage devices that are readable by the system. The system can read the inventive instructions on the program storage devices and follow these instructions to execute the methodology of at least one embodiment of the invention. The system further includes a user interface adapter <b>719</b> that connects a keyboard <b>715</b>, mouse <b>717</b>, speaker <b>724</b>, microphone <b>722</b>, and/or other user interface devices such as a touch screen device (not shown) to the bus <b>712</b> to gather user input. Additionally, a communication adapter <b>720</b> connects the bus <b>712</b> to a data processing network <b>725</b>, and a display adapter <b>721</b> connects the bus <b>712</b> to a display device <b>723</b> which may be embodied as an output device such as a monitor, printer, or transmitter, for example.</p>
+<p id="p-0066" num="0065">The flowchart and block diagrams in the Figures illustrate the architecture, functionality, and operation of possible implementations of systems, methods and computer program products according to various embodiments of the present invention. In this regard, each block in the flowchart or block diagrams may represent a module, segment, or portion of code, which comprises one or more executable instructions for implementing the specified logical function(s). It should also be noted that, in some alternative implementations, the functions noted in the block may occur out of the order noted in the figures. For example, two blocks shown in succession may, in fact, be executed substantially concurrently, or the blocks may sometimes be executed in the reverse order, depending upon the functionality involved. It will also be noted that each block of the block diagrams and/or flowchart illustration, and combinations of blocks in the block diagrams and/or flowchart illustration, can be implemented by special purpose hardware-based systems that perform the specified functions or acts, or combinations of special purpose hardware and computer instructions.</p>
+<p id="p-0067" num="0066">It is understood in advance that although this disclosure includes a detailed description on cloud computing, implementation of the teachings recited herein are not limited to a cloud computing environment. Rather, embodiments of the present invention are capable of being implemented in conjunction with any other type of computing environment now known or later developed.</p>
+<p id="p-0068" num="0067">Cloud computing is a model of service delivery for enabling convenient, on-demand network access to a shared pool of configurable computing resources (e.g. networks, network bandwidth, servers, processing, memory, storage, applications, virtual machines, and services) that can be rapidly provisioned and released with minimal management effort or interaction with a provider of the service. This cloud model may include at least five characteristics, at least three service models, and at least four deployment models.</p>
+<p id="p-0069" num="0068">Characteristics are as follows:</p>
+<p id="p-0070" num="0069">On-demand self-service: a cloud consumer can unilaterally provision computing capabilities, such as server time and network storage, as needed automatically without requiring human interaction with the service's provider.</p>
+<p id="p-0071" num="0070">Broad network access: capabilities are available over a network and accessed through standard mechanisms that promote use by heterogeneous thin or thick client platforms (e.g., mobile phones, laptops, and PDAs).</p>
+<p id="p-0072" num="0071">Resource pooling: the provider's computing resources are pooled to serve multiple consumers using a multi-tenant model, with different physical and virtual resources dynamically assigned and reassigned according to demand. There is a sense of location independence in that the consumer generally has no control or knowledge over the exact location of the provided resources but may be able to specify location at a higher level of abstraction (e.g., country, state, or datacenter).</p>
+<p id="p-0073" num="0072">Rapid elasticity: capabilities can be rapidly and elastically provisioned, in some cases automatically, to quickly scale out and rapidly released to quickly scale in. To the consumer, the capabilities available for provisioning often appear to be unlimited and can be purchased in any quantity at any time.</p>
+<p id="p-0074" num="0073">Measured service: cloud systems automatically control and optimize resource use by leveraging a metering capability at some level of abstraction appropriate to the type of service (e.g., storage, processing, bandwidth, and active user accounts). Resource usage can be monitored, controlled, and reported providing transparency for both the provider and consumer of the utilized service.</p>
+<p id="p-0075" num="0074">Service Models are as follows:</p>
+<p id="p-0076" num="0075">Software as a Service (SaaS): the capability provided to the consumer is to use the provider's applications running on a cloud infrastructure. The applications are accessible from various client devices through a thin client interface such as a web browser (e.g., web-based email). The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user-specific application configuration settings.</p>
+<p id="p-0077" num="0076">Platform as a Service (PaaS): the capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages and tools supported by the provider. The consumer does not manage or control the underlying cloud infrastructure including networks, servers, operating systems, or storage, but has control over the deployed applications and possibly application hosting environment configurations.</p>
+<p id="p-0078" num="0077">Infrastructure as a Service (IaaS): the capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, deployed applications, and possibly limited control of select networking components (e.g., host firewalls).</p>
+<p id="p-0079" num="0078">Deployment Models are as follows:</p>
+<p id="p-0080" num="0079">Private cloud: the cloud infrastructure is operated solely for an organization. It may be managed by the organization or a third party and may exist on-premises or off-premises.</p>
+<p id="p-0081" num="0080">Community cloud: the cloud infrastructure is shared by several organizations and supports a specific community that has shared concerns (e.g., mission, security requirements, policy, and compliance considerations). It may be managed by the organizations or a third party and may exist on-premises or off-premises.</p>
+<p id="p-0082" num="0081">Public cloud: the cloud infrastructure is made available to the general public or a large industry group and is owned by an organization selling cloud services.</p>
+<p id="p-0083" num="0082">Hybrid cloud: the cloud infrastructure is a composition of two or more clouds (private, community, or public) that remain unique entities but are bound together by standardized or proprietary technology that enables data and application portability (e.g., cloud bursting for loadbalancing between clouds).</p>
+<p id="p-0084" num="0083">A cloud computing environment is service oriented with a focus on statelessness, low coupling, modularity, and semantic interoperability. At the heart of cloud computing is an infrastructure comprising a network of interconnected nodes.</p>
+<p id="p-0085" num="0084">Referring now to <figref idref="DRAWINGS">FIG. 16</figref>, a schematic of an example of a cloud computing node is shown. Cloud computing node <b>10</b> is only one example of a suitable cloud computing node and is not intended to suggest any limitation as to the scope of use or functionality of embodiments of the invention described herein. Regardless, cloud computing node <b>10</b> is capable of being implemented and/or performing any of the functionality set forth hereinabove.</p>
+<p id="p-0086" num="0085">In cloud computing node <b>10</b> there is a computer system/server <b>12</b>, which is operational with numerous other general purpose or special purpose computing system environments or configurations. Examples of well-known computing systems, environments, and/or configurations that may be suitable for use with computer system/server <b>12</b> include, but are not limited to, personal computer systems, server computer systems, thin clients, thick clients, handheld or laptop devices, multiprocessor systems, microprocessor-based systems, set top boxes, programmable consumer electronics, network PCs, minicomputer systems, mainframe computer systems, and distributed cloud computing environments that include any of the above systems or devices, and the like.</p>
+<p id="p-0087" num="0086">Computer system/server <b>12</b> may be described in the general context of computer system-executable instructions, such as program modules, being executed by a computer system. Generally, program modules may include routines, programs, objects, components, logic, data structures, and so on that perform particular tasks or implement particular abstract data types. Computer system/server <b>12</b> may be practiced in distributed cloud computing environments where tasks are performed by remote processing devices that are linked through a communications network. In a distributed cloud computing environment, program modules may be located in both local and remote computer system storage media including memory storage devices.</p>
+<p id="p-0088" num="0087">As shown in <figref idref="DRAWINGS">FIG. 16</figref>, computer system/server <b>12</b> in cloud computing node <b>10</b> is shown in the form of a general-purpose computing device. The components of computer system/server <b>12</b> may include, but are not limited to, one or more processors or processing units <b>16</b>, a system memory <b>28</b>, and a bus <b>18</b> that couples various system components including system memory <b>28</b> to processor <b>16</b>.</p>
+<p id="p-0089" num="0088">Bus <b>18</b> represents one or more of any of several types of bus structures, including a memory bus or memory controller, a peripheral bus, an accelerated graphics port, and a processor or local bus using any of a variety of bus architectures. By way of example, and not limitation, such architectures include Industry Standard Architecture (ISA) bus, Micro Channel Architecture (MCA) bus, Enhanced ISA (EISA) bus, Video Electronics Standards Association (VESA) local bus, and Peripheral Component Interconnects (PCI) bus.</p>
+<p id="p-0090" num="0089">Computer system/server <b>12</b> typically includes a variety of computer system readable media. Such media may be any available media that is accessible by computer system/server <b>12</b>, and it includes both volatile and non-volatile media, removable and non-removable media.</p>
+<p id="p-0091" num="0090">System memory <b>28</b> can include computer system readable media in the form of volatile memory, such as random access memory (RAM) <b>30</b> and/or cache memory <b>32</b>. Computer system/server <b>12</b> may further include other removable/non-removable, volatile/non-volatile computer system storage media. By way of example only, storage system <b>34</b> can be provided for reading from and writing to a non-removable, non-volatile magnetic media (not shown and typically called a &#x201c;hard drive&#x201d;). Although not shown, a magnetic disk drive for reading from and writing to a removable, non-volatile magnetic disk (e.g., a &#x201c;floppy disk&#x201d;), and an optical disk drive for reading from or writing to a removable, non-volatile optical disk such as a CD-ROM, DVD-ROM or other optical media can be provided. In such instances, each can be connected to bus <b>18</b> by one or more data media interfaces. As will be further depicted and described below, memory <b>28</b> may include at least one program product having a set (e.g., at least one) of program modules that are configured to carry out the functions of embodiments of the invention.</p>
+<p id="p-0092" num="0091">Program/utility <b>40</b>, having a set (at least one) of program modules <b>42</b>, may be stored in memory <b>28</b> by way of example, and not limitation, as well as an operating system, one or more application programs, other program modules, and program data. Each of the operating system, one or more application programs, other program modules, and program data or some combination thereof, may include an implementation of a networking environment. Program modules <b>42</b> generally carry out the functions and/or methodologies of embodiments of the invention as described herein.</p>
+<p id="p-0093" num="0092">Computer system/server <b>12</b> may also communicate with one or more external devices <b>14</b> such as a keyboard, a pointing device, a display <b>24</b>, etc.; one or more devices that enable a user to interact with computer system/server <b>12</b>; and/or any devices (e.g., network card, modem, etc.) that enable computer system/server <b>12</b> to communicate with one or more other computing devices. Such communication can occur via Input/Output (I/O) interfaces <b>22</b>. Still yet, computer system/server <b>12</b> can communicate with one or more networks such as a local area network (LAN), a general wide area network (WAN), and/or a public network (e.g., the Internet) via network adapter <b>20</b>. As depicted, network adapter <b>20</b> communicates with the other components of computer system/server <b>12</b> via bus <b>18</b>. It should be understood that although not shown, other hardware and/or software components could be used in conjunction with computer system/server <b>12</b>. Examples, include, but are not limited to: microcode, device drivers, redundant processing units, external disk drive arrays, RAID systems, tape drives, and data archival storage systems, etc.</p>
+<p id="p-0094" num="0093">Referring now to <figref idref="DRAWINGS">FIG. 17</figref>, illustrative cloud computing environment <b>50</b> is depicted. As shown, cloud computing environment <b>50</b> comprises one or more cloud computing nodes <b>10</b> with which local computing devices used by cloud consumers, such as, for example, personal digital assistant (PDA) or cellular telephone <b>54</b>A, desktop computer <b>54</b>B, laptop computer <b>54</b>C, and/or automobile computer system <b>54</b>N may communicate. Nodes <b>10</b> may communicate with one another. They may be grouped (not shown) physically or virtually, in one or more networks, such as Private, Community, Public, or Hybrid clouds as described hereinabove, or a combination thereof. This allows cloud computing environment <b>50</b> to offer infrastructure, platforms and/or software as services for which a cloud consumer does not need to maintain resources on a local computing device. It is understood that the types of computing devices <b>54</b>A-N shown in <figref idref="DRAWINGS">FIG. 17</figref> are intended to be illustrative only and that computing nodes <b>10</b> and cloud computing environment <b>50</b> can communicate with any type of computerized device over any type of network and/or network addressable connection (e.g., using a web browser).</p>
+<p id="p-0095" num="0094">Referring now to <figref idref="DRAWINGS">FIG. 18</figref>, a set of functional abstraction layers provided by cloud computing environment <b>50</b> (<figref idref="DRAWINGS">FIG. 17</figref>) is shown. It should be understood in advance that the components, layers, and functions shown in <figref idref="DRAWINGS">FIG. 18</figref> are intended to be illustrative only and embodiments of the invention are not limited thereto. As depicted, the following layers and corresponding functions are provided:</p>
+<p id="p-0096" num="0095">Hardware and software layer <b>60</b> includes hardware and software components. Examples of hardware components include mainframes, in one example IBM&#xae; zSeries&#xae; systems; RISC (Reduced Instruction Set Computer) architecture based servers, in one example IBM pSeries&#xae; systems; IBM xSeries&#xae; systems; IBM BladeCenter&#xae; systems; storage devices; networks and networking components. Examples of software components include network application server software, in one example IBM WebSphere&#xae; application server software; and database software, in one example IBM DB2&#xae; database software. (IBM, zSeries, pSeries, xSeries, BladeCenter, WebSphere, and DB2 are trademarks of International Business Machines Corporation registered in many jurisdictions worldwide).</p>
+<p id="p-0097" num="0096">Virtualization layer <b>62</b> provides an abstraction layer from which the following examples of virtual entities may be provided: virtual servers; virtual storage; virtual networks, including virtual private networks; virtual applications and operating systems; and virtual clients.</p>
+<p id="p-0098" num="0097">In one example, management layer <b>64</b> may provide the functions described below. Resource provisioning provides dynamic procurement of computing resources and other resources that are utilized to perform tasks within the cloud computing environment. Metering and Pricing provide cost tracking as resources are utilized within the cloud computing environment, and billing or invoicing for consumption of these resources. In one example, these resources may comprise application software licenses. Security provides identity verification for cloud consumers and tasks, as well as protection for data and other resources. User portal provides access to the cloud computing environment for consumers and system administrators. Service level management provides cloud computing resource allocation and management such that required service levels are met. Service Level Agreement (SLA) planning and fulfillment provide pre-arrangement for, and procurement of, cloud computing resources for which a future requirement is anticipated in accordance with an SLA.</p>
+<p id="p-0099" num="0098">Workloads layer <b>66</b> provides examples of functionality for which the cloud computing environment may be utilized. Examples of workloads and functions which may be provided from this layer include: mapping and navigation; software development and lifecycle management; virtual classroom education delivery; data analytics processing; transaction processing; and effective memory clustering to minimize page faults and optimize memory utilization.</p>
+<p id="p-0100" num="0099">The terminology used herein is for the purpose of describing particular embodiments only and is not intended to be limiting of the invention. As used herein, the singular forms &#x201c;a&#x201d;, &#x201c;an&#x201d; and &#x201c;the&#x201d; are intended to include the plural forms as well, unless the context clearly indicates otherwise. It will be further understood that the root terms &#x201c;include&#x201d; and/or &#x201c;have&#x201d;, when used in this specification, specify the presence of stated features, integers, steps, operations, elements, and/or components, but do not preclude the presence or addition of one or more other features, integers, steps, operations, elements, components, and/or groups thereof.</p>
+<p id="p-0101" num="0100">The corresponding structures, materials, acts, and equivalents of all means plus function elements in the claims below are intended to include any structure, or material, for performing the function in combination with other claimed elements as specifically claimed. The description of the present invention has been presented for purposes of illustration and description, but is not intended to be exhaustive or limited to the invention in the form disclosed. Many modifications and variations will be apparent to those of ordinary skill in the art without departing from the scope and spirit of the invention. The embodiment was chosen and described in order to best explain the principles of the invention and the practical application, and to enable others of ordinary skill in the art to understand the invention for various embodiments with various modifications as are suited to the particular use contemplated.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method comprising:
+<claim-text>monitoring data access requests to a cloud computing environment, said monitoring including identifying data addresses in the cloud computing environment having similar properties;</claim-text>
+<claim-text>creating multi-dimensional clusters with a processing module, the multi-dimensional clusters being created based on said monitoring to group the data addresses having similar properties;</claim-text>
+<claim-text>creating a memory page with the processing module, the memory page being created from a multi-dimensional cluster of the multi-dimensional clusters, said creating of the memory page including creating a cross-sectional partition from the multi-dimensional cluster;</claim-text>
+<claim-text>storing the multi-dimensional clusters and the memory page in the cloud computing environment;</claim-text>
+<claim-text>receiving a request from a user interface, the request including a request for a data object in the cloud computing environment;</claim-text>
+<claim-text>identifying a data address corresponding to the data object;</claim-text>
+<claim-text>mapping the data address to at least one of the multi-dimensional cluster and the memory page; and</claim-text>
+<claim-text>transferring the memory page to the user interface.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the data addresses in the cloud computing environment having similar properties are identified with at least one cloud server.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the memory page is transferred to the user interface with at least one cloud server.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said identifying of the data addresses in the cloud computing environment having similar properties includes identifying data addresses having at least one of similar locations and similar access frequency.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said creating of the multi-dimensional clusters includes creating multi-dimensional clusters in a virtual address space.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said creating of the multi-dimensional clusters includes creating at least one of a two-dimensional convex hull cluster, an ellipsoid cluster, and a three-dimensional convex hull cluster.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, further including, prior to said creating of the memory page, identifying a major axis in the multi-dimensional cluster, wherein the cross-sectional partition is parallel to the major axis.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method according to <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein said identifying of the major axis includes identifying a longest diameter of the multi-dimensional cluster.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said creating of the memory page includes creating a two-dimensional memory page.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said creating a cross-sectional partition from the multi-dimensional cluster increases a number of data addresses in the memory page.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, further including transferring the memory page to a data cache in primary storage.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, further including:
+<claim-text>receiving updated monitoring of the data access requests;</claim-text>
+<claim-text>un-clustering the data addresses; and</claim-text>
+<claim-text>re-clustering the data addresses based on the updated monitoring of the data access requests.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. A method for organizing data addresses within a virtual address space to reduce the number of data fetches to a cloud computing environment, said method including:
+<claim-text>monitoring data access requests to the cloud computing environment via an analyzer module, said monitoring including identifying data addresses in the cloud computing environment having similar properties;</claim-text>
+<claim-text>creating multi-dimensional clusters in the virtual address space via a processing module, said creating of the multi-dimensional clusters based on said monitoring to group the data addresses having similar properties;</claim-text>
+<claim-text>creating a memory page from a multi-dimensional cluster of the multi-dimensional clusters with the processing module, said creating of the memory page including creating a cross-sectional partition from the multi-dimensional cluster;</claim-text>
+<claim-text>storing the multi-dimensional clusters and the memory page in the cloud computing environment;</claim-text>
+<claim-text>receiving a request from a user interface for a data object in the cloud computing environment;</claim-text>
+<claim-text>identifying a data address corresponding to the data object in the cloud computing environment via a mapping module;</claim-text>
+<claim-text>mapping the data address to at least one of the multi-dimensional cluster and the memory page via the mapping module; and</claim-text>
+<claim-text>transferring the memory page to a data cache in primary storage.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The method according to <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein said identifying of the data addresses in the cloud computing environment having similar properties includes identifying data addresses having at least one of similar locations and similar access frequency.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The method according to <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein said creating of the multi-dimensional clusters includes creating at least one of a two-dimensional convex hull cluster, an ellipsoid cluster, and a three-dimensional convex hull cluster.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The method according to <claim-ref idref="CLM-00013">claim 13</claim-ref>, further including, prior to said creating of the memory page, identifying a major axis in the multi-dimensional cluster, wherein the cross-sectional partition is parallel to the major axis.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The method according to <claim-ref idref="CLM-00016">claim 16</claim-ref>, wherein said identifying of the major axis includes identifying a longest diameter of the multi-dimensional cluster with the processing module.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The method according to <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein said creating of the memory page includes creating a two-dimensional memory page.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The method according to <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein said creating of the cross-sectional partition from the multi-dimensional cluster increases a number of data addresses in the memory page.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The method according to <claim-ref idref="CLM-00013">claim 13</claim-ref>, further including:
+<claim-text>receiving updated monitoring of the data access requests;</claim-text>
+<claim-text>un-clustering the data addresses; and</claim-text>
+<claim-text>re-clustering the data addresses based on the updated monitoring of the data access requests.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00021" num="00021">
+<claim-text>21. A system, including:
+<claim-text>an analyzer module for monitoring data access requests to a cloud computing environment and identifying data addresses in said cloud computing environment having similar properties;</claim-text>
+<claim-text>a processing module connected to said analyzer module, said processor module
+<claim-text>creates multi-dimensional clusters in said virtual address space based on the monitoring of said analyzer module to group the data addresses having similar properties,</claim-text>
+<claim-text>creates a memory page from a multi-dimensional cluster of said multi-dimensional clusters, including creating a cross-sectional partition from said multi-dimensional cluster, and</claim-text>
+<claim-text>transfers said memory page to a data cache in primary storage;</claim-text>
+</claim-text>
+<claim-text>an interface connected to said processing module, said interface receives a request for a data object in said cloud computing environment and sends the request to said processing module; and</claim-text>
+<claim-text>a mapping module connected to said processing module, said mapping module identifies a data address corresponding to said data object in said cloud computing environment and maps the data address to at least one of said multi-dimensional cluster and said memory page.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00022" num="00022">
+<claim-text>22. The system according to <claim-ref idref="CLM-00021">claim 21</claim-ref>, wherein said multi-dimensional clusters include at least one of a two-dimensional convex hull cluster, an ellipsoid cluster, and a three-dimensional convex hull cluster.</claim-text>
+</claim>
+<claim id="CLM-00023" num="00023">
+<claim-text>23. The system according to <claim-ref idref="CLM-00021">claim 21</claim-ref>, wherein said processing module identifies a major axis in said multi-dimensional cluster, and wherein said cross-sectional partition is parallel to said major axis.</claim-text>
+</claim>
+<claim id="CLM-00024" num="00024">
+<claim-text>24. The system according to <claim-ref idref="CLM-00021">claim 21</claim-ref>, wherein said processing module
+<claim-text>receives updated monitoring of said data access requests from said analyzer module;</claim-text>
+<claim-text>un-clusters the data addresses; and</claim-text>
+<claim-text>re-clusters the data addresses based on said updated monitoring of said data access requests from said analyzer module.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00025" num="00025">
+<claim-text>25. A computer program product for performing a method for organizing data addresses within a virtual address space to reduce the number of data fetches to a cloud computing environment, said computer program product including:
+<claim-text>first program instructions to monitor data access requests to the cloud computing environment and identify data addresses in the cloud computing environment having similar properties;</claim-text>
+<claim-text>second program instructions to create multi-dimensional clusters in the virtual address space based on said monitoring to group the data addresses having similar properties;</claim-text>
+<claim-text>third program instructions to create a memory page from a multi-dimensional cluster of the multi-dimensional clusters and create a cross-sectional partition from the multi-dimensional cluster;</claim-text>
+<claim-text>fourth program instructions to store the multi-dimensional clusters and the memory page in the cloud computing environment;</claim-text>
+<claim-text>fifth program instructions to receive a request for a data object in the cloud computing environment;</claim-text>
+<claim-text>sixth program instructions to identify a data address corresponding to the data object;</claim-text>
+<claim-text>seventh program instructions to map the data address to at least one of the multi-dimensional cluster and the memory page;</claim-text>
+<claim-text>eighth program instructions to transfer the memory page to a data cache in primary storage; and</claim-text>
+<claim-text>a computer readable medium, said first program instructions, said second program instructions, said third program instructions, said fourth program instructions, said fifth program instructions, said sixth program instructions, said seventh program instructions, and said eighth program instructions are stored on said computer readable media. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

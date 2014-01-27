@@ -1,0 +1,811 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627168-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627168</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13254747</doc-number>
+<date>20100304</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>2009-061184</doc-number>
+<date>20090313</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<us-term-extension>231</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>03</class>
+<subclass>M</subclass>
+<main-group>13</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>714755</main-classification>
+<further-classification>714786</further-classification>
+<further-classification>714794</further-classification>
+<further-classification>714762</further-classification>
+<further-classification>714788</further-classification>
+<further-classification>714780</further-classification>
+<further-classification>375262</further-classification>
+<further-classification>375341</further-classification>
+</classification-national>
+<invention-title id="d2e71">Decoding device and decoding method</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>2007/0220398</doc-number>
+<kind>A1</kind>
+<name>Moon et al.</name>
+<date>20070900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714758</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2010/0017677</doc-number>
+<kind>A1</kind>
+<name>Okamura</name>
+<date>20100100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>JP</country>
+<doc-number>2007-089064</doc-number>
+<kind>A</kind>
+<date>20070400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>JP</country>
+<doc-number>2007-208985</doc-number>
+<kind>A</kind>
+<date>20070800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>WO</country>
+<doc-number>2008/069231</doc-number>
+<kind>A1</kind>
+<date>20080600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00006">
+<othercit>Liang Chen, et al., &#x201c;Implementation of Multi-Rate Quasi-Cyclic Low-Density Parity-Check Codes&#x201d;, Advanced Communication Technology, The 9th International Conference on Feb. 12-14, 2007, pp. 1066-1070, vol. 2.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00007">
+<othercit>David J. C. MacKay, &#x201c;Good Error-Correcting Codes Based on Very Sparse Matrices&#x201d;, IEEE Transactions on Information Theory, Mar. 1999, pp. 399-431, vol. 45, No. 2.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00008">
+<othercit>Emmanuel Boutillon, et al., &#x201c;Decoder-First Code Design&#x201d;, The 2nd International Symposium on Turbo Codes and Related Topics, 2000, pp. 1-4.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00009">
+<othercit>Dale E. Hocevar, &#x201c;A Reduced Complexity Decoder Architecture Via Layered Decoding of LDPC Codes&#x201d;, IEEE SiPS 2004, 2004, pp. 107-112.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>20</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>714755</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>714786</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>714758</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>714762</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>714788</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>714780</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>714794-795</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>375262</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>375341</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>10</number-of-drawing-sheets>
+<number-of-figures>12</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110320912</doc-number>
+<kind>A1</kind>
+<date>20111229</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Okamura</last-name>
+<first-name>Toshihiko</first-name>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Okamura</last-name>
+<first-name>Toshihiko</first-name>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Sughrue Mion, PLLC</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>NEC Corporation</orgname>
+<role>03</role>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Lamarre</last-name>
+<first-name>Guy</first-name>
+<department>2112</department>
+</primary-examiner>
+</examiners>
+<pct-or-regional-filing-data>
+<document-id>
+<country>WO</country>
+<doc-number>PCT/JP2010/001501</doc-number>
+<kind>00</kind>
+<date>20100304</date>
+</document-id>
+<us-371c124-date>
+<date>20110902</date>
+</us-371c124-date>
+</pct-or-regional-filing-data>
+<pct-or-regional-publishing-data>
+<document-id>
+<country>WO</country>
+<doc-number>WO2010/103757</doc-number>
+<kind>A </kind>
+<date>20100916</date>
+</document-id>
+</pct-or-regional-publishing-data>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A multistage difference cyclic permutation unit (<b>106</b>) for performing multistage cyclic permutation, an address administration unit (<b>104</b>) for administering addresses of the cumulative LLR memory (<b>101</b>), a received value arrangement unit (<b>103</b>) for generating records during writing of received values to the cumulative LLR memory (<b>101</b>), and a control unit (<b>110</b>) for generating parameters to control each unit from information of a parity check matrix and the current cyclic permutation size are prepared. The address administration unit (<b>104</b>) controls reading/writing addresses of the cumulative LLR memory (<b>101</b>) based on a reading start address from the cumulative LLR memory (<b>101</b>) corresponding to the column block. After the start of reading of a column block, the control unit (<b>110</b>) generates a reading start address in the next decoding of the column block and stores it into the address administration unit (<b>104</b>). In this manner, a device configuration capable of reducing a device size of a decoding device for pseudo-cyclic LDPC codes composed of cyclic permutation matrix blocks with a fixed degree of parallelism and an arbitrary cyclic permutation size is provided.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="151.98mm" wi="206.84mm" file="US08627168-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="206.08mm" wi="165.52mm" orientation="landscape" file="US08627168-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="220.98mm" wi="182.71mm" file="US08627168-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="241.47mm" wi="168.32mm" file="US08627168-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="209.38mm" wi="158.75mm" orientation="landscape" file="US08627168-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="255.86mm" wi="180.59mm" file="US08627168-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="242.91mm" wi="185.42mm" file="US08627168-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="245.62mm" wi="164.85mm" orientation="landscape" file="US08627168-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="234.27mm" wi="102.02mm" orientation="landscape" file="US08627168-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="125.22mm" wi="119.72mm" file="US08627168-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="211.41mm" wi="175.85mm" orientation="landscape" file="US08627168-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">CROSS REFERENCE TO RELATED APPLICATIONS</heading>
+<p id="p-0002" num="0001">This application is a National Stage of International Application No. PCT/JP2010/001501 filed Mar. 4, 2010, claiming priority based on Japanese Patent Application No. 2009-061184 filed Mar. 13, 2009 the contents of all of which are incorporated herein by reference in their entirety.</p>
+<heading id="h-0002" level="1">TECHNICAL FIELD</heading>
+<p id="p-0003" num="0002">The present invention relates to a decoding device and a decoding method and, particularly, to a decoding device and a decoding method for a low-density parity-check code (LDPC) code, and, for example, to a decoding device and a decoding method capable of enhancing reliability of a communication system, a storage system and the like.</p>
+<heading id="h-0003" level="1">BACKGROUND ART</heading>
+<p id="p-0004" num="0003">An error-correcting code is a technique to reduce the effects of noise occurring during data transmission in the process of coding and decoding. Coding is a process of adding redundancy to data to be transmitted, and the coded data is called a codeword. A codeword sent into a communication channel is affected by noise, resulting in an error such as having some bits inverted when the codeword is received. Decoding is a process of restoring the original data from the error-ridden received word by using redundancy.</p>
+<p id="p-0005" num="0004">The LDPC code is the error-correcting code proposed in 1960s; however, it had not drawn attention until late 1990s, when a relation with the Turbo code was pointed out (For example, see Non-Patent Literature 1).</p>
+<p id="p-0006" num="0005">The LDPC code is characterized by having a sparse parity check matrix with a small number of small loops when represented by the Tanner graph, and, because of such characteristics, there is a high-performance decoding method with relatively high efficiency. The decoding method is called Message-Passing decoding (hereinafter abbreviated as MP decoding).</p>
+<p id="p-0007" num="0006">The MP decoding of LDPC codes is performed by iteratively updating reliability information of codeword bits by column processing corresponding to columns of the parity check matrix and row processing corresponding to rows of the same. The reliability information generated by the row processing is called external information. The sequence of the iterative update is arbitrary. Serial scheduling in which the external information which has been updated in the row processing is used in the subsequent row processing in the same iteration is also called layered scheduling, which is disclosed in Non-Patent Literatures 2 and 3, for example.</p>
+<p id="p-0008" num="0007">The received value and the reliability information are generally stored in the form of log-likelihood ratio (LLR). In typical implementation of the serial scheduling, a plurality of memories that store cumulative LLR that is received values or the sum of received values and external information, and a plurality of memories that store external information are included. The former is referred to as cumulative LLR memories, the latter is referred to as external information memories, and they are collectively referred to as LLR memories.</p>
+<p id="p-0009" num="0008">Although the speedup of a decoding process is achieved by parallel processing that concurrently performs row processing on a plurality of rows, an access method to the LLR memories and routing of data between the LLR memories and processors are raised as issues. A pseudo-cyclic LDPC code is known as the code class capable of addressing such issues with high efficiency.</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 8</figref> shows an example of a parity check matrix of the pseudo-cyclic LDPC code. As shown in <figref idref="DRAWINGS">FIG. 8</figref>, the parity check matrix is made up of square submatrices of the same size, and the submatrices correspond to matrices I(j,k) representing a cyclic permutation formed by shifting a zero matrix or a unit matrix. Note that <figref idref="DRAWINGS">FIG. 8</figref> shows an example of a parity check matrix with a cyclic permutation size Z=5. Row and column components in units of the submatrices are respectively referred to as a row block and a column block. In the example of <figref idref="DRAWINGS">FIG. 8</figref> with a cyclic permutation size Z=5, the parity check matrix is made up of row blocks <b>0</b>, <b>1</b>, <b>2</b> and <b>3</b> and column blocks <b>0</b>, <b>1</b>, <b>2</b>, <b>3</b> and <b>4</b>. Further, in the parity check matrix, one number in columns and rows are respectively called the column order and the row order.</p>
+<p id="p-0011" num="0010">In the pseudo-cyclic LDPC code, the columns or the rows in the same column block or the same row block have the same order. The submatrices which are not a zero matrix in a column block k (order d_k) are represented as I(0,k), I(1,k), . . . , I(d_k&#x2212;1,k) sequentially from the top. I(j,k) can be represented using a shift value for each row of a unit matrix, and it is represented as s(j,k). For example, s(j,k)=0,1 represents that I(j,k) is a unit matrix, and each row of the unit matrix is shifted by one cycle to the right.</p>
+<p id="p-0012" num="0011">In the pseudo-cyclic LDPC code, processing can be performed efficiently by carrying out parallel processing in units of Z number of rows for the cyclic permutation size Z. The cumulative LLR and the external information are read and written in units of Z number of data in one column block as one record. <figref idref="DRAWINGS">FIG. 9</figref> is a schematic diagram showing a cumulative LLR memory structure and a data storing method for the parity check matrix of <figref idref="DRAWINGS">FIG. 8</figref>.</p>
+<p id="p-0013" num="0012">In <figref idref="DRAWINGS">FIG. 9</figref>, &#x201c;0 1 2 3 4&#x201d; in one record means storing data corresponding to positions from 0 to 4 (in the case of Z=5) in each column block. In the parity check matrix of <figref idref="DRAWINGS">FIG. 8</figref>, the column blocks <b>0</b> and <b>1</b> and the column blocks <b>3</b> and <b>4</b> do not make simultaneous access to the cumulative LLR memory, and therefore they can be stored in the same cumulative LLR memory. Thus, in such a case, a decoding device can be configured using three independent cumulative LLR memories, i.e., a cumulative LLR memory <b>0</b> storing the column blocks <b>0</b> and <b>1</b>, a cumulative LLR memory <b>1</b> storing the column block <b>2</b>, and a cumulative LLR memory <b>2</b> storing the column blocks <b>3</b> and <b>4</b>.</p>
+<p id="p-0014" num="0013">During reading from the cumulative LLR memory, data which has been read in units of records is cyclically permutated according to I(j,k) by barrel shift and transmitted to components for performing the column processing and the row processing. The cumulative LLR updated herein undergoes the cyclic permutation corresponding to the inverse permutation of I(j,k) and written to the cumulative LLR memory.</p>
+<p id="p-0015" num="0014">In an application of mobile communication and the like, a frame structure that enables flexible handling of a channel state, a transmission data size and the like is required, and an error-correcting code needs to have a variable code length. The pseudo-cyclic LDPC code can satisfy the need by making the cyclic permutation size Z variable.</p>
+<p id="p-0016" num="0015">However, when the cyclic permutation size Z is made variable, the overhead of a cyclic permutation means which accompanies parallel processing tends to increase according to the fineness of setting. The most straightforward way is to prepare cyclic permutation means corresponding to all possible cyclic permutation sizes Z and switch them depending on the value of the actual cyclic permutation size Z. However, this is extremely wasteful when there are many different cyclic permutation sizes Z.</p>
+<p id="p-0017" num="0016">When the cyclic permutation size Z is a multiple of a certain integer, it can be represented by the pseudo-cyclic LDPC code based on cyclic permutation with the size of the integer by replacing rows and columns. However, in this method also, when detailed setting of the cyclic permutation size Z is possible, it is represented as the pseudo-cyclic LDPC code with a small cyclic permutation size, and the degree of parallelism is not so large, failing to achieve speedup.</p>
+<p id="p-0018" num="0017">Implementation of a decoding device which is compatible with any shift size Z or cyclic permutation size Z in a process of a fixed degree of parallelism S (the number of data in a LLR record) is a desirable form of implementation of a decoding device intended for an application with a variable code length. In this case, in column processing/row processing components, it is enough to prepare S number of processors for the column processing <b>1</b> and the column processing <b>2</b>, and is possible to operate them efficiently if S number of data is input each time. Under the condition that the cyclic permutation size Z is 2 S or more, an implementation example of this method is described in Patent Literature 1, i.e., WO2008/069231.</p>
+<p id="p-0019" num="0018">According to the technique of Patent Literature 1, a LLR memory for storing reliability information stores data in a cyclically magnified manner so that it is a multiple of the degree of parallelism S. <figref idref="DRAWINGS">FIG. 10</figref> is a schematic diagram of a data storing method of a cumulative LLR memory in Patent Literature 1. As shown in <figref idref="DRAWINGS">FIG. 10</figref>, the final record is made up of data corresponding to indexes <b>12</b>, <b>13</b>, <b>14</b>, <b>0</b>, <b>1</b>, <b>2</b> in the column block. The depth D of the LLR memory per column block is 3.</p>
+<p id="p-0020" num="0019">In practice, data is stored in units of column blocks in an alignment corresponding to the maximum value MaxZ of the cyclic permutation size Z. The row processing is also executed in a cyclically magnified manner. The cyclic permutation is implemented by a multistage cyclic permutation means that executes, for input in units of records with the size S or the degree of parallelism S, output with the size S conforming to I(j,k) by a shift and a selection switch from two adjacent records in multiple stages. During writing to the memory, the multistage cyclic permutation means with the size S, which is inverse permutation of I(j,k), is executed.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 11</figref> is a block diagram showing a configuration of a decoding device according to related art, and it shows a configuration of a decoding device for serial scheduling in Patent Literature 1. In <figref idref="DRAWINGS">FIG. 11</figref>, a ROM <b>100</b> is a memory that stores the structure of the parity check matrix and information of I(j,k) in <figref idref="DRAWINGS">FIG. 8</figref>. Further, a cumulative LLR memory <b>101</b> is a memory that stores cumulative LLR that is received values or the sum of received values and external information in units of records each containing S number of data (in units of single reading/writing). Although <figref idref="DRAWINGS">FIG. 11</figref> shows an image with two cumulative LLR memories <b>101</b>, it is enough to prepare three cumulative LLR memories <b>101</b> as shown in <figref idref="DRAWINGS">FIG. 9</figref> if a code has the parity check matrix of <figref idref="DRAWINGS">FIG. 8</figref>.</p>
+<p id="p-0022" num="0021">A memory input control <b>102</b> sorts the received values input to the decoding device out to the cumulative LLR memories according to the structure of the column block of the parity check matrix. A record generation means <b>103</b><i>a </i>performs processing of generating records each containing S number of data from the received values, which are the input data to the decoding device.</p>
+<p id="p-0023" num="0022">Multistage cyclic permutation means <b>106</b><i>a </i>and <b>106</b><i>b </i>execute cyclic permutation processing corresponding to I(j,k) and the inverse permutation of I(j,k), i.e., I(j,k)^{&#x2212;1} (&#x2212;s(j,k)mod Z in a shift value), respectively, for the cumulative LLR by input/output in units of records with the size S.</p>
+<p id="p-0024" num="0023">A column processing/row processing component <b>105</b> is a device for actually performing the MP decoding, and S number of column processing/row processing components <b>105</b> operate independently of one another. Although an external information memory is in the form of a constituent element of the column processing/row processing components <b>105</b> in <figref idref="DRAWINGS">FIG. 11</figref>, a configuration in which a column processing means is placed between the cumulative LLR memory <b>101</b> and the cyclic permutation processing may be adopted.</p>
+<p id="p-0025" num="0024">A hard decision means <b>107</b> makes decision of 0 or 1 on a decoding result from the cumulative LLR. Further, a decoding result memory <b>108</b> is a memory that stores a hard decision result of the hard decision means <b>107</b>. An output sequence forming means <b>109</b><i>a </i>performs processing of forming an output bit sequence by eliminating a cyclically padded portion in the decoding result. A control means <b>110</b><i>a </i>adjusts parameters in accordance with the cyclic permutation size Z at the start of decoding, and, when processing a column block corresponding to I(j,k), generates addresses of the column processing/row processing components <b>105</b> and the cumulative LLR memory <b>101</b> according thereto.</p>
+<heading id="h-0004" level="1">CITATION LIST</heading>
+<heading id="h-0005" level="1">Patent Literature</heading>
+<p id="p-0026" num="0000">
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0025">Patent Literature 1: WO2008/069231, &#x201c;DECODING DEVICE AND DECODING METHOD&#x201d; (pp. 8-10)</li>
+</ul>
+</p>
+<heading id="h-0006" level="1">Non Patent Literature</heading>
+<p id="p-0027" num="0000">
+<ul id="ul0002" list-style="none">
+    <li id="ul0002-0001" num="0026">Non-Patent Literature 1: D. J. C. Mackay: &#x201c;Good Error Correcting Codes based on Very Sparse Matrices&#x201d;, IEEE Transactions on Information Theory 45 pp. 399-431, 1999.</li>
+    <li id="ul0002-0002" num="0027">Non-Patent Literature 2: E. Boutillon, J. Castura, and F. R. Kschishcang: &#x201c;Decoder-First Code Design&#x201d;, the 2nd International Symposium on Turbo Codes and Related Topics,&#x201d; pp. 459-462, 2000.</li>
+    <li id="ul0002-0003" num="0028">Non-Patent Literature 3: D. E. Hocevar: &#x201c;A Reduced Complexity Decoder Architecture via Layered Decoding of LDPC Codes&#x201d;, IEEE SiPS 2004, pp. 107-112, 2004.</li>
+</ul>
+</p>
+<heading id="h-0007" level="1">SUMMARY OF INVENTION</heading>
+<heading id="h-0008" level="1">Technical Problem</heading>
+<p id="p-0028" num="0029">The technique of Patent Literature 1 is compatible with any cyclic permutation size Z of 2 S or above with a fixed degree of parallelism S, in the decoding of the pseudo-cyclic LDPC code with a variable code length based on the variability of the cyclic permutation size Z, and effectively achieves parallel processing for an application where detailed setting is made for the cyclic permutation size Z. However, in comparison with a simple case of Z=S as shown in <figref idref="DRAWINGS">FIG. 9</figref> with the same degree of parallelism, the size of the device necessary for cyclic permutation is two to three times larger, and there is a significant impact on the complexity of the decoding device as a whole. Therefore, in the decoding of the pseudo-cyclic LDPC code, a technique of improving such an overhead in the cyclic permutation processing caused by the variable cyclic permutation size Z is desirable.</p>
+<heading id="h-0009" level="1">Object of Invention</heading>
+<p id="p-0029" num="0030">The present invention has been accomplished in view of the above problems, and an object of the present invention is thus to provide a decoding device and a decoding method compatible with any cyclic permutation size Z with a fixed degree of parallelism S with a reduced device size.</p>
+<heading id="h-0010" level="1">Solution to Problem</heading>
+<p id="p-0030" num="0031">To solve the above problems, the decoding device and the decoding method according to the present invention employ the following characteristic structures. The numbers (1) and (8) respectively correspond to Claim numbers.</p>
+<p id="p-0031" num="0032">(1) A decoding device for pseudo-cyclic low-density parity-check codes having a structure with a variable cyclic permutation size, at least including:</p>
+<p id="p-0032" num="0033">a plurality of cumulative LLR memories for storing cumulative reliability information being received values of the low-density parity-check codes or a sum of reliability information generated in a decoding process and the received values;</p>
+<p id="p-0033" num="0034">a plurality of column processing/row processing components each including a plurality of processors corresponding to column processing and row processing of low-density parity-check code decoding for updating the reliability information;</p>
+<p id="p-0034" num="0035">a multistage difference cyclic permutation means for performing cyclic permutation of data in a multistage fashion with a degree of parallelism corresponding to the number of data in one record of the cumulative LLR memories between the cumulative LLR memories and the column processing/row processing components, and, during writing to the cumulative LLR memories, executing processing integrating permutation for subsequent reading;</p>
+<p id="p-0035" num="0036">a received value arrangement means for performing permutation of received data during writing of the received data to the cumulative LLR memories in accordance with operation of the multistage difference cyclic permutation means;</p>
+<p id="p-0036" num="0037">an address administration means for storing a reading start address of the cumulative LLR memories and incrementing the address at reading in accordance with operation of the multistage difference cyclic permutation means; and</p>
+<p id="p-0037" num="0038">a control means for calculating parameters to be used by the multistage difference cyclic permutation means and the received value arrangement means and the reading start address of the cumulative LLR memories to be stored in the address administration means.</p>
+<p id="p-0038" num="0039">(8) A decoding method for pseudo-cyclic low-density parity-check codes having a structure with a variable cyclic permutation size, at least including:</p>
+<p id="p-0039" num="0040">a storing step for storing cumulative reliability information being received values of the low-density parity-check codes or a sum of reliability information generated in a decoding process and the received values into a memory; and</p>
+<p id="p-0040" num="0041">a multistage difference cyclic permutation step for performing cyclic permutation of data in a multistage fashion with a degree of parallelism corresponding to the number of data in one record of the memory during column processing and row processing of low-density parity-check code decoding for updating the reliability information, and, during writing to the memory, executing processing integrating permutation for subsequent reading,</p>
+<p id="p-0041" num="0042">wherein, during writing of the received data to the memory, permutation of received data is performed, and, during reading from a reading start address of the memory, the reading start address is incremented and stored again, in accordance with operation of the multistage difference cyclic permutation step.</p>
+<heading id="h-0011" level="1">Advantageous Effects of Invention</heading>
+<p id="p-0042" num="0043">According to the decoding device and the decoding method of the present invention, the following advantageous effects can be obtained.</p>
+<p id="p-0043" num="0044">The invention shows a device configuration compatible with any cyclic permutation size with a fixed degree of parallelism in a decoding device for pseudo-cyclic LDPC codes which is made up of cyclic permutation matrix blocks. The decoding device can be achieved using a technique of performing multistage cyclic permutation in units of a fixed degree of parallelism, and in the present invention, during writing of received values and reliability information to the cumulative LLR memory, difference permutation integrating cyclic permutation to be applied during the subsequent reading is applied, thereby eliminating the need for multistage cyclic permutation during the reading, thereby achieving improvement of a device size.</p>
+<p id="p-0044" num="0045">Specifically, according to the present invention, a multistage cyclic permutation means during reading from the cumulative LLR memory can be eliminated. On the other hand, a multistage cyclic permutation means during writing can be implemented in the same configuration as described in Patent Literature 1 in the basic sense. Note that, to implement the present invention, it is necessary to add a function of administering addresses of the cumulative LLR memories and a function of arranging input received values; however, those functions to be added can be implemented with a significantly smaller size than the multistage cyclic permutation means. Thus, the present invention enables improvement of the device size of the decoding device, maintaining a high flexibility for the setting of the cyclic permutation size and a high degree of parallelism.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0012" level="1">BRIEF DESCRIPTION OF DRAWINGS</heading>
+<p id="p-0045" num="0046"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram showing a configuration example of a decoding device according to the present invention;</p>
+<p id="p-0046" num="0047"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram showing an example of an internal configuration of an address administration means of the decoding device shown in <figref idref="DRAWINGS">FIG. 1</figref>;</p>
+<p id="p-0047" num="0048"><figref idref="DRAWINGS">FIG. 3</figref> is a block diagram showing an example of an internal configuration of a received value arrangement means of the decoding device shown in <figref idref="DRAWINGS">FIG. 1</figref>;</p>
+<p id="p-0048" num="0049"><figref idref="DRAWINGS">FIG. 4</figref> is a block diagram showing an example of an internal configuration of an output arrangement means of the decoding device shown in <figref idref="DRAWINGS">FIG. 1</figref>;</p>
+<p id="p-0049" num="0050"><figref idref="DRAWINGS">FIG. 5</figref> is a block diagram showing an example of an internal configuration of a column processing/row processing component of the decoding device shown in <figref idref="DRAWINGS">FIG. 1</figref>;</p>
+<p id="p-0050" num="0051"><figref idref="DRAWINGS">FIG. 6</figref> is a block diagram showing an example of an internal configuration of a multistage difference cyclic permutation means of the decoding device shown in <figref idref="DRAWINGS">FIG. 1</figref>;</p>
+<p id="p-0051" num="0052"><figref idref="DRAWINGS">FIG. 7A</figref> is a flowchart illustrating an example of an operation of the multistage difference cyclic permutation means shown in <figref idref="DRAWINGS">FIG. 6</figref> (flowchart <b>1</b>);</p>
+<p id="p-0052" num="0053"><figref idref="DRAWINGS">FIG. 7B</figref> is a flowchart illustrating an example of an operation of the multistage difference cyclic permutation means shown in <figref idref="DRAWINGS">FIG. 6</figref> (flowchart <b>2</b>);</p>
+<p id="p-0053" num="0054"><figref idref="DRAWINGS">FIG. 8</figref> is a determinant showing an example of a parity check matrix of a pseudo-cyclic LDPC code;</p>
+<p id="p-0054" num="0055"><figref idref="DRAWINGS">FIG. 9</figref> is a schematic diagram showing a cumulative LLR memory structure and a data storing method for the parity check matrix of <figref idref="DRAWINGS">FIG. 8</figref>;</p>
+<p id="p-0055" num="0056"><figref idref="DRAWINGS">FIG. 10</figref> is a schematic diagram of a data storing method of a cumulative LLR memory in Patent Literature 1; and</p>
+<p id="p-0056" num="0057"><figref idref="DRAWINGS">FIG. 11</figref> is a block diagram showing a configuration of a decoding device according to related art.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0013" level="1">DESCRIPTION OF EMBODIMENTS</heading>
+<p id="p-0057" num="0058">Preferred examples of a decoding device and a decoding method according to the present invention are described hereinafter with reference to the accompanying drawings.</p>
+<p id="p-0058" num="0059"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram showing a configuration example of a decoding device according to the present invention. Hereinafter, a cyclic permutation size of a pseudo-cyclic LDPC code is Z, and the degree of parallelism in decoding is S. The degree of parallelism S is fixed, and the cyclic permutation size Z, which is 2 S or greater, is externally set to any value prior to the start of decoding.</p>
+<p id="p-0059" num="0060">Among the constituent elements of the decoding device in <figref idref="DRAWINGS">FIG. 1</figref>, the circuit elements having the same functions as those of the decoding device in <figref idref="DRAWINGS">FIG. 11</figref> according to related art are denoted by the same reference symbols as in <figref idref="DRAWINGS">FIG. 11</figref>, and redundant explanation thereof is omitted.</p>
+<p id="p-0060" num="0061">A received value arrangement means <b>103</b> arranges the received values LLR by record containing S number of data in the sequence based on a submatrix I(0,k) of a non-zero matrix for each column block of a parity check matrix, and the values are written to a cumulative LLR memory <b>101</b>. Further, an address administration means <b>104</b> stores and updates addresses for making access to the cumulative LLR memory <b>101</b> in accordance with a multistage difference cyclic permutation means <b>106</b>.</p>
+<p id="p-0061" num="0062">The multistage difference cyclic permutation means <b>106</b> performs processing that executes multistage difference cyclic permutation corresponding to I(j+1,k)&#xb7;I(j,k)^{&#x2212;1} (that is, cyclic shift of (s(j+1,k)&#x2212;s(j,k))mod Z) with the degree of parallelism S on the cumulative LLR data that is output from the column processing/row processing component <b>105</b>. An output arrangement means <b>109</b> performs cyclic permutation which corresponds to inverse permutation of I(0,k) and thereby arranges the output bit sequence when outputting a decoding result. A control means <b>110</b> makes parameter adjustment in accordance with the cyclic permutation size Z at the start of decoding, and performs calculation and setting of parameters, memory addresses and the like which are necessary for the operation of the received value arrangement means <b>103</b>, the address administration means <b>104</b>, the multistage difference cyclic permutation means <b>106</b> and the output arrangement means <b>109</b> for each column block.</p>
+<p id="p-0062" num="0063">Note that the column processing/row processing component <b>105</b> has a configuration in which S number of components corresponding to S number of rows operate independently of one another in the same manner as in <figref idref="DRAWINGS">FIG. 11</figref>.</p>
+<p id="p-0063" num="0064">Each of the above-described elements is described hereinafter in detail.</p>
+<p id="p-0064" num="0065">The control means <b>110</b>, at the start of decoding, calculates a memory depth D for each column block and the number of data E of a final record respectively corresponding to the cyclic permutation size Z using the following Expressions 1 and 2 and sets them to the received value arrangement means <b>103</b>, the address administration means <b>104</b> and the multistage difference cyclic permutation means <b>106</b>.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>D&#x2190;roundup</i>(<i>Z/S</i>).&#x2003;&#x2003;[Expression 1]<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>E&#x2190;Z </i>Mod <i>S.</i>&#x2003;&#x2003;[Expression 2]<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0065" num="0066">&#x201c;roundup( )&#x201d; indicates a function representing rounding up to the whole number, and &#x201c;x Mod y&#x201d; is a remainder of x for y, which takes on values from 1 to y.</p>
+<p id="p-0066" num="0067">Further, for each component, the following parameters are generated.</p>
+<p id="p-0067" num="0068">(a) Parameters to be set to the received value arrangement means <b>103</b>: At the start of decoding, Offset, Gap, and Flag of the following Expression 3 to 5 are generated for a shift value s(0,k) of I(0,k) for each column block.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Offset&#x2190;<i>s</i>(<i>j,k</i>)mod <i>S.</i>&#x2003;&#x2003;[Expression 3]<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Gap&#x2190;truncate(<i>s</i>(<i>j,k</i>)/<i>S</i>).&#x2003;&#x2003;[Expression 4]<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Flag&#x2190;(Offset&#x3c;<i>E?</i>0:1).&#x2003;&#x2003;[Expression 5]<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0068" num="0069">&#x201c;mod S&#x201d; means taking on values from 0 to S&#x2212;1. &#x201c;truncate( )&#x201d; is a function representing rounding down to the whole number. &#x201c;(x&#x3c;y?:0:1)&#x201d; indicates a function returning 0 when x&#x3c;y and 1 when not.</p>
+<p id="p-0069" num="0070">(b) Parameters to be set to the multistage difference cyclic permutation means <b>106</b>: At the update of a message corresponding to I(j,k), the following Expressions 6 to 8 are calculated from shift values s(j,k) and s(j+1,k) respectively corresponding to I(j,k) and I(j+1,k). Note that, when the order of the column block k is d_k in Expressions 6 and 7, I(d_k,k)=I(0,k) and s(d_k,k)=s(0,k) in a cyclic fashion.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Offset&#x2032;&#x2190;((<i>s</i>(<i>j+</i>1<i>,k</i>)&#x2212;<i>s</i>(<i>j,k</i>))mod <i>Z</i>)mod <i>S.</i>&#x2003;&#x2003;[Expression 6]<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Gap&#x2032;&#x2190;truncate(((<i>s</i>(<i>j+</i>1<i>,k</i>)&#x2212;<i>s</i>(<i>j,k</i>))mod <i>Z</i>)/<i>S</i>).&#x2003;&#x2003;[Expression 7]<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Flag&#x2032;&#x2190;(Offset&#x2032;&#x3c;<i>E?</i>0:1).&#x2003;&#x2003;[Expression 8]<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0070" num="0071">(c) Parameters to be set to the address administration means <b>104</b>: At the start of decoding, the initial read address init_address of the cumulative LLR memory <b>101</b> of the following Expression 9 is calculated for the column block k using Expressions 4 and 5, and set as an initial value of read_address.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>init_address&#x2190;(Gap+Flag).&#x2003;&#x2003;[Expression 9]<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0071" num="0072">On the other hand, during loop processing, at the update of a message corresponding to I(j,k), next_address is calculated based on the following Expression 10 for read_address, which is the current read address of the cumulative LLR memory <b>101</b> corresponding to the column block k which is acquired from the address administration means <b>104</b>, by using Expressions 7 and 8, and set as read_address subsequent to the current column block in the address administration means <b>104</b>.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>next_address&#x2190;(Gap&#x2032;+Flag&#x2032;+read_address)mod <i>D.</i>&#x2003;&#x2003;[Expression 10]<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0072" num="0073">Next, an internal configurations of each of the elements described above is described in detail with reference to the drawings.</p>
+<p id="p-0073" num="0074"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram showing an example of an internal configuration of the address administration means <b>104</b> of the decoding device shown in <figref idref="DRAWINGS">FIG. 1</figref>. The address administration means <b>104</b> at least includes a current address register <b>201</b> and an address update means <b>202</b>.</p>
+<p id="p-0074" num="0075">The current address register <b>201</b> stores read_address, which is a read start address of the cumulative LLR memory <b>101</b>, for each column block. In typical implementation, the current address registers <b>201</b> are prepared to respectively correspond to the cumulative LLR memories <b>101</b>, and each current address register <b>201</b> stores read_address of a plurality of column blocks corresponding to the cumulative LLR memories <b>101</b>. At the start of decoding corresponding to I(j,k), read_address is set to the address update means <b>202</b>.</p>
+<p id="p-0075" num="0076">The control means <b>110</b> receives read_address set to the address update means <b>202</b> and calculates next_address after update. The address administration means <b>104</b> stores it as read_address of the cumulative LLR memory <b>101</b> for the column block k during decoding corresponding to I(j+1,k).</p>
+<p id="p-0076" num="0077">The address update means <b>202</b> are prepared to respectively correspond to the cumulative LLR memories <b>101</b>. The address update means <b>202</b> holds a counter and increments the counter by mod D. The initial value of the counter is set to read_address stored in the current address register <b>201</b>. The actual physical address of the cumulative LLR memory <b>101</b> is the sum of the value calculated in the address update means <b>202</b> and the offset value corresponding to the area of the memory of the column block.</p>
+<p id="p-0077" num="0078">Writing to the cumulative LLR memory <b>101</b> is performed on the address where reading has been performed in the same sequence. The address during writing is achieved by setting the initial value of the counter which is the same as the address during reading. Alternatively, the address during reading may be stored temporarily using a register or the like and obtained.</p>
+<p id="p-0078" num="0079">Next, <figref idref="DRAWINGS">FIG. 3</figref> is a block diagram showing an example of an internal configuration of the received value arrangement means <b>103</b> of the decoding device shown in <figref idref="DRAWINGS">FIG. 1</figref>. The received value arrangement means <b>103</b> at least includes a received value arrangement control means <b>301</b>, a record generation means <b>302</b>, and a multistage cyclic permutation means <b>303</b>.</p>
+<p id="p-0079" num="0080">The received value arrangement control means <b>301</b> controls the record generation means <b>302</b> and the multistage cyclic permutation means <b>303</b> based on the parameters set by the control means <b>110</b>. The record generation means <b>302</b> generates records each containing S number of data by cyclically complementing the head data when the number of data E of the final record and the degree of parallelism S do not match, and transmits the records to the multistage cyclic permutation means <b>303</b>. The multistage cyclic permutation means <b>303</b> performs multistage cyclic permutation corresponding to the column block I(0,k) based on Offset, Gap and Flag of Expressions 3 to 5 described earlier. Note that the multistage cyclic permutation means <b>303</b> can be achieved in the same configuration as the multistage difference cyclic permutation means <b>106</b> in <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0080" num="0081">In the decoding process of the pseudo-cyclic LDPC code according to the present invention, it is necessary to implement the cyclic permutation which corresponds to the inverse permutation of I(0,k) when outputting a decoding result of the column block k. In the decoding device of <figref idref="DRAWINGS">FIG. 1</figref>, a means to implement this processing is represented as the output arrangement means <b>109</b>.</p>
+<p id="p-0081" num="0082">The hard decision corresponding to the column block k is performed at the point of time when update of the reliability information corresponding to I(d_k&#x2212;1,k) ends. At this time, the control means <b>110</b> sets the following parameters to the output arrangement means <b>109</b>. Specifically, at the start of decoding, Offset&#x2033;, Gap&#x2033;, Flag&#x2033;, and output_address of the following Expressions 11 to 14 are generated for the shift value (&#x2212;s(0, k) mod Z) of I(0, k)^{&#x2212;1} on each column block.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Offset&#x2033;&#x2190;(&#x2212;<i>s</i>(0<i>,k</i>)mod <i>Z</i>)mod <i>S.</i>&#x2003;&#x2003;[Expression 11]<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Gap&#x2033;&#x2190;truncate(((<i>s</i>(0<i>,k</i>))mod <i>Z</i>)/<i>S</i>).&#x2003;&#x2003;[Expression 12]<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Flag&#x2033;&#x2190;(Offset&#x2033;&#x3c;<i>E?</i>0:1).&#x2003;&#x2003;[Expression 13]<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>output_address&#x2190;(Gap&#x2033;+Flag&#x2033;).&#x2003;&#x2003;[Expression 14]<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0082" num="0083"><figref idref="DRAWINGS">FIG. 4</figref> is a block diagram showing an example of an internal configuration of the output arrangement means <b>109</b> of the decoding device shown in <figref idref="DRAWINGS">FIG. 1</figref>. The output arrangement means <b>109</b> at least includes an output arrangement control means <b>401</b>, a multistage cyclic permutation means <b>402</b>, and an output sequence forming means <b>403</b>.</p>
+<p id="p-0083" num="0084">The output arrangement control means <b>401</b> controls the multistage cyclic permutation means <b>402</b> and the output sequence forming means <b>403</b> based on the parameters set by the control means <b>110</b>. The multistage cyclic permutation means <b>402</b> performs multistage cyclic permutation corresponding to the column block I(0, k)^ {&#x2212;1} based on Offset&#x2033;, Gap&#x2033;, and Flag&#x2033; of Expressions 11 to 13. The multistage cyclic permutation means <b>402</b> can be achieved in the same configuration as the multistage difference cyclic permutation means <b>106</b> in <figref idref="DRAWINGS">FIG. 1</figref> (except that the data is one bit).</p>
+<p id="p-0084" num="0085">The output sequence forming means <b>403</b> temporarily stores the output of the multistage cyclic permutation means <b>402</b>, performs cyclic reading by mod D from output_address of Expression 14 as the starting point, and finally generates an output sequence by deleting (S-E) number of cyclically padded bits. In the case where the cyclic permutation I(0,k) at the head of each column block of the parity check matrix is a unit matrix, the multistage cyclic permutation means <b>303</b> and <b>402</b> in <figref idref="DRAWINGS">FIGS. 3 and 4</figref>, respectively, become unnecessary, thereby enabling simplification.</p>
+<heading id="h-0014" level="1">Operation Example</heading>
+<p id="p-0085" num="0086">First, an example of MP decoding algorithm of an LDPC code is described. The positions at which &#x2018;1&#x2019; exists in a given row with the order e are p<sub>&#x2014;0, . . . , p</sub>_(e&#x2212;1). Further, the column order of p_k is d_k, and indexes <b>0</b>, <b>1</b>, . . . , (d_k <b>1</b>) are sequentially assigned to the corresponding row. The external information which is generated in the row processing for the row corresponding to an index j at p_k is &#x3bb;(p_k,j). It is assumed that the received values and the external information are represented in the form of LLR (Log-Likelihood Ratio). The cumulative LLR corresponding to p_k can be represented as the following Expression 15.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>V</i>(<i>p</i><sub>&#x2014;</sub><i>k</i>)&#x2190;<i>r</i>(<i>p</i><sub>&#x2014;</sub><i>k</i>)+&#x3bb;(<i>p</i><sub>&#x2014;</sub><i>k,</i>0)+&#x3bb;(<i>p</i><sub>&#x2014;</sub><i>k,</i>1)+ . . . +&#x3bb;(<i>p</i><sub>&#x2014;</sub><i>k,d</i><sub>&#x2014;</sub><i>k&#x2212;</i>1)&#x2003;&#x2003;[Expression 15]<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0086" num="0087">r(p_k) is the received value corresponding to p_k, and &#x3bb;(p_k,j) is normally initialized to 0 or undergoes the equal processing, and the decoding process is started. It is assumed that the row of interest for p_k is the i_k-th row. In the MP decoding based on serial scheduling, processing of the following Expressions 16 to 18 is performed on the i_k-th row, and &#x3bb;(p_k,j) and V(p_k) are updated.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3c4;(<i>k</i>)&#x2190;<i>V</i>(<i>p</i><sub>&#x2014;</sub><i>k</i>)&#x2212;&#x3bb;(<i>p</i><sub>&#x2014;</sub><i>k,i</i><sub>&#x2014;</sub><i>k</i>). (<i>k=</i>0,1<i>, . . . ,e&#x2212;</i>1)&#x2003;&#x2003;[Expression 16]<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>(&#x3bb;(<i>p</i><sub>&#x2014;</sub>0<i>,i</i><sub>&#x2014;</sub>0), . . . , &#x3bb;(<i>p</i>_(<i>e&#x2212;</i>1),<i>i</i>_(<i>e&#x2212;</i>1))&#x2190;<i>F</i>(&#x3c4;(0),&#x3c4;(1), . . . , &#x3c4;(<i>e&#x2212;</i>1)).&#x2003;&#x2003;[Expression 17]<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>V</i>(<i>p</i><sub>&#x2014;</sub><i>k</i>)&#x2190;&#x3c4;(<i>k</i>)+&#x3bb;(<i>p</i><sub>&#x2014;</sub><i>k,d</i><sub>&#x2014;</sub><i>k</i>). (<i>k=</i>0,1<i>, . . . , e&#x2212;</i>1).&#x2003;&#x2003;[Expression 18]<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0087" num="0088">Expression 16 and Expression 18 are respectively referred to as column processing <b>1</b> and column processing <b>2</b>. F in Expression 17 is a function representing row processing, and sum-product algorithm, normalized min-sum algorithm and the like are known. In the serial scheduling, a series of update operations are sequentially performed on the rows of the parity check matrix, and processing of performing such operations on all rows is one iteration. The decision (hard decision) of 0 or 1 of each bit can be made based on the plus and minus of V(p_k). Because the LDPC code has a small order of rows and columns even with a long code length, the degree of complexity of processing of Expressions 16 to 18 is low.</p>
+<p id="p-0088" num="0089"><figref idref="DRAWINGS">FIG. 5</figref> is a block diagram showing an example of an internal configuration of the column processing/row processing component <b>105</b> of the decoding device shown in <figref idref="DRAWINGS">FIG. 1</figref>, which shows a configuration of the column processing/row processing component that executes the above-described Expressions 16 to 18. The column processing/row processing component <b>105</b> at least includes a column processing <b>1</b> component <b>500</b>, a row processing unit <b>501</b>, a column processing <b>2</b> component <b>502</b>, an external information memory <b>503</b>, and a temporary memory <b>504</b>.</p>
+<p id="p-0089" num="0090">In the case of performing processing on a row-by-row basis, the column processing <b>1</b> component <b>500</b> and the column processing <b>2</b> component <b>502</b> are composed of the row-order-number of processors that perform Expressions 16 and 18. The temporary memory <b>504</b> stores &#x3c4;(k) of Expression 16 and enables calculation of Expression 18.</p>
+<p id="p-0090" num="0091"><figref idref="DRAWINGS">FIG. 6</figref> is a block diagram showing an example of an internal configuration of the multistage difference cyclic permutation means <b>106</b> of the decoding device shown in <figref idref="DRAWINGS">FIG. 1</figref>. The multistage difference cyclic permutation means <b>106</b> at least includes a multistage difference cyclic permutation control means <b>600</b>, a register update means <b>601</b>, and a data extraction means <b>602</b>. The register update means <b>601</b> is composed of a plurality of registers <b>603</b> and switching means <b>604</b> that control update of the registers. The data extraction means <b>602</b> is composed of a first shift means <b>605</b>, a second shift means <b>606</b>, and a selection means <b>607</b>.</p>
+<p id="p-0091" num="0092">The register update means <b>601</b> basically has a FIFO (First-In First-Out) structure that stores data in units of records output from the column processing/row processing component <b>105</b>, and further has a structure to implement a function that stores the head record and inserts it as input after the final record, and a function that makes shift for two time points at a time.</p>
+<p id="p-0092" num="0093">The data extraction means <b>602</b> performs processing of extracting S number of data from two adjacent records. The data extraction means <b>602</b> is composed of the first shift means <b>605</b> and the second shift means <b>606</b> (which are not cyclic) of each record, and the selection means <b>607</b> for selecting either data in each position. The operation of the selection means <b>607</b> is decided from shift values of the first shift means <b>605</b> and the second shift means <b>606</b>, and the shift values can be decided using the number of data E of the final record and Flag&#x2032;, Gap&#x2032; and Offset&#x2032; of the above-described Expressions 6 to 8 in the multistage difference cyclic permutation control means <b>600</b>.</p>
+<p id="p-0093" num="0094">The multistage difference cyclic permutation control means <b>600</b> performs control of the register update means <b>601</b>, and setting of the shift values of the first shift means <b>605</b> and the second shift means <b>606</b>, and the selection means <b>607</b> in the data extraction means <b>602</b>.</p>
+<p id="p-0094" num="0095">Note that the multistage cyclic permutation means <b>303</b> of the received value arrangement means <b>103</b> shown in <figref idref="DRAWINGS">FIG. 3</figref> can be also achieved in the same configuration as that in <figref idref="DRAWINGS">FIG. 6</figref>, using Flag, Gap and Offset of the above-described Expressions 3 to 5. Further, the multistage cyclic permutation means <b>402</b> of the output arrangement means <b>109</b> shown in <figref idref="DRAWINGS">FIG. 4</figref> can be also achieved in the same configuration as that in <figref idref="DRAWINGS">FIG. 6</figref>, using Flag&#x2033;, Gap&#x2033; and Offset&#x2033; of Expressions 12 to 14. However, because it is a decoding result, the data width is one bit.</p>
+<p id="p-0095" num="0096"><figref idref="DRAWINGS">FIGS. 7A and 7B</figref> are flowcharts illustrating an example of the operation of the multistage difference cyclic permutation means <b>106</b> shown in <figref idref="DRAWINGS">FIG. 6</figref>. The main steps of <figref idref="DRAWINGS">FIGS. 7A and 7B</figref> are described hereinbelow.</p>
+<p id="p-0096" num="0097">(Step S<b>700</b>) The multistage difference cyclic permutation means <b>106</b> makes different control depending on the value of Flag&#x2032; of Expression 7.</p>
+<p id="p-0097" num="0098">(Step S<b>701</b>) For &#x201c;Retrieve(sh<b>1</b>, sh<b>2</b>)&#x201d;, in the data extraction means <b>602</b>, the first shift means <b>605</b> makes left shift of the shift value sh<b>1</b>, the second shift means <b>606</b> makes right shift of the shift value sh<b>2</b>, and the selection means <b>607</b> selects data from the first shift means <b>605</b> for sh<b>2</b> number of values from the left and selects data from the second shift means <b>606</b> for (S-sh<b>2</b>) number of values from the right, generates and outputs S number of records.</p>
+<p id="p-0098" num="0099">(Step S<b>702</b>) The values of sh<b>1</b> and sh<b>2</b> in &#x201c;Retrieve( )&#x201d; are modified based on a comparison result of the time t from the start of processing the block I(j,k) with Gap&#x2032; or (Gap&#x2032;+1).</p>
+<p id="p-0099" num="0100">(Step S<b>703</b>) Specific modified values of sh<b>1</b> and sh<b>2</b> in Step S<b>702</b> are shown.</p>
+<p id="p-0100" num="0101">(Step S<b>704</b>) In the case of &#x201c;Flag&#x2032;=0&#x201d;, the head record is stored and cyclically added to the final record, thereby generating an output.</p>
+<p id="p-0101" num="0102">(Step S<b>705</b>) In the case of &#x201c;Flag&#x2032;=1&#x201d;, among a plurality of registers <b>603</b> of the register update means <b>601</b>, the register <b>1</b> and the register <b>2</b> are left as they are, and data is read to the register <b>3</b> in Step S<b>706</b>. After that, the values of the registers <b>1</b>, <b>2</b> and <b>3</b> are updated as shown in Step S<b>705</b>.</p>
+<p id="p-0102" num="0103">Note that, although the flowcharts of <figref idref="DRAWINGS">FIGS. 7A and 7B</figref> are described in the form of software flow, because parallel operation is possible in the loop, the operation in the multistage difference cyclic permutation means <b>106</b> can be executed with the number of cycles of about (D+2).</p>
+<p id="p-0103" num="0104">Next, a specific example of the decoding device according to the invention is described regarding the cyclic permutation in the MP decoding for the column block k, taking a case where the order of the column block k in the parity check matrix of the pseudo-cyclic LDPC code is 3, s(0,k)=5, s(1,k)=11, s(2,k)=3, the cyclic permutation size Z=15, and the degree of parallelism S=6 as an example. In such an example of numerical values, D=roundup(15/6)=3,E=15 mod 6=3.</p>
+<p id="h-0015" num="0000">[Writing of Received Value to Cumulative LLR Memory <b>101</b>]</p>
+<p id="p-0104" num="0105">It is assumed that received value data for the column block k is read into the decoding device at indexes <b>0</b>, <b>1</b>, . . . , <b>14</b> (=Z&#x2212;1) in the column block. At this time, the record generation means <b>302</b> in the received value arrangement means <b>103</b> generates records each containing S number of data as follows, corresponding to the number of data E=3 in the final record, and sequentially transmits the records to the multistage cyclic permutation means <b>303</b>.</p>
+<p id="p-0105" num="0106">(0): 0 1 2 3 4 5</p>
+<p id="p-0106" num="0107">(1): 6 7 8 9 10 11</p>
+<p id="p-0107" num="0108">(2): 12 13 14 0 1 2</p>
+<p id="p-0108" num="0109">Offset=5, Gap=0, and Flag=1 of Expressions 3 to 5 are set, corresponding to s(0,k)=5, to the multistage cyclic permutation means <b>303</b>. The multistage cyclic permutation means <b>303</b> uses the parameters, rearranges the data as follows using the same configuration as in <figref idref="DRAWINGS">FIG. 6</figref>, and outputs the data.</p>
+<p id="p-0109" num="0110">(0): 2 3 4 5 6 7</p>
+<p id="p-0110" num="0111">(1): 5 6 7 8 9 10</p>
+<p id="p-0111" num="0112">(2): 11 12 13 14 0 1</p>
+<p id="p-0112" num="0113">Further, the address update means <b>202</b> in the address administration means <b>104</b> generates addresses so that the data is written to the cumulative LLR memory <b>101</b> sequentially from the address 0.</p>
+<p id="p-0113" num="0114">address 0: 2 3 4 5 6 7</p>
+<p id="p-0114" num="0115">address 1: 5 6 7 8 9 10</p>
+<p id="p-0115" num="0116">address 2: 11 12 13 14 0 1</p>
+<p id="p-0116" num="0117">The control means <b>110</b> calculates init_address=(0+1)mod 3=1 from Gap=0 and Flag=1 by Expression 9 for the column block k, and sets the calculated value as the initial value of read_address for the column block in the address administration means <b>104</b>.</p>
+<p id="h-0016" num="0000">[Decoding Corresponding to I(0,k)(s(0,k)=5) in First Iteration]</p>
+<p id="p-0117" num="0118">Data is sequentially read from read_address=1, and processing performed in the following sequence in the column processing/row processing component <b>105</b>.</p>
+<p id="p-0118" num="0119">(0): 5 6 7 8 9 10</p>
+<p id="p-0119" num="0120">(1): 11 12 13 14 0 1</p>
+<p id="p-0120" num="0121">(2): 2 3 4 5 6 7</p>
+<p id="p-0121" num="0122">The data output of the column processing/row processing component <b>105</b> is performed in this sequence. The multistage difference cyclic permutation means <b>106</b> performs cyclic permutation based on the shift of a difference value (s(1,k)&#x2212;s(0, k))mod Z=6. The parameters of Expressions 6 to 8 are Offset&#x2032;=0, Gap&#x2032;=1, and Flag&#x2032;=0. Based on the parameters, the multistage difference cyclic permutation means <b>106</b> makes the following output.</p>
+<p id="p-0122" num="0123">(0): 8 9 10 11 12 13</p>
+<p id="p-0123" num="0124">(1): 11 12 13 14 0 1</p>
+<p id="p-0124" num="0125">(2): 2 3 4 5 6 7</p>
+<p id="p-0125" num="0126">The address administration means <b>104</b> writes the values to the addresses in the same sequence as the sequence during reading.</p>
+<p id="p-0126" num="0127">address1: 8 9 10 11 12 13</p>
+<p id="p-0127" num="0128">address2: 11 12 13 14 0 1</p>
+<p id="p-0128" num="0129">address0: 2 3 4 5 6 7</p>
+<p id="p-0129" num="0130">In this manner, by performing writing to the addresses in the same sequence as the sequence during reading, there is no need to have multiple cumulative LLR memories <b>101</b>, and update by overwrite is possible.</p>
+<p id="p-0130" num="0131">Note that, in Expression 10, next_address=(Gap&#x2032;+Flag&#x2032;+read_address)mod D=(1+0+1)mod 3=2, and this is set as the next read_address by the address administration means <b>104</b>.</p>
+<p id="h-0017" num="0000">[Decoding Corresponding to I(1,k)(s(1,k)=11) in First Iteration]</p>
+<p id="p-0131" num="0132">Data is sequentially read from read_address=2, and processing performed in the following sequence in the column processing/row processing component <b>105</b>.</p>
+<p id="p-0132" num="0133">(0): 11 12 13 14 0 1</p>
+<p id="p-0133" num="0134">(1): 2 3 4 5 6 7</p>
+<p id="p-0134" num="0135">(2): 8 9 10 11 12 13</p>
+<p id="p-0135" num="0136">Data output of the column processing/row processing component <b>105</b> is also performed in this sequence. The multistage difference cyclic permutation means <b>106</b> performs cyclic permutation based on the shift value of a difference value (s(2,k)&#x2212;s(1,k))mod Z=7. The parameters of Expressions 6 to 8 are Offset&#x2032;=1, Gap&#x2032;=1 and Flag&#x2032;=0. Based on the parameters, the multistage difference cyclic permutation means <b>106</b> makes the following output.</p>
+<p id="p-0136" num="0137">(0): 0 1 2 3 4 5</p>
+<p id="p-0137" num="0138">(1): 3 4 5 6 7 8</p>
+<p id="p-0138" num="0139">(2): 9 10 11 12 13 14</p>
+<p id="p-0139" num="0140">The address administration means <b>104</b> writes the values to the addresses in the same sequence as the sequence during reading.</p>
+<p id="p-0140" num="0141">address2: 0 1 2 3 4 5</p>
+<p id="p-0141" num="0142">address0: 3 4 5 6 7 8</p>
+<p id="p-0142" num="0143">address1: 9 10 11 12 13 14</p>
+<p id="p-0143" num="0144">Note that, in Expression 10, next_address=(Gap&#x2032;+Flag&#x2032;+read_address)mod D=(1+0+2)mod 3=0, and it is set as the next read_address.</p>
+<p id="h-0018" num="0000">[Decoding Corresponding to I(2,k)(s(2,k)=3) in First Iteration]</p>
+<p id="p-0144" num="0145">Data is sequentially read from read_address=0, and processing performed in the following sequence in the column processing/row processing component <b>105</b>.</p>
+<p id="p-0145" num="0146">(0): 3 4 5 6 7 8</p>
+<p id="p-0146" num="0147">(1): 9 10 11 12 13 14</p>
+<p id="p-0147" num="0148">(2): 0 1 2 3 4 5</p>
+<p id="p-0148" num="0149">Data output of the column processing/row processing component <b>105</b> is also performed in this sequence. The multistage difference cyclic permutation means <b>106</b> performs cyclic permutation based on the shift value of a difference value (s(0,k)&#x2212;s(2,k))mod Z=2. The parameters of Expressions 6 to 8 are Offset&#x2032;=2, Gap&#x2032;=0 and Flag&#x2032;=0. Based on the parameters, the multistage difference cyclic permutation means <b>106</b> makes the following output.</p>
+<p id="p-0149" num="0150">(0): 5 6 7 8 9 10</p>
+<p id="p-0150" num="0151">(1): 11 12 13 14 0 1</p>
+<p id="p-0151" num="0152">(2): 2 3 4 5 6 7</p>
+<p id="p-0152" num="0153">Assuming that the hard decision is made after the end of the message update processing of I(2,k) in the column block k, the decoding results are sequentially written to the decoding result memory <b>108</b> in this record structure. Because overwrite causes no problem in the decoding result memory <b>108</b>, there is no problem when writing is carried out always from address0, which is different from the cumulative LLR memory <b>101</b>. For the cumulative LLR memory <b>101</b>, the address administration means <b>104</b> writes the values to the addresses in the same sequence as the sequence during reading.</p>
+<p id="p-0153" num="0154">address0: 5 6 7 8 9 10</p>
+<p id="p-0154" num="0155">address1: 11 12 13 14 0 1</p>
+<p id="p-0155" num="0156">address2: 2 3 4 5 6 7</p>
+<p id="p-0156" num="0157">Note that, in Expression 10, next_address=(Gap&#x2032;+Flag&#x2032;+read_address)mod D=(0+0+0)mod 3=0, and it is set as the next read_address in the address administration means.</p>
+<p id="h-0019" num="0000">[Decoding Corresponding to I(0,k) (s(0,k)=5) in Second Iteration]</p>
+<p id="p-0157" num="0158">Be aware that read_address=0, differently from the message update processing corresponding to I(0,k) in the first iteration. In this invention, dynamic enabling of read_address is possible using the control means <b>110</b> and the address administration means <b>104</b>.</p>
+<p id="p-0158" num="0159">After that, the message update processing is executed in the same manner as in the first iteration.</p>
+<p id="h-0020" num="0000">[Output of Decoding Result]</p>
+<p id="p-0159" num="0160">In the decoding result memory <b>108</b>, the decoding result bits are stored in the sequencer of</p>
+<p id="p-0160" num="0161">address0: 5 6 7 8 9 10</p>
+<p id="p-0161" num="0162">address1: 11 12 13 14 0 1</p>
+<p id="p-0162" num="0163">address2: 2 3 4 5 6 7</p>
+<p id="h-0021" num="0000">corresponding to after the message update processing corresponding to I(2,k).</p>
+<p id="p-0163" num="0164">During generation of output, the values are read from the decoding result memory <b>108</b> in this sequence, and, based on (&#x2212;s(0,k)mod Z)=10, the parameters of Expressions 11 to 13 are Offset&#x2033;=4, Gap&#x2033;=1, and Flag&#x2033;=1, and the multistage cyclic permutation means <b>402</b> of the output arrangement means <b>109</b> arranges the decoding results as follows and stores temporarily.</p>
+<p id="p-0164" num="0165">(0): 6 7 8 9 10 11</p>
+<p id="p-0165" num="0166">(1): 12 13 14 0 1 2</p>
+<p id="p-0166" num="0167">(2): 0 1 2 3 4 5</p>
+<p id="p-0167" num="0168">The output sequence forming means <b>403</b> performs reading from output_address=(Gap&#x2033;+Flag&#x2033;)=2 in Expression 14 as the starting point, removes padding, and outputs the decoding results in the original sequence 0, 1, 2, . . . , 13, 14.</p>
+<p id="p-0168" num="0169">While the invention has been particularly shown and described with reference to exemplary embodiments thereof, the invention is not limited to these embodiments. It will be understood by those of ordinary skill in the art that various changes in form and details may be made therein without departing from the spirit and scope of the present invention as defined by the claims.</p>
+<p id="p-0169" num="0170">For example, an exemplary aspect of the invention may be represented as the following configuration, in addition to the configurations (1) and (8) described in Solution to Problem. The following numerals (2) to (7) and (9) to (10) respectively correspond to Claim numbers.</p>
+<p id="p-0170" num="0171">(2) The decoding device according to the above (1), in which</p>
+<p id="p-0171" num="0172">the address administration means includes
+<ul id="ul0003" list-style="none">
+    <li id="ul0003-0001" num="0000">
+    <ul id="ul0004" list-style="none">
+        <li id="ul0004-0001" num="0173">a current address register for storing an address serving as a reading start point of the cumulative LLR memories; and</li>
+        <li id="ul0004-0002" num="0174">an address update means for controlling a reading address and a writing address of the cumulative LLR memories, using the address of the current address register as an initial value, and</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0172" num="0175">the current address register performs update to store the reading start address in subsequent processing of same memory area calculated by the control means.</p>
+<p id="p-0173" num="0176">(3) The decoding device according to the above (1) or (2), in which</p>
+<p id="p-0174" num="0177">the received value arrangement means at least includes
+<ul id="ul0005" list-style="none">
+    <li id="ul0005-0001" num="0000">
+    <ul id="ul0006" list-style="none">
+        <li id="ul0006-0001" num="0178">a record generation means for arranging received data by record and outputting the data;</li>
+        <li id="ul0006-0002" num="0179">a multistage cyclic permutation means for performing the same processing as the multistage difference cyclic permutation means; and</li>
+        <li id="ul0006-0003" num="0180">a received value arrangement control means for managing parameters to be used by the record generation means and the multistage cyclic permutation means.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0175" num="0181">(4) The decoding device according to the above (3), in which</p>
+<p id="p-0176" num="0182">cyclic permutation at a head of each column block in a parity check matrix of the pseudo-cyclic low-density parity-check codes is identical transformation, and</p>
+<p id="p-0177" num="0183">the received value arrangement means includes the record generation means and the received value arrangement control means.</p>
+<p id="p-0178" num="0184">(5) The decoding device according to any one of the above (1) to (4), at least including:</p>
+<p id="p-0179" num="0185">a decoding result memory for storing results of deciding 0 or 1 of codeword bits from the cumulative reliability information;</p>
+<p id="p-0180" num="0186">an output arrangement means for performing arrangement when outputting decoding results from the decoding result memory in accordance with operation of the multistage difference cyclic permutation means; and</p>
+<p id="p-0181" num="0187">a means for calculating parameters to be used by the output arrangement means.</p>
+<p id="p-0182" num="0188">(6) The decoding device according to the above (5), in which</p>
+<p id="p-0183" num="0189">the output arrangement means at least includes
+<ul id="ul0007" list-style="none">
+    <li id="ul0007-0001" num="0000">
+    <ul id="ul0008" list-style="none">
+        <li id="ul0008-0001" num="0190">a multistage cyclic permutation means for performing the same processing as the multistage difference cyclic permutation means on bit-by-bit basis;</li>
+        <li id="ul0008-0002" num="0191">an output sequence forming means for generating an output sequence from output of the multistage cyclic permutation means; and</li>
+        <li id="ul0008-0003" num="0192">an output arrangement control means for managing parameters to be used by the multistage cyclic permutation means and the output forming means.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0184" num="0193">(7) The decoding device according to the above (6), in which</p>
+<p id="p-0185" num="0194">cyclic permutation at a head of each column block in a parity check matrix of the pseudo-cyclic low-density parity-check codes is identical transformation, and</p>
+<p id="p-0186" num="0195">the output arrangement means includes the output sequence forming means and the output arrangement control means.</p>
+<p id="p-0187" num="0196">(9) The decoding method according to the above (8), in which</p>
+<p id="p-0188" num="0197">decoding results of deciding 0 or 1 of codeword bits from the cumulative reliability information are arranged and output in accordance with operation of the multistage difference cyclic permutation step.</p>
+<p id="p-0189" num="0198">(10) The decoding method according to the above (8) or (9), in which</p>
+<p id="p-0190" num="0199">cyclic permutation at a head of each column block in a parity check matrix of the pseudo-cyclic low-density parity-check codes is identical transformation.</p>
+<p id="p-0191" num="0200">This application is based upon and claims the benefit of priority from Japanese patent application No. 2009-061184 filed on Mar. 13, 2009 the disclosure of which is incorporated herein in its entirety by reference.</p>
+<heading id="h-0022" level="1">INDUSTRIAL APPLICABILITY</heading>
+<p id="p-0192" num="0201">The present invention may be suitably applied to a decoding device and a decoding method of a pseudo-cyclic LDPC code with a variable code length in mobile communication and the like.</p>
+<heading id="h-0023" level="1">REFERENCE SIGNS LIST</heading>
+<p id="p-0193" num="0000">
+<ul id="ul0009" list-style="none">
+    <li id="ul0009-0001" num="0202"><b>100</b> ROM</li>
+    <li id="ul0009-0002" num="0203"><b>101</b> CUMULATIVE LLR MEMORY</li>
+    <li id="ul0009-0003" num="0204"><b>102</b> MEMORY INPUT CONTROL</li>
+    <li id="ul0009-0004" num="0205"><b>103</b> RECEIVED VALUE ARRANGEMENT MEANS</li>
+    <li id="ul0009-0005" num="0206"><b>103</b>A RECORD GENERATION MEANS</li>
+    <li id="ul0009-0006" num="0207"><b>104</b> ADDRESS ADMINISTRATION MEANS</li>
+    <li id="ul0009-0007" num="0208"><b>105</b> COLUMN PROCESSING/ROW PROCESSING COMPONENT</li>
+    <li id="ul0009-0008" num="0209"><b>106</b> MULTISTAGE DIFFERENCE CYCLIC PERMUTATION MEANS</li>
+    <li id="ul0009-0009" num="0210"><b>106</b>A MULTISTAGE CYCLIC PERMUTATION MEANS</li>
+    <li id="ul0009-0010" num="0211"><b>106</b>B MULTISTAGE CYCLIC PERMUTATION MEANS</li>
+    <li id="ul0009-0011" num="0212"><b>107</b> HARD DECISION MEANS</li>
+    <li id="ul0009-0012" num="0213"><b>108</b> DECODING RESULT MEMORY</li>
+    <li id="ul0009-0013" num="0214"><b>109</b> OUTPUT ARRANGEMENT MEANS</li>
+    <li id="ul0009-0014" num="0215"><b>109</b>A OUTPUT SEQUENCE FORMING MEANS</li>
+    <li id="ul0009-0015" num="0216"><b>110</b> CONTROL MEANS</li>
+    <li id="ul0009-0016" num="0217"><b>110</b>A CONTROL MEANS</li>
+    <li id="ul0009-0017" num="0218"><b>201</b> CURRENT ADDRESS REGISTER</li>
+    <li id="ul0009-0018" num="0219"><b>202</b> ADDRESS UPDATE MEANS</li>
+    <li id="ul0009-0019" num="0220"><b>301</b> RECEIVED VALUE ARRANGEMENT CONTROL MEANS</li>
+    <li id="ul0009-0020" num="0221"><b>302</b> RECORD GENERATION MEANS</li>
+    <li id="ul0009-0021" num="0222"><b>303</b> MULTISTAGE CYCLIC PERMUTATION MEANS</li>
+    <li id="ul0009-0022" num="0223"><b>401</b> OUTPUT ARRANGEMENT CONTROL MEANS</li>
+    <li id="ul0009-0023" num="0224"><b>402</b> MULTISTAGE CYCLIC PERMUTATION MEANS</li>
+    <li id="ul0009-0024" num="0225"><b>403</b> OUTPUT SEQUENCE FORMING MEANS</li>
+    <li id="ul0009-0025" num="0226"><b>500</b> COLUMN PROCESSING <b>1</b> COMPONENT</li>
+    <li id="ul0009-0026" num="0227"><b>501</b> ROW PROCESSING UNIT</li>
+    <li id="ul0009-0027" num="0228"><b>502</b> COLUMN PROCESSING <b>2</b> COMPONENT</li>
+    <li id="ul0009-0028" num="0229"><b>503</b> EXTERNAL INFORMATION MEMORY</li>
+    <li id="ul0009-0029" num="0230"><b>504</b> TEMPORARY MEMORY</li>
+    <li id="ul0009-0030" num="0231"><b>600</b> MULTISTAGE DIFFERENCE CYCLIC PERMUTATION CONTROL MEANS</li>
+    <li id="ul0009-0031" num="0232"><b>601</b> REGISTER UPDATE MEANS</li>
+    <li id="ul0009-0032" num="0233"><b>602</b> DATA EXTRACTION MEANS</li>
+    <li id="ul0009-0033" num="0234"><b>603</b> REGISTER</li>
+    <li id="ul0009-0034" num="0235"><b>604</b> SWITCHING MEANS</li>
+    <li id="ul0009-0035" num="0236"><b>605</b> FIRST SHIFT MEANS</li>
+    <li id="ul0009-0036" num="0237"><b>606</b> SECOND SHIFT MEANS</li>
+    <li id="ul0009-0037" num="0238"><b>607</b> SELECTION MEANS</li>
+</ul>
+</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>The invention claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A decoding device for pseudo-cyclic low-density parity-check codes having a structure with a variable cyclic permutation size, at least comprising:
+<claim-text>a plurality of cumulative LLR memories for storing cumulative reliability information being received values of the low-density parity-check codes or a sum of reliability information generated in a decoding process and the received values;</claim-text>
+<claim-text>a plurality of column processing/row processing components each including a plurality of processors corresponding to column processing and row processing of low-density parity-check code decoding for updating the reliability information;</claim-text>
+<claim-text>a multistage difference cyclic permutation means for performing cyclic permutation of data in a multistage fashion with a degree of parallelism corresponding to the number of data in one record of the cumulative LLR memories between the cumulative LLR memories and the column processing/row processing components, and, during writing to the cumulative LLR memories, executing processing integrating permutation for subsequent reading;</claim-text>
+<claim-text>a received value arrangement means for performing permutation of received data during writing of the received data to the cumulative LLR memories in accordance with operation of the multistage difference cyclic permutation means;</claim-text>
+<claim-text>an address administration means for storing a reading start address of the cumulative LLR memories and incrementing the address at reading in accordance with operation of the multistage difference cyclic permutation means; and</claim-text>
+<claim-text>a control means for calculating parameters to be used by the multistage difference cyclic permutation means and the received value arrangement means and the reading start address of the cumulative LLR memories to be stored in the address administration means.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The decoding device according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein
+<claim-text>the address administration means includes
+<claim-text>a current address register for storing an address serving as a reading start point of the cumulative LLR memories; and</claim-text>
+<claim-text>an address update means for controlling a reading address and a writing address of the cumulative LLR memories, using the address of the current address register as an initial value, and</claim-text>
+</claim-text>
+<claim-text>the current address register performs update to store the reading start address in subsequent processing of same memory area calculated by the control means.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The decoding device according to <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein
+<claim-text>the received value arrangement means at least includes
+<claim-text>a record generation means for arranging received data by record and outputting the data;</claim-text>
+<claim-text>a multistage cyclic permutation means for performing the same processing as the multistage difference cyclic permutation means; and</claim-text>
+<claim-text>a received value arrangement control means for managing parameters to be used by the record generation means and the multistage cyclic permutation means.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The decoding device according to <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein
+<claim-text>cyclic permutation at a head of each column block in a parity check matrix of the pseudo-cyclic low-density parity-check codes is identical transformation, and</claim-text>
+<claim-text>the received value arrangement means includes the record generation means and the received value arrangement control means.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The decoding device according to <claim-ref idref="CLM-00004">claim 4</claim-ref>, at least comprising:
+<claim-text>a decoding result memory for storing results of deciding 0 or 1 of codeword bits from the cumulative reliability information;</claim-text>
+<claim-text>an output arrangement means for performing arrangement when outputting decoding results from the decoding result memory in accordance with operation of the multistage difference cyclic permutation means; and</claim-text>
+<claim-text>a means for calculating parameters to be used by the output arrangement means.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The decoding device according to <claim-ref idref="CLM-00003">claim 3</claim-ref>, at least comprising:
+<claim-text>a decoding result memory for storing results of deciding 0 or 1 of codeword bits from the cumulative reliability information;</claim-text>
+<claim-text>an output arrangement means for performing arrangement when outputting decoding results from the decoding result memory in accordance with operation of the multistage difference cyclic permutation means; and</claim-text>
+<claim-text>a means for calculating parameters to be used by the output arrangement means.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The decoding device according to <claim-ref idref="CLM-00002">claim 2</claim-ref>, at least comprising:
+<claim-text>a decoding result memory for storing results of deciding 0 or 1 of codeword bits from the cumulative reliability information;</claim-text>
+<claim-text>an output arrangement means for performing arrangement when outputting decoding results from the decoding result memory in accordance with operation of the multistage difference cyclic permutation means; and</claim-text>
+<claim-text>a means for calculating parameters to be used by the output arrangement means.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The decoding device according to <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein
+<claim-text>the output arrangement means at least includes
+<claim-text>a multistage cyclic permutation means for performing the same processing as the multistage difference cyclic permutation means on bit-by-bit basis;</claim-text>
+<claim-text>an output sequence forming means for generating an output sequence from output of the multistage cyclic permutation means; and</claim-text>
+<claim-text>an output arrangement control means for managing parameters to be used by the multistage cyclic permutation means and the output forming means.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The decoding device according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein
+<claim-text>the received value arrangement means at least includes
+<claim-text>a record generation means for arranging received data by record and outputting the data;</claim-text>
+<claim-text>a multistage cyclic permutation means for performing the same processing as the multistage difference cyclic permutation means; and</claim-text>
+<claim-text>a received value arrangement control means for managing parameters to be used by the record generation means and the multistage cyclic permutation means.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The decoding device according to <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein
+<claim-text>cyclic permutation at a head of each column block in a parity check matrix of the pseudo-cyclic low-density parity-check codes is identical transformation, and</claim-text>
+<claim-text>the received value arrangement means includes the record generation means and the received value arrangement control means.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The decoding device according to <claim-ref idref="CLM-00010">claim 10</claim-ref>, at least comprising:
+<claim-text>a decoding result memory for storing results of deciding 0 or 1 of codeword bits from the cumulative reliability information;</claim-text>
+<claim-text>an output arrangement means for performing arrangement when outputting decoding results from the decoding result memory in accordance with operation of the multistage difference cyclic permutation means; and</claim-text>
+<claim-text>a means for calculating parameters to be used by the output arrangement means.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The decoding device according to <claim-ref idref="CLM-00009">claim 9</claim-ref>, at least comprising:
+<claim-text>a decoding result memory for storing results of deciding 0 or 1 of codeword bits from the cumulative reliability information;</claim-text>
+<claim-text>an output arrangement means for performing arrangement when outputting decoding results from the decoding result memory in accordance with operation of the multistage difference cyclic permutation means; and</claim-text>
+<claim-text>a means for calculating parameters to be used by the output arrangement means.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The decoding device according to <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein
+<claim-text>the output arrangement means at least includes
+<claim-text>a multistage cyclic permutation means for performing the same processing as the multistage difference cyclic permutation means on bit-by-bit basis;</claim-text>
+<claim-text>an output sequence forming means for generating an output sequence from output of the multistage cyclic permutation means; and</claim-text>
+<claim-text>an output arrangement control means for managing parameters to be used by the multistage cyclic permutation means and the output forming means.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The decoding device according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, at least comprising:
+<claim-text>a decoding result memory for storing results of deciding 0 or 1 of codeword bits from the cumulative reliability information;</claim-text>
+<claim-text>an output arrangement means for performing arrangement when outputting decoding results from the decoding result memory in accordance with operation of the multistage difference cyclic permutation means; and</claim-text>
+<claim-text>a means for calculating parameters to be used by the output arrangement means.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The decoding device according to <claim-ref idref="CLM-00014">claim 14</claim-ref>, wherein
+<claim-text>the output arrangement means at least includes
+<claim-text>a multistage cyclic permutation means for performing the same processing as the multistage difference cyclic permutation means on bit-by-bit basis;</claim-text>
+<claim-text>an output sequence forming means for generating an output sequence from output of the multistage cyclic permutation means; and</claim-text>
+<claim-text>an output arrangement control means for managing parameters to be used by the multistage cyclic permutation means and the output forming means.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The decoding device according to <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein
+<claim-text>cyclic permutation at a head of each column block in a parity check matrix of the pseudo-cyclic low-density parity-check codes is identical transformation, and</claim-text>
+<claim-text>the output arrangement means includes the output sequence forming means and the output arrangement control means.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. A decoding method for pseudo-cyclic low-density parity-check codes having a structure with a variable cyclic permutation size, at least comprising:
+<claim-text>a storing step for storing cumulative reliability information being received values of the low-density parity-check codes or a sum of reliability information generated in a decoding process and the received values into a memory; and</claim-text>
+<claim-text>a multistage difference cyclic permutation step for performing cyclic permutation of data in a multistage fashion with a degree of parallelism corresponding to the number of data in one record of the memory during column processing and row processing of low-density parity-check code decoding for updating the reliability information, and, during writing to the memory, executing processing integrating permutation for subsequent reading,</claim-text>
+<claim-text>wherein, during writing of the received data to the memory, permutation of received data is performed, and, during reading from a reading start address of the memory, the reading start address is incremented and stored again, in accordance with operation of the multistage difference cyclic permutation step.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The decoding method according to <claim-ref idref="CLM-00017">claim 17</claim-ref>, wherein
+<claim-text>decoding results of deciding 0 or 1 of codeword bits from the cumulative reliability information are arranged and output in accordance with operation of the multistage difference cyclic permutation step.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The decoding method according to <claim-ref idref="CLM-00018">claim 18</claim-ref>, wherein
+<claim-text>cyclic permutation at a head of each column block in a parity check matrix of the pseudo-cyclic low-density parity-check codes is identical transformation.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The decoding method according to <claim-ref idref="CLM-00017">claim 17</claim-ref>, wherein
+<claim-text>cyclic permutation at a head of each column block in a parity check matrix of the pseudo-cyclic low-density parity-check codes is identical transformation.</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

@@ -1,0 +1,1060 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08625365-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08625365</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13212478</doc-number>
+<date>20110818</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>209</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>11</class>
+<subclass>C</subclass>
+<main-group>7</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>36518907</main-classification>
+<further-classification>36523006</further-classification>
+</classification-national>
+<invention-title id="d2e53">Memory device and method using encode values for access error condition detection</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>7092270</doc-number>
+<kind>B2</kind>
+<name>Lee et al.</name>
+<date>20060800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>7593272</doc-number>
+<kind>B2</kind>
+<name>Doyle et al.</name>
+<date>20090900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>7788444</doc-number>
+<kind>B2</kind>
+<name>Lee et al.</name>
+<date>20100800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>2009/0037782</doc-number>
+<kind>A1</kind>
+<name>Hughes</name>
+<date>20090200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>2010/0269018</doc-number>
+<kind>A1</kind>
+<name>Clark et al.</name>
+<date>20101000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714763</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00006">
+<othercit>Yao, X. et al., &#x201c;Single Event Transient Mitigation in Cache Memory using Transient Error Checking Circuits,&#x201d; Custom Integrated Circuits Conference (CICC), 2010 IEEE; Sep. 19-22, 2010; ISBN 978-1-4244-5760-1; 4 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>20</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>36518907</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>36523006</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>4</number-of-drawing-sheets>
+<number-of-figures>5</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20130044558</doc-number>
+<kind>A1</kind>
+<date>20130221</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Sanjeevarao</last-name>
+<first-name>Padmaraj</first-name>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Chrudimsky</last-name>
+<first-name>David W.</first-name>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Sanjeevarao</last-name>
+<first-name>Padmaraj</first-name>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Chrudimsky</last-name>
+<first-name>David W.</first-name>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Freescale Semiconductor, Inc.</orgname>
+<role>02</role>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Ho</last-name>
+<first-name>Hoai V</first-name>
+<department>2827</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A memory module decodes an address to determine a one or more wordline select pattern, or other spatial select pattern. An encoder determines an encoded value based upon the wordline select pattern that is compared to an expected encode value. The encode value has fewer than twice the number of address bits used to determine the wordline select pattern.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="159.09mm" wi="233.00mm" file="US08625365-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="237.74mm" wi="166.20mm" orientation="landscape" file="US08625365-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="245.28mm" wi="146.47mm" file="US08625365-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="224.11mm" wi="165.52mm" file="US08625365-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="234.36mm" wi="170.26mm" orientation="landscape" file="US08625365-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND</heading>
+<p id="p-0002" num="0001">1. Field of the Disclosure</p>
+<p id="p-0003" num="0002">The present disclosure relates generally to electronic devices and more particularly to memory devices.</p>
+<p id="p-0004" num="0003">2. Description of the Related Art</p>
+<p id="p-0005" num="0004">A typical memory module includes a memory array having a plurality of select interconnects that are used to access a specific portion of the memory array during an access cycle. The select interconnects typically include a plurality of spatial select interconnects. The term &#x201c;spatial select interconnect&#x201d; as used herein refers to select interconnects of a memory array associated with a common spatial orientation. Examples of spatial select interconnects includes, wordlines, column select lines, and block select lines. A memory address that identifies a portion of memory to be accessed is received at a decoder of the memory module and decoded during a memory access cycle to provide a spatial select pattern to the spatial select interconnects. A memory access error occurs when a spatial select pattern results in multiple spatial select interconnects being enabled during the same memory cycle. Such access errors can be the result of manufacturing errors, a hard error, or spurious one-time events, a soft error.</p>
+<p id="p-0006" num="0005">In order to detect access errors, and thereby increase the reliability of a memory module, it has been proposed that the actual spatial select pattern at a spatial select interconnect be encoded to determine an encoded address that should match the address received at the memory module. When the encoded address matches the actual address the access of the current access cycle is verified. However, when the encoded address does not match the actual address, the access of the current access cycle is not validated.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0002" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0007" num="0006">The present disclosure may be better understood, and its numerous features and advantages made apparent to those skilled in the art by referencing the accompanying drawings.</p>
+<p id="p-0008" num="0007"><figref idref="DRAWINGS">FIG. 1</figref> illustrates a system including a memory module in accordance with a specific embodiment of the present disclosure;</p>
+<p id="p-0009" num="0008"><figref idref="DRAWINGS">FIG. 2</figref> illustrates a prior art encoder;</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 3</figref> illustrates a prior art encoder;</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 4</figref> illustrates an encoder in accordance with a specific embodiment of the present disclosure; and</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 5</figref> illustrates an encoder in accordance with a specific embodiment of the present disclosure.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0003" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0013" num="0012">According to a specific embodiment of the present disclosure, the wordlines and column selects of a memory array are used to select transistors arranged in a wire-ORed configuration to generate an encode values that are used to detect if an access error condition exists for a given access cycle. The encode values are chosen so that no valid encode value can alias an error condition caused by multiple wordlines being enabled or by one wrong select line being enabled. In addition, the encode values can be chosen to have fewer than twice the number of address bits that are used to determine a wordline or column select pattern by an address decoder.</p>
+<p id="p-0014" num="0013">For example, during a memory access cycle of a memory module, an input address is decoded to provide a set of signals, referred to as a wordline select pattern, to a corresponding set of wordlines (a wordline interconnect), and another set of signals, referred to as a column select pattern, to a corresponding set of column select lines (column select interconnect). The wordline and column select patterns are used to control access of information stored at memory cells of the memory array and to enable additional gates at an encoder that uniquely generates an encode value for each corresponding wordline and column select pattern. In a particular embodiment, the gates of the encoder are wired-OR together to form a final bit line that is sensed to read out the encode values. Based upon the encode value it is determined whether an actual select pattern at the memory array during a given access cycle matches an expected select pattern for the address being decoded, therefore verifying validity of the access cycle. The encode values are selected to prevent a valid select pattern from aliasing an invalid select pattern. The encode values are further chosen to have fewer than twice 2^N bits, where N is the number of address bits decoded to generate a corresponding select pattern. Embodiments of the present disclosure will be better understood with reference to <figref idref="DRAWINGS">FIGS. 1-5</figref> herein.</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 1</figref> illustrates a system <b>10</b> that includes a memory module <b>100</b>. Memory module <b>100</b> includes a bus interface <b>110</b>, an address decoder <b>130</b>, a memory cell array <b>121</b>, a column select module <b>122</b>, sense amplifier <b>123</b> (sense amp), select pattern encoder <b>140</b>, and validity check module <b>150</b>. Bus interface <b>110</b> is connected to external interconnect <b>12</b>, to address interconnect <b>111</b>, to control interconnect <b>112</b>, to data interconnect <b>113</b>, and to status interconnect <b>114</b>. Access decoder <b>130</b> includes a row decoder <b>131</b> that is connected to a first portion of the address interconnect <b>111</b>, a column decoder <b>132</b> that is connected to a second portion of the address interconnect <b>111</b>, and a block decoder <b>133</b> that is connected to the control interconnect <b>112</b>. Row decoder <b>131</b>, column decoder <b>132</b>, and block decoder <b>133</b> are connected to wordlines <b>101</b>, column selects <b>102</b>, and block selects <b>103</b>, respectively. Memory cell array <b>121</b> is connected to the wordlines <b>101</b>, and to one or more memory array bit lines (not shown). Column select module <b>122</b> is connected to the column selects <b>102</b>, to the memory array bit lines (not shown), and to column select bit lines (not shown). Sense amp <b>123</b> is connected to a block select interconnect labeled READ EN, to the column select bit lines (not shown), and to the data interconnect.</p>
+<p id="p-0016" num="0015">The encoder <b>140</b> includes a wordline encoder <b>141</b> that is connected to the wordlines <b>101</b>, a column select encoder <b>142</b> that is connected to the column selects <b>102</b>, and a block encoder <b>143</b> that is connected to the block selects <b>103</b>. Encode interconnects <b>149</b> are connected to an output of the encoder <b>140</b> and include wordline encode interconnects <b>146</b>, column select encode interconnects <b>147</b>, and block select encode interconnects <b>148</b>.</p>
+<p id="p-0017" num="0016">The term &#x201c;interconnect&#x201d; as used herein, and its variants, is used herein to refer to various features that can communicate information between various modules either directly or indirectly. For example, an interconnect can be implemented as a passive device, such as one or more conductive traces, that transmits information directly between various modules, or as an active device, whereby information being transmitted is buffered, e.g., stored and retrieved, in the processes of being communicated between devices, such as at a first-in first-out memory or other memory device. By way of example, the term &#x201c;bus&#x201d; as used herein is presumed to refer to an interconnect having one or more conductive traces that communicate information between a source and destination.</p>
+<p id="p-0018" num="0017">During operation, a requesting device (not shown) provides memory access information, such as address and control information, to the memory module <b>100</b> via the external interconnect <b>12</b>. The address information is provided to the decoder <b>130</b>, via interconnect <b>111</b>, to generate a desired wordline select pattern and a desired column select pattern that together identify a specific portion of the memory cell array <b>121</b>. Control information is provided to the decoder <b>130</b>, via interconnect <b>112</b>, to generate other control information, such as a read enable signal, that is used to facilitate an access of the memory array portion identified by the decoder <b>130</b>. For example, the read enable signal can enable sense amplifiers that read bitlines</p>
+<p id="p-0019" num="0018">The wordline select pattern that has been chosen to correspond to a portion of the address received at the row decode module <b>131</b> is referred to as the desired wordline select pattern, or as the valid wordline select pattern of the corresponding address. During error-free operation, the desired wordline select pattern of a received address and the signals actually present at the wordlines, referred to herein as the actual wordline select pattern, will be the same. However, during errant operation, the actual wordline select pattern can be an invalid pattern due to hard errors or soft errors being introduced at various locations of memory module <b>100</b>.</p>
+<p id="p-0020" num="0019">By way of example, operation of the encoding features of the memory array <b>100</b> are primarily discussed with reference to the wordlines <b>101</b>, though it will be appreciated that the same encoding techniques can be applied in combination, or individually, to the column select lines <b>102</b> and to the block selects lines <b>103</b>. By further example, it is presumed that a wordline being driven to a high voltage level is enabled (selected/asserted) and that a wordline being driven to a low voltage level is not enabled (not-selected/negated). Each valid wordline select pattern for memory module <b>100</b> has only one selected wordline with the remaining wordlines being negated. Therefore, a wordline select pattern at wordline interconnect <b>101</b>, referred to as an actual wordline select pattern, is an invalid wordline select pattern of the memory array module <b>100</b> if two or more wordlines of the memory array <b>121</b> are selected.</p>
+<p id="p-0021" num="0020">Alternatively, an actual wordline select pattern can be a valid wordline select pattern of the memory array module, but an invalid wordline select pattern for a particular address. In this situation, the actual wordline pattern is an invalid pattern because it does not match the expected wordline select pattern, but is a valid wordline select pattern for another input address. For example, an actual wordline select pattern having only the third wordline asserted is an invalid pattern if the expected wordline select pattern that corresponds to the particular address of the access cycle is different than the actual wordline select pattern.</p>
+<p id="p-0022" num="0021">In order to validate a memory access, the actual wordline select pattern is encoded by encoder <b>140</b> to generate an encode value that is provided to the validity check module <b>150</b>. The validity check module <b>150</b> includes a translate module (not shown) that determines an expected encode value based upon the input address. The translate module can include a look-up table or logic module that provides the expected select pattern based upon the input address at the address interconnect. The expected encode value determined by the translate module is compared to the actual encode value determined by the encoder <b>140</b>. If the actual encode value matches the expected encode value, the current access cycle is considered valid and a signal ERROR is negated. Otherwise, if the actual encode value does not match the expected encode value, the current access is considered invalid, and the signal ERROR is asserted.</p>
+<p id="p-0023" num="0022">In accordance with the present disclosure, the encode values are chosen to avoid any valid encode value from aliasing any invalid encode value. Furthermore, the encode values are assigned to specific wordline select patterns to allow for an area efficient implementation of the enable module <b>140</b> that uses wire-ORed logic. Characteristics of the encode values and their selection will be better understood with reference to the tables and figures herein.</p>
+<p id="p-0024" num="0023">Aliasing occurs when a valid encode value is generated for a current access cycle even though the actual wordline select pattern generated for the current address is invalid. <figref idref="DRAWINGS">FIG. 2</figref> includes wordlines WL<b>0</b> through WL<b>3</b>, and bitlines E(<b>1</b>) through E(<b>0</b>), and represents a specific prior art schematic diagram of the wordline encoder <b>141</b> of <figref idref="DRAWINGS">FIG. 1</figref> that generates an encode value based on the wordline select pattern at wordlines WL<b>0</b> through WL<b>3</b>. Each of the bitlines E(<b>0</b>) and E(<b>1</b>) are precharged by a pull-down device to a low voltage level that represents a low voltage logic state, referred to herein as zero or logic zero. Bit line E(<b>1</b>) is pulled to a high-voltage logic state, referred to herein as one or logic one, by transistors <b>202</b> or <b>203</b> in response to either WL<b>2</b> or WL<b>3</b> being asserted, i.e. a logic one. Bit line E(<b>0</b>) is pulled to a high-voltage logic state by transistors <b>201</b> or <b>204</b> in response to either WL<b>1</b> or WL<b>3</b> being asserted.</p>
+<p id="p-0025" num="0024">The operation of the wordline encoder of <figref idref="DRAWINGS">FIG. 2</figref> is described with reference to six memory access cycles represented in Table 1, in which the access cycles 1-4 represent error-free access cycles, the access cycle 5 represents an access cycle during which an error is detected, and access cycle 6 represents an access cycle during which aliasing occurs.</p>
+<p id="p-0026" num="0025">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="7">
+<colspec colname="1" colwidth="21pt" align="center"/>
+<colspec colname="2" colwidth="28pt" align="center"/>
+<colspec colname="3" colwidth="28pt" align="center"/>
+<colspec colname="4" colwidth="35pt" align="center"/>
+<colspec colname="5" colwidth="35pt" align="center"/>
+<colspec colname="6" colwidth="28pt" align="center"/>
+<colspec colname="7" colwidth="42pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="7" rowsep="1">TABLE 1</entry>
+</row>
+<row>
+<entry namest="1" nameend="7" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>Actual</entry>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Input</entry>
+<entry/>
+<entry>Wordline</entry>
+</row>
+<row>
+<entry/>
+<entry>Input</entry>
+<entry>Address</entry>
+<entry>Desired</entry>
+<entry>Select</entry>
+<entry>Encode</entry>
+<entry>Operation</entry>
+</row>
+<row>
+<entry>Cycle</entry>
+<entry>Address</entry>
+<entry>(Binary)</entry>
+<entry>Wordline</entry>
+<entry>Pattern</entry>
+<entry>value</entry>
+<entry>Represented</entry>
+</row>
+<row>
+<entry namest="1" nameend="7" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>1</entry>
+<entry>A(0)</entry>
+<entry>00</entry>
+<entry>WL0</entry>
+<entry>0001</entry>
+<entry>00</entry>
+<entry>Error-Free</entry>
+</row>
+<row>
+<entry>2</entry>
+<entry>A(1)</entry>
+<entry>01</entry>
+<entry>WL1</entry>
+<entry>0010</entry>
+<entry>01</entry>
+<entry>Error-Free</entry>
+</row>
+<row>
+<entry>3</entry>
+<entry>A(2)</entry>
+<entry>10</entry>
+<entry>WL2</entry>
+<entry>0100</entry>
+<entry>10</entry>
+<entry>Error-Free</entry>
+</row>
+<row>
+<entry>4</entry>
+<entry>A(3)</entry>
+<entry>11</entry>
+<entry>WL3</entry>
+<entry>1000</entry>
+<entry>11</entry>
+<entry>Error-Free</entry>
+</row>
+<row>
+<entry>5</entry>
+<entry>A(0)</entry>
+<entry>00</entry>
+<entry>WL0</entry>
+<entry>0011</entry>
+<entry>01</entry>
+<entry>Error</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>Detected</entry>
+</row>
+<row>
+<entry>6</entry>
+<entry>A(3)</entry>
+<entry>11</entry>
+<entry>WL3</entry>
+<entry>1010</entry>
+<entry>11</entry>
+<entry>Error aliased</entry>
+</row>
+<row>
+<entry namest="1" nameend="7" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0027" num="0026">Referring to Table 1, the column labeled Cycle includes values 1 through 6, each of which identify a corresponding access cycle of a memory module. The column labeled Input Address includes values that are pneumonic representation of valid addresses, A(0) through A(3), that are received at the decoder of a memory module during a particular access cycle. The column labeled Input Address (Binary) indicates, in binary form, the binary value that corresponds to the received address of the indicated access cycle. The column labeled Desired Wordline includes pneumonic representations indicating a particular wordline (WL<b>0</b> through WL<b>3</b>) that is asserted during error-free operation of the indicated access cycle. The column labeled Actual Wordline Select Pattern represents the actual logic states, in binary form, of each wordline of the memory module during a corresponding access cycle, where the left-most bit represents the logic state of WL<b>3</b> and the right-most bit represents the state of WL<b>0</b>. The column labeled Encode Value represents the desired encode value generated by the encoding circuitry of <figref idref="DRAWINGS">FIG. 2</figref> in response to the Actual Wordline Select Pattern generated during the access cycle. Note that for simplicity it is assumed that the desired encode value is the encode value actually generated. The column labeled Operation Represented includes information indicating operational information for corresponding access cycles.</p>
+<p id="p-0028" num="0027">During access cycle 1, The address A(0) (00b) has been received at the decoder of the memory module <b>100</b>. During error-free operation, the desired wordline for assertion is WL<b>0</b>, and the actual wordline select pattern generated is 0001b, which is the expected/desired select pattern for an input address of A(0). The encoder <b>141</b> generates an actual encode value of 00b based upon the actual wordline select pattern 0001b. The encode value 00b represents the expected/desired value for the wordline select pattern of 0001b. As indicated in the last column of Table 1, access cycle 1 of Table 1 represents error-free operation in that the access occurred as it was intended. Similarly, the access cycles 2 through 4 of Table 1 represent error free operation for each other valid input address A(1), A(2), and A(3) of the simple example presented.</p>
+<p id="p-0029" num="0028">Access cycle 5 represents an access cycle of the memory module at which an error is detected. During access cycle 5, the address A(0) has been received at the decoder <b>131</b> of the memory module <b>100</b>, therefore, WL<b>0</b> is the wordline that is expected to be asserted. However, two wordlines are actually asserted (WL<b>0</b> and WL<b>1</b>) during access cycle 5 as indicated by the two zeros in the pattern 0011b of the Actual Wordline Select Pattern column. It will be appreciated that the assertion of the additional errant wordline that corresponds to WL<b>1</b> can occur due to a manufacturing error, or due to a one-time transient error. The actual wordline select pattern 0011b, which is invalid for address A(0), results in the encoder <b>141</b> of <figref idref="DRAWINGS">FIG. 2</figref> generating an actual encode value of 01b. Note that this actual encode value is expected, e.g., valid, with respect to the wordline select pattern 0011b. However, an error is detected, as indicated in the Operation Represented column of Table 1, because the actual encode value (01b) does not match the expected encode value (00b) for the address A(0).</p>
+<p id="p-0030" num="0029">Access cycle 6 represents an access cycle of the memory module at which an error condition is aliased, and therefore not detected. During access cycle 6, the address A(3) has been received at the decoder <b>131</b> of the memory module <b>100</b>, therefore, WL<b>3</b> is the wordline that is expected to be asserted. However, the actual wordline select pattern generated during access cycle 6 is 1010b, which indicates both wordlines WL<b>3</b> and WL<b>1</b> are asserted. It will be appreciated that the assertion of the additional wordline corresponding to WL<b>1</b> can occur due to a manufacturing error, or a one-time transient error. The actual wordline select pattern (1010b), which is invalid for address A(3), results in the encoder <b>141</b> generating an encode value of 11b, which is the valid encode value for address A(3). Therefore, because the actual encode value based on the invalid select pattern (1010b) matches the expected encode value for A(3), the error is aliased, not detected, as indicated in the Operation column.</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIG. 3</figref> illustrates a prior art schematic of an alternate encoding scheme that generates an encode value portion that is the same encode values of <figref idref="DRAWINGS">FIG. 2</figref> and a portion that is the complement of the encode values of <figref idref="DRAWINGS">FIG. 2</figref>. <figref idref="DRAWINGS">FIG. 3</figref> represents a specific prior art schematic diagram of the wordline encoder <b>141</b> of <figref idref="DRAWINGS">FIG. 1</figref> that generates an encode value based on the wordline select pattern at wordlines WL<b>0</b> through WL<b>3</b>. <figref idref="DRAWINGS">FIG. 3</figref> includes wordlines WL<b>0</b> through WL<b>3</b>, and bitlines E(<b>3</b>) through E(<b>0</b>). Bitlines E(<b>3</b>) through E(<b>0</b>) are precharged to a low voltage level that represents a logic zero by a pull-down device. Bit line E(<b>3</b>) is similar to bit line E(<b>1</b>) of <figref idref="DRAWINGS">FIG. 2</figref> and is pulled to a high-voltage logic state by transistors <b>302</b> or <b>303</b> in response to either WL<b>2</b> or WL<b>3</b> being asserted, i.e. a logic one. Bit line E(<b>2</b>) is similar to bitline E(<b>0</b>) of <figref idref="DRAWINGS">FIG. 2</figref> and is pulled to a high-voltage logic state by transistors <b>301</b> or <b>304</b> in response to either WL<b>1</b> or WL<b>3</b> being asserted. Transistors <b>305</b> and <b>307</b> implement at bitline E(<b>1</b>) logic complementary to the logic of Bit line E(<b>3</b>). Transistors <b>306</b> and <b>308</b> implement at bitline E(<b>0</b>) logic complementary to the logic of Bit line E(<b>2</b>).</p>
+<p id="p-0032" num="0031">The operation of the wordline decoder of <figref idref="DRAWINGS">FIG. 3</figref> is described with reference to six memory access cycles as indicated in Table 2, in which the access cycles 1-4 represent error-free access cycles, and the access cycle 5 represents an access cycle during which an error is detected.</p>
+<p id="p-0033" num="0032">
+<tables id="TABLE-US-00002" num="00002">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="7">
+<colspec colname="1" colwidth="21pt" align="center"/>
+<colspec colname="2" colwidth="28pt" align="center"/>
+<colspec colname="3" colwidth="28pt" align="center"/>
+<colspec colname="4" colwidth="35pt" align="center"/>
+<colspec colname="5" colwidth="35pt" align="center"/>
+<colspec colname="6" colwidth="28pt" align="center"/>
+<colspec colname="7" colwidth="42pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="7" rowsep="1">TABLE 2</entry>
+</row>
+<row>
+<entry namest="1" nameend="7" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>Actual</entry>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Address</entry>
+<entry/>
+<entry>Wordline</entry>
+</row>
+<row>
+<entry/>
+<entry>Desired</entry>
+<entry>Input</entry>
+<entry>Desired</entry>
+<entry>Select</entry>
+<entry>Encode</entry>
+<entry>Operation</entry>
+</row>
+<row>
+<entry>Cycle</entry>
+<entry>Address</entry>
+<entry>(Binary)</entry>
+<entry>Wordline</entry>
+<entry>Pattern</entry>
+<entry>value</entry>
+<entry>Represented</entry>
+</row>
+<row>
+<entry namest="1" nameend="7" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>1</entry>
+<entry>A(0)</entry>
+<entry>00</entry>
+<entry>WL0</entry>
+<entry>0001</entry>
+<entry>00 11</entry>
+<entry>Error-Free</entry>
+</row>
+<row>
+<entry>2</entry>
+<entry>A(1)</entry>
+<entry>01</entry>
+<entry>WL1</entry>
+<entry>0010</entry>
+<entry>01 10</entry>
+<entry>Error-Free</entry>
+</row>
+<row>
+<entry>3</entry>
+<entry>A(2)</entry>
+<entry>10</entry>
+<entry>WL2</entry>
+<entry>0100</entry>
+<entry>10 01</entry>
+<entry>Error-Free</entry>
+</row>
+<row>
+<entry>4</entry>
+<entry>A(3)</entry>
+<entry>11</entry>
+<entry>WL3</entry>
+<entry>1000</entry>
+<entry>11 00</entry>
+<entry>Error-Free</entry>
+</row>
+<row>
+<entry>5</entry>
+<entry>A(0)</entry>
+<entry>00</entry>
+<entry>WL0</entry>
+<entry>0011</entry>
+<entry>01 11</entry>
+<entry>Error</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>Detected</entry>
+</row>
+<row>
+<entry>6</entry>
+<entry>A(3)</entry>
+<entry>11</entry>
+<entry>WL3</entry>
+<entry>1010</entry>
+<entry>11 10</entry>
+<entry>Error</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>Detected</entry>
+</row>
+<row>
+<entry namest="1" nameend="7" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0034" num="0033">As indicated in Table 2, the encoder of <figref idref="DRAWINGS">FIG. 3</figref> generates encode values that include true and complement representations of the input address. Therefore, as indicated for access cycles 1-4 of Table 2, the valid encode value is 0011b for desired address A(0), the valid encode value is 0110b for desired address A(1), the valid encode value is 1001b for desired address A(2), and the valid encode value is 1100b for desired address A(3). At access cycle 5 of Table 2, the actual encode value is 0111b based on the errant actual wordline select pattern 0011b. Therefore, an error is detected because the actual encode value does not match the expected encode value during access cycle 5. At access cycle 6 of Table 2, the actual encode value is 1110b based on the errant actual wordline select pattern 1010b. Note the encode value 1110b at access cycle 6 that is based upon an errant wordline select pattern (1010) cannot be masked by the expected wordline select pattern (1000) for address A(3), as occurred at cycle 6 when the encoder of <figref idref="DRAWINGS">FIG. 2</figref> was used, because the encode value of the encoder of <figref idref="DRAWINGS">FIG. 3</figref> includes both true and complement representations of the input. However, the prior art encoder of <figref idref="DRAWINGS">FIG. 3</figref> requires twice as many bit lines to represent each encode value as address bits used to access the memory array. As a result, the space needed to implement the needed transistors to encode the possible wordline select patterns is based upon the equation (2^Abits)*2, where Abits is the number of address bits used to generate the wordline select pattern.</p>
+<p id="p-0035" num="0034">In accordance with a particular embodiment of the disclosure, selection of a set of encode values that have a fixed number of zeros for all valid encode values of the memory module results in encode values having fewer than twice the number of bit positions as the address used to generate the wordline select patterns. In addition, assignment of the encode values to the set of encode values can result in an encode circuit requiring fewer transistors than that required by the scheme described with reference to <figref idref="DRAWINGS">FIG. 3</figref>.</p>
+<p id="p-0036" num="0035">Table 3 indicates unique sets of encode values having exactly two zeros, and a fixed bit position size of two, three or four. Therefore, while there are 3 unique encode values having exactly two zeros for encode values having three bits, there are 6 unique encode values having exactly two zeros for encode values having four bits.</p>
+<p id="p-0037" num="0036">
+<tables id="TABLE-US-00003" num="00003">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="84pt" align="center"/>
+<colspec colname="2" colwidth="28pt" align="left"/>
+<colspec colname="3" colwidth="105pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="3" rowsep="1">TABLE 3</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>Bitfield</entry>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>Size of</entry>
+<entry/>
+<entry>Number of</entry>
+</row>
+<row>
+<entry>Encode</entry>
+<entry>Encode</entry>
+<entry>Unique</entry>
+</row>
+<row>
+<entry>Value</entry>
+<entry>Value</entry>
+<entry>Values</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>2</entry>
+<entry>00</entry>
+<entry>1</entry>
+</row>
+<row>
+<entry>3</entry>
+<entry>001</entry>
+<entry>3</entry>
+</row>
+<row>
+<entry/>
+<entry>010</entry>
+</row>
+<row>
+<entry/>
+<entry>100</entry>
+</row>
+<row>
+<entry>3</entry>
+<entry>0011</entry>
+<entry>6</entry>
+</row>
+<row>
+<entry/>
+<entry>1100</entry>
+</row>
+<row>
+<entry/>
+<entry>0101</entry>
+</row>
+<row>
+<entry/>
+<entry>1010</entry>
+</row>
+<row>
+<entry/>
+<entry>1001</entry>
+</row>
+<row>
+<entry/>
+<entry>0110</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0038" num="0037">Table 4 indicates the number of unique encode values for encode values having bit position sizes from 5 to 13, and fixed number of zeros from 2 to 9. For example, according to Table 4, there are fifty-six eight-bit encode values having exactly 3 zeros, and there are seventy eight-bit encode values having exactly 4 zeros.</p>
+<p id="p-0039" num="0038">
+<tables id="TABLE-US-00004" num="00004">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="9">
+<colspec colname="1" colwidth="21pt" align="center"/>
+<colspec colname="2" colwidth="28pt" align="center"/>
+<colspec colname="3" colwidth="28pt" align="center"/>
+<colspec colname="4" colwidth="28pt" align="center"/>
+<colspec colname="5" colwidth="28pt" align="center"/>
+<colspec colname="6" colwidth="21pt" align="center"/>
+<colspec colname="7" colwidth="21pt" align="center"/>
+<colspec colname="8" colwidth="21pt" align="center"/>
+<colspec colname="9" colwidth="21pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="9" rowsep="1">TABLE 4</entry>
+</row>
+<row>
+<entry namest="1" nameend="9" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>6</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+</row>
+<row>
+<entry>BITS</entry>
+<entry>2 Zeros</entry>
+<entry>3 Zeros</entry>
+<entry>4 Zeros</entry>
+<entry>5 Zeros</entry>
+<entry>Zeros</entry>
+<entry>Zeros</entry>
+<entry>Zeros</entry>
+<entry>Zeros</entry>
+</row>
+<row>
+<entry namest="1" nameend="9" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="9">
+<colspec colname="1" colwidth="21pt" align="char" char="."/>
+<colspec colname="2" colwidth="28pt" align="center"/>
+<colspec colname="3" colwidth="28pt" align="char" char="."/>
+<colspec colname="4" colwidth="28pt" align="char" char="."/>
+<colspec colname="5" colwidth="28pt" align="char" char="."/>
+<colspec colname="6" colwidth="21pt" align="char" char="."/>
+<colspec colname="7" colwidth="21pt" align="char" char="."/>
+<colspec colname="8" colwidth="21pt" align="char" char="."/>
+<colspec colname="9" colwidth="21pt" align="char" char="."/>
+<tbody valign="top">
+<row>
+<entry>5</entry>
+<entry>10</entry>
+<entry>10</entry>
+<entry>5</entry>
+<entry>1</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>6</entry>
+<entry>15</entry>
+<entry>20</entry>
+<entry>15</entry>
+<entry>6</entry>
+<entry>1</entry>
+</row>
+<row>
+<entry>7</entry>
+<entry>21</entry>
+<entry>35</entry>
+<entry>35</entry>
+<entry>21</entry>
+<entry>7</entry>
+<entry>1</entry>
+</row>
+<row>
+<entry>8</entry>
+<entry>28</entry>
+<entry>56</entry>
+<entry>70</entry>
+<entry>56</entry>
+<entry>28</entry>
+<entry>8</entry>
+<entry>1</entry>
+</row>
+<row>
+<entry>9</entry>
+<entry>36</entry>
+<entry>84</entry>
+<entry>126</entry>
+<entry>126</entry>
+<entry>84</entry>
+<entry>36</entry>
+<entry>9</entry>
+<entry>1</entry>
+</row>
+<row>
+<entry>10</entry>
+<entry>45</entry>
+<entry>120</entry>
+<entry>210</entry>
+<entry>252</entry>
+<entry>210</entry>
+<entry>120</entry>
+<entry>45</entry>
+<entry>10</entry>
+</row>
+<row>
+<entry>11</entry>
+<entry>55</entry>
+<entry>165</entry>
+<entry>330</entry>
+<entry>462</entry>
+<entry>462</entry>
+<entry>330</entry>
+<entry>165</entry>
+<entry>55</entry>
+</row>
+<row>
+<entry>12</entry>
+<entry>66</entry>
+<entry>220</entry>
+<entry>495</entry>
+<entry>792</entry>
+<entry>924</entry>
+<entry>792</entry>
+<entry>495</entry>
+<entry>220</entry>
+</row>
+<row>
+<entry>13</entry>
+<entry>78</entry>
+<entry>286</entry>
+<entry>715</entry>
+<entry>1287</entry>
+<entry>1716</entry>
+<entry>1716</entry>
+<entry>1287</entry>
+<entry>715</entry>
+</row>
+<row>
+<entry namest="1" nameend="9" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0040" num="0039">It will be appreciated that each possible input address of a memory array can be assigned a unique encode value having a fixed number of zeros so long as the number of valid input addresses of the memory array is less than or equal to the number of unique encodings as indicated in Table 4. For example, a memory controller having a five-bit address that is used to enable one of 32 wordlines can assign a unique seven-bit encode value for each corresponding address value, wherein each seven-bit encode value has exactly three zeros or four zeros. Alternatively, a larger bit-count encode value can be used, such as eight-bit encode values having three, four or five zeros.</p>
+<p id="p-0041" num="0040">Table 5 illustrates a simple embodiment where a three bit input address is used to enable one of eight wordlines (WL<b>0</b>-WL<b>7</b>) and each wordline has an expected wordline select pattern having two zeros distributed amongst a total of 5-bits. <figref idref="DRAWINGS">FIG. 4</figref> is a schematic diagram illustrating a specific embodiment of a transistor schematic implementing a wordline encoder based upon the encode values of table 5.</p>
+<p id="p-0042" num="0041">
+<tables id="TABLE-US-00005" num="00005">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="offset" colwidth="56pt" align="left"/>
+<colspec colname="1" colwidth="35pt" align="left"/>
+<colspec colname="2" colwidth="126pt" align="center"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" rowsep="1">TABLE 5</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Asserted</entry>
+<entry>Encode</entry>
+</row>
+<row>
+<entry/>
+<entry>Wordline</entry>
+<entry>Value</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>WL0</entry>
+<entry>00111</entry>
+</row>
+<row>
+<entry/>
+<entry>WL1</entry>
+<entry>01011</entry>
+</row>
+<row>
+<entry/>
+<entry>WL2</entry>
+<entry>01101</entry>
+</row>
+<row>
+<entry/>
+<entry>WL3</entry>
+<entry>01110</entry>
+</row>
+<row>
+<entry/>
+<entry>WL4</entry>
+<entry>10101</entry>
+</row>
+<row>
+<entry/>
+<entry>WL5</entry>
+<entry>10110</entry>
+</row>
+<row>
+<entry/>
+<entry>WL6</entry>
+<entry>11001</entry>
+</row>
+<row>
+<entry/>
+<entry>WL7</entry>
+<entry>11100</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0043" num="0042"><figref idref="DRAWINGS">FIG. 4</figref> illustrates in schematic form, an encode circuit based upon the encode values of Table 5. <figref idref="DRAWINGS">FIG. 4</figref> includes wordlines WL<b>0</b> through WL<b>7</b> of a memory array, and bitlines E(<b>4</b>) through E(<b>0</b>) that provide an encode value during each access cycle. Bitlines E(<b>4</b>)-E(<b>0</b>) are precharged to a high-level logic voltage, and are connected to a plurality of pull-down NMOS transistors. Each NMOS transistor of <figref idref="DRAWINGS">FIG. 4</figref> includes a current electrode connected to one bitline, a current electrode connected to ground, and a control electrode connected to one wordline. NMOS transistors controlled by WL<b>0</b> have current electrodes connected to bitlines E(<b>4</b>) and E(<b>3</b>); NMOS transistors controlled by WL<b>1</b> have current electrodes connected to bitlines E(<b>4</b>) and E(<b>2</b>); NMOS transistors controlled by WL<b>2</b> have current electrodes connected to bitlines E(<b>4</b>) and E(<b>1</b>); NMOS transistors controlled by WL<b>3</b> have current electrodes connected to bitlines E(<b>4</b>) and E(<b>0</b>); NMOS transistors controlled by WL<b>4</b> have current electrodes connected to bitlines E(<b>3</b>) and E(<b>1</b>); NMOS transistors controlled by WL<b>5</b> have current electrodes connected to bitlines E(<b>3</b>) and E(<b>0</b>); NMOS transistors controlled by WL<b>6</b> have current electrodes connected to bitlines E(<b>2</b>) and E(<b>1</b>); NMOS transistors controlled by WL<b>7</b> have current electrodes connected to bitlines E(<b>1</b>) and E(<b>0</b>).</p>
+<p id="p-0044" num="0043">It will be appreciated that use of the encode values of Table 5, as implemented in the circuit of <figref idref="DRAWINGS">FIG. 4</figref>, prevent the encode value of any valid wordline from masking the encode value of any other wordline, thereby avoiding the possibility of aliasing due to the assertion of multiple select lines. Furthermore, only five-bit lines are needed to represent the encode value, as opposed to the six-bit lines that previous techniques would use to generate an encode value that includes the original input address value and its complement.</p>
+<p id="p-0045" num="0044">Table 6 illustrates the same encode values of Table 5 assigned to different ones of the wordlines WL<b>0</b> through WL<b>7</b> such that complementary encode values are assigned to adjacent wordlines. As used in the present example, the term &#x201c;complementary values&#x201d; refers to two values having no more than one zero at a common bit position. Note, however, that complementary values can both have a one at a common bit position. Therefore, the values 0011b and 1100b are complementary values, as are the values 00111b and 11100b.</p>
+<p id="p-0046" num="0045">
+<tables id="TABLE-US-00006" num="00006">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="offset" colwidth="56pt" align="left"/>
+<colspec colname="1" colwidth="35pt" align="left"/>
+<colspec colname="2" colwidth="126pt" align="center"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" rowsep="1">TABLE 6</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Asserted</entry>
+<entry>Encode</entry>
+</row>
+<row>
+<entry/>
+<entry>Wordline</entry>
+<entry>Value</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>WL0</entry>
+<entry>00111</entry>
+</row>
+<row>
+<entry/>
+<entry>WL1</entry>
+<entry>11100</entry>
+</row>
+<row>
+<entry/>
+<entry>WL2</entry>
+<entry>01011</entry>
+</row>
+<row>
+<entry/>
+<entry>WL3</entry>
+<entry>10101</entry>
+</row>
+<row>
+<entry/>
+<entry>WL4</entry>
+<entry>01101</entry>
+</row>
+<row>
+<entry/>
+<entry>WL5</entry>
+<entry>10110</entry>
+</row>
+<row>
+<entry/>
+<entry>WL6</entry>
+<entry>01110</entry>
+</row>
+<row>
+<entry/>
+<entry>WL7</entry>
+<entry>11001</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0047" num="0046"><figref idref="DRAWINGS">FIG. 5</figref> illustrates in schematic form, an encode circuit based upon the encode values of Table 6, and includes wordlines WL<b>0</b> through WL<b>7</b> from a memory array, and bitlines E(<b>4</b>) through E(<b>0</b>) that provide an encode value during each access cycle. Bitlines E(<b>4</b>)-E(<b>0</b>) are precharged to a high-level logic voltage, and are connected to a plurality of pull-down NMOS transistors. Each NMOS transistor of <figref idref="DRAWINGS">FIG. 5</figref> includes a current electrode connected to one bitline, a current electrode connected to ground, and a control electrode connected to one wordline. NMOS transistors controlled by WL<b>0</b> have current electrodes connected to bitlines E(<b>4</b>) and E(<b>3</b>); NMOS transistors controlled by WL<b>1</b> have current electrodes connected to bitlines E(<b>1</b>) and E(<b>0</b>); NMOS transistors controlled by WL<b>2</b> have current electrodes connected to bitlines E(<b>4</b>) and E(<b>2</b>); NMOS transistors controlled by WL<b>3</b> have current electrodes connected to bitlines E(<b>3</b>) and E(<b>1</b>); NMOS transistors controlled by WL<b>4</b> have current electrodes connected to bitlines E(<b>4</b>) and E(<b>1</b>); NMOS transistors controlled by WL<b>5</b> have current electrodes connected to bitlines E(<b>3</b>) and E(<b>0</b>); NMOS transistors controlled by WL<b>6</b> have current electrodes connected to bitlines E(<b>4</b>) and E(<b>0</b>); NMOS transistors controlled by WL<b>7</b> have current electrodes connected to bitlines E(<b>2</b>) and E(<b>1</b>). Transistors having an &#x201c;X&#x201d; indicated at their gate represent transistors that are not used with respect to a specific set of four wordlines, and therefore can be placed in a non-conductive state.</p>
+<p id="p-0048" num="0047">It will be appreciated that use of the encode values of Table 6 prevent the encode value of any wordline from masking the encode value of any other wordline, thereby avoiding the possibility of aliasing due to the assertion of multiple select lines. Furthermore, only five-bit lines are needed to represent the encode value, as opposed to the six-bit lines that previous techniques would use to generate an encode value that includes the original input address value and its complement. In addition, the use of complementary encode values allows for a closely packed wordline encoder that allows the diffusion area between encoder transistors to be shared within an area defined by the spacing of four wordlines.</p>
+<p id="p-0049" num="0048">Any one or more benefits, one or more other advantages, one or more solutions to one or more problems, or any combination thereof have been described above with regard to one or more specific embodiments. However, the benefit(s), advantage(s), solution(s) to problem(s), or any element(s) that may cause any benefit, advantage, or solution to occur or become more pronounced is not to be construed as a critical, required, or essential feature or element of any or all the claims.</p>
+<p id="p-0050" num="0049">Other embodiments, uses, and advantages of the present disclosure will be apparent to those skilled in the art from consideration of the specification and practice of the disclosure disclosed herein. For example, the selection and pairing of complementary pairs of encode values readily extends to any size memory array by selecting encode values having more bit positions and different fixed numbers of zeros as discussed with reference to Table 4. Furthermore, it will be appreciated that in the examples herein complementary pairs are based upon not masking zeros. In other logical implementations it will be appreciated that complementary pairs can be chosen to not mask ones. In addition, the disclosure has described a particular embodiment with respect to wordlines, though it will be appreciated that the concepts can be used with respect to other spatial components of a memory array, such as column select lines, block select lines, the like, and combinations thereof. The specification and drawings should be considered exemplary only, and the scope of the disclosure is accordingly intended to be limited only by the following claims and equivalents thereof.</p>
+<p id="p-0051" num="0050">Aspects of the embodiments herein may be partially implemented in software stored in volatile or non-volatile memory in the module shown in <figref idref="DRAWINGS">FIG. 1</figref>. For example, software may be stored in non-volatile portions of the module, loaded into volatile memory and executed. Thus, embodiments of the present invention may include features or processes embodied within machine-executable instructions provided by a machine-readable medium such as nonvolatile memory. Such a medium may include any mechanism which stores data in a form accessible by a machine, such as a microprocessor or, more generally, a computer system. A machine readable medium may include volatile and/or non-volatile memory, such as read only memory (ROM); random access memory (RAM); magnetic disk storage media; optical storage media; flash memory devices; tape, or other magnetic, optical or electronic storage medium. Such stored instructions can be used to cause a general or special purpose processor, programmed with the instructions, to perform processes of the present invention.</p>
+<p id="p-0052" num="0051">Note that some of the processes of the present invention may include hardware operating in response to programmed instructions. Alternatively, processes of the present invention may be performed by specific hardware components containing hard-wired logic such as state machines to perform operations or by any combination of programmed data processing components and hardware components. Thus, embodiments of the present invention may include software, data processing hardware, data processing system-implemented methods, and various processing operations, as described herein.</p>
+<p id="p-0053" num="0052">Thus, various embodiments have been described. Note that the description of the invention set forth herein is illustrative, and is not intended to limit the scope of the invention as set forth in the following claims. Variations and modifications of the embodiments disclosed herein may be made based on the description set forth herein, without departing from the scope of the invention as set forth in the following claims.</p>
+<p id="p-0054" num="0053">Although the invention is described herein with reference to specific embodiments, various modifications and changes can be made without departing from the scope of the present invention as set forth in the claims below. For example, the encoding techniques described herein can be applied to each type of spatial select lines, or to any subset. Thus the encoding techniques could be applied to each of the wordlines, column select lines, and block select lines, or to any one or two of these sets.</p>
+<p id="p-0055" num="0054">The term &#x201c;coupled,&#x201d; as used herein, is not intended to be limited to a direct coupling or a mechanical coupling. Furthermore, the terms &#x201c;a&#x201d; or &#x201c;an,&#x201d; as used herein, are defined as one or more than one. Also, the use of introductory phrases such as &#x201c;at least one&#x201d; and &#x201c;one or more&#x201d; in the claims should not be construed to imply that the introduction of another claim element by the indefinite articles &#x201c;a&#x201d; or &#x201c;an&#x201d; limits any particular claim containing such introduced claim element to inventions containing only one such element, even when the same claim includes the introductory phrases &#x201c;one or more&#x201d; or &#x201c;at least one&#x201d; and indefinite articles such as &#x201c;a&#x201d; or &#x201c;an.&#x201d; The same holds true for the use of definite articles.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method comprising:
+<claim-text>receiving, at a select decoder of a memory module, N bits of an input address value received at the memory module, the N bits corresponding to a first valid spatial select pattern to be provided to a corresponding select interconnect by the select decoder during a decode portion of a first access cycle; and</claim-text>
+<claim-text>determining, during an encode portion of the first memory access cycle, a first encoded value at an encode interconnect, the encode interconnect having a bit size less than twice N (2&#xd7;N), wherein no desired encode value at the encode interconnect for any received N bits can alias a desired encoded value corresponding to an invalid spatial select pattern of the received N bits.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the spatial select pattern is a set of wordline select signals.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the spatial select pattern is a set of column select signals.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the spatial select pattern is a set of block select signals.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the spatial select pattern is a set of signals including one or more of wordline select signals, column select signals, and block select signals.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the invalid spatial select pattern is invalid for the memory module.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the invalid spatial select pattern is a valid spatial select pattern of the memory module, but not for the received N bits.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein determining the first encoded value at the select interface includes wire-ORing a plurality of switches.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein each wire-ORed switch of the corresponding plurality of switches is controlled by a corresponding bit of the asserted memory array select pattern.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein each switch of the plurality of switches includes a pair of switches.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref> further comprising:
+<claim-text>determining an expected encoded value based on the N bits of the input address value; and</claim-text>
+<claim-text>determining a validity of the first access cycle based upon a comparison of the first encoded value to the expected encoded value.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. A method of accessing a memory array comprising:
+<claim-text>receiving at a decode module N address bits, the N address bits corresponding to a first valid spatial select pattern of a plurality of valid spatial select patterns of the memory array to be asserted at a set of spatial select interconnects, each valid spatial select pattern of the memory array having M-bit positions, where M is greater than N;</claim-text>
+<claim-text>determining a desired encode value based upon an asserted spatial select pattern at the set of spatial select interconnects, wherein desired encode value of the memory array has a first number of logic 1s, and a second number of logic 0s, a sum of the first and second number is less than two times N (2&#xd7;N).</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The method of <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein the number of invalid encode values of the memory module having first number of logic is less than one-half the number of valid encode values having the first number of logic 1s.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The method of <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein the number of logic 1s of each desired encode value is the same as the number of logic 0s in each desired encode value.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The method of <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein determining the desired encode value includes wire-ORing a plurality of switches controlled by bits of the desired encode value.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The method of <claim-ref idref="CLM-00012">claim 12</claim-ref> further comprising:
+<claim-text>determining an expected encoded value based on the N address bits; and</claim-text>
+<claim-text>determining a validity of an access of the memory array based upon a comparison of the first encoded value to the expected encoded value.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. A device comprising:
+<claim-text>a wordline encoder comprising an N-bit input coupled to N wordlines including wordlines WL_<b>1</b> through WL_N, and an M-bit output to provide an encoded value for each valid word line pattern, the wordline encoder further comprises</claim-text>
+<claim-text>a plurality of encode blocks, each encode block coupled to the N wordlines, and comprising M transistor sets, each transistor set comprising an output corresponding to one of the M-bit outputs, wherein
+<claim-text>each encode block to provide a first valid encode value for one valid word line pattern and a second valid encode value that is the complement of the first valid encode value for a different valid wordline pattern.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The device of <claim-ref idref="CLM-00017">claim 17</claim-ref>, wherein each transistor set is a two transistor set.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The device of <claim-ref idref="CLM-00017">claim 17</claim-ref>, wherein each transistor of each transistor set is wire-ORed to each other transistor of the transistor set.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The device of <claim-ref idref="CLM-00017">claim 17</claim-ref>, wherein each transistor set is to have no more than one conductive transistor for any valid encode value. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

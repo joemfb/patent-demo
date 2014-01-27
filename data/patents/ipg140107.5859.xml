@@ -1,0 +1,565 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626968-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626968</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12978586</doc-number>
+<date>20101226</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>284</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>3</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>N</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>710 39</main-classification>
+<further-classification>710  2</further-classification>
+<further-classification>710  5</further-classification>
+<further-classification>710  8</further-classification>
+<further-classification>710 15</further-classification>
+<further-classification>710 29</further-classification>
+</classification-national>
+<invention-title id="d2e53">Inter-queue anti-starvation mechanism with dynamic deadlock avoidance in a retry based pipeline</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>2004/0088523</doc-number>
+<kind>A1</kind>
+<name>Kessler et al.</name>
+<date>20040500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>712 29</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2004/0133744</doc-number>
+<kind>A1</kind>
+<name>Van Doren et al.</name>
+<date>20040700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711118</main-classification></classification-national>
+</us-citation>
+</us-references-cited>
+<number-of-claims>15</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>None</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>5</number-of-drawing-sheets>
+<number-of-figures>5</number-of-figures>
+</figures>
+<us-related-documents>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61290202</doc-number>
+<date>20091226</date>
+</document-id>
+</us-provisional-application>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110161601</doc-number>
+<kind>A1</kind>
+<date>20110630</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Vash</last-name>
+<first-name>James R.</first-name>
+<address>
+<city>Littleton</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Jung</last-name>
+<first-name>Bongjin</first-name>
+<address>
+<city>Westford</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Ahuja</last-name>
+<first-name>Pritpal S.</first-name>
+<address>
+<city>Clinton</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Vash</last-name>
+<first-name>James R.</first-name>
+<address>
+<city>Littleton</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Jung</last-name>
+<first-name>Bongjin</first-name>
+<address>
+<city>Westford</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Ahuja</last-name>
+<first-name>Pritpal S.</first-name>
+<address>
+<city>Clinton</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Caven &#x26; Aghevli LLC</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Intel Corporation</orgname>
+<role>02</role>
+<address>
+<city>Santa Clara</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Sun</last-name>
+<first-name>Scott</first-name>
+<department>2181</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Methods and apparatus relating to an inter-queue anti-starvation mechanism with dynamic deadlock avoidance in a retry based pipeline are described. In one embodiment, logic may arbitrate between two queues based on various rules. The queues may store data including local or remote requests, data responses, non-data responses, external interrupts, etc. Other embodiments are also disclosed.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="144.10mm" wi="162.14mm" file="US08626968-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="196.93mm" wi="165.44mm" file="US08626968-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="175.94mm" wi="237.66mm" file="US08626968-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="237.24mm" wi="186.01mm" file="US08626968-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="226.23mm" wi="178.48mm" file="US08626968-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="215.90mm" wi="173.99mm" file="US08626968-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">RELATED APPLICATION</heading>
+<p id="p-0002" num="0001">The present application relates to and claims priority from U.S. Provisional Patent Application No. 61/290,202, filed on Dec. 26, 2009, entitled &#x201c;INTER-QUEUE ANTI-STARVATION MECHANISM WITH DYNAMIC DEADLOCK AVOIDANCE IN A RETRY BASED PIPELINE&#x201d; which is hereby incorporated herein by reference in its entirety and for all purposes.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">FIELD</heading>
+<p id="p-0003" num="0002">The present disclosure generally relates to the field of electronics. More particularly, an embodiment of the invention relates to an inter-queue anti-starvation mechanism with dynamic deadlock avoidance in a retry based pipeline.</p>
+<heading id="h-0003" level="1">BACKGROUND</heading>
+<p id="p-0004" num="0003">Generally, a pipeline may include a number of processing elements to service requests. A retry pipeline may allow for retrying of requests that fail to be serviced. In a retry based pipeline, care needs to be taken to ensure that each operation eventually makes tangible forward progress; that is, wins arbitration for the pipeline and is not repeatedly retried due to resource unavailability or conflict.</p>
+<p id="p-0005" num="0004">To guarantee this, it is sometimes necessary to prioritize certain operations over others to ensure that starvation conditions do not persist for any given operation. It is equally important to ensure that this prioritization does not introduce a dependency between two operations that is contrary to those allowed by the parameters of the design (e.g., protocol definition) so as not to introduce a cyclic dependency, and thus, deadlock.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0006" num="0005">The detailed description is provided with reference to the accompanying figures. In the figures, the left-most digit(s) of a reference number identifies the figure in which the reference number first appears. The use of the same reference numbers in different figures indicates similar or identical items.</p>
+<p id="p-0007" num="0006"><figref idref="DRAWINGS">FIGS. 1-2</figref> and <b>4</b>-<b>5</b> illustrate block diagrams of embodiments of computing systems, which may be utilized to implement various embodiments discussed herein.</p>
+<p id="p-0008" num="0007"><figref idref="DRAWINGS">FIG. 3</figref> illustrates a state machine diagram according to some embodiments.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0009" num="0008">In the following description, numerous specific details are set forth in order to provide a thorough understanding of various embodiments. However, some embodiments may be practiced without the specific details. In other instances, well-known methods, procedures, components, and circuits have not been described in detail so as not to obscure the particular embodiments.</p>
+<p id="p-0010" num="0009">Some embodiments discussed herein provide guaranteed forward progress (anti-starvation) among various queues, which may service local and remote requests and responses, and may arbitrate for shared resources in a retry based pipeline, while dynamically avoiding deadlock, e.g., due to protocol-level dependencies. In one embodiment, one or more entries in a queue may be indicated as &#x201c;old&#x201d; at the time the queue enters starvation. This approach is more scalable than some present solutions that rely on a resource intensive table or matrix (sometimes referred to as an Age Order Matrix (AOM)). Also, techniques discussed herein may be applied in any processor where mixed type operations (e.g., local vs. remote, request vs. response) arbitrate for a retry based pipeline, and forward progress guarantees are required while avoiding deadlock in the presence of external protocol-level dependencies.</p>
+<p id="p-0011" num="0010">Various computing systems may be used to implement embodiments, discussed herein, such as the systems discussed with reference to FIGS. <b>1</b> and <b>4</b>-<b>5</b>. More particularly, <figref idref="DRAWINGS">FIG. 1</figref> illustrates a block diagram of a computing system <b>100</b>, according to an embodiment of the invention. The system <b>100</b> may include one or more agents <b>102</b>-<b>1</b> through <b>102</b>-M (collectively referred to herein as &#x201c;agents <b>102</b>&#x201d; or more generally &#x201c;agent <b>102</b>&#x201d;). In an embodiment, one or more of the agents <b>102</b> may be any of components of a computing system, such as the computing systems discussed with reference to <figref idref="DRAWINGS">FIGS. 4-5</figref>.</p>
+<p id="p-0012" num="0011">As illustrated in <figref idref="DRAWINGS">FIG. 1</figref>, the agents <b>102</b> may communicate via a network fabric <b>104</b>. In one embodiment, the network fabric <b>104</b> may include a computer network that allows various agents (such as computing devices) to communicate data. In an embodiment, the network fabric <b>104</b> may include one or more interconnects (or interconnection networks) that communicate via a serial (e.g., point-to-point) link and/or a shared communication network. For example, some embodiments may facilitate component debug or validation on links that allow communication with fully buffered dual in-line memory modules (FBD), e.g., where the FBD link is a serial link for coupling memory modules to a host controller device (such as a processor or memory hub). Debug information may be transmitted from the FBD channel host such that the debug information may be observed along the channel by channel traffic trace capture tools (such as one or more logic analyzers).</p>
+<p id="p-0013" num="0012">In one embodiment, the system <b>100</b> may support a layered protocol scheme, which may include a physical layer, a link layer, a routing layer, a transport layer, and/or a protocol layer. The fabric <b>104</b> may further facilitate transmission of data (e.g., in form of packets) from one protocol (e.g., caching processor or caching aware memory controller) to another protocol for a point-to-point or shared network. Also, in some embodiments, the network fabric <b>104</b> may provide communication that adheres to one or more cache coherent protocols.</p>
+<p id="p-0014" num="0013">Furthermore, as shown by the direction of arrows in <figref idref="DRAWINGS">FIG. 1</figref>, the agents <b>102</b> may transmit and/or receive data via the network fabric <b>104</b>. Hence, some agents may utilize a unidirectional link while others may utilize a bidirectional link for communication. For instance, one or more agents (such as agent <b>102</b>-M) may transmit data (e.g., via a unidirectional link <b>106</b>), other agent(s) (such as agent <b>102</b>-<b>2</b>) may receive data (e.g., via a unidirectional link <b>108</b>), while some agent(s) (such as agent <b>102</b>-<b>1</b>) may both transmit and receive data (e.g., via a bidirectional link <b>110</b>).</p>
+<p id="p-0015" num="0014">Additionally, at least one of the agents <b>102</b> may be a home agent and one or more of the agents <b>102</b> may be requesting or caching agents as will be further discussed herein. As shown, at least one agent (only one shown for agent <b>102</b>-<b>1</b>) may have access to one or more queues <b>120</b> (which may be register files dedicated to the agent or shared with other agents) to store one or more transactions. Also, agent <b>102</b>-<b>1</b> may include logic <b>124</b> to maintain information about entries in the entries in the queues <b>120</b> to avoid starvation in some embodiments. In an embodiment, the queue(s) <b>120</b> are provided on the same integrated circuit (IC) chip as a caching agent.</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram of a computing system in accordance with an embodiment. System <b>200</b> may include a plurality of sockets <b>202</b>-<b>208</b> (four shown but some embodiments may have more or less socket). Each socket may include a processor in an embodiment. Also, each socket may be coupled to the other sockets via point-to-point (PtP) link such as discussed with reference <figref idref="DRAWINGS">FIG. 5</figref>. As discussed with respect to <figref idref="DRAWINGS">FIG. 1</figref> with reference to the network fabric <b>104</b>, each socket may be coupled to a local portion of system memory, e.g., formed of a plurality of Dual Inline Memory Modules (DIMMs) that may include dynamic random access memory (DRAM).</p>
+<p id="p-0017" num="0016">As shown in <figref idref="DRAWINGS">FIG. 2</figref>, each socket may be coupled to a memory controller (MC)/Home Agent (HA) (such as MC<b>0</b>/HA<b>0</b> through MC<b>3</b>/HA<b>3</b>). The memory controllers may be coupled to a corresponding local memory (labeled as MEM<b>0</b> through MEM<b>3</b>), which may be a portion of system memory (such as memory <b>512</b> of <figref idref="DRAWINGS">FIG. 5</figref>). In some embodiments, the memory controller (MC)/Home Agent (HA) (such as MC<b>0</b>/HA<b>0</b> through MC<b>3</b>/HA<b>3</b>) may be the same or similar to agent <b>102</b>-<b>1</b> of <figref idref="DRAWINGS">FIG. 1</figref> and the memory, labeled as MEM<b>0</b> through MEM<b>3</b>. Also, one or more components of system <b>200</b> may be included on the same integrated circuit die in some embodiments. An implementation such as shown in <figref idref="DRAWINGS">FIG. 2</figref> thus may be for a socket glueless configuration with mirroring. For example, data assigned to a memory controller (such as MC<b>0</b>/HA<b>0</b>) may be mirrored to another memory controller (such as MC<b>3</b>/HA<b>3</b>) over the PtP links.</p>
+<p id="p-0018" num="0017">Some interconnect protocols (such as the Intel&#xae; QPI (Quick Path Interconnect) protocol) may have six protocol channels: HOM (coherent requests and snoop responses), SNP (coherent snoop requests), NCB (non-coherent posted requests), NCS (non-coherent non-posted requests), DRS (data responses), and NDR (non-data responses). Of these, three (HOM, DRS, and NDR) are effectively pre-allocated, and so their forward progress is not dependent on other channels. The others have the following dependencies on other channels for forward progress as follows: (1) SNP&#x2192;{HOM, DRS, NDR}; (2) NCB&#x2192;{DRS, NDR}; and (3) NCS&#x2192;{HOM, SNP, NCB, DRS, NDR}. Each message in a channel may also have a dependency on the forward progress of other messages in the same channel in the interconnection network, but the network is free of cycles (including through protocol agents).</p>
+<p id="p-0019" num="0018">Furthermore, some interconnect caching agents may have a retry based pipeline, with several queues that arbitrate for the pipeline and shared resources, such as: (1) IRQ: Local requests (e.g., local to corresponding agent); (2) IPQ: External/remote snoop requests (QPI SNP channel, e.g., from a different agent); (3) VIQ: LLC (last-level cache) victims; (4) IDQ: Data responses from local/remote agents (QPI DRS channel); (5) ICQ: Non-data responses from remote agents (QPI NDR channel); (6) SRQ: Non-data responses from local agents; (7) IMQ: External interrupts (QPI NCB channel).</p>
+<p id="p-0020" num="0019">The caching agent may follow a victimize-on-miss policy. VIQ entries are created by LLC misses from IRQ, or IPQ in the case of DCA (direct cache access) prefetches (a.k.a. Prefetch Hint). The equivalent of the QPI ORB (outgoing request buffer) in the caching agent is the MAF (miss address file). A MAF entry may be allocated by IRQ, IPQ, or VIQ. IMQ does not allocate a MAF entry. One particular MAF entry may be allocated only by IPQ (excluding Prefetch Hint); another particular MAF entry may be allocated only by IPQ (excluding Prefetch Hint) or VIQ; other MAF entries can be allocated by IRQ (or Prefetch Hint) as well.</p>
+<p id="p-0021" num="0020">In some implementations, an intra-queue anti-starvation mechanism for each of these queues (except IMQ) may be present which may function as follows. When a particular queue enters starvation, certain entries are designated as &#x201c;old&#x201d;. The queue may not leave starvation until all &#x201c;old&#x201d; entries have drained. For IRQ and IPQ only, during starvation, only &#x201c;old&#x201d; entries are allowed to arbitrate. IMQ has only one entry, and does not have this intra-queue anti-starvation mechanism. Moreover, IMQ is special in that it may not participate in the normal round-robin arbitration for the pipeline with the other queues. Instead, when it is valid, by default it will take priority over the other queues, unless it is blocked according to the anti-starvation rules as further discussed below.</p>
+<p id="p-0022" num="0021">Some embodiments provide descriptions for the inter-queue blocking rules required to guarantee forward progress of each queue in a retry based pipeline, with special consideration for dynamic deadlock avoidance.</p>
+<p id="p-0023" num="0022">Some of the terms discussed herein are defined as follows:</p>
+<p id="p-0024" num="0023">1. SNP/NCB/NCS credits available. Detects whether the aforementioned protocol channels which are not pre-allocated have credits available for use by the caching agent. Certain queues may not be blocked when these credits are unavailable, as forward progress of those protocol channels may be directly or indirectly dependent on the progress of those queues.</p>
+<p id="p-0025" num="0024">2. MAF &#x201c;IRQ empty&#x201d;. Tracks whether the MAF contains any entries which were allocated by the IRQ. Certain queues may not be blocked when these entries exist, since the deallocation of these entries may be directly or indirectly dependent on the progress of those queues. Note that a MAF entry allocated by Prefetch Hint is considered part of this term.</p>
+<p id="p-0026" num="0025">3. MAF &#x201c;VIQ empty&#x201d;. Similar to MAF &#x201c;IRQ empty&#x201d;, except that it tracks whether the MAF contains any entries which were allocated by the VIQ.</p>
+<p id="p-0027" num="0026">4. &#x201c;IRQ over IPQ&#x201d;. Determines whether the local requests or external snoop requests have priority when both of the associated queues are starving. It is true when IPQ has left starving state since IRQ started starving (or was not starving when IRQ started starving). The corresponding state machine is illustrated in <figref idref="DRAWINGS">FIG. 3</figref>. This provides an alternating priority between IRQ and IPQ.</p>
+<p id="p-0028" num="0027">5. &#x201c;IRQ over IMQ&#x201d;. Similar to &#x201c;IRQ over IPQ&#x201d;. It is true when IMQ has become invalid since IRQ started starving (or was not valid when IRQ started starving). It provides an alternating priority between IRQ and IMQ.</p>
+<p id="p-0029" num="0028">6. &#x201c;IPQ over IMQ&#x201d;. Similar to &#x201c;IRQ over IPQ&#x201d;. It is true when IMQ has become invalid since IRQ started starving (or was not valid when IRQ started starving). It provides an alternating priority between IPQ and IMQ.</p>
+<p id="p-0030" num="0029">Table 1 below shows the queue blocking rules according to some embodiments. If an &#x201c;x&#x201d; is marked in a cell, it means that the row may block the column. Notes of explanation follow the table.</p>
+<p id="p-0031" num="0030">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="8">
+<colspec colname="offset" colwidth="21pt" align="left"/>
+<colspec colname="1" colwidth="28pt" align="left"/>
+<colspec colname="2" colwidth="28pt" align="left"/>
+<colspec colname="3" colwidth="28pt" align="left"/>
+<colspec colname="4" colwidth="28pt" align="left"/>
+<colspec colname="5" colwidth="28pt" align="left"/>
+<colspec colname="6" colwidth="28pt" align="left"/>
+<colspec colname="7" colwidth="28pt" align="left"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="7" rowsep="1">TABLE 1</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="7" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>IRQ</entry>
+<entry>IPQ</entry>
+<entry>VIQ</entry>
+<entry>IDQ</entry>
+<entry>ICQ</entry>
+<entry>SRQ</entry>
+<entry>IMQ</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="7" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="8">
+<colspec colname="1" colwidth="21pt" align="left"/>
+<colspec colname="2" colwidth="28pt" align="left"/>
+<colspec colname="3" colwidth="28pt" align="left"/>
+<colspec colname="4" colwidth="28pt" align="left"/>
+<colspec colname="5" colwidth="28pt" align="left"/>
+<colspec colname="6" colwidth="28pt" align="left"/>
+<colspec colname="7" colwidth="28pt" align="left"/>
+<colspec colname="8" colwidth="28pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>IRQ</entry>
+<entry/>
+<entry>x (*2)</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>x (*9)</entry>
+</row>
+<row>
+<entry>IPQ</entry>
+<entry>x (*1)</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>x (*10)</entry>
+</row>
+<row>
+<entry>VIQ</entry>
+<entry>x (*0)</entry>
+<entry>x (*3)</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>x (*11)</entry>
+</row>
+<row>
+<entry>IDQ</entry>
+<entry>x (*0)</entry>
+<entry>x (*4)</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>x (*12)</entry>
+</row>
+<row>
+<entry>ICQ</entry>
+<entry>x (*0)</entry>
+<entry>x (*4)</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>x (*12)</entry>
+</row>
+<row>
+<entry>SRQ</entry>
+<entry>x (*0)</entry>
+<entry>x (*4)</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>x (*12)</entry>
+</row>
+<row>
+<entry>IMQ</entry>
+<entry>x (*5)</entry>
+<entry>x (*6)</entry>
+<entry>x (*7)</entry>
+<entry>x (*8)</entry>
+<entry>x (*8)</entry>
+<entry>x (*8)</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="center" rowsep="1"/>
+</row>
+<row>
+<entry namest="1" nameend="8" align="left" id="FOO-00001">Where:</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="left" id="FOO-00002">(*0) VIQ/IDQ/ICQ/SRQ may unconditionally block IRQ.</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="left" id="FOO-00003">(*1) IPQ may block IRQ unless conditions in (*2) are satisfied.</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="left" id="FOO-00004">(*2) IRQ may block IPQ if MAF is &#x201c;IRQ empty&#x201d; and &#x201c;VIQ empty&#x201d;, and SNP/NCB/NCS credits are available, and &#x201c;IRQ over IPQ&#x201d; is true.</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="left" id="FOO-00005">(*3) VIQ may block IPQ if SNP/NCB/NCS credits are available and MAF is &#x201c;VIQ empty&#x201d;.</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="left" id="FOO-00006">(*4) IDQ/ICQ/SRQ may block IPQ if SNP/NCB/NCS credits are available.</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="left" id="FOO-00007">(*5) IMQ may block IRQ unless conditions in (*9) are satisfied.</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="left" id="FOO-00008">(*6) IMQ may block IPQ unless conditions in (*10) are satisfied.</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="left" id="FOO-00009">(*7) IMQ may block VIQ unless conditions in (*11) are satisfied.</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="left" id="FOO-00010">(*8) IMQ may block IDQ/ICQ/SRQ unless conditions in (*12) are satisfied.</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="left" id="FOO-00011">(*9) IRQ may block IMQ if MAF is &#x201c;IRQ empty&#x201d; and &#x201c;VIQ empty&#x201d;, and SNP/NCB/NCS credits are available, and &#x201c;IRQ over IMQ&#x201d; is true.</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="left" id="FOO-00012">(*10) IPQ may block IMQ if SNP/NCB/NCS credits are available, and &#x201c;IPQ over IMQ&#x201d; is true.</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="left" id="FOO-00013">(*11) VIQ may block IMQ if SNP/NCB/NCS credits are available, and MAF is &#x201c;VIQ empty&#x201d;.</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="left" id="FOO-00014">(*12) IDQ/ICQ/SRQ may block IMQ if SNP/NCB/NCS credits are available.</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0032" num="0031">In accordance with some embodiments, there are several points to be made with respect to these blocking rules.</p>
+<p id="p-0033" num="0032">1. Conditioning any queue blocking of IPQ/IMQ with SNP/NCB/NCS credits available is necessary, since IPQ/IMQ may be required to make progress in order for those credits to become available. Temporarily avoiding this blocking does not lead to starvation since IPQ/IMQ may not make this condition persist (i.e., do not acquire these credits).</p>
+<p id="p-0034" num="0033">2. Conditioning IRQ blocking of IPQ/IMQ with the MAF being &#x201c;IRQ empty&#x201d; is necessary, since MAF entries allocated by IRQ may be holding resources that require system SNP/NCB/NCS progress to be released. Temporarily avoiding this blocking does not lead to starvation since IPQ/IMQ may not make this condition persist (i.e., may not allocate a MAF entry which is considered allocated by IRQ). Note that Prefetch Hint is not allowed to allocate a MAF entry while IRQ is starving in order to maintain this invariant.</p>
+<p id="p-0035" num="0034">3. Conditioning IRQ/VIQ blocking of IPQ/IMQ with the MAF being &#x201c;VIQ empty&#x201d; is necessary, since MAF entries allocated by VIQ may be holding resources that require system SNP/NCB/NCS progress to be released. This is only true in the presence of non-coherent victims. Temporarily avoiding this blocking does not lead to starvation since IPQ/IMQ may not make this condition persist (i.e., may not allocate a MAF entry which is considered allocated by VIQ). Note that Prefetch Hint is not allowed to allocate a MAF entry while VIQ is starving in order to maintain this invariant.</p>
+<p id="p-0036" num="0035">4. Note that queues (VIQ, IDQ, ICQ, SRQ) which may only have entries as a side effect of new requests from other queues (IRQ, IPQ, IMQ), may freely allow all entries (not just &#x201c;old&#x201d;) to bid during starvation. Only IRQ and IPQ (not IMQ since it is single-entry) requires that only &#x201c;old&#x201d; entries bid during starvation. However, other queues also drain all &#x201c;old&#x201d; entries before leaving starvation.</p>
+<p id="p-0037" num="0036">5. For similar reasons, it is not in general necessary to block these queues (VIQ, IDQ, ICQ, SRQ), as blocking queues that generate new requests is sufficient to drain them.</p>
+<p id="p-0038" num="0037">Aside from these rules, several other pipeline rejection conditions may be avoided in order to avoid deadlock due to queue blocking for anti-starvation in some embodiments:</p>
+<p id="p-0039" num="0038">(1) Prevent blocking IPQ due to address match with outstanding transaction in a state which requires SNP/NCB/NCS credits to make progress. In some cases, this requires pre-allocation of these credits by the caching agent before moving to a state which would block IPQ.</p>
+<p id="p-0040" num="0039">(2) Prevent blocking VIQ due to address match with outstanding transaction in a state which requires SNP/NCB/NCS credits to make progress. In some cases, this requires preventing victim generation during certain states of transactions to the same LLC index.</p>
+<p id="p-0041" num="0040">Moreover, the GQ (global queue) based caching agent implementation in some computing systems may implement a PSS (Pool Starvation Snapshot) mechanism to guarantee forward progress. This mechanism may require an AOM (Age Order Matrix) among entries within a queue to guarantee progress for the oldest entry, as well as resource reservation mechanisms. In contrast, at least some embodiments discussed herein do not require any age-based information, other than designating which entries within a queue are &#x201c;old&#x201d; at the time the queue enters starvation. In an embodiment, such an approach only utilizes one state bit per entry, a two-bit state per queue, and a valid bit plus entry number to track a &#x201c;canary&#x201d; entry within each queue. As a result, such an approach is more scalable than an age order matrix, which grows as N<sup>2 </sup>with the number of entries in a queue. Additionally, at least one embodiment does not require any resource reservation mechanisms to guarantee forward progress. This in turn reduces complexity and allows resources to be used freely (excepting static reservations such as MAF entries for IPQ/VIQ) by any operation which is able to arbitrate for the pipeline</p>
+<p id="p-0042" num="0041">Additionally, in the presence of non-coherent victims (LLC victims which generate NCB/NCS writes), there is a potential deadlock with the aforementioned blocking conditions, in the current implementation. Because IDQ/ICQ responses for MAF entries allocated by IRQ may starve waiting for the progress of victims, and IDQ/ICQ may block IPQ/IMQ, it is possible to deadlock since in-flight non-coherent victims may require SNP/NCB/NCS progress, which in turn may require IPQ/IMQ progress.</p>
+<p id="p-0043" num="0042">A solution which addresses this issue may maintain a bit-vector of MAF entries occupied by non-coherent victims. A bit may be set when a non-coherent victim is sent for the corresponding MAF entry, and cleared when the completion response from ICQ passes through (but is not necessarily accepted by) the pipeline. When this vector is non-zero, IDQ/ICQ may be disallowed from blocking IPQ/IMQ. Temporarily avoiding this blocking may not lead to starvation because IPQ/IMQ may not make this condition cannot persist (i.e. do not create non-coherent victims). However, since non-coherent victims may be detected as an error, this potential deadlock is generally not a concern in practice.</p>
+<p id="p-0044" num="0043"><figref idref="DRAWINGS">FIG. 3</figref> illustrates a state machine diagram in accordance with an embodiment. More particularly, the state machine illustrates the conditions described above for the definition of the term &#x201c;IRQ over IPQ&#x201d;. As shown in <figref idref="DRAWINGS">FIG. 3</figref>, the state machine has two inputs, &#x201c;IRQ&#x201d; and &#x201c;IPQ&#x201d;, which indicate whether the corresponding queue is starving. It provides an output &#x201c;IRQ over IPQ&#x201d; which is true when IPQ has left starving state since IRQ started starving (or was not starving when IRQ started starving).</p>
+<p id="p-0045" num="0044"><figref idref="DRAWINGS">FIG. 4</figref> illustrates a block diagram of an embodiment of a computing system <b>400</b>. One or more of the agents <b>102</b> of <figref idref="DRAWINGS">FIG. 1</figref> may comprise one or more components of the computing system <b>400</b>. Also, one or more components of <figref idref="DRAWINGS">FIG. 4</figref> may include logic <b>124</b> of <figref idref="DRAWINGS">FIG. 1</figref>. Also, logic <b>124</b> may be present in components other than those shown. The computing system <b>400</b> may include one or more central processing unit(s) (CPUs) <b>402</b> (which may be collectively referred to herein as &#x201c;processors <b>402</b>&#x201d; or more generically &#x201c;processor <b>402</b>&#x201d;) coupled to an interconnection network (or bus) <b>404</b>. The processors <b>402</b> may be any type of processor such as a general purpose processor, a network processor (which may process data communicated over a computer network <b>405</b>), etc. (including a reduced instruction set computer (RISC) processor or a complex instruction set computer (CISC)). Moreover, the processors <b>402</b> may have a single or multiple core design. The processors <b>402</b> with a multiple core design may integrate different types of processor cores on the same integrated circuit (IC) die. Also, the processors <b>402</b> with a multiple core design may be implemented as symmetrical or asymmetrical multiprocessors.</p>
+<p id="p-0046" num="0045">The processor <b>402</b> may include one or more caches which may be private and/or shared in various embodiments. Generally, a cache stores data corresponding to original data stored elsewhere or computed earlier. To reduce memory access latency, once data is stored in a cache, future use may be made by accessing a cached copy rather than refetching or recomputing the original data. The cache(s) may be any type of cache, such a level <b>1</b> (L<b>1</b>) cache, a level <b>2</b> (L<b>2</b>) cache, a level <b>3</b> (L<b>3</b>), a mid-level cache, a last level cache (LLC), etc. to store electronic data (e.g., including instructions) that is utilized by one or more components of the system <b>400</b>. Additionally, such cache(s) may be located in various locations (e.g., inside other components to the computing systems discussed herein.</p>
+<p id="p-0047" num="0046">A chipset <b>406</b> may additionally be coupled to the interconnection network <b>404</b>. Further, the chipset <b>406</b> may include a graphics memory control hub (GMCH) <b>408</b>. The GMCH <b>408</b> may include a memory controller <b>410</b> that is coupled to a memory <b>412</b>. The memory <b>412</b> may store data, e.g., including sequences of instructions that are executed by the processor <b>402</b>, or any other device in communication with components of the computing system <b>400</b>. Also, in one embodiment of the invention, the memory <b>412</b> may include one or more volatile storage (or memory) devices such as random access memory (RAM), dynamic RAM (DRAM), synchronous DRAM (SDRAM), static RAM (SRAM), etc. Nonvolatile memory may also be utilized such as a hard disk. Additional devices may be coupled to the interconnection network <b>404</b>, such as multiple processors and/or multiple system memories.</p>
+<p id="p-0048" num="0047">The GMCH <b>408</b> may further include a graphics interface <b>414</b> coupled to a display device <b>416</b> (e.g., via a graphics accelerator in an embodiment). In one embodiment, the graphics interface <b>414</b> may be coupled to the display device <b>416</b> via an accelerated graphics port (AGP). In an embodiment of the invention, the display device <b>416</b> (such as a flat panel display) may be coupled to the graphics interface <b>414</b> through, for example, a signal converter that translates a digital representation of an image stored in a storage device such as video memory or system memory (e.g., memory <b>412</b>) into display signals that are interpreted and displayed by the display <b>416</b>.</p>
+<p id="p-0049" num="0048">As shown in <figref idref="DRAWINGS">FIG. 4</figref>, a hub interface <b>418</b> may couple the GMCH <b>408</b> to an input/output control hub (ICH) <b>420</b>. The ICH <b>420</b> may provide an interface to input/output (I/O) devices coupled to the computing system <b>400</b>. The ICH <b>420</b> may be coupled to a bus <b>422</b> through a peripheral bridge (or controller) <b>424</b>, such as a peripheral component interconnect (PCI) bridge that may be compliant with the PCIe specification, a universal serial bus (USB) controller, etc. The bridge <b>424</b> may provide a data path between the processor <b>402</b> and peripheral devices. Other types of topologies may be utilized. Also, multiple buses may be coupled to the ICH <b>420</b>, e.g., through multiple bridges or controllers. Further, the bus <b>422</b> may comprise other types and configurations of bus systems. Moreover, other peripherals coupled to the ICH <b>420</b> may include, in various embodiments of the invention, integrated drive electronics (IDE) or small computer system interface (SCSI) hard drive(s), USB port(s), a keyboard, a mouse, parallel port(s), serial port(s), floppy disk drive(s), digital output support (e.g., digital video interface (DVI)), etc.</p>
+<p id="p-0050" num="0049">The bus <b>422</b> may be coupled to an audio device <b>426</b>, one or more disk drive(s) <b>428</b>, and a network adapter <b>430</b> (which may be a NIC in an embodiment). In one embodiment, the network adapter <b>430</b> or other devices coupled to the bus <b>422</b> may communicate with the chipset <b>406</b>. Also, various components (such as the network adapter <b>430</b>) may be coupled to the GMCH <b>408</b> in some embodiments of the invention. In addition, the processor <b>402</b> and the GMCH <b>408</b> may be combined to form a single chip. In an embodiment, the memory controller <b>410</b> may be provided in one or more of the CPUs <b>402</b>. Further, in an embodiment, GMCH <b>408</b> and ICH <b>420</b> may be combined into a Peripheral Control Hub (PCH).</p>
+<p id="p-0051" num="0050">Additionally, the computing system <b>400</b> may include volatile and/or nonvolatile memory (or storage). For example, nonvolatile memory may include one or more of the following: read-only memory (ROM), programmable ROM (PROM), erasable PROM (EPROM), electrically EPROM (EEPROM), a disk drive (e.g., <b>428</b>), a floppy disk, a compact disk ROM (CD-ROM), a digital versatile disk (DVD), flash memory, a magneto-optical disk, or other types of nonvolatile machine-readable media capable of storing electronic data (e.g., including instructions).</p>
+<p id="p-0052" num="0051">The memory <b>412</b> may include one or more of the following in an embodiment: an operating system (O/S) <b>432</b>, application <b>434</b>, and/or device driver <b>436</b>. The memory <b>412</b> may also include regions dedicated to Memory Mapped I/O (MMIO) operations. Programs and/or data stored in the memory <b>412</b> may be swapped into the disk drive <b>428</b> as part of memory management operations. The application(s) <b>434</b> may execute (e.g., on the processor(s) <b>402</b>) to communicate one or more packets with one or more computing devices coupled to the network <b>405</b>. In an embodiment, a packet may be a sequence of one or more symbols and/or values that may be encoded by one or more electrical signals transmitted from at least one sender to at least on receiver (e.g., over a network such as the network <b>405</b>). For example, each packet may have a header that includes various information which may be utilized in routing and/or processing the packet, such as a source address, a destination address, packet type, etc. Each packet may also have a payload that includes the raw data (or content) the packet is transferring between various computing devices over a computer network (such as the network <b>405</b>).</p>
+<p id="p-0053" num="0052">In an embodiment, the application <b>434</b> may utilize the O/S <b>432</b> to communicate with various components of the system <b>400</b>, e.g., through the device driver <b>436</b>. Hence, the device driver <b>436</b> may include network adapter <b>430</b> specific commands to provide a communication interface between the O/S <b>432</b> and the network adapter <b>430</b>, or other I/O devices coupled to the system <b>400</b>, e.g., via the chipset <b>406</b>.</p>
+<p id="p-0054" num="0053">In an embodiment, the O/S <b>432</b> may include a network protocol stack. A protocol stack generally refers to a set of procedures or programs that may be executed to process packets sent over a network <b>405</b>, where the packets may conform to a specified protocol. For example, TCP/IP (Transport Control Protocol/Internet Protocol) packets may be processed using a TCP/IP stack. The device driver <b>436</b> may indicate the buffers in the memory <b>412</b> that are to be processed, e.g., via the protocol stack.</p>
+<p id="p-0055" num="0054">The network <b>405</b> may include any type of computer network. The network adapter <b>430</b> may further include a direct memory access (DMA) engine, which writes packets to buffers (e.g., stored in the memory <b>412</b>) assigned to available descriptors (e.g., stored in the memory <b>412</b>) to transmit and/or receive data over the network <b>405</b>. Additionally, the network adapter <b>430</b> may include a network adapter controller, which may include logic (such as one or more programmable processors) to perform adapter related operations. In an embodiment, the adapter controller may be a MAC (media access control) component. The network adapter <b>430</b> may further include a memory, such as any type of volatile/nonvolatile memory (e.g., including one or more cache(s) and/or other memory types discussed with reference to memory <b>412</b>).</p>
+<p id="p-0056" num="0055"><figref idref="DRAWINGS">FIG. 5</figref> illustrates a computing system <b>500</b> that is arranged in a point-to-point (PtP) configuration, according to an embodiment of the invention. In particular, <figref idref="DRAWINGS">FIG. 5</figref> shows a system where processors, memory, and input/output devices are interconnected by a number of point-to-point interfaces. The operations discussed with reference to <figref idref="DRAWINGS">FIGS. 1-4</figref> may be performed by one or more components of the system <b>500</b>.</p>
+<p id="p-0057" num="0056">As illustrated in <figref idref="DRAWINGS">FIG. 5</figref>, the system <b>500</b> may include several processors, of which only two, processors <b>502</b> and <b>504</b> are shown for clarity. The processors <b>502</b> and <b>504</b> may each include a local memory controller hub (GMCH) <b>506</b> and <b>508</b> to enable communication with memories <b>510</b> and <b>512</b>. The memories <b>510</b> and/or <b>512</b> may store various data such as those discussed with reference to the memory <b>512</b> of <figref idref="DRAWINGS">FIG. 5</figref>. As shown in <figref idref="DRAWINGS">FIG. 5</figref>, the processors <b>502</b> and <b>504</b> (or other components of system <b>500</b> such as chipset <b>520</b>, I/O devices <b>543</b>, etc.) may also include one or more cache(s) such as those discussed with reference to <figref idref="DRAWINGS">FIGS. 1-4</figref>.</p>
+<p id="p-0058" num="0057">In an embodiment, the processors <b>502</b> and <b>504</b> may be one of the processors <b>502</b> discussed with reference to <figref idref="DRAWINGS">FIG. 5</figref>. The processors <b>502</b> and <b>504</b> may exchange data via a point-to-point (PtP) interface <b>514</b> using PtP interface circuits <b>516</b> and <b>518</b>, respectively. Also, the processors <b>502</b> and <b>504</b> may each exchange data with a chipset <b>520</b> via individual PtP interfaces <b>522</b> and <b>524</b> using point-to-point interface circuits <b>526</b>, <b>528</b>, <b>530</b>, and <b>532</b>. The chipset <b>520</b> may further exchange data with a high-performance graphics circuit <b>534</b> via a high-performance graphics interface <b>536</b>, e.g., using a PtP interface circuit <b>537</b>.</p>
+<p id="p-0059" num="0058">In at least one embodiment, logic <b>124</b> may be provided in one or more of the processors <b>502</b>, <b>504</b> and/or chipset <b>520</b>. Other embodiments of the invention, however, may exist in other circuits, logic units, or devices within the system <b>500</b> of <figref idref="DRAWINGS">FIG. 5</figref>. Furthermore, other embodiments of the invention may be distributed throughout several circuits, logic units, or devices illustrated in <figref idref="DRAWINGS">FIG. 5</figref>. However, logic <b>124</b> may be provided in locations throughout the system <b>500</b>, including or excluding those illustrated.</p>
+<p id="p-0060" num="0059">The chipset <b>520</b> may communicate with the bus <b>540</b> using a PtP interface circuit <b>541</b>. The bus <b>540</b> may have one or more devices that communicate with it, such as a bus bridge <b>542</b> and I/O devices <b>543</b>. Via a bus <b>544</b>, the bus bridge <b>542</b> may communicate with other devices such as a keyboard/mouse <b>545</b>, communication devices <b>546</b> (such as modems, network interface devices, or other communication devices that may communicate with the computer network <b>505</b>), audio I/O device, and/or a data storage device <b>548</b>. The data storage device <b>548</b> may store code <b>549</b> that may be executed by the processors <b>502</b> and/or <b>504</b>.</p>
+<p id="p-0061" num="0060">In various embodiments of the invention, the operations discussed herein, e.g., with reference to <figref idref="DRAWINGS">FIGS. 1-5</figref>, may be implemented as hardware (e.g., circuitry), software, firmware, microcode, or combinations thereof, which may be provided as a computer program product, e.g., including a machine-readable or computer-readable (e.g., non-transitory) medium having stored thereon instructions (or software procedures) used to program a computer to perform a process discussed herein. Also, the term &#x201c;logic&#x201d; may include, by way of example, software, hardware, or combinations of software and hardware. The machine-readable medium may include a storage device such as those discussed herein. Additionally, such computer-readable media may be downloaded as a computer program product, wherein the program may be transferred from a remote computer (e.g., a server) to a requesting computer (e.g., a client) through data signals provided via a carrier wave or other propagation medium via a communication link (e.g., a bus, a modem, or a network connection).</p>
+<p id="p-0062" num="0061">Reference in the specification to &#x201c;one embodiment&#x201d; or &#x201c;an embodiment&#x201d; means that a particular feature, structure, or characteristic described in connection with the embodiment may be included in at least an implementation. The appearances of the phrase &#x201c;in one embodiment&#x201d; in various places in the specification may or may not be all referring to the same embodiment.</p>
+<p id="p-0063" num="0062">Also, in the description and claims, the terms &#x201c;coupled&#x201d; and &#x201c;connected,&#x201d; along with their derivatives, may be used. In some embodiments of the invention, &#x201c;connected&#x201d; may be used to indicate that two or more elements are in direct physical or electrical contact with each other. &#x201c;Coupled&#x201d; may mean that two or more elements are in direct physical or electrical contact. However, &#x201c;coupled&#x201d; may also mean that two or more elements may not be in direct contact with each other, but may still cooperate or interact with each other.</p>
+<p id="p-0064" num="0063">Thus, although embodiments of the invention have been described in language specific to structural features and/or methodological acts, it is to be understood that claimed subject matter may not be limited to the specific features or acts described. Rather, the specific features and acts are disclosed as sample forms of implementing the claimed subject matter.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>The invention claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. An apparatus comprising:
+<claim-text>a first queue to store data corresponding to one or more local requests;</claim-text>
+<claim-text>a second queue to store data corresponding to one or more remote requests;</claim-text>
+<claim-text>a third queue to store data corresponding to one or more last-level cache victims; and</claim-text>
+<claim-text>logic to arbitrate between the first queue and the second queue based on presence of a first entry corresponding to the first queue and a second entry corresponding to the third queue in a miss address file.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The apparatus of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein one or more of a last level cache victim, a data response from local or remote agents, a non-data response from remote agents, or a non-data response from local agent are to block the first queue under starvation conditions.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The apparatus of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the first queue is to block the second queue under starvation conditions and in response to a miss address file being clear of any entries whose deallocation depends on a forward progress of the second queue.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The apparatus of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the first queue is to block the second queue under starvation conditions in response to availability of any credit for coherent snoop requests, non-coherent posted requests, or non-coherent non-posted requests.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The apparatus of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the logic is to arbitrate between the first queue and the second queue based on a relative priority of the first queue and the second queue for entry into a starvation state.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The apparatus of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein no age-based information is to be used to guarantee forward progress in a queue, other than designating which entries within the queue are &#x201c;old&#x201d; at the time the queue enters starvation.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The apparatus of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising a retry based pipeline coupled to the logic to service the requests of the first or second queues.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The apparatus of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising a first agent to generate the one or more local requests and a second agent to generate the one or more remote requests.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The apparatus of <claim-ref idref="CLM-00008">claim 8</claim-ref>, further comprising a serial link to couple the first agent and second agent.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The apparatus of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the first agent and the second agent are on a same integrated circuit die.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. A method comprising:
+<claim-text>storing one or more local requests in a first queue;</claim-text>
+<claim-text>storing one or more remote requests in a second queue;</claim-text>
+<claim-text>storing data corresponding to one or more last-level cache victims in a third queue; and</claim-text>
+<claim-text>arbitrating between the first queue and the second queue based on presence of a first entry corresponding to the first queue and a second entry corresponding to the third queue in a miss address file.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The method of <claim-ref idref="CLM-00011">claim 11</claim-ref>, further comprising one or more of a last level cache victim, a data response from local or remote agents, a non-data response from remote agents, or a non-data response from local agent blocking the first queue under starvation conditions.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The method of <claim-ref idref="CLM-00011">claim 11</claim-ref>, further comprising the first queue blocking the second queue under starvation conditions and in response to a miss address file being clear of any entries whose deallocation depends on a forward progress of the second queue.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The method of <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein no age-based information is to be used for forward progress in a queue, other than designating which entries within the queue are &#x201c;old&#x201d; at the time the queue enters starvation.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The method of <claim-ref idref="CLM-00011">claim 11</claim-ref>, further comprising servicing the requests of the first or second queues via a retry based pipeline. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

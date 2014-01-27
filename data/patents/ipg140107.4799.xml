@@ -1,0 +1,1191 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08625892-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08625892</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13351719</doc-number>
+<date>20120117</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>2011-013839</doc-number>
+<date>20110126</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<us-term-extension>171</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>K</subclass>
+<main-group>9</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>382167</main-classification>
+<further-classification>382162</further-classification>
+</classification-national>
+<invention-title id="d2e71">Image processing apparatus and pixel interpolation method</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5327257</doc-number>
+<kind>A</kind>
+<name>Hrytzak et al.</name>
+<date>19940700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2002/0015162</doc-number>
+<kind>A1</kind>
+<name>Hoshii et al.</name>
+<date>20020200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>358  12</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>2005/0007611</doc-number>
+<kind>A1</kind>
+<name>Matsukubo et al.</name>
+<date>20050100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>358  19</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>2009/0079855</doc-number>
+<kind>A1</kind>
+<name>Ito et al.</name>
+<date>20090300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>348265</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>2010/0290092</doc-number>
+<kind>A1</kind>
+<name>Tabata</name>
+<date>20101100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>2011/0311155</doc-number>
+<kind>A1</kind>
+<name>Miyake et al.</name>
+<date>20111200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>382263</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>EP</country>
+<doc-number>0 713 326</doc-number>
+<kind>A1</kind>
+<date>19960500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>EP</country>
+<doc-number>1 686 529</doc-number>
+<kind>A1</kind>
+<date>20060800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>EP</country>
+<doc-number>1 720 337</doc-number>
+<kind>A1</kind>
+<date>20061100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>EP</country>
+<doc-number>2 161 914</doc-number>
+<kind>A1</kind>
+<date>20100300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>JP</country>
+<doc-number>2007142667</doc-number>
+<kind>A</kind>
+<date>20070600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>JP</country>
+<doc-number>2008-135988</doc-number>
+<date>20080600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>JP</country>
+<doc-number>4330164</doc-number>
+<date>20090600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00014">
+<othercit>Gunturk et al. &#x201c;Demosaicking: color filter array interpolation&#x201d;, IEEE Signal Processing Magazine, 2005.</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00015">
+<othercit>English translation of JP 2007-142667.</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00016">
+<othercit>U.S. Appl. No. 13/352,993, filed Jan. 18, 2012, Nakamura.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00017">
+<othercit>Extended European Search Report issued May 7, 2012 in patent application No. 12152355.9.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>13</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>382162-167</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382181</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382190</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382209</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382300</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>16</number-of-drawing-sheets>
+<number-of-figures>24</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120189200</doc-number>
+<kind>A1</kind>
+<date>20120726</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Nakamura</last-name>
+<first-name>Satoshi</first-name>
+<address>
+<city>Kanagawa</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Nakamura</last-name>
+<first-name>Satoshi</first-name>
+<address>
+<city>Kanagawa</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Oblon, Spivak, McClelland, Maier &#x26; Neustadt, L.L.P.</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Ricoh Company, Limited</orgname>
+<role>03</role>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Liu</last-name>
+<first-name>Li</first-name>
+<department>2665</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A color separating unit separates a color image into plural color components to generate images of respective colors. A periodicity determining unit determines, for each of the color images, whether an image region including a target pixel whose pixel value is to be interpolated is a periodic region in which pixel values vary periodically. A first generating unit generates pixel values of the respective colors of a pixel using a first interpolation method. A second generating unit generates pixel values of the respective colors of a pixel using a second interpolation method. A control unit determines which one of the first and second generating units is to be used for generating pixel values of the respective colors of the target pixel. A pixel value combining unit combines candidate pixel values which are the pixel values of the respective colors of the target pixel to calculate a combined pixel value.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="119.89mm" wi="192.53mm" file="US08625892-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="174.75mm" wi="181.69mm" file="US08625892-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="199.56mm" wi="143.17mm" orientation="landscape" file="US08625892-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="215.73mm" wi="169.50mm" file="US08625892-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="207.60mm" wi="124.29mm" file="US08625892-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="117.26mm" wi="61.98mm" file="US08625892-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="176.78mm" wi="114.81mm" file="US08625892-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="252.14mm" wi="181.36mm" file="US08625892-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="159.34mm" wi="112.44mm" file="US08625892-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="116.25mm" wi="164.93mm" file="US08625892-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="116.92mm" wi="134.45mm" file="US08625892-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="138.35mm" wi="125.39mm" file="US08625892-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="178.56mm" wi="163.83mm" file="US08625892-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="167.39mm" wi="131.66mm" file="US08625892-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="218.52mm" wi="146.39mm" file="US08625892-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="251.38mm" wi="149.52mm" orientation="landscape" file="US08625892-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00016" num="00016">
+<img id="EMI-D00016" he="262.97mm" wi="185.59mm" file="US08625892-20140107-D00016.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">CROSS-REFERENCE TO RELATED APPLICATIONS</heading>
+<p id="p-0002" num="0001">The present application claims priority to and incorporates by reference the entire contents of Japanese Patent Application No. 2011-013839 filed in Japan on Jan. 26, 2011.</p>
+<heading id="h-0002" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0003" num="0002">1. Field of the Invention</p>
+<p id="p-0004" num="0003">The present invention relates to an apparatus that performs an interpolation process in order to interpolate a pixel value for a pixel having a missing pixel value or an incorrect pixel value in an image, and a pixel interpolation method performed by the apparatus.</p>
+<p id="p-0005" num="0004">2. Description of the Related Art</p>
+<p id="p-0006" num="0005">A scanner device that scans an image using an optical unit is classified into an apparatus that employs a contact image sensor (CIS) and an apparatus that employs a charge coupled device (CCD). The apparatus employing the CIS is unable to scan a stereoscopic document since the document needs to be in close contact with a surface to be scanned. However, in recent years, the device employing the CIS has been in widespread use due to its thin body and an inexpensive cost as compared to the device employing the CCD as well as an improvement in the technique of reducing noise that is likely to occur in a scanned image. For example, the CIS is used in an image scanning device having a one-pass duplex scanning function in order to scan the rear surface of a document.</p>
+<p id="p-0007" num="0006">The CIS uses RGB light emitting diodes (LEDs) as a light source, emits R, G, and B color lights to a document by switching them at a high speed to input the lights reflected from the document to an imaging element (CMOS image sensor) through a lens, converts the input lights from the document into voltage values pixel by pixel using the CMOS image sensor, and outputs the converted voltage values.</p>
+<p id="p-0008" num="0007">The scanner device employing the CIS employs a contact image sensor method of bringing a document into close contact with a sensor using a roller and scanning the document line by line. Since it is difficult to manufacture one lengthy sensor, the CIS has a configuration in which a plurality of short sensors are arranged in the length direction thereof to form a scanning unit. Thus, a certain gap is formed between the sensors, and it may not be possible to acquire an image signal in this gap. As a result, a deficiency in the image signal occurs.</p>
+<p id="p-0009" num="0008">Such a problem is not limited to the device employing the CIS. In a scanner device, the image signal may become deficient or the scanned image signal may have an incorrect value due to a defect of a sensor scanning the image signal or the presence of an obstacle in the midway of an optical path such as dust present on a contact glass on which a document is set.</p>
+<p id="p-0010" num="0009">As a result, there is a problem in that a pixel having a missing pixel value or an incorrect pixel value is present in a scanned image, and the image quality deteriorates. To solve this problem, in the related art, there is known a method of estimating a correct pixel value of a target pixel having a missing or incorrect pixel value from pixel values of the surrounding pixels thereof and interpolating (inserting) the estimated pixel value instead of the missing or incorrect pixel value of the target pixel.</p>
+<p id="p-0011" num="0010">For example, a method of performing linear interpolation using the pixel values of the surrounding pixels of a target pixel; and a method of performing polynomial interpolation or spline interpolation using a function of the second order or higher are known. The interpolation method based on linear interpolation is ideal for interpolation at portions of an image having a small change in density but is not ideal for interpolation at portions of an image having a severe change in density like a halftone dot region.</p>
+<p id="p-0012" num="0011">The interpolating method based on polynomial interpolation and spline interpolation can estimate pixel values with high accuracy when the sampling cycle for sampling an image such as a digital photograph is sufficiently shorter than the variation cycle of the image pattern. However, in the case of halftone dot images, since the image resolution is not sufficient as compared to the screen frequency of halftone dots, the sampling period is not sufficient in relation to the variation period of the image. Thus, the interpolating method may be unable to reproduce the original pattern correctly.</p>
+<p id="p-0013" num="0012">Thus, in order to solve the problem of the interpolating method, a method which uses pattern matching has been proposed. In this pattern matching method, it is possible to reproduce high-frequency components which could not be reproduced by the interpolating method using similar patterns at the position in the vicinity of the interpolation target pixel.</p>
+<p id="p-0014" num="0013">However, in general, since the pattern matching uses a large range of information as compared to the interpolating method, although the optimum solution to a base pattern is obtained, the obtained solution is not said to be optimum to the interpolation target pixel. This problem happens because when searching for similar patterns in the pattern matching method, patterns which are slightly different from each other as a whole are not distinguished from patterns which are mostly identical but partly greatly different from each other.</p>
+<p id="p-0015" num="0014">In particular, like a halftone dot region having a high screen ruling, when information is eccentrically distributed to specific pixels, a method of selecting similar patterns has a large effect on the interpolation result. Moreover, in a halftone dot region having a low density, since the proportion of pixels belonging to the background region of an image is relatively high, similar patterns may be detected in the background region rather than the halftone dot region, or alternatively, no similar pattern may be detected.</p>
+<p id="p-0016" num="0015">Therefore, when performing interpolation, it is necessary to use an interpolation method depending on the characteristics of a region to which the interpolation target pixel belongs. In order to accurately estimate the pixel value of the interpolation target pixel, there has been proposed a device in which when the position of an interpolation target pixel is within a halftone dot region, patterns similar to a pattern including the interpolation target pixel are searched for from an image, and the pixel value of a pixel, which is included in the most similar pattern and corresponds to the interpolation target pixel, is determined as the pixel value of the interpolation target pixel (see Japanese Patent No. 4330164).</p>
+<p id="p-0017" num="0016">This device determines whether the position of an interpolation target pixel corresponding to a connecting portion of contact image sensors is within a halftone dot region or a non-halftone dot region based on the image data scanned by an image scanning sensor. When the position of the interpolation target pixel is within the non-halftone dot region, the pixel data of the interpolation target pixel are generated by means of linear interpolation, and the generated pixel data is inserted into the interpolation target pixel. On the other hand, when the position of the interpolation target pixel is within the halftone dot region, the pixel data of the interpolation target pixel are generated by means of pattern matching, and the generated pixel data is inserted into the interpolation target pixel.</p>
+<p id="p-0018" num="0017">In this case, one base block including the interpolation target pixel and a plurality of reference blocks having the same size as the base block but not including the interpolation target pixel are set in an image region near the position of the interpolation target pixel. Then, the correlation values between the base block and the respective reference blocks are calculated based on the pixel data within the base block and the pixel data within the respective reference blocks. Among the pixel data within a reference block having the highest correlation value with the base block, the pixel data of a pixel corresponding to the interpolation target pixel within the base block are determined as the pixel data of the interpolation target pixel.</p>
+<p id="p-0019" num="0018">However, in this interpolation method, although high interpolation accuracy can be obtained for images in which the pixel values change smoothly, there is a problem in that the interpolation accuracy decreases for images in which the pixel values change abruptly.</p>
+<p id="p-0020" num="0019">Halftone dots used for color images are generally made up of dots of the three colors of C, M, and Y (cyan, magenta, and yellow) or the four colors of C, M, Y, and K. Thus, in order to perform accurate interpolation, it is necessary to reproduce dots of the individual colors. However, in the related art, a method of reproducing halftone dots of individual colors is not known.</p>
+<p id="p-0021" num="0020">Therefore, there is a demand for a device and a method capable of performing an interpolation process with high accuracy with respect to images of which the pixel values change abruptly and reproducing halftone dots of individual colors in a color image.</p>
+<heading id="h-0003" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0022" num="0021">An image processing apparatus includes a color separating unit configured to separate a color image into a plurality of color components to generate images of respective colors; a periodicity determining unit configured to determine, for each of the images of the respective colors, whether an image region including a target pixel whose pixel value is to be interpolated is a periodic region in which pixel values vary periodically; a first pixel value generating unit configured to generate pixel values of the respective colors of a pixel using a first interpolation method; a second pixel value generating unit configured to generate pixel values of the respective colors of a pixel using a second interpolation method different from the first interpolation method; a control unit configured to determine, based on the determination result obtained by the periodicity determining unit, which one of the first and second pixel value generating units is to be used for generating pixel values of the respective colors of the target pixel; and a pixel value combining unit configured to combine candidate pixel values which are the pixel values of the respective colors of the target pixel and which are generated by the first or second pixel value generating unit determined by the control unit to calculate a combined pixel value for interpolating the target pixel.</p>
+<p id="p-0023" num="0022">A pixel interpolation method is performed in an image processing apparatus that includes a first pixel value generating unit to generate a pixel value of a pixel using a first interpolation method, and a second pixel value generating unit to generate a pixel value of a pixel using a second interpolation method different from the first interpolation method. The pixel interpolation method includes separating the color image into a plurality of color components to generate images of respective colors; determining, for each of the images of the respective colors, whether an image region including a target pixel whose pixel value is to be interpolated is a periodic region in which pixel values vary periodically; determining, based on the determination result obtained in the determining of periodicity of the image region, which one of the first and second pixel value generating units is to be used for generating pixel values of the respective colors of the target pixel; and combining candidate pixel values which are the pixel values of the respective colors of the target pixel and which are generated by the first or second pixel value generating unit determined in the determining of the pixel value generating unit to calculate a combined pixel value for interpolating the target pixel.</p>
+<p id="p-0024" num="0023">The above and other objects, features, advantages and technical and industrial significance of this invention will be better understood by reading the following detailed description of presently preferred embodiments of the invention, when considered in connection with the accompanying drawings.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 1</figref> is a diagram illustrating an example of a hardware configuration of an image processing apparatus according to the present invention;</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 2</figref> is a functional block diagram illustrating an embodiment of the image processing apparatus;</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 3</figref> is a diagram illustrating an example of an image including an interpolation pixel;</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIGS. 4A and 4B</figref> are diagrams illustrating an example of a determination region and the relation between the position of a pixel in the horizontal direction of the determination region and the pixel value thereof;</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIGS. 5A to 5C</figref> are diagrams illustrating an example of a periodic region and a non-periodic region;</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIGS. 6A and 6B</figref> are diagrams illustrating an example of an image showing a representative cycle and a template;</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIGS. 7A and 7B</figref> are diagrams illustrating an example of the relation between the position of a pixel and the pixel value thereof;</p>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIG. 8</figref> is a flowchart illustrating the flow of a pixel interpolation process executed by the image processing apparatus illustrated in <figref idref="DRAWINGS">FIG. 2</figref>;</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIG. 9</figref> is a flowchart illustrating the flow of a process performed in step S<b>815</b> illustrated in <figref idref="DRAWINGS">FIG. 8</figref>;</p>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIGS. 10A to 10C</figref> are diagrams illustrating a determination region used for determining the periodicity of a partial region;</p>
+<p id="p-0035" num="0034"><figref idref="DRAWINGS">FIG. 11</figref> is a flowchart illustrating a detailed process of the periodicity determination performed in steps S<b>910</b>, S<b>920</b>, and S<b>925</b> illustrated in <figref idref="DRAWINGS">FIG. 9</figref>;</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 12</figref> is a flowchart illustrating the flow of a process performed in step S<b>830</b> illustrated in <figref idref="DRAWINGS">FIG. 8</figref>;</p>
+<p id="p-0037" num="0036"><figref idref="DRAWINGS">FIG. 13</figref> is a flowchart illustrating an example of a process performed in step S<b>845</b> illustrated in <figref idref="DRAWINGS">FIG. 8</figref>;</p>
+<p id="p-0038" num="0037"><figref idref="DRAWINGS">FIG. 14</figref> is a flowchart illustrating another example of the process performed in step S<b>845</b> illustrated in <figref idref="DRAWINGS">FIG. 8</figref>;</p>
+<p id="p-0039" num="0038"><figref idref="DRAWINGS">FIG. 15</figref> is a flowchart illustrating still another example of the process performed in step S<b>845</b> illustrated in <figref idref="DRAWINGS">FIG. 8</figref>;</p>
+<p id="p-0040" num="0039"><figref idref="DRAWINGS">FIG. 16</figref> is a functional block diagram illustrating another embodiment of the image processing apparatus; and</p>
+<p id="p-0041" num="0040"><figref idref="DRAWINGS">FIG. 17</figref> is a flowchart illustrating the flow of a pixel interpolation process executed by the image processing apparatus illustrated in <figref idref="DRAWINGS">FIG. 16</figref>.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS</heading>
+<p id="p-0042" num="0041">An image processing apparatus of the present invention is connected directly by a cable, or through a network, to a scanner device that reads color images. Although the scanner device is not limited to this, in this example, the scanner device is assumed to be a scanner device employing a CIS. The image scanned by the scanner device includes a pixel which having a missing pixel value or an incorrect pixel value due to the gap between sensors. Therefore, the image processing apparatus performs an interpolation process including calculating a correct pixel value of that pixel (interpolation target pixel) and setting the calculated pixel value to the interpolation target pixel, so as to interpolate the interpolation target pixel with the calculated pixel.</p>
+<p id="p-0043" num="0042">The image processing apparatus is a device configured to receive the input of a color image to be subjected to an interpolation process, separate the color image into plain images made up only of the respective colors, calculates candidate pixel values from the plain images as pixel values to be inserted to the interpolation pixel, combines the candidate pixel values calculated for the respective colors to generate one pixel value, and inserts the combined pixel value into the interpolation target pixel, so as to interpolate the interpolation target pixel with the combined pixel value.</p>
+<p id="p-0044" num="0043">When the image is a grayscale image in which one pixel is expressed by 8 bits, the pixel value takes the value of 0 for black and 255 for white. When the image is a color image in which one pixel is expressed by 8 bits for each color of R, G, and B, the pixel value takes a value in the range of 0 to 255 for each color of red, green, and blue. All pixel values take the value of 0 for black, and all pixel values take the value of 255 for white.</p>
+<p id="p-0045" num="0044">To realize these processes, the image processing apparatus is configured to include a storage device in which a program capable of executing the processes is recorded, such as a PC, a workstation, a server, or an MFP, a processor that reads and executes the program, and an interface for connecting to the scanner device and the network.</p>
+<p id="p-0046" num="0045">Specifically, as illustrated in <figref idref="DRAWINGS">FIG. 1</figref>, an image processing apparatus <b>10</b> may include a microprocessor unit (MPU) <b>11</b> as the processor, for example. Moreover, the image processing apparatus <b>10</b> may be configured to include a read only memory (ROM) <b>12</b> which is a nonvolatile memory storing a basic input output system (BIOS) and a firmware as the storage device and a random access memory (RAM) <b>13</b> providing an execution and storage area for allowing program processing by the MPU <b>11</b>.</p>
+<p id="p-0047" num="0046">The MPU <b>11</b> is connected to a storage control interface <b>14</b> which is one kind of interface through an internal bus. The MPU <b>11</b> accesses a hard disk <b>15</b> which is one of the storage devices connected to the storage control interface <b>14</b> and reads, executes, and writes various kinds of application and data. As the storage control interface <b>14</b>, an interface that controls the input and output of the hard disk <b>15</b> in accordance with the standards such as integrated device electronics (IDE), AT attachment (ATA), serial ATA, or Ultra ATA. The MPU <b>11</b> can control a serial or parallel interface <b>16</b> such as a universal serial bus (USB) or the IEEE 1394 through the internal bus, communicate with an input and output device <b>17</b> such as a keyboard, a mouse, or a printer, and receive the input from the user.</p>
+<p id="p-0048" num="0047">The image processing apparatus <b>10</b> can be configured to include a video RAM (VRAM) <b>19</b> and a graphic chip <b>20</b> that process video signals in response to instructions from the MPU <b>11</b> and display video on a display device <b>18</b> and a network I/F <b>21</b> connected to a network to communicate with other devices through the network. The VRAM <b>19</b> is a RAM used as a storage device for displaying video on the display device <b>18</b>, and the graphic chip <b>20</b> is an integrated circuit that processes image data.</p>
+<p id="p-0049" num="0048">Moreover, the image processing apparatus <b>10</b> may be configured such that the MPU <b>11</b> reads programs stored in the ROM <b>12</b>, the hard disk <b>15</b>, and other storage devices (not illustrated) such as an NVRAM or an SD card and expands the programs in the memory area of the RAM <b>13</b> to realize respective processes described later under a suitable operating system (OS), whereby the MPU <b>11</b> is configured as respective units for realizing the respective processes. As the OS, the Windows (registered trademark), the UNIX (registered trademark), the LINUX (registered trademark), and the like can be employed. The image processing apparatus <b>10</b> is not limited to the above-described PC or the like, but may be configured as an application specific integrated circuit (ASIC) in which a plurality of functional circuits are integrated into one circuit for a specific application.</p>
+<p id="p-0050" num="0049"><figref idref="DRAWINGS">FIG. 2</figref> is a functional block diagram illustrating a first embodiment of the image processing apparatus. As described above, the image processing apparatus <b>10</b> can realize respective functions by causing the MPU <b>11</b> which is a process to read and execute the programs stored in the storage device such as the ROM <b>12</b> or the hard disk <b>15</b>. That is, the image processing apparatus <b>10</b> is configured to include a color separating unit <b>30</b>, a periodicity determining unit <b>31</b>, a first pixel value generating unit <b>32</b>, a second pixel value generating unit <b>33</b>, a control unit <b>34</b>, a pixel value combining unit <b>35</b>, and a pixel value inserting unit <b>36</b>. Although not illustrated in <figref idref="DRAWINGS">FIG. 2</figref>, the image processing apparatus <b>10</b> may further include a pixel specifying unit that specifies (detects) an interpolation target pixel.</p>
+<p id="p-0051" num="0050">The color separating unit <b>30</b> receives image data of a color image to be subjected to an interpolation process, separates the color image into a plurality of color components designated in advance, and generates plain images which are grayscale images of the respective colors made up only of the respective color components. The color image is generally made up of the three colors of RGB (red, green, and blue) in the case of digital images. The color separating unit <b>30</b> separates the color image into color components of CMY (cyan, magenta, and yellow), CMYK (cyan, magenta, yellow, and black), RGB, Lab, or YIQ. For example, the color separating unit <b>30</b> can separate the color image using light having passed through color filters of the respective colors of RGB to thereby generate plain images.</p>
+<p id="p-0052" num="0051">The Lab is made up of three values of &#x201c;L&#x201d; representing lightness, &#x201c;a&#x201d; representing a hue element in the green-red range, and &#x201c;b&#x201d; representing a hue element in the blue-yellow range. The YIQ is made up of three values of &#x201c;Y&#x201d; representing luminance, &#x201c;I&#x201d; representing a color difference in the orange-cyan range, and &#x201c;Q&#x201d; representing a color difference in the violet blue-yellow green range.</p>
+<p id="p-0053" num="0052">A halftone region of a printed material is preferably separated into the color components of CMYK since the gradation is expressed by halftone dots of the four colors of CMYK. However, since RGB and CMY are in a complementary relation, and cyan, magenta, and yellow halftone dots appear as light and dark patterns in plain images (R, G, and B plain images) of the red, green, and blue components, respectively, no serious problem may occur even the halftone region is separated into the color components of RGB. Although black halftone dots appear in the plain images of all the colors of red, green, and blue, the black dots can be reproduced indirectly by performing the interpolation process without discriminating black halftone dots from the halftone dots of CMY and reproducing halftone dot patterns appearing in the plain images of RGB.</p>
+<p id="p-0054" num="0053">The color separation performed by the color separating unit <b>30</b> may be performed upon receiving a color image to be subjected to an interpolation process. Alternatively, it may be performed after the pixel specifying unit detects an interpolation target pixel. Moreover, the color separation may be performed only for color images and may not be performed for images made up of one color such as a black and white image since color separation needs not be performed. In the case of color images, by directly detecting a target pixel from the color image, extracting a specific color component value from the pixel value of the detected pixel, and using the color component value, the color separation for creating plain images needs not to be performed.</p>
+<p id="p-0055" num="0054">Subsequently, the above-described pixel specifying unit detects, from a processing target image, an interpolation target pixel whose pixel value is to be inserted thereto. The position of the interpolation target pixel may be detected by the user in advance and may be detected sequentially by the device. The position can be expressed as the coordinates (x, y) using the coordinates of the left bottom corner as the base coordinates (0, 0), where &#x201c;x&#x201d; is the number of pixels in the same rightward direction as the main-scanning direction and &#x201c;y&#x201d; is the number of pixels in the upward direction.</p>
+<p id="p-0056" num="0055">As the detection method used when the image processing apparatus <b>10</b> detects the interpolation target pixel, there is a method of detecting the interpolation target pixel by checking the pixel value for each pixel to determine whether the pixel has a brightness and a color designated in advance. Moreover, there is a method of detecting the interpolation target pixel by evaluating a difference in pixel value from the correct pixel value obtained by scanning a known image. Furthermore, there is a method of detecting the position at which the periodicity of pixel values in the horizontal or vertical direction becomes discontinuous and detecting a pixel at that position as the interpolation target pixel. The interpolation target pixel may be an isolated dot and may be a line segment made up of continuous dots. The reason why the interpolation target pixel may be a line segment is because the gap may be formed to be continuous in the sub-scanning direction which is the moving direction of the imaging element and formed by a line segment made up of continuous dots.</p>
+<p id="p-0057" num="0056">In general, although the position of the interpolation target pixel is set equally for all plain images, when it is desired to interpolate (insert) only a specific color component value, the interpolation target pixel may be set in only the plain image of that color.</p>
+<p id="p-0058" num="0057">An example of an image including the interpolation target pixel may include one in which a vertical stripe occurs within a halftone dot image in which black dots having approximately the same size are arranged approximately regularly as illustrated in <figref idref="DRAWINGS">FIG. 3</figref>. The vertical stripe is made up of a portion where dots are missing and a portion where dots are larger than the surrounding dots so as to cross the central portion of the image. Such an image has periodicity since dots are arranged at certain intervals, but the periodicity becomes discontinuous in the vertical stripe portion. Thus, the interpolation target pixel can be detected by detecting the position at which the horizontal periodicity becomes discontinuous.</p>
+<p id="p-0059" num="0058">The periodicity determining unit <b>31</b> specifies a determination region of a predetermined size so as to include the interpolation target pixel of the plain image and determines whether a variation in the pixel values within the determination region has periodicity. The determination region may be a region having a height corresponding to one pixel including the interpolation target pixel, namely one line of the image, or alternatively, may be a rectangular region having an optional height including the interpolation target pixel.</p>
+<p id="p-0060" num="0059">The size of the determination region may be set by the user in advance and may be specified dynamically by the device. When the size is dynamically specified by the device, the interpolation process is performed once with a size designated in advance. Then, if the interpolation process can be sufficiently performed with a smaller size, the determination region may be decreased by a certain proportion. Conversely, if the interpolation process cannot be performed with the smaller size, the determination region may be increased by a certain proportion.</p>
+<p id="p-0061" num="0060">An example in which one line of the image is extracted and used as the determination region is illustrated in FIGS. <b>4</b>A and <b>4</b>B. In <figref idref="DRAWINGS">FIG. 4A</figref>, pixels representing black halftone dots and pixels representing a white background are arranged at certain intervals, and gray pixels having different pixel values are arranged between them so as to give gradation. In <figref idref="DRAWINGS">FIG. 4A</figref>, a pixel <b>40</b> having a missing pixel value due to the gap is shown.</p>
+<p id="p-0062" num="0061"><figref idref="DRAWINGS">FIG. 4B</figref> illustrates an example of the relation between the positions of pixels in the horizontal direction of the determination region and the pixel values thereof. The pixel values of the pixels have discrete values since each pixel value is constant with the pixel, but when the pixel values are smoothly connected, the pixel values can be expressed as a waveform in which the pixel values increase and decrease with a constant cycle. Thus, in this determination region, it is possible to detect the periodicity of variation in the pixel values.</p>
+<p id="p-0063" num="0062">An example of a determination region having periodicity may be a halftone dot region represented by halftone dots or hatched lines illustrated in <figref idref="DRAWINGS">FIG. 5A</figref>. On the other hand, an example of a determination region having no periodicity may be a discontinuous region made up of a character or irregularly arranged dots illustrated in <figref idref="DRAWINGS">FIG. 5B</figref> and a flat region such as a background represented by one color or gradation illustrated in <figref idref="DRAWINGS">FIG. 5C</figref>.</p>
+<p id="p-0064" num="0063">In the case of a halftone dot image represented by halftone dots, since dots are actually arranged in a linear form with an optional screen angle, the dots are obliquely arranged at certain intervals rather than being arranged at certain intervals in the horizontal direction. Thus, although the halftone dot image does not have such a waveform having the same amplitude as illustrated in <figref idref="DRAWINGS">FIG. 4B</figref>, since the halftone dot image has a waveform which has peaks of different amplitudes at certain intervals, it can be determined that the halftone dot image has periodicity.</p>
+<p id="p-0065" num="0064">Although the presence of periodicity can be easily determined by illustrating in a diagram as in <figref idref="DRAWINGS">FIG. 3</figref> or <figref idref="DRAWINGS">FIGS. 4A and 4B</figref>, it is practically difficult to create diagrams and make determination with reference to the diagrams. Therefore, for example, the periodicity can be determined by setting a determination region which is a region having a predetermined size including the interpolation target pixel of a plain image, calculating the variation cycle within the determination region, and determining the presence of periodicity of the determination region using the calculated variation cycle. Thus, the periodicity determining unit <b>31</b> may include a cycle calculating unit (not illustrated) for calculating the variation cycle.</p>
+<p id="p-0066" num="0065">Although it is necessary to calculate the variation cycle in order to determine periodicity, it cannot be said that the variation cycle of the pixel values within the determination region is always constant. Therefore, a representative cycle is employed as the variation cycle used for determining periodicity. As a calculation example of the representative cycle, the positions (peak positions) at which the pixel values reach their local maximum within the determination region, i.e., the positions of pixels each having a peak value in the positive direction of the waveform illustrated in <figref idref="DRAWINGS">FIG. 4B</figref> are recorded, the histogram of distance from a certain peak position to the next peak position is created over the entire determination region, and then, the distance corresponding to the maximum frequency which is the value of a class having the largest frequency is employed as the representative cycle. The representative cycle can be expressed by the number of pixels. In the example illustrated in <figref idref="DRAWINGS">FIGS. 4A and 4B</figref>, peaks occur at intervals of approximately 6 pixels, and the distance between the adjacent peaks is mostly 6 pixels. Therefore, the representative cycle is set to 6 pixels. Alternatively, a distance of &#x201c;representative cycle&#xb1;1&#x201d; may be used from the perspective of allowing a certain degree of error in the representative cycle.</p>
+<p id="p-0067" num="0066">In this case, the representative cycle may be calculated using the positions at which the pixel values reach their local minimum, i.e., the positions of pixels each having a peak value in the negative direction of the waveform illustrated in <figref idref="DRAWINGS">FIG. 4B</figref> rather than using the positions at which the pixel values reaches their local maximum. Noise resistance is low if the representative cycle is calculated using the periodicity of variation in the pixel values. In contrast, if autocorrelation of the pixel values is calculated and the periodicity of the variation thereof is used, noise resistance increases. Thus, when calculating the representative cycle using the positions at which the pixel values reach their local maximum and the positions at which the pixel values reach their local minimum, it is preferable to use autocorrelation. The reason why the noise resistance increases is because noise is superimposed on the pixel values in many cases, the effect of noise can be suppressed to be low by using autocorrelation derived from a plurality of sets of the pixel values rather than directly using the pixel values.</p>
+<p id="p-0068" num="0067">Autocorrelation is correlation between a certain signal and a signal having a predetermined phase shift relative to the certain signal. In this case, autocorrelation is calculated within a determination region, a histogram is created using the autocorrelation value instead of the pixel value, and the most frequency value is employed as the representative cycle. As the autocorrelation value, a correlation coefficient may be used, and a covariance may be used to make calculation easier.</p>
+<p id="p-0069" num="0068">Here, covariance S is an index representing the magnitude of covariation of two pixel values and can be calculated by Expression (1) below in which &#x201c;x<sub>i</sub>&#x201d; is a pixel value of the i-th pixel in one of the two comparison patterns, &#x201c;y<sub>i</sub>&#x201d; is a pixel value of the i-th pixel in the other pattern, &#x201c;x<sub>m</sub>&#x201d; is the average value of the pixel values in the one pattern, &#x201c;y<sub>m</sub>&#x201d; is the average value of the pixel values in the other pattern, and &#x201c;n&#x201d; is the number of pixels in the pattern.</p>
+<p id="p-0070" num="0069">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mi>S</mi>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mn>1</mn>
+            <mi>n</mi>
+          </mfrac>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <munderover>
+              <mo>&#x2211;</mo>
+              <mrow>
+                <mi>i</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+              <mi>n</mi>
+            </munderover>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msub>
+                    <mi>x</mi>
+                    <mi>i</mi>
+                  </msub>
+                  <mo>-</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mi>m</mi>
+                  </msub>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msub>
+                    <mi>y</mi>
+                    <mi>i</mi>
+                  </msub>
+                  <mo>-</mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mi>m</mi>
+                  </msub>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>1</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0071" num="0070">The correlation coefficient R is an index representing the degree of similarity between two random variables and can be calculated by Expression (2) below in which &#x201c;&#x3c3;<sub>x</sub>&#x201d; is a standard deviation of one pattern, and &#x201c;&#x3c3;<sub>y</sub>&#x201d; is a standard deviation of the other pattern.</p>
+<p id="p-0072" num="0071">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mi>R</mi>
+        <mo>=</mo>
+        <mfrac>
+          <mrow>
+            <munderover>
+              <mo>&#x2211;</mo>
+              <mrow>
+                <mi>i</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+              <mi>n</mi>
+            </munderover>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msub>
+                    <mi>x</mi>
+                    <mi>i</mi>
+                  </msub>
+                  <mo>-</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mi>m</mi>
+                  </msub>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msub>
+                    <mi>y</mi>
+                    <mi>i</mi>
+                  </msub>
+                  <mo>-</mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mi>m</mi>
+                  </msub>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mrow>
+            <msub>
+              <mi>&#x3c3;</mi>
+              <mi>x</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>&#x3c3;</mi>
+              <mi>y</mi>
+            </msub>
+          </mrow>
+        </mfrac>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>2</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0073" num="0072">Degree of confidence C<sub>v </sub>can be calculated using Expression (3) below, for example. In Expression (3), &#x201c;T&#x201d; is the representative cycle calculated above, &#x201c;F<sub>r</sub>&#x201d; is the frequency of the distance corresponding to the representative cycle T in the histogram, and &#x201c;N&#x201d; is the number of pixels in the determination region. As the &#x201c;F<sub>r</sub>&#x201d;, the sum of the frequencies of T&#xb1;1 may be used in order to allow errors when estimating the representative cycle as well as the frequency of the representative cycle T. Expression (3) defines, as the degree of confidence, the proportion of pixels having the same distance between the peak positions as the representative cycle to the pixels included in the entire determination region.</p>
+<p id="p-0074" num="0073">
+<maths id="MATH-US-00003" num="00003">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>C</mi>
+          <mi>v</mi>
+        </msub>
+        <mo>=</mo>
+        <mfrac>
+          <mrow>
+            <mi>T</mi>
+            <mo>&#xd7;</mo>
+            <msub>
+              <mi>F</mi>
+              <mi>r</mi>
+            </msub>
+          </mrow>
+          <mi>N</mi>
+        </mfrac>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>3</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0075" num="0074">When the degree of confidence is higher than a threshold value, the determination region is determined to have periodicity. When the degree of confidence is equal to or smaller than the threshold value, the determination region is determined to have no periodicity. The threshold value can be set by the user in advance, or alternatively, can be determined dynamically. When the threshold value is set by the user in advance, the threshold value can be determined and set by performing simulations or tests and calculating the degree of confidence ideal for determining the presence of periodicity. When the threshold value is determined dynamically, an intermediate value of the degrees of confidence, which are actually calculated with respect to a halftone dot region having periodicity and either one of a discontinuous region and a flat region having no periodicity, can be determined as the threshold value.</p>
+<p id="p-0076" num="0075">The first pixel value generating unit <b>32</b> generates the pixel value of an interpolation target pixel using a pattern matching method as an interpolation method. As a specific example of the pattern matching method, template matching can be used. The template matching can be performed by using a template as a base pattern which is a designated position or an image region having a designated size within an image and finding positions resembling the template to thereby calculate the degree of coincidence between the template and the patterns within the image.</p>
+<p id="p-0077" num="0076">In realize this function, first, the first pixel value generating unit <b>32</b> determines the size of the template. The width of the template is set based on the representative cycle calculated in the above-described manner. Although the width of the template can be made to be identical to the width of the representative cycle, the width is not limited to this. The width may be slightly larger or smaller by one pixel to each of the left and right sides than the number of pixels corresponding to the width of the representative cycle. Next, the height of the template may be set to be identical to the height of the representative cycle similarly to the width. The height is not limited to this, but may be slightly larger or smaller. Although the width and height are set to be larger or smaller by one pixel to each of the left and right sides, the width and height may be set to be larger or smaller by two pixels or more.</p>
+<p id="p-0078" num="0077">When the interpolation target pixel belongs to the halftone dot region, the template is preferably set as a square region of which one side is approximately the representative cycle. This is because, when an image representing the representative cycle is such an image having a width of 14 pixels and height of one pixel as illustrated in <figref idref="DRAWINGS">FIG. 6A</figref>, by setting the template as a square region having a width of 14 pixels and a height of 14 pixels, it is possible to express one halftone dot as illustrated in <figref idref="DRAWINGS">FIG. 6B</figref>. As above, by setting the size of the template as a region corresponding to one halftone dot, when searching for a similar pattern, it is possible to a similar pattern optimal to a halftone dot including the interpolation target pixel using information of only one halftone dot.</p>
+<p id="p-0079" num="0078">Moreover, when the representative cycle is as very small as 3 pixels, for example, the size of the template may be set to be as slightly larger as 5 pixels by adding one pixel to each of the left and right side of the 3 pixels. This is because, when the representative cycle is very small, the number of pixels used for evaluation of the degree of coincidence becomes so small that the stability of detection of similar pattern decreases.</p>
+<p id="p-0080" num="0079">The first pixel value generating unit <b>32</b> cuts a region including the interpolation target pixel from the plain image based on the size of the template determined in the above-described manner and sets the cut region as the template. In this case, the template is preferably cut and set as a shape which is horizontally and vertically symmetrical about the interpolation target pixel. By cutting and setting the template in this way, it is possible to search for a similar pattern without depending on the directionality of the pattern including the interpolation target pixel.</p>
+<p id="p-0081" num="0080">Subsequently, the first pixel value generating unit <b>32</b> sets a predetermined region to be searched when searching for a similar pattern similar to the template using the template. The region to be searched can be set based on the representative cycle. When the image representing the representative cycle is the image having the width of 6 pixels and the height of one pixel, for example, the region to be searched can be set as a square region having a width of 18 pixel and a height of 18 pixels the same as the width by adding 6 pixels to each of the left and right sides of the representative cycle. As above, by setting the region to be searched as a region having the same number of pixels in width and height, it is possible to perform searching without depending on the directionality of the pattern in the range to be searched. The above region having the width of 18 pixels and the height of 18 pixels is just an example but is not limited to this. Instead, a larger region having a width of 30 pixels and a height of 30 pixels, for example, may be set as the region to be searched.</p>
+<p id="p-0082" num="0081">Although the region to be searched is not limited to the above square region, when it is necessary to suppress the height of the range to be low due to restriction or the like of an image buffering memory, it is preferably to increase the width by that much. This is because, when the height is suppressed to be low, the number of targets to be searched to retrieve a similar pattern decreases, and the accuracy of interpolation decreases. Moreover, when the periodicity determining unit <b>31</b> determines that a region positioned at the left side of the interpolation target pixel has no periodicity, it is preferable to exclude the region positioned at the left side of the interpolation target pixel from the searching region. The same is true for the right side. By narrowing the region to be searched in this way, it is possible to prevent such detection errors that a similar pattern is retrieve from a region in which the similar pattern should not to be retrieved.</p>
+<p id="p-0083" num="0082">After setting the region to be searched in the above-described manner, the first pixel value generating unit <b>32</b> searches for a similar pattern present within the region to be searched using the generated template. Specifically, the degree of coincidence with the template at respective positions within the region to be searched is calculated, and the position having the highest degree of coincidence is selected as the similar pattern. As the degree of coincidence, the degree of dissimilarity such as sum of absolute difference (SAD) or sum of squared difference (SSD) and the degree of similarity such as a correlation coefficient or a covariance can be used.</p>
+<p id="p-0084" num="0083">The SAD is obtained by cutting patterns to be compared with the template, calculating a difference in luminance value between the pixel in the template and the pixel in each of the cut patterns, which are positioned at the same pixel positions, and calculating the sum of the absolute values of the differences. The degree of similarity increases as the sum decreases, and the degree of dissimilarity increases as the sum increases. On the other hand, the SSD is obtained by calculating the square of each difference in luminance value and calculating the sum of the squares. The degree of similarity increases as the sum decreases, and the degree of dissimilarity increases as the sum increases. The correlation coefficient and the covariance can be calculated by Expressions (1) and (2) above. The correlation coefficient takes a value in the range of &#x201c;&#x2212;1&#x201d; to &#x201c;1&#x201d;, in which a strong positive correlation occurs as the value approaches 1, a weak correlation occurs as the value approaches 0, and a negative correlation occurs as the value approaches &#x2212;1. This means that two patterns are similar as the value approaches 1, and that one pattern is similar to an inverted version of the other pattern as the value approaches &#x2212;1. From this, it can be determined that the degree of similarity is high as the value increases. Since the covariance corresponds to the correlation coefficient, it can be determined that the degree of similarity is high as the value increases.</p>
+<p id="p-0085" num="0084">When evaluating the degree of coincidence, it is preferable to exclude the interpolation target pixel from pixels used for the calculation of the degree of coincidence so that the pixel value of the interpolation target pixel does not affect the degree of coincidence, or preferable to set, as the interpolation target pixel, a virtual pixel value by using the pixel value of a pixel of a comparison target pattern at the same position as the interpolation target pixel. A plurality of similar patterns may be selected in descending order of the degrees of coincidence.</p>
+<p id="p-0086" num="0085">Moreover, when there are a plurality of interpolation target pixels in the entire image, at the time of calculating the degree of coincidence, it is preferable to exclude other interpolation target pixels from pixels used for the calculation as well as an interpolation target pixel into which its pixel value is presently being inserted, or preferable to set, as the interpolation target pixel, a virtual pixel value by using the pixel value of a pixel of the comparison target pattern at the same position. This is because not only the interpolation target pixel into which its pixel value is presently being inserted but also other interpolation target pixels are included in a base pattern or a comparison target pattern, and the interpolation target pixel basically has a missing pixel value or holds an incorrect pixel value, it is not preferable to use such interpolation target pixels in calculation of the degree of coincidence. The pixel value of the interpolation target pixel into which its pixel value has already been inserted can be used for the calculation of the degree of coincidence. Moreover, when other interpolation target pixels are included in the comparison target pattern, it is preferable to exclude them from pixels used for the calculation, or preferable to set a virtual pixel value by using the pixel value of a pixel of the base pattern at the same position.</p>
+<p id="p-0087" num="0086">For example, it is assumed that a template including interpolation target pixels is made up of pixels of 5 rows by 5 columns from a pixel a<sub>i&#x2212;2</sub>, a<sub>j&#x2212;2</sub>) to a pixel (a<sub>i+2</sub>, a<sub>j+2</sub>), and all the pixels on the i-th column are to be interpolated. It is also assumed that a pixel (a<sub>i</sub>, a<sub>j</sub>) is presently being interpolated, the interpolation pixels are sequentially processed, and pixel values have already been inserted to the pixels (a<sub>j</sub>, a<sub>j&#x2212;2</sub>) and (a<sub>i</sub>, a<sub>j&#x2212;1</sub>) on the same i-th column. In this condition, a first exemplary method of calculating the degree of coincidence is to perform the calculation by excluding the interpolation target pixels (a<sub>i</sub>, a<sub>j&#x2212;2</sub>), (a<sub>i</sub>, a<sub>j&#x2212;1</sub>), (a<sub>i</sub>, a<sub>j</sub>), (a<sub>i</sub>, a<sub>j+1</sub>), and (a<sub>i</sub>, a<sub>j+2</sub>). A second exemplary method is to perform the calculation by setting a virtual pixel value to the interpolation target pixels (a<sub>i</sub>, a<sub>j&#x2212;2</sub>) (a<sub>i</sub>, a<sub>j&#x2212;1</sub>) (a<sub>i</sub>, a<sub>j</sub>) (a<sub>i</sub>, a<sub>j+1</sub>), and (a<sub>i</sub>, a<sub>j+2</sub>) using the pixel values of pixels of the comparison target pattern at the corresponding positions.</p>
+<p id="p-0088" num="0087">A third exemplary method is to perform the calculation by using the already-inserted pixel values of the interpolation target pixels (a<sub>i</sub>, a<sub>j&#x2212;2</sub>) and (a<sub>i</sub>, a<sub>j&#x2212;1</sub>) while excluding the other interpolation pixels (a<sub>i</sub>, a<sub>j</sub>), (a<sub>i</sub>, a<sub>j+1</sub>), and (a<sub>i</sub>, a<sub>j+2</sub>). A fourth exemplary method is to perform the calculation by using the already-inserted pixel values of the interpolation pixels (a<sub>i</sub>, a<sub>j&#x2212;2</sub>) and (a<sub>i</sub>, a<sub>j&#x2212;1</sub>) while setting a virtual pixel value to the other interpolation pixels (a<sub>i</sub>, a<sub>j</sub>), (a<sub>i</sub>, a<sub>j+1</sub>), and (a<sub>i</sub>, a<sub>j+2</sub>) using the pixel values of pixels of the comparison target pattern at the corresponding positions.</p>
+<p id="p-0089" num="0088">In the most similar pattern searched for in this way, the pixel values of the pixels of the color image at the positions corresponding to the interpolation target pixels in the template are acquired. When only the most similar pattern is used, the pixel values acquired in this way can be used as the pixel values of the interpolation pixels. For example, when the color image is a RGB image, the R, G, and B component values of the candidate pixel values may be acquired from the R, G, and B plain images, respectively. Moreover, when a plurality of patterns selected in descending order of the degrees of coincidence are used, the pixel values acquired from the plurality of patterns may be synthesized to obtain the pixel values of the interpolation target pixels. As a method of synthesizing pixel values, there are a method of averaging the pixel values with a fixed weighting, and a method of calculating a weighted average by controlling weighting such that a large weighting is applied as the degree of coincidence of the similar pattern increases.</p>
+<p id="p-0090" num="0089">The template matching includes one-dimensional template matching and two-dimensional template matching. In the two-dimensional template matching, optional regions in the vicinity of an interpolation target pixel within an image, that is, region presented in the left and right sides or the upper and lower sides or in the oblique direction of the interpolation target pixel are cut as patterns, and the degree of coincidence between the pattern and the template is calculated to thereby search for the most similar pattern. In this embodiment, the template matching employed by the first pixel value generating unit <b>32</b> is two-dimensional template matching. In contrast, in one-dimensional template matching, patterns are cut from one line including the interpolation target pixel, and the most similar pattern is searched for. Since the two-dimensional template matching and the one-dimensional template matching are different interpolation methods, these interpolation methods can be employed in the second pixel value generating unit <b>33</b>, the third pixel value generating unit, and the like which will be described later.</p>
+<p id="p-0091" num="0090">The second pixel value generating unit <b>33</b> generates the pixel value of the interpolation target pixel using a different interpolation method from that of the first pixel value generating unit <b>32</b>. As the different interpolation method, an interpolating method can be used. The interpolating method includes nearest-neighbor interpolation (0-order interpolation), linear interpolation (1-order interpolation), parabolic interpolation (2-order interpolation), cubic interpolation (3-order interpolation), polynomial interpolation, spline interpolation, Lagrange interpolation, and the like. Moreover, bilinear interpolation, bicubic interpolation, and the like which expand linear interpolation or cubic interpolation two-dimensionally can also be used.</p>
+<p id="p-0092" num="0091">Meanwhile, the term &#x201c;interpolation method&#x201d; as used in this disclosure is intended to encompass: the &#x201c;interpolating method&#x201d; such as the nearest-neighbor interpolation, linear interpolation, parabolic interpolation, cubic interpolation, polynomial interpolation, spline interpolation, or Lagrange interpolation; the &#x201c;pattern matching method&#x201d; including template matching as describe above; and any other type of method for interpolating a pixel.</p>
+<p id="p-0093" num="0092">When there are pixels A to F arranged in that order on one line, and the pixel value of the pixel C is missing, the graph showing the relation between the position and the pixel value of that pixel is as illustrated in <figref idref="DRAWINGS">FIG. 7A</figref>. The actual pixel value of the pixel C is a value indicated by a white circle. In this case, since the pixel value increases by a certain value as the pixel position moves by one pixel, the relation between the position and the pixel value of the pixel can be expressed by a linear function. Thus, the pixel value of the pixel C which is to be inserted can be calculated using the obtained linear function (linear interpolation).</p>
+<p id="p-0094" num="0093">Moreover, when the relation is expressed by a curve as illustrated in <figref idref="DRAWINGS">FIG. 7B</figref>, the pixel value can be calculated by selecting an interpolation method most ideal to that curve. The parabolic interpolation can be selected when the relation can be expressed by a quadratic function, the cubic interpolation can be selected when the relation can be expressed by a cubic function, the polynomial interpolation or the Lagrange interpolation can be selected when the relation can be expressed by a polynomial expression, and the spline interpolation can be selected when the relation can be expressed by individual polynomial expressions.</p>
+<p id="p-0095" num="0094">In this example, the first pixel value generating unit <b>32</b> employs the pattern matching method, and the second pixel value generating unit <b>33</b> employs the interpolating method. Alternatively, the first pixel value generating unit <b>32</b> may employ the interpolating method, and the second pixel value generating unit <b>33</b> may employ the pattern matching method. Moreover, the pixel value generating units may employ the same pattern matching method but using two-dimensional template matching for one and one-dimensional template matching for the other. Similarly, the pixel value generating units may employ the same interpolating method but using linear interpolation for one and spline interpolation for the other.</p>
+<p id="p-0096" num="0095">The control unit <b>34</b> receives the data of plain images which are color-separated by the color separating unit <b>30</b> and are made up only of their respective color components, sends the data to the periodicity determining unit <b>31</b>, receives the result of the determination by the periodicity determining unit <b>31</b>, and determines which one of the first pixel value generating unit <b>32</b> and the second pixel value generating unit <b>33</b> to be used for generating the pixel values based on the determination result. When the periodicity determining unit <b>31</b> determines that the data have periodicity, the control unit <b>34</b> may employ the first pixel value generating unit <b>32</b> which uses the pattern matching method, and otherwise, the control unit <b>34</b> may employ the second pixel value generating unit <b>33</b> which uses the interpolating method. Moreover, the control unit <b>34</b> sends the image data to the determined one of the first pixel value generating unit <b>32</b> and the second pixel value generating unit <b>33</b>, receives a plurality of pixel values generated by the determined pixel value generating unit as candidate pixel values, sends the candidate pixel values to the pixel value combining unit <b>35</b>, obtains one combined pixel value obtained by combination, and sends the combined pixel value to the pixel value inserting unit <b>36</b> together with the data of the color image and the position information of the set pixel.</p>
+<p id="p-0097" num="0096">The periodicity determining unit <b>31</b>, the first pixel value generating unit <b>32</b>, the second pixel value generating unit <b>33</b>, and the control unit <b>34</b> repeat the processes of determining the periodicity, determining the interpolation method, and generating candidate pixel values with respect to the respective plain images to thereby acquire candidate pixel values of the respective plain images.</p>
+<p id="p-0098" num="0097">The pixel value combining unit <b>35</b> combines the candidate pixel values corresponding to the number of plain images to thereby generate one combined pixel value. As the combination method that can be employed in this case, the following methods can be used.</p>
+<p id="p-0099" num="0098">As one exemplary method, weighted average can be used. The weighted average is a method of calculating the average by applying weighting to individual candidate pixel values. Specifically, the values (weight values) corresponding to weighting determined for the respective candidate pixel values are multiplied with the respective candidate pixel values, the sum of the multiplication results are calculated, and the sum is divided by the sum of weight values to thereby calculating a combined pixel value.</p>
+<p id="p-0100" num="0099">In the above example, although different weight values are employed for each candidate pixel value, the embodiment is not limited to this. The same weight values may be employed for all the candidate pixel values, or alternatively, the weight value of some candidate pixel values may be set to 0 and only specific candidate pixel values may be selectively employed.</p>
+<p id="p-0101" num="0100">As another method, a method of combining the color component values of candidate pixel values may be used. This method is to acquire the R, G, and B component values of the candidate pixel values obtained from the R, G, and B plain images of the red, green, and blue components of a processing target image, respectively, and reduce the respective R, G, and B component values as one RGB value. In this method, a gain or an offset may be applied to each of the R, G, and B component values to correct the values. The gain or the offset may be calculated, for example, by a method of determining the gain or the offset so that the respective candidate pixel values have the same brightness value.</p>
+<p id="p-0102" num="0101">Moreover, a method of combining the candidate pixel values using a combination expression may be used. This method is to combine the respective candidate pixel values using Expressions (4) to (10) below to reduce them to one pixel value. In Expressions (4) to (6) below, the combined pixel value of a pixel is represented as (r&#x2032;, g&#x2032;, b&#x2032;), the R, G, and B component values are represented as r, g, and b, and the candidate pixel values of the R, G, and B plain images are represented as (r<sub>R</sub>, g<sub>R</sub>, b<sub>R</sub>), (r<sub>G</sub>, g<sub>G</sub>, b<sub>c</sub>), and (r<sub>B</sub>, g<sub>B</sub>, b<sub>B</sub>), respectively. Moreover, &#x201c;&#x3b1;&#x201d; in Expressions (4) to (6) is the value calculated by Expression (10).</p>
+<p id="p-0103" num="0102">
+<maths id="MATH-US-00004" num="00004">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msup>
+          <mi>r</mi>
+          <mi>&#x2032;</mi>
+        </msup>
+        <mo>=</mo>
+        <mrow>
+          <mi>&#x3b1;</mi>
+          <mo>&#xd7;</mo>
+          <msub>
+            <mi>r</mi>
+            <mi>R</mi>
+          </msub>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>4</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msup>
+          <mi>g</mi>
+          <mi>&#x2032;</mi>
+        </msup>
+        <mo>=</mo>
+        <mrow>
+          <mi>&#x3b1;</mi>
+          <mo>&#xd7;</mo>
+          <msub>
+            <mi>g</mi>
+            <mi>G</mi>
+          </msub>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>5</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msup>
+          <mi>b</mi>
+          <mi>&#x2032;</mi>
+        </msup>
+        <mo>=</mo>
+        <mrow>
+          <mi>&#x3b1;</mi>
+          <mo>&#xd7;</mo>
+          <msub>
+            <mi>b</mi>
+            <mi>B</mi>
+          </msub>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>6</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>r</mi>
+          <mi>T</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <msub>
+            <mi>r</mi>
+            <mi>R</mi>
+          </msub>
+          <mo>+</mo>
+          <msub>
+            <mi>r</mi>
+            <mi>G</mi>
+          </msub>
+          <mo>+</mo>
+          <msub>
+            <mi>r</mi>
+            <mi>B</mi>
+          </msub>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>7</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>g</mi>
+          <mi>T</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <msub>
+            <mi>g</mi>
+            <mi>R</mi>
+          </msub>
+          <mo>+</mo>
+          <msub>
+            <mi>g</mi>
+            <mi>G</mi>
+          </msub>
+          <mo>+</mo>
+          <msub>
+            <mi>g</mi>
+            <mi>B</mi>
+          </msub>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>8</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>b</mi>
+          <mi>T</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <msub>
+            <mi>b</mi>
+            <mi>R</mi>
+          </msub>
+          <mo>+</mo>
+          <msub>
+            <mi>b</mi>
+            <mi>G</mi>
+          </msub>
+          <mo>+</mo>
+          <msub>
+            <mi>b</mi>
+            <mi>B</mi>
+          </msub>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>9</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mi>&#x3b1;</mi>
+        <mo>=</mo>
+        <mfrac>
+          <mrow>
+            <msub>
+              <mi>r</mi>
+              <mi>R</mi>
+            </msub>
+            <mo>+</mo>
+            <msub>
+              <mi>g</mi>
+              <mi>G</mi>
+            </msub>
+            <mo>+</mo>
+            <msub>
+              <mi>b</mi>
+              <mi>B</mi>
+            </msub>
+          </mrow>
+          <mrow>
+            <msub>
+              <mi>r</mi>
+              <mi>T</mi>
+            </msub>
+            <mo>+</mo>
+            <msub>
+              <mi>g</mi>
+              <mi>T</mi>
+            </msub>
+            <mo>+</mo>
+            <msub>
+              <mi>b</mi>
+              <mi>T</mi>
+            </msub>
+          </mrow>
+        </mfrac>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>10</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0104" num="0103">The pixel value inserting unit <b>36</b> inserts the combined pixel value calculated by the pixel value combining unit <b>35</b> into the interpolation target pixel set in advance. The pixel value inserting unit <b>36</b> sets the combined pixel value combined and calculated by the pixel value combining unit <b>35</b> to the interpolation target pixel, and when the combined pixel value has already been set, replaces the set combined pixel value with the combined pixel value to thereby insert the pixel value to the interpolation target pixel. In this way, the interpolation process for one interpolation target pixel is completed. When there is a plurality of interpolation target pixels, the processes in the respective units are repeated plural times corresponding to the number of interpolation target pixels.</p>
+<p id="p-0105" num="0104">When the pixel value inserting unit <b>36</b> inserts the combined pixel value, the following two methods can be used. One method is to insert the combined pixel value to the interpolation target pixel of the color image. That is, this method is to insert the combined pixel value to the position of the interpolation target pixel in the original color image. When it is desired to interpolate only the specific color component value, it is possible to interpolate only the specific color component value by replacing the color component value of the interpolation target pixel using the corresponding color component value of the combined pixel value.</p>
+<p id="p-0106" num="0105">The other method is to insert the color component value of the combined pixel value to the interpolation target pixel for each plain image. This method is to insert the corresponding color component value of the combined pixel value to the interpolation target pixel for each plain image to complete the interpolation process of the interpolation target pixel with respect to all the plain images and then to combine the plain images to obtain the original color image. As the value inserted to the plain image, the color component value of the combined pixel value corresponding to the plain image is used. For example, when the color image is a RGB image, the R, G, and B component values of the combined pixel values are set to the R, G, and B plain images to complete the interpolation process, and then, all the plain images of RGB are combined to obtain the original RGB color image. When the position of the interpolation target pixel is different for each plain image, the corresponding color component value of the combined pixel value is inserted to the plain image which is presently being interpolated, and the other component values of the combined pixel values are discarded.</p>
+<p id="p-0107" num="0106">The process in which these respective units perform the respective processes to generate the pixel value of the interpolation target pixel, the interpolation target pixel is interpolated with the pixel value will be described with reference to the focus lens illustrated in <figref idref="DRAWINGS">FIG. 8</figref>. When this process starts from step S<b>800</b>, first, in step S<b>805</b>, the color separating unit <b>30</b> separates a processing target image into color components designated in advance to generate plain images made up only of their respective color components. After that, in step S<b>810</b>, the pixel specifying unit detects an interpolation target pixel into which its pixel value will be inserted from one plain image to set the interpolation target pixel to be interpolated with the pixel value. This detection can be performed using the above-described method. When there is a plurality of interpolation target pixels, one pixel may be selected sequentially in the arrangement order based on the coordinate position at which the pixels are arranged, for example, and the selected pixel may be set as the interpolation target pixel.</p>
+<p id="p-0108" num="0107">In step S<b>815</b>, the periodicity determining unit <b>31</b> designates a region including the interpolation target pixel and determines whether a variation in the pixel values within the region has periodicity. The determination region is designated using the method of determining the size of the region and the method of determining periodicity, and the presence of periodicity is determined.</p>
+<p id="p-0109" num="0108">Subsequently, in step S<b>820</b>, an interpolation method used for the interpolation target pixel is determined. In this step, the control unit <b>34</b> determines one of the first pixel value generating unit <b>32</b> and the second pixel value generating unit <b>33</b> to be employed for generating the pixel value of the interpolation target pixel based on the determination result in step S<b>815</b>. As described above, when the periodicity determining unit <b>31</b> determines that periodicity is present, the pattern matching method is selected. When the periodicity determining unit <b>31</b> determines that periodicity is not present, the interpolating method is selected.</p>
+<p id="p-0110" num="0109">In step S<b>825</b>, it is determined whether the first pixel value generating unit <b>32</b> is employed. When the interpolation method selected in step S<b>820</b> is the pattern matching method, it is determined that the first pixel value generating unit <b>32</b> performing the interpolation process using the pattern matching method is to be employed. On the other hand, when the interpolation method other than the pattern matching method, it is determined that the first pixel value generating unit <b>32</b> is not to be employed.</p>
+<p id="p-0111" num="0110">When the first pixel value generating unit <b>32</b> is determined to be employed in step S<b>825</b>, the flow proceeds to step S<b>830</b>. In step S<b>830</b>, a similar pattern is searched for by the pattern matching method used by the first pixel value generating unit <b>32</b>, and the candidates of pixel values, namely candidate pixel values to be inserted to the interpolation target pixel are generated based on the similar pattern thus searched for. On the other hand, when the first pixel value generating unit <b>32</b> is determined not to be employed in step S<b>825</b>, the flow proceeds to step S<b>835</b>. In step S<b>835</b>, the candidate pixel values of the interpolation target pixel are generated by the interpolating method used by the second pixel value generating unit <b>33</b>.</p>
+<p id="p-0112" num="0111">In step S<b>840</b>, it is determined whether the candidate pixel values to be inserted to the interpolation target pixel have been completely generated with respect to all the plain images. When the candidate pixel values have not been completely generated with respect to all the plain images, the flow returns to step S<b>815</b>, and the periodicity is determined with respect to the next plain image. On the other hand, when the candidate pixel values have been completely generated with respect to all the plain images, the flow proceeds to step S<b>845</b>, and the generated candidate pixel values are combined to calculate one combined pixel value to be inserted to the interpolation target pixel. As for the combination method, the candidate pixel values can be combined by the above-described method.</p>
+<p id="p-0113" num="0112">Subsequently, in step S<b>850</b>, the combined pixel value calculated in step S<b>845</b> is inserted to the interpolation target pixel set in step S<b>810</b>. Since the interpolation target pixel does not have a pixel value or have an incorrect value if it has, a pixel value is set to the interpolation target pixel by inserting the generated pixel value into the interpolation target pixel. The insertion of the combined pixel value can be performed by any one of the two methods described above. Then, the flow proceeds to step S<b>855</b>, and it is determined whether all the interpolation target pixels have been completely interpolated. When a plurality of interpolation target pixels is detected in step S<b>810</b>, it is determined whether all the plurality of interpolation target pixels have been interpolated with the generated pixel values.</p>
+<p id="p-0114" num="0113">When it is determined in step S<b>855</b> that all the interpolation target pixels have been completely interpolated, the flow proceeds to step S<b>860</b>, and this process ends. On the other hand, when it is determined that all the interpolation target pixels have not been completely interpolated, the flow returns to step S<b>810</b>. In step S<b>810</b>, a process of specifying the next interpolation target pixel, generating the candidate pixel values, combining the candidate pixel values to calculate a combined pixel value, and inserting the combined pixel value is performed.</p>
+<p id="p-0115" num="0114">In step S<b>815</b>, in order to determine the periodicity in the region including the interpolation target pixel, a process as illustrated in <figref idref="DRAWINGS">FIG. 9</figref> may be executed. First, in step S<b>900</b>, the step of determining the periodicity starts. In step S<b>905</b>, a representative cycle is calculated using the pixel values of the respective pixels within the determination region. That is, the representative cycle necessary for calculating the degree of confidence as well as necessary for determining the size of the template and the region to be searched is calculated. Moreover, in step S<b>910</b>, the periodicity in the entire determination region is determined using the representative cycle.</p>
+<p id="p-0116" num="0115">Subsequently, in step S<b>915</b>, the determination region is divided into regions to the left and right sides of the interpolation target pixel, and the left and right regions are set. In this example, the periodicity determining unit <b>31</b> further includes a partial region periodicity determining unit, and the partial region periodicity determining unit divides the determination region into the left and right regions, sets these regions as the partial regions, and determines whether periodicity is present in the respective partial regions.</p>
+<p id="p-0117" num="0116">Thus, in step S<b>920</b>, the representative cycle in the region on the left side of the interpolation target pixel is calculated, and the periodicity is determined using the representative cycle. In step S<b>925</b>, the representative cycle in the region on the right side of the interpolation target pixel is calculated, and the periodicity is determined using the representative cycle. When these determination processes ends, the periodicity determination process of step S<b>930</b> ends.</p>
+<p id="p-0118" num="0117">In steps S<b>915</b> to S<b>925</b>, a determination region <b>51</b> is set so that an interpolation target pixel <b>50</b> is located at the center as illustrated in <figref idref="DRAWINGS">FIG. 10A</figref>, the determination region <b>51</b> is divided to have partial regions on the left and right sides of the interpolation target pixel <b>50</b> as illustrated in <figref idref="DRAWINGS">FIG. 10B</figref>. The region on the left side of the interpolation target pixel <b>50</b> is set as a partial region <b>52</b> for determining the periodicity of the left side, and a region on the right side of the interpolation target pixel <b>50</b> is set as a partial region <b>53</b> for determining the periodicity of the right side. In this way, the periodicity of the partial regions <b>52</b> and <b>53</b> can be determined.</p>
+<p id="p-0119" num="0118">As long as the presence of periodicity can be appropriately determined, it is not necessary to set, as the determination regions, the large partial regions <b>52</b> and <b>53</b> positioned on the left and right sides of the interpolation target pixel <b>50</b>, which are obtained by excluding the interpolation target pixel <b>50</b> and the upper and lower pixels thereof from the determination region <b>51</b> as illustrated in <figref idref="DRAWINGS">FIG. 10B</figref>. Instead, smaller partial regions <b>54</b> and <b>55</b> as illustrated in <figref idref="DRAWINGS">FIG. 100</figref> may be set. Moreover, the partial region needs not be located inside the determination region <b>51</b> but may be set so as to partially protrude out from the determination region <b>51</b>.</p>
+<p id="p-0120" num="0119">In <figref idref="DRAWINGS">FIG. 10B</figref>, although the determination region <b>51</b> is set as a two-dimensional region having predetermined width and height of three pixels or more, the determination region <b>51</b> may be set as a one-dimensional region having the same height as the interpolation target pixel <b>50</b>, namely one pixel, and having a width made up of a predetermined number of pixels.</p>
+<p id="p-0121" num="0120">As above, by determining the periodicity in the regions on the left and right sides of the interpolation target pixel and the periodicity in the entire determination region including the interpolation target pixel, it is possible to determine the periodicity in the region including the interpolation target pixel. That is, if the entire region has periodicity, it can be said that the region including the interpolation target pixel has periodicity, and the region including the interpolation target pixel can be determined as a region having periodicity.</p>
+<p id="p-0122" num="0121">In the determination performed in steps S<b>910</b>, S<b>920</b>, and S<b>925</b>, the process illustrated in <figref idref="DRAWINGS">FIG. 11</figref> is performed in order to determine the presence of the respective periodicities. First, in step S<b>1100</b>, when the respective steps (steps S<b>910</b>, S<b>920</b>, and S<b>925</b>) are executed, the processes are started. In step S<b>1105</b>, the maximum frequency of the distance between peaks at which the pixel value within the determination region reaches its local maximum is calculated in the above-described manner, and the maximum frequency is calculated as the representative cycle of the pixel values. Since the representative cycle in the entire determination region is calculated in step S<b>910</b>, the representative cycle calculated in that step can be employed, and the description thereof will not be described.</p>
+<p id="p-0123" num="0122">Subsequently, in step S<b>1110</b>, the degree of confidence is calculated using the representative cycle calculated in the previous steps. The degree of confidence can be calculated using Expression (3) described above. In step S<b>1115</b>, it is determined whether the calculated degree of confidence exceeds a threshold value, whereby the presence of periodicity is determined, and this process ends in step S<b>1120</b>. When the degree of confidence exceeds the threshold value, it is determined that the periodicity is present. When the degree of confidence is equal to or smaller than the threshold value, it is determined that the periodicity is not present.</p>
+<p id="p-0124" num="0123">In the flow of the processes illustrated in <figref idref="DRAWINGS">FIG. 9</figref>, after estimating the representative cycle, the periodicity in the entire determination region is determined. Subsequently, the periodicity in the left partial region is determined, and subsequently thereto, the periodicity in the right partial region is determined, whereby the periodicity in the region including the interpolation target pixel is determined. However, the embodiment is not limited to this. For example, after determining the periodicity in the left and right partial regions, the periodicity in the entire determination region may be determined. Alternatively, when it is determined that the periodicity is present in the left and right partial regions, the cycles thereof may be employed as the representative cycle, and it is determined that periodicity is present in the entire determination region. On the other hand, when it is determined that periodicity is not present in both the left and right partial regions, it is determined that periodicity is not present in the entire determination region.</p>
+<p id="p-0125" num="0124">Thus, if it is determined that periodicity is present in at least one of the left and right partial regions, it is determined that periodicity is present. On the other hand, if it is determined that periodicity is not present in both partial regions, it is determined that periodicity is not present in the entire determination region. This is because, if it is determined that periodicity is present in at least one of the left and right partial regions, it is highly likely that periodicity is present in the region including the interpolation target pixel. Thus, interpolation can be performed with higher accuracy when the interpolation process is performed by employing the interpolation method used when it is determined that periodicity is present in the determination region.</p>
+<p id="p-0126" num="0125">In step S<b>830</b> illustrated in <figref idref="DRAWINGS">FIG. 8</figref>, when the first pixel value generating unit <b>32</b> generates the pixel value of an interpolation target pixel by the template matching, the first pixel value generating unit <b>32</b> executes the process illustrated in <figref idref="DRAWINGS">FIG. 12</figref>. First, in step S<b>1200</b>, this process starts, and the size of the template is determined in step S<b>1205</b>. The size can be determined with reference to the representative cycle as described above.</p>
+<p id="p-0127" num="0126">Subsequently, in step S<b>1210</b>, based on the size of the template thus determined, a region having the size including the interpolation target pixel is cut, and the cut region is generated as a base pattern. In step S<b>1215</b>, a region to be searched to retrieve a similar pattern is determined and set based on the representative cycle. The region to be searched can be determined and set as described above. Moreover, in step S<b>1220</b>, the generated base pattern is used as the template, and a similar pattern is calculated and searched for from the set region to be searched. The searching of a similar pattern can be performed by calculating the degrees of coincidence with the template and selecting a pattern having the highest degree of coincidence.</p>
+<p id="p-0128" num="0127">In step S<b>1225</b>, the similar pattern thus searched for and the template used for searching for the similar pattern are compared with each other, and the pixel value of a pixel within the similar pattern at the position corresponding to the position of the interpolation target pixel within the template is acquired as the candidate pixel value to be inserted to the interpolation target pixel. When the candidate pixel value is acquired, the flow proceeds to step S<b>1230</b>, and the process ends.</p>
+<p id="p-0129" num="0128">Next, a second embodiment of the image processing apparatus according to the present invention will be described. The image processing apparatus has the same configuration as that illustrated in <figref idref="DRAWINGS">FIG. 2</figref>, and the flow of the overall process is the same as that of the flowchart illustrated in <figref idref="DRAWINGS">FIG. 8</figref>. Thus, the description thereof will not be provided herein, and only the details of the process performed in step S<b>845</b> illustrated in <figref idref="DRAWINGS">FIG. 8</figref> will be described in detail with reference to <figref idref="DRAWINGS">FIG. 13</figref>.</p>
+<p id="p-0130" num="0129">The process illustrated in <figref idref="DRAWINGS">FIG. 13</figref> starts from step S<b>1300</b> in response to the start of the process of step S<b>845</b> illustrated in <figref idref="DRAWINGS">FIG. 8</figref>. In step S<b>1305</b>, the pixel value combining unit <b>35</b> determines whether the generated candidate pixel values are suitable for combination.</p>
+<p id="p-0131" num="0130">As an example of the criterion for determining whether the candidate pixel values are suitable for combination, it can be determined by determining which one of the pixel value generating units has generated the candidate pixel values. Specifically, when a criterion that only the candidate pixel values generated by the first pixel value generating unit <b>32</b> should be used is set, and the obtained candidate pixel values are generated by the first pixel value generating unit <b>32</b>, the candidate pixel values are determined to be suitable, and otherwise, the candidate pixel values are determined not to be suitable. On the other hand, when a criterion that only the candidate pixel values generated by the second pixel value generating unit <b>33</b> should be used is set, and the obtained candidate pixel values are generated by the second pixel value generating unit <b>33</b>, the candidate pixel values are determined to be suitable, and otherwise, the candidate pixel values are determined not to be suitable.</p>
+<p id="p-0132" num="0131">This is because when the first pixel value generating unit <b>32</b> generates candidate pixel values using the pattern matching method, the second pixel value generating unit <b>33</b> generates candidate pixel values by the interpolating method, and combination is performed under a condition where the candidate pixel values generated by the respective pixel value generating units coexist, high-frequency components which can be reproduced with high accuracy if all the periodic regions were reproduced using the results based on the pattern matching method are not reproduced with high accuracy due to the coexistence of the results based on the interpolating method having lower accuracy. As a result, the interpolation accuracy decreases. In this case, by setting a determination criterion such that the candidate pixel values generated by the first pixel value generating unit <b>32</b> are employed preferentially, it is possible to solve the problem associated with a decrease in interpolation accuracy.</p>
+<p id="p-0133" num="0132">Subsequently, in step S<b>1310</b>, it is determined whether there is a candidate pixel value suitable for combination. This can be determined based on the determination result in step S<b>1305</b>. When there is a suitable candidate pixel value, the flow proceeds to step S<b>1315</b>, and a candidate pixel value which is not suitable for combination is replaced with the candidate pixel value generated by another interpolation method. In step S<b>1320</b>, the candidate pixel value(s) suitable for combination and the replaced candidate pixel value(s) are combined by the above combination method to thereby generate one combined pixel value.</p>
+<p id="p-0134" num="0133">Specifically, when the candidate pixel values generated by the first pixel value generating unit <b>32</b> are determined to be candidate pixel values suitable for combination, and a part of the candidate pixel values are generated by the second pixel value generating unit <b>33</b>, since there is a suitable candidate pixel value, the flow proceeds to step S<b>1315</b>. Then, the candidate pixel value which is not suitable and generated by the second pixel value generating unit <b>33</b> is replaced with the candidate pixel value generated by the first pixel value generating unit <b>32</b>, and the candidate pixel values are combined in step S<b>1320</b>.</p>
+<p id="p-0135" num="0134">When there is no suitable candidate pixel value, since any of the candidate pixel values is generated by the second pixel value generating unit <b>33</b>, the flow proceeds to step S<b>1325</b>. Then, the candidate pixel values are averaged to generate one combined pixel value. In this way, when the combined pixel value is generated in step S<b>1320</b> or S<b>1325</b>, the flow proceeds to step S<b>1330</b>, and the process ends.</p>
+<p id="p-0136" num="0135">In this example, although the candidate pixel values are averaged in step S<b>1325</b> to generate one combined pixel value, one of the candidate pixel values may be selected as a representative value, and the representative value may be used as the combined pixel value. By generating only the candidate pixel values suitable for combination without generating candidate pixel values which are not suitable for combination, it is possible to eliminate the processes of steps S<b>1305</b> to S<b>1315</b> and step S<b>1325</b>.</p>
+<p id="p-0137" num="0136">Next, a third embodiment of the image processing apparatus will be described. The image processing apparatus has the same configuration as that illustrated in <figref idref="DRAWINGS">FIG. 2</figref>, and the flow of the overall process is the same as that of the flowchart illustrated in <figref idref="DRAWINGS">FIG. 8</figref>. Thus, the description thereof will not be provided herein, and only the details of the process performed in step S<b>845</b> illustrated in <figref idref="DRAWINGS">FIG. 8</figref> will be described in detail with reference to <figref idref="DRAWINGS">FIG. 14</figref>.</p>
+<p id="p-0138" num="0137">The process illustrated in <figref idref="DRAWINGS">FIG. 14</figref> starts from step S<b>1400</b> in response to the start of the process of step S<b>845</b> illustrated in <figref idref="DRAWINGS">FIG. 8</figref>. In step S<b>1405</b>, a combination method, which remains untested with respect to the suitability of pixel values generated as a result of use of the combination method, is selected from predetermined combination methods. As the combination methods, the above-mentioned methods can be used.</p>
+<p id="p-0139" num="0138">In step S<b>1410</b>, the candidate pixel values are combined using the selected method to generate one pixel value. Subsequently, in step S<b>1415</b>, it is determined whether the generated pixel value is suitable for interpolation. As the determination method, a determination method which uses template matching may be used.</p>
+<p id="p-0140" num="0139">The determination method is approximately the same as the flow of processes according to the template matching method described above. First, the size of a template is determined. Subsequently, the template is generated, and a region to be searched is determined. Then, the degrees of coincidence with the template at the respective positions within the determined region to be searched are calculated, and the position having the highest degree of coincidence is selected as the similar pattern.</p>
+<p id="p-0141" num="0140">Since the processing target image is a color image, it is necessary to calculate the degrees of coincidence between pixels made up of a plurality of color components. As an example of this calculation, a method which uses the distance between two pixel values in a specific color space such as a color-difference space may be used. Specifically, in the case of a Lab color space, the distance can be calculated by calculating the squares of the differences between the respective values of L, a, and b, adding the squares, and finding the square root of the addition result. The degree of coincidence increases as the distance decreases, and the degree of coincidence decreases as the distance increases.</p>
+<p id="p-0142" num="0141">In addition to the above method, a method which uses plain images separated for each color component may be used. When using plain images, the degrees of coincidence are calculated from the distance between two pixel values and synthesizing the degrees of coincidence to thereby obtain a final degree of coincidence. As a method of synthesizing the degrees of coincidence, a method of calculating the weighted average described above, a method of employing the highest or lowest degree of coincidence, and the like can be used.</p>
+<p id="p-0143" num="0142">After calculating the degree of coincidence with respect to the combination method of candidate pixel values selected in this way, it is determined in step S<b>1420</b> whether suitability has been determined with respect to all the combination methods. When there is a candidate pixel value combination method of which the suitability has not been determined, the flow returns to step S<b>1405</b>, and the processes of steps S<b>1405</b> to S<b>1420</b> are repeated for the remaining combination methods. Rather than determining the suitability for all the combination methods, a threshold value of the degree of coincidence may be set, and the processes of steps S<b>1405</b> to S<b>1420</b> may be skipped when a combination method having a sufficient level of suitability such that the degree of coincidence thereof is equal to or higher than the threshold value is detected.</p>
+<p id="p-0144" num="0143">When it is determined in step S<b>1420</b> that suitability has been determined for all the combination methods, the flow proceeds to step S<b>1425</b>. In step S<b>1425</b>, a combined pixel value obtained by a combination method having the highest degree of coincidence among the calculated degrees of coincidence is determined to be the pixel value to be inserted to the interpolation target pixel. Then, the pixel value combining unit <b>35</b> outputs the pixel value to the control unit <b>34</b>, and the process ends in step S<b>1430</b>.</p>
+<p id="p-0145" num="0144">After the process ends, the flow proceeds to step S<b>850</b> in <figref idref="DRAWINGS">FIG. 8</figref>, and the pixel value inserting unit <b>36</b> inserts the combined pixel value output by the control unit <b>34</b> to the interpolation target pixel set in step S<b>810</b>. In step S<b>855</b>, it is determined whether all the interpolation target pixels have been completely interpolated. When it is determined that all the interpolation pixels have been completely interpolated, the flow proceeds to step S<b>860</b>, and the interpolation process for the processing target image ends.</p>
+<p id="p-0146" num="0145">Next, a fourth embodiment according to the image processing apparatus will be described. The image processing apparatus has the same configuration as that illustrated in <figref idref="DRAWINGS">FIG. 2</figref>, and the flow of the overall process is the same as that of the flowchart illustrated in <figref idref="DRAWINGS">FIG. 8</figref>. Thus, the description thereof will not be provided herein, and only the details of the process performed in step S<b>845</b> illustrated in <figref idref="DRAWINGS">FIG. 8</figref> will be described in detail with reference to <figref idref="DRAWINGS">FIG. 15</figref>.</p>
+<p id="p-0147" num="0146">The process illustrated in <figref idref="DRAWINGS">FIG. 15</figref> starts from step S<b>1500</b> in response to the start of the process of step S<b>845</b> illustrated in <figref idref="DRAWINGS">FIG. 8</figref>. In step S<b>1505</b>, a method which does not determine the suitability of pixel values generated by combination is selected from predetermined combination methods similarly to the embodiment illustrated in <figref idref="DRAWINGS">FIG. 14</figref>. As the combination methods, the above-mentioned methods may be used.</p>
+<p id="p-0148" num="0147">In step S<b>1510</b>, a combination of candidate pixel values is selected. That is, a predetermined number of candidate pixel values are selected from the candidate pixel values that are present corresponding to the number of plain images, and a set of the selected candidate pixel values is created. The number of candidate pixel values may be any number if it is equal to or larger than 1 and equal to or smaller than the total pixel count. However, if there is a limitation in the number of candidate pixel values depending on the combination method, the number of candidate pixel values needs to be determined by the limitation.</p>
+<p id="p-0149" num="0148">For example, when an image is separated into four colors to generate four plain images, since one candidate pixel value is generated from a similar pattern having the highest degree of coincidence for each of the plain images, four candidate pixel values are generated for one interpolation target pixel. As an example of creating combinations, two candidate pixel values are selected and combined from the four candidate pixel values based on a predetermined number (in this example, two) of candidate pixel values to be combined. When the same pairs are created, one of them is discarded in order to prevent redundancy, and finally, six sets of candidate pixel value pairs are created.</p>
+<p id="p-0150" num="0149">Subsequently, in step S<b>1515</b>, one of the created sets of candidate pixel values is selected, and the candidate pixel values constituting the set are combined to calculate one combined pixel value. In step S<b>1520</b>, it is determined whether the calculated combined pixel value is suitable for interpolation. As the determination method, a determination method which uses template matching may be used.</p>
+<p id="p-0151" num="0150">In step S<b>1525</b>, it is determined whether the suitability has been determined with respect to all the sets. When there is a set of which the suitability has not been determined, the flow returns to step S<b>1510</b>, and another set is selected, and the processes of combining and determining suitability are repeated. In this case, rather than determining the suitability for all the sets, a threshold value of the degree of coincidence may be set, and the processes of steps S<b>1510</b> to S<b>1525</b> may be skipped when a set having a sufficient level of suitability such that the degree of coincidence thereof is equal to or higher than the threshold value is detected.</p>
+<p id="p-0152" num="0151">When it is determined in step S<b>1525</b> that suitability has been determined for all the sets, the flow proceeds to step S<b>1530</b>, and it is determined whether suitability has been determined for all the combination methods. When there is a combination method of which the suitability has not been determined, the flow returns to step S<b>1505</b>, another combination method is selected, and the processes of steps S<b>1510</b> to S<b>1525</b> are repeated. In this case, rather than determining the suitability for all the combination methods, a threshold value of the degree of coincidence may be set, and the processes of steps S<b>1505</b> to S<b>1530</b> may be skipped when a combination method having a sufficient level of suitability such that the degree of coincidence thereof is equal to or higher than the threshold value is detected.</p>
+<p id="p-0153" num="0152">When it is determined that suitability has been determined for all the combination methods, the flow proceeds to step S<b>1535</b>. In step S<b>1535</b>, a combined pixel value obtained by a combination method having the highest degree of coincidence among the calculated degrees of coincidence is determined to be the pixel value to be inserted to the interpolation target pixel. Then, the pixel value combining unit <b>35</b> outputs the pixel value to the control unit <b>34</b>, and the process ends in step S<b>1540</b>.</p>
+<p id="p-0154" num="0153">After the process ends, the flow proceeds to step S<b>850</b> in <figref idref="DRAWINGS">FIG. 8</figref>, and the pixel value inserting unit <b>36</b> inserts the combined pixel value output by the control unit <b>34</b> to the interpolation target pixel set in step S<b>810</b>. In step S<b>855</b>, it is determined whether all the interpolation pixels have been completely interpolated. When it is determined that all the interpolation pixels have been completely interpolated, the flow proceeds to step S<b>860</b>, and the interpolation process for the processing target image ends.</p>
+<p id="p-0155" num="0154"><figref idref="DRAWINGS">FIG. 16</figref> is a functional block diagram illustrating a fifth embodiment of the image processing apparatus. In this embodiment, the image processing apparatus includes a color separating unit <b>60</b>, a periodicity determining unit <b>61</b>, a first pixel value generating unit <b>62</b>, a second pixel value generating unit <b>63</b>, a control unit <b>64</b>, a pixel value combining unit <b>65</b>, and a pixel value inserting unit <b>66</b> which are the same as those of the first embodiment illustrated in <figref idref="DRAWINGS">FIG. 2</figref>. In addition, the image processing apparatus includes a boundary determining unit <b>67</b>, a validity verification unit <b>68</b>, and a third pixel value generating unit <b>69</b>.</p>
+<p id="p-0156" num="0155">Since the processes performed by the color separating unit <b>60</b>, the periodicity determining unit <b>61</b>, the first pixel value generating unit <b>62</b>, the second pixel value generating unit <b>63</b>, the control unit <b>64</b>, the pixel value combining unit <b>65</b>, and the pixel value inserting unit <b>66</b> are the same as those of the first embodiment, the description thereof will not be provided herein. Thus, the boundary determining unit <b>67</b>, the validity verification unit <b>68</b>, and the third pixel value generating unit <b>69</b> will be described.</p>
+<p id="p-0157" num="0156">The boundary determining unit <b>67</b> determines whether an interpolation target pixel actually belongs to a periodic region when the periodicity determining unit <b>61</b> determines that an image region including the interpolation target pixel is a region (periodic region) in which pixel values vary periodically. The interpolation target pixel is present either within a periodic region or a non-periodic region, and the pixel value of the interpolation target pixel can be estimated from the pixel values of pixels present in the vicinity of the interpolation target pixel within the same region. This is because a pattern made up of several continuous pixels including the interpolation target pixel is similar to patterns present in the vicinity thereof, the pattern can be estimated from the patterns present in the vicinity thereof.</p>
+<p id="p-0158" num="0157">However, when the interpolation target pixel is present in the vicinity of the boundary between a periodic region and a non-periodic region, if the interpolation target pixel is located within the periodic region whereas patterns, which are present in the vicinity thereof and are located in the non-periodic region, are employed, it is difficult to perform interpolation properly. Thus, the boundary determining unit <b>67</b> determines the region to which the interpolation target pixel actually belongs so that the pixel value can be estimated using the proper patterns located in the periodic region.</p>
+<p id="p-0159" num="0158">As an example thereof, reference regions are set at positions around the interpolation target pixel so as to be separated by a predetermined distance to the left and right sides of the interpolation target pixel, and the variance of the pixel value, which is one of the image characteristics, of the reference regions set to the left and right sides of the interpolation target pixel is individually calculated. When the variance in both the left and right reference regions is equal to or larger than a threshold value, the interpolation target pixel can be determined to be in the periodic region. When the variance is smaller than the threshold value, the interpolation target pixel can be determined to be in the non-periodic region.</p>
+<p id="p-0160" num="0159">The predetermined distance may be 3 pixels, for example. This is because when halftone dots are arranged at intervals of 6 pixels, for example, a template made up of three pixels on the left and right sides of an interpolation pixel is used in the pattern matching described later. Thus, the reference regions are set at the positions separated from the interpolation target pixel by 3 pixels on the left and right sides of the interpolation target pixel, which are the closest positions on the outer side of the template. The reason why the reference regions are set at those closest positions is because most patterns similar to the template are present in the vicinity of the template. The distance is not limited to 3 pixels, but any distance may be used if determination can be made appropriately.</p>
+<p id="p-0161" num="0160">The reference region may be a region having a height of 1 pixel including the interpolation target pixel, for example, namely one line of the image. Alternatively, the reference region may be a rectangular region having an optional height including the interpolation target pixel similarly to the determination region described above. This region may be set by the user in advance and may be dynamically set by the device similarly to the case of the determination region. The reference region is not limited to being located on the left and right sides of the interpolation target pixel, but one or more regions may be set, for example, on the upper and lower sides or the upper, lower, left, and right sides of the interpolation target pixel.</p>
+<p id="p-0162" num="0161">The variance can be calculated by Expression (11) below. In Expression (11), &#x201c;x<sub>i</sub>&#x201d; is the pixel value of the i-th pixel in the reference region, &#x201c;x<sub>m</sub>&#x201d; is the average value of the pixel values of the pixels in the reference region, and &#x201c;n&#x201d; is the number of pixels present in the reference region. The variance can be replaced with the difference between the maximum luminance value and the minimum luminance value of the pixels in the reference region, or in the case of color images, the difference between the maximum green component value (G component value) and the minimum G component value.</p>
+<p id="p-0163" num="0162">
+<maths id="MATH-US-00005" num="00005">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msup>
+          <mi>&#x3c3;</mi>
+          <mn>2</mn>
+        </msup>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mn>1</mn>
+            <mi>n</mi>
+          </mfrac>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <munderover>
+              <mo>&#x2211;</mo>
+              <mrow>
+                <mi>i</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+              <mi>n</mi>
+            </munderover>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <msup>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msub>
+                    <mi>x</mi>
+                    <mi>i</mi>
+                  </msub>
+                  <mo>-</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mi>m</mi>
+                  </msub>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>11</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0164" num="0163">The control unit <b>64</b> determines an interpolation method based on the result of the determination by the boundary determining unit <b>67</b> as well as the result of the periodicity determination by the periodicity determining unit <b>61</b>, determines which one of the first, second, and third pixel value generating units <b>62</b>, <b>63</b>, and <b>69</b> is to be employed, and causes the determined pixel value generating unit to generate a pixel value to be inserted to the interpolation target pixel. However, this may be realized by a parallel process such that the pixel values of the interpolation target pixel are generated in advance by all of the first, second, and third pixel value generating units <b>62</b>, <b>63</b>, and <b>69</b>, and the control unit <b>64</b> selects one of the respective pixel values. The third pixel value generating unit <b>69</b> generates candidate pixel values by an interpolation method different from the interpolation methods employed by the first and second pixel value generating units <b>62</b> and <b>63</b>.</p>
+<p id="p-0165" num="0164">The validity verification unit <b>68</b> verifies the validity of the candidate pixel values generated by the first, second, and third pixel value generating units <b>62</b>, <b>63</b>, and <b>69</b>. When it is verified that the candidate pixel value generated by one pixel value generating unit is not valid, another pixel value generating unit is caused to generate a candidate pixel value. Then, the validity verification unit <b>68</b> verifies the validity of the candidate pixel value again.</p>
+<p id="p-0166" num="0165">For example, verification of the validity of the candidate pixel value generated by the first pixel value generating unit <b>62</b> can be performed using related information obtained when the first pixel value generating unit <b>62</b> generates a pixel value. As the related information, when the first pixel value generating unit <b>62</b> uses a pattern matching method as the interpolation method, the degree of dissimilarity or the degree of similarity between the template and a comparison target pattern can be used. In this case, as the template, a template excluding the interpolation target pixel may be used, and a template in which the generated pixel value is inserted may be used. As the degree of dissimilarity or the degree of similarity, SAD, SSD, a correlation coefficient, covariance, and the like described above can be used.</p>
+<p id="p-0167" num="0166">The validity verification unit <b>68</b> can determine whether the candidate pixel value is valid by determining whether the degree of dissimilarity is smaller than a threshold value or the degree of similarity is equal to or larger than the threshold value. The candidate pixel value is determined to be valid when the degree of dissimilarity is smaller than the threshold value or the degree of similarity is equal to or larger than the threshold value.</p>
+<p id="p-0168" num="0167">Thus, the validity verification unit <b>68</b> may perform threshold processing on the degree of dissimilarity or the degree of similarity, and a condition in which the degree of dissimilarity is smaller than the threshold value, or the degree of similarity is equal to or larger than the threshold value may be used as the condition for determining the validity. This threshold value may be set by the user in advance, and may be determined dynamically by the device, similarly to the above-described threshold value and the like.</p>
+<p id="p-0169" num="0168">In conjunction with this, the control unit <b>64</b> causes the validity verification unit <b>68</b> to verify whether the candidate pixel value generated when the first pixel value generating unit <b>62</b> is employed is valid. When the candidate pixel value is determined not to be valid, the control unit <b>64</b> causes the third pixel value generating unit <b>69</b> to generate a candidate pixel value. When this candidate pixel value is also determined not to be valid, the control unit <b>64</b> causes the second pixel value generating unit <b>63</b> to generate a candidate pixel value. However, the embodiment is not limited to this, and this may be realized by a parallel process such that the candidate pixel values are generated in advance by all of the first, second, and third pixel value generating units <b>62</b>, <b>63</b>, and <b>69</b>, and the control unit <b>64</b> selects one of the respective candidate pixel values based on the result of the verification by the validity verification unit <b>68</b>.</p>
+<p id="p-0170" num="0169">The process of correcting the pixel value of the interpolation target pixel using the image processing apparatus illustrated in <figref idref="DRAWINGS">FIG. 16</figref> will be described with reference to the flowchart illustrated in <figref idref="DRAWINGS">FIG. 17</figref>. This process starts from step S<b>1700</b>. First, in step S<b>1705</b>, the color separating unit <b>60</b> separates a processing target image into color components designated in advance, and generates plain images which are images of the respective colors made up only of the respective color components. After that, in step S<b>1710</b>, the pixel specifying unit selects one plain image, detects, from the plain image, a pixel whose pixel value is to be inserted and sets the pixel as an interpolation target pixel. This detection may be performed using the above-described method. When there is a plurality of interpolation target pixels, one pixel may be selected sequentially in the arrangement order based on the coordinate position at which the pixels are arranged, for example, and the selected pixel may be set as the interpolation target pixel.</p>
+<p id="p-0171" num="0170">In step S<b>1715</b>, the periodicity determining unit <b>61</b> designates a region including the interpolation target pixel and determines whether a variation in the pixel values within a region including the interpolation target pixel has periodicity. The determination region is designated using the method of determining the size of the region and the method of determining periodicity, and the presence of periodicity is determined. Subsequently, in step S<b>1720</b>, the boundary determining unit <b>67</b> determines whether the interpolation target pixel is actually present in a periodic region or a non-periodic region. In this determination, the boundary determination method and the method of determining the reference region size are employed. The determination is performed by calculating the variance of the pixel values individually in the left and right reference regions and determining whether the calculated variances of both the left and right reference regions are equal to or larger than the threshold value. When the variances are equal to or larger than the threshold value, the interpolation target pixel is determined to be present in the periodic region.</p>
+<p id="p-0172" num="0171">Subsequently, in step S<b>1725</b>, an interpolation method to be used for the interpolation target pixel is determined. In this step, the control unit <b>64</b> determines which one of the interpolation methods employed by the first, second and third pixel value generating units <b>62</b>, <b>63</b>, and <b>69</b> will be employed for generating the candidate pixel value based on the determination results in steps S<b>1715</b> and S<b>1720</b>.</p>
+<p id="p-0173" num="0172">For example, when periodicity is present in the region including the interpolation target pixel, and the interpolation target pixel is present in the periodic region, the template matching method employed by the first pixel value generating unit <b>62</b> is used. When periodicity is present in the region including the interpolation target pixel, but the interpolation target pixel is present in the non-periodic region, the interpolating method employed by the second pixel value generating unit <b>63</b> is used. When periodicity is not present in the region including the interpolation pixel target, and the interpolation target pixel is present in the non-periodic region, the other interpolation method employed by the third pixel value generating unit <b>69</b> is used.</p>
+<p id="p-0174" num="0173">In addition to this, when the cycle of the region including the interpolation target pixel is short, and the interpolation target pixel is within the periodic region, the template matching method may be used. When the cycle in the region including the interpolation target pixel is short, and the interpolation target pixel is within the non-periodic region, the interpolating method may be used. In other cases, the interpolation method employed by the third pixel value generating unit <b>69</b> may be used.</p>
+<p id="p-0175" num="0174">The interpolation method employed by the third pixel value generating unit <b>69</b> may be any interpolation method if it is different from the interpolation methods employed by the first and second pixel value generating units <b>62</b> and <b>63</b>. For example, when the first pixel value generating unit <b>62</b> employs a template matching method, and the second pixel value generating unit <b>63</b> employs cubic interpolation, the third pixel value generating unit <b>69</b> may employ the other interpolation methods such as one-dimensional template matching, nearest-neighbor interpolation, linear interpolation, parabolic interpolation, polynomial interpolation, spline interpolation, Lagrange interpolation, bilinear interpolation, bicubic interpolation, or the like.</p>
+<p id="p-0176" num="0175">Subsequently, in step S<b>1730</b>, it is determined whether the first pixel value generating unit <b>62</b> will be employed based on the determined interpolation method. When it is determined in step S<b>1730</b> that the first pixel value generating unit <b>62</b> is employed, the flow proceeds to step S<b>1735</b>, the candidate pixel values are generated with respect to the plain images of the respective colors by the interpolation method used by the first pixel value generating unit <b>62</b>. Subsequently, in step S<b>1740</b>, the validity verification unit <b>68</b> verifies the validity of the candidate pixel value based on the related information obtained when the first pixel value generating unit <b>62</b> generates the candidate pixel value. In step S<b>1745</b>, the validity of the candidate pixel value is determined.</p>
+<p id="p-0177" num="0176">When it is determined in step S<b>1730</b> that the first pixel value generating unit <b>62</b> is not employed, the flow proceeds to step S<b>1750</b>, and it is determined whether the third pixel value generating unit <b>69</b> is employed. When it is determined that the third pixel value generating unit <b>69</b> is employed, and it is determined in step S<b>1745</b> that the candidate pixel value is not valid, the flow proceeds to step S<b>1755</b>, and the candidate pixel value is generated by the interpolation method used by the third pixel value generating unit <b>69</b>. Subsequently, in step S<b>1760</b>, the validity verification unit <b>68</b> verifies the validity of the candidate pixel value based on the related information obtained when the third pixel value generating unit <b>69</b> generates the candidate pixel value. In step S<b>1765</b>, the validity of the candidate pixel value is determined.</p>
+<p id="p-0178" num="0177">When it is determined in step S<b>1750</b> that the third pixel value generating unit <b>69</b> is not employed, the flow proceeds to step S<b>1770</b>, and the candidate pixel value is generated by the interpolation method used by the second pixel value generating unit <b>63</b>. Moreover, when it is determined in step S<b>1765</b> that the candidate pixel value is not valid, the flow proceeds to step S<b>1770</b>, and the candidate pixel value is generated by the interpolation method used by the second pixel value generating unit <b>63</b>.</p>
+<p id="p-0179" num="0178">When the candidate pixel value is determined to be valid in step S<b>1745</b> or S<b>1765</b>, and after the candidate pixel value is generated in step S<b>1770</b>, the flow proceeds to step S<b>1775</b>, and it is determined whether the candidate pixel values to be inserted to the interpolation pixel have been completely generated with respect to all the plain images. When the candidate pixel values have not been completely generated for all the plain images, the flow returns to step S<b>1715</b>, and the periodicity of the next plain image is determined. On the other hand, when it is determined that the candidate pixel values have been completely generated for all the plain images, the flow proceeds to step S<b>1780</b>, and the generated candidate pixel values are combined to calculate one combined pixel value to be inserted to the interpolation target pixel. As for the combination method, the candidate pixel values can be combined by the above-described method.</p>
+<p id="p-0180" num="0179">Subsequently, in step S<b>1785</b>, the combined pixel value is inserted to the interpolation target pixel set in step S<b>1710</b>. The insertion of the combined pixel value can be performed by any one of the two methods described above. Then, the flow proceeds to step S<b>1790</b>, and it is determined whether all the interpolation pixels have been completely interpolated. When a plurality of interpolation pixels is detected in step S<b>1710</b>, it is determined whether the generated pixel value is inserted to all the plurality of interpolation target pixels.</p>
+<p id="p-0181" num="0180">When it is determined in step S<b>1790</b> that all the interpolation target pixels have been completely interpolated, the flow proceeds to step S<b>1795</b>, and this process ends. On the other hand, when it is determined that all the interpolation target pixels have not been completely interpolated, the flow returns to step S<b>1710</b>. In step S<b>1710</b>, a process of setting the interpolation target pixel, generating the candidate pixel values, combining the candidate pixel values to calculate a combined pixel value, and inserting the combined pixel value is performed again.</p>
+<p id="p-0182" num="0181">In the fifth embodiment, the image processing apparatus is configured to include the boundary determining unit <b>67</b>, the validity verification unit <b>68</b>, and the third pixel value generating unit <b>69</b> in addition to the color separating unit <b>60</b>, the periodicity determining unit <b>61</b>, the first pixel value generating unit <b>62</b>, the second pixel value generating unit <b>63</b>, the control unit <b>64</b>, the pixel value combining unit <b>65</b>, and the pixel value inserting unit <b>66</b>. However, in the embodiment, the image processing apparatus may be configured to further include only the boundary determining unit <b>67</b>, only the third pixel value generating unit <b>69</b>, only the boundary determining unit <b>67</b> and the validity verification unit <b>68</b>, only the boundary determining unit <b>67</b> and the third pixel value generating unit <b>69</b>, or only the validity verification unit <b>68</b> and the third pixel value generating unit <b>69</b>.</p>
+<p id="p-0183" num="0182">In addition to the image processing apparatus and an image inspection method executed by the image processing apparatus, the present invention can provide a computer-readable program for realizing the method. The program may be stored in a recording medium such as an FD, a CD, a DVD, an SD card, a USB memory, or the like and provided as a recording medium having the program recorded therein.</p>
+<p id="p-0184" num="0183">As described above, the image processing apparatus includes the color separating unit and the pixel value combining unit and generates the candidate pixel value of the interpolation target pixel for each color to thereby obtain a combined pixel value as the pixel value to be inserted to the interpolation target pixel. In this way, it is possible to reproduce halftone dots of the individual colors in the color image. Moreover, the apparatus includes the periodicity determining unit and the control unit and switches the interpolation method depending on the presence of periodicity. In this way, it is possible to perform the interpolation process with high accuracy with respect to an image of which the pixel value changes abruptly.</p>
+<p id="p-0185" num="0184">Moreover, as described above, the pattern matching method may be used as the first interpolation method, and the interpolating method which is a different method from the first interpolation method may be used as the second interpolation method. By determining whether the candidate pixel value is suitable for the combination, when the candidate pixel value generated by the pattern matching method as the first interpolation method and the candidate pixel value generated by the interpolating technique as the second interpolation method are combined in a coexisting state, high-frequency components reproduced by the pattern matching method are prevented from being lost by being mixed with the values reproduced by the interpolating technique.</p>
+<p id="p-0186" num="0185">Moreover, the pixel value combining unit calculates a plurality of combined pixel values with respect to the interpolation target pixel using a plurality of combination methods, calculates the degree of coincidence between a base pattern having a predetermined size, which is interpolated by inserting the combined pixel value thereto and at least one reference pattern which is set to a position in the vicinity of the interpolation target pixel and has the same size as the base pattern, and determine whether the respective combined pixel values are suitable for interpolating the interpolation target pixel based on the calculated degree of coincidence. In this way, a combined pixel value set to the base pattern having the highest degree of coincidence can be determined as the combined pixel value to be inserted to the interpolation pixel.</p>
+<p id="p-0187" num="0186">Moreover, as described above, the pixel value combining unit creates a plurality of sets of candidate pixel values, combines the candidate pixel values included in the sets to calculate a plurality of combined pixel values, and creates a plurality of base patterns using the plurality of combined pixel values. The degree of coincidence between the base patterns and at least one reference pattern which is set to the position in the vicinity of the interpolation pixel and similar to the base pattern may be calculated, and a combined pixel value set to a base pattern having the highest degree of coincidence may be selected as a combined pixel value to be inserted to the interpolation pixel.</p>
+<p id="p-0188" num="0187">The periodicity determining unit determines whether the image region including the interpolation pixel is a periodic region. However, there is a case in which the image region is a periodic region when seen from a large range like one line of the image but is not a periodic region when seen from a narrow range in the vicinity of the interpolation target pixel. In such a case, the image region is erroneously determined to be a periodic region by the determination criterion. For example, a non-halftone dot region in the vicinity of a halftone dot region or a non-halftone dot region sandwiched between two halftone dot regions is likely to be subject to a detection error. When a detection error occurs, a flat region on the outer side of a halftone dot region may be interpolated as a halftone dot region, and an incorrect pixel value appears as the result of interpolation. Thus, in at least one embodiment, the apparatus further includes a boundary determining unit configured to set at least one reference region in the vicinity of the interpolation target pixel when the image region is determined to be a periodic region and determine whether the interpolation pixel is present in the periodic region or the non-periodic region based on the image characteristics of the at least one reference region.</p>
+<p id="p-0189" num="0188">In this case, the control unit determines which one of the first and second pixel value generating units will be used for generating the pixel value based on the determination result obtained by the boundary determining unit in addition to the determination result obtained by the periodicity determining unit.</p>
+<p id="p-0190" num="0189">As described above, in order to increase the interpolation accuracy, it is preferable to verify the validity of the generated candidate pixel value. Thus, in at least one embodiment, the apparatus further includes a validity verification unit for performing the verification. The validity verification unit determines the validity of the candidate pixel value based on related information obtained when the first pixel value generating unit generates the candidate pixel value. In this case, when the candidate pixel value is determined not to be valid, the control unit causes the second pixel value generating unit instead of the first pixel value generating unit to generate the pixel value.</p>
+<p id="p-0191" num="0190">Moreover, as described above, in order to further increase the interpolation accuracy, the apparatus further includes a third pixel value generating unit configured to generate the pixel value of the interpolation pixel using a third interpolation method different from the first and second interpolation methods. In this case, the validity verification unit determines the validity of the candidate pixel value based on related information obtained when the first pixel value generating unit generates the candidate pixel value. When the candidate pixel value is determined not to be valid, the control unit causes the third pixel value generating unit instead of the first pixel value generating unit to generate the pixel value. Moreover, the validity verification unit determines the validity of the candidate pixel value based on related information obtained when the third pixel value generating unit generates the candidate pixel value. When the candidate pixel value is determined not to be valid, the control unit causes the second pixel value generating unit instead of the third pixel value generating unit to generate the pixel value.</p>
+<p id="p-0192" num="0191">Although the invention has been described with respect to specific embodiments for a complete and clear disclosure, the appended claims are not to be thus limited but are to be construed as embodying all modifications and alternative constructions that may occur to one skilled in the art that fairly fall within the basic teaching herein set forth.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08625892-20140107-M00001.NB">
+<img id="EMI-M00001" he="8.47mm" wi="76.20mm" file="US08625892-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08625892-20140107-M00002.NB">
+<img id="EMI-M00002" he="12.02mm" wi="76.20mm" file="US08625892-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00003" nb-file="US08625892-20140107-M00003.NB">
+<img id="EMI-M00003" he="6.35mm" wi="76.20mm" file="US08625892-20140107-M00003.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00004" nb-file="US08625892-20140107-M00004.NB">
+<img id="EMI-M00004" he="36.66mm" wi="76.20mm" file="US08625892-20140107-M00004.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00005" nb-file="US08625892-20140107-M00005.NB">
+<img id="EMI-M00005" he="8.47mm" wi="76.20mm" file="US08625892-20140107-M00005.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. An image processing apparatus comprising:
+<claim-text>a color separating unit configured to separate a color image into a plurality of color components to generate images of respective colors;</claim-text>
+<claim-text>a periodicity determining unit configured to determine, for each of the images of the respective colors, whether an image region including a target pixel whose pixel value is to be interpolated is a periodic region in which pixel values vary periodically;</claim-text>
+<claim-text>a first pixel value generating unit configured to generate pixel values of the respective colors of a pixel using a first interpolation method;</claim-text>
+<claim-text>a second pixel value generating unit configured to generate pixel values of the respective colors of a pixel using a second interpolation method different from the first interpolation method;</claim-text>
+<claim-text>a control unit configured to determine, based on the determination result obtained by the periodicity determining unit, which one of the first and second pixel value generating units is to be used for generating pixel values of the respective colors of the target pixel; and</claim-text>
+<claim-text>a pixel value combining unit configured to combine candidate pixel values which are the pixel values of the respective colors of the target pixel and which are generated by the first or second pixel value generating unit determined by the control unit to calculate a combined pixel value for interpolating the target pixel,</claim-text>
+<claim-text>wherein the pixel value combining unit calculates a plurality of combined pixel values for the target pixel using a plurality of combination methods and determines whether the respective combined pixel values are suitable for interpolating the target pixel based on a degree of coincidence between a base pattern formed by an image region including the target pixel and at least one reference pattern that is set to a position in vicinity of the target pixel and has the same size as the base pattern.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The image processing apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>,
+<claim-text>wherein the pixel value combining unit determines whether the candidate pixel value is suitable for combination based on the interpolation method that has been used for generating the candidate pixel value and performs the combination using only the candidate pixel value which is determined to be suitable for the combination.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The image processing apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>,
+<claim-text>wherein the pixel value combining unit creates a plurality of sets of the candidate pixel values, combines the candidate pixel values included in the sets to calculate a plurality of combined pixel values, creates a plurality of base patterns using the plurality of combined pixel values, and selects a combined pixel value that results in a base pattern having the highest degree of coincidence with the at least one reference pattern among the plurality of base patterns.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The image processing apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>a boundary determining unit configured to set, as a reference region, at least one region in vicinity of the target pixel when the image region is determined to be the periodic region by the periodicity determining unit and to determine, based on image characteristics of the at least one reference region, whether the target pixel is present in the periodic region or the non-periodic region,</claim-text>
+<claim-text>wherein the control unit determines, based on the determination results obtained by the periodicity determining unit and the boundary determining unit, which one of the first and second pixel value generating units is to be used for generating the candidate pixel values.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The image processing apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>a validity verification unit configured to verify validity of the generated candidate pixel value,</claim-text>
+<claim-text>wherein the validity verification unit determines validity of the candidate pixel value based on related information obtained when the first pixel value generating unit generates the candidate pixel value, and when the validity verification unit determines that the candidate pixel value is invalid, the control unit causes the second pixel value generating unit instead of the first pixel value generating unit to generate the candidate pixel value.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The image processing apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>a validity verification unit configured to verify validity of the generated candidate pixel value; and</claim-text>
+<claim-text>a third pixel value generating unit configured to generate a pixel value of the target pixel using a third interpolation method different from the first and second interpolation methods,</claim-text>
+<claim-text>wherein the validity verification unit determines validity of the candidate pixel value based on related information obtained when the first pixel value generating unit generates the candidate pixel value, and when the validity verification unit determines that the candidate pixel value is invalid, the control unit causes the third pixel value generating unit instead of the first pixel value generating unit to generate the candidate pixel value.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The image processing apparatus according to <claim-ref idref="CLM-00006">claim 6</claim-ref>,
+<claim-text>wherein the validity verification unit determines the validity of the candidate pixel value based on related information obtained when the third pixel value generating unit generates the candidate pixel value, and when the validity verification unit determines that the candidate pixel value is invalid, the control unit causes the second pixel value generating unit instead of the third pixel value generating unit to generate the candidate pixel value.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. A pixel interpolation method performed in an image processing apparatus that includes a first pixel value generating unit to generate a pixel value of a pixel using a first interpolation method, and a second pixel value generating unit to generate a pixel value of a pixel using a second interpolation method different from the first interpolation method,
+<claim-text>the pixel interpolation method comprising:</claim-text>
+<claim-text>separating a color image into a plurality of color components to generate images of respective colors;</claim-text>
+<claim-text>determining, for each of the images of the respective colors, whether an image region including a target pixel whose pixel value is to be interpolated is a periodic region in which pixel values vary periodically;</claim-text>
+<claim-text>determining, based on the determination result obtained in the determining of periodicity of the image region, which one of the first and second pixel value generating units is to be used for generating pixel values of the respective colors of the target pixel; and</claim-text>
+<claim-text>combining candidate pixel values which are the pixel values of the respective colors of the target pixel and which are generated by the first or second pixel value generating unit determined in the determining of the pixel value generating unit to calculate a combined pixel value for interpolating the target pixel,</claim-text>
+<claim-text>wherein the combining includes calculating a plurality of combined pixel values for the target pixel using a plurality of combination methods and determining whether the respective combined pixel values are suitable for interpolating the target pixel based on a degree of coincidence between a base pattern formed by an image region including the target pixel and at least one reference pattern that is set to a position in vicinity of the target pixel and has the same size as the base pattern.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The pixel interpolation method according to <claim-ref idref="CLM-00008">claim 8</claim-ref>,
+<claim-text>wherein the combining includes determining whether the candidate pixel value is suitable for combination based on the interpolation method that has been used for generating the candidate pixel value and performing the combination using only the candidate pixel value which is determined to be suitable for the combination.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The pixel interpolation method according to <claim-ref idref="CLM-00008">claim 8</claim-ref>,
+<claim-text>wherein the combining of the candidate pixel values includes creating a plurality of sets of the candidate pixel values, combining the candidate pixel values included in the sets to calculate a plurality of combined pixel values, creating a plurality of base patterns using the plurality of combined pixel values, and selecting a combined pixel value that results in a base pattern having the highest degree of coincidence with the at least one reference pattern among the plurality of base patterns.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The pixel interpolation method according to <claim-ref idref="CLM-00008">claim 8</claim-ref>, further comprising:
+<claim-text>determining validity of the candidate pixel value based on related information obtained when the first pixel value generating unit generates the candidate pixel value; and</claim-text>
+<claim-text>causing, when the candidate pixel value is determined to be invalid, the second pixel value generating unit instead of the first pixel value generating unit to generate the candidate pixel value.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The pixel interpolation method according to <claim-ref idref="CLM-00008">claim 8</claim-ref>, further comprising:
+<claim-text>determining validity of the candidate pixel value based on related information obtained when the first pixel value generating unit generates the candidate pixel value; and</claim-text>
+<claim-text>causing, when the candidate pixel value is determined to be invalid, a third pixel value generating unit configured to generate the pixel value of the target pixel using a third interpolation method different from the first and second interpolation methods instead of the first pixel value generating unit to generate the candidate pixel value.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The pixel interpolation method according to <claim-ref idref="CLM-00012">claim 12</claim-ref>, further comprising:
+<claim-text>determining the validity of the candidate pixel value based on related information obtained when the third pixel value generating unit generates the candidate pixel value; and</claim-text>
+<claim-text>causing, when the candidate pixel value is determined to be invalid, the second pixel value generating unit instead of the third pixel value generating unit to generate the candidate pixel value. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

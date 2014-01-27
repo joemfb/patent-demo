@@ -1,0 +1,2201 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626792-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626792</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13486630</doc-number>
+<date>20120601</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>17</main-group>
+<subgroup>30</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>707778</main-classification>
+<further-classification>707802</further-classification>
+<further-classification>715853</further-classification>
+</classification-national>
+<invention-title id="d2e51">Hierarchical structured abstract data organization system</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5355497</doc-number>
+<kind>A</kind>
+<name>Cohen-Levy</name>
+<date>19941000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>7079992</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5544360</doc-number>
+<kind>A</kind>
+<name>Lewak et al.</name>
+<date>19960800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707999001</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>5644736</doc-number>
+<kind>A</kind>
+<name>Healy et al.</name>
+<date>19970700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>5678046</doc-number>
+<kind>A</kind>
+<name>Cahill et al.</name>
+<date>19971000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>5689701</doc-number>
+<kind>A</kind>
+<name>Ault et al.</name>
+<date>19971100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>5848415</doc-number>
+<kind>A</kind>
+<name>Guck</name>
+<date>19981200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>5905990</doc-number>
+<kind>A</kind>
+<name>Inglett</name>
+<date>19990500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>6252597</doc-number>
+<kind>B1</kind>
+<name>Lokuge</name>
+<date>20010600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>715841</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>6344861</doc-number>
+<kind>B1</kind>
+<name>Naughton et al.</name>
+<date>20020200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>715769</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>6348935</doc-number>
+<kind>B1</kind>
+<name>Malacinski et al.</name>
+<date>20020200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>715853</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>6567371</doc-number>
+<kind>B1</kind>
+<name>Otomo et al.</name>
+<date>20030500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>3692753</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>6582474</doc-number>
+<kind>B2</kind>
+<name>LaMarca et al.</name>
+<date>20030600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>6594675</doc-number>
+<kind>B1</kind>
+<name>Schneider</name>
+<date>20030700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>6748160</doc-number>
+<kind>B1</kind>
+<name>Otomo et al.</name>
+<date>20040600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>386230</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>7051277</doc-number>
+<kind>B2</kind>
+<name>Kephart et al.</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>715229</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>7107416</doc-number>
+<kind>B2</kind>
+<name>Stuart et al.</name>
+<date>20060900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>7146388</doc-number>
+<kind>B2</kind>
+<name>Stakutis et al.</name>
+<date>20061200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>7254570</doc-number>
+<kind>B2</kind>
+<name>Stickler</name>
+<date>20070800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>7293033</doc-number>
+<kind>B1</kind>
+<name>Tormasov et al.</name>
+<date>20071100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>7305377</doc-number>
+<kind>B2</kind>
+<name>Shinkai et al.</name>
+<date>20071200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>7526621</doc-number>
+<kind>B2</kind>
+<name>Stuart et al.</name>
+<date>20090400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>7836411</doc-number>
+<kind>B2</kind>
+<name>Plow et al.</name>
+<date>20101100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>715811</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>7945535</doc-number>
+<kind>B2</kind>
+<name>Toutonghi et al.</name>
+<date>20110500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>2001/0041989</doc-number>
+<kind>A1</kind>
+<name>Vilcauskas, Jr. et al.</name>
+<date>20011100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>2001/0042087</doc-number>
+<kind>A1</kind>
+<name>Kephart et al.</name>
+<date>20011100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707530</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>2003/0163519</doc-number>
+<kind>A1</kind>
+<name>Kegel et al.</name>
+<date>20030800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>709203</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>US</country>
+<doc-number>2003/0204515</doc-number>
+<kind>A1</kind>
+<name>Shadmon et al.</name>
+<date>20031000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>US</country>
+<doc-number>2004/0037540</doc-number>
+<kind>A1</kind>
+<name>Frohlich et al.</name>
+<date>20040200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>US</country>
+<doc-number>2004/0172442</doc-number>
+<kind>A1</kind>
+<name>Ripley</name>
+<date>20040900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>US</country>
+<doc-number>2005/0114356</doc-number>
+<kind>A1</kind>
+<name>Bhatti</name>
+<date>20050500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707100</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00031">
+<document-id>
+<country>US</country>
+<doc-number>2005/0144022</doc-number>
+<kind>A1</kind>
+<name>Evans</name>
+<date>20050600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>705  1</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00032">
+<document-id>
+<country>US</country>
+<doc-number>2005/0177567</doc-number>
+<kind>A1</kind>
+<name>Hughes et al.</name>
+<date>20050800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00033">
+<document-id>
+<country>US</country>
+<doc-number>2006/0015482</doc-number>
+<kind>A1</kind>
+<name>Beyer et al.</name>
+<date>20060100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707  3</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00034">
+<document-id>
+<country>US</country>
+<doc-number>2006/0031261</doc-number>
+<kind>A1</kind>
+<name>Behringer</name>
+<date>20060200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00035">
+<document-id>
+<country>US</country>
+<doc-number>2006/0036568</doc-number>
+<kind>A1</kind>
+<name>Moore et al.</name>
+<date>20060200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707  1</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00036">
+<document-id>
+<country>US</country>
+<doc-number>2006/0047692</doc-number>
+<kind>A1</kind>
+<name>Rosenblum et al.</name>
+<date>20060300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707102</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00037">
+<document-id>
+<country>US</country>
+<doc-number>2006/0074925</doc-number>
+<kind>A1</kind>
+<name>Bixby et al.</name>
+<date>20060400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00038">
+<document-id>
+<country>US</country>
+<doc-number>2006/0080465</doc-number>
+<kind>A1</kind>
+<name>Conzola et al.</name>
+<date>20060400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00039">
+<document-id>
+<country>US</country>
+<doc-number>2006/0106866</doc-number>
+<kind>A1</kind>
+<name>Green et al.</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>7071041</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00040">
+<document-id>
+<country>US</country>
+<doc-number>2006/0129569</doc-number>
+<kind>A1</kind>
+<name>Dieberger et al.</name>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00041">
+<document-id>
+<country>US</country>
+<doc-number>2006/0161863</doc-number>
+<kind>A1</kind>
+<name>Gallo</name>
+<date>20060700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>715810</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00042">
+<document-id>
+<country>US</country>
+<doc-number>2006/0206449</doc-number>
+<kind>A1</kind>
+<name>Fletcher et al.</name>
+<date>20060900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00043">
+<document-id>
+<country>US</country>
+<doc-number>2006/0206450</doc-number>
+<kind>A1</kind>
+<name>Fletcher et al.</name>
+<date>20060900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00044">
+<document-id>
+<country>US</country>
+<doc-number>2006/0235871</doc-number>
+<kind>A1</kind>
+<name>Trainor et al.</name>
+<date>20061000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00045">
+<document-id>
+<country>US</country>
+<doc-number>2006/0282440</doc-number>
+<kind>A1</kind>
+<name>Fletcher et al.</name>
+<date>20061200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00046">
+<document-id>
+<country>US</country>
+<doc-number>2006/0287974</doc-number>
+<kind>A1</kind>
+<name>Mochizuki et al.</name>
+<date>20061200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00047">
+<document-id>
+<country>US</country>
+<doc-number>2007/0204011</doc-number>
+<kind>A1</kind>
+<name>Shaver et al.</name>
+<date>20070800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00048">
+<document-id>
+<country>US</country>
+<doc-number>2007/0209005</doc-number>
+<kind>A1</kind>
+<name>Shaver et al.</name>
+<date>20070900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00049">
+<document-id>
+<country>US</country>
+<doc-number>2007/0291291</doc-number>
+<kind>A1</kind>
+<name>Vilar et al.</name>
+<date>20071200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>358  19</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00050">
+<document-id>
+<country>US</country>
+<doc-number>2008/0216009</doc-number>
+<kind>A1</kind>
+<name>Drallos</name>
+<date>20080900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00051">
+<document-id>
+<country>US</country>
+<doc-number>2008/0235197</doc-number>
+<kind>A1</kind>
+<name>Allen et al.</name>
+<date>20080900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707  3</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00052">
+<document-id>
+<country>US</country>
+<doc-number>2008/0281788</doc-number>
+<kind>A1</kind>
+<name>Frieder et al.</name>
+<date>20081100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00053">
+<document-id>
+<country>US</country>
+<doc-number>2008/0307339</doc-number>
+<kind>A1</kind>
+<name>Boro et al.</name>
+<date>20081200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00054">
+<document-id>
+<country>US</country>
+<doc-number>2009/0119354</doc-number>
+<kind>A1</kind>
+<name>Stuart et al.</name>
+<date>20090500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00055">
+<document-id>
+<country>US</country>
+<doc-number>2009/0228462</doc-number>
+<kind>A1</kind>
+<name>Frieder et al.</name>
+<date>20090900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00056">
+<document-id>
+<country>US</country>
+<doc-number>2010/0031193</doc-number>
+<kind>A1</kind>
+<name>Stark et al.</name>
+<date>20100200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00057">
+<othercit>Isabel F. Cruz and Gerard T. McGuire&#x2014;&#x201c;Publication and Customization of Electronic Documents using PANDA&#x201d;&#x2014;Proceeding SIGDOC '99 Proceedings of the 17th annual international conference on Computer documentation&#x2014;1999, (pp. 58-64).</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00058">
+<othercit>Kevin McGee and Jody Foo&#x2014;&#x201c;DocPlayer: why doesn't your desktop play this way?&#x201d;&#x2014;Department of Computer and Information Science&#x2014;Link&#xf6;ping University&#x2014;URL http://www. ida. liu. se/&#x2dc; kevmc/pubs/mcgee- . . . , 2006&#x2014;Citeseer&#x2014;(pp. 1-8).</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00059">
+<othercit>http://ww/apple.com/macosx/features/spotlight/Apple-Mac OS X&#x2014;Spotlight (2 pages), web pages printed Aug. 1, 2007 (Apple's Spotlight was originally introduced in Apr. 2005).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00060">
+<othercit>http://msdn.microsoft.com/msdnmag/issues/04/01/WinFS/ Code Name WinFS: Revolutionary File Storage System Lets Users Search and Manage File Based on Content Jan. 2004, (11 pages).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00061">
+<othercit>Alexander Ames et al., &#x201c;Richer File System Metadata Using Links and Attributes,&#x201d; Proceedings of the 22nd IEEE/13th NASA Gooddard Conference on Mass Storage Systems and Technologies (MSST 2005), Monterey, CA, Apr. 2005, (12 pages).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00062">
+<othercit>Stephan Bloehdorn et al., &#x201c;TagFS&#x2014;Tag Semantics for Hierarchical File Systems,&#x201d;Proceedings of the 6th International Conference on Knowledge Management, Graz, Austria (Sep. 6-8, 2006) , (8 pages).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00063">
+<othercit>David K. Glifford et al, &#x201c;Semantic File Systems, &#x201d;Proceedings of the 13th ACM Symposium on Operating Systems Principles, New York, NY, (1991) (10 pages) (the year of publication is sufficiently earlier than the effective U.S. filing date so that the particular month of publication is not an issue).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00064">
+<othercit>Charles P. Wright et al., &#x201c;Versatility and Unix Semantics in a Fan-Out Unification File System&#x201d;, Technical Report FSL-04-01b (Jan. 2004) (14 pages).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00065">
+<othercit>M. Mahalingam et al., &#x201c;Towards a Semantic, Deep Archival File System,&#x201d; Technical Report HPL-2002-199, HP Laboratories, Palo Alto, Jul. 2002, (7 pages).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00066">
+<othercit>M. Olson, &#x201c;The Design and Implementation of the Inversion File System,&#x201d; In proceedings of the Winter 1993 USENIX Technical Conference, pp. 205-217, San Diego, California, USA, Jan. 1993, (14 pages).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00067">
+<othercit>Y. Padioleau et al., &#x201c;A Logic File System,&#x201d; In proceedings of the 2003 USENIX Annual Technical Conference, pp. 99-112, San Antonio, Texas, Jun. 2003, (28 pages).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00068">
+<othercit>Candan et al., &#x201c;Resource Description Framework: Metadata and Its Applications,&#x201d; SIGKDD Explorations Newsletter, vol. 3, Issue 1, Jul. 2001 (pp. 1-14).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00069">
+<othercit>Sunil Singh Parihar, &#x201c;MediaAssit&#x2014;Managing Digital Picture Collections Through Content Trails,&#x201d; Georgia Tech, Design and Technology, Spring 2000 (pp. 1-26).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>16</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>707740</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>707E17047</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>707E17014</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>707E17009</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>707778</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>707802</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>707805</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>707822</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>707828</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>707829</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>715810</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>715853</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>9</number-of-drawing-sheets>
+<number-of-figures>12</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>12471938</doc-number>
+<date>20090526</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8209358</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13486630</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<continuation-in-part>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>11801296</doc-number>
+<date>20070509</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>7720869</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>12471938</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation-in-part>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120239658</doc-number>
+<kind>A1</kind>
+<date>20120920</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Frieder</last-name>
+<first-name>Ophir</first-name>
+<address>
+<city>Chicago</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Kapoor</last-name>
+<first-name>Sanjiv</first-name>
+<address>
+<city>Naperville</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Frieder</last-name>
+<first-name>Ophir</first-name>
+<address>
+<city>Chicago</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Kapoor</last-name>
+<first-name>Sanjiv</first-name>
+<address>
+<city>Naperville</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Pauley Petersen &#x26; Erickson</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Illinois Institute of Technology</orgname>
+<role>02</role>
+<address>
+<city>Chicago</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Breene</last-name>
+<first-name>John E</first-name>
+<department>2162</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Ly</last-name>
+<first-name>Anh</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A method in a data processing system and apparatus for organizing files, web pages, or web site members organized in a traditional first hierarchical file structure that is on a recordable medium of a data processing system. A user-defined metalabel is assigned to each of the electronic files, web pages, or web site members. The electronic files, web pages, or web site members are organized as a function of the metalabels into a second hierarchical file structure existing simultaneously with the first hierarchical file structure on the recordable medium of the data processing system. The files, web pages, or web site members can be organized or grouped by the metalabels for efficient searching or following conversations of group members on social networking sites.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="181.69mm" wi="242.99mm" file="US08626792-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="189.40mm" wi="151.98mm" file="US08626792-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="238.08mm" wi="139.36mm" orientation="landscape" file="US08626792-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="129.20mm" wi="168.74mm" file="US08626792-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="176.78mm" wi="180.68mm" file="US08626792-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="244.01mm" wi="188.64mm" orientation="landscape" file="US08626792-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="267.89mm" wi="197.10mm" file="US08626792-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="236.73mm" wi="185.25mm" file="US08626792-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="111.00mm" wi="150.20mm" file="US08626792-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="235.63mm" wi="169.84mm" orientation="landscape" file="US08626792-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CROSS REFERENCE TO RELATED APPLICATION</heading>
+<p id="p-0002" num="0001">This application is a continuation of U.S. application Ser. No. 12/471,938, filed on 26 May 2009, now U.S. Pat. No. 8,209,358, which is a continuation-in-part of U.S. application Ser. No. 11/801,296, filed on 9 May 2007, now U.S. Pat. No. 7,720,869. The co-pending parent application is hereby incorporated by reference herein in its entirety and is made a part hereof, including but not limited to those portions which specifically appear hereinafter.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0003" num="0002">1. Field of the Invention</p>
+<p id="p-0004" num="0003">This invention is directed to improving the searching and/or organizing electronic data in a data processing system or web site.</p>
+<p id="p-0005" num="0004">2. Discussion of Related Art</p>
+<p id="p-0006" num="0005">Traditional file systems, including both UNIX and WINDOWS, have one hierarchical method of file organization, herein referred to as a traditional or first hierarchical file structure, which is tree structured with directories and sub-directories. A typical user may have a large set of files (say 100,000), and the structured tree file organization can be several levels in height. The primary characteristics of the file systems are: 1) a file is accessed by a unique address known as the file path; and 2) file organizing is by using directories, subdirectories, and filenames with an extension.</p>
+<p id="p-0007" num="0006">This single method of organizing data leads to considerable inefficiencies in accessing files. Searching is effective when the user knows a partial filename and/or the file path or directory under which the file is stored. Often a user must go through a number of files before locating a set of relevant files, and must open a number of directory/subdirectory folders to access the files. Further the current hierarchical organizing technique does not allow the users to easily describe or annotate a file.</p>
+<p id="p-0008" num="0007">To improve the search, current file systems use a variety of techniques. As an example, Mac OS uses a SPOTLIGHT feature that indexes files on your computer in the background based upon keywords. When a user makes a change, such as adding a new file, receiving an email, or entering a new contact, SPOTLIGHT updates its index automatically, with the intention of keeping search results accurate. Embedding keywords into files is a common technique for providing a search facility to the user. Keywords are generally indexed in a database that is used to answer user queries.</p>
+<p id="p-0009" num="0008">There is a need for an improved method for organizing and searching files or other data on a computer or web site, as well as organizing the search results.</p>
+<heading id="h-0003" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0010" num="0009">A general object of the invention is to provide an improved method for organizing and searching for electronic files or data on a computer-readable recordable medium, and the apparatus and/or program code(s) for carrying out the method in a data processing system.</p>
+<p id="p-0011" num="0010">The general object of the invention can be attained, at least in part, through a method in a data processing system of searching electronic files that are on a recordable medium of the data processing system. The method includes: providing an electronic file in a first hierarchical file structure, the electronic files being identified by a filename; assigning a user-defined metalabel to the electronic file, wherein the electronic file includes the filename and the metalabel; organizing the electronic file into a second hierarchical file structure as a function of the metalabel; receiving a query from a user; searching the second hierarchical file structure as a function of the query; and returning to the user the electronic file. The second hierarchical file structure is achieved without replicating the files of the first hierarchical file structure.</p>
+<p id="p-0012" num="0011">The invention further comprehends a method in a data processing system of searching a plurality of electronic files in a first hierarchical file structure that is on a recordable medium of the data processing system, where each of the electronic files includes a filename. The method includes: assigning a user-defined metalabel to each of the electronic files; organizing the electronic files as a function of the metalabels into a second hierarchical file structure existing simultaneously with the first hierarchical file structure on the recordable medium of the data processing system; receiving a query from a user; searching the metalabels of the second hierarchical file structure as a function of the query; and returning to the user as a search result each of the electronic files having a metalabel matching the query.</p>
+<p id="p-0013" num="0012">The invention still further comprehends a computer-readable medium encoded with instructions for organizing a plurality of electronic files of a data processing system. The encoded instructions include a first program code establishing a first hierarchical file structure that includes the plurality of electronic files. Each of the plurality of electronic files is identified by a filename in the first hierarchical file structure. The encoded instructions also include a second program code establishing a second hierarchical file structure including the plurality of electronic files. Each of the plurality of electronic files is identified by a user-defined metalabel in the second hierarchical file structure. The first and second hierarchical file structures exist simultaneously for the plurality of electronic files.</p>
+<p id="p-0014" num="0013">The method of this invention provides an additional file and/or data organization system that extends the file organization into a multi-hierarchy user defined system. The additional hierarchal file structures of this invention are abstract data file structures, as they exist in the background and are not conventionally viewed through a user interface like the traditional file directories, subdirectories, and filenames. However, they can also be viewed in the same way although their physical existence will be according to the first hierarchy. In the system of this invention the data are organized into multiple hierarchical forms which aid considerably in searching and organizing search results, i.e., files, in a structured fashion.</p>
+<p id="p-0015" num="0014">As an example consider the following structure (directories/subdirectories) of electronic files, represented in <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0016" num="0015">Pictures/2006/dad</p>
+<p id="p-0017" num="0016">Pictures/2005/dad</p>
+<p id="p-0018" num="0017">Pictures/2006/mom</p>
+<p id="p-0019" num="0018">Pictures/2005/mom</p>
+<p id="p-0020" num="0019">Picture/2006/baby</p>
+<p id="p-0021" num="0020">Pictures/2005/baby</p>
+<p id="p-0022" num="0021">If a user wanted to access all files which involve dad, even files not having &#x201c;dad&#x201d; in the filename but including dad in the picture, the number of files may be substantial and spread among multiple subdirectories. Thus, if you were looking for all dad-related pictures, it would be desirable that these pictures may be classified as below, and as shown in the abstract directory structure of <figref idref="DRAWINGS">FIG. 2</figref>.</p>
+<p id="p-0023" num="0022">Pictures/dad/2005</p>
+<p id="p-0024" num="0023">Pictures/dad/2006</p>
+<p id="p-0025" num="0024">Pictures/dad/baby</p>
+<p id="p-0026" num="0025">Pictures/dad/mom</p>
+<p id="p-0027" num="0026">The method of this invention provides a way to provide, in a general sense, multiple organizational tree structures for the same electronic files in addition to the traditional file directory tree structure. These additional hierarchical file structures are provided by this invention by structuring the electronic files in one or more abstract directories according to user-defined metalabels. When the user searches based upon an assigned metalabel, the program code implementing this invention provides the corresponding electronic files in a new file directory, such as shown in <figref idref="DRAWINGS">FIG. 2</figref>. As the directory of <figref idref="DRAWINGS">FIG. 2</figref> exists as a result of wanting all pictures identified by the metalabel &#x201c;dad&#x201d;, the directory of <figref idref="DRAWINGS">FIG. 2</figref> is an abstract directory that is created in response to a query for the &#x201c;dad&#x201d; metalabel and exists simultaneously with, and does not replace or alter, the first hierarchical file structure of <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0028" num="0027">The methods and file structures according to this invention can also be applied to organizing web pages and member users of social networking web sites. The invention further includes a method for organizing files, web pages, or web site members. The method includes assigning a user-defined metalabel for each of a plurality of electronic files, web pages, or web site members, where each metalabel is an identifier in addition to a filename, a domain address, or a member identification, and more than one of the plurality of electronic files, web pages, or web site members is assigned the same user-defined metalabel. The method further includes automatically organizing user-defined metalabels in a hierarchical file structure with a data processor where the hierarchical file structure comprises a trie, storing each of the user-defined metalabels in a database associated with the data processor, and linking each of the stored user-defined metalabels to one or more corresponding electronic files, web pages, or web site members of the user-defined metalabel.</p>
+<p id="p-0029" num="0028">The invention further comprehends a method of searching a plurality of web pages or web site members organized in a first hierarchical file structure on a recordable medium of a network by a domain address or a member identification. The method includes: assigning a metalabel defined by a user to each of the plurality of web pages or web site members to provide a plurality of metalabels; organizing the web pages or web site members as a function of the metalabels into a second hierarchical file structure existing simultaneously with the first hierarchical file structure on the recordable medium or a second recordable medium associated with a data processor; and connecting or displaying to the user through a user interface one or more web page or one or more message of one or more of the web site members assigned to one of the metalabels.</p>
+<p id="p-0030" num="0029">The invention further includes an apparatus for organizing files, web pages, or web site members. The apparatus includes a label server for receiving and storing user-defined metalabels for each of a plurality of electronic files, web pages, or web site members, where each metalabel is an identifier in addition to a filename, a domain address, or a member identification. The label server comprises a processor and a database. The apparatus further includes a hierarchical file structure for organizing stored metalabels. The hierarchical file structure is executed by the processor and stored on the database. The hierarchical file structure comprises a trie and includes for each metalabel one or more links to one or more corresponding electronic files, web pages, or web site members of the metalabel.</p>
+<p id="p-0031" num="0030">Other objects and advantages will be apparent to those skilled in the art from the following detailed description taken in conjunction with the appended claims and drawings.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIG. 1</figref> is a simplified representation of traditional hierarchical file structure.</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIG. 2</figref> is an exemplary abstract directory structure adapted from the traditional hierarchical file structure of <figref idref="DRAWINGS">FIG. 1</figref>, according to one embodiment of this invention.</p>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIG. 3</figref> represents a simplified application of metalabels to electronic files in the traditional hierarchical file structure of <figref idref="DRAWINGS">FIG. 1</figref>, according to one embodiment of this invention.</p>
+<p id="p-0035" num="0034"><figref idref="DRAWINGS">FIG. 4</figref> is a representation of the interaction between the user and the file system according to one embodiment of this invention.</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 5</figref> is a theoretical trie structure for illustrative purposes.</p>
+<p id="p-0037" num="0036"><figref idref="DRAWINGS">FIG. 6</figref> is an exemplary trie structure according to one embodiment of this invention.</p>
+<p id="p-0038" num="0037"><figref idref="DRAWINGS">FIG. 7</figref> illustrates a hypothetical social group structure.</p>
+<p id="p-0039" num="0038"><figref idref="DRAWINGS">FIG. 8</figref> illustrates an exemplary screen display of a graphical user interface according to one embodiment of this invention.</p>
+<p id="p-0040" num="0039"><figref idref="DRAWINGS">FIG. 9</figref> is a general representation of an exemplary apparatus for implementing a metalabel system according to one embodiment of this invention.</p>
+<p id="p-0041" num="0040"><figref idref="DRAWINGS">FIG. 10</figref> illustrates a hypothetical University web-page structure.</p>
+<p id="p-0042" num="0041"><figref idref="DRAWINGS">FIG. 11</figref> is a general representation of an exemplary apparatus for implementing a metalabel system according to another embodiment of this invention.</p>
+<p id="p-0043" num="0042"><figref idref="DRAWINGS">FIG. 12</figref> is screen display of an implementation of a metalabel file structure for a web site according to one embodiment of this invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DEFINITIONS</heading>
+<p id="p-0044" num="0043">Within the context of this specification, each term or phrase below will include the following meaning or meanings.</p>
+<p id="p-0045" num="0044">References herein to &#x201c;metalabel&#x201d; are to be understood to refer to an identifier given to an electronic file, web page, or web site member in addition to the file's filename, a web page's domain address, or the web site member's member identification name. A metalabel of this invention can include any combination of characters, e.g., letter or numbers, and desirably includes a term that a user identifies with the file.</p>
+<p id="p-0046" num="0045">References herein to &#x201c;user&#x201d; are to be understood to not be limited to a creator of an electronic file, but can be any person, process, or autonomous software agent, as known in the art, acting on behalf of a user having access to the electronic files.</p>
+<p id="p-0047" num="0046">References herein to a &#x201c;first hierarchical file structure&#x201d; or a &#x201c;traditional hierarchical file structure&#x201d; are interchangeable and to be understood to refer to the already existing directory tree structure commonly used in organizing electronic files in data processing systems. The first or traditional hierarchical file structure generally includes a plurality of directories and subdirectories, and individual files are given a filename and a file's placement in the tree structure is identified by a file path.</p>
+<p id="p-0048" num="0047">References herein to the &#x201c;second hierarchical file structure&#x201d; or &#x201c;additional hierarchical file structure&#x201d; of this invention are interchangeable and to be understood to refer to a different hierarchical file or data structure than the first or traditional hierarchical file structure.</p>
+<p id="p-0049" num="0048">References herein to &#x201c;abstract directory&#x201d; are to be understood to refer to a directory in or created for the second hierarchical file structure of this invention.</p>
+<heading id="h-0006" level="1">DESCRIPTION OF PREFERRED EMBODIMENTS</heading>
+<p id="p-0050" num="0049">The present invention provides a method in a data processing system, e.g., a computer, for organizing and of searching electronic files on a recordable medium of the data processing system, e.g., the computer's hard drive or flash drive. It is important to note that this invention is not limited to recordable medium that is physically adjacent to a computer. Instead, it is also within the scope of this invention that some and possibly all of the files reside in remote locations whose access is via a network including but not limited to such networks as local area networks, wide area networks, private virtual networks, ad hoc networks, and the Internet.</p>
+<p id="p-0051" num="0050">Also, users according to this invention, as defined above, are not limited to human users. That is, as known in the art, processes or other autonomous software agents can assist or even replace humans in terms of computer processing. Thus, it is within the scope of this invention for processes or software agents to generate the user request described herein.</p>
+<p id="p-0052" num="0051">The method of this invention improves searching for electronic files in, for example, current existing hierarchical file structures, such as are formed of the directories and subdirectories currently employed in operating systems. In such traditional hierarchical file structures, often referred to as tree structures, each of the electronic files includes a given filename that is seen by the user through a user interface, e.g., computer monitor, and a file path identifying the location within the hierarchical file structure.</p>
+<p id="p-0053" num="0052">As discussed above, current searching of the electronic files in the traditional hierarchical file structure, as represented in <figref idref="DRAWINGS">FIG. 1</figref>, is typically based upon the filename or other information about the file itself, such as the file type or extension. The method of this invention provides a second hierarchical file structure, and desirably a plurality of additional hierarchical file structures. These additional hierarchical file structures are &#x201c;abstract&#x201d; in that they remain in the background, do not require a physical presence that is directly accessible to the user through the user interface, as does the first hierarchical file structure, but may be viewable in a similar fashion. The abstract additional hierarchical file structures of this invention supplement, and do not replace or replicate portions of, the first hierarchical file structure to improve searching of the electronic files in the hierarchical file structure.</p>
+<p id="p-0054" num="0053">In one embodiment of this invention, each of at least a portion of the electronic files stored in a data processing system is assigned a user-defined metalabel. The computer code that implements all or portions of the method of this invention receives the user-defined metalabel, such as through a keyboard, and assigns the metalabel to the intended electronic file. The metalabel does not supplant the file name of the electronic file.</p>
+<p id="p-0055" num="0054">The metalabel of this invention provides users with the possibility to describe or annotate a file with user defined words and/or numbers, which allows another way to search for the files. The electronic files are searched in this invention by querying the metalabels. The data processing system receives a query from a user, searches the metalabels of the second hierarchical file structure according to the query, and returns to the user the search results, which include the electronic file or files including a metalabel matching the query. In one embodiment, the search results are provided in or by an abstract directory structure, such as illustrated in <figref idref="DRAWINGS">FIG. 2</figref>. The query can include the full metalabel, or a portion of the metalabel. In one embodiment of the invention, the query can include a portion of the metalabel coupled with a wildcard symbol, such as, for example, an asterisk or other character, to represent one or more letters or numbers.</p>
+<p id="p-0056" num="0055">In one embodiment of this invention, a program code organizes the electronic files as a function of the metalabels into a second hierarchical file structure existing simultaneously with the first hierarchical file structure on the recordable medium of the data processing system. A plurality of metalabeled electronic files are organized into one or more additional hierarchical file structures by linking each metalabel of the electronic files to a matching metalabel assigned to one or more of the other electronic files. Each metalabel that is assigned to an electronic file is linked to a matching metalabel, should such a matching metalabel exist, of an other electronic file. The link between the metalabels remains even when one or more electronic files are, for example, moved or given a new file name. The additional file structures provided by the metalabels are desirably automatically updated when, for example, an electronic file is moved within, copied, or deleted from the first and traditional hierarchical file structure.</p>
+<p id="p-0057" num="0056">In one embodiment of this invention, hierarchical metalabels have the form:</p>
+<p id="p-0058" num="0057">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="28pt" align="left"/>
+<colspec colname="1" colwidth="189pt" align="left"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>(i)&#x2003;&#x2003;&#x3c;metalabel&#x3e; or</entry>
+</row>
+<row>
+<entry/>
+<entry>(ii)&#x2003;&#x2003;&#x2002;&#x3c;metalabel1&#x3e;/&#x3c;metalabel2&#x3e;/....&#x3c;metalabelk&#x3e;.</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+Metalabel form (i) provides a flat result with all the search results in one single abstract directory. Metalabel form (ii) supports structured searching and reporting. As an example referring to the file structure of <figref idref="DRAWINGS">FIG. 1</figref>, the following metalabels could be assigned to electronic files therein as shown in <figref idref="DRAWINGS">FIG. 3</figref>:
+</p>
+<p id="p-0059" num="0058">Pictures/dad/2005</p>
+<p id="p-0060" num="0059">Pictures/dad/2006</p>
+<p id="p-0061" num="0060">Pictures/dad/baby</p>
+<p id="p-0062" num="0061">Pictures/dad/mom</p>
+<p id="p-0063" num="0062">Pictures/mom/2005</p>
+<p id="p-0064" num="0063">Pictures/mom/2006</p>
+<p id="p-0065" num="0064">A query for &#x201c;Pictures/&#x201d; would provide an abstract directory with the subdirectories &#x201c;dad/&#x201d; and &#x201c;mom/&#x201d; and the search for &#x201c;Pictures/dad&#x201d; would provide an abstract directory with the subdirectories &#x201c;2005/&#x201d;, &#x201c;2006/&#x201d;, &#x201c;baby/&#x201d;, and &#x201c;mom/&#x201d;. In general, a search for &#x3c;Dir&#x3e;/provides all files labeled &#x3c;Dir&#x3e;/&#x3c;file&#x3e; and all directories, &#x3c;dir&#x3e;, of files labeled */&#x3c;Dir&#x3e;/&#x3c;dir&#x3e;/*. As will be appreciate by those skilled in the art following the teachings herein provided, directories may also be assigned metalabels with the same methodology as described herein for individual files.</p>
+<p id="p-0066" num="0065">The metalabels allow a system user to further describe or label a file according to, for example, the content or purpose of the file. Referring to <figref idref="DRAWINGS">FIG. 3</figref>, the electronic file <b>35</b> is in subdirectory <b>30</b> named &#x201c;Baby&#x201d;, which is in subdirectory <b>20</b> named &#x201c;2005&#x201d;, which is in directory <b>10</b> named &#x201c;Pictures&#x201d;. The user, e.g., the file creator, enters a metalabel &#x201c;Pictures/dad/baby&#x201d; for the electronic file <b>35</b>. In this example, the electronic file <b>35</b> is a picture that includes both dad and baby, and while the placement in the traditional file structure places the electronic file in the &#x201c;Baby&#x201d; subdirectory <b>30</b>, associating the metalabels &#x201c;dad&#x201d; and &#x201c;baby&#x201d; allows the computer to link this file with other similar metalabeled files in other subdirectories. As shown in <figref idref="DRAWINGS">FIG. 3</figref>, the dashed line <b>40</b> indicates the linking for the metalabels &#x201c;dad&#x201d;. Thus a query of the metalabel &#x201c;dad&#x201d; provides as search results the linked files. As discussed above, the abstract directories resulting from the query for metalabel &#x201c;dad&#x201d; would be &#x201c;2005/&#x201d;, &#x201c;2006/&#x201d;, &#x201c;baby/&#x201d;, and &#x201c;mom/&#x201d; as illustrated in <figref idref="DRAWINGS">FIG. 2</figref>.</p>
+<p id="p-0067" num="0066">In one embodiment of this invention, a metalabel handler module or functionality, desirably implemented as a client-server module, is provided in the data processing system. As represented in <figref idref="DRAWINGS">FIG. 4</figref>, the metalabel handler <b>50</b> interacts with the user <b>60</b> to manage the user's metalabel manipulations, including commands such as add, modify, and remove metalabels for files. The metalabel handler <b>50</b> also desirably implements the metalabel search functions of this invention. The metalabel handler <b>50</b> interacts with the existing traditional hierarchical file structure, i.e., file system <b>70</b>, to serve the requests from the client, user <b>60</b>, and make the requested modifications to update the additional hierarchical file structure(s) whenever an electronic file is moved, copied, or deleted.</p>
+<p id="p-0068" num="0067">In one embodiment of this invention, the additional hierarchical file structures are implemented as tries, and desirably Patricia tries. In this embodiment electronic files are organized into a second hierarchical file structure by locating or creating a node in the trie that is identified with the metalabel of the file and associating the filename to the metalabel in the trie. As an alternative, and more desirably used in combination in the double trie structure discussed below, organizing the metalabel into the second hierarchical file structure is accomplished by locating or creating a node in the trie that is identified with the filename and associating the metalabel to the filename in the trie.</p>
+<p id="p-0069" num="0068"><figref idref="DRAWINGS">FIG. 5</figref> illustrates a general hypothetical trie structure <b>100</b> to provide a preliminary understanding to assist in the explanation of the subject invention, and is not intended to limit the invention in its application. In the hypothetical trie structure <b>100</b> of <figref idref="DRAWINGS">FIG. 5</figref>, there is a node <b>102</b> available for each letter of the alphabet. Note that herein the approach is illustrated using an English language character set, but one skilled in the art will recognize that any character set is possible. Referring to the node for &#x201c;B&#x201d;, each node <b>102</b> will connect to a further plurality of available nodes <b>104</b> representing &#x201c;B&#x201d; plus a further letter, i.e., &#x201c;BA&#x201d;&#x2212;&#x201c;BZ&#x201d;. The trie structure of <figref idref="DRAWINGS">FIG. 5</figref> continues in this manner and ultimately provides the node <b>106</b> for &#x201c;BABY&#x201d;. According to this invention, the &#x201c;BABY&#x201d; node <b>106</b> contains the electronic files, and more accurately, the filenames and file paths of the electronic files, associated with the metalabel &#x201c;BABY&#x201d;. The electronic files are represented in <figref idref="DRAWINGS">FIG. 5</figref> by triangle <b>108</b>. Thus, when a new file and/or metalabel is/are added, the data processing system organizes the metalabel into the trie structure of the additional hierarchical file structure and associates the filename with a corresponding node. The electronic file is desirably not duplicated.</p>
+<p id="p-0070" num="0069">As will be appreciated by those skilled in the art following the teachings herein, the trie structure of <figref idref="DRAWINGS">FIG. 5</figref>, for preliminary explanation purposes contains nodes for potentially all combination of letters. In actual implementation, trie structures contain nodes according to need, such as illustrated in <figref idref="DRAWINGS">FIG. 6</figref>. <figref idref="DRAWINGS">FIG. 6</figref> is an example illustration of a trie structure <b>120</b> for the metalabels &#x201c;BABY&#x201d;, &#x201c;BAND&#x201d;, &#x201c;CAT&#x201d;, &#x201c;CATHY&#x201d;, &#x201c;DAD&#x201d;, and &#x201c;DAN&#x201d;. In <figref idref="DRAWINGS">FIG. 6</figref>, only nodes related to actual metalabels are present, and unnecessary nodes do not exist. As in <figref idref="DRAWINGS">FIG. 5</figref>, the filenames of the electronic files are represented by triangles <b>122</b>. Each triangle <b>122</b> is attached to one of the metalabel nodes <b>124</b>, and includes filenames and file paths of the electronic files the user has assigned a metalabel with the metalabel matching the associated node <b>124</b>.</p>
+<p id="p-0071" num="0070">In one embodiment of this invention, the additional hierarchical file structure is implemented as a double trie structure. Both tries of the double trie structure are desirably Patricia tries. The first trie uses the metalabels as keywords. As shown in <figref idref="DRAWINGS">FIG. 6</figref>, each node of the trie corresponds to a unique metalabel. Each node in turn desirably contains an internal secondary trie structure to further store a list of files that have been tagged with the specified metalabel. To provide faster results, the second trie of the double trie structure uses the filenames of the electronic files as the keywords, with the secondary trie structure, represented as the triangles in figures, containing the metalabels of the files.</p>
+<p id="p-0072" num="0071">For each add, modify, and update metalabel command, the trie structures are suitably modified. The file copy, move, and delete commands of a UNIX file system can be modified to create metalabeled copy, metalabeled move, and metalabeled delete commands. These commands modify the trie structures while performing the file system commands.</p>
+<p id="p-0073" num="0072">The following is an example of an algorithm for the double-trie implementation of the second hierarchical file structure of this invention.</p>
+<p id="h-0007" num="0000">Data Structures Used</p>
+<p id="p-0074" num="0073">1. File Trie: a Patricia Trie, with each node possibly containing a contains-metalabel sub-trie; and</p>
+<p id="p-0075" num="0074">2. Metalabel Trie: a Patricia Trie, with each node possibly containing a files-metalabeled sub-trie.</p>
+<p id="h-0008" num="0000">Adding a Metalabel to a File</p>
+<p id="p-0076" num="0075">
+<tables id="TABLE-US-00002" num="00002">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>addmetalabel(&#x3c;filename&#x3e;, &#x3c;metalabel&#x3e;)</entry>
+</row>
+<row>
+<entry>&#x2003;(i)&#x2003;&#x2003;// Metalabel Trie Structure</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;a. Locate the subtrie which is identified with the key</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x3c;metalabel&#x3e; in the Metalabel Trie</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;b. If not found, create a node (and files-metalabeled subtrie) in</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;the Metalabel Trie for the given metalabel.</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;c. If subtrie already contains &#x201c;filename&#x201d;,</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;return error. (File is already tagged with the same</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;metalabel)</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2002;Else</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;add &#x201c;filename&#x201d; to the files-metalabeled subtrie.</entry>
+</row>
+<row>
+<entry>&#x2003;(ii)&#x2003;&#x2002;&#x2009;// File Trie Structure</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;a. Locate the contains-metalabel subtrie corresponding to the</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;given filename in the File Trie.</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;b. If not found, create a node (and contains-metalabel subtrie) in</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;the File trie, for the given filename.</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;c. If subtrie already contains &#x201c;metalabel&#x201d;, return error. (File is</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;already tagged with the same metalabel).</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2002;Else</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;add &#x201c;metalabel&#x201d; to the contains-metalabel subtrie.</entry>
+</row>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+Removing a Metalabel to a File
+</p>
+<p id="p-0077" num="0076">
+<tables id="TABLE-US-00003" num="00003">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>removemetalabel(&#x3c;filename&#x3e;,&#x3c;metalabel&#x3e;)</entry>
+</row>
+<row>
+<entry>&#x2003;1. // Metalabel Trie Structure.</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;a. Locate the files-metalabeled subtrie corresponding to the given</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;metalabel in the Metalabel Trie</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;b. If not found, return error. (No such metalabel found)</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;c. If subtrie doesn't contain &#x201c;filename&#x201d;, return error. (No such</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;metalabel for the file).</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2002;Else</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;i. remove &#x201c;filename&#x201d; from the files-metalabeled</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;subtrie.</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;ii. if subtrie is empty, then remove the metalabel from</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;Metalabel Trie</entry>
+</row>
+<row>
+<entry>&#x2003;2. // File Trie Structure</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;a. Locate the contains-metalabel subtrie corresponding to the</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;given filename in the File Trie.</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;b. if not found, return error. (No such file found in index)</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;c. if subtrie doesn't contain &#x201c;metalabel&#x201d;, return error. (No such</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;metalabel for the file).</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;Else</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;i. remove &#x201c;metalabel&#x201d; from the contains-metalabel</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;subtrie.</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;ii. if subtrie is empty, then remove the filename from</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;File Trie</entry>
+</row>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+List Metalabels of a File
+</p>
+<p id="p-0078" num="0077">
+<tables id="TABLE-US-00004" num="00004">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>listmetalabels(&#x3c;filename&#x3e;)</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;1. // File Trie Structure</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;a. Locate the contains-metalabel subtrie corresponding to the</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;given filename in the File Trie.</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;b. if not found, return error. (No such file found in index)</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;Else</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;return the contents of the contains-metalabel subtrie.</entry>
+</row>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+List Files with a Metalabel
+</p>
+<p id="p-0079" num="0078">
+<tables id="TABLE-US-00005" num="00005">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>listfiles(metalabel)</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;1. // Metalabel Trie Structure</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;a. Locate the files-metalabeled subtrie corresponding to the</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;given filename in the Metalabel Trie.</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;b. if not found, return error. (No such metalabel found in index)</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;Else</entry>
+</row>
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;return the contents of the files-metalabeled subtrie.</entry>
+</row>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+Remove File from the Index
+</p>
+<p id="p-0080" num="0079">
+<tables id="TABLE-US-00006" num="00006">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="28pt" align="left"/>
+<colspec colname="1" colwidth="189pt" align="left"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>removefile(filename)</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;1. Set Metalabelslist=listmetalabels(filename)</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;2. While metalabelslist not empty repeat</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;a. remove a metalabel from the list</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;b. call removemetalabel(filename,metalabel)</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+Update Index for Copy File Command
+</p>
+<p id="p-0081" num="0080">
+<tables id="TABLE-US-00007" num="00007">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="42pt" align="left"/>
+<colspec colname="1" colwidth="175pt" align="left"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>copyfile(src,dest)</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;1. Call removefile(dest).</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;2. Set Metalabelslist=listmetalabels(src)</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;3. While metalabelslist not empty repeat</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;a. remove a metalabel from the list</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;b. call addmetalabel(dest,metalabel)</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+Update Index for Move File Command
+</p>
+<p id="p-0082" num="0081">
+<tables id="TABLE-US-00008" num="00008">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="63pt" align="left"/>
+<colspec colname="1" colwidth="154pt" align="left"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>movefile(src,dest)</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;1. Call copyfile(src,dest).</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;2. Call removefile(src)</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+Search Files with the Metalabel
+</p>
+<p id="p-0083" num="0082">
+<tables id="TABLE-US-00009" num="00009">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>searchfiles(metalabelslist)</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;1. for each metalabel-i element of metalabelslist</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;a. get files-i=listfiles(metalabel-i)</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;b. if files-i == empty</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;return null</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;c. sort files-i</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;2. get fileslist by doing a &#x201c;incremental intersection&#x201d; of all files-i</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;3. return fileslist</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0084" num="0083">In another embodiment of this invention, the second trie, File-Trie, is replaced with a change in the basic file system. The directory of the Linux/Unix file system is modified to incorporate meta-information. An extra field is added in the structure corresponding to the directory class. This stores meta-information. Information about the amount of data is also stored and indirect addressing is applied at the end and a pointer to a file containing extra information is stored. The data blocks of the directory desirably points to the directory structure. The directory structure of the file system, Ext2 is:</p>
+<p id="p-0085" num="0084">
+<tables id="TABLE-US-00010" num="00010">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="28pt" align="left"/>
+<colspec colname="1" colwidth="189pt" align="left"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>struct EXT2_DIR_ENTRY {</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;DWORD inode; /* Inode number */</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;WORD rec_len; /* Directory entry length */</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;BYTE name_len; /* Name length */</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;BYTE file_type;&#x2003;&#x2003;/*File type */</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2003;&#x2003;char name[EXT2_NAME_LEN]; /* File name */</entry>
+</row>
+<row>
+<entry/>
+<entry>};</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0086" num="0085">The directory entries are the array of struct EXT2_DIR_ENTRY. The</p>
+<p id="h-0009" num="0000">size of the each structure is given by the rec_len.</p>
+<p id="h-0010" num="0000">inode:&#x2014;The inode number of the entry.</p>
+<p id="h-0011" num="0000">rec_len:&#x2014;The length of the record.</p>
+<p id="h-0012" num="0000">name_len:&#x2014;The length of the name of the file.</p>
+<p id="h-0013" num="0000">name:&#x2014;The name of the file. The string is not NULL terminated.</p>
+<p id="h-0014" num="0000">The above entry is modified to include 2 more fields:</p>
+<p id="p-0087" num="0086">
+<tables id="TABLE-US-00011" num="00011">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>WORD&#x2003;&#x2003;metalabel_len; /* Length of the metalabel field */</entry>
+</row>
+<row>
+<entry>char&#x2003;&#x2003;&#x2003;&#x2009;metalabels[ ]; /* The metalabels associated with this file */</entry>
+</row>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+Whenever the copy or move (rename) command is called, the &#x201c;metalabels&#x201d; structure corresponding to the files involved must also be updated. The get-metalabel, and set-metalabel commands, read/update the directory inode-structure. To convert the current file-system to the abstract-file-system of this invention, each directory in the current file system must be pre-processed to take care of the new fields.
+</p>
+<p id="p-0088" num="0087">The method of this invention is desirably performed by a data processing system. The steps the system user would take are the steps of entering the desired metalabels and entering the query. The system would desirably perform the steps of: providing the electronic file in a first hierarchical file structure; assigning the user-entered metalabel to the electronic file; organizing the electronic file into the second hierarchical file structure as a function of the metalabel; receiving a query from a user; searching the second hierarchical file structure as a function of the query; and returning to the user the electronic file(s) having the metalabel matching the query.</p>
+<p id="p-0089" num="0088">The method of this invention is desirably executed and implemented in a data processing system by software program code that is desirably stored on a computer-readable medium, such as a hard drive. In one embodiment of this invention, a computer-readable medium encoded with instructions for organizing a plurality of electronic files of a data processing system includes a first program code that, when executed by the system, establishes a first hierarchical file structure including the plurality of electronic files. As discussed above, each of the plurality of electronic files is identified by a filename in the first hierarchical file structure.</p>
+<p id="p-0090" num="0089">A second program code establishes a second hierarchical file structure, and desirably a plurality of additional hierarchical file structures, including the plurality of electronic files, each of the plurality of electronic files identified by a user-defined metalabel in the second hierarchical file structure. The program codes operate simultaneously, and the first and second hierarchical file structures exist simultaneously in the data processing system for the plurality of electronic files. The medium also includes a third program code for searching the second hierarchical file structure according to a user entered query.</p>
+<p id="p-0091" num="0090">As discussed above, in one embodiment of this invention, the second program code establishes a second hierarchical file structure comprising a trie with a plurality of nodes. Each of the nodes of the trie corresponds to one of the user-defined metalabels, and each of the nodes comprising an internal trie structure of the electronic files that have a matching metalabel.</p>
+<p id="p-0092" num="0091">The present invention is described in further detail in connection with the algorithm described above and the following results on various sample metalabels and queries which illustrate or simulate various aspects involved in the practice of the invention. It is to be understood that all changes that come within the spirit of the invention are desired to be protected and thus the invention is not to be construed as limited by these examples.</p>
+<p id="p-0093" num="0092">Algorithms for two types of metalabel searches were implemented on a Linux system: one for an abstract file system with no hierarchical metalabels and the other with hierarchical metalabel, as described above. The file system was populated with 10K and 100K files in the two experiments. Each of these search mechanisms were implemented in two ways, one where the system loaded the search program at search time, and the other where a client-server model was developed and the search procedure was implemented as a daemon process. In the first approach, both the query and total execution time (data loading and query) are reported.</p>
+<p id="p-0094" num="0093">In the system with no hierarchical metalabels, the system was augmented with a suggestion mechanism, where the union of all metalabels that were present in the reported files, which matched the search (metalabels), was also reported. The tests included times taken for both kinds of this system.</p>
+<p id="p-0095" num="0094">In the hierarchical system, the suggestions are always included for further refinement of the search. The suggestions include metalabels which are possible predecessors or successors of the current metalabel provided at the search query.</p>
+<p id="p-0096" num="0095">The efficiency of the method is evident from the time required to execute the search. For a system with 100K files, typical queries would require milliseconds. Even if the reported abstract folders contained files on the order of tens of thousands, the time required is less than a few seconds. Naturally these times would improve with utilization of well-known techniques for client-server programming such as caching. Further improvements arise from replacing the second trie structure with the modified inode structure as described above. Note that all changes to the files and metalabels are immediately reflected in the system.</p>
+<p id="p-0097" num="0096">
+<tables id="TABLE-US-00012" num="00012">
+<table frame="none" colsep="0" rowsep="0" pgwide="1">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="273pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>No Hierarchical Metalabels</entry>
+</row>
+<row>
+<entry>All times in ms</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="119pt" align="left"/>
+<colspec colname="1" colwidth="154pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Index File Size</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="offset" colwidth="119pt" align="left"/>
+<colspec colname="1" colwidth="70pt" align="center"/>
+<colspec colname="2" colwidth="84pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>10k</entry>
+<entry>100k</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="119pt" align="left"/>
+<colspec colname="1" colwidth="154pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Query</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="7">
+<colspec colname="offset" colwidth="119pt" align="left"/>
+<colspec colname="1" colwidth="21pt" align="center"/>
+<colspec colname="2" colwidth="28pt" align="center"/>
+<colspec colname="3" colwidth="21pt" align="center"/>
+<colspec colname="4" colwidth="28pt" align="center"/>
+<colspec colname="5" colwidth="28pt" align="center"/>
+<colspec colname="6" colwidth="28pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Dad</entry>
+<entry>Others</entry>
+<entry>photo</entry>
+<entry>Dad</entry>
+<entry>others</entry>
+<entry>photo</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="6" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="7">
+<colspec colname="1" colwidth="119pt" align="left"/>
+<colspec colname="2" colwidth="21pt" align="char" char="."/>
+<colspec colname="3" colwidth="28pt" align="char" char="."/>
+<colspec colname="4" colwidth="21pt" align="char" char="."/>
+<colspec colname="5" colwidth="28pt" align="char" char="."/>
+<colspec colname="6" colwidth="28pt" align="char" char="."/>
+<colspec colname="7" colwidth="28pt" align="char" char="."/>
+<tbody valign="top">
+<row>
+<entry>Number of Files reported</entry>
+<entry>359</entry>
+<entry>1258</entry>
+<entry>420</entry>
+<entry>14233</entry>
+<entry>20132</entry>
+<entry>16076</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="8">
+<colspec colname="1" colwidth="49pt" align="left"/>
+<colspec colname="2" colwidth="70pt" align="left"/>
+<colspec colname="3" colwidth="21pt" align="char" char="."/>
+<colspec colname="4" colwidth="28pt" align="char" char="."/>
+<colspec colname="5" colwidth="21pt" align="char" char="."/>
+<colspec colname="6" colwidth="28pt" align="char" char="."/>
+<colspec colname="7" colwidth="28pt" align="char" char="."/>
+<colspec colname="8" colwidth="28pt" align="char" char="."/>
+<tbody valign="top">
+<row>
+<entry>Load at Search</entry>
+<entry>Query Time:</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>With Suggestion-</entry>
+<entry>14</entry>
+<entry>54</entry>
+<entry>22</entry>
+<entry>790</entry>
+<entry>1206</entry>
+<entry>892</entry>
+</row>
+<row>
+<entry/>
+<entry>(other applicable</entry>
+</row>
+<row>
+<entry/>
+<entry>metalabels displayed)</entry>
+</row>
+<row>
+<entry/>
+<entry>Without Suggestion</entry>
+<entry>7</entry>
+<entry>28</entry>
+<entry>9</entry>
+<entry>330</entry>
+<entry>586</entry>
+<entry>485</entry>
+</row>
+<row>
+<entry/>
+<entry>Query Time + data</entry>
+</row>
+<row>
+<entry/>
+<entry>loading</entry>
+</row>
+<row>
+<entry/>
+<entry>With Suggestion-</entry>
+<entry>172</entry>
+<entry>209</entry>
+<entry>199</entry>
+<entry>3236</entry>
+<entry>3870</entry>
+<entry>3634</entry>
+</row>
+<row>
+<entry/>
+<entry>(other applicable</entry>
+</row>
+<row>
+<entry/>
+<entry>metalabels displayed)</entry>
+</row>
+<row>
+<entry/>
+<entry>Without Suggestion</entry>
+<entry>163</entry>
+<entry>183</entry>
+<entry>167</entry>
+<entry>2930</entry>
+<entry>3285</entry>
+<entry>2952</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="7">
+<colspec colname="1" colwidth="119pt" align="left"/>
+<colspec colname="2" colwidth="21pt" align="char" char="."/>
+<colspec colname="3" colwidth="28pt" align="char" char="."/>
+<colspec colname="4" colwidth="21pt" align="char" char="."/>
+<colspec colname="5" colwidth="28pt" align="char" char="."/>
+<colspec colname="6" colwidth="28pt" align="char" char="."/>
+<colspec colname="7" colwidth="28pt" align="char" char="."/>
+<tbody valign="top">
+<row>
+<entry>Client-Server model:</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>With Suggestion-(other</entry>
+<entry>17</entry>
+<entry>66</entry>
+<entry>25</entry>
+<entry>1284</entry>
+<entry>2182</entry>
+<entry>1813</entry>
+</row>
+<row>
+<entry>applicable metalabel displayed)</entry>
+</row>
+<row>
+<entry>Without Suggestion</entry>
+<entry>9</entry>
+<entry>33</entry>
+<entry>16</entry>
+<entry>363</entry>
+<entry>605</entry>
+<entry>505</entry>
+</row>
+<row>
+<entry namest="1" nameend="7" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0098" num="0097">
+<tables id="TABLE-US-00013" num="00013">
+<table frame="none" colsep="0" rowsep="0" pgwide="1">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="273pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>Hierarchical Metalabels</entry>
+</row>
+<row>
+<entry>All times in ms</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="91pt" align="left"/>
+<colspec colname="1" colwidth="182pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Index File Size</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="offset" colwidth="91pt" align="left"/>
+<colspec colname="1" colwidth="91pt" align="center"/>
+<colspec colname="2" colwidth="91pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>10k</entry>
+<entry>100k</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="91pt" align="left"/>
+<colspec colname="1" colwidth="182pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Query</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="7">
+<colspec colname="offset" colwidth="91pt" align="left"/>
+<colspec colname="1" colwidth="21pt" align="center"/>
+<colspec colname="2" colwidth="28pt" align="center"/>
+<colspec colname="3" colwidth="42pt" align="center"/>
+<colspec colname="4" colwidth="21pt" align="center"/>
+<colspec colname="5" colwidth="28pt" align="center"/>
+<colspec colname="6" colwidth="42pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>dad/</entry>
+<entry>others/</entry>
+<entry>uncle/others</entry>
+<entry>dad/</entry>
+<entry>others/</entry>
+<entry>uncle/video</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="6" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="7">
+<colspec colname="1" colwidth="91pt" align="left"/>
+<colspec colname="2" colwidth="21pt" align="char" char="."/>
+<colspec colname="3" colwidth="28pt" align="char" char="."/>
+<colspec colname="4" colwidth="42pt" align="char" char="."/>
+<colspec colname="5" colwidth="21pt" align="char" char="."/>
+<colspec colname="6" colwidth="28pt" align="char" char="."/>
+<colspec colname="7" colwidth="42pt" align="char" char="."/>
+<tbody valign="top">
+<row>
+<entry>Number of Files</entry>
+<entry>359</entry>
+<entry>0</entry>
+<entry>60</entry>
+<entry>2745</entry>
+<entry>0</entry>
+<entry>571</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="8">
+<colspec colname="1" colwidth="28pt" align="left"/>
+<colspec colname="2" colwidth="63pt" align="left"/>
+<colspec colname="3" colwidth="21pt" align="char" char="."/>
+<colspec colname="4" colwidth="28pt" align="char" char="."/>
+<colspec colname="5" colwidth="42pt" align="char" char="."/>
+<colspec colname="6" colwidth="21pt" align="char" char="."/>
+<colspec colname="7" colwidth="28pt" align="char" char="."/>
+<colspec colname="8" colwidth="42pt" align="char" char="."/>
+<tbody valign="top">
+<row>
+<entry>Load at</entry>
+<entry>Query time</entry>
+<entry>18</entry>
+<entry>12</entry>
+<entry>13</entry>
+<entry>96</entry>
+<entry>44</entry>
+<entry>55</entry>
+</row>
+<row>
+<entry>Search</entry>
+<entry>Query time + _Data</entry>
+<entry>179</entry>
+<entry>167</entry>
+<entry>165</entry>
+<entry>2633</entry>
+<entry>2533</entry>
+<entry>2535</entry>
+</row>
+<row>
+<entry/>
+<entry>loading</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="7">
+<colspec colname="1" colwidth="91pt" align="left"/>
+<colspec colname="2" colwidth="21pt" align="char" char="."/>
+<colspec colname="3" colwidth="28pt" align="char" char="."/>
+<colspec colname="4" colwidth="42pt" align="char" char="."/>
+<colspec colname="5" colwidth="21pt" align="char" char="."/>
+<colspec colname="6" colwidth="28pt" align="char" char="."/>
+<colspec colname="7" colwidth="42pt" align="char" char="."/>
+<tbody valign="top">
+<row>
+<entry>Client-Server model:</entry>
+<entry>32</entry>
+<entry>24</entry>
+<entry>25</entry>
+<entry>145</entry>
+<entry>89</entry>
+<entry>99</entry>
+</row>
+<row>
+<entry namest="1" nameend="7" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0099" num="0098">Thus, the invention provides a method for improved file searching through implementation of additional hierarchical file structures that exist in the background of a data processing system alongside and the traditional hierarchical directory tree file structure.</p>
+<p id="p-0100" num="0099">The method and file structure of this invention can be applied to the organization of web pages or members of web sites such as social networking sites. Current web-based &#x201c;social networking&#x201d; involves groups of people who share a common interest. Most social networking systems form groups, within a web site such as www.twitter.com or www.facebook.com, and a particular person may belong to a number of groups within those web sites. In one embodiment of this invention, the metalabels and hierarchical file structure of this invention can be used to provide an efficient methodology for organizing groups, thereby allowing users to exist in, organize, and efficiently and/or simultaneously participate in multiple groups.</p>
+<p id="p-0101" num="0100">The simultaneous membership in multiple groups is useful when a user's activities are common to a number of groups. As an example, consider a user Alice who has structured her set of groups into a hierarchy where the groups in the hierarchy could be categorized as A1/B1/C1, A1/B1/C2, A1/B2/C3, A1/B2/C4. A user Jane in Alice's group C1 may also occur in Alice's group C4. Alice may want to follow the conversations of Jane in both groups. This would be required with only one instantiation of Jane in her network. Jane can be advised of Alice's inclusion in a group, and in at least some implementations must agree to be part of both groups. It is also possible to limit Jane's interaction to one group. The data corresponding to a user could be real-time and/or may include cached or stored copies. The invention thus provides a hierarchical organization of groups with the power to simultaneously access data streams in multiple groups for efficient management of social groups.</p>
+<p id="p-0102" num="0101"><figref idref="DRAWINGS">FIG. 7</figref> illustrates a hypothetical social group structure for explanation purposes. Alice would like to organize her social structure in the manner shown in <figref idref="DRAWINGS">FIG. 7</figref>. Alice can assign a metalabel of her creation for each of her friends who are also members of the social networking web site. As an example, Alice can assign the metalabels &#x201c;high school&#x201d; and &#x201c;friends&#x201d; to each of Jane and Bob, and &#x201c;work&#x201d; and &#x201c;friends&#x201d; to Bob and John. This metalabel is in addition to, i.e., does not replace, the web site user member identification name of Alice's metalabeled friends. The metalabels are also desirably abstract terms used to organize the metalabeled friends in the abstract hierarchical file structures of this invention. The metalabel is not replicated data, but a new identifier for each friend assigned by Alice. As noted in this example, more than one web site user can be assigned the same metalabel, thereby allowing for grouping according to the common metalabel.</p>
+<p id="p-0103" num="0102">Once the metalabels are created by Alice for her friends, a computer system automatically organizes and stores the user-defined metalabels in a hierarchical file structure. The computer system is desirably operated by the web site as a service to its users, but the hierarchical file structures of this invention could also be implemented on Alice's personal computer system or even through a third party web service. As discussed, the hierarchical file structure includes a trie, wherein a node in the trie that is identified with each metalabel is located or created. The computer system associates the corresponding web site member to the metalabel in the trie.</p>
+<p id="p-0104" num="0103">The stored links between the web site members and their corresponding metalabels organized and stored in the hierarchical file structure allow for quick searching of one or more members associated with a metalabel by searching for the metalabel. By searching for the metalabels, a user can quickly find other web site members associated with the metalabels, and optionally can automatically have a graphical user interface displayed with full or partial communications or other postings from the corresponding users.</p>
+<p id="p-0105" num="0104">In another embodiment of this invention, the metalabels and hierarchical file structure of this invention can be used to limit postings from one social group to that group and not to be seen, at least automatically or easily, by another established social group. A method of organizing and displaying web site member data streams in this fashion is possible via a multiple simultaneous metalabel tagging system of this invention. Referring again to <figref idref="DRAWINGS">FIG. 7</figref>, Alice can organize her online social structure so that Jane's conversations are followed by other high school friends and college friends but not by work friends. Additionally John's conversations are relevant to both work and college friends. By grouping the web site members that Alice is following, she can limit access to those groups to relevant web site members and keep other web site members who are following her from seeing communications or other postings from the grouped members.</p>
+<p id="p-0106" num="0105">In one embodiment of this invention, a user's social groups that are established using the metalabels of this invention can be displayed to the user generating a graphical user interface (GUI) illustrating the groups or metalabels of the hierarchical file structure. <figref idref="DRAWINGS">FIG. 8</figref> illustrates an exemplary illustration of screen display of a GUI <b>200</b> for displaying the metalabel groups of a user. The GUI <b>200</b> includes a group directory display <b>202</b> illustrating the groups <b>204</b>, <b>206</b>, <b>208</b>, <b>210</b> and the group members <b>212</b>, <b>214</b>, <b>216</b>, <b>218</b> within the groups, respectively. On the right side of the GUI <b>200</b> is messaging window <b>220</b> for displaying communications <b>222</b> from group members posted to the web site. In the embodiment shown in <figref idref="DRAWINGS">FIG. 8</figref>, the messaging window is divided into two portions <b>224</b> and <b>226</b>. First portion <b>224</b> includes communications <b>222</b> from group <b>204</b>, and the communications <b>222</b> in the second portion <b>226</b> are generated and viewed by group <b>206</b>. While this particular GUI <b>200</b> shows messages to the user for two groups, the members of one group would not be able to view the messages unless those members were also in the other group. As will be appreciated, the configuration and content of the GUI can vary depending on need and the number of user-defined metalabel groups.</p>
+<p id="p-0107" num="0106">An exemplary apparatus for implementing the above metalabel system is generally represented in <figref idref="DRAWINGS">FIG. 9</figref>. A label server <b>230</b> including or associated with a data processor and a database or recordable medium is used for receiving and storing user-defined metalabels for each of a plurality of web site members. The label server <b>230</b> includes software code stored on a recordable medium of the label server <b>230</b> and executable by the label server <b>230</b> for establishing and maintaining one or more hierarchical file structures. The label server <b>230</b> is in communication with a system for broadcasting and receiving data streams <b>232</b>, such as those existing in current social networking sites. The label server <b>230</b> also includes software code stored on a recordable medium of the label server and executable by the label server for creating a graphical user interface for displays on a user interface of a client device. As an example, the label server <b>230</b> can include or be associated with a browser <b>234</b>, which navigates the social groups and displays interactions in a trie-based hierarchical file structure according to this invention.</p>
+<p id="p-0108" num="0107">In another embodiment of this invention, the metalabels of this invention are applied to web pages themselves to be structured into multiple hierarchical file structures using the user-defined metalabels. Given the increasingly complex structure of local and Internet web-pages, web-pages can be viewed as a file system linked in a graph structure which corresponds to the possible access structure of the pages. This is inherently the only structure available in the architecture of web-pages. Visitors to a web-site are often faced with a myriad of web-page traversals to discover the page of interest. Information management and access thus appears to be a key issue in the &#x201c;jungle&#x201d; of web-pages.</p>
+<p id="p-0109" num="0108">Metalabel-based hierarchical data structures of this invention can be viewed by a browser system and provide alternate views of an interconnected set of web-pages that are typically found on the site of large organization. While searching for web-pages can be achieved via a search for relevant keywords, a structured view of the arrangement of web-pages has its own advantages. Often it would be easier to access structured and labeled data than search for a &#x201c;needle in a haystack,&#x201d; which search engines are adept in doing. Consider a similar problem in the organization of files. File systems achieve a level of data organization by using a tree to provide a hierarchical and structured arrangement. Traditional file systems, including both UNIX and its variations (LINUX, etc.) and WINDOWS, have the most natural mechanism for organizing data: one hierarchical method of file organization, which is tree structured with directories and sub-directories.</p>
+<p id="p-0110" num="0109">This single method of organizing data leads to considerable inefficiencies in accessing files. This problem can be addressed by the additional abstract file system of this invention where hierarchical metalabels are introduced to specify multiple hierarchical organizations. The abstract file system of this invention can also be applied to web pages, which can be labeled manually or automatically by data processors, such as by a method of crawling the web-pages in a domain to extract terms as metalabels or collect the web-sites predefined metalabel data, and to provide a search/browse facility so as to enable the user to view/browse and access any indexed or labeled web-page.</p>
+<p id="p-0111" num="0110"><figref idref="DRAWINGS">FIG. 10</figref> is provided as an exemplary structure of a University's web-pages for discussion purposes. Suppose an Internet user wanted to access information about Center A of the University. The web-design would require a number of link traversals, such as from a home page. If direct links from all pages to other pages are not provided, the task of page traversals becomes complicated and cumbersome. This motivates the creation of a page browser. The traditional browser however cannot represent the graph structure above. Instead, the metalabels and multiple hierarchical file structures of this invention can be used to label pages and provide a user-specified hierarchy that creates a page browsing system.</p>
+<p id="p-0112" num="0111">In one embodiment of this invention, a hierarchical web-page view (HWV) structure is provided. The HWV structure provides the facility to label web pages with metalabels which can be used to provide a hierarchical view of the structure of the web-pages. For example, assigning metalabel tags for the web pages in <figref idref="DRAWINGS">FIG. 10</figref> could include:</p>
+<p id="h-0015" num="0000">University/College1/Deprtment B/Faculty A</p>
+<p id="h-0016" num="0000">University/College2/Department B/Faculty A/Center A</p>
+<p id="h-0017" num="0000">University/College3/Faculty C</p>
+<p id="h-0018" num="0000">University/College3/Faculty C/Center C</p>
+<p id="p-0113" num="0112">and would provide an abstract directory structure. In one embodiment of this invention, a folder view of all these pages would then be provided with abstract folders for University containing sub-folders for College1, College2, etc. along with links to the pages.</p>
+<p id="p-0114" num="0113">An implementation architecture of HWV according to one embodiment of this invention includes a web-scan system, a hierarchical-label server, and a web-browser client. Referring to <figref idref="DRAWINGS">FIG. 11</figref>, the web-scan system comprises a label server <b>240</b> and a browser <b>242</b>, such as described above. The web-scan system is embodied as a web-crawler <b>244</b> that provides for a periodic scan of all web-pages to access or create metalabel information. In one embodiment of this invention, the web-crawler <b>244</b> extracts text from web pages to automatically create metalabels. In another embodiment, web page owners or administrators can apply metalabels to their own web pages, and the web-crawler <b>244</b> can extract these metalabels when the web site it accessed. The metalabel information is collected and made accessible to the label server <b>240</b>. The web crawler <b>244</b> provides a web-graph traversal system which will crawl the linked pages and extract from each page a hierarchical metalabel. The hierarchical metalabel will be embedded in the html-code with a distinguisher. This would be standard based and uniquely identifiable. The web-scan systems can be implemented as a standard graph search algorithm.</p>
+<p id="p-0115" num="0114">The label server <b>240</b> of one embodiment of this invention is a server for storing metalabels, methods and code for updating metalabels, including addition, deletion, and editing, and a search facility for web-pages corresponding to metalabels. The label server would interact with browser <b>242</b> as a Client-Server system. The label server <b>240</b> is implemented as a double-trie system, with two tries which would maintain a doubly-indexed database of web-pages and their corresponding metalabels. For each add, modify, and update metalabel tag command, the trie structures are suitably modified. The data modifications for the server are fed by either the web-browser or by an administrative client.</p>
+<p id="p-0116" num="0115">Browsing the web-pages is provided by a browser client <b>242</b>. A link to activate the client <b>242</b> can be embedded into any web-page, typically the home page of the organization. This would activate client <b>242</b> which would then be able to extract metalabel hierarchical information from the server and display the structure of the web-pages. The user can access web-pages directly via links from the browser <b>242</b>. Searching and browsing the multi-hierarchical labels would then be accomplished via standard browsing facilities of directory structures. The browsing client <b>242</b> can be implemented as a web-based GUI that provides a hierarchy browsing system similar to the Explorer system used in Windows and Linux graphical user interfaces.</p>
+<p id="p-0117" num="0116">An administrative client would be a browser with additional features to allow for changing metalabels. To maintain consistency this would entail modifying web-pages automatically to update their meta-labels and administrative privileges would be required. Thus, the metalabel specification of the web-pages can be specified and edited from the page itself or via an administrative client. A screen display from an implementation of the system is illustrated in <figref idref="DRAWINGS">FIG. 12</figref>.</p>
+<p id="p-0118" num="0117">It will be appreciated that details of the foregoing embodiments, given for purposes of illustration, are not to be construed as limiting the scope of this invention. Although only a few exemplary embodiments of this invention have been described in detail above, those skilled in the art will readily appreciate that many modifications are possible in the exemplary embodiments without materially departing from the novel teachings and advantages of this invention. Accordingly, all such modifications are intended to be included within the scope of this invention, which is defined in the following claims and all equivalents thereto. Further, it is recognized that many embodiments may be conceived that do not achieve all of the advantages of some embodiments, particularly of the preferred embodiments, yet the absence of a particular advantage shall not be construed to necessarily mean that such an embodiment is outside the scope of the present invention.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A computer-implemented method for organizing files, web pages, or web site members, the method comprising:
+<claim-text>assigning a user-defined metalabel to each of a plurality of electronic files, web pages, or web site members with a processor to organize the each of the plurality of electronic files, web pages, or web site members into a plurality of simultaneous hierarchical file structures;</claim-text>
+<claim-text>assigning a plurality of user-defined metalabels to each of at least two of the plurality of electronic files, web pages, or web site members with the processor;</claim-text>
+<claim-text>the processor automatically organizing each of the at least two of the plurality of electronic files, web pages, or web site members into at least two of the plurality of simultaneous hierarchical file structures, wherein said hierarchical file structure comprises a trie and includes for each metalabel one or more links to one or more corresponding electronic files, web pages, or web site members of the metalabel;</claim-text>
+<claim-text>wherein:</claim-text>
+<claim-text>each of the user-defined metalabels is an identifier in addition to a filename, a domain address, or a member identification of each of the plurality of electronic files, web pages, or web site members,</claim-text>
+<claim-text>each of the plurality of user-defined metalabels defines a file path from the plurality of simultaneous hierarchical file structures to at least one of the plurality of electronic files, web pages, or web site members, and</claim-text>
+<claim-text>more than one of the plurality of electronic files, web pages, or web site members is assigned a same user-defined metalabel to organize the more than one of the plurality of electronic files, web pages, or web site members in a same hierarchical file structure;</claim-text>
+<claim-text>storing each of the plurality of user-defined metalabels in a database associated with the processor;</claim-text>
+<claim-text>the processor automatically linking each of the plurality of user-defined metalabels stored in the database to a corresponding electronic file, web page, or web site member of the each of the plurality of user-defined metalabels; and</claim-text>
+<claim-text>storing in the database a corresponding path link for each of the user-defined metalabels, wherein the path link for each of the user-defined metalabels identifies a location of a corresponding electronic file, web page, or web site member of the user-defined metalabel.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising generating a graphical user interface illustrating the hierarchical file structures.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>receiving a query through a user interface; and</claim-text>
+<claim-text>searching the hierarchical file structures for electronic files, web pages, or web site members having at least one user-defined metalabel that matches the query.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>grouping web site members including the same user-defined metalabels; and</claim-text>
+<claim-text>displaying messages of web site members grouped with a metalabel upon receiving a metalabel request for the metalabel.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising automatically updating the hierarchical file structures with the processor when any of the plurality of electronic files, web pages, or web site members is moved, copied, or deleted.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein each of a plurality of electronic files, web pages, or web site members is also organized by the filename, the domain address, or the member identification in a first hierarchical file structure and the hierarchical file structure of the metalabels is a second hierarchical file structure, wherein the second hierarchical file structure includes the metalabels and does not include any replicated one of the plurality of electronic files, web pages, or web site members.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the user-defined metalabels are automatically created by a software process executable on the processor or on a second processor.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein each of the metalabels and the same hierarchical file structure including the metalabels comprise non-replicated data.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. A computer-implemented method of organizing a plurality of electronic files, web pages, or web site members organized in a first hierarchical file structure on a recordable medium of a network by a filename, domain address, or a member identification, the method comprising:
+<claim-text>assigning with a processor a plurality of metalabels defined by a user to each of at least two of a plurality of electronic files, web pages, or web site members;</claim-text>
+<claim-text>the processor automatically organizing the metalabels of each of the electronic files, web pages, or web site members into a plurality of additional hierarchical file structures existing simultaneously with the first hierarchical file structure, wherein more than one of the at least two plurality of electronic files, web pages, or web site members is assigned a same user-defined metalabel to organize the more than one of the plurality of electronic files, web pages, or web site members in a same one of the additional hierarchical file structures, wherein said hierarchical file structure comprises a trie and includes for each metalabel one or more links to one or more corresponding electronic files, web pages, or web site members of the metalabel;</claim-text>
+<claim-text>storing the plurality of additional hierarchical file structures on the recordable medium or a second recordable medium associated with the processor; and</claim-text>
+<claim-text>the processor automatically linking each of the plurality of user-defined metalabels stored on the recordable medium or the second recordable medium to a corresponding electronic file, web page, or web site member of the each of the plurality of user-defined metalabels, each of the plurality of user-defined metalabels defining a file path from the plurality of additional hierarchical file structures to at least one of the plurality of electronic files, web pages, or web site members; and</claim-text>
+<claim-text>storing in the database a corresponding path link for each of the user-defined metalabels, wherein the path link for each of the user-defined metalabels identifies a location of a corresponding electronic file, web page, or web site member of the user-defined metalabel.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method of <claim-ref idref="CLM-00009">claim 9</claim-ref>, further comprising connecting or displaying to the user through a user interface one or more web page or one or more message of one or more of the web site members assigned to one of the metalabels.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The method of <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein the hierarchical file structure comprises a trie and organizing the web pages or web site members as a function of the metalabels into a second hierarchical file structure comprises:
+<claim-text>locating or creating a node in the trie that is identified with each metalabel; and</claim-text>
+<claim-text>associating the corresponding web page or web site member to each metalabel in the trie.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The method of <claim-ref idref="CLM-00009">claim 9</claim-ref>, further comprising generating a graphical user interface for connecting or displaying to the user the one or more web page or message of one or more of the web site members.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The method of <claim-ref idref="CLM-00009">claim 9</claim-ref>, further comprising:
+<claim-text>receiving a metalabel request from the user;</claim-text>
+<claim-text>searching with the processor the second hierarchical file structure as a function of the metalabel request; and</claim-text>
+<claim-text>connecting or displaying to the user web pages or messages of the web site members assigned the one of the metalabels that matches the meta label request.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The method of <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein the metalabel request comprises a metalabel query.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The method of <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein the metalabel request comprises a selection of a metalabel by the user from a list or display of the metalabels.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The method of <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein each of the plurality of additional hierarchical file structures includes one or more of the metalabels and does not include any replicated one of the plurality of electronic files, web pages, or web site members. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

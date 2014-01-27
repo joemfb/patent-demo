@@ -1,0 +1,2207 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627006-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627006</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13633091</doc-number>
+<date>20121001</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>16</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>711114</main-classification>
+<further-classification>711161</further-classification>
+<further-classification>711165</further-classification>
+<further-classification>714  623</further-classification>
+<further-classification>707810</further-classification>
+</classification-national>
+<invention-title id="d2e43">Storing row-major data with an affinity for columns</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5263145</doc-number>
+<kind>A</kind>
+<name>Brady et al.</name>
+<date>19931100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5404510</doc-number>
+<kind>A</kind>
+<name>Smith et al.</name>
+<date>19950400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>5506979</doc-number>
+<kind>A</kind>
+<name>Menon</name>
+<date>19960400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>5546575</doc-number>
+<kind>A</kind>
+<name>Potter et al.</name>
+<date>19960800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>5699457</doc-number>
+<kind>A</kind>
+<name>Adar et al.</name>
+<date>19971200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>5710909</doc-number>
+<kind>A</kind>
+<name>Brown et al.</name>
+<date>19980100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>5794229</doc-number>
+<kind>A</kind>
+<name>French et al.</name>
+<date>19980800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>5867723</doc-number>
+<kind>A</kind>
+<name>Chin et al.</name>
+<date>19990200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>5995080</doc-number>
+<kind>A</kind>
+<name>Biro et al.</name>
+<date>19991100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>6011871</doc-number>
+<kind>A</kind>
+<name>Xu</name>
+<date>20000100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>6061763</doc-number>
+<kind>A</kind>
+<name>Rubin et al.</name>
+<date>20000500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>6216125</doc-number>
+<kind>B1</kind>
+<name>Johnson</name>
+<date>20010400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>6360213</doc-number>
+<kind>B1</kind>
+<name>Wagstaff et al.</name>
+<date>20020300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>6643633</doc-number>
+<kind>B2</kind>
+<name>Chau et al.</name>
+<date>20031100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>6959300</doc-number>
+<kind>B1</kind>
+<name>Caldwell et al.</name>
+<date>20051000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>7076108</doc-number>
+<kind>B2</kind>
+<name>Huang et al.</name>
+<date>20060700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>7079056</doc-number>
+<kind>B2</kind>
+<name>Weaver</name>
+<date>20060700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>7126992</doc-number>
+<kind>B2</kind>
+<name>Chiang et al.</name>
+<date>20061000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>37524024</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>7188116</doc-number>
+<kind>B2</kind>
+<name>Cheng</name>
+<date>20070300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>7190284</doc-number>
+<kind>B1</kind>
+<name>Dye et al.</name>
+<date>20070300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>7225249</doc-number>
+<kind>B1</kind>
+<name>Barry et al.</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>7469266</doc-number>
+<kind>B2</kind>
+<name>Gustavson et al.</name>
+<date>20081200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>7496586</doc-number>
+<kind>B1</kind>
+<name>Bonwick et al.</name>
+<date>20090200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>7496589</doc-number>
+<kind>B1</kind>
+<name>Jain et al.</name>
+<date>20090200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>7552130</doc-number>
+<kind>B2</kind>
+<name>Cook et al.</name>
+<date>20090600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>7552218</doc-number>
+<kind>B2</kind>
+<name>Kaluskar et al.</name>
+<date>20090600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>US</country>
+<doc-number>7558290</doc-number>
+<kind>B1</kind>
+<name>Nucci et al.</name>
+<date>20090700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>US</country>
+<doc-number>7565346</doc-number>
+<kind>B2</kind>
+<name>Fan et al.</name>
+<date>20090700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>US</country>
+<doc-number>7587430</doc-number>
+<kind>B2</kind>
+<name>Suzuki et al.</name>
+<date>20090900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>US</country>
+<doc-number>7693325</doc-number>
+<kind>B2</kind>
+<name>Pulla et al.</name>
+<date>20100400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00031">
+<document-id>
+<country>US</country>
+<doc-number>7707194</doc-number>
+<kind>B2</kind>
+<name>Bresch et al.</name>
+<date>20100400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00032">
+<document-id>
+<country>US</country>
+<doc-number>7720878</doc-number>
+<kind>B2</kind>
+<name>Caldwell et al.</name>
+<date>20100500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00033">
+<document-id>
+<country>US</country>
+<doc-number>7882122</doc-number>
+<kind>B2</kind>
+<name>Wong</name>
+<date>20110200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00034">
+<document-id>
+<country>US</country>
+<doc-number>8073777</doc-number>
+<kind>B2</kind>
+<name>Barry et al.</name>
+<date>20111200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00035">
+<document-id>
+<country>US</country>
+<doc-number>8099440</doc-number>
+<kind>B2</kind>
+<name>Johnson et al.</name>
+<date>20120100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00036">
+<document-id>
+<country>US</country>
+<doc-number>8296517</doc-number>
+<kind>B2</kind>
+<name>Potapov et al.</name>
+<date>20121000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00037">
+<document-id>
+<country>US</country>
+<doc-number>2002/0194428</doc-number>
+<kind>A1</kind>
+<name>Green</name>
+<date>20021200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711114</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00038">
+<document-id>
+<country>US</country>
+<doc-number>2003/0108248</doc-number>
+<kind>A1</kind>
+<name>Huang et al.</name>
+<date>20030600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00039">
+<document-id>
+<country>US</country>
+<doc-number>2003/0212694</doc-number>
+<kind>A1</kind>
+<name>Potapov et al.</name>
+<date>20031100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00040">
+<document-id>
+<country>US</country>
+<doc-number>2004/0139099</doc-number>
+<kind>A1</kind>
+<name>Weaver</name>
+<date>20040700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00041">
+<document-id>
+<country>US</country>
+<doc-number>2005/0027729</doc-number>
+<kind>A1</kind>
+<name>Kuchinsky et al.</name>
+<date>20050200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00042">
+<document-id>
+<country>US</country>
+<doc-number>2005/0166083</doc-number>
+<kind>A1</kind>
+<name>Frey et al.</name>
+<date>20050700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714  6</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00043">
+<document-id>
+<country>US</country>
+<doc-number>2005/0210054</doc-number>
+<kind>A1</kind>
+<name>Harris</name>
+<date>20050900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00044">
+<document-id>
+<country>US</country>
+<doc-number>2005/0216421</doc-number>
+<kind>A1</kind>
+<name>Barry et al.</name>
+<date>20050900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00045">
+<document-id>
+<country>US</country>
+<doc-number>2005/0278324</doc-number>
+<kind>A1</kind>
+<name>Fan et al.</name>
+<date>20051200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00046">
+<document-id>
+<country>US</country>
+<doc-number>2006/0100912</doc-number>
+<kind>A1</kind>
+<name>Kumar et al.</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00047">
+<document-id>
+<country>US</country>
+<doc-number>2007/0109155</doc-number>
+<kind>A1</kind>
+<name>Fallon</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00048">
+<document-id>
+<country>US</country>
+<doc-number>2007/0143248</doc-number>
+<kind>A1</kind>
+<name>Uppala</name>
+<date>20070600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00049">
+<document-id>
+<country>US</country>
+<doc-number>2008/0010240</doc-number>
+<kind>A1</kind>
+<name>Zait</name>
+<date>20080100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00050">
+<document-id>
+<country>US</country>
+<doc-number>2008/0050025</doc-number>
+<kind>A1</kind>
+<name>Bashyam et al.</name>
+<date>20080200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00051">
+<document-id>
+<country>US</country>
+<doc-number>2008/0071818</doc-number>
+<kind>A1</kind>
+<name>Apanowicz et al.</name>
+<date>20080300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00052">
+<document-id>
+<country>US</country>
+<doc-number>2008/0098048</doc-number>
+<kind>A1</kind>
+<name>Cao et al.</name>
+<date>20080400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00053">
+<document-id>
+<country>US</country>
+<doc-number>2008/0162523</doc-number>
+<kind>A1</kind>
+<name>Kraus et al.</name>
+<date>20080700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00054">
+<document-id>
+<country>US</country>
+<doc-number>2008/0294676</doc-number>
+<kind>A1</kind>
+<name>Faerber et al.</name>
+<date>20081100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00055">
+<document-id>
+<country>US</country>
+<doc-number>2008/0294863</doc-number>
+<kind>A1</kind>
+<name>Faerber et al.</name>
+<date>20081100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00056">
+<document-id>
+<country>US</country>
+<doc-number>2009/0006399</doc-number>
+<kind>A1</kind>
+<name>Raman et al.</name>
+<date>20090100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00057">
+<document-id>
+<country>US</country>
+<doc-number>2009/0106210</doc-number>
+<kind>A1</kind>
+<name>Slezak et al.</name>
+<date>20090400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00058">
+<document-id>
+<country>US</country>
+<doc-number>2009/0106281</doc-number>
+<kind>A1</kind>
+<name>Marwah et al.</name>
+<date>20090400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00059">
+<document-id>
+<country>US</country>
+<doc-number>2009/0204626</doc-number>
+<kind>A1</kind>
+<name>Mustafa</name>
+<date>20090800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00060">
+<document-id>
+<country>US</country>
+<doc-number>2009/0234823</doc-number>
+<kind>A1</kind>
+<name>Wong</name>
+<date>20090900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00061">
+<document-id>
+<country>US</country>
+<doc-number>2009/0287737</doc-number>
+<kind>A1</kind>
+<name>Hammerly</name>
+<date>20091100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00062">
+<document-id>
+<country>US</country>
+<doc-number>2009/0319536</doc-number>
+<kind>A1</kind>
+<name>Parker et al.</name>
+<date>20091200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00063">
+<document-id>
+<country>US</country>
+<doc-number>2010/0030796</doc-number>
+<kind>A1</kind>
+<name>Netz et al.</name>
+<date>20100200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00064">
+<document-id>
+<country>US</country>
+<doc-number>2010/0042587</doc-number>
+<kind>A1</kind>
+<name>Johnson et al.</name>
+<date>20100200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00065">
+<document-id>
+<country>US</country>
+<doc-number>2010/0278446</doc-number>
+<kind>A1</kind>
+<name>Ganesh et al.</name>
+<date>20101100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00066">
+<document-id>
+<country>US</country>
+<doc-number>2010/0281004</doc-number>
+<kind>A1</kind>
+<name>Kapoor et al.</name>
+<date>20101100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00067">
+<document-id>
+<country>US</country>
+<doc-number>2010/0281079</doc-number>
+<kind>A1</kind>
+<name>Marwah et al.</name>
+<date>20101100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00068">
+<document-id>
+<country>US</country>
+<doc-number>2011/0029569</doc-number>
+<kind>A1</kind>
+<name>Ganesh et al.</name>
+<date>20110200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00069">
+<document-id>
+<country>US</country>
+<doc-number>2011/0047330</doc-number>
+<kind>A1</kind>
+<name>Potapov et al.</name>
+<date>20110200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00070">
+<document-id>
+<country>US</country>
+<doc-number>2011/0295817</doc-number>
+<kind>A1</kind>
+<name>Chandrasekar et al.</name>
+<date>20111200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00071">
+<document-id>
+<country>US</country>
+<doc-number>2012/0054225</doc-number>
+<kind>A1</kind>
+<name>Marwah et al.</name>
+<date>20120300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00072">
+<document-id>
+<country>US</country>
+<doc-number>2012/0117038</doc-number>
+<kind>A1</kind>
+<name>Ganesh</name>
+<date>20120500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00073">
+<document-id>
+<country>US</country>
+<doc-number>2012/0143833</doc-number>
+<kind>A1</kind>
+<name>Ganesh et al.</name>
+<date>20120600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00074">
+<document-id>
+<country>US</country>
+<doc-number>2013/0036101</doc-number>
+<kind>A1</kind>
+<name>Marwah</name>
+<date>20130200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00075">
+<document-id>
+<country>EP</country>
+<doc-number>0 518 575</doc-number>
+<kind>A1</kind>
+<date>19921200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00076">
+<document-id>
+<country>WO</country>
+<doc-number>WO 2009/000186</doc-number>
+<kind>A1</kind>
+<date>20081200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00077">
+<othercit>U.S. Appl. No. 61/174,447, Ganesh et al.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00078">
+<othercit>U.S. Appl. No. 11/875,642, filed Oct. 19, 2007 (27 pages).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00079">
+<othercit>Loshin, D., &#x201c;Gaining the Performance Edge Using a Column-Oriented Database Management System&#x201d; (2009) 12 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00080">
+<othercit>&#x201c;C-Store: A Column-Oriented DBMS&#x201d; downloaded from the Internet Apr. 1, 2010 &#x3c; http://db.csail.mit.edu/projects/cstore/#papers &#x3e; 4 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00081">
+<othercit>Stonebraker, M. et al., &#x201c;C-Store: A Column-oriented DBMS&#x201d;, Proceedings of the 3<sup>st </sup>VLDB Conference, Trondheim, Norway 2005 (12 pages).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00082">
+<othercit>Abadi, D. et al., &#x201c;Integrating Compression and Execution in Column-Oriented Database Systems&#x201d; Sigmod 2006 (12 pages).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00083">
+<othercit>Sybase IQ, &#x201c;Gaining the Performance Edge Using a Column-Oriented Database Management System&#x201d;, 12 pages, dated Mar. 2009.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00084">
+<othercit>Sybase IQ, &#x201c;An Advanced Columnar Data Warehouse Architecture&#x201d;, Winter Corporation, 17 pages, Dated Jun. 2010.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00085">
+<othercit>Winter Corporation, &#x201c;Demonstrating Efficiency in Large-Scale Data Warehousing&#x201d;, A review of new TPC-H results for the Sun-Sybase IQ Platform, 20 pages, dated in 2003.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00086">
+<othercit>Rabb, David, &#x201c;How to Judge a Columnar Database&#x201d;, Information Management, website http://license.icopyright.net/user/viewFreeUse.act?fuid=MTMxMDAzMjU%3D, dated Dec. 14, 2007, 2 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00087">
+<othercit>Macnicol Roger et al, &#x201c;Sybase IQ Multiplex-Designed for Analytics&#x201d;, Proceedings of the 30<sup>th </sup>VLDB Conference, dated 2004, 4 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00088">
+<othercit>Sybase IQ, &#x201c;Administration Guide&#x201d;, Document ID: 35375-01-1121-02, dated Sep. 19, 1997, 426 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00089">
+<othercit>&#x201c;Open NAND Flash Interface Specification&#x201d;, ONFi Open Nand Flash Interference, Revision 2.1, Jan. 14, 2009, pp. 1-206.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00090">
+<othercit>&#x201c;Open NAND Flash Interface Specification&#x201d;, ONFi Open Nand Flash Interference, Revision 2.3, Aug. 25, 2010, pp. 1-220.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00091">
+<othercit>&#x201c;Open NAND Flash Interface Specification&#x201d;, ONFi Open Nand Flash Interference, Revision 2.2, Oct. 7, 2009, pp. 1-216.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00092">
+<othercit>&#x201c;Open NAND Flash Interface Specification&#x201d;, ONFi Open Nand Flash Interference, Revision 2.0, Feb. 27, 2008, pp. 1-174.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00093">
+<othercit>U.S. Appl. No. 12/617,669, filed Nov. 12, 2009, Office Action, Mailed Sep. 19, 2013.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>32</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>711114</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711161</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711165</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>714  623</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>707810</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>4</number-of-drawing-sheets>
+<number-of-figures>5</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>12859184</doc-number>
+<date>20100818</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8296517</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13633091</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61235325</doc-number>
+<date>20090819</date>
+</document-id>
+</us-provisional-application>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20130024612</doc-number>
+<kind>A1</kind>
+<date>20130124</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only" applicant-authority-category="obligated-assignee">
+<addressbook>
+<orgname>Oracle International Corporation</orgname>
+<address>
+<city>Redwood Shores</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Potapov</last-name>
+<first-name>Dmitry</first-name>
+<address>
+<city>Emerald Hills</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Ozbutun</last-name>
+<first-name>Cetin</first-name>
+<address>
+<city>Atherton</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Loaiza</last-name>
+<first-name>Juan</first-name>
+<address>
+<city>Woodside</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="004" designation="us-only">
+<addressbook>
+<last-name>Bradley</last-name>
+<first-name>Kirk</first-name>
+<address>
+<city>San Francisco</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Hickman Palermo Truong Becker Bingham Wong LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Oracle International Corporation</orgname>
+<role>02</role>
+<address>
+<city>Redwood Shores</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Yu</last-name>
+<first-name>Jae</first-name>
+<department>2185</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A method, device, and computer readable medium for striping rows of data across logical units of storage with an affinity for columns is provided. Alternately, a method, device, and computer readable medium for striping columns of data across logical units of storage with an affinity for rows is provided. When data of a logical slice is requested, a mapping may provide information for determining which logical unit is likely to store the logical slice. In one embodiment, data is retrieved from logical units that are predicted to store the logical slice. In another embodiment, data is retrieved from several logical units, and the data not mapped to the logical unit is removed from the retrieved data.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="129.54mm" wi="215.90mm" file="US08627006-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="157.14mm" wi="140.55mm" file="US08627006-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="171.37mm" wi="95.59mm" file="US08627006-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="215.65mm" wi="149.18mm" file="US08627006-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="231.48mm" wi="147.40mm" orientation="landscape" file="US08627006-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">BENEFIT CLAIM</heading>
+<p id="p-0002" num="0001">This application claims the benefit as a Continuation of application Ser. No. 12/859,184, filed Aug. 18, 2010, the entire contents of which is hereby incorporated by reference as if fully set forth herein, under 35 U.S.C. &#xa7;120. U.S. patent application Ser. No. 12/859,184 claims benefit of Provisional Application Ser. No. 61/235,325, filed Aug. 19, 2009, the entire contents of which is hereby incorporated by reference as if fully set forth herein, under 35 U.S.C. &#xa7;119(e).</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">FIELD OF THE INVENTION</heading>
+<p id="p-0003" num="0002">The present invention relates to database management, and more particularly to a system and method for storing data in physical memory.</p>
+<heading id="h-0003" level="1">BACKGROUND</heading>
+<p id="p-0004" num="0003">Table data is conventionally viewed both pictorially and conceptually as being two dimensional. For example, the sample table below contains data related to a plurality of employees.</p>
+<p id="p-0005" num="0004">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="1" colwidth="84pt" align="center"/>
+<colspec colname="2" colwidth="21pt" align="left"/>
+<colspec colname="3" colwidth="56pt" align="center"/>
+<colspec colname="4" colwidth="56pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>Employee ID</entry>
+<entry>Name</entry>
+<entry>Salary</entry>
+<entry>Department</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>1234</entry>
+<entry>John</entry>
+<entry>75000</entry>
+<entry>Finance</entry>
+</row>
+<row>
+<entry>1235</entry>
+<entry>Tom</entry>
+<entry>65000</entry>
+<entry>Finance</entry>
+</row>
+<row>
+<entry>1236</entry>
+<entry>Kate</entry>
+<entry>85000</entry>
+<entry>Legal</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+When stored in a computer memory, however, this data will be stored as a one-dimensional string of values. A first technique for storing the values of the table is referred to as a row-major orientation, which stores all the values for a first row and then stores the values for the next row&#x2014;e.g. &#x201c; . . . 1234; John; 75000; Finance; 1235; Tom; 65000; Finance; 1236; Kate; 85000; Legal . . . .&#x201d; A second technique for storing the values of the table is referred to as column-major orientation, which stores all the values for a first column and then stores the values for a second column&#x2014;&#x201c; . . . 1234; 1235; 1236; John; Tom; Kate; 75000; 65000; 85000; Finance; Finance; Legal . . . .&#x201d; In other words, data from a table may be stored in a storage format that is either the column type (i.e., column major) or the row type (i.e., row major).
+</p>
+<p id="p-0006" num="0005">When retrieving stored data, data is moved from a permanent memory such as a hard disk drive to a short term memory such as a cache in units of blocks, where a block may be a fixed size such as 32K. When retrieving data that is stored sequentially in the permanent memory, the number of blocks that needs to be transferred to short term memory is minimized. For example, if the table above is stored in a row major format, then retrieving the record for employee 1234 comprises retrieving data that is stored sequentially on the permanent memory (i.e., &#x201c;1234; John; 75000; Finance&#x201d;). Accordingly, that data is likely to all be contained with one block or to only span a few blocks. If, however, a function to calculate an average salary were executed on the data stored in a row-major format, the function would have to retrieve all the salaries stored in the table, which are not stored sequentially, thus necessitating the transfer of many more blocks of a data to short term memory than retrieving the employee record required.</p>
+<p id="p-0007" num="0006">If the table above is stored in a column-major format, then the scenario is reversed. The salary data is stored sequentially (&#x201c;75000; 65000; 85000&#x201d;), and determining an average salary will only require transferring a few blocks of data to the short term memory. The complete record for an employee, however, will not be stored sequentially, thus requiring the transfer of many blocks of data.</p>
+<p id="p-0008" num="0007">Transferring numerous blocks of data is more time consuming and more resource intensive than transferring only a few blocks of data. Accordingly, the average salary operation described above would be completed more quickly and with fewer system resources on the data stored in a column-major format, but the retrieval of an employee record would be executed more quickly and with fewer system resources on the data stored in row-major format. A database designer can choose the preferable storage technique based on the types of operations that will be performed most frequently, but neither format will be able to efficiently execute all types of operations. Accordingly, there exists in the art a need for a data storage technique that combines the benefits of both column major and row major storage techniques.</p>
+<p id="p-0009" num="0008">The approaches described in this section are approaches that could be pursued, but not necessarily approaches that have been previously conceived or pursued. Therefore, unless otherwise indicated, it should not be assumed that any of the approaches described in this section qualify as prior art merely by virtue of their inclusion in this section.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0010" num="0009">The present invention is illustrated by way of example, and not by way of limitation, in the figures of the accompanying drawings and in which like reference numerals refer to similar elements and in which:</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 1</figref> illustrates an example flash memory module.</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 2A</figref> and <figref idref="DRAWINGS">FIG. 2B</figref> illustrate example Open NAND Flash Interface group connectors.</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 3</figref> illustrates an example of an internal flash chip hierarchy.</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 4</figref> illustrates an example computer system that can be used in conjunction with the techniques described herein.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0015" num="0014">In the following description, for the purposes of explanation, numerous specific details are set forth in order to provide a thorough understanding of the present invention. It will be apparent, however, that the present invention may be practiced without these specific details. In other instances, well-known structures and devices are shown in block diagram form in order to avoid unnecessarily obscuring the present invention.</p>
+<heading id="h-0006" level="1">General Overview</heading>
+<p id="p-0016" num="0015">A method and storage device for striping row major data across logical units of storage (also referred to herein as &#x201c;LUNs&#x201d;) with an affinity for columnar slices is provided. Alternately, a method and storage device for striping column major data across logical units of storage with an affinity for row slices is provided. When data of a columnar slice is requested by a host device to a storage device, a memory controller in the storage device uses mapping logic to determine which logical unit is likely to store the columnar slice. In one embodiment that reduces data I/O (&#x201c;input and/or output&#x201d;) between the memory controller and storage chips, data is retrieved from logical units that are predicted to store the columnar slice. In another embodiment that reduces I/O between the memory controller and the host device, data is retrieved from several logical units, and the data that is not in the columnar slice is removed from the retrieved data.</p>
+<p id="p-0017" num="0016">The mapping logic may be used by the controller to store and retrieve the data, and the mapping logic may include any hardware or programmed software mapping that maps a columnar slice to a logical unit. In one embodiment, the mapping logic is data block-specific. In other words, different mappings may be provided for different data blocks. In one example, the mapping is stored on a logical unit that stores the block header for the block, and the memory controller retrieves the mapping from the logical unit. In one embodiment, the memory controller uses a default mapping, implemented in memory or in hardware on the memory controller, of a columnar slice to a logical unit. The memory controller uses the default mapping to determine that data should be retrieved in parallel from the logical unit that stores the columnar slice by default and the logical unit storing the block header by default. In this embodiment, the block header provides additional, corrective mapping information, such as the relative sizes of the columnar slices, that is used to determine whether parts of the requested columnar slice are stored on other logical units. If the default logical unit contained the entire columnar slice, then no further data retrieval is performed to satisfy the request.</p>
+<heading id="h-0007" level="1">Flash Storage Devices</heading>
+<p id="p-0018" num="0017">In an example non-volatile (NV) storage drive system such as flash, multiple NV memory chips store data. As an example, <figref idref="DRAWINGS">FIG. 1</figref> shows a schematic of an example flash drive. The flash drive comprises a flash memory controller <b>101</b> and multiple flash memory chips <b>102</b><i>s</i>. Multiple flash memory chips <b>102</b><i>s </i>can be used to achieve higher storage capacity per drive.</p>
+<p id="p-0019" num="0018">In the example of <figref idref="DRAWINGS">FIG. 1</figref>, the flash memory controller <b>101</b> is connected to a HOST system adapter <b>104</b> via a bus <b>103</b>. The bus might, for example, be a high speed serial bus with a differential interface such as SAS or SATA. High speed serial cabling can simplify storage box wiring, provide better air flow within storage enclosures due to thinner wires, have more compact PCB footprint, and avoid cross-talk between parallel wires. The HOST system is a computing device such as a PC (&#x201c;personal computer&#x201d;) that is configured to use the HOST system adapter <b>104</b> to send instructions to flash memory controller <b>101</b> for storage and retrieval of data on a flash memory device that includes flash memory controller <b>101</b> and storage chips <b>102</b><i>s. </i></p>
+<heading id="h-0008" level="1">Logical Units of Storage</heading>
+<p id="p-0020" num="0019">In one embodiment, internal flash chip hierarchy (see, e.g. <figref idref="DRAWINGS">FIG. 3</figref>) partitions flash chips into a variable number of fully parallel LUNs (Logical Unit Numbers) <b>301</b><i>s</i>. All LUNs share one bus, connecting flash chip to flash controller. In another embodiment, each logical storage unit corresponds to a different physical storage unit such as a flash chip. In one embodiment, each LUN is further subdivided into a variable number of &#x201c;Interleaves&#x201d; <b>303</b><i>s</i>, also capable of parallel operation (with certain restrictions. For example, ONFi 2.0 currently does not define interleaved reads). This flexibility in the internal flash chip hierarchy further increases the variability in flash characteristics.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 3</figref> shows an example of a Target memory organization. In this case, there are two logical units where each logical unit supports two-way interleaved addresses. A device contains one or more targets. A target is controlled by one CE# signal. A target is organized into one or more logical units (LUNs). A logical unit (LUN) is the minimum unit that can independently execute commands and report status. Specifically, separate LUNs may operate on arbitrary command sequences in parallel. For example, it is permissible to start a Page Program operation on LUN <b>0</b> and then prior to the operation's completion to start a Read command on LUN <b>1</b>. In one embodiment, a LUN contains at least one page register and a Flash array. In one embodiment, the number of page registers is dependent on the number of interleaved operations supported for that LUN. In one embodiment, the Flash array contains a number of blocks.</p>
+<heading id="h-0009" level="1">Parallel Interfaces for Flash Drives</heading>
+<p id="p-0022" num="0021">Many parallel interfaces for flash drives do not provide significant performance advantages over high speed serial interfaces. For example, ONFi (Open NAND Flash Interface group) defines a new parallel connector for flash systems, which has no significant advantages over the current generation 3 Gbps SATA, and is in fact slower than next generation 6 Gbps SATA. Legacy ONFi interfaces are rated at 40 MB/s, with first generation rated at about 133 MB/s, second generation rated at about 266 MB/s, and third generation rated at about 400 MB/s. The primary goal for having a new parallel ONFi connector standard, therefore, appears to be standardization for a mass consumer (notebook or desktop) PC and not a new or faster storage system interface.</p>
+<p id="p-0023" num="0022">Example ONFi connectors are illustrated in <figref idref="DRAWINGS">FIGS. 2A and 2B</figref>. The ONFi connector leverages existing memory connectors, avoids major tooling costs, re-uses electrical verification, and ensures low cost and fast TTM (&#x201c;time to market&#x201d;). The ONFi connector and module are key building blocks for pervasive use of NAND in PC platforms. The ONFi 2.0 source synchronous data interface is scalable, backwards compatible, and has no DLL on the NAND device.</p>
+<p id="p-0024" num="0023">For as long as parallel interfaces do not significantly outperform high speed serial interfaces (to a point where all bandwidth bottlenecks in the flash drive-to-HOST adapter bus are eliminated), the difference between serial and parallel interfaces is not relevant for the purposes of this disclosure. An exemplary storage interface is comparable to this generation 3 Gbps or next generation 6 Gbps SATA/SAS.</p>
+<heading id="h-0010" level="1">Data Striping</heading>
+<p id="p-0025" num="0024">To achieve high bandwidth between disks and HOST systems, storage arrays traditionally employ striping techniques, where logically contiguous chunks of data are divided across multiple disks. For host applications reading data in sufficiently large units, combined disk bandwidth is available. However, the combined disk bandwidth may be restricted by bottlenecks in storage pipes (&#x201c;storage bus&#x201d;), host controller logic, host memory bus, etc.</p>
+<p id="p-0026" num="0025">Similar to storage arrays, flash drive systems with multiple memory chips may employ data striping to divide logically contiguous chunks of application data across multiple memory chips, providing increased HOST-to-flash memory bandwidth to applications running on the HOST system.</p>
+<p id="p-0027" num="0026">Different data striping approaches can result in dramatically different performance characteristics for a given HW flash drive configuration (i.e., a flash drive with hardware-based encryption), where the number and type of memory chips, internal on-the-drive bus and external storage bus are fixed.</p>
+<heading id="h-0011" level="1">Striping on Flash Devices</heading>
+<p id="p-0028" num="0027">The same data striping approach can result in dramatically different performance characteristics on different HW flash drive systems. Therefore, data striping in flash drives is typically flash technology/vendor dependent.</p>
+<p id="p-0029" num="0028">For example, in the ONFi 2.0 specification for raw interfaces to NAND memory chips, external chip packaging and internal flash chip hierarchy, five different flash chip packages are defined (TSOP-48, WSOP-48, LGA-52, BGA-63 and BGA-100) and pinouts are fixed for interoperability across chip vendors. Data bus width is flexible between 8 bit and 16 bit. There are 6 asynchronous timing modes and four source synchronous timing modes ranging from 20 Mhz to 66 Mhz. There is a provision for dividing one 16 bit bus into dual 8 buses as well, and a DDR (double data rate) mode in source-synchronous operation. These bus parameters alone can introduce &#x3e;6&#xd7; variability into the chip-to-controller bandwidth equations.</p>
+<p id="p-0030" num="0029">In contrast to ONFi, SD (secure digital) card specification defines an up to 6 wire external card bus (clock, command and 1-4 wire data bus), with variable timing of up to 50 Mhz, and maximal (i.e. timeout) values for various operations. Even though the SD specification is generally simpler than ONFi, SD card performance characteristics are typically less controllable and behavior is more unpredictable than ONFi compliant flash chip behavior.</p>
+<heading id="h-0012" level="1">Minimum Transfer Units</heading>
+<p id="p-0031" num="0030">One trait that many flash chip standards or trends appear to share is that read transfers are done in multiples of minimum transfer units, (also referred to as, MTUs, sectors, blocks or pages). In one example, the minimum transfer unit length is 512 bytes. In other embodiments, the MTU length may be larger or smaller. Minimum transfer units can enable hiding of the &#x201c;chattinness&#x201d; of request-response bus protocols, and allow HOST applications, or applications running on the HOST system, to take advantage of locality of reference in data access. The same in fact applies even to DRAM-to-CPU memory interfaces. CPUs typically operate in cache line size transfers, for example 64-128 bytes per transfer.</p>
+<p id="p-0032" num="0031">Latency of MTU access (defined as the number of clock cycles between the end of read request command, and the first bits of MTU appearing on the data bus), is device, technology and package specific. The number of clock cycles required to send a read command to a flash chip may also be counted if, for example, the command bus is relatively narrow and the read request is relatively long. In some instances, commands are sufficiently short and the buses are sufficiently wide for the read command lengths to be insignificant in the overall MTU access latency. After the initial MTU access latency, the MTU is transferred at the full data bus speed.</p>
+<heading id="h-0013" level="1">Bottlenecks in Storage and Retrieval</heading>
+<p id="p-0033" num="0032">Another common trait appears to be that external flash chip interface specifications (e.g. form factors, bus commands and bus timings) are not changed frequently. The specifications however tend to include explicit provisions for growing chip densities as well as variability in the degree of parallelism (LUNs) and &#x201c;Interleaves.&#x201d; Customer demand for flash drive capacity increase can therefore be expected to result in bottlenecks in the on-the-drive buses, and/or in the drive-to-HOST buses because, for example, only a limited number of chips of a given form factor can fit into a typical 3.5&#x2033; disk enclosure. A limit on the number of chips per drive translates into a limit on the number of chip-to-flash controller buses and combined chip-to-flash-controller bandwidth.</p>
+<p id="p-0034" num="0033">In database management systems, data is stored in tables, and tables are stored in data blocks such as blocks <b>302</b><i>s </i>in <figref idref="DRAWINGS">FIG. 3</figref>. A full table scan operation reads table blocks in sets of N contiguous data blocks at a time (e.g., 32K database block size and N=32 blocks in a set results in 1 MB sequential reads).</p>
+<p id="p-0035" num="0034">To take advantage of multiple chips (and multiple parallel LUNs, etc. within chips), 1 MB of contiguous (from the application's point of view) data may be striped across many parallel units in a flash drive.</p>
+<p id="p-0036" num="0035">There are many data format unaware (i.e. physical) data striping techniques. For example, given 64 parallel flash units, data can be striped by bit (e.g. first bit goes to first chip, second bit goes to second chip, . . . 64th bit goes to 64th chip, and then the pattern repeats), by byte, word, etc up to 16 k unit (in the 1 MB read, 64 chips configuration), or may not be striped at all.</p>
+<p id="p-0037" num="0036">A good physical data striping technique takes advantage of available parallelism within a flash drive, but does not reduce the amount of data that needs to be transferred from flash chips into the host system. If any of the buses that the data has to cross between flash chips and HOST CPUs is a bottleneck, increased parallelism does not result in performance improvement (or the potential performance benefit is only partially realized), and striping is ineffective (or has a partial effect only).</p>
+<heading id="h-0014" level="1">Striping Data with an Affinity for Slices of the Data</heading>
+<p id="p-0038" num="0037">In database management systems, full table scans typically select a subset of database columns (with all columns selected being one possible subset). For a table with C columns, the number of possible subsets in full table scans is 2^C, only one of them being &#x201c;all columns selected&#x201d; case. For table scans selecting a subset of table columns, a subset of table data needs to be transferred from flash chips to HOST CPUs.</p>
+<p id="p-0039" num="0038">In one embodiment, a database block stored in row major format contains various block headers, table rows and row columns within the rows. Row major formats provide good locality of reference access properties and allow efficient table indexing, and column major formats have their own sets of trade-offs that are different from row major formats. For example, column major format is employed in several specialized research and commercial products, such as Oracle Express and other Oracle products. Either format may be employed according to the techniques described herein. In order to provide a clear and concise explanation of the techniques, an example is provided with reference to storing data in a row major format by striping the data with an affinity for columns. As used herein, the term &#x201c;row&#x201d; includes any slice of data that is perpendicular to a &#x201c;column,&#x201d; and the term &#x201c;column&#x201d; includes any slice of data that is perpendicular to a &#x201c;row.&#x201d; In other words, the term &#x201c;row&#x201d; may be substituted with the word &#x201c;column,&#x201d; and vice versa, as long as they describe perpendicular slices of data. Accordingly, the examples described may be used to store data in column major format by striping the data with an affinity for rows or in row major format by striping the data with an affinity for columns.</p>
+<p id="p-0040" num="0039">In a row major format, data blocks storing table data contain both the columns that a given full table scan needs, as well as columns that are not needed for the given full table scan. Similarly, in a column major format, data blocks storing table data contain both the rows that a given full table scan needs, as well as the rows that are not needed for the given full table scan.</p>
+<heading id="h-0015" level="1">Technology-Independent Striping</heading>
+<p id="p-0041" num="0040">Techniques of our approaches introduce a special representation of a data block in Row Store, where columns are affinitized to units of flash MTU (minimum transfer unit) size. In various embodiments, the techniques provide:
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0000">
+    <ul id="ul0002" list-style="none">
+        <li id="ul0002-0001" num="0041">a) a very simple, flash technology/vendor-independent, implementation of SMART Scan projection in the flash controller. Smart scan projection done in the flash controller reduces number of MTUs that need to be transferred from flash controller to HOST CPUs, reducing requirements on all buses upwards of the flash controller; and/or</li>
+        <li id="ul0002-0002" num="0042">b) a multitude of flash technology/vendor dependent SMART Scan optimizations, where only a subset of MTUs are transferred from flash chips to the flash controller, reducing requirements on local buses connecting flash chips to the flash controller, flash chips and the flash controller itself.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0042" num="0043">If a full table scan operation is bottlenecked on any of these resources, implementing various approaches discussed herein can result in performance improvements.</p>
+<p id="p-0043" num="0044">In one embodiment where data is stored in the row major format, the block is logically divided into a &#x201c;block frame&#x201d; and &#x201c;column data.&#x201d; Column data is further divided into multiple columnar slices, one slice per column. The block frame contains various block headers (cache header, transaction header, etc). In one embodiment, a block header stored in the block frame includes mapping information that maps columns to logical units of storage. Columnar slices contain, &#x201c;vertical&#x201d; columnar slices (for example, a sequence of &#x3c;length,value&#x3e; pairs).</p>
+<p id="p-0044" num="0045">The logical columnar slices are mapped to a set of MTUs.</p>
+<p id="p-0045" num="0046">In one embodiment, to achieve a) above, the mapping is flash/vendor technology independent. For example, only MTU size may be taken into account to implement the mapping.</p>
+<p id="p-0046" num="0047">In one embodiment, to achieve b) above, the mapping is flash/vendor technology dependent. For example, both MTU size and the physical striping of data across multiple flash chips may be taken into account.</p>
+<p id="p-0047" num="0048">The mapping of one block to a known number of fixed length MTUs may be explained by a non-limiting example of a 32K table block for a 63 column table striping across 64 stripes 512 bytes each.</p>
+<p id="p-0048" num="0049">In the example, the striping process begins by calculating combined block frame space requirements and aggregate column slice requirements for all 63 columns. This is a set of 64 non-negative numbers, a sum of which is less than or equal to 32768 (32K). In the example, the sum is usually less than 32K because the blocks will typically have some amount of free space in them.</p>
+<p id="p-0049" num="0050">In the example, the 64 numbers are stored in the block frame slice. Optionally, 128 bytes for storing these 64 2-byte integers were reserved in the block at the data insertion time. In another embodiment, the extra space is available in the block because fully loaded blocks with 0 free bytes are rare. For example, 128 bytes are 0.4% of a 32K block, and this does not impose a significant storage overhead either way.</p>
+<p id="p-0050" num="0051">Continuing with the example, all 64 slices are then written sequentially, starting with the block frame, one following another, into the sequential 64 512 byte stripes, with an affinity/padding rule configured such that if starting the next slice on its primary stripe does not overflow 32K, then the next slice is aligned (padded) to its primary stripe. Otherwise, instead of padding the next slice to its primary stripe, the next slice may follow the previous slice. For example, the next slice may immediately follow the previous slice on the next stripe.</p>
+<p id="p-0051" num="0052">This mapping is illustrated by the diagram below, which has been chosen for its simplicity. Any other &#x201c;recoverable&#x201d; affinitized mapping can be used instead.</p>
+<p id="p-0052" num="0053">
+<tables id="TABLE-US-00002" num="00002">
+<table frame="none" colsep="0" rowsep="0" pgwide="1" tabstyle="monospace">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="343pt" align="left"/>
+<colspec colname="2" colwidth="98pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;512&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;512&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;512&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;512&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;512</entry>
+<entry/>
+</row>
+<row>
+<entry>0123456789...F0123456789...F0123456789...F0123456789...F0123456789...F0123456789.</entry>
+</row>
+<row>
+<entry>FFFFFFFFFF...x11111111111111111111111111111111111111122222222222233333333333.....</entry>
+</row>
+<row>
+<entry> </entry>
+</row>
+<row>
+<entry>512&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;512&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;512&#x2003;&#x2003;....&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;512</entry>
+</row>
+<row>
+<entry>..F0123458789...F0123456789...F0123456789...F</entry>
+</row>
+<row>
+<entry>...AAAAAAAAAA...xBBBBBBBBBB...xCCCCCCCCCC...x</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0053" num="0054">In this diagram, the block frame (denoted by F) partially fills the first MTU-sized unit. The first slice (denoted by &#x2018;x&#x2019;) is padded. The first columnar slice (denoted by &#x2018;<b>1</b>&#x2019;) starts at its primary mapping location and overflows into the next 2 stripes. Columnar slices for column <b>2</b> and column <b>3</b> (denoted by &#x2018;<b>2</b>&#x2019; and &#x2018;<b>3</b>&#x2019;), cannot start at their primary locations (already taken by column <b>1</b>), so they sequentially follow. Somewhere in between column <b>3</b> and column <b>61</b> (denoted by &#x2018;A&#x2019;), the padding and primary mapping become possible again, and the last 3 columns (<b>61</b>, <b>62</b>, <b>63</b>) map to their corresponding primary stripes and fit completely into the primary stripes.</p>
+<p id="p-0054" num="0055">This mapping of slices to MTU-sized stripes allows a very simple projection implementation in the flash controller. By looking at the 64 numbers in the block frame, flash controller can determine which of the MTU-sized slices are not needed by a given SMART scan, and avoid sending these unneeded stripes to the HOST.</p>
+<p id="p-0055" num="0056">It can be seen that this special block representation is a fully equivalent way to layout block data. In one embodiment, a high-speed conversion between the two representations is always possible if there is space in a block to keep 64 2-byte numbers. As previously mentioned, this space can be either reserved at insert time, or may just happen to exist in the block. In a rare case when an existing block does not have 128 free bytes (for example formatted/inserted into by the previous version of a database system), that exception block can be stored in its original format, and the fact that there is an exception can be indicated by a special bit in the block frame header. In one embodiment, a spare bit always exists in a 32K block to indicate exceptions.</p>
+<p id="p-0056" num="0057">In one embodiment, the memory controller receives a request for column data from a block of row data that is striped across a plurality of memory chips. The memory controller retrieves information, such as a minimum transfer unit of data, from the memory chips. The memory controller accesses a mapping stored in a block header of the retrieved information to determine that one or more portions of the data store the requested one or more columns. In one example, the one or more portions of the data were received from one or more memory chips but not one or more other memory chips, and one or more other portions of data were received from the one or more other memory chips. Based on the mapping, the memory controller filters out the one or more other portions of data and returns to a host device only those portions of data to which the requested one or more columns is mapped.</p>
+<heading id="h-0016" level="1">Technology-Dependent Striping</heading>
+<p id="p-0057" num="0058">Technology-dependent mapping is an enhancement for the mapping explained above. In various embodiments, the techniques include:
+<ul id="ul0003" list-style="none">
+    <li id="ul0003-0001" num="0000">
+    <ul id="ul0004" list-style="none">
+        <li id="ul0004-0001" num="0059">1) achieving parallelism from all chips in a flash drive system for SMART Scans; and/or</li>
+        <li id="ul0004-0002" num="0060">2) reducing the number of MTUs that have to be moved between flash chips and flash controller.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0058" num="0061">In one embodiment, a flash drive employs some form of physical data striping across flash chips. In one example, &#x201c;no striping&#x201d; is considered as another special form of striping. In one embodiment, the number of stripes, their sizes and specific assignment of stripes to flash chips/LUNs/Interleaves is flash/vendor technology dependent. The number of stripes may be chosen based on optimal overall performance of a flash drive for a mixture of data access types.</p>
+<p id="p-0059" num="0062">In one embodiment, default mapping logic is on the memory controller. The default mapping logic maps one or more columns to logical units that are predicted to store data for the one or more columns. The default mapping logic may be supplemented by a corrective mapping retrieved from a memory chip that stores the block header. For example, the default mapping may have predicted one or more logical units that may store the requested columns, and the block header may indicate whether the columns are actually stored on the predicted one or more logical units. In one example, the block header stores column sizes to indicate whether the column data overflows from one logical unit to another logical unit.</p>
+<p id="p-0060" num="0063">In one embodiment, the striping is physio-logical, where the physical striping of data is not changed. In other words, if physical striping distributes 32K block data across a certain number of chips, in certain locations, then, in one embodiment, the physio-logical striping results the same stripes being used on the same set of flash chips. In one embodiment, unlike in the physical striping approach, the contents of the stripes are re-arranged to allow various read-time, SMART scan optimizations.</p>
+<p id="p-0061" num="0064">In one embodiment, the physio-logical striping has a certain advantage of simplicity over a more aggressive approach of changing the physical data striping, because physio-logical striping is generally never worse than a physical-only striping method. In one embodiment, a physical striping is chosen optimally. According to this embodiment, in the worst case, exactly the same set of stripes can be read in exactly the same order as without physio-logical striping, guaranteeing no degradation (but there is also no benefit in this case). Not every database access is a smart scan that can theoretically benefit from logical striping. Accordingly, various embodiments do not degrade non-smart-scan operations. Obeying physical stripe placement is one simple way to achieve this.</p>
+<p id="p-0062" num="0065">Physio-logical striping is illustrated by an example of a SMART Scan, accessing a 63 column table, similar to the above. In one embodiment, the physical striping chosen for the given flash/vendor technology distributes 32K of sequential data across 64 parallel units in the flash chips in a flash drive, one MTU per chip.</p>
+<p id="p-0063" num="0066">In this example, within one 32K database block, the mapping remains the same&#x2014;frame, followed by C<b>1</b>, C<b>2</b>, etc., C<b>63</b>. For consecutive 32K database blocks, the mappings of columnar slices to MTUs is done with an induced &#x201c;phase shift&#x201d;, as in the following diagram.</p>
+<p id="p-0064" num="0067">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+  <mrow>
+    <mi>Block</mi>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.8em" height="0.8ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mi>#</mi>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.3em" height="0.3ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mn>01</mn>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mtext>:</mtext>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.8em" height="0.8ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mtable>
+      <mtr>
+        <mtd>
+          <mi>F</mi>
+        </mtd>
+        <mtd>
+          <mn>1</mn>
+        </mtd>
+        <mtd>
+          <mn>2</mn>
+        </mtd>
+        <mtd>
+          <mn>3</mn>
+        </mtd>
+        <mtd>
+          <mn>4</mn>
+        </mtd>
+        <mtd>
+          <mi>&#x2026;</mi>
+        </mtd>
+        <mtd>
+          <mi>C</mi>
+        </mtd>
+      </mtr>
+    </mtable>
+  </mrow>
+</math>
+</maths>
+<maths id="MATH-US-00001-2" num="00001.2">
+<math overflow="scroll">
+  <mrow>
+    <mi>Block</mi>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.8em" height="0.8ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mi>#</mi>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.3em" height="0.3ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mtext>02</mtext>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mtext>:</mtext>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.8em" height="0.8ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mtable>
+      <mtr>
+        <mtd>
+          <mi>B</mi>
+        </mtd>
+        <mtd>
+          <mi>C</mi>
+        </mtd>
+        <mtd>
+          <mi>F</mi>
+        </mtd>
+        <mtd>
+          <mn>1</mn>
+        </mtd>
+        <mtd>
+          <mn>2</mn>
+        </mtd>
+        <mtd>
+          <mi>&#x2026;</mi>
+        </mtd>
+        <mtd>
+          <mi>A</mi>
+        </mtd>
+      </mtr>
+    </mtable>
+  </mrow>
+</math>
+</maths>
+<maths id="MATH-US-00001-3" num="00001.3">
+<math overflow="scroll">
+  <mrow>
+    <mi>Block</mi>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.8em" height="0.8ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mi>#</mi>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.3em" height="0.3ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mn>03</mn>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mtext>:</mtext>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.8em" height="0.8ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mtable>
+      <mtr>
+        <mtd>
+          <mo>.</mo>
+        </mtd>
+        <mtd>
+          <mi>A</mi>
+        </mtd>
+        <mtd>
+          <mi>B</mi>
+        </mtd>
+        <mtd>
+          <mi>C</mi>
+        </mtd>
+        <mtd>
+          <mi>F</mi>
+        </mtd>
+        <mtd>
+          <mn>1</mn>
+        </mtd>
+        <mtd>
+          <mn>2</mn>
+        </mtd>
+        <mtd>
+          <mo>.</mo>
+        </mtd>
+      </mtr>
+    </mtable>
+  </mrow>
+</math>
+</maths>
+<maths id="MATH-US-00001-4" num="00001.4">
+<math overflow="scroll">
+  <mi>&#x2026;</mi>
+</math>
+</maths>
+<maths id="MATH-US-00001-5" num="00001.5">
+<math overflow="scroll">
+  <mrow>
+    <mi>Block</mi>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.8em" height="0.8ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mi>#</mi>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.3em" height="0.3ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mn>32</mn>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mtext>:</mtext>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.8em" height="0.8ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mtable>
+      <mtr>
+        <mtd>
+          <mn>2</mn>
+        </mtd>
+        <mtd>
+          <mn>3</mn>
+        </mtd>
+        <mtd>
+          <mn>4</mn>
+        </mtd>
+        <mtd>
+          <mn>5</mn>
+        </mtd>
+        <mtd>
+          <mi>&#x2026;</mi>
+        </mtd>
+        <mtd>
+          <mi>F</mi>
+        </mtd>
+        <mtd>
+          <mn>1</mn>
+        </mtd>
+      </mtr>
+    </mtable>
+  </mrow>
+</math>
+</maths>
+</p>
+<p id="p-0065" num="0068">As shown, &#x2018;F&#x2019; denotes block frame slice mappings, numbers <b>1</b>, <b>2</b>, <b>3</b>, <b>4</b>, and <b>5</b> denote primary mappings of columnar slices <b>1</b>, <b>2</b>, <b>3</b>, etc, and letters A, B, and C denote primary mappings of columnar slices <b>61</b>, <b>62</b>, and <b>63</b> correspondingly. In one embodiment, columns of the table correspond to the 64 flash chips, and the MTUs within a column reside sequentially within a chip.</p>
+<p id="p-0066" num="0069">In the example, for the next set of 32 blocks, the induced shift pattern repeats, similar to the first set of 32 32K blocks. The induced phase shift value is used to distribute every primary column MTU over all parallel chips (LUNs). This physio-logical striping example allows for various read time optimizations that are technology dependent.</p>
+<p id="p-0067" num="0070">An example SMART scan accessing column #<b>1</b>, processing of 1 MB of sequential data blocks (32 32K blocks) proceeds in the following manner. On the first step of the algorithm, primary 32 block frame stripes are transferred from 32 different flash chips in parallel (the phase shifted striping guarantees that block frames are mapped to different chips). At the same time, the other 32 chips are transferring primary MTUs for the required column <b>1</b>.</p>
+<p id="p-0068" num="0071">In one embodiment, if the column <b>1</b> resides completely on the primary slices, as can be determined by looking at the combined column lengths in the block frame slices, the read algorithm terminates after the first step. In this example, columnar striping technique reduces the amount of data moved between flash chips and flash controller by 32&#xd7;.</p>
+<p id="p-0069" num="0072">In one embodiment, if the column overflows into secondary overflow slices, the read continues until all the overflow slices are retrieved. The retrieved data is sent to the host. In the overflow example, the reduction in the amount of data moved between flash chips and flash controller is less than 32&#xd7;, but can still easily be in the orders of magnitude. For example, if the overflows are only single overflows, then a 16&#xd7; reduction may be achieved in the amount of data transferred between flash chips and flash controller, instead of 32&#xd7; in the other example.</p>
+<p id="p-0070" num="0073">In the example, depending on what stripes need to be retrieved and how the required columns map to their primary stripes, the columnar striping technique may result in performance improvement ratio between 1.0 (no improvement) to 32&#xd7;, if the local bus between flash chips and flash controller is a bottleneck.</p>
+<p id="p-0071" num="0074">In one embodiment, if the above SMART Scan read optimization is not applicable to a given flash technology (e.g. because of latency being too large), a different optimization based on MAX column sizes is used. Sometimes, column sizes are known exactly as is the case with, for example, Oracle DATE, native float/double and fixed char (for example, char(3)) columns. In that case, for a SMART scan accessing, for example, columns <b>1</b>-<b>10</b> in a 63 column table, knowing combined MAX length on the first 10 columns may allow to restrict a subset of MTUs needed by the scan. A different phase shifting strategy can be used in this case, optimizing MTU layout across chips for that technology, for prefix SMART scans with MTU restriction based on MAX column sizes.</p>
+<p id="p-0072" num="0075">In the 64 parallel chip/512 byte striping example, a phase shift of 16 MTUs may be done after every 4 blocks, as shown.</p>
+<p id="p-0073" num="0076">
+<tables id="TABLE-US-00003" num="00003">
+<table frame="none" colsep="0" rowsep="0" pgwide="1">
+<tgroup align="left" colsep="0" rowsep="0" cols="18">
+<colspec colname="1" colwidth="42pt" align="left"/>
+<colspec colname="2" colwidth="14pt" align="left"/>
+<colspec colname="3" colwidth="14pt" align="left"/>
+<colspec colname="4" colwidth="14pt" align="left"/>
+<colspec colname="5" colwidth="14pt" align="left"/>
+<colspec colname="6" colwidth="14pt" align="left"/>
+<colspec colname="7" colwidth="14pt" align="left"/>
+<colspec colname="8" colwidth="14pt" align="left"/>
+<colspec colname="9" colwidth="14pt" align="left"/>
+<colspec colname="10" colwidth="14pt" align="left"/>
+<colspec colname="11" colwidth="14pt" align="left"/>
+<colspec colname="12" colwidth="14pt" align="left"/>
+<colspec colname="13" colwidth="14pt" align="left"/>
+<colspec colname="14" colwidth="14pt" align="left"/>
+<colspec colname="15" colwidth="14pt" align="left"/>
+<colspec colname="16" colwidth="14pt" align="left"/>
+<colspec colname="17" colwidth="14pt" align="left"/>
+<colspec colname="18" colwidth="14pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="18" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>Block #01:</entry>
+<entry>F</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+</row>
+<row>
+<entry>Block #02:</entry>
+<entry>F</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+</row>
+<row>
+<entry>Block #03:</entry>
+<entry>F</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+</row>
+<row>
+<entry>Block #04:</entry>
+<entry>F</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+</row>
+<row>
+<entry>Block #05:</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>C</entry>
+<entry>F</entry>
+</row>
+<row>
+<entry>Block #06:</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>C</entry>
+<entry>F</entry>
+</row>
+<row>
+<entry>Block #07:</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>C</entry>
+<entry>F</entry>
+</row>
+<row>
+<entry>Block #08:</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>C</entry>
+<entry>F</entry>
+</row>
+<row>
+<entry>. . .</entry>
+</row>
+<row>
+<entry namest="1" nameend="18" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="18">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="42pt" align="left"/>
+<colspec colname="2" colwidth="14pt" align="left"/>
+<colspec colname="3" colwidth="14pt" align="left"/>
+<colspec colname="4" colwidth="14pt" align="left"/>
+<colspec colname="5" colwidth="14pt" align="left"/>
+<colspec colname="6" colwidth="14pt" align="left"/>
+<colspec colname="7" colwidth="14pt" align="left"/>
+<colspec colname="8" colwidth="14pt" align="left"/>
+<colspec colname="9" colwidth="14pt" align="left"/>
+<colspec colname="10" colwidth="14pt" align="left"/>
+<colspec colname="11" colwidth="14pt" align="left"/>
+<colspec colname="12" colwidth="14pt" align="left"/>
+<colspec colname="13" colwidth="14pt" align="left"/>
+<colspec colname="14" colwidth="14pt" align="left"/>
+<colspec colname="15" colwidth="14pt" align="left"/>
+<colspec colname="16" colwidth="14pt" align="left"/>
+<colspec colname="17" colwidth="14pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Block #01:</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>. . .</entry>
+<entry>C</entry>
+</row>
+<row>
+<entry/>
+<entry>Block #02:</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>. . .</entry>
+<entry>C</entry>
+</row>
+<row>
+<entry/>
+<entry>Block #03:</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>. . .</entry>
+<entry>C</entry>
+</row>
+<row>
+<entry/>
+<entry>Block #04:</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>. . .</entry>
+<entry>C</entry>
+</row>
+<row>
+<entry/>
+<entry>Block #05:</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>. . .</entry>
+<entry>X</entry>
+</row>
+<row>
+<entry/>
+<entry>Block #06:</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>. . .</entry>
+<entry>X</entry>
+</row>
+<row>
+<entry/>
+<entry>Block #07:</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>. . .</entry>
+<entry>X</entry>
+</row>
+<row>
+<entry/>
+<entry>Block #08:</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>5</entry>
+<entry>6</entry>
+<entry>7</entry>
+<entry>8</entry>
+<entry>9</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>. . .</entry>
+<entry>X</entry>
+</row>
+<row>
+<entry/>
+<entry>. . .</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="17" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0074" num="0077">The phase shifting example increases sequential transfer lengths from every flash chip, reducing MTU access latencies in this case. In one embodiment, the phase shifting example reaps the benefits of flash chip parallelism.</p>
+<p id="p-0075" num="0078">Returning a subset of MTUs from the flash controller to HOST means that the database system has to deal with &#x201c;partial&#x201d; blocks formed by subsets of MTUs. This leaves several options. In one option, the subset of MTUs is re-combined into a partial Row-Major block, before the block is given to the relational database management system for further processing. In another option, the relational database management system deals with columnar MTUs directly, optionally utilizing vectorized columnar processing techniques.</p>
+<p id="p-0076" num="0079">In the former case of MTU recombination, in one embodiment, the flash controller itself is programmed or otherwise logically configured to perform the MTU recombination. The MTU recombination may also be done in the HOST CPU, or split between flash controller and HOST CPU as most appropriate.</p>
+<p id="p-0077" num="0080">In one embodiment, block transformation from the Row Store format into the affinitized-columnar MTUs is done in the HOST CPU mostly, with flash controller exposing just the necessary information to the HOST to do that&#x2014;such as MTU size and physical striping across flash chips. In another embodiment, block transformation from the Row Store format into the affinitized-columnar MTUs is done entirely in the flash controller, or split as appropriate between the HOST CPU and the flash controller.</p>
+<p id="p-0078" num="0081">Work partitioning options between the flash controller and HOST CPU have various pros and cons. Doing more work in the HOST CPU can translate into a visible CPU overhead on the host. On the other hand, flash controller can be harder to program and upgrade than the HOST.</p>
+<p id="p-0079" num="0082">In one embodiment, supporting SMART Scan in the flash controller involves the use of Storage Bus command extensions. Most storage command systems reserve some mechanism to implement vendor/application specific commands.</p>
+<p id="p-0080" num="0083">One scheme to implement vendor specific commands is to reserve a range of block addresses, for example high addresses beyond drive capacity, for vendor/application specific communication. In one embodiment, this scheme is universally applicable to all storage protocols. Writes to the special block addresses by the HOST can be interpreted as vendor specific commands by the flash controller, and reads from these addresses by the HOST can be interpreted as smart scan read requests by the flash controller.</p>
+<heading id="h-0017" level="1">Responding to Requests for Data</heading>
+<p id="p-0081" num="0084">In one embodiment, the memory controller receives a request for column data from a block of row data that is striped across a plurality of memory chips. For example, the request may include a command that selects one or more columns of data from a data block of row data. In another example, the request includes metadata that specifies the columns requested without specifying the operations to be performed on the columns. The memory controller accesses a mapping to determine that one or more memory devices, which may be identified in terms of memory chips themselves or logical units of the memory chips, store the requested column data.</p>
+<p id="p-0082" num="0085">In one embodiment, the memory controller accesses an MTU of data in parallel from a memory device that is deterministically mapped to a block header and one or more memory devices predicted to hold the requested column data. The block header is read to determine whether the entirety of the requested column data is stored in the information retrieved from the memory device predicted to hold the requested column data. If the entirety of the requested column data is stored in the information retrieved from the memory device predicted to hold the requested column data, then the memory controller returns the requested column data to the host device without retrieving or returning other data from other memory devices.</p>
+<p id="p-0083" num="0086">If the block header indicates that the requested column data overflows onto one or more other memory devices, then the memory controller retrieves the remainder of the requested column data from one or more other memory devices. In one embodiment, the memory controller assembles the requested column data from multiple memory devices and returns the requested column data to the host device without retrieving or returning other data from other memory devices other than those predicted or known to store the requested column of data.</p>
+<heading id="h-0018" level="1">Hardware Overview</heading>
+<p id="p-0084" num="0087">According to one embodiment, the techniques described herein are implemented by or in conjunction with one or more special-purpose computing devices. In one example, a flash memory module is a storage device that is configured to send data to and receive data and commands from a HOST computing device. The HOST computing device is configured to send data storage commands and data retrieval commands to the flash memory module. The special-purpose computing devices may be hard-wired to perform the techniques, or may include digital electronic devices such as one or more application-specific integrated circuits (ASICs) or field programmable gate arrays (FPGAs) that are persistently programmed and/or may be re-programmed on the fly to perform the techniques, or may include one or more general purpose hardware processors programmed to perform the techniques pursuant to program instructions in firmware, memory, other storage, or a combination. Such special-purpose computing devices may also combine custom hard-wired logic, ASICs, or FPGAs with custom programming to accomplish the techniques. The special-purpose computing devices may be desktop computer systems, portable computer systems, handheld devices, networking devices or any other device that incorporates hard-wired and/or program logic to implement or utilize the techniques.</p>
+<p id="p-0085" num="0088">For example, <figref idref="DRAWINGS">FIG. 4</figref> is a block diagram that illustrates a computer system <b>400</b>. Computer system <b>400</b> includes a bus <b>402</b> or other communication mechanism for communicating information, and a hardware processor <b>404</b> coupled with bus <b>402</b> for processing information. Hardware processor <b>404</b> may be, for example, a general purpose microprocessor.</p>
+<p id="p-0086" num="0089">Computer system <b>400</b> also includes a main memory <b>406</b>, such as a random access memory (RAM) or other dynamic storage device, coupled to bus <b>402</b> for storing information and instructions to be executed by processor <b>404</b>. Main memory <b>406</b> also may be used for storing temporary variables or other intermediate information during execution of instructions to be executed by processor <b>404</b>. Such instructions, when stored in non-transitory storage media accessible to processor <b>404</b>, render computer system <b>400</b> into a special-purpose machine that is customized to perform the operations specified in the instructions.</p>
+<p id="p-0087" num="0090">Computer system <b>400</b> further includes a read only memory (ROM) <b>408</b> or other static storage device coupled to bus <b>402</b> for storing static information and instructions for processor <b>404</b>. A storage device <b>410</b>, such as a magnetic disk or optical disk, is provided and coupled to bus <b>402</b> for storing information and instructions.</p>
+<p id="p-0088" num="0091">Computer system <b>400</b> may be coupled via bus <b>402</b> to a display <b>412</b>, such as a cathode ray tube (CRT), for displaying information to a computer user. An input device <b>414</b>, including alphanumeric and other keys, is coupled to bus <b>402</b> for communicating information and command selections to processor <b>404</b>. Another type of user input device is cursor control <b>416</b>, such as a mouse, a trackball, or cursor direction keys for communicating direction information and command selections to processor <b>404</b> and for controlling cursor movement on display <b>412</b>. This input device typically has two degrees of freedom in two axes, a first axis (e.g., x) and a second axis (e.g., y), that allows the device to specify positions in a plane.</p>
+<p id="p-0089" num="0092">Computer system <b>400</b> may implement the techniques described herein using customized hard-wired logic, one or more ASICs or FPGAs, firmware and/or program logic which in combination with the computer system causes or programs computer system <b>400</b> to be a special-purpose machine. According to one embodiment, the techniques herein are used by computer system <b>400</b> in response to processor <b>404</b> executing one or more sequences of one or more instructions contained in main memory <b>406</b> to cause computer system <b>400</b> to send commands to a flash memory module. Such instructions may be read into main memory <b>406</b> from another storage medium, such as storage device <b>410</b>. Execution of the sequences of instructions contained in main memory <b>406</b> causes processor <b>404</b> to perform the process steps described herein. In alternative embodiments, hard-wired circuitry may be used in place of or in combination with software instructions.</p>
+<p id="p-0090" num="0093">The term &#x201c;storage media&#x201d; as used herein refers to any non-transitory media that store data and/or instructions that cause a machine to operation in a specific fashion. Such storage media may comprise non-volatile media and/or volatile media. Non-volatile media includes, for example, optical disks, magnetic disks, or a flash memory module, such as storage device <b>410</b>. Volatile media includes dynamic memory, such as main memory <b>406</b>. Common forms of storage media include, for example, a floppy disk, a flexible disk, hard disk, solid state drive, magnetic tape, or any other magnetic data storage medium, a CD-ROM, any other optical data storage medium, any physical medium with patterns of holes, a RAM, a PROM, and EPROM, a FLASH-EPROM, NVRAM, any other memory chip or cartridge.</p>
+<p id="p-0091" num="0094">Storage media is distinct from but may be used in conjunction with transmission media. Transmission media participates in transferring information between storage media. For example, transmission media includes coaxial cables, copper wire and fiber optics, including the wires that comprise bus <b>402</b>. Transmission media can also take the form of acoustic or light waves, such as those generated during radio-wave and infra-red data communications.</p>
+<p id="p-0092" num="0095">Various forms of media may be involved in carrying one or more sequences of one or more instructions to processor <b>404</b> for execution. For example, the instructions may initially be carried on a magnetic disk or solid state drive of a remote computer. The remote computer can load the instructions into its dynamic memory and send the instructions over a telephone line using a modem. A modem local to computer system <b>400</b> can receive the data on the telephone line and use an infra-red transmitter to convert the data to an infra-red signal. An infra-red detector can receive the data carried in the infra-red signal and appropriate circuitry can place the data on bus <b>402</b>. Bus <b>402</b> carries the data to main memory <b>406</b>, from which processor <b>404</b> retrieves and executes the instructions. The instructions received by main memory <b>406</b> may optionally be stored on storage device <b>410</b> either before or after execution by processor <b>404</b>.</p>
+<p id="p-0093" num="0096">Computer system <b>400</b> also includes a communication interface <b>418</b> coupled to bus <b>402</b>. Communication interface <b>418</b> provides a two-way data communication coupling to a network link <b>420</b> that is connected to a local network <b>422</b>. For example, communication interface <b>418</b> may be an integrated services digital network (ISDN) card, cable modem, satellite modem, or a modem to provide a data communication connection to a corresponding type of telephone line. As another example, communication interface <b>418</b> may be a local area network (LAN) card to provide a data communication connection to a compatible LAN. Wireless links may also be implemented. In any such implementation, communication interface <b>418</b> sends and receives electrical, electromagnetic or optical signals that carry digital data streams representing various types of information.</p>
+<p id="p-0094" num="0097">Network link <b>420</b> typically provides data communication through one or more networks to other data devices. For example, network link <b>420</b> may provide a connection through local network <b>422</b> to a host computer <b>424</b> or to data equipment operated by an Internet Service Provider (ISP) <b>426</b>. ISP <b>426</b> in turn provides data communication services through the world wide packet data communication network now commonly referred to as the &#x201c;Internet&#x201d; <b>428</b>. Local network <b>422</b> and Internet <b>428</b> both use electrical, electromagnetic or optical signals that carry digital data streams. The signals through the various networks and the signals on network link <b>420</b> and through communication interface <b>418</b>, which carry the digital data to and from computer system <b>400</b>, are example forms of transmission media.</p>
+<p id="p-0095" num="0098">Computer system <b>400</b> can send messages and receive data, including program code, through the network(s), network link <b>420</b> and communication interface <b>418</b>. In the Internet example, a server <b>430</b> might transmit a requested code for an application program through Internet <b>428</b>, ISP <b>426</b>, local network <b>422</b> and communication interface <b>418</b>.</p>
+<p id="p-0096" num="0099">The received code may be executed by processor <b>404</b> as it is received, and/or stored in storage device <b>410</b>, or other non-volatile storage for later execution.</p>
+<p id="p-0097" num="0100">In the foregoing specification, embodiments of the invention have been described with reference to numerous specific details that may vary from implementation to implementation. Thus, the sole and exclusive indicator of what is the invention, and is intended by the applicants to be the invention, is the set of claims that issue from this application, in the specific form in which such claims issue, including any subsequent correction. Any definitions expressly set forth herein for terms contained in such claims shall govern the meaning of such terms as used in the claims. Hence, no limitation, element, property, feature, advantage or attribute that is not expressly recited in a claim should limit the scope of such claim in any way. The specification and drawings are, accordingly, to be regarded in an illustrative rather than a restrictive sense.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001 MATH-US-00001-2 MATH-US-00001-3 MATH-US-00001-4 MATH-US-00001-5" nb-file="US08627006-20140107-M00001.NB">
+<img id="EMI-M00001" he="19.05mm" wi="76.20mm" file="US08627006-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method comprising:
+<claim-text>receiving data that is initially in row-major format;</claim-text>
+<claim-text>wherein the data includes values for a particular column, and values for one or more other columns;</claim-text>
+<claim-text>in response to receiving the data in row-major format, dividing and storing the data on one or more storage devices such that no values from the one or more other columns are located, on the one or more storage devices, between values from adjacent cells of the particular column;</claim-text>
+<claim-text>wherein the method is performed by one or more computing devices.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising, for each cell of the particular column, padding a fixed-size space on the one or more storage devices to store the cell.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the fixed-size space is 512 bytes.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the particular column is a first column, wherein the other columns include at least a second column, and further comprising storing data from adjacent cells of the second column in contiguous storage locations on one or more storage devices without storing data from any columns other than the second column between the data from the adjacent cells of the second column.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the one or more storage devices comprise one or more flash memory chips.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. A method comprising:
+<claim-text>receiving data that is initially in row-major format;</claim-text>
+<claim-text>in response to receiving the data in row-major format, logically dividing the data into slices, each of which corresponds to a single column;</claim-text>
+<claim-text>storing the data by performing at least:
+<claim-text>storing data from consecutive rows of a particular slice in contiguous storage locations on one or more storage devices without storing data from rows of any other slices between the data from the consecutive rows of the particular slice;</claim-text>
+</claim-text>
+<claim-text>wherein the method is performed by one or more computing devices.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, further comprising, for each of the rows of the particular slice, padding a fixed-size space on the one or more storage devices to store the row.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method of <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein the fixed-size space is 512 bytes.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein the particular slice is a first slice, wherein the slices also include at least a second slice, and further comprising storing data from consecutive rows of the second slice in other contiguous storage locations on one or more storage devices without storing data from any other slices between the data from the consecutive rows of the second slice.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein the one or more storage devices comprise one or more flash memory chips.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. One or more non-transitory storage media storing instructions, which, when executed, cause:
+<claim-text>receiving data that is initially in row-major format;</claim-text>
+<claim-text>wherein the data includes values for a particular column, and values for one or more other columns;</claim-text>
+<claim-text>in response to receiving the data in row-major format, dividing and storing the data on one or more storage devices such that no values from the one or more other columns are located, on the one or more storage devices, between values from adjacent cells of the particular column.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The one or more non-transitory storage media of <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the instructions, when executed, cause, for each cell of the particular column, padding a fixed-size space on the one or more storage devices to store the cell.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The one or more non-transitory storage media of <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein the fixed-size space is 512 bytes.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The one or more non-transitory storage media of <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the particular column is a first column, wherein the other columns include at least a second column, wherein the instructions, when executed, cause storing data from adjacent cells of the second column in contiguous storage locations on one or more storage devices without storing data from any columns other than the second column between the data from the adjacent cells of the second column.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The one or more non-transitory storage media of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the one or more storage devices comprise one or more flash memory chips.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. One or more non-transitory storage media storing instructions, which, when executed, cause:
+<claim-text>receiving data that is initially in row-major format;</claim-text>
+<claim-text>in response to receiving the data in row-major format, logically dividing the data into slices, each of which corresponds to a single column;</claim-text>
+<claim-text>storing the data by performing at least:
+<claim-text>storing data from consecutive rows of a particular slice in contiguous storage locations on one or more storage devices without storing data from rows of any other slices between the data from the consecutive rows of the particular slice.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The one or more non-transitory storage media of <claim-ref idref="CLM-00016">claim 16</claim-ref>, wherein the instructions, when executed, cause, for each of the rows of the particular slice, padding a fixed-size space on the one or more storage devices to store the row.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The one or more non-transitory storage media of <claim-ref idref="CLM-00017">claim 17</claim-ref>, wherein the fixed-size space is 512 bytes.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The one or more non-transitory storage media of <claim-ref idref="CLM-00016">claim 16</claim-ref>, wherein the particular slice is a first slice, wherein the slices also include at least a second slice, and wherein the instructions, when executed, cause storing data from consecutive rows of the second slice in other contiguous storage locations on one or more storage devices without storing data from any other slices between the data from the consecutive rows of the second slice.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The one or more non-transitory storage media of <claim-ref idref="CLM-00016">claim 16</claim-ref>, wherein the one or more storage devices comprise one or more flash memory chips.</claim-text>
+</claim>
+<claim id="CLM-00021" num="00021">
+<claim-text>21. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the data is divided across multiple disks.</claim-text>
+</claim>
+<claim id="CLM-00022" num="00022">
+<claim-text>22. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the data is divided across multiple memory chips.</claim-text>
+</claim>
+<claim id="CLM-00023" num="00023">
+<claim-text>23. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the data is divided across multiple physical storage units.</claim-text>
+</claim>
+<claim id="CLM-00024" num="00024">
+<claim-text>24. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein the data is divided across multiple disks.</claim-text>
+</claim>
+<claim id="CLM-00025" num="00025">
+<claim-text>25. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein the data is divided across multiple memory chips.</claim-text>
+</claim>
+<claim id="CLM-00026" num="00026">
+<claim-text>26. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein the data is divided across multiple physical storage units.</claim-text>
+</claim>
+<claim id="CLM-00027" num="00027">
+<claim-text>27. The one or more non-transitory storage media of <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the data is divided across multiple disks.</claim-text>
+</claim>
+<claim id="CLM-00028" num="00028">
+<claim-text>28. The one or more non-transitory storage media of <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the data is divided across multiple memory chips.</claim-text>
+</claim>
+<claim id="CLM-00029" num="00029">
+<claim-text>29. The one or more non-transitory storage media of <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the data is divided across multiple physical storage units.</claim-text>
+</claim>
+<claim id="CLM-00030" num="00030">
+<claim-text>30. The one or more non-transitory storage media of <claim-ref idref="CLM-00016">claim 16</claim-ref>, wherein the data is divided across multiple disks.</claim-text>
+</claim>
+<claim id="CLM-00031" num="00031">
+<claim-text>31. The one or more non-transitory storage media of <claim-ref idref="CLM-00016">claim 16</claim-ref>, wherein the data is divided across multiple memory chips.</claim-text>
+</claim>
+<claim id="CLM-00032" num="00032">
+<claim-text>32. The one or more non-transitory storage media of <claim-ref idref="CLM-00016">claim 16</claim-ref>, wherein the data is divided across multiple physical storage units.</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

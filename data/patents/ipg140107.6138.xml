@@ -1,0 +1,754 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627262-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627262</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12960745</doc-number>
+<date>20101206</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>17</main-group>
+<subgroup>50</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>716134</main-classification>
+<further-classification>716106</further-classification>
+<further-classification>716107</further-classification>
+<further-classification>716108</further-classification>
+<further-classification>716113</further-classification>
+<further-classification>716136</further-classification>
+</classification-national>
+<invention-title id="d2e51">Automatic generation of merged mode constraints for electronic circuits</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5528511</doc-number>
+<kind>A</kind>
+<name>Hasegawa</name>
+<date>19960600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>6308306</doc-number>
+<kind>B1</kind>
+<name>Kaneko</name>
+<date>20011000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>6487705</doc-number>
+<kind>B1</kind>
+<name>Roethig et al.</name>
+<date>20021100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>7284219</doc-number>
+<kind>B1</kind>
+<name>Manaker, Jr. et al.</name>
+<date>20071000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>7418684</doc-number>
+<kind>B1</kind>
+<name>Moon et al.</name>
+<date>20080800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>7698674</doc-number>
+<kind>B2</kind>
+<name>Kalafala et al.</name>
+<date>20100400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>8196076</doc-number>
+<kind>B2</kind>
+<name>Chander et al.</name>
+<date>20120600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>8209648</doc-number>
+<kind>B1</kind>
+<name>Ku et al.</name>
+<date>20120600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>716108</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>2003/0229871</doc-number>
+<kind>A1</kind>
+<name>Nakae et al.</name>
+<date>20031200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>716  6</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>2004/0210861</doc-number>
+<kind>A1</kind>
+<name>Kucukcakar et al.</name>
+<date>20041000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>2007/0234253</doc-number>
+<kind>A1</kind>
+<name>Soreff et al.</name>
+<date>20071000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>2008/0301598</doc-number>
+<kind>A1</kind>
+<name>Gangadharan et al.</name>
+<date>20081200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>2009/0132984</doc-number>
+<kind>A1</kind>
+<name>Chander et al.</name>
+<date>20090500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>716  6</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>2009/0326873</doc-number>
+<kind>A1</kind>
+<name>Wang et al.</name>
+<date>20091200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00015">
+<othercit>Das et al., The Automatical Generation of Merged-Mode Design Constraints, Jul. 29, 2009, Fishtail.</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00016">
+<othercit>Gangadharan, S. et al., &#x201c;Preserving the Intent of Timing Constraints&#x201d;, EDA Design Line, May 17, 2008, [Online] [Retrieved on Nov. 5, 2010] Retrieved from the Internet&#x3c;URL:http://www.edadesignline.com/207800772?printableArticle=true&#x3e;.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00017">
+<othercit>PCT International Search Report and Written Opinion, PCT Application No. PCT/US2011/032268, Oct. 25, 2011, 9 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00018">
+<othercit>United States Office Action, U.S. Appl. No. 12/759,625, Jan. 20, 2012, 15 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00019">
+<othercit>United States Office Action, U.S. Appl. No. 13/025,075, May 16, 2012, 10 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00020">
+<othercit>United States Office Action, U.S. Appl. No. 13/025,075, Oct. 17, 2012, 12 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00021">
+<othercit>United States Office Action, U.S. Appl. No. 13/328,572, Dec. 24, 2012, 13 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00022">
+<othercit>United States Office Action, U.S. Appl. No. 13/328,572, Jun. 14, 2013, 18 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>17</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>716106-108</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>716113</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>716134</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>716136</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>22</number-of-drawing-sheets>
+<number-of-figures>31</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation-in-part>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>12759625</doc-number>
+<date>20100413</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8261221</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>12960745</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation-in-part>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110252393</doc-number>
+<kind>A1</kind>
+<date>20111013</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Sripada</last-name>
+<first-name>Subramanyam</first-name>
+<address>
+<city>Hillsboro</city>
+<state>OR</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Singhal</last-name>
+<first-name>Sonia</first-name>
+<address>
+<city>Mountain View</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Moon</last-name>
+<first-name>Cho</first-name>
+<address>
+<city>San Diego</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Sripada</last-name>
+<first-name>Subramanyam</first-name>
+<address>
+<city>Hillsboro</city>
+<state>OR</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Singhal</last-name>
+<first-name>Sonia</first-name>
+<address>
+<city>Mountain View</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Moon</last-name>
+<first-name>Cho</first-name>
+<address>
+<city>San Diego</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Fenwick &#x26; West LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Synopsys, Inc.</orgname>
+<role>02</role>
+<address>
+<city>Mountain View</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Doan</last-name>
+<first-name>Nghia</first-name>
+<department>2825</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Individual mode timing constraints associated with a set of netlists are combined into merged mode timing constraints. An initial merged mode constraint is generated by combining timing constraints from individual modes. The initial merged mode includes the union of all timing constraints from individual modes that add timing relationships and the intersection of all timing constraints from the individual modes that remove timing relationships. Extraneous timing relationships are identified in the merged mode and eliminated by introducing timing constraints in the merged mode. Equivalence between the merged mode and the individual modes is verified by comparing timing relationships in the merged mode with timing relationships in the individual modes. The merged mode is considered equivalent to the individual modes if every timing relationship present in an individual mode is present in the merged mode and every timing relationship present in the merged mode is present in any of individual modes.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="168.99mm" wi="241.81mm" file="US08627262-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="154.60mm" wi="167.22mm" orientation="landscape" file="US08627262-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="242.23mm" wi="170.43mm" orientation="landscape" file="US08627262-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="144.19mm" wi="160.87mm" file="US08627262-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="165.95mm" wi="95.50mm" file="US08627262-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="242.23mm" wi="177.55mm" file="US08627262-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="193.55mm" wi="153.16mm" file="US08627262-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="222.33mm" wi="174.33mm" orientation="landscape" file="US08627262-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="179.41mm" wi="155.70mm" file="US08627262-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="255.69mm" wi="186.52mm" file="US08627262-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="205.74mm" wi="169.16mm" file="US08627262-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="254.42mm" wi="192.87mm" file="US08627262-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="251.88mm" wi="180.09mm" file="US08627262-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="178.82mm" wi="100.58mm" file="US08627262-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="256.37mm" wi="189.06mm" file="US08627262-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="232.58mm" wi="167.64mm" file="US08627262-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00016" num="00016">
+<img id="EMI-D00016" he="164.08mm" wi="96.10mm" file="US08627262-20140107-D00016.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00017" num="00017">
+<img id="EMI-D00017" he="240.96mm" wi="177.55mm" file="US08627262-20140107-D00017.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00018" num="00018">
+<img id="EMI-D00018" he="279.40mm" wi="215.90mm" file="US08627262-20140107-D00018.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00019" num="00019">
+<img id="EMI-D00019" he="213.36mm" wi="146.73mm" file="US08627262-20140107-D00019.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00020" num="00020">
+<img id="EMI-D00020" he="165.35mm" wi="103.21mm" file="US08627262-20140107-D00020.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00021" num="00021">
+<img id="EMI-D00021" he="170.43mm" wi="92.88mm" file="US08627262-20140107-D00021.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00022" num="00022">
+<img id="EMI-D00022" he="230.04mm" wi="180.09mm" file="US08627262-20140107-D00022.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CROSS REFERENCE TO RELATED APPLICATIONS</heading>
+<p id="p-0002" num="0001">This application is a continuation-in-part of U.S. application Ser. No. 12/759,625, filed Apr. 13, 2010, which is incorporated by reference in its entirety.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">FIELD OF THE INVENTION</heading>
+<p id="p-0003" num="0002">This invention relates generally to electronic design automation (EDA) of circuits and in particular to automatic generation of merged mode constraints for electronic circuits.</p>
+<heading id="h-0003" level="1">BACKGROUND</heading>
+<p id="p-0004" num="0003">Due to the large number of components in state of the art electronic circuits, most of their design and production is computer implemented. An important operation performed during design of electronic circuits is timing analysis that validates timing performance of an electronic design. One way to perform timing analysis is to use dynamic simulation which determines the full behavior of a circuit for a given set of input values. Timing analysis using dynamic simulation is highly computation intensive. A more efficient method for perform timing analysis validates timing performance of a circuit design by checking all possible paths for timing violations. This method is called static timing analysis (STA) and is much faster than dynamic simulation since it does not simulate the logical operation of the electronic circuit. However, performing static timing analysis for large electronic circuits can take significant time.</p>
+<p id="p-0005" num="0004">Furthermore, timing analysis needs to be repeated multiple times for the same electronic design for various combinations of modes and corners. Semiconductor device parameters can vary with conditions such as fabrication process, operating temperature, and power supply voltage. A circuit fabricated using these processes may run slower or faster than specified due to variations in operating conditions or may even fail to function. Therefore timing analysis is performed for various operating conditions to make sure that the circuit performs as specified under these conditions. Such operating conditions for a circuit are modeled using corners that comprise a set of libraries characterized for process, voltage, and temperature variations.</p>
+<p id="p-0006" num="0005">The timing analysis of a circuit is also repeated for different operating modes, for example, normal operating mode, test mode, scan mode, reset mode and so on. For example, a circuit used in a computer operates in a stand-by mode when the computer is in a stand-by mode. Similarly, during testing phase, a circuit may be operated in a test mode. A mode is modeled using a unique set of clocks, input voltages, and timing constraints in similar operating conditions.</p>
+<p id="p-0007" num="0006">For performing timing analysis during implementation and sign-off of a circuit, designers have to verify a large number of modes and corners. Each circuit design may have tens of modes and tens of corners. Since each mode has to be verified for each corner conditions, the total number of scenarios in which the design needs to be verified is the product of the number of modes and number of corners. This results in the timing analysis being performed a large number of times resulting in exorbitant costs.</p>
+<p id="p-0008" num="0007">One way to handle the large number of scenarios resulting from multiple modes and corners is to merge the modes into a smaller set, for example, a single mode. Since timing verification must be performed for the combination of modes and corners, reduction in the number of modes reduces the total combinations of modes and corners by a much larger number. For example, if there are 10 modes and 10 corners, the total number of combination of modes and corners is 10&#xd7;10=100. However if the 10 modes were combined to a single mode, the total number of combinations is reduced to 1&#xd7;10=10 which is a 90% reduction in the number of combinations that need to be verified.</p>
+<p id="p-0009" num="0008">Conventionally modes are merged manually by designers. Furthermore, the manually merged modes are manually verified against the original set of modes or not verified. Due to the complexity of constraints associated with circuit designs, the generation of merged modes is difficult to handle manually. Since the number of timing constraints for a given netlist can be large, manual merging of modes can be error prone and have prohibitive costs. For example, a circuit could have millions of lines of constraints and manually verifying correctness of merged constraints may not be practically feasible. Due to lack of confidence in the correctness of the merged modes, manually merged modes may be used during the implementation phase of the design but final sign-off of the design is performed using individual modes.</p>
+<heading id="h-0004" level="1">SUMMARY</heading>
+<p id="p-0010" num="0009">The above and other issues are addressed by a computer-implemented method, computer system, and computer program product for generating merged mode constraint from individual mode constraints associated with a set of netlists. A merged mode constraint is generated by combining timing constraints from individual modes. A set of timing relationships is determined for the merged mode as well as for each individual mode constraints. The timing relationship comprises timing information associated with a start point and an end point, for example, clock information, exception states etc. The timing relationships of the merged mode are compared with the timing relationships of the individual modes to identify extraneous timing relationships present in the merged mode. Timing constraints are added to the merged mode to eliminate the extraneous timing relationships.</p>
+<p id="p-0011" num="0010">In an embodiment, the initial merged mode is obtained by combining timing constraints from individual modes by taking intersection or union of some timing constraint across all individual modes. A timing constraint in an individual mode that adds or modifies timing relations is added to the merged mode if the timing constraint is present in at least one of the individual modes. A timing constraint from an individual mode that removes a timing relationship is added to the merged mode if the timing constraint is present in all of the individual modes. Timing constraints that do not affect timing relationships are added to the merged mode if they are present in all the individual modes. If a timing constraint that does not affect timing relationships is not present in all individual modes, an error is reported.</p>
+<p id="p-0012" num="0011">In an embodiment, a timing constraint is added to disable a timing path between a start point and an end point if an extraneous timing relationship associated with the path is present in the merged mode but absent from all the individual modes. For example, if the clock is determined to be a capture clock of an end point in the merged mode but is absent from the individual modes, a timing constraint is added to the merged mode to disable a clock path. If multiple timing relationships are found in the merged mode between a start point and an end point, reconvergent points between the start point and end point are examined. The timing relationships of the data paths feeding into the reconvergent node are compared between the merged mode and individual modes. If a data path feeding into a reconvergent node is determined to have an extraneous timing relationship, a timing constraint is added to disable the timing relationship of the data path.</p>
+<p id="p-0013" num="0012">The features and advantages described in this summary and the following detailed description are not all-inclusive. Many additional features and advantages will be apparent to one of ordinary skill in the art in view of the drawings, specification, and claims hereof.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0005" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 1</figref> illustrates a merged mode obtained from multiple individual modes for a given circuit configuration, in accordance with an embodiment.</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 2</figref> illustrates timing relationships for a circuit associated with multiple modes, in accordance with an embodiment of the invention.</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 3</figref> illustrates an embodiment of the system architecture for automatic verification and generation of merged modes based on individual modes.</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 4</figref> shows a process illustrating how a merged mode is compared with individual modes with respect to different sets of start points and end points, in accordance with an embodiment.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 5</figref> illustrates the steps for verifying whether each relationship present in every individual mode is present in the merged mode, in accordance with an embodiment.</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 6</figref> illustrates the steps for verifying whether each timing relationship present in the merged mode is present in at least one of the individual modes, in accordance with an embodiment.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 7</figref> shows an example circuit configuration illustrating various terms related to a circuit.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIGS. 8(</figref><i>a</i>)-(<i>d</i>) illustrate the steps of computation of aggregate constraints at an end point of the circuit with respect to a set of start points, in accordance with an embodiment.</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIGS. 9(</figref><i>a</i>)-(<i>d</i>) illustrate the steps of computation of aggregate constraints at a start point of the circuit with respect to an end point of the circuit, in accordance with an embodiment.</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 10</figref> illustrates the comparison of a reconvergent point in two circuit configurations, in accordance with an embodiment.</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 11</figref> illustrates the overall process for generating merged mode from individual modes for a netlist, in accordance with an embodiment.</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 12</figref> illustrates how constraints of a merged mode are determined from constraints of individual modes based on their impact on timing relationships, in accordance with an embodiment.</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 13(</figref><i>a</i>) illustrates the process for eliminating timing relationships between clocks in the merged mode that do not co-exist in any individual mode, in accordance with an embodiment.</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 13(</figref><i>b</i>) shows a circuit diagram to illustrate the process of elimination of timing relationships based on the flowchart shown in <figref idref="DRAWINGS">FIG. 13(</figref><i>a</i>), in accordance with an embodiment.</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 14</figref> shows the flowchart for illustrating the steps for detecting and eliminating extraneous timing relationships in a merged mode, in accordance with an embodiment.</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 15(</figref><i>a</i>) illustrates the details of the first pass for eliminating extraneous timing relationships from the merged mode by disabling clock paths, in accordance with an embodiment.</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 15(</figref><i>b</i>) shows a circuit diagram to illustrate the process of elimination of extraneous timing relationships from the merged mode based on the flowchart shown in <figref idref="DRAWINGS">FIG. 15(</figref><i>a</i>).</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIG. 16(</figref><i>a</i>) illustrates the details of the second pass for eliminating extraneous timing relationships by disabling data paths in merged modes, in accordance with an embodiment.</p>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIG. 16(</figref><i>b</i>) shows a circuit diagram to illustrate the process of elimination of extraneous timing relationships from the merged mode based on the flowchart shown in <figref idref="DRAWINGS">FIG. 16(</figref><i>a</i>).</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIG. 17(</figref><i>a</i>) illustrates the details of the third pass for eliminating extraneous timing relationships by disabling data paths feeding inputs to reconvergent timing nodes, in accordance with an embodiment.</p>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIG. 17(</figref><i>b</i>) shows a circuit diagram to illustrate the process of elimination of extraneous timing relationships from the merged mode based on the flowchart shown in <figref idref="DRAWINGS">FIG. 17(</figref><i>a</i>).</p>
+<p id="p-0035" num="0034"><figref idref="DRAWINGS">FIG. 18</figref> illustrates an embodiment of the overall process for verifying equivalence between a merged mode and individual modes corresponding to a netlist.</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 19</figref> illustrates how the timing verification between a merged mode and individual modes is performed for different sets of start points and end points, in accordance with an embodiment.</p>
+<p id="p-0037" num="0036"><figref idref="DRAWINGS">FIG. 20</figref> is a high-level block diagram illustrating an example of a computer for use in generation or verification of merged modes with individual modes, in accordance with an embodiment.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<p id="p-0038" num="0037">The Figures (FIGS.) and the following description describe certain embodiments by way of illustration only. One skilled in the art will readily recognize from the following description that alternative embodiments of the structures and methods illustrated herein may be employed without departing from the principles described herein. Reference will now be made in detail to several embodiments, examples of which are illustrated in the accompanying figures</p>
+<heading id="h-0006" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0039" num="0038">Circuit designers perform static timing analysis of hundreds of combinations of modes and corners for implementation and sign-off of circuit designs. An electronic circuit can be represented as a circuit configuration comprising a description of the components of the circuit and the connections between the circuits specified as netlists and a representation of the timing constraints for the circuit. Each mode of a given circuit can be modeled as a set of timing constraints for the given set of netlists. Multiple modes can be merged into smaller set of modes, for example, a set of one mode to reduce the processing costs associated with timing analysis of the circuit design.</p>
+<p id="p-0040" num="0039">Embodiments generate merged modes and verify correctness of merged modes automatically. Automatic merging and verification of the merged modes gives high confidence in the correctness of the merged modes. As a result, the merged modes can be used for the implementation phase of the design as well as the final sign-off phase. Furthermore, automatic merging or verification of merged modes is less expensive and efficient to perform compared to manual processing.</p>
+<p id="p-0041" num="0040"><figref idref="DRAWINGS">FIG. 1</figref> illustrates a merged mode obtained from multiple individual modes for a given circuit configuration. The individual modes <b>130</b> and the merged mode correspond to the set of netlists <b>110</b>. (A letter after a reference numeral, such as &#x201c;<b>140</b><i>a</i>,&#x201d; indicates that the text refers specifically to the element having that particular reference numeral, while a reference numeral in the text without a following letter, such as &#x201c;<b>140</b>,&#x201d; refers to any or all of the elements in the figures bearing that reference numeral.) Each mode <b>130</b>, <b>120</b> represented in <figref idref="DRAWINGS">FIG. 1</figref> corresponds to a set of timing constraints corresponding to the netlists <b>110</b>. The association between the modes and the netlists is represented by the dotted lines <b>150</b>. The merged mode <b>120</b> corresponds to a set of timing constraints that are equivalent to the individual modes <b>130</b> as represented by the arrows <b>140</b>. There can be multiple merged modes <b>120</b> corresponding to the set of individual modes <b>130</b>. The merged mode <b>120</b> can be defined manually. Embodiments automatically generate merged mode <b>120</b> based on the individual modes <b>130</b>. Furthermore, embodiments perform automatic verification to determine if the merged mode <b>120</b> is equivalent to the individual modes <b>130</b>.</p>
+<p id="p-0042" num="0041"><figref idref="DRAWINGS">FIG. 2</figref> illustrates timing relationships for a circuit associated with multiple modes. The circuit comprises various circuit elements including flip-flops <b>270</b><i>a</i>, <b>270</b><i>b</i>, a multiplexer <b>260</b>, two clock inputs clka <b>250</b><i>a </i>and clkb <b>250</b><i>b</i>, a multiplexer select input signal <b>250</b><i>c</i>. There are two modes associated with the circuit, <b>245</b><i>a </i>and <b>245</b><i>b</i>. The mode <b>1</b> comprises a command for creating a clock clka <b>250</b><i>a </i>and a command for specifying the value of port <b>250</b><i>c </i>to be the constant <b>0</b>. The mode <b>2</b> comprises a command for creating a clock clkb <b>250</b><i>b </i>and a command for specifying the value of port <b>250</b><i>c </i>to be the constant <b>1</b>. The table <b>205</b> shows a structure for storing timing relations associated with the circuit. The timing relationships <b>240</b><i>a </i>and <b>240</b><i>b </i>comprise information including a timing start point <b>210</b>, a timing end point <b>215</b>, a launch clock <b>220</b>, a capture clock <b>225</b>, and information <b>230</b>, <b>235</b> indicating whether the timing constraint is present in mode <b>1</b> and/or mode <b>2</b> respectively. The information stored in a timing relationship is not limited to the information illustrated in table <b>205</b> and may comprise other relevant information. Both timing relations <b>240</b><i>a</i>, <b>240</b><i>b </i>correspond to timing start point <b>250</b><i>e </i>(FF<b>1</b>/CP) and timing end point <b>250</b><i>f </i>(FF<b>2</b>/D). However the launch clock and the capture clock for timing <b>240</b><i>a </i>are both clkb(r), indicating the rising edge of clkb is used for both launch clock and capture clock for timing <b>240</b><i>a</i>. On the other hand, the launch clock and the capture clock for timing <b>240</b><i>b </i>are both clka(r), indicating the rising edge of clka is used for both launch clock and capture clock for timing <b>240</b><i>b</i>. Furthermore, the timing relationship <b>240</b><i>b </i>is present in mode <b>1</b> as a single cycle path as shown in column <b>230</b> but not present in mode <b>2</b> as shown in column <b>235</b>. Similarly, the timing relationship <b>240</b><i>a </i>is not present in mode <b>1</b> as shown in column <b>230</b> but present in mode <b>2</b> as a single cycle path as shown in column <b>235</b>.</p>
+<p id="p-0043" num="0042">Automatic generation and verification of merged constraints is based on comparison of timing relationships between merged mode and individual modes. A timing relationship is specified between a pair of timing nodes and comprises a launching clock, a capturing clock, and timing state, for example, multicycle path or false path between the start point and end point, a timing node specified as having a constant value etc. Adding a timing constraint to a circuit configuration may affect one or more timing relationships. For example, a timing constraint &#x201c;set_max_delay&#x2014;from A&#x201d; applies to all paths that start from point A and may affect multiple timing relationships associated with point A. Some timing constraints may add new timing relationships, for example, timing constraints that add clocks to the circuit configuration. Some timing constraints can modify existing timing relationships, for example, a timing constraint that specifies a multicycle path can modify existing timing relationships by changing their timing state. Some timing constraints can eliminate timing relationship, for example, specifying false path between two timing nodes indicates that there is no timing relationship between the two timing nodes.</p>
+<p id="p-0044" num="0043">Automatic generation of merged mode is performed from individual modes for a netlist. An initial merged mode is generated by combining timing constraints from individual modes into the merged mode. The merged mode comprises an intersection set of all timing constraints of individual modes that remove timing relationships. The merged mode also comprises a union set of all timing constraints of individual modes that add or modify timing relationships. The merged mode comprises an intersection set of all timing constraints of individual modes that do not affect timing relationships. The timing relationships in the merged mode are compared with the timing relationships in the individual modes to identify extraneous timing relationships present in the merged mode. Timing constraints are added to the merged mode to eliminate the extraneous timing relationships.</p>
+<p id="p-0045" num="0044">Automatic verification of correctness of a merged mode with respect to individual modes is performed by comparing timing relationships present in the merged mode with the timing relationships present in the individual modes. Automatic verification of correctness of merged mode is performed by verifying that a timing relationship that exists in any individual mode is also present in the merged mode. Furthermore, the automatic verification process verifies that every timing relationship that exists in the merged mode is present in at least one of the individual modes. If there are timing relationships in the merged mode that do not occur in an individual mode or there are timing relationships in an individual mode that are not present in the merged mode, the merged mode does not correctly represent the timing constraint behavior of individual modes. Accordingly, such merged mode is not equivalent to the individual modes and a validation of the merged mode based on timing analysis does not guarantee validation of individual modes.</p>
+<p id="h-0007" num="0000">System Architecture</p>
+<p id="p-0046" num="0045"><figref idref="DRAWINGS">FIG. 3</figref> illustrates an embodiment of the system architecture for automatic verification and generation of merged modes based on individual modes. The computer architecture illustrated in <figref idref="DRAWINGS">FIG. 3</figref> comprises a computer system <b>300</b> comprising a verification module <b>330</b>, a merged mode generator <b>350</b>, a comparison module <b>360</b>, a netlist store <b>310</b> and a mode store <b>320</b>. The netlist store <b>310</b> stores the netlists of the circuit configuration being analyzed. The mode store <b>320</b> stores the information describing the individual modes as well as the merged mode being processed. The verification module <b>330</b> performs automatic verification of the merged mode constraints to determine whether the merged mode is equivalent to the individual modes. The merged mode generator <b>350</b> performs automatic generation of the merged mode from a set of individual modes. The comparison module <b>360</b> performs three passes to match timing relationships between merged modes and the individual modes. The comparison process of the comparison module <b>360</b> is invoked by the verification module <b>330</b> to perform verification of merged modes and by the merged mode generator <b>350</b> to perform generation of merged modes. The system architecture presented in <figref idref="DRAWINGS">FIG. 3</figref> is used for performing automatic verification and generation of merged modes.</p>
+<p id="h-0008" num="0000">Comparison of Merged Modes with Individual Modes</p>
+<p id="p-0047" num="0046">The comparison module <b>360</b> ensures that every timing relationship present in any individual mode <b>130</b> is present in the merged mode <b>120</b> and every timing relationship present in the merged mode <b>120</b> is present in at least one of the individual modes <b>130</b>. If the comparison module <b>360</b> identifies any timing relationship that does not satisfy this criteria, the comparison module <b>360</b> flags the timing relationship as a mismatch.</p>
+<p id="p-0048" num="0047"><figref idref="DRAWINGS">FIG. 4</figref> illustrates how comparison between a merged mode and individual modes is performed by the comparison module <b>360</b> for different sets of start points and end points. As illustrated in <figref idref="DRAWINGS">FIG. 4</figref>, three different passes are performed by the comparison module <b>360</b>. In the first pass <b>410</b>, the comparison module <b>360</b> compares the merged mode <b>120</b> with the individual modes <b>130</b> with respect to timing relationships between all start points and a particular end point based on the process illustrated in <figref idref="DRAWINGS">FIG. 4</figref>. The comparison module <b>360</b> repeats this process for each end point. If the comparison process determines a mismatch, the comparison module <b>360</b> flags the mismatch. The mismatch may be processed manually by a system administrator or by an automatic process. The processing performed when a mismatch is encountered can be used for different purposes, for example, for generation of merged modes or verification of merged modes. If no mismatch is found for an end point and a match cannot be determined decisively due to ambiguities after the first pass <b>410</b>, the comparison module <b>360</b> performs the second pass <b>420</b> with respect to the selected end point. Methods and systems for comparing timing constraints between two circuit configurations are disclosed in the U.S. application Ser. No. 12/759,625, filed Apr. 13, 2010, which is incorporated by reference in its entirety.</p>
+<p id="p-0049" num="0048">In the second pass <b>420</b>, the comparison module <b>360</b> compares the merged mode <b>120</b> with the individual modes <b>130</b> with respect to timing relationships between a particular start point and a particular end point based on the process illustrated in <figref idref="DRAWINGS">FIG. 4</figref>. The comparison module <b>360</b> repeats this process for each pair of a start point and an end point. If a mismatch is found, the comparison module <b>360</b> flags the mismatch for the pair of start point and end point. If no mismatch is found for a start point and end point pair and a match cannot be determined decisively due to ambiguities after the second pass <b>420</b>, the comparison module <b>360</b> performs the third pass <b>430</b> with respect to the selected start point and end point pair.</p>
+<p id="p-0050" num="0049">In the third pass <b>430</b>, the comparison module <b>360</b> compares the merged mode <b>120</b> and the individual modes <b>130</b> with respect to timing relationships associated with a reconvergent point between the selected start point and end point pair. The comparison module <b>360</b> compares timing relationships associated with a timing node with an edge into the reconvergent point and the reconvergent point. If a mismatch is found, the comparison module <b>360</b> flags the mismatch for the timing relationship associated with timing node feeding into the reconvergent point and the reconvergent point. If no mismatch is found for timing nodes feeding into this reconvergent point, the process is repeated for other reconvergent points between the selected start point and end point pair. If no mismatch is found for any reconvergent point between the start point and end point pair, the timing relationships associated with the start point and end point pair are determined to be equivalent and the comparison module <b>360</b> continues processing other start point and end point pairs.</p>
+<p id="p-0051" num="0050">Embodiments can perform a subset of the steps shown in <figref idref="DRAWINGS">FIG. 4</figref>. For example, an embodiment can perform the first pass <b>410</b> without performing the second pass <b>420</b> and the third pass <b>430</b>, if there is no ambiguity found by the first pass <b>410</b> (in case of matches as well as mismatches determined by the first pass <b>410</b>.) Similarly, an embodiment can perform the first pass <b>410</b> and the second pass <b>420</b>, without performing the third pass <b>430</b>.</p>
+<p id="p-0052" num="0051"><figref idref="DRAWINGS">FIG. 5</figref> illustrates the steps for determining whether each relationship present in every individual mode is present in the merged mode, in accordance with an embodiment. The comparison module <b>360</b> selects <b>510</b> an individual mode for processing. The comparison module <b>360</b> selects <b>520</b> a timing relationship R in the selected individual mode <b>130</b>. The comparison module <b>360</b> determines <b>530</b> if there is a timing relationship in the merged mode <b>120</b> that is equivalent to the selected timing relationship R. If an equivalent relationship is not found <b>540</b>, the timing relationship R is flagged <b>550</b> as a mismatch. If an equivalent relationship is found <b>540</b>, the comparison module <b>360</b> checks <b>560</b> whether all timing relationships in the selected individual mode <b>130</b> are processes. If there are more timing relationships in the individual mode <b>130</b> to be processed, the comparison module <b>360</b> selects <b>520</b> another timing relationship in the individual mode <b>130</b> and repeats the above steps. If all the timing relationships of the selected individual mode <b>130</b> are processed, the comparison module <b>360</b> checks <b>570</b> if there are more individual modes <b>130</b> to be processed. If the comparison module <b>360</b> finds an individual mode <b>130</b> to be processed, the comparison module <b>360</b> selects <b>510</b> the individual mode and performs the above steps for the individual mode <b>130</b>. If the comparison module <b>360</b> determines that all the individual modes <b>130</b> are processed, the comparison module <b>360</b> stores <b>580</b> the results from the above analysis. In an embodiment, the comparison module <b>360</b> stores the results as the above steps are processed.</p>
+<p id="p-0053" num="0052"><figref idref="DRAWINGS">FIG. 6</figref> illustrates the steps for determining whether each timing relationship present in the merged mode is present in at least one of the individual modes, in accordance with an embodiment. The comparison module <b>360</b> selects <b>620</b> a timing relationship in the merged mode <b>120</b> for processing. The comparison module <b>360</b> determines if a timing relationship equivalent to the selected relationship exists in any one of the individual modes <b>130</b>. If the comparison module <b>360</b> does not find <b>640</b> an equivalent timing relation in any individual mode, the comparison module <b>360</b> flags <b>650</b> the selected timing relationship as a mismatch for further analysis. If the comparison module <b>360</b> finds an equivalent timing relationship in at least one of the individual modes <b>130</b>, the selected relationship is not flagged as a mismatch. The comparison module <b>360</b> checks <b>660</b> if all timing relationships in the merged mode have been processed. If more timing relationship in the merged mode needs to be processed, the comparison module <b>360</b> selects <b>620</b> an unprocessed timing relationship and performs the above steps for the selected timing relationship. If all the timing relationships of the merged mode are processed, the comparison module <b>360</b> stores the results of the above analysis. In an embodiment, the comparison module <b>360</b> stores the results as the above steps are processed.</p>
+<p id="p-0054" num="0053">Each pass can be described as determining timing relationships associated with a source set of timing nodes and a sink set of timing nodes. For example, the first pass can be described as determining timing relationships associated with the source set comprising all the start points and the sink set comprising a particular end point. Similarly, the second pass can be described as determining timing relationships associated with the source set comprising a particular end point and the sink set comprising a particular start point.</p>
+<p id="p-0055" num="0054">Next we illustrate the details of each pass with respect to a graph representation of a circuit. <figref idref="DRAWINGS">FIG. 7</figref> shows timing paths in an example circuit, which will be used to illustrate various terms and a corresponding graph representation of the circuit. A timing node is a port of the circuit or a pin of a circuit component. For example, a clock pin of a register is a timing node. A timing node where a timing analysis can originate from will be referred to as a start point. A timing node where a timing analysis can terminate at will be referred to as an end point. The netlist shown in <figref idref="DRAWINGS">FIG. 7(</figref><i>a</i>) is represented as a graph comprising nodes and edges as shown in <figref idref="DRAWINGS">FIG. 7(</figref><i>b</i>). The nodes in the graph of <figref idref="DRAWINGS">FIG. 7(</figref><i>b</i>) are represented by squares and correspond to the timing nodes in the circuit of <figref idref="DRAWINGS">FIG. 7(</figref><i>a</i>). The edges in <figref idref="DRAWINGS">FIG. 7(</figref><i>b</i>) are represented by arrows and correspond to <figref idref="DRAWINGS">FIG. 7(</figref><i>b</i>)'s connections between timing nodes. For example, timing nodes CPa and CPb are connected by an edge whereas timing nodes CPa and CPe do not have an edge between them. If two timing paths between a start point and end point follow different paths and then converge at a timing node, the timing node is called a reconvergent point <b>740</b>. For example, in <figref idref="DRAWINGS">FIG. 7(</figref><i>b</i>), the two timing paths between start point CPc and end point CPg diverge at timing node CPd and converge again at timing node CPf. The timing node CPf is called a reconvergent point and the timing node CPd is called a divergent point.</p>
+<p id="p-0056" num="0055"><figref idref="DRAWINGS">FIGS. 8(</figref><i>a</i>)-(<i>d</i>) illustrate the steps of computation of aggregate timing relationships at an end point of the circuit with respect to a set of start points, in accordance with an embodiment. The various steps shown in <figref idref="DRAWINGS">FIG. 8</figref> illustrate the computation of the aggregate timing relationships for the circuit starting from an initial set <b>810</b> of timing nodes. The timing nodes N<b>1</b> and N<b>2</b> are considered the start points for the circuit shown in <figref idref="DRAWINGS">FIG. 8</figref> and the timing nodes N<b>9</b> and N<b>10</b> are the end points of the circuit shown in <figref idref="DRAWINGS">FIG. 8</figref>. The sets of timing relationships for N<b>1</b> and N<b>2</b> as shown in <figref idref="DRAWINGS">FIG. 8(</figref><i>a</i>) are empty since there are no incoming edges to the timing nodes N<b>1</b> and N<b>2</b>.</p>
+<p id="p-0057" num="0056">The set of neighboring timing nodes of set <b>810</b> includes N<b>3</b> and N<b>4</b>. The aggregate sets of timing relationships for N<b>3</b> and N<b>4</b> are determined as shown in <figref idref="DRAWINGS">FIG. 8(</figref><i>b</i>). The timing node N<b>4</b> has a single incoming edge associated with constraint try, resulting in the set of timing relationships S<b>4</b>={tr<b>5</b>}. The timing node N<b>3</b> is a reconvergent point with two incoming edges from timing nodes N<b>1</b> and N<b>2</b>. The edge from N<b>2</b> to N<b>3</b> is not associated with any constraint. Therefore the set of timing relationships for timing node N<b>3</b> is S<b>3</b>={tr<b>1</b>}. The timing nodes N<b>3</b> and N<b>4</b> are added to the set <b>810</b> resulting in the set <b>820</b> as the current set of timing nodes.</p>
+<p id="p-0058" num="0057">As illustrated in <figref idref="DRAWINGS">FIG. 8(</figref><i>c</i>) the neighboring timing nodes of the set <b>820</b> are N<b>6</b> and N<b>7</b>. Next the aggregate sets of timing relationships for N<b>6</b> and N<b>7</b> are determined. The aggregate set S<b>6</b> of timing relationships for the reconvergent point N<b>6</b>, includes the timing relationships in set S<b>3</b>, set S<b>4</b>, and the timing relationships tr<b>2</b> and tr<b>3</b> associated with the incoming edges of N<b>6</b> resulting in S<b>6</b>={tr<b>1</b>,tr<b>2</b>,tr<b>3</b>,tr<b>5</b>}. The aggregate set of timing relationships S<b>7</b> associated with N<b>7</b> is determined to be same as S<b>4</b> since no timing relationships are added by the edge between N<b>4</b> and N<b>7</b>. The timing nodes N<b>6</b> and N<b>7</b> are added to the set <b>820</b> to obtain set <b>830</b>. Similarly, as illustrated in <figref idref="DRAWINGS">FIG. 8(</figref><i>d</i>), the remaining timing nodes are processed. The timing nodes N<b>9</b> and N<b>10</b> are the end points of the circuit.</p>
+<p id="p-0059" num="0058"><figref idref="DRAWINGS">FIGS. 9(</figref><i>a</i>)-(<i>d</i>) illustrate the steps of computation of aggregate timing relationships at a start point of the circuit with respect to an end point of the circuit, in accordance with an embodiment. The computation in the second pass is similar to the first pass except that the source set of timing nodes is a particular end point, the sink set is a particular start point and the direction of traversal is in the reverse direction of the edges. As shown in <figref idref="DRAWINGS">FIG. 9(</figref><i>a</i>), the source set of timing nodes includes a single end point N<b>9</b>. As shown in <figref idref="DRAWINGS">FIG. 9(</figref><i>b</i>), the neighboring timing nodes of the set <b>910</b> include N<b>6</b> and N<b>7</b>, traversing in the reverse direction of the edges. The aggregate sets of timing relationships for N<b>6</b> is S<b>6</b>={ }, i.e., empty set since the edge between N<b>6</b> and N<b>9</b> is not associated with any constraint. The edge between N<b>7</b> and N<b>10</b> is not associated with any constraint but the edge between N<b>7</b> and N<b>9</b> is associated with a constraint tr<b>6</b>, resulting in S<b>7</b>={tr<b>6</b>} being added to S<b>7</b>. The timing nodes N<b>6</b> and N<b>7</b> are added to the set of timing nodes <b>910</b> to obtain set <b>920</b>. The above process is continued as shown in <figref idref="DRAWINGS">FIG. 9(</figref><i>c</i>) to determine aggregate sets of timing relationships for timing nodes N<b>3</b> and N<b>4</b> since they are neighboring timing nodes for the set <b>920</b>. The timing node N<b>4</b> is a divergent point. The timing nodes N<b>3</b> and N<b>4</b> are added to the set <b>920</b> to obtain set <b>930</b>. The aggregate sets of timing relationships for the remaining timing nodes can be determined similar to the examples presented above. The final step illustrated in <figref idref="DRAWINGS">FIG. 9(</figref><i>d</i>) determines the aggregate sets of timing relationships for each start point with respect to the end point N<b>9</b>. The process is repeated for each end point, for example N<b>10</b>.</p>
+<p id="p-0060" num="0059"><figref idref="DRAWINGS">FIG. 10</figref> illustrates how timing relationships associated with reconvergent points from two different modes are compared. As shown in <figref idref="DRAWINGS">FIG. 10</figref>, Nk is a reconvergent point. The aggregate sets of timing relationships Sk and Sk&#x2032; for the reconvergent point Nk for the two modes have the same elements {tr<b>1</b>, tr<b>2</b>, tr<b>3</b>}. However, if the timing nodes with edges incoming to the reconvergent points are compared, a mismatch can be detected. The aggregate sets of timing relationships for Ni in mode model is Si={tr<b>1</b>,tr<b>2</b>} whereas for mode mode<b>2</b> it is Si&#x2032;={tr<b>1</b>,tr<b>3</b>}. Similarly the aggregate sets of timing relationships for the timing node Nj in mode model is Sj={tr<b>3</b>} and in mode mode<b>2</b> is Sj&#x2032;={tr<b>2</b>}. Hence a mismatch can be flagged corresponding to the timing nodes feeding into the reconvergent points. The analysis illustrated by <figref idref="DRAWINGS">FIG. 10</figref> can be applied to a divergent point if the timing paths are traversed in the reverse direction of the edges. Accordingly, timing nodes connected by edges that are out going from the divergent point are compared to identify mismatches.</p>
+<p id="h-0009" num="0000">Generation of Merged Mode</p>
+<p id="p-0061" num="0060">The automatic generation of modes for a set of netlists based on individual modes is described. <figref idref="DRAWINGS">FIG. 11</figref> illustrates the overall process for generating merged mode from individual modes for a netlist, in accordance with an embodiment. The merged mode generator <b>350</b> creates <b>1110</b> an initial merged mode based on the constraints of the individual modes for the given netlist. The merged mode generator <b>350</b> eliminates <b>1120</b> interactions between two clocks in the merged mode if the two clocks never co-exist in any individual mode. The merged mode generator <b>350</b> detects <b>1130</b> timing relationships in merged mode that are extraneous with respect to the individual modes. In an embodiment, the merged mode generator <b>350</b> detects <b>1130</b> the extraneous timing relationships by comparing the merged mode with the individual modes, for example, by executing a three pass algorithm based on the flowchart illustrated in <figref idref="DRAWINGS">FIG. 4</figref>.</p>
+<p id="p-0062" num="0061">The merged mode generator <b>350</b> disables <b>1140</b> these extraneous timing relationships by adding exceptions in the merged mode. The merged mode generator <b>350</b> adds exceptions to the merged mode by generating new exceptions in the merged mode or by introducing exceptions from individual modes into the merged mode. The exceptions are added to the merged mode in a manner that ensures that pessimism or optimism does not get added to the merged mode for purposes of signal integrity analysis. An example of pessimism is a merged mode in which there is possibility of crosstalk between two timing nodes even though none of the individual modes allow such crosstalk. An example of optimism is a merged mode in which there is no possibility of crosstalk between two timing nodes even though one or more individual modes allow such crosstalk.</p>
+<p id="p-0063" num="0062"><figref idref="DRAWINGS">FIG. 12</figref> shows the details of step <b>1110</b> illustrating how timing constraints of an initial merged mode are determined from timing constraints of individual modes based on their impact on timing relationships, in accordance with an embodiment. The merged mode generator <b>350</b> identifies <b>1210</b> a timing constraint in individual modes for determining whether the constraint should be added to the merged mode. The merged mode generator <b>350</b> checks <b>1220</b> if the timing constraint adds or modifies timing relationships. If the timing constraint adds or modifies timing relationships, the constraint is added to the merged mode if the timing constraint occurs in at least one individual mode. In other words, a union set computed over all individual modes of timing constraints that add/modify timing relationships is added to the merged mode. Examples of timing constraints that add timing relationships include timing constraints that create a clock, timing constraints that set input delay, timing constraints that set maximum delay and the like. For example, a command &#x201c;create_clock&#x201d; creates a new clock for the netlist and thereby introduces new timing relationships between timing nodes where the clock reaches. A command &#x201c;set_input_delay&#x201d; specifies the minimum and maximum amount of delay from a clock edge to the arrival of a signal at a specified input port. A &#x201c;set_output_delay&#x201d; command specifies the minimum and maximum amount of delay between the output port and the external sequential device that captures data from that output port. Similarly the commands like set_max_delay and set_min_delay set the maximum and minimum delay constraints for paths. These commands are examples of timing constraints that add timing relationships. An example of a timing constraint that modifies timing relationships is set_multicycle_path that specifies the number of clock cycles required to propagate data from a start point to an end point. In sum, a timing constraint that adds/modifies timing relationships is included in the merged mode if the timing constraint is present in any one of the individual modes.</p>
+<p id="p-0064" num="0063">The merged mode generator <b>350</b> further checks <b>1240</b> if the timing constraint removes timing relationships. If the timing constraint removes timing relationships, the constraint is added to the merged mode if the timing constraint occurs in all individual modes. In other words, an intersection set computed over all individual modes of timing constraints that remove timing relationships is added to the merged mode. Examples of timing constraints that remove timing relationships include timing constraints that set false path, timing constraints that disable timing, timing constraints that set constant values at pins or ports, set clock groups and the like. For example, the set_false_path timing constraint excludes a path from timing analysis and therefore removes timing relationships along the specified paths. The set_disable_timing command disables a timing edge and thereby prevents timing analysis through the edge and removes timing relationships associated with the edge. The set case analysis command sets the data at a pin or port to a constant value, thereby reducing the interactions between the pin/port and other timing nodes. The set clock groups constraint can be used to specify exclusivity between clocks, thereby reducing the timing interactions between the clocks. These timing constraints remove timing relationships from a mode. A timing constraint that removes timing relationships is included in the merged mode if the timing constraint is present in all the individual modes.</p>
+<p id="p-0065" num="0064">In an embodiment, if all individual modes have a constant value of either 0 or 1 specified at a pin/port, such that at least one individual mode specifies a value of one for that pin/port and at least one individual mode specifies a value of zero for that pin/port, a timing constraint is added to the merged mode that specifies that the value on the pin/port is constant, for example, &#x201c;set_case_analysis constant port_name.&#x201d; The information that the pin/port always has a constant value indicates that there are no timing relationships associated with this timing node since the signal on the timing node never changes during any mode of operation.</p>
+<p id="p-0066" num="0065">If the timing constraint does not affect timing relationships, the merged mode generator <b>350</b> adds <b>1260</b> the timing constraint to the merged mode if the timing constraint is the same across all the individual modes. In an embodiment, the merged mode generator <b>350</b> returns error if a timing constraint that does not affect timing relationships does not occur across all individual modes or is not the same across all the individual modes. If the merged mode generator <b>350</b> determines <b>1270</b> that more timing constraints of the individual modes need to be processed, the merged mode generator <b>350</b> identifies <b>1210</b> another timing constraint and processes it, or else, the merged mode generator <b>350</b> stores <b>1280</b> the results. The results can be stored after or during other steps of the process illustrated in <figref idref="DRAWINGS">FIG. 12</figref>.</p>
+<p id="p-0067" num="0066">Next, <figref idref="DRAWINGS">FIG. 13(</figref><i>a</i>) illustrates the process for eliminating <b>1120</b> timing relationships between clocks in the merged mode. The merged mode generator <b>350</b> eliminates <b>1120</b> interactions between clocks in the merged mode if the clocks do not co-exist in any individual mode with respect to a set of timing nodes. The merged mode generator <b>350</b> performs propagation <b>1310</b> of clock inputs or case inputs that specify a constant value at a pin/port. The merged mode generator <b>350</b> identifies timing nodes where merged mode has more clocks compared to fan-in points. The merged mode generator <b>350</b> detects combinations of clocks that reach the timing node but do not coexist in any individual mode. The merged mode generator <b>350</b> adds timing constraints to the merged mode to declare these clocks as mutually exclusive.</p>
+<p id="p-0068" num="0067">For example, if multiple individual modes are combined to a merged mode and clock clka is disabled in all individual modes in which clkb is enabled and clkb is disabled in all individual modes in which clka is enabled, the merged mode generator <b>350</b> determines that clka and clkb cannot coexist in any individual mode. Accordingly, the merged mode generator <b>350</b> eliminates the interactions between clocks clka and clkb in the merged mode by introducing appropriate constraints, for example, a constraint that specifies that clka and clkb are exclusive (logically or physically).</p>
+<p id="p-0069" num="0068"><figref idref="DRAWINGS">FIG. 13(</figref><i>b</i>) shows a circuit diagram to illustrate the process of elimination of timing relationships based on the flowchart shown in <figref idref="DRAWINGS">FIG. 13(</figref><i>a</i>), in accordance with an embodiment. The timing nodes <b>1350</b><i>a </i>and <b>1350</b><i>b </i>correspond to pins receiving clocks clka and clkb as inputs respectively. The input pin <b>1350</b><i>c </i>provides an input sel which allows selection of one of the inputs of the multiplexer <b>1360</b>. The selected clock input reaches the output <b>1350</b><i>d </i>of the multiplexer <b>1360</b> and is provided as the input clock for the flip-flops <b>1370</b><i>a </i>and <b>1370</b><i>b</i>. There can be two individual modes, mode<b>1</b> and mode<b>2</b>. Assume that in model the input at timing node <b>1350</b><i>c </i>(sel) is set to a constant value 1, thereby selecting the clock clka at the input pin <b>1350</b><i>a </i>for the multiplexer <b>1360</b>. This can be specified using a timing constraint &#x201c;set_case_analysis <b>1</b> [get_ports sel]&#x201d; in mode<b>1</b>. In mode<b>2</b> the value for timing node <b>1350</b><i>c </i>(sel) value is set to a constant 0, thereby selecting the clock clkb at the input pin <b>1350</b><i>b </i>for the multiplexer <b>1360</b>. This can be specified using a timing constraint &#x201c;set_case_analysis <b>0</b> [get_ports sel]&#x201d;.</p>
+<p id="p-0070" num="0069">The merged mode contains both the create generated clock timing constraints described above, since these constraints add timing relationship and are added to the merged mode in step <b>1220</b>, <b>1230</b> of the flowchart in <figref idref="DRAWINGS">FIG. 12</figref>. However, in any individual mode, only one clock input reaches the timing node <b>1350</b><i>d </i>and the clocks do not co-exist in any individual modes. Therefore, a timing constraint is added <b>1340</b> to disable any interactions between the two clocks by declaring the two clocks as mutually exclusive, for example, &#x201c;set_clock_groups&#x2014;physically_exclusive&#x2014;group clka&#x2014;group clkb.&#x201d; The set clock groups command defines groups of clocks that are mutually exclusive with respect to each other. Specifying the two clocks clka and clkb to be physically exclusive indicates that there is no need to perform any crosstalk analysis between the clock nets. Therefore, any timing analysis performed using the merged mode does not check paths that start from a clock in one group (say clka) and end at a clock in another group (say clkb).</p>
+<p id="p-0071" num="0070">Next, the steps of detection <b>1130</b> of extraneous timing relationships in merged mode for disabling <b>1140</b> the timing relationships is described in detail. <figref idref="DRAWINGS">FIG. 14</figref> shows the flowchart for illustrating the steps for detecting and eliminating extraneous timing relationships in a merged mode, in accordance with an embodiment. The flowchart shown in <figref idref="DRAWINGS">FIG. 14</figref> performs three passes similar to the flowchart illustrated in <figref idref="DRAWINGS">FIG. 4</figref>. The first pass eliminates <b>1410</b> extraneous timing relationships from the merged mode by disabling clock paths that reach a timing node in the merged mode but do not reach the same timing node in any individual mode. The second pass eliminates <b>1420</b> extraneous timing relationships by disabling data paths in merged modes if a timing relationship is present between two timing nodes but there is no corresponding timing relationship between the timing nodes in any individual modes. The third pass eliminates <b>1430</b> extraneous relationships by disabling data paths feeding inputs to reconvergent timing nodes. The details of the three passes are further described herein.</p>
+<p id="p-0072" num="0071"><figref idref="DRAWINGS">FIG. 15(</figref><i>a</i>) illustrates the details of the first pass <b>1410</b> for eliminating extraneous timing relationships from the merged mode by disabling clock paths, in accordance with an embodiment. The merged mode generator <b>350</b> propagates the constraints from all start points to an end point for each individual mode and the merged mode. This step is performed in the manner illustrated by example in <figref idref="DRAWINGS">FIG. 8</figref>. The merged mode generator <b>350</b> analyzes the aggregated timing relationships for the end point to identify capture clocks that reach the end point in the merged mode and individual modes. In particular, the merged mode generator <b>350</b> detects <b>1520</b> capture clocks that reach the end point in the merged mode but are not capture clocks in any individual mode for that end point. The merged mode generator <b>350</b> adds timing constraints to the merged mode to disable the clock path from reaching the timing node. For example, a clock clk<b>1</b> can be disabled by adding a constraint &#x201c;set_clock_sense&#x2014;stop_propagation&#x2014;clock clk<b>1</b> pin_name.&#x201d; In an embodiment, an intermediate timing node connecting the clock input to the end point is selected for disabling the clock path. The steps illustrated in <figref idref="DRAWINGS">FIG. 15</figref> are repeated for all end points.</p>
+<p id="p-0073" num="0072"><figref idref="DRAWINGS">FIG. 15(</figref><i>b</i>) illustrates the process of <figref idref="DRAWINGS">FIG. 15(</figref><i>a</i>) by an example. The inputs <b>1550</b><i>a </i>and <b>1550</b><i>b </i>are provided to an OR gate <b>1580</b>. There are two individual modes modeA and modeB associated with the netlist shown in <figref idref="DRAWINGS">FIG. 15</figref>. In modeA, the input <b>1550</b><i>a </i>is set to constant value 1 and <b>1550</b><i>b </i>is set to a constant value 0. In modeB, the input <b>1550</b><i>a </i>is set to a constant value 0 and <b>1550</b><i>b </i>is set to a constant value 1. As a result, the output <b>1550</b><i>c </i>of the gate <b>1580</b> is determined to be 1 in modeA as well as modeB. The value at timing node <b>1550</b><i>c </i>corresponds to the select input value for the multiplexer <b>1570</b>. Accordingly, only the clock input clkA on pin <b>1550</b><i>e </i>reaches the output <b>1550</b><i>f </i>of the multiplexer <b>1570</b> for the individual modes. The clkB input on pin <b>1550</b><i>d </i>never reaches the output <b>1550</b><i>f </i>of the multiplexer <b>1570</b> for the modes modeA and modeB. The output <b>1550</b><i>f </i>of the multiplexer <b>1570</b> acts as the clocks for the flip-flops <b>1560</b><i>a </i>and <b>1560</b><i>b</i>. Accordingly, in none of the individual modes, modeA and modeB, the clock input clkA at pin <b>1550</b><i>d </i>reaches the end points corresponding to the flip-flops <b>1560</b><i>a </i>and <b>1560</b><i>b</i>. Therefore, the clock clkA is disabled in the merged mode by adding <b>1530</b> a timing constraint, for example, &#x201c;set_clock_sense&#x2014;stop_propagation&#x2014;clock clkA [get_pin mux <b>1</b>/Z]&#x201d; wherein mux<b>1</b> corresponds to the multiplexer <b>1570</b> and the pin returned by &#x201c;get_pin mux<b>1</b>/Z&#x201d; corresponds to the timing node <b>1550</b><i>f. </i></p>
+<p id="p-0074" num="0073"><figref idref="DRAWINGS">FIG. 16(</figref><i>a</i>) illustrates the details of the second pass <b>1420</b> for eliminating extraneous timing relationships by disabling data paths in merged modes, in accordance with an embodiment. The merged mode generator <b>350</b> propagates <b>1610</b> the timing relationships from an end point to a start point as illustrated in <figref idref="DRAWINGS">FIG. 9</figref>. The merged mode generator <b>350</b> detects <b>1620</b> extraneous timing relationships between a pair of start point and end point and adds <b>1630</b> timing constraints to the merged mode to disable extraneous paths between the start point and end point. The steps illustrated in <figref idref="DRAWINGS">FIG. 16(</figref><i>a</i>) are repeated for all start points that can reach an end point, and for each end point that couldn't be resolved in pass<b>1</b> alone.</p>
+<p id="p-0075" num="0074"><figref idref="DRAWINGS">FIG. 16(</figref><i>b</i>) illustrates the process of <figref idref="DRAWINGS">FIG. 16(</figref><i>a</i>) by an example. Assume there are two individual modes modeX and modeY for the netlists shown in <figref idref="DRAWINGS">FIG. 16(</figref><i>b</i>). The input SE provided via pin <b>1650</b><i>a </i>reaches the output <b>1650</b><i>b </i>of the buffer BUF and is provided as an input to the multiplexer <b>1670</b>. The mode modeX specifies the input SE to the pin <b>1650</b><i>a </i>to be constant 0, for example, by specifying &#x201c;set_case_analysis <b>0</b> [get_port SE].&#x201d; The mode modeY specifies the input SE to the pin <b>1650</b><i>a </i>to be constant <b>1</b>, for example, by specifying &#x201c;set_case_analysis <b>1</b> [get_port SE].&#x201d; These two timing constraints are of the type that remove timing relationships since specifying a constant value for a pin ensures that there are no timing relationships associated with the pin. Therefore, these timing constraints can be added to the initial merged mode only if they are the same across all individual modes. However, since these timing constraints are not the same for modeX and modeY, these are not added to the merged mode. Accordingly extraneous timing relationships of data paths that start from the input SE and reach timing nodes associated with the flip-flop <b>1660</b> are disabled by adding appropriate timing constraints to the merged mode. For example, a timing constraint &#x201c;set_false_path&#x2014;from SE&#x201d; can be added to the merged mode to disable paths from input <b>1650</b><i>a </i>(port SE) to the end point associated with the timing node <b>1650</b><i>f </i>(input of flip-flop <b>1660</b>).</p>
+<p id="p-0076" num="0075"><figref idref="DRAWINGS">FIG. 17</figref> illustrates the details of the third pass <b>1430</b> for eliminating extraneous timing relationships in merged mode by disabling data paths feeding inputs to reconvergent timing nodes, in accordance with an embodiment. The merged mode generator <b>350</b> detects <b>1710</b> reconvergent points between a start point and an end point. This check is performed if there are multiple timing relationships between a start point and end point pair caused by reconvergent points between the start point and end point. For example, <figref idref="DRAWINGS">FIG. 17(</figref><i>b</i>) shows an example netlist with a reconvergent point <b>1750</b><i>c</i>. The gate <b>1760</b> has two inputs, <b>1750</b><i>a </i>and <b>1750</b><i>b</i>. The input <b>1750</b><i>a </i>is provided as input A to the buffer BUF and the output Z of the buffer BUF is fed in input <b>1750</b><i>b </i>to the gate <b>1760</b>. Assume there are two individual modes, modeP and modeQ for the circuit in <figref idref="DRAWINGS">FIG. 17(</figref><i>b</i>). The individual mode modeP specifies a timing constraint &#x201c;set_false_path&#x2014;through [get_pin BUF/A].&#x201d; The individual mode modeQ specifies a timing constraint &#x201c;set_false_path&#x2014;through [getpin BUF/Z].&#x201d; Accordingly, the input to the gate <b>1760</b> via the timing node <b>1750</b><i>b </i>is set to false path in both individual modes. Two timing relationships are detected at the reconvergent point <b>1750</b><i>c</i>, one associated with input X of the gate <b>1760</b> and another associated with input Y of the gate <b>1760</b>.</p>
+<p id="p-0077" num="0076">Since there are multiple timing relationships reaching the reconvergent point <b>1750</b><i>c</i>, the appropriate timing relationships are not eliminated in pass <b>1</b> (illustrated in <figref idref="DRAWINGS">FIG. 15</figref>) and pass <b>2</b> (illustrated in <figref idref="DRAWINGS">FIG. 16</figref>). However, each input of the reconvergent point is compared between the merged mode and the individual modes to determine if a path can be disabled. In <figref idref="DRAWINGS">FIG. 17(</figref><i>b</i>), the merged mode generator <b>350</b> determines that in both the individual modes modeP and modeQ, the input Y received at timing node <b>1750</b><i>b </i>is disabled. Accordingly a timing constraint is added <b>1730</b> to the merged mode to disable the path arriving at the input Y of gate <b>1760</b>, for example, &#x201c;set_false_path&#x2014;through [getpin U<b>1</b>/Y].&#x201d;</p>
+<p id="h-0010" num="0000">Verification of Merged Modes</p>
+<p id="p-0078" num="0077"><figref idref="DRAWINGS">FIG. 18</figref> illustrates an embodiment of the overall process for verifying equivalence between a merged mode and individual modes corresponding to a netlist. The verification module <b>330</b> performs the steps illustrated in the flowchart of <figref idref="DRAWINGS">FIG. 18</figref> to verify the equivalence between the merged mode and the individual modes with respect to a set of start points and a set of end points of the circuit configuration.</p>
+<p id="p-0079" num="0078">The verification module <b>330</b> determines <b>1810</b> the timing relationships encountered between the set of start points and the set of end points in each individual modes <b>130</b> as well as the merged mode <b>120</b>. In an embodiment, the determination of the timing relationships comprises aggregating timing relationships by performing a graph traversal from the set of start points to the set of end points as described herein. The verification module <b>330</b> verifies <b>1820</b> whether a timing relationship present in an individual mode <b>130</b> is present in the merged mode <b>120</b>. If a timing relationship is present in an individual mode <b>130</b> but no equivalent timing relationship is found in the merged mode <b>120</b>, the timing relationship is flagged as a mismatch. A mismatch can be flagged by logging a message or by presenting a message to a user. A timing relationship from one mode is equivalent to a timing relationship from another mode if the two timing relationships are associated with the same pair of timing nodes and have equivalent launching clock and capture clock as well as equivalent state as defined by the associated timing constraints. A mismatch found between the merged mode and an individual mode can be further analyzed automatically or by a system administrator.</p>
+<p id="p-0080" num="0079">The verification module <b>330</b> verifies <b>1830</b> for each timing relationship in the merged mode <b>120</b>, whether there is an equivalent timing relationship in at least one of the individual modes <b>130</b>. If a timing relationship is present in the merged mode <b>120</b> but there is no equivalent timing relationship in any of the individual modes <b>130</b>, the verification module <b>330</b> flags the timing relationship as a mismatch. This timing relationship can be further analyzed automatically or by a system administrator.</p>
+<p id="p-0081" num="0080">Accordingly, the verification module <b>330</b> ensures that every timing relationship present in any individual mode <b>130</b> is present in the merged mode <b>120</b> and every timing relationship present in the merged mode <b>120</b> is present in at least one of the individual modes <b>130</b>. If the verification module <b>330</b> identifies any timing relationship that does not satisfy this criteria, the verification module <b>330</b> flags the timing relationship as a mismatch.</p>
+<p id="p-0082" num="0081">The verification process can be performed using the three pass process illustrated in <figref idref="DRAWINGS">FIG. 19</figref> which is similar to the three pass process illustrated in <figref idref="DRAWINGS">FIG. 4</figref>. The three passes can be performed by the verification module <b>330</b> by invoking the comparison module <b>360</b>. In the first pass <b>1910</b>, the verification module <b>330</b> verifies the equivalence between the merged mode <b>120</b> with the individual modes <b>130</b> with respect to timing relationships between all start points and a particular end point based on the process illustrated in <figref idref="DRAWINGS">FIG. 18</figref>. The verification module <b>330</b> repeats this process for each end point. If the verification process determines a mismatch, the verification module <b>330</b> flags the mismatch. The mismatch may be fixed manually by a system administrator or by an automatic process. If no mismatch is found for an end point and a match cannot be determined decisively due to ambiguities after the first pass <b>1910</b>, the verification module <b>330</b> performs the second pass <b>1920</b> with respect to the selected end point.</p>
+<p id="p-0083" num="0082">In the second pass <b>1920</b>, the verification module <b>330</b> verifies the equivalence between the merged mode <b>120</b> with the individual modes <b>130</b> with respect to timing relationships between a particular start point and a particular end point based on the process illustrated in <figref idref="DRAWINGS">FIG. 18</figref>. The verification module <b>330</b> repeats this process for each pair of a start point and an end point. If a mismatch is found, the verification module <b>330</b> flags the mismatch for the pair of start point and end point. The step <b>1920</b> is repeated for each start point with respect to the selected end point. If no mismatch is found for a start point and end point pair and a match cannot be determined decisively due to ambiguities after the second pass <b>1920</b>, the verification module <b>330</b> performs the third pass <b>1930</b> with respect to the selected start point and end point pair.</p>
+<p id="p-0084" num="0083">In the third pass <b>1930</b>, the verification module <b>330</b> verifies the equivalence between the merged mode <b>120</b> and the individual modes <b>130</b> with respect to timing relationships associated with a reconvergent point between the selected start point and end point pair. The verification module <b>330</b> verifies equivalence for timing relationships associated with a timing node with an edge into the reconvergent point and the reconvergent point. If a mismatch is found, the verification module <b>330</b> flags the mismatch for the timing relationship associated with timing node feeding into the reconvergent point and the reconvergent point. If no mismatch is found for timing nodes feeding into this reconvergent point, the process is repeated for other reconvergent points between the selected start point and end point pair. If no mismatch is found for any reconvergent point between the start point and end point pair, the timing relationships associated with the start point and end point pair are determined to be equivalent and the verification module <b>330</b> continues processing other start point and end point pairs.</p>
+<p id="p-0085" num="0084">Embodiments can perform a subset of the steps shown in <figref idref="DRAWINGS">FIG. 19</figref>. For example, an embodiment can perform the first pass <b>1910</b> without performing the second pass <b>1920</b> and the third pass <b>1930</b>, if there is no ambiguity found by the first pass <b>1910</b> (in case of matches as well as mismatches determined by the first pass <b>1910</b>.) Similarly, an embodiment can perform the first pass <b>1910</b> and the second pass <b>1920</b>, without performing the third pass <b>1930</b>.</p>
+<p id="p-0086" num="0085">If the steps <b>1910</b>, <b>1920</b>, <b>1930</b> find no mismatch, the verification module <b>330</b> determines the merged mode <b>120</b> to be equivalent to the individual modes <b>130</b>. In an embodiment, any mismatches found are flagged. The mismatches can be fixed via an automatic process or by a system administrator by modifying the merged mode <b>120</b>. The above verification process can be repeated for the modified merged mode <b>120</b> to determine if the modified merged mode <b>120</b> is equivalent to the individual modes <b>130</b>.</p>
+<p id="p-0087" num="0086">A process similar to that illustrated in <figref idref="DRAWINGS">FIG. 5</figref> can be used for verifying whether each relationship present in every individual mode is present in the merged mode. Similarly, a process similar to that illustrated in <figref idref="DRAWINGS">FIG. 6</figref> can be used for verifying whether each timing relationship present in the merged mode is present in at least one of the individual modes. Accordingly the verification process can be performed to determine if a merged mode is equivalent to several individual modes.</p>
+<p id="p-0088" num="0087">In sum, embodiments allow efficient generation of merged modes from individual modes for a set of netlists and verification of equivalence between merged mode and individual modes for the set of netlists. Timing constraints are added to the merged mode in a manner that does not add pessimism to the merged mode. Errors are reported during merging if necessary identifying timing nodes causing errors. The merged mode generated is determined with high accuracy and confidence and can be used for implementation stages of design as well as sign-off stages.</p>
+<p id="h-0011" num="0000">Computer Architecture</p>
+<p id="p-0089" num="0088"><figref idref="DRAWINGS">FIG. 20</figref> is a high-level block diagram illustrating an example computer <b>2000</b> that can be used for processing the steps of the processes described herein. The computer <b>2000</b> includes at least one processor <b>2002</b> coupled to a chipset <b>2004</b>. The chipset <b>2004</b> includes a memory controller hub <b>2020</b> and an input/output (I/O) controller hub <b>2022</b>. A memory <b>2006</b> and a graphics adapter <b>2012</b> are coupled to the memory controller hub <b>2020</b>, and a display <b>2018</b> is coupled to the graphics adapter <b>2012</b>. A storage device <b>2008</b>, keyboard <b>2010</b>, pointing device <b>2014</b>, and network adapter <b>2016</b> are coupled to the I/O controller hub <b>2022</b>. Other embodiments of the computer <b>2000</b> have different architectures.</p>
+<p id="p-0090" num="0089">The storage device <b>2008</b> is a non-transitory computer-readable storage medium such as a hard drive, compact disk read-only memory (CD-ROM), DVD, or a solid-state memory device. The memory <b>2006</b> holds instructions and data used by the processor <b>2002</b>. The pointing device <b>2014</b> is a mouse, track ball, or other type of pointing device, and is used in combination with the keyboard <b>2010</b> to input data into the computer system <b>2000</b>. The graphics adapter <b>2012</b> displays images and other information on the display <b>2018</b>. The network adapter <b>2016</b> couples the computer system <b>2000</b> to one or more computer networks.</p>
+<p id="p-0091" num="0090">The computer <b>2000</b> is adapted to execute computer program modules for providing functionality described herein. As used herein, the term &#x201c;module&#x201d; refers to computer program logic used to provide the specified functionality. Thus, a module can be implemented in hardware, firmware, and/or software. In one embodiment, program modules are stored on the storage device <b>2008</b>, loaded into the memory <b>2006</b>, and executed by the processor <b>2002</b>. The types of computers <b>2000</b> used can vary depending upon the embodiment and requirements. For example, a computer may lack displays, keyboards, and/or other devices shown in <figref idref="DRAWINGS">FIG. 20</figref>.</p>
+<p id="p-0092" num="0091">Some portions of above description describe the embodiments in terms of algorithmic processes or operations. These algorithmic descriptions and representations are commonly used by those skilled in the data processing arts to convey the substance of their work effectively to others skilled in the art. These operations, while described functionally, computationally, or logically, are understood to be implemented by computer programs comprising instructions for execution by a processor or equivalent electrical circuits, microcode, or the like. Furthermore, it has also proven convenient at times, to refer to these arrangements of functional operations as modules, without loss of generality. The described operations and their associated modules may be embodied in software, firmware, hardware, or any combinations thereof</p>
+<p id="p-0093" num="0092">As used herein any reference to &#x201c;one embodiment&#x201d; or &#x201c;an embodiment&#x201d; means that a particular element, feature, structure, or characteristic described in connection with the embodiment is included in at least one embodiment. The appearances of the phrase &#x201c;in one embodiment&#x201d; in various places in the specification are not necessarily all referring to the same embodiment.</p>
+<p id="p-0094" num="0093">Some embodiments may be described using the expression &#x201c;coupled&#x201d; and &#x201c;connected&#x201d; along with their derivatives. It should be understood that these terms are not intended as synonyms for each other. For example, some embodiments may be described using the term &#x201c;connected&#x201d; to indicate that two or more elements are in direct physical or electrical contact with each other. In another example, some embodiments may be described using the term &#x201c;coupled&#x201d; to indicate that two or more elements are in direct physical or electrical contact. The term &#x201c;coupled,&#x201d; however, may also mean that two or more elements are not in direct contact with each other, but yet still co-operate or interact with each other. The embodiments are not limited in this context.</p>
+<p id="p-0095" num="0094">As used herein, the terms &#x201c;comprises,&#x201d; &#x201c;comprising,&#x201d; &#x201c;includes,&#x201d; &#x201c;including,&#x201d; &#x201c;has,&#x201d; &#x201c;having&#x201d; or any other variation thereof, are intended to cover a non-exclusive inclusion. For example, a process, method, article, or apparatus that comprises a list of elements is not necessarily limited to only those elements but may include other elements not expressly listed or inherent to such process, method, article, or apparatus. Further, unless expressly stated to the contrary, &#x201c;or&#x201d; refers to an inclusive or and not to an exclusive or. For example, a condition A or B is satisfied by any one of the following: A is true (or present) and B is false (or not present), A is false (or not present) and B is true (or present), and both A and B are true (or present).</p>
+<p id="p-0096" num="0095">In addition, use of the &#x201c;a&#x201d; or &#x201c;an&#x201d; are employed to describe elements and components of the embodiments herein. This is done merely for convenience and to give a general sense of the disclosure. This description should be read to include one or at least one and the singular also includes the plural unless it is obvious that it is meant otherwise.</p>
+<p id="p-0097" num="0096">Upon reading this disclosure, those of skill in the art will appreciate still additional alternative structural and functional designs for a system and a process for comparing timing constraints of circuits. Thus, while particular embodiments and applications have been illustrated and described, it is to be understood that the present invention is not limited to the precise construction and components disclosed herein and that various modifications, changes and variations which will be apparent to those skilled in the art may be made in the arrangement, operation and details of the method and apparatus disclosed herein without departing from the spirit and scope as defined in the appended claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A computer-implemented method for generating merged mode for a circuit that is equivalent to a plurality of individual modes for the circuit, the method comprising:
+<claim-text>generating, by a computer, a merged mode by combining timing constraints from a plurality of individual modes, at least one extraneous timing relationship not present in the plurality of individual modes but present in the merged mode;</claim-text>
+<claim-text>determining, by the computer, a first set of timing relationships for the merged mode and a second set of timing relationships for each individual mode;</claim-text>
+<claim-text>identifying a plurality of data paths from a plurality of timing paths between a start timing node and an end timing node in the merged mode;</claim-text>
+<claim-text>identifying a reconvergent node between the start timing node and the end timing node;</claim-text>
+<claim-text>comparing, by the computer, the first set of timing relationships with the second set of timing relationships to identify the at least one extraneous timing relationship of data paths connected to the reconvergent node; and</claim-text>
+<claim-text>adding, by the computer, a timing constraint associated with at least one of the data paths to the merged mode to eliminate the extraneous timing relationship.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the timing constraint added to the merged mode disables the at least one data path connected to the reconvergent node.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein each timing relationship comprises a launch clock and a capture clock.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, the method further comprising:
+<claim-text>determining first clock and a second clock reaching a timing node in the merged mode, the first clock placed in a disabled state in one or more individual modes where the second clock is in an enabled state and the second clock placed in a disabled state in one or more individual modes where the first clock is in an enabled state; and</claim-text>
+<claim-text>disabling interactions between the first clock and the second clock in the merged mode responsive to adding the timing constraint to the merged mode.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein generating the merged mode comprises:
+<claim-text>determining whether at least one of the timing constraints adds a new timing relationship to at least one individual mode of the plurality of individual modes; and</claim-text>
+<claim-text>responsive to determining that the at least one of the timing constraints is present in at least one individual mode of the plurality of individual modes, adding the at least one of the timing constraints to the merged mode.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein combining timing constraints from the plurality of individual modes comprises:
+<claim-text>determining whether at least one of the timing constraints is of a type that modifies an existing timing relationship in at least one individual mode of the plurality of individual modes; and</claim-text>
+<claim-text>responsive to determining that the at least one of the timing constraints is present in at least one individual mode of the plurality of individual modes, adding the at least one of the timing constraints to the merged mode.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein combining timing constraints from the plurality of individual modes comprises:
+<claim-text>determining whether at least one of the timing constraints is of a type that removes an existing timing relationship in at least one individual mode of the plurality of individual modes; and</claim-text>
+<claim-text>responsive to determining that the at least one of the timing constraints is present in all of the individual modes of the plurality of individual modes, adding the at least one of the timing constraints to the merged mode.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>identifying a timing node for which each individual mode specifies a constant value of one or zero; and</claim-text>
+<claim-text>adding another timing constraint to the merged mode indicating the value at the timing node is constant.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein generating the merged mode comprises:
+<claim-text>determining a set of timing constraints of the timing constraints for combining that do not affect timing relationships across all the individual modes; and</claim-text>
+<claim-text>responsive to determining that the set of timing constraints are same across each of the individual modes, adding the set of timing constraints to the merged mode.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>determining a set of timing constraints of the timing constraints for combining that do not affect timing relationships across all the individual modes; and</claim-text>
+<claim-text>responsive to determining that the set of timing constraints of the timing constraints for combining that do not affect timing relationships are not same across all individual modes, flagging an error.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The computer method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein generating the merged mode by combining timing constraints from the plurality of individual modes comprises:
+<claim-text>determining a type of a timing constraint being added to the merged mode based on whether the timing constraint adds a new timing relationship to the merged mode, modifies an existing timing relationship of the merged mode, or removes an existing timing relationship of the merged mode; and</claim-text>
+<claim-text>determining whether to add the timing constraint to the merged mode based on the type of the timing constraint.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. A computer-implemented system for generating a merged mode for a circuit that is equivalent to a plurality of individual modes for the circuit, the system comprising:
+<claim-text>a computer processor; and</claim-text>
+<claim-text>a non-transitory computer-readable storage medium storing computer program modules configured to execute on the computer processor, the computer program modules comprising:
+<claim-text>a merge mode generator module configured to:
+<claim-text>generate a merged mode by combining timing constraints from a plurality of individual modes, at least one extraneous timing relationship not present in the plurality of individual modes but present in the merged mode;</claim-text>
+<claim-text>determine a first set of timing relationships for the merged mode and a second set of timing relationships for each individual mode;</claim-text>
+<claim-text>identify a plurality of data paths from a plurality of timing paths between a start timing node and an end timing node in the merged mode;</claim-text>
+<claim-text>identify a reconvergent node between the start timing node and the end timing node;</claim-text>
+<claim-text>compare the first set of timing relationships with the second set of timing relationships to identify the at least one extraneous timing relationship of data paths connected to the reconvergent node; and</claim-text>
+<claim-text>add a timing constraint associated with at least one of the data paths to the merged mode to eliminate the extraneous timing relationship.</claim-text>
+</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The computer-implemented system of <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein the merge mode generator module is further configured to:
+<claim-text>responsive to determining that a clock is a capture clock of a timing node in the merge mode, determine whether the clock is not the capture clock of the timing node in each of the individual modes; and</claim-text>
+<claim-text>add a timing constraint associated with the capture clock to the merge mode to disable the capture clock in the merge mode responsive to determining that the clock is the capture clock of the timing node in the merge mode and determining that the clock is not the capture clock in each of the individual modes.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The computer-implemented system of <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein the merge mode generator module is further configured to:
+<claim-text>determine first clock and a second clock reaching a timing node in the merged mode, the first clock placed in a disabled state in one or more individual modes where the second clock is in an enabled state and the second clock placed in a disabled state in one or more individual modes where the first clock is in an enabled state; and</claim-text>
+<claim-text>disable interactions between the first clock and the second clock in the merged mode responsive to adding the timing constraint to the merged mode.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. A non-transitory computer readable storage medium storing a computer program product including computer instructions configured to cause a processor of a computer to perform a computer-implemented method for generating a merged mode for a circuit that is equivalent to a plurality of individual modes for the circuit, the computer program product comprising:
+<claim-text>a merge mode generator module configured to:
+<claim-text>generate a merged mode by combining timing constraints from a plurality of individual modes, at least one extraneous timing relationship not present in the plurality of individual modes but present in the merged mode;</claim-text>
+<claim-text>determine a first set of timing relationships for the merged mode and a second set of timing relationships for each individual mode;</claim-text>
+<claim-text>identify a plurality of data paths from a plurality of timing paths between a start timing node and an end timing node in the merged mode;</claim-text>
+<claim-text>identify a reconvergent node between the start timing node and the end timing node;</claim-text>
+<claim-text>compare the first set of timing relationships with the second set of timing relationships to identify the at least one extraneous timing relationship of data paths connected to the reconvergent node; and</claim-text>
+<claim-text>add a timing constraint associated with at least one of the data paths to the merged mode to eliminate the extraneous timing relationship.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The computer program product of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the merge mode generator module is further configured to:
+<claim-text>responsive to determining that a clock is a capture clock of a timing node in the merge mode, determine whether the clock is not the capture clock of the timing node in each of the individual modes; and</claim-text>
+<claim-text>add a timing constraint associated with the capture clock to the merge mode to disable the capture clock in the merge mode responsive to determining that the clock is the capture clock of the timing node in the merge mode and determining that the clock is not the capture clock in each of the individual modes.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The computer program product of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the merge mode generator module is further configured to:
+<claim-text>determine first clock and a second clock reaching a timing node in the merged mode, the first clock placed in a disabled state in one or more individual modes where the second clock is in an enabled state and the second clock placed in a disabled state in one or more individual modes where the first clock is in an enabled state; and</claim-text>
+<claim-text>disable interactions between the first clock and the second clock in the merged mode responsive to adding the timing constraint to the merged mode. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

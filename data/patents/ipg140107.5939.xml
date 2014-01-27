@@ -1,0 +1,496 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627048-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627048</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13231575</doc-number>
+<date>20110913</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>61</us-term-extension>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>9</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>712225</main-classification>
+</classification-national>
+<invention-title id="d2e55">Mechanism for irrevocable transactions</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5428761</doc-number>
+<kind>A</kind>
+<name>Herlihy et al.</name>
+<date>19950600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00002">
+<othercit>Tanenbaum, Andrew, &#x201c;Structured Computer Organization&#x201d;, Prentice-Hall, Inc. Second Edition, 1984, pp. 10-12.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00003">
+<othercit>Blundell et al. &#x201c;Unrestricted Transactional Memory: Supporting I/O and System Calls within Transactions&#x201d;, May 2006, pp. 1-12.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00004">
+<othercit>Damron et al., &#x201c;Hybrid Transactional Memory&#x201d;, Oct. 25, 2006, entire document.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00005">
+<othercit>Ald-Tabatabai et al., &#x201c;Compiler and Runtime Support for Efficient Software Transactional Memory&#x201d;, Jun. 16, 2006, pp. 26-37.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>11</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>712225</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>5</number-of-drawing-sheets>
+<number-of-figures>5</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>11648485</doc-number>
+<date>20061228</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8086827</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13231575</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110320776</doc-number>
+<kind>A1</kind>
+<date>20111229</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Welc</last-name>
+<first-name>Adam</first-name>
+<address>
+<city>Mountain View</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Saha</last-name>
+<first-name>Bratin</first-name>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Adl-Tabatabai</last-name>
+<first-name>Ali-Reza</first-name>
+<address>
+<city>Santa Clara</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Welc</last-name>
+<first-name>Adam</first-name>
+<address>
+<city>Mountain View</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Saha</last-name>
+<first-name>Bratin</first-name>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Adl-Tabatabai</last-name>
+<first-name>Ali-Reza</first-name>
+<address>
+<city>Santa Clara</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Barnes &#x26; Thornburg LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Intel Corporation</orgname>
+<role>02</role>
+<address>
+<city>Santa Clara</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Fennema</last-name>
+<first-name>Robert</first-name>
+<department>2183</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A method and apparatus for designating and handling irrevocable transactions is herein described. In response to detecting an irrevocable event, such as an I/O operation, a user-defined irrevocable designation, and a dynamic failure profile, a transaction is designated as irrevocable. In response to designating a transaction as irrevocable, Single Owner Read Locks (SORLs) are acquired for previous and subsequent reads in the irrevocably designated transaction to ensure the transaction is able to complete without modification to locations read from, while permitting remote resources to load from those locations to continue execution.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="202.95mm" wi="133.86mm" file="US08627048-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="189.99mm" wi="158.75mm" file="US08627048-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="194.06mm" wi="158.75mm" orientation="landscape" file="US08627048-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="158.75mm" wi="86.02mm" file="US08627048-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="227.50mm" wi="158.75mm" file="US08627048-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="212.85mm" wi="158.75mm" file="US08627048-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CROSS-REFERENCE TO RELATED APPLICATION</heading>
+<p id="p-0002" num="0001">This application is a Continuation of U.S. patent application Ser. No. 11/648,485 entitled &#x201c;A MECHANISM FOR IRREVOCABLE TRANSACTIONS&#x201d; filed on Dec. 28, 2006, of which the application is incorporated by reference herein in its entirety.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">FIELD</heading>
+<p id="p-0003" num="0002">This invention relates to the field of processor execution and, in particular, to execution of groups of instructions.</p>
+<heading id="h-0003" level="1">BACKGROUND</heading>
+<p id="p-0004" num="0003">Advances in semi-conductor processing and logic design have permitted an increase in the amount of logic that may be present on integrated circuit devices. As a result, computer system configurations have evolved from a single or multiple integrated circuits in a system to multiple cores and multiple logical processors present on individual integrated circuits. A processor or integrated circuit typically comprises a single processor die, where the processor die may include any number of cores or logical processors.</p>
+<p id="p-0005" num="0004">The ever increasing number of cores and logical processors on integrated circuits enables more software threads to be executed. However, the increase in the number of software threads that may be executed simultaneously have created problems with synchronizing accesses to shared data. One common solution to accessing shared data in multiple core or multiple logical processor systems comprises the use of locks to guarantee mutual exclusion across multiple accesses to shared data. However, the ever increasing ability to execute multiple software threads potentially results in false contention and a serialization of execution.</p>
+<p id="p-0006" num="0005">For example, consider a hash table holding shared data. With a lock system, a programmer may lock the entire hash table, allowing one thread to access the entire hash table. However, throughput and performance of other threads is potentially adversely affected, as they are unable to access any entries in the hash table, until the lock is released. Alternatively, each entry in the hash table may be locked. However, this increases programming complexity, as programmers have to account for more locks within a hash table.</p>
+<p id="p-0007" num="0006">Another data synchronization technique includes the use of transactional memory (TM). Often transactional execution includes speculatively executing a grouping of a plurality of micro-operations, operations, or instructions. In the example above, both threads execute within the hash table, and their accesses are monitored/tracked. If both threads access/alter the same entry, one of the transactions may be aborted to resolve the conflict.</p>
+<p id="p-0008" num="0007">However, speculative transactional execution usually relies on the ability to undo speculative transactional updates in response to aborting the transaction. Yet, some operations, such as I/O operations, are difficult to roll-back or undo. As a result, typically, when an I/O event or operations is detected in a transaction, the transaction is aborted to execute non-speculatively, potentially wasting previous execution cycles within the transaction.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0009" num="0008">The present invention is illustrated by way of example and not intended to be limited by the figures of the accompanying drawings.</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 1</figref> illustrates an embodiment of a system including a processor and a memory capable of transactional execution.</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 2</figref> illustrates an embodiment of a Software Transactional Memory (STM) system capable of designating an irrevocable transaction.</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 3</figref> illustrates an embodiment of a memory device to store a transaction descriptor, an array of meta-data, and a data object.</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 4</figref><i>a </i>illustrates an embodiment of a flow diagram for an execution flow to designate a transaction as an irrevocable transaction.</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 4</figref><i>b </i>illustrates an embodiment of a continued flow diagram from <figref idref="DRAWINGS">FIG. 4</figref><i>a. </i></p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0015" num="0014">In the following description, numerous specific details are set forth such as examples of specific hardware support for transactional execution, specific tracking methods, /meta-data uses, specific types of local memory in processors, and specific types of memory accesses and locations, etc. in order to provide a thorough understanding of the present invention. It will be apparent, however, to one skilled in the art that these specific details need not be employed to practice the present invention. In other instances, well known components or methods, such as coding of transactions in software, demarcation of transactions, specific multi-core and multi-threaded processor architectures, interrupt generation/handling, cache organizations, and specific operational details of microprocessors, have not been described in detail in order to avoid unnecessarily obscuring the present invention.</p>
+<p id="p-0016" num="0015">A value, as used herein, includes any known representation of a number, a state, a logical state, or a binary logical state. Often, the use of logic levels, logic values, or logical values is also referred to as 1's and 0's, which simply represents binary logic states. For example, a 1 refers to a high logic level and 0 refers to a low logic level. However, other representations of values in computer systems have been used. For example the decimal number 10 may also be as a binary value of 1010 and a hexadecimal letter A.</p>
+<p id="p-0017" num="0016">Moreover, states may be represented by values or portions of values. As an example, a locked state may be represented by a first value in a location, such as an odd number, while a version number, such as an even value, in the location represents an unlocked state. Here, a portion of the first and second value may be used to represent the states, such as two lower bits of the values, a sign bit associated with the values, or other portion of the values. Often a traditional lock refers to locks explicitly utilized by users/programmers to implement access synchronization, while transactional locks, such as a read/write, write, or Single Owner Read Lock (SORL) are often constructs of transactional execution to provide synchronization.</p>
+<p id="p-0018" num="0017">The method and apparatus described herein are for designating a transaction as irrevocable and handling irrevocable transactions. Specifically, designating a transaction as irrevocable and handling irrevocable transactions are primarily discussed in reference to multi-core processor computer systems. However, the methods and apparatus for designating a transaction as irrevocable and handling irrevocable transactions are not so limited, as they may be implemented on or in association with any integrated circuit device or system, such as cell phones, personal digital assistants, embedded controllers, mobile platforms, desktop platforms, and server platforms, as well as in conjunction with other resources, such as hardware/software threads, that utilize transactional memory.</p>
+<p id="p-0019" num="0018">Referring to <figref idref="DRAWINGS">FIG. 1</figref>, an embodiment of a processor capable of designating a transaction as irrevocable and handling irrevocable transactions is illustrated. In one embodiment, processor <b>100</b> is a multi-core processor capable of executing multiple threads in parallel. However processor <b>100</b> may include any processing element, such as an embedded processor, cell-processor, microprocessor, or other known processor, which is capable of executing one thread or multiple threads. As an illustrative example, a simplified embodiment of an out-of-order architecture for a processor is illustrated in <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0020" num="0019">The modules shown in processor <b>100</b>, which are discussed in more detail below, are potentially implemented in hardware, software, firmware, or a combination thereof. Note that the illustrated modules are logical blocks, which may overlap the boundaries of other modules, and may be configured or interconnected in any manner. In addition, the modules as shown in <figref idref="DRAWINGS">FIG. 1</figref> are not required in processor <b>100</b>. Furthermore, other modules, units, and known processor features may also be included in processor <b>100</b>.</p>
+<p id="p-0021" num="0020">Bus interface module <b>105</b> is to communicate with a device, such as system memory <b>175</b>, a chipset, a norh bridge, or other integrated circuit. Typically bus interface module <b>105</b> includes input/output (I/O) buffers to transmit and receive bus signals on interconnect <b>170</b>. Examples of interconnect <b>170</b> include a Gunning Transceiver Logic (GTL) bus, a GTL+ bus, a double data rate (DDR) bus, a pumped bus, a differential bus, a cache coherent bus, a point-to-point bus, a multi-drop bus or other known interconnect implementing any known bus protocol.</p>
+<p id="p-0022" num="0021">Processor <b>100</b> is coupled to memory <b>175</b>, which may be dedicated to processor <b>100</b> or shared with other devices in a system. Examples of memory <b>175</b> includes dynamic random access memory (DRAM), static RAM (SRAM), non-volatile memory (NV memory), and long-term storage. Bus interface unit <b>105</b> as shown is also to communicate with higher level cache <b>110</b>.</p>
+<p id="p-0023" num="0022">Higher-level cache <b>110</b> is to cache recently fetched and/or operated on elements. In one embodiment, higher-level cache <b>110</b> is a second-level data cache. However, higher level cache <b>110</b> is not so limited, as it may be or include instruction cache <b>115</b> to store recently fetched/decoded instructions. Instruction cache <b>115</b>, which may also be referred to as a trace cache, is illustrated before fetch logic <b>120</b> and decode logic <b>125</b>. Here, instruction cache <b>115</b> stores recently fetched instructions that have not been decoded. Yet, instruction cache <b>115</b> is potentially placed after fetch logic <b>120</b> and/or after decode logic <b>125</b> to store decoded instructions.</p>
+<p id="p-0024" num="0023">Fetch logic <b>120</b> is to fetch data/instructions to be operated on/executed. Although not shown, in one embodiment, fetch logic includes or is associated with branch prediction logic, a branch target buffer, and/or a prefetcher to predict branches to be executed/taken and pre-fetch instructions along a predicted branch for execution. Here, a processor capable of speculative execution potentially prefetches and speculatively executes predicted branches. Decode logic <b>125</b> is coupled to fetch logic <b>120</b> to decode fetched elements.</p>
+<p id="p-0025" num="0024">Allocator and renamer module <b>150</b> includes an allocator to reserve resources, such as register files to store instruction processing results and a reorder buffer to track instructions. Unit <b>130</b> may also include a register renamer to rename program/instruction reference registers to other registers internal to processor <b>100</b>. Reorder/retirement module <b>125</b> includes components, such as the reorder buffers mentioned above, to support out-of-order execution and later retirement of instructions executed out-of-order. In one embodiment, where processor <b>100</b> is an in-order execution processor, re-order/retirement module <b>155</b> may not be included.</p>
+<p id="p-0026" num="0025">Scheduler and execution module <b>120</b>, in one embodiment, includes a scheduler unit to schedule instructions/operations on execution units. Register files associated with execution units are also included to store information instruction processing results. Exemplary execution units include a floating point execution unit, an integer execution unit, a jump execution unit, a load execution unit, a store execution unit, and other known execution units.</p>
+<p id="p-0027" num="0026">Also shown in <figref idref="DRAWINGS">FIG. 1</figref> is lower level data cache <b>165</b>. Data cache <b>165</b> is to store recently used/operated on elements, such as data operands, objects, units, or items. In one embodiment, a data translation lookaside buffer (DTLB) is associated with lower level data cache <b>165</b>. Often a processor logically views physical memory as a virtual memory space. As a specific example, a processor may include a page table structure to view physical memory as a plurality of virtual pages. Here, a DTLB supports translation of virtual to linear/physical addresses. Data cache <b>165</b> may be utilized as a transactional memory or other memory to track tentative accessed during execution of a transaction, as discussed in more detail below.</p>
+<p id="p-0028" num="0027">In one embodiment, processor <b>100</b> is a multi-core processor. A core often refers to any logic located on an integrated circuit capable of maintaining an independent architectural state, wherein each independently maintained architectural state is associated with at least some dedicated execution resources. In one embodiment, execution resources, such as execution module <b>160</b>, include physically separate execution units dedicated to each core. However, execution module <b>160</b> may include execution units that they are physically arranged as part of the same unit or in close proximity; yet, portions of execution module <b>160</b> are logically dedicated to each core. Furthermore, each core may share access to processor resources, such as higher level cache <b>110</b>.</p>
+<p id="p-0029" num="0028">In another embodiment, processor <b>100</b> includes a plurality of hardware threads. A hardware thread typically refers to any logic located on an integrated circuit capable of maintaining an independent architectural state, wherein the independently maintained architectural states share access to some execution resources. For example, smaller resources, such as instruction pointers, renaming logic in rename allocater logic <b>150</b>, an instruction translation buffer (ILTB) may be replicated for each hardware thread, while, resources, such as re-order buffers in reorder/retirement unit <b>155</b>, load/store buffers, and queues may be shared by hardware threads through partitioning. Other resources, such as low-level data-cache and data-TLB <b>165</b>, execution unit(s) <b>160</b>, and parts of out-of-order unit <b>155</b> are potentially fully shared.</p>
+<p id="p-0030" num="0029">As can be seen, as certain processing resources are shared and others are dedicated to an architectural state, the line between the nomenclature of a hardware thread and core overlaps. Yet often, a core and a hardware thread are viewed by an operating system as individual logical processors, with each logical processor being capable of executing a thread. Logical processors, cores, and threads may also be referred to as resources to execute transactions. Therefore, a multi-resource processor, such as processor <b>100</b>, is capable of executing multiple threads.</p>
+<p id="p-0031" num="0030">A remote resource refers to any resource/logical processor, such as a core or thread, other than the resource that is executing a current transaction of interest. As an example, if a first core of a processor is executing a first transaction and the second core is executing a second transaction, from the perspective of the first transaction, the second core is a remote resource and visa versa. Consequently, multiple transactions may be simultaneously and/or concurrently executed in processor <b>100</b>.</p>
+<p id="p-0032" num="0031">A transaction includes a grouping of instructions, operations, or micro-operations, which may be grouped by hardware, software, firmware, or a combination thereof. For example, instructions may be used to demarcate a transaction. Typically, during execution of a transaction, updates to memory are not made globally visible until the transaction is committed. While the transaction is still pending, locations loaded from and written to within a memory are tracked. Upon successful validation of those memory locations, the transaction is committed and updates made during the transaction are made globally visible. However, if the transaction is invalidated during its pendancy, the transaction is restarted without making the updates globally visible. As a result, pendancy of a transaction, as used herein, refers to a transaction that has begun execution and has not been committed or aborted, i.e. pending. Two example systems for transactional execution include a Hardware Transactional Memory (HTM) system and a Software Transactional Memory (STM) system.</p>
+<p id="p-0033" num="0032">A Hardware Transactional Memory (HTM) system often refers to tracking accesses during execution of a transaction with processor <b>100</b> in hardware of processor <b>100</b>. For example, a cache line <b>166</b> is to cache data item/object <b>176</b> in system memory <b>175</b>. During execution of a transaction, annotation/attribute field <b>167</b>, which is associated with cache line <b>166</b> is utilized to track accesses to and from line <b>166</b>. For example, attribute field <b>167</b> includes a transaction read bit to track if cache line <b>166</b> has been read during execution of a transaction and a transaction write bit to track if cache line <b>166</b> has been written to during execution of the transaction.</p>
+<p id="p-0034" num="0033">Attribute field <b>167</b> is potentially used to track accesses and detect conflicts during execution of a transaction, as well as upon attempting to commit the transaction. For example, if a transaction read bit in field <b>167</b> is set to indicate a read from line <b>166</b> occurred during execution of a transaction and a store associated with line <b>166</b> from another transaction occurs, a conflict is detected. Examples of utilizing an attribute field for transactional execution is included in co-pending application with Ser. No. 11/027,623 entitled, &#x201c;Transaction based shared data operations in a Multiprocessor Environment.&#x201d;</p>
+<p id="p-0035" num="0034">A Software Transactional Memory (STM) system often refers to performing access tracking, conflict resolution, or other transactional memory tasks in software. As a general example, compiler <b>179</b> in system memory <b>175</b>, when executed by processor <b>100</b>, compiles program code to insert read and write barriers into load and store operations, accordingly, which are part of transactions within the program code. Compiler <b>179</b> may also insert other transaction related operations, such as initialization, commit or abort operations.</p>
+<p id="p-0036" num="0035">As shown, cache <b>165</b> is still to cache data object/item/unit <b>176</b>, as well as meta-data <b>177</b> and transaction descriptor <b>178</b>. Here, meta-data location <b>177</b> is associated with data item <b>176</b> to indicate if data item <b>176</b> is locked. A read log, which may be present in transaction descriptor <b>178</b>, is used to log read operations, while a write buffer or other transactional memory, which may include lower-level data cache <b>165</b>, is used to buffer or log write operations. Inserted calls for validation and commit utilize the logs to detect conflicts and validate transaction operations. Examples of use for transaction descriptor <b>178</b> and meta-data location <b>177</b> will be discussed in more detail in reference to <figref idref="DRAWINGS">FIGS. 2 and 3</figref>.</p>
+<p id="p-0037" num="0036">Referring to <figref idref="DRAWINGS">FIG. 2</figref>, an embodiment of a system capable of handling irrevocable transactions is depicted. Data object <b>201</b> includes any granularity of data, such as a bit, a word, a line of memory, a cache line, a table, a hash table, or any other known data structure or object. For example, a programming language defined data object is data object <b>201</b>. Transactional memory <b>205</b> includes any memory to store elements associated with transactions. Here, transactional memory <b>205</b> comprises plurality of lines <b>210</b>, <b>215</b>, <b>220</b>, <b>225</b>, and <b>230</b>. In one embodiment, memory <b>205</b> is a cache memory. As an example, data object <b>201</b> is to be stored aligned in cache line <b>215</b>. Alternatively, data object <b>201</b> is capable of being stored unaligned in memory <b>205</b>.</p>
+<p id="p-0038" num="0037">In one example, each data object is associated with a meta-data location, such as a transaction record, in array of meta-data <b>240</b>. As an illustrative embodiment, an address associated with cache line <b>215</b> is hashed to index array <b>240</b>, which associates meta-data location <b>250</b> with cache line <b>215</b> and data object <b>201</b>. Note that data object <b>201</b> may be the same size of, smaller than (multiple elements per line of cache), or larger than (one element per multiple lines of cache) cache line <b>215</b>. In addition, meta-data location <b>250</b> may be associated with data object <b>201</b> and/or cache line <b>215</b> in any manner.</p>
+<p id="p-0039" num="0038">Usually, meta-data location <b>250</b> represents whether data object <b>201</b> is locked or available. In one embodiment, when data object <b>201</b> is unlocked, or available, meta-data location <b>250</b> includes a first value. As an example, the first value is to represent version number <b>251</b>. Here, version number <b>251</b> is updated, such as incremented, upon a write to data object to track versions of data object <b>201</b>.</p>
+<p id="p-0040" num="0039">However, when data object <b>201</b> is locked, meta data location <b>250</b> includes a second value to represent a first locked state, such as read/write owned state <b>252</b>. In one embodiment, a transaction lock, such as a read/write lock, is as write exclusive lock forbidding reads and writes from remote resources, i.e. resources that do not own the lock. Here, meta-data <b>250</b> or a portion thereof, includes a reference, such as a pointer, to transaction descriptor <b>260</b>. Any other known lock state may also be used for the first lock state.</p>
+<p id="p-0041" num="0040">An example is discussed below to further illustrate the embodiment of <figref idref="DRAWINGS">FIG. 2</figref>. In response to a first read operation in a transaction referencing data object <b>201</b>/cache line <b>215</b>, the read is logged in read log <b>265</b>. In one embodiment, read log <b>265</b> is included in transaction descriptor <b>260</b>. Transaction descriptor <b>260</b> may also include write space <b>270</b>, as well as other information associated with a transaction, such as transaction identifier (ID) <b>261</b>, irrevocable transaction (IRT) indicator <b>262</b>, and other transaction information. However, write space <b>270</b> and read log <b>265</b> are not required to be included in transaction descriptor <b>260</b>. For example, write space <b>270</b> may be separately included in a different memory space from read log <b>265</b> and/or transaction descriptor <b>260</b>.</p>
+<p id="p-0042" num="0041">In one embodiment, logging a read includes storing version number <b>251</b> and address <b>266</b> associated with data object <b>201</b> or cache <b>215</b> in read log <b>265</b>. Here, assume the version number is one to simplify the example. Upon encountering a write referencing address <b>266</b> associated with data object <b>201</b>, the write is potentially logged or tracked as a tentative update. In addition, the meta-data location is updated to a lock value, such as two, to represent data object <b>201</b> is locked by the transaction or resource executing the transaction. In one embodiment, the lock value is updated utilizing an atomic operation, such as a read, modify, and write (RMW) instruction. Examples of RMW instructions include Bit-test and Set, Compare and Swap, and Add.</p>
+<p id="p-0043" num="0042">In one embodiment, the write updates cache line <b>215</b> with a new value, and an old value <b>272</b> is stored in write space <b>270</b>. Here, upon committing the transaction, the old values in the write space are discarded, and conversely, upon aborting the transaction, the old values are restored, i.e. the locations are &#x201c;rolled-back&#x201d; to their original values before the start of the transaction. In this embodiment, examples of write space <b>270</b> include a write log, a group of check pointing registers, and a storage space to log/checkpoint values to be updated during a transaction.</p>
+<p id="p-0044" num="0043">In another embodiment, write space <b>270</b> is a buffer that buffers/stores the new value to be written to data object <b>201</b>. Here, in response to a commit, the new values are written to their corresponding locations, while in response to an abort the new values in write space <b>270</b> are discarded. More information on efficient checkpointing and roll-back for transactions is discussed in co-pending related application entitled, &#x201c;Compiler Technique for Efficient Register Checkpointing to Support Transaction Roll-back,&#x201d; with Ser. No. 11/648,486, issued as U.S. Pat. No. 7,802,136.</p>
+<p id="p-0045" num="0044">Continuing the example from above, whether write space <b>270</b> is utilized as a write-buffer, a write-log, or not at all, the write, when committed, releases lock <b>250</b>. In one embodiment, releasing lock <b>250</b> includes returning meta-data location <b>250</b> to a value of one to represent an unlocked state. Alternatively, the value is incremented to represent unlocked version value <b>251</b> of three. This versioning allows for other transactions to validate their reads that loaded data object <b>201</b> by comparing the other transactions logged version values in their read logs to current version value <b>251</b> of three after the update.</p>
+<p id="p-0046" num="0045">The example above includes one embodiment of implementing an STM; however, any known implementation of an STM may be used. STMs are discussed in the following articles: &#x201c;Implementing a High Performance Software Transactional Memory for a Multi-core Runtime&#x201d; by Bratin Saha, Ali-Reza Adl-Tabatabai, Rick Hudson, Chi Cao Minh, and Ben Hertzberg, <i>Proceedings of the eleventh ACM SIGPLAN symposium on Principles and practice of parallel programming</i>; &#x201c;Software Transactional Memory&#x201d; by N. Shavit and D. Tuitou, <i>Proceedings of the Fourteenth ACM SIGACT</i>-<i>SIGOPS Symposium on Principles of Distributed Computing</i>; &#x201c;Language Support for Lightweight Transactions&#x201d;, by T. L. Harris and K. Fraser, <i>Proceedings of the </i>2003 <i>ACM SIGPLAN Conference on Object</i>-<i>Oriented Programming Systems</i>, Languages and Applications; and &#x201c;Compiler and runtime support for efficient software transactional memory,&#x201d; by Ali-Reza Adl-Tabatabai, Brian Lewis, Vijay Menon, Brian Murphy, Bratin Saha, and Tatiana Shpeisman. <i>Proceedings of the </i>2006 <i>ACM SIGPLAN conference on Programming language design and implementation.&#x201d;. </i></p>
+<p id="p-0047" num="0046">In fact, any known system for performing transactional memory may also be used, such as an HTM, an STM, an Unbounded Transactional Memory (UTM) system, a hybrid Transactional Memory system, such as a hardware accelerated STM (HASTM), or any other transactional memory system.</p>
+<p id="p-0048" num="0047">As mentioned above, in one embodiment, transaction descriptor <b>260</b> includes Irrevocable Transaction (IRT) field <b>262</b>, when set, to designate the first transaction as an irrevocable transaction. Here, in response to encountering an irrevocable event in a first transaction the transaction is designated as irrevocable. An irrevocable event refers to any event or operation that is expensive or difficult to undo or rescind, as well as any user-defined event/operation, such as a user instruction to designate a transaction as irrevocable. For example, an I/O operation, such as I/O write to an I/O device, may be potentially undone by re-writing an original value back to the I/O device. However, the I/O write is extremely expensive, and therefore, is an example of an irrevocable event.</p>
+<p id="p-0049" num="0048">Other examples of irrevocable events/operations include an I/O operation whose effects cannot be undone, a system call operation, a user-defined irrevocable operation, and a dynamic failure profile of the first transaction to request the first transaction is to be designated as an irrevocable transaction. For the dynamic profile, a count for the number of times a transaction has failed may be kept. When that count reaches a predetermined value, a flag or other value is set to represent on a restart of the transaction, the transaction is to be designated and is to proceed as an irrevocable transaction.</p>
+<p id="p-0050" num="0049">In one embodiment, designating a transaction as an irrevocable transaction includes setting IRT field <b>262</b> in transaction descriptor <b>260</b>. Transaction descriptor <b>260</b> includes any data structure to store transaction related information. In the embodiment shown in <figref idref="DRAWINGS">FIG. 1</figref>, transaction descriptor <b>178</b> is a data structure stored in a system memory. However, transaction descriptor <b>260</b> may be included in any storage element, such as a register or grouping of registers in a microprocessor. Examples of a data structure for transaction descriptor <b>260</b> include an array, a multi-dimensional array, a linked-list, or other known computing data structure.</p>
+<p id="p-0051" num="0050">In one embodiment, IRT <b>262</b> is initially reset to a default value, such as a logical one. IRT <b>262</b> is set to a logical zero to indicate the transaction referenced in ID <b>261</b> is designated as an irrevocable transaction. Although, set and reset are used to refer to a logical zero and a logical one, respectively, any value to indicate the transaction referenced in transaction descriptor <b>260</b> is an irrevocable transaction may be used to set IRT field <b>262</b>. Furthermore, IRT field <b>262</b> may be included outside of transaction descriptor <b>260</b>, such as in a register in a processor, and associated with the transaction referenced by transaction ID <b>261</b>. Here, the register is to hold a first value to indicate the transaction is not designated as irrevocable and a second value to indicate the transaction is designated as irrevocable.</p>
+<p id="p-0052" num="0051">Previously, upon encountering an irrevocable event, a speculative transaction would be aborted as it would be expensive to attempt recovery of an abort, after the irrevocable event was performed in the speculative transaction. However, by designating a transaction as irrevocable, some measures may be taken to decrease the likelihood of an abort allowing the transaction to proceed.</p>
+<p id="p-0053" num="0052">As an example, a second lock state may be specified to allow a resource executing an irrevocable transaction to obtain a lock on a data object, which permits other resources to read the data object but not write to the data object. Here, an abort due to a data conflict from a remote resource updating a data object read by an irrevocable transaction is prevented, by not permitting the remote agent to update the data object. Therefore, remote resource potentially do not have to sit idle waiting for an irrevocable transaction to complete, as they may still load and use restricted data-objects.</p>
+<p id="p-0054" num="0053">In one embodiment, the second lock state is a Single Owner Read Lock (SORL) lock state. In contrast to a read and write lock of data element <b>201</b>, where only the owner of the lock is allowed to read and write from the location, a SORL allows any resource to read from data object <b>201</b>, while allowing only the owner to write to data object <b>201</b>. Here, meta-data location <b>250</b> includes a third value to represent the SORL. As above with the read/write lock, the third value, which represents an SORL, may also include a reference to transaction descriptor <b>260</b>.</p>
+<p id="p-0055" num="0054">For example, meta-data location <b>250</b> includes a first version value when unlocked, a second value when read/write locked, and a third value when SORL'ed. Note that both the first values and the third values may reference a version number. In one embodiment, meta-data location <b>250</b> is the size of a word. Here, a first portion of meta-data location <b>250</b> includes a reference, such as a hash value, to transaction descriptor <b>260</b> or to a version number. Furthermore, a second portion of meta-data location <b>250</b> may indicate which of the three states meta-data location <b>250</b> is in. As an example, the second portion includes two bits, such as the two least significant bits, in meta-data <b>250</b>. When the two bits represent an odd number, i.e. the least significant bit is set, then meta-data <b>250</b> includes a version number. In addition, when meta-data location includes an even number, i.e. the least significant bit is reset to a logical zero, then meta-data location is in a read/write locked state or a SORL state. Table A below shows an illustrative embodiment of values to be stored in meta-data location <b>250</b>.</p>
+<p id="p-0056" num="0055">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" rowsep="1">TABLE A</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>An embodiment of values to be stored in meta-data 250</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="offset" colwidth="63pt" align="left"/>
+<colspec colname="1" colwidth="56pt" align="left"/>
+<colspec colname="2" colwidth="49pt" align="center"/>
+<colspec colname="3" colwidth="49pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry>2nd</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Portion (2</entry>
+</row>
+<row>
+<entry/>
+<entry>First Portion</entry>
+<entry>LSB)</entry>
+<entry>State</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="3" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="5">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="49pt" align="left"/>
+<colspec colname="2" colwidth="56pt" align="left"/>
+<colspec colname="3" colwidth="49pt" align="center"/>
+<colspec colname="4" colwidth="49pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>First Value</entry>
+<entry>Version number</entry>
+<entry>X1</entry>
+<entry>Unlocked</entry>
+</row>
+<row>
+<entry/>
+<entry>Second Value</entry>
+<entry>Trans Descriptor</entry>
+<entry>00</entry>
+<entry>R/W locked</entry>
+</row>
+<row>
+<entry/>
+<entry>Third Value</entry>
+<entry>Version number</entry>
+<entry>10</entry>
+<entry>SORL</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="4" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0057" num="0056">In this illustrative example, data object <b>201</b> is initially in an unlocked state, including a first version number. Here, assume the meta-data <b>250</b> includes a logical one, where first portion includes logical zeros and the second portion includes the binary 01. When a resource acquires a read/write lock for data-object <b>201</b>, an operation, such as an atomic read, modify, write (RMW) operation, updates meta-data <b>250</b> to a 00 in the second portion and a reference to transaction descriptor <b>260</b> in the first portion. If the resource updates data object <b>201</b>, upon commit of the transaction, meta-data location <b>250</b> is modified to the next odd version number, such as three, i.e. 01, to represent that data object <b>201</b> is unlocked and has been modified since version one.</p>
+<p id="p-0058" num="0057">When the resource acquires an SORL for data object <b>201</b>, meta-data <b>250</b> is set to the third value including the first portion referencing a version number and the second portion including the binary value 10. Table A is an illustrative embodiment of values to be held in meta-data <b>250</b>; however, meta-data <b>250</b> may hold any values to represent an unlocked, read/write locked, or SORL state.</p>
+<p id="p-0059" num="0058">When in an SORL state, other resources may read data object <b>201</b>, but may not write and/or acquire a read/write lock to update data object <b>201</b>. However, the owning resource may update data object <b>201</b>. In response to attempting a write, the owning resource of an SORL is able to determine it is the owner of the SORL. In one embodiment, a single irrevocable transaction is allowed to continue in a system; therefore, the irrevocably designated transaction is the owner of any SORLs. As stated above, referenced transaction descriptor <b>260</b> potentially includes Irrevocable Transaction (IRT) field <b>262</b> to designate the associated transaction, which is referenced by transaction identifier (ID) <b>261</b>, as irrevocable.</p>
+<p id="p-0060" num="0059">In one embodiment, in response to encountering an irrevocable event/operation in a transaction, previous reads/loads in the transaction are validated and SORLs for those reads/loads are acquired. For example, assume a first read operation in a transaction references data object <b>201</b>. Upon detecting an irrevocable event the first read operation is validated. In one embodiment, validation includes comparing a version value logged in read log <b>265</b> upon performing the first read with current version value <b>251</b> in meta-data location <b>250</b>. If the versions are the same, then no update to data object <b>201</b> has occurred and the read is valid. However, if the versions are different, a remote resource has updated data object <b>201</b> and the read is not valid.</p>
+<p id="p-0061" num="0060">This validation is done in case the read became invalid before the irrevocable event was detected. In this case, if a lock were acquired without validating the read, then at the end of the transaction the read would be determined to be invalid and the transaction would be aborted with the irrevocable event having been performed. Therefore, once the first read operation is determined to be valid in response to detecting the irrevocable transaction, an SORL is acquired for data object <b>201</b> to ensure the read is not invalidated after performing the irrevocable event.</p>
+<p id="p-0062" num="0061">SORLs are also acquired for subsequent reads encountered after detecting the irrevocable event and designating the transaction as irrevocable. Once again, the SORLs are to allow read but not write access to an associated data object, which permits the irrevocable transaction to complete without having remote resources updating SORL'ed data-objects.</p>
+<p id="p-0063" num="0062">Turning to <figref idref="DRAWINGS">FIG. 3</figref> an embodiment of a system memory capable of storing multiple transaction descriptors is illustrated. As mentioned above, a multi-resource, i.e. multi-core or multi-threaded, processor is potentially capable of executing transactions concurrently. As a result, multiple transaction descriptors or multiple transaction descriptor entries may be stored in memory <b>305</b>.</p>
+<p id="p-0064" num="0063">In the embodiment shown, transaction descriptor <b>320</b> is a linked list including entries <b>325</b> and <b>330</b>. Entry <b>325</b> includes transaction ID field <b>326</b> to hold a transaction ID, an irrevocable transaction (IRT) field <b>327</b> to hold a first value to represent a default transaction state and a second value to represent an irrevocable transaction state, and log space <b>328</b> to include read and/or write logs. Other information, such as a resource structure, i.e. thread/core structure, of the processor may also be stored in transaction descriptor <b>320</b>. Entry <b>330</b> includes similar fields <b>331</b>, <b>332</b>, and <b>333</b>.</p>
+<p id="p-0065" num="0064">Yet, as a processor is capable of simultaneous transactional execution, conflicts may arise between multiple irrevocable transactions. Therefore, in one embodiment, a single irrevocable transaction is allowed to proceed at a given time. For example, assume transaction ID <b>326</b> references a first transaction being executed with a first resource on a processor and transaction ID <b>331</b> references a second transaction being concurrently executed on a second resource of the processor. Then the first transaction encounters an irrevocable event and sets IRT field <b>327</b> to designate the first transaction as an irrevocable transaction. Later, the second transaction encounters an irrevocable event and attempts to set IRT field <b>332</b> to designate the second transaction as an irrevocable transaction.</p>
+<p id="p-0066" num="0065">Here, the microprocessor is to select either the first or the second transaction to be designated as an irrevocable transaction. In one embodiment, a priority scheme, such as a first in time, last in first out, first in first out, or other priority scheme may be utilized to select the transaction to proceed as irrevocable. Furthermore, in one embodiment, the transaction not selected to proceed as irrevocable is suspended until the selected transaction commits, and then proceeds to completion. Alternatively, the transaction not selected may be aborted.</p>
+<p id="p-0067" num="0066">For example, assume the first transaction is selected as the irrevocable transaction, as it encountered and performed an irrevocable event/operation before the second transaction. The second transaction is suspended, while the first transaction acquires SORLs for read operations and completes. Upon completion of the first transaction, a read set for the second transaction is validated and SORLs acquired for those reads. The second transaction is then designated as an irrevocable transaction and executes to completion.</p>
+<p id="p-0068" num="0067">In addition to conflict resolution among multiple potential irrevocable transactions, conflicts between irrevocable transactions and revocable transactions regarding data objects may also be performed. For example, assume a remote resource, which is executing a remote transaction, sets meta-data location <b>315</b> to the second value to acquire a read/write lock on data object <b>310</b>. Next, a current resource, which is executing a second transaction, encounters an irrevocable event in the second transaction. In response to the irrevocable event, IRT field <b>332</b> is set to designate the second transaction as an irrevocable transaction. Then, the current resource encounters a read operation in the second transaction referencing data object <b>310</b>. A SORL is to be acquired for data object <b>310</b>, but the remote transaction owns a read/write lock on data object <b>310</b>.</p>
+<p id="p-0069" num="0068">Consequently, the processor, which includes the current and remote resource, is to perform conflict resolution between the current and remote resource, as the irrevocable transaction is selected to continue execution. Note that performing conflict resolution with the processor may include any method of resolution executed by the remote resource, the current resource, or another resource on the processor.</p>
+<p id="p-0070" num="0069">In one embodiment, the processor is to implement a conflict resolution policy, such as executing conflict resolution code to resolve the locking conflict. As a first example, the conflict resolution policy includes aborting execution of the remote transaction on the remote resource to free up the lock on data object <b>310</b>. When the remote resource is aborted, the current resource acquires an SORL and performs the read operation. As a second example, the current resource waits until the remote resource releases the lock in meta-data <b>315</b>. Once the lock is released, the current resource acquires an SORL on data object <b>310</b>.</p>
+<p id="p-0071" num="0070">A combination of the first two examples may also be used, where the current resource waits for a predetermined amount of time, such as a predetermined value counted down from in a watchdog timer, and then aborts the remote resource if the lock is not released within the predetermined amount of time. Here, the remote resource is given a chance to complete execution and release the lock. However, if the lock is not release in a given amount of time, then the remote resource is aborted and an SORL is acquired by the current resource for data object <b>310</b>. Note that any other resolution policy may be used to determine how an irrevocable transaction is able to acquire an SORL on a data object locked by another processing resource.</p>
+<p id="p-0072" num="0071">Turning to <figref idref="DRAWINGS">FIGS. 4</figref><i>a </i>and <b>4</b><i>b </i>an embodiment of a flow diagram for a method of designating and handling an irrevocable transaction is illustrated. In flow <b>405</b>, execution of a first transaction is started. In one embodiment, a start transaction instruction is executed. Next in flow <b>410</b>, it is determined if a first transaction is to be designated as an irrevocable transaction.</p>
+<p id="p-0073" num="0072">In one embodiment, a user-defined instruction, such as a start_irrevocable_transaction instruction, is detected. Here, a user includes an irrevocable identifying instruction to select a transaction as irrevocable, which allows a user the ability to select specific transactions to be given higher execution priority through the ability to acquire SORLs. In another embodiment, an irrevocable event is detected, such as an I/O event/operation or a predetermined number of failures of the first transaction. Note that any number of operations may be executed in the first transaction before an irrevocable event/operation is encountered causing a transaction to be designated as an irrevocable transaction.</p>
+<p id="p-0074" num="0073">In response to determining the first transaction is to be designated as an irrevocable transaction, the first transaction is designated as an irrevocable transaction in flow <b>415</b>. In one embodiment, designating the first transaction as an irrevocable transaction includes setting an irrevocable transaction field in a storage element to designate the first transaction is an irrevocable transaction.</p>
+<p id="p-0075" num="0074">In flow <b>420</b>, it is determined if a second transaction is designated as an irrevocable transaction. If another transaction is designated as an irrevocable transaction, then in flow <b>425</b>, either the first or the second transaction is selected as an irrevocable transaction to continue execution. If the second transaction is selected, then in flow <b>430</b>, the first transaction may be aborted, if the first transaction is holding a lock on a data element requested by the second transaction. Alternatively, the first transaction may be suspended or performed without being designated as irrevocable. Here, any priority scheme for selecting between multiple potential irrevocable transactions may be used, including a first in time, a last in time, a user-definable, or any other known selection scheme. In an alternate embodiment, when a second transaction is selected as the irrevocable transaction, the first transaction is not aborted, but rather suspended until the second transaction completes. The first transaction then continues execution at flow <b>435</b> after the second transaction completes.</p>
+<p id="p-0076" num="0075">Note that the blocks in the illustrated flow of <figref idref="DRAWINGS">FIG. 4</figref><i>a </i>may be placed in any order. For example, determining if multiple transactions are to be designated irrevocable and selecting between them in flows <b>420</b>, <b>425</b>, <b>430</b>, and <b>435</b> may be placed before flow <b>415</b>, so that the selection is made before the first transaction is designated in the storage element as an irrevocable transaction</p>
+<p id="p-0077" num="0076">Whether the first transaction is selected in flow <b>425</b> or the first transaction is resuming after suspension, in flow <b>435</b> a read set associated with the first transaction is validated. As stated above, previous load operations are validated to ensure the loaded locations have not been updated since they were read. Here, logged/previous version values associated with a plurality of previous read operations in the first transaction are compared with a plurality of corresponding current version values. If the version values differ, then the read set is not valid and the transaction is aborted in flow <b>430</b>. However, if the values are the same, then the read set is valid and a Single-Owner Read Lock (SORL) is acquired for each of the plurality of previous reads in flow <b>440</b>. Any method of read validation may be used, such as utilizing are hardware acceleration field to ensure reads are valid, as discussed above in reference to the discussion of an HTM,</p>
+<p id="p-0078" num="0077">In one embodiment, acquiring an SORL includes setting a meta-data location associated with a data object/memory location referenced by each of the plurality of previous read operations to a first value to represent a SORL state.</p>
+<p id="p-0079" num="0078">The flow continues to <figref idref="DRAWINGS">FIG. 4</figref><i>b </i>through flow <b>445</b>. After validating the read set, the irrevocable event may be performed, if the irrevocable event includes an operation to be performed. Subsequently, a read/load operation referencing a data item is encountered in the first transaction in flow <b>450</b>. Next, in flow <b>455</b> it is determined if the data item is unlocked. In one embodiment, determining if the data item is unlocked includes checking a meta-data location associated with the data item. If the meta-data location includes a first version value, the data item is unlocked and an SORL is acquired for the data item in flow <b>465</b>. Here, the meta-data location is set to an SORL value to acquire an SORL for the data item.</p>
+<p id="p-0080" num="0079">However, if the meta-data location, when checked, includes a second value to represent a second resource owns a lock on the data item, then in flow <b>460</b> conflict resolution is performed. In one embodiment, conflict resolution includes aborting a second resource that owns the lock on the data-item before acquiring the subsequent SORL for the first resource executing the first transaction. As another example, the first resource waits until the second resource sets meta-data location to a version value to release the lock on the data item before acquiring the SORL. In yet another embodiment, the first resource waits for a specified period, and then aborts the second resource, if the second resource has not released the lock in the specified period. Finally, the read operation is performed after the SORL is acquired.</p>
+<p id="p-0081" num="0080">As illustrated above, execution of transactions including an irrevocable event may be continued upon encountering the irrevocable event, instead of aborting the transaction and wasting execution cycles. In one embodiment, instead of acquiring a read/write lock for every operation in an irrevocably designated transaction, SORLs are acquired for data objects to be read, which allows other remote resources to still load from the data objects, while ensuring the data objects are not modified by those remote resources.</p>
+<p id="p-0082" num="0081">The embodiments of methods, software, firmware or code set forth above may be implemented via instructions or code stored on a machine-accessible or machine readable medium which are executable by a processing element. A machine-accessible/readable medium includes any mechanism that provides (i.e., stores and/or transmits) information in a form readable by a machine, such as a computer or electronic system. For example, a machine-accessible medium includes random-access memory (RAM), such as static RAM (SRAM) or dynamic RAM (DRAM); ROM; magnetic or optical storage medium; flash memory devices; electrical, optical, acoustical or other form of propagated signals (e.g., carrier waves, infrared signals, digital signals); etc.</p>
+<p id="p-0083" num="0082">Reference throughout this specification to &#x201c;one embodiment&#x201d; or &#x201c;an embodiment&#x201d; means that a particular feature, structure, or characteristic described in connection with the embodiment is included in at least one embodiment of the present invention. Thus, the appearances of the phrases &#x201c;in one embodiment&#x201d; or &#x201c;in an embodiment&#x201d; in various places throughout this specification are not necessarily all referring to the same embodiment. Furthermore, the particular features, structures, or characteristics may be combined in any suitable manner in one or more embodiments.</p>
+<p id="p-0084" num="0083">In the foregoing specification, a detailed description has been given with reference to specific exemplary embodiments. It will, however, be evident that various modifications and changes may be made thereto without departing from the broader spirit and scope of the invention as set forth in the appended claims. The specification and drawings are, accordingly, to be regarded in an illustrative sense rather than a restrictive sense. Furthermore, the foregoing use of embodiment and other exemplarily language does not necessarily refer to the same embodiment or the same example, but may refer to different and distinct embodiments, as well as potentially the same embodiment.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A non-transitory machine readable medium including program code which, when executed by a machine, causes the machine to perform the operations of: in response to encountering an irrevocable event associated with a transaction to be executed on a processor within the machine,
+<claim-text>designating the transaction as irrevocable in a transaction descriptor software data structure; and</claim-text>
+<claim-text>acquiring a read lock for a data object associated with a transactional read of the transaction when the transaction is designated as irrevocable, wherein the read lock, when acquired, is to allow a remote transaction to read the data object and only the transaction designated as irrevocable to write to the data object, wherein the read lock is to allow the remote transaction to read the data object after the transaction designated as irrevocable has written to the data object.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The machine readable medium of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the transaction descriptor software data structure is to be held in a system memory coupled to the processor, and wherein the transaction descriptor software data structure is to include an irrevocable transaction field, when set, to designate the transaction as irrevocable.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The machine readable medium of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the system memory is also to hold: the data object; and wherein a meta-data location to be associated with the data object is to hold:
+<claim-text>an unlocked value to represent the data object is unlocked in response to no transaction owning a lock on the data object,</claim-text>
+<claim-text>a read and write locked value, which comprises a reference to the transaction descriptor software data structure, to represent the data object is read and write locked by the transaction in response to a transactional write to the data object from the transaction, and</claim-text>
+<claim-text>a read lock value to represent the read lock for the data object is acquired in response to the transactional read reading from the data object, when the irrevocable transaction field is set to designate the first transaction as irrevocable.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The machine readable medium of <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein the irrevocable event is selected from a group consisting of an I/O operation of the first number of operations, a system call operation of the first number of operations, a user-defined irrevocable transaction identifier operation of the first number of operations, and a dynamic failure profile of the first transaction to request the first transaction is to be designated as an irrevocable transaction.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The machine readable medium of <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein, when the irrevocable transaction field is set to designate the transaction is irrevocable, a transactional read of the data object from the transaction is to be performed, and a remote transaction has already updated the meta-data location to a read and write lock value, which comprises a reference to a remote transaction descriptor software data structure associated with the remote transaction, the program code is further to cause the machine to perform conflict resolution between a first resource associated with the transaction and a remote resource associated with the remote transaction.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The machine readable medium of <claim-ref idref="CLM-00005">claim 5</claim-ref>, wherein the machine to perform conflict resolution comprises: the machine to execute conflict resolution code to implement a conflict resolution policy, the confliction resolution policy to be selected from a group consisting of waiting for the remote resource to update the meta-data location to the unlocked value to represent the data object is unlocked, aborting the execution of the remote transaction on the remote resource and allowing the first resource to set the meta-data location to the read lock value to represent the data object is read locked by the transaction in response to the transactional read of the data object from the transaction, and waiting for an amount of time for the remote resource to update the meta-data location to the unlocked value to represent the data object is unlocked and, responsive to the remote resource not setting the meta-data location to the unlocked value in the amount of time, aborting execution of the remote transaction on the remote resource and allowing the first resource to set the meta-data location to the read lock value to represent the data object is read locked by the transaction in response to the transactional read of the data object from the transaction.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. A non-transitory machine readable medium including program code which, when executed by a machine, causes the machine to perform the operations of:
+<claim-text>associating a meta-data location with an address for a data object through a software algorithm;</claim-text>
+<claim-text>responsive to the meta-data location holding an unlocked value: updating the meta-data location to a read and write locked value associated with a transaction before a transactional write from the transaction; updating the meta-data location to a read locked value to allow other transactions to read the data_object and only the transaction to write to the data object before a transactional read from the transaction, wherein the other transactions are allowed to read the data object after the transaction has written to the data object, in response to the transaction being designated as an irrevocable transaction; and not updating the meta-data location before the transactional read from the transaction in response to the transaction not being designated as an irrevocable transaction.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The machine readable medium of <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein a transaction descriptor is to be associated with the transaction, and wherein at least a portion of the read and write locked value associated with the transaction includes a reference to the first transaction descriptor, and at least a portion of the read value includes a reference to a version number.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The machine readable medium of <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein the program code which when executed by the machine, is further to cause the machine to perform the operations of: updating the meta-data location to the unlocked value from the read and write locked value or the read locked value in response to a commit or an abort of the transaction.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The machine readable medium of <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein the program code which when executed by the machine, is further to cause the machine to perform the operations of: performing a conflict resolution between the transaction and the remote transaction upon an attempt to update the meta-data location before performing a transactional access to the data object from the transaction when the meta-data value includes a read and write locked value associated with a remote transaction, wherein the transaction is given priority over the remote transaction in response to the transaction being designated an irrevocable transaction.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The machine readable medium of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the program code which when executed by the machine, is further to cause the machine to perform the operations of: selecting one of the transaction and the remote transaction to continue as an irrevocable transaction in response to the transaction being designated as an irrevocable transaction and the remote transaction encountering an irrevocable event.</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

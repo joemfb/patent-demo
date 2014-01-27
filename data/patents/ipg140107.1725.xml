@@ -1,0 +1,2878 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08622909-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08622909</doc-number>
+<kind>B1</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12925378</doc-number>
+<date>20101019</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>420</us-term-extension>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>61</class>
+<subclass>B</subclass>
+<main-group>8</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>600437</main-classification>
+<further-classification>600407</further-classification>
+</classification-national>
+<invention-title id="d2e55">Method of locating the position of a microcalcification in a human breast</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>2002/0065466</doc-number>
+<kind>A1</kind>
+<name>Rather et al.</name>
+<date>20020500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>600447</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2009/0247869</doc-number>
+<kind>A1</kind>
+<name>Rambod et al.</name>
+<date>20091000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>600437</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00003">
+<othercit>Zemp, Roger. Detection Theory in Ultrasonic Imaging. 2004. University of California Davis. pp. 1-229 (and preface).</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00004">
+<othercit>PCT/US2007/061045, 2006, O'Ruanaidh.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00005">
+<othercit>G. Bretthorst, Spectrum Ahalysis and Parameter Estimation (Springer Verlag 1989).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00006">
+<othercit>J.J.K.O Ruanaidh and W.J. Fitzgerald, Numerical Bayesian Methods Applied to Signal Processing (Springer Verlag, 1996).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00007">
+<othercit>W. Press, S. Teukolsky, W. Vetterling and B. Flannery Numerical Recipes in C (Cambridge University Press, 1992), 2nd ed.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00008">
+<othercit>A. Quinn and M. MacLeod, &#x201c;The distinction between joint and marginal estimators&#x201d; in Fourth Valencia International Meeting on Bayesian Statistics (1991).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00009">
+<othercit>A. Quinn, &#x201c;The performance of Bayesian estimators in the superresolution of signal parameters,&#x201d; in &#x201c;IEEE International Conference on Acoustics, Speech and Signal Processing&#x201d; (1992).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00010">
+<othercit>A. Quinn, &#x201c;Bayesian point inference in signal processing,&#x201d; Ph.D. thesis, Cambridge University Engineering Department, England (1992).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00011">
+<othercit>M. Tanner, Tools for Statistical Inference (Springer Verlag, 1993).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00012">
+<othercit>S. Haykin, Communication Systems (NY: Wiley, 1994) 3rd ed.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>29</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>600407</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>600437-472</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>4</number-of-drawing-sheets>
+<number-of-figures>4</number-of-figures>
+</figures>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>O'Ruanaidh</last-name>
+<first-name>Joseph J.</first-name>
+<address>
+<city>Hamilton</city>
+<state>NJ</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Vecchio</last-name>
+<first-name>Christopher J.</first-name>
+<address>
+<city>Philadelphia</city>
+<state>PA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Rambod</last-name>
+<first-name>Edmond</first-name>
+<address>
+<city>Los Angeles</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>O'Ruanaidh</last-name>
+<first-name>Joseph J.</first-name>
+<address>
+<city>Hamilton</city>
+<state>NJ</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Vecchio</last-name>
+<first-name>Christopher J.</first-name>
+<address>
+<city>Philadelphia</city>
+<state>PA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Rambod</last-name>
+<first-name>Edmond</first-name>
+<address>
+<city>Los Angeles</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<last-name>Rozsa</last-name>
+<first-name>Thomas I.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Quantason, LLC</orgname>
+<role>02</role>
+<address>
+<city>Los Angeles</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Kish</last-name>
+<first-name>James</first-name>
+<department>3737</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">This invention relates to diagnostic and screening medical ultrasound in general and to ultrasound-stimulated detection and location, Image-based Dynamic Ultrasound Spectrography, Acoustic Radiation Force Imaging, and similar modalities in particular. In this invention, an ultrasound signal is emitted into tissue and the resulting radiation force induces localized lower frequency oscillations, which are then received by various acoustic sensors and analyzed to determine certain features or characteristics of the interrogated region. The sensors can be arranged in the form of a ring, in any random arrangements, or positioned in specifically chosen locations. An ultrasonic imaging and excitation transducer generates certain stimulating signals which are received by the breast tissues and which, if they contact a microcalcification, other target, or any region with sharply different mechanical and visco-elastic properties, will result in reflected, demodulated, or re-radiated signals. These signals will propagate away from the targets and detected by the various receiving sensors.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="108.29mm" wi="171.62mm" file="US08622909-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="173.65mm" wi="173.06mm" file="US08622909-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="181.69mm" wi="131.83mm" file="US08622909-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="180.59mm" wi="161.97mm" file="US08622909-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="175.77mm" wi="159.09mm" file="US08622909-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0002" num="0001">1. Field of the Invention</p>
+<p id="p-0003" num="0002">The present invention relates to the detection and location of microcalcifications in the human breast with a view to detecting and treating malignant cancer at an early stage.</p>
+<p id="p-0004" num="0003">2. Description of Prior Art</p>
+<p id="p-0005" num="0004">Breast cancer is often characterized by the presence of calcifications along mammary ducts. These may be detected using X-ray mammography. Mammograms do have a number of drawbacks. First, calcifications appear as white objects. Fibroglandular tissue, which is normal in breasts, also appears as white which leads to poor contrast in mammogram images. Second, a mammogram is an extremely uncomfortable procedure. Third, mammography is an X-ray based modality which involves exposure to potentially harmful ionizing radiation. An alternative approach, which does lead to better image quality and diagnosis, is to use magnetic resonance imaging (MRI). However, MRI is prohibitively expensive and could be out of reach for all but limited number of patients with certain socioeconomic standing.</p>
+<p id="p-0006" num="0005">The concept of using ultrasound technology to detect and locate calcifications has in general been developed prior to this invention. The benefit of using ultrasound is that it is portable, relatively cheap and does not expose the patient to harmful radiation. Moreover, in cases with dense breasts, mammograms have proven useless and thus, ultrasound is the only method of choice, next to expensive and unaffordable MRI.</p>
+<p id="p-0007" num="0006">One of the current inventors, Dr. Edmond Rambod, has developed the concept of using ultrasound in conjunction with four or more microphones or sensors located on a ring&#x2014;or other sensor housing configurations&#x2014;which is positioned on or around the breast. The acoustic sensors are meant to detect sound radiation radiated from a stimulated target. Since the speed of sound is constant and finite, the signal will arrive at each of the sensors at a different time. If one can precisely estimate the time delays at each sensor then, in theory, one can locate the location of the target. According to Dr. Rambod's invention, a conventional ultrasound transducer (imager or scanner) is used to deliver certain acoustic force to a target and thus, excite a source of acoustic radiation such as a microcalcification. The resulting sound signals are then received by the sensors. Analysis of the data acquired by the sensors and use of certain location paradigms will allow one to determine the location of the target (i.e., microcalcification in the human breast). The inventors of the present invention, including Edmond Rambod, have determined that there is an accurate way to determine the location of an acoustic radiation source such as a microcalcification in a human breast in order to facilitate its classification, biopsy or removal if the microcalcification is proven to be associated with cancer. The following prior art technology is utilized in the present invention:
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0007">[1] G. Bretthorst, <i>Bayesian Spectrum Analysis and Parameter Estimation </i>(Springer Verlag, 1989).</li>
+    <li id="ul0001-0002" num="0008">[2] J. J. K. &#xd3; Ruanaidh and W. J. Fitzgerald, <i>Numerical Bayesian Methods Applied to Signal Processing </i>(Springer Verlag, 1996).</li>
+    <li id="ul0001-0003" num="0009">[3] W. Press, S. Teukolsky, W. Vetterling, and B. Flannery, <i>Numerical Recipes in C </i>(Cambridge University Press, 1992), 2nd ed.</li>
+    <li id="ul0001-0004" num="0010">[4] A. Quinn and M. MacLeod, &#x201c;The distinction between joint and marginal estimators&#x201d; in &#x201c;Fourth Valencia International Meeting on Bayesian Statistics&#x201d; (1991).</li>
+    <li id="ul0001-0005" num="0011">[5] A. Quinn, &#x201c;The performance of Bayesian estimators in the superresolution of signal parameters,&#x201d; in &#x201c;IEEE International Conference on Acoustics, Speech and Signal Processing&#x201d; (1992).</li>
+    <li id="ul0001-0006" num="0012">[6] A. Quinn, &#x201c;Bayesian point inference in signal processing,&#x201d; Ph.D. thesis, Cambridge University Engineering Department, England (1992).</li>
+    <li id="ul0001-0007" num="0013">[7] M. Tanner, <i>Tools for Statistical Inference </i>(Springer Verlag, 1993).</li>
+    <li id="ul0001-0008" num="0014">[8] S. Haykin, <i>Communication Systems </i>(NY: Wiley, 1994), 3rd ed.</li>
+    <li id="ul0001-0009" num="0015">[9] J. J. K. &#xd3; Ruanaidh, Y. Zhang, P. Emeric, M. R. Swiatek and V. Rozenfeld, &#x201c;System and method for providing an optical section image by direct phase angle determination and use of more than three images&#x201d;, U.S. patent application Ser. No. 11/341,935 PCT/US2007/061045 (2006).</li>
+</ul>
+</p>
+<heading id="h-0002" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0008" num="0016">This invention relates to diagnostic and screening medical ultrasound in general and to ultrasound-stimulated detection and location, Image-based Dynamic Ultrasound Spectrography (IDUS), Acoustic Radiation Force Imaging (ARFI), and similar diagnostic and screening imaging modalities in particular. In these imaging modalities an ultrasound signal is emitted into tissue and the resulting radiation force induces localized lower frequency oscillations (vibrations). These vibrations are then received and analyzed to determine or detect certain features or characteristics of the interrogated region. The IDUS medical imaging modality relies on an array of acoustic sensors placed around or adjacent to a human breast or other part of the body. The sensors can be arranged in the form of a ring, can be in any random arrangement of locations, or can be positioned in specifically chosen locations. The sensors can all be located in the same plane or in any 3-dimensional configuration. An ultrasonic imaging and excitation transducer generates certain stimulating signals which are received by the breast tissues and which, if they contact a microcalcification, other target, or any region with sharply different mechanical and visco-elastic properties, will result in reflected, demodulated, or re-radiated signals. These signals will propagate away from the microcalcification or other targets and can be detected by the various receiving sensors.</p>
+<p id="p-0009" num="0017">The present invention is a method whereby one can locate such a target based on an analysis of its emitted acoustic signals. The emitted signals can be, for example, longitudinal waves of relatively high speed (e.g. 1480 meters/sec in breast tissue, fat, etc) or transverse waves of generally slow sound speeds (on the order of 10 meter/sec or less in biological tissue). The corresponding phase differences induced by travel time delay from the source to the sensor may be quite small, particularly at low frequencies. It is generally believed by those skilled in the art that these phase differences are too small to be of valuable use in locating the target. Contrary to general belief, in the present invention, it has been discovered that the method is precise enough to yield phase estimates that can be used to reliably locate a target (i.e., calcification).</p>
+<p id="h-0003" num="0000">The steps are:</p>
+<p id="p-0010" num="0000">
+<ul id="ul0002" list-style="none">
+    <li id="ul0002-0001" num="0018">1) An optional preliminary spectral analysis step to determine frequency and/or chirp and/or other non-linear parameters contained in the regression matrix. This step is optional because these values are typically known in advance.</li>
+    <li id="ul0002-0002" num="0019">2) Regression to estimate the magnitude of in-phase and quadrature components. Linear regression is typically used in this step but it will be evident to those skilled in the art that robust regression can be substituted for linear regression and may yield better results in some circumstances. Moreover, we also recognize that Bayesian regression can also be applied to utilize prior information about the linear parameters.</li>
+    <li id="ul0002-0003" num="0020">3) Phase estimation calculated directly from the linear parameters using a standard formula.</li>
+    <li id="ul0002-0004" num="0021">4) Conversion of the phase estimates into a position estimate using non-linear optimization of a cost function.</li>
+</ul>
+</p>
+<p id="p-0011" num="0022">The present invention also derives estimates for the phase standard deviation. This expression follows from a standard propagation-of-errors argument that would be familiar to those skilled in the art. Nonetheless, the original application of these quantities is used for measuring objectively the quality of the data gathered by a specific sensor. These quantities are also useful in devising the cost function, the minimization of which yields an estimate of the location of the source of acoustic radiation.</p>
+<p id="p-0012" num="0023">In addition, the present invention describes a maximum likelihood approach to target location. Furthermore, the present invention method can also be used to optimize the location of the sensors. This goal can be attained by optimizing the position of the sensors with respect to a cost function. In this configuration, the true location of the target would be known and those positions of the acoustic sensors that yield the best estimate of the true location would be considered optimal. The true location would be determined over a suitably large number of trials in which the true target location would be chosen either judiciously, or randomly, or some combination thereof in an effort to be representative of the target locations in a real-world situation (i.e., inside of the human breast relative to sensors positioned on the body surface on or around the breast).</p>
+<p id="p-0013" num="0024">Further novel features and other objects of the present invention will become apparent from the following detailed description, discussion and the appended claims, taken in conjunction with the drawings.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0014" num="0025">Referring particularly to the drawings for the purpose of illustration only and not limitation, there is illustrated:</p>
+<p id="p-0015" num="0026"><figref idref="DRAWINGS">FIG. 1</figref> is a diagram showing a single element ultrasonic transducer applying a modulated radiation force, or a modulated ultrasound signal, or a modulated beam of ultrasound wave energy to a target in a medium such as biological tissue and the reception of the resulting demodulated signals by an array of acoustic sensors.</p>
+<p id="p-0016" num="0027"><figref idref="DRAWINGS">FIG. 2</figref> is a diagram showing the orientation of the acoustic sensors housed in a sort of housing placed on or around a human breast relative to a scanning ultrasonic transmitting transducer (whether hand-held, hand-free, single element, linear array or phased-array) incrementally or wholly scanning different segments of the human breast.</p>
+<p id="p-0017" num="0028"><figref idref="DRAWINGS">FIG. 3</figref> is a diagram showing the mathematical equivalent of determining the location of the object. The time-of-flight multiplied by the speed of sound is the path-length travelled by the wave. One can estimate time-of-flight by determining the phase shift in the demodulated wave received by the sensor, or by observing the time difference between the leading edge of the signal received at the sensor relative to the leading edge of the transmitted signal, or by using both. Each ellipse corresponds to the set of points that have the same path-length between a given sensor and the transducer, via the target. By path-length, we mean the distance from the transducer to the target plus the distance from the target to the sensor. Given just one sensor, and the measurement of path length, all one can say is that the target is located somewhere on an ellipse, with the sensor at one focus and the transducer at the other focus. For the sake of clarity, there are three sensors and three corresponding ellipses shown in <figref idref="DRAWINGS">FIG. 3</figref>. The target must be located at the unique point of intersection between ALL three ellipses. We have thus located the target.</p>
+<p id="p-0018" num="0029"><figref idref="DRAWINGS">FIG. 4</figref> is a diagram showing one hypothetical possible configuration of the transducer, sensor, and target object. If the transducer is located at coordinates (2, 3, 2) and the object is at coordinates (&#x2212;2, 1, 1) then the distance between them is 4.58 cm. If the sensor is at (6, 0, 0) then the distance between the sensor and the object is 8.12 cm and the total path length from transducer to object to sensor is 4.58+8.12=12.70 cm.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS</heading>
+<p id="p-0019" num="0030">Although specific embodiments of the presented invention are described herein with reference to the drawings, it should be understood that such embodiments are by way of example only. They merely illustrate but a small number of the many specific embodiments which can represent applications of the principles of the present invention. Various changes and modifications, obvious to one skilled in the art, to which the present invention pertains, are deemed to be within the spirit, scope and contemplation of the present invention as further defined in the appended claims.</p>
+<p id="p-0020" num="0031">The initial concept of the present invention is to introduce a multiplicity of acoustic sensors at given locations on or around or adjacent to a human breast. When used in this application, the term &#x201c;sensor&#x201d; applies to an acoustic sensor and &#x201c;acoustic sensor&#x201d; can include the following: a microphone, microphones, a hydrophone, hydrophones, an accelerometer, accelerometers, a strain gauge, strain gauges, a surface microphone, surface microphones, a surface hydrophone and surface hydrophones. It is understood that when the term &#x201c;sensor&#x201d; is set forth in this application, it includes all of the above.</p>
+<p id="p-0021" num="0032">The sensors can be arranged in the form of a ring, can be in any random arrangement of locations, or can be positioned in specifically chosen locations. The sensors can all be located in the same plane or in a 3-dimensional configuration on or around a human breast. An ultrasound transducer or a conventional ultrasound imaging transducer (also referred to as imager or scanner) scans the breast to generate a B-mode gray-scale image of the whole breast or certain segments of the breast (also referred to as quadrants) and either simultaneously or sequentially to formation of the B-mode image, transmits certain stimulating signals to the scanned area of the breast which are received by all the layers of the breast and which, if they impact a calcification or microcalcification or other target in the breast, will result in reflected, demodulated, or reradiated signals from the said calcification or microcalcification or other target. These reflected, demodulated or reradiated signals will travel away from the calcification, microcalcification or other target and toward a location or locations where the various sensors are positioned on or around the human breast.</p>
+<p id="p-0022" num="0033">A real-time phase analysis of the information received by each sensor can be carried out in order to determine the location of the radiating target (i.e., calcification or microcalcification). Because each sensor is located at a slightly different distance from said target, the different distances result in different phase shifts in the signals received by each sensor. The phase shifts are proportional to the distance between each sensor and the radiating target. The phase shifts correspond to the time between the generation of the ultrasonic stimulation signal and the reception by the sensor of a resulting signal reflected, demodulated, or reradiated by the target. If the time at which the stimulation signal is generated is known (and used as a reference) and the location of the stimulation transducer and each of the receiving sensors is known, then the location of the target may be determined relative to that of the sensors.</p>
+<p id="p-0023" num="0034">Referring to <figref idref="DRAWINGS">FIG. 1</figref>, which depicts four sensors <b>10</b>, <b>20</b>, <b>30</b> and <b>40</b>, positioned at various locations and modulated electrical excitation signals <b>50</b>, and a transducer <b>60</b> generating stimulating acoustic waves <b>70</b> impacting a tissue with a microcalcification which is designated as the target <b>100</b> and which reflects, reradiates, or demodulates the signals from the transducer and thereby generates emitted signals to be received by the four sensors. The concept is that the time it takes for a signal to travel between the stimulated target, or stimulated microcalcification within the tissue, and each of the four sensors depends on the distance between the specific sensor and the stimulated microcalcification within the tissue. If these signal travel times are known, and the locations of the sensors and stimulating transducer are known, then one can locate the position of the microcalcification within the tissue.</p>
+<p id="p-0024" num="0035">The present invention uses the following notation. Matrices and vector quantities are written in bold face. Examples include:</p>
+<p id="h-0006" num="0000">d: an N&#xd7;1 vector consisting of N data points;</p>
+<p id="h-0007" num="0000">G: an N&#xd7;M matrix consisting of M columns often referred to as a &#x201c;regression matrix&#x201d; in the literature;</p>
+<p id="h-0008" num="0000">c: an M&#xd7;1 matrix of parameters; and</p>
+<p id="h-0009" num="0000">e: N&#xd7;1 vector consisting of N data points, comprising the error in fitting the data.</p>
+<p id="p-0025" num="0036">Scalar quantities are written in plain text. An element of a vector is written with a subscript (for example: d<sub>i</sub>.). In addition, the standard practice of writing mathematical variables in italics is practiced.</p>
+<p id="p-0026" num="0037">The first element of the present invention is the &#x201c;phase estimation method&#x201d;. The key challenge in implementing this method is to estimate &#x3c6;<sub>1</sub>, &#x3c6;<sub>2</sub>, &#x3c6;<sub>3 </sub>and &#x3c6;<sub>4 </sub>at each one of the sensors in <figref idref="DRAWINGS">FIG. 1</figref>. Received data are of the following form:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>d</i><sub>i</sub><i>=A </i>cos(&#x3c9;<i>t</i><sub>i</sub>+&#x3c6;<sub>i</sub>)<i>e</i><sup>&#x2212;&#x3b2;l</sup><sup><sub2>i</sub2></sup><i>+e</i><sub>i</sub>&#x2003;&#x2003;Equation (1)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+where,
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>e</i><sub>i</sub><i>&#x2248;N</i>(0,&#x3c3;<sup>2</sup>)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+is a noise component drawn from a Gaussian distribution with mean zero and variance &#x3c3;<sup>2</sup>, &#x3c9; is the frequency of the received signal, and &#x3b2; is the attenuation of the material applied over the distance l<sub>i </sub>between the stimulated target and the respective receiving sensors for i&#x2267;3.
+<br/>
+From basic physics, one may derive that:
+</p>
+<p id="p-0027" num="0038">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>&#x3b4;</mi>
+          <mi>i</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <msub>
+              <mi>&#x3d5;</mi>
+              <mi>i</mi>
+            </msub>
+            <mi>&#x3c9;</mi>
+          </mfrac>
+          <mo>=</mo>
+          <mfrac>
+            <msub>
+              <mi>l</mi>
+              <mi>i</mi>
+            </msub>
+            <mi>c</mi>
+          </mfrac>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>Equation</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mn>2</mn>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+where &#x3b4;i is the time delay, l<sub>i </sub>is the distance between the stimulated target and the respective receiving sensors, &#x3c6;<sub>i </sub>is the phase, and c is the speed of sound.
+</p>
+<p id="p-0028" num="0039">The exponential term is of no real importance in what follows. In theory, one could use this information to estimate &#x3b2; and l<sub>i</sub>, thus obtaining a source of data to infer position. The present invention improves upon this basic approach by utilizing phase shifts determined by Bayesian spectral estimation as our primary source of information to infer position.</p>
+<p id="p-0029" num="0040">For the present invention, a sinusoidal waveform of frequency &#x3c9; varying in time may be represented as:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>d</i><sub>i</sub><i>=a </i>cos(&#x3c9;<i>t</i><sub>i</sub>)+<i>b </i>sin(&#x3c9;<i>t</i><sub>i</sub>)+&#x3bc;+<i>e</i><sub>i</sub>&#x2003;&#x2003;Equation (3)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+where a is the in-phase amplitude, b is the quadrature amplitude, &#x3bc; is the mean offset and e<sub>i </sub>is normally distributed zero mean noise. The phase is given simply by:
+</p>
+<p id="p-0030" num="0041">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mi>tan</mi>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.3em" height="0.3ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mi>&#x3d5;</mi>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mo>-</mo>
+    <mfrac>
+      <mi>b</mi>
+      <mi>a</mi>
+    </mfrac>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+and the magnitude by:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>A</i>=&#x221a;{square root over (<i>a</i><sup>2</sup><i>+b</i><sup>2</sup>)}.<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+This model is equivalent to that in Equation 1.
+</p>
+<p id="p-0031" num="0042">A standard method of spectral analysis using the Fast Fourier Transform (FFT) in combination with data windowing and zero padding is not optimal. As set forth in known references, there are deficiencies in using FFT which include but are not limited to:
+<ul id="ul0003" list-style="none">
+    <li id="ul0003-0001" num="0000">
+    <ul id="ul0004" list-style="none">
+        <li id="ul0004-0001" num="0043">Limited precision because of discrete valued frequencies;</li>
+        <li id="ul0004-0002" num="0044">Reliance on ad hoc methods such as data windowing;</li>
+        <li id="ul0004-0003" num="0045">Difficulty in working directly with &#x201c;wrapped around&#x201d; phase of the FFT.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0032" num="0046">Following one of the present inventors, Joseph &#xd3; Ruanaidh, Equation 3 may be rendered in an expanded form,
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>d=Gc+e, </i><?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+if there is a single transducer generating or inducing the signals received by a multiplicity of sensors. Note: bold face type is used to indicate matrices. The fully expanded equation is:
+</p>
+<p id="p-0033" num="0047">
+<maths id="MATH-US-00003" num="00003">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mo>[</mo>
+          <mtable>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>d</mi>
+                  <mn>1</mn>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>d</mi>
+                  <mn>2</mn>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>d</mi>
+                  <mn>3</mn>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>&#x22ee;</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>d</mi>
+                  <mi>N</mi>
+                </msub>
+              </mtd>
+            </mtr>
+          </mtable>
+          <mo>]</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <mrow>
+              <mo>[</mo>
+              <mtable>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mi>cos</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mi>&#x3c9;</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>t</mi>
+                        <mn>1</mn>
+                      </msub>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mrow>
+                      <mi>sin</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mi>&#x3c9;</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>t</mi>
+                        <mn>1</mn>
+                      </msub>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mi>cos</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mi>&#x3c9;</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>t</mi>
+                        <mn>2</mn>
+                      </msub>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mrow>
+                      <mi>sin</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mi>&#x3c9;</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>t</mi>
+                        <mn>2</mn>
+                      </msub>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mi>cos</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mi>&#x3c9;</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>t</mi>
+                        <mn>3</mn>
+                      </msub>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mrow>
+                      <mi>sin</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mi>&#x3c9;</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>t</mi>
+                        <mn>3</mn>
+                      </msub>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mi>&#x22ee;</mi>
+                  </mtd>
+                  <mtd>
+                    <mi>&#x22ee;</mi>
+                  </mtd>
+                  <mtd>
+                    <mi>&#x22ee;</mi>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mi>cos</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mi>&#x3c9;</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>t</mi>
+                        <mi>N</mi>
+                      </msub>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mrow>
+                      <mi>sin</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mi>&#x3c9;</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>t</mi>
+                        <mi>N</mi>
+                      </msub>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo>]</mo>
+            </mrow>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>[</mo>
+              <mtable>
+                <mtr>
+                  <mtd>
+                    <mi>a</mi>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mi>b</mi>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mi>&#x3bc;</mi>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo>]</mo>
+            </mrow>
+          </mrow>
+          <mo>+</mo>
+          <mrow>
+            <mo>[</mo>
+            <mtable>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>e</mi>
+                    <mn>1</mn>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>e</mi>
+                    <mn>2</mn>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>e</mi>
+                    <mn>3</mn>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>&#x22ee;</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>e</mi>
+                    <mi>N</mi>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>Equation</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mn>4</mn>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0034" num="0048">Equation 4 is the starting point for applying Bayesian analysis for phase estimation, which is used in this invention for locating the signal emitting target.</p>
+<p id="p-0035" num="0049">The likelihood function for the four parameters: (A) in-phase amplitude, (B) quadrature amplitudes (i.e., amplitude of the cosine and sine components), (C) noise variance, and (D) the frequency of the grid, is given in Equation 5:</p>
+<p id="p-0036" num="0050">
+<maths id="MATH-US-00004" num="00004">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>p</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mrow>
+                <mi>d</mi>
+                <mo>|</mo>
+                <mi>a</mi>
+              </mrow>
+              <mo>,</mo>
+              <mi>b</mi>
+              <mo>,</mo>
+              <mi>&#x3c3;</mi>
+              <mo>,</mo>
+              <mrow>
+                <mo>{</mo>
+                <mi>&#x3c9;</mi>
+                <mo>}</mo>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mi/>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mrow>
+            <mi>p</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mi>e</mi>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>=</mo>
+          <mi/>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mrow>
+              <munderover>
+                <mo>&#x220f;</mo>
+                <mrow>
+                  <mi>i</mi>
+                  <mo>=</mo>
+                  <mn>1</mn>
+                </mrow>
+                <mi>N</mi>
+              </munderover>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mfrac>
+                  <mn>1</mn>
+                  <msqrt>
+                    <mrow>
+                      <mn>2</mn>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mi>&#x3c0;</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <msup>
+                        <mi>&#x3c3;</mi>
+                        <mn>2</mn>
+                      </msup>
+                    </mrow>
+                  </msqrt>
+                </mfrac>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mi>exp</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>[</mo>
+                    <mrow>
+                      <mo>-</mo>
+                      <mfrac>
+                        <msubsup>
+                          <mi>e</mi>
+                          <mi>i</mi>
+                          <mn>2</mn>
+                        </msubsup>
+                        <mrow>
+                          <mn>2</mn>
+                          <mo>&#x2062;</mo>
+                          <mstyle>
+                            <mspace width="0.3em" height="0.3ex"/>
+                          </mstyle>
+                          <mo>&#x2062;</mo>
+                          <msup>
+                            <mi>&#x3c3;</mi>
+                            <mn>2</mn>
+                          </msup>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <mo>]</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mo>=</mo>
+            <mi/>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>2</mn>
+                    <mo>&#x2062;</mo>
+                    <msup>
+                      <mi>&#x3c0;&#x3c3;</mi>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mrow>
+                    <mo>-</mo>
+                    <mi>N</mi>
+                  </mrow>
+                  <mo>/</mo>
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>exp</mi>
+                <mo>[</mo>
+                <mrow>
+                  <mo>-</mo>
+                  <mfrac>
+                    <mrow>
+                      <munderover>
+                        <mo>&#x2211;</mo>
+                        <mrow>
+                          <mi>i</mi>
+                          <mo>=</mo>
+                          <mn>1</mn>
+                        </mrow>
+                        <mi>N</mi>
+                      </munderover>
+                      <mo>&#x2062;</mo>
+                      <msubsup>
+                        <mi>e</mi>
+                        <mi>i</mi>
+                        <mn>2</mn>
+                      </msubsup>
+                    </mrow>
+                    <mrow>
+                      <mn>2</mn>
+                      <mo>&#x2062;</mo>
+                      <msup>
+                        <mi>&#x3c3;</mi>
+                        <mn>2</mn>
+                      </msup>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>]</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>Equation</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mn>5</mn>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0037" num="0051">From this one can derive the marginal probability density for the angular frequency &#x3c9;, which is given by Equation 6:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>p</i>({&#x3c9;}|<i>d,I</i>)&#x221d;|<i>G</i><sup>T</sup><i>G|</i><sup>&#x2212;1/2</sup><i>[d</i><sup>T</sup><i>d&#x2212;f</i><sup>T</sup><i>f]</i><sup>&#x2212;(N&#x2212;3)/2</sup>&#x2003;&#x2003;Equation (6)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+where I denotes &#x201c;prior information&#x201d; (the state of knowledge that led to the selection of this model), and
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>f=G</i>(<i>G</i><sup>T</sup><i>G</i>)<sup>&#x2212;1</sup><i>G</i><sup>T</sup><i>d </i><?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+is the least squares fit to the data d. Equation 6 described a student t-distribution with N&#x2212;3 degrees of freedom (see &#xd3; Ruanaidh and Fitzgerald [2]). This function is a one dimensional continuous function of the angular frequency &#x3c9; and, compared to the full likelihood function, is relatively easy to optimize. In this scheme, the other parameters are treated as &#x201c;nuisance parameters&#x201d; and have been integrated out.
+</p>
+<p id="p-0038" num="0052">Working with log p({&#x3c9;}|d, I) for convenience (p({&#x3c9;}|d, I) has a very large range of positive values), one may compute the log probability for discrete values of &#x3c9; over an interval to find the approximate location of the largest peak. Then, the present invention improves upon this initial estimate by using a non-linear optimization technique such as Brent's method, to locate the global maximum accurately. Once the extremum is found, the parameters c=(a, b, &#x3bc;) can be estimated by linear regression as:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>&#x109;=</i>(<i>G</i><sup>T</sup><i>G</i>)<sup>&#x2212;1</sup><i>G</i><sup>T</sup><i>d </i><?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+where,
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>G=G</i>({circumflex over (&#x3c9;)})<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+is a matrix function of the estimated value of &#x3c9; and the phase values for each sensor can be calculated as:
+</p>
+<p id="p-0039" num="0053">
+<maths id="MATH-US-00005" num="00005">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mi>tan</mi>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.3em" height="0.3ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <msub>
+      <mi>&#x3d5;</mi>
+      <mi>i</mi>
+    </msub>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mo>-</mo>
+    <mfrac>
+      <msub>
+        <mi>b</mi>
+        <mi>i</mi>
+      </msub>
+      <msub>
+        <mi>a</mi>
+        <mi>i</mi>
+      </msub>
+    </mfrac>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+Because the parameters are not estimated jointly, as in a typical maximum likelihood estimator, but rather are estimated sequentially, this estimator is not strictly optimal. However, this particular estimator using Bayesian estimators is supported in the literature and in prior art as being accurate. The differences between joint and marginal estimates are exceedingly minute and are not significant in this particular application.
+</p>
+<p id="p-0040" num="0054">In the present invention, it should not normally be necessary to estimate &#x3c9; because it is already known. It would only be necessary to estimate it if the &#x201c;known&#x201d; value is inaccurate. At the very least, the present invention uses certain prior knowledge of &#x3c9; (developed by the inventors) as a starting point for the optimization search which yields values for both &#x3c9; and each &#x3c6;<sub>i</sub>.</p>
+<p id="p-0041" num="0055">Following the phase estimation using Bayesian analysis, an error analysis is then needed in order to assess the accuracy of the phase estimates. The accuracy analysis proceeds as follows: The covariance matrix of the parameters a and b, derives from the Hessian matrix of the log likelihood function as identified by M. Tanner (Reference 7) and comprises the 2&#xd7;2 partition of the 3&#xd7;3 matrix:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>C</i><sub>a,b,&#x3bc;</sub>=&#x3c3;<sup>2</sup>(<i>G</i><sup>T</sup><i>G</i>)<sup>&#x2212;1</sup>&#x2003;&#x2003;Equation (7)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+The Jacobian of transformation J between the Cartesian coordinates (a, b) and the polar coordinates (r, &#x3c6;) is:
+</p>
+<p id="p-0042" num="0056">
+<maths id="MATH-US-00006" num="00006">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mi>J</mi>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <mo>[</mo>
+            <mtable>
+              <mtr>
+                <mtd>
+                  <mfrac>
+                    <mrow>
+                      <mo>&#x2202;</mo>
+                      <mi>r</mi>
+                    </mrow>
+                    <mrow>
+                      <mo>&#x2202;</mo>
+                      <mi>a</mi>
+                    </mrow>
+                  </mfrac>
+                </mtd>
+                <mtd>
+                  <mfrac>
+                    <mrow>
+                      <mo>&#x2202;</mo>
+                      <mi>r</mi>
+                    </mrow>
+                    <mrow>
+                      <mo>&#x2202;</mo>
+                      <mi>b</mi>
+                    </mrow>
+                  </mfrac>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mfrac>
+                    <mrow>
+                      <mo>&#x2202;</mo>
+                      <mi>&#x3d5;</mi>
+                    </mrow>
+                    <mrow>
+                      <mo>&#x2202;</mo>
+                      <mi>a</mi>
+                    </mrow>
+                  </mfrac>
+                </mtd>
+                <mtd>
+                  <mfrac>
+                    <mrow>
+                      <mo>&#x2202;</mo>
+                      <mi>&#x3d5;</mi>
+                    </mrow>
+                    <mrow>
+                      <mo>&#x2202;</mo>
+                      <mi>b</mi>
+                    </mrow>
+                  </mfrac>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <mfrac>
+              <mn>1</mn>
+              <mi>r</mi>
+            </mfrac>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>[</mo>
+              <mtable>
+                <mtr>
+                  <mtd>
+                    <mi>a</mi>
+                  </mtd>
+                  <mtd>
+                    <mi>b</mi>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mo>-</mo>
+                      <mfrac>
+                        <mi>b</mi>
+                        <mi>r</mi>
+                      </mfrac>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mfrac>
+                      <mi>a</mi>
+                      <mi>r</mi>
+                    </mfrac>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo>]</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>Equation</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mn>8</mn>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+where,
+</p>
+<p id="p-0043" num="0057">
+<maths id="MATH-US-00007" num="00007">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mi>tan</mi>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.3em" height="0.3ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mi>&#x3d5;</mi>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mo>-</mo>
+    <mfrac>
+      <mi>b</mi>
+      <mi>a</mi>
+    </mfrac>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+and
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>r</i>=&#x221a;{square root over (<i>a</i><sup>2</sup><i>+b</i><sup>2</sup>)}<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+According to the method of propagation of errors:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>C</i><sub>r,&#x3c6;</sub><i>=JC</i><sub>a,b</sub><i>J</i><sup>T</sup>&#x2003;&#x2003;Equation (9)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+The variance of the phase estimate is given by the second diagonal element of the covariance matrix. This approximates the minimum variance that any statistical estimate, derived with the model assumptions used by the present invention can attain; namely, the Cramer-Rao bound (see Reference 8).
+</p>
+<p id="p-0044" num="0058">The model as set forth in Equation 4 deals with the case of a single stimulation frequency being transmitted to the target. It is also possible to use a multi-chromatic stimulation signal such as a chirp or chord instead of a single frequency. In fact in the application of detection and location of microcalcification in the breast tissue, it may be advantageous for an excitation signal to contain a range of frequencies because the response of targets to different stimulation frequencies depends on their physical size and density which are not known in advance and also because a non-monochromatic excitation may be more robust in the presence of standing waves or other interference. It should therefore be noted that the analysis above may be generalized to apply to any excitation waveform since any band-limited real waveform may be described by a linear superposition of monochromatic components. Application of the approach to the case of a linear chirp is shown for example below.</p>
+<p id="p-0045" num="0059">The data gathered by the receiving acoustic sensors in response to the stimulation of the target by a multiplicity of chirp signals are set forth in the following Equation 10:</p>
+<p id="p-0046" num="0060">
+<maths id="MATH-US-00008" num="00008">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mo>[</mo>
+          <mtable>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>d</mi>
+                  <mn>1</mn>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>d</mi>
+                  <mn>2</mn>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>d</mi>
+                  <mn>3</mn>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>&#x22ee;</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>d</mi>
+                  <mi>N</mi>
+                </msub>
+              </mtd>
+            </mtr>
+          </mtable>
+          <mo>]</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>&#x2003;</mo>
+          <mrow>
+            <mrow>
+              <mo>[</mo>
+              <mtable>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mi>cos</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mrow>
+                            <mi>&#x3b1;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msubsup>
+                              <mi>t</mi>
+                              <mn>1</mn>
+                              <mn>2</mn>
+                            </msubsup>
+                          </mrow>
+                          <mo>+</mo>
+                          <mrow>
+                            <mi>&#x3c9;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msub>
+                              <mi>t</mi>
+                              <mn>1</mn>
+                            </msub>
+                          </mrow>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mrow>
+                      <mi>sin</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mrow>
+                            <mi>&#x3b1;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msubsup>
+                              <mi>t</mi>
+                              <mn>1</mn>
+                              <mn>2</mn>
+                            </msubsup>
+                          </mrow>
+                          <mo>+</mo>
+                          <mrow>
+                            <mi>&#x3c9;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msub>
+                              <mi>t</mi>
+                              <mn>1</mn>
+                            </msub>
+                          </mrow>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mi>cos</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mrow>
+                            <mi>&#x3b1;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msubsup>
+                              <mi>t</mi>
+                              <mn>2</mn>
+                              <mn>2</mn>
+                            </msubsup>
+                          </mrow>
+                          <mo>+</mo>
+                          <mrow>
+                            <mi>&#x3c9;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msub>
+                              <mi>t</mi>
+                              <mn>2</mn>
+                            </msub>
+                          </mrow>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mrow>
+                      <mi>sin</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mrow>
+                            <mi>&#x3b1;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msubsup>
+                              <mi>t</mi>
+                              <mn>2</mn>
+                              <mn>2</mn>
+                            </msubsup>
+                          </mrow>
+                          <mo>+</mo>
+                          <mrow>
+                            <mi>&#x3c9;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msub>
+                              <mi>t</mi>
+                              <mn>2</mn>
+                            </msub>
+                          </mrow>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mi>cos</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mrow>
+                            <mi>&#x3b1;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msubsup>
+                              <mi>t</mi>
+                              <mn>3</mn>
+                              <mn>2</mn>
+                            </msubsup>
+                          </mrow>
+                          <mo>+</mo>
+                          <mrow>
+                            <mi>&#x3c9;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msub>
+                              <mi>t</mi>
+                              <mn>3</mn>
+                            </msub>
+                          </mrow>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mrow>
+                      <mi>sin</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mrow>
+                            <mi>&#x3b1;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msubsup>
+                              <mi>t</mi>
+                              <mn>3</mn>
+                              <mn>2</mn>
+                            </msubsup>
+                          </mrow>
+                          <mo>+</mo>
+                          <mrow>
+                            <mi>&#x3c9;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msub>
+                              <mi>t</mi>
+                              <mn>3</mn>
+                            </msub>
+                          </mrow>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mi>&#x22ee;</mi>
+                  </mtd>
+                  <mtd>
+                    <mi>&#x22ee;</mi>
+                  </mtd>
+                  <mtd>
+                    <mi>&#x22ee;</mi>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mrow>
+                      <mi>cos</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mrow>
+                            <mi>&#x3b1;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msubsup>
+                              <mi>t</mi>
+                              <mi>N</mi>
+                              <mn>2</mn>
+                            </msubsup>
+                          </mrow>
+                          <mo>+</mo>
+                          <mrow>
+                            <mi>&#x3c9;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msub>
+                              <mi>t</mi>
+                              <mi>N</mi>
+                            </msub>
+                          </mrow>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mrow>
+                      <mi>sin</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mrow>
+                            <mi>&#x3b1;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msubsup>
+                              <mi>t</mi>
+                              <mi>N</mi>
+                              <mn>2</mn>
+                            </msubsup>
+                          </mrow>
+                          <mo>+</mo>
+                          <mrow>
+                            <mi>&#x3c9;</mi>
+                            <mo>&#x2062;</mo>
+                            <mstyle>
+                              <mspace width="0.3em" height="0.3ex"/>
+                            </mstyle>
+                            <mo>&#x2062;</mo>
+                            <msub>
+                              <mi>t</mi>
+                              <mi>N</mi>
+                            </msub>
+                          </mrow>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo>]</mo>
+            </mrow>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mo>&#x2003;</mo>
+              <mrow>
+                <mrow>
+                  <mo>[</mo>
+                  <mtable>
+                    <mtr>
+                      <mtd>
+                        <mi>a</mi>
+                      </mtd>
+                    </mtr>
+                    <mtr>
+                      <mtd>
+                        <mi>b</mi>
+                      </mtd>
+                    </mtr>
+                    <mtr>
+                      <mtd>
+                        <mi>&#x3bc;</mi>
+                      </mtd>
+                    </mtr>
+                  </mtable>
+                  <mo>]</mo>
+                </mrow>
+                <mo>+</mo>
+                <mrow>
+                  <mo>[</mo>
+                  <mtable>
+                    <mtr>
+                      <mtd>
+                        <msub>
+                          <mi>e</mi>
+                          <mn>1</mn>
+                        </msub>
+                      </mtd>
+                    </mtr>
+                    <mtr>
+                      <mtd>
+                        <msub>
+                          <mi>e</mi>
+                          <mn>2</mn>
+                        </msub>
+                      </mtd>
+                    </mtr>
+                    <mtr>
+                      <mtd>
+                        <msub>
+                          <mi>e</mi>
+                          <mn>3</mn>
+                        </msub>
+                      </mtd>
+                    </mtr>
+                    <mtr>
+                      <mtd>
+                        <mi>&#x22ee;</mi>
+                      </mtd>
+                    </mtr>
+                    <mtr>
+                      <mtd>
+                        <msub>
+                          <mi>e</mi>
+                          <mi>N</mi>
+                        </msub>
+                      </mtd>
+                    </mtr>
+                  </mtable>
+                  <mo>]</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>Equation</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mn>10</mn>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+where, as previously, noise is assumed to be Gaussian zero mean noise of variance &#x3c3;<sup>2</sup>. The only difference between Equation 4 and Equation 10 is that the single frequency &#x3c9; in Equation 4 has been replaced by two parameters; initial frequency &#x3c9; and linear chirp rate 2&#x3b1; in Equation 10. Note, linear chirp implies frequency increases linearly with time as &#x3c9;+2&#x3b1;t, therefore the phase above is: &#x3c9;t+&#x3b1;t<sup>2</sup>. Using two parameters instead of just one means that a more general numerical optimization search is required to determine both the initial frequency, &#x3c9; (the frequency when t=0), and the linear chirp rate 2&#x3b1;. But, as before, the initial frequency and chirp should be known from the experimental procedure. It should be noted that, for a given time delay between the same signal from the target to be received by the multiplicity of sensors, the phase shift depends on the frequency. In Equation 2, &#x3c9; is the initial frequency, where t=0.
+</p>
+<p id="p-0047" num="0061">Applying the Bayesian analysis as before to this system of equations, yields a set of estimates for the phase at each of the sensors. With this information, one can convert the relative phases into a location of the target using the steps below.</p>
+<p id="p-0048" num="0062">The location of the source of acoustic radiation is mathematically equivalent to finding the point of intersection between a number of ellipsoids, each of which has one focus located at the excitation transducer, the other focus centered on a particular sensor, and a major diameter determined by the phase shift of the signal received by that sensor relative to the excitation waveform. This phase shift corresponds to the time between the generation of the ultrasonic excitation signal and the reception by the sensor of a signal reflected, demodulated, or reradiated by the target.</p>
+<p id="p-0049" num="0063">The process of determining the location of a target, in three dimensions, from its known distance from a set of other points is known as trilateration. This is distinct from triangulation, which is a very commonly used term, but which strictly speaking, only applies to determining location using angles. The general process of determining location from distance in any arbitrary number of dimensions is known as multilateration.</p>
+<p id="p-0050" num="0064">The approach used here to solve the multilateration problem is to optimize a cost function. The present invention is aimed at determining the position x of the target which, overall, best explains the data. For each sensor, there is the following relation:</p>
+<p id="p-0051" num="0065">
+<maths id="MATH-US-00009" num="00009">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <msub>
+            <mrow>
+              <mo>&#xf603;</mo>
+              <mi>x</mi>
+              <mo>&#xf604;</mo>
+            </mrow>
+            <mn>2</mn>
+          </msub>
+          <mo>+</mo>
+          <msub>
+            <mrow>
+              <mo>&#xf603;</mo>
+              <mrow>
+                <mi>x</mi>
+                <mo>-</mo>
+                <msub>
+                  <mi>p</mi>
+                  <mi>i</mi>
+                </msub>
+              </mrow>
+              <mo>&#xf604;</mo>
+            </mrow>
+            <mn>2</mn>
+          </msub>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <mi>c</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mi>&#x394;</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>t</mi>
+              <mi>i</mi>
+            </msub>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <mi>c</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mfrac>
+              <msub>
+                <mi>&#x3d5;</mi>
+                <mi>i</mi>
+              </msub>
+              <mrow>
+                <mn>2</mn>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mi>&#x3c0;</mi>
+              </mrow>
+            </mfrac>
+            <mo>&#x2062;</mo>
+            <mi>T</mi>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>Equation</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mn>11</mn>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+where p<sub>i </sub>is the location of the sensor and x is the position of the target, &#x394;t<sub>i </sub>is the time of propagation and c is the speed of sound. The location of the transducer is at origin. The |&#xb7;|<sub>2 </sub>operator around x&#x2212;p<sub>i </sub>is the 2-norm, or Euclidean norm, computed as the square root of the sum of each component squared. This is the most commonly used measure of the length of a vector. For example, |(&#x2212;3, 4, &#x2212;12)|<sub>2</sub>=13.
+<br/>
+The present invention defines a cost function as follows:
+</p>
+<p id="p-0052" num="0066">
+<maths id="MATH-US-00010" num="00010">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>C</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>x</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <munderover>
+            <mo>&#x2211;</mo>
+            <mrow>
+              <mi>i</mi>
+              <mo>=</mo>
+              <mn>1</mn>
+            </mrow>
+            <mi>M</mi>
+          </munderover>
+          <mo>&#x2062;</mo>
+          <mfrac>
+            <msub>
+              <mrow>
+                <mrow>
+                  <msub>
+                    <mrow>
+                      <mo>&#xf603;</mo>
+                      <mrow>
+                        <mrow>
+                          <msub>
+                            <mrow>
+                              <mo>&#xf603;</mo>
+                              <mi>x</mi>
+                              <mo>&#xf604;</mo>
+                            </mrow>
+                            <mn>2</mn>
+                          </msub>
+                          <mo>+</mo>
+                        </mrow>
+                        <mo>|</mo>
+                        <mrow>
+                          <mi>x</mi>
+                          <mo>-</mo>
+                          <msub>
+                            <mi>p</mi>
+                            <mi>i</mi>
+                          </msub>
+                        </mrow>
+                      </mrow>
+                      <mo>&#xf604;</mo>
+                    </mrow>
+                    <mn>2</mn>
+                  </msub>
+                  <mo>-</mo>
+                  <mrow>
+                    <mi>c</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mi>&#x394;</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>t</mi>
+                      <mi>i</mi>
+                    </msub>
+                  </mrow>
+                </mrow>
+                <mo>&#xf604;</mo>
+              </mrow>
+              <mn>1</mn>
+            </msub>
+            <msubsup>
+              <mi>&#x3c3;</mi>
+              <msub>
+                <mi>&#x3d5;</mi>
+                <mi>i</mi>
+              </msub>
+              <mn>2</mn>
+            </msubsup>
+          </mfrac>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>Equation</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mn>12</mn>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+where M is the number of sensors and the |&#xb7;|<sub>1 </sub>operator is the 1-norm, or Manhattan norm, computed as the sum of the absolute values of each component. An example of 1-norm is |(&#x2212;3, 4, &#x2212;12)|<sub>1</sub>=19. The 1-norm is used here because it yields a more robust estimator than summing squares. The 2-norm may also be used. The individual contribution from each sensor is weighted by the variance of the phase.
+</p>
+<p id="p-0053" num="0067">The best estimate for x is that which minimizes the cost function. The minimum possible value of the cost function is zero, which in real terms would correspond to locating the target exactly. In real data, however, the cost function is always greater than zero because of noise.</p>
+<p id="p-0054" num="0068">Therefore, the concept is to have an iterative process of systematically changing x in order to lower the value of the cost function, until the cost function is zero or as close to zero as can be obtained. When the cost function is zero or as close to zero as possible, then the most precise value for x in the equation 12 has been determined and that will determine the three-dimensional position coordinate of the vector x (i.e. the location of the target relative to the position of the sensors) so that the location of the microcalcification in the breast tissue can be ascertained.</p>
+<p id="p-0055" num="0069">Another cost function can also be described as the negative of a log likelihood function that takes in to account path dependent delays and phase changes. The following expression is the log likelihood function for the target being at position T.</p>
+<p id="p-0056" num="0070">
+<maths id="MATH-US-00011" num="00011">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mi>log</mi>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.3em" height="0.3ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <mi>p</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo>(</mo>
+        <mrow>
+          <mrow>
+            <mi>d</mi>
+            <mo>|</mo>
+            <mi>x</mi>
+          </mrow>
+          <mo>=</mo>
+          <mi>T</mi>
+        </mrow>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <mo>-</mo>
+      <mfrac>
+        <mrow>
+          <mi>N</mi>
+          <mo>-</mo>
+          <mi>M</mi>
+        </mrow>
+        <mn>2</mn>
+      </mfrac>
+    </mrow>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <munderover>
+        <mo>&#x2211;</mo>
+        <mrow>
+          <mi>i</mi>
+          <mo>=</mo>
+          <mn>1</mn>
+        </mrow>
+        <mi>L</mi>
+      </munderover>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mi>log</mi>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <mrow>
+              <msubsup>
+                <mi>d</mi>
+                <mi>i</mi>
+                <mi>T</mi>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <msub>
+                <mi>d</mi>
+                <mi>i</mi>
+              </msub>
+            </mrow>
+            <mo>-</mo>
+            <mrow>
+              <msubsup>
+                <mi>d</mi>
+                <mi>i</mi>
+                <mi>T</mi>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <msup>
+                <mrow>
+                  <msub>
+                    <mi>G</mi>
+                    <mi>i</mi>
+                  </msub>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <msubsup>
+                        <mi>G</mi>
+                        <mi>i</mi>
+                        <mi>T</mi>
+                      </msubsup>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>G</mi>
+                        <mi>i</mi>
+                      </msub>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <mo>-</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+              <mo>&#x2062;</mo>
+              <msubsup>
+                <mi>G</mi>
+                <mi>i</mi>
+                <mi>T</mi>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <msub>
+                <mi>d</mi>
+                <mi>i</mi>
+              </msub>
+            </mrow>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+</p>
+<p id="p-0057" num="0071">The contribution of each path to the log likelihood is in the form of a student t-distribution like Equation (6). In deriving this result, the nuisance parameters (namely the standard deviation &#x3c3; and the linear parameters) are assumed to be different for each path. The model matrix G is also path dependent. L is the number of sensors which is equal to the number of paths. M is the number of columns in the matrix G. N is the number of rows in the matrix G.</p>
+<p id="p-0058" num="0072">In the general case, if the emitted signal is f(t) then the path dependent model matrix is:</p>
+<p id="p-0059" num="0073">
+<maths id="MATH-US-00012" num="00012">
+<math overflow="scroll">
+<mrow>
+  <msub>
+    <mi>G</mi>
+    <mi>i</mi>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo>[</mo>
+    <mtable>
+      <mtr>
+        <mtd>
+          <mn>0</mn>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mn>0</mn>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mtable>
+            <mtr>
+              <mtd>
+                <mi>&#x22ee;</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mi>f</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mi>kT</mi>
+                      <mo>-</mo>
+                      <msub>
+                        <mi>&#x3b4;</mi>
+                        <mi>i</mi>
+                      </msub>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mi>f</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mrow>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mi>k</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                        <mo>&#x2062;</mo>
+                        <mi>T</mi>
+                      </mrow>
+                      <mo>-</mo>
+                      <msub>
+                        <mi>&#x3b4;</mi>
+                        <mi>i</mi>
+                      </msub>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mi>f</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mrow>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mi>k</mi>
+                            <mo>+</mo>
+                            <mn>2</mn>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                        <mo>&#x2062;</mo>
+                        <mi>T</mi>
+                      </mrow>
+                      <mo>-</mo>
+                      <msub>
+                        <mi>&#x3b4;</mi>
+                        <mi>i</mi>
+                      </msub>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mi>&#x22ee;</mi>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mrow>
+            <mi>f</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mi>NT</mi>
+                <mo>-</mo>
+                <msub>
+                  <mi>&#x3b4;</mi>
+                  <mi>i</mi>
+                </msub>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>]</mo>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+where, &#x3b4;i is the path delay and T is the sample period. The leading zeros are present because no signal can possibly be received before the time-of-flight has elapsed.
+<br/>
+In the specific case where the emitted signal is cos(&#x3c9;t) then the path dependent model matrix is:
+</p>
+<p id="p-0060" num="0074">
+<maths id="MATH-US-00013" num="00013">
+<math overflow="scroll">
+<mrow>
+  <msub>
+    <mi>G</mi>
+    <mi>i</mi>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo>[</mo>
+    <mtable>
+      <mtr>
+        <mtd>
+          <mn>0</mn>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mn>0</mn>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mi>&#x22ee;</mi>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mrow>
+            <mi>cos</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mrow>
+                  <mi>&#x3c9;</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>kT</mi>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>-</mo>
+                <mfrac>
+                  <msub>
+                    <mi>&#x3c1;</mi>
+                    <mi>i</mi>
+                  </msub>
+                  <mi>c</mi>
+                </mfrac>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mrow>
+            <mi>cos</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mrow>
+                  <mi>&#x3c9;</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>+</mo>
+                          <mn>1</mn>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                      <mo>&#x2062;</mo>
+                      <mi>T</mi>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>-</mo>
+                <mfrac>
+                  <msub>
+                    <mi>&#x3c1;</mi>
+                    <mi>i</mi>
+                  </msub>
+                  <mi>c</mi>
+                </mfrac>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mrow>
+            <mi>cos</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mrow>
+                  <mi>&#x3c9;</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>+</mo>
+                          <mn>2</mn>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                      <mo>&#x2062;</mo>
+                      <mi>T</mi>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>-</mo>
+                <mfrac>
+                  <msub>
+                    <mi>&#x3c1;</mi>
+                    <mi>i</mi>
+                  </msub>
+                  <mi>c</mi>
+                </mfrac>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mi>&#x22ee;</mi>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mrow>
+            <mi>cos</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mrow>
+                  <mi>&#x3c9;</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>NT</mi>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>-</mo>
+                <mfrac>
+                  <msub>
+                    <mi>&#x3c1;</mi>
+                    <mi>i</mi>
+                  </msub>
+                  <mi>c</mi>
+                </mfrac>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>]</mo>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+where &#x3c1;i is the distance from source to sensor (via the target) along the path. c is, of course, the speed of sound.
+</p>
+<p id="p-0061" num="0075">In a preferred embodiment the columns of G describe an autoregressive model, usually of order 2. The formulations is similar to that used in that of the autoregressive change-point detector developed by &#xd3; Ruanaidh and Fitzgerald [2]. The autoregressive model is favored in this context because it is general enough, for example, to describe a pure tone (i.e. the poles of the filter lie on the unit circle) as well as to describe multipath (i.e. through the excitation sequence). Note that G is a function of x because changing x changes the path length and the time of flight. Locating the target is equivalent to maximizing the log likelihood.</p>
+<p id="h-0010" num="0000">In this case, the cost function is given by the negative of the log likelihood and x can be determined using numerical optimization as described earlier.</p>
+<p id="p-0062" num="0076">In summary, the present invention provides a Bayesian spectral analysis that can be applied to estimate phase rapidly to a high degree of accuracy. These phase estimates are subsequently converted into target position (location) estimates using non-linear optimization of a cost function.</p>
+<p id="p-0063" num="0077">The present invention is a method whereby one can detect (via acoustic measurements) a frequency or multiplicity of frequencies emanating from a target and thereby estimate the location of the target. The signals can be, for example, relatively high speed longitudinal sound waves (e.g., approximately 1,500 meters/sec in breast tissue). The corresponding phase differences induced by the travel time from the target (source) to the sensor or to multiplicity of sensors may be quite small particularly at low frequencies. It is generally believed by those skilled in the art that these phase differences are too small to be of use in locating the target. Contrary to general belief, the inventors herein claim that the presented method is precise enough to yield phase estimates that can be used to reliably detect and locate a foreign object, microcalcification, calcification, or tumor.</p>
+<p id="h-0011" num="0000">The steps as described earlier in this invention are:</p>
+<p id="p-0064" num="0000">
+<ul id="ul0005" list-style="none">
+    <li id="ul0005-0001" num="0000">
+    <ul id="ul0006" list-style="none">
+        <li id="ul0006-0001" num="0078">1) An optional preliminary spectral analysis step to determine frequency and/or chirp and/or other non-linear parameters contained in the regression matrix. This step is optional because these values are typically known in advance.</li>
+        <li id="ul0006-0002" num="0079">2) Regression to estimate the magnitude of in-phase and quadrature components. Linear regression is typically used in this step but it will be evident to those skilled in the art that robust regression can be substituted for linear regression and may yield better results in some circumstances. Moreover, we also recognize that Bayesian regression can also be applied to utilize prior information about the linear parameters.</li>
+        <li id="ul0006-0003" num="0080">3) Phase estimation calculated directly from the linear in phase and quadrature parameters using a standard formula.</li>
+        <li id="ul0006-0004" num="0081">4) Conversion of the phase estimates into a position estimate using non-linear optimization of a cost function.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0065" num="0082">The present invention also derives estimates for the phase standard deviation. This expression follows from a standard propagation-of-errors argument that would be familiar to those skilled in the art. Nonetheless, the original application of these quantities is used for objectively measuring the quality of the data gathered by a specific sensor. These figure-of-merit quantities are also useful in devising the cost function, the minimization of which yields an estimate of the location of the source of acoustic radiation.</p>
+<p id="p-0066" num="0083">Alternatively, one can derive a likelihood function for the received signal over the direct paths to the sensor, as a function of the target position. Maximizing the likelihood with respect to the target position would yield a so-called &#x201c;maximum likelihood&#x201d; estimate of the target position. In this case, the cost function (which is minimized) would be the negative of the log likelihood function.</p>
+<p id="p-0067" num="0084">As a representative example, suppose four sensors are positioned in a ring-like holder <b>80</b> on or around a breast <b>210</b> as shown in <figref idref="DRAWINGS">FIG. 2</figref>. The (0, 0, 0) coordinates are the chest wall <b>200</b> at the center base of the breast <b>210</b>. The sensors <b>10</b>, <b>20</b>, <b>30</b> and <b>40</b> lie on a circle of radius 6 centimeters. The XYZ coordinates of the four sensors are (in cm) (6, 0, 0), (0, 6, 0), (&#x2212;6, 0, 0) and (0, &#x2212;6, 0), respectively, and a transducer <b>60</b> is placed against the breast at known coordinates (2, 3, 2). Additionally, there is an object such as a microcalcification within the breast at position (&#x2212;2, 1, 1). This position is unknown and has to be inferred from measurements of phase shifts and propagation delays.</p>
+<p id="p-0068" num="0085">The total distance from the transducer to the object and then from the object to the sensor located at (6, 0, 0) is 12.71 cm as shown in <figref idref="DRAWINGS">FIG. 4</figref>, and calculated using the Pythagorean Theorem as shown in Equation 13. The distance in the case of the remaining three sensors are 10.06, 8.83 and 11.93. Assuming the speed of sound is 1480 m/s, the time taken for the signal to propagate along each path (the time delay of each demodulated or reradiated signal) is 85.86, 67.97, 59.63 and 80.62 microseconds, respectively. If the transducer signal is modulated by a tone of 3 kHz and this signal is demodulated at the location of the target object as a result of its interaction with the target object, the time delays computed above would yield phase shifts in the received, demodulated, 3 kHz signal at each sensor of 92.7, 73.4, 64.4 and 87.1 degrees with respect to the transmitted transducer modulation envelope. Equation 14 shows the arithmetic involved in calculating the first of these values. Using these phase differences alone, the present inventors are able to use the methods described earlier to estimate the location of the object.</p>
+<p id="p-0069" num="0086">
+<maths id="MATH-US-00014" num="00014">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mrow>
+              <msub>
+                <mi>d</mi>
+                <mn>1</mn>
+              </msub>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <msqrt>
+                  <mrow>
+                    <msup>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mn>6</mn>
+                          <mo>+</mo>
+                          <mn>2</mn>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                      <mn>2</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <msup>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mn>0</mn>
+                          <mo>-</mo>
+                          <mn>1</mn>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                      <mn>2</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <msup>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mn>0</mn>
+                          <mo>-</mo>
+                          <mn>1</mn>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                </msqrt>
+                <mo>+</mo>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <msqrt>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow>
+                      <mo>-</mo>
+                      <mn>2</mn>
+                    </mrow>
+                    <mo>-</mo>
+                    <msup>
+                      <mn>2</mn>
+                      <mn>2</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <msup>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mn>1</mn>
+                          <mo>-</mo>
+                          <mn>3</mn>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                      <mn>2</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <msup>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mn>1</mn>
+                          <mo>-</mo>
+                          <mn>2</mn>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                </mrow>
+              </msqrt>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mn>8.12</mn>
+                <mo>+</mo>
+                <mn>4.58</mn>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mn>12.71</mn>
+            </mrow>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>Equation</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mn>13</mn>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mn>92.7</mn>
+          <mo>&#x2062;</mo>
+          <mi>&#xb0;</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mn>2</mn>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mi>&#x3c0;</mi>
+            <mo>&#xb7;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mn>3</mn>
+                <mo>&#xd7;</mo>
+                <msup>
+                  <mn>10</mn>
+                  <mn>3</mn>
+                </msup>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mo>&#xb7;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mn>85.86</mn>
+                <mo>&#xd7;</mo>
+                <msup>
+                  <mn>10</mn>
+                  <mrow>
+                    <mo>-</mo>
+                    <mn>6</mn>
+                  </mrow>
+                </msup>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mo>&#xb7;</mo>
+            <mfrac>
+              <mn>180</mn>
+              <mi>&#x3c0;</mi>
+            </mfrac>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>Equation</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mn>14</mn>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0070" num="0087">As shown in <figref idref="DRAWINGS">FIG. 3</figref>, determining the location of the object is mathematically equivalent to finding the point of intersection between a number of ellipsoids, each of which has one focus located at the excitation transducer, the other focus centered on a particular sensor, and a major diameter determined by the phase shift of the signal received by that sensor relative to the excitation waveform. For the sake of clarity this figure shows only the three-sensor case. This phase shift corresponds to the time between the generation of the ultrasonic excitation signal and the reception by the sensor of a signal reflected, demodulated, or reradiated by the target object.</p>
+<p id="p-0071" num="0088">Because of the propagation delay, there is a quiet period at the beginning before the sensors receive any signal. At a typical sampling rate of 200 kHz, the quiet period would comprise 17.17, 13.59, 11.93 and 16.12 sample periods. Therefore, the first 17, 13, 11 and 16 rows of the G matrix in this example would be composed of zeros. These are the sample delays which would maximize the log likelihood and hence locate the target.</p>
+<p id="p-0072" num="0089">Furthermore, the present invention method can also be used to optimize the location of the sensors. This goal can be attained by optimizing the position of the sensors with respect to a cost function. In this configuration, the true position of the signal emitting target would be known and those positions of the sensors that yield the best estimate of the true position would be considered optimal. The true position would be determined over a suitable large number of trials in which the true signal emitting target position would be chosen either judiciously, or randomly, or some combination thereof in an effort to be representative of the target location in a real-world situation (i.e., inside of a human breast).</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08622909-20140107-M00001.NB">
+<img id="EMI-M00001" he="6.35mm" wi="76.20mm" file="US08622909-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08622909-20140107-M00002.NB">
+<img id="EMI-M00002" he="6.01mm" wi="76.20mm" file="US08622909-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00003" nb-file="US08622909-20140107-M00003.NB">
+<img id="EMI-M00003" he="19.39mm" wi="76.20mm" file="US08622909-20140107-M00003.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00004" nb-file="US08622909-20140107-M00004.NB">
+<img id="EMI-M00004" he="19.39mm" wi="76.20mm" file="US08622909-20140107-M00004.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00005" nb-file="US08622909-20140107-M00005.NB">
+<img id="EMI-M00005" he="6.35mm" wi="76.20mm" file="US08622909-20140107-M00005.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00006" nb-file="US08622909-20140107-M00006.NB">
+<img id="EMI-M00006" he="13.04mm" wi="76.20mm" file="US08622909-20140107-M00006.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00007" nb-file="US08622909-20140107-M00007.NB">
+<img id="EMI-M00007" he="6.01mm" wi="76.20mm" file="US08622909-20140107-M00007.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00008" nb-file="US08622909-20140107-M00008.NB">
+<img id="EMI-M00008" he="22.27mm" wi="76.20mm" file="US08622909-20140107-M00008.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00009" nb-file="US08622909-20140107-M00009.NB">
+<img id="EMI-M00009" he="6.35mm" wi="76.20mm" file="US08622909-20140107-M00009.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00010" nb-file="US08622909-20140107-M00010.NB">
+<img id="EMI-M00010" he="10.92mm" wi="76.20mm" file="US08622909-20140107-M00010.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00011" nb-file="US08622909-20140107-M00011.NB">
+<img id="EMI-M00011" he="8.81mm" wi="76.20mm" file="US08622909-20140107-M00011.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00012" nb-file="US08622909-20140107-M00012.NB">
+<img id="EMI-M00012" he="31.41mm" wi="76.20mm" file="US08622909-20140107-M00012.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00013" nb-file="US08622909-20140107-M00013.NB">
+<img id="EMI-M00013" he="39.88mm" wi="76.20mm" file="US08622909-20140107-M00013.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00014" nb-file="US08622909-20140107-M00014.NB">
+<img id="EMI-M00014" he="26.50mm" wi="76.20mm" file="US08622909-20140107-M00014.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method of detecting a target in a medium, comprising:
+<claim-text>a) generating an ultrasound signal having a modulation envelope and causing the ultrasound signal to impact the target;</claim-text>
+<claim-text>b) demodulating the ultrasound signal having a modulation envelope through the interaction of the ultrasound signal having a modulation envelope and the target and receiving the demodulated signal by at least one sensor to determine that a detected target is present in the medium;</claim-text>
+<claim-text>c) determining a location of a detected target in one dimension from a distance of at least one sensor to the target in the medium by measuring the time-of-flight of the demodulated signal to the at least one sensor having a known location, the distance between the at least one sensor and the target being calculated by multiplying the time-of-flight by the sound speed in the medium;</claim-text>
+<claim-text>d) the at least one sensor yields at least one distance value from the signal emitting target;</claim-text>
+<claim-text>e) the modulated ultrasound signal is confined substantially to linear beam;</claim-text>
+<claim-text>f) an error function is defined for each sensor for each point along a line coincident to the modulated ultrasound beam;</claim-text>
+<claim-text>g) the error function is based on a difference between the distance determined by the sensor and the actual distance to each point along the line;</claim-text>
+<claim-text>h) a cost function is defined for each point along the line based upon a combination of the error functions for each sensor, the minimization of which estimates the position along the line of the source of radiation (i.e. the signal emitting target); and</claim-text>
+<claim-text>i) the cost function is based upon a weighted sum of the error functions for each sensor.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method in accordance with <claim-ref idref="CLM-00001">claim 1</claim-ref> in which a phase difference between the modulation envelope of the signal transmitted by the transducer and the demodulated signal received by the at least one sensor depends on the distance of the at least one sensor to the target and, consequently, is used to determine the time of flight.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method in accordance with <claim-ref idref="CLM-00002">claim 2</claim-ref> where the phase is determined using regression to determine the magnitude of in-phase and quadrature components and the phase is then computed using a standard formula using the magnitude of the quadrature component relative to the magnitude of the in-phase component.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method in accordance with <claim-ref idref="CLM-00003">claim 3</claim-ref> where a Bayesian Spectral Analysis is applied to determine the frequency of a single tone.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method in accordance with <claim-ref idref="CLM-00003">claim 3</claim-ref> where robust regression is used to determine the magnitude of the in phase and quadrature components.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method in accordance with <claim-ref idref="CLM-00003">claim 3</claim-ref> where Bayesian regression is used to determine the magnitude of the in-phase and quadrature components.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method in accordance with <claim-ref idref="CLM-00003">claim 3</claim-ref> where a variance of an estimate of the phases is approximated by applying propagation-of-errors techniques to a covariance matrix obtained by regression, and considering the conversion of Cartesian in-phase and quadrature coordinates to Polar coordinates comprising phase and magnitude coordinates.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method in accordance with <claim-ref idref="CLM-00001">claim 1</claim-ref> where the weight of each error function component is given by an inverse of an estimate of a variance of a phase value measured by the respective sensor.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method in accordance with <claim-ref idref="CLM-00001">claim 1</claim-ref> where the distance from the at least one sensor to the target are calculated based upon the phase difference between the modulation envelope of the signal transmitted by the ultrasound transducer and the signal received by the sensor.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method in accordance with <claim-ref idref="CLM-00001">claim 1</claim-ref> where the cost function is minimized and thereby yields an estimate for the target location, and minimization of the cost function decreases as a corresponding likelihood function increases.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The method in accordance with <claim-ref idref="CLM-00010">claim 10</claim-ref> where the cost function for a distance from the at least one sensor to the target is a negative of the logarithm of a likelihood function for a distance from the at least one sensor to the target.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The method in accordance with <claim-ref idref="CLM-00011">claim 11</claim-ref> where the cost function for a multitude of distances from the at least one sensor to the target is the sum of a negative of the logarithm of the likelihood functions of the distances from the at least one sensor to the target.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The method in accordance with <claim-ref idref="CLM-00011">claim 11</claim-ref> where the likelihood function is the student-t distribution based on a model matrix; the model matrix possessing the following properties:
+<claim-text>(a) the matrix elements corresponding to a time of arrival before the time of flight are zero or as close to zero as possible; and</claim-text>
+<claim-text>(b) the matrix elements corresponding to a time of arrival after the time of flight are generally non-zero, and jointly describe a delayed version of the signal emitted by the ultrasound transducer.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The method in accordance with <claim-ref idref="CLM-00011">claim 11</claim-ref> where the likelihood function is the student-t distribution based on a model matrix, whose elements depend on the position of the source and hence the distance from the at least one sensor to the target length; the model matrix possessing the following properties:
+<claim-text>(a) the columns of the matrix elements corresponding to a time of arrival before the time of flight are zero or as close to zero as possible; and</claim-text>
+<claim-text>(b) the signal emitted by the transducer is a pure tone and the matrix elements corresponding to a time of arrival after the time of flight are generally non-zero, and the columns jointly describe a delayed version of the pure tone emitted by the ultrasound transducer.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The method in accordance with <claim-ref idref="CLM-00001">claim 1</claim-ref> further comprising: the at least one sensor is increased to at least three receiving sensors and determining a location of a detected target in three dimensions in the medium is performed by measuring the time-of-flight of the demodulated signal emitted from the target to each of the at least three receiving sensors having known locations, the distance between each of the at least three receiving sensors and the target being calculated by multiplying the time-of-flight measured by each of the at least three receiving sensors by the sound speed in the medium, and the three dimensional location being determined by applying a trilateration technique to the calculated distances.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The method in accordance with <claim-ref idref="CLM-00001">claim 1</claim-ref> further comprising: determining a location of a detected target in three dimensions in the medium by measuring the time-of-flight of the demodulated signal emitted from the target to each of the at least three receiving sensors having known locations and the three dimensional location of the target being determined by applying a multilateration technique to the time-of-flight values.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The method in accordance with <claim-ref idref="CLM-00001">claim 1</claim-ref> further comprising: the medium is a human breast.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The method in accordance with <claim-ref idref="CLM-00001">claim 1</claim-ref> further comprising: the target is selected from and used in conjunction with the group consisting of a microcalcification in the human breast tissue, a calcification in the human breast tissue, a cluster of microcalcifications in the human breast tissue and a cluster of calcifications in the human breast tissue.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The method in accordance with <claim-ref idref="CLM-00001">claim 1</claim-ref> further comprising: transmission of the demodulated signal generated by the interaction of the ultrasound signal having a modulation envelope and the target is selected from and used in conjunction with the group consisting of reflection, re-radiation and demodulation.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The method in accordance with <claim-ref idref="CLM-00001">claim 1</claim-ref> further comprising: the generated ultrasound signal is generated by a transmitting ultrasonic transducer selected from the group consisting of a single element transducer and an array transducer.</claim-text>
+</claim>
+<claim id="CLM-00021" num="00021">
+<claim-text>21. The method in accordance with <claim-ref idref="CLM-00001">claim 1</claim-ref> further comprising: the at least one sensor is selected from the group consisting one or more of: acoustic sensors, a microphone, microphones, a hydrophone, hydrophones, an accelerometer, accelerometers, a strain gauge, strain gauges, a surface microphone, surface microphones, a surface hydrophone and surface hydrophones.</claim-text>
+</claim>
+<claim id="CLM-00022" num="00022">
+<claim-text>22. A method of detecting a target in a medium, comprising:
+<claim-text>a) generating an ultrasound signal having a modulation envelope and causing the ultrasound signal to impact the target;</claim-text>
+<claim-text>b) demodulating the ultrasound signal having a modulation envelope through the interaction of the ultrasound signal having a modulation envelope and the target and receiving the demodulated signal by at least three sensors to determine that a detected target is present in the medium;</claim-text>
+<claim-text>c) determining a location of a detected target in three dimensions in the medium by measuring the time-of-flight of the demodulated signal emitted from the target to each of the at least three receiving sensors having a known location, the distance between the at least three receiving sensors and the target being calculated by multiplying the time-of-flight measured by the at least three receiving sensors by the sound speed in the medium;</claim-text>
+<claim-text>d) the three dimensional location being determined by
+<claim-text>d1) defining an error function for each point in space for each sensor, the sensor function being based upon the difference between the distance determined by each of the three receiving sensors and the actual distance to each point in space and</claim-text>
+<claim-text>d2) defining a cost function for each point in space based on the combination of the error functions for each of the three receiving sensors, the minimization of which estimates the location of the source of radiation (i.e. the target in three dimensions); and</claim-text>
+</claim-text>
+<claim-text>e) the cost function is a weighted sum of the cost function along the paths to more than one sensor.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00023" num="00023">
+<claim-text>23. The method in accordance with <claim-ref idref="CLM-00022">claim 22</claim-ref> where the weight of the error function for each point in space is given by the inverse of the estimate of the variance of the phase value measured by the respective sensor.</claim-text>
+</claim>
+<claim id="CLM-00024" num="00024">
+<claim-text>24. The method in accordance with <claim-ref idref="CLM-00022">claim 22</claim-ref> where the distances between each of the receiving sensors and the target are calculated based upon the phase difference between the modulation envelope of the signal transmitted by the ultrasound transducer and the signal received by the sensor.</claim-text>
+</claim>
+<claim id="CLM-00025" num="00025">
+<claim-text>25. The method in accordance with <claim-ref idref="CLM-00022">claim 22</claim-ref> where the cost function is minimized and thereby yields an estimate for the target location, and minimization of the cost function decreases as a corresponding likelihood function increases.</claim-text>
+</claim>
+<claim id="CLM-00026" num="00026">
+<claim-text>26. The method in accordance with <claim-ref idref="CLM-00025">claim 25</claim-ref> where the cost function for a distance from the at least one sensor to the target is a negative of the logarithm of a likelihood function for a distance from the at least one sensor to the target.</claim-text>
+</claim>
+<claim id="CLM-00027" num="00027">
+<claim-text>27. The method in accordance with <claim-ref idref="CLM-00026">claim 26</claim-ref> where the cost function for a multitude of distances from the at least one sensor to the target is the sum of a negative of the logarithm of the likelihood functions of the respective distances from the at least one sensor to the target.</claim-text>
+</claim>
+<claim id="CLM-00028" num="00028">
+<claim-text>28. The method in accordance with <claim-ref idref="CLM-00026">claim 26</claim-ref> where the likelihood function is the student-t distribution based on a model matrix; the model matrix possessing the following properties:
+<claim-text>(a) the matrix elements corresponding to a time of arrival before the time of flight are zero; and</claim-text>
+<claim-text>(b) the matrix elements corresponding to a time of arrival after the time of flight are generally non-zero, and jointly describe a delayed version of the signal emitted by the ultrasound transducer.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00029" num="00029">
+<claim-text>29. The method in accordance with <claim-ref idref="CLM-00026">claim 26</claim-ref> where the likelihood function is the student-t distribution based on a model matrix, whose elements depend on the position of the source and hence the path length; the model matrix possessing the following properties:
+<claim-text>(a) the columns of the matrix elements corresponding to a time of arrival before the time of flight are zero or as close to zero as possible; and</claim-text>
+<claim-text>(b) the signal emitted by the transducer is a pure tone and the matrix elements corresponding to a time of arrival after the time of flight are generally non-zero, and the columns jointly describe a delayed version of the pure tone emitted by the ultrasound transducer.</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

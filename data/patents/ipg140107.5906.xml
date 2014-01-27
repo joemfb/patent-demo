@@ -1,0 +1,785 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627015-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627015</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12533298</doc-number>
+<date>20090731</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>934</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>12</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>711141</main-classification>
+<further-classification>711119</further-classification>
+<further-classification>711212</further-classification>
+<further-classification>711213</further-classification>
+</classification-national>
+<invention-title id="d2e53">Data processing system using cache-aware multipath distribution of storage commands among caching storage controllers</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>6460122</doc-number>
+<kind>B1</kind>
+<name>Otterness et al.</name>
+<date>20021000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2005/0283569</doc-number>
+<kind>A1</kind>
+<name>Mizuno et al.</name>
+<date>20051200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>2006/0031450</doc-number>
+<kind>A1</kind>
+<name>Unrau et al.</name>
+<date>20060200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>2006/0101209</doc-number>
+<kind>A1</kind>
+<name>Lais et al.</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711137</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>2007/0073972</doc-number>
+<kind>A1</kind>
+<name>Zohar et al.</name>
+<date>20070300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>2007/0124407</doc-number>
+<kind>A1</kind>
+<name>Weber et al.</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>2008/0263282</doc-number>
+<kind>A1</kind>
+<name>Harada et al.</name>
+<date>20081000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711129</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>2009/0273566</doc-number>
+<kind>A1</kind>
+<name>Lu et al.</name>
+<date>20091100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>345169</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>2009/0300023</doc-number>
+<kind>A1</kind>
+<name>Vaghani</name>
+<date>20091200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707 10</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>2010/0153415</doc-number>
+<kind>A1</kind>
+<name>Muntz</name>
+<date>20100600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707758</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>JP</country>
+<doc-number>2003-99384</doc-number>
+<kind>A</kind>
+<date>20030400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>JP</country>
+<doc-number>2003-162377</doc-number>
+<kind>A</kind>
+<date>20030600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>JP</country>
+<doc-number>2006-164218</doc-number>
+<kind>A</kind>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>JP</country>
+<doc-number>2007-188409</doc-number>
+<kind>A</kind>
+<date>20070700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>23</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>711119</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711141</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711212</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711213</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>6</number-of-drawing-sheets>
+<number-of-figures>8</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110029730</doc-number>
+<kind>A1</kind>
+<date>20110203</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Durocher</last-name>
+<first-name>Colin D.</first-name>
+<address>
+<city>Edmonton</city>
+<country>CA</country>
+</address>
+</addressbook>
+<residence>
+<country>CA</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>van der Goot</last-name>
+<first-name>Roel</first-name>
+<address>
+<city>Edmonton</city>
+<country>CA</country>
+</address>
+</addressbook>
+<residence>
+<country>CA</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Durocher</last-name>
+<first-name>Colin D.</first-name>
+<address>
+<city>Edmonton</city>
+<country>CA</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>van der Goot</last-name>
+<first-name>Roel</first-name>
+<address>
+<city>Edmonton</city>
+<country>CA</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>BainwoodHuang</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>EMC Corporation</orgname>
+<role>02</role>
+<address>
+<city>Hopkinton</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Bragdon</last-name>
+<first-name>Reginald</first-name>
+<department>2189</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Bansal</last-name>
+<first-name>Gurtej</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A data processing system includes a storage system and caching storage controllers coupled to the storage system and to a storage network. The storage controllers operate in an active-active fashion to provide access to volumes of the storage system from any of the storage controllers in response to storage commands from the storage network. The storage controllers employ a distributed cache protocol in which (a) each volume is divided into successive chunks of contiguous blocks, and (b) either chunk ownership may be dynamically transferred among the storage controllers in response to the storage commands, or storage commands sent to a non-owning controller may be forwarded to the owning controller. A multipathing initiator such as a server computer directs the storage commands to the storage controllers by (1) for each volume, maintaining a persistent association of the chunks of the volume with respective storage controllers, and (2) for each storage request directed to a target chunk, identifying the storage controller associated with the target chunk and sending a corresponding storage command to the identified storage controller. Chunk ownership tends to stabilize at individual storage controllers, reducing unnecessary transfer of cache data and metadata among the storage controllers.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="78.82mm" wi="149.69mm" file="US08627015-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="172.04mm" wi="152.57mm" file="US08627015-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="222.08mm" wi="162.05mm" file="US08627015-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="224.03mm" wi="120.14mm" file="US08627015-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="223.52mm" wi="147.91mm" file="US08627015-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="116.59mm" wi="151.55mm" file="US08627015-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="214.80mm" wi="151.13mm" file="US08627015-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND</heading>
+<p id="p-0002" num="0001">The invention is related to the field of data processing systems employing networked storage.</p>
+<p id="p-0003" num="0002">In the field of data processing, it is known to use so-called networked storage systems in which data storage devices are coupled to host computer systems by storage-oriented networks. The storage-oriented networks may include specialized storage devices such as high-speed switches or routers, as well as specialized storage controllers which provide access to data storage resources (e.g., magnetic disks or other storage media) that are housed in separate storage systems. The networked approach to data storage can provide a number of benefits, including enhanced modularity and scalability.</p>
+<p id="p-0004" num="0003">In networked storage systems, it is typical to provide redundancy for greater availability. Redundancy can be provided by employing multiple independent storage controllers with independent paths to the storage systems housing the storage media. The storage controllers may operate in a so-called active-active fashion such that the storage resources can be accessed via any of the storage controllers at any time, providing both increased performance due to concurrent access as well as improved availability by virtue of the redundancy.</p>
+<p id="p-0005" num="0004">Techniques have been used by which a host computer or other initiator of storage commands selects from among multiple available paths or storage controllers by which a given volume of storage can be accessed. Known techniques have included algorithms for distributing requests among multiple storage controllers by a so-called round-robin method, for example, in which successive storage commands are sent to successive ones of a set of storage controllers. Other techniques have incorporated additional criteria to address performance considerations, such as distributing commands according to a measure of relative loading of multiple available paths/controllers.</p>
+<p id="p-0006" num="0005">It has also been known to employ caching in storage controllers. By use of a relatively high-speed cache along with prefetching, many storage commands can be satisfied out of the cache rather than requiring access to relatively slow storage devices. When caches are employed it is necessary to use a mechanism for maintaining a coherent view of the data stored in the data system from the perspective of all users of the data. A cache coherence protocol is typically employed to move data among multiple caches and to coordinate the access to the data in a coherency-maintaining fashion.</p>
+<heading id="h-0002" level="1">SUMMARY</heading>
+<p id="p-0007" num="0006">It is desirable to deploy networked storage systems using sets of active-active storage controllers for their performance and availability benefits, and additionally to employ caching in the storage controllers for the added performance benefit. In such a system it is necessary for a host computer or other initiator of storage commands to selectively direct storage commands to the different storage controllers. However, known path selection techniques employing round-robin or loading-based criteria may result in unnecessary and undesirable data and messaging traffic among the storage controllers to carry out the cache coherence protocol. If storage commands are distributed among caching storage controllers without regard to any address locality of reference, there is a good chance that different requests for data in a given address region are sent to different storage controllers, and in such a case it will be necessary for the data to be transferred from the cache of one controller to the cache of another in the course of processing both requests. Additionally, there may be an unduly increased need for transferring so-called metadata used in carrying out the cache coherence protocol, such as directory data describing which storage controller is responsible for tracking the locations and status of individual data blocks.</p>
+<p id="p-0008" num="0007">In accordance with the present invention, a method and apparatus are disclosed which can provide better performance of networked storage systems using multiple caching storage controllers, by employing path selection criteria that take account of the use of caching by the storage controllers and that seek to minimize the need for transfer of data and metadata among the storage controllers.</p>
+<p id="p-0009" num="0008">A disclosed data processing system includes a storage system providing data storage organized into one or more volumes each consisting of consecutive blocks. A set of caching storage controllers is coupled to the storage system and to a storage network. The caching storage controllers are co-operative in an active-active fashion to provide access to any of the blocks of the volumes from any of the caching storage controllers in response to storage commands received from the storage network. The caching storage controllers engage in a distributed cache protocol according to which (a) each volume is divided into successive chunks each containing a predetermined number of contiguous blocks, and (b) either ownership of the chunks is dynamically transferred among the caching storage controllers in response to the storage commands, or storage commands sent to non-owning controllers are forwarded to owning controllers for processing. In one disclosed embodiment, the cache protocol is a directory-based protocol with multiple hierarchical layers of cache metadata including the chunk ownership metadata.</p>
+<p id="p-0010" num="0009">An initiator such as a server computer is coupled to the storage network and initiates the storage commands in response to storage requests. In one type of embodiment the initiator includes a multipathing driver which is operative in response to storage requests received from a core operating system, which itself may be passing on the storage requests on behalf of one or more applications on a server computer. The initiator performs a method of directing the storage commands to the caching storage controllers which includes (1) for each volume, maintaining a persistent association of the chunks of the volume with respective ones of the caching storage controllers, and (2) for each storage request directed to a target chunk of the volume, (a) identifying the caching storage controller associated with the target chunk, and (b) generating a storage command and sending the storage command via the storage network to the identified caching storage controller.</p>
+<p id="p-0011" num="0010">Because of the persistent association of the chunks with the caching storage controllers, ownership of the chunks tends to stabilize at respective storage controllers rather than move from storage controller to storage controller. The data of the chunk also tends to become stored exclusively in the cache of the storage controller owning the chunk. Thus unnecessary movement of data and metadata is reduced, increasing system performance and efficiency. In one type of embodiment, the persistent association may be created by a process of assigning the chunks to the caching storage controllers which is performed by the initiator upon system initialization for example, and may also be performed in the event of a failure that makes a storage controller and/or path unavailable. In another type of embodiment, the persistent association is created by the storage controllers themselves and communicated to the multitude of initiators that are accessing the storage. The chunks may be assigned, for example, by using a striping technique in which a volume is divided into a number of stripes which are assigned to respective ones of the storage controllers.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0012" num="0011">The foregoing and other objects, features and advantages will be apparent from the following description of particular embodiments of the invention, as illustrated in the accompanying drawings in which like reference characters refer to the same parts throughout the different views. The drawings are not necessarily to scale, emphasis instead being placed upon illustrating the principles of various embodiments of the invention.</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram of a data processing system;</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 2(</figref><i>a</i>) is a block diagram of a server computer from a hardware perspective;</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 2(</figref><i>b</i>) is a block diagram of a server computer from a software perspective;</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIGS. 3(</figref><i>a</i>) and <b>3</b>(<i>b</i>) are schematic representations of organizations of a storage volume into blocks and chunks;</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 4</figref> is a flow diagram of a multipathing algorithm employed by an initiator such as a server computer; and</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIGS. 5(</figref><i>a</i>) and <b>5</b>(<i>b</i>) are schematic representations of multipathing algorithms employed by an initiator such as a server computer.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 1</figref> shows a data processing system in which server computers (servers) <b>10</b> and storage controllers <b>12</b> are coupled to a storage network <b>14</b>, and the storage controllers <b>12</b> are also coupled to a storage system <b>16</b> which contains storage devices <b>18</b> such as magnetic disk drives or solid state disks. The storage system <b>16</b> provides for data storage and retrieval on the storage devices <b>18</b>, which may be organized and presented to the storage controllers <b>12</b> and servers <b>10</b> in the form of logical volumes <b>20</b>. Communications links (or &#x201c;links&#x201d;) <b>21</b> extend between/among the storage controllers <b>12</b>, and communications links <b>22</b> extend between each of the storage controllers <b>12</b> and the storage system <b>16</b>. The links <b>21</b> and <b>22</b> are typically storage-oriented links such as Fibre Channel links. The links <b>21</b> and <b>22</b> may be logically different but could be physically the same. Communications links <b>24</b> and <b>26</b> between the storage network <b>14</b> and the servers <b>10</b> and storage controllers <b>12</b> respectively, as well as communications links <b>25</b> between/among the servers <b>10</b>, may also be storage-oriented links (such as Fibre Channel), and the storage network <b>14</b> may be referred to as a storage-area network (SAN) and include one or more SAN switches. Alternatively, the storage network <b>14</b>, or the communication links <b>21</b>, <b>22</b> and <b>25</b> may be realized using Infiniband or Ethernet technology such as 1/10 GbE links for the links <b>24</b> and/or <b>26</b>, with the storage network <b>14</b> employing appropriate Ethernet/Infiniband switching/routing devices. As illustrated, it may be desirable to use two or more links <b>24</b> between each server <b>10</b> and the storage network <b>14</b>, and similarly multiple links <b>26</b> between the storage network <b>14</b> and each storage controller <b>12</b>, to provide availability-enhancing redundancy as well as to increase overall performance. It will be appreciated that each server <b>10</b>, storage controller <b>12</b> and storage system <b>16</b> includes interface circuitry for each link <b>21</b>,<b>22</b>, <b>24</b>, <b>25</b> or <b>26</b> to which it is connected. Each set of link-specific interface circuitry is termed a &#x201c;port&#x201d; herein. Thus in <figref idref="DRAWINGS">FIG. 1</figref>, for example, the server <b>10</b>-<b>1</b> has two ports for two respective links <b>24</b> to the storage network <b>14</b>.</p>
+<p id="p-0020" num="0019">The storage controllers <b>12</b> operate in a so-called &#x201c;active-active&#x201d; fashion, meaning that a given set of volumes <b>20</b> of the storage system <b>16</b> are all accessible through any of the storage controllers <b>12</b>. This is in contrast to other arrangements which may provide for a &#x201c;primary&#x201d; or active controller to serve a given volume and one or more &#x201c;secondary&#x201d; or passive controllers which are only used in case of a failure of the primary controller. Because of the active-active operation, each server <b>10</b> generally has multiple paths to the storage system <b>16</b> to obtain data. In the example system depicted in <figref idref="DRAWINGS">FIG. 1</figref>, each server <b>10</b> has twelve paths to the storage system <b>16</b> as follows:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>(2 links to network 14)*(2 links to each controller 12)*(3 controllers 12)=12 paths<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0021" num="0020">Accordingly, one of the tasks for each server <b>10</b>, and specifically for a multipathing driver on each server <b>10</b> (described below), is to distribute its storage commands among the different paths. This aspect of operation is described in detail below.</p>
+<p id="p-0022" num="0021">Additionally, the storage controllers <b>12</b> include respective data caches for caching data read from or written to the storage system <b>16</b>, and utilize a distributed cache protocol for maintaining a coherent view of the data on the volumes <b>20</b> from the perspective of any of the servers <b>10</b>. Pertinent details of the distributed cache protocol and operation are described below. Due to this use of caches, the storage controllers <b>12</b> are also referred to herein as &#x201c;caching storage controllers.&#x201d;</p>
+<p id="p-0023" num="0022">Referring briefly to <figref idref="DRAWINGS">FIGS. 5(</figref><i>a</i>) and <b>5</b>(<i>b</i>), it is illustrated that storage commands <b>58</b> are sent by a multipathing driver <b>44</b> to the storage controllers <b>12</b> via the links <b>24</b> and <b>26</b> as well as storage network <b>14</b>. The storage commands <b>58</b> are generated in response to storage requests <b>56</b> from applications <b>42</b>. More specific information about the applications <b>42</b> and multipathing driver <b>44</b> is provided below.</p>
+<p id="p-0024" num="0023">In the system of <figref idref="DRAWINGS">FIG. 1</figref>, the servers <b>10</b> generate storage commands <b>58</b> that are received and processed by the storage controllers <b>12</b> and storage system <b>16</b>. In the parlance of SCSI, the servers <b>10</b> function as &#x201c;initiators&#x201d; of the storage commands <b>58</b>. It will be appreciated that in alternative embodiments other kinds of devices that are not necessarily servers may function as initiators and perform certain related functions as described herein. For this reason the term &#x201c;initiator&#x201d; is used herein to refer to the source of the storage commands <b>58</b> that are received and processed by the storage controllers <b>12</b> and storage system <b>16</b>, and is intended to cover any device which performs such a function.</p>
+<p id="p-0025" num="0024">Briefly, storage commands <b>58</b> are processed in the system of <figref idref="DRAWINGS">FIG. 1</figref> as follows. Storage commands <b>58</b> are initiated by the servers <b>10</b> and each storage command <b>58</b> is sent by the multipathing driver <b>44</b> via a given link <b>24</b>, the storage network <b>14</b> and a given link <b>26</b> to a storage controller <b>12</b> which is responsible for carrying out the command. If the blocks that are the target of the command are not stored in the cache, the storage controller <b>12</b> obtains the blocks either from another storage controller <b>12</b> or from the storage system <b>16</b> if necessary. In the case of a write command, the storage controller need not necessarily obtain the block data, it need only invalidate any existing copies of the block, requiring in some cases communication with one or more of the other storage controllers in the system via link <b>21</b>. The storage controller <b>12</b> then performs the requested operation with respect to the cached blocks, either returning data in the case of reads or accepting the write data in the case of writes. The eventual updating of a storage device <b>18</b> with write data may be done in any of a variety of ways as generally known in the art.</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIGS. 2(</figref><i>a</i>) and <b>2</b>(<i>b</i>) present pertinent hardware (HW) and software (SW) aspects respectively of the servers <b>10</b>. Referring to the hardware diagram <figref idref="DRAWINGS">FIG. 2(</figref><i>a</i>), a central processing unit (CPU) <b>28</b>, memory <b>30</b>, storage <b>32</b> and storage network interfaces <b>34</b> are all interconnected by interconnect circuitry <b>36</b>, which may include one or more high-speed data transfer buses as generally known in the art. Storage <b>32</b> is for non-volatile local storage of operating system and other files used by the server <b>10</b>, and typically includes one or more magnetic disks and/or flash memory devices. In operation, programs and data are transferred from the storage <b>32</b> into the memory <b>30</b>, from which the programs are executed and the data is accessed by the CPU <b>28</b>. The interfaces <b>34</b> provide for the transfer of storage commands <b>58</b> and data to and from the storage system <b>16</b> via the storage network <b>14</b> (<figref idref="DRAWINGS">FIG. 1)</figref>. The servers <b>10</b> will also generally include one or more additional input/output (I/O) interfaces <b>38</b> to other devices or ports, for example connections to a separate client-server network (such as a corporate LAN or the Worldwide Web) by which the servers <b>10</b> communicate with each other and with client devices that are the ultimate requesters for storage data.</p>
+<p id="p-0027" num="0026">Referring to the server software diagram <figref idref="DRAWINGS">FIG. 2(</figref><i>b</i>), a &#x201c;core&#x201d; portion of the operating system (shown as CORE O/S) <b>40</b> provides various support functions to applications <b>42</b>, which may include database applications, Web server applications, etc. The support functions of the core O/S <b>40</b> include data storage and retrieval functions which rely on the underlying physical storage provided by the storage system <b>16</b> of <figref idref="DRAWINGS">FIG. 1</figref>. The core O/S <b>40</b> utilizes a driver <b>44</b> which presents the volumes <b>20</b> as data storage objects to the core O/S <b>40</b> and is responsible for carrying out more detailed operations in response to storage requests <b>56</b> (<figref idref="DRAWINGS">FIGS. 5(</figref><i>a</i>) and <b>5</b>(<i>b</i>)) generated by the applications <b>42</b>, including generating specific storage commands that are sent via the storage network <b>14</b> to the storage controllers <b>12</b> as well as handling the read or write data associated with the storage commands <b>58</b>. Additionally, the driver <b>44</b> also performs the function of path selection as discussed above, i.e., selecting from among the multiple available paths by which the data of the volumes <b>20</b> can be obtained. Specifically, the driver <b>44</b> selects which storage controller <b>12</b> to send each storage command <b>58</b> to, as well as the specific path to be utilized, where &#x201c;path&#x201d; refers to a pairing of a specific link <b>24</b> and a specific link <b>26</b>. Because of this aspect of its functionality, the driver <b>44</b> is referred to as a &#x201c;multipathing driver&#x201d; herein and shown as such in <figref idref="DRAWINGS">FIGS. 2(</figref><i>b</i>), <b>5</b>(<i>a</i>) and <b>5</b>(<i>b</i>). Again, details of the path selection are discussed below. <figref idref="DRAWINGS">FIGS. 3(</figref><i>a</i>) and <b>3</b>(<i>b</i>) show that a volume <b>20</b> can be viewed as a linear array of blocks <b>46</b> of data, where each block <b>46</b> has a generally fixed number of data units in any particular system in operation (although the actual number may be configurable). A block <b>46</b> is the addressable unit of storage among the servers <b>10</b>, storage controllers <b>12</b> and storage system <b>16</b>. Typical block sizes may lie in the range of 512 B to 64 kB for example. The blocks are identified by block addresses, which are shown in an example form in <figref idref="DRAWINGS">FIGS. 3(</figref><i>a</i>) and <b>3</b>(<i>b</i>). A storage command <b>58</b> typically is directed to the data in a range of block addresses, often identified by a starting address and a length (number of blocks). A command having a starting block address of N and a length of L, for example, is directed to the range of block addresses N through N+L&#x2212;1. In the case of a read storage command <b>58</b>, the data stored at these block addresses is returned to the initiator. In the case of a write storage command <b>58</b>, the data stored at these block addresses is replaced by the data accompanying the write storage command <b>58</b>.</p>
+<p id="p-0028" num="0027">Due to the use of caching within the system of <figref idref="DRAWINGS">FIG. 1</figref>, the volume <b>20</b> may in some embodiments have additional structure which supports the cache protocol. As shown, this includes the grouping of blocks <b>46</b> into &#x201c;chunks&#x201d; <b>48</b> (shown as <b>48</b>-<b>1</b>, <b>48</b>-<b>2</b>, etc.) which in one embodiment are fixed-size groups of consecutive blocks <b>46</b>. In <figref idref="DRAWINGS">FIG. 3(</figref><i>a</i>) all chunks <b>48</b> have the same size and consist of N blocks. In <figref idref="DRAWINGS">FIG. 3(</figref><i>b</i>) the chunks <b>48</b>-<b>1</b>, <b>48</b>-<b>2</b>, etc. have potentially different sizes and consist of N<sub>1</sub>, N<sub>2</sub>, etc., blocks, respectively, where the Ni may be different values in general. In both <figref idref="DRAWINGS">FIGS. 3(</figref><i>a</i>) and <b>3</b>(<i>b</i>) the volume <b>20</b> is shown as having M chunks <b>48</b>. As with the blocks <b>46</b>, the size of the chunks <b>48</b> is held fixed in operation, but may be a configurable parameter. Chunks <b>48</b> are the unit of &#x201c;ownership&#x201d; in the cache protocol, as described in more detail below. Generally, it is desirable to make the chunk <b>48</b> as large as possible while retaining enough granularity to ensure that both the data access and the work of managing the caching is adequately distributed among the storage controllers <b>12</b>. An example for the value of M is 4096.</p>
+<p id="p-0029" num="0028">In one embodiment, the cache protocol is a directory-based protocol that has the following components with corresponding functions/attributes:</p>
+<p id="p-0030" num="0029">1) D-Server:
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0000">
+    <ul id="ul0002" list-style="none">
+        <li id="ul0002-0001" num="0030">i) One per system</li>
+        <li id="ul0002-0002" num="0031">ii) Maps volumes <b>20</b> to controllers <b>12</b> that export them, and assigns the controllers <b>12</b> as meta-directory owners for the volumes (one controller <b>12</b> per volume <b>20</b>)</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0031" num="0032">2) Meta-directory owner:
+<ul id="ul0003" list-style="none">
+    <li id="ul0003-0001" num="0000">
+    <ul id="ul0004" list-style="none">
+        <li id="ul0004-0001" num="0033">i) One per volume</li>
+        <li id="ul0004-0002" num="0034">ii) Maps chunks <b>48</b> to chunk owners (one controller <b>12</b> per chunk <b>48</b>)</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0032" num="0035">3) Chunk Owner:
+<ul id="ul0005" list-style="none">
+    <li id="ul0005-0001" num="0000">
+    <ul id="ul0006" list-style="none">
+        <li id="ul0006-0001" num="0036">i) One per chunk <b>48</b></li>
+        <li id="ul0006-0002" num="0037">ii) Maps blocks of chunk to current block holders (if any)</li>
+        <li id="ul0006-0003" num="0038">iii) Coordinates cache coherency protocol</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0033" num="0039">4) Block Holder:
+<ul id="ul0007" list-style="none">
+    <li id="ul0007-0001" num="0000">
+    <ul id="ul0008" list-style="none">
+        <li id="ul0008-0001" num="0040">i) Presently stores a copy of block <b>46</b>, which may be exclusive if held for writing</li>
+        <li id="ul0008-0002" num="0041">ii) Can provide copy of data in response to read request</li>
+        <li id="ul0008-0003" num="0042">iii) Invalidates copy in response to write at another block holder</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0034" num="0043">The above functional components are provided by the storage controllers <b>12</b>. For example, the controller <b>12</b>-<b>1</b> may be the meta-directory owner for a particular volume <b>20</b>, which means that it is responsible for maintaining the mapping of chunks <b>48</b> of the volume <b>20</b> to the chunk owners and providing that information to the other controllers <b>12</b> as necessary in operation. Chunk ownership is dynamic based on data access. For example, the first time a block of a previously non-owned chunk is accessed through a particular controller <b>12</b>, that controller <b>12</b> becomes the chunk owner. Ownership is transferred from one controller <b>12</b> to another under prescribed conditions, such as when a controller <b>12</b> no longer holds any blocks <b>46</b> of the chunk <b>48</b>. In operation, a chunk owner is responsible for knowing which controllers <b>12</b> have copies of the blocks <b>46</b> of the chunk <b>48</b> and for coordinating transfers of data from current block holders to requesting controllers <b>12</b> as appropriate.</p>
+<p id="p-0035" num="0044">The distributed cache protocol employs &#x201c;prefetch&#x201d;&#x2014;a sequential set of requests as necessary to enable each storage command <b>58</b> to be carried out in cache where possible&#x2014;avoiding the latency of accessing a storage device <b>18</b> of the storage system. Given that the cache meta-data (information regarding block holders, chunk owners, directory owner etc.) is distributed among the storage controllers <b>12</b>, there is a worst-case situation in which a request must travel to several storage controllers <b>12</b> before the requested storage operation can be completed. This worst-case situation occurs when the storage controller <b>12</b> that receives a storage command <b>58</b> is not the block holder, chunk owner or meta-directory holder for the target volume and data of the volume. In this case the following may occur:
+<ul id="ul0009" list-style="none">
+    <li id="ul0009-0001" num="0000">
+    <ul id="ul0010" list-style="none">
+        <li id="ul0010-0001" num="0045">1. The D-server is contacted to identify the meta-directory owner</li>
+        <li id="ul0010-0002" num="0046">2. The meta-directory owner is contacted to identify the chunk owner (if any)</li>
+        <li id="ul0010-0003" num="0047">3. The chunk owner is contacted to identify the block holder(s) (if any)</li>
+        <li id="ul0010-0004" num="0048">4. At least one block holder is contacted to provide the block, and in the case of writes all block holders are contacted to perform a block invalidation</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0036" num="0049">It will be appreciated that based on the above protocol, it is very desirable that the data of any particular chunk <b>48</b> be accessed mostly/exclusively through only one storage controller <b>12</b>, to avoid the need for transferring blocks <b>46</b> of the chunk <b>48</b> as well as the chunk ownership (or any messages regarding the state of chunk ownership) among the storage controllers <b>12</b>. This goal of promoting a stable distribution of the chunks <b>48</b> among the storage controllers <b>12</b> is the focus of particular functionality of the initiators/servers <b>10</b> as described in more detail below.</p>
+<p id="p-0037" num="0050">Referring briefly back to <figref idref="DRAWINGS">FIG. 1</figref>, in prior systems of the same general type shown in <figref idref="DRAWINGS">FIG. 1</figref> it has been known to use various multipathing algorithms for distributing the storage commands <b>58</b> from a particular server <b>10</b> among multiple storage controllers <b>12</b>. One basic technique is referred to as &#x201c;round robin&#x201d;, in which successive commands are sent to different storage controllers in a sequence, e.g., commands <b>1</b>, <b>2</b>, <b>3</b>, <b>4</b> are sent to storage controllers <b>12</b>-<b>1</b>, <b>12</b>-<b>2</b>, <b>12</b>-<b>3</b> and <b>12</b>-<b>1</b> respectively for example. Variations of the round-robin approach may account for relative loading or delays being experienced on the paths to the different controllers <b>12</b> based, for example, on the sizes of respective queues which hold pending storage commands <b>58</b>, in an attempt to distribute the processing load among the storage controllers <b>12</b> and thereby enhance performance and efficiency.</p>
+<p id="p-0038" num="0051">Prior multipathing algorithms make their command routing decisions without knowledge of a cache protocol that may be in use by the storage controllers <b>12</b>, and thus may actually degrade rather than enhance system performance. Specifically, the command routing decision is made without regard to the block address or chunk to which the command is directed. Storage commands <b>58</b> for different blocks <b>46</b> of a chunk <b>48</b> may be directed to different storage controllers <b>12</b>, meaning that in many cases the storage controller <b>12</b> handling a particular request is not the owner of the chunk(s) <b>48</b> in which the target blocks <b>46</b> of the storage command <b>58</b> reside. In such a case, messaging and data transfer is necessary among the storage controllers <b>12</b>, decreasing system efficiency and performance.</p>
+<p id="p-0039" num="0052"><figref idref="DRAWINGS">FIG. 4</figref> shows a cache-aware multipathing algorithm employed by the multipathing driver <b>44</b> of each server <b>10</b> that can achieve better performance when used with caching storage controllers <b>12</b>, by virtue of incorporating and using information about the cache coherence protocol, making better use of the caching within the storage controllers <b>12</b> and thus promoting system efficiency and performance. The method depicted in <figref idref="DRAWINGS">FIG. 4</figref> is performed on a per-volume basis. The cache-aware multipathing algorithm persistently associates the chunks <b>48</b> of the volume <b>20</b> with specific storage controllers <b>12</b> and then directs storage commands <b>58</b> to the storage controllers <b>12</b> accordingly, based on the chunks <b>48</b> that are the targets of the commands. Chunk ownership tends to stabilize, because most/all of the requests for a given chunk <b>48</b> are sent to the same storage controller <b>12</b>. A storage controller <b>12</b> receiving a storage command <b>58</b> for a block <b>46</b> of a chunk <b>48</b> has a high probability of being the owner of the chunk <b>48</b>, as well as the holders of the blocks <b>46</b> of the chunk <b>48</b>. Thus there is a greatly reduced need for any messaging and data transfer among the storage controllers <b>12</b> to satisfy storage commands <b>58</b>.</p>
+<p id="p-0040" num="0053">Referring now to <figref idref="DRAWINGS">FIG. 4</figref>, a first step <b>50</b> is used to form the persistent association between the chunks <b>48</b> and the storage controllers <b>12</b>. Step <b>50</b> is performed as part of an initialization or in response to a failure or reconfiguration which results in changes to the number of storage controllers <b>12</b> and/or the connectivity a server <b>10</b> and the storage controllers <b>12</b>. In step <b>50</b>, the volume is divided into &#x201c;stripes&#x201d; that correspond to the chunks <b>48</b> used by the cache protocol, and the stripes are assigned to either the storage controllers <b>12</b> or to specific paths to the storage controllers <b>12</b>, where each path is a pairing of a specific link <b>24</b> and a specific link <b>26</b>. The stripes are sub-sets of the data of the volume <b>20</b> with a granularity at least the size of a chunk <b>48</b>. For example, assuming a block size of 64 kB and a chunk size of 256 MB (which corresponds to 4096 blocks per chunk), one striping technique may be as follows:</p>
+<p id="p-0041" num="0054">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="56pt" align="left"/>
+<colspec colname="2" colwidth="42pt" align="center"/>
+<colspec colname="3" colwidth="105pt" align="center"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="3" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Chuck</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>Block addresses</entry>
+<entry>address</entry>
+<entry>Stripe</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="3" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="7">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="56pt" align="left"/>
+<colspec colname="2" colwidth="42pt" align="center"/>
+<colspec colname="3" colwidth="14pt" align="center"/>
+<colspec colname="4" colwidth="42pt" align="center"/>
+<colspec colname="5" colwidth="14pt" align="center"/>
+<colspec colname="6" colwidth="35pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>0:(4k &#x2212; 1)</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry>&#x2002;4k:(8k &#x2212; 1)</entry>
+<entry>1</entry>
+<entry/>
+<entry>1</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2002;8k:(12k &#x2212; 1)</entry>
+<entry>2</entry>
+<entry/>
+<entry/>
+<entry>2</entry>
+</row>
+<row>
+<entry/>
+<entry>12k:(16k &#x2212; 1)</entry>
+<entry>3</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry>3</entry>
+</row>
+<row>
+<entry/>
+<entry>16k:(20k &#x2212; 1)</entry>
+<entry>4</entry>
+<entry>0</entry>
+</row>
+<row>
+<entry/>
+<entry>20k:(24k &#x2212; 1)</entry>
+<entry>5</entry>
+<entry/>
+<entry>1</entry>
+</row>
+<row>
+<entry/>
+<entry>24k:(28k &#x2212; 1)</entry>
+<entry>6</entry>
+<entry/>
+<entry/>
+<entry>2</entry>
+</row>
+<row>
+<entry/>
+<entry>28k:(32k &#x2212; 1)</entry>
+<entry>7</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry>3</entry>
+</row>
+<row>
+<entry/>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+</row>
+<row>
+<entry/>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+</row>
+<row>
+<entry/>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+<entry>.</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="6" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0042" num="0055">Thus stripe <b>0</b>, for example, includes chunks <b>0</b>, <b>4</b>, <b>8</b>, . . . , and the other stripes include respective sets of the chunks <b>48</b>.</p>
+<p id="p-0043" num="0056">It will be appreciated that in the above scheme the stripes are defined by the two least-significant address bits of the chunk address, so the stripe granularity is equal to the chunk size. In general, the stripe granularity can be an integral multiple of the chunk size. Also, in the above scheme the overall volume address space is distributed in a balanced interleaved fashion among the stripes, but this is not essential. Finally, the number of stripes generally corresponds to the number of storage controllers <b>12</b>, so the above example presumes that there are four storage controllers <b>12</b> in the system rather than three as appearing in <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0044" num="0057">In the second part of step <b>50</b>, the stripes are assigned to particular storage controllers <b>12</b>. In a system such as <figref idref="DRAWINGS">FIG. 1</figref> with three storage controllers <b>12</b>, it may be convenient to employ three stripes and then assign each one to a different storage controller, i.e., a first stripe to storage controller <b>12</b>-<b>1</b>, a second to storage controller <b>12</b>-<b>3</b> and a third to storage controller <b>12</b>-<b>3</b>. By this assignment of stripes to storage controllers <b>12</b>, the chunks <b>48</b> also become implicitly associated with specific storage controllers <b>12</b> as well. That is, all the chunks <b>48</b> residing in a particular stripe implicitly become associated with the same storage controller <b>12</b> that the stripe has been assigned to. The association of chunks <b>48</b> with storage controllers <b>12</b> is the important result&#x2014;striping is simply one way to accomplish it.</p>
+<p id="p-0045" num="0058">The second set of steps <b>52</b> and <b>54</b> of the algorithm of <figref idref="DRAWINGS">FIG. 4</figref> are performed for each individual storage request <b>56</b> that is processed by the multipathing driver <b>44</b>. Here, &#x201c;storage request <b>56</b>&#x201d; refers to a request generated by the application <b>42</b> and passed through the core O/S <b>40</b> to the multipathing driver <b>44</b> to carry out, and which typically results in sending one or more corresponding storage commands <b>58</b> to one or more of the storage controllers <b>12</b> to either read or write a set of blocks of data in a range of block addresses as identified by address data in each storage command <b>58</b>. As an example, a storage request <b>56</b> may be a request to read a length of 100 blocks of data starting at block address 000050A2<sub>16</sub>. The multipathing driver <b>44</b> calculates the stripe in which the requested data resides, and then issues a storage command <b>58</b> to the storage controller <b>12</b> to which the stripe is assigned.</p>
+<p id="p-0046" num="0059">Below is an example of the calculation of the stripe that is the target of a storage request <b>56</b>.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>CONTROLLER-INDEX=ADDRESS/CHUNK_SIZE % NUM-CONTROLLERS<?in-line-formulae description="In-line Formulae" end="tail"?>
+<ul id="ul0011" list-style="none">
+    <li id="ul0011-0001" num="0000">
+    <ul id="ul0012" list-style="none">
+        <li id="ul0012-0001" num="0060">where CONTROLLER-INDEX is a numerical identifier of the specific storage controller <b>12</b> (e.g., 0 for storage controller <b>12</b>-<b>1</b>, <b>1</b> for storage controller <b>12</b>-<b>2</b>, etc.), ADDRESS is the address in the storage request <b>56</b> and NUM-CONTROLLERS is the number of storage controllers <b>12</b> in the system (e.g. three as shown in <figref idref="DRAWINGS">FIG. 1</figref>). The % operator is the modulo operator.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0047" num="0061">The above can be viewed as a specific heuristic function that can be used to choose a storage controller <b>12</b> based on the block address of each storage command <b>58</b>. This is only one example of many different kinds of heuristic functions that could be used. The general requirement is that the function provide a 1:1 mapping between each chunk <b>48</b> and a respective storage controller <b>12</b> of the set of storage controllers <b>12</b> used in a system and that the mapping be the same for any of a multitude of servers accessing the same blocks of storage. Additionally, it is assumed herein that the multipathing driver <b>44</b> (or more generally the initiator <b>10</b>) is somehow pre-programmed with the function to be used, but in an alternative embodiment the function could be provided to the initiator <b>10</b> by a message from the storage system <b>16</b> for example. Alternatively, the function could be fetched from some central location accessible to the initiator <b>10</b>, such as from a file on a shared file system, for instance.</p>
+<p id="p-0048" num="0062">It will be appreciated that some storage requests <b>56</b> may be sufficiently large that they occupy regions of two or more separate stripes, and it is desirable to give some consideration to how such requests should be handled. One approach is to break up such large requests into multiple storage commands <b>58</b> each directed to the storage controller <b>12</b> associated with the corresponding stripe as shown in <figref idref="DRAWINGS">FIG. 5(</figref><i>a</i>). Another approach which may be simpler is to issue a single storage command <b>58</b> to the storage controller <b>12</b> associated with the starting address of the storage request <b>56</b> as shown in <figref idref="DRAWINGS">FIG. 5(</figref><i>b</i>), relying on the cache protocol to move the blocks <b>46</b> and cache metadata (such as meta-directory and chunk data) as necessary or to forward the command to the storage controller <b>12</b> that owns the chunk <b>48</b>. Although there will be a performance hit for such requests, overall the system should be designed so that such requests are relatively rare and thus do not significantly affect the overall performance of the system. The system design considerations include the chunk size and stripe size as discussed above.</p>
+<p id="p-0049" num="0063">Another scenario to be considered is a reconfiguration which changes the number of available storage controllers <b>12</b> and/or the paths between the servers <b>10</b> and the storage controllers <b>12</b>. Such reconfiguration may be the result of a failure for example. Two general approaches can be taken. One is to re-perform step <b>50</b> based on the new configuration, which will result in a completely new assignment of stripes to controllers <b>12</b> and perhaps even a new striping arrangement. Another approach is to continue using the existing striping and stripe assignments to non-failed controllers/paths while reassigning stripes from any failed path/controller to one or more non-failed paths/controllers. It will be appreciated that such a &#x201c;fail-over&#x201d; approach may require that a slightly more complicated calculation be performed in subsequent executions of step <b>52</b>. For example, if a calculation such as shown above is used, and for a particular storage request <b>56</b> it identifies a storage controller <b>12</b> which has failed, then perhaps a second-level calculation is performed to identify a non-failed storage controller <b>12</b> which should be used instead.</p>
+<p id="p-0050" num="0064">It will be appreciated that in some possible embodiments on this method, the storage controllers themselves could decide on the ownership regions and their distribution between the controllers and communicate the resulting mapping of regions to controllers to the multipathing drivers both at initialization time and after any controller failure.</p>
+<p id="p-0051" num="0065">The above description is focused on an assignment of stripes to storage controllers <b>12</b>. It will be appreciated that in a case such as shown in <figref idref="DRAWINGS">FIG. 1</figref> in which a server <b>10</b> has multiple paths to any given storage controller <b>12</b>, the server <b>10</b> must make a second-level selection among the paths to the storage controller <b>12</b>. This can be made using more traditional approaches, e.g., some version of round-robin or other algorithm which may ignore the cache protocol (it is assumed here that each storage controller <b>12</b> has a single cache used for all storage commands <b>58</b> it receives). If it is desired to avoid such a two-level selection approach, an alternative is to assign stripes to individual paths in the first place (i.e., each stripe is assigned to a specific pairing of a particular link <b>24</b> and a particular link <b>26</b>). It should be noted that although normal operation may thus be simplified somewhat, this scheme may interfere with a fail-over approach to redundancy when a path fails but a storage controller <b>12</b> is still reachable on another path. It is of particular concern that as a result of non-symmetric system configuration or as the result of a particular path failure, all servers may not have the same number of healthy paths to storage. When path-based selection is used and a path fails, it may be desirable to re-initialize the stripe assignment etc. (i.e., re-execute step <b>50</b> of <figref idref="DRAWINGS">FIG. 4</figref>).</p>
+<p id="p-0052" num="0066">While various embodiments of the invention have been particularly shown and described, it will be understood by those skilled in the art that various changes in form and details may be made therein without departing from the spirit and scope of the invention as defined by the appended claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A data processing system, comprising:
+<claim-text>a storage system operative to provide data storage organized into one or more volumes each consisting of consecutive blocks having respective block addresses;</claim-text>
+<claim-text>a set of caching storage controllers coupled to the storage system and to a storage network, the caching storage controllers being co-operative in an active-active fashion to provide access to any of the blocks of the volumes from any of the caching storage controllers in response to storage commands received from the storage network, the caching storage controllers engaging in a distributed cache protocol according to which (a) each volume is divided into successive chunks each containing a predetermined number of contiguous blocks, and (b) either ownership of the chunks is dynamically transferred among the caching storage controllers in response to the storage commands, or storage commands sent to non-owning controllers are forwarded to owning controllers for processing;</claim-text>
+<claim-text>at least one initiator coupled to the storage network and operative to initiate the storage commands in response to storage requests, the initiator being operative to direct the storage commands to the caching storage controllers including:
+<claim-text>maintaining a persistent association of the chunks of each volume with respective ones of the caching storage controllers; and</claim-text>
+<claim-text>for each storage request directed to a target chunk of the volume, (a) identifying the caching storage controller associated with the target chunk, and (b) generating a storage command and sending the storage command via the storage network to the identified caching storage controller,</claim-text>
+</claim-text>
+<claim-text>wherein each initiator is a host computer which provides, as the storage commands, multipathing input/output (I/O) requests to the storage system through the storage network, the caching storage controllers residing within the storage network to participate in processing of the multipathing I/O requests;</claim-text>
+<claim-text>wherein the storage system houses a set of storage devices constructed and arranged to store host data on behalf of each host computer in a nonvolatile manner;</claim-text>
+<claim-text>and wherein the multipathing I/O requests include read requests to read host data from the set of storage devices of the storage system, and write requests to write host data into the set of storage devices of the storage system.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. A data processing system according to <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein:
+<claim-text>the initiator is operative to divide each volume into a respective set of interleaved stripes, each stripe having a granularity of at least a chunk and including a respective set of the chunks of the volume;</claim-text>
+<claim-text>the persistent association of the chunks with respective ones of the caching storage controllers includes an assignment of the stripes to respective ones of the caching storage controllers; and</claim-text>
+<claim-text>identifying the caching storage controller associated with the target chunk includes identifying the stripe which includes the target chunk.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. A data processing system according to <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein:
+<claim-text>one or more of the storage requests is a large storage request directed to multiple chunks including the respective target chunk, the multiple chunks being associated with respective different ones of the caching storage controllers;</claim-text>
+<claim-text>and for each of the large storage requests, the initiator is further operative to perform a large-request operation selected from the group consisting of a single-command operation and a multiple-command operation, the single-command operation including sending one storage command for all the data of the storage request to the caching storage controller associated with the target chunk, the multiple-command operation including generating distinct storage commands for different chunks of the storage request and sending the storage commands to respective ones of the caching storage controllers as associated with the chunks of the storage commands.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. A data processing system according to <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein the initiator is operative to create the persistent association of the chunks of each volume with respective ones of the caching storage controllers at a time of initialization of the data processing system as well as during operation in response to an event which changes the availability of any of the caching storage controllers or respective paths by which the initiator sends the storage commands to the caching storage controllers.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. A data processing system according to <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein:
+<claim-text>the data processing system includes multiple paths between the initiator and a particular one of the caching storage controllers; and</claim-text>
+<claim-text>sending the storage commands to the particular caching storage controller includes selecting one of the multiple paths based on criteria other than the identity of the target chunk.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. A data processing system according to <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein:
+<claim-text>maintaining the persistent association of the chunks of each volume with respective ones of the caching storage controllers includes maintaining a persistent association of the chunks of each volume with respective ones of a set of paths in the storage network which connect the initiator to the caching storage controllers; and</claim-text>
+<claim-text>for each storage request directed to a target chunk of the volume, (a) identifying the caching storage controller includes identifying the path associated with the target chunk, and (b) sending the storage command includes sending the storage command on the identified path.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. A data processing system according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein each caching storage controller is coupled to the storage system by a respective communications link, each caching storage controller using its respective communications link to access the blocks of all the volumes in response to the storage commands received from the storage network.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. A data processing system according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein each caching storage controller includes a respective data cache for caching data read by the storage controller from the storage system and data to be written by the storage controller to the storage system.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. A data processing system according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>ownership of the chunks is identified according to a cache directory function providing a dynamic first mapping of the chunks to respective chunk owners;</claim-text>
+<claim-text>the chunks are persistently associated with respective ones of the caching storage controllers according to a heuristic function providing a static second mapping between each chunk of each volume and a respective one of the caching storage controllers; and</claim-text>
+<claim-text>identifying the caching storage controller includes identifying the caching storage controller persistently associated with the target chunk according to the second mapping.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. A method by which a server computer directs storage commands to caching storage controllers in a data processing system, the data processing system including a storage system operative to provide data storage organized into one or more volumes each consisting of consecutive blocks, the caching storage controllers being coupled to the storage system and to a storage network to which the server computer is also coupled, the caching storage controllers being co-operative in an active-active fashion to provide access to any of the blocks of the volumes from any of the caching storage controllers in response to storage commands received from the storage network, the caching storage controllers engaging in a distributed cache protocol according to which (a) each volume is divided into successive chunks each containing a predetermined number of contiguous blocks, and (b) either ownership of the chunks is dynamically transferred among the caching storage controllers in response to the storage commands, or storage commands sent to non-owning controllers are forwarded to owning controllers for processing, comprising:
+<claim-text>maintaining a persistent association of the chunks of each volume with respective ones of the caching storage controllers; and
+<claim-text>for each storage request directed to a target chunk of the volume, (a) identifying the caching storage controller associated with the target chunk, and (b) generating a storage command and sending the storage command via the storage network to the identified caching storage controller,</claim-text>
+</claim-text>
+<claim-text>wherein each initiator is a host computer which provides, as the storage commands, multipathing input/output (I/O) requests to the storage system through the storage network, the caching storage controllers residing within the storage network to participate in processing of the multipathing I/O requests;</claim-text>
+<claim-text>wherein the storage system houses a set of storage devices constructed and arranged to store host data on behalf of each host computer in a nonvolatile manner;</claim-text>
+<claim-text>and wherein the multipathing I/O requests include read requests to read host data from the set of storage devices of the storage system, and write requests to write host data into the set of storage devices of the storage system.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. A method according to <claim-ref idref="CLM-00010">claim 10</claim-ref> wherein:
+<claim-text>the method further includes dividing each volume into a respective set of interleaved stripes, each stripe having a granularity of at least a chunk and including a respective set of the chunks of the volume;</claim-text>
+<claim-text>maintaining the persistent association of the chunks with respective ones of the caching storage controllers includes assigning the stripes to respective ones of the caching storage controllers; and</claim-text>
+<claim-text>identifying the caching storage controller associated with the target chunk includes identifying the stripe which includes the target chunk.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. A method according to <claim-ref idref="CLM-00010">claim 10</claim-ref> wherein:
+<claim-text>one or more of the storage requests is a large storage request directed to multiple chunks including the respective target chunk, the multiple chunks being associated with respective different ones of the caching storage controllers; and</claim-text>
+<claim-text>for each of the large storage requests, the method further includes performing a large-request operation selected from the group consisting of a single-command operation and a multiple-command operation, the single-command operation including sending one storage command for all the data of the storage request to the caching storage controller associated with the target chunk, the multiple-command operation including generating distinct storage commands for different chunks of the storage request and sending the storage commands to respective ones of the caching storage controllers as associated with the chunks of the storage commands.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. A method according to <claim-ref idref="CLM-00010">claim 10</claim-ref> further comprising creating the persistent association of the chunks of each volume with respective ones of the caching storage controllers at a time of initialization of the data processing system as well as during operation in response to an event which changes the availability of any of the caching storage controllers or respective paths by which the server computer sends the storage commands to the caching storage controllers.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. A method according to <claim-ref idref="CLM-00010">claim 10</claim-ref> wherein:
+<claim-text>the data processing system includes multiple paths between the server computer and a particular one of the caching storage controllers; and</claim-text>
+<claim-text>sending the storage commands to the particular caching storage controller includes selecting one of the multiple paths based on criteria other than the identity of the target chunk.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. A method according to <claim-ref idref="CLM-00010">claim 10</claim-ref> wherein:
+<claim-text>maintaining the persistent association of the chunks of each volume with respective ones of the caching storage controllers includes maintaining a persistent association of the chunks of each volume with respective ones of a set of paths in the storage network which connect the server computer to the caching storage controllers; and</claim-text>
+<claim-text>for each storage request directed to a target chunk of the volume, (a) identifying the caching storage controller includes identifying the path associated with the target chunk, and (b) sending the storage command includes sending the storage command on the identified path.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. A method according to <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein:
+<claim-text>ownership of the chunks is identified according to a cache directory function providing a dynamic first mapping of the chunks to respective chunk owners;</claim-text>
+<claim-text>the chunks are persistently associated with respective ones of the caching storage controllers according to a heuristic function providing a static second mapping between each chunk of each volume and a respective one of the caching storage controllers; and</claim-text>
+<claim-text>identifying the caching storage controller includes identifying the caching storage controller persistently associated with the target chunk according to the second mapping.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. A server computer for use in a data processing system including a storage system and a set of caching storage controllers, the storage system being operative to provide data storage organized into one or more volumes each consisting of consecutive blocks, the caching storage controllers being coupled to the storage system and to a storage network to which the server computer is also to be coupled, the caching storage controllers being co-operative in an active-active fashion to provide access to any of the blocks of the volumes from any of the caching storage controllers in response to storage commands received from the storage network, the caching storage controllers engaging in a distributed cache protocol according to which (a) each volume is divided into successive chunks each containing a predetermined number of contiguous blocks, and (b) either ownership of the chunks is dynamically transferred among the caching storage controllers in response to the storage commands, or storage commands sent to non-owning controllers are forwarded to owning controllers for processing, comprising:
+<claim-text>a processor, memory, and storage network interfaces coupled together by interconnect circuitry, the storage network interfaces being connected to the storage network; and</claim-text>
+<claim-text>software executable by the processor from the memory for directing storage commands to the caching storage controllers, including:
+<claim-text>maintaining a persistent association of the chunks of each volume with respective ones of the caching storage controllers; and</claim-text>
+<claim-text>for each storage request directed to a target chunk of the volume, (a) identifying the caching storage controller associated with the target chunk, and (b) generating a storage command and sending the storage command via the storage network to the identified caching storage controller,</claim-text>
+</claim-text>
+<claim-text>wherein each initiator is a host computer which provides, as the storage commands, multipathing input/output (I/O) requests to the storage system through the storage network, the caching storage controllers residing within the storage network to participate in processing of the multipathing I/O requests;</claim-text>
+<claim-text>wherein the storage system houses a set of storage devices constructed and arranged to store host data on behalf of each host computer in a nonvolatile manner;</claim-text>
+<claim-text>and wherein the multipathing I/O requests include read requests to read host data from the set of storage devices of the storage system, and write requests to write host data into the set of storage devices of the storage system.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. A server computer according to <claim-ref idref="CLM-00017">claim 17</claim-ref> wherein:
+<claim-text>directing the storage commands further includes dividing each volume into a respective set of interleaved stripes, each stripe having a granularity of at least a chunk and including a respective set of the chunks of the volume;</claim-text>
+<claim-text>maintaining the persistent association of the chunks with respective ones of the caching storage controllers includes assigning the stripes to respective ones of the caching storage controllers; and</claim-text>
+<claim-text>identifying the caching storage controller associated with the target chunk includes identifying the stripe which includes the target chunk.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. A server computer according to <claim-ref idref="CLM-00017">claim 17</claim-ref> wherein:
+<claim-text>one or more of the storage requests is a large storage request directed to multiple chunks including the respective target chunk, the multiple chunks being associated with respective different ones of the caching storage controllers; and</claim-text>
+<claim-text>for each of the large storage requests, directing the storage commands further includes performing a large-request operation selected from the group consisting of a single-command operation and a multiple-command operation, the single-command operation including sending one storage command for all the data of the storage request to the caching storage controller associated with the target chunk, the multiple-command operation including generating distinct storage commands for different chunks of the storage request and sending the storage commands to respective ones of the caching storage controllers as associated with the chunks of the storage commands.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. A server computer according to <claim-ref idref="CLM-00017">claim 17</claim-ref> wherein directing the storage commands further includes creating the persistent association of the chunks of each volume with respective ones of the caching storage controllers at a time of initialization of the data processing system as well as during operation in response to an event which changes the availability of any of the caching storage controllers or respective paths by which the server computer sends the storage commands to the caching storage controllers.</claim-text>
+</claim>
+<claim id="CLM-00021" num="00021">
+<claim-text>21. A server computer according to <claim-ref idref="CLM-00017">claim 17</claim-ref> wherein:
+<claim-text>the data processing system includes multiple paths between the server computer and a particular one of the caching storage controllers; and</claim-text>
+<claim-text>sending the storage commands to the particular caching storage controller includes selecting one of the multiple paths based on criteria other than the identity of the target chunk.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00022" num="00022">
+<claim-text>22. A server computer according to <claim-ref idref="CLM-00017">claim 17</claim-ref> wherein:
+<claim-text>maintaining the persistent association of the chunks of each volume with respective ones of the caching storage controllers includes maintaining a persistent association of the chunks of each volume with respective ones of a set of paths in the storage network which connect the server computer to the caching storage controllers; and</claim-text>
+<claim-text>for each storage request directed to a target chunk of the volume, (a) identifying the caching storage controller includes identifying the path associated with the target chunk, and (b) sending the storage command includes sending the storage command on the identified path.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00023" num="00023">
+<claim-text>23. A server computer according to <claim-ref idref="CLM-00017">claim 17</claim-ref>, wherein:
+<claim-text>ownership of the chunks is identified according to a cache directory function providing a dynamic first mapping of the chunks to respective chunk owners;</claim-text>
+<claim-text>the chunks are persistently associated with respective ones of the caching storage controllers according to a heuristic function providing a static second mapping between each chunk of each volume and a respective one of the caching storage controllers; and</claim-text>
+<claim-text>identifying the caching storage controller includes identifying the caching storage controller persistently associated with the target chunk according to the second mapping.</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

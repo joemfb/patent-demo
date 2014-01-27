@@ -1,0 +1,934 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626328-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626328</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13012179</doc-number>
+<date>20110124</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>323</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20110101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>19</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>700108</main-classification>
+<further-classification>700120</further-classification>
+<further-classification>700121</further-classification>
+</classification-national>
+<invention-title id="d2e53">Discrete sampling based nonlinear control system</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>6869739</doc-number>
+<kind>B1</kind>
+<name>Ausschnitt et al.</name>
+<date>20050300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>7439001</doc-number>
+<kind>B2</kind>
+<name>Ausschnitt et al.</name>
+<date>20081000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>7556899</doc-number>
+<kind>B2</kind>
+<name>Ikeda et al.</name>
+<date>20090700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>7571420</doc-number>
+<kind>B2</kind>
+<name>Wong et al.</name>
+<date>20090800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>7580129</doc-number>
+<kind>B2</kind>
+<name>Yu et al.</name>
+<date>20090800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>7712069</doc-number>
+<kind>B2</kind>
+<name>Zach</name>
+<date>20100500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>7732109</doc-number>
+<kind>B2</kind>
+<name>Yu et al.</name>
+<date>20100600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>2005/0254024</doc-number>
+<kind>A1</kind>
+<name>Marie Van Greevenbroek et al.</name>
+<date>20051100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>355 30</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>2009/0319075</doc-number>
+<kind>A1</kind>
+<name>Tian et al.</name>
+<date>20091200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>700121</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>2011/0010000</doc-number>
+<kind>A1</kind>
+<name>Mos et al.</name>
+<date>20110100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>700121</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>2011/0196646</doc-number>
+<kind>A1</kind>
+<name>Mos et al.</name>
+<date>20110800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>702150</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00012">
+<othercit>Adel, et al.,&#x201c;The challenges of transitioning from linear to high-order overlay control in advanced lithography&#x201d; Proceedings SPIE, vol. 6827, (2007).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>13</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>700108</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>700120</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>700121</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>17</number-of-drawing-sheets>
+<number-of-figures>17</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120191236</doc-number>
+<kind>A1</kind>
+<date>20120726</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Ausschnitt</last-name>
+<first-name>Christopher P.</first-name>
+<address>
+<city>Boston</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Ausschnitt</last-name>
+<first-name>Christopher P.</first-name>
+<address>
+<city>Boston</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Scully, Scott, Murphy &#x26; Presser, P.C.</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="02" rep-type="attorney">
+<addressbook>
+<last-name>Kalaitzis, Esq.</last-name>
+<first-name>Parashos</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>International Business Machines Corporation</orgname>
+<role>02</role>
+<address>
+<city>Armonk</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Masinick</last-name>
+<first-name>Michael D</first-name>
+<department>2127</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">System, method and computer program product including instructions executed by a processor system for configuring and controlling a facility to perform a manufacturing process and updating a tool controlling the process according to a model employed for mapping calculated coefficients that characterize non-linear variations observed of a product to actual control parameters governing the processes/tools used by the facility during the manufacturing process. In a semiconductor manufacturing process, the method enables real-time control of variation in an exposure step of a patterning process using an exposure tool to minimize a nonlinear variation in one or more pattern attributes by adjusting the exposure tool or the patterning process corresponding to the calculated coefficients. In the method, measurements of product attributes, obtained by finite sampling over a well defined domain (e.g., a region such as a field/wafer in lithographic patterning), are projected onto a predefined reference mesh spanning the domain, using a physically based model comprised of functions constructed to be orthogonal and normalized over a discrete set of reference mesh locations.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="138.01mm" wi="237.15mm" file="US08626328-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="114.30mm" wi="136.74mm" orientation="landscape" file="US08626328-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="242.15mm" wi="203.62mm" orientation="landscape" file="US08626328-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="249.09mm" wi="193.55mm" orientation="landscape" file="US08626328-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="172.30mm" wi="192.79mm" orientation="landscape" file="US08626328-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="256.79mm" wi="165.10mm" orientation="landscape" file="US08626328-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="259.93mm" wi="205.91mm" orientation="landscape" file="US08626328-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="256.62mm" wi="182.20mm" orientation="landscape" file="US08626328-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="230.29mm" wi="158.16mm" orientation="landscape" file="US08626328-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="220.13mm" wi="194.39mm" orientation="landscape" file="US08626328-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="217.42mm" wi="189.82mm" orientation="landscape" file="US08626328-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="234.95mm" wi="189.48mm" orientation="landscape" file="US08626328-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="239.86mm" wi="172.97mm" orientation="landscape" file="US08626328-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="229.28mm" wi="186.77mm" orientation="landscape" file="US08626328-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="142.07mm" wi="126.15mm" orientation="landscape" file="US08626328-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="226.06mm" wi="185.84mm" orientation="landscape" file="US08626328-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00016" num="00016">
+<img id="EMI-D00016" he="249.09mm" wi="200.32mm" orientation="landscape" file="US08626328-20140107-D00016.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00017" num="00017">
+<img id="EMI-D00017" he="229.62mm" wi="196.34mm" orientation="landscape" file="US08626328-20140107-D00017.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<p id="p-0002" num="0001">The present invention relates generally to manufacturing of products generally, and in particular, semiconductor product manufacturing, and to controlling process conditions that influence and correct for manufacturing variations in resultant products, e.g., variation(s) in an exposure step of a patterning process using an exposure tool during microelectronics device manufacture.</p>
+<heading id="h-0001" level="1">BACKGROUND</heading>
+<p id="p-0003" num="0002">Semiconductor manufacturing involves highly complex techniques for fabricating integrating circuits using semiconductor materials which are layered and patterned onto a substrate, such as silicon.</p>
+<p id="p-0004" num="0003">Photolithography is one technique that may be used to selectively process certain portions of the wafer, e.g., patterning a substrate with lines, e.g., electronic structures. For example, conventional mechanical or optical subsystems of an imaging tool aligner used during fabrication of integrated circuits, is implemented for projecting a mask pattern onto a wafer, e.g., prior to an exposure step. In a conventional lithographic system there is included a projection aligner tool that de-magnifies a pattern on a reticle (mask) and projects it onto a photo resist (photosensitive material) formed on a wafer, and has a light source, an illumination optical system from light source to reticle, and a projection optical system from reticle to a wafer.</p>
+<p id="p-0005" num="0004">As IC device fabrication involves many layers, it is important to ensure that the overlay, or placement of a layer relative to another layer, falls within a certain acceptable tolerance. As such, many parameters of the IC devices, for example the forming of a pattern on a region of a substrate, are monitored during fabrication to ensure that the specifications for performance and reliability may be met.</p>
+<p id="p-0006" num="0005">Further, as the wafer becomes larger and the design rules become tighter, it becomes more important to provide robust variation correction models that provide for real-time process parameter corrections for minimizing observed (measured) variations, e.g., non-linear spatial patterning variations, by adjusting process parameters controlled by the tools used in the lithographic patterning overlay process.</p>
+<p id="p-0007" num="0006">Prior approaches to nonlinear treatment of patterning spatial variation do not account for coupling that takes place between error terms. Thus, current variation correction models are not directly applicable to non-linear diagnostic and control operations. That is, in prior art techniques, the coupling among error components intrinsic to current methods of characterizing nonlinear spatial variations of patterning errors precludes robust nonlinear diagnostics and control of patterning capability.</p>
+<p id="p-0008" num="0007">For example, problems with current Non-linear Overlay models include: the inability to adequately represent observed variation; the exhibition of coupling among terms (non-orthogonality); the limited adaptability/extendibility; the use of poorly behaved functions; the proliferation of non-physical terms, and, the inconsistent use/results across setup/control/analysis/reporting platforms (overlay models are utilized in the lithography process control systems of semiconductor manufacturers, like IBM, and in the products of various lithography and overlay metrology equipment suppliers; notably, ASML, Nikon, KLA-Tencor and Nanometrics).</p>
+<p id="p-0009" num="0008">Current variation models utilize an expansion by solving equations with non-linear terms in an attempt to characterize non-linear distribution over a domain (e.g., a wafer, field, etc.) by coefficients of the expansion. For example, the current methods, practiced by both semiconductor and equipment manufacturers, implement control to minimize variation at sampled locations, i.e., fit measured error to polynomials. However, in polynomials, e.g., power series expansions, used in the current representation of the non-linearity, as currently characterized, even order terms (1, x<sup>2</sup>, x<sup>4</sup>, etc.) are coupled, and similarly, odd order terms, (x, x<sup>3</sup>, x<sup>5</sup>, etc.) are coupled. The coupled terms offset one another, resulting in unstable coefficients; the degree of instability depends on a variety of factors; including, sampling density, measurement noise, etc. Thus, current methods preclude the assignment of physical meaning to individual coefficients. Moreover, polynomials may not optimally reflect physical variation, particularly in the vicinity of domain boundaries where high order polynomial terms are rapidly varying.</p>
+<p id="p-0010" num="0009">As a consequence of the coupling-driven coefficient instability described above, current methods are restricted to determining coefficients corresponding to the allowed adjustments in a single control loop. This approach is not well suited to the nonlinear overlay control requirements of lithographic patterning; in which multiple control loops, consisting of overlapping subsets of allowed adjustments, pertain to the hierarchical calibration, baseline and runtime control of a tool/process based on different measurements performed at different times. Current methods do not allow the determination of a set of physically meaningful coefficients independent of the measurement and the correspondence of the coefficients to tool/process adjustment in a given control sequence.</p>
+<p id="p-0011" num="0010">In sum, the coupling among error components intrinsic to current methods of characterizing the nonlinear spatial variation of patterning errors precludes robust nonlinear diagnostics and control of patterning capability.</p>
+<p id="p-0012" num="0011">Generally, it would be highly desirable to provide a system and method that provides accurate real-time control of process parameters that minimize nonlinear process variation in a manufacturing step using a process tool.</p>
+<p id="p-0013" num="0012">It would be further desirable to provide a system and method that provides for accurate real-time control of a process parameter utilized in a semiconductor product manufacturing process based on measured attributes of resulting patterns/structures formed as a result of a manufacturing process.</p>
+<p id="p-0014" num="0013">That is, in a semiconductor product manufacturing facility, it would be highly desirable to reduce a coupling among error components intrinsic to current methods of characterizing the nonlinear spatial variation of patterning errors that preclude robust nonlinear diagnostics and control of patterning capability.</p>
+<heading id="h-0002" level="1">SUMMARY</heading>
+<p id="p-0015" num="0014">There is provided a system, method and computer program product for providing accurate real-time control of process parameters that minimize nonlinear process variation in a product manufacturing step using a process tool.</p>
+<p id="p-0016" num="0015">Generally, in one embodiment the system, method and computer program product implements steps (e.g., programmed instructions run by a processor) for dynamically configuring and controlling a facility to perform a manufacturing process and updating a tool controlling the process according to a model employed for mapping calculated coefficients that characterize non-linear variations observed of a product to actual control parameters governing the processes/tools used by the facility during the manufacturing process.</p>
+<p id="p-0017" num="0016">In accordance with this general embodiment, there is provided a system and method for controlling a nonlinear variation in a manufacturing step using a process tool. The method comprises: measuring one or more attributes of a product being manufactured by said process tool at a set of one or more discrete times or locations spanning one or more finite temporal or spatial domains; selecting one or more sets of basis functions representing one or more variations in the set of one or more product attributes over each domain; constructing an orthogonal set of the set of functions from the set of one or more basis functions; fitting the orthogonal set of functions to the measured set of one or more product attributes at the set of discrete times or locations; determining, as a result of said fitting, a set of coefficients of the orthogonal set of functions; and minimizing a variation in the one or more product attributes by adjusting the process tool corresponding to one or more of the coefficients.</p>
+<p id="p-0018" num="0017">In a more specific aspect, in a semiconductor manufacturing process, the method enables real-time control of variation in an exposure step of a patterning process using an exposure tool to minimize a nonlinear variation in one or more pattern attributes by adjusting the exposure tool or the patterning process corresponding to the calculated coefficients. In the method, measurements of one or more product attributes, obtained by finite sampling over a well defined domain (e.g., a region such as a field/wafer in lithographic patterning), are projected onto a predefined reference mesh spanning the domain, using a physically based model comprised of functions constructed to be orthogonal and normalized over a discrete set of reference mesh locations.</p>
+<p id="p-0019" num="0018">Thus, in a further aspect, there is provided a method for dynamically controlling variation during an exposure step of a patterning process using an exposure tool. The method comprises: measuring a set of one or more pattern attributes at a set of discrete locations on a substrate; selecting one or more basis functions representing one or more variations in the set of one or more pattern attributes over the set of discrete locations; constructing an orthogonal set of functions from the set of one or more basis functions; fitting the orthogonal set of functions to the measured set of one or more pattern attributes at the set of discrete locations; determining, as a result of the fitting, a set of coefficients of the orthogonal set of functions; and minimizing a variation in the one or more pattern attributes by adjusting the exposure tool or the patterning process according to one or more the determined set of coefficients.</p>
+<p id="p-0020" num="0019">Further to these aspects, the method further includes: defining a set of reference locations distributed on the substrate, the orthogonal set of functions being constructed from the set of one or more basis functions on the defined set of reference locations.</p>
+<p id="p-0021" num="0020">A computer program product is provided for performing operations. The computer program product includes a storage medium readable by a processing circuit and storing instructions run by the processing circuit for running a method. The method(s) are the same as listed above.</p>
+<p id="p-0022" num="0021">Advantageously, in one embodiment, the system and method provides for control of overlay parameters that minimize variation on a reference mesh to result in improved match to observed variation and improved boundary condition behavior, e.g., at a Field edge and a Wafer edge.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">DRAWINGS</heading>
+<p id="p-0023" num="0022">The objects, features and advantages will become apparent to one skilled in the art, in view of the following detailed description taken in combination with the attached drawings, in which:</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 1</figref> depicts generally, an example system for modeling and providing feed-back control for adjusting parameters during a product manufacture;</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIGS. 2A and 2B</figref> are representative schematics depicting a method <b>100</b> used to characterize variation and determine coefficients for performing real-time tool adjustment in the general sense of any product, as depicted in <figref idref="DRAWINGS">FIG. 2A</figref> in one embodiment; and, a method <b>100</b>&#x2032; as depicted in <figref idref="DRAWINGS">FIG. 2B</figref> of determining coefficients for performing real-time tool adjustment to correct for patterning or overlay errors in the example context of manufacture of a semiconductor device as shown in <figref idref="DRAWINGS">FIG. 3</figref>;</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 3</figref> depicts a wafer <b>200</b> having a mask pattern formed on a field <b>205</b> thereon located at wafer Field/Grid points (x,y:X,Y) in one example embodiment;</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 4</figref> depicts an example projection <b>250</b> of raw measured variation on a reference mesh in the generation of domain functions having a mask pattern formed thereon depicted as patterned elements at Field/Grid points (x,y:X,Y) in one example embodiment;</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 5</figref> depicts a methodology for constructing mesh functions used in the model for characterizing variation and determining coefficients for performing real-time tool adjustment in one embodiment;</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 6</figref> visually depicts example constructed mesh functions <b>440</b>, <b>450</b> corresponding to respective domain functions <b>420</b>, <b>430</b> formed of respective power series and harmonic series expansions in one embodiment;</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 7</figref> depicts a resulting orthogonalized set of mesh equations <b>500</b> for modeling variation of a general 2-dimensional (2-D) case such as an example rectangular domain, e.g., an exposure field;</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIGS. 8A-8D</figref> depict generation of example 2-D coefficients K<sub>nm </sub>that can be used for real-time adjustment variations in according with an example 2-D variation modeling scenario;</p>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIG. 9A</figref> depicts a single general expression of mesh functions <b>700</b> constructed to model all expected 2-D variations on the mesh for performing an overlay control, and provide the ability for determining adjustments for (i.e., correcting), at once, field variation components, grid variation components, and coupled field and grid variation components;</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIG. 9B</figref> shows a modified sum of components expression <b>710</b>&#x2032; for determining values of all field F<sub>nm </sub>coefficients, grid G<sub>pq </sub>&#x201c;field position&#x201d; coefficients and grid &#x201c;field deformation&#x201d; coupled coefficients C<sub>nmpq </sub>at once, according to one embodiment;</p>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIG. 10</figref> depicts a plot <b>800</b> of 2-D vectors corresponding to an example raw measured Field variation (in x- and y-direction) at discrete locations (samples) and a plot <b>850</b> depicting corrected variation errors resulting in the residuals after adjustment based on calculated coefficients;</p>
+<p id="p-0035" num="0034"><figref idref="DRAWINGS">FIG. 11</figref> shows resulting grids <b>900</b>A, <b>0900</b>B, <b>950</b>A, <b>950</b>B indicating comparison of resulting Field coefficients corresponding to both correctable and uncorrectable error components computed in a no-mesh case and computed for the mesh case (using an example 13&#xd7;19 reference mesh) in one embodiment; and,</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 12</figref> illustrates an exemplary hardware configuration for implementing real-time process steps depicted in the flow charts depicted in the <figref idref="DRAWINGS">FIGS. 2</figref>, <b>3</b> and <figref idref="DRAWINGS">FIGS. 5</figref>, <b>7</b> and <b>9</b>A,B in one embodiment.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0037" num="0036">As referred to in the description herein below directed to techniques and apparatus for modeling and providing real-time parameter adjustment (control) during manufacture of products, e.g., semiconductor devices.</p>
+<p id="p-0038" num="0037">As shown in <figref idref="DRAWINGS">FIG. 1</figref>, a physical parametric model is central to diagnostics and control. For example, process controls used for controlling equipment/tools during a manufacture of a product, e.g., a semiconductor product <b>12</b> are adjusted in real-time based in accordance with the characterization of the errors obtained by measuring attributes <b>15</b> of the resulting product, e.g., patterns/structures formed as a result of manufacturing processes. The model <b>10</b> is used for mapping the calculated coefficients that characterize the non-linear spatial errors observed to actual control parameters governing the processes/tools used by the manufacturing facility equipment during the manufacturing process <b>12</b>.</p>
+<p id="p-0039" num="0038">In one embodiment, as will be described in greater detail herein, patterning measurements obtained by finite sampling within a patterned substrate domain, for example, are projected onto a predefined reference mesh using a physically based model comprised of functions constructed to be orthogonal and normalized over the mesh locations. The techniques described herein enables the simultaneous determination of control and tracking coefficients; correlation among different sampling plans; optimization of sampling; comparison and matching among multiple tools/processes; ease of model extension; common units for all model coefficients; and, the techniques applied are applicable to any set of functions; and, are applicable to the nonlinear characterization and control of any parameter. In the context of a semiconductor device manufacture, the techniques applied are applicable to the nonlinear characterization and control of parameter including, but not limited to, overlay, pattern placement, dose, focus, critical dimension (CD), SWA, film thickness, NA, sigma, etc.</p>
+<p id="p-0040" num="0039">In example embodiments described herein, the model <b>10</b> generated can be used to characterize the nonlinear parameter variation applicable to any manufacturing process, e.g., generally patterning, e.g., including overlay error or pattern placement error (PPE) across the field of a scanner which is used to pattern a sample, such as a semiconductor wafer or device. Measurement and control of patterning processes in the manner as described herein provides ability to adjust any observed deviations of any uniformity and to eliminate deviations (e.g., patterning errors). For example, in the case of pattern placement or overlay processing, it is the location of the patterns that are to be adjusted, for case of CD uniformity, it may be the size of the feature that is to be adjusted. The approach addresses these kinds of errors and more particularly, non-linear spatial variations of errors, e.g., cubic, quadratic, or fourth order errors as process runs across a field or wafer.</p>
+<p id="p-0041" num="0040">The technique particularly avoids the coefficient coupling phenomena, and enables a more robust determination of the coefficients so that they can be used in control systems to minimize the non-linear errors. The control is used to minimize errors in a real processing environment according to the schematic diagram shown in <figref idref="DRAWINGS">FIGS. 2A and 2B</figref> discussed herein below.</p>
+<p id="p-0042" num="0041">In the construction of the model <b>10</b> for characterizing variation (errors) in the embodiments described herein, reference is made to the following terms:</p>
+<p id="p-0043" num="0042">Domain: Datum representing a space (spatial domain), a time (temporal domain) or a combination of space and time. In an example semiconductor patterning process, a spatial domain includes a datum representing a semiconductor substrate region over which patterns are printed (e.g., field or multiple field domain(s), grid domain(s), wafer), or a change in an attribute over time intervals (temporal domain).</p>
+<p id="p-0044" num="0043">Reference Mesh (or Mesh): A set of discrete locations or times spanning a domain; In one embodiment, the reference times or locations are distributed uniformly and symmetrically about a center of each domain. In a preferred embodiment, the granularity of the mesh is matched to the granularity of the adjustment capability of the tool or process over the domain. Includes datum representing reference mesh(es) stored in a memory storage device, and are selected for use in the model based on its ability to make corrections in a process or tool. The mesh(es) are generated, a priori, and are subsequently used in computations that match orthogonal functions used in making real-time corrections of a process, to the actual abilities (adjustable &#x201c;knobs&#x201d;) of the process or tool. In the context of patterning and overlay control, field meshes, and grid meshes are implemented in the modeling selected for a given process (or tool) based on the ability to correct that process or tool.</p>
+<p id="p-0045" num="0044">Orthogonal functions: A set of functions continuous over a domain for which the product of any pair of different functions in the set integrates (on the continuum) or sums (on a set of discrete locations or times) to zero over the domain.</p>
+<p id="p-0046" num="0045">Domain functions: Functions stored in a memory storage device corresponding to the physically meaningful set of correctable and non-correctable tool/process spatial or temporal degrees of freedom requiring control/diagnostics within a given domain. In the example context of patterning, printing of a line or overlay of two fields on a substrate.</p>
+<p id="p-0047" num="0046">Mesh functions: A set of domain functions orthogonalized and optionally normalized on the mesh; e.g., functions normalized to have a maximum amplitude of 1 on the mesh for which the product of any pair in the set sums to zero at the mesh locations spanning the domain. The sets of mesh functions are stored in a memory storage device, and are generated for use in the model in accordance with a method described herein below with respect to <figref idref="DRAWINGS">FIG. 5</figref>.</p>
+<p id="p-0048" num="0047">Overlay: Relative position of two or more patterns on a substrate on one or more patterning layers.</p>
+<p id="p-0049" num="0048">Pattern placement: Absolute position of patterns on a substrate on one patterning layer.</p>
+<p id="p-0050" num="0049">Alignment: Act of minimizing overlay and pattern placement errors.</p>
+<p id="p-0051" num="0050">In one aspect, there is provided a computer-implemented method, computer program product and fabrication technique referred to as COSMIC (Comprehensive Overlay and Stitched Model for ICs) which is a general method of nonlinear spatial deconstruction not only in the context of an overlay parameter, but applicable to all sampled parameters, e.g., dose, focus, CD, SWA, film thickness, etc., in a semiconductor manufacturing process.</p>
+<p id="p-0052" num="0051">In one aspect, the computer-implemented method and computer program product includes instructions executed by a host or processor system for configuring and controlling a manufacturing facility to perform a semiconductor fabrication process and updating the equipment performing the process according to the model employed for mapping calculated coefficients that characterize the non-linear spatial errors observed to actual control parameters governing the processes/tools used by the manufacturing facility equipment during the manufacturing process.</p>
+<p id="p-0053" num="0052">In one aspect, the method includes measuring a set of one or more pattern attributes at a set of discrete locations of a pattern formed on a substrate. Then, there is selected a set of functions (domain functions such as field/grid functions) representing one or more variations in the set of one or more pattern attributes over the set of discrete locations. There is further defined a set of reference locations (reference mesh) distributed over the field, e.g., substrate. Then, the method includes constructing an orthogonal set of the set of functions on the set of reference locations, and, determining coefficients of the orthogonal set of functions (mesh functions) orthogonal to the set of functions (e.g., field grid functions) by fitting the orthogonal set to the measured set of one or more pattern attributes at the set of discrete locations. Ultimately, a variation in the one or more pattern attributes can be minimized by adjusting the exposure tool or the patterning process corresponding to one or more of the coefficients.</p>
+<p id="p-0054" num="0053"><figref idref="DRAWINGS">FIGS. 2A and 2B</figref> depict a non-linear control method in accordance with one embodiment. <figref idref="DRAWINGS">FIG. 2A</figref> generally depicts the method <b>100</b> for performing real-time tool adjustment in the general sense of any product in one embodiment; and, <figref idref="DRAWINGS">FIG. 2B</figref> particularly depicts a method <b>100</b>&#x2032; of determining coefficients for performing real-time tool adjustment to correct for patterning or overlay errors in a particular example context of manufacture of a semiconductor device. At a first step <b>105</b>, the tool/process parameters are first determined and stored for use in the model as described with respect to steps <b>140</b>. These parameters, for example, may include &#x201c;fixed&#x201d; and dynamically adjustable parameters governing tool/process performance, including: a) System constants that are set during initial setup or recalibration of the tool/process (e.g., based on pre-established calibration procedures) and may not change between calibrations. Moreover, time scales in which these parameter types are adjusted is long, e.g., on the order of months; b) Sub-recipe parameters, for example, apply to all products/layers being patterned based on correction feedback from monitor wafers. Time scales in which these Sub-recipe parameter types are adjusted is medium, e.g., on the order of days; c) Layer recipe parameters apply to a particular product/layer/mask; including layout specification and parameters based on correction feedback from similar previously patterned process streams. Time scales in which these Layer parameter types are adjusted is short, e.g., on the order of minutes/hours. In one example embodiment applied to overlay control, fixed and dynamic parameters are adjusted in real-time and govern tool alignment performance.</p>
+<p id="p-0055" num="0054">In <figref idref="DRAWINGS">FIG. 2A</figref>, at a next step <b>110</b>, given the above parameter settings, there is then completed a manufacturing process step. For example, in the context of semiconductor patterning and overlay control, as shown in <figref idref="DRAWINGS">FIG. 2B</figref> at <b>110</b>&#x2032;, based on tool/process parameters indicated at <b>105</b>, a wafer is printed for example, by exposing and developing or producing a mask pattern on the wafer. In an embodiment, the tool may be a step-and-scan exposure tool such as an ASML TwinScan. The full wafer, typically of 300 millimeter diameter, may be patterned by successively scanning and stepping individual rectangular fields of tens of millimeter dimensions per side containing features of tens of nanometer dimensions according to techniques known in the semiconductor device processing art. The location of each pattern element is defined by Field coordinates (x,y) that define the within-field location, e.g., a location with respect to the center of a 25&#xd7;30 mm rectangular field, and Grid coordinates (X,Y) that locate the center of the field with respect to the center of a 300 mm wafer. As an example, <figref idref="DRAWINGS">FIG. 3</figref> depicts a semiconductor wafer <b>200</b> having a mask pattern formed thereon depicted as patterned elements at Field/Grid points (x,y: X,Y) defining a field <b>205</b> at a grid X,Y location. Thus, at corresponding step <b>110</b>&#x2032; in <figref idref="DRAWINGS">FIG. 2B</figref>, in the example application to overlay control, given the above alignment parameter settings, there is performed steps of aligning, exposing and developing mask patterns on the wafer Field <b>205</b>. In another manufacturing context, variation may be introduced over a time domain (e.g., a temperature profile over a fixed time interval).</p>
+<p id="p-0056" num="0055">In <figref idref="DRAWINGS">FIG. 2A</figref>, at a next step <b>115</b>, there is generally performed establishing a minimum set of measurements at discrete locations. In the context of semiconductor patterning and overlay control, as shown in <figref idref="DRAWINGS">FIG. 2B</figref> at <b>115</b>&#x2032; a minimum set of measurements is taken by spanning the Field (s-subscript) and/or Grid (t-subscript) domains that enable robust determination of the spatial distribution of pattern variation over the field/wafer. That is, there is established a minimum set of measurement sites spanning the domain that is optimized with respect to a selected predefined reference mesh. In the example application to overlay control, there is established a minimum set of overlay or pattern placement measurement locations spanning the Field <b>205</b> of wafer <b>200</b>. In another context, a minimum set of measurements may be established at discrete times over a time domain (e.g., to sample a temperature profile over a fixed time interval).</p>
+<p id="p-0057" num="0056">Then, in <figref idref="DRAWINGS">FIG. 2A</figref> at <b>120</b>, there is generally performed measuring of relevant product attributes at the sample substrate sites by appropriate sensors and monitoring devices located in the semiconductor fabrication and measurement tools implemented; and for the example context of semiconductor patterning and overlay control, as shown in <figref idref="DRAWINGS">FIG. 2B</figref> at <b>120</b>&#x2032; measuring spatial distributions of pattern variation over the field/wafer. Particularly, in the overlay control context, there is obtained a variation of the measured relevant pattern attributes (e.g., overlay, pattern placement, dose, focus, critical dimension CD, SWA, etc.) at sample locations. In another context, measurements may be performed at the above-established finite set of times over a time domain (e.g., to monitor a temperature profile over a fixed time interval).</p>
+<p id="p-0058" num="0057">Returning to <figref idref="DRAWINGS">FIG. 2A</figref> at <b>125</b>, generally a model is then applied for controlling the observed variation and provide for real-time process parameter correction and diagnostics. In the context of patterning overlay control, as shown at <figref idref="DRAWINGS">FIG. 2B</figref> at <b>125</b>&#x2032;, the model is set up to include a set of orthogonalized mesh functions that are continuous and orthogonal over a specific domain (e.g., region upon which patterns are printed such as a field). Particularly, in the modeling, the mesh functions are used to model the variation (non-uniformity resulting from a real-time patterning process) as described below with respect to <figref idref="DRAWINGS">FIG. 5</figref>. Then there are performed computing coefficients of the orthogonalized mesh functions that map either to real time process controls or to monitors for process diagnostics. In one embodiment, the determining of orthogonal mesh function coefficients may be performed using a least squares fit to measured variation.</p>
+<p id="p-0059" num="0058">As further shown in <figref idref="DRAWINGS">FIGS. 2A</figref>, <b>2</b>B and as will be described in greater detail, the generated model <b>140</b> includes the a priori construction of sets of mesh functions <b>160</b>, <b>160</b>&#x2032; over the relevant domains, i.e., prior to running the actual process in real-time production at <b>125</b>, <b>125</b>&#x2032;. These sets of mesh functions are utilized during real-time production to determine coefficients that are mapped to and used to adjust tool/process parameters or to diagnose out-of-control tool/process conditions. The constructing of the model <b>140</b> includes steps <b>150</b>, <b>155</b>, <b>160</b>. At <b>150</b>, there is generally performed generating of domain functions corresponding to the physically meaningful set of correctable and non-correctable tool/process degrees of freedom requiring control/diagnostics. In one embodiment, the nonlinear domain functions may be a set of polynomials like the above-mentioned generally utilized power series functions of <b>316</b>, <figref idref="DRAWINGS">FIG. 5</figref>. In a second embodiment, the nonlinear domain functions may be a set of harmonic series functions of <b>317</b>, <figref idref="DRAWINGS">FIG. 5</figref>. The harmonic series functions plotted in <b>430</b>, <figref idref="DRAWINGS">FIG. 6</figref> are better behaved near the domain boundaries than the power series functions plotted in <b>420</b>, <figref idref="DRAWINGS">FIG. 6</figref>. In the context of overlay control and patterning there is generated at <b>150</b>&#x2032; domain functions corresponding to tool/process alignment spatial degrees of freedom requiring control/diagnostics, e.g., Field/Grid domain functions. Further, at <b>155</b>, <figref idref="DRAWINGS">FIG. 2A</figref>, there is performed selecting of a reference mesh corresponding to requirements for tool/process variation and control. In the context of overlay control and patterning there is generated at <b>155</b>&#x2032; a reference mesh comprising a pre-defined sets of locations, Field/Grid locations, etc., corresponding to requirements for tool/process spatial variation and control, e.g., patterning and overlay variation and control. Further at <b>160</b>, <figref idref="DRAWINGS">FIG. 2A</figref>, there is generally performed the constructing of the Mesh functions which orthogonalize and normalize the domain functions on the respective reference mesh sets. Orthogonalization establishes that the summation of the product of any two distinct mesh functions over the reference mesh locations within the domain is zero. Normalization establishes that the maximum absolute amplitude of the mesh function on the reference mesh locations within the domain is one. In the context of overlay control and patterning, at <b>160</b>&#x2032;, <figref idref="DRAWINGS">FIG. 2B</figref>, there is generally performed the constructing of the Mesh functions which orthogonalize and normalize the Field/Grid domain functions on the respective Field/Grid reference mesh sets. The generated model used at <b>125</b>, <figref idref="DRAWINGS">FIG. 2A</figref> comprises the set of mesh functions that are continuous over a set of domains specific to a manufacturing tool/process. The generated model used at <b>125</b>&#x2032;, <figref idref="DRAWINGS">FIG. 2B</figref> comprises the set of mesh functions that are continuous over a set of domains in the context of wafer patterning; namely, the Field/Grid domains.</p>
+<p id="p-0060" num="0059">Continuing in <figref idref="DRAWINGS">FIG. 2A</figref>, <b>2</b>B, as will be described in greater detail herein below, in the generating of the orthogonal mesh functions for the model at <b>160</b>&#x2032;, there is determined either the presence of uncorrectable components, i.e., error components that are not dynamically correctable such as alignment error components; including non-adjustable mesh function coefficients and residual errors (errors that do not correspond to any combination of mesh functions) at <b>170</b>, or, at <b>175</b>, the components that are correctable, e.g., error components, corresponding to the mesh function coefficients, that are dynamically adjustable. For, any uncorrectable error that occurs, the method may include at <b>172</b> generating any (Statistical Process Control) SPC alarms as SPC techniques may be implemented to flag out-of-control conditions on components (e.g., alignment components) that are not dynamically correctable.</p>
+<p id="p-0061" num="0060">As a measure of optimizing the samples taken at step <b>115</b>&#x2032; when a selected set of measurement locations spanning the Field (s-subscript) and/or Grid (t-subscript) are taken, a sample optimization may be performed at <b>180</b> to ensure consistency of sampling locations with the mesh functions such that known sources of systematic variation (e.g., overlay and pattern placement variation) are identified and characterized up through the maximum required nonlinear order.</p>
+<p id="p-0062" num="0061">There may be further performed at <b>180</b> (<figref idref="DRAWINGS">FIG. 2A</figref>, <b>2</b>B) a co-optimization of reference mesh/sampling to capture highest meaningful order of variation. For example, an outermost sample must be on or within the reference mesh; and coordinates normalized to the extremes of each reference mesh. In one embodiment, co-optimizing of the sampling and the reference mesh may include: coincident sampling, where sampling and measurement constraints allow, sampling coincident with the mesh sites to eliminate coupling among the coefficients of all functions constructed to be orthogonal over the Reference Mesh. In the coincident sampling embodiment, the coefficient of each mesh function can be determined by a summation of the product of the mesh function and the measured data over the Reference Mesh divided by the square of the function. Co-optimizing may additionally include representative sampling: a type of sampling that can be performed where constraints (target location, measurement time, etc.) dictate less than coincident sampling as long as the sample spans the same domain as the reference mesh, and has a maximum spatial frequency commensurate with the highest order functions in the model according to the Nyquist criterion. In the representative sampling embodiment, the coefficients are determined by a LSF of the measured data to the model functions.</p>
+<p id="p-0063" num="0062">As a measure of correcting parameters of a next product run, for example, APC (Advanced Process Control) techniques are applied at <b>185</b> to provide feedback tool/process corrections (e.g., process alignment correction in the context of overlay control). Thus, for example Runtime corrections of parameters (e.g., exposure alignment parameters in the context of overlay control) of the next product run (or &#x201c;lot&#x201d;) may be applied at <b>190</b> based on historical data from identical or similar process streams. For example, these runtime corrections are based on the coefficients that are fedback at <b>190</b> and used according to control schema for adjusting product alignment parameters that apply to the minimization of overlay error for a particular product/layer/mask. As a further example, Baseline Corrections of the exposure alignment parameters of all subsequent product and monitor runs may be applied at <b>195</b> that are based on historical data from monitors patterned with a test mask. In general, Baseline corrections can be of a higher nonlinear order than Runtime corrections because the test mask layout and infrequent measurement for Baseline control enables much denser sampling than the product mask layout and frequent measurement for Runtime control.</p>
+<p id="p-0064" num="0063">Subsequent to the generating of any SPC alarms, the method returns to perform a targeted calibration at <b>197</b>, i.e., a recalibration triggered by SPC out-of-control alarms on uncorrectable error components that correspond to established calibration procedures. In the context of overlay control, this may trigger an alignment recalibration.</p>
+<p id="p-0065" num="0064">Furthermore, diagnostic procedures may be performed at <b>198</b> as triggered by SPC out-of-control alarms on uncorrectable error components that do not correspond to established calibration procedures.</p>
+<p id="p-0066" num="0065">General 1-D Scalar Model</p>
+<p id="p-0067" num="0066">As shown in <figref idref="DRAWINGS">FIG. 5</figref>, in one embodiment, a method <b>300</b> of constructing the orthogonal mesh functions, e.g., for field and grid, as performed at <b>160</b>&#x2032;, <figref idref="DRAWINGS">FIG. 2B</figref>, includes the following steps:</p>
+<p id="p-0068" num="0067">1. At <b>305</b>, defining domain(s) including the generating of Field (e.g., x,y coordinates spanning field <b>205</b>) and a Grid (X,Y coordinates of field centers spanning wafer <b>200</b>). As shown in <figref idref="DRAWINGS">FIG. 5</figref> there is depicted an example general 1-dimension domain, e.g., normalized from [&#x2212;1, 1]; It could be a line, e.g., a row or column in a field, a row, column in a grid, or a stitched row or column between two overlapping adjacent fields. The domain may be applicable to domains of multiple dimensions, 2D, 3D, etc., and may include a temporal component.</p>
+<p id="p-0069" num="0068">2. At <b>310</b>, selecting a reference mesh over each domain. Thus, there may be fixed &#x201c;reference meshes&#x201d; of 1D locations, 2D (e.g., 7&#xd7;7, 13&#xd7;19) matrix of locations, 3D, etc. As shown in <figref idref="DRAWINGS">FIG. 5</figref>, the reference mesh for the example line (&#x3be;&#x3b5;[&#x2212;1,1] domain), is a division of the line into &#x201c;i&#x201d; segments, e.g., a number of multiple equal length segments defined by a set of points, e.g., 12 segments according to 13 points (i=1, 2, . . . , 13) such as the 1D reference mesh <b>410</b> shown in <figref idref="DRAWINGS">FIG. 6</figref>. It should be understood that, in general, the granularity of the reference mesh (e.g., density of locations) need not necessarily match the granularity of the measurements taken (sampling) during a process step but only match the ability to correct the process, i.e., the granularity of sampling is independent of the granularity of how corrections are being made while maintaining ability to make orthogonal tool corrections (e.g., turning one tool &#x201c;knob&#x201d; would not effect another &#x201c;knob&#x201d;). As will be described, when implementing the model, at step <b>125</b> (<figref idref="DRAWINGS">FIG. 2A</figref>, <b>2</b>B), the fitted model projects variation observed at the sample locations onto the reference mesh to implement control/diagnostics based on the reference mesh variation.</p>
+<p id="p-0070" num="0069"><figref idref="DRAWINGS">FIG. 4A</figref> depicts an example projection <b>250</b> of raw sampled data <b>225</b> onto an example reference mesh <b>215</b>, e.g., a 7&#xd7;7 corresponding to a field domain <b>205</b> as shown in <figref idref="DRAWINGS">FIG. 3</figref>, in accordance with one aspect, and particularly shows the resultant deviation (variation) with respect to the reference mesh <b>215</b>. For example, this depicts a result of processing step <b>120</b> in which the spatial distributions of pattern variation over the field/wafer are sampled (measured). <figref idref="DRAWINGS">FIG. 4B</figref> shows the generated model <b>260</b> including orthogonalized mesh functions <b>230</b> corresponding to the sampled data in <figref idref="DRAWINGS">FIG. 4A</figref>. In particular, <figref idref="DRAWINGS">FIG. 4B</figref> depicts an example reference mesh <b>215</b> of a density that corresponds to the sampled variation locations on the domain. In an alternate embodiment, there is shown a corresponding generated model <b>270</b> including orthogonalized mesh functions <b>240</b> corresponding to the sampled data in <figref idref="DRAWINGS">FIG. 4A</figref> however, shown on a reference mesh <b>275</b> of increased granularity, a 13&#xd7;19 mesh <b>275</b> in the example shown in <figref idref="DRAWINGS">FIG. 4C</figref>. That is the reference mesh is finer than the sampling and interpolation is performed where there was no actual measurement, i.e., interpolate between a relatively sparse sampling to a much finer mesh. The orthogonalized functions are defined on a much finer mesh. Thus, if there is an ability to correct on a 13&#xd7;19 mesh and the mesh functions are orthogonalized on the 13&#xd7;19 mesh, then the 7&#xd7;7 sample can be projected on the 13&#xd7;19 mesh and make a 13&#xd7;19 &#x201c;correction&#x201d; based on a 7&#xd7;7 sample. Thus, in the model the corrections are determined independent of one another.</p>
+<p id="p-0071" num="0070">3. At <b>315</b>, there is performed selecting a set of basis or domain functions in the defined domain. In one embodiment, as shown in <figref idref="DRAWINGS">FIG. 6</figref>, the set <b>400</b> of basis functions are selected, a priori, and are continuous over the defined domain. Example domain functions may include, but are not limited to: a power series expansion <b>420</b>, e.g., a Modified Legendre/Zernike polynomial, or a harmonic series expansion <b>430</b>, e.g., a Modified Fourier series. These example domain functions <b>420</b>, <b>430</b> are continuous functions having no relationship to the points on the reference mesh. The set domain functions are used to model an attribute variation. In one aspect, a criteria for selecting the basis or domain functions is one that can represent many variations, e.g., are complete over the domain such that any observed variation can be represented in that domain. Given a priori knowledge of a variation that may be expected over the domain, special basis functions may be selected that can represent that variation. The method can be applied to any set of functions. In <figref idref="DRAWINGS">FIG. 5</figref>, a set of basis functions can be represented as functions U<sub>n</sub>(&#x3b6;), where &#x3b6; corresponds to the domain (set of points), the &#x201c;n&#x201d; corresponds to the order of variation that is intended to be captured. For example, n=0 is order 0 and in patterning corresponds to a translation over the domain, in pattern placement terms, n=1 may correspond to a linearly varying displacement over the domain (e.g., a rotation or a magnification over the domain), n=2 may correspond to a quadratic or parabolic variation, e.g., a &#x201c;bow&#x201d; over the domain.</p>
+<p id="p-0072" num="0071">4. Returning to <figref idref="DRAWINGS">FIG. 5</figref>, at <b>320</b>, there is performed the generating of a set of mesh functions by orthogonalizing the domain functions on the selected reference mesh. In one embodiment, the Gram-Schmidt technique that is used includes a method for orthonormalising a set of vectors in an inner product space (see, e.g., http://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process, incorporated by reference herein), or like equivalent may be used. In the example embodiment shown in <figref idref="DRAWINGS">FIG. 6</figref>, a set of mesh functions <b>440</b> are computed as an orthogonalized set of the selected power series expansion domain function set <b>420</b> as evaluated at the reference mesh locations of the selected mesh and represented as an example set of functions &#x3bd;<sub>n</sub>(&#x3be;) at <b>321</b>, <figref idref="DRAWINGS">FIG. 5</figref>.</p>
+<p id="p-0073" num="0072">5. Further in <figref idref="DRAWINGS">FIG. 6</figref>, a set of mesh functions <b>450</b> are computed as an orthogonalized set of the selected harmonic series expansion domain function set <b>430</b> as evaluated at the reference mesh locations of the selected mesh and represented as an example set of functions &#x3bd;<sub>n</sub>(&#x3be;) at <b>322</b>, <figref idref="DRAWINGS">FIG. 5</figref>. As shown in <figref idref="DRAWINGS">FIG. 5</figref>, the generated mesh functions &#x3bd;<sub>n</sub>(&#x3be;) <b>321</b>, <b>322</b> are combinations of domain functions and are controlled by constants, e.g., Gram-Schmidt constants <b>325</b>. These constants are derived from the domain functions by evaluating them at the defined reference mesh locations (e.g., constants may be expressed as summations over the &#x201c;i&#x201d; mesh locations) and are unique to the reference mesh selected (different mesh used will result in different coefficients) and are determined in correspondence with the order n. <figref idref="DRAWINGS">FIG. 6</figref> illustrates how the domain u<sub>n</sub>(&#x3be;) functions change when they are orthogonalized in the 1D case to &#x3bd;<sub>n</sub>(&#x3be;). In the power series expansion, the functions change fairly dramatically, but for the harmonic series expansion the change is more subtle.</p>
+<p id="p-0074" num="0073">6. Returning to <figref idref="DRAWINGS">FIG. 5</figref>, at <b>330</b>, there is performed the step of normalizing the set of mesh functions &#x3bd;<sub>n</sub>(&#x3be;). This can be an optionally performed. It ensures that a maximum value of the function on the mesh is equal to 1.</p>
+<p id="p-0075" num="0074">7. Finally, in <figref idref="DRAWINGS">FIG. 5</figref>, at <b>340</b>, once the mesh functions &#x3bd;<sub>n</sub>(&#x3be;) are determined (orthogonalized and normalized on the mesh locations &#x201c;i&#x201d;), there is performed the determining of the coefficient values, K<sub>n</sub>, by fitting the measured values f(&#x3be;<sub>s</sub>) of the variation that was observed (measured values of attributes at the discrete sampled points &#x3be;<sub>s </sub>within the established domain) to a model expressed as an expansion in the set of established mesh functions, i.e., &#x3bd;<sub>n </sub>evaluated at &#x3be;<sub>s</sub>, i.e.:</p>
+<p id="p-0076" num="0075">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mi>f</mi>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo>(</mo>
+      <msub>
+        <mi>&#x3be;</mi>
+        <mi>s</mi>
+      </msub>
+      <mo>)</mo>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <munder>
+        <mo>&#x2211;</mo>
+        <mi>n</mi>
+      </munder>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <msub>
+          <mi>K</mi>
+          <mi>n</mi>
+        </msub>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <msub>
+            <mi>v</mi>
+            <mi>n</mi>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>&#x3be;</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+      <mi>&#x25b;</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo>(</mo>
+        <msub>
+          <mi>&#x3be;</mi>
+          <mi>s</mi>
+        </msub>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+where n is the order of the variation being corrected, K<sub>n </sub>are 1D coefficients of mesh functions to be determined, f(&#x3be;<sub>s</sub>) the measured values of samples at discrete points of the domain, and (&#x3be;<sub>s</sub>) is the residual error between the measured values and the model. In one embodiment, the sampling points &#x201c;s&#x201d; could be coincident with the reference mesh locations &#x201c;i&#x201d;; in which case the coefficients can be expressed as summations:
+</p>
+<p id="p-0077" num="0076">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mrow>
+  <msub>
+    <mi>K</mi>
+    <mi>n</mi>
+  </msub>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <munder>
+        <mo>&#x2211;</mo>
+        <mrow>
+          <mi>s</mi>
+          <mo>=</mo>
+          <mi>i</mi>
+        </mrow>
+      </munder>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mrow>
+          <mi>f</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <msub>
+              <mi>&#x3be;</mi>
+              <mi>s</mi>
+            </msub>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <msub>
+            <mi>v</mi>
+            <mi>n</mi>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <msub>
+              <mi>&#x3be;</mi>
+              <mi>s</mi>
+            </msub>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mrow>
+    <mrow>
+      <munder>
+        <mo>&#x2211;</mo>
+        <mrow>
+          <mi>s</mi>
+          <mo>=</mo>
+          <mi>i</mi>
+        </mrow>
+      </munder>
+      <mo>&#x2062;</mo>
+      <msup>
+        <mrow>
+          <mo>&#xf603;</mo>
+          <mrow>
+            <msub>
+              <mi>v</mi>
+              <mi>n</mi>
+            </msub>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <msub>
+                <mi>&#x3be;</mi>
+                <mi>s</mi>
+              </msub>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>&#xf604;</mo>
+        </mrow>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+</mrow>
+</math>
+</maths>
+</p>
+<p id="p-0078" num="0077">In a general embodiment, the sampling points &#x201c;s&#x201d; are not coincident with the mesh locations &#x201c;i&#x201d; (and there could be fewer sampling points than mesh locations); in which case the coefficients must be determined by adjusting the values of K<sub>n </sub>to minimize the square of the residual error (difference between the measured and modeled terms); a well-known procedure know as a least-squares fit; namely:</p>
+<p id="p-0079" num="0078">
+<maths id="MATH-US-00003" num="00003">
+<math overflow="scroll">
+<mrow>
+  <msup>
+    <mrow>
+      <mi>Minimize</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo>[</mo>
+        <mrow>
+          <mi>&#x25b;</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <msub>
+              <mi>&#x3be;</mi>
+              <mi>s</mi>
+            </msub>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>]</mo>
+      </mrow>
+    </mrow>
+    <mn>2</mn>
+  </msup>
+  <mo>=</mo>
+  <msup>
+    <mrow>
+      <mi>Minimize</mi>
+      <mo>[</mo>
+      <mrow>
+        <mrow>
+          <mi>f</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <msub>
+              <mi>&#x3be;</mi>
+              <mi>s</mi>
+            </msub>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>-</mo>
+        <mrow>
+          <munder>
+            <mo>&#x2211;</mo>
+            <mi>n</mi>
+          </munder>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <msub>
+              <mi>K</mi>
+              <mi>n</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <msub>
+                <mi>v</mi>
+                <mi>n</mi>
+              </msub>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <msub>
+                  <mi>&#x3be;</mi>
+                  <mi>s</mi>
+                </msub>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mo>]</mo>
+    </mrow>
+    <mn>2</mn>
+  </msup>
+</mrow>
+</math>
+</maths>
+</p>
+<p id="p-0080" num="0079">The coefficients K<sub>n </sub>are the magnitudes of a particular component of the variation, e.g., a component corresponding to a particular orthogonal function. Thus, for example, knowing the value of the variation, to correct a process, a tool knob corresponding to a particular coefficient K<sub>n </sub>may be adjusted by an opposite value, i.e., by a value &#x2212;K<sub>n</sub>.</p>
+<p id="p-0081" num="0080">General 2-D Scalar/Vector</p>
+<p id="p-0082" num="0081"><figref idref="DRAWINGS">FIG. 7</figref> depicts the resulting orthogonalized set of equations <b>500</b> for a general 2-dimensional (2-D case). For example this may include an example rectangular domain, as in an exposure field. For this case, the constructed 2-D mesh functions <b>510</b> include results of the 1D case. That is, in the 2-D case, e.g., modeling a variation in a rectangular domain, the generation of (orthogonolized) mesh functions w<sub>nm</sub>(x,y) includes a product of sets of new mesh functions &#x3bd;<sub>n</sub>(x) and &#x3bd;<sub>m</sub>(y), where x are y locations within the established 2-D domain and n, m representing respective order of variations. As shown in <figref idref="DRAWINGS">FIG. 7</figref>, constructed 2-D mesh functions <b>510</b> are formed generally from a product &#x3bd;<sub>n</sub>(x)&#x3bd;<sub>m</sub>(y), and include various function components <b>515</b> according to the order being captured: e.g., separate functions &#x3bd;<sub>0</sub>(x), &#x3bd;<sub>0</sub>(y)=1 (0<sup>th </sup>order variation); two separate 1<sup>st </sup>order functions &#x3bd;<sub>1</sub>(x) and &#x3bd;<sub>1</sub>(y) (1<sup>st </sup>order variation); three separate functions &#x3bd;<sub>2</sub>(x) and &#x3bd;<sub>2</sub>(y) and a product &#x3bd;<sub>1</sub>(x) &#x3bd;<sub>1</sub>(y) (2nd order variation), etc. In context of overlay control, the measured and modeled variation is comprised of vectors having an x- and y-orientation. Thus, a 0<sup>th </sup>order variation corresponds to a translation in x and/or y directions; a 1<sup>st </sup>order variation corresponds to rotation or magnification error; a 2<sup>nd </sup>order will correspond to quadratic or trapezoid type error. As indicated at <b>520</b>, the observed variation in the 2-D case represented as f(x<sub>s</sub>,y<sub>s</sub>) is fitted to the generated mesh functions w<sub>nm</sub>(x,y) to generate new sets of 2-D coefficients K<sub>nm</sub>. Where n+m determine the order of variation; e.g., n=1, m=0 are first order (rotation or magnification in the x or y direction).</p>
+<p id="p-0083" num="0082"><figref idref="DRAWINGS">FIGS. 8A-8D</figref> show visually as overlay terms (placement terms) what each mesh function corresponds to (i.e., orthogonalized mesh functions normalized to value &#x201c;1&#x201d;) as shown overlayed on a reference mesh, e.g., on a 7&#xd7;7 mesh <b>610</b>, using harmonic basis functions for capturing the example orders of variation depicted in x and y directions. In <figref idref="DRAWINGS">FIGS. 8A-8D</figref>, example 2-D mesh function coefficients K<sub>nm </sub>are the mesh function coefficients, for the constructed mesh functions corresponding to the order of variation being captured. For example, <figref idref="DRAWINGS">FIG. 8A</figref> shows example mesh functions <b>600</b> and various associated example statistic values (max, min, mean and 3-Sigma) associated with example coefficients K<sub>00</sub>, K<sub>10</sub>, K<sub>01 </sub>for 2-D Normalized Orthogonal Function Set, e.g., 0th Order &#x26; 1st Order (K<sub>nm</sub>=1), for the 7&#xd7;7 reference mesh <b>610</b>. <figref idref="DRAWINGS">FIG. 8B</figref> shows example mesh functions <b>601</b> and various associated statistic values (max, min, mean and 3-Sigma) associated with example coefficients K<sub>20</sub>, K<sub>11</sub>, K<sub>02 </sub>for 2-D Normalized Orthogonal Function Set, e.g., 2<sup>nd </sup>Order (K<sub>nm</sub>=1). <figref idref="DRAWINGS">FIG. 8C</figref> shows example mesh functions <b>602</b> and various associated statistic values (max, min, mean and 3-Sigma) associated with example coefficients K<sub>30</sub>, K<sub>21</sub>, K<sub>12</sub>, K<sub>03 </sub>for 2-D Normalized Orthogonal Function Set, e.g., 3<sup>rd </sup>Order (K<sub>nm</sub>=1). <figref idref="DRAWINGS">FIG. 8D</figref> shows example mesh functions <b>603</b> and various associated statistic values (max, min, mean and 3-Sigma) associated with example coefficients K<sub>40</sub>, K<sub>31</sub>, K<sub>22</sub>, K<sub>13</sub>, K<sub>04 </sub>for 2-D Normalized Orthogonal Function Set, e.g., 4<sup>th </sup>Order (K<sub>nm</sub>=1).</p>
+<p id="p-0084" num="0083">General 2-D Vector for Overlay Control System Application</p>
+<p id="p-0085" num="0084">The general vector case for constructing of orthogonal functions to the Field and Grid sets of domain functions on their respective selected reference meshes is now described. A general variation of both the field and grid in 2-D is simultaneously expressed as a vector {right arrow over (V)} for representing variation in x and y directions. It is understood that, in this example, Field coordinates are referred to as (x,y), Grid coordinates as (X, Y), and, the observed or measured variation {right arrow over (V)} at sample locations {right arrow over (V)} (x<sub>s</sub>, y<sub>s</sub>; X<sub>t</sub>,Y<sub>t</sub>) where s and t are sampling points in corresponding to x and y locations. In the construction of the general model extended for Field and Grid overlay control, there is first performed selecting of Field and Grid sets of domain functions. That is, in one embodiment, the first three (3) functions constructed are the linear terms (Field: 1, x, y, . . . ), (Grid: 1, X, Y, . . . ). Higher order terms may be selected to describe anticipated nonlinear variation (minimum residuals). After generating a first set of domain functions that best characterize the non-uniformity of the patterning process, these functions are orthogonalized on the established Field and Grid domains to form corresponding Field and Grid mesh functions, w<sub>nm</sub>(x,y) and W<sub>pq</sub>(X,Y). The vector variation can then be expressed as a general expansion of the form:</p>
+<p id="p-0086" num="0085">
+<maths id="MATH-US-00004" num="00004">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mover>
+      <mi>V</mi>
+      <mo>&#x2192;</mo>
+    </mover>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo>(</mo>
+      <mrow>
+        <msub>
+          <mi>x</mi>
+          <mi>s</mi>
+        </msub>
+        <mo>,</mo>
+        <mrow>
+          <msub>
+            <mi>y</mi>
+            <mi>s</mi>
+          </msub>
+          <mo>;</mo>
+          <msub>
+            <mi>X</mi>
+            <mi>t</mi>
+          </msub>
+        </mrow>
+        <mo>,</mo>
+        <msub>
+          <mi>Y</mi>
+          <mi>t</mi>
+        </msub>
+      </mrow>
+      <mo>)</mo>
+    </mrow>
+  </mrow>
+  <mo>&#x2248;</mo>
+  <mrow>
+    <munderover>
+      <mo>&#x2211;</mo>
+      <mrow>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>0</mn>
+      </mrow>
+      <mrow>
+        <mi>N</mi>
+        <mo>,</mo>
+        <mi>M</mi>
+      </mrow>
+    </munderover>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <munderover>
+        <mo>&#x2211;</mo>
+        <mrow>
+          <mn>0</mn>
+          <mo>,</mo>
+          <mn>0</mn>
+        </mrow>
+        <mrow>
+          <mi>P</mi>
+          <mo>,</mo>
+          <mi>Q</mi>
+        </mrow>
+      </munderover>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mover>
+          <msub>
+            <mi>C</mi>
+            <mi>nmpq</mi>
+          </msub>
+          <mo>&#x2192;</mo>
+        </mover>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <msub>
+            <mi>w</mi>
+            <mrow>
+              <mi>n</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.3em" height="0.3ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mi>m</mi>
+            </mrow>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msub>
+                <mi>x</mi>
+                <mi>s</mi>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>y</mi>
+                <mi>s</mi>
+              </msub>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <msub>
+            <mi>W</mi>
+            <mi>pq</mi>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msub>
+                <mi>X</mi>
+                <mi>t</mi>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>Y</mi>
+                <mi>t</mi>
+              </msub>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+</p>
+<p id="p-0087" num="0086">As shown in <figref idref="DRAWINGS">FIG. 9A</figref>, to minimize all residuals at once, and thereby determine all sets of coefficients at a single time, a single general expression of mesh functions <b>700</b> is constructed to model all expected variations on the mesh, and provide the ability for determining adjustments for (i.e., correcting), at once, field variations, grid variations, and coupled field and grid variations. Expression <b>700</b> includes functions of the independently generated mesh functions for the field and the grid and their products. For example, in <figref idref="DRAWINGS">FIG. 9A</figref>, amplitude of the products of Field mesh functions w<sub>nm</sub>(x,y) and Grid functions W<sub>pq</sub>(X,Y) are the vector coefficients C<sub>nmpq </sub>as shown in the expansion <b>700</b>. For example, the model expression <b>700</b> may be broken apart and partially expanded <b>710</b> and evaluated as separate &#x201c;F&#x201d; coefficient terms pertaining to field variation <b>712</b>, &#x201c;G&#x201d; coefficient terms pertaining to grid &#x201c;field position&#x201d; variation <b>714</b>; and &#x201c;C&#x201d; coefficient terms pertaining to grid &#x201c;field deformation&#x201d; coefficients <b>716</b> that have specific meaning in the context of semiconductor overlay control.</p>
+<p id="p-0088" num="0087"><figref idref="DRAWINGS">FIG. 9B</figref> shows a modified sum of components expression <b>710</b>&#x2032; for determining values of all field F<sub>nm </sub>coefficients, grid G<sub>pq </sub>&#x201c;field position&#x201d; coefficients and grid &#x201c;field deformation&#x201d; coupled coefficients C<sub>nmpq </sub>at once, with n, m, p, q representing the variation order. In the broken out terms <b>720</b>, <figref idref="DRAWINGS">FIG. 9B</figref> the expression is shown to require evaluation of terms that only include the coupled coefficient terms C<sub>01pq </sub>and C<sub>10pq </sub>as they comprise the linear field terms multiplied by the full set of grid functions W(X,Y). In the broken out terms <b>720</b> of modified expression <b>710</b>&#x2032; it is noted that only the linear field functions are represented (as &#x201c;x&#x201d; and &#x201c;y&#x201d; functions as the mesh functions w<sub>nm</sub>(x,y) are substituted with w<sub>10</sub>(x,y) whose value is &#x201c;x&#x201d;, and w<sub>01</sub>(x,y) is replaced with value &#x201c;y&#x201d;); coupled terms when the field terms are non-linear are not included (i.e., anything beyond &#x201c;x&#x201d; and &#x201c;y&#x201d;). In the application of the model <b>700</b> shown in the embodiment of <figref idref="DRAWINGS">FIG. 9A</figref>, the general measured (observed) vector {right arrow over (V)} (x<sub>s</sub>,y<sub>s</sub>; X<sub>t</sub>,Y<sub>t</sub>) is used to fit (solve for the coefficients F, G and C) and determine the components of variation for each orthogonal function, e.g., corresponding to both field, grid and, a product of field and grid functions) implemented for an overlay control system application. These F, G and C coefficients correspond to control mechanisms in the tools, i.e., respective field control, grid control and combinations of grid and field control-combinations).</p>
+<p id="p-0089" num="0088">In one example, calculated coefficients from the model are used to adjust Field parameters &#x201c;F&#x201d; controllable in a tool set. For step and scan exposure tools the Field dimensions are determined by the lens size and the extent of the reticle scan (e.g., about 25&#xd7;32 mm in the wafer plane). Corrections to field pattern placement require adjustment to lens and scan parameters corresponding to the &#x201c;F&#x201d; coefficients for all fields on the wafer. Grid parameters &#x201c;G&#x201d; correctable by the tool are controlled by adjustments to the wafer stage of the scanner of the exposure tool. For example, the tool has a chuck, upon which a wafer is pre-aligned and affixed flat (e.g., by a vacuum or other means) and the exposure step includes a stage movement that positions the wafer under the lens. The lens images the reticle onto the wafer as the reticle scans over a field. The wafer stage then steps to a next location for the exposure of the next field. Thus, Grid &#x201c;field position&#x201d; errors &#x201c;G&#x201d; are corrected by adjustments to the wafer stage parameters for each field position on the wafer. Grid &#x201c;field deformation&#x201d; errors &#x201c;C&#x201d; are corrected by adjustments to the lens/scan parameters for each field position on the wafer.</p>
+<p id="p-0090" num="0089">Field Distortion Correction Example</p>
+<p id="p-0091" num="0090"><figref idref="DRAWINGS">FIG. 10</figref> shows a plot of raw measurement data <b>800</b> shown as 2-D vectors <b>802</b> sampled in a Field and depict corresponding raw measured variation (in x- and y-direction) at discrete locations (samples) for which an associated mean and 3-Sigma statistic values <b>805</b> (e.g. in nanometers) are shown calculated. The raw data shown in <figref idref="DRAWINGS">FIG. 10</figref> corresponds to the example measurement sample <b>225</b> shown projected onto the example 7&#xd7;7 mesh <b>215</b> as shown in <figref idref="DRAWINGS">FIG. 4A</figref>. In the process described herein, the raw data is processed using a set of mesh functions pertaining to a Field fourth 4<sup>th </sup>order model to perform the fit and obtain an example set of coefficients <b>825</b> which, in the example, are cut off at 4<sup>th </sup>order for the particular data set shown. The coefficients <b>825</b> are used to correct the variation errors resulting in the residuals <b>832</b> shown in the corresponding plot <b>850</b> of <figref idref="DRAWINGS">FIG. 10</figref>. As shown, there is marked improvement in the corrected variation as exhibited by the computed associated mean and 3-Sigma statistic values <b>815</b>. For example, there is achieved about a 70% reduction in x-direction variation and about an 80% reduction in y-direction variation. As a consequence of normalizing the mesh functions, all coefficients are in the same units (e.g., nanometers) corresponding to the maximum error in the field attributable to each coefficient. Thus, the magnitude of each coefficient denotes its relative significance. Among the computed coefficients <b>825</b> are highlighted x, y coefficients <b>819</b> having values greater than 1.0 nm, for example, to show a particular components of error of potentially influential value.</p>
+<p id="p-0092" num="0091"><figref idref="DRAWINGS">FIG. 11</figref> shows a data table <b>900</b>A of computed Field coefficients corresponding to error components for a no-mesh case, i.e., without using a reference mesh or fitting technique described herein but using only domain or basis functions; and a data table <b>900</b>B of computed Field coefficients corresponding to error components computed using a 13&#xd7;19 reference mesh, mesh functions and fitting technique as described herein. The data tables <b>900</b>A, B depict those coefficients corresponding to correctable error components for which the tool set has adjustment controls or &#x201c;knobs&#x201d; to correct. There is further depicted data tables <b>950</b>A,B that correspond to grids <b>900</b>A,B, respectively: with data grid <b>950</b>A indicating resulting computed Field coefficients corresponding to error components computed using only domain functions (no-mesh); and, a data grid <b>950</b>B indicating resulting computed Field coefficients corresponding to error components computed using a 13&#xd7;19 reference mesh and fitting technique as described herein. However, model coefficients grids <b>950</b>A,B show highlighted Field coefficient values <b>925</b> corresponding to uncorrectable parameters in which a tool set may not have knobs to correct. In both cases <b>900</b>A,B (no-mesh, mesh and correctable components) and <b>950</b>A,B (no-mesh, mesh and un-correctable components) there is shown improvement in the reduction of variation in the x-direction as exhibited by differences between Raw 3-sigma value and Residual 3-sigma values which show improvement in each of grids <b>900</b>A, <b>900</b>B and <b>950</b>A, <b>950</b>B. More particularly, in each grid <b>900</b>A, <b>900</b>B there is shown no discernable change in the amount of variation correction in the x-direction (for the no-mesh case and mesh cases). However, in the grids <b>950</b>A, <b>950</b>B where some components have not been corrected, there is more variation correction in the x-direction in the mesh case (e.g., &#x2212;42%) as compared with the no-mesh case (e.g., &#x2212;29%). If corrections are not applied, then in the no-mesh case showing coefficients <b>950</b>A in the y-direction, there is depicted a degradation in the error as shown by a 5% at increase in residual error at <b>975</b> (% increase difference between Raw 3-sigma value and Residual 3-sigma values). In the example using the defined 13&#xd7;19 mesh, and corrections not applied there is still shown in the example data slight improvement in the error correction capability (for the example tool set) as exemplified by a net % decrease in difference between Raw 3-sigma value and Residual 3-sigma values) in both x and y directions. During implementation of the method, it is desirable to determine all coefficients to provide indication as to what is influential and possibly apply corrections to parameters corresponding to some of the parameters, e.g., corresponding to coefficients for which corrections can be applied, or, corresponding to those whose calculated change in that coefficient was insignificant.</p>
+<p id="p-0093" num="0092">In the example embodiment of <figref idref="DRAWINGS">FIG. 2B</figref>, in the context of nonlinear overlay control, the implementation of the modeling at <b>125</b>&#x2032; attempts to minimize overlay and patterning alignment errors given the tool set. For example, the modeling performed generates coefficients of the constructed orthogonal functions that correspond to either correctable or non-correctable product attributes. For example, in a given tool or process there is a limited knobs are available for controlling the process to minimize the errors. However, the adjustable control parameters (e.g., knobs to a processing tool that can control a processing parameter) may but do not all necessarily correlate 1:1 with a coefficient to be solved for the mesh functions of the particular model implemented. That is, in some cases, there may be no adjustable control parameter knob that corresponds to a determined coefficient of the mesh functions model (e.g., that can be fed back to a processing tool); alternately, a control knob may represent some combination of coefficients and may change from tool set to tool set. The system and method enables the robust mapping possible as it identifies both correctable and uncorrectable coefficients of formed mesh functions. For example, a dynamically correctable coefficient output value of the modeled variation may be directly fed back to a particular control knob to fix an error, or, the coefficients may be used to flag an intervention, e.g., to stop a tool and conduct a calibration procedure; or, these coefficients may be monitored to ascertain whether their value may have varied over time above or below a specified amount which may dictate a course of action.</p>
+<p id="p-0094" num="0093">Thus, with respect to <figref idref="DRAWINGS">FIG. 2B</figref>, the method <b>100</b>&#x2032; provides for transforming measured error to tool/process (corrections and diagnostics) by expanding functions that characterize sampled variation, and quantifying correctable/uncorrectable components of variation. As described, the computed coefficients corresponding to correctable/uncorrectable components correspond to: system constants (methodology used to set system constants to minimize the variation during calibration); coefficients that are used when running monitor wafers to obtain measurements for correcting correct baseline operation of the tool (incremental corrections on top of system constants) which baseline corrections can be performed each time a monitor is run; and, further, during real-time production, the coefficients as computed herein are used during real product manufacture for making run-time corrections (specific product to specific tool at one time). In this scenario, a sparser sampling scheme may be used.</p>
+<p id="p-0095" num="0094"><figref idref="DRAWINGS">FIG. 12</figref> illustrates an exemplary hardware configuration of a computing system <b>1000</b> running and/or implementing the methods described herein, e.g., in a semiconductor manufacturing facility. The hardware configuration preferably has at least one processor or central processing unit (CPU) <b>1011</b>. The CPUs <b>1011</b> are interconnected via a system bus <b>1012</b> to a random access memory (RAM) <b>1014</b>, read-only memory (ROM) <b>1016</b>, input/output (I/O) adapter <b>1018</b> (for connecting peripheral devices such as disk units <b>1021</b> and tape drives <b>1040</b> to the bus <b>1012</b>), user interface adapter <b>1022</b> (for connecting a keyboard <b>1024</b>, mouse <b>1026</b>, speaker <b>1028</b>, microphone <b>1032</b>, and/or other user interface device to the bus <b>1012</b>), a communication adapter <b>1034</b> for connecting the system <b>1000</b> to a data processing network, the Internet, an Intranet, a local area network (LAN), etc., and a display adapter <b>1036</b> for connecting the bus <b>1012</b> to a display device <b>1038</b> and/or printer <b>1039</b> (e.g., a digital printer of the like).</p>
+<p id="p-0096" num="0095">As will be appreciated by one skilled in the art, aspects of the present invention may be embodied as a system, method or computer program product. Accordingly, aspects of the present invention may take the form of an entirely hardware embodiment, an entirely software embodiment (including firmware, resident software, micro-code, etc.) or an embodiment combining software and hardware aspects that may all generally be referred to herein as a &#x201c;circuit,&#x201d; &#x201c;module&#x201d; or &#x201c;system.&#x201d; Furthermore, aspects of the present invention may take the form of a computer program product embodied in one or more computer readable medium(s) having computer readable program code embodied thereon.</p>
+<p id="p-0097" num="0096">Any combination of one or more computer readable medium(s) may be utilized. The computer readable medium may be a computer readable signal medium or a computer readable storage medium. A computer readable storage medium may be, for example, but not limited to, an electronic, magnetic, optical, electromagnetic, infrared, or semiconductor system, apparatus, or device, or any suitable combination of the foregoing. More specific examples (a non-exhaustive list) of the computer readable storage medium would include the following: an electrical connection having one or more wires, a portable computer diskette, a hard disk, a random access memory (RAM), a read-only memory (ROM), an erasable programmable read-only memory (EPROM or Flash memory), an optical fiber, a portable compact disc read-only memory (CD-ROM), an optical storage device, a magnetic storage device, or any suitable combination of the foregoing. In the context of this document, a computer readable storage medium may be any tangible medium that can contain, or store a program for use by or in connection with a system, apparatus, or device running an instruction.</p>
+<p id="p-0098" num="0097">A computer readable signal medium may include a propagated data signal with computer readable program code embodied therein, for example, in baseband or as part of a carrier wave. Such a propagated signal may take any of a variety of forms, including, but not limited to, electro-magnetic, optical, or any suitable combination thereof. A computer readable signal medium may be any computer readable medium that is not a computer readable storage medium and that can communicate, propagate, or transport a program for use by or in connection with a system, apparatus, or device running an instruction. Program code embodied on a computer readable medium may be transmitted using any appropriate medium, including but not limited to wireless, wireline, optical fiber cable, RF, etc., or any suitable combination of the foregoing.</p>
+<p id="p-0099" num="0098">Computer program code for carrying out operations for aspects of the present invention may be written in any combination of one or more programming languages, including an object oriented programming language such as Java, Smalltalk, C++ or the like and conventional procedural programming languages, such as the &#x201c;C&#x201d; programming language or similar programming languages. The program code may run entirely on the user's computer, partly on the user's computer, as a stand-alone software package, partly on the user's computer and partly on a remote computer or entirely on the remote computer or server. In the latter scenario, the remote computer may be connected to the user's computer through any type of network, including a local area network (LAN) or a wide area network (WAN), or the connection may be made to an external computer (for example, through the Internet using an Internet Service Provider).</p>
+<p id="p-0100" num="0099">Aspects of the present invention are described below with reference to flowchart illustrations and/or block diagrams of methods, apparatus (systems) and computer program products according to embodiments of the invention. It will be understood that each block of the flowchart illustrations and/or block diagrams, and combinations of blocks in the flowchart illustrations and/or block diagrams, can be implemented by computer program instructions. These computer program instructions may be provided to a processor of a general purpose computer, special purpose computer, or other programmable data processing apparatus to produce a machine, such that the instructions, which run via the processor of the computer or other programmable data processing apparatus, create means for implementing the functions/acts specified in the flowchart and/or block diagram block or blocks. These computer program instructions may also be stored in a computer readable medium that can direct a computer, other programmable data processing apparatus, or other devices to function in a particular manner, such that the instructions stored in the computer readable medium produce an article of manufacture including instructions which implement the function/act specified in the flowchart and/or block diagram block or blocks.</p>
+<p id="p-0101" num="0100">The computer program instructions may also be loaded onto a computer, other programmable data processing apparatus, or other devices to cause a series of operational steps to be performed on the computer, other programmable apparatus or other devices to produce a computer implemented process such that the instructions which run on the computer or other programmable apparatus provide processes for implementing the functions/acts specified in the flowchart and/or block diagram block or blocks.</p>
+<p id="p-0102" num="0101">The flowchart and block diagrams in the Figures illustrate the architecture, functionality, and operation of possible implementations of systems, methods and computer program products according to various embodiments of the present invention. In this regard, each block in the flowchart or block diagrams may represent a module, segment, or portion of code, which comprises one or more operable instructions for implementing the specified logical function(s). It should also be noted that, in some alternative implementations, the functions noted in the block may occur out of the order noted in the figures. For example, two blocks shown in succession may, in fact, be run substantially concurrently, or the blocks may sometimes be run in the reverse order, depending upon the functionality involved. It will also be noted that each block of the block diagrams and/or flowchart illustration, and combinations of blocks in the block diagrams and/or flowchart illustration, can be implemented by special purpose hardware-based systems that perform the specified functions or acts, or combinations of special purpose hardware and computer instructions.</p>
+<p id="p-0103" num="0102">While there has been shown and described what is considered to be preferred embodiments of the invention, it will, of course, be understood that various modifications and changes in form or detail could readily be made without departing from the spirit of the invention. It is therefore intended that the scope of the invention not be limited to the exact forms described and illustrated, but should be construed to cover all modifications that may fall within the scope of the appended claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08626328-20140107-M00001.NB">
+<img id="EMI-M00001" he="7.03mm" wi="76.20mm" file="US08626328-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08626328-20140107-M00002.NB">
+<img id="EMI-M00002" he="12.02mm" wi="76.20mm" file="US08626328-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00003" nb-file="US08626328-20140107-M00003.NB">
+<img id="EMI-M00003" he="7.03mm" wi="76.20mm" file="US08626328-20140107-M00003.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00004" nb-file="US08626328-20140107-M00004.NB">
+<img id="EMI-M00004" he="9.14mm" wi="76.20mm" file="US08626328-20140107-M00004.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>Having thus described our invention what we claim as new, and desire to secure by Letters Patent is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method for dynamically controlling variation during an exposure step of a patterning process using an exposure tool comprising:
+<claim-text>measuring a set of one or more pattern attributes at a set of discrete locations on a substrate, the substrate having two or more fields and at least one field having two or more of the set of discrete locations;</claim-text>
+<claim-text>selecting a first set of basis functions representing a first variation of the set of one or more pattern attributes over a first set of discrete locations within a first field, and selecting a second set of basis functions representing a second variation of the set of one or more pattern attributes over a second set of discrete locations within a second field;</claim-text>
+<claim-text>defining a first set of reference locations within a field;</claim-text>
+<claim-text>defining a second set of reference locations over the substrate;</claim-text>
+<claim-text>constructing a first orthogonal set of functions from the first set of basis functions on the first set of reference locations and constructing a second orthogonal set of functions from the second set of basis function on the second set of reference locations; and</claim-text>
+<claim-text>constructing a third orthogonal set of basis functions comprised of the first set of basis functions and the second set of basis functions and the product of each of the first set of basis functions with each of the second set of basis functions;</claim-text>
+<claim-text>fitting the third orthogonal set of functions to the measured set of one or more pattern attributes at the set of discrete locations;</claim-text>
+<claim-text>determining, as a result of said fitting, a set of coefficients of the third orthogonal set of functions; and</claim-text>
+<claim-text>minimizing a variation in the one or more pattern attributes by adjusting the exposure tool or the patterning process according to one or more said determined set of coefficients.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>monitoring a remainder of the set of coefficients which are not used to minimize variations for a diagnostic purpose.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. A method for controlling a nonlinear variation in a manufacturing step using a process tool comprising:
+<claim-text>measuring one or more attributes of a product being manufactured by said process tool at a set of one or more discrete times or locations spanning one or more finite temporal or spatial domains, the product having two or more fields and at least one field having two or more of the set of discrete locations;</claim-text>
+<claim-text>selecting a first set of basis functions representing a first variation in the set of one or more product attributes over a first set of discrete locations within a first field, and selecting a second set of basis functions representing a second variation of the set of one or more pattern attributes over a second set of discrete locations within a second field;</claim-text>
+<claim-text>defining a set of reference times or locations distributed on the product being manufactured, said defined locations comprising a first set of reference locations within a field and a second set of reference locations over the product;</claim-text>
+<claim-text>constructing a first orthogonal set of functions from the first set of basis functions, said first orthogonal set of functions being constructed from the set of basis functions on the defined first set of reference locations, and constructing a second orthogonal set of functions from the second set of basis function on the second set of reference locations;</claim-text>
+<claim-text>constructing a third orthogonal set of basis functions comprised of the first set of basis functions and the second set of basis functions and the product of each of the first set of basis functions with each of the second set of basis functions;</claim-text>
+<claim-text>fitting the third orthogonal set of functions to the measured set of one or more product attributes at the set of discrete times or locations;</claim-text>
+<claim-text>determining, as a result of said fitting, a set of coefficients of the third orthogonal set of functions; and</claim-text>
+<claim-text>minimizing a variation in the one or more product attributes by adjusting the process tool corresponding to one or more of the coefficients.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein the reference times or locations are distributed uniformly and symmetrically about the center of each domain.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein the manufacturing step is an exposure step of a patterning process in integrated circuit manufacturing, said process tool is an exposure tool, said product is a semiconductor substrate on which one or more patterns are exposed, said measuring performed at said set of discrete locations on the substrate, and said spatial domain is comprised of one or more exposure fields on the substrate.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00005">claim 5</claim-ref>, wherein said product attributes include a pattern placement error or overlay error.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. A system for controlling nonlinear variation in a manufacturing step using a process tool comprising:
+<claim-text>a measuring device for dynamically measuring one or more attributes of a product being manufactured at a set of one or more discrete times or locations spanning one or more finite temporal or spatial domains, the product having two or more fields and at least one field having two or more of the set of discrete locations;</claim-text>
+<claim-text>a memory device;</claim-text>
+<claim-text>a processing device operatively coupled to the memory device and configured to perform a method comprising:
+<claim-text>selecting a first set of basis functions representing a first variation in the set of one or more product attributes over a first set of discrete locations within a first field, and selecting a second set of basis functions representing a second variation of the set of one or more pattern attributes over a second set of discrete locations within a second field;</claim-text>
+<claim-text>defining a set of reference times or locations distributed on the product being manufactured, said defined locations comprising a first set of reference locations within a field and a second set of reference locations over the product;</claim-text>
+<claim-text>constructing a first orthogonal set of the set of functions from the first set of basis functions on the defined first set of reference locations, and constructing a second orthogonal set of functions from the second set of basis function on the second set of reference locations;</claim-text>
+<claim-text>constructing a third orthogonal set of basis functions comprised of the first set of basis functions and the second set of basis functions and the product of each of the first set of basis functions with each of the second set of basis functions;</claim-text>
+<claim-text>fitting the third orthogonal set of functions to the measured set of one or more product attributes at the set of discrete times or locations;</claim-text>
+<claim-text>determining, as a result of said fitting, a set of coefficients of the third orthogonal set of functions; and</claim-text>
+<claim-text>minimizing a variation in the one or more product attributes by adjusting the process tool corresponding to one or more of the coefficients.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The system of <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein the manufacturing step is an exposure step of a patterning process in integrated circuit manufacturing, said process tool is an exposure tool, said product is a semiconductor substrate on which one or more patterns are exposed, said dynamically measuring performed at a set of discrete locations on the substrate, and said spatial domain is comprised of one or more exposure fields on the substrate.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein said product attributes include a pattern placement error or overlay error.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The system of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the substrate has two or more fields and at least one field has two or more of the set of discrete locations, and said second set of reference locations are defined over the substrate, said process tool adjusting comprising adjusting the exposure tool or the patterning process corresponding to one or more coefficients of the set of coefficients of the third orthogonal set of functions.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. A computer program product for controlling a nonlinear variation in a manufacturing step using a process tool, the computer program device comprising a storage medium readable by a processing circuit and storing instructions run by the processing circuit for performing a method, the method comprising:
+<claim-text>initiating a measurement, by a measurement device, of one or more attributes of a product being manufactured by said process tool at a set of one or more discrete times or locations spanning one or more finite temporal or spatial domains, the product having two or more fields and at least one field having two or more of the set of discrete locations;</claim-text>
+<claim-text>selecting a first set of basis functions representing a first variation in the set of one or more product attributes over a first set of discrete locations within a first field, and selecting a second set of basis functions representing a second variation of the set of one or more pattern attributes over a second set of discrete locations within a second field;</claim-text>
+<claim-text>defining a set of reference times or locations distributed on the product being manufactured, said defined locations comprising a first set of reference locations within a field and a second set of reference locations over the product;</claim-text>
+<claim-text>constructing a first orthogonal set of functions from the first set of basis functions on the defined first set of reference locations, and constructing a second orthogonal set of functions from the second set of basis function on the second set of reference locations;</claim-text>
+<claim-text>constructing a third orthogonal set of basis functions comprised of the first set of basis functions and the second set of basis functions and the product of each of the first set of basis functions with each of the second set of basis functions;</claim-text>
+<claim-text>fitting the third orthogonal set of functions to the measured set of one or more product attributes at the set of discrete times or locations;</claim-text>
+<claim-text>determining, as a result of said fitting, a set of coefficients of the third orthogonal set of functions; and</claim-text>
+<claim-text>minimizing a variation in the one or more product attributes by adjusting the process tool corresponding to one or more of the coefficients.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The computer program product of <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the manufacturing step is an exposure step of a patterning process in integrated circuit manufacturing, said process tool is an exposure tool, said product is a semiconductor substrate on which one or more patterns are exposed, said measurement performed at a set of discrete locations on the substrate, and said spatial domain is comprised of one or more exposure fields on the substrate.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The computer program product of <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein the substrate has two or more fields and at least one field has two or more of the set of discrete locations, and said second set of reference locations are defined over the substrate, said process tool adjusting comprising adjusting the exposure tool or the patterning process corresponding to one or more coefficients of the set of coefficients of the third orthogonal set of functions. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

@@ -1,0 +1,920 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08625922-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08625922</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13565201</doc-number>
+<date>20120802</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>2011-177569</doc-number>
+<date>20110815</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>K</subclass>
+<main-group>9</main-group>
+<subgroup>40</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>K</subclass>
+<main-group>9</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>N</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>382260</main-classification>
+</classification-national>
+<invention-title id="d2e69">Image processing method and program for determining whether sabotage has occurred to an image</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5359369</doc-number>
+<kind>A</kind>
+<name>Izawa et al.</name>
+<date>19941000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>348672</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>6741295</doc-number>
+<kind>B2</kind>
+<name>Nieuwenhuizen et al.</name>
+<date>20040500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>348687</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>7079157</doc-number>
+<kind>B2</kind>
+<name>Deering</name>
+<date>20060700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>345613</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>7245764</doc-number>
+<kind>B2</kind>
+<name>Nishizawa</name>
+<date>20070700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>382168</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>2003/0034974</doc-number>
+<kind>A1</kind>
+<name>Welch et al.</name>
+<date>20030200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>345426</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>2003/0052890</doc-number>
+<kind>A1</kind>
+<name>Raskar et al.</name>
+<date>20030300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>345581</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>2008/0219564</doc-number>
+<kind>A1</kind>
+<name>Covell et al.</name>
+<date>20080900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>382224</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>2009/0297038</doc-number>
+<kind>A1</kind>
+<name>Ishikawa et al.</name>
+<date>20091200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>382209</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>2010/0208982</doc-number>
+<kind>A1</kind>
+<name>Shimamura et al.</name>
+<date>20100800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>382154</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>2011/0229030</doc-number>
+<kind>A1</kind>
+<name>Ogura</name>
+<date>20110900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>382170</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>2012/0155764</doc-number>
+<kind>A1</kind>
+<name>Ogura</name>
+<date>20120600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>382171</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>2013/0044964</doc-number>
+<kind>A1</kind>
+<name>Ogura</name>
+<date>20130200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>382260</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>JP</country>
+<doc-number>4227539</doc-number>
+<date>20081200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>JP</country>
+<doc-number>4626632</doc-number>
+<date>20101100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00015">
+<othercit>U.S. Appl. No. 13/565,210, Ogura.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>6</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>382164</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382167</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382168</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382170-173</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382190</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382218-220</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382224</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382260-264</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>382275</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>358509</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>358515</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>358518</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>358520</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>358522</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>358523</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>345426</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>345581</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>345613</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>37524002</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>37524012</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>348672</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>348687</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>20</number-of-drawing-sheets>
+<number-of-figures>20</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20130044964</doc-number>
+<kind>A1</kind>
+<date>20130221</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Ogura</last-name>
+<first-name>Sho</first-name>
+<address>
+<city>Kanagawa</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Ogura</last-name>
+<first-name>Sho</first-name>
+<address>
+<city>Kanagawa</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Oblon, Spivak, McClelland, Maier &#x26; Neustadt, L.L.P.</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Sony Corporation</orgname>
+<role>03</role>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Alavi</last-name>
+<first-name>Amir</first-name>
+<department>2668</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">There is provided an image processing device including an acquisition portion that acquires image data of an image, a dividing portion that divides the acquired image into a number of blocks N (N&#x3e;1), a specification portion that sequentially specifies, each time the image data of the image is newly acquired, a number of the blocks M (N&#x2267;M&#x3e;1) from among the number of the blocks N, as the blocks to be updated, a filtering portion that performs filtering using a predetermined filter on the image data of the specified number of the blocks M, a counting portion that counts a number of pixels for which a filtering result is larger than a predetermined value, a first determination portion that determines whether there is an abnormality in the blocks, and a second determination portion that determines whether sabotage has occurred.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="200.07mm" wi="141.14mm" file="US08625922-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="199.47mm" wi="137.16mm" orientation="landscape" file="US08625922-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="190.25mm" wi="118.28mm" orientation="landscape" file="US08625922-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="256.29mm" wi="183.30mm" orientation="landscape" file="US08625922-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="179.24mm" wi="138.60mm" orientation="landscape" file="US08625922-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="267.63mm" wi="176.28mm" orientation="landscape" file="US08625922-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="166.54mm" wi="176.78mm" file="US08625922-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="187.45mm" wi="160.87mm" orientation="landscape" file="US08625922-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="224.79mm" wi="122.17mm" file="US08625922-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="237.66mm" wi="122.51mm" orientation="landscape" file="US08625922-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="171.87mm" wi="145.80mm" file="US08625922-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="181.02mm" wi="144.61mm" file="US08625922-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="243.16mm" wi="149.61mm" file="US08625922-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="250.95mm" wi="83.82mm" file="US08625922-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="242.82mm" wi="159.85mm" file="US08625922-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="160.44mm" wi="172.97mm" file="US08625922-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00016" num="00016">
+<img id="EMI-D00016" he="181.78mm" wi="149.27mm" orientation="landscape" file="US08625922-20140107-D00016.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00017" num="00017">
+<img id="EMI-D00017" he="214.12mm" wi="141.56mm" file="US08625922-20140107-D00017.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00018" num="00018">
+<img id="EMI-D00018" he="214.29mm" wi="80.69mm" orientation="landscape" file="US08625922-20140107-D00018.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00019" num="00019">
+<img id="EMI-D00019" he="230.55mm" wi="170.26mm" orientation="landscape" file="US08625922-20140107-D00019.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00020" num="00020">
+<img id="EMI-D00020" he="189.57mm" wi="138.26mm" orientation="landscape" file="US08625922-20140107-D00020.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND</heading>
+<p id="p-0002" num="0001">The present technology relates to an image processing device, an image processing method and a program. More specifically, the present technology relates to an image processing device, an image processing method and a program that can detect an act of sabotage committed on a surveillance camera or the like.</p>
+<p id="p-0003" num="0002">A surveillance system is known in which, in order to detect an intruder, such as a person or an animal, in a specific space, images are captured of a targeted space by a surveillance camera, and the intruder is detected from the captured images. In this surveillance system, if an act of sabotage is committed, such as covering the surveillance camera with a cloth, changing an orientation of the surveillance camera or spraying a lens of the surveillance camera, it is no longer possible to perform surveillance.</p>
+<p id="p-0004" num="0003">Technology to detect an act of sabotage against a surveillance camera is proposed, in which a degree of similarity is calculated between a current image being filmed by the surveillance camera and a reference image (or a past image) that is stored in advance, or edge strength is calculated and so on, in order to determine whether or not there has been an act of sabotage (refer to Japanese Patent No. 04626632 and Japanese Patent No. 04227539, for example).</p>
+<heading id="h-0002" level="1">SUMMARY</heading>
+<p id="p-0005" num="0004">According to Japanese Patent No. 04626632 and Japanese Patent No. 04227539, it is possible to detect that there has been an act of sabotage. However, it is difficult to determine the type of sabotage. By making it possible to determine the type of sabotage, a response to resolve the sabotage is different, and it is therefore preferable to be able to determine the type of sabotage in addition to detection.</p>
+<p id="p-0006" num="0005">Further, in Japanese Patent No. 04626632, processing is disclosed that also includes moving body detection processing to inhibit mistaken detection due to a moving body. However, detection is not possible except in such a scenario as when the moving body covers a whole screen, and it is difficult to perform detection with respect to a more detailed situation.</p>
+<p id="p-0007" num="0006">Further, in Japanese Patent No. 04227539, it is proposed that processing is performed for each of regions. However, when determining whether or not there has been an act of sabotage, values of results for all regions are added and an overall value is calculated. Thus, when edge strength is extremely high in some regions, a determination result is dependent on those regions, and there is a risk of a mistaken determination.</p>
+<p id="p-0008" num="0007">There is demand for a system that can more accurately detect an act of sabotage against a surveillance camera without mistaken detection, that can determine the type of sabotage, and that allows an appropriate and rapid response.</p>
+<p id="p-0009" num="0008">The present technology has been devised in light of the foregoing circumstances and makes it possible to accurately detect sabotage that is committed against a surveillance camera or the like, and that further makes it possible to determine the type of the sabotage.</p>
+<p id="p-0010" num="0009">According to an embodiment of the present technology, there is provided an image processing device including: an acquisition portion that acquires image data of an image; a dividing portion that divides the acquired image into a number of blocks N (N&#x3e;1); a specification portion that sequentially specifies, each time the image data of the image is newly acquired, a number of the blocks M (N&#x2267;M&#x3e;1) from among the number of the blocks N, as the blocks to be updated; a filtering portion that performs filtering using a predetermined filter on the image data of the specified number of the blocks M; a counting portion that counts a number of pixels for which a filtering result is larger than a predetermined value; a first determination portion that determines whether there is an abnormality in the blocks, by comparing the number of the pixels counted by the counting portion with a predetermined value; and a second determination portion that determines whether sabotage has occurred, by comparing, with a predetermined value, a number of the blocks within the image that are determined by the first determination portion to have an abnormality.</p>
+<p id="p-0011" num="0010">The counting portion may calculate an average value by dividing a sum value of the number of pixels obtained by counting the number of the pixels for which the filtering result is larger than the predetermined value, and a value of pixels for which it is determined that the filtering result is equal to or larger than the predetermined value, by the number of pixels. The first determination portion may perform a first determination that determines whether the number of pixels is smaller than a predetermined value, and a second determination that determines whether the average value is smaller than a predetermined value, and may set a logical sum of the first determination and the second determination as a determination result.</p>
+<p id="p-0012" num="0011">The image processing device may further include: a histogram generation portion that generates a histogram of the image data of each of the specified number of the blocks M; a histogram storage portion that sequentially updates and stores the generated histogram; a change determination portion that, based on a degree of similarity between the generated histogram of each of the specified number of the blocks M and the corresponding stored past histogram of the number of the blocks M, determines whether there is a change in the acquired image; a normalization determination portion that determines whether to perform normalization of the histogram; and a normalization portion that, when it is determined by the normalization determination portion that normalization is to be performed, performs normalization of one of the generated histogram of the number of the blocks M or the corresponding stored past histogram of the number of the blocks M. When the normalization of the histogram has been performed by the normalization portion, the change determination portion may determine whether there is a change in the acquired image based on a degree of similarity using the normalized histogram, and may determine that sabotage has occurred when it is determined that there is a change.</p>
+<p id="p-0013" num="0012">A determination result by the second determination portion and a determination result by the change determination portion may be integrated and a type of the sabotage may be determined.</p>
+<p id="p-0014" num="0013">According to another embodiment of the present technology, there is provided an image processing method which includes: acquiring image data of an image; dividing the acquired image into a number of blocks N (N&#x3e;1); sequentially specifying, each time the image data of the image is newly acquired, a number of the blocks M (N&#x2267;M&#x3e;1) from among the number of the blocks N, as the blocks to be updated; performing filtering using a predetermined filter on the image data of the specified number of the blocks M; counting a number of pixels for which a filtering result is larger than a predetermined value; determining whether there is an abnormality in the blocks, by comparing the counted number of the pixels with a predetermined value; and determining whether sabotage has occurred, by comparing, with a predetermined value, a number of the blocks within the image that are determined to have an abnormality.</p>
+<p id="p-0015" num="0014">According to another embodiment of the present technology, there is provided a computer-readable program including instructions that command a computer to perform: acquiring image data of an image; dividing the acquired image into a number of blocks N (N&#x3e;1); sequentially specifying, each time the image data of the image is newly acquired, a number of the blocks M (N&#x2267;M&#x3e;1) from among the number of the blocks N, as the blocks to be updated; performing filtering using a predetermined filter on the image data of the specified number of the blocks M; counting a number of pixels for which a filtering result is larger than a predetermined value; determining whether there is an abnormality in the blocks, by comparing the counted number of the pixels with a predetermined value; and determining whether sabotage has occurred, by comparing, with a predetermined value, a number of the blocks within the image that are determined to have an abnormality.</p>
+<p id="p-0016" num="0015">With the image processing device, the image processing method and the program according to the embodiments of the present technology, an acquired image is divided into a number of blocks N (N&#x3e;1), and each time the image data of the image is newly acquired, a number of the blocks M (N&#x2267;M&#x3e;1) from among the number of the blocks N is sequentially specified as the blocks to be updated. Filtering is performed, using a predetermined filter, on the image data of the specified number of the blocks M, and a number of pixels for which a filtering result is larger than a predetermined value is counted. The counted number of the pixels is compared with a predetermined value and thus it is determined whether there is an abnormality in the blocks. Then, a number of the blocks within the image that are determined to have an abnormality is further compared with a predetermined value and it is thus determined whether sabotage has occurred.</p>
+<p id="p-0017" num="0016">According to the embodiments of the present technology described above, when an act of sabotage is committed against a surveillance camera or the like, the sabotage can be accurately detected. Further, the type of the sabotage can be determined. By making it possible to determine the type of the sabotage, it is easy for a user to take appropriate action to resolve the sabotage.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram showing a configuration of an image processing device according to an embodiment of the present technology;</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram showing a configuration of an image analysis portion;</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 3</figref> is a block diagram showing a detailed configuration example of a global change detection portion;</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 4</figref> is a block diagram showing a detailed configuration example of a normalization processing portion;</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 5</figref> is a diagram showing a configuration of a defocus detection portion;</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 6</figref> is a diagram illustrating processing of a normalization determination portion;</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 7</figref> is a diagram illustrating processing of a normalization value calculation portion;</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 8A</figref> is a diagram illustrating processing of a normalization portion;</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 8B</figref> is a diagram illustrating processing of the normalization portion</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 9</figref> is a diagram illustrating processing of the normalization portion;</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 10A</figref> is a block diagram showing a detailed configuration example of a change determination portion;</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 10B</figref> sis a block diagram showing a detailed configuration example of the change determination portion;</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 11A</figref> is a diagram illustrating processing of the change determination portion;</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIG. 11B</figref> is a diagram illustrating the processing of the change determination portion;</p>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIG. 12</figref> is a flowchart illustrating processing of the global change detection portion;</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIG. 13A</figref> is a diagram illustrating movement of blocks to be updated;</p>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIG. 13B</figref> is a diagram illustrating movement of blocks to be updated;</p>
+<p id="p-0035" num="0034"><figref idref="DRAWINGS">FIG. 13C</figref> is a diagram illustrating movement of blocks to be updated;</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 13D</figref> is a diagram illustrating movement of blocks to be updated;</p>
+<p id="p-0037" num="0036"><figref idref="DRAWINGS">FIG. 13E</figref> is a diagram illustrating movement of blocks to be updated;</p>
+<p id="p-0038" num="0037"><figref idref="DRAWINGS">FIG. 13F</figref> is a diagram illustrating movement of blocks to be updated;</p>
+<p id="p-0039" num="0038"><figref idref="DRAWINGS">FIG. 14</figref> is a flowchart illustrating normalization processing in detail;</p>
+<p id="p-0040" num="0039"><figref idref="DRAWINGS">FIG. 15</figref> is a diagram showing shapes of blocks;</p>
+<p id="p-0041" num="0040"><figref idref="DRAWINGS">FIG. 16</figref> is a diagram showing shapes of blocks;</p>
+<p id="p-0042" num="0041"><figref idref="DRAWINGS">FIG. 17</figref> is a flowchart illustrating processing of the defocus detection portion;</p>
+<p id="p-0043" num="0042"><figref idref="DRAWINGS">FIG. 18</figref> is a diagram illustrating integration of detection results;</p>
+<p id="p-0044" num="0043"><figref idref="DRAWINGS">FIG. 19</figref> is a flowchart illustrating the integration of the detection results; and</p>
+<p id="p-0045" num="0044"><figref idref="DRAWINGS">FIG. 20</figref> is a diagram illustrating a recording medium.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION OF THE EMBODIMENT(S)</heading>
+<p id="p-0046" num="0045">Hereinafter, preferred embodiments of the present disclosure will be described in detail with reference to the appended drawings.</p>
+<p id="p-0047" num="0046">Configuration of Image Processing Device</p>
+<p id="p-0048" num="0047"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram showing a configuration of an image processing device according to an embodiment of the present technology. The present technology is applied to a device that analyzes an image captured by a surveillance camera and detects sabotage committed against the surveillance camera. An image processing device <b>11</b> shown in <figref idref="DRAWINGS">FIG. 1</figref> detects an act of sabotage against a surveillance camera (surveillance device) based on the captured image, and outputs an alarm when the act of sabotage is detected.</p>
+<p id="p-0049" num="0048">Here, the sabotage with respect to the surveillance camera will be explained. Sabotage against the surveillance camera includes sabotage in which a surveillance target is removed from a field of view (such that it is outside a range of capture). This type of sabotage includes &#x201c;turning&#x201d; in which an orientation of the surveillance camera is changed, and &#x201c;covering&#x201d; in which the surveillance camera is covered with a cloth or the like. Here, this type of sabotage, in which the surveillance target is removed from the field of view, is referred to as a global change.</p>
+<p id="p-0050" num="0049">In addition, there is sabotage in which a focus of the surveillance camera is blurred. This type of sabotage includes &#x201c;focus blurring&#x201d; in which the focus of the surveillance camera is changed, and &#x201c;zoom blurring&#x201d; in which the zoom of the surveillance camera is put out of focus. This type of sabotage, in which the focus is changed, is referred to here as defocus or defocusing.</p>
+<p id="p-0051" num="0050">The image processing device <b>11</b> shown in <figref idref="DRAWINGS">FIG. 1</figref> includes an acquisition portion <b>21</b> and an image processing portion <b>22</b>. The acquisition portion <b>21</b> is a unit that acquires image data of an image. The acquisition portion <b>21</b> has a built-in complementary metal oxide semiconductor (CMOS) sensor and an imaging portion, such as a video camera, and acquires and outputs image data obtained by capturing images of a subject, such as a target space, that is under surveillance by the imaging portion. The acquisition portion <b>21</b> can also acquire image data supplied from an external source via a network.</p>
+<p id="p-0052" num="0051">The image processing portion <b>22</b> includes an imaging signal processing portion <b>31</b>, a data storage portion <b>32</b> and an image analysis portion <b>33</b>. The imaging signal processing portion <b>31</b> performs various types of image processing on the image data acquired by the acquisition portion <b>21</b>, such as black level correction processing, white balance processing, gamma correction processing and color correction processing.</p>
+<p id="p-0053" num="0052">The imaging signal processing portion <b>31</b> is, for example, a digital signal processor (DSP). The data storage portion <b>32</b> stores the image data processed by the imaging signal processing portion <b>31</b>. The data storage portion <b>32</b> is, for example, a random access memory (RAM). The image analysis portion <b>33</b> detects an act of sabotage by analyzing a current image supplied from the imaging signal processing portion <b>31</b> and a reference image that is a past image supplied from the data storage portion <b>32</b>. The image analysis portion <b>33</b> is, for example, a central processing unit (CPU).</p>
+<p id="p-0054" num="0053">Detailed Configuration of the Image Analysis Portion <b>33</b></p>
+<p id="p-0055" num="0054"><figref idref="DRAWINGS">FIG. 2</figref> is a diagram showing an internal configuration of the image analysis portion <b>33</b>. The image analysis portion <b>33</b> includes a global change detection portion <b>41</b>, a defocus detection portion <b>42</b> and a detection result integration portion <b>43</b>. The global change detection portion <b>41</b> performs processing that detects the above-described global change sabotage. The defocus detection portion <b>42</b> performs processing that detects the above-described defocusing sabotage. The detection result integration portion <b>43</b> integrates detection results respectively output from the global change detection portion <b>41</b> and the defocus detection portion <b>42</b>, and determines the type of the act of sabotage against the surveillance camera.</p>
+<p id="p-0056" num="0055">Detailed Configuration of the Global Change Detection Portion <b>41</b></p>
+<p id="p-0057" num="0056"><figref idref="DRAWINGS">FIG. 3</figref> is a block diagram showing an example of a detailed configuration of the global change detection portion <b>41</b>. The global change detection portion <b>41</b> includes an update region selection portion <b>61</b>, a histogram storage portion <b>62</b>, an image dividing portion <b>63</b>, a histogram generation portion <b>64</b>, a normalization processing portion <b>65</b>, a change determination portion <b>66</b>, a changed region storage portion <b>67</b>, a counter portion <b>68</b> and a threshold determination portion <b>69</b>.</p>
+<p id="p-0058" num="0057">The update region selection portion <b>61</b> functions as a specifying unit that sequentially specifies, each time image data of a new image is acquired, a number of blocks M from among a number of blocks N (N&#x2267;M&#x3e;1) as blocks to be updated. From data supplied from the imaging signal processing portion <b>31</b>, the update region selection portion <b>61</b> extracts a frame number of an image acquired by the acquisition portion <b>21</b> and decides a frame number to be updated. Further, the update region selection portion <b>61</b> decides a block to be updated in the frame to be updated.</p>
+<p id="p-0059" num="0058">The image dividing portion <b>63</b> is a unit that divides the acquired image into the number of blocks N (N&#x3e;1). Of the images of each frame based on the image data supplied from the imaging signal processing portion <b>31</b>, the image dividing portion <b>63</b> divides the frame specified by the update region selection portion <b>61</b> into a plurality of blocks. The image dividing portion <b>63</b> further, of the divided blocks, supplies to the histogram generation portion <b>64</b> image data of the blocks specified by the update region selection portion <b>61</b>.</p>
+<p id="p-0060" num="0059">The histogram generation portion <b>64</b> is a histogram generating unit that generates a histogram of the acquired image data, and generates a histogram of each of the blocks supplied from the image dividing portion <b>63</b>. Note that sometimes the imaging signal processing portion <b>31</b> is provided with a histogram generating function. In this case, the histogram generation portion <b>64</b> can be provided inside the imaging signal processing portion <b>31</b>.</p>
+<p id="p-0061" num="0060">The histogram storage portion <b>62</b> is a histogram storage unit that sequentially updates and stores the generated histogram, and updates the histogram of each of the blocks specified as an update region by the update region selection portion <b>61</b>. Specifically, a histogram of a block corresponding to a past frame that is already stored is overwritten by a histogram of an update target block of a current frame supplied from the histogram generation portion <b>64</b>.</p>
+<p id="p-0062" num="0061">The normalization processing portion <b>65</b> normalizes the histogram of each of the blocks as necessary. The histogram generation portion <b>64</b> supplies the histogram of each of the update target blocks of the current frame to the normalization processing portion <b>65</b>. Further, the histogram storage portion <b>62</b> supplies to the normalization processing portion <b>65</b> the past histogram corresponding to each of the blocks supplied from the histogram generation portion <b>64</b>. The normalization processing portion <b>65</b> determines whether or not it is necessary to normalize the histogram relating to each of the update target blocks of the current frame supplied from the histogram generation portion <b>64</b>, and performs normalization as necessary. It should be noted that a determination as to whether the histogram of the update target block of the current frame is normalized or the histogram of the corresponding past block is normalized is performed in accordance with a condition of the histograms.</p>
+<p id="p-0063" num="0062">The change determination portion <b>66</b> is a change determination unit that determines a change of the acquired image. The change determination portion <b>66</b> performs change determination processing based on a degree of similarity between the generated current histogram and the stored past histogram. The change determination portion <b>66</b> includes a degree of similarity calculation portion <b>71</b> and a threshold determination portion <b>72</b>.</p>
+<p id="p-0064" num="0063">The degree of similarity calculation portion <b>71</b> functions as a degree of similarity calculation unit that calculates a degree of similarity between the current histogram and the past histogram. Specifically, the degree of similarity calculation portion <b>71</b> calculates the degree of similarity between the histogram of each of the update target blocks of the current frame supplied from the histogram generation portion <b>64</b> and the histogram of each of the corresponding past blocks.</p>
+<p id="p-0065" num="0064">The threshold determination portion <b>72</b> is a unit that determines a degree of similarity threshold value. The threshold determination portion <b>72</b> compares the calculated degree of similarity with the degree of similarity threshold value and determines, when the degree of similarity is larger than the degree of similarity threshold value, whether or not there has been a change in the image of the blocks. The threshold determination portion <b>72</b> outputs a determination result with respect to changes of the image of the blocks (presence or absence of change) to the changed region storage portion <b>67</b> and the counter portion <b>68</b>.</p>
+<p id="p-0066" num="0065">The changed region storage portion <b>67</b> stores the result of the determination by the change determination portion <b>66</b>. Specifically, the presence or absence of change in the update target block of the current frame with respect to the past block is sequentially stored in the changed region storage portion <b>67</b> each time the image data of the new image is acquired.</p>
+<p id="p-0067" num="0066">The counter portion <b>68</b> is a counting unit that counts a number of the blocks in which it is determined that there has been a change. The change determination portion <b>66</b> supplies the determination result (the presence or absence of change) of the update target blocks of the current frame to the counter portion <b>68</b>. Further, the changed region storage portion <b>67</b> supplies a determination result of blocks other than the update target blocks of the current frame to the counter portion <b>68</b>. Based on the output of the change determination portion <b>66</b> and on the output of the changed region storage portion <b>67</b>, the counter portion <b>68</b> counts the number of the blocks within a single image under surveillance in which there has been a change.</p>
+<p id="p-0068" num="0067">The threshold determination portion <b>69</b> is an alarm threshold determination unit that compares the counted value with an alarm threshold value and that outputs an alarm when the counted value is larger than the alarm threshold value. The threshold determination portion <b>69</b> compares the number of blocks counted by the counter portion <b>68</b> with a predetermined threshold value that is set in advance. When the counted number of blocks is larger than the threshold value, it is determined that an act of sabotage has been detected, and a detection signal is output. The detection signal can be, for example, an alarm.</p>
+<p id="p-0069" num="0068">Detailed Configuration of the Normalization Processing Portion <b>65</b></p>
+<p id="p-0070" num="0069"><figref idref="DRAWINGS">FIG. 4</figref> is a block diagram showing a detailed configuration example of the normalization processing portion <b>65</b>. The normalization processing portion <b>65</b> includes a normalization determination portion <b>81</b>, a normalization value calculation portion <b>82</b>, an average value storage portion <b>83</b> and a normalization portion <b>84</b>.</p>
+<p id="p-0071" num="0070">The histogram of each of the update target blocks of the current frame is supplied to the normalization determination portion <b>81</b> from the histogram generation portion <b>64</b>, and the past histogram corresponding to each of the blocks supplied from the histogram generation portion <b>64</b> is supplied to the normalization determination portion <b>81</b> from the histogram storage portion <b>62</b>. Hereinafter, as appropriate, the histogram of each of the update target blocks of the current frame is referred to as a current histogram and the histogram of each of the corresponding blocks of the past frame is referred to as a past histogram.</p>
+<p id="p-0072" num="0071">The normalization determination portion <b>81</b> determines whether or not to perform normalization of the histogram of each of the update target block of the current frame. When the normalization determination portion <b>81</b> determines that normalization will not be performed (is not necessary), the current histogram and past histogram of each of the input update target blocks are supplied to the change determination portion <b>66</b> without change. When the normalization determination portion <b>81</b> determines that normalization will be performed (is necessary), the current histogram and the past histogram of each of the input update target blocks are supplied to the normalization value calculation portion <b>82</b>.</p>
+<p id="p-0073" num="0072">The normalization value calculation portion <b>82</b> calculates, from the current histogram and the past histogram of each of the input update target blocks, a normalization value to be used in the normalization. The calculated normalization value is supplied to the normalization portion <b>84</b>, along with the current histogram and the past histogram of each of the input update target blocks.</p>
+<p id="p-0074" num="0073">The average value storage portion <b>83</b> stores a direction of change and a rate of change of an average value of a histogram for each of the blocks other than the update target blocks, the average value of the histogram being calculated before the current frame. Further, a similar value that has been calculated by the normalization determination portion <b>81</b> and by the normalization value calculation portion <b>82</b> with respect to the current frame is supplied to and stored in (namely, it is updated in) the average value storage portion <b>83</b> in order to be used in processing from a next frame onwards. The values stored in the average value storage portion <b>83</b> (the direction of change and the rate of change of the average value of the histogram) will be explained in more detail later.</p>
+<p id="p-0075" num="0074">Based on the normalization value calculated by the normalization value calculation portion <b>82</b>, the normalization portion <b>84</b> normalizes one of either the current histogram or the past histogram of each of the update target blocks. In this way, using the current histogram and the past histogram, it is possible to generate a histogram for which brightness of the blocks has been corrected. The normalization portion <b>84</b> outputs the current histogram and the past histogram after normalization to the change determination portion <b>66</b>.</p>
+<p id="p-0076" num="0075">Note that, with the type of configuration shown in <figref idref="DRAWINGS">FIG. 4</figref>, it is possible to improve performance. Specifically, by providing the normalization determination portion <b>81</b> and determining whether or not to perform normalization as described above (and as will be described below), overall performance can be improved. However, a configuration is also possible in which the normalization determination portion <b>81</b> is not provided, calculation of the normalization value is performed by the normalization value calculation portion <b>82</b> with respect to all regions and normalization is performed by the normalization portion <b>84</b>. When the configuration without the normalization determination portion <b>81</b> is adopted, the average value storage portion <b>83</b> is also omitted. Specifically, the normalization processing portion <b>65</b> can be configured by the normalization value calculation portion <b>82</b> and the normalization portion <b>84</b>.</p>
+<p id="p-0077" num="0076">Detailed Configuration of the Defocus Detection Portion <b>42</b></p>
+<p id="p-0078" num="0077"><figref idref="DRAWINGS">FIG. 5</figref> is a block diagram showing a detailed configuration example of the defocus detection portion <b>42</b>. The defocus detection portion <b>42</b> includes an update region selection portion <b>101</b>, an image dividing portion <b>102</b>, an abnormal region detection portion <b>103</b>, a high frequency filter <b>104</b>, an abnormality determination portion <b>105</b>, an edge strength counter <b>106</b>, a threshold determination portion <b>107</b>, an abnormal region storage portion <b>108</b>, a sabotage determination portion <b>109</b>, a counter portion <b>110</b> and a threshold determination portion <b>111</b>.</p>
+<p id="p-0079" num="0078">The update region selection portion <b>101</b> functions as a specifying unit that sequentially specifies, each time image data of a new image is acquired, a number of blocks M from among a number of blocks N (N&#x2267;M&#x3e;1) as blocks to be updated. From data supplied from the imaging signal processing portion <b>31</b>, the update region selection portion <b>101</b> extracts a frame number of an image acquired by the acquisition portion <b>21</b> and decides a frame number to be updated. Further, the update region selection portion <b>101</b> decides a block to be updated in the frame to be updated.</p>
+<p id="p-0080" num="0079">The image dividing portion <b>102</b> is a dividing unit that divides the acquired image into the number of blocks N (N&#x3e;1). Of the images of each frame based on the image data supplied from the imaging signal processing portion <b>31</b>, the image dividing portion <b>102</b> divides the frame specified by the update region selection portion <b>101</b> into a plurality of blocks. Further, the image dividing portion <b>102</b> supplies, of the divided blocks, image data of the blocks specified by the update region selection portion <b>101</b> to the high frequency filter <b>104</b> of the abnormal region detection portion <b>103</b>.</p>
+<p id="p-0081" num="0080">The high frequency filter <b>104</b> is a filtering unit that performs filtering by a high frequency filter on the acquired image data. The high frequency filter <b>104</b> executes filtering processing by a predetermined high frequency filter on the blocks supplied from the image dividing portion <b>102</b>.</p>
+<p id="p-0082" num="0081">The abnormality determination portion <b>105</b> is an abnormality determining unit that determines an abnormality of the acquired image. The abnormality determination portion <b>105</b> includes the edge strength counter <b>106</b> and the threshold determination portion <b>107</b>. The edge strength counter <b>106</b> functions as a calculation unit that counts a number of pixels whose edge strength is greater than a predetermined threshold value and calculates an edge strength average value etc.</p>
+<p id="p-0083" num="0082">The threshold determination portion <b>107</b> is an alarm threshold determination unit. The threshold determination portion <b>107</b> compares a number of pixels and an average value etc. with predetermined threshold values, and determines that an abnormality exists in an image of a block having larger than the threshold values. The threshold determination portion <b>107</b> outputs a determination result (the presence or absence of an abnormality) regarding an abnormality of the image of the block to the abnormal region storage portion <b>108</b> and to the counter portion <b>110</b>.</p>
+<p id="p-0084" num="0083">The abnormal region storage portion <b>108</b> stores the result of the determination by the abnormality determination portion <b>105</b>. Specifically, the presence or absence of an abnormality in the update target block of the current frame with respect to the past block is sequentially stored in the abnormal region storage portion <b>108</b> each time the image data of the new image is acquired.</p>
+<p id="p-0085" num="0084">The sabotage determination portion <b>109</b> includes the counter portion <b>110</b> and the threshold determination portion <b>111</b>. The sabotage determination portion <b>109</b> determines whether or not there has been an act of sabotage against the surveillance camera. The counter portion <b>110</b> is a counting unit that counts a number of the blocks in which it is determined that there has been an abnormality. The abnormality determination portion <b>105</b> supplies the determination result (the presence or absence of an abnormality) of the update target block of the current frame to the counter portion <b>110</b>. Further, the abnormal region storage portion <b>108</b> supplies a determination result of the blocks other than the update target block of the current frame to the counter portion <b>110</b>. Based on the output of the abnormality determination portion <b>105</b> and on the output of the abnormal region storage portion <b>108</b>, the counter portion <b>110</b> counts the number of blocks within a single image under surveillance in which there has been an abnormality.</p>
+<p id="p-0086" num="0085">The threshold determination portion <b>111</b> is an alarm threshold determination unit that compares the counted value with an alarm threshold value and that outputs an alarm when the counted value is larger than the alarm threshold value. The threshold determination portion <b>111</b> compares the number of blocks counted by the counter portion <b>110</b> with a predetermined threshold value that is set in advance. When the counted number of blocks is larger than the threshold value, it is determined that an act of sabotage has been detected, and a detection signal is output. The detection signal can be, for example, an alarm.</p>
+<p id="p-0087" num="0086">In this way, according to the present embodiment, as the global change detection portion <b>41</b> and the defocus detection portion <b>42</b> are provided, these detection portions can respectively detect the global change sabotage relating and the defocusing sabotage. Hereinafter, processing performed, respectively, by the global change detection portion <b>41</b> and by the defocus detection portion <b>42</b> will be explained. First, the explanation will be made with respect to the global change detection portion <b>41</b>.</p>
+<p id="p-0088" num="0087">Detection by the Global Change Detection Portion <b>41</b></p>
+<p id="p-0089" num="0088">Principles (an overview) of the act of sabotage detection by the global change detection portion <b>41</b> will be explained. The global change detection portion <b>41</b> acquires, respectively, a past image PI and a current image NI, divides each of the past image PI and the current image NI into blocks of a predetermined size, and calculates a histogram of pixel values for each block. Then, a degree of similarity is calculated between a histogram of a block in a predetermined position of the past image PI and a histogram of a block in a corresponding position of the current image NI. Blocks with a low degree of similarity are detected as a changed region VI, and when a number of the changed regions VI is large, it is determined that there has been an act of sabotage. In this case, an alarm is output. Next, processing performed here by blocks that configure the global change detection portion <b>41</b> will be explained.</p>
+<p id="p-0090" num="0089">Processing of the Normalization Determination Portion <b>81</b></p>
+<p id="p-0091" num="0090">Processing by the normalization determination portion <b>81</b> will be explained with reference to <figref idref="DRAWINGS">FIG. 6</figref>. The normalization determination portion <b>81</b> is supplied with the current histogram and the past histogram of each of the update target blocks of the current frame. In the example shown in <figref idref="DRAWINGS">FIG. 6</figref>, the image is divided into 16 blocks, and 4 blocks shaded by oblique lines indicate the update target blocks of the current frame.</p>
+<p id="p-0092" num="0091">The normalization determination portion <b>81</b> calculates an average value of each of the current histogram and the past histogram for each of the update target blocks of the current frame, and determines whether a direction of change of the average values from the past to the current time is an increase, a decrease or no change. For example, if a difference (an absolute value) between the average values of the past and the current histograms is within a predetermined range TH, it can be determined that there is no change. If the difference is greater than the predetermined range TH, it can be determined that there is an increase or a decrease depending on the direction of change.</p>
+<p id="p-0093" num="0092">Further, the normalization determination portion <b>81</b> acquires, from the average value storage portion <b>83</b>, a determination result (the direction of change) of a similar determination with respect to the blocks that are not the update target blocks of the current frame. Then, the normalization determination portion <b>81</b> determines, as a change of the whole screen, whether there has been an increase, a decrease or no change. For example, if the number of blocks in which there has been an increase (decrease) with respect to the number of blocks of the whole screen is equal to or larger than a predetermined ratio that has been set in advance, it can be determined that the change is that of an increase (decrease) for the whole screen.</p>
+<p id="p-0094" num="0093">In a diagram shown on the right in <figref idref="DRAWINGS">FIG. 6</figref>, blocks assigned with a plus (+) sign indicate blocks for which the direction of change is an increase, and blocks assigned with a minus (&#x2212;) sign indicate blocks for which the direction of change is a decrease. Blocks that are not assigned with a sign indicate blocks for which there is no change. For the frame shown on the right side in <figref idref="DRAWINGS">FIG. 6</figref>, it is determined for the whole screen that this is a frame in which a change of increase has been seen.</p>
+<p id="p-0095" num="0094">For the whole screen, when the direction of change of the average value of the histogram is biased toward either an increase or a decrease by equal to or greater than a given constant, this means that the whole screen has become lighter or has become darker. In this case, it is conceivable that the luminance of the whole image has changed due to an AE function or lighting, or that the luminance of the whole screen has changed due to an act of sabotage, such as concealing the surveillance camera, and it is preferable to perform normalization. On the other hand, if there is no change in the average value of the histogram for the whole screen, or if no bias is seen in the increase or decrease of the average value, it is preferable for normalization not to be performed.</p>
+<p id="p-0096" num="0095">In this type of case, it is conceivable that there has been no change in the image, that there has been a change in a part of the screen caused by the entry of a moving body, or indeed that there has been an act of sabotage, such as changing the orientation of the surveillance camera, and if normalization is performed, there are many regions in which a shape of the histograms may coincidentally match. Thus, a situation is in fact conceivable in which the act of sabotage cannot be detected, and normalization is not performed, in order to inhibit this kind of situation.</p>
+<p id="p-0097" num="0096">As described above, when the direction of change of the average value of the histogram for the whole screen is biased, by equal to or greater than a given constant, toward either an increase or a decrease, the normalization determination portion <b>81</b> determines that it is necessary to perform normalization. On the other hand, when there is no change in the average value of the histogram for the whole screen, or when there is no bias in the average value toward either an increase or a decrease, the normalization determination portion <b>81</b> determines that normalization is not necessary.</p>
+<p id="p-0098" num="0097">Processing of the Normalization Value Calculation Portion <b>82</b></p>
+<p id="p-0099" num="0098">Processing of the normalization value calculation portion <b>82</b> will be explained with reference to <figref idref="DRAWINGS">FIG. 7</figref>. When the change of direction of the average value of the histogram for the whole screen is biased, by equal to or greater than a given constant, toward an increase or a decrease, the normalization value calculation portion <b>82</b> calculates a rate of change (hereinafter referred to as a change rate) that represents, for the whole screen, to what degree change has occurred.</p>
+<p id="p-0100" num="0099">First, the normalization value calculation portion <b>82</b>, for each block, calculates the respective average values of the current histogram and the past histogram. For each of the update target blocks of the current frame, the normalization value calculation portion <b>82</b> calculates the average value from the supplied histogram. The average values of the current histogram and the past histogram of the blocks other than the update target blocks of the current frame are acquired from the average value storage portion <b>83</b>, where they have already been calculated and stored.</p>
+<p id="p-0101" num="0100">Next, the normalization value calculation portion <b>82</b> decides an effective region from the whole screen. Here, when the normalization determination portion <b>81</b> has determined that the direction of change for the whole screen is an increase, each region of the blocks in which the direction of change is the increase is set as the effective region. Then, for each of the blocks set as the effective region, the normalization value calculation portion <b>82</b> divides the average value of the current histogram by the average value of the past histogram and sets a resulting value as the change rate. In this way, the change rate is calculated for each of the blocks set as the effective region.</p>
+<p id="p-0102" num="0101">Note that, when it is determined that the direction of change for the whole screen is an increase, each of the regions of the blocks in which the direction of change is the increase is set as the effective region. However, blocks for which a rate of increase is equal to or larger than a predetermined value, namely, blocks which have become extremely bright, are also removed from the effective region. The blocks for which there has been no change, the blocks for which the direction of change of the average value is a decrease, and the blocks which have become extremely bright are removed from the effective region because in this case there is a high probability that a moving body is present that has caused a change in brightness by the AE function.</p>
+<p id="p-0103" num="0102">In <figref idref="DRAWINGS">FIG. 7</figref>, the blocks shaded by oblique lines are blocks that are set as the effective region.</p>
+<p id="p-0104" num="0103">In contrast, when the normalization determination portion <b>81</b> determines that the direction of change for the whole screen is a decrease, each region of the blocks in which the direction of change is the decrease is set as the effective region. Then, for each of the blocks set as the effective region, the normalization value calculation portion <b>82</b> divides the average value of the past histogram by the average value of the current histogram and sets a resulting value as the change rate. In this way, also when the direction of change for the whole screen is a decrease, the change rate is calculated for each of the blocks set as the effective region.</p>
+<p id="p-0105" num="0104">Lastly, the normalization value calculation portion <b>82</b> calculates an average value of the calculated change rates for each of the blocks set as the effective region, and decides a resulting value as a normalization value.</p>
+<p id="p-0106" num="0105">As described above, by deciding the effective region and calculating the average value of the change rate of the effective region, a change rate of the whole screen that excludes an influence of a moving body region is calculated and is set as the normalization value. Thus, the subsequent normalization portion <b>84</b> can accurately perform normalization.</p>
+<p id="p-0107" num="0106">Processing of the Normalization Portion <b>84</b></p>
+<p id="p-0108" num="0107">Processing of the normalization portion <b>84</b> will be explained with reference to <figref idref="DRAWINGS">FIG. 8</figref> and <figref idref="DRAWINGS">FIG. 9</figref>. The normalization portion <b>84</b> uses the normalization value calculated by the normalization value calculation portion <b>82</b> to perform stretching between the current histogram and the past histogram of the update target block of the current frame. When the normalization determination portion <b>81</b> has determined that the direction of change for the whole screen is an increase, namely, that the whole screen has become brighter, the past histogram is stretched. On the other hand, when it is determined that the whole screen has become darker, the current histogram is stretched. In other words, of the past and the current histograms, the histogram on the darker side is stretched.</p>
+<p id="p-0109" num="0108"><figref idref="DRAWINGS">FIG. 8A</figref> and <figref idref="DRAWINGS">FIG. 8B</figref> show a current histogram and a past histogram for an update target block of a current frame. Horizontal axes of the histograms indicate luminance and vertical axes indicate a frequency (a number of pixels that have a luminance value of a predetermined range).</p>
+<p id="p-0110" num="0109">An average value of the current histogram shown in <figref idref="DRAWINGS">FIG. 8A</figref> is 5 and an area is 8. Meanwhile, an average value of the past histogram shown in <figref idref="DRAWINGS">FIG. 8B</figref> is 10 and an area is 8. Such a relationship between the current histogram and the past histogram can occur, for example, when lighting (sunlight) becomes darker on a same filmed subject. With respect to such current and past histograms, if the presence or absence of change is determined without performing normalization, in the change determination portion <b>66</b> that determines the degree of similarity using a degree of overlap between the histograms, it is determined that a change has occurred. However, if this is simply a change in the histogram due to lighting, the determination that there has been a change is a mistaken determination.</p>
+<p id="p-0111" num="0110">Here, as shown in <figref idref="DRAWINGS">FIG. 9</figref>, the normalization portion <b>84</b> stretches the present histogram using the normalization value calculated by the normalization value calculation portion <b>82</b>. More specifically, the normalization portion <b>84</b> stretches the current histogram in the horizontal axis direction (the luminance direction) by the normalization value.</p>
+<p id="p-0112" num="0111">In the example shown in <figref idref="DRAWINGS">FIG. 9</figref>, the normalization value is &#x201c;2.&#x201d; The luminance values before stretching are only &#x201c;4,&#x201d; &#x201c;5,&#x201d; and &#x201c;6&#x201d; and thus if they are doubled, the only values are &#x201c;8,&#x201d; &#x201c;10,&#x201d; and &#x201c;12,&#x201d; but frequencies of luminance values other than these are also calculated by interpolation from surrounding frequencies.</p>
+<p id="p-0113" num="0112">If the histogram is stretched, the area of the histogram increases and thus, next, the normalization portion <b>84</b> adjusts the frequencies of the histogram such that the area is the same before and after the normalization. In the example shown in <figref idref="DRAWINGS">FIG. 9</figref>, the area after the stretching of the current histogram is &#x201c;16&#x201d; and the area before the stretching is &#x201c;8.&#x201d; Therefore, the frequency of each of the luminance values of the current histogram after the stretching is multiplied by &#x201c; 8/16=&#xbd;.&#x201d; In this way, the area of the current histogram after normalization is the same &#x201c;8&#x201d; as before the normalization.</p>
+<p id="p-0114" num="0113">As described above, the current or the past histogram is normalized, depending on the direction of change for the whole screen. Then, the normalized histogram is output to the change determination portion <b>66</b>.</p>
+<p id="p-0115" num="0114">Processing of the Change Determination Portion <b>66</b></p>
+<p id="p-0116" num="0115">Determination performed by the change determination portion <b>66</b> to determine the presence or absence of change of the image of the block will be explained with reference to <figref idref="DRAWINGS">FIG. 10</figref> and <figref idref="DRAWINGS">FIG. 11</figref>. <figref idref="DRAWINGS">FIG. 10</figref> shows an example of a current histogram and a past histogram supplied to the degree of similarity calculation portion <b>71</b>. Specifically, a histogram h<b>1</b> shown in <figref idref="DRAWINGS">FIG. 10A</figref> is an example of the current histogram, and a histogram h<b>0</b> shown in <figref idref="DRAWINGS">FIG. 10B</figref> is an example of the past histogram. Note that horizontal axes indicate a pixel value represented by a luminance value, and vertical axes indicate a number (frequency) of pixels that have a pixel value of a predetermined range.</p>
+<p id="p-0117" num="0116">With respect to the current histogram h<b>1</b> and the past histogram h<b>0</b> shown in <figref idref="DRAWINGS">FIG. 10</figref>, the degree of similarity calculation portion <b>71</b> calculates a degree of similarity using the following Formula (1) using intersection.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>D</i>=&#x3a3;min(<i>Ai,Bi</i>)&#x2003;&#x2003;(1)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0118" num="0117">Ai, Bi in Formula (1) respectively indicate one pixel value of the current histogram h<b>1</b> and one pixel value of the past histogram h<b>0</b>. Therefore, according to Formula (1), for each pixel value, a sum is calculated for the smaller numerical value of the pixel (pixel value). This comparison processing is performed on the most recent past N (N&#x3e;1) frame.</p>
+<p id="p-0119" num="0118">As shown in <figref idref="DRAWINGS">FIG. 11A</figref>, when almost all of the current histogram h<b>1</b> and the past histogram h<b>0</b> overlaps, a value D calculated by Formula (1) is large. In contrast, as shown in <figref idref="DRAWINGS">FIG. 11B</figref>, when there is little overlap between the current histogram h<b>1</b> and the past histogram h<b>0</b>, the value D is smaller. In other words, the value D of the Formula (1) becomes larger the higher the degree of similarity, and becomes smaller the lower the degree of similarity.</p>
+<p id="p-0120" num="0119">Next, act of sabotage detection processing by the global change detection portion <b>41</b> of the image processing device <b>11</b> will be explained with reference to a flowchart shown in <figref idref="DRAWINGS">FIG. 12</figref>. First, at step S<b>1</b>, the acquisition portion <b>21</b> acquires a camera image. Specifically, the imaging portion captures an image of a predetermined surveillance target and acquires image data of the captured image.</p>
+<p id="p-0121" num="0120">At step S<b>2</b>, the image dividing portion <b>63</b> divides the image into the number of blocks N. In the present embodiment, the image of each frame based on the image data is divided into 8&#xd7;8 blocks. At step S<b>3</b>, the update region selection portion <b>61</b> selects the update region (the update target blocks). Specifically, of the 8&#xd7;8 number of blocks, a predetermined number of blocks M (M&#x2266;N) are selected as the update target blocks. The selection of the update region will be explained with reference to <figref idref="DRAWINGS">FIG. 13</figref>.</p>
+<p id="p-0122" num="0121"><figref idref="DRAWINGS">FIG. 13A</figref> to <figref idref="DRAWINGS">FIG. 13F</figref> are diagrams illustrating movement of blocks to be updated. In the present embodiment, M=4 and the 8&#xd7;8 number of blocks are divided into 4 groups, each formed of 4&#xd7;4 blocks. Then, one block is selected from each of the groups, and a total of 4 blocks are selected as the update target blocks. More specifically, as shown in <figref idref="DRAWINGS">FIG. 13A</figref>, the update region selection portion <b>61</b> selects 4 blocks from among the 8&#xd7;8 number of blocks of a first frame, as the blocks to be updated. Specifically, the update region selection portion <b>61</b> selects a block b<b>11</b> that is positioned furthest to the left of a first row, a block b<b>18</b> that is positioned furthest to the right of the first row, a block b<b>81</b> that is positioned furthest to the left of an eighth row and a block b<b>88</b> that is positioned furthest to the right of the eighth row.</p>
+<p id="p-0123" num="0122">Note that, in <figref idref="DRAWINGS">FIG. 13A</figref> to <figref idref="DRAWINGS">FIG. 13F</figref>, a block that is positioned in an i-th row from the top and that is positioned in a j-th column from the left is indicated as bij. This also applies to <figref idref="DRAWINGS">FIG. 15</figref> and <figref idref="DRAWINGS">FIG. 16</figref> that will be described later.</p>
+<p id="p-0124" num="0123">Next, in the update region selection step, as shown in <figref idref="DRAWINGS">FIG. 13B</figref>, the update region selection portion <b>61</b> selects 4 blocks from among the 8&#xd7;8 number of blocks of a next frame, as the blocks to be updated. Specifically, the update region selection portion <b>61</b> selects a block b<b>12</b> that is positioned one block to the right of the block b<b>11</b>, a block b<b>17</b> that is positioned one block to the left of the block b<b>18</b>, a block b<b>82</b> that is positioned one block to the right of the block b<b>81</b> in the eighth row and a block b<b>87</b> that is positioned one block to the left of the block b<b>88</b>.</p>
+<p id="p-0125" num="0124">Next, in the update region selection step, as shown in <figref idref="DRAWINGS">FIG. 13C</figref>, the update region selection portion <b>61</b> selects 4 blocks from among the 8&#xd7;8 number of blocks of a next frame, as the blocks to be updated. Specifically, the update region selection portion <b>61</b> selects a block b<b>13</b> that is positioned one block to the right of the block b<b>12</b> in the first row, a block b<b>16</b> that is positioned one block to the left of the block b<b>17</b>, a block b<b>83</b> that is positioned one block to the right of the block b<b>82</b> in the eighth row and a block b<b>86</b> that is positioned one block to the left of the block b<b>87</b>.</p>
+<p id="p-0126" num="0125">Next, in the update region selection step, as shown in <figref idref="DRAWINGS">FIG. 13D</figref>, the update region selection portion <b>61</b> selects 4 blocks from among the 8&#xd7;8 number of blocks of a next frame, as the blocks to be updated. Specifically, the update region selection portion <b>61</b> selects a block b<b>14</b> that is positioned one block to the right of the block b<b>13</b> in the first row, a block b<b>15</b> that is positioned one block to the left of the block b<b>16</b>, a block b<b>84</b> that is positioned one block to the right of the block b<b>83</b> in the eighth row and a block b<b>85</b> that is positioned one block to the left of the block b<b>86</b>.</p>
+<p id="p-0127" num="0126">As described above, when movement has ended in the block selection for the top and bottom rows, in the next step in the update region selection, a second row and a seventh row are selected. Then, as shown in <figref idref="DRAWINGS">FIG. 13E</figref>, the update region selection portion <b>61</b> selects 4 blocks from among the 8&#xd7;8 number of blocks of a next frame, as the blocks to be updated. Specifically, the update region selection portion <b>61</b> selects a block b<b>21</b> that is positioned furthest to the left of the second row, a block b<b>28</b> that is positioned furthest to the right of the second row, a block b<b>71</b> that is positioned furthest to the left of the seventh row and a block b<b>78</b> that is positioned furthest to the right of the seventh row.</p>
+<p id="p-0128" num="0127">Next in the update region selection step, as shown in <figref idref="DRAWINGS">FIG. 13F</figref>, the update region selection portion <b>61</b> selects 4 blocks from among the 8&#xd7;8 number of blocks of a next frame, as the blocks to be updated. Specifically, the update region selection portion <b>61</b> selects a block b<b>22</b> that is positioned one block to the right of the block b<b>21</b> in the second row, a block b<b>27</b> that is positioned one block to the left of the block b<b>28</b>, a block b<b>72</b> that is positioned one block to the right of the block b<b>71</b> in the seventh row and a block b<b>77</b> that is positioned one block to the left of the block b<b>78</b>.</p>
+<p id="p-0129" num="0128">Hereinafter, by a similar procedure, as the update target blocks, 4 blocks are sequentially selected for one frame. Specifically, in a region of an upper half of a left side half, the blocks are selected from the left toward the right within each row and the rows are selected in order from the top in the downward direction. In a region of an upper half of a right side half, the blocks are selected from the right toward the left within each row and the rows are selected in order from the top in the downward direction. In a region of a lower half of the left side half, the blocks are selected from the left toward the right within each row and the rows are selected in order from the bottom in the upward direction. In a region of a lower half of the right side half, the blocks are selected from the left toward the right within each row and the rows are selected in order from the bottom in the upward direction.</p>
+<p id="p-0130" num="0129">Note that the region movement order shown in <figref idref="DRAWINGS">FIG. 13A</figref> to <figref idref="DRAWINGS">FIG. 13F</figref> is an example and the present technology is not limited to this example. In the above explanation, the image is divided into 4 groups formed of 4&#xd7;4 blocks, and the blocks to be updated are sequentially selected within each group as described above. However, the present technology is not limited to the selection as described above. For example, as shown in <figref idref="DRAWINGS">FIG. 13A</figref>, as start positions of the blocks to be updated, the block b<b>11</b> on the upper left, the block b<b>18</b> on the upper right, the block b<b>81</b> on the lower left and the block b<b>88</b> of the lower right are respectively selected. However, for example, a block on the upper right of each of the groups may be set as the start position of the blocks to be updated.</p>
+<p id="p-0131" num="0130">The blocks to be updated within each of the groups need not necessarily be selected based on the same type of principles. For example, the blocks to be updated may be selected based on different principles for each group, such as a group in which the blocks to be updated are selected in the horizontal direction, a group in which the blocks to be updated are selected in the vertical direction, and a group in which the blocks to be updated are selected in a zig-zag pattern etc.</p>
+<p id="p-0132" num="0131">A further principle is random selection. When the blocks to be updated are randomly selected, a random position may be selected in each of the groups or a randomly selected position may be applied to all the groups. In the former case, for example, positions of the blocks to be updated selected within each of the groups are different, such as the upper right, the lower left, a block second from the upper right in the horizontal direction, and a center position and so on. In the latter case, for example, if a randomly set position is the upper right, the block on the upper right of each of the groups is the position of the block to be updated.</p>
+<p id="p-0133" num="0132">Further, the global change detection portion <b>41</b> and the defocus detection portion <b>42</b> respectively select the blocks to be updated based on the selection of the blocks to be updated as in the example shown in <figref idref="DRAWINGS">FIG. 13A</figref> to <figref idref="DRAWINGS">FIG. 13F</figref>, and determine whether or not there has been a change (abnormality) within the blocks to be updated. When there is some kind of sabotage within a single image captured by the surveillance camera, if there is a region (block) in which a change (abnormality) is easily detected, that region may be selected more often than other regions. In other words, all the blocks within each of the groups may be selected a same number of times within a same time period, or may be selected a different number of times.</p>
+<p id="p-0134" num="0133">The explanation will now return to the flowchart shown in <figref idref="DRAWINGS">FIG. 12</figref>. At step S<b>4</b>, the histogram generation portion <b>64</b> generates the histogram of the update region. At step S<b>5</b>, the histogram storage portion <b>62</b> stores the histogram generated at step S<b>4</b>. The histogram storage portion <b>62</b> stores the past data as the histogram and thus, for example, a storage capacity is smaller in comparison to a case in which the past data is stored as image data, such as pixel values. Costs can therefore be lowered.</p>
+<p id="p-0135" num="0134">At step S<b>6</b>, based on the histogram of the update target blocks of the current frame supplied from the histogram generation portion <b>64</b>, the normalization processing portion <b>65</b> determines whether or not normalization is necessary, and performs the normalization processing as necessary.</p>
+<p id="p-0136" num="0135">At step S<b>7</b>, the degree of similarity calculation portion <b>71</b> calculates, for each of the update target blocks of the current frame, the degree of similarity between the current histogram and the corresponding past histogram. It should be noted that, when it is determined at step S<b>6</b> that normalization is performed, the degree of similarity is calculated using the histogram after normalization.</p>
+<p id="p-0137" num="0136">At step S<b>8</b>, the threshold determination portion <b>72</b> determines whether or not each of the update target blocks of the current frame is the changed region. Specifically, a degree of similarity D calculated at step S<b>7</b> is compared to a predetermined threshold value Thd that is set in advance. When the degree of similarity D is smaller than the threshold value Thd, it is determined that the block is the region in which a change has occurred. Even if, among a number of most recent N frames, there is one frame for which the degree of similarity D is smaller than the threshold value Thd, it is determined that there has been a change in the region.</p>
+<p id="p-0138" num="0137">At step S<b>9</b>, the changed region storage portion <b>67</b> updates the determination result for each of the update target blocks of the current frame. Specifically, the changed region storage portion <b>67</b> stores the determination result of one frame for each block (namely, a number of determination results equals the number of blocks), and updates the old determination results using the determination result obtained at step S<b>8</b>.</p>
+<p id="p-0139" num="0138">At step S<b>10</b>, the counter portion <b>68</b> counts the number of changed regions of all the regions. Specifically, based on the determination result (the presence or absence of change) of the update target blocks of the current frame from the change determination portion <b>66</b> and on the determination result of the blocks other than the update target blocks of the current frame from the changed region storage portion <b>67</b>, the counter portion <b>68</b> counts the number of blocks that are determined to be the changed region from among the total of 64 blocks that form the frame of the image of the surveillance target.</p>
+<p id="p-0140" num="0139">At step S<b>11</b>, the threshold determination portion <b>69</b> determines whether or not the counted number of changed regions is larger than a threshold value. More specifically, the number of blocks determined to be the changed region that is counted at step S<b>10</b> is compared with a predetermined threshold value Thc that is set in advance.</p>
+<p id="p-0141" num="0140">When it is determined at step S<b>11</b> that the counted number of changed regions is larger than the threshold value, the processing advances to step S<b>12</b>, and the threshold determination portion <b>69</b> outputs a signal, such as an alarm or the like, that indicates that there has been an act of sabotage. On the other hand, when it is determined at step S<b>11</b> that the counted number of changed regions is equal to or smaller than the threshold value, and after the processing at step S<b>12</b>, the act of sabotage detection processing ends.</p>
+<p id="p-0142" num="0141">The above-described processing is performed for each frame.</p>
+<p id="p-0143" num="0142">Details of Normalization Processing</p>
+<p id="p-0144" num="0143"><figref idref="DRAWINGS">FIG. 14</figref> is a detailed flowchart of the normalization processing performed at step S<b>6</b> shown in <figref idref="DRAWINGS">FIG. 12</figref>. In this processing, first, at step S<b>31</b>, the normalization determination portion <b>81</b> calculates, for each of the update target blocks, respective average values of the current histogram and the past histogram.</p>
+<p id="p-0145" num="0144">At step S<b>32</b>, the normalization determination portion <b>81</b> determines, for each of the update target blocks, the direction of change of the average values of the histograms. More specifically, the normalization determination portion <b>81</b> determines, for each of the update target blocks, whether the direction of change of the average values from the past histogram to the current histogram is an increase, a decrease or no change.</p>
+<p id="p-0146" num="0145">At step S<b>33</b>, the normalization determination portion <b>81</b> counts the direction of change for the whole screen. Specifically, the normalization determination portion <b>81</b> acquires, from the average value storage portion <b>83</b>, the determination result when the blocks that are not the update targets are similarly determined, along with the determination result of each of the update target blocks. The normalization determination portion <b>81</b> then respectively counts, for the whole screen, the number of blocks in which there is an increase, the number of blocks in which there is a decrease and the number of blocks in which there is no change.</p>
+<p id="p-0147" num="0146">At step S<b>34</b>, the normalization determination portion <b>81</b> determines, for the whole screen, whether there is a bias toward either an increase or a decrease by equal to or greater than a given constant. When it is determined at step S<b>34</b> that there is no bias toward either an increase or a decrease by equal to or greater than the given constant, the processing advances to step S<b>35</b>, and the normalization determination portion <b>81</b> outputs the current histogram and the past histogram of each of the update target blocks to the change determination portion <b>66</b> without change.</p>
+<p id="p-0148" num="0147">On the other hand, when it is determined at step S<b>34</b> that there is a bias toward either an increase or a decrease by equal to or greater than the given constant, the processing advances to step S<b>36</b> and the normalization determination portion <b>81</b> supplies the current histogram and the past histogram of each of the update target blocks to the normalization value calculation portion <b>82</b>. Then, the normalization value calculation portion <b>82</b> calculates the change rate of each of the blocks of the effective region, excluding the abnormal region from the whole screen.</p>
+<p id="p-0149" num="0148">More specifically, average values of the current histogram and the past histogram are respectively calculated for each of the update target blocks. Further, the average values for the current histogram and the past histogram of the blocks other than the update target blocks are respectively acquired from the average value storage portion <b>83</b>. Then, the effective region is decided corresponding to the direction of change of the whole screen, and the change rate of each of the blocks of the effective region is calculated by dividing either the average value of the past histogram by the average value of the current histogram, or vice versa, for each of the blocks set as the effective region.</p>
+<p id="p-0150" num="0149">At step S<b>37</b>, the normalization value calculation portion <b>82</b> calculates the average value of the change rate calculated for each of the blocks set as the effective region, and decides the result as the normalization value. At step S<b>38</b>, the normalization portion <b>84</b> uses the normalization value calculated at step S<b>37</b> to perform stretching of either the current histogram or the past histogram.</p>
+<p id="p-0151" num="0150">At step S<b>39</b>, the normalization portion <b>84</b> adjusts the stretched histogram such that the area is the same before and after normalization. More specifically, the normalization portion <b>84</b> performs adjustment such that the area is the same before and after normalization by multiplying the frequency of each luminance value of the stretched histogram by an inverse number of an area magnification before and after stretching.</p>
+<p id="p-0152" num="0151">At step S<b>40</b>, the normalization portion <b>84</b> outputs the normalized histogram to the change determination portion <b>66</b>. Specifically, the normalization portion <b>84</b> outputs to the change determination portion <b>66</b> the normalized current or past histogram and also the remaining non-normalized histogram.</p>
+<p id="p-0153" num="0152">After the processing at step S<b>40</b>, or after the processing at step S<b>35</b>, the normalization processing ends and the processing returns to the act of sabotage detection processing shown in <figref idref="DRAWINGS">FIG. 12</figref>.</p>
+<p id="p-0154" num="0153">Shape of Blocks</p>
+<p id="p-0155" num="0154">In the above-described embodiment shown in <figref idref="DRAWINGS">FIG. 13A</figref> to <figref idref="DRAWINGS">FIG. 13F</figref>, the blocks have a horizontally long shape, and movement is caused in the longitudinal direction of each of the blocks, namely in the horizontal direction. However, the application of the present technology is not limited to this shape. For example, the shape of the blocks can have a shape that is longer in a direction perpendicular to the movement direction. In other words, the block can be moved in a direction perpendicular to the longitudinal direction of the block.</p>
+<p id="p-0156" num="0155"><figref idref="DRAWINGS">FIG. 15</figref> is a diagram showing shapes of blocks. In <figref idref="DRAWINGS">FIG. 15</figref>, the screen is divided into an upper half and a lower half, and each of the halves is divided into 8 blocks, from b<b>11</b> to b<b>18</b> and from b<b>21</b> to b<b>28</b>. As a result, each of the blocks has a vertically long shape. Further, the movement direction of the blocks at the time of update is a direction perpendicular to the longitudinal direction, namely, the horizontal direction. For example, if the imaging portion can only perform movement in the horizontal direction, and the act of sabotage is limited to the horizontal direction, it is sufficient if the movement in the horizontal direction can be detected. Here, as shown in <figref idref="DRAWINGS">FIG. 15</figref>, the blocks can have a shape in which the vertical sides are longer than the horizontal sides with respect to the direction of change.</p>
+<p id="p-0157" num="0156"><figref idref="DRAWINGS">FIG. 16</figref> is a diagram showing shapes of blocks. In <figref idref="DRAWINGS">FIG. 16</figref>, the screen is divided into a left half and a right half, and each of the halves are divided into 8 blocks b<b>11</b> to b<b>81</b> and b<b>12</b> to b<b>82</b>. As a result, each of the blocks has a horizontally long shape. Further, the movement direction of the blocks at the time of update is a direction perpendicular to the longitudinal direction, namely, the vertical direction. For example, if the imaging portion can only perform movement in the vertical direction, and the act of sabotage is limited to the vertical direction, it is sufficient if the movement in the vertical direction can be detected. Here, as shown in <figref idref="DRAWINGS">FIG. 16</figref>, the blocks can have a shape in which the horizontal sides are longer than the vertical sides with respect to the direction of change.</p>
+<p id="p-0158" num="0157">As described above, in the normalization processing, it is determined whether or not to perform normalization, and normalization of the histogram is performed as necessary. Specifically, when there is a bias in the direction of change of the whole screen toward either an increase or a decrease by equal to or greater than the given constant, the histogram is normalized. In this way, mistaken detection of an act of sabotage, which is caused by the AE function or a change in lighting etc., can be reduced. In addition, it is possible to reduce missed detection of an act of sabotage that arises when all the histograms are normalized uniformly. Furthermore, when normalizing the histogram, the change rate that excludes the regions having a different direction of change to the direction of the change of the whole screen is calculated as the normalization value, and thus, highly accurate normalization can be performed.</p>
+<p id="p-0159" num="0158">In this way, the global change detection portion <b>41</b> can accurately detect sabotage relating to a global change, such as changing the orientation of the surveillance camera or covering the surveillance camera with a cloth and the like. Next, processing by the defocus detection portion <b>42</b> will be explained.</p>
+<p id="p-0160" num="0159">Processing of the Defocus Detection Portion <b>42</b></p>
+<p id="p-0161" num="0160">Next, act of sabotage detection processing by the defocus detection portion <b>42</b> of the image processing device <b>11</b> will be explained with reference to a flowchart shown in <figref idref="DRAWINGS">FIG. 17</figref>. First, at step S<b>51</b>, the acquisition portion <b>21</b> acquires a camera image. Specifically, the imaging portion captures an image of the predetermined surveillance target and acquires image data of the captured image.</p>
+<p id="p-0162" num="0161">At step S<b>52</b>, the image dividing portion <b>102</b> divides the image into the number of blocks N. In the present embodiment, the image of each frame based on the image data is divided into 8&#xd7;8 blocks. At step S<b>53</b>, the update region selection portion <b>101</b> selects the update region (the update target blocks). Specifically, of the 8&#xd7;8 number of blocks, the predetermined number of blocks M (M&#x2266;N) is selected as the update target blocks. The selection of the update region can be performed in the same manner as the case explained with reference to <figref idref="DRAWINGS">FIG. 13</figref>, and an explanation is thus omitted here.</p>
+<p id="p-0163" num="0162">The processing from step S<b>51</b> to step S<b>53</b> is performed in a similar manner to the processing from step S<b>1</b> to step S<b>3</b> of the flowchart shown in <figref idref="DRAWINGS">FIG. 12</figref>. In other words, the update region selection portion <b>101</b> and the image dividing portion <b>102</b> of the defocus detection portion <b>42</b> can perform the same processing as that of the update region selection portion <b>61</b> and the image dividing portion <b>63</b> of the global change detection portion <b>41</b> shown in <figref idref="DRAWINGS">FIG. 3</figref>.</p>
+<p id="p-0164" num="0163">Thus, it is also possible for the update region selection portion <b>101</b> and the image dividing portion <b>102</b> of the defocus detection portion <b>42</b> to have a shared structure with the update region selection portion <b>61</b> and the image dividing portion <b>63</b> of the global change detection portion <b>41</b>. For example, the update region selection portion <b>101</b> and the image dividing portion <b>102</b> of the defocus detection portion <b>42</b> shown in <figref idref="DRAWINGS">FIG. 5</figref> can be removed from the defocus detection portion <b>42</b>, setting of the update region can be received from the update region selection portion <b>61</b> of the global change detection portion <b>41</b>, and supply of image groups of the image region divided up by the image dividing portion <b>63</b> can be received.</p>
+<p id="p-0165" num="0164">Of course, when the global change detection portion <b>41</b> and the defocus detection portion <b>42</b> each perform processing of different regions, or perform processing on regions of different sizes, the global change detection portion <b>41</b> and the defocus detection portion <b>42</b> can have the respective configurations shown in <figref idref="DRAWINGS">FIG. 3</figref> and <figref idref="DRAWINGS">FIG. 5</figref>. In addition, the number of regions on which processing is performed for each frame may be different for the global change detection portion <b>41</b> and the defocus detection portion <b>42</b>, respectively. When the global change detection portion <b>41</b> and the defocus detection portion <b>42</b> perform processing on a different number of regions, the global change detection portion <b>41</b> and the defocus detection portion <b>42</b> have the respective configurations as shown in <figref idref="DRAWINGS">FIG. 3</figref> and <figref idref="DRAWINGS">FIG. 5</figref>.</p>
+<p id="p-0166" num="0165">For example, the global change detection portion <b>41</b> divides 1 frame into 4 groups and, from each of the groups, sets 1 region (1 block) as a processing target. In this case, a total of 4 regions are processed as the processing target (by the processing explained with reference to <figref idref="DRAWINGS">FIG. 13</figref>). Similarly to the global change detection portion <b>41</b>, the defocus detection portion <b>42</b> divides 1 frame into 4 groups and, from each of the groups, sets 1 region (1 block) as a processing target. However, the global change detection portion <b>41</b> may perform processing on all the blocks as sequential processing targets.</p>
+<p id="p-0167" num="0166">At step S<b>54</b>, the high frequency filter <b>104</b> filters the update region using a predetermined filter. By performing the filtering processing, edges within the update region are extracted. At step S<b>55</b>, the edge strength counter <b>106</b> counts the strength of the edges extracted from the region that is the target of processing. Then, using the counted value, at step S<b>56</b>, the threshold determination portion <b>107</b> determines, for each of the update target blocks of the current frame, whether the block is the abnormal region or not. An explanation will be added of processing performed by the high frequency filter <b>104</b> and by the abnormality determination portion <b>105</b> (the edge strength counter <b>106</b> and the threshold determination portion <b>107</b>).</p>
+<p id="p-0168" num="0167">The high frequency filter <b>104</b> extracts a high frequency component included in the input image within a predetermined region. For example, if a transfer function H of the high frequency filter <b>104</b> is expressed as a Z transform, it is expressed by Formula (2) below. Note that, in order to simplify the notation, Formula (2) is expressed as a one-dimensional formula, but as the input image is two-dimensional, in actuality, Formula (2) is expanded to a two-dimensional formula and used.</p>
+<p id="p-0169" num="0168">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>H</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>Z</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mrow>
+                <mo>-</mo>
+                <mn>1</mn>
+              </mrow>
+              <mo>+</mo>
+              <mrow>
+                <mn>2</mn>
+                <mo>&#x2062;</mo>
+                <msup>
+                  <mi>Z</mi>
+                  <mrow>
+                    <mo>-</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+              </mrow>
+              <mo>-</mo>
+              <msup>
+                <mi>Z</mi>
+                <mrow>
+                  <mo>-</mo>
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>2</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0170" num="0169">It should be noted that the high frequency filter <b>104</b> may be configured such that it extracts the high frequency component using transformation processing such as wavelet transformation or the like. The high frequency component of the input image that is extracted by the high frequency filter <b>104</b> represents the edge strength of the input image (the image within the region specified as the target of processing). This type of edge strength is input into the edge strength counter <b>106</b>. In the edge strength counter <b>106</b>, frequency component values of the high frequency component that has passed through the high frequency filter <b>104</b> are calculated within the region.</p>
+<p id="p-0171" num="0170">The edge strength counter <b>106</b> counts a number of pixels for which the calculated frequency component value exceeds a predetermined threshold value (hereinafter referred to as a high frequency threshold value). Further, an accumulated value is calculated by summing the high frequency component values of each of the pixels within the region. More specifically, the edge strength counter <b>106</b> calculates the number of pixels with a high edge strength within the region and the accumulated value of the edge strength within the region.</p>
+<p id="p-0172" num="0171">Furthermore, an average value is calculated by dividing the accumulated value by the number of pixels with a high edge strength, and the resulting average value is used in processing described below.</p>
+<p id="p-0173" num="0172">The average value of the edge strength=the accumulated value/the number of pixels with a high edge strength. Note that, when the number of pixels with a high edge strength is zero, namely, when there are no pixels for which the value of the calculated frequency component exceeds the high frequency threshold value, the average value of the edge strength is considered to be zero.</p>
+<p id="p-0174" num="0173">The threshold determination portion <b>107</b> compares the number of pixels and the accumulated value with predetermined threshold values and thus determines whether or not an abnormality has occurred in the region set as the target of processing. The threshold determination portion <b>107</b> uses the following determination formulas.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>No. of pixels whose edge strength is higher than threshold value&#x3c;threshold value of No. of pixels (defocus consensus rate)&#x2003;&#x2003;Determination formula 1<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Average value of edge strength&#x3c;threshold value of edge strength value (defocus noise th)&#x2003;&#x2003;Determination formula 2<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0175" num="0174">Determination formula 1 is a formula to determine whether or not there are a great number of pixels with a low edge strength. If the focus of the surveillance camera is blurred, a blurred image is captured, and thus, edge themselves are blurred and it is possible that the region will have a great number of pixels with a low edge strength. Determination formula 1 is a formula used to detect this type of situation.</p>
+<p id="p-0176" num="0175">Determination formula 2 is a formula to determine whether or not the region has low edge strength as a whole. When the surveillance camera focus is not blurred, a focused image is captured, and thus, in a region where edges exist, the accumulated value of the edge strength is high, and the number of pixels with a high edge strength tends to decrease. Therefore, in a predetermined region of the focused image, the average value of the edge strength tends to be a high value.</p>
+<p id="p-0177" num="0176">In contrast to this, if the focus of the surveillance camera is blurred, a blurred image is captured. Thus, it becomes an image (region) from which it is difficult to extract edges and is a blurred image in which the edges are spread out. In this type of region, even if it is a region in which edges exist, the accumulated value of the edge strength is low, and the number of pixels with a high edge strength tends to increase. Thus, in a predetermined region of the image that is not focused, the average value of the edge strength tends to be a low value.</p>
+<p id="p-0178" num="0177">When at least one of either determination formula 1 or determination formula 2 is satisfied, the threshold determination portion <b>107</b> determines that there is an abnormality in the region that is the target of processing. In other words, the threshold determination portion <b>107</b> takes a logical sum of determination formula 1 and determination formula 2 and outputs the logical sum as a determination result to the counter portion <b>110</b> (refer to <figref idref="DRAWINGS">FIG. 5</figref>) which performs later processing.</p>
+<p id="p-0179" num="0178">Returning to the explanation of the flowchart in <figref idref="DRAWINGS">FIG. 17</figref>, when it is determined at step S<b>56</b> whether or not the region is an abnormal region, the abnormal region storage portion <b>108</b> updates the determination result for each of the update target blocks of the current frame, at step S<b>57</b>. Specifically, the abnormal region storage portion <b>108</b> stores the determination results (namely, the determination results of the number of blocks) of 1 frame for each block, and updates the old determination results with the determination results determined at step S<b>56</b>.</p>
+<p id="p-0180" num="0179">At step S<b>58</b>, the counter portion <b>110</b> counts the number of abnormal regions of all the regions. More specifically, based on the determination result (the presence or absence of abnormality) from the abnormality determination portion <b>105</b> for the update target blocks of the current frame, and on the determination result from the abnormal region storage portion <b>108</b> for the blocks other than the update target blocks of the current frame, the number of blocks are counted that are considered to be abnormal regions from among the total of 64 blocks that form the frame of the image of the surveillance target.</p>
+<p id="p-0181" num="0180">At step S<b>59</b>, the threshold determination portion <b>111</b> determines whether or not the counted number of abnormal regions is greater than a threshold value. More specifically, at step S<b>59</b>, the number of blocks that are counted as the abnormal regions is compared to the predetermined threshold value Thc that is set in advance. Here, the explanation continues on the assumption that the comparison is made with the predetermined threshold value Thc that is set in advance, but the threshold value Thc can be a number of abnormal regions of a frame a predetermined number of frames previously.</p>
+<p id="p-0182" num="0181">When it is determined at step S<b>59</b> that the counted number of abnormal regions is larger than the threshold value, the processing advances to step S<b>60</b> and the threshold determination portion <b>111</b> outputs a signal, such as an alarm or the like, that indicates that an act of sabotage has been committed. Note that the alarm output at step S<b>60</b> is a signal notifying to latter processing portions that it is possible that an act of sabotage has been committed. When it is determined at step S<b>59</b> that the counted number of abnormal regions is equal to or less than the threshold value, and after the processing at step S<b>60</b>, the defocus detection processing ends.</p>
+<p id="p-0183" num="0182">The above-described processing is performed for each frame.</p>
+<p id="p-0184" num="0183">In this way, the defocus detection portion <b>42</b> can accurately detect defocus-related sabotage, such as blurring the focus of the surveillance camera or blurring the zoom.</p>
+<p id="p-0185" num="0184">Integration of Sabotage Detection</p>
+<p id="p-0186" num="0185">Here, the explanation will once again refer to <figref idref="DRAWINGS">FIG. 2</figref>. As shown in <figref idref="DRAWINGS">FIG. 2</figref>, in the present embodiment, among acts of sabotage committed against the surveillance camera, an act of sabotage relating to a global change is detected by the global change detection portion <b>41</b> and a defocus-related act of sabotage is detected by the defocus detection portion <b>42</b>. Further, the detection result integration portion <b>43</b> is provided, which integrates results detected by each of the detection portions and outputs a final result as to the presence or absence of the sabotage.</p>
+<p id="p-0187" num="0186">The detection result integration portion <b>43</b> stores, for example, a table such as that shown in <figref idref="DRAWINGS">FIG. 18</figref>, integrates the results from the two detection portions based on the table and outputs a final result. As can be seen from <figref idref="DRAWINGS">FIG. 18</figref>, when the detection result from the global change detection portion <b>41</b> is a result indicating no abnormality, and the detection result from the defocus detection portion <b>42</b> is also a result indicating no abnormality, the final determination is that of no abnormality.</p>
+<p id="p-0188" num="0187">When the detection result from the global change detection portion <b>41</b> is a result indicating no abnormality, and the detection result from the defocus detection portion <b>42</b> is a result indicating an abnormality, it is determined that focus blurring sabotage has occurred.</p>
+<p id="p-0189" num="0188">When the detection result from the global change detection portion <b>41</b> is a result indicating an abnormality, a histogram abnormality is a result indicating an abnormality in which luminance changes in a same direction, and the detection result from the defocus detection portion <b>42</b> is a result indicating no abnormality, it is determined that sabotage of turning the surveillance camera has occurred.</p>
+<p id="p-0190" num="0189">When the detection result from the global change detection portion <b>41</b> is a result indicating an abnormality, the histogram abnormality is a result indicating an abnormality in which the luminance changes in the same direction, and the detection result from the defocus detection portion <b>42</b> is a result indicating an abnormality, it is determined that sabotage of covering the surveillance camera has occurred.</p>
+<p id="p-0191" num="0190">When the detection result from the global change detection portion <b>41</b> is a result indicating an abnormality, the histogram abnormality is a result indicating an abnormality in which the luminance changes in a plurality of directions, and the detection result from the defocus detection portion <b>42</b> is a result indicating no abnormality, it is determined that sabotage of turning the surveillance camera has occurred.</p>
+<p id="p-0192" num="0191">When the detection result from the global change detection portion <b>41</b> is a result indicating an abnormality, the histogram abnormality is a result indicating an abnormality in which the luminance changes in the plurality of directions, and the detection result from the defocus detection portion <b>42</b> is a result indicating an abnormality, it is determined that zoom blurring sabotage has occurred.</p>
+<p id="p-0193" num="0192">Processing of the detection result integration portion <b>43</b>, which is performed when the detection results are integrated and a final determination result is output based on the above type of table, will be explained with reference to a flowchart shown in <figref idref="DRAWINGS">FIG. 19</figref>. Note that, here, an example of the processing will be given and the order of the determination etc. is not limited to this example.</p>
+<p id="p-0194" num="0193">At step S<b>71</b>, it is determined whether or not the determination result from the global change detection portion <b>41</b> indicates detection of sabotage. When it is determined at step S<b>71</b> that a global change has not been detected, the processing advances to step S<b>72</b>. At step S<b>72</b>, it is determined whether or not the determination result from the defocus detection portion <b>42</b> indicates detection of sabotage. When it is determined at step S<b>72</b> that defocusing has not been detected, the processing advances to step S<b>73</b>.</p>
+<p id="p-0195" num="0194">In this case, as both the global change and the defocusing have not been detected, it is determined that sabotage against the surveillance camera has not been detected, and it is determined that there is no abnormality.</p>
+<p id="p-0196" num="0195">On the other hand, when at step S<b>72</b> it is determined that defocusing has been detected, the processing advances to step S<b>74</b>. In this case, the global change has not been detected but the defocusing has been detected, and thus sabotage against the surveillance camera is detected and the sabotage is determined to be that of focus blurring.</p>
+<p id="p-0197" num="0196">In the case of focus blurring sabotage, there is a possibility that the luminance of the image of the surveillance camera does not significantly change, and sometimes it is not detected by the global change detection portion <b>41</b> that the sabotage has occurred. However, as the edge strength tends to decrease, the defocus detection portion <b>42</b> detects that the sabotage has occurred. Thus, at step S<b>74</b>, it is determined that the focus blurring sabotage has occurred.</p>
+<p id="p-0198" num="0197">This determination result is notified to an administrator who manages the surveillance camera. When the notification is made, it is possible to notify not simply that the sabotage has occurred, but also to notify that the sabotage is the focus blurring.</p>
+<p id="p-0199" num="0198">By making it possible to notify the type of sabotage in the manner described above, the administrator can rapidly perform appropriate processing in response to the type of sabotage. For example, when notification is made that focus blurring has occurred, it is possible to more rapidly ascertain that it is appropriate to take action to recover the focus than in a case in which it is simply notified that the sabotage has occurred, and the action in response to the sabotage can be taken more quickly. Furthermore, when the surveillance camera has a function to perform focusing without any command from the administrator, the surveillance camera can start control to perform focusing at the point in time at which the focus blurring sabotage is detected. This type of control can be performed only when the type of sabotage can be determined.</p>
+<p id="p-0200" num="0199">Returning to the explanation of the flowchart shown in <figref idref="DRAWINGS">FIG. 19</figref>, when a global change is detected at step S<b>71</b>, the processing advances to step S<b>75</b>. At step S<b>75</b>, it is determined whether or not the luminance is changing in the same direction. When it is determined at step S<b>75</b> that the luminance is changing in the same direction, the processing advances to step S<b>76</b>. At step S<b>76</b>, it is determined whether or not defocusing has been detected.</p>
+<p id="p-0201" num="0200">When it is determined at step S<b>76</b> that the defocusing has been detected, the processing advances to step S<b>77</b>. In this case, the global change has been detected in which the luminance changes in the same direction, and the defocusing is also detected. In this type of situation, it is determined that the so-called covering sabotage has occurred in which the surveillance camera is covered with a cloth or the like.</p>
+<p id="p-0202" num="0201">When the surveillance camera is covered by the cloth or the like, the luminance values tend to change uniformly. Thus, the global change detection portion <b>41</b> detects the abnormality in which the luminance changes in the same direction. Further, when the surveillance camera is covered by the cloth or the like, edges disappear (decrease) from the image captured by the surveillance camera, and there is a high probability that the edge strength will decrease.</p>
+<p id="p-0203" num="0202">Thus, the global change detection portion <b>41</b> and the defocus detection portion <b>42</b> each output the determination result indicating that there is an abnormality. Further, if the global change detection portion <b>41</b> detects the abnormality in which the luminance changes in the same direction, it is possible to determine that the covering sabotage has occurred. In this case also, it is possible to notify not simply that the sabotage has occurred but also to notify that the sabotage is the covering sabotage. It is thus possible to reduce an amount of time until the administrator takes action.</p>
+<p id="p-0204" num="0203">Furthermore, a method to take action may be notified when performing the notification. For example, when this type of covering sabotage is detected, a message such as, &#x201c;Covering sabotage has occurred, please remove the covering cloth etc. urgently&#x201d; may be used as the notification when the sabotage occurs. In addition, an action may be taken in which video is switched to another surveillance camera that is caused to film the vicinity of the surveillance camera that has detected the occurrence of the sabotage.</p>
+<p id="p-0205" num="0204">On the other hand, when it is determined at step S<b>76</b> that the defocusing has not been detected, the processing advances to step S<b>78</b>. In this case, the global change in which the luminance changes in the same direction has been detected, but the defocusing has not been detected. In this type of situation, it is determined that the turning sabotage has occurred in which the direction of the surveillance camera is changed to another direction.</p>
+<p id="p-0206" num="0205">In the case of turning, as the direction of the surveillance camera is changed, the captured image is different to the image captured before the turning occurs. Thus, luminance values change, and the global change detection portion <b>41</b> detects that sabotage has occurred. However, if the image captured by the surveillance camera that has been turned is also in a focused state, the change in edge strength is small, and sometimes the sabotage is not detected by the defocus detection portion <b>42</b>. Even in this type of case, by providing the global change detection portion <b>41</b> and the defocus detection portion <b>42</b>, the sabotage can be detected by the global change detection portion <b>41</b> and it can also be determined that the sabotage is the turning of the surveillance camera.</p>
+<p id="p-0207" num="0206">In this case also, it is possible to notify not simply that the sabotage has occurred, but also to notify that the sabotage is the turning of the surveillance camera. It is thus possible to reduce an amount of time until the administrator takes action. When the surveillance camera has been turned, the administrator can go to the location in which the surveillance camera is installed and return the surveillance camera to its correct position. If the surveillance camera has a function that can control panning and tilting by remote operation, the administrator can return the surveillance camera to its correct position by remote operation.</p>
+<p id="p-0208" num="0207">On the other hand, when it is determined at step S<b>75</b> that the luminance is not changing in the same direction, namely, when it is determined that the luminance is changing in the plurality of directions, the processing advances to step S<b>79</b>. At step S<b>79</b>, it is determined whether or not defocusing has been detected. At step S<b>79</b>, when it is determined that defocusing has been detected, the processing advances to step S<b>80</b>.</p>
+<p id="p-0209" num="0208">In this case, the global change has been detected in which the luminance changes in the plurality of directions, and the defocusing has also been detected. In this type of situation, it is determined that the zoom of the surveillance camera has been put out of focus, referred to above as zoom blurring. If the zoom of the surveillance camera is out of focus, the image being captured changes and there is a high possibility that the luminance values will change. However, in contrast to a case in which the surveillance camera is covered with a cloth or the like, the possibility that the luminance values change uniformly is low. Thus, the global change detection portion <b>41</b> detects the abnormality in which the luminance changes in the plurality of directions.</p>
+<p id="p-0210" num="0209">Furthermore, when the zoom of the surveillance camera is out of focus, as the image being captured changes, there is a high possibility that edge strength will also change. Thus, the abnormality is also detected by the defocus detection portion <b>42</b>. In this type of situation, it is determined that the zoom blurring sabotage has occurred.</p>
+<p id="p-0211" num="0210">In this case also, it is possible to notify not simply that the sabotage has occurred, but also to notify that the sabotage is the zoom blurring. It is thus possible to reduce an amount of time until the administrator takes action. The administrator can go to the location in which the surveillance camera is installed and restore the zoom to its correct position. If the surveillance camera has a function that can control the zoom by remote operation, the administrator can restore the zoom to its correct position by remote operation.</p>
+<p id="p-0212" num="0211">On the other hand, when it is determined at step S<b>79</b> that the defocusing has not been detected, the processing advances to step S<b>78</b>. In this case, the global change has been detected in which the luminance changes in the plurality of directions, but defocusing has not been detected. In this type of situation, it is determined that turning sabotage has occurred, in which the orientation of the surveillance camera has been changed to another direction.</p>
+<p id="p-0213" num="0212">In this case also, it is possible to notify not simply that the sabotage has occurred, but also to notify that the sabotage is the turning of the surveillance camera. It is thus possible to reduce an amount of time until the administrator takes action.</p>
+<p id="p-0214" num="0213">By integrating the determination result from the global change detection portion <b>41</b> and the determination result from the defocus detection portion <b>42</b> in this way, it is possible to not simply detect that sabotage has been committed against the surveillance camera, but also to detect what type of sabotage the sabotage is. Furthermore, the global change detection portion <b>41</b> and the defocus detection portion <b>42</b> each detect the sabotage and it is thus possible to reduce detection oversights and mistaken detection.</p>
+<p id="p-0215" num="0214">As it is possible to detect the type of sabotage, it is also possible to notify the type of sabotage to the administrator. Thus, it is easy for the administrator to take action against the sabotage. Depending on the type of sabotage, there are cases in which the sabotage is resolved on the surveillance camera side. In this type of case, by knowing the type of sabotage, the surveillance camera itself can determine whether or not it can resolve the sabotage. When the camera can resolve the sabotage, it can start to resolve the sabotage without waiting for instructions from the administrator.</p>
+<p id="p-0216" num="0215">In addition, in the above-described embodiment, the global change detection portion <b>41</b> and the defocus detection portion <b>42</b> each divide the single image into the plurality of regions and determine, for each region, whether or not there is a possibility that sabotage has occurred. Then, using the determination result for each of the regions, a determination is made as to whether the sabotage has occurred with respect to the single image. As a result, for example, even in an image having some regions in which edge strength is extremely high, it is possible to perform sabotage detection without relying on those regions. In other words, it is possible to perform more accurate sabotage detection.</p>
+<p id="p-0217" num="0216">[Recording Medium]</p>
+<p id="p-0218" num="0217">The series of processes described above can be executed by hardware but can also be executed by software. When the series of processes is executed by software, a program that constructs such software is installed into a computer. Here, the expression &#x201c;computer&#x201d; includes a computer in which dedicated hardware is incorporated and a general-purpose personal computer or the like that is capable of executing various functions when various programs are installed.</p>
+<p id="p-0219" num="0218"><figref idref="DRAWINGS">FIG. 20</figref> is a block diagram showing a hardware configuration example of a computer that performs the above-described series of processing using a program.</p>
+<p id="p-0220" num="0219">In the computer, a central processing unit (CPU) <b>1001</b>, a read only memory (ROM) <b>1002</b> and a random access memory (RAM) <b>1003</b> are mutually connected by a bus <b>1004</b>. An input/output interface <b>1005</b> is also connected to the bus <b>1004</b>. An input unit <b>1006</b>, an output unit <b>1007</b>, a storage unit <b>1008</b>, a communication unit <b>1009</b> and a drive <b>1010</b> are connected to the input/output interface <b>1005</b>.</p>
+<p id="p-0221" num="0220">The input unit <b>1006</b> is configured from a keyboard, a mouse, a microphone or the like. The output unit <b>1007</b> configured from a display, a speaker or the like.</p>
+<p id="p-0222" num="0221">The storage unit <b>1008</b> is configured from a hard disk, a non-volatile memory or the like. The communication unit <b>1009</b> is configured from a network interface or the like. The drive <b>1010</b> drives a removable media <b>1011</b> such as a magnetic disk, an optical disk, a magneto-optical disk, a semiconductor memory or the like.</p>
+<p id="p-0223" num="0222">In the computer configured as described above, the CPU <b>1001</b> loads a program that is stored, for example, in the storage unit <b>1008</b> onto the RAM <b>1003</b> via the input/output interface <b>1005</b> and the bus <b>1004</b>, and executes the program. Thus, the above-described series of processing is performed.</p>
+<p id="p-0224" num="0223">Programs to be executed by the computer (the CPU <b>1001</b>) are provided being recorded in the removable media <b>1011</b> which is a packaged media or the like. Also, programs may be provided via a wired or wireless transmission medium, such as a local area network, the Internet or digital satellite broadcasting.</p>
+<p id="p-0225" num="0224">In the computer, by inserting the removable media <b>1011</b> into the drive <b>1010</b>, the program can be installed in the storage unit <b>1008</b> via the input/output interface <b>1005</b>. Further, the program can be received by the communication unit <b>1009</b> via a wired or wireless transmission media and installed in the storage unit <b>1008</b>. Moreover, the program can be installed in advance in the ROM <b>1002</b> or the storage unit <b>1008</b>.</p>
+<p id="p-0226" num="0225">It should be noted that the program executed by a computer may be a program that is processed in time series according to the sequence described in this specification or a program that is processed in parallel or at necessary timing such as upon calling.</p>
+<p id="p-0227" num="0226">Further, in this specification, &#x201c;system&#x201d; refers to a whole device composed of a plurality of devices.</p>
+<p id="p-0228" num="0227">It should be understood by those skilled in the art that various modifications, combinations, sub-combinations and alterations may occur depending on design requirements and other factors insofar as they are within the scope of the appended claims or the equivalents thereof.</p>
+<p id="p-0229" num="0228">Additionally, the present technology may also be configured as below.
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0229">(1) An image processing device including:</li>
+</ul>
+</p>
+<p id="p-0230" num="0230">an acquisition portion that acquires image data of an image;</p>
+<p id="p-0231" num="0231">a dividing portion that divides the acquired image into a number of blocks N (N&#x3e;1);</p>
+<p id="p-0232" num="0232">a specification portion that sequentially specifies, each time the image data of the image is newly acquired, a number of the blocks M (N&#x2267;M&#x3e;1) from among the number of the blocks N, as the blocks to be updated;</p>
+<p id="p-0233" num="0233">a filtering portion that performs filtering using a predetermined filter on the image data of the specified number of the blocks M;</p>
+<p id="p-0234" num="0234">a counting portion that counts a number of pixels for which a filtering result from the filtering portion is larger than a predetermined value;</p>
+<p id="p-0235" num="0235">a first determination portion that determines whether there is an abnormality in the blocks, by comparing the number of the pixels counted by the counting portion with a predetermined value; and</p>
+<p id="p-0236" num="0236">a second determination portion that determines whether sabotage has occurred, by comparing, with a predetermined value, a number of the blocks within the image that are determined by the first determination portion to have an abnormality.
+<ul id="ul0002" list-style="none">
+    <li id="ul0002-0001" num="0237">(2) The image processing device according to (1),</li>
+</ul>
+</p>
+<p id="p-0237" num="0238">wherein the counting portion calculates an average value by dividing a sum value of the number of pixels obtained by counting the number of the pixels for which the filtering result is larger than the predetermined value, and a value of pixels for which it is determined that the filtering result is equal to or larger than the predetermined value, by the number of pixels, and</p>
+<p id="p-0238" num="0239">wherein the first determination portion performs a first determination that determines whether the number of pixels is smaller than a predetermined value, and a second determination that determines whether the average value is smaller than a predetermined value, and sets a logical sum of the first determination and the second determination as a determination result.
+<ul id="ul0003" list-style="none">
+    <li id="ul0003-0001" num="0240">(3) The image processing device according to (1) or (2), further including:</li>
+</ul>
+</p>
+<p id="p-0239" num="0241">a histogram generation portion that generates a histogram of the image data of each of the specified number of the blocks M;</p>
+<p id="p-0240" num="0242">a histogram storage portion that sequentially updates and stores the generated histogram;</p>
+<p id="p-0241" num="0243">a change determination portion that, based on a degree of similarity between the generated histogram of each of the specified number of the blocks M and the corresponding stored past histogram of the number of the blocks M, determines whether there is a change in the acquired image;</p>
+<p id="p-0242" num="0244">a normalization determination portion that determines whether to perform normalization of the histogram; and</p>
+<p id="p-0243" num="0245">a normalization portion that, when it is determined by the normalization determination portion that normalization is to be performed, performs normalization of one of the generated histogram of the number of the blocks M or the corresponding stored past histogram of the number of the blocks M,</p>
+<p id="p-0244" num="0246">wherein, when the normalization of the histogram has been performed by the normalization portion, the change determination portion determines whether there is a change in the acquired image based on a degree of similarity using the normalized histogram, and determines that sabotage has occurred when it is determined that there is a change.
+<ul id="ul0004" list-style="none">
+    <li id="ul0004-0001" num="0247">(4) The image processing device according to (3), wherein</li>
+</ul>
+</p>
+<p id="p-0245" num="0248">a determination result by the second determination portion and a determination result by the change determination portion are integrated and a type of the sabotage is determined.
+<ul id="ul0005" list-style="none">
+    <li id="ul0005-0001" num="0249">(5) An image processing method including:</li>
+</ul>
+</p>
+<p id="p-0246" num="0250">acquiring image data of an image;</p>
+<p id="p-0247" num="0251">dividing the acquired image into a number of blocks N (N&#x3e;1);</p>
+<p id="p-0248" num="0252">sequentially specifying, each time the image data of the image is newly acquired, a number of the blocks M (N&#x2267;M&#x3e;1) from among the number of the blocks N, as the blocks to be updated;</p>
+<p id="p-0249" num="0253">performing filtering using a predetermined filter on the image data of the specified number of the blocks M;</p>
+<p id="p-0250" num="0254">counting a number of pixels for which a filtering result is larger than a predetermined value;</p>
+<p id="p-0251" num="0255">determining whether there is an abnormality in the blocks, by comparing the counted number of the pixels with a predetermined value; and</p>
+<p id="p-0252" num="0256">determining whether sabotage has occurred, by comparing, with a predetermined value, a number of the blocks within the image that are determined to have an abnormality.
+<ul id="ul0006" list-style="none">
+    <li id="ul0006-0001" num="0257">(6) A computer-readable program including instructions that command a computer to perform:</li>
+</ul>
+</p>
+<p id="p-0253" num="0258">acquiring image data of an image;</p>
+<p id="p-0254" num="0259">dividing the acquired image into a number of blocks N (N&#x3e;1);</p>
+<p id="p-0255" num="0260">sequentially specifying, each time the image data of the image is newly acquired, a number of the blocks M (N&#x2267;M&#x3e;1) from among the number of the blocks N, as the blocks to be updated;</p>
+<p id="p-0256" num="0261">performing filtering using a predetermined filter on the image data of the specified number of the blocks M;</p>
+<p id="p-0257" num="0262">counting a number of pixels for which a filtering result is larger than a predetermined value;</p>
+<p id="p-0258" num="0263">determining whether there is an abnormality in the blocks, by comparing the counted number of the pixels with a predetermined value; and determining whether sabotage has occurred, by comparing, with a predetermined value, a number of the blocks within the image that are determined to have an abnormality.</p>
+<p id="p-0259" num="0264">The present disclosure contains subject matter related to that disclosed in Japanese Priority Patent Application JP 2011-177569 filed in the Japan Patent Office on Aug. 15, 2011, the entire content of which is hereby incorporated by reference.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08625922-20140107-M00001.NB">
+<img id="EMI-M00001" he="6.35mm" wi="76.20mm" file="US08625922-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. An image processing device comprising:
+<claim-text>an acquisition portion that acquires image data of an image;</claim-text>
+<claim-text>a dividing portion that divides the acquired image into a number of blocks N (N&#x3e;1);</claim-text>
+<claim-text>a specification portion that sequentially specifies, each time the image data of the image is newly acquired, a number of the blocks M (N&#x2267;M&#x3e;1) from among the number of the blocks N, as the blocks to be updated;</claim-text>
+<claim-text>a filtering portion that performs filtering using a predetermined filter on the image data of the specified number of the blocks M;</claim-text>
+<claim-text>a counting portion that counts a number of pixels for which a filtering result from the filtering portion is larger than a predetermined value;</claim-text>
+<claim-text>a first determination portion that determines whether there is an abnormality in the blocks, by comparing the number of the pixels counted by the counting portion with a predetermined value; and</claim-text>
+<claim-text>a second determination portion that determines whether sabotage has occurred, by comparing, with a predetermined value, a number of the blocks within the image that are determined by the first determination portion to have an abnormality.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The image processing device according to <claim-ref idref="CLM-00001">claim 1</claim-ref>,
+<claim-text>wherein the counting portion calculates an average value by dividing a sum value of the number of pixels obtained by counting the number of the pixels for which the filtering result is larger than the predetermined value, and a value of pixels for which it is determined that the filtering result is equal to or larger than the predetermined value, by the number of pixels, and</claim-text>
+<claim-text>wherein the first determination portion performs a first determination that determines whether the number of pixels is smaller than a predetermined value, and a second determination that determines whether the average value is smaller than a predetermined value, and sets a logical sum of the first determination and the second determination as a determination result.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The image processing device according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>a histogram generation portion that generates a histogram of the image data of each of the specified number of the blocks M;</claim-text>
+<claim-text>a histogram storage portion that sequentially updates and stores the generated histogram;</claim-text>
+<claim-text>a change determination portion that, based on a degree of similarity between the generated histogram of each of the specified number of the blocks M and the corresponding stored past histogram of the number of the blocks M, determines whether there is a change in the acquired image;</claim-text>
+<claim-text>a normalization determination portion that determines whether to perform normalization of the histogram; and</claim-text>
+<claim-text>a normalization portion that, when it is determined by the normalization determination portion that normalization is to be performed, performs normalization of one of the generated histogram of the number of the blocks M or the corresponding stored past histogram of the number of the blocks M,</claim-text>
+<claim-text>wherein, when the normalization of the histogram has been performed by the normalization portion, the change determination portion determines whether there is a change in the acquired image based on a degree of similarity using the normalized histogram, and determines that sabotage has occurred when it is determined that there is a change.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The image processing device according to <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein
+<claim-text>a determination result by the second determination portion and a determination result by the change determination portion are integrated and a type of the sabotage is determined.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. An image processing method comprising:
+<claim-text>acquiring image data of an image;</claim-text>
+<claim-text>dividing the acquired image into a number of blocks N (N&#x3e;1);</claim-text>
+<claim-text>sequentially specifying, each time the image data of the image is newly acquired, a number of the blocks M (N&#x2267;M&#x3e;1) from among the number of the blocks N, as the blocks to be updated;</claim-text>
+<claim-text>performing filtering using a predetermined filter on the image data of the specified number of the blocks M;</claim-text>
+<claim-text>counting a number of pixels for which a filtering result is larger than a predetermined value;</claim-text>
+<claim-text>determining whether there is an abnormality in the blocks, by comparing the counted number of the pixels with a predetermined value; and</claim-text>
+<claim-text>determining whether sabotage has occurred, by comparing, with a predetermined value, a number of the blocks within the image that are determined to have an abnormality.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. A non-transitory computer-readable medium having stored thereon a program that when executed by a computer causes the computer to implement instructions that command the computer to perform:
+<claim-text>acquiring image data of an image;</claim-text>
+<claim-text>dividing the acquired image into a number of blocks N (N&#x3e;1);</claim-text>
+<claim-text>sequentially specifying, each time the image data of the image is newly acquired, a number of the blocks M (N&#x2267;M&#x3e;1) from among the number of the blocks N, as the blocks to be updated;</claim-text>
+<claim-text>performing filtering using a predetermined filter on the image data of the specified number of the blocks M;</claim-text>
+<claim-text>counting a number of pixels for which a filtering result is larger than a predetermined value;</claim-text>
+<claim-text>determining whether there is an abnormality in the blocks, by comparing the counted number of the pixels with a predetermined value; and</claim-text>
+<claim-text>determining whether sabotage has occurred, by comparing, with a predetermined value, a number of the blocks within the image that are determined to have an abnormality. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

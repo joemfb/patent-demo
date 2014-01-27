@@ -1,0 +1,638 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08621851-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08621851</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13032944</doc-number>
+<date>20110223</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>DE</country>
+<doc-number>102005062050</doc-number>
+<date>20051222</date>
+</priority-claim>
+<priority-claim sequence="02" kind="regional">
+<country>EP</country>
+<doc-number>06007797</doc-number>
+<date>20060413</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<us-term-extension>222</us-term-extension>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>F</section>
+<class>01</class>
+<subclass>N</subclass>
+<main-group>3</main-group>
+<subgroup>02</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification> 60296</main-classification>
+<further-classification> 60274</further-classification>
+<further-classification> 60288</further-classification>
+<further-classification> 60297</further-classification>
+<further-classification> 60311</further-classification>
+<further-classification>422176</further-classification>
+<further-classification>422177</further-classification>
+<further-classification>422180</further-classification>
+</classification-national>
+<invention-title id="d2e92">Particle filter arrangement</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>2898202</doc-number>
+<kind>A</kind>
+<name>Eriksson et al.</name>
+<date>19590800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>4404798</doc-number>
+<kind>A</kind>
+<name>Takagi et al.</name>
+<date>19830900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>4916897</doc-number>
+<kind>A</kind>
+<name>Hayashi et al.</name>
+<date>19900400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>5685143</doc-number>
+<kind>A</kind>
+<name>Aitta et al.</name>
+<date>19971100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>6312650</doc-number>
+<kind>B1</kind>
+<name>Frederiksen et al.</name>
+<date>20011100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>6655133</doc-number>
+<kind>B2</kind>
+<name>Kimura et al.</name>
+<date>20031200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>6715583</doc-number>
+<kind>B2</kind>
+<name>Santos</name>
+<date>20040400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>6874316</doc-number>
+<kind>B2</kind>
+<name>Nakatani</name>
+<date>20050400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>6935105</doc-number>
+<kind>B1</kind>
+<name>Page et al.</name>
+<date>20050800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>7210287</doc-number>
+<kind>B2</kind>
+<name>Bolander et al.</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>2005/0147541</doc-number>
+<kind>A1</kind>
+<name>Ajisaka et al.</name>
+<date>20050700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>422177</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>DE</country>
+<doc-number>19515649</doc-number>
+<date>19951000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>GB</country>
+<doc-number>2128894</doc-number>
+<kind>A</kind>
+<date>19840500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>WO</country>
+<doc-number>9012950</doc-number>
+<date>19901100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>30</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification> 60274</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 60288</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 60296</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 60297</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 60311</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>422176</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>422177</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>422180</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>5</number-of-drawing-sheets>
+<number-of-figures>7</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>12143405</doc-number>
+<date>20080620</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>7900443</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13032944</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>PCT/EP2006/012466</doc-number>
+<date>20061222</date>
+</document-id>
+<parent-status>PENDING</parent-status>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>12143405</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110138782</doc-number>
+<kind>A1</kind>
+<date>20110616</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Stieglbauer</last-name>
+<first-name>Herbert</first-name>
+<address>
+<city>Penzberg</city>
+<country>DE</country>
+</address>
+</addressbook>
+<residence>
+<country>DE</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Stieglbauer</last-name>
+<first-name>Herbert</first-name>
+<address>
+<city>Penzberg</city>
+<country>DE</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Edell, Shapiro &#x26; Finnan, LLC</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Ark-Holding AG</orgname>
+<role>03</role>
+<address>
+<city>Zug</city>
+<country>CH</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Bomberg</last-name>
+<first-name>Kenneth</first-name>
+<department>3748</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Lee</last-name>
+<first-name>Brandon</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A particle filter arrangement for filtering exhaust gases of an internal combustion engine such as a diesel internal combustion engine, includes an inlet and an outlet and at least one particle filter arranged in the flow path of the exhaust gases between the inlet and outlet. The exhaust gases are conducted in a line, with the line having a first segment in which the exhaust gases are conducted substantially in the direction of the outlet. The line has a second segment in which the exhaust gases are conducted substantially in the direction of the inlet. An operating temperature of the arrangement sufficiently high to prevent full loading of the filter is generated particularly quickly in that the line also includes a third segment in which the exhaust gases are conducted substantially in the direction of the outlet.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="251.38mm" wi="220.73mm" file="US08621851-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="224.79mm" wi="138.01mm" orientation="landscape" file="US08621851-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="209.72mm" wi="126.49mm" file="US08621851-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="221.74mm" wi="135.89mm" orientation="landscape" file="US08621851-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="207.86mm" wi="125.05mm" file="US08621851-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="188.72mm" wi="128.69mm" orientation="landscape" file="US08621851-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CROSS REFERENCE TO RELATED APPLICATIONS</heading>
+<p id="p-0002" num="0001">This application is a continuation of U.S. patent application Ser. No. 12/143,405, filed 20 Jun. 2008 and entitled &#x201c;Particle Filter Arrangement,&#x201d; which is a continuation of PCT Application No. PCT/EP2006/012466, filed on 22 Dec. 2006 and entitled &#x201c;Particulate Filter Assembly,&#x201d; which claims priority under 35 U.S.C. &#xa7;119 to Application No. DE 102005062050.7 filed on 22 Dec. 2005 and entitled &#x201c;Canning of a Soot Particle Filter with Exhaust-Gas Recirculation within the Filter System, in Particular, Incl. a Double Oxy-Regeneration Catalytic Converter and Double Filtering of the Smoke Gases,&#x201d; and to Application No. EP 06007797.1 filed on 13 Apr. 2006 and entitled &#x201c;Particulate Filter Arrangement.&#x201d; The disclosures of each of the aforementioned applications are hereby incorporated by reference in their entireties.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">BACKGROUND</heading>
+<p id="p-0003" num="0002">The present invention relates basically to the field of aftertreatment of exhaust gases. More precisely, the present invention relates, according to a first aspect, to a particle filter arrangement for filtering exhaust gases of an internal combustion engine, in particular of a diesel internal combustion engine, having an inlet and an outlet, with at least one particle filter being arranged in the flow path of the exhaust gases between the inlet and outlet, with the exhaust gases being conducted in a line, with the line having a first section or segment in which the exhaust gases are conducted substantially in the direction of the outlet, with the line also having a second section or segment in which the exhaust gases are conducted substantially in the direction of the inlet. According to a second aspect, the present invention relates to a particle filter arrangement for filtering exhaust gases of an internal combustion engine, in particular of a diesel internal combustion engine, having an inlet and an outlet, with a deflecting element for changing the direction of the exhaust-gas flow being provided in the flow path of the exhaust gases between the inlet and the outlet. According to a third aspect, the present invention relates to a particle filter arrangement for filtering exhaust gases of an internal combustion engine, in particular of a diesel internal combustion engine, having an inlet and an outlet. According to a fourth aspect, the present invention relates to a method for filtering exhaust gases of an internal combustion engine, in particular of a diesel internal combustion engine, by means of a particle filter arrangement having an inlet and an outlet.</p>
+<p id="p-0004" num="0003">Exhaust gases which are generated by internal combustion engine or industrial processes generally contain potentially harmful constituents such as for example hydrocarbons (HC), carbon monoxide (CO), nitrogen oxide (NO<sub>x</sub>) and in particular also particle constituents such as for example particulate matter. Such constituents must be converted into harmless or at least less harmful constituents in order to reduce the quantity of harmful substances which are discharged to the atmosphere. The exhaust gases are therefore conventionally subjected to a catalytic treatment and/or a filtering process.</p>
+<p id="p-0005" num="0004">Also fundamentally known in the prior art are catalytic converters which serve to remove harmful constituents such as for example SO<sub>x </sub>and NO<sub>x </sub>from the exhaust gases. In addition, a catalytic converter also has the effect of increasing the temperature of exhaust gases, which can in turn assist the breakdown of soot particles.</p>
+<p id="p-0006" num="0005">In diesel engines, there is the basic problem that soot particles (CO) in particular are contained in the exhaust gases. To remove these exhaust gases, particle filters are known. The soot particles are generated in particular by the addition of additives to the fuel. Although the particle filter can remove the soot from the exhaust gases, it does however have the problem that it becomes blocked or fully laden if too many soot particles are stored in it. At a correspondingly high temperature (above approximately 400&#xb0; C.), however, the CO is broken down, and a fully-laden filter can therefore be regenerated at such a temperature. It is therefore particularly important for the temperature of the exhaust gases to be as high as possible before and during the filtering, and in particular also for the temperature in the filter to be as high as possible, such that the &#x201c;ignition temperature&#x201d; is reached.</p>
+<p id="p-0007" num="0006">Here, it is particularly important that the installation space of the overall particle filter arrangement and of the particle filter itself is as small as possible, and that a high temperature is reached as quickly as possible such that the auto-ignition effect starts, since otherwise the filter becomes blocked too quickly and for example a motor vehicle is no longer operational. In particular in the case of a driving pattern in which the vehicle is driven for only a few minutes per day (&#x201c;fetching rolls in the morning&#x201d;), the filter can become ever more fully-laden with soot particles without a sufficiently high temperature for burning off the soot being reached, so that after some time, the motor is no longer operational and the filter must be exchanged. How fast a required high temperature is reached is therefore also particularly important. These are known problems in the prior art, which are associated with the cold start of an engine (with a correspondingly cold catalytic converter) and with &#x201c;cold exhaust gases&#x201d; as are discharged by a diesel engine.</p>
+<p id="p-0008" num="0007">The temperatures of the exhaust gases are fundamentally dependent on the type of diesel engine used and, in the case of motor vehicles, are of course dependent on the respective type. Normally, in a motor vehicle, the temperatures of the exhaust gases are supposed to be between 150 and 210&#xb0; C. In the case of a naturally-aspirated engine, the temperatures of the exhaust gases are approximately 280&#xb0; C. and, with a turbocharger, 350&#xb0; C. The problem of the full loading of a required particle filter is therefore significantly less serious in a naturally-aspirated engine or turbocharged engine, since the outlet temperatures of the exhaust gases are already correspondingly high. For normal diesel engines, the full loading or blockage of the particle filter is in practice a serious problem which the prior art cannot sufficiently remedy.</p>
+<heading id="h-0003" level="1">SUMMARY</heading>
+<p id="p-0009" num="0008">The invention is therefore based on the object of avoiding the disadvantages of the prior art and in particular refining a particle filter arrangement of the type specified in the introduction in such a way that a sufficiently high operating temperature of the arrangement and of the particle filter is generated particularly quickly in order to prevent full loading of the filter.</p>
+<p id="p-0010" num="0009">According to a first aspect of the present invention, the object is achieved with a particle filter arrangement of the type specified in the introduction in that the line also has a third section or segment in which the exhaust gases are conducted substantially in the direction of the outlet.</p>
+<p id="p-0011" num="0010">One particular advantage of the design according to the invention is that the &#x201c;folded&#x201d; flow path, so to speak, of the exhaust gases generated by the three segments results in a very compact particle filter arrangement, which has a long path for the exhaust gases, such that the residence time of the exhaust gases in the arrangement is relatively long. In particular if the components, such as for example catalytic converters, which serve to increase temperature of the exhaust gases are arranged in the flow medium path, with the long flow path also permitting corresponding points for the arrangement of such components, the exhaust gases reach high temperatures, which, together with the long residence time, has a correspondingly favorable effect on the equilibrium temperature which results in the overall arrangement or also on the speed with which such an equilibrium temperature is reached.</p>
+<p id="p-0012" num="0011">The exhaust gases preferably flow through the first, second and third segments of the line in series. Here, the first, second and third segments of the line need not necessarily follow one another directly; it is also possible for corresponding interposed segments to be provided. In this exemplary embodiment, only the first segment, then the second segment and finally the third segment of the line are traversed in the sequence. This means that the exhaust gases are conducted firstly substantially in the direction of the outlet, are then later conducted substantially in the direction of the inlet, and therefore back in the opposite direction, and are finally conducted substantially in the direction of the outlet again. Here, there is preferably a folding of the exhaust-gas path substantially in the manner of a degenerated &#x201c;Z&#x201d;. This can be clearly seen in the upper and lower halves of the longitudinal section illustrations in <figref idref="DRAWINGS">FIG. 3</figref>.</p>
+<p id="p-0013" num="0012">The at least one particle filter is advantageously arranged in the first, second or third segment of the line. Here, it is preferable for the at least one particle filter to be arranged in a line segment in which the exhaust gases have already been brought up to a temperature which is sufficiently high that full loading of the filter is no longer possible or the entire filtering process is significantly more effective on account of the increased temperature.</p>
+<p id="p-0014" num="0013">In order to further improve the result of the exhaust-gas aftertreatment, it is preferable for a further particle filter to be arranged in the first, second or third segment. The provision of a further particle filter increases the efficiency of the filtering, and the further particle filter is preferably also arranged in a different segment of the line from the at least one particle filter.</p>
+<p id="p-0015" num="0014">From a structural aspect, but also to reduce production costs, it is preferable for the at least one particle filter and the further particle filter to be formed in one piece as a filter monolith. If the filter monolith has corresponding ducts, which are not connected to one another, for conducting the exhaust gases, it is possible by means of corresponding seal(s) provided at the inlet-side and/or outlet-side end of the filter monolith to ensure that the different line segments are separated from one another in the filter monolith too.</p>
+<p id="p-0016" num="0015">It is also preferable for regions of the line in which the flow direction of the exhaust gases is substantially reversed to be provided between the first and the second segments and the second and the third segments. A catalytic converter is advantageously arranged in at least one of the regions. In addition to the actual effect of a catalytic converter, specifically that of catalytic pre-treatment, the catalytic converter also serves to increase the temperature of the exhaust-gas flow and of the overall arrangement, which assists the filtering process and prevents full loading of the filter. By means of the corresponding design of the exhaust-gas flow path, possibilities are created for installing one or more catalytic converters in the flow path. This can take place in such a way that the exhaust gases still remain in the arrangement after passing through the catalytic converter, and therefore the increased temperature has a favorable positive effect on the overall temperature of the arrangement.</p>
+<p id="p-0017" num="0016">From a structural aspect, it is preferable for the first, second and third segments of the line to be arranged concentrically with respect to one another. Here, one practically meaningful realization provides that one of the first, second and third segments has the shape of a cylinder, and the two other segments have the shape of an annular cylinder or pipe. One of the first, second and third segments is advantageously formed by the interior space of a first pipe and therefore has a substantially cylindrical shape (circular in cross section). For the two further segments, two further pipes are provided which are substantially concentric with respect to the first pipe and have two different diameters which are both larger than the first pipe; one of the two further segments is then formed in the space between the outer wall of the first pipe and the inner wall of the second pipe (with a smaller diameter than the third pipe) and the second of the two further segments is formed in the space between the outer wall of the second pipe and the inner wall of the third pipe (with a larger diameter than the second pipe). The two further segments therefore have an annular shape in cross section. This results in a particularly compact design of the first, second and third line segments, since no installation space is lost for this purpose, and the arrangement composed of the three line segments has the shape of a cylinder overall.</p>
+<p id="p-0018" num="0017">In one preferred exemplary embodiment of the present invention, the following is provided: canning a soot particle filter with exhaust-gas recirculation within the filter system or arrangement, in particular including or with preferably a double oxy-regeneration catalytic converter and preferably double filtering of the smoke gases.</p>
+<p id="p-0019" num="0018">A particularly good exchange of heat between the exhaust-gas flows of the arrangement is provided in that the first and second segments and/or the second and third segments and/or the first and third segments of the line are separated by a common wall.</p>
+<p id="p-0020" num="0019">The particle filter arrangement advantageously has a distributing and deflecting element which conducts a first exhaust-gas flow passing from the inlet to the first segment of the line and which deflects a second exhaust-gas flow passing from the second segment of the line to the third segment of the line. The distributing and deflecting element therefore has dual functionality. This is preferably realized by means of a star-shaped deflection in which the different exhaust-gas flows intersect one another multiple times without being mixed. The crossing or intersecting exhaust-gas guidance has the effect that the distributing and deflecting element is heated, specifically also dependently from the catalytic converters which are used, and therefore also serves as a heat-exchanging element. Here, a pre-combustion of soot particles positively takes place before the soot particles enter into the particle filter itself. This reduces the spatial requirement of the arrangement enormously. As a result of the deflecting functionality, it is possible even for a purified exhaust gas to be conducted once more through a particle filter in order to realize further catalytic treatment and filter functions.</p>
+<p id="p-0021" num="0020">It is also preferable for the distributing and deflecting element to have respective ducts for conducting the first and second exhaust-gas flows, with at least a part of the outer wall of the duct of the first exhaust-gas flow forming the inner wall of the duct of the second exhaust-gas flow.</p>
+<p id="p-0022" num="0021">The particle filter arrangement advantageously has at least the following sections in the direction from the inlet to the outlet: a first section which has a distributing and deflecting element for the exhaust gases; a second section which has at least one particle filter; and a third section which has a deflecting element for the exhaust gases. In this regard, the overall particle filter arrangement is asymmetrical in the sense that the first section has an element which serves both to distribute and also deflect, while the third section has only a deflecting element.</p>
+<p id="p-0023" num="0022">The first, second and third segments of the line are advantageously arranged in the second section of the particle filter arrangement.</p>
+<p id="p-0024" num="0023">It is also preferable for the particle filter arrangement to have a catalytic converter arranged directly downstream of the inlet and/or upstream of the first segment of the line in the flow direction of the exhaust gases.</p>
+<p id="p-0025" num="0024">In order to further increase the filtering efficiency, it is preferable for the particle filter arrangement to have a particulate matter filter arranged directly upstream of the outlet and/or downstream of the third segment of the line in the flow direction of the exhaust gases.</p>
+<p id="p-0026" num="0025">According to a second aspect of the present invention, the object is achieved with a particle filter arrangement of the type specified in the introduction in that the deflecting element has a catalytic converter.</p>
+<p id="p-0027" num="0026">One particularly preferable practical realization is provided in that the deflecting element is embodied as a substantially U-shaped duct for the exhaust-gas flow, in which U-shaped duct the catalytic converter is at least partially arranged. This can be clearly seen from the upper and lower halves of the longitudinal section illustrations in <figref idref="DRAWINGS">FIGS. 1</figref><i>a </i>and <b>2</b><i>a</i>. By means of the substantially U-shaped duct, a deflection by approximately 180 degrees, that is to say a fold of the exhaust-gas flow path, is realized, which serves to lengthen the flow path, but with the overall construction being kept compact at the same time.</p>
+<p id="p-0028" num="0027">Here, it is also preferable for the catalytic converter to be formed from a wire mesh.</p>
+<p id="p-0029" num="0028">According to a third aspect of the present invention, the object is achieved with a particle filter arrangement of the type specified in the introduction in that the particle filter arrangement has a distributing and deflecting element which distributes a first exhaust-gas flow so as to substantially maintain its direction in the arrangement, and which deflects a second exhaust gas flow, which flows in substantially the opposite direction, by an angle, preferably approximately 180 degrees, with the two exhaust-gas flows not being mixed.</p>
+<p id="p-0030" num="0029">According to a fourth aspect of the present invention, the object is achieved with a method of the type specified in the introduction in that the flow direction of the exhaust gases is deflected by approximately 180 degrees at least twice between the inlet and outlet.</p>
+<p id="p-0031" num="0030">Further preferred embodiments of the invention are disclosed in the dependent patent claims.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0032" num="0031">The invention, and further features, aims, advantages and possible applications thereof, is or are explained in more detail below on the basis of a description of preferred exemplary embodiments, with reference to the appended drawings. In the drawings, the same reference symbols refer to the same or corresponding elements. In the present description, the expression &#x201c;flow direction&#x201d; of the exhaust gases is used. This of course means the mean flow direction of the exhaust gases, with it being clear to a person skilled in the art that individual particles of the exhaust gases can deviate in terms of their movement direction from the mean or primary flow direction (indicated in the drawing by arrows). The expressions &#x201c;upstream&#x201d; and &#x201c;downstream&#x201d; and the like are used to specify relative arrangements in relation to the main flow direction, which is generally from the inlet to the outlet. Here, all the features which are described and/or depicted in the figures are the subject matter of the present invention individually or in any meaningful combination, specifically independently of their summary in the patent claims or their references back. In the drawings:</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIG. 1</figref><i>a </i>shows a schematic illustration in longitudinal section for explaining a first exemplary embodiment of a particle filter arrangement according to the invention;</p>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIG. 1</figref><i>b </i>shows a schematic illustration in longitudinal section of a part of <figref idref="DRAWINGS">FIG. 1</figref><i>a </i>in greater detail, for a closer explanation of the particle filter according to the invention as per the first exemplary embodiment;</p>
+<p id="p-0035" num="0034"><figref idref="DRAWINGS">FIG. 1</figref><i>c </i>shows a schematic illustration, in a plan view, of the part illustrated in <figref idref="DRAWINGS">FIG. 1</figref><i>b </i>in greater detail, for a closer explanation of the particle filter arrangement according to the invention as per the first exemplary embodiment;</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 2</figref><i>a </i>shows a schematic illustration in longitudinal section for explaining a second exemplary embodiment of a particle filter arrangement according to the invention;</p>
+<p id="p-0037" num="0036"><figref idref="DRAWINGS">FIG. 2</figref><i>b </i>shows a schematic illustration in longitudinal section of a part of <figref idref="DRAWINGS">FIG. 2</figref><i>a </i>in greater detail, for a closer explanation of the particle filter according to the invention as per the second exemplary embodiment;</p>
+<p id="p-0038" num="0037"><figref idref="DRAWINGS">FIG. 2</figref><i>c </i>shows a schematic illustration, in a plan view, of the part illustrated in <figref idref="DRAWINGS">FIG. 2</figref><i>b </i>in greater detail, for a closer explanation of the particle filter arrangement according to the invention as per the second exemplary embodiment; and</p>
+<p id="p-0039" num="0038"><figref idref="DRAWINGS">FIG. 3</figref> shows a schematic illustration in longitudinal section for explaining a third exemplary embodiment of a particle filter arrangement according to the invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0040" num="0039">With reference to the section views of <figref idref="DRAWINGS">FIGS. 1</figref><i>a </i>to <b>1</b><i>c</i>, a first exemplary embodiment of a particle filter arrangement <b>10</b> is explained in more detail below with regard to its construction and function. <figref idref="DRAWINGS">FIG. 1</figref><i>a </i>shows, in a highly schematic illustration, a longitudinal section view of the particle filter arrangement <b>10</b> according to the invention. The particle filter arrangement <b>10</b> according to the invention has, in the main flow direction of the exhaust gases (in the direction from the inlet to the outlet, that is to say from left to right in <figref idref="DRAWINGS">FIGS. 1</figref><i>a </i>and <b>2</b><i>a</i>), an inlet section a, a filter pre-section b, a front deflecting section or first section c (indicated only highly schematically in <figref idref="DRAWINGS">FIG. 1</figref><i>a</i>), a filter section or second section d, a rear deflecting section or third section e, a filter post-section f and an outlet section g, all of which are formed in a common housing <b>2</b>. The particle filter arrangement <b>10</b> is connected via the inlet section a for example to an engine (not illustrated) of a motor vehicle, from which in particular soot-particle-containing exhaust gases are supplied via lines (not illustrated) to the inlet section a of the particle filter arrangement <b>10</b>. The particle filter arrangement <b>10</b> is connected via the outlet section a to an exhaust (not illustrated). It is of course also possible for various further components, such as for example a catalytic converter, to be provided between the engine and the inlet section a. It is likewise possible for various further components, such as for example a carburetor, to be arranged between the outlet section g of the particle filter arrangement <b>10</b> and the tail pipe. The particle filter arrangement <b>10</b> according to the invention is therefore inserted and fastened into the exhaust system at a suitable point for example by means of a welded or flange connection and serves for purifying the exhaust gases in order to adhere to or even undershoot required limit values for the degree of purity of the exhaust gases. The particle filter arrangement <b>10</b> is formed generally symmetrically with respect to a central longitudinal axis (not shown). The inlet section a has a tubular cross section with an outer diameter D<sub>1</sub>. The filter pre-section b, which is arranged directly downstream of the inlet section a in the flow direction of the exhaust gases, likewise preferably has a tubular cross section with an outer diameter which is slightly widened in outer diameter, D<sub>1</sub>&#x2032;&#x3e;D<sub>1</sub>. The front deflecting section c, which directly adjoins the filter pre-section b in the flow direction of the exhaust gases, widens initially from the outer diameter D<sub>1</sub>&#x2032; to an outer diameter D<sub>2 </sub>which is constant along the rest of the length of the section c. Across the region of the particle filter arrangement <b>10</b> with constant outer diameter D<sub>2</sub>, the housing <b>2</b> has thermal insulation <b>3</b> within the housing. The filter section d, the rear deflecting section e and the filter post-section f have the constant outer diameter D<sub>2</sub>. A step is formed between the filter post-section f and the outlet section g, such that the outlet section g has the outer diameter D<sub>1 </sub>again. The inner construction of the front deflecting section c is merely indicated in <figref idref="DRAWINGS">FIG. 1</figref><i>a </i>for clarity, and is illustrated in more detail in <figref idref="DRAWINGS">FIGS. 1</figref><i>b </i>and <b>1</b><i>c</i>. The front deflecting section c has the function of conducting or distributing the exhaust gases passing from the inlet section a and the filter pre-section b to corresponding regions, more precisely to a region which is offset radially in the direction of the center, of the filter section d. Furthermore, the front deflecting section c has the function of reversing the direction of the exhaust gases, which flow in the opposite direction, that is to say backward, so to speak (without the exhaust gases being mixed with the newly-delivered exhaust gases), from certain regions, more precisely from a central region, of the filter section d, by approximately 180 degrees, that is to say the function of deflecting the exhaust gases in such a way that they flow in the main flow direction from the inlet section a to the outlet section g again and are re-introduced into the filter section d of the particle filter arrangement <b>10</b> according to the invention, albeit in a region radially at the very outside. On account of the functionalities of the first section c of the particle filter arrangement <b>10</b> according to the invention, the first section c can also be referred to as the front distributing and deflecting section c. The primary function of the filter section or second section d of the particle filter arrangement <b>10</b> according to the invention is that of filtering the exhaust gases. The third or rear deflecting section e serves for distributing the exhaust-gas flows delivered from a radially offset annular region into an inner cylindrical region of the filter section d, with the flow direction being reversed by approximately 180 degrees. Catalytic treatment of the exhaust gases also takes place here. The filter post-section f provides a deflection of the exhaust gases by 90 degrees twice from the radially outer region back into the central region of the filter outlet section g, specifically while effectively maintaining the main flow direction from the inlet to the outlet, with a catalytic treatment likewise being provided here in a guide section, which runs approximately perpendicularly with respect to the central axis, for the exhaust gases.</p>
+<p id="p-0041" num="0040">Below, the construction of the particle filter arrangement <b>10</b> according to the invention will now be explained in further detail. Arranged in the filter pre-section b with the outer diameter D<sub>1</sub>&#x2032; is a catalytic converter <b>6</b> which can also be referred to as a first pre-catalytic converter, since it is positioned upstream of the filtering. The filter section d is formed substantially symmetrically with respect to the central longitudinal axis of the particle filter arrangement <b>10</b> and has a central cylindrical particle filter <b>4</b> which extends in the radial direction from the central axis to approximately one-third of half of the outer diameter D<sub>2</sub>, and in the longitudinal direction over approximately half of the length of that part of the particle filter arrangement <b>10</b> which is formed by the sections c, d, e and f. Arranged around the cylindrical particle filter <b>4</b> is an annular particle filter <b>14</b>, with both particle filters <b>4</b>, <b>14</b> being separated by a common annular wall <b>17</b>. The two particle filters <b>4</b> and <b>14</b> are preferably silicon carbide (SiC) particle filters. The annular particle filter has a thickness which corresponds to approximately one-third of half of the outer diameter D<sub>2 </sub>of the second filter section <b>2</b>. Here, the preferred practical realization of the cylindrical particle filter <b>4</b> and of the annular particle filter <b>14</b> takes place preferably by means of a monolith which, for filtering, has a multiplicity of ducts which extend in the longitudinal direction and which are not connected to one another, with a functional separation of the monolith into the two filter sections <b>4</b>, <b>14</b> being provided by means of a seal <b>15</b> which is provided, at the end facing toward the inlet section a, at the circular boundary between the filters <b>4</b>, <b>14</b>. The common wall <b>17</b> is formed here by the multiplicity of outer walls of the outermost ducts of the filter <b>4</b>. Formed radially outside the particle filter <b>14</b> is an annular duct which is delimited at the inside by an outer wall <b>18</b> of the filter <b>14</b>, with a seal and/or thermal insulation <b>19</b> formed within the outer wall <b>18</b>, and at the outside by an inner wall of the housing <b>2</b> in the region of the sections c, d, e and f. No element which serves to provide exhaust-gas treatment is arranged in the duct, since the duct serves primarily for transporting the exhaust-gas flow in the direction from the inlet to the outlet. Arranged between the filter pre-section b and the filter section d is the deflecting section c which, in the exemplary embodiment, has four ducts in order to deflect exhaust gases passing from the filter pre-section b through an annular second pre-catalytic converter <b>16</b> into the outer particle filter <b>14</b>. In <figref idref="DRAWINGS">FIG. 1</figref><i>a</i>, two ducts are visible, which ducts are formed by the inner wall <b>7</b> and the outer wall <b>9</b>. Here, the second pre-catalytic converter <b>16</b> has substantially the same inner diameter as the particle filter <b>14</b>. Here, the outer diameter of the pre-catalytic converter <b>16</b> likewise substantially corresponds to that of the particle filter <b>14</b>, and more precisely to that of the wall <b>18</b> which is arranged around the particle filter <b>14</b>. Furthermore, the particle filter arrangement has a third cylindrical (pre-)catalytic converter <b>26</b> at an end, which faces toward the outlet, of the filter section d, and more precisely in the rear deflecting section e, the outer diameter of which (pre-)catalytic converter <b>26</b> corresponds approximately to that of the particle filter <b>14</b> or of the wall <b>18</b> (and therefore also to that of the second pre-catalytic converter <b>16</b>). In addition to the actual catalytic converter function, the annular catalytic converter is used for deflecting the exhaust-gas flow by approximately 180 degrees from the outer particle filter <b>14</b> into the central particle filter <b>4</b>. According to the invention, the exhaust gases in the filter section d are conducted in different directions within the particle filter arrangement <b>10</b>. More precisely, a line is formed in the particle filter arrangement <b>10</b>, which line has three sections or &#x201c;segments&#x201d; in the filter section d of the particle filter arrangement <b>10</b>. In the particle filter <b>14</b>, the line has a first (line) segment <b>11</b> in which the exhaust gases flow in the direction from the inlet toward the outlet (from left to right in the drawing). Furthermore, in the central particle filter <b>4</b>, the exhaust line has a second (line) segment <b>12</b> in which the exhaust gases flow substantially in the direction from the outlet toward the inlet. At the very outside, the line has a third (line) segment <b>13</b>, with the third line segment <b>13</b> corresponding to the annular duct provided radially at the outside, and in which third line segment <b>13</b> the flow direction of the exhaust gases is once again from the inlet toward the outlet. The first, second and third line segments are traversed by the exhaust-gas flow in the sequence. According to the terminology of the present application, the front and rear ends of the line segments <b>11</b>, <b>12</b> and <b>13</b> coincide with those of the filter section d. Provided downstream of the rear deflecting section e is the filter post-section f which has an annular post-catalytic converter <b>36</b> whose inner diameter corresponds to that of the particle filter <b>14</b> and whose outer diameter corresponds to that of the third line segment or duct <b>13</b>. Since the catalytic converter <b>36</b> is positioned downstream of the actual filtering, the catalytic converter <b>36</b> is referred to as a post-catalytic converter. By means of the post-catalytic converter <b>36</b>, and an annular perforated plate <b>37</b> which is attached along its inner periphery, the exhaust gases are conducted into the outlet section g, in which the exhaust gases emerge centrally out of the particle filter arrangement <b>10</b> along the central axis. More precisely, the exhaust gases are deflected by approximately 90 degrees as they enter into the post-catalytic converter <b>36</b> and are deflected by approximately 90 degrees again as they emerge out of the post-catalytic converter <b>36</b>. A particulate matter filter (not illustrated) can optionally be positioned downstream of the post-catalytic converter <b>36</b>, which particulate matter filter is arranged in the filter post-section f but can also project into the tubular outlet section g.</p>
+<p id="p-0042" num="0041">The exhaust gases which flow through the inlet section a and the filter pre-section b and which are pre-treated by the catalytic converter <b>6</b> are distributed, by means of the deflecting section c of the particle filter arrangement <b>10</b> according to the invention, through the second pre-catalytic converter <b>16</b> into the first line segment <b>11</b>, in which the exhaust gases are filtered by means of the particle filter <b>14</b>. After flowing through the first line segment <b>11</b>, the exhaust gases are not only catalyzed by means of the catalytic converter <b>26</b>, which extends over the outlet-side ends of the first and second line segments <b>11</b>, <b>12</b>, but are also deflected by approximately 180 degrees, such that, after passing through the first line segment <b>11</b> and the catalytic converter <b>26</b>, the exhaust gases in the line segment <b>12</b> of the particle filter arrangement <b>10</b> will flow back again in the direction of the inlet section a on account of the deflection of the catalytic converter <b>26</b>, and will be filtered therein by means of the main particle filter <b>4</b>. The exhaust gases which flow backward in the second line segment <b>12</b> therefore pass once again into the deflecting section c of the particle filter arrangement <b>10</b>, in which the exhaust gases are deflected by 180 degrees again, specifically in such a way that no mixing takes place with the exhaust-gas flows passing from the inlet section a. Here, the exhaust-gas flows passing from the second line segment <b>12</b> are conducted into the third line segment <b>13</b> arranged radially at the outside. In the third line segment <b>13</b>, the exhaust gases flow once again in the direction from the inlet toward the outlet. After passing through the third line segment <b>13</b>, the exhaust-gases are aftertreated by means of the post-catalytic converter <b>36</b> before emerging via the outlet section g in the direction of the tailpipe.</p>
+<p id="p-0043" num="0042">The exhaust gases therefore enter into the particle filter arrangement <b>10</b> through the inlet section a and are pre-treated by means of the pre-catalytic converters <b>6</b>, <b>16</b>. As per an effect which is known in the prior art, the pre-catalytic converters <b>6</b>, <b>16</b> already provide a temperature increase of the exhaust gases, such that the latter have an increased temperature as they enter into the first line segment <b>11</b> of the particle filter arrangement <b>10</b>. In the section, the particle filter <b>14</b> serves to filter the exhaust gases primarily with regard to soot. As explained in the introduction, the filtering is significantly more effective as a result of the increased temperature of the exhaust gases. After passing through the first line segment <b>11</b>, the exhaust gases are deflected in terms of their flow direction by 180 degrees, into the centrally-arranged second line segment <b>12</b>, by the catalytic converter <b>26</b>. Here, the catalytic converter <b>26</b> which is arranged at the rear end side of the two line segments <b>11</b> and <b>12</b> not only provides a reversal of the flow direction and conducts the flow from the first line segment <b>11</b> into the second line segment <b>12</b>, but rather a further temperature increase of the exhaust gases takes place corresponding to the catalytic converters <b>6</b>, <b>16</b>. In the second line segment <b>12</b>, the exhaust gases flow from the filter section d of the particle filter arrangement <b>10</b> back into the deflecting section c. In the particle filter arrangement <b>10</b>, the fully-filtered exhaust gases which are delivered from the second line segment <b>12</b> are now, without being mixed with the exhaust gases passing from the inlet section a, conducted, with another reversal of the flow direction, into the outermost region of the filter section d of the particle filter arrangement <b>10</b>, and more precisely into the third line segment <b>13</b> in which no exhaust-gas treatment means are provided. After flowing through the post-catalytic converter <b>36</b>, the exhaust gases emerge out of the outlet section g in the direction of the tailpipe. In the first exemplary embodiment of a particle filter arrangement <b>10</b> according to the invention illustrated in <figref idref="DRAWINGS">FIGS. 1</figref><i>a </i>to <b>1</b><i>c</i>, a two-fold deflection of the exhaust gases by approximately 180 degrees therefore takes place. The two-fold deflection ensures firstly that the exhaust gases are once again flowing in the original flow direction, from the inlet section a toward the outlet section g, as they emerge out of the particle filter arrangement <b>10</b> according to the invention. Heating of the exhaust gases takes place in particular at the catalytic converters <b>6</b>, <b>16</b> and <b>26</b>. On account of the counterflow effect (the first, second and third line segments <b>11</b>, <b>12</b> and <b>13</b> are in each case in thermal contact with one another through a common wall), heating of the relatively cold gas flows therefore takes place by means of the exchange of heat with the exhaust gases which have already been heated in the arrangement, in particular by means of the catalytic converters provided. In particular also by means of the deflection, provided in the deflecting section c of the particle filter arrangement <b>10</b> according to the invention, of the exhaust-gas flows emerging from the filter section d and more precisely from the line segment <b>12</b> and passing once again into the third line segment <b>13</b> of the second filter section <b>2</b>, the exhaust-gas flows entering directly from the inlet section a into the first line segment <b>11</b> of the filter section d of the particle filter arrangement <b>10</b> are already heated up such that they have a significantly higher temperature, such that full loading of the particle filters <b>4</b> and <b>14</b> can be largely prevented and the entire filtering process is therefore made significantly more efficient. The overall particle arrangement <b>10</b> is also, by means of the design according to the invention, brought up to a correspondingly high temperature in a significantly shorter time. By means of experiments, it was found that the temperature generated in the particle filters <b>4</b> and <b>14</b> is sufficient for the virtually complete deflagration of the soot particles. In particular, depending on the respective starting temperature, which is determined not least by the type of engine, the exhaust gases are at a temperature, already before the inlet into the particle filters <b>4</b> and <b>14</b>, which is sufficiently high that virtually no more soot particles are contained in the exhaust gases. The temperature increase which is obtained according to the invention is also so great that a particulate matter filter can be omitted.</p>
+<p id="p-0044" num="0043">The inner construction of the deflecting section c of the particle filter arrangement <b>10</b> is explained in greater detail on the basis of <figref idref="DRAWINGS">FIGS. 1</figref><i>b </i>and <b>1</b><i>c</i>. In this regard, it should be noted that various components illustrated in <figref idref="DRAWINGS">FIG. 1</figref><i>a </i>have been omitted for better clarity. This applies in particular to the two pre-catalytic converters <b>6</b> and <b>16</b>. From a comparison of <figref idref="DRAWINGS">FIGS. 1</figref><i>b </i>and <b>1</b><i>c</i>, it is possible to see a total of four ducts with an inner wall <b>7</b> and an outer wall <b>9</b>, which ducts are arranged in a star shape symmetrically with respect to the central axis, and specifically so as to be offset relative to one another by approximately 90 degrees, which ducts deliver the exhaust gases, which are delivered from the filter pre-section b, into the annular space in which the pre-catalytic converter <b>16</b> is arranged. Furthermore, it can be seen from <figref idref="DRAWINGS">FIGS. 1</figref><i>b </i>and <b>1</b><i>c </i>that the exhaust gas flows which enter from the second line segment <b>12</b>, in which the particle filter <b>4</b> is arranged, into the deflecting section c again are deflected by approximately 180 degrees into ducts which are arranged offset relative to the abovementioned ducts, formed by the inner wall <b>7</b> and the outer wall <b>9</b>, and enter into the radially outer third line segment <b>13</b> of the filter arrangement d.</p>
+<p id="p-0045" num="0044">On account of the offset arrangement of the ducts which provide the forward flow and recirculation of the exhaust gases, the inner part (with the exception of the outer housing <b>2</b>) of the particle filter arrangement <b>10</b> can also be referred to as a &#x201c;star&#x201d;. The front deflecting section c therefore has a deflecting and distributing functionality. The front deflecting section c serves firstly to distribute and deflect, or change the direction of, the approaching exhaust-gas flow into an annular region (the first line segment <b>11</b> with the particle filter <b>14</b> arranged therein) which is arranged around the central axis of the arrangement. Furthermore, the deflecting section c serves to distribute, or also deflect or reverse by approximately 180 degrees, exhaust-gas flows which are delivered from the central region of the arrangement (specifically from the second line segment <b>12</b> with the particle filter <b>4</b> arranged therein) into the radially outer duct with the line segment <b>13</b> formed therein without an element which serves to provide exhaust-gas aftertreatment.</p>
+<p id="p-0046" num="0045">Below, a second exemplary embodiment of the particle filter arrangement <b>10</b>&#x2032; according to the invention is explained in more detail on the basis of <figref idref="DRAWINGS">FIGS. 2</figref><i>a </i>to <b>2</b><i>c</i>. The second exemplary embodiment of the particle filter arrangement <b>10</b>&#x2032; according to the invention illustrated in <figref idref="DRAWINGS">FIGS. 2</figref><i>a </i>to <b>2</b><i>c </i>is generally similar to the first exemplary embodiment already described in connection with <figref idref="DRAWINGS">FIGS. 1</figref><i>a </i>to <b>1</b><i>c</i>. Only the differences in relation to the already-described first exemplary embodiment are therefore discussed below. The particle filter arrangement <b>10</b>&#x2032; according to the second exemplary embodiment has no filter post-section f. The outlet section g&#x2032; directly adjoins the rear deflecting section e&#x2032;. The catalytic converter <b>26</b>&#x2032; of the particle filter arrangement <b>10</b>&#x2032; is, in contrast to the catalytic converter <b>26</b> of the particle filter arrangement <b>10</b>, of annular design and is formed symmetrically with respect to the central axis of the particle filter arrangement <b>10</b>&#x2032;. The inner diameter of the catalytic converter <b>26</b>&#x2032; corresponds to D<sub>1 </sub>and the outer diameter of the annular catalytic converter <b>26</b>&#x2032; corresponds approximately to that of the particle filter <b>14</b>&#x2032;. More precisely, the size and arrangement of a perforated plate <b>37</b>&#x2032; which runs along the outer periphery of the catalytic converter <b>26</b>&#x2032; corresponds to the outer wall <b>18</b>&#x2032; of the particle filter <b>14</b>&#x2032;. The catalytic converter <b>26</b>&#x2032; is sealed off with respect to the outlet section g&#x2032; by means of an extended housing wall of the outlet section g&#x2032;. For this purpose, a seal <b>25</b>&#x2032;, which is situated opposite the seal <b>15</b>&#x2032;, is also provided at the outlet-side end of the particle filter <b>4</b>&#x2032;. The structural differences provide a different flow profile of the exhaust gases in the particle filter arrangement <b>10</b>&#x2032; of the second exemplary embodiment than in the particle filter arrangement <b>10</b> of the first exemplary embodiment. The profile of the exhaust gas flow takes place initially as in the first exemplary embodiment explained in the introduction. After the exhaust gases enter in through the inlet section a&#x2032; and the filter pre-section b&#x2032;, the exhaust gases are conducted by the deflecting element <b>10</b>&#x2032;, in which the catalytic converter <b>16</b>&#x2032; is arranged, into the first line segment <b>11</b>&#x2032; which forms a part of the filter section d&#x2032; and in which the particle filter <b>14</b>&#x2032; is arranged. Directly after emerging from the line segment <b>11</b>&#x2032;, the exhaust gases enter into the catalytic converter <b>26</b>&#x2032; and are then, in contrast to the first exemplary embodiment explained in the introduction, deflected into an annular duct provided radially at the outside. In the outer duct, the exhaust gases flow in the opposite direction, that is to say from the outlet toward the inlet, as can be clearly seen from <figref idref="DRAWINGS">FIGS. 2</figref><i>a </i>to <i>c </i>by means of the exhaust-gas flow indicated by arrows. The second line segment <b>12</b>&#x2032;, which corresponds to the region of the outer radial duct in the region of the filter section d&#x2032;, is therefore arranged at the very outside in this embodiment. From the filter section d&#x2032;, the exhaust gases enter once again into the deflecting section c&#x2032;, specifically without mixing taking place with the exhaust-gas flows newly delivered from the filter pre-section b&#x2032;. Although no mixing of the exhaust-gas flows takes place, a heat-exchanging effect is generated in the deflecting section c&#x2032;, as in the first exemplary embodiment, since the exhaust gases delivered from the filter section d&#x2032; are brought up to a significantly higher temperature as a result of passing through the catalytic converters <b>16</b>&#x2032; and <b>26</b>&#x2032;, specifically in comparison with the exhaust-gas flows entering into the deflecting section c&#x2032; from the pre-catalytic converter <b>6</b>&#x2032; of the filter pre-section b&#x2032;. An exchange of heat, that is to say heating of the exhaust-gas flows entering into the catalytic converter <b>16</b>&#x2032; or also of the surrounding parts or components, is obtained by means of common walls of the otherwise separate ducts, which makes the filtering process more efficient and in particular also prevents full loading of the filter. By means of the deflecting element c&#x2032;, the exhaust-gas flows are conducted from the second line segment <b>12</b>&#x2032; into the third line segment <b>13</b>&#x2032; which is arranged centrally in this embodiment and in which the particle filter <b>4</b>&#x2032; is situated. The exhaust-gas flows are flowing in the desired outlet direction, that is to say in the direction from the inlet toward the outlet, already before they enter into the particle filter <b>4</b>&#x2032;. After passing through the particle filter <b>4</b>&#x2032;, the exhaust gases emerge out of the particle filter arrangement <b>10</b>&#x2032; through the outlet pipe, which extends across the sections e&#x2032; and g&#x2032;, with an outer diameter D<sub>1</sub>. Here, in relation to the particle filter arrangement <b>10</b>, the particle filter arrangement <b>10</b>&#x2032; is more compact on account of the omission of the post-catalytic converter <b>36</b> and has the advantage of heating up faster since the exhaust-gas flow emerging from the particle filter arrangement <b>10</b>&#x2032; is conducted centrally in the arrangement for a relatively long time, which has a positive effect on the equilibrium temperature which is generated in the overall arrangement.</p>
+<p id="p-0047" num="0046">The deflecting element c&#x2032; of the particle filter arrangement <b>10</b>&#x2032; of the second exemplary embodiment is illustrated in greater detail in the schematic illustrations of <figref idref="DRAWINGS">FIGS. 2</figref><i>b </i>and <b>2</b><i>c</i>. The construction fundamentally corresponds to that of the construction of the deflecting element c of the particle filter arrangement <b>10</b> of the first exemplary embodiment already described in connection with <figref idref="DRAWINGS">FIGS. 1</figref><i>b </i>and <b>1</b><i>c</i>. What differs from the latter is however the flow direction of the exhaust-gas flow which is to be reversed by 180 degrees, which exhaust-gas flow, in the second exemplary embodiment, is deflected from the second line segment <b>12</b>&#x2032;, which is formed in this case in the outer duct, and into the central region with the particle filter <b>4</b>&#x2032; arranged therein. This can also be clearly seen from the illustration of the corresponding arrows in <figref idref="DRAWINGS">FIGS. 2</figref><i>b </i>and <b>2</b><i>c</i>. From a structural point of view, the two exemplary embodiments of the particle filter arrangement <b>10</b>, <b>10</b>&#x2032; differ merely with regard to the design of the outlet-side end, in particular with regard to the rear deflecting element e&#x2032;, with the exhaust-gas guidance which is altered in this way duly altering the flow of the exhaust gases in the arrangement at the inlet-side end too, in particular with regard to the front deflecting element c&#x2032;, but requiring substantially no structural modifications.</p>
+<p id="p-0048" num="0047">A third exemplary embodiment of a particle filter arrangement <b>10</b>&#x2033; according to the invention is explained in more detail below on the basis of the schematic longitudinal section illustration of <figref idref="DRAWINGS">FIG. 3</figref>. The present third exemplary embodiment of the particle filter arrangement <b>10</b>&#x2033; according to the invention is similar to the first two exemplary embodiments in the sense that three line segments <b>11</b>&#x2033;, <b>12</b>&#x2033; and <b>13</b>&#x2033; are provided which are traversed by the exhaust-gas flow in the sequence and which are arranged concentrically with respect to one another. The exhaust-gas flow which is indicated by arrows enters through the inlet section a&#x2033; into the particle filter arrangement <b>10</b>&#x2033;. A catalytic converter <b>6</b>&#x2033; is provided in the filter pre-section or catalytic converter section b&#x2033;. The exhaust-gas flow subsequently passes into the inlet section c&#x2033; and subsequently into the filter section d&#x2033; in which a particle filter <b>4</b>&#x2033; is arranged. In the rear deflecting section e&#x2033;, the exhaust-gas flow is deflected outward by approximately 180 degrees from the first line segment <b>11</b>&#x2033; into the second line segment <b>12</b>&#x2033;. Another deflection of the exhaust-gas flow outward by approximately 180 degrees into the third line segment <b>13</b>&#x2033; then takes place in the outer region of the section c&#x2033;. After flowing through the third line segment <b>13</b>&#x2033;, the exhaust gases pass into the filter post-section f&#x2033; and then into the outlet section g&#x2033;. A characteristic of the present third exemplary embodiment of a particle filter arrangement <b>10</b>&#x2033; according to the invention is that no distributing and deflecting element is provided in the section c&#x2033;. This means in particular that the exhaust-gas flow passes directly from the inlet section a&#x2033; into the filter section d&#x2033; without a change in direction. The two deflections, according to the invention, of the exhaust-gas flow by approximately 180 degrees are provided in the rear deflecting section e&#x2033; and only in the outer region of the section c&#x2033;. By omitting the distributing and deflecting element in section c&#x2033;, the filter capacity of the particle filter arrangement <b>10</b>&#x2033; is duly reduced since the exhaust gases passing from the engine can no longer be heated up to the same extent as is the case on account of the heat-exchange effect, described in connection with the first two exemplary embodiments, on account of the throughflow without the mixture of approaching, relatively cold exhaust gases with recirculated exhaust gases which are heated by means of treatment. However, the present third exemplary embodiment has the advantage of significantly more favorable production costs. As a result of the two-fold outward deflection (and not once inward as in the first two exemplary embodiments), the exhaust-gas flow and therefore also the construction is significantly simplified. Furthermore, this exemplary embodiment is advantageous in the sense that limit values for the counterpressure (generally of a few hundred millibars at full load) are avoided. In the variant of the invention, it is possible for a corresponding predefined maximum counterpressure value, whose exceedance can lead to overheating of or damage to the engine, to be set in a simple way by virtue of the transverse and longitudinal dimensions of the particle filter <b>4</b>&#x2033; being adapted in a simple manner corresponding to the engine used.</p>
+<p id="p-0049" num="0048">The invention has been explained in more detail above on the basis of preferred exemplary embodiments thereof. For a person skilled in the art, it is however obvious that different variations and modifications may be made without departing from the concept on which the invention is based.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A particle filter arrangement for filtering exhaust gas from an internal combustion engine, the arrangement comprising:
+<claim-text>an exhaust gas inlet and an exhaust gas outlet;</claim-text>
+<claim-text>a first segment in fluid communication with the inlet, the first segment configured to conduct the exhaust gas substantially in the direction of the outlet;</claim-text>
+<claim-text>a second segment in fluid communication with the first segment, the second segment configured to conduct exhaust gas substantially in the direction of the inlet;</claim-text>
+<claim-text>a third segment in fluid communication with the second segment, the third segment configured to conduct exhaust gas substantially in the direction of the outlet, wherein the first, second, and third segments cooperate to define an exhaust gas flow path;</claim-text>
+<claim-text>at least one particle filter arranged within the exhaust gas flow path; and</claim-text>
+<claim-text>a distributing and deflecting element comprising a plurality of static ducts, the plurality of ducts including:
+<claim-text>a first duct configured to conduct exhaust gas flow from the inlet into the first segment, and</claim-text>
+<claim-text>a second duct configured to conduct exhaust gas flow from the second segment to the third segment,</claim-text>
+</claim-text>
+<claim-text>wherein flows of exhaust gas pass through the distributing and deflecting element without being mixed, wherein:</claim-text>
+<claim-text>the distributing and deflecting element includes a central axis;</claim-text>
+<claim-text>the first and second ducts extend angularly from the central axis; and</claim-text>
+<claim-text>the first segment is radially offset from the central axis of the distributing and deflection element, wherein the first duct extends angularly outward toward the exhaust gas outlet.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The particle filter arrangement as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the exhaust gases flow through the first, second and third segments in series.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The particle filter arrangement as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the at least one particle filter is arranged in the first, second, or third segment.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The particle filter arrangement as claimed in <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein a further particle filter is arranged in the first, second, or third segment.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The particle filter arrangement as claimed in <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein the at least one particle filter and the further particle filter are formed in one piece as a filter monolith.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The particle filter arrangement as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>a first region between the first and the second segments in which the flow direction of the exhaust gases is substantially reversed; and</claim-text>
+<claim-text>a second region between the second and third segments in which the flow direction of the exhaust gases is substantially reversed.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The particle filter arrangement as claimed in <claim-ref idref="CLM-00006">claim 6</claim-ref>, further comprising a catalytic converter arranged in at least one of the first and second regions.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The particle filter arrangement as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the first, second, and third segments are arranged substantially concentrically with respect to one another.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The particle filter arrangement as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein one of the first, second and third segments has substantially the shape of a cylinder, and the two other segments have substantially the shape of an annular cylinder.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The particle filter arrangement as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein at least one of the following pairs of segments is separated by a common wall: the first and second segments; the second and third segments; and the first and third segments.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The particle filter arrangement as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein at least a part of an outer wall of the first duct forms an inner wall of the second duct.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The particle filter arrangement of <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the distributing and deflecting element:
+<claim-text>conducts the first gas flow so as to substantially maintain its direction in the arrangement; and</claim-text>
+<claim-text>deflects the second gas flow by an angle of approximately 180 degrees.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The particle filter arrangement as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein particle filter arrangement is substantially symmetric with respect to a central axis.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The particle filter arrangement as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the particle filter arrangement has at least the following sections in the direction from the inlet to the outlet:
+<claim-text>a first section which includes the distributing and deflecting element;</claim-text>
+<claim-text>a second section which includes the at least one particle filter; and</claim-text>
+<claim-text>a third section which includes a deflecting element for the exhaust gases.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The particle filter arrangement as claimed in <claim-ref idref="CLM-00014">claim 14</claim-ref>, wherein the first, second, and third segments are arranged in the second section of the particle filter arrangement.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The particle filter arrangement as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising a catalytic converter arranged directly downstream of the inlet or upstream of the first segment in the flow direction of the exhaust gases.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The particle filter arrangement as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising a particulate matter filter arranged directly upstream of the outlet or downstream of the third segment in the flow direction of the exhaust gases.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The particle filter arrangement of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the second duct is configured to alter the flow path of the exhaust gas passing from the second segment to the third segment approximately 180&#xb0;.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The particle filter arrangement of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the distributing and deflecting element comprises:
+<claim-text>a central axis;</claim-text>
+<claim-text>a first plurality of ducts, each duct of the first plurality operable to direct airflow outward from the central axis and into the first segment; and</claim-text>
+<claim-text>a second plurality of ducts, each duct of the second plurality operable to alter the flow path of the exhaust gas passing from the second segment to the third segment approximately 180&#xb0;,</claim-text>
+<claim-text>wherein a duct of the first plurality and a duct of the second plurality are positioned at radially alternating positions about the central axis.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. A particle filter arrangement for filtering exhaust gas from an internal combustion engine, the arrangement comprising:
+<claim-text>an exhaust gas inlet and an exhaust gas outlet;</claim-text>
+<claim-text>a first segment in fluid communication with the inlet, the first segment configured to conduct the exhaust gas substantially in the direction of the outlet;</claim-text>
+<claim-text>a second segment in fluid communication with the first segment, the second segment configured to conduct exhaust gas substantially in the direction of the inlet;</claim-text>
+<claim-text>a third segment in fluid communication with the second segment, the third segment configured to conduct exhaust gas substantially in the direction of the outlet, wherein the first, second, and third segments cooperate to define an exhaust gas flow path;</claim-text>
+<claim-text>at least one particle filter arranged within the exhaust gas flow path; and</claim-text>
+<claim-text>a distributing and deflecting element comprising a plurality of static ducts, the plurality of ducts including:
+<claim-text>a first duct configured to conduct exhaust gas flow from the inlet into the first segment, and</claim-text>
+<claim-text>a second duct configured to conduct exhaust gas flow from the second segment to the third segment,</claim-text>
+</claim-text>
+<claim-text>wherein flows of exhaust gas pass through the distributing and deflecting element without being mixed, wherein:</claim-text>
+<claim-text>the first segment possesses a substantially cylindrical cross-section;</claim-text>
+<claim-text>the second segment possesses a substantially annular cross-section;</claim-text>
+<claim-text>the third segment possesses a substantially annular cross section;</claim-text>
+<claim-text>the first segment is nested within the second segment; and</claim-text>
+<claim-text>the second segment is nested within the third segment.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00021" num="00021">
+<claim-text>21. A particle filter arrangement for filtering exhaust gas from an internal combustion engine, the particle filter arrangement comprising:
+<claim-text>a housing including an exhaust gas inlet and an exhaust gas outlet;</claim-text>
+<claim-text>a filter section disposed within the housing, the filter section comprising:
+<claim-text>a first generally annular conduit defining a first flow path segment located downstream from and in fluid communication with the inlet, wherein the first flow path segment directs the exhaust gas in a first direction,</claim-text>
+<claim-text>a generally cylindrical conduit defining a second flow path segment directing the exhaust gas in a second direction, and</claim-text>
+<claim-text>a second generally annular conduit defining a third flow path segment directing the exhaust gas in a third direction;</claim-text>
+</claim-text>
+<claim-text>a deflecting section in fluid communication with each of the flow path segments disposed within the housing; and</claim-text>
+<claim-text>a distributing and deflecting element disposed within the deflecting section, the distributing and deflecting element being configured to simultaneously direct exhaust gas flow from the inlet into the first generally annular conduit and direct exhaust gas flow from the generally cylindrical conduit into the second generally annular conduit, wherein the exhaust gas flows pass through the distributing and deflecting element without being mixed.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00022" num="00022">
+<claim-text>22. The particle filter arrangement of <claim-ref idref="CLM-00021">claim 21</claim-ref>, wherein the cylindrical conduit is nested within the second generally annual conduit.</claim-text>
+</claim>
+<claim id="CLM-00023" num="00023">
+<claim-text>23. The particle filter arrangement of <claim-ref idref="CLM-00022">claim 22</claim-ref>, wherein the second generally annular conduit is nested within the first generally annular conduit.</claim-text>
+</claim>
+<claim id="CLM-00024" num="00024">
+<claim-text>24. The particle filter arrangement of <claim-ref idref="CLM-00021">claim 21</claim-ref>, wherein the distributing and deflecting element comprises a central axis and a plurality of ducts angularly disposed about the central axis.</claim-text>
+</claim>
+<claim id="CLM-00025" num="00025">
+<claim-text>25. The particle filter arrangement of <claim-ref idref="CLM-00021">claim 21</claim-ref>, wherein the distributing and deflecting element comprises:
+<claim-text>a first duct operable to conduct exhaust gases from the inlet into the first generally annular conduit; and</claim-text>
+<claim-text>a second duct operable to conduct exhaust gases from the generally cylindrical conduit to the second generally annular conduit.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00026" num="00026">
+<claim-text>26. The particle filter arrangement of <claim-ref idref="CLM-00021">claim 21</claim-ref>, wherein:
+<claim-text>in the first direction, the exhaust gas flows toward the housing outlet;</claim-text>
+<claim-text>in the second direction, the exhaust gas flows toward the housing inlet; and</claim-text>
+<claim-text>in the third direction, the exhaust gas flows toward the housing outlet.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00027" num="00027">
+<claim-text>27. The particle filter arrangement of <claim-ref idref="CLM-00021">claim 21</claim-ref> further comprising:
+<claim-text>a pre-catalytic converter oriented downstream from the exhaust gas inlet;</claim-text>
+<claim-text>a first particle filter oriented within the first flow path segment; and</claim-text>
+<claim-text>a second particle filter oriented within the second flow path segment.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00028" num="00028">
+<claim-text>28. The particle filter arrangement of <claim-ref idref="CLM-00021">claim 21</claim-ref> further comprising a catalytic converter bridging the first and second flow path segments, wherein the catalytic converter directs the exhaust gas passing from the first generally annular conduit into the generally cylindrical conduit thereby altering the flow direction of the exhaust gases from the first direction to the second direction.</claim-text>
+</claim>
+<claim id="CLM-00029" num="00029">
+<claim-text>29. The particle filter arrangement of <claim-ref idref="CLM-00021">claim 21</claim-ref>, wherein the distributing and deflecting element is configured to transfer heat between the exhaust gas conducted from the inlet into the first flow path segment and the exhaust gas conducted from the second flow path segment into the third flow path segment.</claim-text>
+</claim>
+<claim id="CLM-00030" num="00030">
+<claim-text>30. A method for filtering exhaust gases of an internal combustion engine with a particle filter arrangement including a housing with an inlet and an outlet, the housing further including a first segment, a second segment, a third segment, a particle filter arranged in the flow path of the exhaust gases, and a distributing and deflecting element, the method comprising:
+<claim-text>(a) receiving the exhaust gases at the inlet of a particle filter arrangement;</claim-text>
+<claim-text>(b) conducting exhaust gas flow passing from the inlet into the distributing and deflecting element, wherein the distributing and deflecting element distributes the inlet gas flow to the first segment, and wherein the flow direction of the exhaust gases in the first segment is substantially in the direction of the outlet;</claim-text>
+<claim-text>(c) conducting the exhaust gas flow passing from the first segment into the second segment, wherein the flow direction of the exhaust gases in the second segment is substantially in the direction of the inlet; and</claim-text>
+<claim-text>(d) conducting the exhaust gas flow passing from the second segment into the distributing and deflecting element, wherein the distributing and deflecting element deflects the second segment gas flow into the third segment, and wherein the flow direction of the exhaust gases in the third segment is substantially in the direction of the outlet, wherein the distributing and deflecting element is configured to generate a star-shaped deflection pattern in which the inlet gas flow and the second segment gas flow pass through the element without being mixed. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

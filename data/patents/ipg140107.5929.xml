@@ -1,0 +1,1055 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627038-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627038</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13529432</doc-number>
+<date>20120621</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>2006-335903</doc-number>
+<date>20061213</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>7</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>12</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>711170</main-classification>
+<further-classification>711162</further-classification>
+<further-classification>711E12001</further-classification>
+</classification-national>
+<invention-title id="d2e69">Storage controller and storage control method</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>3725870</doc-number>
+<kind>A</kind>
+<name>Felcheck et al.</name>
+<date>19730400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>4467421</doc-number>
+<kind>A</kind>
+<name>White</name>
+<date>19840800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>4583194</doc-number>
+<kind>A</kind>
+<name>Cage</name>
+<date>19860400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>5455944</doc-number>
+<kind>A</kind>
+<name>Haderle et al.</name>
+<date>19951000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>5809551</doc-number>
+<kind>A</kind>
+<name>Blandy</name>
+<date>19980900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>5953729</doc-number>
+<kind>A</kind>
+<name>Cabrera et al.</name>
+<date>19990900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711161</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>6092168</doc-number>
+<kind>A</kind>
+<name>Voigt</name>
+<date>20000700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>RE36989</doc-number>
+<kind>E</kind>
+<name>White</name>
+<date>20001200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>6385706</doc-number>
+<kind>B1</kind>
+<name>Ofek et al.</name>
+<date>20020500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>6718538</doc-number>
+<kind>B1</kind>
+<name>Mathiske</name>
+<date>20040400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>6745305</doc-number>
+<kind>B2</kind>
+<name>McDowell</name>
+<date>20040600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>6823442</doc-number>
+<kind>B1</kind>
+<name>Cameron</name>
+<date>20041100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>6925530</doc-number>
+<kind>B2</kind>
+<name>Busser et al.</name>
+<date>20050800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>7093068</doc-number>
+<kind>B2</kind>
+<name>Yamagami</name>
+<date>20060800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>7225314</doc-number>
+<kind>B1</kind>
+<name>Bonwick et al.</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>7529921</doc-number>
+<kind>B2</kind>
+<name>Stein et al.</name>
+<date>20090500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>7555601</doc-number>
+<kind>B2</kind>
+<name>Yamagami</name>
+<date>20090600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>7581061</doc-number>
+<kind>B2</kind>
+<name>Miyagaki et al.</name>
+<date>20090800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>8140790</doc-number>
+<kind>B2</kind>
+<name>Ikeda et al.</name>
+<date>20120300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711162</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>8261031</doc-number>
+<kind>B2</kind>
+<name>Tanabe et al.</name>
+<date>20120900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711162</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>2002/0004890</doc-number>
+<kind>A1</kind>
+<name>Ofek et al.</name>
+<date>20020100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>2003/0065898</doc-number>
+<kind>A1</kind>
+<name>Flamma et al.</name>
+<date>20030400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>2004/0030822</doc-number>
+<kind>A1</kind>
+<name>Rajan et al.</name>
+<date>20040200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>2004/0068636</doc-number>
+<kind>A1</kind>
+<name>Jacobson et al.</name>
+<date>20040400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>2004/0139125</doc-number>
+<kind>A1</kind>
+<name>Strassburg et al.</name>
+<date>20040700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>2004/0230766</doc-number>
+<kind>A1</kind>
+<name>Cameron</name>
+<date>20041100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>US</country>
+<doc-number>2004/0260861</doc-number>
+<kind>A1</kind>
+<name>Serizawa et al.</name>
+<date>20041200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>US</country>
+<doc-number>2004/0267832</doc-number>
+<kind>A1</kind>
+<name>Wong et al.</name>
+<date>20041200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>US</country>
+<doc-number>2005/0091266</doc-number>
+<kind>A1</kind>
+<name>Hasegawa</name>
+<date>20050400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>US</country>
+<doc-number>2005/0182890</doc-number>
+<kind>A1</kind>
+<name>Yamagami</name>
+<date>20050800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00031">
+<document-id>
+<country>US</country>
+<doc-number>2006/0075187</doc-number>
+<kind>A1</kind>
+<name>Nakashima et al.</name>
+<date>20060400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00032">
+<document-id>
+<country>US</country>
+<doc-number>2006/0085471</doc-number>
+<kind>A1</kind>
+<name>Rajan et al.</name>
+<date>20060400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00033">
+<document-id>
+<country>US</country>
+<doc-number>2006/0133362</doc-number>
+<kind>A1</kind>
+<name>Stein et al.</name>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00034">
+<document-id>
+<country>US</country>
+<doc-number>2007/0233990</doc-number>
+<kind>A1</kind>
+<name>Kucznyski et al.</name>
+<date>20071000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00035">
+<document-id>
+<country>US</country>
+<doc-number>2008/0109616</doc-number>
+<kind>A1</kind>
+<name>Taylor</name>
+<date>20080500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00036">
+<document-id>
+<country>US</country>
+<doc-number>2008/0147960</doc-number>
+<kind>A1</kind>
+<name>Sugino et al.</name>
+<date>20080600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711100</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00037">
+<document-id>
+<country>US</country>
+<doc-number>2009/0240880</doc-number>
+<kind>A1</kind>
+<name>Kawaguchi</name>
+<date>20090900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711114</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00038">
+<document-id>
+<country>US</country>
+<doc-number>2010/0037231</doc-number>
+<kind>A1</kind>
+<name>Chen et al.</name>
+<date>20100200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00039">
+<document-id>
+<country>JP</country>
+<doc-number>2004-127301</doc-number>
+<date>20040400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00040">
+<document-id>
+<country>JP</country>
+<doc-number>2005-011316</doc-number>
+<date>20050100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00041">
+<document-id>
+<country>JP</country>
+<doc-number>2005-128771</doc-number>
+<date>20050500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00042">
+<document-id>
+<country>JP</country>
+<doc-number>2005-234820</doc-number>
+<date>20050900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00043">
+<document-id>
+<country>WO</country>
+<doc-number>WO 99/32995</doc-number>
+<date>19990700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00044">
+<othercit>European Patent Office extended European search report on Application No. 07254024.8 dated Aug. 3, 2010; 3 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>16</number-of-claims>
+<us-exemplary-claim>5</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>None</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>21</number-of-drawing-sheets>
+<number-of-figures>21</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>12700975</doc-number>
+<date>20100205</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8219774</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13529432</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>11702122</doc-number>
+<date>20070205</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>7681002</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>12700975</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120284476</doc-number>
+<kind>A1</kind>
+<date>20121108</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Seki</last-name>
+<first-name>Toshiya</first-name>
+<address>
+<city>Odawara</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Katsuragi</last-name>
+<first-name>Eiju</first-name>
+<address>
+<city>Odawara</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Sakaguchi</last-name>
+<first-name>Takashi</first-name>
+<address>
+<city>Odawara</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Seki</last-name>
+<first-name>Toshiya</first-name>
+<address>
+<city>Odawara</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Katsuragi</last-name>
+<first-name>Eiju</first-name>
+<address>
+<city>Odawara</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Sakaguchi</last-name>
+<first-name>Takashi</first-name>
+<address>
+<city>Odawara</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Mattingly &#x26; Malur, PC</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Hitachi, Ltd.</orgname>
+<role>03</role>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Bradley</last-name>
+<first-name>Matthew</first-name>
+<department>2182</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Bernard</last-name>
+<first-name>Daniel</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A storage controller having a plurality of storage devices and a control circuit providing a plurality of virtual volumes, to each of which a storage area in a plurality of pool volumes provided with the plurality of storage devices can be mapped for writing data in response to a write access sent from an information processing apparatus to a logical area in one of the plurality of virtual volumes, respectively. The control circuit, according to a search of the plurality of pool volumes for a certain storage area in which a certain data pattern is written, releases the certain storage area from mapping to a logical area in the plurality of virtual volumes, so that the control circuit can use the released certain storage area for mapping to a virtual volume of the plurality of virtual volumes as a destination of another write access from the information processing apparatus.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="109.81mm" wi="173.06mm" file="US08627038-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="242.06mm" wi="169.50mm" orientation="landscape" file="US08627038-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="179.66mm" wi="134.87mm" orientation="landscape" file="US08627038-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="179.92mm" wi="127.00mm" orientation="landscape" file="US08627038-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="180.00mm" wi="127.76mm" orientation="landscape" file="US08627038-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="178.22mm" wi="159.26mm" file="US08627038-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="220.56mm" wi="133.18mm" file="US08627038-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="101.52mm" wi="117.69mm" file="US08627038-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="223.27mm" wi="143.26mm" file="US08627038-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="213.78mm" wi="119.04mm" file="US08627038-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="217.85mm" wi="155.87mm" file="US08627038-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="172.97mm" wi="153.75mm" file="US08627038-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="225.13mm" wi="133.18mm" file="US08627038-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="99.91mm" wi="114.55mm" file="US08627038-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="220.56mm" wi="152.65mm" file="US08627038-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="218.36mm" wi="132.42mm" file="US08627038-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00016" num="00016">
+<img id="EMI-D00016" he="232.66mm" wi="164.08mm" file="US08627038-20140107-D00016.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00017" num="00017">
+<img id="EMI-D00017" he="226.65mm" wi="139.19mm" file="US08627038-20140107-D00017.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00018" num="00018">
+<img id="EMI-D00018" he="222.59mm" wi="157.40mm" file="US08627038-20140107-D00018.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00019" num="00019">
+<img id="EMI-D00019" he="232.66mm" wi="120.40mm" file="US08627038-20140107-D00019.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00020" num="00020">
+<img id="EMI-D00020" he="108.71mm" wi="126.07mm" file="US08627038-20140107-D00020.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00021" num="00021">
+<img id="EMI-D00021" he="200.74mm" wi="149.27mm" orientation="landscape" file="US08627038-20140107-D00021.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CROSS-REFERENCES TO RELATED APPLICATIONS</heading>
+<p id="p-0002" num="0001">This application is a continuation of application Ser. No. 12/700,975, filed Feb. 5, 2010, (now U.S. Pat. No. 8,219,774), which is a continuation of application Ser. No. 11/702,122, filed Feb. 5, 2007 (now U.S. Pat. No. 7,681,002), the entire disclosures of which are incorporated herein by reference.</p>
+<p id="p-0003" num="0002">This application relates to and claims priority from Japanese Patent Application No. 2006-335903, filed on Dec. 13, 2006, the entire disclosure of which is incorporated herein by reference.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">BACKGROUND</heading>
+<p id="p-0004" num="0003">1. Field of the Invention</p>
+<p id="p-0005" num="0004">This invention relates to a storage control technique for controlling the transmission of data between host systems and a storage apparatus including hard disks.</p>
+<p id="p-0006" num="0005">2. Description of Related Art</p>
+<p id="p-0007" num="0006">Storage controllers with the above technique control the migration of data between host systems and storage apparatuses based on data write/read requests sent from the host systems to the storage apparatuses. They also provide the storage areas in the storage apparatuses, as logical areas, to the host systems. The host systems access logical volumes and write/read data to/from the logical areas in the logical volumes. The storage controllers are also called storage subsystems and they constitute, with the host systems, storage systems. Each storage apparatus includes a plurality of storage devices, e.g., hard disk drives.</p>
+<p id="p-0008" num="0007">With the increase in the amount of data handled in host systems, the volume size&#x2014;storage capacity of logical volumes&#x2014;has to be proportionate to that amount. If large-size logical volumes are allocated to host systems in the first place, there will be no shortage of storage capacity for the host systems. However, if the host systems do not handle a large amount of data, there will be unused areas in the storage areas allocated to the host systems, which means that the storage resources are wasted.</p>
+<p id="p-0009" num="0008">JP2005-11316 A discloses a storage area allocated to a volume for the first time when a processor in a host computer write-accesses the volume. U.S. Pat. No. 6,823,442 describes volumes host systems access provided in a storage system and physical storage areas allocated to these volumes.</p>
+<p id="p-0010" num="0009">Incidentally, as a relevant conventional example, JP2005-128771 A describes a data file system having: a data access server that has a data-storing physical storage device accessed in response to an access request; and a data file server that sends an access request to the data access server and performs data filing using the data access server to store data. In this data file system, when a logical block is no longer used, its physical block is released.</p>
+<p id="p-0011" num="0010">JP2004-127301 A describes a storage system having: virtual storage spaces; physical storage spaces; a mapping system that associates the addresses of the virtual storage spaces with the addresses of the physical storage spaces; and a controller that automatically deletes a portion in the mapping system in accordance with the priority rule for designating deletion target portions in the mapping system. JP2005-234820 also describes a technique related to this invention.</p>
+<p id="p-0012" num="0011">The inventors of this invention have developed a technique called Allocation-on-Use (AOU) for the effective use of storage resources in a storage system. A storage controller provides virtual volumes&#x2014;volumes without actual storage areas&#x2014;to host systems and establishes correspondences between the virtual volumes and the logical volumes called pools&#x2014;volumes to which real storage areas in the storage apparatus are allocated. When a host systems write-accesses an area in a virtual volume, the storage controller allocates a storage area in a pool volume to the host-accessed area in the virtual volume. Allocation is performed each time any of the host systems writes new data in any of the virtual volumes. The host systems only see the virtual volumes with a seemingly large storage capacity. Because the storage controller does not allocate large-capacity storage areas to the host systems from the beginning, but allocates a storage area on each occasion, the host systems can use the storage resources in the storage apparatus effectively.</p>
+<p id="p-0013" num="0012">When a host system deletes data, if it deletes not the data itself but only the management information for the data, the storage controller cannot recognize the storage areas storing unnecessary data and these storage areas remain in the storage apparatus, running the risk that they accumulate in the storage apparatus, which prevents the host systems from using the storage resources in the storage apparatus effectively.</p>
+<p id="p-0014" num="0013">This invention aims to provide a storage control technique by which, although actual data is not deleted but the management information for that data is deleted, a host system can recognize the storage areas storing unnecessary data, and accordingly use them effectively.</p>
+<p id="p-0015" num="0014">Another object of this invention is to provide a storage control technique by which the storage areas storing unnecessary data are released from allocation to the host systems so that they can be used by the host systems effectively. Still another object of this invention is to provide a storage controller and storage control method that enable the effective use of the storage resources in the foregoing AOU storage systems.</p>
+<heading id="h-0003" level="1">SUMMARY</heading>
+<p id="p-0016" num="0015">In order to achieve the above objects, this invention provides a storage controller and storage control method capable of detecting a storage area storing unnecessary data not accessed by a host system and releasing that storage area from allocation to the host system.</p>
+<p id="p-0017" num="0016">To that end, this invention provides a storage controller having a control circuit for controlling the migration of data between a host system and a storage apparatus, the migration being performed in response to a data write request or data read request sent from the host system to the storage apparatus. In this storage controller, the control circuit includes: a first volume accessible by the host system, having no real storage area in the storage apparatus allocated thereto; a second volume having a real storage area allocated thereto; and a control table defining the correspondence relationships between logical areas in the first volume the host system accesses and the real storage areas in the second volume. When the host system makes a request to write data in a logical area in the first volume, the control circuit allocates a real storage area to the second volume and registers the correspondence relationship between the logical area in the first volume and the real storage area in the second volume in the control table. When the host system makes a request to read data from the logical area in the first volume, the control circuit reads, by referring to the control table, data from the real storage area in the second volume corresponding to the read-requested logical area and provides it to the host system. In response to a host system's request to delete the data, the control circuit releases the real storage area in the second volume from its correspondence relationship with the logical area that is the data storage destination.</p>
+<p id="p-0018" num="0017">This invention also provides a storage control method for a storage controller having a control circuit for controlling the migration of data between a host system and a storage apparatus, the migration being performed in response to a data write request or data read request sent from the host system to the storage apparatus. In this method, the control circuit detects a storage area storing unnecessary data that is not accessed by the host system and releases that storage area from allocation to the host system.</p>
+<p id="p-0019" num="0018">With the storage controller according to this invention, even if not data, but only its management information is deleted, the host system can recognize the storage areas storing unnecessary data and release them from allocation to the host system so that it can use them effectively.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram of a storage system including a storage controller according to this invention.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 2</figref> is a schematic block diagram of the storage system in <figref idref="DRAWINGS">FIG. 1</figref>, explaining AOU.</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 3</figref> is a block diagram of the storage system in <figref idref="DRAWINGS">FIG. 1</figref>, explaining the problems in AOU.</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 4</figref> is a block diagram of the storage system in <figref idref="DRAWINGS">FIG. 1</figref>, explaining the operations according to this invention.</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 5</figref> is a flowchart of the operations performed in the storage system according to a first embodiment in which a cache memory is used for an AOU storage control process.</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 6</figref> is a block diagram corresponding to the flowchart in <figref idref="DRAWINGS">FIG. 5</figref>.</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 7</figref> is a cache control table where the correspondence relationships are established between the slots in pool volumes and memory areas in the cache memory.</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 8</figref> is a flowchart of the operations performed in the storage system according to a second embodiment, in which the cache memory is used for an AOU storage control process.</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 9</figref> is a block diagram corresponding to the flowchart in <figref idref="DRAWINGS">FIG. 8</figref>.</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 10</figref> is a flowchart for the operations performed in the storage system according to an example where a mapping table storing the correspondence relationships between virtual volume areas and pool volume areas is stored in the local memory in each channel control unit.</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 11</figref> is a flowchart of the operations performed in the storage system according to a third embodiment, in which the cache memory is used for the AOU storage control process.</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIG. 12</figref> is a block diagram corresponding to the flowchart in <figref idref="DRAWINGS">FIG. 11</figref>.</p>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIG. 13</figref> is a control table where the correspondence relationships are established between the slots in the virtual volumes and the memory areas in the cache memory.</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIG. 14</figref> is a flowchart of the operations performed in storage system according to a fourth embodiment, in which the cache memory is used for the AOU storage control process.</p>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIG. 15</figref> is a block diagram corresponding to the flowchart in <figref idref="DRAWINGS">FIG. 14</figref>.</p>
+<p id="p-0035" num="0034"><figref idref="DRAWINGS">FIG. 16</figref> is a flowchart of the operations performed in the storage system according to a fifth embodiment, in which the cache memory is used for the AOU storage control process.</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 17</figref> is a block diagram corresponding to the flowchart in <figref idref="DRAWINGS">FIG. 16</figref>.</p>
+<p id="p-0037" num="0036"><figref idref="DRAWINGS">FIG. 18</figref> is a flow chart of the operations performed in the storage system according to a sixth embodiment, in which the cache memory is used for the AOU storage control process.</p>
+<p id="p-0038" num="0037"><figref idref="DRAWINGS">FIG. 19</figref> is a block diagram corresponding to the flowchart in <figref idref="DRAWINGS">FIG. 18</figref>.</p>
+<p id="p-0039" num="0038"><figref idref="DRAWINGS">FIG. 20</figref> is a mapping table stored in the local memory in the channel control unit, storing the correspondence relationships between virtual volume areas and pool volume areas.</p>
+<p id="p-0040" num="0039"><figref idref="DRAWINGS">FIG. 21</figref> is an example of a monitor display for managing the relationships between the time elapsed since the pool volumes came to be used for AOU volumes (virtual volumes), the percentage of in-use pool volumes, and the threshold value for issuing a warning.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION OF PREFERRED EMBODIMENTS</heading>
+<p id="p-0041" num="0040">Embodiments of this invention are explained below. <figref idref="DRAWINGS">FIG. 1</figref> is a hardware block diagram showing a first embodiment of a storage system having a storage controller according to this invention.</p>
+<p id="p-0042" num="0041">In <figref idref="DRAWINGS">FIG. 1</figref>, the storage system is composed of the storage controller <b>600</b> according to this invention and information processing apparatuses&#x2014;host systems (hosts). Although <figref idref="DRAWINGS">FIG. 1</figref> is explained for the case where the storage controller <b>600</b> includes storage devices <b>300</b>, the storage devices <b>300</b> may also be separate from the storage controller <b>600</b>.</p>
+<p id="p-0043" num="0042">The storage controller <b>600</b> is composed of a plurality of storage devices <b>300</b> and a control circuit <b>100</b> that controls the input/output of data to/from the storage devices <b>300</b> in response to input/output requests from the information processing apparatuses <b>200</b>.</p>
+<p id="p-0044" num="0043">The information processing apparatuses <b>200</b>&#x2014;host systems&#x2014;are servers (hosts) having CPUs and memories, or computers for managing the storage apparatus, such as work stations, mainframe computers, or personal computers. An information processing apparatus <b>200</b> may be created by connecting a plurality of computers to one another via a network. Each information processing apparatus <b>200</b> includes application program(s) run on an operation system. Examples of the application programs include automated telling systems for banks and air seat reservation systems. Examples of servers include update-type servers and backup servers that make backups at the back ends of the update-type servers.</p>
+<p id="p-0045" num="0044">The information processing apparatuses <b>1</b>-<b>3</b> (<b>200</b>) are connected to the storage controller <b>600</b> via a LAN (Local Area Network) <b>400</b>. The LAN <b>400</b> is a communication network such as Ethernet (registered trademark) or FDDI and the communication between the information processing apparatuses <b>1</b>-<b>3</b> (<b>200</b>) and storage controller <b>600</b> is performed based on TCP/IP protocol. The information processing apparatuses <b>1</b>-<b>3</b> (<b>200</b>) send file-name-designated data access requests (requests for the input/output of data in units of files, hereinafter called &#x2018;file access requests&#x2019;) to channel control units CHN<b>1</b>-CHN<b>4</b> (<b>110</b>) in the storage controller <b>600</b>, which will be described later.</p>
+<p id="p-0046" num="0045">A backup device <b>910</b> is connected to the LAN <b>400</b>. Examples of the backup device <b>910</b> include a disk-type device such as an MO, CD-R, DEV-RAM, or DVD-RAM, or a tape-type device such as a DAT tape, cassette tape, open tape or cartridge tape. The backup device <b>910</b> communicates with the control circuit <b>100</b> via the LAN <b>400</b> and stores a backup of data stored in the storage devices <b>300</b>. The backup device <b>910</b> is also connected to the information processing apparatus <b>1</b> (<b>200</b>) so it may also store a backup of data stored in the storage devices <b>300</b> via the information processing apparatus <b>1</b> (<b>200</b>).</p>
+<p id="p-0047" num="0046">The control circuit <b>100</b> includes channel control units CHN<b>1</b> to CHN<b>4</b> (<b>110</b>). The control circuit <b>100</b> mediates write/read access between the information processing apparatuses <b>1</b>-<b>3</b> (<b>200</b>), the backup device <b>910</b>, and the storage devices <b>300</b> via the channel control units CHN<b>1</b> to CHN<b>4</b> (<b>110</b>) and LAN <b>400</b>. The channel control units CHN<b>1</b> to CHN<b>4</b> (<b>110</b>) receive file access requests from the information processing apparatuses <b>1</b>-<b>3</b> (<b>200</b>), respectively. In other words, the channel control units CHN<b>1</b> to CHN<b>4</b> (<b>110</b>) are assigned network addresses on the LAN <b>400</b> (e.g., IP addresses) respectively. Each of the channel control units serves as a NAS and is capable of providing services to the information processing apparatuses <b>1</b>-<b>3</b> (<b>200</b>) as if it were an independent NAS. NAS servers are conventionally operated in separate computers but, in this invention, they are collected in a single storage controller, i.e., the channel control units CHN<b>1</b> to CHN<b>4</b> (<b>110</b>) each providing services as a NAS are arranged in a single storage controller. Accordingly, the integrated management of the storage controller <b>600</b> becomes possible, thereby enabling efficient maintenance services such as various settings, controls, failure management, and version management.</p>
+<p id="p-0048" num="0047">The information processing apparatuses <b>3</b> and <b>4</b> (<b>200</b>) are connected to the control circuit <b>100</b> via a SAN <b>500</b>. The SAN <b>500</b> is a network for the transmission of data between the information processing apparatuses <b>3</b> and <b>4</b> (<b>200</b>) and the storage controller <b>600</b> in units of blocks, which are the data management units in the storage areas provided by the storage devices <b>300</b>. Communication between the information processing apparatuses <b>3</b> and <b>4</b> (<b>200</b>) and the control circuit <b>100</b> via the SAN <b>500</b> is performed usually based on SCSI protocol. The information processing apparatuses <b>3</b> and <b>4</b> (<b>200</b>) send requests for data access in units of blocks (&#x2018;block access requests&#x2019;) to the storage controller <b>600</b> based on Fibre Channel Protocol.</p>
+<p id="p-0049" num="0048">A SAN-compatible backup device <b>900</b> is connected to the SAN <b>500</b>. The SAN-compatible backup device <b>900</b> communicates with the control circuit <b>100</b> via the SAN <b>500</b> and stores a backup of data stored in the storage devices <b>300</b>.</p>
+<p id="p-0050" num="0049">The control circuit <b>100</b> includes, in addition to the channel control units CHN<b>1</b> to CHN<b>4</b> (<b>110</b>), channel control units CHF<b>1</b> and CHF<b>2</b> and CHA<b>1</b> and CHA<b>2</b> (<b>110</b>). The control circuit <b>100</b> communicates with the information processing apparatuses <b>3</b> and <b>4</b> (<b>200</b>) and SAN-compatible backup device <b>900</b> via the channel control units CHF<b>1</b> and CHF<b>2</b> (<b>110</b>) and the SAN <b>500</b>. The channel control units each process access commands from the host systems.</p>
+<p id="p-0051" num="0050">An information processing apparatus <b>5</b> (<b>200</b>) is connected to the control circuit <b>100</b> without the use of any network such as a LAN <b>400</b> or SAN <b>500</b>. Examples of the information processing apparatus <b>5</b> (<b>200</b>) include a mainframe computer. The communication between the information processing apparatus <b>5</b> (<b>200</b>) and the control circuit <b>100</b> is performed based on communication protocols such as FICON (Fiber Connection; registered trademark), ESCON (Enterprise System Connection; registered trademark), ACONARC (Advanced Connection Architecture; registered trademark), and FIBARC (Fiber Connection Architecture; registered trademark). The information processing apparatus <b>5</b> (<b>200</b>) sends block access requests to the storage controller <b>600</b> based on these communication protocols. The control circuit <b>100</b> communicates with the information processing apparatus <b>5</b> (<b>200</b>) via its channel control unit CHA<b>1</b> or CHA<b>2</b> (<b>110</b>).</p>
+<p id="p-0052" num="0051">Another storage apparatus <b>610</b> is connected to the SAN <b>500</b>. The storage apparatus <b>610</b> provides its own storage resources to the control circuit <b>100</b>. This means that the storage apparatus <b>610</b> expands the outward storage areas for the information processing apparatuses. Incidentally, the storage apparatus <b>610</b> may be connected to the storage controller <b>600</b> via a communication line such as an ATM, besides the SAN <b>500</b>. It may also be directly connected to the storage controller <b>600</b>.</p>
+<p id="p-0053" num="0052">With the storage controller <b>600</b> including channel control units CHN<b>1</b> to CHN<b>4</b> (<b>110</b>), channel control units CHF<b>1</b> and CHF<b>2</b> (<b>110</b>), channel control units CHA<b>1</b> and CHA<b>2</b> (<b>110</b>), the storage system can be connected to different types of networks. That is, a SAN-NAS integrated storage system connected to the LAN <b>400</b> via the channel control units CHN<b>1</b> to CHN<b>4</b> (<b>110</b>) and to the SAN <b>500</b> via channel control unit CHF<b>1</b> and CHF<b>2</b> (<b>110</b>) can be realized.</p>
+<p id="p-0054" num="0053">A connecting unit <b>150</b> connects the respective channel control units <b>110</b>, shared memory <b>120</b>, cache memory <b>130</b>, and respective disk control units <b>140</b> to one another. Transmission of commands and data between them is performed via the connecting unit <b>150</b>. The connecting unit <b>150</b> is, for example, a high-speed bus such as a super-fast crossbar switch that transmits data by high-speed switching. This connecting unit <b>150</b> enhances the performance of communication between the channel control units <b>110</b> to a great extent and also enables high-speed file sharing and high-speed failover.</p>
+<p id="p-0055" num="0054">The shared memory <b>120</b> and cache memory <b>130</b> are memory apparatuses shared among the channel control units <b>110</b> and disk control units <b>140</b>. The shared memory <b>120</b> is used for mainly storing control information and commands and the cache memory <b>130</b> is used for mainly storing data. For example, when one of the channel control units <b>110</b> receives a write command&#x2014;one kind of data input/output command&#x2014;from an information processing apparatus <b>200</b>, it writes the write command in the shared memory <b>120</b> and writes the write data it receives from the information processing apparatus <b>200</b> in the cache memory <b>130</b>.</p>
+<p id="p-0056" num="0055">The disk control units <b>140</b> monitor the shared memory <b>120</b> and when they detect that a write command has been written in the shared memory <b>120</b>, the relevant disk control unit <b>140</b> reads the write data from the cache memory and writes it in the storage devices <b>300</b> in response to the write command.</p>
+<p id="p-0057" num="0056">Meanwhile, if a channel control unit <b>110</b> receives a read command&#x2014;a kind of input/output command&#x2014;from an information processing apparatus <b>200</b>, it writes the read command in the shared memory <b>120</b> and checks wither or not the read target data exists in the cache memory <b>130</b>. If the read target data exists in the cache memory <b>130</b>, the channel control unit <b>110</b> reads it and sends it to the information processing apparatus <b>200</b>. If the read target data does not exist in the cache memory <b>130</b>, the disk control unit <b>140</b> that has detected that the read command has been written in the shared memory <b>120</b> reads the read target data from the storage devices <b>300</b>, writes it in the cache memory <b>130</b>, and writes a notice to that effect in the shared memory <b>120</b>. The channel control units <b>110</b> monitor the shared memory <b>120</b> and when they detect that the read target data has been written in the cache memory <b>130</b>, the relevant channel control unit <b>100</b> reads it from the cache memory <b>130</b> and sends it to the information processing apparatus <b>200</b>.</p>
+<p id="p-0058" num="0057">The disk control units <b>140</b> convert logical address-designated data access requests sent from the channel control units <b>110</b> to the storage devices <b>300</b> to physical address-designated data access requests; and write/read data to/from the storage devices <b>300</b> in response to the I/O requests from the channel control units <b>110</b>. When the storage devices <b>300</b> are RAID-structured, the disk control units <b>140</b> access data in a manner compatible with the RAID structure. In other words, the disk control units <b>140</b> control the storage devices <b>300</b>&#x2014;HDDs&#x2014;and RAID groups. The RAID groups are composed of the storage areas in the HDDs.</p>
+<p id="p-0059" num="0058">Each storage device <b>300</b> includes one or a plurality of disk drives (a physical volume) and provides storage areas accessible by the information processing apparatuses <b>200</b>. Logical volumes are set for the storage areas provided by one or more physical volumes in the storage devices <b>300</b>. Examples of the logical volumes set for the storage devices <b>300</b> includes user logical volumes accessible by the information processing apparatuses <b>200</b> and system logical volumes used for controlling the channel control units <b>110</b>. The system logical volumes store operating systems run by the channel control units <b>110</b>. The storage devices <b>300</b> provide the logical volumes accessible by the respective channel control units <b>110</b> to the host systems. Incidentally, two or more channel control units <b>110</b> can share a single logical volume.</p>
+<p id="p-0060" num="0059">Incidentally, the storage devices <b>300</b> may be hard disk devices. The storage devices <b>300</b> may form RAID-type disk arrays as a storage configuration. The storage devices <b>300</b> and control circuit <b>100</b> may be connected directly or indirectly via a network. The storage devices <b>300</b> may also be integrated with the control circuit <b>100</b>. The storage devices <b>300</b> may alternatively be semiconductor memories such as flash memories.</p>
+<p id="p-0061" num="0060">The management terminal <b>160</b> is a computer for the maintenance and management of the storage controller <b>600</b>, and is connected to the respective channel control units <b>110</b> and disk control units <b>140</b> via an internal LAN <b>151</b>. The operator of the management terminal <b>160</b> can make settings for the disk drives in the storage devices <b>300</b> and for the logical volumes, and can also install micro programs to be run by the channel control units <b>110</b> and disk control units <b>140</b>. This kind of setting and installation work may be carried out either by the management terminal <b>160</b> or the programs on the host systems, in the latter case, the work is carried out via a network.</p>
+<p id="p-0062" num="0061"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram explaining the functions of the storage system using AOU, which was explained before. The control circuit <b>100</b> provides virtual volumes <b>10</b> (<b>10</b>A, <b>10</b>B) to the host <b>200</b>. These virtual volumes <b>10</b> are logical volumes that do not have actual storage areas. The host <b>200</b> accesses the logical areas in the virtual volumes <b>10</b>. The virtual volumes <b>10</b>&#x2014;virtual volumes <b>10</b>A and <b>10</b>B&#x2014;are allocated to the host <b>200</b>. The host <b>200</b> accesses a logical area <b>18</b>A in the virtual volume <b>10</b>A and a logical area <b>20</b>A in the virtual volume <b>10</b>B. The reference numeral <b>16</b> indicates read/write access from the host <b>200</b> to the virtual volumes <b>10</b> (<b>10</b>A, <b>10</b>B).</p>
+<p id="p-0063" num="0062">The control circuit <b>100</b> also provides pool volumes <b>12</b> (<b>12</b>A, <b>12</b>B, <b>12</b>C) to the host <b>200</b>. The real storage areas in the storage devices <b>300</b> (<b>300</b>A, <b>300</b>B) are allocated to these pool volumes. The reference numeral <b>18</b>C indicates a real storage area (PDEV: physical volume) in the storage device <b>300</b>A. This real storage area is allocated to the pool volume <b>12</b>A. Also, a real storage area <b>20</b>C in the storage device <b>300</b>B is allocated to the pool volume <b>12</b>C.</p>
+<p id="p-0064" num="0063">The reference numeral <b>14</b> indicates a mapping table showing the correspondence relationships between the logical areas in the virtual volumes and the storage areas in the pool volumes. The reference numeral <b>18</b>B indicates the control information for the correspondence relationship between the logical area <b>18</b>A in the virtual volume <b>10</b>A and the real storage area <b>18</b>C in the pool volume <b>12</b>A. The reference numeral <b>20</b>B indicates the control information for the correspondence relationship between the logical area <b>20</b>A in the virtual volume <b>10</b>B and the real storage area <b>20</b>C in the pool volume <b>12</b>C. In short, the mapping table <b>14</b> stores control information. The information regarding the virtual volumes <b>18</b>, pool volumes <b>12</b>, and mapping table <b>14</b> is stored in the shared memory <b>120</b>.</p>
+<p id="p-0065" num="0064">Control information (<b>18</b>B, <b>20</b>B) is the information for the correspondence relationship between the logical addresses of areas in a specific virtual volume and the logical addresses of real storage areas in a specific pool volume. In the foregoing AOU system, when the host <b>200</b> write-accesses a logical area in a virtual volume, which has not yet been mapped onto a real storage area, the control circuit <b>100</b>, being triggered by the access, maps a real storage area in a pool volume to that logical area in the virtual volume. When the host <b>200</b> issues a read command to the control circuit <b>100</b>, the control circuit <b>100</b> reads target data from the area in the pool volume corresponding to the host-accessed logical area in the virtual volume and sends it to the host <b>200</b>. The control circuit <b>100</b> only shows the capacities of the virtual volumes to the host <b>200</b>.</p>
+<p id="p-0066" num="0065">Mapping of real storage area(s) in a pool volume onto logical area(s) in a virtual volume is performed using a suitably-selected unit. One example is called a &#x2018;page,&#x2019; and has 512 M bytes. In the mapping table <b>14</b>, logical areas in units of pages in the virtual volumes are mapped onto the real storage areas in the same units in the pool volumes. Incidentally, the minimum logical area and storage area unit is called a &#x2018;slot,&#x2019; which is, for example, about 256 bytes. A page is a collection of slots. Mapping may be performed in units of slots. Incidentally, in this embodiment, mapping is performed in units of pages because, if mapping is performed in units of slots, the mapping table becomes complicated.</p>
+<p id="p-0067" num="0066">As shown in <figref idref="DRAWINGS">FIG. 3</figref>, the host <b>200</b> has a file system <b>200</b>A. The reference numeral <b>18</b>E indicates the management information for the data in the logical area <b>18</b>A in the virtual volume <b>10</b>A, and the reference numeral <b>20</b>E indicates the management information for the data in the logical area <b>20</b>A in the virtual volume <b>20</b>A. The file system <b>200</b>A stores this management information in the local memory in the host <b>200</b>. <figref idref="DRAWINGS">FIG. 3</figref> shows that, when deleting the data in the logical area <b>18</b>A in the virtual volume <b>10</b>A, the file system <b>200</b>A in the host <b>200</b> deletes only the management information for that data, not the data itself. The control information <b>18</b>B shows that the data in the logical area <b>18</b>A in the virtual volume <b>10</b>A actually exists in the corresponding real storage area <b>18</b>C in the pool volume <b>12</b>A.</p>
+<p id="p-0068" num="0067">Once the management information <b>18</b>E is deleted, the host <b>200</b> can no longer access the logical area <b>18</b>A. However, as long as the virtual volume <b>10</b>A is not deleted, the real storage area <b>18</b>C still remains registered in the mapping table and the data&#x2014;now unnecessary data&#x2014;still remains in the real storage area <b>18</b>C. This is an undesirable situation in terms of the effective use of the storage resources.</p>
+<p id="p-0069" num="0068">To solve this problem, in <figref idref="DRAWINGS">FIG. 4</figref>, the host <b>200</b> has resident software program <b>200</b>B that sends a write command <b>15</b> to the control circuit <b>100</b> to write specified data in the storage area <b>18</b>C mapped onto the logical area <b>18</b>A, when the file system <b>200</b>A in the host <b>200</b> deletes the management data <b>18</b>E for the logical area <b>18</b>A in the virtual volume <b>10</b>A.</p>
+<p id="p-0070" num="0069">The above-mentioned specified data is the data for enabling the control circuit <b>100</b> to recognize that the storage area <b>18</b>C should be released from mapping onto the logical area <b>18</b>A in the virtual volume <b>10</b>A. The control circuit <b>100</b> detects the storage area <b>18</b>C having the specified data, and releases the storage area <b>18</b>C from mapping onto the logical area <b>18</b>A in the virtual volume <b>10</b>A for which the management information <b>18</b>E has already been deleted by the host <b>200</b>. This release is performed by deleting the control information <b>18</b>B in the mapping table <b>14</b>.</p>
+<p id="p-0071" num="0070">After that, the control circuit <b>100</b> regards the storage area <b>18</b>C as an unused storage area. When the host <b>200</b> later writes data in a virtual volume, the control circuit <b>100</b> maps the storage area <b>18</b>C onto the write destination logical volume and stores the write data sent from the host <b>200</b> in the storage area <b>18</b>C. In <figref idref="DRAWINGS">FIG. 4</figref>, an example of the above-described specified data is &#x2018;0,&#x2019; which is written in all the bits (all areas) in the storage area <b>18</b>C.</p>
+<p id="p-0072" num="0071">The search of the pool volumes for a page where &#x2018;0&#x2019; is set for all the bits and deletion of the page from the mapping table by the control circuit <b>100</b> may be triggered by an event such as the creation of LDEV format or remote copy pair(s), a command sent from the operator, or it may be performed at predetermined timing. The control circuit <b>100</b> scans all the logical addresses in each pool volume and searches for a page where &#x2018;0&#x2019; is set for all of its bits.</p>
+<p id="p-0073" num="0072">Through <figref idref="DRAWINGS">FIGS. 2-4</figref>, the channel control units <b>110</b> shown in <figref idref="DRAWINGS">FIG. 1</figref> enable access from the host <b>200</b> to the virtual volumes <b>10</b> and can recognize the real storage areas in the pool volumes that are mapped onto the logical areas in the virtual volumes. The mapping table <b>14</b> is stored in the shared memory <b>120</b>. An operator of the management terminal <b>160</b> makes settings for and updates the mapping table, and registers the relevant information in the shared memory <b>120</b>. Meanwhile, the disk control units <b>140</b> store data in the real storage areas and read the data from them. The disk control units <b>140</b> can recognize, by referring to the mapping table <b>14</b>, the logical areas in the virtual volumes that are mapped onto the real storage areas.</p>
+<p id="p-0074" num="0073">However, there is a problem in canceling the mapping of the page where &#x2018;0&#x2019; is set for all of its bits, as shown in <figref idref="DRAWINGS">FIG. 4</figref>. This is because there are some cases where &#x2018;0&#x2019; is written in all the bits in a page by the write access from the host <b>200</b>. With the foregoing conventional method, a page like the one above has to be released from mapping onto a virtual volume. In a case like this, even when the host <b>200</b> read-accesses the page via the virtual volume, the control circuit <b>100</b> can no longer provide the page to the host <b>200</b>.</p>
+<p id="p-0075" num="0074">Thereupon, in <figref idref="DRAWINGS">FIG. 4</figref>, when the host <b>200</b> read-accesses a logical area <b>18</b>G in a virtual volume, which has not yet been mapped onto a real storage area in a pool volume in the mapping table <b>14</b>, the control circuit <b>100</b> provides a reserved page <b>18</b>F, which is stored in a pool volume in advance and has &#x2018;0&#x2019; set for all of its bits, to the host <b>200</b> via the logical area <b>18</b>G in the virtual volume <b>10</b>A. Here, the reserved page <b>18</b>F may be mapped onto the virtual volume <b>10</b>A.</p>
+<p id="p-0076" num="0075">Data read/write access via the cache memory <b>130</b> will be explained below with reference to <figref idref="DRAWINGS">FIG. 5</figref>. <figref idref="DRAWINGS">FIG. 5</figref> is a flowchart of the operations performed by the control circuit <b>100</b> when a host makes a read request to a virtual volume (hereinafter called &#x2018;AOU VOL&#x2019;). <figref idref="DRAWINGS">FIG. 6</figref> is a block diagram showing the same operations performed in the storage system. In <figref idref="DRAWINGS">FIG. 6</figref>, the numerals attached to the arrows correspond to the numerals attached to the steps in the flowchart in <figref idref="DRAWINGS">FIG. 5</figref>. Incidentally, in the explanation below, mapping of the logical areas in the virtual volumes to the real storage areas in the pool volumes is performed in units of slots.</p>
+<p id="p-0077" num="0076">The flowchart in <figref idref="DRAWINGS">FIG. 5</figref> is explained below, with reference also to the block diagram in <figref idref="DRAWINGS">FIG. 6</figref>. First, a host <b>200</b> issues a read request to the relevant channel control unit <b>110</b>, requesting reading of data from an AOU VOL (<b>1</b>). The channel control unit <b>110</b> refers to the mapping table (VFS table) in the shared memory <b>120</b>, and judges whether or not any slot (&#x2018;slot#<b>2</b>&#x2019;) in a pool volume is mapped onto the host-accessed AOU VOL (<b>2</b>).</p>
+<p id="p-0078" num="0077">If the judgment is negative, the channel control unit <b>110</b> reads a reserved page from a pool volume and provides it to the host <b>200</b> (<b>7</b>). Meanwhile, if the judgment in (<b>2</b>) is positive, the channel control unit <b>110</b> obtains, from the mapping table <b>14</b>, unique information for that slot#<b>2</b> in the pool volume (i.e., the ID of the pool volume and the logical address of the slot#<b>2</b> in the pool volume) (<b>3</b>).</p>
+<p id="p-0079" num="0078">Incidentally, <figref idref="DRAWINGS">FIG. 7</figref> is a management table for the cache memory <b>130</b> storing the read data. This cache management table stores the correspondence relationships between the unique information for each slot#<b>2</b> and its cache management information (addresses in the cache memory, data attributes, queue information, etc.). This table is stored in the shared memory <b>120</b>.</p>
+<p id="p-0080" num="0079">Next, the channel control unit <b>110</b> judges, by referring to the cache management table, whether or not the unique information for the subject slot#<b>2</b> obtained from the mapping table <b>14</b> is stored in the cache management table (<b>4</b>). If the judgment is positive, the relevant channel control unit <b>110</b> judges that the data in the slot#<b>2</b> exists in the cache memory <b>130</b>, obtains the information for the relevant cache area from the cache management table, accesses that cache area, and reads the data from it (<b>6</b>). Then the channel control unit <b>110</b> sends it to the host <b>200</b> (<b>8</b> in <figref idref="DRAWINGS">FIG. 5</figref>, <b>8</b>-<b>1</b> in <figref idref="DRAWINGS">FIG. 6</figref>).</p>
+<p id="p-0081" num="0080">Meanwhile, if the channel control unit <b>110</b> judges that the unique information for the slot#<b>2</b> is not stored in the cache management table, the data in the slot#<b>2</b> does not exist in the cache memory <b>130</b>, so the relevant disk control unit <b>140</b> accesses the slot#<b>2</b> in the pool volume and reads the data from it (<b>5</b>). Then the channel control unit <b>110</b> sends the data to the host <b>200</b> (<b>8</b> in <figref idref="DRAWINGS">FIG. 5</figref>, <b>8</b>-<b>2</b> in <figref idref="DRAWINGS">FIG. 6</figref>). The channel control unit <b>110</b> then registers the unique information and cache management information for the slot#<b>2</b> in the cache management table (<b>4</b>).</p>
+<p id="p-0082" num="0081">According to the procedure described in <figref idref="DRAWINGS">FIGS. 5-7</figref>, the cache memory is used for AOU control; accordingly, the control circuit <b>100</b> can send data to a host <b>200</b> promptly in response to a read request. In conventional AOU control, data in the areas in the virtual volumes have to be read from the corresponding areas in the pool volumes by referring to the mapping table, which may cause overhead. However, with this invention, this overhead can be prevented by using the cache memory.</p>
+<p id="p-0083" num="0082"><figref idref="DRAWINGS">FIG. 8</figref> is a flowchart of the operations performed when a host <b>200</b> write-accesses a slot (&#x2018;slot#<b>1</b>&#x2019;) in an AOU VOL (<b>1</b>). <figref idref="DRAWINGS">FIG. 9</figref> is a block diagram corresponding to the flowchart in <figref idref="DRAWINGS">FIG. 8</figref>. When any slot#<b>2</b> in a pool volume is not mapped onto the host-accessed slot#<b>1</b> in the AOU VOL in the mapping table <b>14</b> (<b>2</b>), the relevant channel control unit <b>110</b> registers a new slot#<b>2</b> in a pool volume in the mapping table <b>14</b> (<b>4</b>), and obtains the unique information for that slot#<b>2</b> (<b>5</b>). The channel control unit <b>110</b> also registers the unique information for the slot#<b>2</b> in the cache management table (<b>6</b>-<b>1</b> in <figref idref="DRAWINGS">FIG. 9</figref>) and writes the write data, which is sent from the host <b>200</b>, in the cache memory <b>130</b> (<b>6</b> in <figref idref="DRAWINGS">FIG. 8</figref>, <b>6</b>-<b>2</b> in <figref idref="DRAWINGS">FIG. 9</figref>). The channel control unit <b>110</b> then sends a write completion report to the host <b>200</b> (<b>7</b>). At different timing from the writing of the write data to the cache memory <b>130</b>, the disk control unit <b>140</b> writes the write data in the cache memory <b>130</b> in the slot#<b>2</b> in the pool volume <b>12</b> based on the unique information for the slot#<b>2</b> by referring to the cache management table (<b>8</b>), the slot#<b>2</b> being set for more than one storage device.</p>
+<p id="p-0084" num="0083">If it is judged in (<b>2</b>) that a slot#<b>2</b> in a pool volume is mapped onto the slot#<b>1</b> in the AOU VOL, the channel control unit <b>110</b> obtains the logical address of the slot#<b>2</b> from the mapping table <b>14</b> (<b>3</b>), and writes the write data in the cache memory (<b>6</b>).</p>
+<p id="p-0085" num="0084">In the foregoing example, the cache areas in the cache memory <b>130</b> are managed by being associated with slots#<b>2</b> in pool volumes as shown in the cache management table in <figref idref="DRAWINGS">FIG. 7</figref>. Next, an embodiment where the cache areas in the cache memory <b>130</b> are managed by being associated with slots#<b>1</b> in AOU VOLs will be explained. <figref idref="DRAWINGS">FIG. 11</figref> is the flowchart for that example and <figref idref="DRAWINGS">FIG. 12</figref> is a block diagram corresponding to the flowchart in <figref idref="DRAWINGS">FIG. 11</figref>.</p>
+<p id="p-0086" num="0085">When a host <b>200</b> makes a read request to a slot#<b>1</b> in an AOU VOL (<b>1</b>), the relevant channel control unit <b>110</b> judges whether or not the slot#<b>1</b> is registered in the cache management table in <figref idref="DRAWINGS">FIG. 13</figref> (<b>2</b>). If the judgment is positive, the channel control unit <b>110</b> reads, by referring to the cache management table, the read target data from the cache area for the slot#<b>1</b> (<b>7</b>) and sends it to the host <b>200</b> (<b>8</b>).</p>
+<p id="p-0087" num="0086">Meanwhile, if the slot#<b>1</b> is not registered in the cache management table, the relevant disk control unit <b>140</b> judges whether or not any slot#<b>2</b> in a pool volume is mapped onto the slot#<b>1</b> (<b>3</b>). If the judgment is negative, the channel control unit <b>110</b> reads a reserved page <b>18</b>F from a pool volume via the disk control unit <b>140</b> (<b>6</b>), and provides it to the host <b>200</b> (<b>8</b>). Meanwhile, if a slot#<b>2</b> in a pool volume is mapped onto the slot#<b>1</b>, the disk control unit <b>140</b> obtains the information for the slot#<b>2</b> from the mapping table <b>14</b>.</p>
+<p id="p-0088" num="0087">Then the disk control unit <b>140</b> reads the read target data from the logical address of the slot#<b>2</b> (<b>18</b>C) in the pool volume (<b>5</b>) and sends it to the host <b>200</b> in response to the read request (<b>8</b>).</p>
+<p id="p-0089" num="0088"><figref idref="DRAWINGS">FIG. 14</figref> is a flowchart of the operations performed when a host <b>200</b> write-accesses an AOU VOL, and <figref idref="DRAWINGS">FIG. 15</figref> is a block diagram corresponding to the flowchart in <figref idref="DRAWINGS">FIG. 14</figref>. When a host <b>200</b> write-accesses an AOU VOL (<b>1</b>), the relevant channel control unit <b>110</b> registers a write destination logical area (slot#<b>1</b>) in the cache management table in <figref idref="DRAWINGS">FIG. 13</figref> and the write data in the cache area designated in the cache management table (<b>2</b>). Then the channel control unit <b>110</b> sends a report indicating completion of data writing to the host <b>200</b> (<b>3</b>).</p>
+<p id="p-0090" num="0089">When destaging the data in the cache memory <b>130</b> to a pool volume, the relevant disk control unit <b>140</b> judges whether or not any slot#<b>2</b> in a pool volume is mapped onto the slot#<b>1</b>. If the judgment is negative, the disk control unit <b>140</b> registers a slot#<b>2</b> in a pool volume in the mapping table <b>14</b> (<b>6</b>). The disk control unit <b>140</b> then obtains the unique information for the slot#<b>2</b>, such as the address of the slot#<b>2</b> (<b>7</b>), and writes the write data in the area of the slot#<b>2</b> in the pool volume based on that information (<b>8</b>). Meanwhile, when the disk control unit <b>140</b> judges that a slot#<b>2</b> in a pool volume is mapped onto the slot#<b>1</b> in the mapping table, it obtains the unique information for the slot#<b>2</b> from the mapping table <b>14</b> (<b>5</b>). It then writes the write data in the area of the slot#<b>2</b> in the pool volume (<b>8</b>).</p>
+<p id="p-0091" num="0090"><figref idref="DRAWINGS">FIGS. 16 and 17</figref> show an embodiment where the cache areas in the cache memory <b>130</b> are managed by being associated with both the slots#<b>1</b> in the AOU VOLs and slots#<b>2</b> in the pool volumes. <figref idref="DRAWINGS">FIG. 16</figref> is a flowchart of the operations performed when a host <b>200</b> read-accesses a slot#<b>1</b> in an AOU VOL (<b>1</b>). <figref idref="DRAWINGS">FIG. 17</figref> is a functional block diagram of the storage system corresponding to the flowchart in <figref idref="DRAWINGS">FIG. 16</figref>.</p>
+<p id="p-0092" num="0091">The relevant channel control unit <b>110</b> judges whether or not the data in the slot#<b>1</b> in the AOU VOL exists in the cache memory <b>130</b> (<b>2</b>). If the judgment is positive, the channel control unit <b>110</b> reads, by referring to the cache management table (A) in <figref idref="DRAWINGS">FIG. 13</figref>, the data in the slot#<b>1</b> from the cache memory <b>130</b>, and sends it to the host <b>200</b> (<b>8</b>).</p>
+<p id="p-0093" num="0092">Meanwhile, if the channel control unit <b>110</b> judges that the data in the slot#<b>1</b> does not exist in the cache memory <b>130</b> (<b>2</b>), it judges, by referring to the mapping table <b>14</b>, whether or not there is any slot#<b>2</b> in a pool volume that is mapped onto the slot#<b>1</b> (<b>3</b>). If the judgment is negative, the channel control unit <b>110</b> reads a reserved page <b>18</b>F in a pool volume, where &#x2018;0&#x2019; is set for all of its bits, via the relevant disk control unit <b>140</b> (<b>6</b>) and sends it to the host <b>200</b> (<b>8</b> in <figref idref="DRAWINGS">FIG. 16</figref>, <b>8</b>-<b>1</b> in <figref idref="DRAWINGS">FIG. 17</figref>).</p>
+<p id="p-0094" num="0093">Meanwhile, if the channel control unit <b>110</b> judges that a slot#<b>2</b> in a pool volume is mapped onto the slot#<b>1</b> in the mapping table <b>14</b>, it obtains the information for the slot#<b>2</b> from the mapping table <b>14</b> (<b>4</b>). Then the disk control unit <b>140</b> reads the data from the area of the slot#<b>2</b> (<b>18</b>C) in the pool volume (<b>5</b>), and sends it to the host <b>200</b> in response to the read request (<b>11</b>).</p>
+<p id="p-0095" num="0094">Then the channel control unit <b>110</b> stores the unique information for the slot#<b>2</b> in the cache management table (B) in <figref idref="DRAWINGS">FIG. 7</figref> as being mapped onto an address in the cache memory <b>130</b> and writes the data read from the slot#<b>2</b> in the pool volume in the cache memory <b>130</b> (<b>9</b>). The channel control unit <b>110</b> then copies the cache management information for the slot#<b>2</b> from the cache management table (B) to the cache management table (A) and copies, in the cache memory <b>130</b>, the data in the cache area for slot#<b>2</b> to the cache area for the slot#<b>1</b> (<b>10</b>).</p>
+<p id="p-0096" num="0095">Accordingly, after that, when there is read access from a host <b>200</b> to the slot#<b>1</b>, the channel control unit <b>110</b> can send desired data stored in the cache memory <b>130</b> to the host <b>200</b> promptly, without having to refer to the pool volumes in the storage devices <b>300</b>.</p>
+<p id="p-0097" num="0096">In comparison to the case of read access in <figref idref="DRAWINGS">FIG. 17</figref>, <figref idref="DRAWINGS">FIGS. 18 and 19</figref> show an example where a host <b>200</b> write-accesses a slot#<b>1</b> in an AOU VOL. When the relevant channel control unit <b>110</b> receives a write request for the slot#<b>1</b> in the AOU VOL from the host <b>200</b> (<b>1</b>), it writes the write data in the cache area in the cache memory <b>130</b> corresponding to the write destination slot#<b>1</b> by referring to the cache management table (A) (<b>2</b>). The channel control unit <b>110</b> then sends a report indicating completion of data writing to the host <b>200</b>.</p>
+<p id="p-0098" num="0097">The relevant disk control unit <b>140</b> judges, by referring to the mapping table <b>14</b>, whether or not any slot#<b>2</b> in a pool volume is mapped onto the slot#<b>1</b> (<b>4</b>). When the judgment is negative, the disk control unit <b>140</b> registers a slot#<b>2</b> in a pool volume in the mapping table. Then the disk control unit <b>140</b> obtains the unique information for the slot#<b>2</b> (<b>7</b>). Meanwhile, if a slot#<b>2</b> is mapped onto the slot#<b>1</b> in the mapping table <b>14</b>, the disk control unit <b>140</b> obtains the unique information for the slot#<b>2</b> in the pool volume from the mapping table (<b>5</b>). Then the disk control unit <b>140</b>) registers the unique information for the slot#<b>2</b> in the cache management table (B), copies the cache management information for the slot#<b>1</b> from the cache management table (A) to the cache management table (B), and registers it as the cache management information for the slot#<b>2</b>. Then the channel control unit <b>110</b> copies or migrates the write data from the cache area designated in the cache management table (A) to the cache area designated in the cache management table (B) (<b>8</b>).</p>
+<p id="p-0099" num="0098">After a predetermined period of time, the disk control unit <b>140</b> obtains the cache management information for the slot#<b>2</b> from the cache management table (B), and writes the write data in the specific cache area in the cache memory <b>130</b> to the slot#<b>2</b> in the pool volume (<b>9</b>).</p>
+<p id="p-0100" num="0099"><figref idref="DRAWINGS">FIG. 10</figref> is a flowchart for the operations in the control circuit <b>100</b> according to an example where the mapping table, which is usually stored in the shared memory <b>120</b>, is also stored in the local memory in the channel control units <b>110</b> When the relevant channel control unit <b>110</b> receives a read request for a slot#<b>1</b> in an AOU VOL from a host <b>200</b> (S<b>100</b>), it judges whether or not any slot#<b>2</b> is mapped onto the slot#<b>1</b> in the local memory (LM) mapping table (<figref idref="DRAWINGS">FIG. 20</figref>) in its own local memory (S<b>102</b>).</p>
+<p id="p-0101" num="0100">When the judgment is positive, the channel control unit <b>110</b> obtains the unique information for the slot#<b>2</b> from its LM mapping table (S<b>106</b>). Meanwhile, if the judgment is negative, the channel control unit <b>110</b> judges, by referring to the mapping table (VFS table) in the shared memory <b>120</b>, whether or not any slot#<b>2</b> in a pool volume is mapped onto the slot#<b>1</b> (S<b>104</b>). If the judgment is negative, the channel control unit <b>110</b> reads a reserved page in a pool volume where &#x2018;0&#x2019; is set for all the bits (S<b>116</b>). If the judgment is positive, the channel control unit <b>110</b> obtains the unique information for the slot#<b>2</b> from the VFS table (S<b>108</b>).</p>
+<p id="p-0102" num="0101">The channel control unit <b>110</b> then judges whether or not the slot#<b>2</b> is registered in the cache management table, i.e., whether or not the data in the slot#<b>2</b> exists in the cache memory <b>130</b> (S<b>110</b>). If the judgment is positive, the channel control unit <b>110</b> reads the data from the cache memory <b>130</b> (S<b>114</b>) and sends it to the host <b>200</b> (S<b>118</b>). If the judgment is negative, the channel control unit <b>110</b> reads the read target data from the slot#<b>2</b> in the pool volume (S<b>112</b>) and sends it to the host <b>200</b> (S<b>118</b>).</p>
+<p id="p-0103" num="0102">The display on a monitor presented to a system administrator regarding the expansion of storage devices in the AOU system is explained below. Examples of the information used when making a decision to expand the storage devices include the percentage of in-use pool volumes&#x2014;the percentage of in-use real storage areas existing in the pool volumes&#x2014;and the in-use portion of each virtual volume.</p>
+<p id="p-0104" num="0103">The percentage of in-use pool volumes is explained below. In the display on the monitor in <figref idref="DRAWINGS">FIG. 21</figref> (the monitor of the management terminal <b>160</b>), the relationships between the time elapsed since the pool volumes came to be used for AOU volumes (virtual volumes), the percentage of in-use pool volumes, and a threshold value for issuing a warning is managed. By having the management terminal <b>160</b> output a message prompting the expansion of the storage devices <b>300</b> when the percentage of in-use pool volumes exceeds the warning threshold value, the scale of expansion of the pool volumes can be estimated.</p>
+<p id="p-0105" num="0104">The in-use portion of each AOU volume will be explained next. Of the total capacity of each AOU volume, only the portion storing actual data (i.e., the portion mapped onto pages) is displayed on the monitor on the management terminal <b>160</b>. With this display, the management terminal <b>160</b> can compare the data usage amount the hosts <b>200</b> recognize and the data usage amount the control circuit <b>100</b> recognizes. When there is a gap between these two, i.e., when many unnecessary files remains mapped onto pages by the control circuit <b>100</b>, the management terminal <b>160</b> can be aware of that situation and the system administrator can determine the timing for performing unnecessary area deletion (deletion of pages where all bits are set to &#x2018;0&#x2019;).</p>
+<p id="p-0106" num="0105">In the foregoing examples, a resident, data-managing program in the hosts sends an order to the control circuit to set &#x2018;0&#x2019; for all the bits in a real storage area; however, the control circuit may check the management information in the file system in the hosts at regular time intervals and, based on the check result, set &#x2018;0&#x2019; for all the bits in a real storage area released from mapping onto a virtual volume. Moreover, open-type or mainframe type hosts may also be used in the storage system.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>The invention claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A storage system comprising:
+<claim-text>a storage pool including a plurality of physical storage areas provided by a plurality of storage devices;</claim-text>
+<claim-text>a plurality of virtual volumes, associated with the storage pool, to each of which a physical storage area in the storage pool can be allocated on a predetermined unit basis after receiving a write access request at least to a region of one of the plurality of virtual volumes, respectively, wherein no physical storage area is allocated to the region of the one of the plurality of virtual volumes before receiving the write access request; and</claim-text>
+<claim-text>a controller which performs a search in the storage pool on the predetermined unit basis for a certain physical storage area storing a specified data pattern, releases the certain physical storage area identified during the search from allocation to a certain region in the plurality of virtual volumes, and allocates the released certain physical storage area to a second region of a second virtual volume of the plurality of virtual volumes after receiving a second write request to the second region of the second virtual volume.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The storage system according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>the controller returns the specified data pattern in response to a read access request to the certain region from which allocation of the certain physical storage area is released.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The storage system according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>the specified data pattern is a data pattern of all zero data.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The storage system according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>the controller has mapping information which manages a relationship between the region of one of the plurality of virtual volumes and the allocated physical storage area in the storage pool.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. A storage system comprising:
+<claim-text>a pool volume to which a plurality of storage extents are allocated from a plurality of storage devices, wherein each of storage extents has a predetermined size;</claim-text>
+<claim-text>a plurality of virtual volumes to each of which a storage extent in the pool volume is mapped after receiving a write access request to a region of one of the plurality of virtual volumes, respectively, wherein no storage extent is mapped to the region of the one of the plurality of virtual volumes before receiving the write access request; and</claim-text>
+<claim-text>a controller which performs a search in the storage pool for a certain storage extent storing a specified data pattern, releases the certain storage extent identified during the search from allocation to a certain region in the plurality of virtual volumes, and allocates the released certain storage extent to a second region of a second virtual volume of the plurality of virtual volumes after receiving a second write request to the second region of the second virtual volume.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The storage system according to <claim-ref idref="CLM-00005">claim 5</claim-ref>, wherein:
+<claim-text>the controller returns the specified data pattern in response to a read access request to the certain region from which allocation of the certain storage extent is released.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The storage system according to <claim-ref idref="CLM-00005">claim 5</claim-ref>, wherein:
+<claim-text>the specified data pattern is a data pattern of all zero data.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The storage system according to <claim-ref idref="CLM-00005">claim 5</claim-ref>, wherein:
+<claim-text>the controller has mapping information which manages a relationship between the region of the one of the plurality of virtual volumes and the allocated storage extent in the storage pool.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. A method for a storage controller comprising:
+<claim-text>managing a storage pool including a plurality of physical storage areas provided by a plurality of storage devices;</claim-text>
+<claim-text>providing a plurality of virtual volumes, associated with the storage pool, to each of which a physical storage area in the storage pool can be allocated on a predetermined unit basis after receiving a write access request at least to a region of one of the plurality of virtual volumes, respectively, wherein no physical storage area is allocated to the region of the one of the plurality of virtual volumes before receiving the write access request;</claim-text>
+<claim-text>performing a search in the storage pool on the predetermined unit basis for a certain physical storage area storing a specified data pattern;</claim-text>
+<claim-text>releasing the certain physical storage area identified during the search from allocation to a certain region in the plurality of virtual volumes; and</claim-text>
+<claim-text>allocating the released certain physical storage area to a second region of a second virtual volume of the plurality of virtual volumes after receiving a second write request to the second region of the second virtual volume.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method for the storage controller according to <claim-ref idref="CLM-00009">claim 9</claim-ref>, further comprising:
+<claim-text>returning the specified data pattern in response to a read access request to the certain region from which allocation of the certain physical storage area is released.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The method for the storage controller according to <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein:
+<claim-text>the specified data pattern is a data pattern of all zero data.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The method for the storage controller according to <claim-ref idref="CLM-00009">claim 9</claim-ref>, further comprising:
+<claim-text>having mapping information which manages a relationship between the region of the one of the plurality of virtual volumes and the allocated physical storage area in the storage pool.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. A method for a storage controller comprising:
+<claim-text>managing a pool volume to which a plurality of storage extents are allocated from a plurality of storage devices, wherein each of storage extents has a predetermined size;</claim-text>
+<claim-text>providing a plurality of virtual volumes to each of which a storage extent in the pool volume is mapped after receiving a write access request to a region of one of the plurality of virtual volumes, respectively, wherein no storage extent is mapped to the region of the one of the plurality of virtual volumes before receiving the write access request;</claim-text>
+<claim-text>performing a search in the storage pool for a certain storage extent storing a specified data pattern;</claim-text>
+<claim-text>releasing the certain storage extent identified during the search from allocation to a certain region in the plurality of virtual volumes; and</claim-text>
+<claim-text>allocating the released certain storage extent to a second region of a second virtual volume of the plurality of virtual volumes after receiving a second write request to a second region of a second volume.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The method for the storage controller according to <claim-ref idref="CLM-00013">claim 13</claim-ref>, further comprising:
+<claim-text>returning the specified data pattern in response to a read access request to the certain region from which allocation of the certain storage extent is released.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The method for the storage controller according to <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein:
+<claim-text>the specified data pattern is a data pattern of all zero data.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The method for the storage controller according to <claim-ref idref="CLM-00013">claim 13</claim-ref>, further comprising:
+<claim-text>the controller having mapping information which manages a relationship between the region of the one of the plurality of virtual volumes and the allocated storage extent in the storage pool. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

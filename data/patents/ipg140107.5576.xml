@@ -1,0 +1,3309 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626676-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626676</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12726410</doc-number>
+<date>20100318</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>639</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>15</main-group>
+<subgroup>18</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>706 12</main-classification>
+</classification-national>
+<invention-title id="d2e53">Regularized dual averaging method for stochastic and online learning</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>2009/0106173</doc-number>
+<kind>A1</kind>
+<name>Andrew et al.</name>
+<date>20090400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2011/0131046</doc-number>
+<kind>A1</kind>
+<name>Zweig et al.</name>
+<date>20110600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>704251</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00003">
+<othercit>Langford et al., &#x201c;Sparse Online Learning via Truncated Gradient&#x201d;, Journal of Machine Learning, Jul. 4, 2008, pp. 1-23.</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00004">
+<othercit>Almeida et al., &#x201c;Parameter Adaptation in Stochastic Optimization&#x201d;, On-Line Learning in Neural Networks, 2009, pp. 111-134.</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00005">
+<othercit>Kim et al., &#x201c;Convergence of a Generalized Subgradient Method for Nondifferentiable Convex Optimization&#x201d;, Mathematical Programming, vol. 50, 1991, pp. 75-80.</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00006">
+<othercit>Duchi et al., &#x201c;Efficient Online and Batch Learning Using Foward Backward Splitting&#x201d;, Journal of Machine Learning Researh, 10, Dec. 2009, pp. 2899-2934.</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00007">
+<othercit>Zhang, et al., &#x201c;Solving Large Scale Linear Prediction Problems Using Stochastic Gradient Descent Algorithms&#x201d;, Retrieved at &#x3c;&#x3c;http://www.stat.rutgers.edu/&#x2dc;tzhang/papers.icml04-stograd.pdf&#x3e;&#x3e;, Appearing in Proceedings of the 21st International Conference on Machine Learning, Banff, Canada, 2004, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00008">
+<othercit>Zinkevich, Martin, &#x201c;Online Convex Programming and Generalized Infinitesimal Gradient Ascent&#x201d;, Retrieved at &#x3c;&#x3c;http://www.cs.ualberta.ca/&#x2dc;maz/publications/ICML03.pdf&#x3e;&#x3e;, Proceedings of the Twentieth International Conference on Machine Learning (ICML-2003), Washington DC, 2003, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00009">
+<othercit>Auslender, et al., &#x201c;Interior Projection-Like Methods for Monotone Variational Inequalities&#x201d;, Retrieved at &#x3c;&#x3c;http://www.springerlink.com/content/dhbt66xkjwc0yqma/a&#x3e;&#x3e;, Mathematical Programming, vol. 4, Issue 1, Sep. 2005, pp. 39-68.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00010">
+<othercit>Anderson, et al., &#x201c;Discrete Choice Theory of Product Differentation&#x201d;, Retrieved at &#x3c;&#x3c;http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&#x26;tid=5869&#x3e;&#x3e;, Oct. 15, 2009, p. 1.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00011">
+<othercit>Beck, et al., &#x201c;Mirro Descent and Nonlinear Projected Subgradient Methods for Convex Optimization&#x201d;, Retrieved at &#x3c;&#x3c;http://www.sciencedirect.com/science?<sub>&#x2014;</sub>ob=ArticleURL&#x26;<sub>&#x2014;</sub>udi=B6V8M-47S6T8B-2&#x26;<sub>&#x2014;</sub>user=10&#x26;<sub>&#x2014;</sub>rdoc=1&#x26;<sub>&#x2014;</sub>fmt=&#x26;<sub>&#x2014;</sub>orig=search&#x26;<sub>&#x2014;</sub>sort=d&#x26;<sub>&#x2014;</sub>docanchor=&#x26;view=c&#x26;<sub>&#x2014;</sub>searchStrld=1049071045&#x26;<sub>&#x2014;</sub>rerunOrigin=scholar.google&#x26;<sub>&#x2014;</sub>acct=C000050221&#x26;<sub>&#x2014;</sub>version=1&#x26;<sub>&#x2014;</sub>urlVersion=0&#x26;<sub>&#x2014;</sub>userid=10&#x26;md5=92a128abd241a50ab175e12ab4c6ebe5&#x3e;&#x3e; May 2003, Operations Research Letters, vol. 31 Issue 1, pp. 167-175.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00012">
+<othercit>Ben-Tal, et al., &#x201c;The Ordered Subsets Mirror Descent Optimization Method with Applications to Tomography&#x201d;, Retrieved at &#x3c;&#x3c;http://www2.isye.gatech.edu/&#x2dc;nemirovs/SIAM<sub>&#x2014;</sub>ppr<sub>&#x2014;</sub>fin.pdf&#x3e;&#x3e;, Nov. 20, 2004, pp. 34.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00013">
+<othercit>Nemirovsi, Arkadi, &#x201c;Prox-Method with Rate of Convergance O(1/T) for Variational Inequalities with Lipschitz Continuous Montone Operators and Smooth Convex-Concave Saddle Point Problems&#x201d;, Retrieved at &#x3c;&#x3c;http://www2.isye.gatech.edu/&#x2dc;nemiroves/SIOPT<sub>&#x2014;</sub>042562-1.pdf&#x3e;&#x3e;, 20058, pp. 23.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00014">
+<othercit>Nesterov, Yu, &#x201c;Smooth Minimization of Non Smooth Functions&#x201d;, Retrieved at &#x3c;&#x3c;http://www.springerlink.com/content/c7wheayx86u1vfwx/&#x3e;&#x3e;, Mathematical Programming, vol. 103, Issue 1, May 2005, pp. 127-152.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00015">
+<othercit>Nesterov, Yu, &#x201c;Excessive Gap Technique in Nonsmooth Convex Minimization&#x201d;, Retrieved at &#x3c;&#x3c;http://www.core.ucl.ac.be/&#x2dc;nesterov/Research/Papers/PDSwing-FINAL.pdf&#x3e;&#x3e;, 2005, pp. 14.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00016">
+<othercit>Nesterov, Yu, &#x201c;Dual Extrapolation and its Applications for Solving Variational Inequalities and Related Problems&#x201d;, Retrieved at &#x3c;&#x3c;http://www.springerlink.com/content/hr2g043g40216278/fulltext.pdf&#x3e;&#x3e;, Mathematical Programming, vol. 109, Issue 2-3, Mar. 2007, pp. 319-344.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00017">
+<othercit>Ortega, et al., &#x201c;Iterative Solution of Nonlinear Equations in Several Variables&#x201d;, Retrieved at &#x3c;&#x3c;http://www3.cambridge.org/us/catalogue/catalogue.asp?isbn=0898714613&#x3e;&#x3e;, Oct. 15, 2009, pp. 1-2.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00018">
+<othercit>Andrew, et al., &#x201c;Scalable Training of L1-Regularized Log-Linear Models&#x201d;, &#x3c;&#x3c;http://www.machinelearning.org/proceedings/icml2007/papers/449.pdf&#x3e;&#x3e;, Appearing in Proceedings of the 24th International Conference on Machine Learning, Corvallis, Oregon, 2007, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00019">
+<othercit>Azuma, Kazuoki, &#x201c;Weighted Sums of Certain Dependent Random Variables&#x201d;, Retrieved at &#x3c;&#x3c;http://projecteuclid.org/DPubS/Repository/1.0/Disseminate?view=body&#x26;id=pdf<sub>&#x2014;</sub>1&#x26;handle=euclid.tmj/1178243286&#x3e;&#x3e;, Tohoku Math Journal, vol. 19, No. 3, 1967, pp. 11.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00020">
+<othercit>Balakrishnan, et al., &#x201c;Algorithms for Sparse Linear Classifiers in the Massive Data Setting&#x201d;, Retrieved at &#x3c;&#x3c;http://jmlr.csail.mit.edu/papers/volume9/balakrishnan08a/balakrishnan08a.pdf&#x3e;&#x3e;, Journal of Machine Learning Research 9, Feb. 2008, pp. 25.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00021">
+<othercit>Bartlett, et al., &#x201c;Adaptive Online Gradient Descent&#x201d;, Retrieved at &#x3c;&#x3c;http://www.cs.princeton/edu/&#x2dc;ehazan/papers/EECS-2007-82.pdf&#x3e;&#x3e;, University of California at Berkeley, Technical Report No. UCB/EECS-2007-82, Jun. 14, 2007, pp. 14.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00022">
+<othercit>Beck, et al., &#x201c;A Fast Iterative Shrinkage-Threshold Algorithm for Linear Inverse Problems&#x201d;, Retrieved at &#x3c;&#x3c;http://iew3.technion.ac.il/&#x2dc;becka/papers/71654.pdf&#x3e;&#x3e;, SIAM J. Imaging Sciences, vol. 2, No. 1, Mar. 4, 2009, pp. 183-202.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00023">
+<othercit>Bottou, et al., &#x201c;The Tradeoffs of Large Scale Learning&#x201d;, Retrieved at &#x3c;&#x3c;http://books.nips.cc/papers/files/nips20/NIPS2007<sub>&#x2014;</sub>0726.pdf&#x3e;&#x3e;, 2008, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00024">
+<othercit>Bottou, et al., &#x201c;Large Scale Online Learning&#x201d;, Retrieved at http://yann.lecun.com/exdb/publis/pdf/bottou-lecun-04b.pdf&#x3e;&#x3e;, 2003, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00025">
+<othercit>Body, et al., &#x201c;Convex Optimization&#x201d;, Retrieved at &#x3c;&#x3c;http://www.stanford.edu/&#x2dc;boyd/cvxbook/bv<sub>&#x2014;</sub>cvxbook.pdf&#x3e;&#x3e;, Cambridge University Press, 2004, pp. 730.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00026">
+<othercit>Bradley, et al., &#x201c;Differentiable Sparse Coding&#x201d; Retrieved at &#x3c;&#x3c;http://www.ri.cmu.edu/pub<sub>&#x2014;</sub>files/2008/12/differentiableSparseCoding.pdf&#x3e;&#x3e;, Dec. 2008, pp. 11.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00027">
+<othercit>Bredies, et al., &#x201c;Iterated Hard Shrinkage for Minimization Problems with Sparsity Constraints&#x201d;, Retrieved at &#x3c;&#x3c;http://www.math.uni-bremen.de/&#x2dc;diorenz/docs/bredies2006hardshrinkage.pdf&#x3e;&#x3e;, Jun. 26, 2006, pp. 26.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00028">
+<othercit>Carbonetto, et al., &#x201c;An Interior-Point Stochastic Approximation Method and an L1-Regularized Delta Rule&#x201d;, Retrieved at &#x3c;&#x3c;http://people.cs.ubc.ca/&#x2dc;pcarbo/stocip.pdf&#x3e;&#x3e;, University of British Columbia, Vancouver, B.C., Canada, 2008, pp. 10.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00029">
+<othercit>Chen, et al., &#x201c;Atomic Decomposition by Basis Pursuit&#x201d;, Retrieved at &#x3c;&#x3c;http://www.stanford.edu/group/SOL/papers/BasisPursuit-SIGEST.pdf&#x3e;&#x3e;, Feb. 2, 2001, pp. 31.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00030">
+<othercit>Duchi, et al., &#x201c;Efficient Projections onto the &#x2032;1-Ball for Learning in High Dimensions&#x201d;, Retrieved at &#x3c;&#x3c;http://icml2008.cs.helsinki.fi/papers/361.pdf&#x3e;&#x3e;, Appearing in Proceedings of the 25th International Conference on Machine Learning, Helsinki, Finland, 2008, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00031">
+<othercit>Ferris, et al., &#x201c;Interior-Point Methods for Massive Support Vector Machines&#x201d;, Retrieved at &#x3c;&#x3c;http://pages.cs.wisc.edu/&#x2dc;ferris/papers/siopt-svm.pdf&#x3e;&#x3e;, SIAM J. Optim., vol. 13, No. 3, Jan. 3, 2003, pp. 783-804.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00032">
+<othercit>Figueiredo, et al., &#x201c;Gradient Projection for Sparse Reconstruction: Application to Compressed Sensing and Other Inverse Problems&#x201d;, Retrieved at &#x3c;&#x3c;http://www.ece.wisc.edu/&#x2dc;nowak/GPSR.pdf&#x3e;&#x3e;, 2007, pp. 13.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00033">
+<othercit>Hazan, et al., &#x201c;Logarithmic Regret Algorithms for Online Convex Optimization&#x201d;, Retrieved at &#x3c;&#x3c;http://www.cs.princeton.edu/&#x2dc;ehazan/papers/colt.pdf&#x3e;&#x3e;, 2006, pp. 15.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00034">
+<othercit>Joachims, Thorsten, &#x201c;Making Large-Scale Support Vector Machine Learning Practical&#x201d;, Retrieved at &#x3c;&#x3c;http://209.85.229.132/search?q=cache:DtjL7g7nHRkJ:www.joachims.org/publications/joachims<sub>&#x2014;</sub>99a.ps.gz+Making+Large-Scale+Support+Vector+Machine+Learning+Practical&#x26;cd=3&#x26;hl=en&#x26;ct=clnk&#x3e;&#x3e;, 1998, pp. 41-56.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00035">
+<othercit>Johansson, et al., &#x201c;A Randomized Incremental Subgradient Method for Distributed Optimization in Networked Systems&#x201d;, Retrieved at &#x3c;&#x3c;http://www.s3.kth.se/&#x2dc;mikaelj/publications/markovusubgradient.pdf&#x3e;&#x3e;, Aug. 19, 2009, pp. 12.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00036">
+<othercit>Juditsky, et al., &#x201c;Recursive Aggregation of Estimators by Mirror Descent Algorithm with Averaging&#x201d;, Retrieved at &#x3c;&#x3c;http://www.proba.jussieu.fr/pageperso/tsybakov/mirror.pdf&#x3e;&#x3e;, Problemsof Information Transmission, vol. 41, No. 4, Jul. 26, 2005, pp. 368-384.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00037">
+<othercit>Juditsky, et al., &#x201c;Solving Variational Inequalities with Stochastic Mirror-Prox Algorithms&#x201d;, Retrieved at &#x3c;&#x3c;http://www2.isye.gatech.edu/&#x2dc;nemirovs/SMP.pdf&#x3e;&#x3e;, Jun. 2, 2008, pp. 32.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00038">
+<othercit>Kivinen, Jyrki, &#x201c;Exponentiated Gradient Versus Gradient Descent for Linear Predictors&#x201d;, Retrieved at &#x3c;&#x3c;http://users.soe.ucsc.edu/&#x2dc;manfred/pubs/J36.pdf&#x3e;&#x3e;, Information and Computation 132, 1997, pp. 1-63.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00039">
+<othercit>Lan, Guanghui, &#x201c;Efficient Methods for Stochastic Composite Optimization&#x201d;, Retrieved at &#x3c;&#x3c;http://www.optimization-online.org/DB<sub>&#x2014;</sub>FILE/2008/08/2061.pdf&#x3e;&#x3e;, School of Industrial and Systems Engineering, Georgia Institute of Technology, Atlanta, GA, Jun. 21, 2008, pp. 21.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00040">
+<othercit>Lan, et al., &#x201c;Validation Analysis of Robust Stochastic Approximation Methods&#x201d;, Retrieved at &#x3c;&#x3c;http://www2.isye.gatech.edu/&#x2dc;nemirovs/MP<sub>&#x2014;</sub>Valid<sub>&#x2014;</sub>2011.pdf&#x3e;&#x3e;, Feb. 4, 2011, pp. 34.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00041">
+<othercit>Langford, et al., &#x201c;Sparse Online Learning via Truncated Gradient&#x201d;, Retrieved at &#x3c;&#x3c;http://jmlr.csail.mit.edu/papers/volume10/langford09a/langford09a.pdf&#x3e;&#x3e;, Journal of Machine Learning Research 10, Mar. 2009, pp. 777-801.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00042">
+<othercit>Lecun, et al., &#x201c;Gradient-Based Learning Applied to Document Recognition&#x201d;, Retrieved at &#x3c;&#x3c;http://www.research.att.com/&#x2dc;haffner/biblio/pdf/lecun-98.pdf&#x3e;&#x3e;, Jul. 13, 1998, pp. 1.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00043">
+<othercit>Lu, Zhaosong, &#x201c;Gradient Based Method for Cone Programming With Application to Large-Scale Compressed Sensing&#x201d;, Retrieved at &#x3c;&#x3c;http://www.math.sfu.ca/&#x2dc;zhaosong/ResearchPapers/gradCP.pdf&#x3e;&#x3e;, Sep. 3, 2008, pp. 27.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00044">
+<othercit>Nedic, et al., &#x201c;Incremental Subgradient Methods for Nondifferentiable Optimization&#x201d;, Retrieved at &#x3c;&#x3c;http://web.mit.edu/dimitrib/www/Increm<sub>&#x2014;</sub>LIDS.pdf&#x3e;&#x3e;, SIAM J. on Optimization, Sep. 2009, pp. 36.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00045">
+<othercit>Juditsky, et al., &#x201c;Stochastic Approximization Approach to Stochastic Programming&#x201d;, Retrieved at &#x3c;&#x3c;http://www2.isye.gatech.edu/&#x2dc;nemirovs/SA<sub>&#x2014;</sub>Sept25<sub>&#x2014;</sub>final.pdf&#x3e;&#x3e;, 2009, pp. 35.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00046">
+<othercit>Nesterov, Yu, &#x201c;Smooth Minimization of Non Smooth&#x201d;, Retrieved at &#x3c;&#x3c;http://www.springerlink.com/content/c7wheayx86u1vfwx/&#x3e;&#x3e;, Mathematical Programming, vol. 103, Issue 1, May 2005, pp. 127-152.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00047">
+<othercit>Nesterov, Yu, &#x201c;Gradient Methods for Minimizing Composite Objective Function&#x201d;, Retrieved at &#x3c;&#x3c;http://www.optimization-online.org/DB<sub>&#x2014;</sub>FILE/2007/09/1784.pdf&#x3e;&#x3e;, Sep. 2007, pp. 31.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00048">
+<othercit>Nesterov, Yu, &#x201c;Primal-Dual Subgradient Methods for Convex Problems&#x201d;, Retrieved at &#x3c;&#x3c;https://commerce.metapress.com/content/b441795t5254m533/resource-secured/?target=fulltext.pdf&#x26;sid=qoxj2wbkelned45ege1fcas&#x26;sh=www.springerlink.com&#x3e;&#x3e;, Mathematical Programming, vol. 120, 2009, pp.221-259.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00049">
+<othercit>Platt, John C., &#x201c;Fast Training of Support Vector Machine Using Sequential Minimal Optimization&#x201d;, Retrieved at &#x3c;&#x3c;http://research.microsoft.com/pubs/68391/smo-book.pdf&#x3e;&#x3e;, Aug. 14, 2000, pp. 25.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00050">
+<othercit>Robbins et al., &#x201c;A Stochastic Approximation Method&#x201d;, Retrieved at &#x3c;&#x3c;http://projecteuclid.org/DPubS/Repository/1.0/Disseminate?view=body&#x26;id=pdf<sub>&#x2014;</sub>1&#x26;handle=euclid.aoms/1177729586&#x3e;&#x3e;, Sep. 1951, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00051">
+<othercit>Kakade, et al., &#x201c;Mind the Duality Gap: Logarithmic Regret Algorithms for Online Optimization&#x201d;, Retrieved at &#x3c;&#x3c;http://ttic.uchicago.edu/&#x2dc;shai/papers/KakadeSh08.pdf&#x3e;&#x3e;, 2008, pp. 10.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00052">
+<othercit>Shalev-Shwartz, et al., &#x201c;Pegasos: Primal Estimated sub-Gradient Solver for SVM&#x201d;, Retrieved at &#x3c;&#x3c;http://www.machineleaming.org/proceedings/icml2007/papers/587.pdf&#x3e;&#x3e;, Appearing in Proceedings of the 24th International Conference on Machine Learning, Corvallis, Oregon, 2007, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00053">
+<othercit>Strassen, V., &#x201c;The Existence of Probability Measures With Given Marginals&#x201d;, Retrieved at &#x3c;&#x3c;http://projecteuclid.org/DPubS/Repository/1.0/Disseminate?view=body&#x26;id=pdf<sub>&#x2014;</sub>1&#x26;handle=euclid.aoms/1177700153&#x3e;&#x3e;, Annals of Mathematical Statistics, vol. 36, No. 2, 1965, pp. 423-439.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00054">
+<othercit>Tibshirani, Robert, &#x201c;Regression Shrinkage and Selection via the Lasso&#x201d;, Retrieved at &#x3c;&#x3c;http://www.stat.osu.edu/&#x2dc;yklee/882/yongganglasso.pdf&#x3e;&#x3e;, Oct. 19, 2006, pp. 12.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00055">
+<othercit>Tseng, Paul, &#x201c;On Accelerated Proximal Gradient Methods for Convex-Concave Optimization&#x201d;, Retrieved at &#x3c;&#x3c;http://www.math.washington.edu/&#x2dc;tseng/papers/apgm.pdf&#x3e;&#x3e;, May 21, 2008, pp. 20.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00056">
+<othercit>Tseng, et al., &#x201c;On the Convergence of Exponential Multiplier Method for Convex Programming&#x201d;, Retrieved at &#x3c;&#x3c;http://web.mit.edu/dimitrib/www/Expmult.pdf&#x3e;&#x3e;, Math Programming, vol. 60, 1993, pp. 1-19.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00057">
+<othercit>Wright, et al., &#x201c;Sparse Reconstruction by Separable Approximation&#x201d;, Retrieved at &#x3c;&#x3c;http://www.lx.it.pt/&#x2dc;mtf/SpaRSA/Wright<sub>&#x2014;</sub>Nowak<sub>&#x2014;</sub>Figueiredo<sub>&#x2014;</sub>revised<sub>&#x2014;</sub>twocolumns.pdf&#x3e;&#x3e;, 2008, pp. 14.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00058">
+<othercit>Zhang, Tong, &#x201c;Solving Large Scale Linear Prediction Problems Using Stochastic Gradient Descent Algorithms&#x201d;, Retrieved at &#x3c;&#x3c;http://www.stat.rutgers.edu/&#x2dc;tzhang/papers/icml04-stograd.pdf&#x3e;&#x3e;, Appearing in Proceedings of the 21st International Conference on Machine Learning, Banff, Canada, 2004. pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00059">
+<othercit>Zinkevich, Martin, &#x201c;Online Convex Programming and Generalized Infinitesimal Gradient Ascent&#x201d;, Retrieved at &#x3c;&#x3c;http://www.cs.ualberta.ca/&#x2dc;maz/publications/ICML03.pdf&#x3e;&#x3e;, Proceedings of the Twentieth International Conference on Machine Learning (ICML-2003), 2003, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00060">
+<othercit>Boyd, et al., &#x201c;Stochastic Subgradient Methods&#x201d;, Retrieved at &#x3c;&#x3c;http://see.stanford.edu/materials/lsocoee364b/04-stoch<sub>&#x2014;</sub>subgrad<sub>&#x2014;</sub>notes.pdf&#x3e;&#x3e;, Notes EE364b, Stanford University, Winter 2006-2007, Apr. 13, 2008. pp. 14.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00061">
+<othercit>Shalev-Shwartz, et al., &#x201c;Stochastic Methods for &#x3c6;1 Regularized Loss Minimization&#x201d;, Retrieved at &#x3c;&#x3c;http: http://www.cs.mcgill.ca/&#x2dc;icml2009/papers/262.pdf&#x3e;&#x3e;, Appearing in Proceedings of the 26th International Conference on Machine Learning, Montreal, Canada, 2009. pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00062">
+<othercit>Do, et al., &#x201c;Proximal regularization for online and batch learning&#x201d;, Retrieved at &#x3c;&#x3c;http://ai.stanford.edu/&#x2dc;chuongdo/papers/proximal.pdf&#x3e;&#x3e;, Appearing in Proceedings of the 26th International Conference on Machine Learning, Montreal, Canada, 2009. pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00063">
+<othercit>Goldberg, et al., &#x201c;Online Manifold Regularization: A New Learning Setting and Empirical Study&#x201d;, Retrieved at &#x3c;&#x3c;http://pages.cs.wisc.edu/&#x2dc;jerryzhu/pub/onlinerptree.pdf&#x3e;&#x3e;, 2008, pp. 15.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00064">
+<othercit>Tsuruoka, et al., &#x201c;Stochastic Gradient Descent Training for L1-regularized Log-linear Models with Cumulative Penalty&#x201d;, Retrieved at &#x3c;&#x3c;http://www.aclweb.org/anthology/P/P09/P09-1054.pdf&#x3e;&#x3e;, Proceedings of the 47th Annual Meeting of the ACL and the 4th IJCNLP of the AFNLP, Aug. 2-7, 2009, pp. 477-485.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00065">
+<othercit>Wu, et al., &#x201c;Adaptive Regularization through Entire Solution Surface&#x201d;, Retrieved at &#x3c;&#x3c;http://www.stat.umn.edu/&#x2dc;xshen/paper/rev.pdf&#x3e;&#x3e;, Jan. 2009, pp. 32.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00066">
+<othercit>Blitzer, et al., &#x201c;Biographies, Bollywood, Boom-Boxes and Blenders: Domain Adaptation for Sentiment Classification&#x201d;, Retrieved at &#x3c;&#x3c;http://www.cs.jhu.edu/&#x2dc;mdredze/publications/sentiment<sub>&#x2014;</sub>acl07.pdf&#x3e;&#x3e;, Jun. 2007, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00067">
+<othercit>Chen, et al., &#x201c;Convergence Rates in Forward-Backward Splitting&#x201d;, Retrieved at &#x3c;&#x3c;http://www.math.washington.edu/&#x2dc;rtr/papers/rtr-ForwardBackwardSplitting.pdf&#x3e;&#x3e;, 1997, pp. 25.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00068">
+<othercit>Combettes, et al., &#x201c;Signal Recovery by Proximal Forward-Backward Splitting&#x201d;, Retrieved at &#x3c;&#x3c;http://www.ann.jussieu.fr/&#x2dc;plc/mms1.pdf&#x2033;, 2005, pp. 33.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00069">
+<othercit>Daubechies, et al., &#x201c;Accelerated Projected Gradient Method for Linear Inverse Problems with Sparsity Constraints&#x201d;, Retrieved at &#x3c;&#x3c;http://www.ricam.oeaw.ac.at/people/page/fornasier/DFL07c.pdf&#x3e;&#x3e;, Journal of Fourier Analysis and Applications, 2004, pp. 32.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00070">
+<othercit>Duchi, et al., &#x201c;Efficient Projections Onto the &#x3c1;1 -Ball for Learning in High Dimensions&#x201d;, Retrieved at &#x3c;&#x3c;http://www.machineleaming.org/archive/icml2008/papers/361.pdf&#x3e;&#x3e;, Appearing in the Proceedings of the 25th International Conference on Machine Learning, Helsinki, Finland, 2008, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00071">
+<othercit>Grangier, et al., &#x201c;A Discriminative Kernel-Based Model to Rank Images from Text Queries&#x201d;, Retrieved at &#x3c;&#x3c;http://david.grangier.info/pub/papers/2007/grangier-tpami-2007.pdf, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2006, pp. 14.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00072">
+<othercit>Hale, et al., &#x201c;A Fixed-Point Continuation Method for &#x3c1;1-Regularized Minimization with Applications to Compressed Sensing&#x201d;, Retrieved at &#x3c;&#x3c;http://www.caam.rice.edu/&#x2dc;zhang/reports/tr0707.pdf&#x2033;, Department of Computational and Applied Mathematics, CAAM Techincal Report, Jul. 7, 2007, pp. 45.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00073">
+<othercit>Hazan, et al., &#x201c;Logarithmic Regret Algorithms for Online Convex Optimization&#x201d;, Retrieved at &#x3c;&#x3c;http://www.cs.princeton.edu/&#x2dc;ehazan/papers/colt.pdf&#x3e;&#x3e;, May 20, 2007, pp. 15.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00074">
+<othercit>Koh, et al, &#x201c;An Interior-Point Method for Large-Scale &#x3c1;1-Regularized Logistic Regression&#x201d;, Retrieved at &#x3c;&#x3c;http://jmir.csail.mit.edu/papers/volume8/koh07a/koh07a.pdf&#x3e;&#x3e;, Journal of Machine Learning Research, Jul. 2007, pp. 37.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00075">
+<othercit>Langford, et al., &#x201c;Sparse Online Learning via Truncated Gradient&#x201d;, Retrieved at &#x3c;&#x3c;http://jmir.csail.mit.edu/papers/volume10/langford09a/langford09a.pdf&#x3e;&#x3e;, Journal of Machine Learning Research, Mar. 2009, pp. 25.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00076">
+<othercit>Meier, et al., &#x201c;The Group Lasso for Logistic Regression&#x201d;, Retrieved at &#x3c;&#x3c;ftp://ftp.stat.math.ethz.ch/Research-Reports/Other-Manuscripts/buhlmann/lukas-sara-peter.pdf&#x3e;&#x3e;, J.R. Statist. Soc. B, 2008, pp. 53-71.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00077">
+<othercit>Meinshausen et al., &#x201c;High Dimensional Graphs and Variable Selection with the Lasso&#x201d;, Retrieved at &#x3c;&#x3c;http://www.stats.ox.ac.uk/&#x2dc;meinshau/consistent.pdf&#x3e;&#x3e;, 2006, pp. 32.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00078">
+<othercit>Nesterov et al., &#x201c;Gradient Methods for Minimizing Composite Objective Function&#x201d;, Retrieved at http://www.ecore.be/DPs/dp<sub>&#x2014;</sub>1191313936.pdf&#x3e;&#x3e;, Sep. 2007, pp. 32.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00079">
+<othercit>Obozinski, et al., &#x201c;Joint Covariate Selection for Grouped Classification&#x201d;, Retrieved at &#x3c;&#x3c;http://www.stat.berkeley.edu/tech-reports/743.pdf&#x3e;&#x3e;, Technical Report 743, Department of Statistics, UC Berkeley, Retrieved on Oct. 15, 2009, pp. 20.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00080">
+<othercit>Obozinski et al., &#x201c;High-Dimensional Union Support Recovery in Multivariate Regression&#x201d;, Retrieved at &#x3c;&#x3c;http://www.stat.berkeley.edu/&#x2dc;gobo/nips|1|2preproc.pdf&#x3e;&#x3e;, 2008, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00081">
+<othercit>Owen, Art B., &#x201c;A Robust Hybrid of Lasso and Ridge Regression&#x201d;, Retrieved at &#x3c;&#x3c;http://www-stat.stanford.edu/&#x2dc;owen/reports/hhu.pdf&#x3e;&#x3e;, Oct. 2006, pp. 14.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00082">
+<othercit>Quattoni, et al., &#x201c;An Efficient Projection for L1, Infinity Regularization&#x201d;, Retrieved at &#x3c;&#x3c;http://www.isi.upc.edu/&#x2dc;aquattoni/AllMyPapers/icml<sub>&#x2014;</sub>09.pdf&#x3e;&#x3e;, 2009, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00083">
+<othercit>Schmidt, et al., &#x201c;Optimizing Costly Functions with Simple Constraints: A Limited-Memory Projected Quasi-Newton Method&#x201d;, Retrieved at &#x3c;&#x3c;http://jmir.csail.mit.edu/proceedings/papers/v5/schmidt09a/schmidt09a.pdf&#x3e;&#x3e;, Appearing in Proceedings of the 12th International Conference on Artificial Intelligence and Statistics (AISTATS), Clearwater Beach, Florida, USA, 2009, pp. 456-463.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00084">
+<othercit>Shwartz, et al., &#x201c;Logarithmic Regret Algorithms for Strongly Convex Repeated Games&#x201d;, Retrieved at &#x3c;&#x3c;http://ttic.uchicago.edu/&#x2dc;shai/papers/ShalevSi07report.pdf&#x3e;&#x3e;, May 20, 2007, pp. 16.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00085">
+<othercit>Shalev-Shwartz et al., &#x201c;Stochastic Methods for &#x3c1;1-Regularized Loss Minimization&#x201d;, Retrieved at &#x3c;&#x3c;http://www.cs.mcgill.ca/&#x2dc;icml2009/papers/262.pdf&#x3e;&#x3e;, Appearing in Proceedings of the 26th International Conference on Machine Learning, Montreal, Canada, 2009, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00086">
+<othercit>Shalev-Shwartz et al., &#x201c;Pegasos: Primal Estimated Sub-Gradient Solver for SVM&#x201d;, Retrieved at &#x3c;&#x3c;http://www.machineleaming.org/proceedings/icml2007/papers/587.pdf&#x3e;&#x3e;, Appearing in Proceedings of the 24th International Conference on Machine Learning, Corvallis, Oregon, 2007, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00087">
+<othercit>Michie, et al., &#x201c;Machine Learning, Neural and Statistical Classification&#x201d;, Retrieved at &#x3c;&#x3c;http://www.maths.leeds.ac.uk/&#x2dc;charles/statlog/whole.pdf&#x3e;&#x3e;, Feb. 17, 1994, pp. 298.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00088">
+<othercit>Tseng, et al., &#x201c;A Coordinate Gradient Descent Method for Nonsmooth Separable Minimization&#x201d;, Retrieved at &#x3c;&#x3c;http:// www.csie.ntu.edu.tw/&#x2dc;b99902019/l1lTeng&#x26;Yun.pdf&#x3e;&#x3e;, Aug. 1, 2007, pp. 37.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00089">
+<othercit>Wright et al., &#x201c;Sparse Reconstruction by Separable Approximation&#x201d;, Retrieved at &#x3c;&#x3c;http://www.lx.it.pt/&#x2dc;mtf/SpaRSA/Wright<sub>&#x2014;</sub>Nowak<sub>&#x2014;</sub>Figueiredo<sub>&#x2014;</sub>revised<sub>&#x2014;</sub>twocolumns.pdf&#x3e;&#x3e;, 2009, pp. 14.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00090">
+<othercit>Zhao et al., &#x201c;On Model Selection Consistency of Lasso&#x201d;, Retrieved at &#x3c;&#x3c;http://jmir.csail.mit.edu/papers/volume7/zhao06a/zhao06a.pd&#x3e;&#x3e;, Journal of Machine Learning Research, Nov. 2006, pp. 23.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00091">
+<othercit>Zhao, et al., &#x201c;Grouped and Hierarchical Model Selection through Composite Absolute Penalties&#x201d;, Retrieved at &#x3c;&#x3c;http://www.stat.berkeley.edu/tech-reports/703.pdf&#x3e;&#x3e;, Apr. 17, 2006, pp. 36.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00092">
+<othercit>Zinkevich, Martin, &#x201c;Online Convex Programming and Generalized Infinitesimal Gradient&#x201d;, Proceedings of the Twentieth International Conference on Machine Learning (ICML-2003), Washington, DC, 2003, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00093">
+<othercit>&#x201c;UCI Machine Learning Repository&#x201d;, Retrieved at &#x3c;&#x3c;http://archive.ics.uci.edu/ml/&#x3e;&#x3e;, Oct. 15, 2009, pp. 2.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00094">
+<othercit>Balakrishnan, et al., &#x201c;Algorithms for Sparse Linear Classifiers in the Massive Data Setting&#x201d;, Retrieved at &#x3c;&#x3c;http://jmir.csail.mit.edu/papers/volume9/balakrishnan08a/balakrishnan08a.pdf&#x3e;&#x3e;, Journal of Machine Learning Research, Feb. 2008, pp. 25.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00095">
+<othercit>Carpenter, Bob, &#x201c;Lazy Sparse Stochastic Gradient Descent for Regularized Multinomial Logistic Regression&#x201d;, Retrieved at &#x3c;&#x3c;http://lingpipe.files.wordpress.com/2008/04/lazysgdregression.pdf&#x3e;&#x3e;, 2008, pp. 20.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00096">
+<othercit>Cesa-Bianchi, et al., &#x201c;Worst-Case Quadratic Loss Bounds for Prediction Using Linear Functions and Gradient Descent&#x201d;, Retrieved at &#x3c;&#x3c;http://homes.di.unimi.it/&#x2dc;cesabian/Pubblicazioni/J4.pdf&#x3e;&#x3e;, May 1996, pp. 16.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00097">
+<othercit>Chu, et al., &#x201c;Map-Reduce for Machine Learning on Multicore&#x201d;, Retrieved at &#x3c;&#x3c;http://www.cs.stanford.edu/people/ang//papers/nips06-mapreducemulticore.pdf&#x3e;&#x3e;, 2006, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00098">
+<othercit>Dekel, et al., &#x201c;The Forgetron: A Kernel-Based Perceptron on a Fixed Budget&#x201d;, Retrieved at &#x3c;&#x3c;http://books.nips.cc/papers/files/nips18/NIPS2005<sub>&#x2014;</sub>0192.pdf&#x3e;&#x3e;, 2008, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00099">
+<othercit>Duchi, et al., &#x201c;Online and Batch Learning Using Forward Looking Subgradients&#x201d;, Retrieved at &#x3c;&#x3c;http://www.cs.berkeley.edu/&#x2dc;jduchi/projects/DuchiSi09a.pdf&#x3e;&#x3e;, Oct. 2009, pp. 37.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00100">
+<othercit>Duchi, et al., &#x201c;Efficient Projections Onto the &#x3c1;1-Ball for Learning in High Dimensions&#x201d;, Retrieved at http://www.machineleaming.org/archive/icml2008/papers/361.pdf&#x3e;&#x3e;, Appearing in the Proceedings of the 25th International Conference on Machine Learning, Helsinki, Finland, 2008, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00101">
+<othercit>Kivinen, et al., &#x201c;Exponentiated Gradient Versus Gradient Descent for Linear Predictors&#x201d;, Retrieved at &#x3c;&#x3c;http://users.soe.ucsc.edu/&#x2dc;manfred/pubs/J36.pdf&#x3e;&#x3e;, Information and Computation 132, Article No. IC962612, 1997, pp. 63.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00102">
+<othercit>Langford, et al., &#x201c;Vowpal Wabbit (Fast Online Learning)&#x201d;, Retrieved at &#x3c;&#x3c;http://hunch.net/&#x2dc;vw/&#x3e;&#x3e;, Oct. 15, 2009, pp. 2.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00103">
+<othercit>Lee, et al., &#x201c;Efficient Sparse Coding Algorithms&#x201d;, Retrieved at &#x3c;&#x3c;http://www.stanford.edu/&#x2dc;hllee/nips06-sparsecoding.pdf&#x3e;&#x3e;, Oct. 15, 2009, pp. 8.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00104">
+<othercit>Lewis et al., &#x201c;RCV1: A New Benchmark Collection for Text Categorization Research&#x201d;, Retrieved at &#x3c;&#x3c;http://jmir.csail.mit.edu/papers/volume5/lewis04a/lewis04a.pdf&#x3e;&#x3e;, Journal of Machine Learning Research 5, Apr. 2004, pp. 37.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00105">
+<othercit>Littlestone, Nick, &#x201c;Learning Quickly When Irrelevant Attributes Abound: A New Linear-Threshold Algorithms&#x201d;, Retrieved at &#x3c;&#x3c;http://www.cs.utsa.edu/&#x2dc;bylander/cs6243/littlestone1988.pdf&#x3e;&#x3e;, Machine Learning 2, 1988, pp. 285-318.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00106">
+<othercit>Littlestone, et al., &#x201c;On-Line Learning of Linear Functions&#x201d;, Retrieved at &#x3c;&#x3c;http://www.phillong.info/publications/linear.pdf&#x3e;&#x3e;, 1991, pp. 23.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00107">
+<othercit>Sjostrand, Karl, &#x201c;Matlab Implementation of LASSO, LARS, the Elastic Net and SPCA&#x201d;, Retrieved at &#x3c;&#x3c;http://www2.imm.dtu.dk/pubdb/views/publication<sub>&#x2014;</sub>details.php?id=3897&#x3e;&#x3e;, Oct. 15, 2009, p. 1.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00108">
+<othercit>Tibshirani, Robert, &#x201c;Regression Shrinkage and Selection via the Lasso&#x201d;, Retrieved at &#x3c;&#x3c;http://www.statistik.tu-dortmund.de/fileadmin/user<sub>&#x2014;</sub>upload/Lehrstuehle/Genetik/MW0910/Tibshirani1996.pdf&#x3e;&#x3e;, Journal of the Royal Statistical Society, Series B (Methodological), vol. 58, No. 1, 1996, pp. 267-288.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>17</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>None</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>4</number-of-drawing-sheets>
+<number-of-figures>4</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110231348</doc-number>
+<kind>A1</kind>
+<date>20110922</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Xiao</last-name>
+<first-name>Lin</first-name>
+<address>
+<city>Redmond</city>
+<state>WA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Xiao</last-name>
+<first-name>Lin</first-name>
+<address>
+<city>Redmond</city>
+<state>WA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Gonzalez Saggio &#x26; Harlan LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Microsoft Corporation</orgname>
+<role>02</role>
+<address>
+<city>Redmond</city>
+<state>WA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Gaffin</last-name>
+<first-name>Jeffrey A</first-name>
+<department>2129</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Smith</last-name>
+<first-name>Paulinho E</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A technology is presented by which a learned mechanism is developed by solving a minimization problem by using regularized dual averaging methods to provide regularized stochastic learning and online optimization. An objective function sums a loss function of the learning task and a regularization term. The regularized dual averaging methods exploit the regularization structure in an online learning environment, in a manner that obtains desired regularization effects, e.g., sparsity under L<sub>1</sub>-regularization.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="259.42mm" wi="181.69mm" file="US08626676-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="244.18mm" wi="156.04mm" orientation="landscape" file="US08626676-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="260.27mm" wi="180.51mm" file="US08626676-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="262.97mm" wi="176.45mm" file="US08626676-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="256.71mm" wi="179.66mm" orientation="landscape" file="US08626676-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND</heading>
+<p id="p-0002" num="0001">In general, machine learning operates by processing a set of examples to develop a learned mechanism, such that when given new data the learned mechanism can correctly estimate a result. For example, machine learning may be used to train a classifier with samples, such that in later use, the classifier correctly classifies unknown input, e.g., a handwritten character.</p>
+<p id="p-0003" num="0002">One problem that occurs in machine learning is overfitting, in which the mechanism being learned fits the particular set of examples too closely. When enough of the examples are bad examples (e.g., noisy or associated with other errors such as mislabeled), the learned mechanism learns relatively too much from the bad examples and is thus not as accurate when later processing new data. Regularization generally refers to preventing such overfitting.</p>
+<p id="p-0004" num="0003">Online learning algorithms are those that process samples sequentially as each becomes available, in contrast to having to process significant other data (e.g., a whole set of samples together). In general, online algorithms operate by repetitively drawing random examples, one at a time, and adjusting learning variables using calculations that are usually based on the single example only. Because of the sequential, one-at-a-time approach, online algorithms are often used to solve large-scale learning problems.</p>
+<p id="p-0005" num="0004">Traditional online algorithms, such as stochastic gradient descent, have limited capability for solving regularized learning problems. What is needed are methods for stochastic and/or online learning that obtain desired regularization effects, e.g., desired sparsity in the training parameters.</p>
+<heading id="h-0002" level="1">SUMMARY</heading>
+<p id="p-0006" num="0005">This Summary is provided to introduce a selection of representative concepts in a simplified form that are further described below in the Detailed Description. This Summary is not intended to identify key features or essential features of the claimed subject matter, nor is it intended to be used in any way that would limit the scope of the claimed subject matter.</p>
+<p id="p-0007" num="0006">Briefly, various aspects of the subject matter described herein are directed towards a technology by which a learned mechanism (e.g., a classifier) is developed by solving a minimization problem that includes a loss function and a regularization term. Data items are processed, including computing and maintaining information (e.g., a running weight average) representative of a computed optimization variable and previously computed optimization variables. A subgradient is also computed based upon the optimization variable, and information (e.g., a running subgradient average) representative of the computed subgradient and previously computed subgradients is computed and maintained. A next iterate may be computed by solving an auxiliary minimization problem to obtain desired regularization effects, such as sparsity in the case of L1-regularization.</p>
+<p id="p-0008" num="0007">Other advantages may become apparent from the following detailed description when taken in conjunction with the drawings.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0009" num="0008">The present invention is illustrated by way of example and not limited in the accompanying figures in which like reference numerals indicate similar elements and in which:</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram showing example components for developing and using a machine-learned mechanism via regularized dual averaging methods.</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 2</figref> is a flow diagram representing a general regularized dual averaging method.</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 3</figref> is a flow diagram representing an L1-regularized dual averaging method.</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 4</figref> shows an illustrative example of a computing environment into which various aspects of the present invention may be incorporated.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0014" num="0013">Various aspects of the technology described herein are generally directed towards a class of online algorithms, referred to herein as regularized dual averaging (RDA) methods, which obtain effectively regularized solutions for stochastic learning and/or online optimization problems by exploiting the regularization structure in an online setting. In one implementation, an algorithm computes sequential solutions for the stochastic learning and online optimization problems by solving a minimization problem that involves the running average of the previous subgradients of the cost function and the whole regularization term, without any discounting or diminishing weight. For general convex regularizations, the regularized dual averaging method achieves an optimal convergence rate O(1/&#x221a;{square root over (t)}), where t is the number of iterations or samples in an online algorithm. For strongly convex regularizations, a variant that uses different parameters is also described that has a faster convergence rate, namely O(ln t/t).</p>
+<p id="p-0015" num="0014">While various examples are described herein, such as online optimization for developing a classifier, the regularized dual averaging algorithms may be used in any application that is directed towards such online optimization problems. Other example applications include online prediction of time series and sequential investment, batch learning, support vector machines, logistic regression, compressed sensing, and so forth. As such, the present invention is not limited to any particular embodiments, aspects, concepts, structures, functionalities or examples described herein. Rather, any of the embodiments, aspects, concepts, structures, functionalities or examples described herein are non-limiting, and the present invention may be used in various ways that provide benefits and advantages in computing, and stochastic and/or online learning in general.</p>
+<p id="p-0016" num="0015">Turning to <figref idref="DRAWINGS">FIG. 1</figref>, there is shown a block diagram representing example components for online development and subsequent usage of a machine learned mechanism <b>102</b>, such as a classifier. Sequential input <b>104</b> is provided to a regularized dual averaging algorithm <b>106</b> (described below with reference to <figref idref="DRAWINGS">FIGS. 2 and 3</figref>), which among other operations computes and maintains running averages <b>108</b>. When the input data <b>104</b> has been processed, based on a number of samples or iterations, the machine learned mechanism <b>102</b> is developed and ready for use.</p>
+<p id="p-0017" num="0016">In usage, unknown data <b>110</b> is input to the machine learned mechanism <b>102</b>, which then outputs appropriate results <b>112</b>, e.g., a classification result, or a set of probabilities for possible results. For example, if the data <b>110</b> corresponds to a handwritten character, the machine learned mechanism <b>102</b> may output a recognized character, or a set of possible characters each with a probability value as to its likelihood of correctness.</p>
+<p id="p-0018" num="0017">The dual averaging algorithm <b>106</b> addresses the problem of obtaining effectively regularized solutions for stochastic learning and/or online optimization problems. More specifically, there is described an algorithm for solving two classes of problems. A first class of problems are stochastic learning problems of the form:</p>
+<p id="p-0019" num="0018">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mrow>
+  <munder>
+    <mi>minimize</mi>
+    <mi>w</mi>
+  </munder>
+  <mo>&#x2062;</mo>
+  <mrow>
+    <mo>{</mo>
+    <mrow>
+      <mrow>
+        <mi>&#x3d5;</mi>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mi>w</mi>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+      <mo>&#x2062;</mo>
+      <mover>
+        <mo>=</mo>
+        <mi>&#x394;</mi>
+      </mover>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mrow>
+          <msub>
+            <mi>E</mi>
+            <mi>z</mi>
+          </msub>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mi>f</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mi>w</mi>
+                <mo>,</mo>
+                <mi>z</mi>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>+</mo>
+        <mrow>
+          <mi>&#x3a8;</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>w</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mrow>
+    <mo>}</mo>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+where w&#x3b5;R<sup>n </sup>is the optimization variable (called weights in many learning problems), z=(x,y) is an input-out pair of data items drawn from an (unknown) underlying distribution, &#x192;(w,z) is the loss function of using w&#x3b5;R<sup>n </sup>and x&#x3b5;R<sup>n </sup>to predict y and it is usually assumed to be convex in w, E<sub>Z </sub>denotes taking expectation with respect to the random variable z, and the regularization term &#x3a8;(w) is a closed convex function.
+</p>
+<p id="p-0020" num="0019">Examples of the loss function &#x192;(w,z) include least squares, hinge loss and logistic regression. Examples of the regularization term &#x3a8;(w) include l<sub>1</sub>-regularization (also referred to as L1-regularization with a capital letter &#x2018;L&#x2019; and no following subscript), l<sub>2</sub>-regularization (also referred to as L2-regularization with a capital letter &#x2018;L&#x2019; and no following subscript) and convex constraints in which &#x3a8;(w) is the indicator function of a closed convex set C. More particularly:
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0000">
+    <ul id="ul0002" list-style="none">
+        <li id="ul0002-0001" num="0020">l<sub>1</sub>-regularization: &#x3a8;(w)=&#x3bb;&#x2225;w&#x2225;<sub>1 </sub>with &#x3bb;&#x3e;0. With l<sub>1</sub>-regularization, a relatively sparse solution is desired, that is, with many entries of the weight vector w being zeroes.</li>
+        <li id="ul0002-0002" num="0021">l<sub>2</sub>-regularization: &#x3a8;(w)=(&#x3c3;/2)&#x2225;w<sub>2</sub><sup>2</sup>&#x2225; with &#x3c3;&#x3e;0. When l<sub>2</sub>-regularization is used with the hinge loss function, this provides the standard setup of support vector machines.</li>
+        <li id="ul0002-0003" num="0022">Convex constraints: &#x3a8;(w) is the indicator function of a closed convex set C, i.e.,</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0021" num="0023">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mi>&#x3a8;</mi>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo>(</mo>
+      <mi>w</mi>
+      <mo>)</mo>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <msub>
+        <mi>I</mi>
+        <mi>C</mi>
+      </msub>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo>(</mo>
+        <mi>w</mi>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+    <mo>&#x2062;</mo>
+    <mover>
+      <mo>=</mo>
+      <mi>&#x394;</mi>
+    </mover>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <mo>{</mo>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mn>0</mn>
+              <mo>,</mo>
+            </mrow>
+          </mtd>
+          <mtd>
+            <mrow>
+              <mrow>
+                <mrow>
+                  <mi>if</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mi>w</mi>
+                </mrow>
+                <mo>&#x2208;</mo>
+                <mi>C</mi>
+              </mrow>
+              <mo>,</mo>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mrow>
+                <mo>+</mo>
+                <mi>&#x221e;</mi>
+              </mrow>
+              <mo>,</mo>
+            </mrow>
+          </mtd>
+          <mtd>
+            <mrow>
+              <mi>otherwise</mi>
+              <mo>.</mo>
+            </mrow>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<ul id="ul0003" list-style="none">
+    <li id="ul0003-0001" num="0000">
+    <ul id="ul0004" list-style="none">
+        <li id="ul0004-0001" num="0024">For example, C={w&#x3b5;R<sub>+</sub><sup>n</sup>}, or C={w&#x3b5;R<sup>n</sup>&#x2225;w&#x2225;<sub>1</sub>&#x2266;&#x3b3;} for some &#x3b3;&#x3e;0.
+<br/>
+Mixed regularizations such as &#x3a8;(w)=&#x3bb;&#x2225;w&#x2225;<sub>1</sub>+(&#x3c3;/2)&#x2225;w<sub>2</sub><sup>2</sup>&#x2225; may also be considered.
+</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0022" num="0025">The above examples apply to a wide range of practical problems in machine learning, including pattern recognition and classification, linear and logistic regression, and large-scale compressed sensing. One particular useful case is sparse stochastic and online learning, that is, when the regularization term &#x3a8;(w)=&#x3bb;&#x2225;w&#x2225;<sub>1</sub>, where &#x3bb; is a regularization parameter and &#x2225;w&#x2225;<sub>1 </sub>denotes the l<sub>1</sub>-norm of the weight vector w, i.e., &#x2225;w&#x2225;<sub>1</sub>=&#x3a3;<sub>i=1</sub><sup>n</sup>|w<sub>i</sub>|. In a batch learning case, solving the l<sub>1</sub>-regularized problems tends to produce sparse solutions (only a few nonzero elements in the vector w), while still maintaining good learning performance, e.g., in terms of classification errors. The sparsity in the weight vector w directly translates into a fewer number of queried features for each sample in the data set, and thus saves operational cost in practical implementations.</p>
+<p id="p-0023" num="0026">However, the desired regularization effects (especially sparsity under L1-regularization) have not been achieved by previous stochastic or online algorithms. Indeed, while stochastic or online algorithms are the only feasible approaches in terms of computational complexity for solving very large scale learning problems, previous methods cannot effectively find regularized solutions.</p>
+<p id="p-0024" num="0027">A second class of problems includes regularized online convex optimization problems. In online optimization, an online algorithm generates a sequence of decisions w<sub>t</sub>, by processing a data item at a time, for t=1, 2, 3, . . . . At each time t, a previously unknown cost function &#x192;<sub>t </sub>is revealed, and a loss &#x192;<sub>t</sub>(w<sub>t</sub>) encountered. The cost functions are assumed convex for all t&#x2267;1. A general goal of the online algorithm is to ensure that the total cost up to each time t, &#x3a3;<sub>&#x3c4;=1</sub><sup>t</sup>&#x192;<sub>&#x3c4;</sub>(w<sub>&#x3c4;</sub>), is not much larger than min<sub>w</sub>&#x3a3;<sub>&#x3c4;=1</sub><sup>t</sup>&#x192;<sub>&#x3c4;</sub>(w)he smallest total cost of any fixed decision w from hindsight. The difference between these two costs is called the regret of the online algorithm. Applications of online optimization include online prediction of time series and sequential investment.</p>
+<p id="p-0025" num="0028">In regularized online optimization problems, an online algorithm generates a sequence of decision vectors w<sub>t </sub>for t=1, 2, 3, . . . , and encounters a convex loss &#x192;<sub>t</sub>(w<sub>t</sub>)+&#x3a8;(w<sub>t</sub>) where the loss function &#x192;<sub>t </sub>is only revealed after w<sub>t </sub>is given. A general goal of the online algorithm is to make the regret</p>
+<p id="p-0026" num="0029">
+<maths id="MATH-US-00003" num="00003">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <msub>
+      <mi>R</mi>
+      <mi>t</mi>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <munderover>
+          <mo>&#x2211;</mo>
+          <mrow>
+            <mi>&#x3c4;</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mi>t</mi>
+        </munderover>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow>
+              <msub>
+                <mi>f</mi>
+                <mi>&#x3c4;</mi>
+              </msub>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <msub>
+                  <mi>w</mi>
+                  <mi>&#x3c4;</mi>
+                </msub>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>+</mo>
+            <mrow>
+              <mi>&#x3a8;</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <msub>
+                  <mi>w</mi>
+                  <mi>&#x3c4;</mi>
+                </msub>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+      <mo>-</mo>
+      <mrow>
+        <munder>
+          <mi>min</mi>
+          <mi>w</mi>
+        </munder>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <munderover>
+            <mo>&#x2211;</mo>
+            <mrow>
+              <mi>&#x3c4;</mi>
+              <mo>=</mo>
+              <mn>1</mn>
+            </mrow>
+            <mi>t</mi>
+          </munderover>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mrow>
+                <msub>
+                  <mi>f</mi>
+                  <mi>&#x3c4;</mi>
+                </msub>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>w</mi>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>+</mo>
+              <mrow>
+                <mi>&#x3a8;</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>w</mi>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+</mrow>
+</math>
+</maths>
+<br/>
+which is measured against the best fixed decision from hindsight, as small as possible.
+</p>
+<p id="p-0027" num="0030">The algorithm can obtain effective regularized online solutions similar as in the stochastic learning case, and guarantee that the regret R<sub>t </sub>only grows with order O(&#x221a;{square root over (t)}). If the regularization function &#x3a8;(w) is strongly convex, the algorithm can obtain regret bound O(ln t).</p>
+<p id="p-0028" num="0031">The algorithm computes the sequential solutions for the stochastic learning and online optimization problems by solving a minimization problem that involves the running average of the previous subgradients of the cost function and the original regularization term without any discounting or diminishing weight. In cases such as &#x3a8;(w)=&#x3bb;&#x2225;w&#x2225;<sub>1</sub>, the minimization problem at each iteration has a closed-from solution that can be computed efficiently with O(n) complexity. Note that while computing and maintaining a running average is described, it is understood that this is only one suitable approximation, and that it is feasible to compute and maintain information representative of the computed subgradient and previously computed subgradients that is not a running average, but another suitable computation.</p>
+<p id="p-0029" num="0032">In l<sub>1</sub>-regularized stochastic learning, &#x3a8;(w)=&#x3bb;&#x2225;w&#x2225;<sub>1</sub>. Even with relatively large &#x3bb;, the classical stochastic gradient descent method usually does not generate sparse solutions because only in very rare cases do two float numbers add up to zero. As described herein, regularized dual averaging (RDA) methods exploit the regularization structure in an online setting. More specifically, each iteration of the RDA method takes the form:</p>
+<p id="p-0030" num="0033">
+<maths id="MATH-US-00004" num="00004">
+<math overflow="scroll">
+<mrow>
+  <msub>
+    <mi>w</mi>
+    <mrow>
+      <mi>t</mi>
+      <mo>+</mo>
+      <mn>1</mn>
+    </mrow>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <munder>
+      <mrow>
+        <mi>arg</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.3em" height="0.3ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mi>min</mi>
+      </mrow>
+      <mi>w</mi>
+    </munder>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <mo>{</mo>
+      <mrow>
+        <mrow>
+          <mo>&#x2329;</mo>
+          <mrow>
+            <msub>
+              <mover>
+                <mi>g</mi>
+                <mi>_</mi>
+              </mover>
+              <mi>t</mi>
+            </msub>
+            <mo>,</mo>
+            <mi>w</mi>
+          </mrow>
+          <mo>&#x232a;</mo>
+        </mrow>
+        <mo>+</mo>
+        <mrow>
+          <mi>&#x3a8;</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>w</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>+</mo>
+        <mrow>
+          <mfrac>
+            <msub>
+              <mi>&#x3b2;</mi>
+              <mi>t</mi>
+            </msub>
+            <mi>t</mi>
+          </mfrac>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mi>h</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mi>w</mi>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mo>}</mo>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+where &#x3b2;<sub>t </sub>is a sequence of input parameters that is nonnegative and nondecreasing with t, h(w) is a strongly convex function with modulus 1, and <o ostyle="single">g</o><sub>t </sub>is the dual average defined as
+</p>
+<p id="p-0031" num="0034">
+<maths id="MATH-US-00005" num="00005">
+<math overflow="scroll">
+<mrow>
+  <msub>
+    <mover>
+      <mi>g</mi>
+      <mi>_</mi>
+    </mover>
+    <mi>&#x3c4;</mi>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mfrac>
+      <mn>1</mn>
+      <mi>t</mi>
+    </mfrac>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <munderover>
+        <mo>&#x2211;</mo>
+        <mrow>
+          <mi>&#x3c4;</mi>
+          <mo>=</mo>
+          <mn>1</mn>
+        </mrow>
+        <mi>t</mi>
+      </munderover>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <msub>
+          <mi>g</mi>
+          <mi>&#x3c4;</mi>
+        </msub>
+        <mo>.</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+Essentially, at each iteration as described below, this method minimizes the sum of three terms, namely a linear function obtained by averaging all previous subgradients (the dual average), the original regularization function &#x3a8;(w) and an additional strongly convex regularization term
+</p>
+<p id="p-0032" num="0035">
+<maths id="MATH-US-00006" num="00006">
+<math overflow="scroll">
+<mrow>
+  <mfrac>
+    <msub>
+      <mi>&#x3b2;</mi>
+      <mi>t</mi>
+    </msub>
+    <mi>t</mi>
+  </mfrac>
+  <mo>&#x2062;</mo>
+  <mrow>
+    <mi>h</mi>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo>(</mo>
+      <mi>w</mi>
+      <mo>)</mo>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+that diminishes to zero as t increases. Note that unlike one dual averaging method, the regularized dual averaging method described herein considers the regularization term &#x3a8;(w).
+<br/>
+The general RDA method is shown below and also in <figref idref="DRAWINGS">FIG. 2</figref>:
+</p>
+<p id="p-0033" num="0036">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>Input: initial vector w<sub>0</sub>, parameters &#x3b3; &#x3e; 0, an integer T which specifies length </entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>of iteration, and a strongly convex function h(w) with modulus 1 such </entry>
+</row>
+<row>
+<entry/>
+<entry>that</entry>
+</row>
+<row>
+<entry/>
+<entry>
+<maths id="MATH-US-00007" num="00007">
+<math overflow="scroll">
+<mrow>
+  <msub>
+    <mi>w</mi>
+    <mn>0</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <munder>
+        <mi>argmin</mi>
+        <mi>w</mi>
+      </munder>
+      <mo>&#x2062;</mo>
+      <mstyle>
+        <mspace width="0.8em" height="0.8ex"/>
+      </mstyle>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mi>h</mi>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mi>w</mi>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mrow>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.8em" height="0.8ex"/>
+    </mstyle>
+    <mo>&#x2208;</mo>
+    <mstyle>
+      <mspace width="0.8em" height="0.8ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <munder>
+        <mi>Argmin</mi>
+        <mi>w</mi>
+      </munder>
+      <mo>&#x2062;</mo>
+      <mstyle>
+        <mspace width="0.8em" height="0.8ex"/>
+      </mstyle>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mi>&#x3a8;</mi>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mi>w</mi>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+      <mo>&#x2062;</mo>
+      <mstyle>
+        <mspace width="0.8em" height="0.8ex"/>
+      </mstyle>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mo>(</mo>
+        <mrow>
+          <mi>step</mi>
+          <mo>&#x2062;</mo>
+          <mstyle>
+            <mspace width="0.8em" height="0.8ex"/>
+          </mstyle>
+          <mo>&#x2062;</mo>
+          <mn>202</mn>
+        </mrow>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+</entry>
+</row>
+<row>
+<entry/>
+<entry>And a pre-defined nonnegative, nondecreasing sequence &#x3b2;<sub>t </sub>for t &#x2267; 1.</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>Initialization: set t=1 and three vectors in R<sup>n </sup>as follows: w<sub>1 </sub>= w<sub>0</sub>, <o ostyle="single">w</o><sub>0 </sub>= w<sub>0</sub>, </entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>and <o ostyle="single">g</o><sub>0 </sub>= 0. (step 204)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>For t = 1, . . . , T (step 206a/206b)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Read data z<sub>t </sub>and let f<sub>t</sub>(w) = f(w, z<sub>t</sub>) (step 208)</entry>
+</row>
+<row>
+<entry/>
+<entry>Compute a subgradient g<sub>t </sub>&#x2208; &#x2202;f<sub>t</sub>(w<sub>t</sub>). (step 210)</entry>
+</row>
+<row>
+<entry/>
+<entry>Compute the average weight <o ostyle="single">w</o><sub>t </sub>and the average subgradient <o ostyle="single">g</o><sub>t </sub>as</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="14pt" align="left"/>
+<colspec colname="3" colwidth="189pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry>follows: (step 212)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="14pt" align="left"/>
+<colspec colname="3" colwidth="7pt" align="left"/>
+<colspec colname="4" colwidth="182pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>
+<maths id="MATH-US-00008" num="00008">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <msub>
+      <mover>
+        <mi>w</mi>
+        <mi>_</mi>
+      </mover>
+      <mi>t</mi>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mfrac>
+          <mrow>
+            <mi>t</mi>
+            <mo>-</mo>
+            <mn>1</mn>
+          </mrow>
+          <mi>t</mi>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mover>
+            <mi>w</mi>
+            <mi>_</mi>
+          </mover>
+          <mrow>
+            <mi>t</mi>
+            <mo>-</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <mfrac>
+          <mn>1</mn>
+          <mi>t</mi>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mi>w</mi>
+          <mi>t</mi>
+        </msub>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <msub>
+      <mover>
+        <mi>g</mi>
+        <mi>_</mi>
+      </mover>
+      <mi>t</mi>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mfrac>
+          <mrow>
+            <mi>t</mi>
+            <mo>-</mo>
+            <mn>1</mn>
+          </mrow>
+          <mi>t</mi>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mover>
+            <mi>g</mi>
+            <mi>_</mi>
+          </mover>
+          <mrow>
+            <mi>t</mi>
+            <mo>-</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <mfrac>
+          <mn>1</mn>
+          <mi>t</mi>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mi>g</mi>
+          <mi>t</mi>
+        </msub>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Compute the next iterate w<sub>t+1 </sub>by solving the following minimization</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="14pt" align="left"/>
+<colspec colname="3" colwidth="189pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry>problem: (step 214)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="14pt" align="left"/>
+<colspec colname="3" colwidth="7pt" align="left"/>
+<colspec colname="4" colwidth="182pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>&#x2003;
+<maths id="MATH-US-00009" num="00009">
+<math overflow="scroll">
+<mrow>
+  <msub>
+    <mi>w</mi>
+    <mrow>
+      <mi>t</mi>
+      <mo>+</mo>
+      <mn>1</mn>
+    </mrow>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <munder>
+      <mi>argmin</mi>
+      <mi>w</mi>
+    </munder>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <mo>{</mo>
+      <mrow>
+        <mrow>
+          <mo>&#x2329;</mo>
+          <mrow>
+            <msub>
+              <mover>
+                <mi>g</mi>
+                <mi>_</mi>
+              </mover>
+              <mi>t</mi>
+            </msub>
+            <mo>,</mo>
+            <mi>w</mi>
+          </mrow>
+          <mo>&#x232a;</mo>
+        </mrow>
+        <mo>+</mo>
+        <mrow>
+          <mi>&#x3a8;</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>w</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>+</mo>
+        <mrow>
+          <mfrac>
+            <msub>
+              <mi>&#x3b2;</mi>
+              <mi>t</mi>
+            </msub>
+            <mi>t</mi>
+          </mfrac>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mi>h</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mi>w</mi>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mo>}</mo>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>where 
+<maths id="MATH-US-00010" num="00010">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mo>&#x2329;</mo>
+    <mrow>
+      <msub>
+        <mover>
+          <mi>g</mi>
+          <mi>_</mi>
+        </mover>
+        <mi>t</mi>
+      </msub>
+      <mo>,</mo>
+      <mi>w</mi>
+    </mrow>
+    <mo>&#x232a;</mo>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <munderover>
+      <mo>&#x2211;</mo>
+      <mrow>
+        <mi>i</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mrow>
+      <mi>n</mi>
+    </munderover>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <msubsup>
+        <mover>
+          <mrow>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mi>g</mi>
+          </mrow>
+          <mi>_</mi>
+        </mover>
+        <mi>t</mi>
+        <mrow>
+          <mo>(</mo>
+          <mi>i</mi>
+          <mo>)</mo>
+        </mrow>
+      </msubsup>
+      <mo>&#x2062;</mo>
+      <msup>
+        <mi>w</mi>
+        <mrow>
+          <mo>(</mo>
+          <mi>i</mi>
+          <mo>)</mo>
+        </mrow>
+      </msup>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+is the inner product between two vectors </entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="14pt" align="left"/>
+<colspec colname="2" colwidth="14pt" align="left"/>
+<colspec colname="3" colwidth="189pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry>in R<sup>n</sup>.</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>End for. (step 206a/206b)</entry>
+</row>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0034" num="0037">Note that at step <b>208</b>, the loss function &#x192;<sub>t</sub>(w) may be directly specified.</p>
+<p id="p-0035" num="0038">The calculation of <o ostyle="single">w</o><sub>t </sub>is only needed for stochastic learning tasks, for which it will be used to classify new data. For online learning tasks, the step for computing <o ostyle="single">w</o><sub>t </sub>can be skipped.</p>
+<p id="p-0036" num="0039">For general convex regularization &#x3a8;(w), setting the sequence &#x3b2;<sub>t</sub>=&#x3b3;&#x221a;{square root over (t)}, where &#x3b3;&#x3e;0 is an input parameter, leads to a convergence rate</p>
+<p id="p-0037" num="0040">
+<maths id="MATH-US-00011" num="00011">
+<math overflow="scroll">
+<mrow>
+  <mi>O</mi>
+  <mo>&#x2061;</mo>
+  <mrow>
+    <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <msqrt>
+        <mi>t</mi>
+      </msqrt>
+    </mfrac>
+    <mo>)</mo>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+for stochastic learning, or equivalently, a regret bound of O(&#x221a;{square root over (t)}) for online optimization. Any sequence &#x3b2;<sub>t </sub>that grows on the order of &#x221a;{square root over (t)} gives the same convergence result.
+</p>
+<p id="p-0038" num="0041">For strongly convex regularization &#x3a8;(w), any nonnegative and nondecreasing sequence &#x3b2;<sub>t </sub>that grows no faster than O(ln t) gives a convergence rate of O(ln t/t) for stochastic learning, or equivalently a regret bound of O(ln t) for online optimization. Such sequences include, but not limited to the following:
+<ul id="ul0005" list-style="none">
+    <li id="ul0005-0001" num="0000">
+    <ul id="ul0006" list-style="none">
+        <li id="ul0006-0001" num="0042">Positive constant sequences. For example, let &#x3b2;<sub>t</sub>=&#x3c3; for all t, where &#x3c3; is the convexity parameter of &#x3a8;(w).</li>
+        <li id="ul0006-0002" num="0043">The logarithmic sequence &#x3b2;<sub>t</sub>=&#x3c3;(1+ln t) for all t&#x2267;1.</li>
+        <li id="ul0006-0003" num="0044">The zero sequence &#x3b2;<sub>t</sub>=0 for all t&#x2267;1.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0039" num="0045">A significant difference of the regularized dual averaging method over prior solutions is that it uses the whole regularization &#x3a8;(w), without any discounting weight, in solving for the next solution w<sub>t+1</sub>. Previous solutions only take a subgradient of &#x3a8;(w) or discount the regularization term by multiplying it with a small constant on the order of</p>
+<p id="p-0040" num="0046">
+<maths id="MATH-US-00012" num="00012">
+<math overflow="scroll">
+<mrow>
+  <mfrac>
+    <mn>1</mn>
+    <msqrt>
+      <mi>t</mi>
+    </msqrt>
+  </mfrac>
+  <mo>.</mo>
+</mrow>
+</math>
+</maths>
+<br/>
+A direct advantage of regularized dual averaging over previous methods is that obtains solutions with much stronger regularization effects.
+</p>
+<p id="p-0041" num="0047">In the most widely used case of l<sub>1</sub>-regularization, that is, when &#x3a8;(w)=&#x3bb;&#x2225;w&#x2225;<sub>1</sub>, the strongly convex function h can be chosen as</p>
+<p id="p-0042" num="0048">
+<maths id="MATH-US-00013" num="00013">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mi>h</mi>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo>(</mo>
+      <mi>w</mi>
+      <mo>)</mo>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <mfrac>
+        <mn>1</mn>
+        <mn>2</mn>
+      </mfrac>
+      <mo>&#x2062;</mo>
+      <msubsup>
+        <mrow>
+          <mo>&#xf605;</mo>
+          <mi>w</mi>
+          <mo>&#xf606;</mo>
+        </mrow>
+        <mn>2</mn>
+        <mn>2</mn>
+      </msubsup>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+      <mi>&#x3c1;</mi>
+      <mo>&#x2062;</mo>
+      <msub>
+        <mrow>
+          <mo>&#xf605;</mo>
+          <mi>w</mi>
+          <mo>&#xf606;</mo>
+        </mrow>
+        <mn>1</mn>
+      </msub>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+for any &#x3c1;&#x2267;0, and the all-zero vector w<sub>0</sub>=0 satisfies the specified condition for input parameters. In this case, the minimization problem in the third step in the above algorithm has a closed-form solution that can be computed very efficiently with O(n) complexity. For clarity, details of the more specialized l<sub>1</sub>-RDA method with an input sequence &#x3b2;<sub>t</sub>=&#x3b3;&#x221a;{square root over (t)} are set forth below:
+</p>
+<p id="p-0043" num="0049">
+<tables id="TABLE-US-00002" num="00002">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>Input: initial vector w<sub>0</sub>, parameters &#x3b3; &#x3e; 0 and &#x3c1; &#x2267; 0, an integer T which specifies</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="7pt" align="left"/>
+<colspec colname="2" colwidth="210pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>length of iteration. (step 302)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>Initialization: set t=1 and the three vectors in R<sup>n </sup>to the zero vector: w<sub>1 </sub>= 0,</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="7pt" align="left"/>
+<colspec colname="2" colwidth="210pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry> <o ostyle="single">w</o><sub>0 </sub>= 0, and <o ostyle="single">g</o><sub>0 </sub>= 0. (step 304)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>For t = 1, . . ., T (step 306a/306b)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="7pt" align="left"/>
+<colspec colname="2" colwidth="210pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Read data z<sub>t </sub>and let f<sub>t</sub>(w) = f(w, z<sub>t</sub>). (step 308)</entry>
+</row>
+<row>
+<entry/>
+<entry>Compute a subgradient g<sub>t </sub>&#x2208; &#x2202;f<sub>t</sub>(w<sub>t</sub>). (step 310)</entry>
+</row>
+<row>
+<entry/>
+<entry>Compute the average weight <o ostyle="single">w</o><sub>t </sub>and the average subgradient <o ostyle="single">g</o><sub>t </sub>as</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="7pt" align="left"/>
+<colspec colname="2" colwidth="7pt" align="left"/>
+<colspec colname="3" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry>follows: (step 312)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="1" colwidth="7pt" align="left"/>
+<colspec colname="2" colwidth="7pt" align="left"/>
+<colspec colname="3" colwidth="7pt" align="left"/>
+<colspec colname="4" colwidth="196pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>
+<maths id="MATH-US-00014" num="00014">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <msub>
+      <mover>
+        <mi>w</mi>
+        <mi>_</mi>
+      </mover>
+      <mi>t</mi>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mfrac>
+          <mrow>
+            <mi>t</mi>
+            <mo>-</mo>
+            <mn>1</mn>
+          </mrow>
+          <mi>t</mi>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mover>
+            <mi>w</mi>
+            <mi>_</mi>
+          </mover>
+          <mrow>
+            <mi>t</mi>
+            <mo>-</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <mfrac>
+          <mn>1</mn>
+          <mi>t</mi>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mi>w</mi>
+          <mi>t</mi>
+        </msub>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <msub>
+      <mover>
+        <mi>g</mi>
+        <mi>_</mi>
+      </mover>
+      <mi>t</mi>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mfrac>
+          <mrow>
+            <mi>t</mi>
+            <mo>-</mo>
+            <mn>1</mn>
+          </mrow>
+          <mi>t</mi>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mover>
+            <mi>g</mi>
+            <mi>_</mi>
+          </mover>
+          <mrow>
+            <mi>t</mi>
+            <mo>-</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <mfrac>
+          <mn>1</mn>
+          <mi>t</mi>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mi>g</mi>
+          <mi>t</mi>
+        </msub>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="7pt" align="left"/>
+<colspec colname="2" colwidth="210pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Let 
+<maths id="MATH-US-00015" num="00015">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <msub>
+      <mi>&#x3bb;</mi>
+      <mi>t</mi>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <mi>&#x3bb;</mi>
+      <mo>+</mo>
+      <mfrac>
+        <mi>&#x3b3;&#x3c1;</mi>
+        <msqrt>
+          <mi>t</mi>
+        </msqrt>
+      </mfrac>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+</mrow>
+</math>
+</maths>
+and compute the next iterate w<sub>t+1 </sub>as follows: (step 314)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="7pt" align="left"/>
+<colspec colname="2" colwidth="7pt" align="left"/>
+<colspec colname="3" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry>
+<maths id="MATH-US-00016" num="00016">
+<math overflow="scroll">
+<mrow>
+  <msubsup>
+    <mi>w</mi>
+    <mrow>
+      <mi>t</mi>
+      <mo>+</mo>
+      <mn>1</mn>
+    </mrow>
+    <mrow>
+      <mo>(</mo>
+      <mi>i</mi>
+      <mo>)</mo>
+    </mrow>
+  </msubsup>
+  <mo>=</mo>
+  <mrow>
+    <mo>{</mo>
+    <mrow>
+      <mrow>
+        <mrow>
+          <mtable>
+            <mtr>
+              <mtd>
+                <mn>0</mn>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mi>if</mi>
+                  <mo>|</mo>
+                  <msubsup>
+                    <mover>
+                      <mi>g</mi>
+                      <mi>_</mi>
+                    </mover>
+                    <mi>t</mi>
+                    <mrow>
+                      <mo>(</mo>
+                      <mi>i</mi>
+                      <mo>)</mo>
+                    </mrow>
+                  </msubsup>
+                  <mo>|</mo>
+                  <mrow>
+                    <mo>&#x2264;</mo>
+                    <msub>
+                      <mi>&#x3bb;</mi>
+                      <mi>t</mi>
+                    </msub>
+                  </mrow>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mrow>
+                    <mo>-</mo>
+                    <mfrac>
+                      <msqrt>
+                        <mi>t</mi>
+                      </msqrt>
+                      <mi>&#x3b3;</mi>
+                    </mfrac>
+                  </mrow>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <msubsup>
+                        <mover>
+                          <mi>g</mi>
+                          <mi>_</mi>
+                        </mover>
+                        <mi>t</mi>
+                        <mrow>
+                          <mo>(</mo>
+                          <mi>i</mi>
+                          <mo>)</mo>
+                        </mrow>
+                      </msubsup>
+                      <mo>+</mo>
+                      <msub>
+                        <mi>&#x3bb;</mi>
+                        <mi>t</mi>
+                      </msub>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mrow>
+                    <mi>if</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.8em" height="0.8ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <msubsup>
+                      <mover>
+                        <mi>g</mi>
+                        <mi>_</mi>
+                      </mover>
+                      <mi>t</mi>
+                      <mrow>
+                        <mo>(</mo>
+                        <mi>i</mi>
+                        <mo>)</mo>
+                      </mrow>
+                    </msubsup>
+                  </mrow>
+                  <mo>&#x3c;</mo>
+                  <mrow>
+                    <mo>-</mo>
+                    <msub>
+                      <mi>&#x3bb;</mi>
+                      <mi>t</mi>
+                    </msub>
+                  </mrow>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mrow>
+                    <mo>-</mo>
+                    <mfrac>
+                      <msqrt>
+                        <mi>t</mi>
+                      </msqrt>
+                      <mi>&#x3b3;</mi>
+                    </mfrac>
+                  </mrow>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <msubsup>
+                        <mover>
+                          <mi>g</mi>
+                          <mi>_</mi>
+                        </mover>
+                        <mi>t</mi>
+                        <mrow>
+                          <mo>(</mo>
+                          <mi>i</mi>
+                          <mo>)</mo>
+                        </mrow>
+                      </msubsup>
+                      <mo>-</mo>
+                      <msub>
+                        <mi>&#x3bb;</mi>
+                        <mi>t</mi>
+                      </msub>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mrow>
+                    <mi>if</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.8em" height="0.8ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <msubsup>
+                      <mover>
+                        <mi>g</mi>
+                        <mi>_</mi>
+                      </mover>
+                      <mi>t</mi>
+                      <mrow>
+                        <mo>(</mo>
+                        <mi>i</mi>
+                        <mo>)</mo>
+                      </mrow>
+                    </msubsup>
+                  </mrow>
+                  <mo>&#x3e;</mo>
+                  <msub>
+                    <mi>&#x3bb;</mi>
+                    <mi>t</mi>
+                  </msub>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+          <mo>&#x2062;</mo>
+          <mstyle>
+            <mspace width="1.1em" height="1.1ex"/>
+          </mstyle>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mi>fo</mi>
+            <mo>&#x2062;</mo>
+            <mi>r</mi>
+          </mrow>
+          <mo>&#x2062;</mo>
+          <mstyle>
+            <mspace width="0.8em" height="0.8ex"/>
+          </mstyle>
+          <mo>&#x2062;</mo>
+          <mi>i</mi>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.3em" height="0.3ex"/>
+        </mstyle>
+        <mo>=</mo>
+        <mstyle>
+          <mspace width="0.3em" height="0.3ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mn>1</mn>
+      </mrow>
+      <mo>,</mo>
+      <mstyle>
+        <mspace width="0.3em" height="0.3ex"/>
+      </mstyle>
+      <mo>...</mo>
+      <mstyle>
+        <mspace width="0.3em" height="0.3ex"/>
+      </mstyle>
+      <mo>,</mo>
+      <mstyle>
+        <mspace width="0.3em" height="0.3ex"/>
+      </mstyle>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mi>n</mi>
+        <mo>.</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>End for. (step 306a/306b)</entry>
+</row>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0044" num="0050">Note that at step <b>308</b>, the loss function &#x192;<sub>t</sub>(w) may be directly specified.</p>
+<p id="p-0045" num="0051">Again, a significant difference from previous methods is the much stronger regularization effect resulted from using a truncation threshold &#x3bb;<sub>t </sub>that is at least as large as the original parameter &#x3bb;, in contrast to previous methods that use a truncation threshold on the order of</p>
+<p id="p-0046" num="0052">
+<maths id="MATH-US-00017" num="00017">
+<math overflow="scroll">
+<mrow>
+  <mfrac>
+    <mi>&#x3bb;</mi>
+    <msqrt>
+      <mi>t</mi>
+    </msqrt>
+  </mfrac>
+  <mo>,</mo>
+</mrow>
+</math>
+</maths>
+<br/>
+which is much smaller. A direct advantage of using a much larger truncation threshold is that the solutions w<sub>t </sub>are much more sparse than previous methods. The sparsity directly translates into fewer features that need to be queried and savings of operational cost such as time or money.
+</p>
+<p id="p-0047" num="0053">The l<sub>1</sub>-regularized dual averaging shown above and in <figref idref="DRAWINGS">FIG. 3</figref> is a particular case of the regularized dual averaging method described with reference to <figref idref="DRAWINGS">FIG. 2</figref>. In particular, here E=R<sup>n </sup>and &#x3a8;(w)=&#x2225;w&#x2225;<sub>1</sub>. In addition, the strongly convex function h(w) is replaced with a parameterized version:</p>
+<p id="p-0048" num="0054">
+<maths id="MATH-US-00018" num="00018">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mrow>
+      <msub>
+        <mi>h</mi>
+        <mi>&#x3c1;</mi>
+      </msub>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo>(</mo>
+        <mi>w</mi>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mfrac>
+          <mn>1</mn>
+          <mn>2</mn>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <msubsup>
+          <mrow>
+            <mo>&#xf605;</mo>
+            <mi>w</mi>
+            <mo>&#xf606;</mo>
+          </mrow>
+          <mn>2</mn>
+          <mn>2</mn>
+        </msubsup>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <mi>&#x3c1;</mi>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mrow>
+            <mo>&#xf605;</mo>
+            <mi>w</mi>
+            <mo>&#xf606;</mo>
+          </mrow>
+          <mn>1</mn>
+        </msub>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+</mrow>
+</math>
+</maths>
+<br/>
+where &#x3c1;&#x2267;0 is a sparsity-enhancing parameter. Note that h<sub>&#x3c1;</sub>(w) is strongly convex with modulus 1 for any &#x3c1;&#x2267;0. Whereby the convergence results still apply. With this change, the next iterate equation becomes:
+</p>
+<p id="p-0049" num="0055">
+<maths id="MATH-US-00019" num="00019">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>w</mi>
+          <mrow>
+            <mi>t</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mi>arg</mi>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <munder>
+              <mi>min</mi>
+              <mi>w</mi>
+            </munder>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mo>{</mo>
+              <mrow>
+                <mrow>
+                  <mo>&#x2329;</mo>
+                  <mrow>
+                    <msub>
+                      <mover>
+                        <mi>g</mi>
+                        <mi>_</mi>
+                      </mover>
+                      <mi>t</mi>
+                    </msub>
+                    <mo>,</mo>
+                    <mi>w</mi>
+                  </mrow>
+                  <mo>&#x232a;</mo>
+                </mrow>
+                <mo>+</mo>
+                <mrow>
+                  <mi>&#x3bb;</mi>
+                  <mo>&#x2062;</mo>
+                  <msub>
+                    <mrow>
+                      <mo>&#xf605;</mo>
+                      <mi>w</mi>
+                      <mo>&#xf606;</mo>
+                    </mrow>
+                    <mn>1</mn>
+                  </msub>
+                </mrow>
+                <mo>+</mo>
+                <mrow>
+                  <mfrac>
+                    <mi>&#x3b3;</mi>
+                    <msqrt>
+                      <mi>t</mi>
+                    </msqrt>
+                  </mfrac>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mrow>
+                        <mfrac>
+                          <mn>1</mn>
+                          <mn>2</mn>
+                        </mfrac>
+                        <mo>&#x2062;</mo>
+                        <msubsup>
+                          <mrow>
+                            <mo>&#xf605;</mo>
+                            <mi>w</mi>
+                            <mo>&#xf606;</mo>
+                          </mrow>
+                          <mn>2</mn>
+                          <mn>2</mn>
+                        </msubsup>
+                      </mrow>
+                      <mo>+</mo>
+                      <mrow>
+                        <mi>&#x3c1;</mi>
+                        <mo>&#x2062;</mo>
+                        <msub>
+                          <mrow>
+                            <mo>&#xf605;</mo>
+                            <mi>w</mi>
+                            <mo>&#xf606;</mo>
+                          </mrow>
+                          <mn>1</mn>
+                        </msub>
+                      </mrow>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+              <mo>}</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mo>=</mo>
+          <mrow>
+            <mi>arg</mi>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <munder>
+                <mi>min</mi>
+                <mi>w</mi>
+              </munder>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mo>{</mo>
+                <mrow>
+                  <mrow>
+                    <mo>&#x2329;</mo>
+                    <mrow>
+                      <msub>
+                        <mover>
+                          <mi>g</mi>
+                          <mi>_</mi>
+                        </mover>
+                        <mi>t</mi>
+                      </msub>
+                      <mo>,</mo>
+                      <mi>w</mi>
+                    </mrow>
+                    <mo>&#x232a;</mo>
+                  </mrow>
+                  <mo>+</mo>
+                  <mrow>
+                    <msub>
+                      <mi>&#x3bb;</mi>
+                      <mi>t</mi>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mrow>
+                        <mo>&#xf605;</mo>
+                        <mi>w</mi>
+                        <mo>&#xf606;</mo>
+                      </mrow>
+                      <mn>1</mn>
+                    </msub>
+                  </mrow>
+                  <mo>+</mo>
+                  <mrow>
+                    <mfrac>
+                      <mi>&#x3b3;</mi>
+                      <mrow>
+                        <mn>2</mn>
+                        <mo>&#x2062;</mo>
+                        <msqrt>
+                          <mi>t</mi>
+                        </msqrt>
+                      </mrow>
+                    </mfrac>
+                    <mo>&#x2062;</mo>
+                    <msubsup>
+                      <mrow>
+                        <mo>&#xf605;</mo>
+                        <mi>w</mi>
+                        <mo>&#xf606;</mo>
+                      </mrow>
+                      <mn>2</mn>
+                      <mn>2</mn>
+                    </msubsup>
+                  </mrow>
+                </mrow>
+                <mo>}</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+where &#x3bb;<sub>t</sub>=&#x3bb;+&#x3b3;&#x3c1;/&#x221a;{square root over (t)}. The above minimization problem has a closed-form solution given at step <b>314</b>.
+</p>
+<p id="p-0050" num="0056">The l<sub>1</sub>-regularization may be only on part of the optimization variables. For example, in support vector machines or logistic regression, it is usually desirable to have the bias terms be free of regularization. In this case, suppose w<sup>(j) </sup>is a component for which regularization is not wanted, whereby the jth component may be replaced by:</p>
+<p id="p-0051" num="0057">
+<maths id="MATH-US-00020" num="00020">
+<math overflow="scroll">
+<mrow>
+  <msubsup>
+    <mi>w</mi>
+    <mrow>
+      <mi>t</mi>
+      <mo>+</mo>
+      <mn>1</mn>
+    </mrow>
+    <mrow>
+      <mo>(</mo>
+      <mi>j</mi>
+      <mo>)</mo>
+    </mrow>
+  </msubsup>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <mi>arg</mi>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <munder>
+          <mi>min</mi>
+          <mi>&#x3c9;</mi>
+        </munder>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>{</mo>
+          <mrow>
+            <mrow>
+              <msubsup>
+                <mover>
+                  <mi>g</mi>
+                  <mi>_</mi>
+                </mover>
+                <mi>t</mi>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>j</mi>
+                  <mo>)</mo>
+                </mrow>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <mi>&#x3c9;</mi>
+            </mrow>
+            <mo>+</mo>
+            <mrow>
+              <mfrac>
+                <mi>&#x3b3;</mi>
+                <mrow>
+                  <mn>2</mn>
+                  <mo>&#x2062;</mo>
+                  <msqrt>
+                    <mi>t</mi>
+                  </msqrt>
+                </mrow>
+              </mfrac>
+              <mo>&#x2062;</mo>
+              <msup>
+                <mi>&#x3c9;</mi>
+                <mn>2</mn>
+              </msup>
+            </mrow>
+          </mrow>
+          <mo>}</mo>
+        </mrow>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mo>-</mo>
+        <mfrac>
+          <msqrt>
+            <mi>t</mi>
+          </msqrt>
+          <mi>&#x3b3;</mi>
+        </mfrac>
+      </mrow>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <msubsup>
+          <mover>
+            <mi>g</mi>
+            <mi>_</mi>
+          </mover>
+          <mi>t</mi>
+          <mrow>
+            <mo>(</mo>
+            <mi>j</mi>
+            <mo>)</mo>
+          </mrow>
+        </msubsup>
+        <mo>.</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+</p>
+<p id="p-0052" num="0058">The l<sub>1</sub>-regularized dual averaging method converges in expectation to an optimal solution to the stochastic learning problem with the regularization parameter &#x3bb;, despite a larger effective regularization parameter &#x3bb;+&#x3b3;&#x3c1;/&#x221a;{square root over (t)} at each step t. Setting &#x3c1;&#x3e;0 is particularly useful for obtaining sparse online solutions even without the explicit l<sub>1</sub>-regularization in the objective function, i.e., when &#x3bb;=0. In this case, each step of the method applies l<sub>1</sub>-regularization with the diminishing weight &#x3b3;&#x3c1;/&#x221a;{square root over (t)}.</p>
+<p id="p-0053" num="0059">The following sets forth some examples using the RDA algorithm with strongly convex regularizations:</p>
+<p id="p-0054" num="0060">l<sub>2</sub>-regularization:</p>
+<p id="p-0055" num="0061">
+<maths id="MATH-US-00021" num="00021">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <mi>C</mi>
+    <mo>=</mo>
+    <msup>
+      <mi>R</mi>
+      <mi>n</mi>
+    </msup>
+  </mrow>
+  <mo>,</mo>
+  <mstyle>
+    <mspace width="0.8em" height="0.8ex"/>
+  </mstyle>
+  <mo>&#x2062;</mo>
+  <mrow>
+    <mrow>
+      <mi>h</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo>(</mo>
+        <mi>w</mi>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mfrac>
+          <mn>1</mn>
+          <mn>2</mn>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <msubsup>
+          <mrow>
+            <mo>&#xf605;</mo>
+            <mi>w</mi>
+            <mo>&#xf606;</mo>
+          </mrow>
+          <mn>2</mn>
+          <mn>2</mn>
+        </msubsup>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mi>and</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mi>&#x3a8;</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>w</mi>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mo>=</mo>
+      <mrow>
+        <mi>&#x3c3;</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.3em" height="0.3ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mrow>
+            <mi>h</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mi>w</mi>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>.</mo>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+In this case, using &#x3b2;<sub>t</sub>=0 for all t&#x2267;1 leads to
+</p>
+<p id="p-0056" num="0062">
+<maths id="MATH-US-00022" num="00022">
+<math overflow="scroll">
+<mrow>
+  <msub>
+    <mi>w</mi>
+    <mrow>
+      <mi>t</mi>
+      <mo>+</mo>
+      <mn>1</mn>
+    </mrow>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <mrow>
+        <mo>-</mo>
+        <mfrac>
+          <mn>1</mn>
+          <mi>&#x3c3;</mi>
+        </mfrac>
+      </mrow>
+      <mo>&#x2062;</mo>
+      <msub>
+        <mover>
+          <mi>g</mi>
+          <mi>_</mi>
+        </mover>
+        <mi>t</mi>
+      </msub>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mo>-</mo>
+        <mfrac>
+          <mn>1</mn>
+          <mrow>
+            <mi>&#x3c3;</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mi>t</mi>
+          </mrow>
+        </mfrac>
+      </mrow>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <munderover>
+          <mo>&#x2211;</mo>
+          <mrow>
+            <mi>&#x3c4;</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mi>t</mi>
+        </munderover>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <msub>
+            <mi>g</mi>
+            <mi>&#x3c4;</mi>
+          </msub>
+          <mo>.</mo>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+</p>
+<p id="p-0057" num="0063">Kullback-Leibler (KL) divergence regularization: C=S<sub>n </sub>is the standard simplex, and &#x3a8;(w)=&#x3c3;D<sub>KL</sub>(w&#x2225;p), where p&#x3b5;S<sub>n </sub>is a given probability distribution and</p>
+<p id="p-0058" num="0064">
+<maths id="MATH-US-00023" num="00023">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <msub>
+      <mi>D</mi>
+      <mi>KL</mi>
+    </msub>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo>(</mo>
+      <mrow>
+        <mi>w</mi>
+        <mo>||</mo>
+        <mi>p</mi>
+      </mrow>
+      <mo>)</mo>
+    </mrow>
+  </mrow>
+  <mo>&#x2062;</mo>
+  <mover>
+    <mo>=</mo>
+    <mi>&#x394;</mi>
+  </mover>
+  <mo>&#x2062;</mo>
+  <mrow>
+    <munderover>
+      <mo>&#x2211;</mo>
+      <mrow>
+        <mi>i</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mrow>
+      <mi>n</mi>
+    </munderover>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <msup>
+        <mi>w</mi>
+        <mrow>
+          <mo>(</mo>
+          <mi>i</mi>
+          <mo>)</mo>
+        </mrow>
+      </msup>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mrow>
+          <mi>ln</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mfrac>
+              <msup>
+                <mi>w</mi>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>i</mi>
+                  <mo>)</mo>
+                </mrow>
+              </msup>
+              <msup>
+                <mi>p</mi>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>i</mi>
+                  <mo>)</mo>
+                </mrow>
+              </msup>
+            </mfrac>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>.</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+</mrow>
+</math>
+</maths>
+<br/>
+Here D<sub>KL</sub>(w&#x2225;p) is strongly convex with respect to &#x2225;w&#x2225;<sub>1 </sub>with modulus 1. In this case, setting &#x3b2;<sub>t</sub>=0 for t&#x2267;1 leads to
+</p>
+<p id="p-0059" num="0065">
+<maths id="MATH-US-00024" num="00024">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <msubsup>
+      <mi>w</mi>
+      <mrow>
+        <mi>t</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mrow>
+      <mrow>
+        <mo>(</mo>
+        <mi>i</mi>
+        <mo>)</mo>
+      </mrow>
+    </msubsup>
+    <mo>=</mo>
+    <mrow>
+      <mfrac>
+        <mn>1</mn>
+        <msub>
+          <mi>Z</mi>
+          <mrow>
+            <mi>t</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mfrac>
+      <mo>&#x2062;</mo>
+      <msup>
+        <mi>p</mi>
+        <mrow>
+          <mo>(</mo>
+          <mi>i</mi>
+          <mo>)</mo>
+        </mrow>
+      </msup>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mi>exp</mi>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow>
+              <mo>-</mo>
+              <mfrac>
+                <mn>1</mn>
+                <mi>&#x3c3;</mi>
+              </mfrac>
+            </mrow>
+            <mo>&#x2062;</mo>
+            <msubsup>
+              <mover>
+                <mi>g</mi>
+                <mi>_</mi>
+              </mover>
+              <mi>t</mi>
+              <mrow>
+                <mo>(</mo>
+                <mi>i</mi>
+                <mo>)</mo>
+              </mrow>
+            </msubsup>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+</mrow>
+</math>
+</maths>
+<br/>
+where Z<sub>t+1 </sub>is a normalization parameter such that:
+</p>
+<p id="p-0060" num="0066">
+<maths id="MATH-US-00025" num="00025">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <munderover>
+      <mo>&#x2211;</mo>
+      <mrow>
+        <mi>i</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mrow>
+      <mi>n</mi>
+    </munderover>
+    <mo>&#x2062;</mo>
+    <msubsup>
+      <mi>w</mi>
+      <mrow>
+        <mi>t</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mrow>
+      <mrow>
+        <mo>(</mo>
+        <mi>i</mi>
+        <mo>)</mo>
+      </mrow>
+    </msubsup>
+  </mrow>
+  <mo>=</mo>
+  <mn>1.</mn>
+</mrow>
+</math>
+</maths>
+<br/>
+KL divergence regularization has the pseudo-sparsity effect meaning that most elements in w can be replaced by elements in the constant vector p without significantly increasing the loss.
+<br/>
+Exemplary Operating Environment
+</p>
+<p id="p-0061" num="0067"><figref idref="DRAWINGS">FIG. 4</figref> illustrates an example of a suitable computing and networking environment <b>400</b> on which the examples of <figref idref="DRAWINGS">FIGS. 1-3</figref> may be implemented. The computing system environment <b>400</b> is only one example of a suitable computing environment and is not intended to suggest any limitation as to the scope of use or functionality of the invention. Neither should the computing environment <b>400</b> be interpreted as having any dependency or requirement relating to any one or combination of components illustrated in the exemplary operating environment <b>400</b>.</p>
+<p id="p-0062" num="0068">The invention is operational with numerous other general purpose or special purpose computing system environments or configurations. Examples of well known computing systems, environments, and/or configurations that may be suitable for use with the invention include, but are not limited to: personal computers, server computers, hand-held or laptop devices, tablet devices, multiprocessor systems, microprocessor-based systems, set top boxes, programmable consumer electronics, network PCs, minicomputers, mainframe computers, distributed computing environments that include any of the above systems or devices, and the like.</p>
+<p id="p-0063" num="0069">The invention may be described in the general context of computer-executable instructions, such as program modules, being executed by a computer. Generally, program modules include routines, programs, objects, components, data structures, and so forth, which perform particular tasks or implement particular abstract data types. The invention may also be practiced in distributed computing environments where tasks are performed by remote processing devices that are linked through a communications network. In a distributed computing environment, program modules may be located in local and/or remote computer storage media including memory storage devices.</p>
+<p id="p-0064" num="0070">With reference to <figref idref="DRAWINGS">FIG. 4</figref>, an exemplary system for implementing various aspects of the invention may include a general purpose computing device in the form of a computer <b>410</b>. Components of the computer <b>410</b> may include, but are not limited to, a processing unit <b>420</b>, a system memory <b>430</b>, and a system bus <b>421</b> that couples various system components including the system memory to the processing unit <b>420</b>. The system bus <b>421</b> may be any of several types of bus structures including a memory bus or memory controller, a peripheral bus, and a local bus using any of a variety of bus architectures. By way of example, and not limitation, such architectures include Industry Standard Architecture (ISA) bus, Micro Channel Architecture (MCA) bus, Enhanced ISA (EISA) bus, Video Electronics Standards Association (VESA) local bus, and Peripheral Component Interconnect (PCI) bus also known as Mezzanine bus.</p>
+<p id="p-0065" num="0071">The computer <b>410</b> typically includes a variety of computer-readable media. Computer-readable media can be any available media that can be accessed by the computer <b>410</b> and includes both volatile and nonvolatile media, and removable and non-removable media. By way of example, and not limitation, computer-readable media may comprise computer storage media and communication media. Computer storage media includes volatile and nonvolatile, removable and non-removable media implemented in any method or technology for storage of information such as computer-readable instructions, data structures, program modules or other data. Computer storage media includes, but is not limited to, RAM, ROM, EEPROM, flash memory or other memory technology, CD-ROM, digital versatile disks (DVD) or other optical disk storage, magnetic cassettes, magnetic tape, magnetic disk storage or other magnetic storage devices, or any other medium which can be used to store the desired information and which can accessed by the computer <b>410</b>. Communication media typically embodies computer-readable instructions, data structures, program modules or other data in a modulated data signal such as a carrier wave or other transport mechanism and includes any information delivery media. The term &#x201c;modulated data signal&#x201d; means a signal that has one or more of its characteristics set or changed in such a manner as to encode information in the signal. By way of example, and not limitation, communication media includes wired media such as a wired network or direct-wired connection, and wireless media such as acoustic, RF, infrared and other wireless media. Combinations of the any of the above may also be included within the scope of computer-readable media.</p>
+<p id="p-0066" num="0072">The system memory <b>430</b> includes computer storage media in the form of volatile and/or nonvolatile memory such as read only memory (ROM) <b>431</b> and random access memory (RAM) <b>432</b>. A basic input/output system <b>433</b> (BIOS), containing the basic routines that help to transfer information between elements within computer <b>410</b>, such as during start-up, is typically stored in ROM <b>431</b>. RAM <b>432</b> typically contains data and/or program modules that are immediately accessible to and/or presently being operated on by processing unit <b>420</b>. By way of example, and not limitation, <figref idref="DRAWINGS">FIG. 4</figref> illustrates operating system <b>434</b>, application programs <b>435</b>, other program modules <b>436</b> and program data <b>437</b>.</p>
+<p id="p-0067" num="0073">The computer <b>410</b> may also include other removable/non-removable, volatile/nonvolatile computer storage media. By way of example only, <figref idref="DRAWINGS">FIG. 4</figref> illustrates a hard disk drive <b>441</b> that reads from or writes to non-removable, nonvolatile magnetic media, a magnetic disk drive <b>451</b> that reads from or writes to a removable, nonvolatile magnetic disk <b>452</b>, and an optical disk drive <b>455</b> that reads from or writes to a removable, nonvolatile optical disk <b>456</b> such as a CD ROM or other optical media. Other removable/non-removable, volatile/nonvolatile computer storage media that can be used in the exemplary operating environment include, but are not limited to, magnetic tape cassettes, flash memory cards, digital versatile disks, digital video tape, solid state RAM, solid state ROM, and the like. The hard disk drive <b>441</b> is typically connected to the system bus <b>421</b> through a non-removable memory interface such as interface <b>440</b>, and magnetic disk drive <b>451</b> and optical disk drive <b>455</b> are typically connected to the system bus <b>421</b> by a removable memory interface, such as interface <b>450</b>.</p>
+<p id="p-0068" num="0074">The drives and their associated computer storage media, described above and illustrated in <figref idref="DRAWINGS">FIG. 4</figref>, provide storage of computer-readable instructions, data structures, program modules and other data for the computer <b>410</b>. In <figref idref="DRAWINGS">FIG. 4</figref>, for example, hard disk drive <b>441</b> is illustrated as storing operating system <b>444</b>, application programs <b>445</b>, other program modules <b>446</b> and program data <b>447</b>. Note that these components can either be the same as or different from operating system <b>434</b>, application programs <b>435</b>, other program modules <b>436</b>, and program data <b>437</b>. Operating system <b>444</b>, application programs <b>445</b>, other program modules <b>446</b>, and program data <b>447</b> are given different numbers herein to illustrate that, at a minimum, they are different copies. A user may enter commands and information into the computer <b>410</b> through input devices such as a tablet, or electronic digitizer, <b>464</b>, a microphone <b>463</b>, a keyboard <b>462</b> and pointing device <b>461</b>, commonly referred to as mouse, trackball or touch pad. Other input devices not shown in <figref idref="DRAWINGS">FIG. 4</figref> may include a joystick, game pad, satellite dish, scanner, or the like. These and other input devices are often connected to the processing unit <b>420</b> through a user input interface <b>460</b> that is coupled to the system bus, but may be connected by other interface and bus structures, such as a parallel port, game port or a universal serial bus (USB). A monitor <b>491</b> or other type of display device is also connected to the system bus <b>421</b> via an interface, such as a video interface <b>490</b>. The monitor <b>491</b> may also be integrated with a touch-screen panel or the like. Note that the monitor and/or touch screen panel can be physically coupled to a housing in which the computing device <b>410</b> is incorporated, such as in a tablet-type personal computer. In addition, computers such as the computing device <b>410</b> may also include other peripheral output devices such as speakers <b>495</b> and printer <b>496</b>, which may be connected through an output peripheral interface <b>494</b> or the like.</p>
+<p id="p-0069" num="0075">The computer <b>410</b> may operate in a networked environment using logical connections to one or more remote computers, such as a remote computer <b>480</b>. The remote computer <b>480</b> may be a personal computer, a server, a router, a network PC, a peer device or other common network node, and typically includes many or all of the elements described above relative to the computer <b>410</b>, although only a memory storage device <b>481</b> has been illustrated in <figref idref="DRAWINGS">FIG. 4</figref>. The logical connections depicted in <figref idref="DRAWINGS">FIG. 4</figref> include one or more local area networks (LAN) <b>471</b> and one or more wide area networks (WAN) <b>473</b>, but may also include other networks. Such networking environments are commonplace in offices, enterprise-wide computer networks, intranets and the Internet.</p>
+<p id="p-0070" num="0076">When used in a LAN networking environment, the computer <b>410</b> is connected to the LAN <b>471</b> through a network interface or adapter <b>470</b>. When used in a WAN networking environment, the computer <b>410</b> typically includes a modem <b>472</b> or other means for establishing communications over the WAN <b>473</b>, such as the Internet. The modem <b>472</b>, which may be internal or external, may be connected to the system bus <b>421</b> via the user input interface <b>460</b> or other appropriate mechanism. A wireless networking component such as comprising an interface and antenna may be coupled through a suitable device such as an access point or peer computer to a WAN or LAN. In a networked environment, program modules depicted relative to the computer <b>410</b>, or portions thereof, may be stored in the remote memory storage device. By way of example, and not limitation, <figref idref="DRAWINGS">FIG. 4</figref> illustrates remote application programs <b>485</b> as residing on memory device <b>481</b>. It may be appreciated that the network connections shown are exemplary and other means of establishing a communications link between the computers may be used.</p>
+<p id="p-0071" num="0077">An auxiliary subsystem <b>499</b> (e.g., for auxiliary display of content) may be connected via the user interface <b>460</b> to allow data such as program content, system status and event notifications to be provided to the user, even if the main portions of the computer system are in a low power state. The auxiliary subsystem <b>499</b> may be connected to the modem <b>472</b> and/or network interface <b>470</b> to allow communication between these systems while the main processing unit <b>420</b> is in a low power state.</p>
+<heading id="h-0005" level="1">CONCLUSION</heading>
+<p id="p-0072" num="0078">While the invention is susceptible to various modifications and alternative constructions, certain illustrated embodiments thereof are shown in the drawings and have been described above in detail. It should be understood, however, that there is no intention to limit the invention to the specific forms disclosed, but on the contrary, the intention is to cover all modifications, alternative constructions, and equivalents falling within the spirit and scope of the invention.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08626676-20140107-M00001.NB">
+<img id="EMI-M00001" he="6.01mm" wi="76.20mm" file="US08626676-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08626676-20140107-M00002.NB">
+<img id="EMI-M00002" he="7.45mm" wi="76.20mm" file="US08626676-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00003" nb-file="US08626676-20140107-M00003.NB">
+<img id="EMI-M00003" he="8.81mm" wi="76.20mm" file="US08626676-20140107-M00003.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00004" nb-file="US08626676-20140107-M00004.NB">
+<img id="EMI-M00004" he="6.69mm" wi="76.20mm" file="US08626676-20140107-M00004.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00005" nb-file="US08626676-20140107-M00005.NB">
+<img id="EMI-M00005" he="8.81mm" wi="76.20mm" file="US08626676-20140107-M00005.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00006" nb-file="US08626676-20140107-M00006.NB">
+<img id="EMI-M00006" he="6.01mm" wi="76.20mm" file="US08626676-20140107-M00006.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00007" nb-file="US08626676-20140107-M00007.NB">
+<img id="EMI-M00007" he="5.67mm" wi="49.02mm" file="US08626676-20140107-M00007.TIF" alt="embedded image " img-content="table" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00008" nb-file="US08626676-20140107-M00008.NB">
+<img id="EMI-M00008" he="6.01mm" wi="45.21mm" file="US08626676-20140107-M00008.TIF" alt="embedded image " img-content="table" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00009" nb-file="US08626676-20140107-M00009.NB">
+<img id="EMI-M00009" he="6.69mm" wi="41.99mm" file="US08626676-20140107-M00009.TIF" alt="embedded image " img-content="table" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00010" nb-file="US08626676-20140107-M00010.NB">
+<img id="EMI-M00010" he="8.47mm" wi="21.93mm" file="US08626676-20140107-M00010.TIF" alt="embedded image " img-content="table" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00011" nb-file="US08626676-20140107-M00011.NB">
+<img id="EMI-M00011" he="7.45mm" wi="76.20mm" file="US08626676-20140107-M00011.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00012" nb-file="US08626676-20140107-M00012.NB">
+<img id="EMI-M00012" he="7.03mm" wi="76.20mm" file="US08626676-20140107-M00012.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00013" nb-file="US08626676-20140107-M00013.NB">
+<img id="EMI-M00013" he="6.01mm" wi="76.20mm" file="US08626676-20140107-M00013.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00014" nb-file="US08626676-20140107-M00014.NB">
+<img id="EMI-M00014" he="6.01mm" wi="45.21mm" file="US08626676-20140107-M00014.TIF" alt="embedded image " img-content="table" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00015" nb-file="US08626676-20140107-M00015.NB">
+<img id="EMI-M00015" he="6.69mm" wi="14.82mm" file="US08626676-20140107-M00015.TIF" alt="embedded image " img-content="table" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00016" nb-file="US08626676-20140107-M00016.NB">
+<img id="EMI-M00016" he="20.49mm" wi="59.61mm" file="US08626676-20140107-M00016.TIF" alt="embedded image " img-content="table" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00017" nb-file="US08626676-20140107-M00017.NB">
+<img id="EMI-M00017" he="7.03mm" wi="76.20mm" file="US08626676-20140107-M00017.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00018" nb-file="US08626676-20140107-M00018.NB">
+<img id="EMI-M00018" he="6.01mm" wi="76.20mm" file="US08626676-20140107-M00018.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00019" nb-file="US08626676-20140107-M00019.NB">
+<img id="EMI-M00019" he="15.92mm" wi="76.20mm" file="US08626676-20140107-M00019.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00020" nb-file="US08626676-20140107-M00020.NB">
+<img id="EMI-M00020" he="8.13mm" wi="76.20mm" file="US08626676-20140107-M00020.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00021" nb-file="US08626676-20140107-M00021.NB">
+<img id="EMI-M00021" he="6.01mm" wi="76.20mm" file="US08626676-20140107-M00021.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00022" nb-file="US08626676-20140107-M00022.NB">
+<img id="EMI-M00022" he="8.81mm" wi="76.20mm" file="US08626676-20140107-M00022.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00023" nb-file="US08626676-20140107-M00023.NB">
+<img id="EMI-M00023" he="10.24mm" wi="76.20mm" file="US08626676-20140107-M00023.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00024" nb-file="US08626676-20140107-M00024.NB">
+<img id="EMI-M00024" he="6.35mm" wi="76.20mm" file="US08626676-20140107-M00024.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00025" nb-file="US08626676-20140107-M00025.NB">
+<img id="EMI-M00025" he="8.47mm" wi="76.20mm" file="US08626676-20140107-M00025.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. In a computing environment, a computer-implemented method performed on at least one processor, comprising, developing a learned mechanism for use in outputting a result given input data, including solving a minimization problem that includes a loss function and a regularization term, including processing each data item of a set of data, and for each data item, computing and maintaining information representative of a computed optimization variable and previously computed optimization variables, computing a subgradient based upon the optimization variable, and maintaining information representative of the computed subgradient and previously computed subgradients, wherein computing and maintaining the information representative of the computed optimization variable and the previously computed optimization variables comprises computing and maintaining a running optimization variable average, and wherein computing the subgradient based upon the optimization variable and maintaining the information representative of the computed subgradient and previously computed subgradients further comprises computing and maintaining a running subgradient average, wherein the regularization term utilized is a whole regularization term, and further wherein the regularization term includes L<sub>1</sub>-regularization.</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein solving the minimization problem comprises minimizing the sum of a linear function obtained by averaging the previous subgradients, the regularization function without any discounting factor, and a weighted convex regularization term.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein solving the minimization problem comprises minimizing regret.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref> solving the minimization problem comprises iterating for a plurality of examples in the set of data.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein the regularization term includes L<sub>2</sub>-regularization.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein the regularization term includes convex constraints.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. In a computing environment, a system comprising, a learned mechanism, wherein the learned mechanism is configured to use a dual averaging method that solves a minimization problem that includes a loss function and a regularization term, the learning performed by processing data to obtain a running average for optimization variables and a running average for subgradients.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The system of <claim-ref idref="CLM-00007">claim 7</claim-ref> wherein the learned mechanism comprises a classifier, a mechanism for online prediction of time series, a mechanism for sequential investment, a mechanism for batch learning, a support vector machine, a mechanism for determining logistic regression, a mechanism for compressed sensing, a mechanism for determining least squares or a mechanism for determining hinge loss.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The system of <claim-ref idref="CLM-00007">claim 7</claim-ref> wherein the minimization problem is solved by minimizing the sum of a linear function obtained by averaging the subgradients, the regularization function and a convex regularization term.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The system of <claim-ref idref="CLM-00007">claim 7</claim-ref> wherein the minimization problem is solved by minimizing regret.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The system of <claim-ref idref="CLM-00007">claim 7</claim-ref> wherein the regularization term includes L<sub>1</sub>-regularization.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The system of <claim-ref idref="CLM-00007">claim 7</claim-ref> wherein the regularization term includes L<sub>2</sub>-regularization.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The system of <claim-ref idref="CLM-00007">claim 7</claim-ref> wherein the regularization term includes convex constraints.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The system of <claim-ref idref="CLM-00007">claim 7</claim-ref> wherein the regularization term comprises mixed regularizations.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. An apparatus comprising a processor and one or more computer-readable storage media having computer-executable instructions, which when executed perform steps, comprising:
+<claim-text>(a) reading a first data item;</claim-text>
+<claim-text>(b) computing a subgradient based upon a loss function;</claim-text>
+<claim-text>(c) computing a running average for an optimization variable based upon the current data and any previous running average corresponding to that optimization variable;</claim-text>
+<claim-text>(d) computing a running average for the subgradient based upon the current subgradient and any previous running average corresponding to that subgradient;</claim-text>
+<claim-text>(e) computing a next iterate; and</claim-text>
+<claim-text>(f) reading a next data item and returning to step (b) until a set of data items is processed.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The one or more computer-readable storage media of <claim-ref idref="CLM-00015">claim 15</claim-ref> wherein computing the next iterate comprises solving a minimization problem.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The one or more computer-readable storage media of <claim-ref idref="CLM-00016">claim 16</claim-ref> wherein solving the minimization problem comprises minimizing regret.</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

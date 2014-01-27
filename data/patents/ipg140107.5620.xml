@@ -1,0 +1,765 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626721-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626721</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13292972</doc-number>
+<date>20111109</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>17</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>7</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>707674</main-classification>
+<further-classification>707678</further-classification>
+<further-classification>707679</further-classification>
+<further-classification>707682</further-classification>
+<further-classification>711161</further-classification>
+<further-classification>711162</further-classification>
+</classification-national>
+<invention-title id="d2e43">System and method for scaleable multiplexed transactional log recovery</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>4961224</doc-number>
+<kind>A</kind>
+<name>Yung</name>
+<date>19901000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>713201</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5737600</doc-number>
+<kind>A</kind>
+<name>Geiner et al.</name>
+<date>19980400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>707200</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>5737763</doc-number>
+<kind>A</kind>
+<name>Hilditch</name>
+<date>19980400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>711162</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>5845292</doc-number>
+<kind>A</kind>
+<name>Bohannon et al.</name>
+<date>19981200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>707202</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>5893155</doc-number>
+<kind>A</kind>
+<name>Cheriton</name>
+<date>19990400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>711144</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>5920863</doc-number>
+<kind>A</kind>
+<name>McKeehan et al.</name>
+<date>19990700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718101</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>5966706</doc-number>
+<kind>A</kind>
+<name>Biliris et al.</name>
+<date>19991000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>707 10</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>5996054</doc-number>
+<kind>A</kind>
+<name>Ledain et al.</name>
+<date>19991100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>711203</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>6021408</doc-number>
+<kind>A</kind>
+<name>Ledain et al.</name>
+<date>20000200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>  1  1</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>6185663</doc-number>
+<kind>B1</kind>
+<name>Burke</name>
+<date>20010200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>711156</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>6256637</doc-number>
+<kind>B1</kind>
+<name>Venkatesh et al.</name>
+<date>20010700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>707103 Y</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>6353834</doc-number>
+<kind>B1</kind>
+<name>Wong et al.</name>
+<date>20020300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>714 15</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>6453325</doc-number>
+<kind>B1</kind>
+<name>Cabrera et al.</name>
+<date>20020900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  1  1</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>6490595</doc-number>
+<kind>B1</kind>
+<name>Candee et al.</name>
+<date>20021200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>  1  1</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>6721765</doc-number>
+<kind>B2</kind>
+<name>Ghosh et al.</name>
+<date>20040400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>707202</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>6728879</doc-number>
+<kind>B1</kind>
+<name>Atkinson</name>
+<date>20040400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>713168</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>7003532</doc-number>
+<kind>B2</kind>
+<name>Bradshaw</name>
+<date>20060200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>707202</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>2001/0052073</doc-number>
+<kind>A1</kind>
+<name>Kern et al.</name>
+<date>20011200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>713161</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>2002/0099843</doc-number>
+<kind>A1</kind>
+<name>Fruchtman et al.</name>
+<date>20020700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>709232</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>2002/0103814</doc-number>
+<kind>A1</kind>
+<name>Duvillier et al.</name>
+<date>20020800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>707202</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>2002/0128996</doc-number>
+<kind>A1</kind>
+<name>Reed</name>
+<date>20020900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707  1</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>2003/0225585</doc-number>
+<kind>A1</kind>
+<name>Miller et al.</name>
+<date>20031200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>705  1</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>2003/0226058</doc-number>
+<kind>A1</kind>
+<name>Miller et al.</name>
+<date>20031200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>714 15</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>2003/0233389</doc-number>
+<kind>A1</kind>
+<name>Bradshaw et al.</name>
+<date>20031200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>709101</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>2004/0010499</doc-number>
+<kind>A1</kind>
+<name>Ghosh et al.</name>
+<date>20040100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>707100</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>2004/0030703</doc-number>
+<kind>A1</kind>
+<name>Bourbonnais et al.</name>
+<date>20040200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+<classification-national><country>US</country><main-classification>707100</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>US</country>
+<doc-number>2005/0120036</doc-number>
+<kind>A1</kind>
+<name>Verma et al.</name>
+<date>20050600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707100</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>US</country>
+<doc-number>2006/0143241</doc-number>
+<kind>A1</kind>
+<name>Bradshaw</name>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>US</country>
+<doc-number>2011/0276611</doc-number>
+<kind>A1</kind>
+<name>Verma et al.</name>
+<date>20111100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707826</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00030">
+<othercit><i>Aries: A Transaction Recovery Method Supporting Fine-Granularity Locking and Partial Rollbacks Using Write-Ahead Logging</i>; C. Mohan, IBM Almaden Research Center, Don Haderle, IBM Santa Teresa Laboratory and Bruce Lindsay, Hamid Pirahesh and Peter Schwarz, IBM Almaden Research Center; ACM Transactions on Database Systems, vol. 17, No. 1, Mar. 1992.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>20</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>None</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>8</number-of-drawing-sheets>
+<number-of-figures>8</number-of-figures>
+</figures>
+<us-related-documents>
+<division>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>11357333</doc-number>
+<date>20060217</date>
+</document-id>
+<parent-status>ABANDONED</parent-status>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13292972</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</division>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>10305824</doc-number>
+<date>20021127</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>7003532</doc-number>
+<date>20060221</date>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>11357333</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120078854</doc-number>
+<kind>A1</kind>
+<date>20120329</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Bradshaw</last-name>
+<first-name>Dexter Paul</first-name>
+<address>
+<city>Duval</city>
+<state>WA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Bradshaw</last-name>
+<first-name>Dexter Paul</first-name>
+<address>
+<city>Duval</city>
+<state>WA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Merchant &#x26; Gould</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Microsoft Corporation</orgname>
+<role>02</role>
+<address>
+<city>Redmond</city>
+<state>WA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Ruiz</last-name>
+<first-name>Angelica</first-name>
+<department>2158</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A system and method for providing scaleable recovery for a multiplexed transactional log. Unlike a dedicated log that includes log data of only one client, a multiplexed transactional log may include log data from multiple clients. In a multiplexed transactional log, log data from different clients may be multiplexed into the multiplexed transactional log in any order. The multiplexed log is maintained for multiple clients using a scaleable logging process. After a system failure, the multiplexed log is recovered using a scaleable recovery process. The scaleable recovery process includes an end-of-log locating process for locating the end of the multiplexed log and each of the virtual logs with the multiplexed log. The end-of-log locating process is also scaleable.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="195.33mm" wi="127.68mm" file="US08626721-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="205.06mm" wi="156.97mm" file="US08626721-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="215.31mm" wi="142.92mm" file="US08626721-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="279.40mm" wi="203.20mm" file="US08626721-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="228.09mm" wi="121.75mm" file="US08626721-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="217.85mm" wi="146.13mm" file="US08626721-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="226.23mm" wi="143.51mm" file="US08626721-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="176.19mm" wi="120.48mm" file="US08626721-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="221.06mm" wi="132.67mm" file="US08626721-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">RELATED APPLICATIONS</heading>
+<p id="p-0002" num="0001">This application is a divisional of and claims priority to application Ser. No. 11/357,333, filed Feb. 17, 2006, which is a continuation of Ser. No. 10/305,824, filed Nov. 27, 2002, granted as U.S. Pat. No. 7,003,532, issue date Feb. 21, 2006, both entitled SYSTEM AND METHOD FOR SCALEABLE MULTIPLEXED TRANSACTIONAL LOG RECOVERY, all of which are hereby incorporated by reference.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0003" num="0002">Transactional logging involves maintaining a transactional log that durably records a time serial history of transactions in a system. The transactional log provides information for restoring a system to a particular state in time prior to a system failure. A transactional logging system must be able to reliably and accurately restore logging functionalities after such a system failure.</p>
+<p id="p-0004" num="0003">Traditionally, transactional logging systems have used a dedicated log to support a single log client. Dedicated transactional logging systems are typically very robust and achieve a high performance level. However, the inventor has determined that the high level of reliability of a single log client using a dedicated logging system may actually result in overall performance degradation for a computing environment where multiple log clients are using multiple dedicated logging systems. One of the reasons for this is that each dedicated logging system independently incurs input/output (I/O) overhead to write and retrieve information. The I/O overhead results in adverse performance impact, and the impact is cumulative for each of the independent transactional logging systems. An improved transactional logging system is desirable that could overcome some of these performance problems but could still allow reliable system recovery.</p>
+<heading id="h-0003" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0005" num="0004">Briefly stated, the present invention provides scaleable recovery for a multiplexed transactional log. Unlike a dedicated log that includes log data of only one client, a multiplexed transactional log may include log data from multiple clients. In a multiplexed transactional log, log data from different clients may be multiplexed into the multiplexed transactional log in any order. The log data associated with a particular client is represented by a virtual log of that client within the multiplexed transactional log. In one aspect, the invention is directed to a computer-implemented method for transactional logging using a multiplexed log. The computer-implemented method maintains a multiplexed log for multiple clients using a scaleable logging process. After a system failure, the computer-implemented method recovers the multiplexed log using a scaleable recovery process. The scaleable recovery process includes an end-of-log locating process for locating the end of each virtual log within the multiplexed log. The end-of-log locating process is also scaleable.</p>
+<p id="p-0006" num="0005">In yet another aspect, the invention is directed to a computer-implemented method for maintaining a recoverable transactional log. A log block containing log data is received from one of the clients. The log block is appended to a current region in a flush queue. Metadata associated with the current region is updated to account for the newly appended log block in the current region. If the end of the current region is reached, the metadata is appended to the current region in the flush queue.</p>
+<p id="p-0007" num="0006">In still another aspect, the invention is directed to a computer-implemented method for recovering a transactional log after a system failure. A starting point in the transactional log is determined by referring to metadata associated with the transactional log. The last valid owner page within the transactional log is located by checking at discrete intervals from the starting point toward the end of the transactional log. The method checks the validity of a region in the transactional log associated with the last valid owner page. If the region associated with last valid owner page is valid, the first invalid log block in an incomplete region is located where the incomplete region is located beyond the last valid region toward the end of the transactional log. The end of the transactional log is found when the first invalid log block is located.</p>
+<p id="p-0008" num="0007">In yet another aspect, the present invention is directed to a transactional logging system that includes a transactional log, a metadata file, and a multiplexed transactional logging component. The transactional log is typically stored in a storage unit. The transactional log contains log blocks from clients and owner pages that include information on how the log blocks are organized in the transactional log. The metadata file includes information about the transactional log. The multiplexed transactional logging component is configured to append the log blocks and the owner pages to the transactional log and to recover the transactional log after a system failure using information in the owner pages and the metadata file.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0009" num="0008"><figref idref="DRAWINGS">FIG. 1</figref> illustrates an exemplary computing device that implements the present invention.</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 2</figref> is a schematic diagram of a multiplexed transactional logging system.</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 3</figref> is a graphical representation of two exemplary owner pages.</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 4</figref> is an operational flow diagram of an exemplary process for handling log blocks from a client.</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 5</figref> is an operational flow diagram of another exemplary process for handling log blocks from a client.</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 6</figref> is an operational flow diagram of yet another exemplary process for handling log blocks from a client.</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 7</figref> is an operational flow diagram of an exemplary process for recovering a multiplexed log.</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 8</figref> is an operational flow diagram of another exemplary process for recovering a multiplexed log.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENT</heading>
+<p id="p-0017" num="0016">The inventor of the present invention has appreciated that logging system recovery is an important aspect of a multiplexed transactional logging system. Thus, the present invention focuses on recovering a multiplexed log after a system failure and restoring logging functionalities. For a multiplexed log, restoring logging functionality typically includes determining the end of each of the virtual logs within the multiplexed log. The invention provides a number of methods for locating the end of a multiplexed log and the end of each of the virtual logs within the multiplexed log. The manner in which multiplexed logs are recovered in the present invention is very different from the manner in which dedicated logs are recovered. For example, to recover a dedicated log, a conventional method that scans the entire dedicated log from its last written restart area to locate the end of the log is typically used. Generally, the dedicated log may be scanned sequentially or logarithmically using a binary search algorithm. However, this conventional method is not practical for recovering a multiplexed log. Using this conventional method, each of the virtual logs within the multiplexed log would have to be located by scanning. The number of scans for log recovery proportionally increases with the size and the number of virtual logs within the multiplexed log. The amount of time and system resources required by conventional log recovery methods is prohibitive, especially for a large scale multiplexed transactional logging system.</p>
+<p id="p-0018" num="0017">The present invention provides an improved system and method that enables multiplexed log recovery but requires significantly less time and fewer system resources. In one configuration, the maintenance and recovery of the multiplexed log are scaleable (independent of the size of the multiplexed log and the number of clients). These and other aspects of the invention will become apparent after reading the following detailed description.</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 1</figref> illustrates an exemplary computing device <b>100</b> that may be used in one exemplary embodiment of the present invention. With reference to <figref idref="DRAWINGS">FIG. 1</figref>, one exemplary system for implementing the invention includes a computing device, such as computing device <b>100</b>. In a very basic configuration, computing device <b>100</b> typically includes at least one processing unit <b>102</b> and system memory <b>104</b>. Depending on the exact configuration and type of computing device, system memory <b>104</b> may include volatile memory (such as RAM <b>106</b>), non-volatile memory (such as ROM <b>110</b>, flash memory, etc.), and storage unit <b>130</b> (such as hard drive or other stable storage devices).</p>
+<p id="p-0020" num="0019">Computing device <b>100</b> may also include additional data storage devices (removable and/or non-removable) such as, for example, magnetic disks, optical disks, or tape. Computer storage media may include volatile and nonvolatile memory, storage units, removable and non-removable media implemented in any method or technology for storage of information, such as computer readable instructions, data structures, program modules, or other data. Thus, computer storage media includes, but is not limited to, RAM, ROM, EEPROM, flash memory or other memory technology, CD-ROM, digital versatile disks (DVD) or other optical storage, magnetic cassettes, magnetic tape, magnetic disk storage or other magnetic storage devices, or any other medium which can be used to store the desired information and which can be accessed by computing device <b>100</b>. Any such computer storage media may be part of computing device <b>100</b>. Computing device <b>100</b> may also include input component(s) <b>140</b> such as keyboard <b>122</b>, mouse <b>123</b>, pen, voice input device, touch input device, etc. Output component(s) <b>145</b> such as a display, speakers, printer, etc. may also be included. These devices are well known in the art and need not be discussed at length here.</p>
+<p id="p-0021" num="0020">Computing device <b>100</b> may also contain communication connection(s) <b>150</b> that allow computing device <b>100</b> to communicate with other computing devices, such as over one or more network(s) <b>160</b>. Signals used by communication connection(s) <b>150</b> are one example of communication media. Communication media may typically be embodied by computer readable instructions, data structures, program modules, or other data in a modulated data signal, such as a carrier wave or other transport mechanism, and includes any information delivery media. By way of example, and not limitation, communication media includes wired media such as a wired network or direct-wired connection, and wireless media such as acoustic, RF, infrared and other wireless media. The term computer readable media as used herein includes both storage media and communication media.</p>
+<p id="p-0022" num="0021">System memory <b>104</b> typically includes BIOS <b>111</b>, operating system <b>112</b>, and one or more applications <b>120</b>. As shown in the figure, system memory <b>104</b> may include multiplexed transactional logging system <b>114</b>. Multiplexed transactional logging system <b>114</b> is a computer executable component that provides logging services for applications <b>120</b>, such as Client A and Client B. For illustrative purposes, multiplexed transactional logging system <b>114</b> is shown as a part of the kernel of computing device <b>100</b>. But multiplexed transactional logging system <b>114</b> may be implemented as a separate application executing in either the kernel mode or the user mode of computing device <b>100</b>. Multiplexed transactional logging system <b>114</b> may also be implemented as two or more components executing in either mode.</p>
+<p id="p-0023" num="0022">Multiplexed transactional logging system <b>114</b> is configured to maintain and retrieve log data for applications <b>120</b>. Multiplexed transactional logging system <b>114</b> maintains the log data in multiplexed log <b>134</b> stored in storage unit <b>130</b>. The log data from different applications <b>120</b> are multiplexed by multiplexed transactional logging system <b>114</b> before being appended to multiplexed log <b>134</b>. Typically, log data are organized into fixed size log blocks. Log blocks are grouped into regions that make up the multiplexed log <b>134</b>.</p>
+<p id="p-0024" num="0023">Multiplexed transactional logging system <b>114</b> may defer log data in flush queue <b>116</b> before appending the log data to multiplexed log <b>134</b>. Metadata, which is information about the structure and organization of the multiplexed log <b>134</b>, may be included in metadata file <b>136</b> stored in storage unit <b>130</b>. Metadata for multiplexed log <b>134</b> may also be appended to multiplexed log <b>134</b> as owner pages. Owner pages will be discussed in more detail in conjunction with <figref idref="DRAWINGS">FIG. 3</figref>. Briefly stated, an owner page contains metadata of a particular region in the multiplexed log. One or more owner pages <b>109</b> may be stored in volatile memory before they are appended to multiplexed log <b>134</b>.</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 2</figref> is a schematic diagram of multiplexed transactional logging system <b>114</b>. Multiplexed transactional logging system <b>114</b> provides logging services to multiple clients, such as Clients A, B and C. Each client is an application that maintains a log through the multiplexed transactional logging system <b>114</b>. Examples of the clients may be a database application, a transactional file system, or the like. Clients A and B, which are also shown in <figref idref="DRAWINGS">FIG. 1</figref>, are applications executing in the same computing device on which multiplexed transactional logging system <b>114</b> is executing. As shown in the figure, Client C is an application executing on a remote computing device. Multiplexed transactional logging system <b>114</b> is capable of providing logging services to remote applications such as Client C.</p>
+<p id="p-0026" num="0025">Multiplexed transactional logging system <b>114</b> is configured to provide the illusion to each of Clients A, B, and C that a separate, dedicated log is being maintained for each client. In other words, Clients A, B, and C send log data to multiplexed transactional logging system <b>114</b> with the expectation that the log data are stored in dedicated logs. For the purpose of this discussion, the illusory dedicated logs are referred to as &#x201c;virtual logs,&#x201d; represented in the figure as virtual logs <b>211</b>-<b>213</b>. In actuality, multiplexed transactional logging system <b>114</b> multiplexes and appends the log data from each client to multiplexed log <b>134</b>, which is shared by Clients A, B, and C. The log data are typically organized into log blocks. A log block is a unit of physical log I/O that includes a fixed-sized log block header and a body which may be of any size. In one embodiment, the size of log blocks may be multiple of the size of a sector associated with storage unit <b>130</b>.</p>
+<p id="p-0027" num="0026">Multiplexed transactional logging system <b>114</b> may be configured to maintain owner pages, which are data structures that contain information about how log blocks are arranged in multiplexed log <b>134</b>. Owner pages will be discussed in more detailed in conjunction with <figref idref="DRAWINGS">FIG. 3</figref>. Briefly stated, an owner page may include information about the ownership of log blocks in a region of multiplexed log <b>134</b>. Multiplexed transactional logging system <b>114</b> may use the metadata in the owner pages to organize log blocks as virtual logs <b>211</b>-<b>213</b> for providing logging services to Clients A, B, and C. Multiplexed transactional logging system <b>114</b> may also use the metadata in owner pages for recovering logging functionalities after a system failure. Owner pages may be appended to multiplexed log <b>134</b> as shown in the figure. Owner pages may also be appended to metadata file <b>136</b>, which is a data structure separate from multiplexed log <b>134</b>.</p>
+<p id="p-0028" num="0027">In operation, multiplexed transactional logging system <b>114</b> may receive log blocks from Clients A, B and C at different times and order. Multiplexed transactional logging system <b>114</b> multiplexes the log blocks by appending them to a single multiplexed log <b>134</b>. Multiplexed transactional logging system <b>114</b> may defer appending the multiplexed log blocks using flush queue <b>116</b>. Flush queue <b>116</b> is a data structure that represents the multiplexed log blocks that will be appended to multiplexed log <b>134</b>. Flush queue <b>116</b> is typically stored in volatile memory. Multiplexed transactional logging system <b>114</b> may be configured to use flush queue <b>116</b> for reducing the need to access storage unit <b>130</b> and improving system performance.</p>
+<p id="p-0029" num="0028">For example, if storage unit <b>130</b> is a hard drive, a performance overhead is generated every time multiplexed transactional logging system <b>114</b> accesses the hard drive to append multiplexed log blocks. Multiplexed logging system <b>114</b> may be configured to write log blocks in flush queue <b>116</b> to the hard drive only when the user voluntarily requests that the log blocks be forced to the hard disk or when memory tied up by log blocks has exceeded a user-defined flush threshold. By accumulating log blocks in volatile memory using a flush queue, the performance overhead is reduced by amortizing multiple potential accesses to the hard drive with a single hard drive access.</p>
+<p id="p-0030" num="0029">To facilitate management of log blocks, multiplexed transactional logging system <b>114</b> maintains metadata file <b>136</b> that contains metadata about the multiplexed log <b>134</b>. Metadata file <b>136</b> is typically stored in a stable storage media, such as storage unit <b>130</b>. Metadata file <b>136</b> may include many different kinds of information. For example, metadata may include the owner pages of the regions of multiplexed log <b>134</b>. In one embodiment of the invention, the owner pages for the regions are appended in multiplexed log <b>134</b> and metadata file <b>136</b> includes the location in multiplexed log <b>134</b> at which the last owner page in the log is appended. This location enables multiplexed transactional logging system <b>114</b> to locate the last owner page for recovering multiplexed log <b>134</b> after a system failure.</p>
+<p id="p-0031" num="0030">Multiplexed transactional logging system <b>114</b> may defer one or more regions of log data in flush queue <b>116</b>. The owner page of the current region in the flush queue may be stored in volatile memory until the current region is filled. After receiving enough log blocks to fill a region, multiplexed transactional logging system <b>114</b> may be configured to immediately append the log blocks in the flush queue <b>116</b> to multiplexed log <b>134</b>. Multiplexed transactional logging system <b>114</b> may append the owner page associated with the region to metadata file <b>136</b>. Multiplexed transactional logging system <b>114</b> may also append the owner page to the region before appending the region to multiplexed log <b>134</b>.</p>
+<p id="p-0032" num="0031">In one embodiment, multiplexed transactional logging system <b>114</b> may be configured to improve performance by reducing the overhead associated with appending log blocks to multiplexed log <b>134</b> and owner pages to metadata <b>136</b>. In this configuration, multiplexed transactional logging system <b>114</b> is capable of deferring multiple regions of log blocks. For example, as shown in the figure, multiplexed log <b>134</b> has appended log blocks to flush queue <b>116</b> up to current region <b>222</b>. After receiving enough log data to current region <b>222</b>, multiplexed transactional logging system <b>114</b> creates new owner page <b>340</b> for new region <b>224</b> and appends current owner page <b>310</b> associated with current region <b>222</b> to the flush queue <b>116</b>. Multiplexed transactional logging system <b>114</b> may copy some of the data in current owner page <b>310</b> to new owner page <b>340</b>. Multiplexed transactional logging system <b>114</b> may append the log blocks in flush queue <b>116</b> to multiplexed log <b>134</b> when the size of the flush queue <b>116</b> reaches a critical value, when a client instructed its log blocks be immediately appended to multiplexed log <b>134</b>, or some other predetermined events.</p>
+<p id="p-0033" num="0032">The log blocks in flush queue <b>116</b> may be appended to multiplexed log <b>134</b> in any order. Typically, each region in flush queue <b>116</b> is appended to multiplexed log <b>134</b> in sequential order. The log blocks in each region may be appended in any order.</p>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIG. 3</figref> is a graphical representation of two exemplary owner pages. Current owner page <b>310</b> is associated with current region <b>222</b> shown in <figref idref="DRAWINGS">FIG. 2</figref> and new owner page <b>340</b> is associated with new region <b>224</b>. Generally stated, an owner page contains information about client ownership of the log blocks in a region. In one embodiment, the owner page is a special log block with the metadata that associates the log blocks with the clients. The owner pages may be stored at specified intervals within the multiplexed log so that the locations of the owner pages may be determined directly, as opposed to scanning the entire multiplexed log. An owner page may include an owner referral and an owner array.</p>
+<p id="p-0035" num="0034">Owner referral <b>320</b> maps each client to a range of locations within the multiplexed log where log blocks owned by the client are found. As shown in the figure, owner referral <b>320</b> of current owner page <b>310</b> contains a minimum location identifier and a maximum location identifier for each client that has log blocks in current region <b>222</b>. The minimum location identifier identifies a location where the beginning of the client's first log block in the region is found. The maximum location identifier identifies a location where the end of the client's the last log block in the multiplexed log is found. In one embodiment, the minimum location identifiers and the maximum identifiers are strictly monotonically increasing within a client's virtual log. Owner array <b>330</b> identifies the client owner of each of the sectors associated with current region <b>222</b>.</p>
+<p id="p-0036" num="0035">New owner page <b>340</b> is an owner page created for a new region <b>224</b> after current region <b>222</b> has been filled. For illustrative purposes, no log data have been appended to new region <b>224</b>. To create new owner page <b>340</b>, some of the data from current owner page <b>310</b> may be copied to new owner page <b>340</b>. In one embodiment, the maximum location identifiers in the owner referral of a current owner page are copied to the owner referral of a new owner page. As shown in the figure, the maximum location identifier for each of the clients in owner referral <b>320</b> is copied to owner referral <b>350</b>. The minimum location identifiers in owner referral <b>350</b> are filled with place-holders. In this embodiment, only some of the data and not all the data are copied. New owner page <b>340</b> initializes its owner array to indicate that nothing has been written to its log region.</p>
+<p id="p-0037" num="0036">It is to be appreciated that copying maximum location identifiers from a current owner page to a new owner page enables the new owner page to identify where the last log block of each of the clients is located in the multiplexed log. In other words, the new owner page may be used as a look-up table for finding the end of each of the virtual logs in the multiplexed log. A scaleable process that determines the end of a multiplexed log using the owner referral of an owner page will be discussed in detail in conjunction with <figref idref="DRAWINGS">FIG. 8</figref>.</p>
+<p id="p-0038" num="0037"><figref idref="DRAWINGS">FIG. 4</figref> is an operational flow diagram of an exemplary process <b>400</b> for handling log blocks from a client. Moving from a start block, process <b>400</b> goes to block <b>410</b> where a log block is appended to a flush queue.</p>
+<p id="p-0039" num="0038">At block <b>412</b>, the owner page of the current region is updated. This current owner page may be included in a metadata file stored in a stable storage medium. The current owner page is immediately modified and flushed to the metadata file to account for the newly appended log block. The process continues at decision block <b>415</b>.</p>
+<p id="p-0040" num="0039">At decision block <b>415</b>, a determination is made whether the end of the current region is reached. If so, process <b>400</b> goes to block <b>420</b> where a new region is started and the current region is appended to the multiplexed log. The current owner page is appended to the current region and is appended to the multiplexed log along with the current region. At block <b>425</b>, the current owner page in the metadata file is overwritten to create a new owner page. At block <b>430</b>, certain data from the current owner page are transferred to the new owner page. Process <b>400</b> continues at decision block <b>440</b>.</p>
+<p id="p-0041" num="0040">Returning to block <b>415</b>, if the end of the current region is not reached, the process continues at decision block <b>440</b>. At decision block <b>440</b>, a determination is made whether more log blocks are ready for appending to the multiplexed log. If so, process <b>400</b> returns to block <b>410</b>. If no log block is ready for appending, the process ends.</p>
+<p id="p-0042" num="0041">Since process <b>400</b> requires the multiplexed log and the metadata file to be updated for each new log blocks, the multiplexed log is readily recoverable. However, it is to be appreciated that a relatively large amount of system resources would have to be dedicated for constantly accessing one or more stable storage media where the multiplexed log and the metadata file are stored. In particular, every log block requires accessing a stable storage medium (e.g. a hard disk) at least twice: one to write the metadata and one to append the log block to the multiplexed log.</p>
+<p id="p-0043" num="0042"><figref idref="DRAWINGS">FIG. 5</figref> is an operational flow diagram of another exemplary process <b>500</b> for handling log blocks from a client. Moving from start block, process <b>500</b> moves to block <b>510</b> where a log block is appended to a flush queue. At block <b>515</b>, the owner page of the current region is updated. The owner page may be stored in volatile memory. The current owner page is modified to account for the newly appended log data. Process <b>500</b> continues at decision block <b>520</b>.</p>
+<p id="p-0044" num="0043">At decision block <b>520</b>, a determination is made whether the end of the current region is reached. If so, a new region is started in the flush queue and process <b>500</b> goes to block <b>525</b> where a new owner page associated with the new region is created in volatile memory. At block <b>530</b>, certain data from the current owner page are transferred to the new owner page. At block <b>535</b>, the current owner page in a metadata file is replaced with a new owner page for the new region. The metadata file may be stored in a stable storage medium. At block <b>540</b>, the current region in the flush queue is forced to the multiplexed log. Process <b>500</b> continues at decision block <b>545</b>.</p>
+<p id="p-0045" num="0044">At decision block <b>545</b>, a determination is made whether more log blocks are ready for appending. If so, process <b>500</b> returns to block <b>510</b>. If no log block is ready for appending, the process ends.</p>
+<p id="p-0046" num="0045">It is to be appreciated that process <b>500</b> consumes less system resources and incurs less I/O overhead than process <b>400</b> discussed previously in conjunction with <figref idref="DRAWINGS">FIG. 4</figref>. Deferring the log blocks in a flush queue before appending them to the multiplexed log and keeping the owner page of the current region in volatile memory reduce the frequency for accessing one or more stable storage media where the multiplexed log and the metadata file are stored. The disadvantage of process <b>500</b> is that the flush queue is forced to the multiplexed log at the end of every log region. Forcing the flush queue occurs when the end of a region is reached, as opposed to the voluntary intent of a log client. This is not desirable because during forward progress an efficient logging system should allow its clients to voluntarily determine when to incur a performance penalty associated with forcing the flush queue to a log.</p>
+<p id="p-0047" num="0046">For process <b>500</b>, since the multiplexed log and the metadata file are not updated until a complete region is actually appended and forced to non-volatile storage, a process is needed for recovering the multiplexed log in case a system failure occurs while log blocks are stored in the flush queue but before they actually make it to non-volatile storage. An exemplary recovery process associated with process <b>500</b> will be discussed in conjunction with <figref idref="DRAWINGS">FIG. 7</figref>.</p>
+<p id="p-0048" num="0047"><figref idref="DRAWINGS">FIG. 6</figref> is an operational flow diagram of yet another exemplary process <b>600</b> for handling log blocks from a client. Moving from start block, process <b>600</b> moves to block <b>610</b> where a log block is appended to a flush queue. At block <b>615</b>, the owner page of the current region cached in volatile memory is updated to account for the newly appended log block. The process continues at decision block <b>620</b>.</p>
+<p id="p-0049" num="0048">At decision block <b>620</b>, a determination is made whether the end of the current region is reached. If so, a new region is started in flush queue and process <b>600</b> goes to block <b>625</b> where a new owner page associated with the new region is created in volatile memory. At block <b>630</b>, certain data from the current owner page are transferred to the new owner page. At block <b>635</b>, the current owner page is appended to the flush queue as a log block. It is to be appreciated that process <b>600</b> does not require the owner page to be stored separately and immediately in a stable storage medium. The process also enables multiple regions of log blocks to be appended to the flush queue. Thus, process <b>600</b> reduces system overhead but still allows recovery of the multiplexed log.</p>
+<p id="p-0050" num="0049">At decision block <b>640</b>, a determination is made whether more log blocks are ready for appending. If so, process <b>600</b> returns to block <b>610</b>. If no log block is ready for appending, the process ends.</p>
+<p id="p-0051" num="0050">It is to be appreciated that process <b>600</b> incurs even less system resources than process <b>500</b> discussed previously in conjunction with <figref idref="DRAWINGS">FIG. 5</figref>. Unlike process <b>400</b> and process <b>500</b>, process <b>600</b> does not force a flush queue to be appended to a multiplexed log when an owner page is appended to the flush queue. Thus, process <b>600</b> enables clients to control when the flush queue is forced to stable storage in the multiplexed log.</p>
+<p id="p-0052" num="0051">Process <b>600</b> also allows forward progress of the multiplexed log to incur little or no I/O overhead when compared with a dedicated log system. Thus, forward progress is scaleable because appending owner pages to the flush queue occurs in constant time and does not incur undesirable and unexpected overhead associated with forcing the flush queue to stable storage in the multiplexed log.</p>
+<p id="p-0053" num="0052">However, because multiple regions of log blocks may be in the flush queue when a system failure occurs, a sophisticated process is required to recover a multiplexed log maintained by process <b>600</b>. An exemplary recovery process associated with process <b>600</b> will be discussed in conjunction with <figref idref="DRAWINGS">FIG. 8</figref>.</p>
+<p id="p-0054" num="0053"><figref idref="DRAWINGS">FIG. 7</figref> is an operational flow diagram of an exemplary process <b>700</b> for recovering a multiplexed log. Process <b>700</b> may be used to recover log blocks appended to a multiplexed log using process <b>500</b> described in conjunction with <figref idref="DRAWINGS">FIG. 5</figref>. Process <b>700</b> begins after a system failure. Moving from a start block, the process moves to block <b>710</b> where the multiplexed log is opened. At block <b>715</b>, the last owner page in the multiplexed log is determined. The last owner page and its location in the multiplexed log are determined by referring to metadata associated with the multiplexed log.</p>
+<p id="p-0055" num="0054">Process <b>700</b> continues at block <b>735</b> where the end of the multiplexed log is determined. The end of the multiplexed log may be determined by sequentially checking each log block from the start of the region associated with the last owner page. The log blocks of the region are sequentially checked until an invalid log block is determined, indicating the end of the multiplexed log. After the end of the multiplexed log was determined, the process moves to block <b>740</b> where the last cached owner page is updated. For example, some of the entries in the owner page may have to be deleted to account for the log blocks that were not appended to the multiplexed log due to the system failure. Process <b>700</b> then ends.</p>
+<p id="p-0056" num="0055"><figref idref="DRAWINGS">FIG. 8</figref> is an operational flow diagram of another exemplary process <b>800</b> for recovering a multiplexed log. Process <b>800</b> may be used to recover log blocks appended to a multiplexed log using process <b>600</b> described in conjunction with <figref idref="DRAWINGS">FIG. 6</figref>. Moving from a start block, the process moves to block <b>810</b> where the multiplexed log is opened.</p>
+<p id="p-0057" num="0056">Process <b>800</b> moves to block <b>815</b> where location information of the last owner page in the multiplexed log is determined. The location information of the last owner page is typically stored in a metadata file as metadata. To improve performance, metadata may not be updated very frequently. Thus, the location information may not indicate the location of the last owner page that was actually appended to the multiplexed log. But the indicated location may be used as a starting point.</p>
+<p id="p-0058" num="0057">At block <b>820</b>, the last valid owner page is determined. The last valid owner page may be determined beginning from the starting point indicated by the location information determined at block <b>815</b> and scanning forward in the multiplexed log at a fixed interval. The fixed interval may coincide with the size of the fixed size region. Scanning forward across owner pages may be performed by a linear scan or an exponential back out followed by a binary search of owner pages. When the last valid owner page is located, process <b>800</b> continues at <b>825</b>.</p>
+<p id="p-0059" num="0058">At block <b>825</b>, the log blocks in the region associated with the last valid owner page are checked. Many methods for checking data validity may be used. One exemplary method is linearly validating each block in the region. Process <b>800</b> continues at decision block <b>835</b> where a determination is made whether the region is valid. If not, the process goes to block <b>830</b> where the prior region is checked and loops back to decision block <b>835</b>. The loop continues until a valid region is found. Typically, the last valid region is further down the multiplexed log than the starting point. Then, process <b>800</b> moves to block <b>840</b>.</p>
+<p id="p-0060" num="0059">At block <b>840</b>, the owner page is reconstructed in memory from the log blocks of the incomplete region and the end of the multiplexed log is determined. The last valid log block of multiplexed log may be determined by checking log blocks located after the last valid region. Each log block is checked for validity until an invalid log block is located. Information obtained from checking the log blocks may be used to reconstruct the owner page. When the owner page is reconstructed, the end of each of the virtual logs in the multiplexed log is readily determined by the reconstructed owner page. As discussed in conjunction with <figref idref="DRAWINGS">FIG. 3</figref>, maximum location identifiers are copied into the owner referral of a new owner page. For process <b>800</b>, maximum location identifiers in the owner referral of the reconstructed owner page identify the last log block of each of the client in the multiplexed log. Thus, the end of each of the virtual logs is readily determined. At block <b>845</b>, logging functionality on the multiplexed log is restored and process <b>800</b> ends.</p>
+<p id="p-0061" num="0060">It is appreciated using process <b>800</b>, log recovery is scaleable because the process involves a bounded scan of regions towards the end of the multiplexed log. The bound is determined by the flush threshold, which is typically set by the log clients. Finding the end of the multiplexed log and the end of each of the virtual logs is also scaleable because the process is a constant time and space table lookup independent of the size of the multiplexed log and the number of clients. Furthermore, after recovery, little or no I/O overhead is incurred since the owner referral of the last region that was recovered by process <b>800</b> is already reconstructed in memory.</p>
+<p id="p-0062" num="0061">It is further appreciated that multiplexed log recovery process <b>800</b> in conjunction with the forward progress process <b>600</b> minimizes the log I/O overheard during forward progress of the multiplexed log at the expense of a more elaborate recovery scheme after system failure. During normal forward progress, the client, not the logging system, determines when the flush queue is forced to stable storage. Thus, the normal forward progress of the multiplexed log is efficient. The advantages of having an efficient forward progress are offset only in the rare event of a log recovery after a system failure. But even this offset is minimal because the multiplexed log recovery process <b>800</b> is scaleable. Thus, the system and method of the present invention optimize normal forward progress of a multiplexed log with the compromise of a more elaborate recovery process in the exceptional case of log recovery. With a recovery process that is scaleable, determination of the end of each of the virtual logs in the multiplexed log requires very little effort.</p>
+<p id="p-0063" num="0062">The above specification, examples and data provide a complete description of the invention. Since many embodiments of the invention can be made without departing from the spirit and scope of the invention, the invention resides in the claims hereinafter appended.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>I claim: </us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A computer-implemented method for recovering a multiplexed transactional log after a system failure, comprising:
+<claim-text>determining a starting point in the transactional log by referring to metadata associated with the transactional log; wherein the transactional log is multiplexed and includes log blocks from different clients and an owner page for each of the different clients and wherein the log blocks from different clients that are stored within the transactional log are unrelated;</claim-text>
+<claim-text>locating a last valid owner page within the transactional log by checking at discrete intervals from the starting point toward the end of the transactional log;</claim-text>
+<claim-text>checking the validity of a region in the transactional log associated with the last valid owner page; and</claim-text>
+<claim-text>if the region associated with last valid owner page is valid, determining a first invalid log block in an incomplete region, wherein the incomplete region is located beyond the valid region toward the end of the transactional log.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the discrete intervals are the extent of a region.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising sequentially checking regions toward the beginning of the transactional log until a valid region is found when the region associated with last valid owner page is not valid.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising reconstructing a new owner page associated with the incomplete region.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein checking the validity of a region in the transactional log associated with the last valid owner page comprises linearly validating each block in the region.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising reconstructing in a memory an owner page form log blocks in the incomplete region.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The computer-implemented method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein metadata associated with the transactional log is stored in a metadata file that includes information about the transactional log.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. A computer-readable medium, excluding a signal, having computer executable instructions for recovering a transactional log after a system failure when executed using a processing unit, comprising:
+<claim-text>determining a starting point using the processing unit in the transactional log by referring to metadata associated with the transactional log; wherein the transactional log includes log blocks from clients and an owner page for each of the clients and wherein the log blocks from different clients that are stored within the transactional log are unrelated;</claim-text>
+<claim-text>locating a last valid owner page within the transactional log by checking at discrete intervals from the starting point toward the end of the transactional log using the processing unit;</claim-text>
+<claim-text>checking the validity of a region in the transactional log associated with the last valid owner page using the processing unit; and</claim-text>
+<claim-text>if the region associated with last valid owner page is valid, determining a first invalid log block in an incomplete region using the processing unit, wherein the incomplete region is located beyond the valid region toward the end of the transactional log.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The computer-readable medium of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the discrete intervals are the extent of a region.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The computer-readable medium of <claim-ref idref="CLM-00008">claim 8</claim-ref>, further comprising sequentially checking regions toward the beginning of the transactional log until a valid region is found when the region associated with last valid owner page is not valid.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The computer-readable medium of <claim-ref idref="CLM-00008">claim 8</claim-ref>, further comprising reconstructing a new owner page associated with the incomplete region.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The computer-readable medium of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein checking the validity of a region in the transactional log associated with the last valid owner page comprises linearly validating each block in the region.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The computer-readable medium of <claim-ref idref="CLM-00008">claim 8</claim-ref>, further comprising reconstructing in a memory an owner page form log blocks in the incomplete region.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The computer-readable medium of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein metadata associated with the transactional log is stored in a metadata file that includes information about the transactional log.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. A system for recovering a transactional log after a system failure, comprising:
+<claim-text>a processing unit;</claim-text>
+<claim-text>a transactional log; and</claim-text>
+<claim-text>a logging component configured to perform actions using the processing unit, comprising:
+<claim-text>determining a starting point in the transactional log by referring to metadata associated with the transactional log; wherein the transactional log includes log blocks from clients and an owner page for each of the clients and wherein the log blocks from different clients that are stored within the transactional log are unrelated;</claim-text>
+<claim-text>locating a last valid owner page within the transactional log by checking at discrete intervals from the starting point toward the end of the transactional log;</claim-text>
+<claim-text>checking the validity of a region in the transactional log associated with the last valid owner page; and</claim-text>
+<claim-text>if the region associated with last valid owner page is valid, determining a first invalid log block in an incomplete region, wherein the incomplete region is located beyond the valid region toward the end of the transactional log.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the discrete intervals are the extent of a region.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, further comprising sequentially checking regions toward the beginning of the transactional log until a valid region is found when the region associated with last valid owner page is not valid.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, further comprising reconstructing a new owner page associated with the incomplete region.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein checking the validity of a region in the transactional log associated with the last valid owner page comprises linearly validating each block in the region.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, further comprising reconstructing in a memory an owner page form log blocks in the incomplete region. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

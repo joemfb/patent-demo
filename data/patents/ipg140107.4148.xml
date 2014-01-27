@@ -1,0 +1,2162 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08625217-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08625217</doc-number>
+<kind>B1</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13628579</doc-number>
+<date>20120927</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>11</class>
+<subclass>B</subclass>
+<main-group>20</main-group>
+<subgroup>10</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>04</class>
+<subclass>B</subclass>
+<main-group>1</main-group>
+<subgroup>10</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>360 39</main-classification>
+<further-classification>375350</further-classification>
+</classification-national>
+<invention-title id="d2e43">Branch metric computation and noise predictive calibration/adaptation for over-sampled Y samples</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5809081</doc-number>
+<kind>A</kind>
+<name>Karabed et al.</name>
+<date>19980900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>375263</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2002/0154430</doc-number>
+<kind>A1</kind>
+<name>Rae et al.</name>
+<date>20021000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>360 25</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>2004/0252395</doc-number>
+<kind>A1</kind>
+<name>Elliott et al.</name>
+<date>20041200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>360 51</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>2007/0096950</doc-number>
+<kind>A1</kind>
+<name>Yang et al.</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>341 50</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>2010/0322359</doc-number>
+<kind>A1</kind>
+<name>Stockmanns et al.</name>
+<date>20101200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>375341</main-classification></classification-national>
+</us-citation>
+</us-references-cited>
+<number-of-claims>20</number-of-claims>
+<us-exemplary-claim>15</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>None</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>4</number-of-drawing-sheets>
+<number-of-figures>6</number-of-figures>
+</figures>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only" applicant-authority-category="assignee">
+<addressbook>
+<orgname>LSI Corporation</orgname>
+<address>
+<city>Milpitas</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Yang</last-name>
+<first-name>Shaohua</first-name>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Wu</last-name>
+<first-name>Xuebin</first-name>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Advent, LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>LSI Corporation</orgname>
+<role>02</role>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Huber</last-name>
+<first-name>Paul</first-name>
+<department>2686</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Techniques are disclosed for performing branch metric computations/noise predictive calibration/adaptation for over-sampled Y samples. In one or more embodiments, the techniques employ a data processing apparatus (circuit) that includes a parallel to serial convertor configured to receive a first stream of sample data (e.g., Y samples) and a second stream of sample data (e.g., Z samples). The parallel to serial convertor is operable to combine the first stream of sample data and the second stream of sample data into a combined stream of sample data (e.g., combined Y and Z samples). The data processing apparatus (circuit) further includes a filter (e.g., a noise predictive finite impulse response (NPFIR) filter, a noise whitening filter, such as a noise predictive calibration/adaptation module (NPCAL) filter, and so forth) that is configured to receive the combined stream of sample data and whiten noise in the combined stream of sample data.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="99.14mm" wi="237.66mm" file="US08625217-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="244.18mm" wi="179.24mm" orientation="landscape" file="US08625217-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="251.04mm" wi="156.80mm" orientation="landscape" file="US08625217-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="174.33mm" wi="161.80mm" file="US08625217-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="228.68mm" wi="181.86mm" file="US08625217-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND</heading>
+<p id="p-0002" num="0001">Various data processing systems have been developed including storage systems, cellular telephone systems, and radio transmission systems. In such systems, data is transferred from a sender to a receiver via a medium. For example, in a storage system, data is sent from a sender (e.g., a write function) to a receiver (e.g., a read function) via a storage medium. As information is stored and transmitted in the form of digital data, errors are introduced that, if not corrected, can corrupt the data and render the information unusable. The effectiveness of any transfer is impacted by any losses in data caused by various factors.</p>
+<p id="p-0003" num="0002">Consequently, error checking systems have been developed to detect and correct errors of digital data. Error checking systems are used, for example, to process data retrieved from a magnetic hard disk drive (HDD). Each data sector of the disk drive can have different noise, jitter, and distortion characteristics or signal to noise ratios (SNR), which can be due, for example, to magnetic media defects, off-track writing, high fly height of magnetic write heads during a writing operation, large phase disturbance, and so forth. The throughput of a HDD is affected by the number of read errors in a data sector, based in part on the SNR, and by the speed at which the read channel can recover from a read error by correcting the errors.</p>
+<heading id="h-0002" level="1">SUMMARY</heading>
+<p id="p-0004" num="0003">Techniques for performing branch metric computations and noise predictive calibration/adaptation for over-sampled equalized sample data are disclosed. In one or more embodiments, the techniques are implemented in a data processing apparatus. The data processing apparatus includes a parallel to serial convertor configured to receive a first stream of sample data and a second stream of sample data. The parallel to serial convertor is operable to combine the first stream of sample data and the second stream of sample data into a combined stream of sample data. The data processing apparatus further includes a filter that is configured to receive the combined stream of sample data and whiten noise in the combined stream of sample data.</p>
+<p id="p-0005" num="0004">This Summary is provided to introduce a selection of concepts in a simplified form that are further described below in the Detailed Description. This Summary is not intended to identify key features or essential features of the claimed subject matter, nor is it intended to be used as an aid in determining the scope of the claimed subject matter.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0006" num="0005">The detailed description is described with reference to the accompanying figures. In the figures, the left-most digit(s) of a reference number identify the figure in which the reference number first appears. The use of the same reference number in different instances in the description and the figures may indicate similar or identical items.</p>
+<p id="p-0007" num="0006"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram that illustrates a detector system that is configured to filter oversampled streams of equalized digital sample data (e.g., over-sampled Y samples), wherein the streams of equalized digital sample data are filtered (whitened) separately and then averaged together.</p>
+<p id="p-0008" num="0007"><figref idref="DRAWINGS">FIG. 2A</figref> is a block diagram that illustrates a data processing apparatus that includes a detector system which is configured to provide branch metric computation of over-sampled streams of digital sample data (e.g., over-sampled Y samples) in accordance with an embodiment of the disclosure.</p>
+<p id="p-0009" num="0008"><figref idref="DRAWINGS">FIG. 2B</figref> is a block diagram that illustrates a data processing apparatus that includes a detector circuit which is configured to provide noise predictive calibration/adaptation of over-sampled streams of digital sample data (e.g., over-sampled Y samples) in accordance with an embodiment of the disclosure.</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 3</figref> is a flow diagram that illustrates a method in an embodiment of the disclosure that is employed by the data processing apparatus of <figref idref="DRAWINGS">FIGS. 2A and 2B</figref> to perform branch metric computations or noise predictive calibration/adaptation of over-sampled streams of digital sample data (e.g., over-sampled Y samples).</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 4</figref> is a block diagram that illustrates a storage system having a read channel that employs a data processing circuit, such as the data processing apparatus of <figref idref="DRAWINGS">FIGS. 2A and 2B</figref>, to perform branch metric computations or noise predictive calibration/adaptation of over-sampled streams of digital sample data (e.g., over-sampled Y samples) by combining the oversampled streams into a combined stream of digital sample data in accordance with an embodiment of the disclosure.</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 5</figref> is a block diagram that illustrates a wireless communication system having a receiver that employs a data processing circuit, such as the data processing apparatus of <figref idref="DRAWINGS">FIGS. 2A and 2B</figref>, to perform branch metric computations or noise predictive calibration/adaptation of over-sampled streams of digital sample data (e.g., over-sampled Y samples) by combining the oversampled streams into a combined stream of digital sample data in accordance with an embodiment of the disclosure.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0013" num="0012">Many error checking systems employ detection systems that use oversampled equalized digital sample data for branch metric computation. For example, as shown in <figref idref="DRAWINGS">FIG. 1</figref>, a twice (2&#xd7;) oversampled equalized detection system <b>100</b> employs a first stream of equalized digital sample data (Y samples) or Y stream <b>102</b> and a second stream of equalized digital sample data (Z samples) or Z stream <b>104</b>. In the embodiment shown, the Z stream is derived by interpolation based on the Y stream <b>102</b>. Consequently, the Z stream <b>104</b> is dependent on the Y stream <b>102</b> by construction. However, in other embodiments, the Z stream <b>104</b> (Z samples) is derived in other ways. For example, in an embodiment, the Z stream <b>218</b> (Z samples) is derived by oversampling the analog to digital converter (ADC) of the system, to furnish a second stream of digital sample data (X samples) that is re-equalized. In another embodiment, the Z stream <b>104</b> is derived from a second analog signal from a storage or transmission channel (e.g., by re-reading a hard disk drive (HDD)), and so forth.</p>
+<p id="p-0014" num="0013">As shown, the Y stream <b>102</b> and the Z stream <b>104</b> are passed (y<sub>k</sub>, z<sub>k</sub>) to first and second noise predictive filters <b>106</b>(<b>1</b>), <b>106</b>(<b>2</b>), respectively. In an embodiment, the first and second noise predictive filters <b>106</b>(<b>1</b>), <b>106</b>(<b>2</b>) are noise predictive finite impulse response (NPFIR) filters. The noise predictive filters <b>106</b>(<b>1</b>), <b>106</b>(<b>2</b>) separately de-correlate (or whiten) the error terms of the respective Y and Z streams <b>102</b>, <b>104</b>, which are then combined (averaged) via adder <b>108</b> and squared to be used by the detector <b>110</b> as log-domain branch metrics from time k to time k+1, and so forth, in the trellis detector branch metric computation. Thus, coefficients for filtering the X and Y streams <b>102</b>, <b>104</b> are separately computed using the equations:</p>
+<p id="p-0015" num="0014">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mrow>
+            <mo>{</mo>
+            <mrow>
+              <msubsup>
+                <mi>g</mi>
+                <mi>i</mi>
+                <mo>*</mo>
+              </msubsup>
+              <mo>,</mo>
+              <mrow>
+                <msubsup>
+                  <mi>f</mi>
+                  <mi>i</mi>
+                  <mo>*</mo>
+                </msubsup>
+                <mo>&#x2062;</mo>
+                <msup>
+                  <mi>&#x3b7;</mi>
+                  <mo>*</mo>
+                </msup>
+              </mrow>
+            </mrow>
+            <mo>}</mo>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <munder>
+              <mrow>
+                <mi>arg</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+              </mrow>
+              <mrow>
+                <msub>
+                  <mi>g</mi>
+                  <mi>i</mi>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>f</mi>
+                  <mi>i</mi>
+                </msub>
+                <mo>,</mo>
+                <mi>&#x3b7;</mi>
+              </mrow>
+            </munder>
+            <mo>&#x2062;</mo>
+            <mi>min</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <msup>
+              <mrow>
+                <mi>E</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>[</mo>
+                  <mrow>
+                    <msub>
+                      <mi>y</mi>
+                      <mi>k</mi>
+                    </msub>
+                    <mo>+</mo>
+                    <mrow>
+                      <munderover>
+                        <mo>&#x2211;</mo>
+                        <mrow>
+                          <mi>i</mi>
+                          <mo>=</mo>
+                          <mn>1</mn>
+                        </mrow>
+                        <mi>m</mi>
+                      </munderover>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <msub>
+                          <mi>f</mi>
+                          <mi>i</mi>
+                        </msub>
+                        <mo>&#x2062;</mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mi>k</mi>
+                            <mo>-</mo>
+                            <mi>i</mi>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mrow>
+                    <mo>+</mo>
+                    <mi>&#x3b7;</mi>
+                  </mrow>
+                  <mo>]</mo>
+                </mrow>
+              </mrow>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mtext>
+</mtext>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mi>and</mi>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>EQN</mi>
+        <mo>.</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mn>1</mn>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mo>{</mo>
+          <mrow>
+            <msubsup>
+              <mi>u</mi>
+              <mi>i</mi>
+              <mo>*</mo>
+            </msubsup>
+            <mo>,</mo>
+            <mrow>
+              <msubsup>
+                <mi>v</mi>
+                <mi>i</mi>
+                <mo>*</mo>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <msup>
+                <mi>&#x3bc;</mi>
+                <mo>*</mo>
+              </msup>
+            </mrow>
+          </mrow>
+          <mo>}</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <munder>
+            <mrow>
+              <mi>arg</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.3em" height="0.3ex"/>
+              </mstyle>
+            </mrow>
+            <mrow>
+              <msub>
+                <mi>u</mi>
+                <mi>i</mi>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>v</mi>
+                <mi>i</mi>
+              </msub>
+              <mo>,</mo>
+              <mi>&#x3bc;</mi>
+            </mrow>
+          </munder>
+          <mo>&#x2062;</mo>
+          <mi>min</mi>
+          <mo>&#x2062;</mo>
+          <mstyle>
+            <mspace width="0.3em" height="0.3ex"/>
+          </mstyle>
+          <mo>&#x2062;</mo>
+          <msup>
+            <mrow>
+              <mi>E</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>[</mo>
+                <mrow>
+                  <msub>
+                    <mi>z</mi>
+                    <mi>k</mi>
+                  </msub>
+                  <mo>+</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>&#x2211;</mo>
+                      <mrow>
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mi>m</mi>
+                    </munderover>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msub>
+                        <mi>u</mi>
+                        <mi>i</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>z</mi>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>-</mo>
+                          <mi>i</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </mrow>
+                  <mo>+</mo>
+                  <mi>&#x3bc;</mi>
+                </mrow>
+                <mo>]</mo>
+              </mrow>
+            </mrow>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>EQN</mi>
+        <mo>.</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mn>2</mn>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+where g<sub>i</sub>* and f<sub>i</sub>* are coefficients for filtering Y stream <b>102</b>, u<sub>i</sub>* and v<sub>i</sub>* are coefficients for filtering the Z stream <b>104</b>, &#x3b7;* is the mean square error of noise in the Y stream <b>102</b>, and &#x3bc;* is the mean square error of the noise in the Z stream <b>104</b>. However, separately de-correlating (whitening) the first and second streams (Y samples and Z samples) <b>102</b>, <b>104</b> does not allow optimum performance of detection system <b>100</b>.
+</p>
+<p id="p-0016" num="0015">Techniques are disclosed to combine the 2&#xd7; over-sampled equalized digital sample data into a combined stream of digital sample data so that the error terms in the combined stream of digital sample data is filtered (whitened) jointly to minimize the mean square error of noise in the sample data. In one or more embodiments, the techniques are implemented in a detection circuit of an error checking system or other data processing apparatus. The detection circuit includes a parallel to serial convertor configured to receive a first stream of sample data or Y stream (e.g., Y samples) and a second stream of sample data or Z stream (e.g., Z samples). The parallel to serial convertor is operable to combine the Y stream and Z stream into a combined stream of sample data (e.g., combined Y and Z samples). A filter configured to receive the combined stream of sample data (combined Y and Z samples) de-correlates (or whitens) noise in (e.g., the error terms of) the combined stream of sample data. In some embodiments, the filter comprises a noise predictive filter, such as a noise predictive finite impulse response (NPFIR) filter, operable to filter noise in the combined stream of sample data to yield one or more branch metrics. However, in other embodiments, the filter comprises a noise whitening filter, such as a noise predictive calibration/adaptation module (NPCAL) filter.</p>
+<p id="p-0017" num="0016">The techniques described herein are applicable to storage of information on virtually any media and/or transmission of information over virtually any channel. Storage applications include, but are not limited to: hard disk drives, compact disks, digital video disks, magnetic tapes and memory devices such as DRAM, NAND flash, NOR flash, other non-volatile memories and solid state drives. Transmission applications include, but are not limited to: optical fiber, radio frequency channels, wired or wireless local area networks, digital subscriber line technologies, wireless cellular, Ethernet over any medium such as copper or optical fiber, cable channels such as cable television, and Earth-satellite communications.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIGS. 2A and 2B</figref> illustrate data processing apparatus <b>200</b> that employs twice (2&#xd7;) oversampled equalized detection system <b>202</b> in accordance with example embodiments of the present disclosure. The data processing apparatus <b>200</b> includes an analog front end <b>204</b> that receives and processes an analog signal <b>206</b> from a storage or transmission channel.</p>
+<p id="p-0019" num="0018">In an embodiment, the analog front end <b>204</b> includes, but is not necessarily limited to: an analog filter, or an amplifier circuit. For example, in embodiments, the analog front end <b>204</b> includes a high pass filter, a variable gain amplifier (VGA), a compensation circuit for the magneto-resistive asymmetry (MRA) characteristic of a magnetic write head, and so forth. In some embodiments, the gain of a variable gain amplifier included as part of analog front circuit <b>204</b> and the cutoff frequency and boost of an analog filter included in analog front end circuit <b>204</b> is modifiable.</p>
+<p id="p-0020" num="0019">The analog front end <b>204</b> receives and processes the analog signal <b>206</b>, and provides a processed analog signal <b>208</b> to an analog to digital converter (ADC) <b>210</b>. In embodiments, the analog signal <b>206</b> is derived from a variety of sources. For example, in some embodiments, the analog signal <b>206</b> is derived from a read/write head assembly in a storage or transmission channel that is disposed in relation to a storage medium. In other embodiments, analog signal <b>206</b> is derived from a receiver circuit in a storage or transmission channel that is operable to receive a signal from a transmission medium. In embodiments, the transmission medium is wireless or wired and includes, but is not necessarily limited to, cable or optical connectivity. Other examples are possible.</p>
+<p id="p-0021" num="0020">The analog to digital converter (ADC) <b>210</b> converts the processed analog signal <b>208</b> into a corresponding series or stream of digital sample data <b>212</b> or X samples. The analog to digital converter (ADC) <b>210</b> comprises a circuit that is capable of producing digital sample data corresponding to an analog input signal <b>208</b>. It will be appreciated that a variety of analog to digital converters (ADCs) <b>210</b> are employed by different embodiments of the data processing apparatus <b>200</b>. It is further contemplated that, in embodiments, the stream of digital sample data (X samples) <b>212</b> is obtained directly from a digital storage device or digital transmission medium, without the use of an analog to digital converter (ADC) <b>210</b>.</p>
+<p id="p-0022" num="0021">The stream of digital sample data (X samples) <b>212</b> is provided to one or more equalizers (a single equalizer <b>214</b> is shown). The equalizer <b>214</b> applies an equalization algorithm to the stream of digital sample data (X samples) <b>212</b> to yield a stream of equalized sample data or Y stream <b>216</b> (Y samples). In embodiments, the equalizer <b>214</b> comprises a digital finite impulse response (DFIR) filter circuit. However, other embodiments are contemplated. In embodiments, the equalized digital sample data (Y samples) of the Y stream <b>216</b> are stored in a Y memory (not shown) until the detection system <b>202</b> is available to begin processing the data <b>216</b> as discussed below.</p>
+<p id="p-0023" num="0022">A second stream of equalized digital sample data or Z stream <b>218</b> (Z samples) is also provided. In the illustrated embodiment, the Z stream <b>218</b> (Z samples) is derived by interpolation based on the Y stream <b>216</b>. Thus, in this embodiment, the Z stream <b>218</b> is dependent on the Y stream <b>216</b> by construction. However, in other embodiments, the Z stream <b>218</b> (Z samples) is derived in other ways. For example, in an embodiment, the Z stream <b>218</b> (Z samples) are derived by oversampling the ADC <b>210</b> to generate a second stream of digital sample data (X samples) that is re-equalized (e.g., by equalizer <b>214</b>). In another embodiment, the Z stream <b>218</b> (Z samples) are derived from a second analog signal <b>206</b> from a storage or transmission channel (e.g., by re-reading a hard disk drive (HDD)), and so forth.</p>
+<p id="p-0024" num="0023">As shown, the Y stream <b>216</b> and the Z stream <b>218</b> are passed (y<sub>k</sub>, z<sub>k</sub>) to a parallel to serial (P2S) convertor <b>220</b>, which combines the Y stream <b>216</b> and the Z stream <b>218</b> into a combined stream of equalized sample data or combined Y and Z stream <b>222</b> (combined Y and Z samples). In embodiments, the parallel to serial (P2S) converter <b>220</b> comprises a circuit or device that is capable of combining two separate streams of digital data into a single third stream of digital data. For example, in an embodiment, the parallel to serial (P2S) converter <b>20</b> comprises buffer memory. In such an embodiment, the Y stream <b>216</b> is written to first addresses (e.g., even addresses) of the buffer memory, while the Z stream <b>218</b> is written to second addresses of the buffer memory (e.g., odd addresses). The combined Y and Z stream <b>222</b> is then read from the buffer memory with a faster clock speed, sequentially. However, it will be appreciated that, in embodiments, a variety of other parallel to serial (P2S) converters <b>220</b> are employed by different embodiments of the data processing apparatus <b>200</b>.</p>
+<p id="p-0025" num="0024">The combined Y and Z stream (combined Y and Z samples) <b>222</b> is provided ( . . . [y, z]<sub>k&#x2212;1</sub>, [y, z]<sub>k</sub>) to a filter <b>224</b> that de-correlates (or whitens) noise in (e.g., the error terms of) the combined Y and Z stream <b>222</b>.</p>
+<p id="p-0026" num="0025">For example, in the embodiment shown in <figref idref="DRAWINGS">FIG. 2A</figref>, the combined Y and Z stream (combined Y and Z samples) <b>222</b> is provided ( . . . [y, z]k&#x2212;1, [y, z]k) to a noise predictive filter <b>224</b>(<b>1</b>), such as a noise predictive finite impulse response (NPFIR) filter, or the like. The noise predictive filter <b>224</b>(<b>1</b>) is operable to filter noise in the combined Y and Z stream <b>222</b> to yield uncorrelated filter output for the branch metrics (BM) <b>226</b> which are furnished to the detector <b>218</b>. In this embodiment, the path metric (PM) of the detector trellis is formulated as the logarithm of the posterior probability in the following equation:</p>
+<p id="p-0027" num="0026">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mi>PM</mi>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>log</mi>
+                <mo>(</mo>
+                <mrow>
+                  <mi>p</mi>
+                  <mo>(</mo>
+                  <mrow>
+                    <msub>
+                      <mi>y</mi>
+                      <mi>N</mi>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>z</mi>
+                      <mi>N</mi>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>y</mi>
+                      <mrow>
+                        <mi>N</mi>
+                        <mo>-</mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>z</mi>
+                      <mrow>
+                        <mi>N</mi>
+                        <mo>-</mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>y</mi>
+                      <mrow>
+                        <mi>N</mi>
+                        <mo>-</mo>
+                        <mn>2</mn>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>z</mi>
+                      <mrow>
+                        <mi>N</mi>
+                        <mo>-</mo>
+                        <mn>2</mn>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <mi>&#x2026;</mi>
+                  </mrow>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"/>
+                  </mstyle>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mrow>
+                <mi/>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <msub>
+                    <mi>y</mi>
+                    <mn>0</mn>
+                  </msub>
+                  <mo>,</mo>
+                  <mrow>
+                    <msub>
+                      <mi>z</mi>
+                      <mn>0</mn>
+                    </msub>
+                    <mo>|</mo>
+                    <msub>
+                      <mi>a</mi>
+                      <mi>N</mi>
+                    </msub>
+                  </mrow>
+                  <mo>,</mo>
+                  <msub>
+                    <mi>a</mi>
+                    <mrow>
+                      <mi>N</mi>
+                      <mo>-</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>,</mo>
+                  <mi>&#x2026;</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"/>
+                  </mstyle>
+                  <mo>,</mo>
+                  <msub>
+                    <mi>a</mi>
+                    <mn>0</mn>
+                  </msub>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>log</mi>
+                <mo>(</mo>
+                <mrow>
+                  <munderover>
+                    <mo>&#x220f;</mo>
+                    <mrow>
+                      <mi>k</mi>
+                      <mo>=</mo>
+                      <mn>0</mn>
+                    </mrow>
+                    <mi>N</mi>
+                  </munderover>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mi>p</mi>
+                    <mo>(</mo>
+                    <mrow>
+                      <msub>
+                        <mi>y</mi>
+                        <mi>k</mi>
+                      </msub>
+                      <mo>,</mo>
+                      <mrow>
+                        <msub>
+                          <mi>z</mi>
+                          <mi>k</mi>
+                        </msub>
+                        <mo>|</mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mi>k</mi>
+                            <mo>-</mo>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mo>,</mo>
+                      <msub>
+                        <mi>z</mi>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>-</mo>
+                          <mn>1</mn>
+                        </mrow>
+                      </msub>
+                      <mo>,</mo>
+                      <msub>
+                        <mi>y</mi>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>-</mo>
+                          <mn>2</mn>
+                        </mrow>
+                      </msub>
+                      <mo>,</mo>
+                      <msub>
+                        <mi>z</mi>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>-</mo>
+                          <mn>2</mn>
+                        </mrow>
+                      </msub>
+                      <mo>,</mo>
+                      <mi>&#x2026;</mi>
+                    </mrow>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.6em" height="0.6ex"/>
+                    </mstyle>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mrow>
+                <mi> </mi>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <msub>
+                    <mi>y</mi>
+                    <mn>0</mn>
+                  </msub>
+                  <mo>,</mo>
+                  <msub>
+                    <mi>z</mi>
+                    <mn>0</mn>
+                  </msub>
+                  <mo>,</mo>
+                  <msub>
+                    <mi>a</mi>
+                    <mi>k</mi>
+                  </msub>
+                  <mo>,</mo>
+                  <msub>
+                    <mi>a</mi>
+                    <mrow>
+                      <mi>k</mi>
+                      <mo>-</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>,</mo>
+                  <mi>&#x2026;</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"/>
+                  </mstyle>
+                  <mo>,</mo>
+                  <msub>
+                    <mi>a</mi>
+                    <mn>0</mn>
+                  </msub>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>EQN</mi>
+        <mo>.</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mn>3</mn>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+The detection algorithm (SOVA/Viterbi) finds the most likely sequence (a<sub>0</sub>, a<sub>1</sub>, . . . a<sub>N</sub>) that maximizes the path metric (PM). This decision is termed the maximum likelihood (ML) decision sequence. From EQN. 3, it is determined that:
+</p>
+<p id="p-0028" num="0027">
+<maths id="MATH-US-00003" num="00003">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>p</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msub>
+                <mi>y</mi>
+                <mi>k</mi>
+              </msub>
+              <mo>,</mo>
+              <mrow>
+                <msub>
+                  <mi>z</mi>
+                  <mi>k</mi>
+                </msub>
+                <mo>|</mo>
+                <msub>
+                  <mi>y</mi>
+                  <mrow>
+                    <mi>k</mi>
+                    <mo>-</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mo>,</mo>
+              <msub>
+                <mi>z</mi>
+                <mrow>
+                  <mi>k</mi>
+                  <mo>-</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>y</mi>
+                <mrow>
+                  <mi>k</mi>
+                  <mo>-</mo>
+                  <mn>2</mn>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>z</mi>
+                <mrow>
+                  <mi>k</mi>
+                  <mo>-</mo>
+                  <mn>2</mn>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <mrow>
+                <mi>&#x2026;</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.8em" height="0.8ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <msub>
+                  <mi>y</mi>
+                  <mn>0</mn>
+                </msub>
+              </mrow>
+              <mo>,</mo>
+              <msub>
+                <mi>z</mi>
+                <mn>0</mn>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>a</mi>
+                <mi>k</mi>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>a</mi>
+                <mrow>
+                  <mi>k</mi>
+                  <mo>-</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <mi>&#x2026;</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.8em" height="0.8ex"/>
+              </mstyle>
+              <mo>,</mo>
+              <msub>
+                <mi>a</mi>
+                <mn>0</mn>
+              </msub>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <mi>p</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mrow>
+                  <msub>
+                    <mi>y</mi>
+                    <mi>k</mi>
+                  </msub>
+                  <mo>|</mo>
+                  <msub>
+                    <mi>z</mi>
+                    <mi>k</mi>
+                  </msub>
+                </mrow>
+                <mo>,</mo>
+                <msub>
+                  <mi>y</mi>
+                  <mrow>
+                    <mi>k</mi>
+                    <mo>-</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow>
+                    <mi>k</mi>
+                    <mo>-</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <mi>&#x2026;</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.8em" height="0.8ex"/>
+                </mstyle>
+                <mo>,</mo>
+                <mrow>
+                  <msub>
+                    <mi>a</mi>
+                    <mi>k</mi>
+                  </msub>
+                  <mo>.</mo>
+                  <msub>
+                    <mi>a</mi>
+                    <mrow>
+                      <mi>k</mi>
+                      <mo>-</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mrow>
+                <mo>,</mo>
+                <mi>&#x2026;</mi>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mi>p</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mrow>
+                  <msub>
+                    <mi>z</mi>
+                    <mi>k</mi>
+                  </msub>
+                  <mo>|</mo>
+                  <msub>
+                    <mi>y</mi>
+                    <mrow>
+                      <mi>k</mi>
+                      <mo>-</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mrow>
+                <mo>,</mo>
+                <msub>
+                  <mi>z</mi>
+                  <mrow>
+                    <mi>k</mi>
+                    <mo>-</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <mi>&#x2026;</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.8em" height="0.8ex"/>
+                </mstyle>
+                <mo>,</mo>
+                <msub>
+                  <mi>a</mi>
+                  <mi>k</mi>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>a</mi>
+                  <mrow>
+                    <mi>k</mi>
+                    <mo>-</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+                <mi>&#x2026;</mi>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>EQN</mi>
+        <mo>.</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mn>4</mn>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+From EQN. 4, the logarithm branch metric formulation, which is based on Gaussian noise assumptions, is determined by:
+</p>
+<p id="p-0029" num="0028">
+<maths id="MATH-US-00004" num="00004">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>BM</mi>
+          <mo>=</mo>
+          <mrow>
+            <mrow>
+              <mi>log</mi>
+              <mo>(</mo>
+              <mstyle>
+                <mspace width="0.em" height="0.ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mfrac>
+                  <mn>1</mn>
+                  <msqrt>
+                    <mrow>
+                      <mn>2</mn>
+                      <mo>&#x2062;</mo>
+                      <msubsup>
+                        <mi>&#x3c0;&#x3c3;</mi>
+                        <mn>1</mn>
+                        <mn>2</mn>
+                      </msubsup>
+                    </mrow>
+                  </msqrt>
+                </mfrac>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.em" height="0.ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <msup>
+                  <mi>&#x2147;</mi>
+                  <mfrac>
+                    <msup>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <msub>
+                            <mi>y</mi>
+                            <mi>k</mi>
+                          </msub>
+                          <mo>+</mo>
+                          <mrow>
+                            <munderover>
+                              <mo>&#x2211;</mo>
+                              <mrow>
+                                <mi>i</mi>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                              </mrow>
+                              <mi>m</mi>
+                            </munderover>
+                            <mo>&#x2062;</mo>
+                            <mrow>
+                              <msub>
+                                <mi>g</mi>
+                                <mi>i</mi>
+                              </msub>
+                              <mo>&#x2062;</mo>
+                              <msub>
+                                <mi>z</mi>
+                                <mrow>
+                                  <mi>k</mi>
+                                  <mo>-</mo>
+                                  <mi>i</mi>
+                                </mrow>
+                              </msub>
+                              <mo>&#x2062;</mo>
+                              <mrow>
+                                <munderover>
+                                  <mo>&#x2211;</mo>
+                                  <mrow>
+                                    <mi>i</mi>
+                                    <mo>=</mo>
+                                    <mn>0</mn>
+                                  </mrow>
+                                  <mi>m</mi>
+                                </munderover>
+                                <mo>&#x2062;</mo>
+                                <mrow>
+                                  <msub>
+                                    <mi>f</mi>
+                                    <mi>i</mi>
+                                  </msub>
+                                  <mo>&#x2062;</mo>
+                                  <msub>
+                                    <mi>y</mi>
+                                    <mrow>
+                                      <mi>k</mi>
+                                      <mo>-</mo>
+                                      <mi>i</mi>
+                                    </mrow>
+                                  </msub>
+                                  <mo>&#x2062;</mo>
+                                  <mi>&#x3b7;</mi>
+                                </mrow>
+                              </mrow>
+                            </mrow>
+                          </mrow>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                      <mn>2</mn>
+                    </msup>
+                    <mrow>
+                      <mn>2</mn>
+                      <mo>&#x2062;</mo>
+                      <msubsup>
+                        <mi>&#x3c3;</mi>
+                        <mn>1</mn>
+                        <mn>2</mn>
+                      </msubsup>
+                    </mrow>
+                  </mfrac>
+                </msup>
+              </mrow>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.em" height="0.ex"/>
+              </mstyle>
+              <mo>&#x2003;</mo>
+            </mrow>
+            <mo>&#x2062;</mo>
+            <mfrac>
+              <mn>1</mn>
+              <msqrt>
+                <mrow>
+                  <mn>2</mn>
+                  <mo>&#x2062;</mo>
+                  <msubsup>
+                    <mi>&#x3c0;&#x3c3;</mi>
+                    <mn>2</mn>
+                    <mn>2</mn>
+                  </msubsup>
+                </mrow>
+              </msqrt>
+            </mfrac>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.em" height="0.ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <msup>
+              <mi>&#x2147;</mi>
+              <mfrac>
+                <msup>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <msub>
+                        <mi>z</mi>
+                        <mi>k</mi>
+                      </msub>
+                      <mo>+</mo>
+                      <mrow>
+                        <munderover>
+                          <mo>&#x2211;</mo>
+                          <mrow>
+                            <mi>i</mi>
+                            <mo>=</mo>
+                            <mn>1</mn>
+                          </mrow>
+                          <mi>m</mi>
+                        </munderover>
+                        <mo>&#x2062;</mo>
+                        <mrow>
+                          <msub>
+                            <mi>u</mi>
+                            <mi>i</mi>
+                          </msub>
+                          <mo>&#x2062;</mo>
+                          <msub>
+                            <mi>z</mi>
+                            <mrow>
+                              <mi>k</mi>
+                              <mo>-</mo>
+                              <mi>i</mi>
+                            </mrow>
+                          </msub>
+                          <mo>&#x2062;</mo>
+                          <mrow>
+                            <munderover>
+                              <mo>&#x2211;</mo>
+                              <mrow>
+                                <mi>i</mi>
+                                <mo>=</mo>
+                                <mn>1</mn>
+                              </mrow>
+                              <mi>m</mi>
+                            </munderover>
+                            <mo>&#x2062;</mo>
+                            <mrow>
+                              <msub>
+                                <mi>v</mi>
+                                <mi>i</mi>
+                              </msub>
+                              <mo>&#x2062;</mo>
+                              <msub>
+                                <mi>y</mi>
+                                <mrow>
+                                  <mi>k</mi>
+                                  <mo>-</mo>
+                                  <mi>i</mi>
+                                </mrow>
+                              </msub>
+                              <mo>&#x2062;</mo>
+                              <mi>&#x3bc;</mi>
+                            </mrow>
+                          </mrow>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mn>2</mn>
+                </msup>
+                <mrow>
+                  <mn>2</mn>
+                  <mo>&#x2062;</mo>
+                  <msubsup>
+                    <mi>&#x3c3;</mi>
+                    <mn>2</mn>
+                    <mn>2</mn>
+                  </msubsup>
+                </mrow>
+              </mfrac>
+            </msup>
+          </mrow>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.em" height="0.ex"/>
+        </mstyle>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>EQN</mi>
+        <mo>.</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mn>5</mn>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+Thus, instead of filtering Y and Z samples independently and then averaging the samples, the Y and Z samples are treated as one single data stream, wherein the noise is whitened jointly to minimize the mean square error signals. Each branch metric (BM) term thus has two separate Euclidean terms instead of one, as is illustrated by the following equation:
+</p>
+<p id="p-0030" num="0029">
+<maths id="MATH-US-00005" num="00005">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mi>BM</mi>
+        <mo>=</mo>
+        <mrow>
+          <mi>const</mi>
+          <mo>+</mo>
+          <mrow>
+            <mi>log</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <msub>
+                <mi>&#x3c3;</mi>
+                <mn>1</mn>
+              </msub>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>+</mo>
+          <mrow>
+            <mi>log</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <msub>
+                <mi>&#x3c3;</mi>
+                <mn>2</mn>
+              </msub>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>+</mo>
+          <mfrac>
+            <msup>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msub>
+                    <mi>y</mi>
+                    <mi>k</mi>
+                  </msub>
+                  <mo>+</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>&#x2211;</mo>
+                      <mrow>
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                      </mrow>
+                      <mi>m</mi>
+                    </munderover>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msub>
+                        <mi>g</mi>
+                        <mi>i</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>z</mi>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>-</mo>
+                          <mi>i</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </mrow>
+                  <mo>+</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>&#x2211;</mo>
+                      <mrow>
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mi>m</mi>
+                    </munderover>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msub>
+                        <mi>f</mi>
+                        <mi>i</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>y</mi>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>-</mo>
+                          <mi>i</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </mrow>
+                  <mo>+</mo>
+                  <mi>&#x3b7;</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mn>2</mn>
+            </msup>
+            <mrow>
+              <mn>2</mn>
+              <mo>&#x2062;</mo>
+              <msubsup>
+                <mi>&#x3c3;</mi>
+                <mn>1</mn>
+                <mn>2</mn>
+              </msubsup>
+            </mrow>
+          </mfrac>
+          <mo>+</mo>
+          <mfrac>
+            <msup>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msub>
+                    <mi>z</mi>
+                    <mi>k</mi>
+                  </msub>
+                  <mo>+</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>&#x2211;</mo>
+                      <mrow>
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mi>m</mi>
+                    </munderover>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msub>
+                        <mi>u</mi>
+                        <mi>i</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>z</mi>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>-</mo>
+                          <mi>i</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </mrow>
+                  <mo>+</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>&#x2211;</mo>
+                      <mrow>
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mi>m</mi>
+                    </munderover>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msub>
+                        <mi>v</mi>
+                        <mi>i</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>y</mi>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>-</mo>
+                          <mi>i</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </mrow>
+                  <mo>+</mo>
+                  <mi>&#x3bc;</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mn>2</mn>
+            </msup>
+            <mrow>
+              <mn>2</mn>
+              <mo>&#x2062;</mo>
+              <msubsup>
+                <mi>&#x3c3;</mi>
+                <mn>2</mn>
+                <mn>2</mn>
+              </msubsup>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>EQN</mi>
+        <mo>.</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mn>6</mn>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0031" num="0030">In the embodiment shown in <figref idref="DRAWINGS">FIG. 2B</figref>, the combined Y and Z stream (combined Y and Z samples) <b>222</b> is provided ( . . . [y, z]k&#x2212;1, [y, z]k) to a noise whitening filter <b>224</b>(<b>2</b>), such as a noise predictive calibration/adaptation module (NPCAL) filter, which configures the coefficients <b>228</b> that are used for branch metric computation, as shown in the following equations:</p>
+<p id="p-0032" num="0031">
+<maths id="MATH-US-00006" num="00006">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mo>{</mo>
+          <mrow>
+            <msubsup>
+              <mi>g</mi>
+              <mi>i</mi>
+              <mo>*</mo>
+            </msubsup>
+            <mo>,</mo>
+            <mrow>
+              <msubsup>
+                <mi>f</mi>
+                <mi>i</mi>
+                <mo>*</mo>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <msup>
+                <mi>&#x3b7;</mi>
+                <mo>*</mo>
+              </msup>
+            </mrow>
+          </mrow>
+          <mo>}</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <munder>
+            <mrow>
+              <mi>arg</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.3em" height="0.3ex"/>
+              </mstyle>
+            </mrow>
+            <mrow>
+              <msub>
+                <mi>g</mi>
+                <mi>i</mi>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>f</mi>
+                <mi>i</mi>
+              </msub>
+              <mo>,</mo>
+              <mi>&#x3b7;</mi>
+            </mrow>
+          </munder>
+          <mo>&#x2062;</mo>
+          <mi>min</mi>
+          <mo>&#x2062;</mo>
+          <mstyle>
+            <mspace width="0.3em" height="0.3ex"/>
+          </mstyle>
+          <mo>&#x2062;</mo>
+          <msup>
+            <mrow>
+              <mi>E</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>[</mo>
+                <mrow>
+                  <msub>
+                    <mi>y</mi>
+                    <mi>k</mi>
+                  </msub>
+                  <mo>+</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>&#x2211;</mo>
+                      <mrow>
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                      </mrow>
+                      <mi>m</mi>
+                    </munderover>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msub>
+                        <mi>g</mi>
+                        <mi>i</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>z</mi>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>-</mo>
+                          <mi>i</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </mrow>
+                  <mo>+</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>&#x2211;</mo>
+                      <mrow>
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mi>m</mi>
+                    </munderover>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msub>
+                        <mi>f</mi>
+                        <mi>i</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>y</mi>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>-</mo>
+                          <mi>i</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </mrow>
+                  <mo>+</mo>
+                  <mi>&#x3b7;</mi>
+                </mrow>
+                <mo>]</mo>
+              </mrow>
+            </mrow>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>EQN</mi>
+        <mo>.</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mn>7</mn>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mo>{</mo>
+          <mrow>
+            <msubsup>
+              <mi>u</mi>
+              <mi>i</mi>
+              <mo>*</mo>
+            </msubsup>
+            <mo>,</mo>
+            <mrow>
+              <msubsup>
+                <mi>v</mi>
+                <mi>i</mi>
+                <mo>*</mo>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <msup>
+                <mi>&#x3bc;</mi>
+                <mo>*</mo>
+              </msup>
+            </mrow>
+          </mrow>
+          <mo>}</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <munder>
+            <mrow>
+              <mi>arg</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.3em" height="0.3ex"/>
+              </mstyle>
+            </mrow>
+            <mrow>
+              <msub>
+                <mi>u</mi>
+                <mi>i</mi>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>v</mi>
+                <mi>i</mi>
+              </msub>
+              <mo>,</mo>
+              <mi>&#x3bc;</mi>
+            </mrow>
+          </munder>
+          <mo>&#x2062;</mo>
+          <mi>min</mi>
+          <mo>&#x2062;</mo>
+          <mstyle>
+            <mspace width="0.3em" height="0.3ex"/>
+          </mstyle>
+          <mo>&#x2062;</mo>
+          <msup>
+            <mrow>
+              <mi>E</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>[</mo>
+                <mrow>
+                  <msub>
+                    <mi>z</mi>
+                    <mi>k</mi>
+                  </msub>
+                  <mo>+</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>&#x2211;</mo>
+                      <mrow>
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mi>m</mi>
+                    </munderover>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msub>
+                        <mi>u</mi>
+                        <mi>i</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>z</mi>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>-</mo>
+                          <mi>i</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </mrow>
+                  <mo>+</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>&#x2211;</mo>
+                      <mrow>
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mi>m</mi>
+                    </munderover>
+                    <mo>&#x2062;</mo>
+                    <mrow>
+                      <msub>
+                        <mi>v</mi>
+                        <mi>i</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>y</mi>
+                        <mrow>
+                          <mi>k</mi>
+                          <mo>-</mo>
+                          <mi>i</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </mrow>
+                  <mo>+</mo>
+                  <mi>&#x3bc;</mi>
+                </mrow>
+                <mo>]</mo>
+              </mrow>
+            </mrow>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>EQN</mi>
+        <mo>.</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mn>8</mn>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+Again, instead of filtering Y and Z samples independently and then averaging them, the Y and Z samples are treated as one single data stream, wherein the noise is whitened jointly to minimize the mean square error signals. In this embodiment, the detector branch metric computation fixed point is determined for a certain error variance range. The scaling of the noise whitening filter <b>224</b>(<b>2</b>) is controlled so that the output of the filter <b>224</b>(<b>2</b>) has the best fixed point quantization that corresponds to the detector branch metric computation precisions. The respective branches have an Euclidean metric term &#x2dc;(error)<sup>2</sup>+log term. Thus, with scaling, the branch metric dynamic ranges are within a numerical range for which the detector fixed point is determined. The scaling factor, shown in EQN. 9, is tuned to achieve this numerical range.
+</p>
+<p id="p-0033" num="0032">
+<maths id="MATH-US-00007" num="00007">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mi>E</mi>
+        <mo>[</mo>
+        <mrow>
+          <mi>&#x3b6;</mi>
+          <mo>(</mo>
+          <mrow>
+            <mfrac>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msub>
+                      <mi>y</mi>
+                      <mi>k</mi>
+                    </msub>
+                    <mo>+</mo>
+                    <mrow>
+                      <munderover>
+                        <mo>&#x2211;</mo>
+                        <mrow>
+                          <mi>i</mi>
+                          <mo>=</mo>
+                          <mn>0</mn>
+                        </mrow>
+                        <mi>m</mi>
+                      </munderover>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <msub>
+                          <mi>g</mi>
+                          <mi>i</mi>
+                        </msub>
+                        <mo>&#x2062;</mo>
+                        <msub>
+                          <mi>z</mi>
+                          <mrow>
+                            <mi>k</mi>
+                            <mo>-</mo>
+                            <mi>i</mi>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mrow>
+                    <mo>+</mo>
+                    <mrow>
+                      <munderover>
+                        <mo>&#x2211;</mo>
+                        <mrow>
+                          <mi>i</mi>
+                          <mo>=</mo>
+                          <mn>1</mn>
+                        </mrow>
+                        <mi>m</mi>
+                      </munderover>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <msub>
+                          <mi>f</mi>
+                          <mi>i</mi>
+                        </msub>
+                        <mo>&#x2062;</mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mi>k</mi>
+                            <mo>-</mo>
+                            <mi>i</mi>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mrow>
+                    <mo>+</mo>
+                    <mi>&#x3b7;</mi>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mn>2</mn>
+              </msup>
+              <mrow>
+                <mn>2</mn>
+                <mo>&#x2062;</mo>
+                <msubsup>
+                  <mi>&#x3c3;</mi>
+                  <mn>1</mn>
+                  <mn>2</mn>
+                </msubsup>
+              </mrow>
+            </mfrac>
+            <mo>+</mo>
+            <mfrac>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msub>
+                      <mi>z</mi>
+                      <mi>k</mi>
+                    </msub>
+                    <mo>+</mo>
+                    <mrow>
+                      <munderover>
+                        <mo>&#x2211;</mo>
+                        <mrow>
+                          <mi>i</mi>
+                          <mo>=</mo>
+                          <mn>1</mn>
+                        </mrow>
+                        <mi>m</mi>
+                      </munderover>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <msub>
+                          <mi>u</mi>
+                          <mi>i</mi>
+                        </msub>
+                        <mo>&#x2062;</mo>
+                        <msub>
+                          <mi>z</mi>
+                          <mrow>
+                            <mi>k</mi>
+                            <mo>-</mo>
+                            <mi>i</mi>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mrow>
+                    <mo>+</mo>
+                    <mrow>
+                      <munderover>
+                        <mo>&#x2211;</mo>
+                        <mrow>
+                          <mi>i</mi>
+                          <mo>=</mo>
+                          <mn>1</mn>
+                        </mrow>
+                        <mi>m</mi>
+                      </munderover>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <msub>
+                          <mi>v</mi>
+                          <mi>i</mi>
+                        </msub>
+                        <mo>&#x2062;</mo>
+                        <msub>
+                          <mi>y</mi>
+                          <mrow>
+                            <mi>k</mi>
+                            <mo>-</mo>
+                            <mi>i</mi>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </mrow>
+                    <mo>+</mo>
+                    <mi>&#x3bc;</mi>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mn>2</mn>
+              </msup>
+              <mrow>
+                <mn>2</mn>
+                <mo>&#x2062;</mo>
+                <msubsup>
+                  <mi>&#x3c3;</mi>
+                  <mn>2</mn>
+                  <mn>2</mn>
+                </msubsup>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>]</mo>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>EQN</mi>
+        <mo>.</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mn>9</mn>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0034" num="0033">In embodiments, the detector <b>230</b> comprises a Viterbi algorithm data detector circuit, such as a Soft-Output Viterbi (SOVA) algorithm data detector circuit. However, it is contemplated that, in embodiments, the Viterbi algorithm data detector circuit comprises other Viterbi detection algorithms or Viterbi algorithm detector circuits, or variations thereof including, but not limited to: bi-direction Viterbi detection algorithms or bi-direction Viterbi algorithm detector circuits. In other embodiments, the detector <b>230</b> comprises a maximum a posteriori (MAP) data detector circuit. Again, it is contemplated that, in embodiments, the maximum a posteriori (MAP) data detector circuit comprises other maximum a posteriori (MAP) detection algorithms or detector circuits or variations thereof including, but not limited to: simplified maximum a posteriori (MAP) data detection algorithms, max-log maximum a posteriori (MAP) data detection algorithms, or corresponding detector circuits.</p>
+<p id="p-0035" num="0034">Upon completion, the detector <b>230</b> provides detected output <b>232</b>. The detected output <b>232</b> includes soft data. Herein, the term &#x201c;soft data&#x201d; is used in its broadest sense to mean reliability data with each occurrence of the reliability data indicating likelihood that a corresponding bit position or group of bit positions has been correctly detected. In some embodiments, the soft data or reliability data comprises log likelihood ratio data. The detected output <b>232</b> is provided to a decoder <b>234</b> for decoding. The decoder <b>234</b> applies a data decode algorithm to the detected output <b>232</b>. In embodiments, the decoder <b>234</b> comprises any type of decoder circuit including binary and no-binary, layered and non-layered. In embodiments, the decoder is a low density parity check (LDPC) decoder circuit. In some embodiments, the detected output <b>232</b> is interleaved in a local interleaver circuit (not shown) to shuffle sub-portions (i.e., local chunks) of the data set included as detector output <b>232</b>, and stored in a central memory (not shown).</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 3</figref> illustrates a method <b>300</b> in an embodiment of the disclosure that is employed by a twice (2&#xd7;) oversampled equalized detection system, such as the detection system <b>202</b> of <figref idref="DRAWINGS">FIGS. 1A and 1B</figref>, to combine 2&#xd7; over-sampled equalized digital sample data into a combined stream of digital sample data so that the error terms in the combined stream of digital sample data is filtered (whitened) jointly to minimize the mean square error of noise in the sample data. As shown, a first stream of sample data or Y stream (Y Samples) is received (Block <b>202</b>). Similarly, a second stream of sample data or Z stream (Z Samples) is received (Block <b>204</b>). The Z stream is derived from the Y stream. For example, as shown in <figref idref="DRAWINGS">FIGS. 2A and 2B</figref>, the equalizer <b>214</b> yields a stream of equalized sample data or Y stream <b>216</b> (Y samples). The second stream of equalized digital sample data or Z stream <b>218</b> (Z samples) is derived by interpolation based on the Y stream <b>216</b>. Thus, in embodiments, the Z stream <b>218</b> is dependent on the Y stream <b>216</b> by construction.</p>
+<p id="p-0037" num="0036">The first stream of sample data (Y Stream) and the second stream of sample data (Z Stream) are combined into a combined stream of sample data or Y and Z Stream (combined Y and Z Samples) (Block <b>306</b>). As shown in <figref idref="DRAWINGS">FIGS. 2A and 2B</figref>, the Y stream <b>216</b> and the Z stream <b>218</b> is passed (y<sub>k</sub>, z<sub>k</sub>) to a parallel to serial (P2S) convertor <b>220</b>, which combines the Y stream <b>216</b> and the Z stream <b>218</b> into a combined stream of equalized sample data or combined Y and Z stream <b>222</b> (combined Y and Z samples).</p>
+<p id="p-0038" num="0037">The combined stream of sample data (Y and Z Stream) is then filtered to whiten noise <b>308</b>. For example, as shown in <figref idref="DRAWINGS">FIGS. 2A and 2B</figref>, the combined Y and Z stream (combined Y and Z samples) <b>222</b> is provided ( . . . [y, z]<sub>k&#x2212;1</sub>, [y, z]<sub>k</sub>) to a filter <b>224</b> that de-correlates (or whitens) noise in (e.g., the error terms of) the combined Y and Z stream <b>222</b>. Thus, instead of filtering Y and Z samples independently and then averaging the samples, the Y and Z samples are treated as one single data stream, wherein the noise is whitened jointly to minimize the mean square error signals.</p>
+<p id="p-0039" num="0038">In embodiments, the combined stream of sample data (Y and Z Stream) is provided to a noise predictive filter (NPFIR) (Block <b>310</b>). For example, in the embodiment shown in <figref idref="DRAWINGS">FIG. 2A</figref>, the combined Y and Z stream (combined Y and Z samples) <b>222</b> is provided ( . . . [y, z]k&#x2212;1, [y, z]k) to a noise predictive filter <b>224</b>(<b>1</b>), such as a noise predictive finite impulse response (NPFIR) filter, or the like. The noise predictive filter <b>224</b>(<b>1</b>) is operable to filter noise in the combined Y and Z stream <b>222</b> to yield uncorrelated filter output for the branch metrics (BM) <b>226</b> which are furnished to the detector <b>218</b> as discussed above.</p>
+<p id="p-0040" num="0039">In other embodiments, the combined stream of sample data is provided to a noise whitening filter (NPCAL) (Block <b>312</b>). For example, in the embodiment shown in <figref idref="DRAWINGS">FIG. 2B</figref>, the combined Y and Z stream (combined Y and Z samples) <b>222</b> is provided ( . . . [y, z]k&#x2212;1, [y, z]k) to a noise whitening filter <b>224</b>(<b>2</b>), such as a noise predictive calibration/adaptation module (NPCAL) filter, which configures the coefficients <b>228</b> that are used for branch metric computation as discussed above. In this embodiment, the scaling of the noise whitening filter (NPCAL) is tuned (Block <b>314</b>). The detector branch metric computation fixed point is determined for a certain error variance range. The scaling of the noise whitening filter <b>224</b>(<b>2</b>) is controlled so that the output of the filter <b>224</b>(<b>2</b>) has the best fixed point quantization that corresponds to the detector branch metric computation precisions. Each branch has an Euclidean metric term &#x2dc;(error)<sup>2</sup>+log term. Thus, with scaling, the branch metric dynamic ranges is within a numerical range for which the detector fixed point is determined. The scaling factor, shown in EQN. 9 above, is tuned to achieve this numerical range.</p>
+<p id="p-0041" num="0040">Although the data-dependent equalizer circuit disclosed herein is not limited to any particular application, several examples of applications are presented in <figref idref="DRAWINGS">FIGS. 4 and 5</figref>. In <figref idref="DRAWINGS">FIG. 4</figref>, a storage system <b>400</b> is illustrated. The storage system <b>400</b> includes a read channel circuit <b>402</b> that employs branch metric computation or noise predictive calibration/adaptation for over sampled Y samples in accordance with an embodiment of the disclosure, such as the twice (2&#xd7;) oversampled equalized detection system <b>202</b> shown in <figref idref="DRAWINGS">FIGS. 2A and 2B</figref>. In embodiments, the storage system <b>400</b> is, for example, a hard disk drive (HDD). As shown, the storage system <b>400</b> includes a preamplifier <b>404</b>, an interface controller <b>406</b>, a hard disk controller <b>410</b>, a motor controller <b>412</b>, a spindle motor <b>414</b>, a disk platter <b>416</b>, and a read/write head assembly <b>420</b>. The interface controller <b>406</b> controls addressing and timing of data to/from the disk platter <b>416</b>. The data on the disk platter <b>416</b> includes groups of magnetic signals that are detected by the read/write head assembly <b>420</b> when the assembly is properly positioned over disk platter <b>416</b>. In one or more embodiments, the disk platter <b>416</b> includes magnetic signals recorded in accordance with either a longitudinal or a perpendicular recording scheme.</p>
+<p id="p-0042" num="0041">In a typical read operation, the read/write head assembly <b>420</b> is accurately positioned by the motor controller <b>412</b> over a desired data track on the disk platter <b>416</b>. The motor controller <b>412</b> positions the read/write head assembly <b>420</b> in relation to the disk platter <b>416</b> and drives the spindle motor <b>414</b> by moving the read/write head assembly <b>420</b> to the proper data track on the disk platter <b>416</b> under the direction of the hard disk controller <b>410</b>. The spindle motor <b>414</b> spins the disk platter <b>416</b> at a determined spin rate (e.g., at a determined number of revolutions per minute (RPM)). Once the read/write head assembly <b>420</b> is positioned adjacent the proper data track, magnetic signals representing data on the disk platter <b>416</b> are sensed by the read/write head assembly <b>420</b> as the disk platter <b>416</b> is rotated by the spindle motor <b>414</b>. The sensed magnetic signals are provided as a continuous, minute analog signal representative of the magnetic data on the disk platter <b>416</b>. This minute analog signal is transferred from the read/write head assembly <b>420</b> to the read channel circuit <b>402</b> via a preamplifier <b>404</b>. The preamplifier <b>404</b> is operable to amplify the minute analog signals accessed from the disk platter <b>416</b>. In turn, the read channel <b>402</b> decodes and digitizes the received analog signal to recreate the information originally written to the disk platter <b>416</b>. This data is provided as read data <b>422</b> to a receiving circuit. As part of decoding the received information, the read channel <b>402</b> processes the received signal using the data-dependent equalizer circuit <b>102</b> as described herein. A write operation is substantially the opposite of the preceding read operation with write data <b>424</b> being provided to the read channel <b>402</b>. This data is then encoded and written to the disk platter <b>416</b>.</p>
+<p id="p-0043" num="0042">It should be noted that, in embodiments, the storage system <b>400</b> is integrated into a larger storage system such as, for example, a RAID (redundant array of inexpensive disks or redundant array of independent disks) based storage system. RAID storage systems increase stability and reliability through redundancy, combining multiple disks as a logical unit. In this manner, data is spread across a number of disks included in the RAID storage system according to a variety of algorithms and accessed by an operating system as if the RAID storage system were a single disk drive. For example, in embodiments, data is mirrored to multiple disks in the RAID storage system, or is sliced and distributed across multiple disks using a number of techniques. If a small number of disks in the RAID storage system fail or become unavailable, error correction techniques are used to recreate the missing data based on the remaining portions of the data from the other disks in the RAID storage system. In embodiments, the disks in the RAID storage system include, but are not limited to: individual storage systems such as storage system <b>400</b>, and are located in close proximity to each other or distributed more widely for increased security. In a write operation, write data is provided to a controller, which stores the write data across the disks, for example by mirroring or by striping the write data. In a read operation, the controller retrieves the data from the disks. The controller then yields the resulting read data as if the RAID storage system were a single disk drive.</p>
+<p id="p-0044" num="0043"><figref idref="DRAWINGS">FIG. 5</figref> illustrates a wireless communication system <b>500</b> or data transmission device including a receiver <b>504</b> that employs branch metric computation or noise predictive calibration/adaptation for over sampled Y samples in accordance with an embodiment of the disclosure, such is implemented by the twice (2&#xd7;) oversampled equalized detection system <b>202</b> shown in <figref idref="DRAWINGS">FIGS. 2A and 2B</figref>. The communication system <b>500</b> includes a transmitter <b>502</b> that is operable to transmit encoded information via a transfer medium <b>506</b>. The encoded data is received from the transfer medium <b>506</b> by a receiver <b>504</b>. As part of the processing of the encoded data, the receiver <b>504</b> processes the received signal using a twice (2&#xd7;) oversampled equalized detection system <b>202</b> employing the techniques described herein. In embodiments, the receiver <b>504</b> is fabricated in various ways including, but not limited to, being fabricated as a stand-alone receiver or as part of a transceiver.</p>
+<p id="p-0045" num="0044">Generally, any of the functions described herein can be implemented using hardware (e.g., fixed logic circuitry such as integrated circuits), software, firmware, manual processing, or a combination of these embodiments. Thus, the blocks discussed in the above disclosure generally represent hardware (e.g., fixed logic circuitry such as integrated circuits), software, firmware, or a combination thereof. In the case of a hardware embodiment, for example, the various blocks discussed in the above disclosure can be implemented as integrated circuits along with other functionality. In embodiments, such integrated circuits include all of the functions of a given block, system or circuit, or a portion of the functions of the block, system or circuit. Further, in embodiments, elements of the blocks, systems or circuits are implemented across multiple integrated circuits. Such integrated circuits include any type of integrated circuit including, but not necessarily limited to: a monolithic integrated circuit, a flip chip integrated circuit, a multichip module integrated circuit, and/or a mixed signal integrated circuit. In the case of a software embodiment, for example, the various blocks discussed in the above disclosure represent executable instructions (e.g., program code) that perform specified tasks when executed on a processor. In embodiments, these executable instructions are stored in one or more tangible computer readable media. In some such embodiments, the entire system, block or circuit is implemented using its software or firmware equivalent. In other embodiments, one part of a given system, block or circuit is implemented in software or firmware, while other parts are implemented in hardware.</p>
+<p id="p-0046" num="0045">Although the subject matter has been described in language specific to structural features and/or methodological acts, it is to be understood that the subject matter defined in the appended claims is not necessarily limited to the disclosed embodiments. Although various configurations are discussed, the apparatus, systems, subsystems, components and so forth can be constructed in a variety of ways without departing from this disclosure. Rather, the specific features and acts are disclosed as embodiments of implementing the claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08625217-20140107-M00001.NB">
+<img id="EMI-M00001" he="23.62mm" wi="76.20mm" file="US08625217-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08625217-20140107-M00002.NB">
+<img id="EMI-M00002" he="24.72mm" wi="76.20mm" file="US08625217-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00003" nb-file="US08625217-20140107-M00003.NB">
+<img id="EMI-M00003" he="10.92mm" wi="76.20mm" file="US08625217-20140107-M00003.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00004" nb-file="US08625217-20140107-M00004.NB">
+<img id="EMI-M00004" he="25.74mm" wi="76.20mm" file="US08625217-20140107-M00004.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00005" nb-file="US08625217-20140107-M00005.NB">
+<img id="EMI-M00005" he="31.41mm" wi="76.20mm" file="US08625217-20140107-M00005.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00006" nb-file="US08625217-20140107-M00006.NB">
+<img id="EMI-M00006" he="19.05mm" wi="76.20mm" file="US08625217-20140107-M00006.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00007" nb-file="US08625217-20140107-M00007.NB">
+<img id="EMI-M00007" he="26.50mm" wi="76.20mm" file="US08625217-20140107-M00007.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A data processing apparatus, comprising:
+<claim-text>a parallel to serial convertor configured to receive a first stream of sample data and a second stream of sample data, the parallel to serial convertor operable to combine the first stream of sample data and the second stream of sample data into a combined stream of sample data; and</claim-text>
+<claim-text>a filter configured to receive the combined stream of sample data, the filter operable to whiten noise in the combined stream of sample data.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The data processing apparatus as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the filter comprises a noise predictive filter operable to filter noise in the combined stream of sample data to yield one or more branch metrics.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The data processing apparatus as recited in <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the noise prediction filter comprises a noise predictive finite impulse response (NPFIR) filter.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The data processing apparatus as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the filter comprises a noise whitening filter.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The data processing apparatus as recited in <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein the noise whitening filter comprises a noise predictive calibration/adaptation module (NPCAL) filter.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The data processing apparatus as recited in <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein scaling of the noise whitening filter is tuned so that the whitened combined stream of sample data has a fixed point quantization that at least substantially corresponds to a detector branch metric.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The data processing apparatus as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the first stream of sample data comprises Y samples and the second stream of sample data comprises Z samples, the Z samples interpolated from the Y samples.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. A method comprising:
+<claim-text>receiving a first stream of sample data;</claim-text>
+<claim-text>receiving a second stream of sample data;</claim-text>
+<claim-text>combining the first stream of sample data and the second stream of sample data into a combined stream of sample data; and</claim-text>
+<claim-text>filtering the combined stream of sample data to whiten noise in the combined stream of sample data.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method as recited in <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein filtering of the combined stream of sample data comprises providing the combined stream of sample data to a noise predictive filter operable to filter noise in the combined stream of sample data to yield one or more branch metrics.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method as recited in <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein the noise prediction filter comprises a noise predictive finite impulse response (NPFIR) filter.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The method as recited in <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein filtering of the combined stream of sample data comprises providing the combined stream of sample data to a noise whitening filter.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The method as recited in <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the noise whitening filter comprises a noise predictive calibration/adaptation module (NPCAL) filter.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The method as recited in <claim-ref idref="CLM-00010">claim 10</claim-ref>, further comprising tuning scaling of the noise whitening filter so that the whitened combined stream of sample data has a fixed point quantization that at least substantially corresponds to a detector branch metric.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The method as recited in <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the first stream of sample data comprises Y samples and the second stream of sample data comprises Z samples, the Z samples interpolated from the Y samples.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. A storage system, comprising:
+<claim-text>a storage medium configured to maintain a data set;</claim-text>
+<claim-text>a read/write assembly operable to read the data set on the storage medium; and</claim-text>
+<claim-text>a data processing apparatus operable to correct errors in the data set read from the storage medium, comprising:</claim-text>
+<claim-text>a parallel to serial convertor configured to receive a first stream of sample data and a second stream of sample data, the parallel to serial convertor operable to combine the first stream of sample data and the second stream of sample data into a combined stream of sample data; and</claim-text>
+<claim-text>a filter configured to receive the combined stream of sample data, the filter operable to whiten noise in the combined stream of sample data.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The storage system as recited in <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the filter comprises a noise predictive filter operable to filter noise in the combined stream of sample data to yield one or more branch metrics.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The storage system as recited in <claim-ref idref="CLM-00016">claim 16</claim-ref>, wherein the noise prediction filter comprises a noise predictive finite impulse response (NPFIR) filter.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The storage system as recited in <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the filter comprises a noise whitening filter.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The storage system as recited in <claim-ref idref="CLM-00018">claim 18</claim-ref>, wherein the noise whitening filter comprises a noise predictive calibration/adaptation (NPCAL) filter.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The storage system as recited in <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the first stream of sample data comprises Y samples and the second stream of sample data comprises Z samples, the Z samples interpolated from the Y samples. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

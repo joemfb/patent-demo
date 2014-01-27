@@ -1,0 +1,891 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627142-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627142</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13739285</doc-number>
+<date>20130111</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>11</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>714 15</main-classification>
+</classification-national>
+<invention-title id="d2e43">Fast resource recovery after thread crash</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5442758</doc-number>
+<kind>A</kind>
+<name>Slingwine et al.</name>
+<date>19950800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>717147</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5727209</doc-number>
+<kind>A</kind>
+<name>Slingwine et al.</name>
+<date>19980300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718102</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>6219690</doc-number>
+<kind>B1</kind>
+<name>Slingwine et al.</name>
+<date>20010400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718102</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6662204</doc-number>
+<kind>B2</kind>
+<name>Watakabe et al.</name>
+<date>20031200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718107</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>6748556</doc-number>
+<kind>B1</kind>
+<name>Storino et al.</name>
+<date>20040600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714 42</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>6751753</doc-number>
+<kind>B2</kind>
+<name>Nguyen et al.</name>
+<date>20040600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714 39</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>6915457</doc-number>
+<kind>B1</kind>
+<name>Miller</name>
+<date>20050700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714 43</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>7530072</doc-number>
+<kind>B1</kind>
+<name>Cheaz</name>
+<date>20090500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718104</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>7574567</doc-number>
+<kind>B2</kind>
+<name>Wyman</name>
+<date>20090800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711141</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>7823021</doc-number>
+<kind>B2</kind>
+<name>Abe</name>
+<date>20101000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714 381</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>8086910</doc-number>
+<kind>B1</kind>
+<name>Koktan et al.</name>
+<date>20111200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714 52</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>8103905</doc-number>
+<kind>B2</kind>
+<name>Davis et al.</name>
+<date>20120100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714 11</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>8108872</doc-number>
+<kind>B1</kind>
+<name>Lindholm et al.</name>
+<date>20120100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718104</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>8365014</doc-number>
+<kind>B2</kind>
+<name>Lynn</name>
+<date>20130100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>2002/0120886</doc-number>
+<kind>A1</kind>
+<name>Nguyen et al.</name>
+<date>20020800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714 39</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>2002/0162053</doc-number>
+<kind>A1</kind>
+<name>Os</name>
+<date>20021000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714 38</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>2003/0226056</doc-number>
+<kind>A1</kind>
+<name>Yip et al.</name>
+<date>20031200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714  4</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>2006/0020776</doc-number>
+<kind>A1</kind>
+<name>Yoshida</name>
+<date>20060100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>712235</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>2006/0200702</doc-number>
+<kind>A1</kind>
+<name>Canning et al.</name>
+<date>20060900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714 38</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>2006/0271938</doc-number>
+<kind>A1</kind>
+<name>Gootherts et al.</name>
+<date>20061100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718107</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>2007/0130324</doc-number>
+<kind>A1</kind>
+<name>Wang</name>
+<date>20070600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>709224</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>2007/0220513</doc-number>
+<kind>A1</kind>
+<name>Hwang</name>
+<date>20070900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718  1</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>2007/0294584</doc-number>
+<kind>A1</kind>
+<name>Jain et al.</name>
+<date>20071200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714 37</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>2008/0046782</doc-number>
+<kind>A1</kind>
+<name>Betancourt et al.</name>
+<date>20080200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>714 38</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>2008/0126502</doc-number>
+<kind>A1</kind>
+<name>Holt</name>
+<date>20080500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>709212</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>2009/0138670</doc-number>
+<kind>A1</kind>
+<name>Mutlu et al.</name>
+<date>20090500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711167</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>US</country>
+<doc-number>2009/0240860</doc-number>
+<kind>A1</kind>
+<name>Coon et al.</name>
+<date>20090900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>710200</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>US</country>
+<doc-number>2010/0046375</doc-number>
+<kind>A1</kind>
+<name>Goldstein et al.</name>
+<date>20100200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>US</country>
+<doc-number>2010/0325396</doc-number>
+<kind>A1</kind>
+<name>Yoshida</name>
+<date>20101200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>US</country>
+<doc-number>2011/0320858</doc-number>
+<kind>A1</kind>
+<name>Koktan et al.</name>
+<date>20111200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00031">
+<othercit>Francis M. David, et al., &#x201c;Improving Dependability by Revisiting Operating System Design&#x201d;, Proceedings of the 3<sup>rd </sup>Workshop on Hot Topics in System Dependability, Edinburgh, UK, Article No. 1 (2007), pp. 1-6.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>20</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>714 15</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>13</number-of-drawing-sheets>
+<number-of-figures>13</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>12687275</doc-number>
+<date>20100114</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8365014</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13739285</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20130132773</doc-number>
+<kind>A1</kind>
+<date>20130523</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<orgname>Juniper Networks, Inc.</orgname>
+<address>
+<city>Sunnyvale</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Lynn</last-name>
+<first-name>Michael</first-name>
+<address>
+<city>Champaign</city>
+<state>IL</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Harrity &#x26; Harrity, LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Juniper Networks, Inc.</orgname>
+<role>02</role>
+<address>
+<city>Sunnyvale</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Patel</last-name>
+<first-name>Kamini</first-name>
+<department>2114</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A resource recovery system may maintain a counter in memory that indicates a number of times one or more threads of execution, which use shared resources, have crashed. The system may associate a first value of the counter with a resource allocated to a thread of the one or more threads, and may set an indicator associated with the thread to indicate whether the thread has crashed. The system may determine whether to re-allocate the resource to the thread based on the first value of the counter associated with the resource and based on the indicator associated with the thread.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="170.60mm" wi="240.11mm" file="US08627142-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="240.20mm" wi="169.67mm" orientation="landscape" file="US08627142-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="237.91mm" wi="158.83mm" orientation="landscape" file="US08627142-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="196.34mm" wi="171.62mm" orientation="landscape" file="US08627142-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="228.35mm" wi="174.92mm" orientation="landscape" file="US08627142-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="198.97mm" wi="145.63mm" orientation="landscape" file="US08627142-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="199.64mm" wi="164.42mm" orientation="landscape" file="US08627142-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="237.24mm" wi="181.53mm" orientation="landscape" file="US08627142-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="156.80mm" wi="148.25mm" file="US08627142-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="231.99mm" wi="166.03mm" file="US08627142-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="236.56mm" wi="150.28mm" file="US08627142-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="241.47mm" wi="174.58mm" file="US08627142-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="226.99mm" wi="170.35mm" file="US08627142-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="243.84mm" wi="165.69mm" file="US08627142-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">RELATED APPLICATION</heading>
+<p id="p-0002" num="0001">This application is a continuation of U.S. patent application Ser. No. 12/687,275, filed Jan. 14, 2010 (now U.S. Pat. No. 8,365,014), which is incorporated herein by reference.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">BACKGROUND</heading>
+<p id="p-0003" num="0002">Data processing systems, including computers and data routing/forwarding devices, typically implement multiple threads that operate upon multiple, shared resources. Each thread may include an independent thread of execution, such as an independent concurrently running task, that may utilize one or more resources of the shared resources. The resources may each include any type of software or hardware resource that either performs a function, or which can be used by a thread to perform a function. In a computer system, for example, a resource may include a region of memory or an object stored in the memory. In a data routing system, for example, a resource may include a packet (e.g., packet header and packet payload stored in memory).</p>
+<p id="p-0004" num="0003">In systems where multiple threads of execution share resources, having one of the multiple threads crash may cause the resources managed or owned by the thread to be left in an undefined state. This often results in a loss of those resources (e.g., a memory leak) or a larger system re-start (e.g., a re-boot) to return the system and all of its resources to a known state. Such a larger system re-start increases the system down time from the system user's standpoint. As the number of threads (or process instances sharing resources) in execution grows, this becomes an ever increasing problem. Furthermore, the use of multi-core architectures in existing data processing systems may necessitate the increased use of different threads of execution to take full advantage of the number of available Central Processing Units (CPUs). This increased use of different threads of execution may increase the risk of down time due to any one of the threads crashing. Larger platforms having more CPUs, to handle more traffic, will only make the problem worse in the future.</p>
+<heading id="h-0003" level="1">SUMMARY</heading>
+<p id="p-0005" num="0004">In accordance with one embodiment, a method implemented by a resource recovery system may include maintaining a counter in memory that indicates a number of times one or more threads have crashed and determining, by the resource recovery system, whether at least one of the one or more threads has crashed. The method may further include using, based on the determination, the counter to determine whether to re-allocate resources to the one or more threads for thread crash recovery.</p>
+<p id="p-0006" num="0005">In another embodiment, a resource recovery system may include a memory storing a data array, and a thread crash counter to maintain a count of a number of times one or more threads of execution have crashed. The system may further include a resource recovery management unit to: determine whether at least one of the one or more threads has crashed, and use the counter to determine whether to perform a resource recovery process when at least one of the one or more threads has crashed.</p>
+<p id="p-0007" num="0006">In still another embodiment, a method implemented by a resource recovery system may include maintaining a counter in memory that indicates a number of times one or more threads of execution, which use shared resources, have crashed, and associating, by the resource recovery system, a first value of the counter with a resource allocated to a thread of the one or more threads. The method may further include setting an indicator associated with the thread to indicate whether the thread has crashed, and determining whether to re-allocate the resource to the thread based on the first value of the counter associated with the resource and based on the indicator associated with the thread.</p>
+<p id="p-0008" num="0007">In a further embodiment, a system may include a thread crash counter that indicates a number of times one or more threads, which use shared resources, have crashed. The system may further include a resource recovery management unit to: obtain a first value of the counter, associate the first value of the counter with a resource allocated to a thread of the one or more threads, set an indicator associated with the thread to indicate whether the thread has crashed, obtain a second value of the counter, where the second value of the counter is obtained at a different time than the first value of the counter is obtained, determine if the second value of the counter is greater than the first value of the counter, determine if the indicator associated with the thread indicates that the thread has crashed, and re-allocate the resource to the thread if the second value of the counter is greater than the first value of the counter and if the indicator indicates that the thread has crashed.</p>
+<p id="p-0009" num="0008">In yet another embodiment, a resource recovery system may include means for maintaining a counter that indicates a number of times one or more threads, which use shared resources, have crashed. The system may further include means for obtaining a first value of the counter when a resource of the shared resources is initially allocated to a thread of the one or more threads, means for associating the first value of the counter with the resource, and means for setting an indicator associated with the thread to indicate whether the thread has crashed. The system may also include means for determining whether to re-allocate the resource to the thread based on the first value of the counter associated with the resource and based on the indicator associated with the thread.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0010" num="0009">The accompanying drawings, which are incorporated in and constitute a part of this specification, illustrate one or more embodiments described herein and, together with the description, explain the invention. In the drawings,</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 1</figref> is a diagram of an environment, according to an exemplary embodiment, in which multiple different threads may utilize resources from a pool of shared resources;</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 2</figref> is a diagram of components of a device, of one exemplary embodiment, in which the environment of <figref idref="DRAWINGS">FIG. 1</figref> may be implemented;</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 3</figref> is a diagram of components of a device, of another exemplary embodiment, in which the environment of <figref idref="DRAWINGS">FIG. 1</figref> may be implemented in a network device that acts as a switch for forwarding packets or other types of data units;</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 4</figref> is an exemplary diagram of the resource recovery system of <figref idref="DRAWINGS">FIG. 1</figref>;</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 5</figref> is a diagram of the thread crash table of the resource recovery system of <figref idref="DRAWINGS">FIG. 4</figref> according to an exemplary embodiment;</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 6</figref> is a diagram of the resource allocation queue of the resource recovery system of <figref idref="DRAWINGS">FIG. 4</figref> according to an exemplary embodiment;</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 7</figref> is a diagram of the resource metadata array of the resource recovery system of <figref idref="DRAWINGS">FIG. 4</figref> according to an exemplary embodiment;</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 8</figref> is flow chart that illustrates an exemplary process for receiving and storing data associated with a resource;</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 9</figref> is a flow chart that illustrates an exemplary process for re-starting a thread that has crashed;</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 10</figref> is a flow chart that illustrates an exemplary process for allocating resources to threads; and</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIGS. 11A-11C</figref> are flow charts that illustrate an exemplary process for recovering resources subsequent to thread crashes.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0022" num="0021">The following detailed description refers to the accompanying drawings. The same reference numbers may be used in different drawings to identify the same or similar elements. Also, the following detailed description does not limit the invention. Instead, the scope of the invention is defined by the appended claims and equivalents.</p>
+<p id="p-0023" num="0022">Exemplary embodiments described herein implement a thread crash recovery system that enables the recovery of resources in a system after one or more threads have crashed. The thread crash recovery system described herein uses a counter that maintains a count of a number of times any thread in the system has crashed. Each resource being utilized in the system, at the time the resource is allocated, may be tagged with a current value of the counter. The counter may be incremented each time that any thread in the system crashes. Additionally, each time a given thread crashes, a thread crash indicator associated with the thread is set to indicate that the thread is in a crashed state. The thread crash recovery system may implement a resource recovery process that re-allocates each resource to a thread based on a comparison between a current value of the counter and the counter value that the resource was tagged with, and further based on whether the thread's crash indicator indicates that the thread is currently in a crashed state.</p>
+<heading id="h-0006" level="1">Exemplary Environment</heading>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 1</figref> is a diagram of an environment <b>100</b>, according to an exemplary embodiment, in which multiple different threads may utilize resources from a pool of shared resources. Environment <b>100</b> may include multiple threads <b>110</b>-<b>1</b> through <b>110</b>-N, a resource recovery system <b>120</b>, and shared resources <b>130</b>. Each of threads <b>110</b>-<b>1</b> through <b>110</b>-N may include an independent thread of execution (e.g., an independent concurrently running task) that may be executed by a device and/or process (not shown) to utilize one or more resources of shared resources <b>130</b>.</p>
+<p id="p-0025" num="0024">Resource recovery system <b>120</b> may include functionality for recovering resources of shared resources <b>130</b> when one or more of threads <b>110</b>-<b>1</b> through <b>110</b>-N crashes. A thread crashes when it completely stops performing its expected operation or function, and also stops responding and/or interacting in environment <b>100</b> in an expected manner. A thread may be considered to be in a &#x201c;crashed&#x201d; state during a period in which the thread stops performing its expected operation or function, and in which the thread stops responding and/or interacting in environment <b>100</b> in the expected manner. In some embodiments, resource recovery system <b>120</b> may be implemented by an operating system (e.g., a system Kernel). Threads <b>110</b>-<b>1</b> through <b>110</b>-N, as depicted in <figref idref="DRAWINGS">FIG. 1</figref>, may include threads that are in the process of executing tasks that use, or interact with, one or more resources of shared resources <b>130</b>.</p>
+<p id="p-0026" num="0025">Shared resources <b>130</b> may include multiple resources <b>140</b>-<b>1</b> through <b>140</b>-J. Each of multiple resources <b>140</b>-<b>1</b> through <b>1404</b> may include any type of software or hardware resource that either performs a function or which can be used in a process of performing a function. In some embodiments, each of resources <b>140</b>-<b>1</b> through <b>140</b>-J may include a region of memory or an object stored in memory. In another embodiment, each of resources <b>140</b>-<b>1</b> through <b>140</b>-J may include data stored in memory (e.g., metadata packet header and packet payload data stored in memory).</p>
+<heading id="h-0007" level="1">Exemplary Devices</heading>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 2</figref> is a diagram of components of a device <b>200</b>, of one exemplary embodiment, in which the exemplary environment <b>100</b> of <figref idref="DRAWINGS">FIG. 1</figref> may be implemented. In the exemplary embodiment of <figref idref="DRAWINGS">FIG. 2</figref>, environment <b>100</b> may be implemented within a computational device that may execute one or more processes to process and handle data. Device <b>200</b> may include, for example, a desktop, palmtop or laptop computer. Device <b>200</b> may include a bus <b>210</b>, a processor <b>220</b>, a main memory <b>230</b>, a read only memory (ROM) <b>240</b>, a storage device <b>250</b>, input device(s) <b>260</b>, output device(s) <b>270</b>, and a communication interface <b>280</b>. Bus <b>210</b> may include a path that permits communication among the components of device <b>200</b>.</p>
+<p id="p-0028" num="0027">Processor <b>220</b> may include, for example, a processor, microprocessor, and/or processing logic that may interpret and execute instructions. In some implementations, processor <b>220</b> may include multiple processors (e.g., parallel processors). Main memory <b>230</b> may include a random access memory (RAM) or another type of dynamic storage device that may store information and instructions for execution by processor <b>220</b>. ROM <b>240</b> may include a ROM device or another type of static storage device that may store static information and instructions for use by processor <b>220</b>. Storage device <b>250</b> may include a magnetic and/or optical recording medium and its corresponding drive.</p>
+<p id="p-0029" num="0028">Input device(s) <b>260</b> may include one or more mechanisms that permit an operator to input information to device <b>200</b>, such as a keyboard, a mouse, a pen, voice recognition and/or biometric mechanisms, etc. Output device(s) <b>270</b> may include one or more mechanisms that output information to the operator, including a display, a printer, a speaker, etc. Communication interface <b>280</b> may include any transceiver-like mechanism that enables device <b>200</b> to communicate with other devices and/or systems.</p>
+<p id="p-0030" num="0029">Device <b>200</b> may perform certain operations or processes, as will be described in detail below. Device <b>200</b> may perform these operations in response to processor <b>220</b> executing software instructions contained in a computer-readable medium, such as memory <b>230</b>. A computer-readable medium may be defined as a physical or logical memory device. A logical memory device may include memory space within a single physical memory device or spread across multiple physical memory devices.</p>
+<p id="p-0031" num="0030">The software instructions may be read into memory <b>230</b> from another computer-readable medium, such as storage device <b>250</b>, or from another device via communication interface <b>280</b>. The software instructions contained in memory <b>230</b> may cause processor <b>220</b> to perform operations or processes that will be described later. Alternatively, hardwired circuitry may be used in place of or in combination with software instructions to implement processes consistent with the principles of the invention. Thus, exemplary implementations are not limited to any specific combination of hardware circuitry and software.</p>
+<p id="p-0032" num="0031">The components depicted in <figref idref="DRAWINGS">FIG. 2</figref> are exemplary. Fewer, more, or differently arranged components than those shown may be included in device <b>200</b>.</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIG. 3</figref> is a diagram depicting another exemplary embodiment, in which the environment <b>100</b> of <figref idref="DRAWINGS">FIG. 1</figref> may be implemented in a network device <b>300</b> that acts as a switch or router for forwarding packets, or other types of data units. In the exemplary embodiment of <figref idref="DRAWINGS">FIG. 3</figref>, environment <b>100</b> may be implemented within one or more packet forwarding engines (PFEs), or routing engines (REs), within device <b>300</b>. In the exemplary embodiment depicted in <figref idref="DRAWINGS">FIG. 3</figref>, device <b>300</b> may take the form of a router. The router may receive one or more data streams from a physical link, process the data stream(s) to determine destination information, and transmit the data stream(s) on one or more links in accordance with the destination information.</p>
+<p id="p-0034" num="0033">Device <b>300</b> may include a routing engine (RE) <b>305</b> and multiple packet forwarding engines (PFEs) <b>310</b>-<b>1</b> through <b>310</b>-X interconnected via a switch fabric <b>315</b>. Switch fabric <b>315</b> may include one or more switching planes to facilitate communication between two or more of PFEs <b>310</b>. In one exemplary embodiment, each of the switching planes may include a three-stage switch of crossbar elements.</p>
+<p id="p-0035" num="0034">RE <b>305</b> may include processing logic that performs high-level management functions for device <b>300</b>. For example, RE <b>305</b> may communicate with other networks and systems connected to device <b>300</b> to exchange information regarding network topology. RE <b>305</b> may create routing tables based on the network topology information and forwarding tables based on the routing tables. RE <b>305</b> may install the forwarding tables in PFEs <b>310</b>. PFEs <b>310</b> may use the forwarding tables to perform route lookup for incoming packets. RE <b>305</b> may also perform other general control and monitoring functions for device <b>300</b>.</p>
+<p id="p-0036" num="0035">Each of PFEs <b>310</b> may connect to RE <b>305</b> and switch fabric <b>315</b>. PFEs <b>310</b> may receive data on physical links connected to a network, such as a wide area network (WAN), local area network (LAN), or a wireless network. Each physical link could be one of many types of transport media, such as optical fiber or Ethernet cable. The data on the physical link may be formatted according to one of several protocols, such as the synchronous optical network (SONET) standard, asynchronous transfer mode (ATM) technology, or Ethernet.</p>
+<p id="p-0037" num="0036">In the exemplary embodiment of <figref idref="DRAWINGS">FIG. 3</figref>, incoming packets may be stored in a memory (not shown) as &#x201c;shared resources&#x201d; which may be used and/or operated upon by various threads being executed by RE <b>305</b> or PFEs <b>310</b>-<b>1</b> through <b>310</b>-X.</p>
+<p id="p-0038" num="0037">The components depicted in <figref idref="DRAWINGS">FIG. 3</figref> are exemplary. Fewer, more, or differently arranged components than those shown may be included in network device <b>300</b>.</p>
+<heading id="h-0008" level="1">Resource Recovery System</heading>
+<p id="p-0039" num="0038"><figref idref="DRAWINGS">FIG. 4</figref> is an exemplary diagram of resource recovery system <b>120</b> of <figref idref="DRAWINGS">FIG. 1</figref>. Resource recovery system <b>120</b> may include a resource recovery management unit <b>410</b>, shared resources <b>130</b>, a resource metadata array <b>420</b>, a global thread crash counter <b>430</b>, a thread crash table <b>440</b> and a resource allocation queue <b>450</b>. Metadata array <b>420</b>, global thread crash counter <b>430</b>, thread crash table <b>440</b> and queue <b>450</b> may be stored in a memory (not shown) (e.g., memory <b>230</b> of <figref idref="DRAWINGS">FIG. 2</figref>).</p>
+<p id="p-0040" num="0039">Resource management unit <b>410</b> may operate, in conjunction with global thread crash counter <b>430</b>, thread crash table <b>440</b> and resource allocation queue <b>450</b>, to recover one or more resources of shared resources <b>130</b> when at least one of threads <b>110</b>-<b>1</b> through <b>110</b>-N crashes.</p>
+<p id="p-0041" num="0040">Resource metadata array <b>420</b> may store an array of metadata, where each section of metadata stored in array <b>420</b> may be associated with a single resource of shared resources <b>130</b>. Resource metadata may be stored in array <b>420</b>, and retrieved from array <b>420</b>, by resource recovery management unit <b>410</b>.</p>
+<p id="p-0042" num="0041">Global thread crash counter <b>430</b> may maintain a counter value that indicates a number of times any thread, which utilizes one or more of the resources of shared resources <b>130</b>, has crashed. The counter value stored in global thread crash counter <b>430</b> may, thus, maintain a cumulative count of a number of times that any one of threads <b>110</b>-<b>1</b> through <b>110</b>-N has crashed.</p>
+<p id="p-0043" num="0042">Thread crash table <b>440</b> may store thread identifiers, associated with each of threads <b>110</b>-<b>1</b> through <b>110</b>-N, in conjunction with thread crash indicators that indicate whether a corresponding thread is currently in a &#x201c;crashed&#x201d; state. Thread crash table <b>440</b>, therefore, maintains a record of which of threads <b>110</b>-<b>1</b> through <b>110</b>-N are in a &#x201c;crashed&#x201d; state.</p>
+<p id="p-0044" num="0043">Resource allocation queue <b>450</b> may temporarily store metadata associated with a resource subsequent to a request for that resource by a thread, or subsequent to a thread crashing that was utilizing the resource. Resource recovery management unit <b>410</b> may, during a resource recovery process, retrieve a resource's metadata from queue <b>450</b> when the resource is ready to be allocated (or re-allocated in the case of a thread crash) to a thread.</p>
+<p id="p-0045" num="0044">The components depicted in <figref idref="DRAWINGS">FIG. 4</figref> are exemplary. Fewer, more, or differently arranged components than those shown may be included in resource recovery system <b>120</b>.</p>
+<heading id="h-0009" level="1">Exemplary Thread Crash Table</heading>
+<p id="p-0046" num="0045"><figref idref="DRAWINGS">FIG. 5</figref> is a diagram of thread crash table <b>440</b> according to an exemplary embodiment. Thread crash table <b>440</b> may include multiple entries <b>500</b>, each of which may include a thread identifier (ID) field <b>510</b> and a thread crash indicator field <b>520</b>. Thread ID field <b>510</b> may uniquely identify a particular one of threads <b>110</b>-<b>1</b> through <b>110</b>-N. Thread crash indicator field <b>520</b> may indicate whether the thread identified in thread ID field <b>510</b> has crashed (i.e., is currently in a crashed state).</p>
+<p id="p-0047" num="0046">The fields depicted in <figref idref="DRAWINGS">FIG. 5</figref> are exemplary. Fewer, more, or different fields than those shown may be included in table <b>440</b>.</p>
+<heading id="h-0010" level="1">Exemplary Resource Allocation Queue</heading>
+<p id="p-0048" num="0047"><figref idref="DRAWINGS">FIG. 6</figref> is a diagram of resource allocation queue <b>450</b> according to an exemplary embodiment. Resource allocation queue <b>450</b> may store multiple items of resource metadata <b>600</b>-<b>1</b> through <b>600</b>-M, received from resource allocation unit <b>410</b>, for resource recovery. Each resource metadata <b>610</b> stored in allocation queue <b>450</b> may be associated with a thread ID field <b>620</b> that indicates which thread of threads <b>110</b>-<b>1</b> through <b>110</b>-N may be requesting use of the resource associated with the respective resource metadata <b>610</b> (or was allocated the resource prior to the thread crashing). Resource metadata <b>610</b> may be stored in resource allocation queue <b>450</b> until the respective resource is allocated (or re-allocated in the case of a thread crash) to the thread identified by thread ID field <b>620</b>.</p>
+<p id="p-0049" num="0048">The fields depicted in <figref idref="DRAWINGS">FIG. 6</figref> are exemplary. Fewer, more, or different fields than those shown may be included in queue <b>450</b>.</p>
+<heading id="h-0011" level="1">Exemplary Resource Metadata Array</heading>
+<p id="p-0050" num="0049"><figref idref="DRAWINGS">FIG. 7</figref> is a diagram of resource metadata array <b>420</b> according to an exemplary embodiment. Resource metadata array <b>420</b> may include an array of data, where a different resource in array <b>420</b> may be associated with respective resource metadata <b>700</b>, a thread ID <b>710</b>, and a thread crash counter <b>720</b>.</p>
+<p id="p-0051" num="0050">Resource metadata <b>700</b> may store metadata associated with a particular resource. For example, if the resource includes a packet, the metadata may include packet header metadata from the packet. Thread ID field <b>710</b> may identify a thread that is currently allocated to the resource associated with a respective resource metadata <b>700</b>. Thread crash counter field <b>720</b> may store a value for the global thread crash counter obtained at an approximate time when a resource's metadata is stored in metadata array <b>420</b> (i.e., approximately when the resource is allocated to a thread identified in thread ID field <b>710</b>).</p>
+<p id="p-0052" num="0051">The fields depicted in <figref idref="DRAWINGS">FIG. 7</figref> are exemplary. Fewer, more, or different fields than those shown may be included in array <b>420</b>.</p>
+<heading id="h-0012" level="1">Exemplary Resource Data Reception Process</heading>
+<p id="p-0053" num="0052"><figref idref="DRAWINGS">FIG. 8</figref> is a flow chart that illustrates an exemplary process for receiving and storing data associated with a resource. The exemplary process of <figref idref="DRAWINGS">FIG. 8</figref> may be performed by resource recovery management unit <b>410</b> of resource recovery system <b>120</b> for each resource of shared resources <b>130</b>. In other embodiments, some or all of the blocks described below may be performed by another component, unit or device, or a combination of components, units, or devices.</p>
+<p id="p-0054" num="0053">The exemplary process may include receiving resource data, including resource metadata (block <b>800</b>). When a given resource is identified, resource recovery system <b>120</b> may receive the resource's metadata. For example, if a given resource is a packet, resource recovery system <b>120</b> may obtain the packet's header metadata when a packet is received at device <b>300</b>.</p>
+<p id="p-0055" num="0054">The received resource metadata may be stored in resource metadata array <b>420</b> (block <b>810</b>). Resource recovery system <b>120</b> may store the received metadata associated with a particular resource in resource metadata <b>700</b> of resource metadata array <b>420</b>. For example, if a given resource is a packet, resource recovery system <b>120</b> may store the packet's header metadata in resource metadata <b>700</b> of array <b>420</b>.</p>
+<p id="p-0056" num="0055">The exemplary process of <figref idref="DRAWINGS">FIG. 8</figref> may be selectively repeated by resource recovery system <b>120</b> for each resource of shared resources <b>130</b>.</p>
+<heading id="h-0013" level="1">Exemplary Crashed Thread Re-start Process</heading>
+<p id="p-0057" num="0056"><figref idref="DRAWINGS">FIG. 9</figref> is a flow chart that illustrates an exemplary process for re-starting a thread that has crashed. The exemplary process of <figref idref="DRAWINGS">FIG. 9</figref> may be performed by resource recovery management unit <b>410</b> of resource recovery system <b>120</b>. In other embodiments, some or all of the blocks described below may be performed by another component, unit or device, or a combination of components, units, or devices.</p>
+<p id="p-0058" num="0057">The exemplary process may include setting the global thread crash counter to one (block <b>900</b>). At the time of system initialization or re-boot, global thread crash counter <b>430</b> may be set to an initial value of one. Subsequent to initialization, global thread crash counter <b>430</b> may be incremented each time a thread crash is detected by resource recovery management unit <b>410</b>, as described further below.</p>
+<p id="p-0059" num="0058">It may be determined whether a thread has crashed (block <b>910</b>). Resource recovery management unit <b>410</b> of resource recovery system <b>120</b> may monitor threads <b>110</b>-<b>1</b> through <b>110</b>-N to identify whether any of the threads has crashed. If a thread has not crashed (block <b>910</b>&#x2014;NO), then the process may return to block <b>910</b> (i.e., loop at block <b>910</b>). If, on the other hand, a thread has crashed (block <b>910</b>&#x2014;YES), global thread crash counter <b>430</b> may be incremented (block <b>920</b>). Upon detection of a thread crash of any of threads <b>110</b>-<b>1</b> through <b>110</b>-N, resource recovery management unit <b>410</b> of resource recovery system <b>120</b> may increment a current counter value stored in global thread crash counter <b>430</b> by one (i.e., counter=counter+1). The crashed thread may be identified (block <b>930</b>) and the identified thread's crash indicator may be set to indicate that the thread has crashed (block <b>940</b>). Resource recovery management unit <b>410</b> may identify the thread ID, of the particular thread of threads <b>110</b>-<b>1</b> through <b>110</b>-N, that has crashed and may determine an entry <b>500</b> in thread crash table <b>440</b> whose thread ID field <b>510</b> matches the identified thread ID. Resource recovery management unit <b>410</b> may set thread crash indicator <b>520</b> of the determined entry <b>500</b> to indicate that the thrash has crashed (e.g., thread crash indicator set to one).</p>
+<p id="p-0060" num="0059">The crashed thread may be re-started (block <b>950</b>). Resource recovery management unit <b>410</b> may initiate a thread re-start that begins a process of re-allocating previously allocated resources to the crashed thread. Thread re-allocation is described in further detail below with respect to <figref idref="DRAWINGS">FIGS. 11A-11C</figref>.</p>
+<p id="p-0061" num="0060">Blocks <b>920</b> through <b>950</b> may be selectively repeated for each identified thread that crashes in environment <b>100</b>.</p>
+<heading id="h-0014" level="1">Exemplary Resource Allocation Process</heading>
+<p id="p-0062" num="0061"><figref idref="DRAWINGS">FIG. 10</figref> is a flow chart that illustrates an exemplary process for allocating resources to threads. The exemplary process of <figref idref="DRAWINGS">FIG. 10</figref> may be performed by resource recovery management unit <b>410</b> of resource recovery system <b>120</b>. In other embodiments, some or all of the blocks described below may be performed by another component, unit or device, or a combination of components, units, or devices.</p>
+<p id="p-0063" num="0062">The exemplary process may include receiving a resource request for a thread (block <b>1000</b>). One of threads <b>110</b>-<b>1</b> through <b>110</b>-N may request a particular resource whose metadata may be stored in resource metadata array <b>420</b>. The requested resource's metadata may be stored in resource allocation queue <b>450</b> (block <b>1010</b>). Resource allocation queue <b>450</b> may queue resources for allocation to a particular thread. Resource recovery management unit <b>410</b> may retrieve the requested resource's metadata from metadata array <b>420</b> and may store the retrieved metadata in queue <b>450</b> along with the requesting thread's thread ID. Resource recovery management unit <b>410</b> may subsequently retrieve metadata <b>610</b> and thread ID <b>620</b> from queue <b>450</b> for allocating the corresponding resource to the thread identified by thread ID <b>620</b>. Resource recovery management unit <b>410</b> may retrieve entries <b>600</b> from queue <b>450</b> based on various mechanisms, such as, for example, based on a first-come, first-served mechanism, based on priorities assigned to each of the threads or to each of the resources, etc.</p>
+<p id="p-0064" num="0063">A current value for the global thread crash counter may be obtained (block <b>1030</b>) and the obtained global thread crash counter may be associated with the requested resource's metadata (block <b>1040</b>). Resource recovery management unit <b>410</b> may obtain a current counter value from global thread crash counter <b>430</b> and may store the counter value in thread crash counter field <b>720</b> associated with the resource's metadata in array <b>420</b>. The thread's thread ID may be associated with the allocated resource (block <b>1050</b>). Resource recovery management unit <b>410</b> may store the thread's thread ID in thread ID field <b>710</b> associated with the resource's metadata in array <b>420</b>.</p>
+<p id="p-0065" num="0064">The exemplary process of <figref idref="DRAWINGS">FIG. 10</figref> may be executed for each resource request received for any one of threads <b>110</b>-<b>1</b> through <b>110</b>-N.</p>
+<heading id="h-0015" level="1">Exemplary Resource Recovery Process</heading>
+<p id="p-0066" num="0065"><figref idref="DRAWINGS">FIGS. 11A-11C</figref> are flow charts that illustrate an exemplary process for recovering resources subsequent to thread crashes. The exemplary process of <figref idref="DRAWINGS">FIGS. 11A-11C</figref> may be performed by resource recovery management unit <b>410</b> of resource recovery system <b>120</b>. In other embodiments, some or all of the blocks described below may be performed by another component, unit or device, or a combination of components, units, or devices.</p>
+<p id="p-0067" num="0066">The exemplary process may include determining whether any thread has crashed (block <b>1100</b>). Resource recovery management unit <b>410</b> may monitor threads <b>110</b>-<b>1</b> through <b>110</b>-N to identify whether any of the threads has crashed. If no thread has crashed, the exemplary process may continue to loop at block <b>1100</b> with the continued monitoring of threads <b>110</b>-<b>1</b> through <b>110</b>-N. If any thread has crashed (block <b>1100</b>&#x2014;YES), then the resource metadata in the data array may be traversed to obtain a next item of resource metadata (block <b>1105</b>). In the case of a first execution of block <b>1105</b> in the exemplary process, the &#x201c;next item&#x201d; of resource metadata may include the first item of resource metadata in the data array. Resource recovery management unit <b>410</b> may traverse resource metadata array <b>420</b> in a step-by-step manner such that each resource's metadata in array <b>420</b> is successively analyzed to determine if a respective resource needs to be recovered.</p>
+<p id="p-0068" num="0067">A current value for the global thread crash counter may be obtained (block <b>1110</b>). Resource recovery management unit <b>410</b> may retrieve a current counter value from global thread crash counter <b>430</b>. The obtained global thread crash counter may be compared with the resource's stored thread crash counter (block <b>1115</b>). Resource recovery management unit <b>410</b> may retrieve the resource's thread crash counter value <b>720</b> from array <b>420</b> and compare the value with the value of global thread crash counter <b>430</b> obtained in block <b>1110</b>.</p>
+<p id="p-0069" num="0068">It may be determined whether the global thread crash counter is greater than the resource's thread crash counter (block <b>1120</b>). If not (block <b>1120</b>&#x2014;NO), the exemplary process may return to block <b>1105</b>, with a traversal to a next resource metadata in array <b>420</b>. If the global thread crash counter is greater than the resource's thread crash counter (block <b>1120</b>&#x2014;YES), then a thread ID associated with the resource may be obtained (block <b>1125</b>).</p>
+<p id="p-0070" num="0069">The thread crash indicator for the thread ID may be obtained (block <b>1130</b>). Resource recovery management unit <b>410</b> may obtain the resource's thread ID <b>710</b> from array <b>420</b>, and then match the thread ID <b>710</b> with a thread ID <b>510</b> in an entry <b>500</b> of thread crash table <b>440</b>. Resource recovery management unit <b>410</b> may retrieve crash indicator <b>520</b> from the entry <b>500</b> having a matching thread ID.</p>
+<p id="p-0071" num="0070">It may be determined whether the obtained thread crash indicator indicates that the thread has crashed (block <b>1135</b>). Resource recovery management unit <b>410</b> may analyze the obtained thread crash indicator <b>520</b> to determine whether it is set (e.g., set equal to one), indicating a thread crash, or cleared (e.g., set equal to zero), indicating that the thread is not in a &#x201c;crashed&#x201d; state. If the thread crash indicator does not indicate that the thread has crashed (block <b>1135</b>&#x2014;NO), then the exemplary process may return to block <b>1105</b> with a traversal to a next resource metadata in array <b>420</b>. If the thread crash indicator indicates that the thread has crashed (block <b>1135</b>&#x2014;YES), then the resource's resource metadata may be inserted in resource allocation queue <b>450</b> (block <b>1140</b>). Resource recovery management unit <b>410</b> may subsequently retrieve metadata <b>610</b> and thread ID <b>620</b> from queue <b>450</b> for re-allocating the corresponding resource to the thread identified by thread ID <b>620</b>. Resource recovery management unit <b>410</b> may retrieve entries <b>600</b> from queue <b>450</b> based on various mechanisms, such as, for example, based on a first-come, first-served mechanism, based on priorities assigned to each of the threads or to each of the resources, etc. Alternatively, instead of re-allocating the resource to the thread after the thread has crashed, the resource may be &#x201c;freed&#x201d; up, and returned to a pool of available resources, for use in the future.</p>
+<p id="p-0072" num="0071">It may be determined if another thread has crashed (block <b>1145</b>). If so (block <b>1145</b>&#x2014;YES), then a traversal of resource metadata in data array <b>420</b> may be re-started (block <b>1150</b>) and the exemplary process may return to block <b>1105</b> with traversal of array <b>420</b> re-starting at the first item of resource metadata in array <b>420</b>. Resource recovery management unit <b>410</b> may then traverse resource metadata array <b>420</b> in a step-by-step manner, from the first item of resource metadata, such that each resource's metadata in array <b>420</b> is successively analyzed to determine if a respective resource needs to be recovered.</p>
+<p id="p-0073" num="0072">It may be determined if all resource metadata in resource metadata array <b>420</b> has been traversed (block <b>1155</b>). If not (block <b>1155</b>&#x2014;NO), then the exemplary process may return to block <b>1105</b> with a traversal to a next resource metadata in array <b>420</b>. If all resource metadata in resource metadata array <b>420</b> has been traversed (block <b>1155</b>&#x2014;YES), then all thread crash indicators may be cleared (block <b>1160</b>). The exemplary process may return to block <b>1100</b> to determine if any additional threads have crashed.</p>
+<p id="p-0074" num="0073">The exemplary process of <figref idref="DRAWINGS">FIGS. 11A-11C</figref>. as described above, traverses through all of the resource metadata in metadata array <b>420</b> before clearing all of the thread crash indicators. However, alternatively, resources may be recovered and re-started a few at a time, with each crashed thread re-starting almost immediately. The resource metadata traversal of <figref idref="DRAWINGS">FIGS. 11A-11C</figref> may be executed slowly as a background process (i.e., so as to not &#x201c;hog&#x201d; processing resources), or may be executed completely over small time slices.</p>
+<heading id="h-0016" level="1">CONCLUSION</heading>
+<p id="p-0075" num="0074">As described herein, a thread crash recovery system may enable the recovery of resources in a system after one or more threads have crashed. The thread crash recovery system may enable the recovery of all resources used by a crashed thread without incurring a large cost on other threads in the system and without imposing any substantial &#x201c;housekeeping&#x201d; requirements on the system. The thread crash recovery system may re-start a crashed thread quickly, even before all packets for that thread may have been recovered.</p>
+<p id="p-0076" num="0075">The foregoing description of embodiments described herein provides illustration and description, but is not intended to be exhaustive or to limit the embodiments described herein to the precise form disclosed. Modifications and variations are possible in light of the above teachings or may be acquired from practice of the invention.</p>
+<p id="p-0077" num="0076">While series of blocks have been described in <figref idref="DRAWINGS">FIGS. 8-10</figref>, and <b>11</b>A-<b>11</b>C, the order of the blocks may vary in other implementations. Also, non-dependent blocks may be performed in parallel. Even though particular combinations of features are recited in the claims and/or disclosed in the specification, these combinations are not intended to limit the invention. In fact, many of these features may be combined in ways not specifically recited in the claims and/or disclosed in the specification.</p>
+<p id="p-0078" num="0077">No element, act, or instruction used in the description of the present application should be construed as critical or essential to the invention unless explicitly described as such. Also, as used herein, the article &#x201c;a&#x201d; is intended to include one or more items. Where only one item is intended, the term &#x201c;one&#x201d; or similar language is used. Further, the phrase &#x201c;based on&#x201d; is intended to mean &#x201c;based, at least in part, on&#x201d; unless explicitly stated otherwise. The scope of the invention is defined by the claims and their equivalents.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method comprising:
+<claim-text>receiving, by a device, a resource request for a thread, of a plurality of threads, associated with the device;</claim-text>
+<claim-text>storing, by the device and in a queue for allocating resources to the thread, metadata associated with a resource corresponding to the resource request and information identifying the thread;</claim-text>
+<claim-text>retrieving, by the device, the metadata and the information from the queue to allocate the resource to the thread;</claim-text>
+<claim-text>associating, by the device, a first value with the metadata,
+<claim-text>the first value corresponding to a value of a counter at a time that the resource is allocated to the thread, and</claim-text>
+<claim-text>the value of the counter being incremented each time any of the plurality of threads crashes; and</claim-text>
+</claim-text>
+<claim-text>re-allocating, by the device and when the thread crashes, the resource to the thread based on associating the first value with the metadata.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, where the resource includes a data unit received by the device from another device via a network, and
+<claim-text>where storing the metadata associated with the resource and the information identifying the thread includes:
+<claim-text>storing metadata associated with a header of the data unit and the information identifying the thread in the queue for allocating resources to the thread.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>incrementing, when the thread crashes, the value of the counter from the first value to a second value; and</claim-text>
+<claim-text>where re-allocating the resource to the thread includes:
+<claim-text>determining, when the thread crashes, that:
+<claim-text>the resource is allocated to the thread,</claim-text>
+<claim-text>the resource is associated with the first value, and</claim-text>
+<claim-text>the first value is less than the second value, and</claim-text>
+</claim-text>
+<claim-text>re-allocating the resource to the thread based on the first value being less than the second value.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>determining that one of the plurality of threads has crashed;</claim-text>
+<claim-text>incrementing the value of the counter to a second value based on determining that one of the plurality of threads has crashed;</claim-text>
+<claim-text>determining whether the second value is greater than the first value;</claim-text>
+<claim-text>determining whether the thread comprises the one of the plurality of threads that has crashed when the value of the incremented counter is greater than the first value,
+<claim-text>the resource being re-allocated to the thread when the thread comprises the one of the plurality of threads that has crashed.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00004">claim 4</claim-ref>, further comprising:
+<claim-text>determining not to re-allocate the resource to the thread when the second value is not greater than the first value.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>determining that one of the plurality of threads has crashed;</claim-text>
+<claim-text>associating the one of the plurality of threads with an indicator,
+<claim-text>the indicator indicating that the one of the plurality of threads has crashed; and</claim-text>
+</claim-text>
+<claim-text>determining that the resource is allocated to the thread based on the information identifying the thread being associated with the metadata; and</claim-text>
+<claim-text>where re-allocating the resource to the thread includes:
+<claim-text>determining that the thread is associated with the indicator based on determining that the resource is allocated to the thread,</claim-text>
+<claim-text>determining that the thread comprises the one of the plurality of threads that has crashed based on the thread being associated with the indicator, and</claim-text>
+<claim-text>re-allocating the resource to the thread based on the thread comprising the one of the plurality of threads that has crashed and the first value.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>incrementing the value of the counter to a second value based on determining that the one of the plurality of threads has crashed; and</claim-text>
+<claim-text>where re-allocating the resource to the thread further includes:
+<claim-text>determining that the first value is less than the second value, and</claim-text>
+<claim-text>re-allocating the resource to the thread further based on the first value being less than the second value.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. A device comprising:
+<claim-text>a processor to:
+<claim-text>receive a resource request for a thread, of a plurality of threads, associated with the device,</claim-text>
+<claim-text>store, in a memory associated with the device:
+<claim-text>metadata associated with a resource corresponding to the resource request, and</claim-text>
+<claim-text>information identifying the thread,</claim-text>
+</claim-text>
+<claim-text>retrieve the metadata and the information identifying the thread from the memory to allocate the resource to the thread,</claim-text>
+<claim-text>associate, based on retrieving the metadata and the information identifying the thread, the metadata with:
+<claim-text>a first value, and</claim-text>
+<claim-text>the information identifying the thread,
+<claim-text>the first value corresponding to a value of a counter at a time that the metadata is stored in the memory, and</claim-text>
+<claim-text>the value of the counter being incremented each time any of the plurality of threads crashes, and</claim-text>
+</claim-text>
+</claim-text>
+<claim-text>re-allocate, when the thread crashes, the resource to the thread based on associating metadata with the first value and the information identifying the thread.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The device of <claim-ref idref="CLM-00008">claim 8</claim-ref>, where, when re-allocating the resource to the thread, the processor is to:
+<claim-text>re-allocate, when the thread crashes, the resource to the thread based on:
+<claim-text>associating the metadata with the first value and the information identifying the thread, and</claim-text>
+<claim-text>a value of the counter at a time subsequent to the thread crashing.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The device of <claim-ref idref="CLM-00008">claim 8</claim-ref>, where the resource includes a data unit received by the device from another device via a network, and
+<claim-text>where, when storing the metadata associated with the resource and the information identifying the thread, the processor is to:
+<claim-text>store metadata associated with a header of the data unit and the information identifying the thread in the memory.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The device of <claim-ref idref="CLM-00008">claim 8</claim-ref>, where the processor is further to:
+<claim-text>increment, when the thread crashes, the value of the counter from the first value to a second value, and</claim-text>
+<claim-text>where, when re-allocating the resource to the thread, the processor is to:
+<claim-text>determine, when the thread crashes, that the thread has been allocated the resource and that the resource is associated with the first value,</claim-text>
+<claim-text>determine that the first value is less than the second value, and</claim-text>
+<claim-text>re-allocate the resource to the thread based on the first value being less than the second value.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The device of <claim-ref idref="CLM-00008">claim 8</claim-ref>, where the processor is further to:
+<claim-text>determine that one of the plurality of threads has crashed,</claim-text>
+<claim-text>increment the value of the counter to a second value based on determining that one of the plurality of threads has crashed,</claim-text>
+<claim-text>determine whether the second value is greater than the first value,</claim-text>
+<claim-text>determine whether the thread comprises the one of the plurality of threads that has crashed when the second value is greater than the first value,
+<claim-text>the resource being re-allocated to the thread when the thread comprises the one of the plurality of threads that has crashed.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The device of <claim-ref idref="CLM-00012">claim 12</claim-ref>, where the processor is further to:
+<claim-text>determine not to re-allocate the resource to the thread when the second value is not greater than the first value.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The device of <claim-ref idref="CLM-00008">claim 8</claim-ref>, where the processor is further to:
+<claim-text>determine that one of the plurality of threads has crashed,</claim-text>
+<claim-text>associate the one of the plurality of threads with an indicator,
+<claim-text>the indicator indicating that the one of the plurality of threads has crashed, and</claim-text>
+</claim-text>
+<claim-text>determine that the resource is allocated to the thread based on the information identifying the thread being associated with the metadata; and</claim-text>
+<claim-text>where, when re-allocating the resource to the thread, the processor is to:
+<claim-text>determine that the thread is associated with the indicator based on determining that the resource is allocated to the thread,</claim-text>
+<claim-text>determine that the thread comprises the one of the plurality of threads that has crashed based on the thread being associated with the indicator, and</claim-text>
+<claim-text>re-allocate the resource to the thread based on the thread comprising the one of the plurality of threads that has crashed and the first value.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. A non-transitory computer-readable medium storing instructions, the instructions comprising:
+<claim-text>one or more instructions which, when executed by a processor of a device, cause the processor to:
+<claim-text>allocate a resource to a thread, of a plurality of threads associated with the device,</claim-text>
+<claim-text>associate, based on allocating the resource, metadata associated with the resource with a first value and information identifying the thread,
+<claim-text>the first value corresponding to a value of a counter at a time that the resource is allocated to the thread, and</claim-text>
+<claim-text>the value of the counter being incremented each time any of the plurality of threads crashes, and</claim-text>
+</claim-text>
+<claim-text>re-allocate, when the thread crashes, the resource to the thread based on associating the first value with the metadata.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The non-transitory computer-readable medium of <claim-ref idref="CLM-00015">claim 15</claim-ref>, where the one or more instructions to re-allocate the resource to the thread include:
+<claim-text>one or more instructions to re-allocate, when the thread crashes, the resource to the thread based on:
+<claim-text>associating the metadata with the first value and the information identifying the thread, and</claim-text>
+<claim-text>a value of the counter at a time subsequent to the thread crashing.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The non-transitory computer-readable medium of <claim-ref idref="CLM-00015">claim 15</claim-ref>, where the resource includes a data unit received by the device from another device via a network, and
+<claim-text>where the metadata includes metadata associated with a header of the data unit.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The non-transitory computer-readable medium of <claim-ref idref="CLM-00015">claim 15</claim-ref>, where the instructions further comprise:
+<claim-text>one or more instructions to increment, when the thread crashes, the counter from the first value to a second value, and</claim-text>
+<claim-text>where the one or more instructions to re-allocate the resource to the thread include:
+<claim-text>one or more instructions to determine, when the thread crashes, that the thread has been allocated the resource and that the resource is associated with the first value,</claim-text>
+<claim-text>one or more instructions to determine that the first value is less than the second value, and</claim-text>
+<claim-text>one or more instructions to re-allocate the resource to the thread based on the first value being less than the second value.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The non-transitory computer-readable medium of <claim-ref idref="CLM-00015">claim 15</claim-ref>, where the instructions further comprise:
+<claim-text>one or more instructions to determine that one of the plurality of threads has crashed,</claim-text>
+<claim-text>one or more instructions to increment the value of the counter to a second value based on determining that one of the plurality of threads has crashed,</claim-text>
+<claim-text>one or more instructions to determine whether the second value is greater than the first value,</claim-text>
+<claim-text>one or more instructions to determine whether the thread comprises the one of the plurality of threads that has crashed when the second value is greater than the first value,
+<claim-text>the resource being re-allocated to the thread when the thread comprises the one of the plurality of threads that has crashed.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The non-transitory computer-readable medium of <claim-ref idref="CLM-00019">claim 19</claim-ref>, where the instructions further comprise:
+<claim-text>one or more instructions to determine not to re-allocate the resource to the thread when the second value is not greater than the first value. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

@@ -1,0 +1,936 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626799-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626799</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13251858</doc-number>
+<date>20111003</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>17</main-group>
+<subgroup>30</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>707802</main-classification>
+</classification-national>
+<invention-title id="d2e43">Mapping data structures</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>6678867</doc-number>
+<kind>B2</kind>
+<name>Fong et al.</name>
+<date>20040100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>6772180</doc-number>
+<kind>B1</kind>
+<name>Li et al.</name>
+<date>20040800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>7043687</doc-number>
+<kind>B2</kind>
+<name>Knauss et al.</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>7146474</doc-number>
+<kind>B2</kind>
+<name>Nguyen et al.</name>
+<date>20061200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711162</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>7181739</doc-number>
+<kind>B1</kind>
+<name>Harral et al.</name>
+<date>20070200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>717176</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>7219104</doc-number>
+<kind>B2</kind>
+<name>Lang et al.</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707661</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>7225411</doc-number>
+<kind>B1</kind>
+<name>Stoner et al.</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>715760</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>7269701</doc-number>
+<kind>B2</kind>
+<name>Shackelford et al.</name>
+<date>20070900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711162</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>7281211</doc-number>
+<kind>B2</kind>
+<name>Jeannette et al.</name>
+<date>20071000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>7483870</doc-number>
+<kind>B1</kind>
+<name>Mathew et al.</name>
+<date>20090100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  1  1</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>7526503</doc-number>
+<kind>B2</kind>
+<name>Bernstein et al.</name>
+<date>20090400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>7574652</doc-number>
+<kind>B2</kind>
+<name>Lennon et al.</name>
+<date>20090800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>715248</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>7586926</doc-number>
+<kind>B2</kind>
+<name>Fritsch et al.</name>
+<date>20090900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>370401</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>7698634</doc-number>
+<kind>B2</kind>
+<name>Bhatia et al.</name>
+<date>20100400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>715239</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>7739223</doc-number>
+<kind>B2</kind>
+<name>Vaschillo et al.</name>
+<date>20100600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>7743385</doc-number>
+<kind>B2</kind>
+<name>Debruin et al.</name>
+<date>20100600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>719313</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>7774831</doc-number>
+<kind>B2</kind>
+<name>Kuznetsov et al.</name>
+<date>20100800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>726 12</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>7788214</doc-number>
+<kind>B2</kind>
+<name>Fernandez et al.</name>
+<date>20100800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707602</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>7822708</doc-number>
+<kind>B1</kind>
+<name>Mathew et al.</name>
+<date>20101000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707610</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>7827205</doc-number>
+<kind>B2</kind>
+<name>Okunseinde et al.</name>
+<date>20101100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707802</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>7840895</doc-number>
+<kind>B2</kind>
+<name>Bhatia et al.</name>
+<date>20101100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>715239</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>7853553</doc-number>
+<kind>B2</kind>
+<name>Lankinen et al.</name>
+<date>20101200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707602</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>7873899</doc-number>
+<kind>B2</kind>
+<name>Singh</name>
+<date>20110100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>715234</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>7900136</doc-number>
+<kind>B2</kind>
+<name>Iwasaki</name>
+<date>20110300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>715237</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>7926064</doc-number>
+<kind>B2</kind>
+<name>Fernandez et al.</name>
+<date>20110400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>719313</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>7953102</doc-number>
+<kind>B2</kind>
+<name>Fritsch et al.</name>
+<date>20110500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>370401</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>US</country>
+<doc-number>8185911</doc-number>
+<kind>B2</kind>
+<name>Goring et al.</name>
+<date>20120500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>719313</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>US</country>
+<doc-number>8266630</doc-number>
+<kind>B2</kind>
+<name>Araujo et al.</name>
+<date>20120900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>719310</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>US</country>
+<doc-number>2002/0184213</doc-number>
+<kind>A1</kind>
+<name>Lau et al.</name>
+<date>20021200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707  6</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>US</country>
+<doc-number>2007/0299975</doc-number>
+<kind>A1</kind>
+<name>Daschakowsky et al.</name>
+<date>20071200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>709228</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00031">
+<document-id>
+<country>US</country>
+<doc-number>2010/0153464</doc-number>
+<kind>A1</kind>
+<name>Jalaldeen</name>
+<date>20100600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00032">
+<document-id>
+<country>US</country>
+<doc-number>2012/0072541</doc-number>
+<kind>A1</kind>
+<name>Carls et al.</name>
+<date>20120300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>709219</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00033">
+<othercit>P. Atzeni et al., &#x201c;Model-Independent Schema and Data Translation,&#x201d; 2006, 18 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>22</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>707802</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>27</number-of-drawing-sheets>
+<number-of-figures>27</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20130086124</doc-number>
+<kind>A1</kind>
+<date>20130404</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Bahl</last-name>
+<first-name>Rohit</first-name>
+<address>
+<city>Ottawa</city>
+<country>CA</country>
+</address>
+</addressbook>
+<residence>
+<country>CA</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Funk</last-name>
+<first-name>Eric O.</first-name>
+<address>
+<city>Kanata</city>
+<country>CA</country>
+</address>
+</addressbook>
+<residence>
+<country>CA</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Yeung</last-name>
+<first-name>Alan</first-name>
+<address>
+<city>Kanata</city>
+<country>CA</country>
+</address>
+</addressbook>
+<residence>
+<country>CA</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Bahl</last-name>
+<first-name>Rohit</first-name>
+<address>
+<city>Ottawa</city>
+<country>CA</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Funk</last-name>
+<first-name>Eric O.</first-name>
+<address>
+<city>Kanata</city>
+<country>CA</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Yeung</last-name>
+<first-name>Alan</first-name>
+<address>
+<city>Kanata</city>
+<country>CA</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Cantor Colburn LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>International Business Machines Corporation</orgname>
+<role>02</role>
+<address>
+<city>Armonk</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Brown</last-name>
+<first-name>Sheree</first-name>
+<department>2163</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A method for transforming data structures includes processing a portion of a source data structure (SDS) with a first processing resource by associating the first processing resource with a target data structure (TDS) key element located in a key position of a queue, determining whether the queue includes an SDS node element corresponding to the key position, processing the SDS node element responsive to determining that the queue includes the SDS node element corresponding to the key position, wherein the processing the SDS node element comprises retrieving the SDS node element from the queue, processing the retrieved SDS node element to generate a resultant TDS node element, outputting the resultant TDS node element to an empty key position in the queue, and mapping the resultant TDS node element to the TDS.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="133.60mm" wi="90.68mm" file="US08626799-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="171.62mm" wi="98.04mm" file="US08626799-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="253.75mm" wi="198.04mm" file="US08626799-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="194.82mm" wi="173.31mm" orientation="landscape" file="US08626799-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="192.70mm" wi="172.64mm" orientation="landscape" file="US08626799-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="188.04mm" wi="170.60mm" orientation="landscape" file="US08626799-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="197.02mm" wi="167.89mm" orientation="landscape" file="US08626799-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="201.08mm" wi="169.84mm" orientation="landscape" file="US08626799-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="224.79mm" wi="170.35mm" orientation="landscape" file="US08626799-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="239.18mm" wi="169.33mm" orientation="landscape" file="US08626799-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="224.96mm" wi="130.22mm" file="US08626799-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="229.53mm" wi="168.99mm" file="US08626799-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="187.03mm" wi="142.49mm" file="US08626799-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="186.86mm" wi="126.41mm" file="US08626799-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="238.76mm" wi="191.69mm" file="US08626799-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="157.90mm" wi="87.29mm" file="US08626799-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00016" num="00016">
+<img id="EMI-D00016" he="170.60mm" wi="187.20mm" file="US08626799-20140107-D00016.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00017" num="00017">
+<img id="EMI-D00017" he="138.94mm" wi="85.94mm" file="US08626799-20140107-D00017.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00018" num="00018">
+<img id="EMI-D00018" he="186.52mm" wi="186.52mm" file="US08626799-20140107-D00018.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00019" num="00019">
+<img id="EMI-D00019" he="167.22mm" wi="187.79mm" file="US08626799-20140107-D00019.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00020" num="00020">
+<img id="EMI-D00020" he="250.53mm" wi="188.38mm" file="US08626799-20140107-D00020.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00021" num="00021">
+<img id="EMI-D00021" he="233.93mm" wi="191.60mm" file="US08626799-20140107-D00021.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00022" num="00022">
+<img id="EMI-D00022" he="136.91mm" wi="86.02mm" file="US08626799-20140107-D00022.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00023" num="00023">
+<img id="EMI-D00023" he="249.94mm" wi="206.25mm" file="US08626799-20140107-D00023.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00024" num="00024">
+<img id="EMI-D00024" he="98.72mm" wi="194.82mm" file="US08626799-20140107-D00024.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00025" num="00025">
+<img id="EMI-D00025" he="127.76mm" wi="94.74mm" file="US08626799-20140107-D00025.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00026" num="00026">
+<img id="EMI-D00026" he="211.50mm" wi="204.39mm" file="US08626799-20140107-D00026.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00027" num="00027">
+<img id="EMI-D00027" he="195.75mm" wi="195.24mm" file="US08626799-20140107-D00027.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND</heading>
+<p id="p-0002" num="0001">The present invention relates to mapping data structures, and more specifically, to mapping data structures in a parallel processing system.</p>
+<p id="p-0003" num="0002">Data structures often include an arrangement of data elements that may be, for example, arranged as nodes in a hierarchical scheme. An example of such a data structure is an enterprise model. Mapping is used when a data structure in one domain or format is converted into another domain or format. The mapping is often performed by a processor system that receives a source data structure, processes the elements of the source data structure to transform the elements into a target data structure, and outputs the target data structure. For example, a user may input a source data structure such as a unified modeling language (UML) data structure, and the system may process the UML data structure to transform the UML data structure into an eclipse modeling framework (EMF) data structure. The processing of large data structures often consumes considerable processing resources and considerable processing time.</p>
+<heading id="h-0002" level="1">BRIEF SUMMARY</heading>
+<p id="p-0004" num="0003">According to one embodiment of the present invention a method for transforming data structures includes processing a portion of a source data structure (SDS) with a first processing resource by associating the first processing resource with a target data structure (TDS) key element located in a key position of a queue, determining whether the queue includes an SDS node element corresponding to the key position, processing the SDS node element responsive to determining that the queue includes the SDS node element corresponding to the key position, wherein the processing the SDS node element comprises retrieving the SDS node element from the queue, processing the retrieved SDS node element to generate a resultant TDS node element, outputting the resultant TDS node element to an empty key position in the queue, mapping the resultant TDS node element to the TDS, determining whether the queue includes a second SDS node element corresponding to the key position, and processing the second SDS node element responsive to determining that the queue includes the second SDS node element corresponding to the key position.</p>
+<p id="p-0005" num="0004">According to another embodiment of the present invention a system for transforming data structures includes a queue including target data structure (TDS) key positions and source data structure (SDS) element positions associated with the TDS key positions, a first processing resource operative to process a portion of a source data structure (SDS) with a first processing resource by associating the first processing resource with a target data structure (TDS) key element located in a key position of a queue, determining whether the queue includes an SDS node element corresponding to the key position, processing the SDS node element responsive to determining that the queue includes the SDS node element corresponding to the key position, wherein the processing the SDS node element comprises retrieving the SDS node element from the queue, processing the retrieved SDS node element to generate a resultant TDS node element, outputting the resultant TDS node element to an empty key position in the queue, mapping the resultant TDS node element to the TDS, determining whether the queue includes a second SDS node element corresponding to the key position, and processing the second SDS node element responsive to determining that the queue includes the second SDS node element corresponding to the key position.</p>
+<p id="p-0006" num="0005">According to yet another embodiment of the present invention a method for processing a request for a transform rule includes receiving a request from a processing resource, the request including an identifier of an SDS element type and an identifier of the requesting processing resource, processing the request with a second processing resource and a third processing resource, the second processing resource is associated with a first list of transform rules and the third processing resource is associated with a second list of transform rules, wherein the processing includes the second processing resource determining whether the first list of transform rules includes an SDS element type matching the received SDS element type, the second processing resource sending a transform rule associated with the SDS element type to the requesting processing resource, and a indicator to the third processing resource indicating that the request has been satisfied responsive to determining that the first list of transform rules includes the SDS element type matching the received SDS element type, the third processing resource determining whether the second list of transform rules includes an SDS element type matching the received SDS element type, and the third processing resource sending a transform rule associated with the SDS element type to the requesting processing resource, and a indicator to the second processing resource indicating that the request has been satisfied responsive to determining that the second list of transform rules includes the SDS element type matching the received SDS element type.</p>
+<p id="p-0007" num="0006">Additional features and advantages are realized through the techniques of the present invention. Other embodiments and aspects of the invention are described in detail herein and are considered a part of the claimed invention. For a better understanding of the invention with the advantages and the features, refer to the description and to the drawings.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE SEVERAL VIEWS OF THE DRAWINGS</heading>
+<p id="p-0008" num="0007">The subject matter which is regarded as the invention is particularly pointed out and distinctly claimed in the claims at the conclusion of the specification. The forgoing and other features, and advantages of the invention are apparent from the following detailed description taken in conjunction with the accompanying drawings in which:</p>
+<p id="p-0009" num="0008"><figref idref="DRAWINGS">FIG. 1</figref> illustrates an exemplary embodiment of a system.</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 2</figref> illustrates an example of a source data structure and a target data structure.</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIGS. 3A-3G</figref> illustrate an exemplary embodiment of an arrangement of processing resources.</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIGS. 4A-4B</figref> illustrate a block diagram of an exemplary method for operating the system.</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 5</figref> illustrates an exemplary embodiment of a system.</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 6</figref> illustrates a block diagram of an exemplary method for processing transform rule requests.</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 7</figref> illustrates an exemplary embodiment of an implementation of a concurrency framework</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 8A</figref> illustrates the thread pool manager of <figref idref="DRAWINGS">FIG. 7</figref>.</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 8B</figref> illustrates an exemplary embodiment of the ThreadPoolManager ( ) function of <figref idref="DRAWINGS">FIG. 8A</figref>.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 9A</figref> illustrates the concurrent queue of <figref idref="DRAWINGS">FIG. 7</figref>.</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 9B</figref> illustrates an exemplary embodiment of the ConcurrentQueue ( ) function of <figref idref="DRAWINGS">FIG. 9A</figref>.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 9C</figref> illustrates an exemplary embodiment of the removeFromQ ( ) function of <figref idref="DRAWINGS">FIG. 9A</figref>.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 9D</figref> illustrates an exemplary embodiment of the executeTask ( ) function of <figref idref="DRAWINGS">FIG. 9A</figref>.</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 9E</figref> illustrates an exemplary embodiment of the findInQ ( ) function, the takeFromQ ( ) function, putToQ ( ) function, and awaitQueueEmpty ( ) function of <figref idref="DRAWINGS">FIG. 9A</figref>.</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 10A</figref> illustrates the interruptible thread <figref idref="DRAWINGS">FIG. 7</figref>.</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 10B</figref> illustrates an exemplary embodiment of the process ( ) function of <figref idref="DRAWINGS">FIG. 10A</figref>.</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 10C</figref> illustrates an exemplary embodiment of the setAndRun ( ) function of <figref idref="DRAWINGS">FIG. 10A</figref>.</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 11A</figref> illustrates the selective threading handler of <figref idref="DRAWINGS">FIG. 7</figref>.</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 11B</figref> illustrates an exemplary embodiment of the selctiveExec ( ) function of <figref idref="DRAWINGS">FIG. 11A</figref>.</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 11C</figref> illustrates an exemplary embodiment of the cancelOtherMutexRunners ( ) function of <figref idref="DRAWINGS">FIG. 11A</figref>.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 1</figref> illustrates an exemplary embodiment of a system <b>100</b>. The system <b>100</b> includes a processor <b>102</b> that is communicatively connected to a display device <b>104</b>, input devices <b>106</b> and a memory device <b>108</b>. In the illustrated embodiment, the processor <b>102</b> may include a processor that performs processing tasks in parallel such as, for example, a dual or quad core processor.</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 2</figref> illustrates an example of a source data structure <b>202</b> and a target data structure <b>204</b>. The source data structure <b>202</b> includes a number of elements arranged as nodes in a hierarchical structure. The target data structure <b>204</b> includes transformed elements of the source data structure <b>202</b> that are mapped to the target data structure <b>204</b> and correspond to elements of the source data structure <b>202</b>. In the illustrated example, the source data structure <b>202</b> is a UML data structure while the target data structure is a type of EMF data structure. In the illustrated example, the &#x201c;Class<b>1</b>&#x201d; element node of the source data structure <b>204</b> has been transformed and mapped to the target data structure <b>204</b> as the element nodes &#x201c;CPP Source File Class<b>1</b>;&#x201d; &#x201c;CPP Conditional Declaration;&#x201d; and &#x201c;CPP Composite Type Class.&#x201d; The source data structure <b>202</b> includes the element nodes &#x201c;attr<b>1</b>&#x201d; and &#x201c;attr<b>2</b>&#x201d; connected to and arranged in a lower level of the hierarchy to the &#x201c;Class<b>1</b>&#x201d; element node. Thus, &#x201c;attr<b>1</b>&#x201d; is transformed to &#x201c;CPP Variable attr<b>1</b>&#x201d; and mapped to a hierarchal position in the target data structure <b>204</b> that corresponds to the hierarchal position of the &#x201c;attr<b>1</b>&#x201d; element in the source data structure <b>202</b> (i.e. connected to and at a lower level of the hierarchy of the &#x201c;CPP Composite Type Class<b>1</b>&#x201d; element node in the target data structure <b>204</b>).</p>
+<p id="p-0031" num="0030">Though the description of the exemplary embodiments of the methods and systems described below will use the exemplary source data structure <b>202</b> and target data structure <b>204</b>, the example is for illustrative purposes only. The methods and systems described below may be used to map any type of source data structure to any type of target data structure and are not limited by the example data structures illustrated in <figref idref="DRAWINGS">FIG. 2</figref>. Mapping may include, for example, data transformations, exports, imports and translations.</p>
+<p id="p-0032" num="0031">Previous methods for mapping a source data structure to a target data structure were designed to be used with a single processing resource. The methods and systems described below allow the mapping of data structures to be performed more efficiently using parallel processing resources. The use of parallel processing resources allows different elements of the source data structure to be transformed and mapped in parallel while maintaining the integrity of the resultant target data structure.</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIGS. 3A-3G</figref> illustrate an exemplary embodiment of an arrangement of processing resources <b>302</b> that include virtual processors (VP) A-D (<b>302</b>A-<b>302</b>D) that may perform processing tasks simultaneously and in parallel. In the illustrated embodiment the processing resources <b>302</b> may be located in the processor <b>102</b> (of <figref idref="DRAWINGS">FIG. 1</figref>); however, the processing resources <b>302</b> may be located in any combination or arrangement of a plurality of processors that may be located in different locations and communicatively connected to the memory device <b>108</b> or a number of different communicatively connected memory devices <b>108</b>. Though the illustrated exemplary embodiment includes four virtual processors the methods and systems described below may include any number of virtual or real processors capable of performing processing tasks simultaneously and in parallel. The illustrated embodiment includes a concurrent queue (queue) <b>304</b>. The queue <b>304</b> may be stored in the memory device <b>108</b>. The queue <b>304</b> is multidimensional and expandable. In the illustrated exemplary embodiment of <figref idref="DRAWINGS">FIG. 3A</figref>, the queue <b>304</b> includes key level <b>306</b> that includes a key position <b>306</b>A that stores a target data structure (TDS) element key. The queue <b>304</b> includes tasks corresponding to the transformation of source data structure (SDS) element level <b>308</b> that may include any number of including zero of SDS elements that are associated with the TDS element stored in the corresponding key position. In the illustrated example of <figref idref="DRAWINGS">FIG. 3A</figref>, the SDS element level <b>308</b> includes SDS elements stored in SDS element positions <b>308</b>A<b>1</b>-<b>308</b>A<b>5</b> that correspond to the position <b>306</b>A. The processing resources <b>302</b>A-<b>302</b>D may retrieve a task associated with the SDS element level <b>308</b> such that transformation agents associated with the corresponding SDS elements are executed by the processing resources <b>302</b>A-<b>302</b>D. The processing resources <b>302</b>A-<b>302</b>D store data from and to any key position in the key level <b>306</b> and the corresponding SDS element level <b>308</b> in the queue <b>304</b>.</p>
+<p id="p-0034" num="0033">The <figref idref="DRAWINGS">FIGS. 3A-3G</figref> will be used to describe an exemplary method of operation of the system <b>100</b> (of <figref idref="DRAWINGS">FIG. 1</figref>) to map a portion of the source data structure (SDS) <b>202</b> (of <figref idref="DRAWINGS">FIG. 2</figref>) to a corresponding portion of the target data structure (TDS) <b>204</b>. In this regard, referring to <figref idref="DRAWINGS">FIG. 2A</figref>, once the SDS <b>202</b> has been received by one of the processing resources <b>302</b>, the root node element of the SDS <b>202</b> is identified and transformed into a corresponding root node element in the TDS <b>204</b>. The TDS root node element is mapped to the TDS <b>204</b> and stored in a file that will contain the TDS <b>204</b>, and the TDS root node element is stored in the key level <b>306</b> of the queue <b>304</b>. In the illustrated example, the TDS root node element is stored in the key position <b>306</b>A. The processing resource <b>302</b> also uses the root node element of the SDS <b>202</b> to identify the SDS elements that are arranged in nodes connected to the root node element in the SDS <b>202</b> hierarchy (e.g., &#x201c;Class<b>1</b>,&#x201d; &#x201c;Class<b>2</b>,&#x201d; &#x201c;Enum<b>1</b>,&#x201d; &#x201c;Capsule<b>1</b>,&#x201d; and &#x201c;Capsule<b>2</b>&#x201d;). The processing resource <b>302</b> stores the identified SDS elements in the SDS element level <b>308</b> in positions <b>308</b>A<b>1</b>-A<b>5</b>. In the illustrated example, the processing resource VP <b>302</b>A has performed the above described methods; however, any of the processing resources <b>302</b> may perform the above described methods.</p>
+<p id="p-0035" num="0034">Referring to <figref idref="DRAWINGS">FIG. 3B</figref>, the VP <b>302</b>A has retrieved the SDS element &#x201c;Class<b>1</b>&#x201d; from the queue <b>304</b>, and processes the retrieved SDS element; however, any of the processing resources <b>302</b> that are idle may perform the processing task. In this regard, the processing includes identifying the type of transform that should be applied to the retrieved SDS element and applying the transform to the SDS element to generate a corresponding TDS element (e.g., &#x201c;CPP Composite Type Class<b>1</b>&#x201d; as illustrated in <figref idref="DRAWINGS">FIG. 2</figref>). Once the transform has been applied by the VP <b>302</b>A, the VP <b>302</b>A maps the generated TDS element to a position in the TDS <b>204</b> that corresponds the SDS element position. Referring now to <figref idref="DRAWINGS">FIG. 3C</figref>, the VP <b>302</b>A refers to the SDS <b>202</b> to identify and retrieve any SDS elements that are arranged in nodes connected to the processed SDS <b>202</b> node element in the SDS <b>202</b> hierarchy (e.g., &#x201c;attr<b>1</b>,&#x201d; &#x201c;attr<b>2</b>,&#x201d; and &#x201c;op<b>1</b>&#x201d;). The VP <b>302</b>A stores the generated TDS element &#x201c;CPP Composite Type Class<b>1</b>&#x201d; in the key level <b>306</b> of the queue <b>304</b> in a key position <b>306</b>B; and stores the retrieved SDS elements in the SDS element level <b>308</b> in SDS element positions <b>308</b>B<b>1</b>-<b>308</b>B<b>3</b> that correspond to the key position <b>306</b>B. If there are no SDS elements connected to the processed SDS node element, the VP <b>302</b>A will only store the generated TDS element in the key position <b>306</b>B. Once the VP A <b>302</b>A has stored the generated TDS element and any retrieved SDS node elements in the queue <b>304</b>, the VP A <b>302</b>A will determine whether the SDS element level <b>308</b> includes any SDS elements in the SDS element positions <b>308</b>A that correspond to the key position <b>306</b>A. If so, the VP A <b>302</b> will retrieve and process the next SDS element (e.g., &#x201c;Class<b>2</b>&#x201d; from SDS element position <b>308</b>A<b>2</b>) in the queue <b>304</b>. If all of the SDS elements that correspond to the key position <b>306</b>A have been processed, the VP A <b>302</b>A will determine whether the queue <b>304</b> includes any populated key positions in the key level <b>308</b> and process any corresponding SDS elements in a similar manner as described above. Once the key position <b>306</b>B and the corresponding SDS element positions <b>308</b>B have been populated by the VP A <b>302</b>, another processing resource <b>302</b> that is idle and thus, available, will process the SDS elements that correspond to the key position <b>306</b>B. In the illustrated example of <figref idref="DRAWINGS">FIG. 3C</figref>, the VP A <b>302</b>A has begun processing &#x201c;Class<b>2</b>&#x201d; while the VP B <b>302</b>B has selected the key position <b>306</b>B.</p>
+<p id="p-0036" num="0035">Referring to <figref idref="DRAWINGS">FIG. 3D</figref>, the VP B <b>302</b>B has is process the &#x201c;Attr<b>1</b>&#x201d; from the SDS element position <b>308</b>B<b>1</b>; the VP A <b>302</b>A finished processing the &#x201c;Class<b>2</b>&#x201d; SDS element, populated the queue <b>304</b> with the TDS key &#x201c;CPP Composite Type Class <b>2</b>&#x201d; in the key position <b>306</b>C and the SDS elements in the SDS element positions <b>308</b>C<b>1</b>-C<b>4</b>, and begun processing the SDS element &#x201c;Enum<b>1</b>;&#x201d; and the VP C <b>302</b>C selects the key position <b>306</b>C for processing.</p>
+<p id="p-0037" num="0036">Referring to <figref idref="DRAWINGS">FIG. 3E</figref>, the VP C <b>302</b>C has started processing the SDS element &#x201c;Attr<b>3</b>.&#x201d; The VP B <b>302</b> B has completed processing &#x201c;Attr<b>1</b>&#x201d; and populated the key position <b>306</b>D with the target element &#x201c;CPP Variable attr<b>1</b>.&#x201d; Since the SDS element &#x201c;Attr<b>3</b>&#x201d; is not attached to any branch nodes a lower hierarchy level, the SDS element positions corresponding to the key position <b>306</b>D are empty (or not indexed). The idol VP D <b>302</b>D has selected the key position <b>306</b>D for processing.</p>
+<p id="p-0038" num="0037">Referring to <figref idref="DRAWINGS">FIG. 3F</figref>, the VP C <b>302</b>C has completed processing the SDS element &#x201c;Attr<b>3</b>&#x201d; and has populated the key position <b>306</b>E with &#x201c;CPP Variable attr<b>3</b>,&#x201d; and has started processing the SDS element &#x201c;Attr<b>4</b>.&#x201d; The VP D <b>302</b>D has checked to determine whether there are any SDS elements populating SDS element positions corresponding to the key position <b>306</b>D (of <figref idref="DRAWINGS">FIG. 3E</figref>). Since there were none, the VP D <b>302</b>D determined whether there were any key positions not selected by a processor <b>302</b> for processing. The VP D <b>302</b>D determined that the key position <b>306</b>E was not selected, and selected the key position <b>306</b>E for processing. The VP B <b>302</b>B completed the processing of &#x201c;Attr<b>2</b>&#x201d; and populated the key position <b>306</b>F. Since the processors <b>302</b> are all occupied with processing tasks the key position <b>306</b>F awaits processing in the queue <b>302</b>.</p>
+<p id="p-0039" num="0038">Referring to <figref idref="DRAWINGS">FIG. 3G</figref>, the VP B <b>302</b>B completed processing the SDS element &#x201c;op<b>1</b>&#x201d; and populated the key position <b>306</b>G and the SDS element positions <b>308</b>G<b>1</b> and <b>308</b>G<b>2</b>. The VP B <b>302</b>B determined whether there are any remaining SDS elements corresponding to the key position <b>306</b>B. Since there were no remaining SDS elements, the VP B <b>302</b>B expunged the key position <b>306</b>B. The VP B <b>302</b>B then identified the key position <b>306</b>F as being unassigned to a processing resource, and began processing the key position <b>306</b>F. Simultaneously VP A has completed processing and position CPP Enum Enum<b>1</b> and populates it with SDS elements <b>308</b>H<b>1</b> and <b>308</b> H<b>2</b>.</p>
+<p id="p-0040" num="0039"><figref idref="DRAWINGS">FIGS. 4A-4B</figref> illustrate a block diagram of an exemplary method for operating the system <b>100</b> described above. Referring to <figref idref="DRAWINGS">FIG. 4A</figref>, in block <b>402</b>, an SDS is received by a processing resource. In block <b>404</b>, the processing resource initializes the queue with a TDS root node in a TDS key position and maps the TDS root node to the TDS. The processing resource populates the SDS positions corresponding to the TDS key position with SDS node elements connected to the SDS root node in block <b>406</b>. In block <b>408</b>, an SDS node element corresponding to the TDS element in a key position is processed by a processing resource. The processing includes identifying a transform that should be applied to the SDS node element and applying the transform to the SDS node element to generate a corresponding TDS element in block. In block <b>410</b>, the processing resource identifies node elements in a lower hierarchy level in the SDS that are connected to the processed SDS node element. In block <b>412</b>, the processing resource outputs the resultant TDS node element to populate an empty key position in the queue, maps the resultant TDS node element to the TDS, and outputs the identified SDS node elements to the queue positions corresponding to the corresponding populated key position in the queue. In block <b>414</b>, the processing resource determines whether there are any additional SDS node elements associated with the TDS key position. If no, in block <b>416</b>, the key position in the queue is expunged and the processing resource is available for processing another key position and associated SDS elements. In block <b>418</b>, any available processing resource (i.e., a processing resource that is not processing any data in the queue&#x2014;an idle processing resource) determines whether the queue includes any populated key positions that are not being processed. If no, in block <b>420</b> if all processors are idle, and the queue is empty the method ends, and may output the TDS. If in block <b>418</b> the queue includes populated key positions that are not being processed, and if a processing resource is available in block <b>422</b>, the available processing resource associates with a populated unprocessed key position in block <b>424</b>.</p>
+<p id="p-0041" num="0040">A transform rule is used by the processing resources <b>302</b> (of <figref idref="DRAWINGS">FIG. 3A</figref>) to transform a SDS element into the proper TDS element. Since the SDS includes a variety of different types of elements, and each type of element is generally transformed using a different rule, the processing resources <b>302</b> typically identify the type of SDS element to be transformed and apply the transform rule associated with the SDS element to transform the SDS element into a corresponding TDS element. The transform rules are stored in a database or lookup table (not shown) that includes a list of SDS element identifiers and transform rules associated with the SDS element identifiers. In one exemplary embodiment, a processing resource <b>302</b> may access the lookup table and search for an SDS element identifier that matches the SDS element identifier of the SDS element to be transformed. When the match is found the processing resource <b>302</b> retrieves the associated transform rule and applies the rule to the SDS element to transform the SDS element into a corresponding TDS element. Though the above described exemplary embodiment is effective, with a large lookup table of SDS element types and transform rules, the matching processing may slow the overall processing of the SDS element since the serial matching of a single lookup table does not use parallel processing.</p>
+<p id="p-0042" num="0041"><figref idref="DRAWINGS">FIG. 5</figref> illustrates an exemplary embodiment of a system <b>500</b> that includes a mutually exclusive (MUTEX) evaluator portion <b>502</b> that includes processing resources VP X <b>502</b>X, VP Y <b>502</b>Y, and VP Z <b>502</b>Z. The MUTEX evaluator portion <b>502</b> may include any number of processing resources and is not limited to the illustrated embodiment. The MUTEX evaluator portion <b>502</b> may be communicatively connected to the processing resources <b>302</b>. Each of the processing resources <b>502</b>X-<b>502</b>Z is associated with a transform rule group (TRG) X-Z <b>504</b>X-Z that includes transform rules. In the illustrated embodiment, each transform rule group includes a different set of transform rules. For example, if there are a total of 99 transform rules that may be used for the mapping of the SDS <b>202</b> (of <figref idref="DRAWINGS">FIG. 2</figref>) to the TDS <b>204</b>, the transform rules may be grouped into three groups of 33 rules such that TRG X <b>504</b>X includes rules 1-33, TRG Y <b>505</b>Y includes rules 34-66, and TRG Z <b>504</b>Z includes rules 65-99. In operation, when a processing resource <b>302</b> receives a SDS element such as &#x201c;Class<b>1</b>,&#x201d; the processing resource <b>302</b> identifies the element type of the SDS element. The processing resource <b>302</b> sends a request for a transform rule that includes the element identifier to the MUTEX evaluator portion <b>502</b>. The element identifier is sent to each of the processing resources <b>502</b>X-Z in the MUTEX evaluation portion <b>502</b>. Each of the processing resources <b>502</b>X-Z compares the received element identifier to the element identifiers in the associated TRG <b>504</b>X-Z. When one of the processing resources <b>502</b>X-Z finds a match, the processing resource <b>502</b> retrieves the transform rule associated with the matched element identifier and sends the transform rule to the requesting processing resource <b>302</b>. The processing resource <b>502</b> notifies the other processing resources that the request has been satisfied, and the processing resources <b>502</b>X-Z cease searching for matches. The MUTEX evaluator portion <b>502</b> may then receive and process another request for a transform rule. The exemplary embodiment may include any number of TRGs <b>504</b> each having any number of transform rules.</p>
+<p id="p-0043" num="0042"><figref idref="DRAWINGS">FIG. 6</figref> illustrates a block diagram of an exemplary method for processing transform rule requests. In block <b>602</b>, a request is received that includes an identifier of an SDS element type an identifier of the requesting processing resource. In block <b>604</b> each processing resource in the MUTEX evaluator portion <b>502</b> (of <figref idref="DRAWINGS">FIG. 5</figref>) attempts to locate a transform rule that is associated with the received SDS element type in a list of transform rules that is associated with the processing resource in the MUTEX evaluator portion <b>502</b>. Each list having at least an SDS element identifier and an associated transform rule. At least one of the lists having a group of transform rules that is different from the other lists. In block <b>606</b>, when the requested transform rule is located, the transform rule is sent to the requesting processing resource (SDS element processor) and an instruction is sent to the other processing resources in the MUTEX evaluator portion <b>502</b> to stop processing the request.</p>
+<p id="p-0044" num="0043"><figref idref="DRAWINGS">FIG. 7</figref> illustrates an exemplary embodiment of an implementation of a concurrency framework <b>700</b> that performs the methods described above. The illustrated embodiment includes an implementation in Java classes, however the illustrated embodiments are merely an example, and may be implemented in any other programming language. In this regard, the concurrency framework <b>700</b> includes a thread pool manager <b>702</b>, a selective threading handler <b>704</b>, an interruptible thread <b>706</b>, a priority thread <b>708</b>, a run entity <b>710</b> and a concurrent queue <b>712</b>.</p>
+<p id="p-0045" num="0044"><figref idref="DRAWINGS">FIG. 8A</figref> illustrates the thread pool manager <b>702</b>, which includes the function ThreadPoolManager ( ) <b>802</b>. The thread pool manager <b>702</b> is responsible for orchestrating the scheduling aspects of the concurrency framework. Particularly, the thread pool manager <b>702</b> creates multiple divisions with each division including executors with characteristics that are different from the characteristics of executors in other divisions. <figref idref="DRAWINGS">FIG. 8B</figref> illustrates an exemplary embodiment of the ThreadPoolManager ( ) <b>802</b> function that depicts instantiation of two divisions of executors. Priority thread corresponds to the virtual processors A-D (<b>302</b>A-<b>302</b>D of <figref idref="DRAWINGS">FIG. 3</figref>), and serve as the runnable entity for the export agent that participates in concurrent target model creation. The priority threads block on the concurrent queue while awaiting tasks.</p>
+<p id="p-0046" num="0045"><figref idref="DRAWINGS">FIG. 9A</figref> illustrates the concurrent queue <b>712</b>. The concurrent queue <b>712</b> includes the functions ConcurrentQueue ( ) <b>902</b>, addToQ ( ) <b>904</b>, removeFromQ ( ) <b>906</b>, executeTask ( ) <b>908</b>, findInQ ( ) <b>910</b>, takeFromQ ( ) <b>912</b>, putToQ ( ) <b>914</b>, and awaitQueueEmpty ( ) <b>916</b>. <figref idref="DRAWINGS">FIG. 9B</figref> illustrates an exemplary embodiment of the ConcurrentQueue ( ) <b>902</b> function and the addToQ ( ) <b>904</b> function. The ConcurrentQueue ( ) <b>902</b> function allows for the simultaneous fetching and the addition of source input elements for action upon by export agents for concurrent model creation.</p>
+<p id="p-0047" num="0046"><figref idref="DRAWINGS">FIG. 9C</figref> illustrates an exemplary embodiment of the removeFromQ ( ) <b>906</b> function. The addToQ ( ) <b>904</b> function (of <figref idref="DRAWINGS">FIG. 9B</figref>) and the removeFromQ ( ) <b>906</b> function facilitate the simultaneous additions and removals of data from different portions of the queue concurrently. <figref idref="DRAWINGS">FIG. 9D</figref> illustrates an exemplary embodiment of the executeTask ( ) <b>908</b> function that is accessed by multiple instances of priority threads. The executeTask ( ) <b>908</b> function provides for the simultaneous fetching of tasks depicted in line <b>94</b>. At line <b>101</b>, multiple priority threads may use a read lock function to access new tasks from the concurrent queue in cases where the previously executed valued list has been depleted of tasks. At line <b>117</b>, the blocking mechanism is shown. <figref idref="DRAWINGS">FIG. 9E</figref> illustrates an exemplary embodiment of the findInQ ( ) <b>910</b> function, the takeFromQ ( ) <b>912</b> function, putToQ ( ) <b>914</b> function, and awaitQueueEmpty ( ) <b>916</b> function.</p>
+<p id="p-0048" num="0047"><figref idref="DRAWINGS">FIG. 10A</figref> illustrates the interruptible thread <b>706</b> that includes a process ( ) <b>1002</b> function and a setAndRun ( ) <b>1004</b> function. <figref idref="DRAWINGS">FIG. 10B</figref> illustrates an exemplary embodiment of the process ( ) <b>1002</b> function, and <figref idref="DRAWINGS">FIG. 10C</figref> illustrates an exemplary embodiment of the setAndRun ( ) <b>1004</b> function. The interruptible thread <b>706</b> corresponds to the division of executors relating to multiple mutex evaluation and may be throttled to give preference to the concurrent model creating tasks. The process ( ) <b>1002</b> function (of <figref idref="DRAWINGS">FIG. 10B</figref>) is the entry point for mutex evaluation, and provides efficient detection of the cancelation of executors on finding a match. The setAndRun ( ) <b>1004</b> function delegates tasks to a waiting executor.</p>
+<p id="p-0049" num="0048"><figref idref="DRAWINGS">FIG. 11A</figref> illustrates the selective threading handler <b>704</b>, which includes a selctiveExec ( ) <b>1102</b> function and a cancelOtherMutexRunners ( ) <b>1104</b> function. <figref idref="DRAWINGS">FIG. 11B</figref> illustrates an exemplary embodiment of the selctiveExec ( ) <b>1102</b> function, and FIG. <b>11</b>C illustrates an exemplary embodiment of the cancelOtherMutexRunners ( ) <b>1104</b> function. The selective threading handler <b>704</b> communicates with the ThreadPoolManager ( ) <b>802</b> function (of <figref idref="DRAWINGS">FIG. 8B</figref>) to orchestrate the dynamically morphing scheduling behavior. The number of interruptible threads allowed to exit their waiting state and participate in execution is a subset (throttling) of the total number of interruptible threads in the pool division and is a function of the number of active executors involved in concurrent structure creations. The selctiveExec ( ) <b>1102</b> function depicts toggling between the concurrent and sequential mutex evaluation depending on whether the evauation was successful in receiving the executors from the ThreadPoolManager ( ) <b>802</b> function. The cancelOtherMutexRunners ( ) <b>1104</b> function shares the responsibility of ensuring that other interruptible threads are signaled to abandon their execution if success has been achieved by one of the concurrent mutex evaluators.</p>
+<p id="p-0050" num="0049">As will be appreciated by one skilled in the art, aspects of the present invention may be embodied as a system, method or computer program product. Accordingly, aspects of the present invention may take the form of an entirely hardware embodiment, an entirely software embodiment (including firmware, resident software, micro-code, etc.) or an embodiment combining software and hardware aspects that may all generally be referred to herein as a &#x201c;circuit,&#x201d; &#x201c;module&#x201d; or &#x201c;system.&#x201d; Furthermore, aspects of the present invention may take the form of a computer program product embodied in one or more computer readable medium(s) having computer readable program code embodied thereon. Any combination of one or more computer readable medium(s) may be utilized. The computer readable medium may be a computer readable signal medium or a computer readable storage medium. A computer readable storage medium may be, for example, but not limited to, an electronic, magnetic, optical, electromagnetic, infrared, or semiconductor system, apparatus, or device, or any suitable combination of the foregoing. More specific examples (a non-exhaustive list) of the computer readable storage medium would include the following: an electrical connection having one or more wires, a portable computer diskette, a hard disk, a random access memory (RAM), a read-only memory (ROM), an erasable programmable read-only memory (EPROM or Flash memory), an optical fiber, a portable compact disc read-only memory (CD-ROM), an optical storage device, a magnetic storage device, or any suitable combination of the foregoing. In the context of this document, a computer readable storage medium may be any tangible medium that can contain, or store a program for use by or in connection with an instruction execution system, apparatus, or device.</p>
+<p id="p-0051" num="0050">A computer readable signal medium may include a propagated data signal with computer readable program code embodied therein, for example, in baseband or as part of a carrier wave. Such a propagated signal may take any of a variety of forms, including, but not limited to, electro-magnetic, optical, or any suitable combination thereof A computer readable signal medium may be any computer readable medium that is not a computer readable storage medium and that can communicate, propagate, or transport a program for use by or in connection with an instruction execution system, apparatus, or device.</p>
+<p id="p-0052" num="0051">Program code embodied on a computer readable medium may be transmitted using any appropriate medium, including but not limited to wireless, wireline, optical fiber cable, RF, etc., or any suitable combination of the foregoing.</p>
+<p id="p-0053" num="0052">Computer program code for carrying out operations for aspects of the present invention may be written in any combination of one or more programming languages, including an object oriented programming language such as Java, Smalltalk, C++ or the like and conventional procedural programming languages, such as the &#x201c;C&#x201d; programming language or similar programming languages. The program code may execute entirely on the user's computer, partly on the user's computer, as a stand-alone software package, partly on the user's computer and partly on a remote computer or entirely on the remote computer or server. In the latter scenario, the remote computer may be connected to the user's computer through any type of network, including a local area network (LAN) or a wide area network (WAN), or the connection may be made to an external computer (for example, through the Internet using an Internet Service Provider).</p>
+<p id="p-0054" num="0053">Aspects of the present invention are described below with reference to flowchart illustrations and/or block diagrams of methods, apparatus (systems) and computer program products according to embodiments of the invention. It will be understood that each block of the flowchart illustrations and/or block diagrams, and combinations of blocks in the flowchart illustrations and/or block diagrams, can be implemented by computer program instructions. These computer program instructions may be provided to a processor of a general purpose computer, special purpose computer, or other programmable data processing apparatus to produce a machine, such that the instructions, which execute via the processor of the computer or other programmable data processing apparatus, create means for implementing the functions/acts specified in the flowchart and/or block diagram block or blocks. These computer program instructions may also be stored in a computer readable medium that can direct a computer, other programmable data processing apparatus, or other devices to function in a particular manner, such that the instructions stored in the computer readable medium produce an article of manufacture including instructions which implement the function/act specified in the flowchart and/or block diagram block or blocks. The computer program instructions may also be loaded onto a computer, other programmable data processing apparatus, or other devices to cause a series of operational steps to be performed on the computer, other programmable apparatus or other devices to produce a computer implemented process such that the instructions which execute on the computer or other programmable apparatus provide processes for implementing the functions/acts specified in the flowchart and/or block diagram block or blocks. The flowchart and block diagrams in the Figures illustrate the architecture, functionality, and operation of possible implementations of systems, methods and computer program products according to various embodiments of the present invention. In this regard, each block in the flowchart or block diagrams may represent a module, segment, or portion of code, which comprises one or more executable instructions for implementing the specified logical function(s). It should also be noted that, in some alternative implementations, the functions noted in the block may occur out of the order noted in the figures. For example, two blocks shown in succession may, in fact, be executed substantially concurrently, or the blocks may sometimes be executed in the reverse order, depending upon the functionality involved. It will also be noted that each block of the block diagrams and/or flowchart illustration, and combinations of blocks in the block diagrams and/or flowchart illustration, can be implemented by special purpose hardware-based systems that perform the specified functions or acts, or combinations of special purpose hardware and computer instructions.</p>
+<p id="p-0055" num="0054">The terminology used herein is for the purpose of describing particular embodiments only and is not intended to be limiting of the invention. As used herein, the singular forms &#x201c;a&#x201d;, &#x201c;an&#x201d; and &#x201c;the&#x201d; are intended to include the plural forms as well, unless the context clearly indicates otherwise. It will be further understood that the terms &#x201c;comprises&#x201d; and/or &#x201c;comprising,&#x201d; when used in this specification, specify the presence of stated features, integers, steps, operations, elements, and/or components, but do not preclude the presence or addition of one more other features, integers, steps, operations, element components, and/or groups thereof.</p>
+<p id="p-0056" num="0055">The corresponding structures, materials, acts, and equivalents of all means or step plus function elements in the claims below are intended to include any structure, material, or act for performing the function in combination with other claimed elements as specifically claimed. The description of the present invention has been presented for purposes of illustration and description, but is not intended to be exhaustive or limited to the invention in the form disclosed. Many modifications and variations will be apparent to those of ordinary skill in the art without departing from the scope and spirit of the invention. The embodiment was chosen and described in order to best explain the principles of the invention and the practical application, and to enable others of ordinary skill in the art to understand the invention for various embodiments with various modifications as are suited to the particular use contemplated</p>
+<p id="p-0057" num="0056">The flow diagrams depicted herein are just one example. There may be many variations to this diagram or the steps (or operations) described therein without departing from the spirit of the invention. For instance, the steps may be performed in a differing order or steps may be added, deleted or modified. All of these variations are considered a part of the claimed invention.</p>
+<p id="p-0058" num="0057">While the preferred embodiment to the invention had been described, it will be understood that those skilled in the art, both now and in the future, may make various improvements and enhancements which fall within the scope of the claims which follow. These claims should be construed to maintain the proper protection for the invention first described.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A computer implemented method for transforming data structures, the method comprising:
+<claim-text>processing a portion of a source data structure (SDS) with a first processing resource by:
+<claim-text>associating the first processing resource with a target data structure (TDS) key element located in a key position of a queue, the queue including tasks that transform the SDS to the TDS to perform the associating;</claim-text>
+<claim-text>determining whether the queue includes an SDS node element corresponding to the key position based on whether the SDS node element exists in the key position;</claim-text>
+<claim-text>processing the SDS node element responsive to determining that the queue includes the SDS node element corresponding to the key position, wherein the processing the SDS node element comprises:
+<claim-text>retrieving the SDS node element from the queue;</claim-text>
+<claim-text>processing the retrieved SDS node element to generate a resultant TDS node element;</claim-text>
+<claim-text>outputting the resultant TDS node element to an empty key position in the queue;</claim-text>
+<claim-text>mapping the resultant TDS node element to the TDS;</claim-text>
+<claim-text>determining whether the queue includes a second SDS node element corresponding to the key position; and</claim-text>
+<claim-text>processing the second SDS node element responsive to determining that the queue includes the second SDS node element corresponding to the key position,</claim-text>
+<claim-text>wherein the processing the retrieved SDS node element to generate a resultant TDS node element comprises:</claim-text>
+<claim-text>identifying an SDS element identifier associated with the retrieved SDS node element;</claim-text>
+<claim-text>outputting a request for a transform rule, the request including an identifier of the SDS element identifier associated with the retrieved SDS node element and an identifier of the requesting processing resource;</claim-text>
+<claim-text>receiving a transform rule associated with the SDS element identifier; and</claim-text>
+<claim-text>applying a transform rule corresponding to the identified SDS element identifier to generate the resultant TDS node element.</claim-text>
+</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>processing a second portion of the SDS with a second processing resource by:
+<claim-text>determining whether the queue includes any populated key positions that are not being processed;</claim-text>
+<claim-text>associating the second processing resource with a TDS key element located in an unprocessed populated key position of the queue;</claim-text>
+<claim-text>determining whether the queue includes an SDS node element corresponding to the unprocessed populated key position;</claim-text>
+<claim-text>processing the SDS node element responsive to determining that the queue includes the SDS node element corresponding to the unprocessed populated key position, wherein the processing the SDS node element comprises:
+<claim-text>retrieving the SDS node element from the queue;</claim-text>
+<claim-text>processing the retrieved SDS node element to generate a resultant TDS node element;</claim-text>
+<claim-text>outputting the resultant TDS node element to an empty key position in the queue;</claim-text>
+<claim-text>mapping the resultant TDS node element to the TDS;</claim-text>
+<claim-text>determining whether the queue includes a second SDS node element corresponding to the key position; and</claim-text>
+<claim-text>processing the second SDS node element responsive to determining that the queue includes the second SDS node element corresponding to the key position.</claim-text>
+</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>determining with the first processing resource, whether the queue includes any populated key positions that are not being processed responsive to determining that the queue does not include an SDS node element corresponding to the key position;</claim-text>
+<claim-text>associating the first processing resource with a TDS key element located in an unprocessed populated key position of the queue;</claim-text>
+<claim-text>determining whether the queue includes an SDS node element corresponding to the key position;</claim-text>
+<claim-text>retrieving the SDS node element from the queue responsive to determining that the queue includes the SDS node element corresponding to the key position;</claim-text>
+<claim-text>processing the retrieved SDS node element to generate a resultant TDS node element;</claim-text>
+<claim-text>outputting the resultant TDS node element to an empty key position in the queue; and</claim-text>
+<claim-text>mapping the resultant TDS node element to the TDS.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the processing the retrieved SDS node element to generate a resultant TDS node element comprises:
+<claim-text>identifying an SDS element identifier associated with the retrieved SDS node element; and</claim-text>
+<claim-text>applying a transform rule corresponding to the identified SDS element identifier to generate the resultant TDS node element.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the processing of the portion of the SDS with the first processing resource is performed in parallel with the processing of the second portion of the SDS with the second processing resource.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising processing requests for transform rules, wherein the processing requests for transform rules includes:
+<claim-text>receiving a request for a transform rule at a third processing resource and a fourth processing resource, the request including an identifier of the SDS element identifier associated with the retrieved SDS node element and an identifier of the requesting processing resource;</claim-text>
+<claim-text>processing the request with the third processing resource and the fourth processing resource, the third processing resource is associated with a first list of transform rules and the fourth processing resource is associated with a second list of transform rules, wherein the processing includes:</claim-text>
+<claim-text>the third processing resource determining whether the first list of transform rules includes an SDS element identifier matching the received SDS element identifier;</claim-text>
+<claim-text>the third processing resource sending a transform rule associated with the SDS element identifier to the requesting processing resource, and [[a]]an indicator to the fourth processing resource indicating that the request has been satisfied responsive to determining that the first list of transform rules includes the SDS element identifier matching the received SDS element identifier;</claim-text>
+<claim-text>the fourth processing resource determining whether the second list of transform rules includes an SDS element identifier matching the received SDS element identifier; and</claim-text>
+<claim-text>the fourth processing resource sending a transform rule associated with the SDS element identifier to the requesting processing resource, and an indicator to the third processing resource indicating that the request has been satisfied responsive to determining that the second list of transform rules includes the SDS element identifier matching the received SDS element identifier.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, further comprising:
+<claim-text>the fourth processing resource ceasing the determination of whether the second list of transform rules includes an SDS element identifier matching the received SDS element identifier responsive to receiving the indicator from the third processing resource indicating that the request has been satisfied.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein the first list of transform rules and the second list of transform rules are dissimilar.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, further comprising:
+<claim-text>retrieving a user definable function that defines an allocation of a plurality of processing resources, the plurality of processing resources includes at least the first, second, third, and fourth processing resources; and</claim-text>
+<claim-text>allocating the each of the processing resources of the plurality of resources for either processing requests for transform rules or processing portions of the SDS according the user definable function.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. A system for transforming data structures comprising:
+<claim-text>a microprocessor including a queue including target data structure (TDS) key positions and source data structure (SDS) element positions associated with the TDS key positions;</claim-text>
+<claim-text>a first processing resource executable by the microprocessor, the first processing resource operative to process a portion of a source data structure (SDS) with a first processing resource by:
+<claim-text>associating the first processing resource with a target data structure (TDS) key element located in a key position of a queue, the queue including tasks that transform the SDS to the TDS to perform the associating;</claim-text>
+<claim-text>determining via the microprocessor whether the queue includes an SDS node element corresponding to the key position based on whether the SDS node element exists in the key position;</claim-text>
+<claim-text>processing the SDS node element via the microprocessor in response to determining that the queue includes the SDS node element corresponding to the key position, wherein the processing the SDS node element comprises:
+<claim-text>retrieving the SDS node element from the queue;</claim-text>
+<claim-text>processing the retrieved SDS node element to generate a resultant TDS node element;</claim-text>
+<claim-text>outputting the resultant TDS node element to an empty key position in the queue;</claim-text>
+<claim-text>mapping the resultant TDS node element to the TDS;</claim-text>
+<claim-text>determining whether the queue includes a second SDS node element corresponding to the key position; and</claim-text>
+<claim-text>processing the second SDS node element responsive to determining that the queue includes the second SDS node element corresponding to the key position,</claim-text>
+</claim-text>
+<claim-text>wherein the processing the retrieved SDS node element to generate a resultant TDS node element comprises:</claim-text>
+<claim-text>identifying an SDS element identifier associated with the retrieved SDS node element; and</claim-text>
+<claim-text>applying a transform rule corresponding to the identified SDS element identifier to generate the resultant TDS node element.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The system of <claim-ref idref="CLM-00010">claim 10</claim-ref>, further comprising a second processing resource operative to process a second portion of the SDS by:
+<claim-text>determining whether the queue includes any populated key positions that are not being processed;</claim-text>
+<claim-text>associating the second processing resource with a TDS key element located in an unprocessed populated key position of the queue;</claim-text>
+<claim-text>determining whether the queue includes an SDS node element corresponding to the unprocessed populated key position;</claim-text>
+<claim-text>processing the SDS node element responsive to determining that the queue includes the SDS node element corresponding to the unprocessed populated key position, wherein the processing the SDS node element comprises:
+<claim-text>retrieving the SDS node element from the queue;</claim-text>
+<claim-text>processing the retrieved SDS node element to generate a resultant TDS node element;</claim-text>
+<claim-text>outputting the resultant TDS node element to an empty key position in the queue;</claim-text>
+<claim-text>mapping the resultant TDS node element to the TDS;</claim-text>
+<claim-text>determining whether the queue includes a second SDS node element corresponding to the key position; and</claim-text>
+<claim-text>processing the second SDS node element responsive to determining that the queue includes the second SDS node element corresponding to the key position.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The system of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the first processing resource is further operative to determine whether the queue includes any populated key positions that are not being processed responsive to determining that the queue does not include an SDS node element corresponding to the key position, associate with a TDS key element located in an unprocessed populated key position of the queue, determine whether the queue includes an SDS node element corresponding to the key position, retrieve the SDS node element from the queue responsive to determining that the queue includes the SDS node element corresponding to the key position, process the retrieved SDS node element to generate a resultant TDS node element, output the resultant TDS node element to an empty key position in the queue, and map the resultant TDS node element to the TDS.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The system of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the processing the retrieved SDS node element to generate a resultant TDS node element comprises:
+<claim-text>identifying an SDS element identifier associated with the retrieved SDS node element;</claim-text>
+<claim-text>outputting a request for a transform rule, the request including an identifier of the SDS element identifier associated with the retrieved SDS node element and an identifier of the requesting processing resource;</claim-text>
+<claim-text>receiving a transform rule associated with the SDS element identifier; and</claim-text>
+<claim-text>applying a transform rule corresponding to the identified SDS element identifier to generate the resultant TDS node element.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The system of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the processing of the portion of the SDS with the first processing resource is performed in parallel with the processing of the second portion of the SDS with the second processing resource.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The system of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the system is further operative to process requests for transform rules, wherein the processing requests for transform rules includes:
+<claim-text>receiving a request for a transform rule at a third processing resource and a fourth processing resource, the request including an identifier of the SDS element identifier associated with the retrieved SDS node element and an identifier of the requesting processing resource;</claim-text>
+<claim-text>processing the request with the third processing resource and the fourth processing resource, the third processing resource is associated with a first list of transform rules and the fourth processing resource is associated with a second list of transform rules, wherein the processing includes:</claim-text>
+<claim-text>the third processing resource determining whether the first list of transform rules includes an SDS element identifier matching the received SDS element identifier;</claim-text>
+<claim-text>the third processing resource sending a transform rule associated with the SDS element identifier to the requesting processing resource, an indicator to the fourth processing resource indicating that the request has been satisfied responsive to determining that the first list of transform rules includes the SDS element identifier matching the received SDS element identifier;</claim-text>
+<claim-text>the fourth processing resource determining whether the second list of transform rules includes an SDS element identifier matching the received SDS element identifier; and</claim-text>
+<claim-text>the fourth processing resource sending a transform rule associated with the SDS element identifier to the requesting processing resource, and an indicator to the third processing resource indicating that the request has been satisfied responsive to determining that the second list of transform rules includes the SDS element identifier matching the received SDS element identifier.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the fourth processing resource is operative to cease the determination of whether the second list of transform rules includes an SDS element identifier matching the received SDS element identifier responsive to receiving the indicator from the third processing resource indicating that the request has been satisfied.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the first list of transform rules and the second list of transform rules are dissimilar.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the system is operative to retrieve a user definable function that defines an allocation of a plurality of processing resources, the plurality of processing resources includes at least the first, second, third, and fourth processing resources, and allocate the each of the processing resources of the plurality of resources for either processing requests for transform rules or processing portions of the SDS according the user definable function.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. A computer implemented method for processing a request for a transform rule, the method comprising:
+<claim-text>processing a portion of a source data structure (SDS) with a first processing resource by:</claim-text>
+<claim-text>associating the first processing resource with a target data structure TDS key element located in a key position of a queue, the queue including tasks that transform the SDS to the TDS to perform the associating;</claim-text>
+<claim-text>determining whether the queue includes an SDS node element corresponding to the key position based on whether the SDS node element exists in the key position;</claim-text>
+<claim-text>processing the SDS node element responsive to determining that the queue includes the SDS node element corresponding to the key position, wherein the processing the SDS node element comprises:
+<claim-text>retrieving the SDS node element from the queue;</claim-text>
+<claim-text>processing the retrieved SDS node element to generate a resultant TDS node element;</claim-text>
+<claim-text>outputting the resultant TDS node element to an empty key position in the queue;</claim-text>
+<claim-text>mapping the resultant TDS node element to the TDS;</claim-text>
+<claim-text>determining whether the queue includes a second SDS node element corresponding to the key position; and</claim-text>
+<claim-text>processing the second SDS node element responsive to determining that the queue includes the second SDS node element corresponding to the key position,</claim-text>
+<claim-text>wherein the processing the retrieved SDS node element to generate a resultant TDS node element comprises:</claim-text>
+<claim-text>identifying an SDS element identifier associated with the retrieved SDS node element;</claim-text>
+</claim-text>
+<claim-text>outputting a request for a transform rule, the request including an identifier of the SDS element identifier associated with the retrieved SDS node element and an identifier of the requesting processing resource</claim-text>
+<claim-text>receiving said request from a first processing resource,</claim-text>
+<claim-text>processing the request with a second processing resource and a third processing resource, the second processing resource is associated with a first list of transform rules and the third processing resource is associated with a second list of transform rules, wherein the processing includes:
+<claim-text>the second processing resource determining whether the first list of transform rules includes an SDS element type matching the received SDS element type;</claim-text>
+<claim-text>the second processing resource sending a transform rule associated with the SDS element type to the requesting processing resource, and an indicator to the third processing resource indicating that the request has been satisfied responsive to determining that the first list of transform rules includes the SDS element type matching the received SDS element type;</claim-text>
+<claim-text>the third processing resource determining whether the second list of transform rules includes an SDS element type matching the received SDS element type; and</claim-text>
+<claim-text>the third processing resource sending a transform rule associated with the SDS element type to the requesting processing resource, and an indicator to the second processing resource indicating that the request has been satisfied responsive to determining that the second list of transform rules includes the SDS element type matching the received SDS element type;</claim-text>
+</claim-text>
+<claim-text>receiving a transform rule associated with the SDS element identifier; and</claim-text>
+<claim-text>applying a transform rule corresponding to the identified SDS element identifier to generate the resultant TDS node element.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The method of <claim-ref idref="CLM-00019">claim 19</claim-ref>, further comprising the third processing resource ceasing the determination of whether the second list of transform rules includes an SDS element type matching the received SDS element type responsive to receiving the indicator from the second processing resource indicating that the request has been satisfied.</claim-text>
+</claim>
+<claim id="CLM-00021" num="00021">
+<claim-text>21. The method of <claim-ref idref="CLM-00019">claim 19</claim-ref>, further comprising the second processing resource ceasing the determination of whether the first list of transform rules includes an SDS element type matching the received SDS element type responsive to receiving the indicator from the third processing resource indicating that the request has been satisfied.</claim-text>
+</claim>
+<claim id="CLM-00022" num="00022">
+<claim-text>22. The method of <claim-ref idref="CLM-00019">claim 19</claim-ref>, wherein the first list of transform rules and the second list of transform rules are dissimilar. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

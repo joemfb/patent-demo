@@ -1,0 +1,2355 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08625085-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08625085</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13407943</doc-number>
+<date>20120229</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>2011-049786</doc-number>
+<date>20110308</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<us-term-extension>128</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>01</class>
+<subclass>N</subclass>
+<main-group>21</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>356 73</main-classification>
+</classification-national>
+<invention-title id="d2e71">Defect evaluation method for semiconductor</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5731856</doc-number>
+<kind>A</kind>
+<name>Kim et al.</name>
+<date>19980300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5744864</doc-number>
+<kind>A</kind>
+<name>Cillessen et al.</name>
+<date>19980400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>5923182</doc-number>
+<kind>A</kind>
+<name>Thakoor et al.</name>
+<date>19990700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>32475423</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6294274</doc-number>
+<kind>B1</kind>
+<name>Kawazoe et al.</name>
+<date>20010900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>6563174</doc-number>
+<kind>B2</kind>
+<name>Kawasaki et al.</name>
+<date>20030500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>6727522</doc-number>
+<kind>B1</kind>
+<name>Kawasaki et al.</name>
+<date>20040400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>7049190</doc-number>
+<kind>B2</kind>
+<name>Takeda et al.</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>7061014</doc-number>
+<kind>B2</kind>
+<name>Hosono et al.</name>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>7064346</doc-number>
+<kind>B2</kind>
+<name>Kawasaki et al.</name>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>7105868</doc-number>
+<kind>B2</kind>
+<name>Nause et al.</name>
+<date>20060900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>7211825</doc-number>
+<kind>B2</kind>
+<name>Shih et al</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>7282782</doc-number>
+<kind>B2</kind>
+<name>Hoffman et al.</name>
+<date>20071000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>7297977</doc-number>
+<kind>B2</kind>
+<name>Hoffman et al.</name>
+<date>20071100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>7323356</doc-number>
+<kind>B2</kind>
+<name>Hosono et al.</name>
+<date>20080100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>7385224</doc-number>
+<kind>B2</kind>
+<name>Ishii et al.</name>
+<date>20080600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>7402506</doc-number>
+<kind>B2</kind>
+<name>Levy et al.</name>
+<date>20080700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>7411209</doc-number>
+<kind>B2</kind>
+<name>Endo et al.</name>
+<date>20080800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>7453065</doc-number>
+<kind>B2</kind>
+<name>Saito et al.</name>
+<date>20081100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>7453087</doc-number>
+<kind>B2</kind>
+<name>Iwasaki</name>
+<date>20081100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>7462862</doc-number>
+<kind>B2</kind>
+<name>Hoffman et al.</name>
+<date>20081200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>7468304</doc-number>
+<kind>B2</kind>
+<name>Kaji et al.</name>
+<date>20081200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>7501293</doc-number>
+<kind>B2</kind>
+<name>Ito et al.</name>
+<date>20090300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>7674650</doc-number>
+<kind>B2</kind>
+<name>Akimoto et al.</name>
+<date>20100300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>7732819</doc-number>
+<kind>B2</kind>
+<name>Akimoto et al.</name>
+<date>20100600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>7791072</doc-number>
+<kind>B2</kind>
+<name>Kumomi et al.</name>
+<date>20100900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>2001/0046027</doc-number>
+<kind>A1</kind>
+<name>Tai et al.</name>
+<date>20011100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>US</country>
+<doc-number>2002/0056838</doc-number>
+<kind>A1</kind>
+<name>Ogawa</name>
+<date>20020500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>US</country>
+<doc-number>2002/0132454</doc-number>
+<kind>A1</kind>
+<name>Ohtsu et al.</name>
+<date>20020900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>US</country>
+<doc-number>2003/0189401</doc-number>
+<kind>A1</kind>
+<name>Kido et al.</name>
+<date>20031000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>US</country>
+<doc-number>2003/0218222</doc-number>
+<kind>A1</kind>
+<name>Wager et al.</name>
+<date>20031100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00031">
+<document-id>
+<country>US</country>
+<doc-number>2004/0038446</doc-number>
+<kind>A1</kind>
+<name>Takeda et al.</name>
+<date>20040200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00032">
+<document-id>
+<country>US</country>
+<doc-number>2004/0127038</doc-number>
+<kind>A1</kind>
+<name>Carcia et al.</name>
+<date>20040700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00033">
+<document-id>
+<country>US</country>
+<doc-number>2005/0017302</doc-number>
+<kind>A1</kind>
+<name>Hoffman</name>
+<date>20050100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00034">
+<document-id>
+<country>US</country>
+<doc-number>2005/0199959</doc-number>
+<kind>A1</kind>
+<name>Chiang et al.</name>
+<date>20050900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00035">
+<document-id>
+<country>US</country>
+<doc-number>2006/0035452</doc-number>
+<kind>A1</kind>
+<name>Carcia et al.</name>
+<date>20060200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00036">
+<document-id>
+<country>US</country>
+<doc-number>2006/0043377</doc-number>
+<kind>A1</kind>
+<name>Hoffman et al.</name>
+<date>20060300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00037">
+<document-id>
+<country>US</country>
+<doc-number>2006/0091793</doc-number>
+<kind>A1</kind>
+<name>Baude et al.</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00038">
+<document-id>
+<country>US</country>
+<doc-number>2006/0108529</doc-number>
+<kind>A1</kind>
+<name>Saito et al.</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00039">
+<document-id>
+<country>US</country>
+<doc-number>2006/0108636</doc-number>
+<kind>A1</kind>
+<name>Sano et al.</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00040">
+<document-id>
+<country>US</country>
+<doc-number>2006/0110867</doc-number>
+<kind>A1</kind>
+<name>Yabuta et al.</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00041">
+<document-id>
+<country>US</country>
+<doc-number>2006/0113536</doc-number>
+<kind>A1</kind>
+<name>Kumomi et al.</name>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00042">
+<document-id>
+<country>US</country>
+<doc-number>2006/0113539</doc-number>
+<kind>A1</kind>
+<name>Sano et al.</name>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00043">
+<document-id>
+<country>US</country>
+<doc-number>2006/0113549</doc-number>
+<kind>A1</kind>
+<name>Den et al.</name>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00044">
+<document-id>
+<country>US</country>
+<doc-number>2006/0113565</doc-number>
+<kind>A1</kind>
+<name>Abe et al.</name>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00045">
+<document-id>
+<country>US</country>
+<doc-number>2006/0169973</doc-number>
+<kind>A1</kind>
+<name>Isa et al.</name>
+<date>20060800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00046">
+<document-id>
+<country>US</country>
+<doc-number>2006/0170111</doc-number>
+<kind>A1</kind>
+<name>Isa et al.</name>
+<date>20060800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00047">
+<document-id>
+<country>US</country>
+<doc-number>2006/0197092</doc-number>
+<kind>A1</kind>
+<name>Hoffman et al.</name>
+<date>20060900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00048">
+<document-id>
+<country>US</country>
+<doc-number>2006/0208977</doc-number>
+<kind>A1</kind>
+<name>Kimura</name>
+<date>20060900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00049">
+<document-id>
+<country>US</country>
+<doc-number>2006/0228974</doc-number>
+<kind>A1</kind>
+<name>Thelss et al.</name>
+<date>20061000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00050">
+<document-id>
+<country>US</country>
+<doc-number>2006/0231882</doc-number>
+<kind>A1</kind>
+<name>Kim et al.</name>
+<date>20061000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00051">
+<document-id>
+<country>US</country>
+<doc-number>2006/0238135</doc-number>
+<kind>A1</kind>
+<name>Kimura</name>
+<date>20061000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00052">
+<document-id>
+<country>US</country>
+<doc-number>2006/0244107</doc-number>
+<kind>A1</kind>
+<name>Sugihara et al.</name>
+<date>20061100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00053">
+<document-id>
+<country>US</country>
+<doc-number>2006/0284171</doc-number>
+<kind>A1</kind>
+<name>Levy et al.</name>
+<date>20061200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00054">
+<document-id>
+<country>US</country>
+<doc-number>2006/0284172</doc-number>
+<kind>A1</kind>
+<name>Ishii</name>
+<date>20061200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00055">
+<document-id>
+<country>US</country>
+<doc-number>2006/0292777</doc-number>
+<kind>A1</kind>
+<name>Dunbar</name>
+<date>20061200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00056">
+<document-id>
+<country>US</country>
+<doc-number>2007/0024187</doc-number>
+<kind>A1</kind>
+<name>Shin et al.</name>
+<date>20070200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00057">
+<document-id>
+<country>US</country>
+<doc-number>2007/0046191</doc-number>
+<kind>A1</kind>
+<name>Saito</name>
+<date>20070300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00058">
+<document-id>
+<country>US</country>
+<doc-number>2007/0052025</doc-number>
+<kind>A1</kind>
+<name>Yabuta</name>
+<date>20070300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00059">
+<document-id>
+<country>US</country>
+<doc-number>2007/0054507</doc-number>
+<kind>A1</kind>
+<name>Kaji et al.</name>
+<date>20070300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00060">
+<document-id>
+<country>US</country>
+<doc-number>2007/0090365</doc-number>
+<kind>A1</kind>
+<name>Hayashi et al.</name>
+<date>20070400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00061">
+<document-id>
+<country>US</country>
+<doc-number>2007/0108446</doc-number>
+<kind>A1</kind>
+<name>Akimoto</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00062">
+<document-id>
+<country>US</country>
+<doc-number>2007/0152217</doc-number>
+<kind>A1</kind>
+<name>Lai et al.</name>
+<date>20070700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00063">
+<document-id>
+<country>US</country>
+<doc-number>2007/0172591</doc-number>
+<kind>A1</kind>
+<name>Seo et al.</name>
+<date>20070700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00064">
+<document-id>
+<country>US</country>
+<doc-number>2007/0187678</doc-number>
+<kind>A1</kind>
+<name>Hirao et al.</name>
+<date>20070800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00065">
+<document-id>
+<country>US</country>
+<doc-number>2007/0187760</doc-number>
+<kind>A1</kind>
+<name>Furuta et al.</name>
+<date>20070800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00066">
+<document-id>
+<country>US</country>
+<doc-number>2007/0194379</doc-number>
+<kind>A1</kind>
+<name>Hosono et al.</name>
+<date>20070800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00067">
+<document-id>
+<country>US</country>
+<doc-number>2007/0252928</doc-number>
+<kind>A1</kind>
+<name>Ito et al.</name>
+<date>20071100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00068">
+<document-id>
+<country>US</country>
+<doc-number>2007/0272922</doc-number>
+<kind>A1</kind>
+<name>Kim et al.</name>
+<date>20071100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00069">
+<document-id>
+<country>US</country>
+<doc-number>2007/0287296</doc-number>
+<kind>A1</kind>
+<name>Chang</name>
+<date>20071200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00070">
+<document-id>
+<country>US</country>
+<doc-number>2008/0006877</doc-number>
+<kind>A1</kind>
+<name>Mardilovich et al.</name>
+<date>20080100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00071">
+<document-id>
+<country>US</country>
+<doc-number>2008/0038882</doc-number>
+<kind>A1</kind>
+<name>Takechi et al.</name>
+<date>20080200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00072">
+<document-id>
+<country>US</country>
+<doc-number>2008/0038929</doc-number>
+<kind>A1</kind>
+<name>Chang</name>
+<date>20080200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00073">
+<document-id>
+<country>US</country>
+<doc-number>2008/0050595</doc-number>
+<kind>A1</kind>
+<name>Nakagawara et al.</name>
+<date>20080200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00074">
+<document-id>
+<country>US</country>
+<doc-number>2008/0073653</doc-number>
+<kind>A1</kind>
+<name>Iwasaki</name>
+<date>20080300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00075">
+<document-id>
+<country>US</country>
+<doc-number>2008/0083950</doc-number>
+<kind>A1</kind>
+<name>Pan et al.</name>
+<date>20080400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00076">
+<document-id>
+<country>US</country>
+<doc-number>2008/0106191</doc-number>
+<kind>A1</kind>
+<name>Kawase</name>
+<date>20080500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00077">
+<document-id>
+<country>US</country>
+<doc-number>2008/0128689</doc-number>
+<kind>A1</kind>
+<name>Lee et al.</name>
+<date>20080600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00078">
+<document-id>
+<country>US</country>
+<doc-number>2008/0129195</doc-number>
+<kind>A1</kind>
+<name>Ishizaki et al.</name>
+<date>20080600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00079">
+<document-id>
+<country>US</country>
+<doc-number>2008/0166834</doc-number>
+<kind>A1</kind>
+<name>Kim et al.</name>
+<date>20080700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00080">
+<document-id>
+<country>US</country>
+<doc-number>2008/0182358</doc-number>
+<kind>A1</kind>
+<name>Cowdery-Corvan et al.</name>
+<date>20080700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00081">
+<document-id>
+<country>US</country>
+<doc-number>2008/0224133</doc-number>
+<kind>A1</kind>
+<name>Park et al.</name>
+<date>20080900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00082">
+<document-id>
+<country>US</country>
+<doc-number>2008/0254569</doc-number>
+<kind>A1</kind>
+<name>Hoffman et al.</name>
+<date>20081000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00083">
+<document-id>
+<country>US</country>
+<doc-number>2008/0258139</doc-number>
+<kind>A1</kind>
+<name>Ito et al.</name>
+<date>20081000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00084">
+<document-id>
+<country>US</country>
+<doc-number>2008/0258140</doc-number>
+<kind>A1</kind>
+<name>Lee et al.</name>
+<date>20081000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00085">
+<document-id>
+<country>US</country>
+<doc-number>2008/0258141</doc-number>
+<kind>A1</kind>
+<name>Park et al.</name>
+<date>20081000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00086">
+<document-id>
+<country>US</country>
+<doc-number>2008/0258143</doc-number>
+<kind>A1</kind>
+<name>Kim et al.</name>
+<date>20081000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00087">
+<document-id>
+<country>US</country>
+<doc-number>2008/0296568</doc-number>
+<kind>A1</kind>
+<name>Ryu et al.</name>
+<date>20081200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00088">
+<document-id>
+<country>US</country>
+<doc-number>2009/0068773</doc-number>
+<kind>A1</kind>
+<name>Lai et al.</name>
+<date>20090300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00089">
+<document-id>
+<country>US</country>
+<doc-number>2009/0073325</doc-number>
+<kind>A1</kind>
+<name>Kuwabara et al.</name>
+<date>20090300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00090">
+<document-id>
+<country>US</country>
+<doc-number>2009/0114910</doc-number>
+<kind>A1</kind>
+<name>Chang</name>
+<date>20090500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00091">
+<document-id>
+<country>US</country>
+<doc-number>2009/0134399</doc-number>
+<kind>A1</kind>
+<name>Sakakura et al.</name>
+<date>20090500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00092">
+<document-id>
+<country>US</country>
+<doc-number>2009/0152506</doc-number>
+<kind>A1</kind>
+<name>Umeda et al.</name>
+<date>20090600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00093">
+<document-id>
+<country>US</country>
+<doc-number>2009/0152541</doc-number>
+<kind>A1</kind>
+<name>Maekawa et al.</name>
+<date>20090600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00094">
+<document-id>
+<country>US</country>
+<doc-number>2009/0278122</doc-number>
+<kind>A1</kind>
+<name>Hosono et al.</name>
+<date>20091100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00095">
+<document-id>
+<country>US</country>
+<doc-number>2009/0280600</doc-number>
+<kind>A1</kind>
+<name>Hosono et al.</name>
+<date>20091100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00096">
+<document-id>
+<country>US</country>
+<doc-number>2010/0065844</doc-number>
+<kind>A1</kind>
+<name>Tokunaga</name>
+<date>20100300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00097">
+<document-id>
+<country>US</country>
+<doc-number>2010/0092800</doc-number>
+<kind>A1</kind>
+<name>Itagaki et al.</name>
+<date>20100400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00098">
+<document-id>
+<country>US</country>
+<doc-number>2010/0109002</doc-number>
+<kind>A1</kind>
+<name>Itagaki et al.</name>
+<date>20100500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00099">
+<document-id>
+<country>US</country>
+<doc-number>2010/0219327</doc-number>
+<kind>A1</kind>
+<name>Arbore et al.</name>
+<date>20100900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>250206</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00100">
+<document-id>
+<country>US</country>
+<doc-number>2011/0227082</doc-number>
+<kind>A1</kind>
+<name>Inoue et al.</name>
+<date>20110900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>257 59</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00101">
+<document-id>
+<country>EP</country>
+<doc-number>1737044</doc-number>
+<kind>A</kind>
+<date>20061200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00102">
+<document-id>
+<country>EP</country>
+<doc-number>2226847</doc-number>
+<kind>A</kind>
+<date>20100900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00103">
+<document-id>
+<country>JP</country>
+<doc-number>60-198861</doc-number>
+<kind>A</kind>
+<date>19851000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00104">
+<document-id>
+<country>JP</country>
+<doc-number>63-210022</doc-number>
+<kind>A</kind>
+<date>19880800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00105">
+<document-id>
+<country>JP</country>
+<doc-number>63-210023</doc-number>
+<kind>A</kind>
+<date>19880800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00106">
+<document-id>
+<country>JP</country>
+<doc-number>63-210024</doc-number>
+<kind>A</kind>
+<date>19880800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00107">
+<document-id>
+<country>JP</country>
+<doc-number>63-215519</doc-number>
+<kind>A</kind>
+<date>19880900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00108">
+<document-id>
+<country>JP</country>
+<doc-number>63-239117</doc-number>
+<kind>A</kind>
+<date>19881000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00109">
+<document-id>
+<country>JP</country>
+<doc-number>63-265818</doc-number>
+<kind>A</kind>
+<date>19881100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00110">
+<document-id>
+<country>JP</country>
+<doc-number>05-251705</doc-number>
+<kind>A</kind>
+<date>19930900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00111">
+<document-id>
+<country>JP</country>
+<doc-number>08-264794</doc-number>
+<kind>A</kind>
+<date>19961000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00112">
+<document-id>
+<country>JP</country>
+<doc-number>11-505377</doc-number>
+<date>19990500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00113">
+<document-id>
+<country>JP</country>
+<doc-number>2000-044236</doc-number>
+<kind>A</kind>
+<date>20000200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00114">
+<document-id>
+<country>JP</country>
+<doc-number>2000-150900</doc-number>
+<kind>A</kind>
+<date>20000500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00115">
+<document-id>
+<country>JP</country>
+<doc-number>2002-076356</doc-number>
+<kind>A</kind>
+<date>20020300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00116">
+<document-id>
+<country>JP</country>
+<doc-number>2002-289859</doc-number>
+<kind>A</kind>
+<date>20021000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00117">
+<document-id>
+<country>JP</country>
+<doc-number>2003-086000</doc-number>
+<kind>A</kind>
+<date>20030300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00118">
+<document-id>
+<country>JP</country>
+<doc-number>2003-086808</doc-number>
+<kind>A</kind>
+<date>20030300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00119">
+<document-id>
+<country>JP</country>
+<doc-number>2004-103957</doc-number>
+<kind>A</kind>
+<date>20040400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00120">
+<document-id>
+<country>JP</country>
+<doc-number>2004-273614</doc-number>
+<kind>A</kind>
+<date>20040900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00121">
+<document-id>
+<country>JP</country>
+<doc-number>2004-273732</doc-number>
+<kind>A</kind>
+<date>20040900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00122">
+<document-id>
+<country>JP</country>
+<doc-number>2005-172731</doc-number>
+<kind>A</kind>
+<date>20050600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00123">
+<document-id>
+<country>JP</country>
+<doc-number>2006-165528</doc-number>
+<kind>A</kind>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00124">
+<document-id>
+<country>WO</country>
+<doc-number>WO-2004/114391</doc-number>
+<date>20041200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00125">
+<othercit>Fortunato.E et al., &#x201c;Wide-Bandgap High-Mobility ZnO Thin-Film Transistors Produced At Room Temperature,&#x201d;, Appl. Phys. Lett. (Applied Physics Letters) , Sep. 27, 2004, vol. 85, No. 13, pp. 2541-2543.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00126">
+<othercit>Dembo.H et al., &#x201c;RFCPUS on Glass and Plastic Substrates Fabricated by TFT Transfer Technology,&#x201d;, IEDM 05: Technical Digest of International Electron Devices Meeting, Dec. 5, 2005, pp. 1067-1069.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00127">
+<othercit>Ikeda.T et al., &#x201c;Full-Functional System Liquid Crystal Display Using CG-Silicon Technology,&#x201d;, SID Digest '04 : SID International Symposium Digest of Technical Papers, 2004, vol. 35, pp. 860-863.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00128">
+<othercit>Nomura.K et al., &#x201c;Room-Temperature Fabrication of Transparent Flexible Thin-Film Transistors Using Amorphous Oxide Semiconductors,&#x201d;, Nature, Nov. 25, 2004, vol. 432, pp. 488-492.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00129">
+<othercit>Park.J et al., &#x201c;Improvements in the Device Characteristics of Amorphous Indium Gallium Zinc Oxide Thin-Film Transistors by Ar Plasma Treatment,&#x201d;, Appl. Phys. Lett. (Applied Physics Letters) , Jun. 26, 2007, vol. 90, No. 26, pp. 262106-1-262106-3.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00130">
+<othercit>Takahashi.M et al., &#x201c;Theoretical Analysis of IGZO Transparent Amorphous Oxide Semiconductor,&#x201d;, IDW '08 : Proceedings of the 15th International Display Workshops, Dec. 3, 2008, pp. 1637-1640.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00131">
+<othercit>Hayashi.R et al., &#x201c;42.1: Invited Paper: Improved Amorphous In&#x2014;Ga&#x2014;Zn&#x2014;O TFTS,&#x201d;, SID Digest '08 : SID International Symposium Digest of Technical Papers, May 20, 2008, vol. 39, pp. 621-624.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00132">
+<othercit>Prins.M et al., &#x201c;A Ferroelectric Transparent Thin-Film Transistor,&#x201d;, Appl. Phys. Lett. (Applied Physics Letters) , Jun. 17, 1996, vol. 68, No. 25, pp. 3650-3652.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00133">
+<othercit>Nakamura.M et al., &#x201c;The phase relations in the In2O3&#x2014;Ga2ZnO4&#x2014;ZnO system at 1350&#xb0; C,&#x201d;, Journal of Solid State Chemistry, Aug. 1, 1991, vol. 93, No. 2, pp. 298-315.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00134">
+<othercit>Kimizuka.N. et al., &#x201c;Syntheses and Single-Crystal Data of Homologous Compounds, In2O3(ZnO)m (m=3, 4, and 5), InGaO3(ZnO)3, Ga2O3(ZnO)m (m=7, 8, 9, and 16) in the In2O3&#x2014;ZnGa2O4&#x2014;ZnO System,&#x201d;, Journal of Solid State Chemistry, Apr. 1, 1995, vol. 116, No. 1, pp. 170-178.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00135">
+<othercit>Nomura.K et al., &#x201c;Thin-Film Transistor Fabricated in Single-Crystalline Transparent Oxide Semiconductor,&#x201d;, Science, May 23, 2003, vol. 300, No. 5623, pp. 1269-1272.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00136">
+<othercit>Masuda.S et al., &#x201c;Transparent thin film transistors using ZnO as an active channel layer and their electrical properties,&#x201d;, J. Appl. Phys. (Journal of Applied Physics) , Feb. 1, 2003, vol. 93, No. 3, pp. 1624-1630.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00137">
+<othercit>Asakuma.N. et al., &#x201c;Crystallization and Reduction of Sol-Gel-Derived Zinc Oxide Films by Irradiation with Ultraviolet Lamp,&#x201d;, Journal of Sol-Gel Science and Technology, 2003, vol. 26, pp. 181-184.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00138">
+<othercit>Osada.T et al., &#x201c;15.2: Development of Driver-Integrated Panel using Amorphous In&#x2014;Ga&#x2014;Zn&#x2014;Oxide TFT,&#x201d;, SID Digest '09 : SID Internatonal Symposium Digest of Technical Papers, May 31, 2009, pp. 184-187.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00139">
+<othercit>Nomura.K et al., &#x201c;Carrier transport in transparent oxide semiconductor with intrinsic structural randomness probed using single-crystalline InGaO3(ZnO)5 films,&#x201d;, Appl. Phys. Lett. (Applied Physics Letters) , Sep. 13, 2004, vol. 85, No. 11, pp. 1993-1995.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00140">
+<othercit>Li.C et al., &#x201c;Modulated Structures of Homologous Compounds InMO3(ZnO)m (M=In,Ga; m=Integer) Described by Four-Dimensional Superspace Group,&#x201d;, Journal of Solid State Chemistry, 1998, vol. 139, pp. 347-355.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00141">
+<othercit>Son.K et al., &#x201c;42.4L: Late-News Paper: 4 Inch QVGA AMOLED Driven by the Threshold Voltage Controlled Amorphous GIZO (Ga2O3&#x2014;In2O3&#x2014;ZnO) TFT,&#x201d;, SID Digest '08 : SID International Symposium Digest of Technical Papers, May 20, 2008, vol. 39, pp. 633-636.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00142">
+<othercit>Lee.J et al., &#x201c;World's Largest (15-Inch) XGA AMLCD Panel Using IGZO Oxide TFT,&#x201d;, SID Digest '08 : SID International Symposium Digest of Technical Papers, May 20, 2008, vol. 39, pp. 625-628.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00143">
+<othercit>Nowatari.H et al., &#x201c;60.2: Intermediate Connector With Suppressed Voltage Loss for White Tandem OLEDs,&#x201d;, SID Digest '09 : SID International Symposium Digest of Technical Papers, May 31, 2009, vol. 40, pp. 899-902.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00144">
+<othercit>Kanno.H et al., &#x201c;White Stacked Electrophosphorecent Organic Light-Emitting Devices Employing MOO3 as a Charge-Generation Layer,&#x201d;, Adv. Mater. (Advanced Materials), 2006, vol. 18, No. 3, pp. 339-342.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00145">
+<othercit>Tsuda.K et al., &#x201c;Ultra Low Power Consumption Technologies for Mobile TFT-LCDs ,&#x201d;, IDW '02 : Proceedings of the 9th International Display Workshops, Dec. 4, 2002, pp. 295-298.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00146">
+<othercit>Van de Walle.C, &#x201c;Hydrogen as a Cause of Doping in Zinc Oxide,&#x201d;, Phys. Rev. Lett. (Physical Review Letters), Jul. 31, 2000, vol. 85, No. 5, pp. 1012-1015.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00147">
+<othercit>Fung.T et al., &#x201c;2-D Numerical Simulation of High Performance Amorphous In&#x2014;Ga&#x2014;Zn&#x2014;O TFTs for Flat Panel Displays,&#x201d;, AM-FPD '08 Digest of Technical Papers, Jul. 2, 2008, pp. 251-252, The Japan Society of Applied Physics.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00148">
+<othercit>Jeong.J et al., &#x201c;3.1: Distinguished Paper: 12.1-Inch WXGA AMOLED Display Driven by Indium&#x2014;Gallium&#x2014;Zinc Oxide TFTs Array,&#x201d;, SID Digest '08 : SID International Symposium Digest of Technical Papers, May 20, 2008, vol. 39, No. 1, pp. 1-4.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00149">
+<othercit>Park.J et al., &#x201c;High performance amorphous oxide thin film transistors with self-aligned top-gate structure,&#x201d;, IEDM 09: Technical Digest of International Electron Devices Meeting, Dec. 7, 2009, pp. 191-194.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00150">
+<othercit>Kurokawa.Y et al., &#x201c;UHF RFCPUS on Flexible and Glass Substrates for Secure RFID Systems,&#x201d;, Journal of Solid-State Circuits , 2008, vol. 43, No. 1, pp. 292-299.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00151">
+<othercit>Ohara.H et al., &#x201c;Amorphous In&#x2014;Ga&#x2014;Zn&#x2014;Oxide TFTs with Suppressed Variation for 4.0 inch QVGA AMOLED Display,&#x201d;, AM-FPD '09 Digest of Technical Papers, Jul. 1, 2009, pp. 227-230, The Japan Society of Applied Physics.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00152">
+<othercit>Coates.D et al., &#x201c;Optical Studies of the Amorphous Liquid-Cholesteric Liquid Crystal Transition:The &#x201c;Blue Phase&#x201d;,&#x201d;, Physics Letters, Sep. 10, 1973, vol. 45A, No. 2, pp. 115-116.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00153">
+<othercit>Cho.D et al., &#x201c;21.2:Al and Sn-Doped Zinc Indium Oxide Thin Film Transistors for AMOLED Back-Plane,&#x201d;, SID Digest '09 : SID International Symposium Digest of Technical Papers, May 31, 2009, pp. 280-283.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00154">
+<othercit>Lee.M et al., &#x201c;15.4:Excellent Performance of Indium&#x2014;Oxide&#x2014;Based Thin-Film Transistors by DC Sputtering,&#x201d;, SID Digest '09 : SID International Symposium Digest of Technical Papers, May 31, 2009, pp. 191-193.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00155">
+<othercit>Jin.D et al., &#x201c;65.2:Distinguished Paper:World-Largest (6.5&#x2033;) Flexible Full Color Top Emission AMOLED Display on Plastic Film and it's Bending Properties, &#x201d;, SID Digest '09 : SID International Symposium Digest of Technical Papers, May 31, 2009, pp. 983-985.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00156">
+<othercit>Sakata.J et al., &#x201c;Development of 4.0-In. AMOLED Display With Driver Circuit Using Amorphous In&#x2014;Ga&#x2014;Zn&#x2014;Oxide TFTS,&#x201d;, IDW '09 : Proceedings of the 16th International Display Workshops, 2009, pp. 689-692.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00157">
+<othercit>Park.J et al., &#x201c;Amorphous Indium&#x2014;Gallium&#x2014;Zinc Oxide TFTS and Their Application for Large Size AMOLED,&#x201d;, AM-FPD '08 Digest of Technical Papers, Jul. 2, 2008, pp. 275-278.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00158">
+<othercit>Park.S et al., &#x201c;Challenge to Future Displays: Transparent AM-OLED Driven by Peald Grown ZnO TFT,&#x201d;, IMID '07 Digest, 2007, pp. 1249-1252.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00159">
+<othercit>Godo.H et al., &#x201c;Temperature Dependence of Characteristics and Electronic Structure for Amorphous In&#x2014;Ga&#x2014;Zn&#x2014;Oxide TFT,&#x201d;, AM-FPD '09 Digest of Technical Papers, Jul. 1, 2009, pp. 41-44.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00160">
+<othercit>Osada.T et al., &#x201c;Development of Driver-Integrated Panel Using Amorphous In&#x2014;Ga&#x2014;Zn&#x2014;Oxide TFT,&#x201d;, AM-FPD '09 Digest of Technical Papers, Jul. 1, 2009, pp. 33-36.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00161">
+<othercit>Hirao.T at al., &#x201c;Novel Top-Gate Zinc Oxide Thin-Film Transistors (ZnO TFTS) for AMLCDS,&#x201d;, Journal of the SID, 2007, vol. 15, No. 1, pp. 17-22.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00162">
+<othercit>Hosono.H, &#x201c;68.3:Invited Paper:Transparent Amorphous Oxide Semiconductors for High Performance TFT,&#x201d;, SID Digest '07 : SID International Symposium Digest of Technical Papers, 2007, vol. 38, pp. 1830-1833.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00163">
+<othercit>Godo.H et al., &#x201c;P-9:Numerical Analysis on Temperature Dependence of Characteristics of Amorphous In&#x2014;Ga&#x2014;Zn&#x2014;Oxide TFT,&#x201d;, SID Digest '09 : SID International Symposium Digest of Technical Papers, May 31, 2009, pp. 1110-1112.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00164">
+<othercit>Ohara.H et al., &#x201c;21.3:4.0 in. QVGA AMOLED Display Using In&#x2014;Ga&#x2014;Zn&#x2014;Oxide TFTS With a Novel Passivation Layer,&#x201d;, SID Digest '09 : SID International Symposium Digest of Technical Papers, May 31, 2009, pp. 284-287.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00165">
+<othercit>Miyasaka.M, &#x201c;SUFTLA Flexible Microelectronics on Their Way to Business,&#x201d;, SID Digest '07 : SID International Symposium Digest of Technical Papers, 2007, vol. 38, pp. 1673-1676.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00166">
+<othercit>Chern.H et al., &#x201c;An Analytical Model for the Above-Threshold Characteristics of Polysilicon Thin-Film Transistors,&#x201d;, IEEE Transactions on Electron Devices, Jul. 1, 1995, vol. 42, No. 7, pp. 1240-1246.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00167">
+<othercit>Kikuchi.H et al., &#x201c;39.1:Invited Paper:Optically Isotropic Nano-Structured Liquid Crystal Composites for Display Applications,&#x201d;, SID Digest '09 : SID International Symposium Digest of Technical Papers, May 31, 2009, pp. 578-581.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00168">
+<othercit>Asaoka.Y et al., &#x201c;29.1:Polarizer-Free Reflective LCD Combined With Ultra Low-Power Driving Technology,&#x201d;, SID Digest '09 : SID International Symposium Digest of Technical Papers, May 31, 2009, pp. 395-398.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00169">
+<othercit>Lee.H et al., &#x201c;Current Status of, Challenges to, and Perspective View of AM-OLED ,&#x201d;, IDW '06 : Proceedings of the 13th International Display Workshops, Dec. 7, 200, pp. 663-666.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00170">
+<othercit>Kikuchi.H et al., &#x201c;62.2:Invited Paper:Fast Electro-Optical Switching in Polymer-Stabilized Liquid Crystalline Blue Phases for Display Application,&#x201d;, SID Digest '07 : SID International Symposium Digest of Technical Papers, 2007, vol. pp. 1737-1740.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00171">
+<othercit>Nakamura.M, &#x201c;Synthesis of Homologous Compound with New Long-Period Structure,&#x201d;, NIRIM Newsletter, Mar. 1, 1995, vol. 150, pp. 1-4.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00172">
+<othercit>Kikuchi.H et al., &#x201c;Polymer-Stabilized Liquid Crystal Blue Phases,&#x201d;, Nature Materials, Sep. 2, 2002, vol. 1, pp. 64-68.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00173">
+<othercit>Kimizuka.N. et al., &#x201c;Spinel,YBFE2O4, and YB2FE3O7 Types of Structures for Compounds in the IN2O3 and SC2O3-A2O3-BO Systems [A; Fe, Ga, or Al; B: Mg, Mn, Fe, Ni, Cu,or Zn] at Temperatures over 1000&#xb0; C,&#x201d;, Journal of Solid State Chemistry, 1985, vol. 60, pp. 382-384.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00174">
+<othercit>Kitzerow.H et al., &#x201c;Observation of Blue Phases in Chiral Networks,&#x201d;, Liquid Crystals, 1993, vol. 14, No. 3, pp. 911-916.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00175">
+<othercit>Costello.M et al., &#x201c;Electron Microscopy of a Cholesteric Liquid Crystal and Its Blue Phase,&#x201d;, Phys. Rev. A (Physical Review. A), May 1, 1984, vol. 29, No. 5, pp. 2957-2959.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00176">
+<othercit>Meiboom.S et al., &#x201c;Theory of the Blue Phase of Cholesteric Liquid Crystals,&#x201d;, Phys. Rev.Lett. (Physical Review Letters), May 4, 1981, vol. 46, No. 18, pp. 1216-1219.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00177">
+<othercit>Park.Sang-Hee et al., &#x201c;42.3: Transparent ZnO Thin Film Transistor for the Application of High Aperture Ratio Bottom Emission AM-OLED Display,&#x201d;, SID Digest '08 : SID International Symposium Digest of Technical Papers, May 20, 2008, vol. 39, pp. 629-632.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00178">
+<othercit>Orita.M et al., &#x201c;Mechanism of Electrical Conductivity of Transparent InGaZnO4,&#x201d;, Phys.Rev. B (Physical Review. B), Jan. 15, 2000, vol. 61, No. 3, pp. 1811-1816.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00179">
+<othercit>Nomura.K et al., &#x201c;Amorphous Oxide Semiconductors for High-Performance Flexible Thin-Film Transistors,&#x201d;, Jpn. J. Appl. Phys. (Japanese Journal of Applied Physics) , 2006, vol. 45, No. 5B, pp. 4303-4308.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00180">
+<othercit>Janotti.A et al., &#x201c;Native Point Defects in ZnO,&#x201d;, Phys. Rev. B (Physical Review. B), Oct. 4, 2007, vol. 76, No. 16, pp. 165202-1-165202-22.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00181">
+<othercit>Park.J et al., &#x201c;Electronic Transport Properties of Amorphous Indium&#x2014;Gallium&#x2014;Zinc Oxide Semiconductor Upon Exposure to Water,&#x201d;, Appl. Phys. Lett. (Applied Physics Letters) , 2008, vol. 92, pp. 072104-1-072104-3.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00182">
+<othercit>Hsieh.H et al., &#x201c;P-29:Modeling of Amorphous Oxide Semiconductor Thin Film Transistors and Subgap Density of States,&#x201d;, SID Digest '08 : SID International Symposium Digest of Technical Papers, 2008, vol. 39, pp. 1277-1280.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00183">
+<othercit>Janotti.A et al., &#x201c;Oxygen Vacancies in ZnO,&#x201d;, Appl. Phys. Lett. (Applied Physics Letters) , 2005, vol. 87, pp. 122102-1-122102-3.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00184">
+<othercit>Oba.F et al., &#x201c;Defect energetics in ZnO: A hybrid Hartree-Fock density functional study,&#x201d;, Phys. Rev. B (Physical Review. B), 2008, vol. 77, pp. 245202-1-245202-6.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00185">
+<othercit>Orita.M et al., &#x201c;Amorphous transparent conductive oxide InGaO3(ZnO)m (m&#x3c;4):a Zn4s conductor,&#x201d;, Philosophical Magazine, 2001, vol. 81, No. 5, pp. 501-515.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00186">
+<othercit>Hosono.H et al., &#x201c;Working hypothesis to explore novel wide band gap electrically conducting amorphous oxides and examples,&#x201d;, J. Non-Cryst. Solids (Journal of Non-Crystalline Solids), 1996, vol. 198-200, pp. 165-169.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00187">
+<othercit>Mo. Y et al., &#x201c;Amorphous Oxide TFT Backplanes for Large Size AMOLED Displays,&#x201d;, IDW '08 : Proceedings of the 6th International Display Workshops, Dec. 3, 2008, pp. 581-584.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00188">
+<othercit>Kim.S et al., &#x201c;High-Performance oxide thin film transistors passivated by various gas plasmas,&#x201d;, 214th ECS Meeting, 2008, No. 2317, ECS.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00189">
+<othercit>Clark.S et al., &#x201c;First Principles Methods Using CASTEP,&#x201d;, Zeitschrift fur Kristallographie, 2005, vol. 220, pp. 567-570.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00190">
+<othercit>Lany.S et al., &#x201c;Dopability, Intrinsic Conductivity, and Nonstoichiometry of Transparent Conducting Oxides,&#x201d;, Phys. Rev. Lett. (Physical Review Letters), Jan. 26, 2007, vol. 98, pp. 045501-1-045501-4.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00191">
+<othercit>Park.J et al., &#x201c;Dry etching of ZnO films and plasma-induced damage to optical properties,&#x201d;, J. Vac. Sci. Technol. B (Journal of Vacuum Science &#x26; Technology B), Mar. 1, 2003, vol. 21, No. 3, pp. 800-803.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00192">
+<othercit>Oh.M et al., &#x201c;Improving the Gate Stability of ZnO Thin-Film Transistors With Aluminum Oxide Dielectric Layers,&#x201d;, J. Electrochem. Soc. (Journal of the Electrochemical Society), 2008, vol. 155, No. 12, H1009-H1014.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00193">
+<othercit>Ueno.K et al., &#x201c;Field-Effect Transistor on SrTiO3 With Sputtered Al2O3 Gate Insulator,&#x201d;, Appl. Phys. Lett. (Applied Physics Letters) , Sep. 1, 2003, vol. 83, No. 9, pp. 1755-1757.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00194">
+<othercit>Barquinha et al., &#x201c;Effect of UV and visible light radiation on the electrical performances of transparent TFTs based on amorphous indium zinc oxide,&#x201d; J. Non-Cryst. Solids (Journal of Non-Crystalline Solids), Apr. 18, 2006, vol. 352, No. 9-20, pp. 1756-1760.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00195">
+<othercit>Lee.K et al., &#x201c;The effect of moisture on the photon-enhanced negative bias thermal instability in Ga&#x2014;In&#x2014;Zn&#x2014;O thin film transistors,&#x201d; Appl. Phys. Lett. (Applied Physics Letters), Dec. 8, 2009, vol. 95, No. 23, pp. 232106-1-232106-3.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00196">
+<othercit>Vanecek et al. &#x201c;Direct Measurement of the Gap States and Band Tail Absorption by Constant Photocurrent Method in Amorphous Silicon&#x201d;, Solid State Communications, 1981, vol. 39, pp. 1199-1202.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00197">
+<othercit>Smith et al. &#x201c;Thermal-Equilibrium Defect Processes in Hydrogenated Amorphous Silicon,&#x201d; Physical Review Letters, Nov. 10, 1986, vol. 57, No. 19, pp. 2450-2453.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00198">
+<othercit>Marshall et al. &#x201c;Evaluation of the Constant Photocurrent Method for Determining the Energy Distribution of Localised States in Disordered Semiconductors,&#x201d;, Journal of Non-Crystalline Solids, 1991, vol. 137, pp. 343-346.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00199">
+<othercit>Lee et al., &#x201c;Steady-state photoconductivity of amorphous In&#x2014;Ga&#x2014;Zn&#x2014;O,&#x201d; Thin Solid Films, 2009, vol. 518, No. 11, pp. 3000-3003.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>13</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>356 72- 73</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>356326-330</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>356225</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>32475023</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>32475423</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>324 93</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>8</number-of-drawing-sheets>
+<number-of-figures>15</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120229805</doc-number>
+<kind>A1</kind>
+<date>20120913</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Watanabe</last-name>
+<first-name>Ryosuke</first-name>
+<address>
+<city>Ebina</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Tsubuku</last-name>
+<first-name>Masashi</first-name>
+<address>
+<city>Atsugi</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Inoue</last-name>
+<first-name>Takayuki</first-name>
+<address>
+<city>Isehara</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Watanabe</last-name>
+<first-name>Ryosuke</first-name>
+<address>
+<city>Ebina</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Tsubuku</last-name>
+<first-name>Masashi</first-name>
+<address>
+<city>Atsugi</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Inoue</last-name>
+<first-name>Takayuki</first-name>
+<address>
+<city>Isehara</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<last-name>Robinson</last-name>
+<first-name>Eric J.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="02" rep-type="attorney">
+<addressbook>
+<orgname>Robinson Intellectual Property Law Office, P.C.</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Semiconductor Energy Laboratory Co., Ltd.</orgname>
+<role>03</role>
+<address>
+<city>Atsugi-shi, Kanagawa-ken</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Toatley</last-name>
+<first-name>Gregory J</first-name>
+<department>2877</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Bologna</last-name>
+<first-name>Dominic J</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Even in the case of a sample exhibiting low photoresponse, such as a wide bandgap semiconductor, a measurement method which enables highly accurate CPM measurement is provided. When CPM measurement is performed, photoexcited carriers which are generated by light irradiation of a sample exhibiting low photoresponse such as a wide bandgap semiconductor are instantly removed by application of positive bias voltage to a third electrode which is provided in the sample in addition to two electrodes used for measurement. When the photoexcited carriers are removed, even in the case of the sample exhibiting low photoresponse, the controllability of a photocurrent value is improved and CPM measurement can be performed accurately.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="139.70mm" wi="130.05mm" file="US08625085-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="220.13mm" wi="145.97mm" file="US08625085-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="164.42mm" wi="155.70mm" file="US08625085-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="242.65mm" wi="120.57mm" file="US08625085-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="162.39mm" wi="119.04mm" file="US08625085-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="224.03mm" wi="150.79mm" file="US08625085-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="226.23mm" wi="151.98mm" file="US08625085-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="222.67mm" wi="148.84mm" file="US08625085-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="228.85mm" wi="148.34mm" file="US08625085-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0002" num="0001">1. Field of the Invention</p>
+<p id="p-0003" num="0002">The present invention relates to a defect evaluation method for a wide bandgap semiconductor using a CPM measurement apparatus.</p>
+<p id="p-0004" num="0003">2. Description of the Related Art</p>
+<p id="p-0005" num="0004">Although transistors formed using amorphous silicon had been used for conventional display devices typified by liquid crystal televisions, an oxide semiconductor has attracted attention as a material which replaces a silicon semiconductor in order to form transistors. For example, an active matrix display device in which an amorphous oxide including indium (In), gallium (Ga), and zinc (Zn) is used for an active layer of a transistor and the electron carrier concentration of the amorphous oxide is lower than 1&#xd7;10<sup>18 </sup>cm<sup>&#x2212;3 </sup>is disclosed (see Patent Document 1).</p>
+<p id="p-0006" num="0005">However, some problems of a transistor using an oxide semiconductor have been pointed out. One of them is instability of characteristics, and it is pointed out that the threshold voltage is changed by irradiation with visible light and ultraviolet light (see Non-Patent Document 1). Further, in terms of reliability of a transistor, a problem in that characteristics are changed by a bias-temperature stress test has been pointed out (see Non-Patent Document 2).</p>
+<heading id="h-0002" level="1">REFERENCE</heading>
+<heading id="h-0003" level="1">Patent Document</heading>
+<p id="p-0007" num="0000">
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0006">[Patent Document 1] Japanese Published Patent Application No. 2006-165528</li>
+</ul>
+</p>
+<heading id="h-0004" level="1">Non-Patent Documents</heading>
+<p id="p-0008" num="0007">[Non-Patent Document 1] P. Barquinha, A. Pimentel, A. Marques, L. Pereira, R. Martins, and E. Fortunato, &#x201c;Effect of UV and visible light radiation on the electrical performances of transparent TFTs based on amorphous indium zinc oxide&#x201d;, <i>Journal of Non</i>-<i>Crystalline Solids </i>352, (2006) 1756-1760</p>
+<p id="p-0009" num="0008">[Non-Patent Document 2] Kwang-Hee Lee, Ji Sim Jung, Kyoung Seok Son, Joon Seok Park, Tae Sang Kim, Rino Choi, Jae Kyeong Jeong, Jang-Yeon Kwon, Bonwon Koo, and Sangyun Lee, &#x201c;The effect of moisture on the photon-enhanced negative bias thermal instability in Ga&#x2014;In&#x2014;Zn&#x2014;O thin film transistors&#x201d;, <i>APPLIED PHYSICS LETTERS </i>95, (2009) 232106</p>
+<heading id="h-0005" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0010" num="0009">As one of evaluation methods for a semiconductor, a constant photocurrent method (CPM) is known.</p>
+<p id="p-0011" num="0010">CPM measurement is carried out in such a manner that the amount of light with which a surface of a sample between terminals is irradiated is adjusted in the state where voltage is applied between two electrodes included in the sample so that a photocurrent value is kept constant, and an absorption coefficient is derived from the amount of the irradiation light in each wavelength. In the CPM measurement, when the sample has a defect, the absorption coefficient of energy which corresponds to a level at which the defect exists (calculated from a wavelength) is increased. The increase in the absorption coefficient is multiplied by a constant, whereby the defect density of the sample can be obtained.</p>
+<p id="p-0012" num="0011">In order to obtain stable photocurrent, a sequence in which measurement is continuously repeated until photocurrent become constant in each wavelength is used in the CPM measurement. However, depending on a measurement object, in some cases, it takes a very long time until constant photocurrent is obtained. In addition, when measurement time is shortened, the accuracy of the measurement is reduced in some cases.</p>
+<p id="p-0013" num="0012">An oxide semiconductor has a bandgap of approximately 3 eV and is one of wide bandgap semiconductors. Although an oxide semiconductor has a light-transmitting property in a visible light region, it is pointed out that when a transistor including an oxide semiconductor is irradiated with light having energy which is close to or equal to the bandgap of the oxide semiconductor or greater than the bandgap, the threshold voltage of the transistor is changed by 10 V.</p>
+<p id="p-0014" num="0013">The change in characteristics of the transistor including an oxide semiconductor due to light irradiation is caused by low photoresponse of the oxide semiconductor. &#x201c;Low photoresponse&#x201d; means that it takes a very long time until carriers which are generated by irradiation of the oxide semiconductor with light (photoexcited carriers) are recombined and disappear. It is known that wide bandgap semiconductors generally exhibit low photoresponse to some extent.</p>
+<p id="p-0015" num="0014">As described above, the low photoresponse of the wide bandgap semiconductor causes difficulty in CPM measurement. In other words, photocurrent continues to flow even in the state where light irradiation is stopped, and thus it is difficult to make the photocurrent value constant in the CPM measurement for the wide bandgap semiconductor. As a result, accurate CPM measurement cannot be performed on the wide bandgap semiconductor.</p>
+<p id="p-0016" num="0015">Thus, one embodiment of the present invention is to enable highly accurate measurement of defect density by CPM measurement even in the case of a wide bandgap semiconductor exhibiting low photoresponse.</p>
+<p id="p-0017" num="0016">In a measurement method using CPM according to one embodiment of the present invention, when CPM measurement is performed, photoexcited carriers which are generated by light irradiation of a sample exhibiting low photoresponse are instantly reduced by application of positive bias voltage to a third electrode which is provided in the sample in addition to two electrodes used for measurement.</p>
+<p id="p-0018" num="0017">The photoexcited carriers are reduced by the application of the positive bias voltage to the third electrode, whereby the photocurrent value is easily made constant. Therefore, accurate CPM measurement can be performed even on the sample exhibiting low photoresponse.</p>
+<p id="p-0019" num="0018">In general, the CPM measurement includes mechanism in which light irradiation and light blocking are switched at a predetermined frequency in order to reduce influence of the generated photoexcited carriers. In short, the photoexcited carriers which are generated at the time of light irradiation are reduced when light is blocked. However, when this mechanism is applied to a sample exhibiting low photoresponse, such as a wide bandgap semiconductor, it takes several seconds to several hours until the photoexcited carriers are reduced, thereby incredibly lengthening the measurement time.</p>
+<p id="p-0020" num="0019">Therefore, the positive bias voltage is applied concurrently with performing light blocking to reduce the influence of photoresponse, and then the CPM measurement is performed, whereby a time for which light is blocked can be shortened and high-speed and highly accurate CPM measurement can be performed.</p>
+<p id="p-0021" num="0020">For this, the third electrode for the application of the bias voltage is provided in the sample.</p>
+<p id="p-0022" num="0021">In addition, the CPM measurement apparatus, which generally includes two terminals, includes a power source and a third terminal for application of the bias voltage to the third electrode.</p>
+<p id="p-0023" num="0022">Even in the case of a wide bandgap semiconductor exhibiting low photoresponse, a measurement method which enables high-speed and highly accurate CPM measurement is provided.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0006" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0024" num="0023">In the accompanying drawings:</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 1</figref> is a flowchart showing a measurement method using CPM according to one embodiment of the present invention;</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 2</figref> is a schematic view illustrating a CPM measurement apparatus according to one embodiment of the present invention;</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIGS. 3A to 3C</figref> are top views and a cross-sectional view of a sample for CPM measurement according to one embodiment of the present invention;</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIGS. 4A and 4B</figref> are a top view and a cross-sectional view of a sample for CPM measurement according to one embodiment of the present invention;</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIGS. 5A and 5B</figref> are each a graph showing photoresponse of an oxide semiconductor film;</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIGS. 6A and 6B</figref> are each a graph showing photoresponse of an oxide semiconductor film;</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIGS. 7A and 7B</figref> are each a graph showing photoresponse of an oxide semiconductor film; and</p>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIGS. 8A and 8B</figref> are each a graph showing photoresponse of an oxide semiconductor film.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0007" level="1">DETAILED DESCRIPTION OF THE INVENTION</heading>
+<p id="p-0033" num="0032">Hereinafter, embodiments of the present invention will be described in detail with reference to the accompanying drawings. However, the present invention is not limited to the description below, and it is easily understood by those skilled in the art that modes and details disclosed herein can be modified in various ways without departing from the spirit and the scope of the present invention. Therefore, the present invention is not construed as being limited to description of the embodiments. In describing structures of the present invention with reference to the drawings, the same reference numerals are used in common for the same portions in different drawings. Note that the same hatch pattern is applied to similar parts, and the similar parts are not especially denoted by reference numerals in some cases.</p>
+<p id="p-0034" num="0033">Voltage refers to a potential difference between given potential and reference potential (e.g., ground potential) in many cases. Note that voltage can also be referred to as potential.</p>
+<p id="p-0035" num="0034">Even when it is written in this specification that &#x201c;to be connected&#x201d;, there is a case in which no physical connection is made in an actual circuit and a wiring is only extended.</p>
+<p id="p-0036" num="0035">Note that the ordinal numbers such as &#x201c;first&#x201d; and &#x201c;second&#x201d; in this specification are used for convenience and do not denote the order of steps or the stacking order of layers. In addition, the ordinal numbers in this specification do not denote particular names which specify the present invention.</p>
+<p id="h-0008" num="0000">(Embodiment 1)</p>
+<p id="p-0037" num="0036">In this embodiment, a measurement method using CPM which is one embodiment of the present invention will be described with reference to <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0038" num="0037"><figref idref="DRAWINGS">FIG. 1</figref> is a flowchart showing the process of the measurement method using CPM. Measurement starts in a step S<b>101</b>, and measurement conditions (a wavelength range, the frequency of a chopper, and a constant current value) are appropriately decided in a step S<b>102</b>. The wavelength range and the constant current value may be selected as appropriate depending on a sample. The wavelength range is decided by the bandgap of the sample, and the like. For example, when the sample has a bandgap greater than or equal to 2.5 eV and less than or equal to 4.0 eV, the wavelength may be set to longer than or equal to 300 nm and shorter than or equal to 1200 nm. The frequency of the chopper is set in accordance with a switching speed of light irradiation and light blocking. The frequency of the chopper may be selected in accordance with the photoresponsiveness of the sample. The frequency of the chopper is set to low when the sample exhibits low photoresponse, and is set to high when the sample exhibits high photoresponse. The use of one embodiment of the present invention makes it possible to reduce photoexcited carriers by application of positive bias voltage even when the sample exhibits low photoresponse. Therefore, the frequency of the chopper can be set to high. Accordingly, it is possible to perform high-speed and highly accurate CPM measurement even in the case of using the sample exhibiting low photoresponse. The constant current value is decided in advance by preliminary measurement.</p>
+<p id="p-0039" num="0038">A method for deciding the constant current value is concretely described. First, some wavelengths are freely selected from the wavelength range which is to be subjected to measurement. It is preferable that the given wavelengths are selected as evenly as possible from the wavelength range which is to be subjected to measurement. Next, voltage is applied between two electrodes of the sample, and a photocurrent value is measured in each of the wavelengths which are selected in the vicinity of the maximum amount of light of the apparatus. A current value which is smaller than the minimum value of the obtained photocurrent values by approximately 5% to 30% is set as the constant current value.</p>
+<p id="p-0040" num="0039">In a step S<b>103</b>, voltage is applied between the two electrodes of the sample. The voltage is, for example, larger than or equal to 0.1 V and smaller than or equal to 50 V.</p>
+<p id="p-0041" num="0040">Then, in a step S<b>104</b>, the initial amount of irradiation light is decided. The original amount of the irradiation light may be the maximum amount of light of the apparatus, for example.</p>
+<p id="p-0042" num="0041">Next, a step S<b>105</b> and a step S<b>106</b> are repeated. In the step S<b>105</b>, the sample is irradiated with light to detect the photocurrent value. In the step S<b>106</b>, light is blocked, and positive bias voltage is applied to an electrode which is different from the two electrodes is provided at the sample so that an insulating film is sandwiched therebetween. The light irradiation and the light blocking in the steps S<b>105</b> and S<b>106</b> are periodically repeated in accordance with the frequency of the chopper. At the time of blocking light, the bias voltage is applied to the third electrode of the sample for a time in the range of 1 &#x3bc;sec to 1 sec, preferably 100 &#x3bc;sec to 100 msec. At this time, the bias voltage may be greater than or equal to 1 V and less than or equal to 30 V. The application of the positive bias voltage makes it possible to reduce the photoexcited carriers in the sample and improve the accuracy of detecting photocurrent.</p>
+<p id="p-0043" num="0042">Then, in a step S<b>107</b>, it is determined whether the photocurrent value which is detected in the step S<b>105</b> is within a certain range (e.g., within the range of &#xb1;10%) of the given photocurrent value which is decided in the step S<b>102</b>. When the photocurrent value which is detected is out of the certain range (e.g., out of the range of &#xb1;10%) of the given photocurrent value, the amount of irradiation light is changed in a step S<b>108</b>. Note that when the range of the photocurrent value with which determination is performed in the step S<b>107</b> is narrowed, the accuracy of the CPM measurement is increased; when the range of the photocurrent value with which determination is performed in the step S<b>107</b> is expanded, the accuracy of the CPM measurement is reduced. However, as the range of the photocurrent value with which determination is performed in the step S<b>107</b> becomes narrower, it takes longer time to control the photocurrent value and a longer time is needed for the CPM measurement. Here, by applying one embodiment of the present invention, influence of photoresponsiveness is reduced and the photocurrent value is speedily controlled. Thus, even when the range of the photocurrent value with which determination is performed in the step S<b>107</b> is a narrow range (e.g., the range of &#xb1;5%, or &#xb1;2%) of the given photocurrent value, the time needed for the CPM measurement can be shortened. In short, the CPM measurement can be performed speedily and accurately.</p>
+<p id="p-0044" num="0043">When the amount of the irradiation light is changed, a neutral density (ND) filter, a wedge filter, and/or the like may be used.</p>
+<p id="p-0045" num="0044">In the case where the amount of the irradiation light is changed in the step S<b>108</b>, the process returns to the step S<b>105</b> to detect the photocurrent value. A step S<b>105</b> and a step S<b>106</b> are repeated again. In the step S<b>107</b>, it is determined whether the photocurrent value which is detected is within the certain range (within the range of &#xb1;10%) of the given photocurrent value which is decided in the step S<b>102</b>. When the photocurrent value which is detected is out of the certain range (out of the range of &#xb1;10%) of the given photocurrent value, the amount of irradiation light is changed in the step S<b>108</b>. These steps are repeated so that the photocurrent value which is detected is within the certain range (with in the range of &#xb1;10%) of the given photocurrent value which is decided in the step S<b>102</b>.</p>
+<p id="p-0046" num="0045">When it is determined that the photocurrent value which is detected in the step S<b>107</b> is within the certain range (within the range of &#xb1;10%) of the given photocurrent value which is decided in the step S<b>102</b>, the amount of the irradiation light and the wavelength of the irradiation light are recorded, the process moves to a step S<b>109</b>, and it is determined whether measurement is performed on all of the given wavelengths. When it is determined that the measurement is not performed on all of the given wavelengths, the wavelength of the irradiation light is changed in a step S<b>110</b>, and the process returns to the step S<b>105</b>.</p>
+<p id="p-0047" num="0046">When these steps are repeated and then it is determined that measurement is performed on all of the wavelengths in the step S<b>109</b>, the process moves to a step S<b>111</b>, so that the CPM measurement is completed.</p>
+<p id="p-0048" num="0047">This is an example of the measurement method using CPM.</p>
+<p id="p-0049" num="0048">The measurement method using CPM according to one embodiment of the present invention enables high-speed and highly accurate CPM measurement even in the case of a wide bandgap semiconductor exhibiting low photoresponse.</p>
+<p id="p-0050" num="0049">This embodiment can be combined with the other embodiment as appropriate.</p>
+<p id="h-0009" num="0000">(Embodiment 2)</p>
+<p id="p-0051" num="0050">In this embodiment, the structure of a CPM measurement apparatus according to one embodiment of the present invention and the structure of a sample will be described with reference to <figref idref="DRAWINGS">FIG. 2</figref> and <figref idref="DRAWINGS">FIGS. 3A to 3C</figref>.</p>
+<p id="p-0052" num="0051"><figref idref="DRAWINGS">FIG. 2</figref> is a schematic view of a CPM measurement apparatus. For simplicity, light paths are denoted by arrows and wirings and the like are denoted by solid lines. Light emitted from a lamp <b>201</b> enters a sample <b>205</b> through a monochromator <b>202</b>, a filter <b>203</b>, and a beam splitter <b>204</b>. Note that the filter <b>203</b> may be omitted or a plurality of filters <b>203</b> may be provided. The beam splitter <b>204</b> transmits and reflects the light, and then makes the transmitted light and the reflection light enter the sample <b>205</b> and a photodiode <b>210</b>, respectively. However, the transmitted light and the reflection light do not necessarily enter the sample <b>205</b> and the photodiode <b>210</b>, respectively, and the transmitted light and the reflection light may enter the photodiode <b>210</b> and the sample <b>205</b>, respectively.</p>
+<p id="p-0053" num="0052">As the lamp <b>201</b>, a xenon lamp, a mercury lamp, a halogen lamp, or the like may be used, for example. Alternatively, a combination of these lamps may be used as the lamp <b>201</b>. A xenon lamp is preferably used.</p>
+<p id="p-0054" num="0053">Any spectroscope may be used for the monochromator <b>202</b> as long as it can extract light in a narrow wavelength range from light in a broad wavelength range.</p>
+<p id="p-0055" num="0054">As the filter <b>203</b>, an ND filter and/or a wedge filter may be used. Alternatively, plural kinds of ND filters and/or plural kinds of wedge filters may be prepared. In this manner, the controllability of the amount of the irradiation light can be improved.</p>
+<p id="p-0056" num="0055">The light which enters the photodiode <b>210</b> is converted into current. After that, a value of the current is measured by a lock-in amplifier <b>209</b>, and the amount of the irradiation light can be estimated by a calculator <b>208</b>.</p>
+<p id="p-0057" num="0056">The sample <b>205</b> includes a first electrode, a second electrode, and a third electrode. The first electrode and the second electrode are connected to a direct-current power source <b>206</b>. Note that a resistor is provided between the direct-current power source <b>206</b> and at least one of the first electrode and the second electrode. A lock-in amplifier <b>207</b> is provided in parallel to the resistor and can measure a photocurrent value. The measured photocurrent value is fed back to the filter <b>203</b> via the calculator <b>208</b>. When the photocurrent value is too high, the transmittance of the filter <b>203</b> is reduced to reduce the amount of the irradiation light. When the photocurrent value is too low, the transmittance of the filter <b>203</b> is increased to increase the amount of the irradiation light.</p>
+<p id="p-0058" num="0057">Note that the lock-in amplifier <b>207</b> and the lock-in amplifier <b>209</b> each have a function of sensitively extracting signals corresponding signals at the time of light irradiation from the input signals and outputting them.</p>
+<p id="p-0059" num="0058">The third electrode included in the sample <b>205</b> is connected to, for example, a high frequency power source. The high frequency power source applies positive bias voltage at a certain timing, whereby photoexcited carriers in the sample can be reduced.</p>
+<p id="p-0060" num="0059"><figref idref="DRAWINGS">FIG. 3A</figref> illustrates a top view of the sample <b>205</b>. In addition, <figref idref="DRAWINGS">FIG. 3B</figref> illustrates a cross section A-B which corresponds to an alternate long and short dashed line A-B of <figref idref="DRAWINGS">FIG. 3A</figref>.</p>
+<p id="p-0061" num="0060">The sample <b>205</b> includes a supporting member <b>220</b>, a third electrode <b>233</b> over the supporting member <b>220</b>, an insulating film <b>222</b> over the third electrode <b>233</b>, a wide bandgap semiconductor film <b>223</b> over the insulating film <b>222</b>, and a first electrode <b>231</b> and a second electrode <b>232</b> which are one pair provided over the wide bandgap semiconductor film <b>223</b>.</p>
+<p id="p-0062" num="0061">Side edges of the supporting member <b>220</b>, the third electrode <b>233</b>, the insulating film <b>222</b>, and the wide bandgap semiconductor film <b>223</b> are not aligned in <figref idref="DRAWINGS">FIGS. 3A to 3C</figref> but may be substantially aligned with each other.</p>
+<p id="p-0063" num="0062">Although there is no particular limitation on the supporting member <b>220</b>, a glass substrate, a ceramic substrate, a quartz substrate, a sapphire substrate, or the like may be used. Alternatively, a single crystal semiconductor substrate or a polycrystalline semiconductor substrate of silicon, silicon carbide, or the like, a compound semiconductor substrate of silicon germanium or the like, an SOI (silicon on insulator) substrate, or the like can be used.</p>
+<p id="p-0064" num="0063">Note that the supporting member <b>220</b> is necessary when the wide bandgap semiconductor film <b>223</b> is a thin film. However, when the wide bandgap semiconductor film <b>223</b> is strong enough to support other components, the supporting member <b>220</b> is not necessary.</p>
+<p id="p-0065" num="0064">A conductive material such as a metal plate is preferably used for the supporting member <b>220</b>. When the supporting member <b>220</b> is formed using a conductive material, the supporting member <b>220</b> can also has a function as the third electrode <b>233</b>. Further, when the supporting member <b>220</b> is formed using a conductive material, for example, it is possible that bias voltage is applied through a sample holder of the CPM measurement apparatus, which makes it easy to perform measurement and manufacturing of the sample.</p>
+<p id="p-0066" num="0065">The first electrode <b>231</b> and the second electrode <b>232</b> may be each formed with a single layer or a stack of layers using one or more of Al, Ti, Cr, Co, Ni, Cu, Y, Zr, Mo, Ag, Ta, W, Pt, Au, a nitride of these elements, an oxide of these elements, and an alloy of these elements. Alternatively, a transparent conductive film containing plural kinds of materials selected from Si, Ti, Ni, Cu, Zn, Ga, In, and Sn may be used. Preferably, a material which does not form an insulating film at an interface with the wide bandgap semiconductor film <b>223</b> is selected.</p>
+<p id="p-0067" num="0066">It is preferable that the first electrode <b>231</b> and the second electrode <b>232</b> are formed in the same layer with the use of the same material because the manufacturing of the sample is simplified.</p>
+<p id="p-0068" num="0067">Note that the first electrode <b>231</b> and the second electrode <b>232</b> are each a rectangle in <figref idref="DRAWINGS">FIG. 3A</figref> but are not limited to this shape. For example, a comb-like shape may be employed as in the case of a first electrode <b>241</b> and a second electrode <b>242</b> illustrated in <figref idref="DRAWINGS">FIG. 3C</figref>. Such a shape makes it possible to keep a distant between the electrodes constant and expand the width of each of the electrodes. When the width of each of the electrodes is expanded, the photocurrent value can be increased without changing the size of the sample and detection sensitivity can be increased. In addition, the shapes of the first electrode and the second electrode can be modified as appropriate.</p>
+<p id="p-0069" num="0068">The third electrode <b>233</b> may be formed using the same material as the first electrode <b>231</b> and the second electrode <b>232</b>.</p>
+<p id="p-0070" num="0069">Any material can be used for the insulating film <b>222</b> as long as it has an insulating property. For example, the insulating film <b>222</b> may be formed with a stack of layers or a single layer using one or more of silicon oxide, silicon oxynitride, silicon nitride oxide, silicon nitride, aluminum oxide, hafnium oxide, yttrium oxide, zirconium oxide, and the like.</p>
+<p id="p-0071" num="0070">A material to be subjected to CPM measurement, such as an oxide semiconductor (an In&#x2014;Ga&#x2014;Zn&#x2014;O-based material or the like), an organic compound, a silicon-based compound (silicon carbide or the like), or a carbon-based compound (diamond or the like) is used as the wide bandgap semiconductor film <b>223</b>.</p>
+<p id="p-0072" num="0071">This embodiment relates to the CPM measurement apparatus which enables the measurement method using CPM described in Embodiment 1, and the method for manufacturing a sample. The use of the CPM measurement apparatus and/or the sample described in this embodiment make/makes it possible to perform high-speed and highly accurate CPM measurement even in the case of a wide bandgap semiconductor exhibiting low photoresponse.</p>
+<p id="p-0073" num="0072">This embodiment can be combined with the other embodiment as appropriate.</p>
+<heading id="h-0010" level="1">EXAMPLE 1</heading>
+<p id="p-0074" num="0073">In this example, an example of photoresponse of an oxide semiconductor which is a wide bandgap semiconductor will be described with reference to <figref idref="DRAWINGS">FIGS. 4A and 4B</figref>, <figref idref="DRAWINGS">FIGS. 5A and 5B</figref>, <figref idref="DRAWINGS">FIGS. 6A and 6B</figref>, <figref idref="DRAWINGS">FIGS. 7A and 7B</figref>, and <figref idref="DRAWINGS">FIGS. 8A and 8B</figref>.</p>
+<p id="p-0075" num="0074"><figref idref="DRAWINGS">FIGS. 4A and 4B</figref> illustrate a top-surface shape and a cross-sectional shape of a sample subjected to measurement, respectively. <figref idref="DRAWINGS">FIG. 4B</figref> illustrates a cross section A-B which corresponds to an alternate long and short dashed line A-B in the top view in <figref idref="DRAWINGS">FIG. 4A</figref>.</p>
+<p id="p-0076" num="0075">The sample includes an electrode <b>304</b> over a substrate <b>300</b>, an insulating film <b>312</b> covering the electrode <b>304</b>, an oxide semiconductor film <b>306</b> which overlaps with the electrode <b>304</b> with the insulating film <b>312</b> provided therebetween, a pair of electrodes <b>316</b> in contact with the oxide semiconductor film <b>306</b>, and an insulating film <b>318</b> over the oxide semiconductor film <b>306</b>.</p>
+<p id="p-0077" num="0076">In <figref idref="DRAWINGS">FIG. 4A</figref>, a distance L between the pair of electrodes is 30 &#x3bc;m and the width W of the electrode is 10000 &#x3bc;m.</p>
+<p id="p-0078" num="0077">Glass was used for the substrate <b>300</b>, a tungsten film was used for the electrode <b>304</b>, a titanium film was used for the pair of electrodes <b>316</b>, and a silicon oxide film was used for the insulating film <b>312</b> and the insulating film <b>318</b>.</p>
+<p id="p-0079" num="0078">Here, the oxide semiconductor film <b>306</b> was formed to a thickness of 50 nm by a sputtering method, using an In&#x2014;Ga&#x2014;Zn&#x2014;O (the atomic ratio of In:Ga:Zn is 1:1:2) target.</p>
+<p id="p-0080" num="0079">A method for measuring photoresponse is described below.</p>
+<p id="p-0081" num="0080">A voltage of 0.1 V was applied between the pair of electrodes <b>316</b>, and the electrode <b>304</b> was set at 0 V.</p>
+<p id="p-0082" num="0081">Next, irradiation of single color light having a wavelength of 400 nm was performed from the pair of electrodes <b>316</b> side for 600 sec, and then the light was blocked. The state where the light was blocked was kept for 600 sec, and then a bias voltage of &#x2212;20 V was applied to the electrode <b>304</b>. After that, the state where the light was blocked was kept for 300 sec, and then a bias voltage of 20 V was applied to the electrode <b>304</b>. <figref idref="DRAWINGS">FIGS. 5A and 5B</figref>, <figref idref="DRAWINGS">FIGS. 6A and 6B</figref>, <figref idref="DRAWINGS">FIGS. 7A and 7B</figref>, and <figref idref="DRAWINGS">FIGS. 8A and 8B</figref> each show a relation between time and the value of current which flows between the pair of electrodes <b>316</b> during the above process. <figref idref="DRAWINGS">FIG. 5A</figref> shows the case of applying each of the bias voltages for 1 hour, <figref idref="DRAWINGS">FIG. 5B</figref> shows the case of applying each of the bias voltages for 1 sec, <figref idref="DRAWINGS">FIG. 6A</figref> shows the case of applying each of the bias voltages for 100 msec, <figref idref="DRAWINGS">FIG. 6B</figref> shows the case of applying each of the bias voltages for 10 msec, <figref idref="DRAWINGS">FIG. 7A</figref> shows the case of applying each of the bias voltages for 1 msec, <figref idref="DRAWINGS">FIG. 7B</figref> shows the case of applying each of the bias voltages for 100 &#x3bc;sec, <figref idref="DRAWINGS">FIG. 8A</figref> shows the case of applying each of the bias voltages for 10 &#x3bc;sec, and <figref idref="DRAWINGS">FIG. 8B</figref> shows the case of applying each of the bias voltages for 1 &#x3bc;sec. Note that the current values and times during a period in which the bias voltage is being applied are omitted in the graphs for simplicity.</p>
+<p id="p-0083" num="0082"><figref idref="DRAWINGS">FIGS. 5A and 5B</figref>, <figref idref="DRAWINGS">FIGS. 6A and 6B</figref>, <figref idref="DRAWINGS">FIGS. 7A and 7B</figref>, and <figref idref="DRAWINGS">FIGS. 8A and 8B</figref> show that the current value is increased from 2.5&#xd7;10<sup>&#x2212;10 </sup>A to 3.0&#xd7;10<sup>&#x2212;10 </sup>A by the light irradiation; then after light is blocked, the current value is reduced to approximately 5.0&#xd7;10<sup>&#x2212;10 </sup>A; after that, the current value is slowly reduced.</p>
+<p id="p-0084" num="0083">As shown in <figref idref="DRAWINGS">FIG. 5A</figref>, when the bias voltage of &#x2212;20 V was applied for 1 hour, the value of the current flowing between the pair of electrodes <b>316</b> was slightly increased. Then, when the bias voltage of 20 V was applied for 1 hour, the value of the current flowing between the pair of electrodes <b>316</b> became less than or equal to 1&#xd7;10<sup>&#x2212;12 </sup>A.</p>
+<p id="p-0085" num="0084">As shown in <figref idref="DRAWINGS">FIG. 5B</figref>, when the bias voltage of &#x2212;20 V was applied for 1 sec, the value of the current flowing between the pair of electrodes <b>316</b> was slightly reduced. Then, when the bias voltage of 20 V was applied for 1 sec, the value of the current flowing between the pair of electrodes <b>316</b> became less than or equal to 1&#xd7;10<sup>&#x2212;12 </sup>A.</p>
+<p id="p-0086" num="0085">As shown in <figref idref="DRAWINGS">FIG. 6A</figref>, when the bias voltage of &#x2212;20 V was applied for 100 msec, the value of the current flowing between the pair of electrodes <b>316</b> was hardly changed. Then, when the bias voltage of 20 V was applied for 100 msec, the value of the current flowing between the pair of electrodes <b>316</b> became less than or equal to 1&#xd7;10<sup>&#x2212;12 </sup>A.</p>
+<p id="p-0087" num="0086">As shown In <figref idref="DRAWINGS">FIG. 6B</figref>, when the bias voltage of &#x2212;20 V was applied for 10 msec, the value of the current flowing between the pair of electrodes <b>316</b> was hardly changed. Then, when the bias voltage of 20 V was applied for 10 msec, the value of the current flowing between the pair of electrodes <b>316</b> became approximately 2.3&#xd7;10<sup>&#x2212;12 </sup>A.</p>
+<p id="p-0088" num="0087">As shown in <figref idref="DRAWINGS">FIG. 7A</figref>, when the bias voltage of &#x2212;20 V was applied for 1 msec, the value of the current flowing between the pair of electrodes <b>316</b> was hardly changed. Then, when the bias voltage of 20 V was applied for 1 msec, the value of the current flowing between the pair of electrodes <b>316</b> became approximately 7.0&#xd7;10<sup>&#x2212;12 </sup>A.</p>
+<p id="p-0089" num="0088">As shown in <figref idref="DRAWINGS">FIG. 7B</figref>, when the bias voltage of &#x2212;20 V was applied for 100 &#x3bc;sec, the value of the current flowing between the pair of electrodes <b>316</b> was hardly changed. Then, when the bias voltage of 20 V is applied for 100 &#x3bc;sec, the value of the current flowing between the pair of electrodes <b>316</b> became approximately 1.5&#xd7;10<sup>&#x2212;11 </sup>A.</p>
+<p id="p-0090" num="0089">As shown in <figref idref="DRAWINGS">FIG. 8A</figref>, when the bias voltage of &#x2212;20 V was applied for 10 &#x3bc;sec, the value of the current flowing between the pair of electrodes <b>316</b> was hardly changed. Then, when the bias voltage of 20 V was applied for 10 &#x3bc;sec, the value of the current flowing between the pair of electrodes <b>316</b> became approximately 1.8&#xd7;10<sup>&#x2212;11 </sup>A.</p>
+<p id="p-0091" num="0090">As shown in <figref idref="DRAWINGS">FIG. 8B</figref>, when the bias voltage of &#x2212;20 V was applied for 1 &#x3bc;sec, the value of the current flowing between the pair of electrodes <b>316</b> was hardly changed. Then, when the bias voltage of 20 V was applied for 1 &#x3bc;sec, the value of the current flowing between the pair of electrodes <b>316</b> became approximately 2.1&#xd7;10<sup>&#x2212;11 </sup>A.</p>
+<p id="p-0092" num="0091">As described above, it can be found that the value of the current flowing between the pair of electrodes <b>316</b> is suddenly increased after the light irradiation; and then although the value is reduced to some extent after the light blocking, it takes a considerable time until the value of the current is reduced to a value almost equal to the value at the starting time of the measurement.</p>
+<p id="p-0093" num="0092">In addition, although the value of the current flowing between the pair of electrodes <b>316</b> is hardly reduced (changed) even when the negative bias voltage is applied to the electrode <b>304</b>, the value of the current flowing between the pair of electrodes <b>316</b> is reduced to a value close to the value at the starting time of the measurement when the positive bias voltage is applied. In short, it can be found that the photoexcited carriers which are generated in the oxide semiconductor film <b>306</b> can be reduced by application of a positive bias.</p>
+<p id="p-0094" num="0093">This application is based on Japanese Patent Application serial No. 2011-049786 filed with Japan Patent Office on Mar. 8, 2011, the entire contents of which are hereby incorporated by reference.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A defect evaluation method comprising the steps of:
+<claim-text>applying direct-current voltage between a first electrode and a second electrode of a sample;</claim-text>
+<claim-text>repeating a first step; the first step comprising:
+<claim-text>irradiating the sample with light to generate photoexcited carriers in a semiconductor film of the sample, and detecting a value of current flowing between the first electrode and the second electrode; and</claim-text>
+<claim-text>blocking the light, and performing treatment to reduce the photoexcited carriers;</claim-text>
+</claim-text>
+<claim-text>changing an amount of the light so that the value of the current is within a certain range of a given value after the first step;</claim-text>
+<claim-text>repeating a second step after the changing step; the second step comprising:
+<claim-text>irradiating the sample with the light to generate photoexcited carriers in the semiconductor film of the sample, and detecting a value of current flowing between the first electrode and the second electrode; and</claim-text>
+<claim-text>blocking the light, and performing the treatment to reduce the photoexcited carriers; and</claim-text>
+</claim-text>
+<claim-text>recording a wavelength of the light and the amount of the light after the value of the current is within the certain range of the given value,</claim-text>
+<claim-text>wherein the sample includes the first electrode and the second electrode over a semiconductor, an insulating film below the semiconductor, and a third electrode below the insulating film.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The defect evaluation method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising the steps of:
+<claim-text>changing the wavelength of the light after the recording.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The defect evaluation method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising the steps of:
+<claim-text>changing the amount of the light so that the value of the current is within the certain range of the given value after the second step.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The defect evaluation method according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein positive bias voltage is applied to the third electrode as the treatment to reduce the photoexcited carriers.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The defect evaluation method according to <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein the positive bias voltage is applied for a time longer than or equal to 1 &#x3bc;sec and shorter than or equal to 1 sec.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The defect evaluation method according to <claim-ref idref="CLM-00001">claims 1</claim-ref>, wherein the semiconductor film comprises an oxide semiconductor.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The defect evaluation method according to <claim-ref idref="CLM-00001">claims 1</claim-ref>, wherein the light is emitted from a xenon lamp.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The defect evaluation method according to <claim-ref idref="CLM-00001">claims 1</claim-ref>, wherein the certain range of the given value is a range of &#xb1;10% of the given value.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. A measurement apparatus comprising:
+<claim-text>a first terminal;</claim-text>
+<claim-text>a second terminal;</claim-text>
+<claim-text>a third terminal;</claim-text>
+<claim-text>a lamp;</claim-text>
+<claim-text>a spectroscope;</claim-text>
+<claim-text>a filter;</claim-text>
+<claim-text>a beam splitter configured to transmit and reflect light emitted from the lamp through the spectroscope and the filter;</claim-text>
+<claim-text>a photodiode configured to convert the light entered from the beam splitter into current;</claim-text>
+<claim-text>a calculator configured to estimate an amount of the light using a value of the current;</claim-text>
+<claim-text>a direct-current power source electrically connected to the first terminal, the second terminal, and a resistor; and</claim-text>
+<claim-text>a power source electrically connected to the third terminal, wherein the calculator is configured to feed back a photocurrent value flowing through the resistor to the filter.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The measurement apparatus according to <claim-ref idref="CLM-00009">claim 9</claim-ref>, further comprising:
+<claim-text>a first lock-in amplifier electrically connected to the photodiode and the calculator; and</claim-text>
+<claim-text>a second lock-in amplifier electrically connected to the resistor and the calculator, wherein the first lock-in amplifier is configured to measure the value of the current, and</claim-text>
+<claim-text>wherein the second lock-in amplifier is configured to measure the photocurrent value.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The measurement apparatus according to <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein the power source is configured to apply positive bias voltage.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The measurement apparatus according to <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the power source is configured to apply the positive bias voltage for a time longer than or equal to 1 &#x3bc;sec and shorter than or equal to 1 sec.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The measurement apparatus according to <claim-ref idref="CLM-00009">claims 9</claim-ref>, wherein the lamp is a xenon lamp.</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

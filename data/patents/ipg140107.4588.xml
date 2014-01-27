@@ -1,0 +1,1831 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08625676-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08625676</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12147545</doc-number>
+<date>20080627</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>1316</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>04</class>
+<subclass>N</subclass>
+<main-group>7</main-group>
+<subgroup>26</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>37524025</main-classification>
+<further-classification>37524002</further-classification>
+<further-classification>37524003</further-classification>
+<further-classification>37524011</further-classification>
+<further-classification>37524018</further-classification>
+</classification-national>
+<invention-title id="d2e53">Video bitstream decoding using least square estimates</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>7634794</doc-number>
+<kind>B1</kind>
+<name>Paik et al.</name>
+<date>20091200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>725 62</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2003/0009578</doc-number>
+<kind>A1</kind>
+<name>Apostolopoulos et al.</name>
+<date>20030100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>709231</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>2004/0102968</doc-number>
+<kind>A1</kind>
+<name>Tian et al.</name>
+<date>20040500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>704226</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>2005/0147163</doc-number>
+<kind>A1</kind>
+<name>Li et al.</name>
+<date>20050700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>37524012</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>2005/0169387</doc-number>
+<kind>A1</kind>
+<name>Ratakonda et al.</name>
+<date>20050800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>375243</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00006">
+<othercit>Liang, &#x201c;A Novel Multiple Description Approach to Predictive Video Coding&#x201d;, PCM 2007, LNCS 4810, pp. 286-295, Dec. 2007.</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>19</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>375240-24003</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>3752401</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>37524011</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>37524018</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>3752402</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>37524024</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>37524025</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>9</number-of-drawing-sheets>
+<number-of-figures>9</number-of-figures>
+</figures>
+<us-related-documents>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>60947149</doc-number>
+<date>20070629</date>
+</document-id>
+</us-provisional-application>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20090003458</doc-number>
+<kind>A1</kind>
+<date>20090101</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Au</last-name>
+<first-name>Oscar Chi Lim</first-name>
+<address>
+<city>Hong Kong</city>
+<country>CN</country>
+</address>
+</addressbook>
+<residence>
+<country>CN</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Liang</last-name>
+<first-name>Zhiqin</first-name>
+<address>
+<city>Hong Kong</city>
+<country>CN</country>
+</address>
+</addressbook>
+<residence>
+<country>CN</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Au</last-name>
+<first-name>Oscar Chi Lim</first-name>
+<address>
+<city>Hong Kong</city>
+<country>CN</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Liang</last-name>
+<first-name>Zhiqin</first-name>
+<address>
+<city>Hong Kong</city>
+<country>CN</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Turocy &#x26; Watson, LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Pai Kung Limited Liability Company</orgname>
+<role>02</role>
+<address>
+<city>Wilmington</city>
+<state>DE</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Cho</last-name>
+<first-name>Un C</first-name>
+<department>2413</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Liu</last-name>
+<first-name>Siming</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">System and methodologies are provided herein for reconstructing a video signal from multiple video streams. Various aspects described herein can utilize a least square estimate (LSE) algorithm to jointly decode multiple video bitstreams that are generated from a common original video sequence at different bit rates. As described herein, the LSE algorithm can reconstruct an original video sequence by determining and computing a weighted sum of collocated video information reconstructed from different video bitstreams. The weights applied can be adaptively determined to minimize the mean square error (MSE) of the reconstructed video sequence as compared to the original.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="167.30mm" wi="242.49mm" file="US08625676-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="142.92mm" wi="177.72mm" file="US08625676-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="235.97mm" wi="167.05mm" orientation="landscape" file="US08625676-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="246.13mm" wi="170.26mm" orientation="landscape" file="US08625676-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="117.94mm" wi="152.65mm" file="US08625676-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="141.56mm" wi="166.62mm" file="US08625676-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="175.34mm" wi="149.94mm" file="US08625676-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="221.15mm" wi="168.40mm" file="US08625676-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="237.41mm" wi="182.29mm" file="US08625676-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="117.09mm" wi="171.11mm" file="US08625676-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CROSS-REFERENCE</heading>
+<p id="p-0002" num="0001">This application claims the benefit of U.S. Provisional Patent Application Ser. No. 60/947,149, filed on Jun. 29, 2007, entitled &#x201c;VIDEO TRANSCODING QUALITY ENHANCEMENT.&#x201d;</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">TECHNICAL FIELD</heading>
+<p id="p-0003" num="0002">The subject disclosure relates generally to video signal processing, and more particularly to techniques for jointly decoding multiple video streams.</p>
+<heading id="h-0003" level="1">BACKGROUND</heading>
+<p id="p-0004" num="0003">With the recent growth of the Internet and success of wireless network technology, the transmission of video signals has experienced a significant increase in popularity. However, most communication systems over which video signals are communicated are limited in storage and/or bandwidth capacity. Because raw video signals are often very large in size, such storage and/or bandwidth limits can render the transmission of raw video signals over such networks impracticable.</p>
+<p id="p-0005" num="0004">To nonetheless allow transmission of video signals over such networks, video signals can be distributed and stored in compressed format. For example, in video streaming applications, a server can generate compressed video bitstreams from a raw video signal for transmission to users. Multiple bitstreams may be generated, each with different bit rates corresponding to varying network conditions. Once the bitstreams are generated, the raw video signal can then be discarded due to storage limits. The bitstreams can then be transmitted to one or more users, after which the users can reconstruct the video signal from the received bitstreams. However, because video compression is a lossy process, the video signals reconstructed by each user will be distorted from the original raw video signal. Traditionally, when multiple bitstreams having different bit rates are available, this distortion is mitigated while reconstructing the original video by decoding the video bitstream with the highest bit rate. However, this traditional approach does not take into consideration all of the available data, such as data present in the bitstreams with lower bit rates, which could also be utilized to improve decoding performance. Accordingly, there exists a need in the art for techniques for reconstructing a video signal from video bitstreams with a higher degree of precision.</p>
+<heading id="h-0004" level="1">SUMMARY</heading>
+<p id="p-0006" num="0005">The following presents a simplified summary of the claimed subject matter in order to provide a basic understanding of some aspects of the claimed subject matter. This summary is not an extensive overview of the claimed subject matter. It is intended to neither identify key or critical elements of the claimed subject matter nor delineate the scope of the claimed subject matter. Its sole purpose is to present some concepts of the claimed subject matter in a simplified form as a prelude to the more detailed description that is presented later.</p>
+<p id="p-0007" num="0006">The subject disclosure provides systems and methodologies for improved video signal reconstruction and video stream decoding. In accordance with various aspects presented herein, a least square estimate (LSE) algorithm can be utilized to jointly decode multiple video bitstreams. By jointly decoding multiple video bitstreams, an original video signal reconstructed from the bitstreams can have significantly enhanced quality over a similar video signal reconstructed using traditional approaches.</p>
+<p id="p-0008" num="0007">In accordance with one aspect, a decoder can reconstruct discrete cosine transform (DCT) coefficients of a block in the original video signal by using a weighted superposition of corresponding DCT coefficients in co-located blocks reconstructed from multiple bitstreams. The weights applied to the DCT coefficients from the bitstreams can be adaptively determined to minimize the mean square error (MSE) of the coefficients. To facilitate this process, a quantization error model can also be used to track the MSE of the DCT coefficients in the bitstreams.</p>
+<p id="p-0009" num="0008">To the accomplishment of the foregoing and related ends, certain illustrative aspects of the claimed subject matter are described herein in connection with the following description and the annexed drawings. These aspects are indicative, however, of but a few of the various ways in which the principles of the claimed subject matter can be employed. The claimed subject matter is intended to include all such aspects and their equivalents. Other advantages and novel features of the claimed subject matter can become apparent from the following detailed description when considered in conjunction with the drawings.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0005" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 1</figref> is a high-level block diagram of a system for communicating and processing video streams in accordance with various aspects.</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram of a system for compressing and reconstructing a video signal in accordance with various aspects.</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 3</figref> is a block diagram of a system for reconstructing a video signal from multiple video streams in accordance with various aspects.</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 4</figref> illustrates error correlation data for an example video decoding system in accordance with various aspects.</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 5</figref> is a block diagram of an example system for receiving and processing video streams in accordance with various aspects.</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 6</figref> is a flowchart of a method for processing video bit streams.</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 7</figref> is a flowchart of a method for reconstructing a video signal from multiple video bit streams.</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 8</figref> is a block diagram of an example operating environment in which various aspects described herein can function.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 9</figref> is a block diagram of an example networked computing environment in which various aspects described herein can function.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0006" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0019" num="0018">The claimed subject matter is now described with reference to the drawings, wherein like reference numerals are used to refer to like elements throughout. In the following description, for purposes of explanation, numerous specific details are set forth in order to provide a thorough understanding of the claimed subject matter. It may be evident, however, that the claimed subject matter may be practiced without these specific details. In other instances, well-known structures and devices are shown in block diagram form in order to facilitate describing the claimed subject matter.</p>
+<p id="p-0020" num="0019">As used in this application, the terms &#x201c;component,&#x201d; &#x201c;system,&#x201d; and the like are intended to refer to a computer-related entity, either hardware, a combination of hardware and software, software, or software in execution. For example, a component may be, but is not limited to being, a process running on a processor, a processor, an object, an executable, a thread of execution, a program, and/or a computer. By way of illustration, both an application running on a server and the server can be a component. One or more components may reside within a process and/or thread of execution and a component may be localized on one computer and/or distributed between two or more computers. Also, the methods and apparatus of the claimed subject matter, or certain aspects or portions thereof, may take the form of program code (i.e., instructions) embodied in tangible media, such as floppy diskettes, CD-ROMs, hard drives, or any other machine-readable storage medium, wherein, when the program code is loaded into and executed by a machine, such as a computer, the machine becomes an apparatus for practicing the claimed subject matter. The components may communicate via local and/or remote processes such as in accordance with a signal having one or more data packets (e.g., data from one component interacting with another component in a local system, distributed system, and/or across a network such as the Internet with other systems via the signal).</p>
+<p id="p-0021" num="0020">Referring to the drawings, <figref idref="DRAWINGS">FIG. 1</figref> illustrates a high-level block diagram of a system <b>100</b> for communicating and processing video streams <b>30</b> in accordance with various aspects presented herein. In one example, system <b>100</b> includes a distributing device <b>10</b> that can transmit video streams <b>30</b> of substantially identical content having different bit rates to a receiving device <b>20</b>. While only one distributing device <b>10</b> and one receiving device <b>20</b> are illustrated in system <b>100</b> for simplicity, it should be appreciated that system <b>100</b> can include any number of distributing devices <b>10</b> and/or receiving devices <b>20</b>, each of which can communicate video streams <b>30</b> to one or more devices <b>10</b> and/or <b>20</b> in system <b>100</b>.</p>
+<p id="p-0022" num="0021">In another example, a compression component <b>12</b> can generate the video streams <b>30</b> by compressing a raw video signal into multiple bit rates. While the compression component <b>12</b> is illustrated in <figref idref="DRAWINGS">FIG. 1</figref> as part of the distributing device <b>10</b>, it should be appreciated that the compression component <b>12</b> can alternatively be external to the distributing device <b>10</b> and communicate generated video streams <b>30</b> to a storage component <b>14</b> and/or another appropriate component of the distributing device <b>10</b>. In accordance with one aspect, the compression component <b>12</b> can generate video streams <b>30</b> of different bit rates from a common raw video signal to, for example, facilitate access to the video signal under varying network conditions. For example, a first receiving device <b>20</b> having a high bandwidth connection to the distributing device <b>10</b> can be configured to receive one or more video streams <b>30</b> with high bit rates from the distributing device <b>10</b>, while a second receiving device <b>20</b> having a low bandwidth connection can instead be configured to receive video stream(s) <b>30</b> with lower bit rates. Alternatively, the video streams <b>30</b> can be generated by the compression component <b>12</b> in connection with varying levels or tiers of service provided by the distributing device <b>10</b> having corresponding monetary rates associated therewith. Once generated, the video streams <b>30</b> can be transmitted to a receiving device <b>20</b> and/or stored by the storage component <b>14</b> at the distributing device <b>10</b> for later transmission to a receiving device <b>20</b>.</p>
+<p id="p-0023" num="0022">By way of non-limiting example, a distributing device <b>10</b> and a receiving device <b>20</b> can be communicatively connected via a wired (e.g., Ethernet, IEEE-802.3, etc.) or wireless (IEEE-802.11, Bluetooth&#x2122;, etc.) networking technology. Additionally, a distributing device <b>10</b> and a receiving device <b>20</b> can be directly connected to one another or indirectly connected through a third party device (not shown). For example, a distributing device <b>10</b> can be a web server and a receiving device <b>20</b> can be a client computer that accesses the distributing device <b>10</b> from the Internet via an Internet service provider (ISP). As another example, a receiving device <b>20</b> can be a mobile terminal that accesses video streams <b>30</b> from the distributing device <b>10</b> via a cellular communication network such as the Global System for Mobile Communications (GSM), a Code Division Multiple Access (CDMA) communication system, and/or another suitable cellular communication network.</p>
+<p id="p-0024" num="0023">In accordance with one aspect, a raw video signal used by the compression component <b>12</b> to generate the video streams <b>30</b> can be discarded after the video streams are generated <b>30</b> due to storage limits at the distributing device <b>10</b>. Thus, only the compressed video streams <b>30</b> generated from the original raw video signal may be available to the receiving device <b>20</b>. In one example, the receiving device can obtain a video signal corresponding to one or more video streams <b>30</b> by reconstructing the video streams <b>30</b>. However, because video compression (e.g. video compression employed by the compression component <b>12</b>) is a lossy process, distortion can be present in a reconstructed video signal obtained by the receiving device <b>20</b>.</p>
+<p id="p-0025" num="0024">To mitigate this distortion, a receiving device <b>20</b> can include a joint reconstruction component <b>22</b> that can jointly decode multiple video streams <b>30</b> generated from a common raw video signal having different bit rates to reconstruct the original video signal compressed by the compression component <b>12</b>. In one example, the compression component <b>12</b> compresses a raw video signal into video streams <b>30</b> by utilizing a subset of information present in the raw signal and discarding the remainder. As the bit rate of a video stream <b>30</b> increases, the amount of information from the raw signal retained in the video stream <b>30</b> can likewise increase. However, due to varying quantization steps and other mechanisms that can be utilized by the compression component <b>12</b> to compress the raw signal into video streams <b>30</b>, video streams <b>30</b> having different bit rates may include non-overlapping information from the original raw video signal. In accordance with one aspect, the joint reconstruction component <b>22</b> can utilize this non-overlapping information from multiple video streams <b>30</b> to jointly reconstruct a video signal using multiple video streams <b>30</b>. By doing so, a video signal reconstructed by the joint reconstruction component <b>22</b> can have a higher quality than a video signal obtained by reconstructing any individual video stream <b>30</b>. In one example, a video signal reconstructed by the joint reconstruction component <b>22</b> can then optionally be provided to a display component <b>24</b> at the receiving device <b>20</b> for display. The display component <b>24</b> and/or another suitable component associated with the receiving device <b>20</b> can additionally perform appropriate pre-processing operations on the reconstructed video signal prior to display, such as rendering, buffering, and/or other suitable operations.</p>
+<p id="p-0026" num="0025">Referring now to <figref idref="DRAWINGS">FIG. 2</figref>, a block diagram of a system <b>200</b> for compressing and reconstructing a video signal is illustrated. In accordance with one aspect, an original video signal can be received by a compression component <b>12</b>. In one example, the original video signal can be a time domain signal that is composed of one or more two-dimensional frames, each of which can in turn be composed of a series of blocks. By way of specific, non-limiting example, blocks in the video signal can represent 8&#xd7;8 pixel areas in the video signal and/or other suitable sizes and/or arrangements of pixels. As another specific, non-limiting example, the blocks in the video signal can include intra-coded blocks (&#x201c;I-blocks&#x201d;), which are generated based only on information located at the frame in which the block is located; inter-coded blocks (&#x201c;prediction blocks&#x201d; or &#x201c;P-blocks&#x201d;), which can be generated based on information in the current frame as well as immediately preceding and/or succeeding frames; and/or other types of blocks.</p>
+<p id="p-0027" num="0026">In accordance with one aspect, the compression component <b>12</b> can compress the original video signal by determining and truncating information in respective blocks present in the video signal that correspond to areas of low-frequency deviation between pixels. For example, the compression component can determine and truncate information corresponding to low-frequency deviation in color, intensity, and/or other appropriate measurements between pixels. To facilitate this process, the compression component <b>12</b> can convert the original video signal to the frequency domain by performing a discrete cosine transform (DCT) <b>212</b> on the original video signal.</p>
+<p id="p-0028" num="0027">In one example, after a DCT <b>212</b> is performed, each block in the transformed signal can have DCT coefficients corresponding to deviation frequencies between pixels in the block. These coefficients can include one DC coefficient, which represents an average value for the pixels in the block, and a set of AC coefficients that represent change through the pixels in the block at respective increasing frequencies. As used generally herein, a k-th frame in a video signal is denoted as F<sub>k</sub>. Further, x<sub>i</sub>(F<sub>k</sub>) is used to represent the i-th DCT coefficient in an original video signal, and x<sub>i</sub>(F<sub>k</sub>, V<sub>l</sub>) is used to represent the i-th DCT coefficient in a reconstructed video signal corresponding to an l-th video stream V<sub>l</sub>.</p>
+<p id="p-0029" num="0028">In accordance with another aspect, respective blocks of a DCT-transformed video signal can be compressed by quantizing the blocks of the transformed signal using a quantizer <b>214</b> at the compression component <b>12</b>. The quantized blocks can then be transmitted as a video stream <b>30</b> to a stream reconstruction component <b>220</b>, which can dequantize the blocks using a dequantizer <b>222</b> in order to reconstruct the video signal from the video stream <b>30</b>. As used herein, the expressions Q(V,Q<sub>p</sub>) and DeQ(L,Q<sub>p</sub>) respectively refer to a quantization mapping used by the quantizer <b>214</b> and a dequantization mapping used by the dequantizer <b>222</b>. As used in the expressions, V represents input to the quantizer <b>214</b>, L represents input to the dequantizer <b>222</b>, and Q<sub>p </sub>represents a quantization step.</p>
+<p id="p-0030" num="0029">In one example, intra-coded blocks and inter-coded blocks can be quantized differently by the quantizer <b>214</b>. Accordingly, quantization mappings used by the quantizer <b>214</b> for intra-coded blocks and inter-coded blocks are respectively expressed herein as Q<sup>I </sup>(V,Q<sub>p</sub>) and Q<sup>P </sup>(V,Q<sub>p</sub>). By way of specific example, the following quantization mappings may be used by the quantizer <b>214</b> to quantize the DCT coefficients of the converted original video signal:</p>
+<p id="p-0031" num="0030">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>Q</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mi>V</mi>
+              <mo>,</mo>
+              <msub>
+                <mi>Q</mi>
+                <mi>p</mi>
+              </msub>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>{</mo>
+          <mtable>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <msup>
+                    <mi>Q</mi>
+                    <mi>I</mi>
+                  </msup>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mi>V</mi>
+                      <mo>,</mo>
+                      <msub>
+                        <mi>Q</mi>
+                        <mi>p</mi>
+                      </msub>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mi>if</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mi>intracoded</mi>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <msup>
+                    <mi>Q</mi>
+                    <mi>P</mi>
+                  </msup>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mi>V</mi>
+                      <mo>,</mo>
+                      <msub>
+                        <mi>Q</mi>
+                        <mi>p</mi>
+                      </msub>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mi>otherwise</mi>
+                  <mo>,</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>1</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mrow>
+            <msup>
+              <mi>Q</mi>
+              <mi>I</mi>
+            </msup>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mi>V</mi>
+                <mo>,</mo>
+                <msub>
+                  <mi>Q</mi>
+                  <mi>p</mi>
+                </msub>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <mrow>
+              <mi>floor</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mfrac>
+                  <mrow>
+                    <mo>&#xf603;</mo>
+                    <mi>V</mi>
+                    <mo>&#xf604;</mo>
+                  </mrow>
+                  <mrow>
+                    <mn>2</mn>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>Q</mi>
+                      <mi>p</mi>
+                    </msub>
+                  </mrow>
+                </mfrac>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>&#xb7;</mo>
+            <mrow>
+              <mi>sign</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mi>V</mi>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>2</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mrow>
+            <msup>
+              <mi>Q</mi>
+              <mi>P</mi>
+            </msup>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mi>V</mi>
+                <mo>,</mo>
+                <msub>
+                  <mi>Q</mi>
+                  <mi>p</mi>
+                </msub>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <mrow>
+              <mi>floor</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mfrac>
+                  <mrow>
+                    <mrow>
+                      <mo>&#xf603;</mo>
+                      <mi>V</mi>
+                      <mo>&#xf604;</mo>
+                    </mrow>
+                    <mo>-</mo>
+                    <mrow>
+                      <msub>
+                        <mi>Q</mi>
+                        <mi>p</mi>
+                      </msub>
+                      <mo>/</mo>
+                      <mn>2</mn>
+                    </mrow>
+                  </mrow>
+                  <mrow>
+                    <mn>2</mn>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>Q</mi>
+                      <mi>p</mi>
+                    </msub>
+                  </mrow>
+                </mfrac>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>&#xb7;</mo>
+            <mrow>
+              <mi>sign</mi>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mi>V</mi>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>3</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+where floor(&#xb7;) is used to round an input to the nearest integer that is smaller than the input and sign(&#xb7;) is used to return the sign of the input. By way of further specific, non-limiting example, a quantization step of Q<sub>p</sub>=8 may be used for the DC coefficient of intra-coded blocks.
+</p>
+<p id="p-0032" num="0031">In accordance with another aspect, quantized intra-coded and inter-coded blocks may be transmitted as a video stream <b>30</b> to the stream reconstruction component <b>220</b>. Upon receiving the video stream <b>30</b>, a dequantizer <b>222</b> at the stream reconstruction component <b>220</b> can then dequantize the blocks in the video stream <b>30</b>. In one example, the dequantizer <b>222</b> can utilize the same dequantization mapping DeQ(L,Q<sub>p</sub>) to dequantize the DCT coefficients of the video stream <b>30</b> for both intra-coded and inter-coded blocks. This mapping can be expressed as follows:</p>
+<p id="p-0033" num="0032">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>DeQ</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mi>L</mi>
+              <mo>,</mo>
+              <msub>
+                <mi>Q</mi>
+                <mi>p</mi>
+              </msub>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>{</mo>
+          <mtable>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <msub>
+                    <mi>Q</mi>
+                    <mi>p</mi>
+                  </msub>
+                  <mo>&#xb7;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mrow>
+                        <mn>2</mn>
+                        <mo>&#xb7;</mo>
+                        <mi>L</mi>
+                      </mrow>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mi>if</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <msub>
+                    <mi>Q</mi>
+                    <mi>p</mi>
+                  </msub>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mi>is</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.8em" height="0.8ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mi>odd</mi>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mrow>
+                    <msub>
+                      <mi>Q</mi>
+                      <mi>p</mi>
+                    </msub>
+                    <mo>&#xb7;</mo>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mrow>
+                          <mn>2</mn>
+                          <mo>&#xb7;</mo>
+                          <mi>L</mi>
+                        </mrow>
+                        <mo>+</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                  <mo>-</mo>
+                  <mn>1</mn>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mi>otherwise</mi>
+                  <mo>.</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>4</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+Accordingly, based on Equations (1)-(4), a reconstructed signal corresponding to an input V generated by the dequantizer <b>222</b> at the stream reconstruction component <b>220</b> can be defined as follows:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Rec(<i>V,Q</i><sub>p</sub>)=De<i>Q</i>(<i>Q</i>(<i>V,Q</i><sub>p</sub>),<i>Q</i><sub>p</sub>).&#x2003;&#x2003;(5)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+In one example, the dequantized signal generated by the dequantizer <b>222</b> has an associated degree of uncertainty. More particularly, for a particular reconstructed value {tilde over (v)}, multiple values of V may exist that could result in a dequantized value of {tilde over (v)} (e.g., multiple values of V could satisfy Rec(V,Q<sub>p</sub>)={tilde over (v)}). Based on this uncertainty, a lower bound value LB({tilde over (v)},Q<sub>p</sub>) and an upper bound value UB({tilde over (v)},Q<sub>p</sub>) can be defined as the minimum and maximum values of V that satisfy Rec(V,Q<sub>p</sub>)={tilde over (v)}. As a result, with a quantization step of Q<sub>p</sub>, if V is reconstructed to {tilde over (v)} by the dequantizer <b>222</b>, then the cell (or &#x201c;range&#x201d;) of the original signal V can be expressed as follows:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>V &#x3b5;[LB</i>(<i>{tilde over (v)},Q</i><sub>p</sub>),<i>UB</i>(<i>{tilde over (v)},Q</i><sub>p</sub>)].&#x2003;&#x2003;(6)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0034" num="0033">In one example, an intra-coded DCT coefficient x<sub>i</sub>(F<sub>k</sub>) (e.g., a coefficient corresponding to an I-block) can be reconstructed by the dequantizer <b>222</b> as follows:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>{tilde over (x)}</i><sub>i</sub>(<i>F</i><sub>k</sub><i>,V</i><sub>l</sub>)=Rec(<i>x</i><sub>i</sub>(<i>F</i><sub>k</sub>),<i>Q</i><sub>p</sub>).&#x2003;&#x2003;(7)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+Further, by way of specific, non-limiting example, the AC coefficients for a given I-block can conform to a zero-mean Laplacian probability distribution. The Laplacian probability density function (PDF) &#x192;<sub>F</sub><sub><sub2>k</sub2></sub><sub>,V</sub><sub><sub2>l</sub2></sub><sup>i</sup>(x) for each coefficient in an I-block can be expressed as follows:
+</p>
+<p id="p-0035" num="0034">
+<maths id="MATH-US-00003" num="00003">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mrow>
+            <msubsup>
+              <mi>f</mi>
+              <mrow>
+                <msub>
+                  <mi>F</mi>
+                  <mi>k</mi>
+                </msub>
+                <mo>,</mo>
+                <msub>
+                  <mi>V</mi>
+                  <mi>l</mi>
+                </msub>
+              </mrow>
+              <mi>i</mi>
+            </msubsup>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mi>x</mi>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mn>2</mn>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <msubsup>
+                  <mi>&#x3bb;</mi>
+                  <mrow>
+                    <msub>
+                      <mi>F</mi>
+                      <mi>k</mi>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>V</mi>
+                      <mi>l</mi>
+                    </msub>
+                  </mrow>
+                  <mi>i</mi>
+                </msubsup>
+              </mrow>
+            </mfrac>
+            <mo>&#x2062;</mo>
+            <msup>
+              <mi>&#x2147;</mi>
+              <mrow>
+                <mrow>
+                  <mo>-</mo>
+                  <mrow>
+                    <mo>&#xf603;</mo>
+                    <mi>x</mi>
+                    <mo>&#xf604;</mo>
+                  </mrow>
+                </mrow>
+                <mo>/</mo>
+                <msubsup>
+                  <mi>&#x3bb;</mi>
+                  <mrow>
+                    <msub>
+                      <mi>F</mi>
+                      <mi>k</mi>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>V</mi>
+                      <mi>l</mi>
+                    </msub>
+                  </mrow>
+                  <mi>i</mi>
+                </msubsup>
+              </mrow>
+            </msup>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>8</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+where &#x3bb;<sub>F</sub><sub><sub2>k</sub2></sub><sub>,V</sub><sub><sub2>l</sub2></sub><sup>i </sup>is a rate parameter of the distribution of the i-th coefficient of frame F<sub>k </sub>in stream V<sub>l</sub>. In one example, the rate parameter of the PDF &#x192;<sub>F</sub><sub><sub2>k</sub2></sub><sub>,V</sub><sub><sub2>l</sub2></sub><sup>i</sup>(x) can be estimated by observing the distribution of {tilde over (x)}<sub>i</sub>(F<sub>k</sub>,V<sub>l</sub>).
+</p>
+<p id="p-0036" num="0035">Additionally and/or alternatively, an inter-coded DCT coefficient x<sub>i</sub>(F<sub>k</sub>) (e.g., a coefficient corresponding to a prediction block) can be reconstructed by the dequantizer <b>222</b> as follows. First, the expression p<sub>i</sub>(F<sub>k-1</sub>,V<sub>l</sub>) can be used to denote the i-th DCT coefficient of the prediction block generated by the previous frame F<sub>k-1</sub>. The expression r<sub>i</sub>(F<sub>k</sub>,V<sub>l</sub>) can then be used to denote the i-th DCT coefficient of the residual signal, which can be obtained using the following equation:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>x</i><sub>i</sub>(<i>F</i><sub>k</sub>)=<i>p</i><sub>i</sub>(<i>F</i><sub>k-1</sub><i>,V</i><sub>l</sub>)+<i>r</i><sub>i</sub>(F<sub>k</sub><i>,V</i><sub>l</sub>).&#x2003;&#x2003;(9)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+Based on the expressions p<sub>i</sub>(F<sub>k-1</sub>,V<sub>l</sub>) and r<sub>i</sub>(F<sub>k</sub>,V<sub>l</sub>) and Equation (9), the reconstructed version of the i-th DCT coefficient of the residual of an l-th stream V<sub>l </sub>can be expressed as follows:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>{tilde over (r)}</i><sub>i</sub>(<i>F</i><sub>k</sub><i>,V</i><sub>l</sub>)=Rec(<i>r</i><sub>i</sub>)<i>F</i><sub>k</sub><i>,V</i><sub>l</sub>),<i>Q</i><sub>p</sub>).&#x2003;&#x2003;(10)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+Based on Equations (9) and (10), an inter-coded DCT coefficient r<sub>i</sub>(F<sub>k</sub>,V<sub>l</sub>) can then be reconstructed by the dequantizer <b>222</b> as follows:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>{tilde over (x)}</i><sub>i</sub>(<i>F</i><sub>k</sub><i>,V</i><sub>l</sub>)=<i>p</i><sub>i</sub>(<i>F</i><sub>k-1</sub><i>,V</i><sub>l</sub>)+<i>{tilde over (r)}</i><sub>i</sub>(<i>F</i><sub>k</sub><i>,V</i><sub>l</sub>).&#x2003;&#x2003;(11)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+By way of specific, non-limiting example, the distribution of r<sub>i</sub>(F<sub>k</sub>,V<sub>l</sub>) can also be Laplacian. Accordingly, the PDF for the distribution of r<sub>i</sub>(F<sub>k</sub>,V<sub>l</sub>) can be similar in form to Equation (8) with a different rate parameter. In one example, the rate parameter for the distribution of r<sub>i</sub>(F<sub>k</sub>,V<sub>l</sub>) can be obtained by observing the distribution of {tilde over (r)}<sub>i</sub>(F<sub>k</sub>,V<sub>l</sub>) in a similar manner to Equation (8) for the distribution of AC coefficients in an I-block.
+</p>
+<p id="p-0037" num="0036">In accordance with another aspect, the stream reconstruction component <b>220</b> can further include an estimation component <b>224</b>. In one example, the estimation component <b>224</b> can obtain a minimum mean square error (MMSE) reconstruction of the original video signal by utilizing the distribution of DCT coefficients, the quantization step applied by the quantizer <b>214</b>, and the upper and lower bounds for each coefficient to estimate reconstructed coefficients within the range for each coefficient that minimizes the mean square error (MSE) of the reconstructed video signal.</p>
+<p id="p-0038" num="0037">In one specific example, the estimation component can perform MMSE reconstruction using the Lloyd-Max method. As used herein, the abbreviated expression x is used in place of x<sub>i</sub>(F<sub>k</sub>,V<sub>l</sub>), which represents the i-th coefficient in a k-th frame F<sub>k </sub>of an l-th video stream V<sub>l </sub><b>30</b>. Accordingly, the estimation component <b>224</b> can utilize the Lloyd-Max method to determine an optimal reconstruction for an intra-coded block based on the following equation:</p>
+<p id="p-0039" num="0038">
+<maths id="MATH-US-00004" num="00004">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <msub>
+            <mi>x</mi>
+            <mi>opt</mi>
+          </msub>
+          <mo>=</mo>
+          <mfrac>
+            <mrow>
+              <msubsup>
+                <mo>&#x222b;</mo>
+                <mi>l</mi>
+                <mi>u</mi>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mi>xf</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>&#x2146;</mo>
+                  <mi>x</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mrow>
+              <msubsup>
+                <mo>&#x222b;</mo>
+                <mi>l</mi>
+                <mi>u</mi>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mi>f</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>x</mi>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>&#x2146;</mo>
+                  <mi>x</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>12</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+where l=LB({tilde over (x)},Q<sub>p</sub>), u=UB({tilde over (x)},Q<sub>p</sub>), Q<sub>p </sub>is the size of the quantization step used by the quantizer <b>214</b>, and &#x192;(x) represents the distribution of the DCT coefficients of the block. Similarly, the estimation component <b>224</b> can determine an MMSE reconstruction of the residual portion of an inter-coded block by using the following equation:
+</p>
+<p id="p-0040" num="0039">
+<maths id="MATH-US-00005" num="00005">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>r</mi>
+          <mi>opt</mi>
+        </msub>
+        <mo>=</mo>
+        <mfrac>
+          <mrow>
+            <msubsup>
+              <mo>&#x222b;</mo>
+              <msup>
+                <mi>l</mi>
+                <mi>&#x2032;</mi>
+              </msup>
+              <msup>
+                <mi>u</mi>
+                <mi>&#x2032;</mi>
+              </msup>
+            </msubsup>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mrow>
+                <mi>rf</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>r</mi>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mo>&#x2146;</mo>
+                <mi>r</mi>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mrow>
+            <msubsup>
+              <mo>&#x222b;</mo>
+              <msup>
+                <mi>l</mi>
+                <mi>&#x2032;</mi>
+              </msup>
+              <msup>
+                <mi>u</mi>
+                <mi>&#x2032;</mi>
+              </msup>
+            </msubsup>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mrow>
+                <mi>f</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>r</mi>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mo>&#x2146;</mo>
+                <mi>r</mi>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mfrac>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>13</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+where l&#x2032;=LB({tilde over (r)},Q<sub>p</sub>), u&#x2032;=UB({tilde over (r)},Q<sub>p</sub>), Q<sub>p </sub>is the size of the quantization step used by the quantizer <b>214</b>, and &#x192;(r) represents the distribution of the DCT coefficients of the residual block. Based on Equations (12) and (13), an optimal reconstruction of a video signal <b>30</b> as determined by the estimation component <b>224</b> can then be expressed as follows:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>x</i><sub>opt</sub><i>=p+r</i><sub>opt</sub>.&#x2003;&#x2003;(14)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0041" num="0040">In accordance with one aspect, upon reconstruction of a video signal <b>30</b> by the stream reconstruction component <b>220</b>, an inverse DCT (IDCT) <b>226</b> can be performed on the reconstructed signal to convert the reconstructed signal back to the time domain. After conversion to the time domain via IDCT <b>226</b>, the reconstructed video signal can be further processed and/or displayed by a receiving device (e.g., a receiving device <b>20</b>).</p>
+<p id="p-0042" num="0041">In accordance with another aspect, the MSE of the reconstruction performed by the stream reconstruction component <b>220</b> for intra-coded blocks and inter-coded blocks in a video stream <b>30</b> can be expressed as MSE<sub>I</sub>(x<sub>opt</sub>) for intra-coded blocks and MSE<sub>P</sub>(x<sub>opt</sub>) for inter-coded blocks. Further, MSE for the respective types of blocks can be determined based on the following equations:</p>
+<p id="p-0043" num="0042">
+<maths id="MATH-US-00006" num="00006">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mrow>
+            <mi>M</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mi>S</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <msub>
+                <mi>E</mi>
+                <mi>I</mi>
+              </msub>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mi>opt</mi>
+                </msub>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <msubsup>
+              <mo>&#x222b;</mo>
+              <mi>l</mi>
+              <mi>u</mi>
+            </msubsup>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mi>x</mi>
+                    <mo>-</mo>
+                    <msub>
+                      <mi>x</mi>
+                      <mi>opt</mi>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mn>2</mn>
+              </msup>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>f</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>x</mi>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mo>&#x2146;</mo>
+                <mi>x</mi>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>15</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mrow>
+                <mi>M</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mi>S</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <msub>
+                    <mi>E</mi>
+                    <mi>P</mi>
+                  </msub>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <msub>
+                      <mi>x</mi>
+                      <mi>opt</mi>
+                    </msub>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <msubsup>
+                  <mo>&#x222b;</mo>
+                  <msup>
+                    <mi>l</mi>
+                    <mi>&#x2032;</mi>
+                  </msup>
+                  <msup>
+                    <mi>u</mi>
+                    <mi>&#x2032;</mi>
+                  </msup>
+                </msubsup>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <msup>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mi>p</mi>
+                            <mo>+</mo>
+                            <mi>r</mi>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                        <mo>-</mo>
+                        <mrow>
+                          <mo>(</mo>
+                          <mrow>
+                            <mi>p</mi>
+                            <mo>+</mo>
+                            <msub>
+                              <mi>r</mi>
+                              <mi>opt</mi>
+                            </msub>
+                          </mrow>
+                          <mo>)</mo>
+                        </mrow>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <mn>2</mn>
+                  </msup>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mi>f</mi>
+                    <mo>&#x2061;</mo>
+                    <mrow>
+                      <mo>(</mo>
+                      <mi>r</mi>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mo>&#x2146;</mo>
+                    <mi>x</mi>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <msubsup>
+                  <mo>&#x222b;</mo>
+                  <msup>
+                    <mi>l</mi>
+                    <mi>&#x2032;</mi>
+                  </msup>
+                  <msup>
+                    <mi>u</mi>
+                    <mi>&#x2032;</mi>
+                  </msup>
+                </msubsup>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <msup>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mi>r</mi>
+                        <mo>-</mo>
+                        <msub>
+                          <mi>r</mi>
+                          <mi>opt</mi>
+                        </msub>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <mn>2</mn>
+                  </msup>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mi>f</mi>
+                    <mo>&#x2061;</mo>
+                    <mrow>
+                      <mo>(</mo>
+                      <mi>r</mi>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mrow>
+                      <mo>&#x2146;</mo>
+                      <mi>x</mi>
+                    </mrow>
+                    <mo>.</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>16</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0044" num="0043">Turning to <figref idref="DRAWINGS">FIG. 3</figref>, a block diagram of a system <b>300</b> for reconstructing a video signal from multiple video streams <b>30</b> in accordance with various aspects is illustrated. In one example, system <b>300</b> includes a joint reconstruction component <b>22</b>, which can be employed by a receiving device (e.g. a receiving device <b>20</b>) and/or another suitable device. The joint reconstruction component <b>22</b> can obtain multiple video streams <b>30</b> (e.g., from a distributing device <b>10</b>), each of which can be compressed from the same raw video signal at different bit rates. Each video stream can be initially processed by one or more stream reconstruction components <b>220</b> as generally described supra with regard to system <b>200</b>. While system <b>300</b> illustrates a stream reconstruction component <b>220</b> corresponding to respective video streams <b>30</b>, it should be appreciated that fewer stream reconstruction components <b>220</b> can be employed by the joint reconstruction component <b>22</b> and that respective stream reconstruction components <b>220</b> can individually and/or jointly process any number of video streams <b>30</b>. For example, the joint reconstruction component <b>22</b> can contain a single stream reconstruction component <b>220</b> that initially processes all video streams <b>30</b>. In accordance with one aspect, the reconstructed individual streams can then be provided to a joint decoding component <b>310</b>, which can combine information from the reconstructed streams to reconstruct the raw video signal represented by the video streams <b>30</b>. An IDCT <b>226</b> can then be performed on the jointly reconstructed video signal to convert the signal to the time domain for display and/or other processing.</p>
+<p id="p-0045" num="0044">In accordance with one aspect, the joint decoding component <b>310</b> can reconstruct a video signal from multiple video streams <b>30</b> by utilizing a least square estimate (LSE) criterion. In one example, LSE joint decoding can be performed by the joint decoding component <b>310</b> as follows. First, from n video streams <b>30</b> representing the same original video, which can be represented as (V<sub>1</sub>, . . . , V<sub>n</sub>), optimal DCT coefficients for each individual video stream <b>30</b> in the MMSE sense can be determined by respective stream reconstruction component(s) <b>220</b> using Equations (12) and (14).</p>
+<p id="p-0046" num="0045">As used herein, DCT coefficients corresponding to each video stream <b>30</b> are collectively referred to as x and the indices i are omitted. Accordingly, the joint decoding component <b>310</b> can receive a column vector X<sub>MMSE</sub>=(x<sub>opt1</sub>, . . . , x<sub>optn</sub>)<sup>T</sup>, which represents the MMSE reconstructions of the collocated DCT coefficients from video streams (V<sub>1</sub>, . . . , V<sub>n</sub>) as performed by the respective stream reconstruction component(s) <b>220</b>. Additionally, the joint decoding component <b>310</b> can receive a column vector Err=(e<sub>1</sub>, . . . , e<sub>n</sub>)<sup>T </sup>of random variables that represent the reconstruction error from each video stream <b>30</b>. Based on these input vectors, the joint decoding component <b>310</b> can determine a least square estimate of an original video signal x as follows:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>x</i><sub>LSE</sub><i>=X</i><sub>MMSE</sub><sup>T</sup><i>&#xb7;W,</i>&#x2003;&#x2003;(17)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+where W=(w<sub>1</sub>, . . . , w<sub>n</sub>) represents a set of weights subject to the constraint
+</p>
+<p id="p-0047" num="0046">
+<maths id="MATH-US-00007" num="00007">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <munderover>
+      <mo>&#x2211;</mo>
+      <mrow>
+        <mi>i</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mrow>
+      <mi>n</mi>
+    </munderover>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.3em" height="0.3ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <msub>
+      <mi>w</mi>
+      <mi>n</mi>
+    </msub>
+  </mrow>
+  <mo>=</mo>
+  <mn>1</mn>
+</mrow>
+</math>
+</maths>
+<br/>
+that minimizes the following:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>E</i>[(<i>x&#x2212;x</i><sub>LSE</sub>)<sup>2</sup><i>]=E</i>[(Err<sup>T</sup><i>&#xb7;W</i>)<sup>2</sup>]&#x2003;&#x2003;(18)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+The joint decoding component <b>310</b> can then determine the value of each weight w<sub>i </sub>by differentiating Equation (18) with respect to w<sub>i </sub>for 1&#x2266;i&#x2266;n and solving the resulting n equations together with the constraint
+</p>
+<p id="p-0048" num="0047">
+<maths id="MATH-US-00008" num="00008">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <munderover>
+      <mo>&#x2211;</mo>
+      <mrow>
+        <mi>i</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mrow>
+      <mi>n</mi>
+    </munderover>
+    <mo>&#x2062;</mo>
+    <mstyle>
+      <mspace width="0.3em" height="0.3ex"/>
+    </mstyle>
+    <mo>&#x2062;</mo>
+    <msub>
+      <mi>w</mi>
+      <mi>n</mi>
+    </msub>
+  </mrow>
+  <mo>=</mo>
+  <mn>1.</mn>
+</mrow>
+</math>
+</maths>
+<br/>
+In one example, the joint reconstruction component <b>22</b> can then generate a reconstructed video signal by combining each reconstructed stream according to their corresponding determined weights and performing an IDCT <b>226</b> on the result.
+</p>
+<p id="p-0049" num="0048">In the specific, non-limiting example where two video streams <b>30</b> are present in the system <b>300</b>, the error variance of each stream after reconstruction by respective stream reconstruction component(s) <b>220</b> can be respectively expressed as &#x3c3;<sub>1</sub><sup>2</sup>=E[e<sub>1</sub><sup>2</sup>] and &#x3c3;<sub>2</sub><sup>2</sup>=E[e<sub>2</sub><sup>2</sup>]. Further, the error correlation coefficient between the two reconstructed streams can be expressed as &#x3c1;=E[e<sub>1</sub>e<sub>2</sub>]/&#x3c3;<sub>1</sub>&#x3c3;<sub>2</sub>. Based on these definitions, a set of weights W can be determined by the joint decoding component <b>310</b> as follows:</p>
+<p id="p-0050" num="0049">
+<maths id="MATH-US-00009" num="00009">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>W</mi>
+          <mo>=</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mfrac>
+                <mrow>
+                  <msubsup>
+                    <mi>&#x3c3;</mi>
+                    <mn>2</mn>
+                    <mn>2</mn>
+                  </msubsup>
+                  <mo>-</mo>
+                  <mrow>
+                    <msub>
+                      <mi>&#x3c3;</mi>
+                      <mn>1</mn>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>&#x3c3;</mi>
+                      <mn>2</mn>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <mi>&#x3c1;</mi>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <msubsup>
+                    <mi>&#x3c3;</mi>
+                    <mn>1</mn>
+                    <mn>2</mn>
+                  </msubsup>
+                  <mo>+</mo>
+                  <msubsup>
+                    <mi>&#x3c3;</mi>
+                    <mn>2</mn>
+                    <mn>2</mn>
+                  </msubsup>
+                  <mo>-</mo>
+                  <mrow>
+                    <mn>2</mn>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>&#x3c3;</mi>
+                      <mn>1</mn>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>&#x3c3;</mi>
+                      <mn>2</mn>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <mi>&#x3c1;</mi>
+                  </mrow>
+                </mrow>
+              </mfrac>
+              <mo>,</mo>
+              <mfrac>
+                <mrow>
+                  <msubsup>
+                    <mi>&#x3c3;</mi>
+                    <mn>1</mn>
+                    <mn>2</mn>
+                  </msubsup>
+                  <mo>-</mo>
+                  <mrow>
+                    <msub>
+                      <mi>&#x3c3;</mi>
+                      <mn>1</mn>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>&#x3c3;</mi>
+                      <mn>2</mn>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <mi>&#x3c1;</mi>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <msubsup>
+                    <mi>&#x3c3;</mi>
+                    <mn>1</mn>
+                    <mn>2</mn>
+                  </msubsup>
+                  <mo>+</mo>
+                  <msubsup>
+                    <mi>&#x3c3;</mi>
+                    <mn>2</mn>
+                    <mn>2</mn>
+                  </msubsup>
+                  <mo>-</mo>
+                  <mrow>
+                    <mn>2</mn>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>&#x3c3;</mi>
+                      <mn>1</mn>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>&#x3c3;</mi>
+                      <mn>2</mn>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <mi>&#x3c1;</mi>
+                  </mrow>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>19</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+where the error variances &#x3c3;<sub>1 </sub>and &#x3c3;<sub>2 </sub>of each DCT coefficient can be calculated with respect to Equations (15) and (16). In one example, the error correlation &#x3c1; can be obtained by simulation.
+</p>
+<p id="p-0051" num="0050">When two video signals <b>30</b> are present and optimal weights Ware utilized by the joint decoding component <b>310</b>, the expected mean square error of the LSE estimation performed by the joint decoding component <b>310</b> can be expressed as follows:</p>
+<p id="p-0052" num="0051">
+<maths id="MATH-US-00010" num="00010">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>E</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo>[</mo>
+            <msup>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mi>x</mi>
+                  <mo>-</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow>
+                      <mi>L</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mi>S</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mi>E</mi>
+                    </mrow>
+                  </msub>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mn>2</mn>
+            </msup>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <msubsup>
+                <mi>&#x3c3;</mi>
+                <mn>1</mn>
+                <mn>2</mn>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <msubsup>
+                  <mi>&#x3c3;</mi>
+                  <mn>2</mn>
+                  <mn>2</mn>
+                </msubsup>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>1</mn>
+                    <mo>-</mo>
+                    <msup>
+                      <mi>&#x3c1;</mi>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mrow>
+              <msubsup>
+                <mi>&#x3c3;</mi>
+                <mn>1</mn>
+                <mn>2</mn>
+              </msubsup>
+              <mo>+</mo>
+              <msubsup>
+                <mi>&#x3c3;</mi>
+                <mn>2</mn>
+                <mn>2</mn>
+              </msubsup>
+              <mo>-</mo>
+              <mrow>
+                <mn>2</mn>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <msub>
+                  <mi>&#x3c3;</mi>
+                  <mn>1</mn>
+                </msub>
+                <mo>&#x2062;</mo>
+                <msub>
+                  <mi>&#x3c3;</mi>
+                  <mn>2</mn>
+                </msub>
+                <mo>&#x2062;</mo>
+                <mi>&#x3c1;</mi>
+              </mrow>
+            </mrow>
+          </mfrac>
+          <mo>.</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>20</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0053" num="0052">By way of another specific, non-limiting example, the joint reconstruction component <b>22</b> can be used to reconstruct a video signal from multiple video streams <b>30</b> that are compressed using the H.263 codec. As the H.263 codec utilizes 8&#xd7;8 blocks, a stream reconstruction component <b>220</b> at the joint reconstruction component <b>22</b> can reconstruct a given video stream <b>30</b> by collecting statistics for each of the 64 corresponding DCT coefficients in each present inter-coded and intra-coded block in the video stream <b>30</b>. By doing so, the rate parameters for coefficient distribution can be obtained by observing the video streams <b>30</b>. For example, when an I-frame is decoded, rate parameters for the coefficients of corresponding intra-coded blocks can be estimated as described supra with regard to Equation (8). Additionally, when a P-frame is decoded, rate parameters for the coefficients of inter-coded blocks in the following P-frame can be estimated as described supra with regard to Equations (10) and (11).</p>
+<p id="p-0054" num="0053">Next, given the DCT distribution, MMSE decoding can be performed for each present video stream <b>30</b> in the DCT domain by respective stream reconstruction component(s) <b>220</b> as described supra with regard to Equations (12)-(14). In one example, this process can be embedded into the decoding process after dequantization of the image and/or residue for I-blocks and/or P-blocks but before an IDCT <b>226</b> is performed. This process can include calculating an MMSE estimate for each coefficient and its corresponding MSE and then computing a LSE joint estimate of the respective coefficients via the joint decoding component <b>310</b>. An IDCT <b>226</b> can then be performed on the LSE-estimated coefficients to obtain an enhanced video reconstruction.</p>
+<p id="p-0055" num="0054">In an additional example, operation of the joint reconstruction component <b>22</b> can be further simplified by performing LSE decoding only on the first few DCT coefficients of respective reconstructed blocks due to the fact that the power of respective high frequency DCT coefficients is relatively small as compared to the power of lower frequency DCT coefficients. By way of specific, non-limiting example, coefficients for each DCT block can be LSE decoded by the joint decoding component <b>310</b> in zigzag order. When the power of a coefficient is less than the expected MSE of the MMSE estimation, LSE decoding for the block can be terminated. By performing decoding in this manner, sufficient performance can be obtained by performing LSE decoding on approximately 20% of the coefficients present in the video streams <b>30</b>.</p>
+<p id="p-0056" num="0055">Referring next to <figref idref="DRAWINGS">FIG. 4</figref>, a graph <b>400</b> is provided that illustrates error correlation data for an example video decoding system in accordance with various aspects described herein. More particularly, graph <b>400</b> illustrates example error correlation coefficients &#x3c1; between two reconstructed video streams (V<sub>1</sub>,V<sub>2</sub>) with different quantization steps (Q<sub>p1</sub>,Q<sub>p2</sub>). If reconstructions V<sub>1 </sub>and V<sub>2 </sub>are inter-coded, it can be observed from Equation (10) that &#x3c1; can be a function of the ratio of Q<sub>p1</sub>/Q<sub>p2 </sub>and the residual covariance of the two video streams, which can be expressed as (E[r<sub>i</sub>(F<sub>k</sub>,V<sub>1</sub>)&#xb7;r<sub>i</sub>(F<sub>k</sub>,V<sub>2</sub>)]).</p>
+<p id="p-0057" num="0056">In one example, representative error correlation coefficients &#x3c1; can be obtained by fixing the ratio Q<sub>p1</sub>/Q<sub>p2 </sub>and measuring &#x3c1; in various simulation sequences. The simulation results can then be averaged to obtain coefficients &#x3c1; as a function of quantization step ratio. Graph <b>400</b> illustrates resulting values of &#x3c1; for each of the 64 DCT coefficients present in blocks of various simulation sequences in scanning order for 4 different quantization step ratios. It should be appreciated that while &#x3c1; is approximated in graph <b>400</b>, the approximations used are nonetheless accurate due to the slow variation of &#x3c1;. It can additionally be seen from graph <b>400</b> that the error correlations obtained for lower-frequency coefficients are smaller than those obtained for higher-frequency coefficients.</p>
+<p id="p-0058" num="0057">In another specific example, if two reconstructed video streams are both intra-coded, it can be observed from Equation (7) that the corresponding &#x3c1; can be a function of Q<sub>p1</sub>/Q<sub>p2 </sub>and the distribution of x<sub>i</sub>(F<sub>k</sub>). As a result, the error correlation coefficients &#x3c1; for such a case can be estimated in a similar manner to that illustrated by graph <b>400</b>. In yet another specific example, reconstructed signals coded with different modes, e.g. an intra-coded V<sub>1 </sub>and an inter-coded V<sub>2</sub>, can have an error correlation coefficient of &#x3c1;=0 as the signal is independent before quantization.</p>
+<p id="p-0059" num="0058">Referring to <figref idref="DRAWINGS">FIG. 5</figref>, a block diagram of an example system <b>500</b> for receiving and processing video streams <b>30</b> is illustrated. In accordance with one aspect, system <b>500</b> can include a receiving device <b>20</b>, to which multiple video streams <b>30</b> can be transmitted (e.g., by a distributing device <b>10</b>). In one example, the video streams <b>30</b> are generated (e.g., by a compression component <b>12</b>) from a common video signal using different bit rates. The receiving device <b>20</b> can include a joint reconstruction component <b>22</b> and/or a display component <b>24</b>, each of which can operate in accordance with various aspects described herein.</p>
+<p id="p-0060" num="0059">In one example, the receiving device <b>20</b> can include one or more antennas <b>510</b>, each of which can receive one or more video streams <b>30</b>. In accordance with one aspect, respective video streams <b>30</b> received by antenna(s) <b>510</b> at the receiving device <b>20</b> can be provided to a joint reconstruction component <b>22</b> at the receiving device <b>20</b>. While only two video streams <b>30</b> and two antennas <b>510</b> are illustrated for brevity, it should be appreciated that system <b>500</b> can include any number of video streams <b>30</b> and/or antennas <b>510</b>. By way of specific, non-limiting example, the receiving device <b>20</b> can be a mobile telephone or similar device that employs one or more antennas <b>510</b> for receiving video streams <b>30</b> from a wireless access point and/or another appropriate transmitting entity.</p>
+<p id="p-0061" num="0060">Additionally and/or alternatively, the number of video streams <b>30</b> transmitted to the receiving device <b>20</b> may be greater than the number of antennas <b>510</b> present at the receiving device <b>20</b>. Accordingly, antenna(s) <b>510</b> at the receiving device <b>20</b> can respectively be configured to receive multiple video streams <b>30</b>. For example, an antenna <b>510</b> at the receiving device <b>20</b> can receive multiple video streams <b>30</b> sequentially in time, or alternatively an antenna <b>510</b> can receive a plurality of multiplexed video streams <b>30</b> simultaneously (e.g. based on code division multiplexing (CDM), frequency division multiplexing (FDM), and/or another appropriate multiplexing technique). In one example, to facilitate sequential and/or multiplexed reception and processing of video streams <b>30</b>, the joint reconstruction component <b>22</b> can employ various buffering and/or storage mechanisms. In another example, system <b>500</b> can include multiple receiving devices <b>20</b> having one or more antennas <b>510</b>, and each receiving device <b>20</b> can be configured to receive only a subset of available video streams <b>30</b>. For example, a first receiving device <b>20</b> can be configured to receive only a first video stream <b>30</b> having a first bit rate, and a second receiving device <b>20</b> can be configured to receive only a second video stream <b>30</b> having a second bit rate. Such a scenario can occur, for example, due to variations in the communication capabilities of the receiving devices <b>20</b>, variations in network conditions between the receiving devices <b>20</b> and a transmitting entity, and/or other factors. In such an example, antennas <b>510</b> located at each receiving device <b>20</b> can be operable both to receive video streams <b>30</b> and to communicate received video streams <b>30</b> to other receiving devices <b>20</b> to facilitate joint reconstruction of the video streams in accordance with various aspects described herein.</p>
+<p id="p-0062" num="0061">Referring now to <figref idref="DRAWINGS">FIGS. 6-7</figref>, methodologies that can be implemented in accordance with various aspects described herein are illustrated. While, for purposes of simplicity of explanation, the methodologies are shown and described as a series of blocks, it is to be understood and appreciated that the claimed subject matter is not limited by the order of the blocks, as some blocks may, in accordance with the claimed subject matter, occur in different orders and/or concurrently with other blocks from that shown and described herein. Moreover, not all illustrated blocks may be required to implement the methodologies in accordance with the claimed subject matter.</p>
+<p id="p-0063" num="0062">Furthermore, the claimed subject matter may be described in the general context of computer-executable instructions, such as program modules, executed by one or more components. Generally, program modules include routines, programs, objects, data structures, etc., that perform particular tasks or implement particular abstract data types. Typically the functionality of the program modules may be combined or distributed as desired in various embodiments. Furthermore, as will be appreciated various portions of the disclosed systems above and methods below may include or consist of artificial intelligence or knowledge or rule based components, sub-components, processes, means, methodologies, or mechanisms (e.g., support vector machines, neural networks, expert systems, Bayesian belief networks, fuzzy logic, data fusion engines, classifiers . . . ). Such components, inter alia, can automate certain mechanisms or processes performed thereby to make portions of the systems and methods more adaptive as well as efficient and intelligent.</p>
+<p id="p-0064" num="0063">Referring to <figref idref="DRAWINGS">FIG. 6</figref>, a method <b>600</b> of processing video bit streams (e.g. video streams <b>30</b>) in accordance with various aspects is illustrated. At <b>602</b>, a plurality of video bit streams generated from a common original video signal (e.g., by a compression component <b>12</b>) are received (e.g., at a receiving device <b>20</b> from a distributing device <b>10</b>). At <b>604</b>, a video signal is recovered from the video bit streams (e.g., by a joint reconstruction component <b>22</b>) by jointly decoding the video bit streams. At <b>606</b>, the video signal recovered at <b>604</b> is displayed (e.g., by a display component <b>24</b>).</p>
+<p id="p-0065" num="0064">Turning to <figref idref="DRAWINGS">FIG. 7</figref>, a method <b>700</b> of reconstructing a video signal from multiple video bit streams is illustrated. At <b>702</b>, a plurality of video bit streams generated from a common original video signal are received. At <b>704</b>, respective blocks present in the video streams received at <b>702</b> are dequantized (e.g. by a dequantizer <b>222</b>). At <b>706</b>, a lower bound and an upper bound are determined for selected DCT coefficients in the blocks dequantized at <b>704</b>. At <b>708</b>, video signals are reconstructed (e.g., by estimation components <b>224</b> at respective stream reconstruction components <b>220</b>) from respective video streams over the selected DCT coefficients using the lower and upper bounds determined at <b>706</b>. Finally, at <b>710</b>, a least square estimate of the original video signal from which the video bit streams were generated at <b>702</b> is obtained by applying weights to respective reconstructed video streams that minimize the deviation of the combined video streams from the original video signal.</p>
+<p id="p-0066" num="0065">In order to provide additional context for various aspects described herein, <figref idref="DRAWINGS">FIG. 8</figref> and the following discussion are intended to provide a brief, general description of a suitable computing environment <b>800</b> in which various aspects of the claimed subject matter can be implemented. Additionally, while the above features have been described above in the general context of computer-executable instructions that may run on one or more computers, those skilled in the art will recognize that said features can also be implemented in combination with other program modules and/or as a combination of hardware and software.</p>
+<p id="p-0067" num="0066">Generally, program modules include routines, programs, components, data structures, etc., that perform particular tasks or implement particular abstract data types. Moreover, those skilled in the art will appreciate that the claimed subject matter can be practiced with other computer system configurations, including single-processor or multiprocessor computer systems, minicomputers, mainframe computers, as well as personal computers, hand-held computing devices, microprocessor-based or programmable consumer electronics, and the like, each of which can be operatively coupled to one or more associated devices.</p>
+<p id="p-0068" num="0067">The illustrated aspects may also be practiced in distributed computing environments where certain tasks are performed by remote processing devices that are linked through a communications network. In a distributed computing environment, program modules can be located in both local and remote memory storage devices.</p>
+<p id="p-0069" num="0068">A computer typically includes a variety of computer-readable media. Computer-readable media can be any available media that can be accessed by the computer and includes both volatile and nonvolatile media, removable and non-removable media. By way of example, and not limitation, computer-readable media can comprise computer storage media and communication media. Computer storage media can include both volatile and nonvolatile, removable and non-removable media implemented in any method or technology for storage of information such as computer-readable instructions, data structures, program modules or other data. Computer storage media includes, but is not limited to, RAM, ROM, EEPROM, flash memory or other memory technology, CD-ROM, digital versatile disk (DVD) or other optical disk storage, magnetic cassettes, magnetic tape, magnetic disk storage or other magnetic storage devices, or any other medium which can be used to store the desired information and which can be accessed by the computer.</p>
+<p id="p-0070" num="0069">Communication media typically embodies computer-readable instructions, data structures, program modules or other data in a modulated data signal such as a carrier wave or other transport mechanism, and includes any information delivery media. The term &#x201c;modulated data signal&#x201d; means a signal that has one or more of its characteristics set or changed in such a manner as to encode information in the signal. By way of example, and not limitation, communication media includes wired media such as a wired network or direct-wired connection, and wireless media such as acoustic, RF, infrared and other wireless media. Combinations of the any of the above should also be included within the scope of computer-readable media.</p>
+<p id="p-0071" num="0070">With reference again to <figref idref="DRAWINGS">FIG. 8</figref>, an exemplary environment <b>800</b> for implementing various aspects described herein includes a computer <b>802</b>, the computer <b>802</b> including a processing unit <b>804</b>, a system memory <b>806</b> and a system bus <b>808</b>. The system bus <b>808</b> couples to system components including, but not limited to, the system memory <b>806</b> to the processing unit <b>804</b>. The processing unit <b>804</b> can be any of various commercially available processors. Dual microprocessors and other multi-processor architectures may also be employed as the processing unit <b>804</b>.</p>
+<p id="p-0072" num="0071">The system bus <b>808</b> can be any of several types of bus structure that may further interconnect to a memory bus (with or without a memory controller), a peripheral bus, and a local bus using any of a variety of commercially available bus architectures. The system memory <b>806</b> includes read-only memory (ROM) <b>810</b> and random access memory (RAM) <b>812</b>. A basic input/output system (BIOS) is stored in a non-volatile memory <b>810</b> such as ROM, EPROM, EEPROM, which BIOS contains the basic routines that help to transfer information between elements within the computer <b>802</b>, such as during start-up. The RAM <b>812</b> can also include a high-speed RAM such as static RAM for caching data.</p>
+<p id="p-0073" num="0072">The computer <b>802</b> further includes an internal hard disk drive (HDD) <b>814</b> (e.g., EIDE, SATA), which internal hard disk drive <b>814</b> may also be configured for external use in a suitable chassis (not shown), a magnetic floppy disk drive (FDD) <b>816</b>, (e.g., to read from or write to a removable diskette <b>818</b>) and an optical disk drive <b>820</b>, (e.g., reading a CD-ROM disk <b>822</b> or, to read from or write to other high capacity optical media such as the DVD). The hard disk drive <b>814</b>, magnetic disk drive <b>816</b> and optical disk drive <b>820</b> can be connected to the system bus <b>808</b> by a hard disk drive interface <b>824</b>, a magnetic disk drive interface <b>826</b> and an optical drive interface <b>828</b>, respectively. The interface <b>824</b> for external drive implementations includes at least one or both of Universal Serial Bus (USB) and IEEE-1394 interface technologies. Other external drive connection technologies are within contemplation of the subject disclosure.</p>
+<p id="p-0074" num="0073">The drives and their associated computer-readable media provide nonvolatile storage of data, data structures, computer-executable instructions, and so forth. For the computer <b>802</b>, the drives and media accommodate the storage of any data in a suitable digital format. Although the description of computer-readable media above refers to a HDD, a removable magnetic diskette, and a removable optical media such as a CD or DVD, it should be appreciated by those skilled in the art that other types of media which are readable by a computer, such as zip drives, magnetic cassettes, flash memory cards, cartridges, and the like, may also be used in the exemplary operating environment, and further, that any such media may contain computer-executable instructions for performing the methods described herein.</p>
+<p id="p-0075" num="0074">A number of program modules can be stored in the drives and RAM <b>812</b>, including an operating system <b>830</b>, one or more application programs <b>832</b>, other program modules <b>834</b> and program data <b>836</b>. All or portions of the operating system, applications, modules, and/or data can also be cached in the RAM <b>812</b>. It is appreciated that the claimed subject matter can be implemented with various commercially available operating systems or combinations of operating systems.</p>
+<p id="p-0076" num="0075">A user can enter commands and information into the computer <b>802</b> through one or more wired/wireless input devices, e.g. a keyboard <b>838</b> and a pointing device, such as a mouse <b>840</b>. Other input devices (not shown) may include a microphone, an IR remote control, a joystick, a game pad, a stylus pen, touch screen, or the like. These and other input devices are often connected to the processing unit <b>804</b> through an input device interface <b>842</b> that is coupled to the system bus <b>808</b>, but can be connected by other interfaces, such as a parallel port, a serial port, an IEEE-1394 port, a game port, a USB port, an IR interface, etc.</p>
+<p id="p-0077" num="0076">A monitor <b>844</b> or other type of display device is also connected to the system bus <b>808</b> via an interface, such as a video adapter <b>846</b>. In addition to the monitor <b>844</b>, a computer typically includes other peripheral output devices (not shown), such as speakers, printers, etc.</p>
+<p id="p-0078" num="0077">The computer <b>802</b> may operate in a networked environment using logical connections via wired and/or wireless communications to one or more remote computers, such as a remote computer(s) <b>848</b>. The remote computer(s) <b>848</b> can be a workstation, a server computer, a router, a personal computer, portable computer, microprocessor-based entertainment appliance, a peer device or other common network node, and typically includes many or all of the elements described relative to the computer <b>802</b>, although, for purposes of brevity, only a memory/storage device <b>850</b> is illustrated. The logical connections depicted include wired/wireless connectivity to a local area network (LAN) <b>852</b> and/or larger networks, e.g. a wide area network (WAN) <b>854</b>. Such LAN and WAN networking environments are commonplace in offices and companies, and facilitate enterprise-wide computer networks, such as intranets, all of which may connect to a global communications network, e.g. the Internet.</p>
+<p id="p-0079" num="0078">When used in a LAN networking environment, the computer <b>802</b> is connected to the local network <b>852</b> through a wired and/or wireless communication network interface or adapter <b>856</b>. The adapter <b>856</b> may facilitate wired or wireless communication to the LAN <b>852</b>, which may also include a wireless access point disposed thereon for communicating with the wireless adapter <b>856</b>.</p>
+<p id="p-0080" num="0079">When used in a WAN networking environment, the computer <b>802</b> can include a modem <b>858</b>, or is connected to a communications server on the WAN <b>854</b>, or has other means for establishing communications over the WAN <b>854</b>, such as by way of the Internet. The modem <b>858</b>, which can be internal or external and a wired or wireless device, is connected to the system bus <b>808</b> via the serial port interface <b>842</b>. In a networked environment, program modules depicted relative to the computer <b>802</b>, or portions thereof, can be stored in the remote memory/storage device <b>850</b>. It will be appreciated that the network connections shown are exemplary and other means of establishing a communications link between the computers can be used.</p>
+<p id="p-0081" num="0080">The computer <b>802</b> is operable to communicate with any wireless devices or entities operatively disposed in wireless communication, e.g., a printer, scanner, desktop and/or portable computer, portable data assistant, communications satellite, any piece of equipment or location associated with a wirelessly detectable tag (e.g., a kiosk, news stand, restroom), and telephone. This includes at least Wi-Fi and Bluetooth&#x2122; wireless technologies. Thus, the communication can be a predefined structure as with a conventional network or simply an ad hoc communication between at least two devices.</p>
+<p id="p-0082" num="0081">Wi-Fi, or Wireless Fidelity, is a wireless technology similar to that used in a cell phone that enables a device to send and receive data anywhere within the range of a base station. Wi-Fi networks use IEEE-802.11 (a, b, g, etc.) radio technologies to provide secure, reliable, and fast wireless connectivity. A Wi-Fi network can be used to connect computers to each other, to the Internet, and to wired networks (which use IEEE-802.3 or Ethernet). Wi-Fi networks operate in the unlicensed 2.4 and 5 GHz radio bands, at an 13 Mbps (802.11a) or 54 Mbps (802.11b) data rate, for example, or with products that contain both bands (dual band). Thus, networks using Wi-Fi wireless technology can provide real-world performance similar to a 10BaseT wired Ethernet network.</p>
+<p id="p-0083" num="0082">Referring now to <figref idref="DRAWINGS">FIG. 9</figref>, a schematic block diagram of an example networked computing environment in which various aspects described herein can function is illustrated. The system <b>900</b> includes one or more client(s) <b>902</b>, which can be hardware and/or software (e.g., threads, processes, computing devices). In one example, the client(s) <b>902</b> can house cookie(s) and/or associated contextual information.</p>
+<p id="p-0084" num="0083">The system <b>900</b> can additionally include one or more server(s) <b>904</b>, which can also be hardware and/or software (e.g. threads, processes, computing devices). In one example, the servers <b>904</b> can house threads to perform one or more transformations. One possible communication between a client <b>902</b> and a server <b>904</b> can be in the form of a data packet adapted to be transmitted between two or more computer processes. The data packet can include, for example, a cookie and/or associated contextual information. The system <b>900</b> can further include a communication framework <b>906</b> (e.g., a global communication network such as the Internet) that can be employed to facilitate communications between the client(s) <b>902</b> and the server(s) <b>904</b>.</p>
+<p id="p-0085" num="0084">Communications can be facilitated via a wired (including optical fiber) and/or wireless technology. The client(s) <b>902</b> are operatively connected to one or more client data store(s) <b>908</b> that can be employed to store information local to the client(s) <b>902</b> (e.g., cookie(s) and/or associated contextual information). Similarly, the server(s) <b>904</b> are operatively connected to one or more server data store(s) <b>910</b> that can be employed to store information local to the servers <b>904</b>.</p>
+<p id="p-0086" num="0085">The claimed subject matter has been described herein by way of examples. For the avoidance of doubt, the subject matter disclosed herein is not limited by such examples. In addition, any aspect or design described herein as &#x201c;exemplary&#x201d; is not necessarily to be construed as preferred or advantageous over other aspects or designs, nor is it meant to preclude equivalent exemplary structures and techniques known to those of ordinary skill in the art. Furthermore, to the extent that the terms &#x201c;includes,&#x201d; &#x201c;has,&#x201d; &#x201c;contains,&#x201d; and other similar words are used in either the detailed description or the claims, for the avoidance of doubt, such terms are intended to be inclusive in a manner similar to the term &#x201c;comprising&#x201d; as an open transition word without precluding any additional or other elements.</p>
+<p id="p-0087" num="0086">Additionally, the disclosed subject matter can be implemented as a system, method, apparatus, or article of manufacture using standard programming and/or engineering techniques to produce software, firmware, hardware, or any combination thereof to control a computer or processor based device to implement aspects detailed herein. The terms &#x201c;article of manufacture,&#x201d; &#x201c;computer program product&#x201d; or similar terms, where used herein, are intended to encompass a computer program accessible from any computer-readable device, carrier, or media. For example, computer readable media can include but are not limited to magnetic storage devices (e.g. hard disk, floppy disk, magnetic strips . . . ), optical disks (e.g., compact disk (CD), digital versatile disk (DVD) . . . ), smart cards, and flash memory devices (e.g., card, stick). Additionally, it is known that a carrier wave can be employed to carry computer-readable electronic data such as those used in transmitting and receiving electronic mail or in accessing a network such as the Internet or a local area network (LAN).</p>
+<p id="p-0088" num="0087">The aforementioned systems have been described with respect to interaction between several components. It can be appreciated that such systems and components can include those components or specified sub-components, some of the specified components or sub-components, and/or additional components, according to various permutations and combinations of the foregoing. Sub-components can also be implemented as components communicatively coupled to other components rather than included within parent components, e.g. according to a hierarchical arrangement. Additionally, it should be noted that one or more components can be combined into a single component providing aggregate functionality or divided into several separate sub-components, and any one or more middle layers, such as a management layer, can be provided to communicatively couple to such sub-components in order to provide integrated functionality. Any components described herein can also interact with one or more other components not specifically described herein but generally known by those of skill in the art.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08625676-20140107-M00001.NB">
+<img id="EMI-M00001" he="25.74mm" wi="76.20mm" file="US08625676-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08625676-20140107-M00002.NB">
+<img id="EMI-M00002" he="8.13mm" wi="76.20mm" file="US08625676-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00003" nb-file="US08625676-20140107-M00003.NB">
+<img id="EMI-M00003" he="7.79mm" wi="76.20mm" file="US08625676-20140107-M00003.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00004" nb-file="US08625676-20140107-M00004.NB">
+<img id="EMI-M00004" he="10.92mm" wi="76.20mm" file="US08625676-20140107-M00004.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00005" nb-file="US08625676-20140107-M00005.NB">
+<img id="EMI-M00005" he="12.02mm" wi="76.20mm" file="US08625676-20140107-M00005.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00006" nb-file="US08625676-20140107-M00006.NB">
+<img id="EMI-M00006" he="23.28mm" wi="76.20mm" file="US08625676-20140107-M00006.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00007" nb-file="US08625676-20140107-M00007.NB">
+<img id="EMI-M00007" he="8.47mm" wi="76.20mm" file="US08625676-20140107-M00007.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00008" nb-file="US08625676-20140107-M00008.NB">
+<img id="EMI-M00008" he="8.47mm" wi="76.20mm" file="US08625676-20140107-M00008.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00009" nb-file="US08625676-20140107-M00009.NB">
+<img id="EMI-M00009" he="7.79mm" wi="76.20mm" file="US08625676-20140107-M00009.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00010" nb-file="US08625676-20140107-M00010.NB">
+<img id="EMI-M00010" he="7.79mm" wi="76.20mm" file="US08625676-20140107-M00010.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A system, comprising:
+<claim-text>a joint reconstruction component that reconstructs a common original video signal from respective video streams encoded at disparate bit rates from the common original video signal based at least in part on a decoding that employs a least squares estimation, the joint reconstruction component comprising:
+<claim-text>one or more stream reconstruction components that reconstruct video signal information corresponding to the respective video streams, wherein the one or more stream reconstruction components further comprise respective estimation components that determine respective ranges of discrete cosine transform coefficients for the respective video streams, and select values for the discrete cosine transform coefficients for the respective video streams from the respective ranges based on a probability distribution for the discrete cosine transform coefficients; and</claim-text>
+<claim-text>a joint decoding component that creates a reconstructed video signal at least in part by determining weight values for the video signal information corresponding to the respective video streams to reduce a distortion between the common original video signal and the reconstructed video signal.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The system of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the respective video streams are frequency domain video streams respectively comprising the discrete cosine transform coefficients.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The system of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the joint reconstruction component reconstructs the common original video signal in a frequency domain, and converts the common original video signal reconstructed by the joint reconstruction component to a time domain video signal by performing an inverse discrete cosine transform.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The system of <claim-ref idref="CLM-00003">claim 3</claim-ref>, further comprising a display component that displays the common original video signal reconstructed by the joint reconstruction component.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The system of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the respective video streams are quantized based on the bit rates for the respective video streams, and the one or more stream reconstruction components comprise respective one or more dequantizers that dequantize the respective video streams based on the bit rates of the respective video streams.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The system of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the one or more stream reconstruction components select the values for the discrete cosine transform coefficients to minimize or substantially minimize a minimum mean square error of the reconstructed video signal in relation to the common original video signal.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The system of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the joint decoding component further combines the reconstructed video signal information based on the weight values.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The system of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising one or more antennas that receive the respective video streams.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. A method, comprising:
+<claim-text>decoding respective video bit streams resulting in decoded video bit streams, wherein the video bit streams originate from a common original video signal and are encoded at different bit rates; and</claim-text>
+<claim-text>recovering the common original video signal at least in part by jointly analyzing the decoded video bit streams to obtain a least square estimate of the common original video signal, wherein the recovering comprises:
+<claim-text>determining a lower bound and an upper bound for selected discrete cosine transform coefficients in respective blocks in the decoded video bit streams;</claim-text>
+<claim-text>applying weight values to the decoded video bit streams, wherein the weight values are based on a deviation between the common original video signal and the decoded video bit streams; and</claim-text>
+</claim-text>
+<claim-text>obtaining a reconstruction of the common original video signal for the selected discrete cosine transform coefficients based at least in part on the lower bound, the upper bound, a probability distribution for the selected discrete cosine transform coefficients, and the weight values.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method of <claim-ref idref="CLM-00009">claim 9</claim-ref>, further comprising:
+<claim-text>receiving the respective video bit streams as a plurality of frequency-domain video bit streams; and</claim-text>
+<claim-text>converting the respective video bit streams to a frequency domain representation based on a discrete cosine transform.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The method of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the respective video bit streams comprise respective blocks having a predetermined number of discrete cosine transform coefficients.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The method of <claim-ref idref="CLM-00011">claim 11</claim-ref>, further comprising quantizing the respective blocks using quantization steps, wherein the quantization steps are based on the bit rates of the respective video bit streams.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The method of <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein the decoding comprises dequantizing the respective blocks in the respective video bit streams based on the quantization steps.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The method of <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein the applying the weight values yields weighted video bit streams, and the method further comprises
+<claim-text>combining the decoded video bit streams and the weighted video bit streams to obtain a recovered video signal.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The method of <claim-ref idref="CLM-00014">claim 14</claim-ref>, further comprising obtaining a time-domain recovered video signal by performing an inverse discrete cosine transform on the recovered video signal.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. A computer-readable storage device having stored thereon computer-executable instructions that, in response to execution, cause a computer system including a processor to perform operations, comprising:
+<claim-text>decoding respective video bit streams to yield decoded video bit streams, wherein the video bit streams originate from a common original video signal and are encoded at different bit rates; and</claim-text>
+<claim-text>recovering the common original video signal at least in part by jointly analyzing the decoded video bit streams to obtain a least square estimate of the common original video signal, wherein the recovering comprises:
+<claim-text>determining a lower bound and an upper bound for selected discrete cosine transform coefficients in respective blocks in the decoded video bit streams;</claim-text>
+<claim-text>associating weight values to the decoded video bit streams, wherein the weight values are determined based on a deviation between the common original video signal and the decoded video bit streams; and</claim-text>
+<claim-text>obtaining a reconstruction of the common original video signal for the selected discrete cosine transform coefficients based at least in part on the lower bound, the upper bound, a probability distribution for the selected discrete cosine transform coefficients, and the weight values.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The computer-readable storage device of <claim-ref idref="CLM-00016">claim 16</claim-ref>, wherein the operations further comprise receiving the respective video bit streams as a plurality of frequency-domain video bit streams, wherein the respective video bit streams are converted to a frequency-domain representation based on a discrete cosine transform.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. A system, comprising:
+<claim-text>means for jointly decoding a plurality of data streams having different bit rates to reconstruct an original video sequence at least in part by obtaining a least square estimate of the original video sequence from the plurality of data streams; and</claim-text>
+<claim-text>means for reconstructing data signal information corresponding to the plurality of data streams, wherein the means for reconstructing comprises:
+<claim-text>means for determining reconstructed discrete cosine transform coefficients for the plurality of data streams at least in part by determining upper bounds and lower bounds for respective discrete cosine transform coefficients of the plurality of data streams;</claim-text>
+<claim-text>means for selecting values for the respective discrete cosine transform coefficients from respective ranges defined by the upper bounds and lower bounds based on a probability distribution for the discreet cosine transform coefficients; and</claim-text>
+<claim-text>means for generating a reconstructed video signal by determining weight values for the data signal information corresponding to the plurality of data streams based on a deviation between the original video signal and the reconstructed video signal.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The system of <claim-ref idref="CLM-00018">claim 18</claim-ref>, further comprising means for obtaining a frequency-domain reconstruction of the original video sequence for the values of the respective discrete cosine transform coefficients.</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

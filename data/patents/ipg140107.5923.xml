@@ -1,0 +1,1554 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627032-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627032</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13204002</doc-number>
+<date>20110805</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>12</main-group>
+<subgroup>14</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>711163</main-classification>
+<further-classification>711E12091</further-classification>
+</classification-national>
+<invention-title id="d2e43">Memory protection unit with support for distributed permission checks</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>7260690</doc-number>
+<kind>B2</kind>
+<name>Brucklmayr et al.</name>
+<date>20070800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711152</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2003/0212840</doc-number>
+<kind>A1</kind>
+<name>Namba</name>
+<date>20031100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>710 22</main-classification></classification-national>
+</us-citation>
+</us-references-cited>
+<number-of-claims>5</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>711163</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711E12091</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>5</number-of-drawing-sheets>
+<number-of-figures>9</number-of-figures>
+</figures>
+<us-related-documents>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61384932</doc-number>
+<date>20100921</date>
+</document-id>
+</us-provisional-application>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120272027</doc-number>
+<kind>A1</kind>
+<date>20121025</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Zbiciak</last-name>
+<first-name>Joseph R.</first-name>
+<address>
+<city>Arlington</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Zbiciak</last-name>
+<first-name>Joseph R.</first-name>
+<address>
+<city>Arlington</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<last-name>Marshall, Jr.</last-name>
+<first-name>Robert D.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="02" rep-type="attorney">
+<addressbook>
+<last-name>Brady</last-name>
+<first-name>W. James</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="03" rep-type="attorney">
+<addressbook>
+<last-name>Telecky, Jr.</last-name>
+<first-name>Frederick J.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Texas Instruments Incorporated</orgname>
+<role>02</role>
+<address>
+<city>Dallas</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Choe</last-name>
+<first-name>Yong</first-name>
+<department>2185</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A memory management and protection system that manages memory access requests from a number of requestors. Memory accesses are allowed or disallowed based on the permissions assigned to the request based on the memory segment being accessed. The decision to allow or disallow access is made by the extended memory controller by merging the permissions assigned to the memory segment being accessed, and the permissions assigned to the access request by the originating memory controller or other endpoint.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="77.55mm" wi="160.78mm" file="US08627032-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="258.49mm" wi="178.99mm" file="US08627032-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="253.24mm" wi="167.39mm" orientation="landscape" file="US08627032-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="246.89mm" wi="173.06mm" orientation="landscape" file="US08627032-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="258.49mm" wi="160.78mm" file="US08627032-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="114.89mm" wi="112.78mm" file="US08627032-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CLAIM OF PRIORITY</heading>
+<p id="p-0002" num="0001">This application claims priority under 35 USC 119(e) (1) to U.S. Provisional Application No. 61/384,932 filed Sep. 21, 2010.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">TECHNICAL FIELD OF THE INVENTION</heading>
+<p id="p-0003" num="0002">This invention relates in general to the field of computing systems and more particularly to memory management and protection.</p>
+<heading id="h-0003" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0004" num="0003">Current state of the art general purpose processors rely on memory management units (MMU) to provide both memory protection and address translation functions. The most typical memory management units provide a page-oriented architecture, usually fixed around a small number of different page sizes &#x2014;4 KB only, 4 KB+64 KB, 4 KB+2 MB, etc. Memory management units are very flexible, but they suffer from multiple drawbacks:
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0000">
+    <ul id="ul0002" list-style="none">
+        <li id="ul0002-0001" num="0004">Complicated to design and verify.</li>
+        <li id="ul0002-0002" num="0005">Variable performance depending on how the memory management unit is implemented. Most of the commonly used implementations can add significant uncertainty to memory system performance.</li>
+        <li id="ul0002-0003" num="0006">For best performance, the memory management unit needs to be tightly integrated in the memory hierarchy, preferably at or near the CPU/L1 cache boundary. Once tightly integrated, it is difficult to remove, reducing the flexibility of the architecture to scale to meet cost and performance targets.</li>
+        <li id="ul0002-0004" num="0007">A potentially large memory footprint is required for page table entries due to the small page sizes in big systems. For example, it takes 1,048,576 4 KB pages to fully map a 4 GB memory system.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0005" num="0008">An additional problem arises with conventional memory management units used in large, multiprocessor systems using 32 bit processor elements. While the logical address place for each processor or each task will still fit into a 32 bit address place, the physical address place of the memory system may exceed the 32 bit range. In this case an address translation unit is required that is capable of producing wider physical addresses than the logical addresses it started with, so that the total physical address space can be larger than the logical address space.</p>
+<heading id="h-0004" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0006" num="0009">This invention describes a distributed memory management and protection system. In a complex multi processor system there are many parallel threads of execution, and many sources making memory requests at any given time. In such a system the memory protection system must make decisions based on the privilege context associated with each request. These requests may come from a variety of sources like DMA controllers, but it is preferable to consider the CPU that originated the request instead of the immediate source.</p>
+<p id="p-0007" num="0010">In a multiprocessor environment each processing element may do it's own memory permission checking for memory access requests leaving the module. The Memory Protection And eXtension (MPAX) unit in each eXtended Memory Controller (XMC) has a limited number of segments, limiting the granularity of the protection settings. This invention merges the permissions of the matched segment with permission data returned from downstream memory controllers, allowing the downstream controllers to determine permissions on a finer granularity.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0005" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0008" num="0011">These and other aspects of this invention are illustrated in the drawings, in which:</p>
+<p id="p-0009" num="0012"><figref idref="DRAWINGS">FIG. 1</figref> illustrates the organization of a typical digital signal processor to which this invention is applicable (prior art);</p>
+<p id="p-0010" num="0013"><figref idref="DRAWINGS">FIG. 2</figref> illustrates details of a very long instruction word digital signal processor core suitable for use in <figref idref="DRAWINGS">FIG. 1</figref> (prior art);</p>
+<p id="p-0011" num="0014"><figref idref="DRAWINGS">FIG. 3</figref> illustrates the pipeline stages of the very long instruction word digital signal processor core illustrated in <figref idref="DRAWINGS">FIG. 2</figref> (prior art);</p>
+<p id="p-0012" num="0015"><figref idref="DRAWINGS">FIG. 4</figref> illustrates the instruction syntax of the very long instruction word digital signal processor core illustrated in <figref idref="DRAWINGS">FIG. 2</figref> (prior art);</p>
+<p id="p-0013" num="0016"><figref idref="DRAWINGS">FIG. 5</figref> illustrates the permission fields in the segment registers;</p>
+<p id="p-0014" num="0017"><figref idref="DRAWINGS">FIG. 6</figref> illustrates the content of the segment registers,</p>
+<p id="p-0015" num="0018"><figref idref="DRAWINGS">FIG. 7</figref> illustrates an example of a memory map with segment mapping and address extension,</p>
+<p id="p-0016" num="0019"><figref idref="DRAWINGS">FIG. 8</figref> illustrates part of the extended memory controller, and</p>
+<p id="p-0017" num="0020"><figref idref="DRAWINGS">FIG. 9</figref> illustrates an example of merging permission fields.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0006" level="1">DETAILED DESCRIPTION OF PREFERRED EMBODIMENTS</heading>
+<p id="p-0018" num="0021"><figref idref="DRAWINGS">FIG. 1</figref> illustrates the organization of a typical digital signal processor system <b>100</b> to which this invention is applicable (prior art). Digital signal processor system <b>100</b> includes central processing unit core <b>110</b>. Central processing unit core <b>110</b> includes the data processing portion of digital signal processor system <b>100</b>. Central processing unit core <b>110</b> could be constructed as known in the art and would typically includes a register file, an integer arithmetic logic unit, an integer multiplier and program flow control units. An example of an appropriate central processing unit core is described below in conjunction with <figref idref="DRAWINGS">FIGS. 2 to 4</figref>.</p>
+<p id="p-0019" num="0022">Digital signal processor system <b>100</b> includes a number of cache memories. <figref idref="DRAWINGS">FIG. 1</figref> illustrates a pair of first level caches. Level one instruction cache (L1I) <b>121</b> stores instructions used by central processing unit core <b>110</b>. Central processing unit core <b>110</b> first attempts to access any instruction from level one instruction cache <b>121</b>. Level one data cache (L1D) <b>123</b> stores data used by central processing unit core <b>110</b>. Central processing unit core <b>110</b> first attempts to access any required data from level one data cache <b>123</b>. The two level one caches are backed by a level two unified cache (L2) <b>130</b>. In the event of a cache miss to level one instruction cache <b>121</b> or to level one data cache <b>123</b>, the requested instruction or data is sought from level two unified cache <b>130</b>. If the requested instruction or data is stored in level two unified cache <b>130</b>, then it is supplied to the requesting level one cache for supply to central processing unit core <b>110</b>. As is known in the art, the requested instruction or data may be simultaneously supplied to both the requesting cache and central processing unit core <b>110</b> to speed use.</p>
+<p id="p-0020" num="0023">Level two unified cache <b>130</b> is further coupled to higher level memory systems. Digital signal processor system <b>100</b> may be a part of a multiprocessor system. The other processors of the multiprocessor system are coupled to level two unified cache <b>130</b> via a transfer request bus <b>141</b> and a data transfer bus <b>143</b>. A direct memory access unit <b>150</b> provides the connection of digital signal processor system <b>100</b> to external memory <b>161</b> and external peripherals <b>169</b>.</p>
+<p id="p-0021" num="0024"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram illustrating details of a digital signal processor integrated circuit <b>200</b> suitable but not essential for use in this invention (prior art). The digital signal processor integrated circuit <b>200</b> includes central processing unit <b>1</b>, which is a 32-bit eight-way VLIW pipelined processor. Central processing unit <b>1</b> is coupled to level one instruction cache <b>121</b> included in digital signal processor integrated circuit <b>200</b>. Digital signal processor integrated circuit <b>200</b> also includes level one data cache <b>123</b>. Digital signal processor integrated circuit <b>200</b> also includes peripherals <b>4</b> to <b>9</b>. These peripherals preferably include an external memory interface (EMIF) <b>4</b> and a direct memory access (DMA) controller <b>5</b>. External memory interface (EMIF) <b>4</b> preferably supports access to supports synchronous and asynchronous SRAM and synchronous DRAM. Direct memory access (DMA) controller <b>5</b> preferably provides 2-channel auto-boot loading direct memory access. These peripherals include power-down logic <b>6</b>. Power-down logic <b>6</b> preferably can halt central processing unit activity, peripheral activity, and phase lock loop (PLL) clock synchronization activity to reduce power consumption. These peripherals also include host ports <b>7</b>, serial ports <b>8</b> and programmable timers <b>9</b>.</p>
+<p id="p-0022" num="0025">Central processing unit <b>1</b> has a 32-bit, byte addressable address space. Internal memory on the same integrated circuit is preferably organized in a data space including level one data cache <b>123</b> and a program space including level one instruction cache <b>121</b>. When off-chip memory is used, preferably these two spaces are unified into a single memory space via the external memory interface (EMIF) <b>4</b>.</p>
+<p id="p-0023" num="0026">Level one data cache <b>123</b> may be internally accessed by central processing unit <b>1</b> via two internal ports <b>3</b><i>a </i>and <b>3</b><i>b</i>. Each internal port <b>3</b><i>a </i>and <b>3</b><i>b </i>preferably has 32 bits of data and a 32-bit byte address reach. Level one instruction cache <b>121</b> may be internally accessed by central processing unit <b>1</b> via a single port <b>2</b><i>a</i>. Port <b>2</b><i>a </i>of level one instruction cache <b>121</b> preferably has an instruction-fetch width of 256 bits and a 30-bit word (four bytes) address, equivalent to a 32-bit byte address.</p>
+<p id="p-0024" num="0027">Central processing unit <b>1</b> includes program fetch unit <b>10</b>, instruction dispatch unit <b>11</b>, instruction decode unit <b>12</b> and two data paths <b>20</b> and <b>30</b>. First data path <b>20</b> includes four functional units designated L1 unit <b>22</b>, S1 unit <b>23</b>, M1 unit <b>24</b> and D1 unit <b>25</b> and 16 32-bit A registers forming register file <b>21</b>. Second data path <b>30</b> likewise includes four functional units designated L2 unit <b>32</b>, S2 unit <b>33</b>, M2 unit <b>34</b> and D2 unit <b>35</b> and 16 32-bit B registers forming register file <b>31</b>. The functional units of each data path access the corresponding register file for their operands. There are two cross paths <b>27</b> and <b>37</b> permitting access to one register in the opposite register file each pipeline stage. Central processing unit <b>1</b> includes control registers <b>13</b>, control logic <b>14</b>, test logic <b>15</b>, emulation logic <b>16</b> and interrupt logic <b>17</b>.</p>
+<p id="p-0025" num="0028">Program fetch unit <b>10</b>, instruction dispatch unit <b>11</b> and instruction decode unit <b>12</b> recall instructions from level one instruction cache <b>121</b> and deliver up to eight 32-bit instructions to the functional units every instruction cycle. Processing occurs simultaneously in each of the two data paths <b>20</b> and <b>30</b>. As previously described each data path has four corresponding functional units (L, S, M and D) and a corresponding register file containing 16 32-bit registers. Each functional unit is controlled by a 32-bit instruction. The data paths are further described below. A control register file <b>13</b> provides the means to configure and control various processor operations.</p>
+<p id="p-0026" num="0029"><figref idref="DRAWINGS">FIG. 3</figref> illustrates the pipeline stages <b>300</b> of digital signal processor core <b>110</b> (prior art). These pipeline stages are divided into three groups: fetch group <b>310</b>; decode group <b>320</b>; and execute group <b>330</b>. All instructions in the instruction set flow through the fetch, decode, and execute stages of the pipeline. Fetch group <b>310</b> has four phases for all instructions, and decode group <b>320</b> has two phases for all instructions. Execute group <b>330</b> requires a varying number of phases depending on the type of instruction.</p>
+<p id="p-0027" num="0030">The fetch phases of the fetch group <b>310</b> are: Program address generate phase <b>311</b> (PG); Program address send phase <b>312</b> (PS); Program access ready wait stage <b>313</b> (PW); and Program fetch packet receive stage <b>314</b> (PR). Digital signal processor core <b>110</b> uses a fetch packet (FP) of eight instructions. All eight of the instructions proceed through fetch group <b>310</b> together. During PG phase <b>311</b>, the program address is generated in program fetch unit <b>10</b>. During PS phase <b>312</b>, this program address is sent to memory. During PW phase <b>313</b>, the memory read occurs. Finally during PR phase <b>314</b>, the fetch packet is received at CPU <b>1</b>.</p>
+<p id="p-0028" num="0031">The decode phases of decode group <b>320</b> are: Instruction dispatch (DP) <b>321</b>; and Instruction decode (DC) <b>322</b>. During the DP phase <b>321</b>, the fetch packets are split into execute packets. Execute packets consist of one or more instructions which are coded to execute in parallel. During DP phase <b>322</b>, the instructions in an execute packet are assigned to the appropriate functional units. Also during DC phase <b>322</b>, the source registers, destination registers and associated paths are decoded for the execution of the instructions in the respective functional units.</p>
+<p id="p-0029" num="0032">The execute phases of the execute group <b>330</b> are: Execute 1 (E1) <b>331</b>; Execute 2 (E2) <b>332</b>; Execute 3 (E3) <b>333</b>; Execute 4 (E4) <b>334</b>; and Execute 5 (E5) <b>335</b>. Different types of instructions require different numbers of these phases to complete. These phases of the pipeline play an important role in understanding the device state at CPU cycle boundaries.</p>
+<p id="p-0030" num="0033">During E1 phase <b>331</b>, the conditions for the instructions are evaluated and operands are read for all instruction types. For load and store instructions, address generation is performed and address modifications are written to a register file. For branch instructions, branch fetch packet in PG phase <b>311</b> is affected. For all single-cycle instructions, the results are written to a register file. All single-cycle instructions complete during the E1 phase <b>331</b>.</p>
+<p id="p-0031" num="0034">During the E2 phase <b>332</b>, for load instructions, the address is sent to memory. For store instructions, the address and data are sent to memory. Single-cycle instructions that saturate results set the SAT bit in the control status register (CSR) if saturation occurs. For single cycle 16 by 16 multiply instructions, the results are written to a register file. For M unit non-multiply instructions, the results are written to a register file. All ordinary multiply unit instructions complete during E2 phase <b>322</b>.</p>
+<p id="p-0032" num="0035">During E3 phase <b>333</b>, data memory accesses are performed. Any multiply instruction that saturates results sets the SAT bit in the control status register (CSR) if saturation occurs. Store instructions complete during the E3 phase <b>333</b>.</p>
+<p id="p-0033" num="0036">During E4 phase <b>334</b>, for load instructions, data is brought to the CPU boundary. For multiply extension instructions, the results are written to a register file. Multiply extension instructions complete during the E4 phase <b>334</b>.</p>
+<p id="p-0034" num="0037">During E5 phase <b>335</b>, load instructions write data into a register. Load instructions complete during the E5 phase <b>335</b>.</p>
+<p id="p-0035" num="0038"><figref idref="DRAWINGS">FIG. 4</figref> illustrates an example of the instruction coding of instructions used by digital signal processor core <b>110</b> (prior art). Each instruction consists of 32 bits and controls the operation of one of the eight functional units. The bit fields are defined as follows. The creg field (bits <b>29</b> to <b>31</b>) is the conditional register field. These bits identify whether the instruction is conditional and identify the predicate register. The z bit (bit <b>28</b>) indicates whether the predication is based upon zero or not zero in the predicate register. If z=1, the test is for equality with zero. If z=0, the test is for nonzero. The case of creg=0 and z=0 is treated as always true to allow unconditional instruction execution. The creg field is encoded in the instruction opcode as shown in Table 1.</p>
+<p id="p-0036" num="0039">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="70pt" align="left"/>
+<colspec colname="2" colwidth="84pt" align="center"/>
+<colspec colname="3" colwidth="49pt" align="center"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="3" rowsep="1">TABLE 1</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry namest="offset" nameend="3" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Conditional</entry>
+<entry>creg</entry>
+<entry>z</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="6">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="70pt" align="left"/>
+<colspec colname="2" colwidth="21pt" align="center"/>
+<colspec colname="3" colwidth="49pt" align="center"/>
+<colspec colname="4" colwidth="14pt" align="center"/>
+<colspec colname="5" colwidth="49pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Register</entry>
+<entry>31</entry>
+<entry>30</entry>
+<entry>29</entry>
+<entry>28</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="5" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Unconditional</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+</row>
+<row>
+<entry/>
+<entry>Reserved</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>1</entry>
+</row>
+<row>
+<entry/>
+<entry>B0</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>z</entry>
+</row>
+<row>
+<entry/>
+<entry>B1</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry>z</entry>
+</row>
+<row>
+<entry/>
+<entry>B2</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>1</entry>
+<entry>z</entry>
+</row>
+<row>
+<entry/>
+<entry>A1</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>z</entry>
+</row>
+<row>
+<entry/>
+<entry>A2</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>z</entry>
+</row>
+<row>
+<entry/>
+<entry>A0</entry>
+<entry>1</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry>z</entry>
+</row>
+<row>
+<entry/>
+<entry>Reserved</entry>
+<entry>1</entry>
+<entry>1</entry>
+<entry>1</entry>
+<entry>x</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="5" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0037" num="0040">Note that &#x201c;z&#x201d; in the z bit column refers to the zero/not zero comparison selection noted above and &#x201c;x&#x201d; is a don't care state. This coding can only specify a subset of the 32 registers in each register file as predicate registers. This selection was made to preserve bits in the instruction coding.</p>
+<p id="p-0038" num="0041">The dst field (bits <b>23</b> to <b>27</b>) specifies one of the 32 registers in the corresponding register file as the destination of the instruction results.</p>
+<p id="p-0039" num="0042">The scr2 field (bits <b>18</b> to <b>22</b>) specifies one of the 32 registers in the corresponding register file as the second source operand.</p>
+<p id="p-0040" num="0043">The scr1/cst field (bits <b>13</b> to <b>17</b>) has several meanings depending on the instruction opcode field (bits <b>3</b> to <b>12</b>). The first meaning specifies one of the 32 registers of the corresponding register file as the first operand. The second meaning is a 5-bit immediate constant. Depending on the instruction type, this is treated as an unsigned integer and zero extended to 32 bits or is treated as a signed integer and sign extended to 32 bits. Lastly, this field can specify one of the 32 registers in the opposite register file if the instruction invokes one of the register file cross paths <b>27</b> or <b>37</b>.</p>
+<p id="p-0041" num="0044">The opcode field (bits <b>3</b> to <b>12</b>) specifies the type of instruction and designates appropriate instruction options. A detailed explanation of this field is beyond the scope of this invention except for the instruction options detailed below.</p>
+<p id="p-0042" num="0045">The s bit (bit <b>1</b>) designates the data path <b>20</b> or <b>30</b>. If s=0, then data path <b>20</b> is selected. This limits the functional unit to L1 unit <b>22</b>, S1 unit <b>23</b>, M1 unit <b>24</b> and D1 unit <b>25</b> and the corresponding register file A <b>21</b>. Similarly, s=1 selects data path <b>20</b> limiting the functional unit to L2 unit <b>32</b>, S2 unit <b>33</b>, M2 unit <b>34</b> and D2 unit <b>35</b> and the corresponding register file B <b>31</b>.</p>
+<p id="p-0043" num="0046">The p bit (bit <b>0</b>) marks the execute packets. The p-bit determines whether the instruction executes in parallel with the following instruction. The p-bits are scanned from lower to higher address. If p=1 for the current instruction, then the next instruction executes in parallel with the current instruction. If p=0 for the current instruction, then the next instruction executes in the cycle after the current instruction. All instructions executing in parallel constitute an execute packet. An execute packet can contain up to eight instructions. Each instruction in an execute packet must use a different functional unit.</p>
+<p id="p-0044" num="0047">Memory protection provides many benefits to a system. Memory protection functionality can:
+<ul id="ul0003" list-style="none">
+    <li id="ul0003-0001" num="0000">
+    <ul id="ul0004" list-style="none">
+        <li id="ul0004-0001" num="0048">Protect operating system data structures from poorly behaving code;</li>
+        <li id="ul0004-0002" num="0049">Aid in debugging by providing greater information about illegal memory accesses;</li>
+        <li id="ul0004-0003" num="0050">Prevent unauthorized access to sensitive data (also known as device security), and</li>
+        <li id="ul0004-0004" num="0051">Allow the operating system to enforce clearly defined boundaries between supervisor and user mode accesses, leading to greater system robustness.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0045" num="0052">To provide these benefits, the memory protection hardware must be suitably powerful and flexible.</p>
+<p id="p-0046" num="0053">The described memory protection architecture provides these benefits through a combination of CPU privilege levels and a memory system permission structure. Device security is also supported as an extension to the memory protection architecture, thereby allowing secure devices to be built within this framework.</p>
+<p id="p-0047" num="0054">The privilege of an execution thread determines what level of permissions that thread might have. This privilege is actually divided into two concepts: privilege Level and secure level.</p>
+<p id="p-0048" num="0055">Code running on the CPU executes in one of two privilege modes: Supervisor Mode or User Mode. Supervisor code is considered &#x2018;more trusted&#x2019; than User code. Examples of Supervisor threads include operating system kernels and hardware device drivers. User threads are all end applications.</p>
+<p id="p-0049" num="0056">Supervisor Mode is generally granted access to peripheral registers and the memory protection configuration. User Mode is generally confined to the memory spaces that the operating system (OS) specifically designates for its use.</p>
+<p id="p-0050" num="0057">Requestors provide a single privilege bit alongside each memory access to indicate the privilege level associated with that access. The memory protection hardware uses this bit to determine what subset of the memory protection fields to examine. This bit is encoded as shown below:</p>
+<p id="p-0051" num="0058">
+<tables id="TABLE-US-00002" num="00002">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="offset" colwidth="42pt" align="left"/>
+<colspec colname="1" colwidth="56pt" align="left"/>
+<colspec colname="2" colwidth="119pt" align="center"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Privilege Level</entry>
+<entry>Encoding</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>User</entry>
+<entry>0</entry>
+</row>
+<row>
+<entry/>
+<entry>Supervisor</entry>
+<entry>1</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0052" num="0059">CPU accesses as well as DMA and other accesses have a privilege level associated with them. CPU privilege level is determined as described above. DMA and other accesses initiated by the CPU inherit the CPU's privilege level at the time they are initiated. Mastering peripherals generally issue transfers with supervisor privileges, although the specific details depend on the peripheral.</p>
+<p id="p-0053" num="0060">On secure devices there is an additional axis to the privilege structure. A device which does not implement device security, or which has device security disabled is referred to as a non-secure device.</p>
+<p id="p-0054" num="0061">Threads of execution may be considered either secure or non-secure. Whereas the CPU's privilege level is purely an internal CPU mode, the secure level is a function both of the memory system configuration and the CPU mode. A thread of execution may be secure only if it is executing from a page of memory that is marked secure. The CPU can only branch to code in a secure page if it is already in secure mode. The CPU enters secure mode via an exception or an interrupt.</p>
+<p id="p-0055" num="0062">Secure mode privileges are always a superset of non-secure mode. Regions of memory that are marked as secure are not accessible to non-secure threads. Secure threads may access memory regardless of whether it is marked secure or not secure. This is in direct contrast to the independent permissions offered for supervisor vs. user, nothing requires or guarantees that supervisor has more privilege than user within a given page.</p>
+<p id="p-0056" num="0063">To the memory protection hardware, the secure mode looks like an additional privilege bit that comes in parallel with each access. On non-secure devices, this bit is hardwired so that all accesses look like Secure accesses. The encoding of this bit is as follows:</p>
+<p id="p-0057" num="0064">
+<tables id="TABLE-US-00003" num="00003">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="offset" colwidth="42pt" align="left"/>
+<colspec colname="1" colwidth="49pt" align="left"/>
+<colspec colname="2" colwidth="126pt" align="center"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Secure Level</entry>
+<entry>Encoding</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Not Secure</entry>
+<entry>0</entry>
+</row>
+<row>
+<entry/>
+<entry>Secure</entry>
+<entry>1</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0058" num="0065">As with Privilege levels, all CPU, DMA and other accesses have a secure level associated them. DMA accesses issued by a CPU inherit the CPU's Secure level, and other accesses are always treated as Non Secure.</p>
+<p id="p-0059" num="0066">A non-secure device has two privilege levels, Supervisor and User. Such devices transition into Supervisor mode in response to interrupts and the Software Exception (SWE) instruction. All privilege transitions are strictly controlled within the CPU.</p>
+<p id="p-0060" num="0067">In the generic OS model, pages of memory are usually configured with minimal privileges. For instance, user data pages are configured as readable and writeable by the User, but not necessarily readable or writeable by the Supervisor. The same is true for code pages. Shared code pages are marked as executable by both Supervisor and User. Other executable pages are marked as executable by Supervisor or User exclusively.</p>
+<p id="p-0061" num="0068">This model provides a high level of error checking robustness against incorrect program code, errors due to corrupted pointers, and potential attacks against a system.</p>
+<p id="p-0062" num="0069">It is worth noting that Non-Secure in this context refers only to the lack of device level IP Security support. It makes no implication about the security of the OS against remote attacks. It only implies that the Intellectual Property (IP) stored on the device does not have hardware locks that prevent developer access or a determined attacker with physical access to the device from revealing the IP stored therein.</p>
+<p id="p-0063" num="0070">In such a model, operating system requests are made from User Mode in the following manner:
+<ul id="ul0005" list-style="none">
+    <li id="ul0005-0001" num="0000">
+    <ul id="ul0006" list-style="none">
+        <li id="ul0006-0001" num="0071">The User Mode task places any information it is passing to the OS in a memory page that is at a minimum readable to the Supervisor, and writeable by the User. (The page may or may not be readable by the User, and may or may not be writeable by the Supervisor);</li>
+        <li id="ul0006-0002" num="0072">The User Mode task constructs a set of arguments in registers and/or memory as noted above;</li>
+        <li id="ul0006-0003" num="0073">The User Mode task executes an SWE instruction.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0064" num="0074">In response to this sequence, the CPU transitions into Supervisor mode and begins executing the OS Exception Handler. The Exception Handler, upon recognizing a valid system call, performs the service call requested. If the OS must return a block of data to the user, it must do so via a page that is writeable to Supervisor, and readable by the User.</p>
+<p id="p-0065" num="0075">Such a model relies on the OS being somewhat trustworthy. While memory protection pages are set up to prevent Supervisor access to User pages whenever possible, this configuration is a matter of trust. The Supervisor may change the configuration of these pages at any time. The purpose of memory protection blocking Supervisor accesses in this case is to ensure that such accesses are deliberate as opposed to accidental or due to attempts (from hostile code) to subvert the supervisor. In the DSP-BIOS model, DSP-BIOS configures memory protections such that Supervisor permissions are always a superset of User permissions. The goal of this configuration is performance: Most operating system service calls avoid a costly switch into Supervisor mode, as a large portion of DSP-BIOS' code and data structures exist in User-mode space.</p>
+<p id="p-0066" num="0076">DSP-BIOS treats Supervisor as &#x201c;fully trusted&#x201d; mode. As a result, DSP-BIOS does not execute non-trusted User code in Supervisor mode. DSP-BIOS does not rely on hardware assistance to enforce this requirement, however. Rather, DSP-BIOS relies on the correctness of its own programming to not invoke untrusted code while in Supervisor mode. Note that restriction applies to untrusted User mode code. DSP-BIOS may invoke some of its own code from both Supervisor and User modes, since the code represents common library routines used both by the kernel and user-space.</p>
+<p id="p-0067" num="0077">In the embedded processor realm, it is common for hardware to provide a minimum of functionality, and for software to provide the rest. DSP-BIOS' memory protection model is designed for that paradigm.</p>
+<p id="p-0068" num="0078">On a Secure Device, the usage model differs somewhat. On these devices, the CPU enters Secure Supervisor mode on taking an interrupt or an exception. It leaves Secure mode by branching to a Non-secure page, and it leaves Supervisor mode via &#x201c;B IRP&#x201d;/&#x201c;B NRP&#x201d; instruction. Thus, privilege and secure-level transitions are a function of both CPU mode switches and memory system attributes.</p>
+<p id="p-0069" num="0079">The purpose of a Secure Device is to protect IP and sensitive data (e.g. credit card numbers, personal identification information) from exposure to hostile attackers, including those who have development equipment and physical access to the device.</p>
+<p id="p-0070" num="0080">In the Secure Device model, there exists a small Secure Kernel which has ultimate control over all memory protection entries, interrupt and exception handlers, and various Secure IP that is stored on the die. A separate OS can coexist with this kernel, but that OS runs with Non-secure Supervisor privileges.</p>
+<p id="p-0071" num="0081">Secure Devices have four privilege/security modes altogether. Table 2 illustrates these four modes and what they are typically used for under this model.</p>
+<p id="p-0072" num="0082">
+<tables id="TABLE-US-00004" num="00004">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="offset" colwidth="63pt" align="left"/>
+<colspec colname="1" colwidth="70pt" align="left"/>
+<colspec colname="2" colwidth="84pt" align="left"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" rowsep="1">TABLE 2</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Secure</entry>
+<entry>Non-Secure</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="49pt" align="left"/>
+<colspec colname="2" colwidth="70pt" align="left"/>
+<colspec colname="3" colwidth="84pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Supervisor</entry>
+<entry>Secure Kernel</entry>
+<entry>RTOS (DSP-BIOS or</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Secure Loader</entry>
+<entry>OSE)</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Secure IP License</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Management</entry>
+</row>
+<row>
+<entry/>
+<entry>User</entry>
+<entry>Secure IP</entry>
+<entry>Customer end</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>applications</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="3" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0073" num="0083">In this model, the Real Time Operating System (RTOS) relinquishes some responsibilities to the Secure Kernel, such as configuring the Interrupt Service Table, a subset of the memory protection entries, and configuring the cache hierarchy.</p>
+<p id="p-0074" num="0084">The memory protection architecture described uses a distributed structure. The distributed model avoids memory protection bottlenecks in a large system by placing the controls with the resources being controlled, and each protected resource implements the memory protection hardware locally.</p>
+<p id="p-0075" num="0085">The architecture simply defines &#x201c;resource&#x201d; as &#x201c;a peripheral or memory accessible through addresses in the memory map.&#x201d; This allows the same hardware within the resource to perform protection checks for all requestors to that resource, without bottlenecking on accesses to the protection hardware itself.</p>
+<p id="p-0076" num="0086">This approach has advantages and disadvantages. The advantages include a consistent view of memory protection attributes for all requestors in the system, and a lack of bottlenecks that might arise from centralized memory protection hardware. Disadvantages include the requirement that each peripheral (or hardware outside the peripheral) implement protection hardware and provide a CPU accessible register interface to that hardware.</p>
+<p id="p-0077" num="0087">Each endpoint can tailor its protection hardware to a small extent in order to implement the desired level of protection.</p>
+<p id="p-0078" num="0088">To support this distributed protection architecture and to support caches in such a system, additional sideband signaling must accompany each memory access. Most notably, the presence of cacheable memory shifts some of the burden on access control. Caches introduce a semantic disconnect between program accesses and the memory accesses which reach the target endpoint.</p>
+<p id="p-0079" num="0089">The memory protection architecture divides the memory map into pages, with each page having an associated set of permissions.</p>
+<p id="p-0080" num="0090">Memories typically have power of 2 page sizes that range in size from 1 K bytes to 16 M bytes. The page size chosen for a given pool of memory depends on the size of the memory, and the complexity of the memory controller. These power of 2 sized pages typically start and end at power of 2 boundaries equal to their size, although this is not a requirement.</p>
+<p id="p-0081" num="0091">Peripherals modify the notion of pages, using pages to cover unique resources within the peripheral. An example of unique resource might include separate channels on a multi-channel peripheral that implements separate register sets for each channel. Another example might be a range of locations in a DMA parameter associated with one or more channels.</p>
+<p id="p-0082" num="0092">As a result, pages do not have a uniform size, and might even cover discontinuous regions of the address space. Different resources may size their protection pages differently, according to the needs of the resource. For instance, a small L1 memory might use 1 KB pages, whereas a large off-chip memory might use 16 MB pages. A peripheral might define a &#x2018;page&#x2019; that covers only a handful of registers. This range and variation in page sizes offer a balance between granularity of control and the cost of implementing the protection architecture.</p>
+<p id="p-0083" num="0093">For example, the L1 and L2 memory controllers select their page size based on a static configuration parameters. Other resources, such as peripherals with small, fixed address spaces, have inherently fixed page sizes.</p>
+<p id="p-0084" num="0094">Other resources may control large regions of the memory map, and addresses in these regions may be used in a variety of ways by the end system designers. Peripherals may act as proxies for resources outside the control of chip designer, and such peripherals should therefore support run-time programmable page sizes in order to tailor the memory protection to the needs of the system. Registers that control a peripheral's memory protection become part of the peripheral's memory mapped register set.</p>
+<p id="p-0085" num="0095">Hardware resources may also assign permissions to individual registers as required. These permissions may be fixed by the hardware, and might not be exposed to the programmer in a &#x201c;page attribute&#x201d; register. For instance, several cache control registers provided by unified memory controller (UMC), the data memory controller (DMC) and program memory controller (PMC) have fixed permissions, and no associated register for configuring those permissions.</p>
+<p id="p-0086" num="0096">The memory protection architecture defines a per page permission structure with three permission fields in a 16-bit permission entry. As shown in <figref idref="DRAWINGS">FIG. 5</figref>, bits <b>16</b> to <b>32</b> are reserved, bits <b>8</b> to <b>15</b> contain the Allowed IDs, bits <b>6</b> to <b>7</b> set the security and bits <b>0</b> to <b>5</b> define the Access types.</p>
+<p id="p-0087" num="0097">Each requestor on the device has an N-bit code associated with it that identifies it for privilege purposes. This code, referred to as the PrivID, accompanies all memory accesses made on behalf of that requestor. That is, when a requestor triggers a transfer directly, either by writing to DMA registers or by triggering the execution of a set of DMA parameters, the corresponding DMA engine will capture the requestors PrivID and provide that PrivID alongside the transfer.</p>
+<p id="p-0088" num="0098">Each memory protection entry has an allowed ID field associated with it that indicates which requestors may access the given page. The memory protection hardware maps the PrivIDs of all the possible requestors to the allowed IDs field in the memory protection registers. The allowed IDs field discriminates between the various CPUs, non-CPU requestors, and a given CPU's accesses to its own local memories.</p>
+<p id="p-0089" num="0099">When set to &#x2018;1&#x2019;, the AID bit grants access to the corresponding PrivID. When set to &#x2018;0&#x2019;, the AID bit denies access to the corresponding requestor. Table 3 gives the default mapping of the allowed ID bits to devices.</p>
+<p id="p-0090" num="0100">
+<tables id="TABLE-US-00005" num="00005">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="offset" colwidth="28pt" align="left"/>
+<colspec colname="1" colwidth="56pt" align="left"/>
+<colspec colname="2" colwidth="133pt" align="left"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" rowsep="1">TABLE 3</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Bit</entry>
+<entry>Definition</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>AID5</entry>
+<entry>Allow accesses from PrivID = 5</entry>
+</row>
+<row>
+<entry/>
+<entry>AID4</entry>
+<entry>Allow accesses from PrivID = 4</entry>
+</row>
+<row>
+<entry/>
+<entry>AID3</entry>
+<entry>Allow accesses from PrivID = 3</entry>
+</row>
+<row>
+<entry/>
+<entry>AID2</entry>
+<entry>Allow accesses from PrivID = 2</entry>
+</row>
+<row>
+<entry/>
+<entry>AID1</entry>
+<entry>Allow accesses from PrivID = 1</entry>
+</row>
+<row>
+<entry/>
+<entry>AID0</entry>
+<entry>Allow accesses from PrivID = 0</entry>
+</row>
+<row>
+<entry/>
+<entry>AIDX</entry>
+<entry>Allow accesses from PrivID &#x3e;= 6</entry>
+</row>
+<row>
+<entry/>
+<entry>LOCAL</entry>
+<entry>Allow access from CPU to its local</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>memories (L1/L2 only)</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0091" num="0101">The above PrivID assignments for bits AID<b>0</b> through AID<b>5</b> apply to all DMA, IDMA and CPU memory accesses other than to the CPU's local L1 and L2 memories. The LOCAL bit governs CPU accesses to its own local L1 and L2 memories.</p>
+<p id="p-0092" num="0102">The AIDX bit maps to PrivIDs that do not have dedicated AID bits associated with them. It is intended but not required that this bit refers to external mastering peripherals, especially on systems with a large number of CPUs. If a given device must discriminate among external mastering peripherals, it can assign lower numbered PrivIDs to these peripherals.</p>
+<p id="p-0093" num="0103">As described the architecture only supports 6 unique PrivIDs. The remaining PrivIDs map onto a single AID. On devices that need to discriminate among more than 6 different requestors (CPUs and mastering peripherals), the AID field may be extended. Alternate useful mappings of PrivID to AID include:
+<ul id="ul0007" list-style="none">
+    <li id="ul0007-0001" num="0000">
+    <ul id="ul0008" list-style="none">
+        <li id="ul0008-0001" num="0104">Fixed N:1 groupings of PrivID to AID. This groups CPUs and requestors into &#x2018;clusters.&#x2019; Such a mapping might be appropriate for a shared peripheral. For instance, a device with 12 CPUs might pair up the CPUs such that each AID bit corresponds to two CPUs.</li>
+        <li id="ul0008-0002" num="0105">Topological mapping. In this scheme, each CPU might employ a 1:1 mapping of PrivID to AID for a &#x201c;global master&#x201d; and a set of &#x201c;logical neighbors,&#x201d; and an N:1 mapping for all other PrivIDs. For example, one might set up a mesh where each CPU has 3 neighbors, a global master, and all other CPUs map onto the remaining AID.</li>
+        <li id="ul0008-0003" num="0106">Run time programmable dynamic mapping. This method is the most flexible.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0094" num="0107">A device with many CPUs might employ a combination of these mapping schemes. As an example, one might cluster PrivIDs with N:1 mappings for shared peripherals while using a more topological approach for the CPUs themselves.</p>
+<p id="p-0095" num="0108">To aid in code development and to add robustness to a system design, the memory protection architecture described distinguishes a CPU's accesses to its local memory from the DMAs it issues that access the same memory.</p>
+<p id="p-0096" num="0109">All requests issued by the CPU carry the CPU's PrivID as the ID of the requestor. This allows each peripheral to permit or deny the accesses according to the list of allowed IDs. In the case of accesses to a CPU's local L1 and L2 memories, it is useful to distinguish between the CPU's direct accesses to these memories and DMA accesses. Generally, applications will only devote a subset of the local memory to DMA activity, and DMA accesses outside these areas are incorrect accesses.</p>
+<p id="p-0097" num="0110">With respect to the allowed ID field, the architecture treats all remote CPUs accesses to a given module's memories identically to DMA accesses from that remote CPU. Therefore, the PrivID is used to determine the corresponding AID bit when considering remote accesses, and the LOCAL bit to determine whether the CPU may access its local memory.</p>
+<p id="p-0098" num="0111">In a complex system there are multiple threads of execution and multiple masters making requests at any given time. With a distributed memory protection system, it becomes necessary to make decisions and take memory management actions based on the privilege context associated with a request.</p>
+<p id="p-0099" num="0112">It is not sufficient to consider the master that made the request. For example, DMA controllers are masters, and make requests on behalf of multiple CPUs in the system. When it comes time to make a memory protection decision on a DMA request, it's more valuable to consider the CPU that programmed the DMA request than the fact it came from DMA.</p>
+<p id="p-0100" num="0113">In the described embodiment, each request is accompanied by a Privilege Identifier (PrivID). Smart masters, such as CPUs carry unique PrivIDs. Deputy masters, such as the DMA controllers inherit the PrivID of the component that programmed the DMA.</p>
+<p id="p-0101" num="0114">The PrivID may then select different sets of MPAX (Memory Protection and Address eXtension) segments to apply to requests. This lets each of the multiple CPUs in the system (4 or 8 in this embodiment) define the MPAX segments to match its image of the memory map. When a given CPU then requests DMA transfers, the DMA parameters (by virtue of inheriting that CPU's PrivID) will get compared against and translated by the appropriate CPU's set of segment registers in the Extended Memory Controller (XMC).</p>
+<p id="p-0102" num="0115">This method allows each of the smart masters to manage its own traffic without having to coordinate excessively with other smart masters. Furthermore, it allows each smart master to request as many DMAs as it requires, ignoring other masters as long as the DMAs inherit the privilege ID from the master that initiated the DMA.</p>
+<p id="p-0103" num="0116">This can be applied to any distributed memory protection architecture whereby primary masters can &#x201c;deputize&#x201d; secondary masters.</p>
+<p id="p-0104" num="0117">With this architecture, a program could designate a page as direct CPU access only by setting &#x201c;LOCAL=1&#x201d; and setting all other allowed IDs to zero. Conversely, a program could designate a page as &#x201c;DMAs issued from this CPU only&#x201d; by setting its AID bit and clearing the LOCAL bit. Such a setting can be useful in a paranoid environment such as a secure device, or in the context of a device driver. In most cases only the L1 and L2 memory controllers implement the LOCAL bit. In theory, a mastering peripheral that can make self-referential requests may also use the LOCAL bit, but in all likelihood such support is unnecessary. Nothing in the described architecture prevents such an implementation.</p>
+<p id="p-0105" num="0118">The described memory protection model defines three fundamental functional access types: Read, Write and Execute. Read and Write refer to data accesses&#x2014;accesses originating via the load/store units on the CPU or via the DMA engines. Execute refers to accesses associated with program fetch. The memory protection model allows controlling Read, Write and Execute permissions independently for both User and Supervisor mode. This results in 6 permission bits, as shown in Table 4.</p>
+<p id="p-0106" num="0119">
+<tables id="TABLE-US-00006" num="00006">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="offset" colwidth="35pt" align="left"/>
+<colspec colname="1" colwidth="63pt" align="left"/>
+<colspec colname="2" colwidth="119pt" align="left"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" rowsep="1">TABLE 4</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>Bit</entry>
+<entry>Description</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>SR</entry>
+<entry>Supervisor may Read</entry>
+</row>
+<row>
+<entry/>
+<entry>SW</entry>
+<entry>Supervisor may Write</entry>
+</row>
+<row>
+<entry/>
+<entry>SX</entry>
+<entry>Supervisor may eXecute</entry>
+</row>
+<row>
+<entry/>
+<entry>UR</entry>
+<entry>User may Read</entry>
+</row>
+<row>
+<entry/>
+<entry>UW</entry>
+<entry>User may Write</entry>
+</row>
+<row>
+<entry/>
+<entry>UX</entry>
+<entry>User may eXecute</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0107" num="0120">For each bit, a &#x2018;1&#x2019; permits the access type, and a &#x2018;0&#x2019;denies it. Thus &#x201c;UX=1&#x201d; means that User Mode may execute from the given page.</p>
+<p id="p-0108" num="0121">This method allows a small number of blanket permission settings to describe the general mapping requirements with coarse granularity for large ranges of system addresses without describing all of the fine details of the system.</p>
+<p id="p-0109" num="0122">In a single processor system, this approach is sufficient to insure protected memory accesses. However, in the multiprocessor shared memory system described there may be a number of processors with their own memory controllers interacting with one or more shared memories. While the memory management unit controlling the local shared memory has the required permission information for requests originating locally, it does not have adequate information regarding the permissions associated with the access requests originating with other processors. This invention implements a distributed protection approach to solve this problem.</p>
+<p id="p-0110" num="0123">On the first level, the MPAX unit may assign coarse, default permissions to a memory segment. As an example, it may allow read and execute but not write access to a segment, and these permissions will apply to all remote accesses to that memory segment irrespective of the source of the request.</p>
+<p id="p-0111" num="0124">The processor module originating the access request may need to modify these permissions through it's own memory management unit. As a further example, the process executing within the remote requestor may have execute, but not read or write permission. In order to insure that only allowed memory operations take place, the final permissions must take into consideration both the permissions assigned by the MPAX unit controlling the shared memory, and the permissions assigned by the memory controller originating the request.</p>
+<p id="p-0112" num="0125">As shown on <figref idref="DRAWINGS">FIG. 9</figref>, this is accomplished by the MPAX unit controlling the shared memory by merging it's permissions with the permissions provided by the requestors as part of the request, by performing a logical AND operation between the two permissions. Register <b>901</b> is part of the segment register selected by the address of the request as shown on <figref idref="DRAWINGS">FIG. 6</figref>, and register <b>903</b> is the register holding the permission bits provided by the requestor. The contents of these registers are merged in AND block <b>902</b>, resulting in the final permission bits shown in register <b>904</b>. The local MPAX unit will use the merged permissions in forming the decision whether to grant access to the request or not. The meanings of the various permission bits are described in Tables 4 and 5. Requestors that do not perform permission checks will return all 1's thus not modifying the local MPAX permissions.</p>
+<p id="p-0113" num="0126">The DMC and UMC perform the fine-grain access-type checks for accesses that result in cache line fills, not the peripheral. The peripheral just makes a coarse grain check to ensure that &#x201c;any&#x201d; access is possible. Further, the peripheral does not perform fine-grain access-type checks for cache writebacks. Rather, the peripheral only checks that the region of memory is minimally writeable.</p>
+<p id="p-0114" num="0127">By default, the architecture permits emulation accesses to pages, regardless of the settings in the allowed ID and access type fields. While this is appropriate for typical debug environments, it is not appropriate for a secure device.</p>
+<p id="p-0115" num="0128">To support Secure devices, the NS and EMU bits indicate the security configuration of the page. Table 5 illustrates the encoding of these two bits:</p>
+<p id="p-0116" num="0129">
+<tables id="TABLE-US-00007" num="00007">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="1" colwidth="21pt" align="center"/>
+<colspec colname="2" colwidth="21pt" align="center"/>
+<colspec colname="3" colwidth="98pt" align="left"/>
+<colspec colname="4" colwidth="77pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="4" rowsep="1">TABLE 5</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>NS</entry>
+<entry>EMU</entry>
+<entry>CPU Effects</entry>
+<entry>Emulation Effects</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>0</entry>
+<entry>0</entry>
+<entry>Page is secure. Only Secure</entry>
+<entry>EDI reads/writes to this</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>mode may access this page.</entry>
+<entry>page are NOT permitted.</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Secure code executing within</entry>
+<entry>Emulation halts and trace</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>this page retains its secure</entry>
+<entry>are NOT permitted when</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>status.</entry>
+<entry>executing from this page.</entry>
+</row>
+<row>
+<entry>0</entry>
+<entry>1</entry>
+<entry>Page is secure. Only Secure</entry>
+<entry>EDI reads/writes to this</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>mode may access this page.</entry>
+<entry>page ARE permitted.</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Secure code executing within</entry>
+<entry>Emulation halts and trace</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>this page retains its secure</entry>
+<entry>ARE permitted when</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>status.</entry>
+<entry>executing from this page.</entry>
+</row>
+<row>
+<entry>1</entry>
+<entry>x</entry>
+<entry>Page is not secure. Both</entry>
+<entry>EDI reads/writes to this</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Secure and Non-secure code</entry>
+<entry>page ARE permitted.</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>may access this page.</entry>
+<entry>Emulation halts and trace</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Secure code may branch to</entry>
+<entry>ARE permitted when</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>this page, but upon doing so</entry>
+<entry>executing from this page.</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>it will lose its Secure</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>status.</entry>
+</row>
+<row>
+<entry namest="1" nameend="4" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0117" num="0130">Setting &#x2018;NS=1&#x2019; makes the page &#x2018;not secure.&#x2019; Both secure supervisor and son-secure supervisor mode may modify the permissions for this page. Setting &#x2018;NS=0&#x2019; marks the page &#x2018;secure.&#x2019; Only secure supervisor CPU accesses may modify the permissions secure pages. Only Secure supervisor code may mark a page as secure by setting NS=0.</p>
+<p id="p-0118" num="0131">The EMU bit allows for debugging secure code. When NS=1, the hardware ignores the EMU bit. When NS=0, the hardware disables emulation for that page unless EMU=1. Specifically, when NS=0 and EMU=0, the hardware:
+<ul id="ul0009" list-style="none">
+    <li id="ul0009-0001" num="0000">
+    <ul id="ul0010" list-style="none">
+        <li id="ul0010-0001" num="0132">Blocks all EDI accesses to the affected page;</li>
+        <li id="ul0010-0002" num="0133">Blocks emulation accesses through secondary routes;</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0119" num="0134">When the CPU executes secure code from a page with NS=0 and EMU=0, it:
+<ul id="ul0011" list-style="none">
+    <li id="ul0011-0001" num="0000">
+    <ul id="ul0012" list-style="none">
+        <li id="ul0012-0001" num="0135">Prevents emulation from halting code when the CPU executes from the secure page. The CPU ignores both software and hardware breakpoints. (This is the equivalent of &#x201c;Run Free&#x201d;);</li>
+        <li id="ul0012-0002" num="0136">Prevents emulation from tracing code or events generated by that code.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0120" num="0137">When either NS=1 or EMU=1, the hardware permits full emulation access to the page. Trace and breakpoints function normally allowing the debugging of secure code. This helps the most for debugging program issues that arise when modifying an otherwise correct algorithm to work in secure mode. On non-secure devices, the architecture forces NS to always be 1, thereby preventing unwanted operation.</p>
+<p id="p-0121" num="0138">While the above emulation architecture will give the programmer a consistent view between emulation debugging of the program and normal execution of the program, it does not allow for the arbitrary inspection of the entire physical memory map. In order to enable this, a XEDIAX (eXtended memory controller, Emulation Data Interface, Address eXtension) window may be implemented.</p>
+<p id="p-0122" num="0139">What makes this window unique is that it's truly parallel to anything the user's program might try to do. A section of arbitrary logical address space (0801<sub>&#x2014;</sub>0000 through 0801_FFFF in the present embodiment) may be cordoned off as &#x201c;emulation only.&#x201d; In other words, we now have 16 dedicated functional segments with programmable size, base address and replacement, and 1 dedicated emulation segment with a fixed size and fixed base address and only programmable replacement.</p>
+<p id="p-0123" num="0140">There is no possible way for functional application code to influence this emulation-dedicated memory resource without generating fake debugger requests. This means that the debugger will always have a means of displaying the entire *physical* address map, regardless of what the application has configured for everything else.</p>
+<p id="p-0124" num="0141">Software must define the mechanism for setting/clearing EMU on secure pages. A secure authentication algorithm, likely embedded in a ROM on a secure device, should perform this operation. Developers debugging secure code would then run a short sequence of code on the target to invoke this mechanism. A debugging environment could automate such an unlocking sequence by downloading and executing a short, predefined code sequence along with authentication data that the system requires.</p>
+<p id="p-0125" num="0142">When it encounters an invalid access, the memory protection hardware has two distinct duties:
+<ul id="ul0013" list-style="none">
+    <li id="ul0013-0001" num="0000">
+    <ul id="ul0014" list-style="none">
+        <li id="ul0014-0001" num="0143">Prevent the access from occurring,</li>
+        <li id="ul0014-0002" num="0144">Report the error to the operating environment.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0126" num="0145">Invalid accesses are those memory accesses which require greater permissions than those specified for the page or register involved. When presented with an invalid access, the memory protection hardware must prevent the requestor from making the access. What this means specifically varies with the hardware being protected, and whether the request originated from a cache controller. The guiding principle that the memory protection hardware must uphold can be summarized in one statement: The memory or peripheral being protected must not change in state due to an invalid access.</p>
+<p id="p-0127" num="0146">The hardware must always drop invalid writes. Invalid writes must never modify memory or change the status of a peripheral.</p>
+<p id="p-0128" num="0147">The hardware must never allow illegally read data to reach the requestor. Further, if the read would cause side-effects (that is, update the state of a peripheral, such as a FIFO or a status bit), the hardware must prevent those side-effects from occurring. The read may return garbage, so long as the garbage is unrelated to the contents of the memory being accessed.</p>
+<p id="p-0129" num="0148">An incorrect access may change some of the cache's internal state, so long as it does not change the semantic meaning of the cache's contents. Specifically, when a cache encounters an invalid access:
+<ul id="ul0015" list-style="none">
+    <li id="ul0015-0001" num="0000">
+    <ul id="ul0016" list-style="none">
+        <li id="ul0016-0001" num="0149">The cache may update its LRU;</li>
+        <li id="ul0016-0002" num="0150">The cache may allocate and/or evict lines;</li>
+        <li id="ul0016-0003" num="0151">The cache may not mark lines &#x2018;dirty&#x2019;;</li>
+        <li id="ul0016-0004" num="0152">The cache may not change the contents of the cache line.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0130" num="0153">Upon detecting an invalid access, the memory protection hardware must report the error to as appropriate. The memory protection hardware generates exception signals that are routed to an interrupt/exception selector block, and the selector then routes these exceptions to one or more CPUs. Only CPU, peripheral and DMA accesses to protected resources generate exceptions.</p>
+<p id="p-0131" num="0154">Emulation accesses never generate exceptions, rather they generate unique debug access status (DAS) codes. The architecture always permits emulation accesses unless the page has both NS=0 and EMU=0 (or equivalent, in the case of control registers with fixed implicit permissions).</p>
+<p id="p-0132" num="0155">Each peripheral which implements memory protection checks provides at least one exception output for signaling privilege violations. When the protection hardware detects a fault, it records the information regarding the fault and signals an exception. Under most circumstances, it does not record new faults or signal new exceptions until the supervisor clears the initial fault. Hardware which implements the LOCAL bit has an additional notion of &#x201c;local&#x201d; versus &#x201c;remote&#x201d; exceptions. Such hardware allows local faults to replace the information recorded for a remote fault, and subsequently trigger a new exception.</p>
+<p id="p-0133" num="0156">Each peripheral may provide more than one exception output, in order to signal different exceptions based on the faulting requestor, or some other aspect of the request. Indeed, the DMC, PMC and UMC specify separate exception outputs for local vs. global faults</p>
+<p id="p-0134" num="0157">When a given piece of memory protection hardware detects a privilege violation, it captures some basic information about the violation as part of the exception-triggering process. Specifically, it captures the address of the fault, and the type of access that generated the fault. Invalid emulation accesses never generate memory protection exceptions. Rather, the memory controller reports the fault to emulation through special debug access status (DAS) codes.</p>
+<p id="p-0135" num="0158">The Memory Protection and Address eXtension (MPAX) unit addresses the needs above with a segment-based protection and translation scheme that has the following features:
+<ul id="ul0017" list-style="none">
+    <li id="ul0017-0001" num="0000">
+    <ul id="ul0018" list-style="none">
+        <li id="ul0018-0001" num="0159">Small, fixed number of segments (8 and 16 in our initial embodiment)</li>
+        <li id="ul0018-0002" num="0160">Programmable power of two segment size (4 KB through 4 GB in initial embodiment)</li>
+        <li id="ul0018-0003" num="0161">Programmable permissions per segment (rather than segments dedicated by purpose.)</li>
+        <li id="ul0018-0004" num="0162">Strict priority between segments whose logical addresses overlap.</li>
+        <li id="ul0018-0005" num="0163">Support for merging segment permissions with permissions returned from remote endpoints. This allows stacking various protection units in a distributed system.</li>
+        <li id="ul0018-0006" num="0164">Replacement address associated with each segment can have more bits than the logical address bits it replaces, thereby supporting a large physical address space.
+<br/>
+Benefits of this approach include:
+</li>
+        <li id="ul0018-0007" num="0165">Complex and compact mappings possible with small number of segments, thanks in part to priority scheme;</li>
+        <li id="ul0018-0008" num="0166">Enables a distributed protection scheme that scales up to the needs of a complex system, but which can be scaled down for or omitted from cost sensitive devices. Multiple MPAX units or other firewalls/protection mechanisms can exist along the path to a given endpoint, each providing its say (and potentially translation) over whether and how the access can proceed;</li>
+        <li id="ul0018-0009" num="0167">Physical address space on a large system can be sized to cover the overall memory requirements of the entire system, while the individual processors can stick with 32-bit addressing internally, thereby avoiding changing their datapaths;</li>
+        <li id="ul0018-0010" num="0168">Because the segments have dedicated storage, the segment descriptors do not compete for memory space, and the maximum cost of an MPAX lookup, permission check and address translation can be performed in 2 clock cycles. In some cases, part of the lookup can be avoided, reducing this to 1 clock cycle;</li>
+        <li id="ul0018-0011" num="0169">One can alias the same physical memory at multiple logical addresses, as there are no constraints on the logical-to-physical translation other than page size and address alignment. This can be useful in the context of a processor megamodule that assigns memory attributes (cacheability, prefetchability, writethrough) on the basis of logical address;</li>
+        <li id="ul0018-0012" num="0170">The MPAX registers may also be used to redirect requests from a master port back to a slave port via the system-level interconnect to facilitate embedded functional testing.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0136" num="0171">Address translation may be done via adding an address offset, or by bit replacement. The described implementation uses bit-replacement to save silicon area and increase the likelihood of meeting timing constrains. A lower clock-rate implementation (or a more aggressive implementation at the same clock rate) could use address-offset.</p>
+<p id="p-0137" num="0172">Address extension is implemented in the preferred embodiment by bit replacement. The upper address bits of the logical address are replaced with the corresponding bits from the replacement address (RADDR). The replacement address field may be wider than the field it replaces, thus extending the addressing range. In the current implementation the 32 bit logical address space is extended to a 36 bit physical address space. Table 6 shows the bits replaced, depending on segment size (SEGSZ).</p>
+<p id="p-0138" num="0173">
+<tables id="TABLE-US-00008" num="00008">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="offset" colwidth="42pt" align="left"/>
+<colspec colname="1" colwidth="35pt" align="center"/>
+<colspec colname="2" colwidth="140pt" align="center"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" rowsep="1">TABLE 6</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>SEGSZ</entry>
+<entry>RADDR[23: x]</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>00000b</entry>
+<entry>Seg. disabled</entry>
+</row>
+<row>
+<entry/>
+<entry>00001b</entry>
+<entry>Reserved</entry>
+</row>
+<row>
+<entry/>
+<entry>00010b</entry>
+<entry>Reserved</entry>
+</row>
+<row>
+<entry/>
+<entry>00011b</entry>
+<entry>Reserved</entry>
+</row>
+<row>
+<entry/>
+<entry>00100b</entry>
+<entry>Reserved</entry>
+</row>
+<row>
+<entry/>
+<entry>00101b</entry>
+<entry>Reserved</entry>
+</row>
+<row>
+<entry/>
+<entry>00110b</entry>
+<entry>Reserved</entry>
+</row>
+<row>
+<entry/>
+<entry>00111b</entry>
+<entry>Reserved</entry>
+</row>
+<row>
+<entry/>
+<entry>01000b</entry>
+<entry>Reserved</entry>
+</row>
+<row>
+<entry/>
+<entry>01001b</entry>
+<entry>Reserved</entry>
+</row>
+<row>
+<entry/>
+<entry>01010b</entry>
+<entry>Reserved</entry>
+</row>
+<row>
+<entry/>
+<entry>01011b</entry>
+<entry>0</entry>
+</row>
+<row>
+<entry/>
+<entry>01100b</entry>
+<entry>1</entry>
+</row>
+<row>
+<entry/>
+<entry>01101b</entry>
+<entry>2</entry>
+</row>
+<row>
+<entry/>
+<entry>01110b</entry>
+<entry>3</entry>
+</row>
+<row>
+<entry/>
+<entry>01111b</entry>
+<entry>4</entry>
+</row>
+<row>
+<entry/>
+<entry>10000b</entry>
+<entry>5</entry>
+</row>
+<row>
+<entry/>
+<entry>10001b</entry>
+<entry>6</entry>
+</row>
+<row>
+<entry/>
+<entry>10010b</entry>
+<entry>7</entry>
+</row>
+<row>
+<entry/>
+<entry>10011b</entry>
+<entry>8</entry>
+</row>
+<row>
+<entry/>
+<entry>10100b</entry>
+<entry>9</entry>
+</row>
+<row>
+<entry/>
+<entry>10101b</entry>
+<entry>10&#x2002;</entry>
+</row>
+<row>
+<entry/>
+<entry>10110b</entry>
+<entry>11&#x2002;</entry>
+</row>
+<row>
+<entry/>
+<entry>10111b</entry>
+<entry>12&#x2002;</entry>
+</row>
+<row>
+<entry/>
+<entry>11000b</entry>
+<entry>13&#x2002;</entry>
+</row>
+<row>
+<entry/>
+<entry>11001b</entry>
+<entry>14&#x2002;</entry>
+</row>
+<row>
+<entry/>
+<entry>11010b</entry>
+<entry>15&#x2002;</entry>
+</row>
+<row>
+<entry/>
+<entry>11011b</entry>
+<entry>16&#x2002;</entry>
+</row>
+<row>
+<entry/>
+<entry>11100b</entry>
+<entry>17&#x2002;</entry>
+</row>
+<row>
+<entry/>
+<entry>11101b</entry>
+<entry>18&#x2002;</entry>
+</row>
+<row>
+<entry/>
+<entry>11110b</entry>
+<entry>19&#x2002;</entry>
+</row>
+<row>
+<entry/>
+<entry>11111b</entry>
+<entry>20&#x2002;</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0139" num="0174"><figref idref="DRAWINGS">FIG. 6</figref> shows the layout of the segment registers. There is a segment register for each memory segment, 16 in the preferred implementation. The registers occupy two 32 bit words shown as <b>601</b> and <b>602</b> in the memory map, although not all 64 bits are implemented in the current implementation. The fields in the segment registers are described in Table 7.</p>
+<p id="p-0140" num="0175">
+<tables id="TABLE-US-00009" num="00009">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="35pt" align="left"/>
+<colspec colname="2" colwidth="49pt" align="left"/>
+<colspec colname="3" colwidth="133pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="3" rowsep="1">TABLE 7</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>Field</entry>
+<entry>Name</entry>
+<entry>Meaning</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>BADDR</entry>
+<entry>Base Address</entry>
+<entry>Upper bits of address range to match in</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>the 32-bit logical address space</entry>
+</row>
+<row>
+<entry>SEGSZ</entry>
+<entry>Segment Size</entry>
+<entry>Segment size. Table 8 shows encoding.</entry>
+</row>
+<row>
+<entry>RADDR</entry>
+<entry>Replacement</entry>
+<entry>Bits that replace and extend the upper</entry>
+</row>
+<row>
+<entry/>
+<entry>Address</entry>
+<entry>address bits matched by BADDR</entry>
+</row>
+<row>
+<entry>PERM</entry>
+<entry>Permissions</entry>
+<entry>Access types allowed in this address range.</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0141" num="0176">The segment size (SEGSZ) is encoded as show in Table 8, and the 8 permission and emulation control bits are described in tables 4 and 5.</p>
+<p id="p-0142" num="0177">
+<tables id="TABLE-US-00010" num="00010">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="offset" colwidth="42pt" align="left"/>
+<colspec colname="1" colwidth="35pt" align="center"/>
+<colspec colname="2" colwidth="140pt" align="center"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" rowsep="1">TABLE 8</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+<row>
+<entry/>
+<entry>SEGSZ</entry>
+<entry>Meaning</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>00000b</entry>
+<entry>Disabled</entry>
+</row>
+<row>
+<entry/>
+<entry>00001b</entry>
+<entry>Rsvd (Disabled)</entry>
+</row>
+<row>
+<entry/>
+<entry>00010b</entry>
+<entry>Rsvd (Disabled)</entry>
+</row>
+<row>
+<entry/>
+<entry>00011b</entry>
+<entry>Rsvd (Disabled)</entry>
+</row>
+<row>
+<entry/>
+<entry>00100b</entry>
+<entry>Rsvd (Disabled)</entry>
+</row>
+<row>
+<entry/>
+<entry>00101b</entry>
+<entry>Rsvd (Disabled)</entry>
+</row>
+<row>
+<entry/>
+<entry>00110b</entry>
+<entry>Rsvd (Disabled)</entry>
+</row>
+<row>
+<entry/>
+<entry>00111b</entry>
+<entry>Rsvd (Disabled)</entry>
+</row>
+<row>
+<entry/>
+<entry>01000b</entry>
+<entry>Rsvd (Disabled)</entry>
+</row>
+<row>
+<entry/>
+<entry>01001b</entry>
+<entry>Rsvd (Disabled)</entry>
+</row>
+<row>
+<entry/>
+<entry>01010b</entry>
+<entry>Rsvd (Disabled)</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="4">
+<colspec colname="offset" colwidth="42pt" align="left"/>
+<colspec colname="1" colwidth="35pt" align="center"/>
+<colspec colname="2" colwidth="70pt" align="right"/>
+<colspec colname="3" colwidth="70pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>01011b</entry>
+<entry>4</entry>
+<entry>KB</entry>
+</row>
+<row>
+<entry/>
+<entry>01100b</entry>
+<entry>8</entry>
+<entry>KB</entry>
+</row>
+<row>
+<entry/>
+<entry>01101b</entry>
+<entry>16</entry>
+<entry>KB</entry>
+</row>
+<row>
+<entry/>
+<entry>01110b</entry>
+<entry>32</entry>
+<entry>KB</entry>
+</row>
+<row>
+<entry/>
+<entry>01111b</entry>
+<entry>64</entry>
+<entry>KB</entry>
+</row>
+<row>
+<entry/>
+<entry>10000b</entry>
+<entry>128</entry>
+<entry>KB</entry>
+</row>
+<row>
+<entry/>
+<entry>10001b</entry>
+<entry>256</entry>
+<entry>KB</entry>
+</row>
+<row>
+<entry/>
+<entry>10010b</entry>
+<entry>512</entry>
+<entry>KB</entry>
+</row>
+<row>
+<entry/>
+<entry>10011b</entry>
+<entry>1</entry>
+<entry>MB</entry>
+</row>
+<row>
+<entry/>
+<entry>10100b</entry>
+<entry>2</entry>
+<entry>MB</entry>
+</row>
+<row>
+<entry/>
+<entry>10101b</entry>
+<entry>4</entry>
+<entry>MB</entry>
+</row>
+<row>
+<entry/>
+<entry>10110b</entry>
+<entry>8</entry>
+<entry>MB</entry>
+</row>
+<row>
+<entry/>
+<entry>10111b</entry>
+<entry>16</entry>
+<entry>MB</entry>
+</row>
+<row>
+<entry/>
+<entry>11000b</entry>
+<entry>32</entry>
+<entry>MB</entry>
+</row>
+<row>
+<entry/>
+<entry>&#x2002;1100b</entry>
+<entry>64</entry>
+<entry>MB</entry>
+</row>
+<row>
+<entry/>
+<entry>11010b</entry>
+<entry>128</entry>
+<entry>MB</entry>
+</row>
+<row>
+<entry/>
+<entry>11011b</entry>
+<entry>256</entry>
+<entry>MB</entry>
+</row>
+<row>
+<entry/>
+<entry>11100b</entry>
+<entry>512</entry>
+<entry>MB</entry>
+</row>
+<row>
+<entry/>
+<entry>11101b</entry>
+<entry>1</entry>
+<entry>GB</entry>
+</row>
+<row>
+<entry/>
+<entry>11110b</entry>
+<entry>2</entry>
+<entry>GB</entry>
+</row>
+<row>
+<entry/>
+<entry>11111b</entry>
+<entry>4</entry>
+<entry>GB</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="3" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0143" num="0178"><figref idref="DRAWINGS">FIG. 7</figref> shows a memory map of a typical system. <b>701</b> represents a 32 bit addressable logical memory being mapped into the 36 bit address space of the available physical memory <b>703</b>. Mapping and address translation is implemented in two of the segment registers in register block <b>702</b>. In the mapping shown in <figref idref="DRAWINGS">FIG. 7</figref>, segment register <b>704</b> contains BADDR=00000h; RADDR=000000h; and SEGSZ=11110b representing 2 GB. Register <b>705</b> contains BADDR=80000h; RADDR=080000h; and SEGSZ=11110b.</p>
+<p id="p-0144" num="0179"><figref idref="DRAWINGS">FIG. 8</figref> shows a high level description of one implementation of the Extended Memory Controller. Register bank select block <b>803</b> selects the appropriate segment register bank from segment register banks <b>801</b> or <b>802</b> by looking at the PRVID <b>804</b> accompanying the memory request. Comparator block <b>806</b> then selects the requested segment register by comparing logical address <b>805</b> to the segment base addresses and segment sizes in the appropriate segment registers, and then compares the permission bits of the selected segment register to the permissions associated with logical address <b>805</b> as communicated by PRVID <b>804</b>. If the comparison indicates a valid memory request, block <b>806</b> generates physical address <b>807</b> by replacing the appropriate bits in logical address <b>805</b> by the corresponding bits in the replacement address field RADDR of the selected segment register.</p>
+<p id="p-0145" num="0180">The exact number of segments, segment register banks and the range of segment sizes are not fundamental to this invention. In the current preferred embodiments we have 8 or 16 segments, and segment sizes from 4 kB to 4 GB. One could easily envision a lower cost realization with fewer segments, a larger smallest-segment size, or no address extension.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A memory management system comprising:
+<claim-text>a memory organized as a plurality of programmable memory segments,</claim-text>
+<claim-text>a plurality of requestors operable to originate memory access requests wherein the memory access request includes a memory address to be accessed, a descriptor of the requested access and a permission field containing a plurality of bits indicating the access permissions associated with the request,</claim-text>
+<claim-text>an extended memory controller operable to control access to said memory, said extended memory controller including
+<claim-text>a port operable to communicate with the plurality of requestors,</claim-text>
+<claim-text>a segment register associated with each memory segment operable to store parameter fields defining the memory segment including a memory starting address, memory size and a plurality of permission bits,</claim-text>
+<claim-text>a comparison circuit operable to compare the memory address range in the segment registers as defined by the starting address and memory size of each segment register, and the memory address provided as part of the memory access request provided by the requestor on said port, and further operable to select a segment register based on said comparison showing that the requested address is within said memory address range of the selected segment register, and</claim-text>
+<claim-text>a logic circuit operable to perform a logical AND operation between corresponding bits in the permissions field in the selected segment register and the permissions field provided as part of the memory access request provided on said port, resulting in merged permissions applicable to said memory access request.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The memory management system of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>at least one of the requestors is a memory controller.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The memory management system of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>at least one of the requestors is a processing unit.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The extended memory controller of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>at least one of the requestors provides a permission field containing all 1's indicating that it does not require any modification of the permission field within the selected segment register.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The extended memory controller of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>memory access is granted or denied by the extended memory controller based upon the merged permissions.</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

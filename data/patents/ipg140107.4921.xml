@@ -1,0 +1,718 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626017-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626017</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13119740</doc-number>
+<date>20090925</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>2008-252559</doc-number>
+<date>20080930</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<us-term-extension>301</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>03</class>
+<subclass>G</subclass>
+<main-group>15</main-group>
+<subgroup>08</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>399 62</main-classification>
+<further-classification>399 63</further-classification>
+</classification-national>
+<invention-title id="d2e71">Image forming device and developer supply method including pre-supply toner detection</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>4277549</doc-number>
+<kind>A</kind>
+<name>Tatsumi et al.</name>
+<date>19810700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>399 58</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>4342283</doc-number>
+<kind>A</kind>
+<name>Terashima</name>
+<date>19820800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>399 63</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>4405226</doc-number>
+<kind>A</kind>
+<name>Kimura et al.</name>
+<date>19830900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>399 63</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>4452174</doc-number>
+<kind>A</kind>
+<name>Fedder</name>
+<date>19840600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>399 62</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>5652947</doc-number>
+<kind>A</kind>
+<name>Izumizaki</name>
+<date>19970700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>399 58</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>6345163</doc-number>
+<kind>B1</kind>
+<name>Suzuki et al.</name>
+<date>20020200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>399 61</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>6389244</doc-number>
+<kind>B1</kind>
+<name>Shima et al.</name>
+<date>20020500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>399 58</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>6987934</doc-number>
+<kind>B2</kind>
+<name>Bessho et al.</name>
+<date>20060100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>399 61</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>2004/0009015</doc-number>
+<kind>A1</kind>
+<name>Fujimori et al.</name>
+<date>20040100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>2007/0058995</doc-number>
+<kind>A1</kind>
+<name>Onda et al.</name>
+<date>20070300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>2007/0274740</doc-number>
+<kind>A1</kind>
+<name>Katoh et al.</name>
+<date>20071100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>2008/0069596</doc-number>
+<kind>A1</kind>
+<name>Katsuyama et al.</name>
+<date>20080300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>JP</country>
+<doc-number>5-6090</doc-number>
+<kind>A</kind>
+<date>19930100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>JP</country>
+<doc-number>5-40408</doc-number>
+<kind>A</kind>
+<date>19930200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>JP</country>
+<doc-number>8-95362</doc-number>
+<kind>A</kind>
+<date>19960400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>JP</country>
+<doc-number>2004-4394</doc-number>
+<kind>A</kind>
+<date>20040100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>JP</country>
+<doc-number>2006-113409</doc-number>
+<kind>A</kind>
+<date>20060400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>JP</country>
+<doc-number>2006-178279</doc-number>
+<kind>A</kind>
+<date>20060700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>JP</country>
+<doc-number>2007-140291</doc-number>
+<kind>A</kind>
+<date>20070600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>JP</country>
+<doc-number>2007-148277</doc-number>
+<kind>A</kind>
+<date>20070600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>JP</country>
+<doc-number>2008-3560</doc-number>
+<kind>A</kind>
+<date>20080100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00022">
+<othercit>Notification of Transmittal of Translation of the International Preliminary Report on Patentability (Forms PCT/IB/338 and PCT/IB/373) and the Written Opinion of the International Searching Authority ( Form PCT/ISA/237) issued on May 19, 2011, in the corresponding International Application No. PCT/JP2009/066603.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00023">
+<othercit>International Search Report (PCT/ISA/210) issued on Oct. 27, 2009, by Japanese Patent Office as the International Searching Authority for International Application No. PCT/JP2009/066603.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00024">
+<othercit>Office Action issued on Oct. 27, 2009 in corresponding Japanese Patent Application No. 2008-252559.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>12</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>399 58</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>399 61</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>399 62</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>399 63</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>15</number-of-drawing-sheets>
+<number-of-figures>16</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110170890</doc-number>
+<kind>A1</kind>
+<date>20110714</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Sakatani</last-name>
+<first-name>Kazuomi</first-name>
+<address>
+<city>Sagamihara</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Hirata</last-name>
+<first-name>Katsuyuki</first-name>
+<address>
+<city>Toyokawa</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Tsutsumi</last-name>
+<first-name>Yoshinori</first-name>
+<address>
+<city>Toyokawa</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Sakatani</last-name>
+<first-name>Kazuomi</first-name>
+<address>
+<city>Sagamihara</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Hirata</last-name>
+<first-name>Katsuyuki</first-name>
+<address>
+<city>Toyokawa</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Tsutsumi</last-name>
+<first-name>Yoshinori</first-name>
+<address>
+<city>Toyokawa</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Buchanan Ingersoll &#x26; Rooney PC</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Konica Minolta Business Technologies, Inc.</orgname>
+<role>03</role>
+<address>
+<city>Chiyoda-Ku, Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Lee</last-name>
+<first-name>Susan</first-name>
+<department>2852</department>
+</primary-examiner>
+</examiners>
+<pct-or-regional-filing-data>
+<document-id>
+<country>WO</country>
+<doc-number>PCT/JP2009/066603</doc-number>
+<kind>00</kind>
+<date>20090925</date>
+</document-id>
+<us-371c124-date>
+<date>20110318</date>
+</us-371c124-date>
+</pct-or-regional-filing-data>
+<pct-or-regional-publishing-data>
+<document-id>
+<country>WO</country>
+<doc-number>WO2010/038659</doc-number>
+<kind>A </kind>
+<date>20100408</date>
+</document-id>
+</pct-or-regional-publishing-data>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">There are provided a powder supply element adapted to supply powders containing at least toner; developing element adapted to develop an electrostatic latent image by agitating and conveying a developer containing the powders that are supplied by the powder supply element; a toner amount detecting element that is placed in the middle of a conveyance path to connect the powder supply element with the developing element and detects a toner amount per unit volume to be supplied to the developing element; and control element that controls a correction amount with respect to a reference supply amount due to the powder supply element on the basis of a toner amount per unit volume that is detected by the toner amount detecting element.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="171.79mm" wi="137.50mm" file="US08626017-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="213.19mm" wi="175.77mm" file="US08626017-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="245.96mm" wi="186.69mm" file="US08626017-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="203.71mm" wi="174.41mm" file="US08626017-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="258.15mm" wi="192.11mm" file="US08626017-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="149.86mm" wi="167.56mm" file="US08626017-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="228.85mm" wi="148.51mm" orientation="landscape" file="US08626017-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="172.38mm" wi="169.50mm" file="US08626017-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="176.45mm" wi="126.75mm" file="US08626017-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="175.09mm" wi="162.14mm" file="US08626017-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="223.44mm" wi="143.76mm" file="US08626017-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="138.94mm" wi="124.63mm" file="US08626017-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="249.34mm" wi="147.83mm" file="US08626017-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="138.26mm" wi="127.42mm" file="US08626017-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="202.35mm" wi="162.81mm" file="US08626017-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="136.23mm" wi="168.23mm" file="US08626017-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<p id="p-0002" num="0001">This application is based on Application No. 2008-252559 filed in Japan on Sep. 30, 2008, the entire content of which is hereby incorporated by reference.</p>
+<heading id="h-0001" level="1">TECHNICAL FIELD</heading>
+<p id="p-0003" num="0002">The present invention relates to an image forming device and a developer supply method.</p>
+<heading id="h-0002" level="1">BACKGROUND ART</heading>
+<p id="p-0004" num="0003">Conventionally, as an image forming device, the constitution to control the amount of toner to be supplied to a developer bottle on the basis of the concentration of the toner in a developer bottle has been publicly known (for example, refer to Japanese Patent Application Laid-Open No. 5-6090).</p>
+<p id="p-0005" num="0004">In addition, as other image forming device, the constitution to control the supply amount of the toner to a developer bottle in response to the number of printing dots (a dot count value) has been publicly known (for example, refer to Japanese Patent Application Laid-Open No. 5-40408).</p>
+<heading id="h-0003" level="1">DISCLOSURE OF THE INVENTION</heading>
+<heading id="h-0004" level="1">Problems to be Solved by the Invention</heading>
+<p id="p-0006" num="0005">Generally, in the image forming device, variations are generated in the aspect of the toner (a capacity, a concentration, and a bulk density or the like) to be supplied depending on a difference in an environmental condition such as a temperature and humidity. However, in the above-described conventional image forming device, it is impossible to appropriately maintain the concentration of the toner in a developing device in consideration of change of the aspect of the toner due to such a difference in an environmental condition. In other words, this is because it is not possible to eliminate the influence of change in the aspect of the toner to be actually supplied to the inside of the developing device merely by measuring the concentration of the toner in the developing device.</p>
+<p id="p-0007" num="0006">Therefore, an object of the present invention is to provide an image forming device and a developer supply method that can obtain a desired concentration of the toner in consideration of change in the aspect of a toner to be supplied.</p>
+<heading id="h-0005" level="1">Means Adapted to Solve the Problems</heading>
+<p id="p-0008" num="0007">In accordance with one aspect of the present invention, there is provided an image forming device including:</p>
+<p id="p-0009" num="0008">powder supply means adapted to supply powders containing at least toner;</p>
+<p id="p-0010" num="0009">developing means adapted to develop an electrostatic latent image by agitating and conveying a developer containing the powders that are supplied by the powder supply means;</p>
+<p id="p-0011" num="0010">means of detecting toner amount before supply that is placed in the middle of a conveyance path to connect the powder supply means with the developing means and detects a toner amount per unit volume to be supplied to the developing means; and</p>
+<p id="p-0012" num="0011">control means that controls a correction amount with respect to a reference supply amount due to the powder supply means on the basis of a toner amount per unit volume that is detected by the toner amount detecting means.</p>
+<p id="p-0013" num="0012">Further, the reference supply amount means a supply amount of powder that can supply the toner, which amount is equivalent to a toner consumption amount to be calculated on the basis of the dot count value and a toner consumption amount that is obtained by the toner remaining amount to be calculated in response to a decrease level of the concentration of the toner within the developing means.</p>
+<p id="p-0014" num="0013">According to the above-described constitution, detecting the amount of the toner per unit volume just before the toner is supplied to the developing means and correcting the reference supply amount on the basis of this result, it is possible to consider variation of the aspect of the toner. Accordingly, this makes it possible to control the concentration of the toner within the developing means into a desired value.</p>
+<p id="p-0015" num="0014">In the above aspect, a hopper that accumulates the powders to be supplied once is placed in the middle of a supply path reaching from the powder supply means to the developing means;</p>
+<p id="p-0016" num="0015">agitation means adapted to agitate the accumulated powders is placed in the hopper; and</p>
+<p id="p-0017" num="0016">the toner amount before supply detecting means is placed in the hopper.</p>
+<p id="p-0018" num="0017">According to the above-described constitution, it is possible to detect the amount of the toner per unit volume with the powders just before they are supplied to the inside of the developing means sufficiently agitated to unify the concentration of the toner. As a result, making the toner supply amount to the developing means into a desired value, it is possible to make the concentration of the toner of the developer within the developing means into the desired value.</p>
+<p id="p-0019" num="0018">In the above aspect, the toner amount detecting means comprises a magnetic permeability sensor and a magnetic body that are arranged across the supply path reaching from the powder supply means to the developing means; and</p>
+<p id="p-0020" num="0019">the control means calculates a toner amount to be supplied on the basis of a bulk density of the toner passing through the supply path, which bulk density is detected by the permeability sensor and the magnetic body, so as to control the correction amount with respect to the reference supply amount.</p>
+<p id="p-0021" num="0020">In the above aspect, the powders to be supplied from the powder supply means to the developing means is toner.</p>
+<p id="p-0022" num="0021">In the above aspect, the powder to be supplied from the powder supply means to the developing means is toner and a carrier.</p>
+<p id="p-0023" num="0022">In accordance with another aspect of the present invention, there is provided a developer supply method including:</p>
+<p id="p-0024" num="0023">detecting a toner amount per unit volume to be supplied to the developing means in the middle of a conveyance path to connect powder supply means adapted to supply powders containing at least toner with developing means adapted to develop an electrostatic latent image by agitating and conveying a developer containing the powders that are supplied by the powder supply means; and</p>
+<p id="p-0025" num="0024">controlling a correction amount with respect to a reference supply amount due to the powder supply means on the basis of a toner amount per unit volume that is detected.</p>
+<heading id="h-0006" level="1">Effect of the Invention</heading>
+<p id="p-0026" num="0025">According to the present invention, the reference supply amount is corrected on the basis of the amount of the toner per unit volume just before the toner is supplied to the developing means, so that it is possible to appropriately supply the toner in consideration of variations in the aspect of the toner, and the concentration of the toner within the developing means can be correctly controlled so as to be a desired value.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0007" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 1</figref> is a schematic front view of an image forming device according to the present embodiment.</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 2</figref> is a schematic front sectional view showing each image forming unit of <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 3</figref> is a schematic plan sectional view of a developer container of <figref idref="DRAWINGS">FIG. 2</figref>.</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 4</figref> is a schematic front view showing an image forming unit and a developer supply container of <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIG. 5</figref> is a block diagram of the image forming device according to the present embodiment.</p>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIG. 6</figref> is a graph showing a relation between sensor outputs of a concentration of a toner detection sensor and concentrations of a toner.</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIG. 7</figref> is a data table showing a relation among reference supply amounts to be decided by estimated amounts of toners and average concentration of a toner within a developing device.</p>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIG. 8</figref> is a data table showing a relation among correction amounts of a developer to be decided by reference supply amount that are decided by the data table of <figref idref="DRAWINGS">FIG. 8</figref> and concentrations of a toner to be detected within a sub hopper.</p>
+<p id="p-0035" num="0034"><figref idref="DRAWINGS">FIG. 9</figref> is a flow chart showing the content of the supply processing of a first developer according to the present embodiment.</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 10</figref> is a flow chart showing the content of the correction processing of <figref idref="DRAWINGS">FIG. 9</figref>.</p>
+<p id="p-0037" num="0036"><figref idref="DRAWINGS">FIG. 11</figref> is a flow chart showing the content of the supply processing of a second developer according to the present embodiment.</p>
+<p id="p-0038" num="0037"><figref idref="DRAWINGS">FIG. 12</figref> is a flow chart showing the content of the correction processing of <figref idref="DRAWINGS">FIG. 11</figref>.</p>
+<p id="p-0039" num="0038"><figref idref="DRAWINGS">FIG. 13</figref> is a flow chart showing the content of the supply processing of a third developer according to the present embodiment.</p>
+<p id="p-0040" num="0039"><figref idref="DRAWINGS">FIG. 14</figref> is a flow chart showing the content of the correction processing of <figref idref="DRAWINGS">FIG. 13</figref>.</p>
+<p id="p-0041" num="0040"><figref idref="DRAWINGS">FIG. 15</figref> is a schematic front view showing a developer container and a developing device according to other embodiment.</p>
+<p id="p-0042" num="0041"><figref idref="DRAWINGS">FIG. 16</figref> is a schematic front view showing the developer container and the developing device according to other embodiment.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0008" level="1">BEST MODE FOR CARRYING OUT THE INVENTION</heading>
+<p id="p-0043" num="0042">Hereinafter, the embodiment(s) according to the present invention will be described with reference to the drawings. However, in the following explanation, unless specifically described, the technical scope of the present invention is not limited only to kinds, combinations, shapes, and relative arrangements or the like of the constituent elements. In addition, as necessary, the terms showing specific directions and positions (for example, &#x201c;above&#x201d;, &#x201c;below&#x201d;, &#x201c;one end&#x201d;, and &#x201c;other end&#x201d; or the like) are used; however, these terms are used in order to make the understanding of the invention with reference to the drawings easy and due to meanings of these terms, the technical scope of the present invention is not limited.</p>
+<p id="h-0009" num="0000">(Constitution)</p>
+<p id="p-0044" num="0043">Among image forming devices of an electro photographic system using a binary developer, <figref idref="DRAWINGS">FIG. 1</figref> particularly illustrates an image forming device of a so-called trickle system that supplies not only toner but also a small amount of carrier. This image forming device is largely provided with image forming units <b>1</b>, a transcription unit <b>2</b>, an exposure unit <b>3</b>, a paper feeding unit <b>4</b>, a cleaning unit <b>5</b>, and a control unit <b>6</b> (refer to <figref idref="DRAWINGS">FIG. 5</figref>) or the like.</p>
+<p id="p-0045" num="0044">The image forming units <b>1</b> are arranged on four places along an intermediate transcription belt <b>33</b> of the transcription unit <b>2</b>, and by forming images of yellow (Y), magenta (M), cyan (C), and black (Bk), from the left side, respectively, the image forming units <b>1</b> form color images on the surface of the intermediate transcription belt <b>33</b>. As shown in <figref idref="DRAWINGS">FIG. 2</figref>, respective image forming units <b>1</b> are provided with a charging device <b>8</b>, a developing device <b>9</b>, and a cleaning device <b>10</b> or the like around a photo conductor drum <b>7</b>.</p>
+<p id="p-0046" num="0045">The charging device <b>8</b> forms a predetermined surface potential on the surface of the photo conductor drum <b>7</b>. This surface potential is made into an electrostatic latent image when the surface of the photo conductor drum <b>7</b> is exposed by the exposure unit <b>3</b>.</p>
+<p id="p-0047" num="0046">As shown in <figref idref="DRAWINGS">FIG. 2</figref> and <figref idref="DRAWINGS">FIG. 3</figref>, the developing device <b>9</b> has an agitation screw <b>12</b>, a supply screw <b>13</b>, and a developing roller <b>14</b>, which are respectively contained in a developer container <b>11</b>.</p>
+<p id="p-0048" num="0047">As shown in <figref idref="DRAWINGS">FIG. 3</figref>, the developer container <b>11</b> is formed as a long box that is elongated from one end to other end, and the developer container <b>11</b> is divided into two parts by a partition wall <b>15</b>, namely, a first containing part <b>16</b> and a second containing part <b>17</b> along a longitudinal direction. However, the opposite end sides of the first containing part <b>16</b> and the second containing part <b>17</b> are communicated with each other by communication parts <b>18</b><i>a </i>and <b>18</b><i>b</i>, and the contained developer is cyclically moved, being agitated. In addition, the developer container <b>11</b> is provided with a first toner concentration detection sensor <b>25</b> as means of detecting the amount of the toner per unit volume. The first toner concentration detection sensor <b>25</b> is a conventionally well-known one that outputs a difference in a magnetic permeability of the developer as a frequency and calculates a concentration of a toner (a weight ratio of the toner for the developer) in accordance with the graph of <figref idref="DRAWINGS">FIG. 6</figref>.</p>
+<p id="p-0049" num="0048">A developer supply port <b>19</b> is formed on one end side of the first containing part <b>16</b>, and as described later, the developer is supplied from a corresponding developer supply container <b>23</b>. Here, as the developer, a binary developer containing a toner and a carrier is used. However, the developer may further contain an external addition agent or the like.</p>
+<p id="p-0050" num="0049">On the other hand, a developer discharge port <b>20</b> is formed on one end side of the second containing part <b>17</b> so as to prevent a carrier that is deteriorated from remaining in the developer container <b>11</b> over a long period by appropriately discharging the developer.</p>
+<p id="p-0051" num="0050">The agitation screw <b>12</b> is structured being provided with a spiral wing <b>12</b><i>b </i>around a rotation shaft <b>12</b><i>a </i>to be arranged in the first containing part <b>16</b>. The agitation screw <b>12</b> is rotary-driven to agitate the developer, conveying the developer from one end side to other end side.</p>
+<p id="p-0052" num="0051">The supply screw <b>13</b> is arranged in the second containing part <b>17</b> having a spiral wing <b>13</b><i>b </i>placed around a rotation shaft <b>13</b><i>a </i>as well as the above-described agitation screw <b>12</b>. The supply screw <b>13</b> is rotary-driven to transport the developer from the side of the communication parts <b>18</b><i>b </i>to the side of the communication part <b>18</b><i>a </i>and supplies the developer to the developing roller <b>14</b>.</p>
+<p id="p-0053" num="0052">As shown in <figref idref="DRAWINGS">FIG. 2</figref>, the developing roller <b>14</b> has a plurality of permanent magnets <b>22</b> in the cylindrical sleeve <b>21</b> (here, five permanent magnets S<b>2</b>, N<b>2</b>, S<b>1</b>, N<b>1</b>, and S<b>3</b> are arranged in this order in a clockwise direction). The sleeve <b>21</b> is structured so as to be rotated in an arrow direction in the drawing by sleeve driving means (not illustrated).</p>
+<p id="p-0054" num="0053">As shown in <figref idref="DRAWINGS">FIG. 4</figref>, the developer supply container <b>23</b> for supplying a binary developer for supply composed of toner and a carrier (hereinafter, merely described as a developer) is detachably located above the developing device <b>9</b>. The developer contained in the developer supply container <b>23</b> is appropriately agitated by an agitation member <b>24</b>. The agitation member <b>24</b> is formed by integrally arranging paddles <b>24</b><i>b </i>of tabular shapes with predetermined intervals on plural places around a rotation shaft <b>24</b><i>a. </i></p>
+<p id="p-0055" num="0054">The lower surface of the developer supply container <b>23</b> and the upper surface of the developer container <b>11</b> are connected by a supply tube <b>26</b> that forms a supply path. Further, a concentration of a toner of the developer to be contained in the developer container <b>11</b> in advance is 7%; and a concentration of a toner of the developer to be supplied from the developer supply container <b>23</b> is 80% (a carrier concentration is 20%, generally, 10 to 20%).</p>
+<p id="p-0056" num="0055">In the middle of the supply tube <b>26</b>, a sub hopper <b>28</b> is connected. Paddles <b>29</b> (they may be a rotation coil or the like) are contained in the sub hopper <b>28</b>, and when the paddles <b>29</b> are appropriately rotated, the developer is supplied. On the upper side surface of the sub hopper <b>28</b>, an empty sensor <b>30</b> is placed. As the empty sensor <b>30</b>, a photo sensor, a piezoelectric sensor, and a magnet lead sensor or the like can be used. The empty sensor <b>30</b> detects that the amount of the developer in the sub hopper <b>28</b> is not more than a predetermined value.</p>
+<p id="p-0057" num="0056">In addition, at a lower surface corner portion of the sub hopper <b>28</b>, as means of detecting the amount of the toner per unit volume, a second toner concentration detection sensor <b>31</b> is provided. As the second toner concentration detection sensor <b>31</b>, one having a sufficient sensitivity even in a high concentration region with a concentration of a toner (a weight ratio) not less than 50% is available. For example, a magnetic type of a sensor may be used, which is configured to detect a concentration of a toner component in the developer by change in a frequency of a resonance circuit formed by an inductance and a capacitance (in detail, refer to Japanese Patent Application Laid-Open No. 11-119538). Further, a method of calculating a concentration of a toner from a detection signal detected by the second toner concentration detection sensor <b>31</b> is identical with that of the above-described first toner concentration detection sensor <b>25</b>.</p>
+<p id="p-0058" num="0057">After transcription of the toner to the surface of the photo conductor drum <b>7</b>, collecting the toner remaining on this surface, the cleaning device <b>10</b> cleans this surface.</p>
+<p id="p-0059" num="0058">As shown in <figref idref="DRAWINGS">FIG. 1</figref>, the transcription unit <b>2</b> is structured in such a manner that the intermediate transcription belt <b>33</b> is rounded between a pair of support rollers <b>32</b>, and driving the support rollers <b>32</b> by means of driving means (not illustrated), the intermediate transcription belt <b>33</b> is cyclically moved in an arrow direction. The transcription unit <b>2</b> is provided with a primary transcription part <b>34</b> and a secondary transcription part <b>35</b>.</p>
+<p id="p-0060" num="0059">The exposure unit <b>3</b> irradiates a laser beam to the above-described photo conductor drum <b>7</b> to form an electrostatic latent image corresponding to the image data that is read by a scanner (not illustrated).</p>
+<p id="p-0061" num="0060">The paper feeding unit <b>4</b> conveys recording medium <b>38</b> contained in a cassette <b>36</b> to the secondary transcription part <b>35</b> in series via a conveyance roller <b>37</b>. A toner image is transcribed to the recording medium <b>38</b> that is conveyed to the secondary transcription part <b>35</b>, and after the toner image transcribed by a fuser unit <b>39</b> is fixed, the recording medium <b>38</b> is conveyed to a discharge tray <b>40</b>.</p>
+<p id="p-0062" num="0061">The cleaning unit <b>5</b> is capable of coming contact with and being detached from the intermediate transcription belt <b>33</b> and the cleaning unit <b>5</b> collects the remaining toner on the surface of the intermediate transcription belt <b>33</b> when the cleaning unit <b>5</b> gets close to the intermediate transcription belt <b>33</b> and cleans the intermediate transcription belt <b>33</b>.</p>
+<p id="p-0063" num="0062">The control unit <b>6</b> carries out the supply processing of the developer on the basis of the detection voltages to be inputted from respective toner concentration detection sensors <b>25</b> and <b>31</b> as described later.</p>
+<p id="h-0010" num="0000">(Operation)</p>
+<p id="p-0064" num="0063">Next, the operation of the image forming device that is formed by the above-described constitution will be described.</p>
+<p id="p-0065" num="0064">At the time of forming images, the color print data that is obtained by reading the image, or the image data that is outputted from a personal computer or the like is transmitted to each of the image forming units <b>1</b> as an image signal of each color, yellow (Y), magenta (M), cyan (C), and black (Bk) after being applied with predetermined signal processing.</p>
+<p id="p-0066" num="0065">Respective image forming units <b>1</b> form latent images by projecting the laser beam that is modulated by image signals on the photo conductor drum <b>7</b>. Then, respective image forming units <b>1</b> supply the toner from the developing device <b>9</b> to the photo conductor drum <b>7</b>.</p>
+<p id="p-0067" num="0066">By rotary-driving the agitation screw <b>12</b> and the supply screw <b>13</b>, the developing device <b>9</b> circulates the developer contained in the developer container <b>11</b> while agitating the developer. Then, supplying the toner from the supply screw <b>13</b> to the developing roller <b>14</b>, the toner is scraped out by a regulation member <b>11</b><i>a </i>to be a constant amount. After that, the developing device <b>9</b> conveys the toner to the photo conductor drum <b>7</b>.</p>
+<p id="p-0068" num="0067">Thereby, on respective photo conductor drums <b>7</b>, toner images of yellow, magenta, cyan, and black are formed. The formed yellow, magenta, cyan, and black toner images are primarily transcribed by the primary transcription part <b>34</b> being superimposed on the moving intermediate transcription belt <b>33</b> in series. Thus, the superimposed toner images that are formed on the intermediate transcription belt <b>33</b> are moved to the secondary transcription part <b>35</b> in accordance with movement of the intermediate transcription belt <b>33</b>.</p>
+<p id="p-0069" num="0068">In addition, the recording medium <b>38</b> is supplied from the paper feeding unit <b>4</b>. The supplied recording medium <b>38</b> is conveyed between the secondary transcription part <b>35</b> and the intermediate transcription belt <b>33</b> by the conveyance roller <b>37</b>, and then, the toner images formed on the intermediate transcription belt <b>33</b> are transcribed on this recording medium <b>38</b>. The recording medium <b>38</b> having the toner images transcribed is further conveyed to a fuser device <b>39</b>, and after the transcribed toner images are fixed there, the recording medium <b>38</b> is discharged to the discharge tray <b>40</b>.</p>
+<p id="p-0070" num="0069">In the mean time, in the developing device <b>9</b>, the concentration of the toner of the contained developer is lowered by supplying the toner to the photo conductor drum <b>7</b>, and the carrier is deteriorated by usage over a long period. Therefore, by appropriately discharging and supplying the developer, the amount of the developer in the developer container <b>11</b> is maintained approximately constant.</p>
+<p id="p-0071" num="0070">For example, the supply processing of the developer will be carried out as follows.</p>
+<p id="h-0011" num="0000">(First Supply Processing of Developer)</p>
+<p id="p-0072" num="0071">In other words, in the flow chart of <figref idref="DRAWINGS">FIG. 9</figref>, when predetermined time has been passed (step S<b>1</b>), a detection signal to be outputted from the first toner concentration detection sensor <b>25</b> is read (step S<b>2</b>). Here, by driving the agitation screw <b>12</b> and the supply screw <b>13</b> and moving the developer for a predetermined tine, the concentration of the toner after the concentration of the toner is made to be approximately unified is read. The developer may be moved for full circle, or quarter circle. The bottom line is that the developer is moved so as to obtain nearly unified concentration of the toner across the developing device <b>9</b>.</p>
+<p id="p-0073" num="0072">Then, on the basis of the read detection signal, the reference supply amount is calculated (step S<b>3</b>). Then, on the basis of a relation between the preliminarily-obtained reference supply amount and the rotation-driving time of the paddles <b>29</b> in the sub hopper <b>28</b>, the rotation-driving time of the paddles <b>29</b> is set. The more the detected concentration of the toner is decreased, the longer the rotation time of the paddles <b>29</b> is set.</p>
+<p id="p-0074" num="0073">When the reference supply amount of the developer is calculated in this way, the correction processing for correcting the supply amount of the developer is carried out. According to the correction processing, as shown in the flowchart of <figref idref="DRAWINGS">FIG. 10</figref>, at first, a detection signal in the empty sensor <b>30</b> is read (step S<b>11</b>). Then, on the basis of the read detection signal, it is judged whether or not the developer in the sub hopper <b>28</b> is nearly empty (step S<b>12</b>). Here, &#x201c;nearly empty&#x201d; means the state such that the first driving member <b>23</b> is vacant, the developer is not supplied to the inside of the sub hopper <b>28</b>, and the amount of the developer in the side hopper <b>28</b> is not more than the reference value.</p>
+<p id="p-0075" num="0074">If the developer is judged to be nearly empty, the supply processing in response to the state is carried out (step S<b>13</b>). In other words, without correcting the supply amount of the developer as described later, as shown in the above-described steps S<b>1</b> to S<b>3</b>, the reference supply amount of the developer is calculated and this reference supply amount is defined as a legitimate supply amount. This is because, if the developer is the state of nearly-empty, the amount of the developer in the sub hopper <b>28</b> is decreased, and this makes it impossible to correctly detect the concentration of the toner.</p>
+<p id="p-0076" num="0075">If the developer is not judged to be nearly-empty, a detection signal detected by the second toner concentration detection sensor <b>31</b> (means of detecting toner amount before supply) is read (step S<b>14</b>). Then, on the basis of the read detection signal, namely, the concentration of the toner, with reference to the supply amount correction table shown in <figref idref="DRAWINGS">FIG. 8</figref>, the correction amount with respect to the reference supply amount of the developer is calculated (step S<b>15</b>). In other words, on the basis of the concentration of the toner in the sub hopper <b>28</b> that is detected by the second toner concentration detection sensor <b>31</b>, the correction amount with respect to the reference supply amount that is obtained as described above is obtained. Here, the correction amount with respect to each reference supply amount is to be decided in six stages, namely, up to 50%; 50 to 60%; 60 to 70%; 70 to 80%; 80 to 90%; and 90 to 100%. In detail, if the concentration of the toner to be detected is in the range of 80 to 90%, the correction amount is made into 0 because this is within the range of the desired concentration (the reference concentration). In addition, if the concentration of the toner to be detected is less than 80%, the toner amount to be supplied is smaller than the desired amount. Therefore, in response to a decrease level of the concentration of the toner, the supply amount of the developer is corrected so as to be increased. On the contrary, if the concentration of the toner to be detected is not less than 90%, the amount of the toner to be supplied is increased than the desired amount, so that the supply amount of the developer is corrected so as to be limited. If the supply amount is calculated, adding the correction amount to the reference supply amount, a legitimate supply amount is calculated (step S<b>16</b>). Further, the segment of the concentration of the toner to be detected is not limited to the above-described six stages, but the segment may be further broken (according to the circumstances, no stage) or the concentration of the toner to be detected may be divided into the stages less than six.</p>
+<p id="p-0077" num="0076">If the supply control processing is completed, by rotating the paddles <b>29</b> for a time on the basis of the calculated supply amount of the developer, the developer is supplied.</p>
+<p id="p-0078" num="0077">Thus, according to the above-described supply processing of the developer, detecting the concentration of the toner of the developer just before being supplied to the developer container <b>11</b>, on the basis of this detection result, not only the reference supply amount from the corresponding developer supply container <b>23</b> is decided, but also this reference supply amount is corrected. Thereby, it is possible to stabilize the amount of the toner to be supplied to the inside of the developer container <b>11</b>, so that it is possible to correctly control the concentration of the toner in the developer container <b>11</b> to be a desired value.</p>
+<p id="h-0012" num="0000">(Second Supply Processing of Developer)</p>
+<p id="p-0079" num="0078">According to the second supply processing of developer, the developing device <b>9</b> and the developer container <b>23</b> are configured as shown in <figref idref="DRAWINGS">FIG. 15</figref>. In other words, eliminating the sub hopper <b>28</b> from the configuration shown in <figref idref="DRAWINGS">FIG. 4</figref>, as means of detecting the amount of the toner per unit volume, a third toner concentration detection sensor <b>41</b> is placed on the lower surface of the developer container <b>11</b> and in the vicinity of the supply tube <b>26</b>. Further, since other configurations are the same as the configurations shown in <figref idref="DRAWINGS">FIG. 4</figref>, the identical reference numerals are given to the corresponding parts and the explanation thereof is herein omitted.</p>
+<p id="p-0080" num="0079">Then, the second supply processing of developer will be carried out as follows. In other words, as shown in the flow chart of <figref idref="DRAWINGS">FIG. 11</figref>, obtaining the image data (step S<b>21</b>), the number of dots to be obtained from the obtained image data is added to a memory of the control unit <b>6</b> (step S<b>22</b>). Then, if the image data corresponding to one piece of the recording medium <b>38</b> is completely obtained (step S<b>23</b>), on the basis of a total of the number of dots accumulated in the memory, the reference supply amount of the developer is calculated (step S<b>24</b>). In other words, the consumption amount of the toner is obtained by multiplying the total of the number of dots since the consumption amount of the toner per dot is known in advance, so that the total of the developer that can supply the toner of the amount corresponding to this consumption amount of the toner is defined a reference supply amount.</p>
+<p id="p-0081" num="0080">When the reference supply amount of the developer is calculated in this way, the correction processing will be carried out (step S<b>25</b>).</p>
+<p id="p-0082" num="0081">As shown in the flow chart of <figref idref="DRAWINGS">FIG. 12</figref>, in the correction processing, reading detection signals to be outputted from the third toner concentration detection sensor <b>41</b> (the means of detecting toner amount before supply) (step S<b>31</b>), with reference to a supply amount correction table shown in <figref idref="DRAWINGS">FIG. 8</figref>, the correction amount with respect to the reference supply amount of the developer will be calculated (step S<b>32</b>). Then, adding the calculated correction amount to the reference supply amount, a legitimate supply amount is obtained (step S<b>33</b>).</p>
+<p id="p-0083" num="0082">If the supply control processing is completed, by rotating the paddles <b>24</b> for a time on the basis of the calculated supply amount of the developer, the developer is supplied. In addition, the number of dots stored in the memory of the control unit <b>6</b> is cleared (=0) (step S<b>26</b>).</p>
+<p id="h-0013" num="0000">(Third Supply Processing of Developer)</p>
+<p id="p-0084" num="0083">According to the third supply processing of developer, the developing device <b>9</b> and the developer container <b>23</b> are configured as shown in <figref idref="DRAWINGS">FIG. 16</figref>. In other words, the developing device <b>9</b> is a binary developing device using a binary developer composed of normal toner and carrier, and this configuration of the developing device <b>9</b> is identical to the configuration of the developing device <b>9</b> shown in <figref idref="DRAWINGS">FIG. 4</figref> except for the point that no developer discharge port <b>20</b> is provided. Further, from a toner supply container <b>42</b>, a toner is only supplied to the developing device <b>9</b> and no carrier is supplied thereto.</p>
+<p id="p-0085" num="0084">In addition, in the middle of the supply tube <b>26</b> that supplies the toner from the toner supply container <b>42</b> to the developing device <b>9</b>, a magnetic permeability sensor <b>43</b> and a magnetic body <b>44</b> are arranged being opposed so as to hold the supply tube <b>26</b> from the opposite sides. Then, by using change in the output of the magnetic permeability sensor <b>43</b> in response to the amount of the toner passing between the magnetic permeability sensor <b>43</b> and the magnetic body <b>44</b>, a bulk density of the toner is detected.</p>
+<p id="p-0086" num="0085">Further, paddles <b>45</b> are arranged in the toner supply container <b>42</b> so as to be capable of being rotary-driven. These paddles <b>45</b> are normally stopped, and in the case that a supply signal is outputted on the basis of the output from the first toner concentration detection sensor <b>25</b>, which is arranged in the developer container <b>11</b> of the developing device <b>9</b>, the paddles <b>45</b> are rotary-driven for a predetermined time. Thereby, the toner of the amount in response to the rotation time is supplied to the inside of the developing device <b>9</b> via the supply tube <b>26</b>.</p>
+<p id="p-0087" num="0086">Further, since other configurations are the same as the configurations shown in <figref idref="DRAWINGS">FIG. 4</figref>, the identical reference numerals are given to the corresponding parts and the explanation thereof is herein omitted.</p>
+<p id="p-0088" num="0087">The third supply processing of developer incorporates the contents of the above-described two supply processing of developer as shown in the flow chart of <figref idref="DRAWINGS">FIG. 13</figref>. In other words, obtaining the image data (step S<b>41</b>), the number of dots to be obtained from the obtained image data is added to the memory of the control unit <b>6</b> (step S<b>42</b>). Then, if the image data corresponding to one piece of the recording medium <b>38</b> is completely obtained (step S<b>43</b>), on the basis of a total of the number of dots accumulated in the memory, the estimated consumption amount of the developer is calculated (step S<b>44</b>). In addition, detection signals to be outputted from the first toner concentration detection sensor <b>25</b> are read (step S<b>45</b>). Here, on the basis of the estimated consumption amount of the developer and the detection signals outputted from the first toner concentration detection sensor <b>25</b>, in accordance with the data table shown in <figref idref="DRAWINGS">FIG. 7</figref>, the reference supply amount is calculated (step S<b>46</b>), the correction processing is carried out (step S<b>47</b>).</p>
+<p id="p-0089" num="0088">According to the correction processing, as shown in FIG. <b>14</b>, on the basis of the detection signals to be outputted from the magnetic permeability sensor <b>43</b>, the bulk density of the toner passing, the amount of the toner per unit volume, namely, the concentration of the toner is calculated from this bulk density. Then, the concentration of the toner is read (step S<b>51</b>), and with reference to the supply amount correction table (not illustrated), the correction amount with respect to the reference supply amount of the developer is calculated (step S<b>52</b>). Subsequently, adding the calculated correction amount to the reference supply amount, a legitimate supply amount is obtained (step S<b>53</b>).</p>
+<p id="p-0090" num="0089">If the supply control processing is completed, by rotating the paddles <b>45</b> for a time in response to the calculated supply amount of the developer, the developer is supplied. In addition, the number of dots stored in the memory of the control unit <b>6</b> is cleared (=0) (step S<b>47</b>).</p>
+<p id="p-0091" num="0090">Further, the present invention is not limited to the configurations described in the above-described embodiment, and various modifications can be made.</p>
+<p id="p-0092" num="0091">The above-described sub hopper <b>28</b> is not necessarily needed. In this case, the magnetic permeability sensor may be placed in the middle of the supply tube <b>26</b>. In addition, as necessary, it is preferable that the concentration of the toner is unified by arranging a coil for agitation or the like in the supply tube <b>26</b>.</p>
+<p id="p-0093" num="0092">According to the above-described first supply processing of developer, in the configuration that the reference supply amount is decided on the basis of the concentration of the toner of the developer in the developer container <b>11</b> that is detected by the first toner concentration detection sensor <b>25</b>, the correction amount is calculated on the basis of the concentration of the toner of the developer to be supplied to the inside of the developer container <b>11</b> that is detected by the second toner concentration detection sensor <b>31</b> provided in the sub hopper <b>28</b>; however, the present invention is not limited to this. Without providing the sub hopper <b>28</b>, providing a toner concentration detection sensor in the vicinity of the supply port of the corresponding developer supply container <b>23</b>, the correction amount with respect to the reference supply amount may be calculated on the basis of the concentration of the toner to be detected by this detection sensor.</p>
+<p id="p-0094" num="0093">In addition, according to the above-described first supply processing of developer, the reference supply amount is decided on the basis of only the concentration of the toner of the developer in the developer container <b>11</b>; however, also considering the estimated consumption amount of the developer to be obtained by counting the number of dots of the image data, the reference supply amount may be decided.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>The invention claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. An image forming device, comprising:
+<claim-text>powder supply means adapted to supply powders containing at least toner;</claim-text>
+<claim-text>developing means adapted to develop an electrostatic latent image by agitating and conveying a developer containing the powders that are supplied by said powder supply means;</claim-text>
+<claim-text>means of detecting toner amount per unit volume that is placed in the middle of a conveyance path connecting said powder supply means with said developing means and detects a toner amount per unit volume of the powders in the conveyance path before the powders are supplied to said developing means; and</claim-text>
+<claim-text>control means that determines a correction amount based on: (i) a reference supply amount of powders to be supplied to the developing means, and (ii) the toner amount per unit volume that is detected by said detecting means.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The image forming device according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>a hopper that accumulates the powders to be supplied is placed in the middle of the conveyance path;</claim-text>
+<claim-text>agitation means adapted to agitate the accumulated powders is placed in said hopper; and</claim-text>
+<claim-text>said toner amount detecting means is placed in said hopper.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The image forming device according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>said toner amount detecting means comprises a magnetic permeability sensor and a magnetic body that are arranged along the conveyance path; and</claim-text>
+<claim-text>said control means calculates a toner amount to be supplied on the basis of a bulk density of the toner passing through said conveyance path, which bulk density is detected by said permeability sensor and said magnetic body, so as to control the correction amount with respect to the reference supply amount.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The image forming device according to <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein:
+<claim-text>the powders to be supplied from said powder supply means to said developing means are toner.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The image forming device according to <claim-ref idref="CLM-00001">claim 1</claim-ref> wherein:
+<claim-text>the powders to be supplied from said powder supply means to said developing means include toner and a carrier.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The image forming device according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the control means determines an actual supply amount by adding the correction amount to the reference supply amount.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The image forming device according to <claim-ref idref="CLM-00006">claim 6</claim-ref> wherein:
+<claim-text>the powder supply means houses a rotation member configured to discharge powders from the powder supply means into the conveyance path; and</claim-text>
+<claim-text>the control means determines an amount of time for rotating the rotation member based on the actual supply amount.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The image forming device according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>a second detecting means that detects a toner amount per unit volume of powders inside the developing means; and</claim-text>
+<claim-text>wherein the control means determines the reference supply amount based on the toner amount per unit volume detected by the second detecting means.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. A developer supply method, wherein:
+<claim-text>detecting a toner amount per unit volume in powders to be supplied to developing means in the middle of a conveyance path connecting powder supply means, adapted to supply powders containing at least toner, with the developing means adapted to develop an electrostatic latent image by agitating and conveying the powders that are supplied by said powder supply means;</claim-text>
+<claim-text>determining a correction amount based on: (i) a reference supply amount of powders to be supplied to the developing means, and (ii) the toner amount per unit volume that is detected.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The developer supply method according to <claim-ref idref="CLM-00009">claim 9</claim-ref> further comprising determining an actual supply amount by adding the correction amount to the reference supply amount.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The developer supply method according to <claim-ref idref="CLM-00010">claim 10</claim-ref>, further comprising determining an amount of time for rotating a rotation member that discharges powders from the powder supply means into the conveyance path based on the actual supply amount.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The developer supply method according to <claim-ref idref="CLM-00009">claim 9</claim-ref> further comprising:
+<claim-text>detecting a toner amount per unit volume of powders inside the developing means; and</claim-text>
+<claim-text>determining the reference supply amount based on the toner amount per unit volume of the powders inside the developing means. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

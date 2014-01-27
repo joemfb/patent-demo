@@ -1,0 +1,606 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626542-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626542</doc-number>
+<kind>B1</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13186336</doc-number>
+<date>20110719</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>5</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20120101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>Q</subclass>
+<main-group>40</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>705  711</main-classification>
+<further-classification>705  742</further-classification>
+</classification-national>
+<invention-title id="d2e53">Full-kit management in projects: computing the full-kit delay</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>2002/0128890</doc-number>
+<kind>A1</kind>
+<name>Dick et al.</name>
+<date>20020900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>705  8</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2002/0188597</doc-number>
+<kind>A1</kind>
+<name>Kern et al.</name>
+<date>20021200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707  1</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>2006/0069605</doc-number>
+<kind>A1</kind>
+<name>Hatoun</name>
+<date>20060300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>705  9</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>2009/0048896</doc-number>
+<kind>A1</kind>
+<name>Anandan</name>
+<date>20090200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>705  9</main-classification></classification-national>
+</us-citation>
+</us-references-cited>
+<number-of-claims>21</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>705  711</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>705  742</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>10</number-of-drawing-sheets>
+<number-of-figures>20</number-of-figures>
+</figures>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Kapoor</last-name>
+<first-name>Ajai</first-name>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Painuly</last-name>
+<first-name>Pankaj P.</first-name>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Higgins</last-name>
+<first-name>Travis F.</first-name>
+<address>
+<city>San Francisco</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="004" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Murgai</last-name>
+<first-name>Puneet</first-name>
+<address>
+<city>Sunnyvale</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="005" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Bazgan</last-name>
+<first-name>Corvin</first-name>
+<address>
+<city>San Carlos</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="006" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Muthu</last-name>
+<first-name>Subramanian</first-name>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Kapoor</last-name>
+<first-name>Ajai</first-name>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Painuly</last-name>
+<first-name>Pankaj P.</first-name>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Higgins</last-name>
+<first-name>Travis F.</first-name>
+<address>
+<city>San Francisco</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="004" designation="us-only">
+<addressbook>
+<last-name>Murgai</last-name>
+<first-name>Puneet</first-name>
+<address>
+<city>Sunnyvale</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="005" designation="us-only">
+<addressbook>
+<last-name>Bazgan</last-name>
+<first-name>Corvin</first-name>
+<address>
+<city>San Carlos</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="006" designation="us-only">
+<addressbook>
+<last-name>Muthu</last-name>
+<first-name>Subramanian</first-name>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Park, Vaughan, Fleming &#x26; Dowler LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="02" rep-type="attorney">
+<addressbook>
+<last-name>Sahasrabuddhe</last-name>
+<first-name>Laxman</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Realization Technologies, Inc.</orgname>
+<role>02</role>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Dixon</last-name>
+<first-name>Thomas</first-name>
+<department>3684</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Fields</last-name>
+<first-name>Benjamin S</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Methods and apparatuses are described for creating and using full-kit tasks, monitoring the progress of full-kit tasks, determining full-kit dates, checking compliance of release conditions associated with full-kit tasks, and/or computing and reporting full-kit task delays. A full-kit task can be used in the project plan to represent the preparations that are required or recommended to be performed before executing a set of tasks. The full-kit task can be a zero-duration task that has a full-kit date and that includes a list of items which need to be completed by the full-kit date. The full-kit task is capable of being in one of the following states: not started, in progress, released, and completed. In some embodiments, the set of tasks associated with the full-kit task can only be started if the full-kit task is either in the released state or the completed state.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="146.30mm" wi="144.70mm" file="US08626542-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="248.75mm" wi="184.83mm" file="US08626542-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="154.18mm" wi="178.22mm" file="US08626542-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="236.22mm" wi="161.80mm" file="US08626542-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="217.42mm" wi="189.15mm" file="US08626542-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="238.84mm" wi="179.58mm" file="US08626542-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="242.82mm" wi="156.46mm" file="US08626542-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="261.62mm" wi="161.46mm" file="US08626542-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="260.60mm" wi="183.81mm" file="US08626542-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="262.64mm" wi="162.73mm" file="US08626542-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="258.32mm" wi="198.04mm" file="US08626542-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">FIELD</heading>
+<p id="p-0002" num="0001">The present disclosure generally relates to project scheduling. More specifically, the present disclosure relates to full-kit management in projects.</p>
+<heading id="h-0002" level="1">BACKGROUND</heading>
+<heading id="h-0003" level="1">Related Art</heading>
+<p id="p-0003" num="0002">The ability to successfully complete projects on time is critical for any organization's success. Not surprisingly, organizations spend large amounts of resources to ensure that projects are properly planned and executed. Unfortunately, despite all of the resources spent on project planning and execution, very few projects complete on time and within budget.</p>
+<p id="p-0004" num="0003">In theory, properly planned projects should complete on time. However, in reality, project plans are inherently uncertain because the future is unpredictable. Many problems may arise during the execution of the project, which may cause the project plan to slip. For example, requirements may change, equipment may fail, vendors may not deliver on time, work may materialize more slowly than expected, approvals may not be granted on time, priorities may change, etc.</p>
+<p id="p-0005" num="0004">It is generally desirable to enable organizations to schedule projects to overcome the above-described problems, and to increase the likelihood that the projects will complete on time and under budget.</p>
+<heading id="h-0004" level="1">SUMMARY</heading>
+<p id="p-0006" num="0005">Some embodiments described in this disclosure provide methods and apparatuses for creating and using full-kit tasks. Using full-kit tasks at appropriate points in the project can reduce uncertainties and dependencies that need to be managed, allowing smooth execution of a project without significant interruptions at every step. The term &#x201c;phase&#x201d; as used in this disclosure generally refers to an arbitrary collection of tasks. The term &#x201c;phase&#x201d; does not necessarily imply the creation or existence of a separate entity (e.g., a phase data structure) in the project management system.</p>
+<p id="p-0007" num="0006">In some embodiments, a system can receive a request to create a full-kit task for a set of tasks in a project or for the entire project. The project can include tasks whose interdependencies are capable of being represented using a task dependency network. In some embodiments, the set of tasks in the project can be associated with a phase. In response to the request, the system can create the full-kit task for the set of tasks, wherein the set of tasks can only be started when the full-kit task is in one of a set of pre-determined states. In some embodiments, the full-kit task can be a zero-duration task. In some embodiments, the full-kit task can be created based on a full-kit template.</p>
+<p id="p-0008" num="0007">In some embodiments, the full-kit task can be associated with a full-kit date, and the full-kit task can include a list of items which need to be completed by the full-kit date.</p>
+<p id="p-0009" num="0008">In some embodiments, the full-kit task is capable of being in one of the following states: not started, in progress, released, and completed. The set of pre-determined states can include the released state and the completed state.</p>
+<p id="p-0010" num="0009">Some embodiments described in this disclosure provide methods and apparatuses for determining a full-kit date for a full-kit task that is associated with one or more tasks. In some embodiments, a full-kit task can be associated with a phase or an entire project. In some embodiments, a system can determine a set of task chains associated with the full-kit task. Next, the system can determine a full-kit date for each task chain in the set of task chains by: summing task durations and buffers in the task chain, and subtracting a result of said summing from each contractual milestone or project due date that the chain feeds. The system can then set the full-kit date for the full-kit task to be equal to the earliest full-kit date from the determined full-kit dates.</p>
+<p id="p-0011" num="0010">Some embodiments described in this disclosure provide methods and apparatuses for checking compliance with a release condition of a full-kit task. In some embodiments, a system can display (e.g., by generating signals that can be provided to a computer monitor) a full-kit task window to a full-kit task manager. The system can allow the full-kit task manager to input or update the percentage completion for one or more full-kit tasks. In response to receiving an input from the full-kit task manager which indicates that the full-kit task is to be released, the system can release the full-kit task. The system can then determine whether or not a release condition is satisfied. Next, in response to determining that the release condition of the full-kit task is not satisfied, the system can generate a report that indicates that the full-kit task was released even though the release condition was not satisfied. In some embodiments, the report can include the percentage of full-kit tasks across one or more projects that were released in violation of the release condition. The percentage of full-kit tasks that violated the release condition can be plotted against time to show if compliance with the release condition is improving or degrading over time. In some embodiments, the report identifies the full-kit task manager, i.e., the report indicates that the full-kit task manager did not comply with the release condition.</p>
+<p id="p-0012" num="0011">In some embodiments, the release condition may specify a minimum percentage completion threshold for releasing the full-kit task. In these embodiments, the release condition is satisfied if the percentage completion of the full-kit task exceeds the minimum percentage completion threshold. In some embodiments, the release condition may specify that the full-kit task can be released if the number of items in the full-kit task that have been completed exceeds a threshold. In other words, in these embodiments, the release condition is satisfied if the number of items in the list which have been completed exceeds the threshold.</p>
+<p id="p-0013" num="0012">Some embodiments described in this disclosure provide methods and apparatuses for determining full-kit task delays. In some embodiments, at a first time instance (e.g., time T<b>1</b>), the system can determine whether or not the full-kit task is in one of the set of predetermined states. If the full-kit task is not in one of the set of predetermined states, the system can determine a full-kit task delay for the full-kit task by computing a first time difference between the first time instance and the full-kit date. On the other hand, if the full-kit task is in one of the set of predetermined states, the system can determine a second time instance (e.g., time T<b>2</b>) when the full-kit task entered one of the set of predetermined states, and determine the full-kit task delay for the full-kit task by computing a second time difference between the second time instance and the full-kit date.</p>
+<p id="p-0014" num="0013">In some embodiments, the system can generate a report based on the full-kit task delays. For example, in some embodiments, for each time bucket from a set of time buckets, the system can aggregate full-kit task delays of full-kit tasks whose full-kit dates fall within the time bucket, and display the aggregated full-kit task delay for each time bucket from the set of time buckets. The aggregated full-kit task delay can be plotted against time to show if full-kit performance is improving or degrading over time. In some embodiments, the system can aggregate the full-kit delay based on each checklist item, thereby enabling a user to identify the checklist items that caused the greatest amount of delay. In some embodiments, the system can display the trend of delay caused by a checklist item enabling user to see if full kitting of the checklist item is improving.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0005" level="1">BRIEF DESCRIPTION OF THE FIGURES</heading>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 1</figref> illustrates multiple projects in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 2</figref> illustrates how tasks can be associated with phases in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 3</figref> illustrates how a project can be represented using phases in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIGS. 4A and 4B</figref> illustrate how buffers can be added and how buffer consumptions can be determined in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 5</figref> illustrates a full-kit task in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 6</figref> illustrates a system in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 7</figref> illustrates a window of a GUI that a task manager can use to update the status of a task in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 8</figref> illustrates how a full-kit date for a full-kit task can be determined in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 9</figref> illustrates a bar graph that shows the aggregate full-kit task delay for each time bucket in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 10</figref> presents a flow chart that illustrates a process for creating a full-kit task in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 11</figref> presents a flow chart that illustrates a process for determining a full-kit date for a full-kit task that is associated with a set of tasks in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 12A</figref> presents a flow chart that illustrates a process for checking compliance with a release condition of a full-kit task in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 12B</figref> illustrates a window of a graphical user interface (GUI) in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 12C</figref> illustrates a window of a GUI that shows a full-kit release condition compliance report in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 12D</figref> illustrates a line graph that shows the variation of full-kit release condition compliance against time in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 13A</figref> presents a flow chart that illustrates a process for determining full-kit task delays in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIG. 13B</figref> presents a flow chart that illustrates a process for displaying full-kit task delays in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIG. 14</figref> presents a flow chart that illustrates a process for displaying aggregate delays associated with a checklist item in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIG. 15</figref> illustrates a computer system in accordance with some embodiments described in this disclosure.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0006" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0034" num="0033">The following description is presented to enable any person skilled in the art to make and use the invention, and is provided in the context of a particular application and its requirements. Various modifications to the disclosed embodiments will be readily apparent to those skilled in the art, and the general principles defined herein may be applied to other embodiments and applications without departing from the spirit and scope of the present invention. Thus, the present invention is not limited to the embodiments shown, but is to be accorded the widest scope consistent with the principles and features disclosed herein.</p>
+<p id="p-0035" num="0034">The data structures and code described in this detailed description are typically stored on a computer-readable storage medium, which may be any device or medium that can store code and/or data for use by a computer system. The computer-readable storage medium includes, but is not limited to, volatile memory, non-volatile memory, magnetic and optical storage devices such as disk drives, magnetic tape, CDs (compact discs), DVDs (digital versatile discs or digital video discs), or other media capable of storing computer-readable media now known or later developed.</p>
+<p id="p-0036" num="0035">The methods and processes described in the detailed description section can be embodied as code and/or data, which can be stored in a computer-readable storage medium as described above. When a computer system reads and executes the code and/or data stored on the computer-readable storage medium, the computer system perform the methods and processes embodied as data structures and code and stored within the computer-readable storage medium.</p>
+<p id="p-0037" num="0036">Furthermore, the methods and processes described below can be included in hardware modules. For example, the hardware modules can include, but are not limited to, application-specific integrated circuit (ASIC) chips, field-programmable gate arrays (FPGAs), and other programmable-logic devices now known or later developed. When the hardware modules are activated, the hardware modules perform the methods and processes included within the hardware modules.</p>
+<p id="p-0038" num="0037"><figref idref="DRAWINGS">FIG. 1</figref> illustrates multiple projects in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0039" num="0038">A project can generally be defined as a temporally bounded endeavor which is designed to achieve specific goals and objectives. A project is usually associated with a due date, i.e., a date by which a project needs to be completed. In some cases, the project must be completed on the due date, i.e., completing the project before the due date is not allowed. In other cases, the due date is an &#x201c;on or before&#x201d; due date, i.e., the project is allowed to be completed on the due date or before the due date. A project can be represented as a set of interdependent tasks. A task can generally be defined as a unit of work which needs to be performed within a specific time period. A task is usually associated with an owner, a set of resources that the task is expected to use, and a start time and an end time.</p>
+<p id="p-0040" num="0039">An organization typically needs to schedule multiple projects at any given time. For example, as shown in <figref idref="DRAWINGS">FIG. 1</figref>, an organization may have projects P<b>1</b> and P<b>2</b>. Project P<b>1</b> can include multiple tasks, such as tasks <b>102</b>-<b>114</b>. Similarly, project P<b>2</b> can also include multiple tasks, such as tasks <b>152</b>-<b>166</b>. Note that the horizontal axis in <figref idref="DRAWINGS">FIG. 1</figref> denotes time.</p>
+<p id="p-0041" num="0040">Each task in <figref idref="DRAWINGS">FIG. 1</figref> is represented as a rectangle, where the left edge of the rectangle is associated with the task's start time, and the right edge of the rectangle is associated with the task's end time. The tasks can have interdependencies which can be represented using a task dependency network as shown in <figref idref="DRAWINGS">FIG. 1</figref>. A directed edge from task <b>102</b> to task <b>106</b> indicates that task <b>106</b> can be started only after task <b>102</b> has completed. Similarly, task <b>110</b> can be started only after tasks <b>104</b> and <b>106</b> have been completed because there are two directed edges from tasks <b>104</b> and <b>106</b> that are incident on task <b>110</b>. Likewise, project P<b>2</b>'s task dependency network shows that task <b>160</b> can be started only after tasks <b>156</b> and <b>154</b> have completed.</p>
+<p id="p-0042" num="0041"><figref idref="DRAWINGS">FIG. 2</figref> illustrates how tasks can be associated with phases in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0043" num="0042">In general, a phase can be an arbitrary collection of tasks, and a task can be associated with one or more phases. Phase <b>202</b> includes tasks <b>102</b>, <b>104</b>, and <b>106</b>. In other words, tasks <b>102</b>, <b>104</b>, and <b>106</b> are associated with phase <b>202</b>. Similarly, phase <b>204</b> includes tasks <b>106</b>, <b>108</b>, and <b>110</b>, and phase <b>206</b> includes tasks <b>112</b> and <b>114</b>. Note that since the association between tasks and phases is arbitrary, two phases can share the same task. For example, phases <b>202</b> and <b>204</b> both include task <b>106</b>. Tasks from different projects can be associated with the same phase. For example, tasks <b>102</b>, <b>104</b>, and <b>106</b> in project P<b>1</b>, and tasks <b>152</b>, <b>154</b>, and <b>156</b> in project P<b>2</b>, are associated with phase <b>202</b>. Different projects may include different sets of phases. For example, project P<b>1</b> includes phases <b>202</b>, <b>204</b>, and <b>206</b>. However, project P<b>2</b> includes phases <b>202</b> and <b>206</b>, but does not include phase <b>204</b>.</p>
+<p id="p-0044" num="0043"><figref idref="DRAWINGS">FIG. 3</figref> illustrates how a project can be represented using phases in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0045" num="0044">Once tasks have been associated with phases, a project can be represented in terms of phases. For example, project P<b>1</b> can be represented as a collection of phases <b>202</b>, <b>204</b>, and <b>206</b>. Each phase can be illustrated as a rectangle, where the left edge of the phase denotes the start time of the phase, and the right edge denotes the end time of the phase. For example, rectangles <b>302</b>, <b>304</b>, and <b>306</b> can be used to visually represent phases <b>202</b>, <b>204</b>, and <b>206</b>, respectively. The system may also represent interdependencies between phases explicitly (e.g., by using directed edges) instead of the interdependencies being represented implicitly based on the interdependencies between the tasks.</p>
+<p id="p-0046" num="0045">A project's cycle time is defined as the duration for which the project is active. Specifically, the project's cycle time is equal to the time interval between the earliest task start time and the latest task end time in the project. For example, as shown in <figref idref="DRAWINGS">FIG. 3</figref>, project cycle time <b>308</b> for project P<b>1</b> is equal to the time interval from task <b>102</b>'s start time to task <b>114</b>'s end time. The project plan shown in <figref idref="DRAWINGS">FIG. 3</figref> does not show buffers. If buffers had been shown in the project plan, then the cycle time would have also included the buffers.</p>
+<p id="p-0047" num="0046">Each task can be associated with one or more task attribute values. A task attribute value can generally be the value of any task attribute that is associated with a task. For example, task attribute values associated with a task can include a phase that includes the task, the task manager who owns the task, and a resource (e.g., a skill or machinery) that is assigned to the task, the task description for the task, and a &#x201c;help needed&#x201d; item that the task manager specified to resolve an issue with the task.</p>
+<p id="p-0048" num="0047">In some embodiments, a buffer can be added to one or more tasks and/or to one or more phases and/or to contractual milestones and/or to project milestones to accommodate any delays that may occur during execution.</p>
+<p id="p-0049" num="0048"><figref idref="DRAWINGS">FIGS. 4A and 4B</figref> illustrate how buffers can be added and how buffer consumptions can be determined in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0050" num="0049"><figref idref="DRAWINGS">FIG. 4A</figref> illustrates a task dependency network for a project. The values in the brackets indicate the durations the tasks are expected to execute or the sizes of the buffers. For ease of discourse we will assume that all time amounts shown in <figref idref="DRAWINGS">FIG. 4A</figref> are in days.</p>
+<p id="p-0051" num="0050">Tasks T<b>1</b>, T<b>2</b>, T<b>3</b>, T<b>4</b>, T<b>5</b>, T<b>6</b>, and T<b>7</b> are expected to take 10, 5, 5, 6, 3, 7, and 6 days, respectively, to complete. Feeding buffers B<b>4</b>, B<b>6</b>, and B<b>7</b> have been added after tasks T<b>4</b>, T<b>6</b>, and T<b>7</b>, respectively, to accommodate any unanticipated delays during execution. Note that the feeding buffers B<b>4</b>, B<b>6</b>, and B<b>7</b> are 3, 5, and 3 days long, respectively. Finally, the entire project has a project buffer (PBUF) which is 15 days in length. (Note that the project buffer is typically 50% of the longest task chain. In this case, that would mean that the project buffer should be 10 days long. However, for ease of discourse, a slightly longer project buffer&#x2014;15 days instead of 10 days&#x2014;has been assumed in this example.)</p>
+<p id="p-0052" num="0051">The arrows in <figref idref="DRAWINGS">FIG. 4A</figref> indicate the interdependencies among the tasks. Specifically, task T<b>2</b> can only be started after task T<b>4</b> has completed. Further, task T<b>3</b> can only be started after tasks T<b>6</b> and T<b>7</b> have completed. If a task is adjacent to another task, that also indicates an interdependency. For example, task T<b>3</b> can only be started after task T<b>2</b> has completed, which in turn, can only be started after task T<b>1</b> has completed.</p>
+<p id="p-0053" num="0052"><figref idref="DRAWINGS">FIG. 4B</figref> illustrates how the buffer consumption may change over time in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0054" num="0053">Suppose that, at the end of day <b>0</b>, the task managers for tasks T<b>1</b> and T<b>5</b> indicate that task T<b>1</b> and T<b>5</b> are going to be delayed and are expected to complete in 11 days and 10 days, respectively. At the end of day <b>0</b>, the impact on the project buffer consumption due to task chains C<b>1</b>, C<b>2</b>, C<b>3</b>, and C<b>4</b> is 0, 0, 1, and 2, respectively. Task chain C<b>4</b> has the maximum impact (2 days) on the project buffer consumption, and this is shown in <figref idref="DRAWINGS">FIG. 4B</figref> by the decrease in the project buffer from 15 days to 13 days.</p>
+<p id="p-0055" num="0054">Various preparatory actions may be required before a collection of tasks, i.e., a phase, is executed. For example, in a maintenance, repair, and overhaul environment, it may be desirable to gather the appropriate parts and materials before the reassembly phase is executed, or in an engineer-to-order environment, it may be desirable to gather all components, internal and vendor-supplied, before manufacturing phase begins.</p>
+<p id="p-0056" num="0055">In some embodiments described in this disclosure, a full-kit task can be included in the project plan to represent the preparations that are required or recommended before executing a phase. Specifically, a system can present a project plan to a user via a GUI. Next, the system can receive a request from a user to create a full-kit task in the project plan. For example, the user may select a task via the GUI, and indicate, via the GUI, that the selected task is to be tagged as a full-kit task.</p>
+<p id="p-0057" num="0056">In some embodiments, a full-kit task can have a non-zero-duration, just like any other task. The actions associated with a full-kit task can have highly variable durations; therefore, keeping track of the duration of a full-kit task in the project network during execution can inject a large amount of uncertainty into the project plan. Therefore, in some embodiments, for purposes of monitoring project execution, a full-kit task can be represented using a zero-duration task (also called a full-kit point) in the task dependency network, and the system can return an error if the full-kit task created by a user has a non-zero-duration. In these embodiments, the actions associated with the full-kit are captured in a checklist, and an expected completion date is specified for the full-kit task. In these embodiments, the full-kit task may be associated with an internal duration value based on the expected completion date for purposes of determining the impact of a full-kit delay on buffer consumptions.</p>
+<p id="p-0058" num="0057">Each full-kit task can be associated with a phase, i.e., a collection of tasks. Note that the phases that are used for imposing a WIP (work-in-process) limit may or may not be the same as the phases that are associated with full-kit tasks.</p>
+<p id="p-0059" num="0058">The resources used in checklist items that are associated with a full-kit task are different from the resources that are used in a project. For example, to perform a task, we may need a particular piece of equipment (e.g., test equipment or a paint shop). Such pieces of equipment are typically called resources, and usually only a limited number of tasks may be able to simultaneously use any given resource at any given time. Therefore, a task scheduling process may perform scheduling to ensure that no more than a pre-determined number of tasks and/or phases and/or projects use a given resource at any given time.</p>
+<p id="p-0060" num="0059">In order to prevent unnecessary delays, it may be desirable to gather the enablers (e.g., materials, procedures, approvals, etc.) that are expected to be used during a task and/or phase before the task and/or phase needs them. Note that such enablers (e.g., the wires that are expected to be used during a test or the test procedure to perform the testing) are different from the resources (e.g., the test equipment). Conventional techniques do not provide a convenient way to batch all of the enablers that are needed for executing a phase or a project without significantly increasing the complexity of the project plan. Some embodiments described in this disclosure provide methods and systems for supporting full-kit tasks within project plans so that the system can keep track of the availability of enablers that are expected to be used during a phase or a project.</p>
+<p id="p-0061" num="0060">The above-described description and representation of a full-kit task is for illustration purposes only and is not intended to limit the scope of the disclosed embodiments. Various modifications to the disclosed embodiments will be readily apparent to those skilled in the art. For example, in some embodiments, a full-kit task may be implemented using a data structure that stores at least the following two data items: a time value that indicates the time by which the full-kit task is to be completed, and a phase identifier which identifies the phase associated with the full-kit.</p>
+<p id="p-0062" num="0061"><figref idref="DRAWINGS">FIG. 5</figref> illustrates a full-kit task in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0063" num="0062">Project P<b>1</b> can include tasks <b>102</b>-<b>114</b> which have interdependencies as illustrated in <figref idref="DRAWINGS">FIG. 5A</figref>. Phase <b>502</b> can include tasks <b>108</b>-<b>114</b>. For example, phase <b>502</b> may correspond to a repair phase in project P<b>1</b>. A zero-duration full-kit task <b>504</b> may be created to represent the preparations that need to be made before phase <b>502</b> begins execution. Task dependencies can be created between full-kit task <b>504</b> and tasks <b>108</b> and <b>110</b> in phase <b>502</b> to capture the fact that full-kit task <b>504</b> must be completed before phase <b>502</b> can begin. As will be explained below, in some embodiments, a phase may begin execution before the associated full-kit task is completed.</p>
+<p id="p-0064" num="0063"><figref idref="DRAWINGS">FIG. 6</figref> illustrates a system in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0065" num="0064">Task manager <b>602</b> may own a task and/or a phase which requires multiple resources, such as engineer <b>604</b>, operator <b>606</b>, and equipment <b>608</b>. Task manager <b>602</b> may also own a full-kit task (called a full kit manager) which requires the task manager to complete a list of items and/or perform other preparatory tasks for the task and/or phase. Task manager <b>602</b> may periodically, e.g., every day, update the status of one or more tasks and/or full-kit tasks. Specifically, task manager <b>602</b> can update the status of a task and/or a full-kit task using a GUI in computer <b>614</b>. Computer <b>614</b> can store the status updates in database <b>610</b>. Subsequently, another user, e.g., project manager <b>616</b>, can determine the health of the project by analyzing the status update information stored in database <b>610</b>. For example, project manager <b>616</b> can use computer <b>612</b> to determine buffer consumptions for task chains using the status update information stored in database <b>610</b>. Project manager <b>616</b> can also use computer <b>612</b> to determine the status of a full-kit task.</p>
+<p id="p-0066" num="0065">In some embodiments, the system can perform post-facto analysis on the status update information stored in database <b>610</b> by using status update information that relates to completed projects. Specifically, the post-facto analysis can identify and prioritize the causes for delays that occurred in completed projects. In a variation, the system can perform post-facto analysis as each project completes, so that the organization has an up-to-date picture of the issues (resources/parts/materials shortage, process inefficiencies, etc.) that are likely to cause project delays.</p>
+<p id="p-0067" num="0066"><figref idref="DRAWINGS">FIG. 7</figref> illustrates a window of a GUI that a task manager can use to update the status of a task in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0068" num="0067">The system may present window <b>702</b> of a GUI to a full-kit task manager to enable the task manager to update the status of the full-kit task. In some embodiments, window <b>702</b> may display information in a tabular format. In some embodiments, window <b>702</b> may display full kit tasks that have a full kit date within a given time window. The time window can be based on user input. Specifically, each row in the table may be associated with a particular preparatory item. For example, some rows may be associated with certain parts (e.g., parts <b>5</b>-A, <b>5</b>-K, etc.), and some rows may be associated with certain materials (e.g., materials <b>5</b>-X, <b>5</b>-W, etc.). Each row may also include a column that indicates the status of the item, e.g., whether or not the item has been acquired. Specifically, a &#x201c;YES&#x201d; may indicate that the item has been completed; a &#x201c;NO&#x201d; may indicate that the item has not been completed; and a percentage value may indicate the progress that has been made in obtaining the item. Window <b>702</b> has been presented for illustration purposes only and is not intended to limit embodiments of the present invention to the forms disclosed.</p>
+<p id="p-0069" num="0068">As the full-kit task manager obtains the various items in the checklist, the task manager can update the status of the items in the full-kit task. If the full-kit task is completed before the full-kit date, then the associated phase can begin execution as planned. However, if the full-kit task is not completed before the full-kit date, the associated phase may be delayed. In some embodiments, the system can keep track of the delay caused by a full-kit task.</p>
+<p id="p-0070" num="0069">In some embodiments, the status of a regular task, i.e., not a full-kit task, can be one of the following: not started (NS), in progress (IP), and completed (CO). At regular intervals (e.g., on a daily basis), a task manager may use a GUI to update the progress of one or more tasks owned by the task manager. When a task or phase is created, the system can initialize its status to NS. Once a task or phase has started, the task manager can change the status to IP. Finally, when a task or phase completes, the task manager can change the status to CO.</p>
+<p id="p-0071" num="0070">Note that not all of the items in the full-kit checklist may be required to begin the phase. Therefore, for full-kit tasks, the system may allow a fourth status: released (RL). This status can be used to allow a phase to begin execution before the full-kit task has been completed. The system can keep track of project-related metrics (e.g., delay, buffer consumption, etc.) associated with full-kit tasks that have a released status. In this manner, the system can prevent an in-progress full-kit task from unnecessarily delaying a project, and at the same time, enable a user (e.g., a project manager) to track the progress of the full-kit task to help minimize the amount of delay, if any, caused by the full-kit task in the future.</p>
+<p id="p-0072" num="0071">In some embodiments, it may be desirable to complete a full-kit task just before the associated phase starts. When a project plan is created, it may include aggressive due dates for each task. A buffer may be included at various points in the project plan to account for any unforeseen delays. In some embodiments, the full-kit date for the full-kit task can be determined by working backward from the project end date. Note that the resulting full-kit date may be later than the full-kit date that would have been determined if the full-kit date had been calculated by working forward from the project start date based on the aggressive due dates for each task.</p>
+<p id="p-0073" num="0072">In some embodiments, the full-kit date is not moved when the project buffer is partially or fully consumed, because the buffer consumption may decrease if a subsequent task finishes before its due date. In some embodiments, the system may prompt a full-kit task manager to define the checklist items for a full-kit task during creation of the full-kit task. For example, in a maintenance, repair, and overhaul environment, the system may prompt the full-kit task manager to make a list of the parts and materials that are expected to be used during the execution of a phase. Before a phase starts execution, or as the phase executes, the full-kit task manager may update the percentage completion of the full-kit task. The percentage completion can be based on manual input, or it may be automatically updated based on the number of items that have been checked in the checklist.</p>
+<p id="p-0074" num="0073">In general, the phase cannot start unless the full-kit task is completed, i.e., the full-kit task is in the CO state. However, if a phase has a long duration, the full-kit task may not be complete when the phase needs to start. In such situations, the task manager can &#x201c;release&#x201d; the full-kit task, thereby allowing the associated phase to start by allowing all tasks that are dependent on the full-kit task to proceed. The full-kit task can then be completed in parallel once all checklist items are procured.</p>
+<p id="p-0075" num="0074">In some embodiments, if no work has started on the full-kit task, and the project date is pushed back, then the full-kit date for the full-kit task is also pushed back accordingly. However, in these embodiments, if work on the full-kit task has already started, i.e., if at least one checklist item has been procured, then the full-kit date of the full-kit task is not changed automatically even when the project due date is pushed back (i.e., postponed). In some embodiments, changing the full-kit date may be privileged, i.e., a full-kit task manager may not have permissions to change the full-kit date of the full-kit task. In some embodiments, if the project due date is pushed out, the system may allow a user (e.g., a full-kit task manager) to select a new full-kit date from a set of full-kit dates.</p>
+<p id="p-0076" num="0075"><figref idref="DRAWINGS">FIG. 8</figref> illustrates how a full-kit date for a full-kit task can be determined in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0077" num="0076">As in <figref idref="DRAWINGS">FIG. 4A</figref>, tasks T<b>1</b>, T<b>2</b>, T<b>3</b>, T<b>4</b>, T<b>5</b>, T<b>6</b>, and T<b>7</b> are expected to take 10, 5, 5, 6, 3, 7, and 6 days, respectively, to complete. Feeding buffers B<b>4</b>, B<b>6</b>, and B<b>7</b> have been added after tasks T<b>4</b>, T<b>6</b>, and T<b>7</b>, respectively, to accommodate any unanticipated delays during execution. Note that the feeding buffers B<b>4</b>, B<b>6</b>, and B<b>7</b> are 3, 5, and 3 days long, respectively. Finally, the entire project has a project buffer (PBUF) which is 15 days in length.</p>
+<p id="p-0078" num="0077">Full-kit task FKT can be associated with the set of tasks T<b>1</b>-T<b>7</b>. The full-kit date of full-kit task FKT can be determined as follows. First, task chains can be identified in the set of tasks. Each task chain may feed a project buffer or a contractual milestone buffer. There are four task chains in <figref idref="DRAWINGS">FIG. 8</figref>: a first task chain (C<b>1</b>) that includes tasks T<b>3</b> and T<b>7</b>; a second task chain (C<b>2</b>) that includes tasks T<b>3</b>, T<b>2</b>, and T<b>4</b>; a third task chain (C<b>3</b>) includes tasks T<b>3</b>, T<b>2</b>, and T<b>1</b>; and a fourth task chain (C<b>4</b>) that includes tasks T<b>3</b>, T<b>6</b>, and T<b>5</b>.</p>
+<p id="p-0079" num="0078">For each task chain, a full-kit date can be determined by first computing a sum of the task durations and the required buffers in the task chain, and then subtracting this sum from the project end date. For example, for task chain C<b>1</b>, the sum of the task durations and the required buffers is equal to 16.5=6 (task duration of T<b>7</b>)+3 (required buffer of task T<b>7</b>)+5 (task duration of T<b>3</b>)+2.5 (required buffer of task T<b>3</b>). Therefore, the full-kit date based on task chain C<b>1</b> is at time 18.5=35 (the project completion time)&#x2212;16.5 (sum of task durations and required buffers). Similarly, the full-kit dates based on task chains C<b>2</b>, C<b>3</b>, and C<b>4</b> are at times 11, 5, and 12.5.</p>
+<p id="p-0080" num="0079">Next, the system can determine the earliest full-kit date from the set of full-kit dates associated with the task chains. For example, based on the above computations, the earliest full-kit date is at time <b>5</b>. This full-kit date can then be used as the full-kit date for the full-kit task.</p>
+<p id="p-0081" num="0080">Once full-kit tasks with appropriate full-kit dates have been inserted into the project schedule, the system can track compliance of the full-kit task during project execution. Specifically, each full-kit task may be associated with a release condition which must be satisfied before the full-kit task can be released. In some embodiments, the release condition can be a percentage threshold, e.g., the full-kit task can only be released if the full-kit task is at least 80% complete. In some embodiments, the condition may identify a subset of items in the full-kit task which need to be checked before the full-kit task can be released.</p>
+<p id="p-0082" num="0081">The full-kit task manager can check items in the full-kit task as the items are completed. The system can determine whether or not a full-kit task is in compliance with the release condition, and generate a compliance report accordingly (e.g., on a daily basis). Specifically, the compliance report can list the full-kit tasks that were released before an associated release condition was satisfied. The compliance report may also identify the full-kit task managers associated with the full-kit tasks that are not in compliance.</p>
+<p id="p-0083" num="0082">Once a full-kit task crosses its full-kit date, a delay can be measured against the full-kit task. In some embodiments, the system can keep track of the amount of delay accumulated on full-kit tasks that had a full-kit date during a particular time bucket. For example, if the size of the time bucket is one month, then for a given month, the system can determine the aggregate amount of delay accrued against all full-kit tasks that were due in that month. In some embodiments, the system can display the delay information using a bar graph.</p>
+<p id="p-0084" num="0083"><figref idref="DRAWINGS">FIG. 9</figref> illustrates a bar graph that shows the aggregate full-kit task delay for each time bucket in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0085" num="0084">The bar graph illustrated in <figref idref="DRAWINGS">FIG. 9</figref> shows the aggregate delay of full-kit tasks whose full-kit dates were in eight different time buckets. A time bucket can generally refer to a period of time. In general, the time buckets can correspond to time periods that are of fixed or variable lengths, and that may or may not overlap with each other. In some embodiments, each bar in the bar graph can correspond to a fixed, non-overlapping time period. For example, each bar in <figref idref="DRAWINGS">FIG. 9</figref> can correspond to a particular month, e.g., bar <b>902</b> can correspond to the month of March, and the height of bar <b>902</b> can correspond to the aggregate delay accrued against full-kit tasks that were due in March.</p>
+<p id="p-0086" num="0085">The bar graph in <figref idref="DRAWINGS">FIG. 9</figref> is for illustration purposes only. Various modifications to the disclosed embodiments will be readily apparent to those skilled in the art.</p>
+<p id="p-0087" num="0086">For example, in some embodiments, graphical representations other than a bar graph can also be used to display the information. Further, in some embodiments, the system may display the trend in the aggregate full-kit task delay across all delayed full-kit tasks. Specifically, in these embodiments, if the bucket size is one month, then the system can show a bar graph in which each bar is associated with a time bucket, and the height of the bar represents the aggregate full-kit task delay across all delayed full-kit tasks (regardless of the full-kit dates of the full-kit tasks). This bar graph may help illustrate the trend of the aggregate full-kit task delay across all delayed full-kit tasks. In yet another embodiment, the system may display the total number of delayed full-kit tasks instead of displaying the aggregate delay.</p>
+<p id="p-0088" num="0087">In some embodiments, the system can aggregate the full-kit task delay on a per-checklist item basis. The aggregation can be performed at a project level or at an organization level (i.e., by aggregating the delay across multiple projects in the organization). Specifically, each project can have multiple full-kit tasks. Each full-kit task may have multiple checklist items. A particular checklist item may appear in multiple full-kit tasks across multiple projects. If a particular full-kit task is delayed, the entire delay or a part of the delay can be accrued against each unchecked checklist item in the full-kit task. The system can then aggregate the accrued delays for each checklist item across a set of full-kit tasks and/or projects.</p>
+<p id="p-0089" num="0088">Specifically, in some embodiments, the system can allow the user to select a set of full-kit tasks and/or projects for which the delay is to be aggregated on a per checklist item basis. The system can then present a list of checklist items sorted by their aggregate delays. When the user selects a particular checklist item, the system can present a drill-down view of the aggregated delay, e.g., a view that displays the aggregated delay for the given checklist for each time bucket.</p>
+<p id="p-0090" num="0089">In some embodiments, the system may have a set of full-kit task templates or a set of project templates to facilitate the creation of full-kit tasks. Specifically, the system may have one or more full-kit task templates or project templates for different types of full-kits or projects, e.g., the system may have a full-kit task template or a project template for an airline maintenance, repair, and overhaul phase. The full-kit task template or project template may have a ready-made checklist and also a pre-defined release condition. To facilitate the creation of a full-kit task, the system can allow a user to select a full-kit task template or a project template and customize it based on the specific needs of the case at hand.</p>
+<p id="p-0091" num="0090"><figref idref="DRAWINGS">FIG. 10</figref> presents a flow chart that illustrates a process for creating a full-kit task in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0092" num="0091">The process can begin with a system receiving a request to create a full-kit task for a set of tasks in a project, wherein the project includes tasks whose interdependencies are capable of being represented using a task dependency network (operation <b>1002</b>). In some embodiments, the set of tasks can be associated with a phase. In some embodiments, the request can also specify a full-kit template to use for creating the full-kit task.</p>
+<p id="p-0093" num="0092">The system can then create the full-kit task for the phase in the project, wherein the set of tasks can only be started when the full-kit task is in one of a set of pre-determined states (operation <b>1004</b>). In some embodiments, the full-kit task is capable of being in one of the following states: not started, in progress, released, and completed. In some embodiments, the set of pre-determined states can include the released state and the completed state. In some embodiments, the full-kit task is a zero duration task.</p>
+<p id="p-0094" num="0093">The full-kit task can be associated with a full-kit date, and can include a list of items which need to be completed by the full-kit date. In some embodiments, the request can specify an expected completion date, i.e., the full-kit date, for the full-kit task. In some embodiments, the system can automatically determine a full-kit date. For example, in some embodiments, the system can determine the full-kit date using a process that was described in reference to <figref idref="DRAWINGS">FIG. 8</figref>.</p>
+<p id="p-0095" num="0094"><figref idref="DRAWINGS">FIG. 11</figref> presents a flow chart that illustrates a process for determining a full-kit date for a full-kit task that is associated with a set of tasks in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0096" num="0095">The process can begin with a system determining a set of task chains associated with a full-kit task (operation <b>1102</b>). For example, as described above in reference to <figref idref="DRAWINGS">FIG. 8</figref>, the system can determine the four task chains C<b>1</b>-C<b>4</b> based on the set of tasks associated with the.</p>
+<p id="p-0097" num="0096">Next, the system can determine a full-kit date for each task chain in the set of task chains by: summing task durations and required buffers in the task chain, and subtracting a result of said summing from each contractual milestone or project due date that the task chain feeds (operation <b>1104</b>). For example, the system can determine the full-kit dates for task chains C<b>1</b>-C<b>4</b> as described above in reference to <figref idref="DRAWINGS">FIG. 8</figref>.</p>
+<p id="p-0098" num="0097">The system can then set the full-kit date for the full-kit task to be equal to the earliest full-kit date from the determined full-kit dates (operation <b>1106</b>). For example, as described above in reference to <figref idref="DRAWINGS">FIG. 8</figref>, the system can set the full-kit date for the full-kit task to be equal to 5, which is the earliest full-kit date from the set of full-kit dates associated with the task chains.</p>
+<p id="p-0099" num="0098"><figref idref="DRAWINGS">FIG. 12A</figref> presents a flow chart that illustrates a process for checking compliance with a release condition of a full-kit task in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0100" num="0099">The process can begin with a system displaying one or more full-kit tasks to a full-kit task manager (operation <b>1202</b>). Specifically, in some embodiments, the system may display the one or more full-kit tasks via a window of a GUI.</p>
+<p id="p-0101" num="0100"><figref idref="DRAWINGS">FIG. 12B</figref> illustrates a window of a GUI in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0102" num="0101">Full-kit task window <b>1252</b> can display information related to four full-kit tasks in a tabular format. Each row can contain information corresponding to a full-kit task. Column &#x201c;F-K TASK ID&#x201d; can contain an identifier for the full-kit task; column &#x201c;PR. NAME&#x201d; can contain the project name associated with the full-kit task; column &#x201c;F-K TASK DESC.&#x201d; can contain a description of the full-kit task; and column &#x201c;STATUS&#x201d; can contain the status of the full-kit task. Column &#x201c;% COMPLETE&#x201d; can contain a value that indicate the percentage completion of the associated full-kit task. In some embodiments, the system may allow the user to change the percentage completion value via window <b>1252</b>. In other embodiments, the system may require the user to open a separate window to update the percentage completion value of a full-kit task.</p>
+<p id="p-0103" num="0102">As shown in <figref idref="DRAWINGS">FIG. 12B</figref>, the statuses of full-kit tasks S<b>1</b>, S<b>2</b>, S<b>3</b>, and J<b>1</b> are &#x201c;CO,&#x201d; &#x201c;IP,&#x201d; &#x201c;NS,&#x201d; and &#x201c;RL,&#x201d; respectively. Each cell in the status column can include a drop-down menu that a full-kit task manager can use to change the status of a full-kit task. For example, to release full-kit task S<b>2</b>, the full-kit task manager may click on the drop-down menu and select the status &#x201c;RL.&#x201d; In some embodiments, the contents of the drop-down menu may be dependent on whether or not a release condition for the full-kit task has been met. Specifically, if the release condition has not been met, the drop-down menu may not display the &#x201c;RL&#x201d; status, thereby preventing the full-kit task manager from selecting the &#x201c;RL&#x201d; status.</p>
+<p id="p-0104" num="0103">Upon viewing the information in the full-kit window, the full-kit task manager may provide input to the system via the GUI. In response to receiving an input from the full-kit task manager which indicates that the full-kit task is to be released, the system can release the full-kit task (operation <b>1204</b>).</p>
+<p id="p-0105" num="0104">In some embodiments, if the full-kit task is not in either the &#x201c;CO&#x201d; or &#x201c;RL&#x201d; state, the system may not allow a user to change the status of a task in the phase associated with the full-kit task from the &#x201c;NS&#x201d; state to another state. Once a full-kit task has either been completed or released, the system can allow the user to change the status of a task in the phase associated with the full-kit task from the &#x201c;NS&#x201d; state to another state, e.g., to the &#x201c;IP&#x201d; state. In this manner, the system can use the full-kit task to ensure that tasks in the phase associated with the full-kit task cannot be started without completing or releasing the full-kit task.</p>
+<p id="p-0106" num="0105">As described above, a full-kit task may be associated with a release condition. In general, it is desirable to satisfy the release condition before releasing the full-kit task. However, in some embodiments, the system may allow a full-kit task manager to be released even when the release condition has not been met. In such embodiments, when a full-kit task is released, the system can determine whether or not the release condition has been satisfied. In response to determining that the release condition of the full-kit task is not satisfied, the system can generate a report that indicates that the full-kit task was released even though the release condition was not satisfied (operation <b>1206</b>).</p>
+<p id="p-0107" num="0106">The report can then be used to perform analysis of the full kit process. For example, the report can be used to identify non-compliant full-kit task managers and/or projects that are associated with full-kit tasks that were released before the release condition was satisfied. Since the release condition was not satisfied, one or more tasks in the phase may experience delays, e.g., because a particular part or material was not available when it was needed. This information can be used to ensure that the full-kit task manager complies with the release condition in the future. On the other hand, none of the tasks in the phase may experience a delay because of the full-kit task being prematurely released. In this case, the project manager may conclude that the release condition was too stringent, and make appropriate changes to the release condition.</p>
+<p id="p-0108" num="0107"><figref idref="DRAWINGS">FIG. 12C</figref> illustrates a window of a GUI that shows a full-kit release condition compliance report in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0109" num="0108">Window <b>1254</b> can display information related to full-kit release condition compliance in a tabular format. Each row can correspond to a full-kit task manager. Columns &#x201c;TASK MGR. ID&#x201d; and &#x201c;NAME&#x201d; can contain the identifier (e.g., employee number) and the name, respectively, of a full-kit task manager. Columns &#x201c;% COMPLIANCE (CURR. WEEK)&#x201d; and &#x201c;% COMPLIANCE (PAST WEEKS)&#x201d; can contain the percentage compliance of a given task manager over the current measurement period and over past measurement periods, respectively. The percentage compliance of a full-kit task manager over a given measurement period can be equal to the percentage of full-kit tasks that were released by the full-kit task manager in compliance with the release condition of the total number of full-kit tasks that were released by the full-kit task manager during the measurement period.</p>
+<p id="p-0110" num="0109"><figref idref="DRAWINGS">FIG. 12D</figref> illustrates a line graph that shows the variation of full-kit release condition compliance against time in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0111" num="0110">The line graph illustrated in <figref idref="DRAWINGS">FIG. 12D</figref> may correspond to the percentage compliance with the full-kit release condition for a full-kit task manager over time. Alternatively, the line graph may correspond to the compliance with the full-kit release condition for a set of projects over time.</p>
+<p id="p-0112" num="0111">A phase can begin execution after other tasks on which the phase depends are completed and after any associated full-kit tasks have been completed or released. For example, phase <b>502</b> shown in <figref idref="DRAWINGS">FIG. 5</figref> can begin execution after tasks <b>104</b> and <b>106</b> have been completed and full-kit task <b>504</b> has either been completed or released. In some cases, a full-kit task may be the only reason preventing a phase from beginning execution. For example, in <figref idref="DRAWINGS">FIG. 5</figref>, suppose tasks <b>104</b> and <b>106</b> have been completed, but full-kit task <b>504</b> has not been completed or released. In this situation, at least a part of the total delay experienced by phase <b>502</b> will be attributable to full-kit task <b>504</b>. In some embodiments, the system can compute full-kit task delays and generate one or more reports based on the full-kit task delays. A report can generally be any form of data representation that facilitates analysis, e.g., lists, histograms, pie-charts, graphs, etc.</p>
+<p id="p-0113" num="0112"><figref idref="DRAWINGS">FIG. 13A</figref> presents a flow chart that illustrates a process for determining full-kit task delays in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0114" num="0113">The process can begin with a system determining, at a first time instance, whether or not a full-kit task is in one of a set of pre-determined states (operation <b>1302</b>). Next, in response to determining that, at the first time instance, the full-kit task is not in one of the set of predetermined states, the system can determine a full-kit task delay for the full-kit task by computing a time difference between the first time instance and the full-kit date (operation <b>1304</b>).</p>
+<p id="p-0115" num="0114">On the other hand, in response to determining that, at the first time instance, the full-kit task is in one of the set of predetermined states, the system can determine a second time instance when the full-kit task entered one of the set of predetermined states, and determine the full-kit task delay for the full-kit task by computing a second time difference between the second time instance and the full-kit date (operation <b>1306</b>).</p>
+<p id="p-0116" num="0115">In some embodiments, the system can generate and display a report based on the aggregate full-kit task delays for each time bucket from a set of time buckets. A time bucket can generally refer to a contiguous or non-contiguous duration of time. The time buckets in a set of time buckets may or may not overlap with one another, and may or may not correspond to equal durations of time.</p>
+<p id="p-0117" num="0116"><figref idref="DRAWINGS">FIG. 13B</figref> presents a flow chart that illustrates a process for displaying full-kit task delays in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0118" num="0117">In some embodiments, for each time bucket from a set of time buckets, the system can aggregate full-kit task delays of full-kit tasks whose full-kit dates fall within the time bucket (operation <b>1352</b>). Next, the system can display the aggregated full-kit task delay for each time bucket from the set of time buckets (operation <b>1354</b>). Specifically, the system can generate one or more signals that can be used to display the aggregated full-kit task delay for each time bucket from the set of time buckets.</p>
+<p id="p-0119" num="0118">In some embodiments, the system can use a histogram or bar graph to display the aggregated full-kit task delays. Each rectangular bar can correspond to a time bucket from the set of time buckets, and the height of the rectangular bar can correspond to the aggregate full-kit task delay. For example, <figref idref="DRAWINGS">FIG. 9</figref> illustrates a histogram or bar graph that illustrates the aggregated full-kit task delays for each time bucket from a set of time buckets.</p>
+<p id="p-0120" num="0119">The above-described examples of a report are for illustration purposes only. They are not intended to be exhaustive or to limit the present invention to the forms disclosed. Accordingly, many modifications and variations will be apparent to practitioners having ordinary skill in the art. For example, the system may aggregate full-kit task delays based on other attributes, fields, and/or parameters. In some embodiments, the system may aggregate full-kit task delays for each checklist item over one or more projects. Aggregating full-kit task delays in this manner can help identify checklist items (e.g., parts and/or materials) that are causing the most delays. In some embodiments, the system can display a trend of delays caused by a checklist item.</p>
+<p id="p-0121" num="0120"><figref idref="DRAWINGS">FIG. 14</figref> presents a flow chart that illustrates a process for displaying aggregate delays associated with a checklist item in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0122" num="0121">For each checklist item in each full-kit task, the system can determine the delay between the full-kit date and the date when the checklist item was completed (operation <b>1402</b>). Next, for each checklist item, the system can aggregate the checklist item delays over the full-kit tasks of one or more projects (operation <b>1404</b>). The system can then display the aggregated checklist item delays (operation <b>1406</b>).</p>
+<p id="p-0123" num="0122"><figref idref="DRAWINGS">FIG. 15</figref> illustrates a computer system in accordance with some embodiments described in this disclosure.</p>
+<p id="p-0124" num="0123">A computer system can generally be any system that can perform computations. Specifically, a computer system can be a microprocessor, a network processor, a portable computing device, a personal organizer, a device controller, or a computational engine within an appliance, or any other computing system now known or later developed. Computer system <b>1502</b> comprises processor <b>1504</b>, memory <b>1506</b>, and storage <b>1508</b>. Computer system <b>1502</b> can be coupled with display <b>1514</b>, keyboard <b>1510</b>, and pointing device <b>1512</b>. Storage <b>1508</b> can generally be any device that can store data. Specifically, a storage device can be a magnetic, an optical, or a magneto-optical storage device, or it can be based on flash memory and/or battery-backed up memory. Storage <b>1508</b> can store application <b>1516</b>, operating system <b>1518</b>, and data <b>1520</b>.</p>
+<p id="p-0125" num="0124">Application <b>1516</b> can include instructions that when executed by computer system <b>1502</b> cause computer system <b>1502</b> to perform one or more processes that are described explicitly or implicitly in this disclosure. Data <b>1520</b> can include project names and start and end times, project buffer information, task names and start and end times, task attributes, task buffer information, task dependency information, full-kit task names, full-kit dates, checklist items for each full-kit task, and/or any other information that may be required for creating full-kit tasks, using full-kit tasks, monitoring full-kit tasks, checking compliance of release conditions of full-kit tasks, and/or determining full-kit task delays. Computer system <b>1502</b> can generate signals that can be provided to display <b>1514</b> to present information to a user. For example, computer system <b>1502</b> can generate signals that can be provided to display <b>1514</b> to present a graphical user interface to a user.</p>
+<p id="p-0126" num="0125">The foregoing descriptions of embodiments of the present invention have been presented only for purposes of illustration and description. They are not intended to be exhaustive or to limit the present invention to the forms disclosed. Accordingly, many modifications and variations will be apparent to practitioners having ordinary skill in the art. Additionally, the above disclosure is not intended to limit the present invention. The scope of the present invention is defined by the appended claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method for determining a full-kit task delay for a full-kit task, the method comprising:
+<claim-text>determining, at a first time instance, whether or not the full-kit task is in one of a set of pre-determined states, wherein the full-kit task specifies a list of items that are used by a set of tasks in a project;</claim-text>
+<claim-text>in response to determining that, at the first time instance, the full-kit task is not in one of the set of predetermined states, determining, by one or more computers, the full-kit task delay by computing a time difference between the first time instance and a full-kit date, wherein the full-kit date is the date by which the full-kit task needs to be completed without causing any delays; and</claim-text>
+<claim-text>in response to determining that, at the first time instance, the full-kit task is in one of the set of predetermined states,
+<claim-text>determining, by one or more computers, a second time instance when the full-kit task entered one of the set of predetermined states, and</claim-text>
+<claim-text>determining, by one or more computers, the full-kit task delay by computing a time difference between the second time instance and the full-kit date.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>for each time bucket from a set of time buckets, aggregating full-kit task delays of full-kit tasks whose full-kit dates fall within the time bucket; and</claim-text>
+<claim-text>generating one or more signals to display the aggregated full-kit task delay for each time bucket from the set of time buckets.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the full-kit task includes a list of checklist items which need to be completed by the full-kit date, wherein the method further comprises:
+<claim-text>for each checklist item in each full-kit task, determining a checklist item delay by computing a time difference between the full-kit date and a checklist item completion date;</claim-text>
+<claim-text>aggregating the checklist item delays over the full-kit tasks of one or more projects to obtain aggregated checklist item delays; and</claim-text>
+<claim-text>generating one or more signals to display the aggregated checklist item delays.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the full-kit task is capable of being in one of the following states: not started, in progress, released, and completed.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein the set of pre-determined states includes the released state and the completed state.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the full-kit task is created based on a full-kit template.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the full-kit task is a zero-duration task.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. A non-transitory computer-readable storage medium storing instructions that, when executed by a computer, cause the computer to perform a method for determining a full-kit task delay for a full-kit task, the method comprising:
+<claim-text>determining, at a first time instance, whether or not the full-kit task is in one of a set of pre-determined states, wherein the full-kit task specifies a list of items that are used by a set of tasks in a project;</claim-text>
+<claim-text>in response to determining that, at the first time instance, the full-kit task is not in one of the set of predetermined states, determining the full-kit task delay by computing a time difference between the first time instance and a full-kit date, wherein the full-kit date is the date by which the full-kit task needs to be completed without causing any delays; and</claim-text>
+<claim-text>in response to determining that, at the first time instance, the full-kit task is in one of the set of predetermined states,
+<claim-text>determining a second time instance when the full-kit task entered one of the set of predetermined states, and</claim-text>
+<claim-text>determining the full-kit task delay by computing a time difference between the second time instance and the full-kit date.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The non-transitory computer-readable storage medium of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the method further comprises:
+<claim-text>for each time bucket from a set of time buckets, aggregating full-kit task delays of full-kit tasks whose full-kit dates fall within the time bucket; and</claim-text>
+<claim-text>generating one or more signals to display the aggregated full-kit task delay for each time bucket from the set of time buckets.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The non-transitory computer-readable storage medium of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the full-kit task includes a list of checklist items which need to be completed by the full-kit date, wherein the method further comprises:
+<claim-text>for each checklist item in each full-kit task, determining a checklist item delay by computing a time difference between the full-kit date and a checklist item completion date;</claim-text>
+<claim-text>aggregating the checklist item delays over the full-kit tasks of one or more projects to obtain aggregated checklist item delays; and</claim-text>
+<claim-text>generating one or more signals to display the aggregated checklist item delays.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The non-transitory computer-readable storage medium of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the full-kit task is capable of being in one of the following states: not started, in progress, released, and completed.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The non-transitory computer-readable storage medium of <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the set of pre-determined states includes the released state and the completed state.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The non-transitory computer-readable storage medium of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the full-kit task is created based on a full-kit template.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The non-transitory computer-readable storage medium of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the full-kit task is a zero-duration task.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. A computer system, comprising:
+<claim-text>a processor; and</claim-text>
+<claim-text>a computer-readable storage medium storing instructions that, when executed by the processor, cause the computer system to perform a method for determining a full-kit task delay for a full-kit task, the method comprising:
+<claim-text>determining, at a first time instance, whether or not the full-kit task is in one of a set of pre-determined states, wherein the full-kit task specifies a list of items that are used by a set of tasks in a project;</claim-text>
+<claim-text>in response to determining that, at the first time instance, the full-kit task is not in one of the set of predetermined states, determining the full-kit task delay by computing a time difference between the first time instance and a full-kit date, wherein the full-kit date is the date by which the full-kit task needs to be completed without causing any delays; and</claim-text>
+<claim-text>in response to determining that, at the first time instance, the full-kit task is in one of the set of predetermined states,
+<claim-text>determining a second time instance when the full-kit task entered one of the set of predetermined states, and</claim-text>
+<claim-text>determining the full-kit task delay by computing a time difference between the second time instance and the full-kit date.</claim-text>
+</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The computer system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the method further comprises:
+<claim-text>for each time bucket from a set of time buckets, aggregating full-kit task delays of full-kit tasks whose full-kit dates fall within the time bucket; and</claim-text>
+<claim-text>generating one or more signals to display the aggregated full-kit task delay for each time bucket from the set of time buckets.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The computer system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the full-kit task includes a list of checklist items which need to be completed by the full-kit date, wherein the method further comprises:
+<claim-text>for each checklist item in each full-kit task, determining a checklist item delay by computing a time difference between the full-kit date and a checklist item completion date;</claim-text>
+<claim-text>aggregating the checklist item delays over the full-kit tasks of one or more projects to obtain aggregated checklist item delays; and</claim-text>
+<claim-text>generating one or more signals to display the aggregated checklist item delays.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The computer system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the full-kit task is capable of being in one of the following states: not started, in progress, released, and completed.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The computer system of <claim-ref idref="CLM-00018">claim 18</claim-ref>, wherein the set of pre-determined states includes the released state and the completed state.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The computer system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the full-kit task is created based on a full-kit template.</claim-text>
+</claim>
+<claim id="CLM-00021" num="00021">
+<claim-text>21. The computer system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the full-kit task is a zero-duration task. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

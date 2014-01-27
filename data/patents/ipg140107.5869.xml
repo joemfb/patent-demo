@@ -1,0 +1,576 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626978-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626978</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13588554</doc-number>
+<date>20120817</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>2009-231078</doc-number>
+<date>20091005</date>
+</priority-claim>
+</priority-claims>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>36</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>710314</main-classification>
+<further-classification>370389</further-classification>
+</classification-national>
+<invention-title id="d2e61">Computer apparatus, computer system and adapter carry-over method</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>7058738</doc-number>
+<kind>B2</kind>
+<name>Stufflebeam, Jr.</name>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>7809977</doc-number>
+<kind>B2</kind>
+<name>Takamoto</name>
+<date>20101000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>7907604</doc-number>
+<kind>B2</kind>
+<name>Boyd et al.</name>
+<date>20110300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>7991839</doc-number>
+<kind>B2</kind>
+<name>Freimuth et al.</name>
+<date>20110800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>8078764</doc-number>
+<kind>B2</kind>
+<name>Okitsu et al.</name>
+<date>20111200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>2006/0242353</doc-number>
+<kind>A1</kind>
+<name>Torudbakken et al.</name>
+<date>20061000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>JP</country>
+<doc-number>2007-195166</doc-number>
+<kind>A</kind>
+<date>20070800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>JP</country>
+<doc-number>2008-171413</doc-number>
+<kind>A</kind>
+<date>20080700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>JP</country>
+<doc-number>2008-310489</doc-number>
+<kind>A</kind>
+<date>20081200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>JP</country>
+<doc-number>2009-181418</doc-number>
+<kind>A</kind>
+<date>20090800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00011">
+<othercit>Multi-Root I/O Virtualization and Sharing Specification Revision, 1.0, May 12, 2008, 2 pp.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>8</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>710313-316</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370351</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370389</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>12</number-of-drawing-sheets>
+<number-of-figures>13</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>12897120</doc-number>
+<date>20101004</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8285911</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13588554</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120311226</doc-number>
+<kind>A1</kind>
+<date>20121206</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Itakura</last-name>
+<first-name>Minoru</first-name>
+<address>
+<city>Hadano</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Itakura</last-name>
+<first-name>Minoru</first-name>
+<address>
+<city>Hadano</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Mattingly &#x26; Malur, PC</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Hitachi, Ltd.</orgname>
+<role>03</role>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Knoll</last-name>
+<first-name>Clifford</first-name>
+<department>2111</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">To obtain a computer that can change over from the active system to the standby system without reconnecting the I/O adapters. The computer according to the present invention carries over the identifiers logically identifying connection paths between computer modules and I/O adapters from active computers to standby computers.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="171.37mm" wi="248.75mm" file="US08626978-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="250.36mm" wi="182.63mm" orientation="landscape" file="US08626978-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="142.75mm" wi="152.91mm" file="US08626978-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="244.94mm" wi="181.69mm" file="US08626978-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="260.60mm" wi="197.87mm" orientation="landscape" file="US08626978-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="234.53mm" wi="93.30mm" file="US08626978-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="247.65mm" wi="177.21mm" orientation="landscape" file="US08626978-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="210.82mm" wi="116.67mm" file="US08626978-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="251.88mm" wi="187.11mm" orientation="landscape" file="US08626978-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="237.49mm" wi="160.78mm" orientation="landscape" file="US08626978-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="218.02mm" wi="125.05mm" file="US08626978-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="239.61mm" wi="187.11mm" file="US08626978-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="261.45mm" wi="188.30mm" orientation="landscape" file="US08626978-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CLAIM OF PRIORITY</heading>
+<p id="p-0002" num="0001">This application is a continuation of U.S. patent application Ser. No. 12/897,120, filed Oct. 4, 2010, which claims priority from Japanese patent application JP 2009-231078 filed on Oct. 5, 2009, the content of which is hereby incorporated by reference into this application.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0003" num="0002">1. Field of the Invention</p>
+<p id="p-0004" num="0003">The present invention relates to a computer apparatus, a computer system and an adapter carry-over method in the computer apparatus.</p>
+<p id="p-0005" num="0004">2. Background Art</p>
+<p id="p-0006" num="0005">Blade servers that have plural computers in a single apparatus have been used in recent years to facilitate server management (for example, U.S. Pat. No. 7,058,738). Multi-core design that includes plural processor cores has improved the performance of CPU (Central Processing Unit), and with this improvement, virtual server technologies that allow plural virtual servers to operate in a single computer have been used in order to effectively use CPU. In the virtual server technologies, methods such that physical processors and memory are virtualized by firmware called hypervisor and arbitrary numbers of logical partitions (logical processor) are generated in a computer are used.</p>
+<p id="p-0007" num="0006">A computer uses an I/O adapter such as NIC (Network Interface Card) and FC-HBA (Fiber Channel-Host Bus Adapter) for network communication with other computers and for connection with storage devices. At that time, when plural serves are operated on a single computer as described above, the number of I/O adapters per computer becomes relatively insufficient. As a technology to remedy such a problem, the multi-root PCIe switch technology that allows for connection between plural computers and PCI (Peripheral Component Interconnect) devices or PCI Express (PCIe) devices that are plural I/O adapters has been known.</p>
+<p id="p-0008" num="0007">In the multi-root PCIe switch technology, it is possible to vary the number of PCIe devices that can be connected to a single computer in a scalable manner (for example, U.S. Pat. No. 7,058,738, US Patent Application Publication No. 2006/242353 and others). In the latter disclosing multi-root I/O virtualization technology, the number of PCIe devices can be virtually increased by sharing a single PCIe device. By using these technologies, the shortage of the number of I/O adapters when virtual servers are used can be solved.</p>
+<p id="p-0009" num="0008">Meanwhile, system redundancy has been made to improve availability of systems with a hot standby system that holds operating spare systems in readiness and with a cold standby system that holds non-operating spare systems in readiness. A computer in operation is referred to as an active computer and a computer on standby is referred to as a standby computer or the like.</p>
+<p id="p-0010" num="0009">Because the cold standby system requires longer time to change over systems compared with the hot standby system, and therefore requires longer downtime of the computer system at the time of system changeover. However, the cold standby system does not require expensive cluster software and therefore has been widely used for its advantage in terms of cost.</p>
+<p id="p-0011" num="0010">As an example of switch employing the multi-root I/O virtualization technology, an MR-IOV switch is disclosed in.</p>
+<p id="p-0012" num="0011">&#x201c;Multi-Root I/O Virtualization and Sharing Specification Revision 1.0, published by PCI-SIG, 2008, 1.2.4.4(p.29)&#x201d;</p>
+<heading id="h-0003" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0013" num="0012">In the system redundancy using the conventional cold standby system, computers in an active system and computers in standby system separately have I/O adapters (for example PCI devices). Each of the computers independently assigns identifiers (PCI bus numbers) to connection paths to the I/O adapters in order to logically identify each of the I/O adapters, and each of the I/O adapters is recognized with the use of the identifiers.</p>
+<p id="p-0014" num="0013">When the active system fails and is changed over to the standby system, it is preferable to duplicate the same I/O environment as the I/O environment of the active system in the standby system. However, because each computer recognizes the I/O adapters by independently-assigned identifiers, the correspondence relation between the computers and the I/O adapters is fixed. For that reason, in order to duplicate the same I/O environment as that of the active system after changing over the computer from the active system to the standby system, the I/O adapters used in the active system have to be reconnected to the standby system.</p>
+<p id="p-0015" num="0014">The present invention was made in order to solve the above problem, and it is an object of the present invention to obtain computers that can change over from the active system to the standby system without reconnecting the I/O adapters.</p>
+<p id="p-0016" num="0015">The computers of the present invention carry over the identifiers that logically identify the connection paths between the computer modules and the I/O adapters from the active computers to the standby computers.</p>
+<p id="p-0017" num="0016">According to the computers of the present invention, the identifiers used by the active computers to identify the connection paths are carried over to the standby computers, and therefore the same I/O environment as that of the active system can be realized in the standby system without reconnecting the I/O adapters.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF DRAWINGS</heading>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 1</figref> is a diagram illustrating a configuration of a computer system <b>1000</b> according to Embodiment 1.</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 2</figref> is a diagram illustrating an internal configuration of the virtual switch generator <b>310</b>.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 3</figref> is a diagram illustrating the structure of the port management table <b>320</b> and an example of data.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 4</figref> is a diagram illustrating the structures of the virtual switch management table <b>330</b> and the virtual bridge management table <b>340</b>, and an example of data.</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 5</figref> is a diagram illustrating the structure of the resource assignment table <b>430</b> and an example of data.</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 6</figref> is a diagram illustrating the structure of the host management table <b>440</b> and an example of data.</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 7</figref> is a diagram illustrating a configuration of the virtual switch defined by the state of the table illustrated in <figref idref="DRAWINGS">FIG. 4</figref>.</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 8</figref> is a diagram illustrating a structure of the bus assignment management table <b>370</b> and an example of data.</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 9</figref> is a diagram showing the changes in each of the tables when the active computer module <b>100</b><i>a </i>is changed over to the standby computer module <b>110</b><i>e. </i></p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 10</figref> is a diagram illustrating a configuration of the virtual switch defined by the state of the tables in <figref idref="DRAWINGS">FIG. 9</figref>.</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 11</figref> is a diagram showing changes in the bus assignment management table <b>370</b> when the active computer module <b>110</b><i>a </i>is changed over to the standby computer module <b>110</b><i>e. </i></p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 12</figref> is a sequence diagram illustrating operations in each of the devices when the active computer module <b>100</b><i>a </i>is changed over to the standby computer module <b>110</b><i>e. </i></p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 13</figref> is a configuration diagram of a computer system <b>2000</b> according to Embodiment 2.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DESCRIPTION OF SYMBOLS</heading>
+<p id="p-0031" num="0000">
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0030"><b>100</b><i>a</i>, <b>100</b><i>b</i>, <b>100</b><i>c</i>, <b>100</b><i>d</i>: active computer module</li>
+    <li id="ul0001-0002" num="0031"><b>110</b><i>e</i>, <b>110</b><i>f</i>: standby computer module</li>
+    <li id="ul0001-0003" num="0032"><b>101</b>-<b>1</b>, <b>101</b>-<b>2</b>: CPU, <b>102</b>: chip set</li>
+    <li id="ul0001-0004" num="0033"><b>103</b>: route complex</li>
+    <li id="ul0001-0005" num="0034"><b>105</b>: memory</li>
+    <li id="ul0001-0006" num="0035"><b>106</b>: management port</li>
+    <li id="ul0001-0007" num="0036"><b>150</b>: service processor</li>
+    <li id="ul0001-0008" num="0037"><b>180</b>: management console</li>
+    <li id="ul0001-0009" num="0038"><b>220</b><i>a</i>-<b>1</b>, <b>220</b><i>a</i>-<b>3</b>, <b>220</b><i>a</i>-<b>5</b>, <b>220</b><i>a</i>-<b>8</b>, <b>220</b><i>b</i>-<b>2</b>, <b>220</b><i>b</i>-<b>4</b>, <b>220</b><i>b</i>-<b>5</b>, <b>220</b><i>b</i>-<b>7</b>: I/O adapter</li>
+    <li id="ul0001-0010" num="0039"><b>300</b><i>a</i>, <b>300</b><i>b</i>: PCIe switch</li>
+    <li id="ul0001-0011" num="0040"><b>301</b>-<b>1</b>, <b>301</b>-<b>2</b>, <b>301</b>-<b>3</b>, <b>301</b>-<b>4</b>, <b>301</b>-<b>5</b>, <b>301</b>-<b>6</b>: upstream side bridge</li>
+    <li id="ul0001-0012" num="0041"><b>302</b>-<b>1</b>, <b>302</b>-<b>2</b>, <b>302</b>-<b>3</b>, <b>302</b>-<b>4</b>, <b>302</b>-<b>5</b>, <b>302</b>-<b>6</b>, <b>302</b>-<b>7</b>, <b>302</b>-<b>8</b>: downstream side bridge</li>
+    <li id="ul0001-0013" num="0042"><b>310</b>: virtual switch generator</li>
+    <li id="ul0001-0014" num="0043"><b>320</b>: port management table</li>
+    <li id="ul0001-0015" num="0044"><b>330</b>: virtual switch management table</li>
+    <li id="ul0001-0016" num="0045"><b>340</b>: virtual bridge management table</li>
+    <li id="ul0001-0017" num="0046"><b>370</b>: bus assignment management table</li>
+    <li id="ul0001-0018" num="0047"><b>399</b>-<b>1</b>, <b>399</b>-<b>2</b>: management port</li>
+    <li id="ul0001-0019" num="0048"><b>400</b>: PCI manager</li>
+    <li id="ul0001-0020" num="0049"><b>430</b>: resource assignment table</li>
+    <li id="ul0001-0021" num="0050"><b>440</b>: host management table</li>
+    <li id="ul0001-0022" num="0051"><b>1000</b>, <b>2000</b>: computer system.</li>
+</ul>
+</p>
+<heading id="h-0006" level="1">DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS</heading>
+<p id="h-0007" num="0000">&#x3c;Embodiment1&#x3e;</p>
+<p id="p-0032" num="0052"><figref idref="DRAWINGS">FIG. 1</figref> is a diagram illustrating a configuration of a computer system <b>1000</b> according to Embodiment 1 of the present invention. The computer system <b>1000</b> includes active computer modules <b>100</b><i>a</i>, <b>100</b><i>b</i>, <b>100</b><i>c </i>and <b>100</b><i>d</i>, standby computer modules <b>100</b><i>e </i>and <b>100</b><i>f</i>, a service processor <b>150</b>, a management console <b>180</b>, I/O adapters <b>220</b><i>a</i>-<b>1</b>, <b>220</b><i>a</i>-<b>3</b>, <b>220</b><i>a</i>-<b>5</b>, <b>220</b><i>a</i>-<b>8</b>, <b>220</b><i>b</i>-<b>2</b>, <b>220</b><i>b</i>-<b>4</b>, <b>220</b><i>b</i>-<b>5</b> and <b>220</b><i>b</i>-<b>7</b>, PCIe switches <b>300</b><i>a </i>and <b>300</b><i>b</i>, and a PCI manager <b>400</b>.</p>
+<p id="p-0033" num="0053">Components with the same numerical reference but with different alphabets and indexes have the same configuration. Therefore, in the following description, the components with the same configuration are collectively referred to by arbitrarily omitting the alphabet indexes and numerical indexes.</p>
+<p id="p-0034" num="0054">The active computer module <b>100</b> includes CPU <b>101</b>-<b>1</b> and <b>101</b>-<b>2</b>, a chip set <b>102</b>, a route complex <b>103</b>, memory <b>105</b>, and a management port <b>106</b>.</p>
+<p id="p-0035" num="0055">The route complex <b>103</b> includes I/O bridges <b>104</b>-<b>1</b> and <b>104</b>-<b>2</b> as interfaces to connect to the PCIe switch <b>300</b>. The active computer <b>100</b> accesses to the I/O adapters <b>220</b> connected to the PCIe switch <b>300</b> via the I/O bridges <b>104</b>. Note that the I/O adapters can be adapters for storage device, network interface cards, for example, and others such as PCI devices following PCI standard.</p>
+<p id="p-0036" num="0056">The memory <b>105</b> stores data or the like required when the CPU <b>101</b> operates. For example, the values of PCI bus numbers explained later can be stored.</p>
+<p id="p-0037" num="0057">The management port <b>106</b> is a communication port for transmitting and receiving signal for managing the active computer modules <b>100</b> from outside of the active computer modules <b>100</b>, and the port is connected to the service processor <b>150</b> via a management connection line <b>160</b>.</p>
+<p id="p-0038" num="0058">The standby computer module <b>110</b> has the same configuration as that of the active computer modules <b>100</b>, but is different in a point that the standby computer module <b>110</b> stands by in a cold standby state (non-operational state).</p>
+<p id="p-0039" num="0059">The service processor <b>150</b> is a control device for managing operations of the active computer modules <b>100</b>, the standby computer module <b>110</b> and the PCIe switch <b>300</b>. The service processor <b>150</b> is connected to the management port <b>106</b> of each computer module via the management connection line <b>160</b>, and is also connected to the PCI manager <b>400</b> via a management connection line <b>170</b>.</p>
+<p id="p-0040" num="0060">The management console <b>180</b> is a management terminal for system administrators to manage operations of the active computer modules <b>100</b>, the standby computer module <b>110</b>, and the PCIe switch <b>300</b>. The management console <b>180</b> is connected to the service processor <b>150</b> via a proper interface.</p>
+<p id="p-0041" num="0061">The I/O adapters <b>220</b> are electronic devices such as storage devices, which are used by each of the computer modules. The I/O adapters <b>220</b> are PCIe devices conforming to the PCI Express standard. It should be noted that in <figref idref="DRAWINGS">FIG. 1</figref> the indexes of the I/O adapters <b>220</b> are numbered so as to match the indexes of the downstream side bridges <b>302</b> explained later, and for that reason, the indexes of the I/O adapters <b>220</b> are not consecutive.</p>
+<p id="p-0042" num="0062">The PCIe switch <b>300</b> has a function as a multi-route PCIe switch, and comprises upstream side bridges <b>301</b>-<b>1</b>, <b>301</b>-<b>2</b>, <b>301</b>-<b>3</b>, <b>301</b>-<b>4</b>, <b>301</b>-<b>5</b>, and <b>301</b>-<b>6</b>, downstream side bridges <b>302</b>-<b>1</b>, <b>302</b>-<b>2</b>, <b>302</b>-<b>3</b>, <b>302</b>-<b>4</b>, <b>302</b>-<b>5</b>, <b>302</b>-<b>6</b>, <b>302</b>-<b>7</b>, and <b>302</b>-<b>8</b>, a virtual switch generator <b>301</b>, and management ports <b>399</b>-<b>1</b> and <b>399</b>-<b>2</b>.</p>
+<p id="p-0043" num="0063">The upstream side bridges <b>301</b> are connected to the I/O bridge <b>104</b>-<b>1</b> or <b>104</b>-<b>2</b> of each computer module via a bus <b>200</b>. A rule in <figref idref="DRAWINGS">FIG. 1</figref> is that the I/O bridge <b>104</b>-<b>1</b> and the PCIe switch <b>300</b><i>a </i>are connected via the bus <b>200</b>-<b>1</b>, and the I/O bridge <b>104</b>-<b>2</b> and the PCIe switch <b>300</b><i>b </i>are connected via the bus <b>200</b>-<b>2</b>. The connection pattern is not limited to this pattern.</p>
+<p id="p-0044" num="0064">The downstream side bridges <b>302</b> are connected to I/O adapters <b>220</b> via a bus <b>210</b>. Not all of the downstream side bridges <b>302</b> have to be connected to the I/O adapters <b>220</b>.</p>
+<p id="p-0045" num="0065">The virtual switch generator <b>310</b> generates a virtual switch that virtually connects the upstream side bridges <b>301</b> and the downstream side bridges <b>302</b>. Here, virtually connecting means logically connecting any bridges regardless of the physical arrangement of each of the bridges. Virtually connected bridges appear to be directly connected to one another when the connections are viewed from the outside of those bridges. The virtual switch generator <b>310</b> can arbitrarily configure the connection between bridges.</p>
+<p id="p-0046" num="0066">The management ports <b>399</b> are communication ports for transmitting and receiving signal for managing the operations of the PCIe switch <b>300</b> from the outside of the PCIe switch <b>300</b>. The management ports <b>399</b> can be connected to management ports <b>399</b> in other PCIe switch <b>300</b> to form a cascade topology. <figref idref="DRAWINGS">FIG. 1</figref> illustrates that the PCI manager <b>400</b> is connected to the management port <b>399</b><i>b</i>-<b>2</b>, the PCI manager <b>400</b> transmits and receives a control signal to and from the PCIe switch <b>300</b><i>b</i>, and the signal is shared with the PCIe switch <b>300</b><i>a</i>. However, the connection relation is not limited to these connections.</p>
+<p id="p-0047" num="0067">The PCI manager <b>400</b> includes a switch management unit <b>411</b>, and a host management unit <b>412</b>. In addition, a resource assignment table <b>430</b> and a host management table <b>440</b> explained with reference to <figref idref="DRAWINGS">FIG. 5</figref> and <figref idref="DRAWINGS">FIG. 6</figref> described later are stored in proper storage devices such as memory or a register. The switch management unit <b>411</b> manages the operations of the PCIe switch <b>300</b>. The host management unit <b>412</b> manages the operations of each computer module via the service processor <b>150</b>.</p>
+<p id="p-0048" num="0068">The service processor <b>150</b>, the virtual switch generator <b>310</b>, and the PCI manager <b>400</b> can be configured by using hardware such as circuit devices that realizes functions of these components. Alternatively, the equivalent function units can be configured by using a processing device such as CPU and software defining its operations.</p>
+<p id="p-0049" num="0069">The service processor <b>150</b> and the PCI manager <b>400</b> can be integrated into a single configuration. Furthermore, these components can be integrated into each computer, or can be configured as function units separated from each computer.</p>
+<p id="p-0050" num="0070">The entire configuration of the computer system <b>1000</b> is explained above. Next, detailed configuration of each unit is explained focusing on management tables for managing correspondence relationship between each of the function units.</p>
+<p id="p-0051" num="0071"><figref idref="DRAWINGS">FIG. 2</figref> is a diagram illustrating an internal configuration of the virtual switch generator <b>310</b>. The virtual switch generator <b>310</b> stores a port management table <b>320</b>, a virtual switch management table <b>330</b>, a virtual bridge management table <b>340</b>, and a bus assignment management table <b>370</b> in proper storage devices such as memory or a register. The configurations of each table are explained in the following descriptions of <figref idref="DRAWINGS">FIGS. 3 to 6</figref> and <figref idref="DRAWINGS">FIG. 8</figref>.</p>
+<p id="p-0052" num="0072"><figref idref="DRAWINGS">FIG. 3</figref> is a diagram illustrating the structure of the port management table <b>320</b> and an example of data. The port management table <b>320</b> is a table for retaining the current state of the port in each bridge of the PCIe switch <b>300</b>, and as a &#x201c;switch&#x201d; column <b>321</b>, a &#x201c;port number&#x201d; column <b>322</b>, a &#x201c;direction&#x201d; column <b>323</b>, a &#x201c;type&#x201d; column <b>324</b>, and a &#x201c;link destination&#x201d; column <b>325</b>.</p>
+<p id="p-0053" num="0073">The &#x201c;switch&#x201d; column <b>321</b> has identifiers of the PCIe switches <b>300</b>. Here, identifiers with the same numerical references as those of the PCIe switches illustrated in <figref idref="DRAWINGS">FIG. 1</figref> are used for convenience of the explanation. Each of the columns and each of the tables in the following description are explained in the same manner.</p>
+<p id="p-0054" num="0074">The &#x201c;port number&#x201d; column <b>322</b> has identifiers of ports in each of the bridges. Here, each bridge includes a single port and the numerical reference of each bridge is used as a port identifier.</p>
+<p id="p-0055" num="0075">The &#x201c;direction&#x201d; column <b>323</b> has a value for distinguishing whether each of the ports is an upstream port or a downstream port. A port with the value in this column being &#x201c;up&#x201d; is an upstream port, and a port with the value being &#x201c;down&#x201d; is a downstream port.</p>
+<p id="p-0056" num="0076">The &#x201c;type&#x201d; column <b>324</b> has the type of electrical equipment connected to each port. This column and the &#x201c;link destination&#x201d; column <b>325</b> would be empty if nothing is connected to the corresponding port.</p>
+<p id="p-0057" num="0077">The &#x201c;link destination&#x201d; column <b>325</b> has an identifier of electrical equipment connected to the corresponding port.</p>
+<p id="p-0058" num="0078"><figref idref="DRAWINGS">FIG. 4</figref> is a diagram illustrating the structures of the virtual switch management table <b>330</b> and the virtual bridge management table <b>340</b>, and an example of data. In the following description, columns in each table and correlation between the tables are explained.</p>
+<p id="p-0059" num="0079">The virtual switch management table <b>330</b> is a table that retains a state of the virtual switch generated by the virtual switch generator <b>310</b>, and includes a &#x201c;switch&#x201d; column <b>331</b>, a &#x201c;VS number&#x201d; column <b>332</b>, a &#x201c;validity&#x201d; column <b>333</b>, a &#x201c;start VB number&#x201d; column <b>334</b>, and an &#x201c;entry number&#x201d; column <b>335</b>.</p>
+<p id="p-0060" num="0080">The &#x201c;switch&#x201d; column <b>331</b> has identifiers of the PCIe switches <b>300</b>.</p>
+<p id="p-0061" num="0081">The &#x201c;VS number&#x201d; column <b>332</b> has identification numbers of virtual switches generated by the virtual switch generator <b>310</b>.</p>
+<p id="p-0062" num="0082">The &#x201c;validity&#x201d; column <b>333</b> indicates whether the corresponding virtual switch is valid or not.</p>
+<p id="p-0063" num="0083">The &#x201c;start VB number&#x201d; <b>334</b> has start numbers of virtual bridges (VB) constituting the virtual switches identified in the value in the &#x201c;VS number &#x201d; column <b>332</b>. The virtual bridges are further described in the explanation of the virtual bridge management table <b>340</b>. If the value in this column is &#x201c;1&#x201d;, for example, the serial number of the first virtual bridge in the corresponding virtual switch is also &#x201c;1&#x201d;.</p>
+<p id="p-0064" num="0084">The &#x201c;entry number&#x201d; column <b>335</b> has the number of virtual bridges constituting the virtual switch identified by the value in the &#x201c;VS number&#x201d; column <b>332</b>. If the value of this column is &#x201c;3&#x201d;, for example, the corresponding virtual switch has three virtual bridges assigned with three consecutive serial numbers starting from a number designated by the value in the &#x201c;start VB number&#x201d; column <b>334</b>.</p>
+<p id="p-0065" num="0085">The virtual bridge management table <b>340</b> is a table that retains a state of virtual bridges in each virtual switch. A virtual bridge corresponds to an interface portion (bridge) that virtually connects PCIe devices. Actual bridges are not as many as the virtual bridges, but logical interfaces are present instead.</p>
+<p id="p-0066" num="0086">The virtual bridge management table <b>340</b> includes a &#x201c;switch&#x201d; column <b>341</b>, a &#x201c;VB number&#x201d; column <b>342</b>, a &#x201c;validity&#x201d; column <b>343</b>, a &#x201c;direction&#x201d; column <b>344</b>, a &#x201c;map&#x201d; column <b>345</b>, a &#x201c;port number&#x201d; column <b>346</b>, and a &#x201c;VH number&#x201d; column <b>347</b>.</p>
+<p id="p-0067" num="0087">The &#x201c;switch&#x201d; column <b>341</b> has identifiers of the PCIe switches <b>300</b>.</p>
+<p id="p-0068" num="0088">The &#x201c;VB number&#x201d; column <b>342</b> has identification numbers of virtual bridges generated by the virtual switch generator <b>310</b>.</p>
+<p id="p-0069" num="0089">The &#x201c;validity&#x201d; column <b>343</b> indicates whether the corresponding virtual bridge is valid or not.</p>
+<p id="p-0070" num="0090">The &#x201c;direction&#x201d; column <b>344</b> has values for distinguishing whether the corresponding virtual bridge is associated with an upstream port or associated with a downstream port.</p>
+<p id="p-0071" num="0091">The &#x201c;map&#x201d; column <b>345</b> indicates whether the corresponding virtual bridge is mapped on the port specified by the values in the &#x201c;port number&#x201d; column <b>346</b>.</p>
+<p id="p-0072" num="0092">The &#x201c;port number&#x201d; column <b>346</b> has identifiers of ports in each bridge.</p>
+<p id="p-0073" num="0093">The &#x201c;VH number&#x201d; column <b>347</b> has serial numbers of VH (Virtual Hierarchy). VH is a hierarchical structure of a virtual switch and its peripheral devices.</p>
+<p id="p-0074" num="0094">The example of data in <figref idref="DRAWINGS">FIG. 4</figref> will be explained. Twelve virtual bridges of &#x201c;VB number=1 to 12&#x201d; are assigned to the PCIe switch <b>300</b><i>a</i>. From among these virtual bridges, ports to which no computer module or I/O adapter is connected (<b>301</b><i>a</i>-<b>2</b>, <b>302</b><i>a</i>-<b>2</b>, and others) are indicated as &#x201c;validity=No&#x201d; and &#x201c;map=No&#x201d;.</p>
+<p id="p-0075" num="0095">The correlation between the virtual switch management table <b>330</b> and the virtual bridge management table <b>340</b> will be explained. With reference to the virtual switch management table <b>330</b>, it should be found that a virtual switch with &#x201c;VS number=1&#x201d; has &#x201c;entry number=3&#x201d;, i.e. three, virtual bridges starting from &#x201c;VB number=1&#x201d;. With reference to the corresponding parts in the virtual bridge management table <b>340</b>, it should be found that the virtual bridges with &#x201c;VB number=1 to 3&#x201d; have &#x201c;validity=Yes&#x201d;, and each of the virtual bridges is mapped on either the upstream port or the downstream port.</p>
+<p id="p-0076" num="0096"><figref idref="DRAWINGS">FIG. 5</figref> is diagram the structure of the resource assignment table <b>430</b> and an example of data. The resource assignment table <b>430</b> is a table that retains connection relations between the I/O adapters <b>220</b> and each computer module, and includes a &#x201c;switch&#x201d; column <b>431</b>, an &#x201c;I/O adapter&#x201d; column <b>432</b>, and a &#x201c;host&#x201d; column <b>433</b>.</p>
+<p id="p-0077" num="0097">The &#x201c;switch&#x201d; column <b>431</b> has identifiers of the PCIe switches <b>300</b>.</p>
+<p id="p-0078" num="0098">The &#x201c;I/O adapter&#x201d; column <b>432</b> has identifiers of the I/O adapters <b>220</b>.</p>
+<p id="p-0079" num="0099">The &#x201c;host&#x201d; column <b>433</b> has identifiers of the computer modules <b>100</b>.</p>
+<p id="p-0080" num="0100"><figref idref="DRAWINGS">FIG. 6</figref> is a diagram illustrating the structure of the host management table <b>440</b> and an example of data. The host management table <b>440</b> is a table that retains operation states of each computer module, and includes a &#x201c;host&#x201d; column <b>441</b>, and an &#x201c;active/standby type&#x201d; column <b>442</b>.</p>
+<p id="p-0081" num="0101">The &#x201c;host&#x201d; column <b>441</b> has identifiers of the computer modules.</p>
+<p id="p-0082" num="0102">The &#x201c;active/standby type&#x201d; column <b>442</b> has the current operation state of the computer module identified by the values in the &#x201c;host&#x201d; column <b>441</b>. With reference to the values in this column, which of the computer modules are active (in-operation state) or in standby (standby state) can be found.</p>
+<p id="p-0083" num="0103"><figref idref="DRAWINGS">FIG. 7</figref> is a diagram illustrating a configuration of the virtual switch defined by the state of the table illustrated in <figref idref="DRAWINGS">FIG. 4</figref>. In <figref idref="DRAWINGS">FIG. 7</figref>, the indexes of the virtual switch <b>350</b> and the virtual bridge <b>360</b> correspond to the value in the &#x201c;VS number&#x201d; column and the value in the &#x201c;VB number&#x201d; column in <figref idref="DRAWINGS">FIG. 4</figref>, respectively.</p>
+<p id="p-0084" num="0104">The virtual switch <b>350</b>-<b>1</b> corresponds to the data in the first line of the virtual switch management table <b>330</b>. In addition, the virtual bridges <b>360</b>-<b>1</b>, <b>360</b>-<b>2</b>, and <b>360</b>-<b>3</b> in the virtual switch <b>350</b>-<b>1</b> correspond to data in first to third lines of the virtual bridge management table <b>340</b>.</p>
+<p id="p-0085" num="0105">In the similar manner, the virtual switch <b>350</b>-<b>8</b> corresponds to data in the eighth line of the virtual switch management table <b>330</b>. The virtual bridges <b>360</b>-<b>18</b> and <b>360</b>-<b>19</b> in the virtual switch <b>350</b>-<b>8</b> correspond to data in eighteenth and nineteenth lines of the virtual bridge management table <b>340</b>.</p>
+<p id="p-0086" num="0106"><figref idref="DRAWINGS">FIG. 8</figref> is a diagram illustrating a structure of the bus assignment management table <b>370</b> and an example of data. The bus assignment management table <b>370</b> is a table that retains the correspondence relation between the PCI bus numbers and the virtual bridges <b>360</b>.</p>
+<p id="p-0087" num="0107">The PCI bus numbers are logical identifiers that the computer modules added to connection paths between PCIe devices to identify each of the PCIe devices. In an example of the connection illustrated in <figref idref="DRAWINGS">FIG. 1</figref> and <figref idref="DRAWINGS">FIG. 7</figref>, for example, the bus <b>200</b><i>a</i>-<b>1</b> in the upstream side from the virtual switch <b>350</b>-<b>1</b> is recognized as a PCI bus of &#x201c;PCI bus number=1&#x201d;, the virtual switch <b>350</b>-<b>1</b> is recognized as a PCI bus of &#x201c;PCI bus number=2&#x201d;, the bus <b>210</b><i>a</i>-<b>1</b> is recognized as a PCI bus of &#x201c;PCI bus number=3&#x201d;, and the bus <b>210</b><i>a</i>-<b>3</b> is recognized as a PCI bus of &#x201c;PCI bus number=4&#x201d;.</p>
+<p id="p-0088" num="0108">The bus assignment management table <b>370</b> is a table for managing the above-described assignment of the PCI bus numbers, and includes a &#x201c;switch&#x201d; column <b>371</b>, a &#x201c;VB number&#x201d; column <b>372</b>, a &#x201c;primary bus number&#x201d; column <b>373</b>, a &#x201c;secondary bus number&#x201d; column <b>374</b>, and a &#x201c;subordinate bus number&#x201d; column <b>375</b>.</p>
+<p id="p-0089" num="0109">The &#x201c;switch&#x201d; column <b>371</b> has identifiers of the PCIe switches <b>300</b>.</p>
+<p id="p-0090" num="0110">The &#x201c;VB number&#x201d; column <b>372</b> has identification numbers of virtual bridges <b>360</b>.</p>
+<p id="p-0091" num="0111">The &#x201c;primary bus number&#x201d; column <b>373</b> indicates PCI bus numbers of connection paths connected in the upstream from the virtual bridge specified by the value in the &#x201c;VB number&#x201d; column <b>372</b>.</p>
+<p id="p-0092" num="0112">The &#x201c;secondary bus number&#x201d; column <b>374</b> indicates PCI bus numbers of connection paths connected in the downstream from the virtual bridge specified by the value in the &#x201c;VB number&#x201d; column <b>372</b>.</p>
+<p id="p-0093" num="0113">The &#x201c;subordinate bus number&#x201d; column <b>375</b> indicates PCI bus numbers of connection paths connected in the most downstream from the virtual bridge specified by the value in the &#x201c;VB number&#x201d; column <b>372</b>.</p>
+<p id="p-0094" num="0114">The contents of the bus assignment management table <b>370</b> are set by the PCI manager <b>400</b>. The PCI manager <b>400</b> can assign PCI bus numbers in a fixed manner, or can assign PCI bus numbers only to I/O adapters <b>220</b> in use conforming to the standard. In a case that the PCI bus numbers are assigned in a fixed manner, PCI bus numbers are provided in advance to unused I/O adapters <b>220</b>. It should be noted that when the PCI bus numbers are carried over from the active computer modules <b>100</b> to the standby computer modules <b>110</b>, either one of the above methods can be employed.</p>
+<p id="p-0095" num="0115">In the above description, details of the configuration of the computer system <b>1000</b> are explained. Next, operations when the system is changed over from active to standby are explained focusing on changes of the values retained in each table.</p>
+<p id="p-0096" num="0116"><figref idref="DRAWINGS">FIG. 9</figref> is a diagram showing the changes in the virtual switch management table <b>330</b> and the virtual bridge management table <b>340</b> when the active computer module <b>100</b><i>a </i>is changed over to the standby computer module <b>110</b><i>e. </i></p>
+<p id="p-0097" num="0117">The virtual switch generator <b>310</b><i>a </i>newly generates a virtual switch <b>360</b>-<b>5</b> in order to connect the I/O adapters <b>220</b><i>a</i>-<b>1</b> and <b>220</b><i>a</i>-<b>3</b>, which were connected to the active computer module <b>100</b><i>a </i>by the virtual switch <b>350</b>-<b>1</b>, to the standby computer module <b>110</b><i>e</i>. In addition, virtual bridges <b>360</b>-<b>10</b>, <b>360</b>-<b>11</b>, and <b>360</b>-<b>12</b> are generated to constitute the virtual switch <b>360</b>-<b>5</b>.</p>
+<p id="p-0098" num="0118">In the virtual switch management table <b>330</b>, the entry in the fifth line corresponding to the virtual switch <b>360</b>-<b>5</b> is updated. The value in the &#x201c;start VB number&#x201d; column <b>334</b> is &#x201c;10&#x201d; that corresponds to the virtual bridge <b>360</b>-<b>10</b>, and the value in the &#x201c;entry number&#x201d; column <b>335</b> is &#x201c;3&#x201d; that is the same as the value in the first line.</p>
+<p id="p-0099" num="0119">In the virtual bridge management table <b>340</b>, the entries in the tenth to twelfth lines corresponding to the virtual bridges <b>360</b>-<b>10</b>, <b>360</b>-<b>11</b>, and <b>360</b>-<b>12</b> are updated. The value in the &#x201c;port number&#x201d; column <b>346</b> corresponding to the virtual bridge <b>360</b>-<b>10</b> is &#x201c;<b>301</b><i>a</i>-<b>5</b>&#x201d; that indicates an upstream port to which the standby computer module <b>110</b><i>e </i>is connected. The eleventh and the twelfth lines corresponding to downstream ports have &#x201c;<b>302</b><i>a</i>-<b>1</b>&#x201d; and &#x201c;<b>302</b><i>a</i>-<b>3</b>&#x201d; that indicate downstream ports to which the I/O adapters <b>220</b><i>a</i>-<b>1</b> and <b>220</b><i>a</i>-<b>3</b> used by the active computer module <b>100</b><i>a </i>are connected.</p>
+<p id="p-0100" num="0120"><figref idref="DRAWINGS">FIG. 10</figref> is a diagram illustrating a configuration of the virtual switch defined by the state of the tables in <figref idref="DRAWINGS">FIG. 9</figref>. For convenience of the description, only the virtual switches that are related to the active computer module <b>100</b><i>a </i>and the standby computer module <b>110</b><i>e </i>are illustrated.</p>
+<p id="p-0101" num="0121"><figref idref="DRAWINGS">FIG. 11</figref> is a diagram showing changes in the bus assignment management table <b>370</b> when the active computer module <b>110</b><i>a </i>is changed over to the standby computer module <b>110</b><i>e</i>. The values in the first to third lines corresponding to the virtual bridges <b>360</b>-<b>1</b>, <b>360</b>-<b>2</b>, and <b>360</b>-<b>3</b> before the changeover are copied to the tenth to twelfth lines corresponding to the virtual bridges <b>360</b>-<b>10</b>, <b>360</b>-<b>11</b>, and <b>360</b>-<b>12</b> newly generated by the virtual switch generator <b>310</b>.</p>
+<p id="p-0102" num="0122">If the standby computer module <b>110</b><i>e </i>independently assigns the PCI bus numbers, it would be probable that the numbers are not the same as the numbers in the active computer module <b>100</b><i>a</i>. In such a case, even if the same I/O adapter is referred to, since the PCI bus number is different from the PCI bus number used by the active computer module <b>100</b><i>a</i>, the standby computer module <b>110</b><i>e </i>may recognize the I/O adapter as a different PCIe device.</p>
+<p id="p-0103" num="0123">When the above situation arises, the standby computer module <b>110</b><i>e </i>may determine that different storage devices are referred to before and after the changeover, for example, and suspend the processing that the active computer module <b>100</b><i>a </i>executed before the changeover.</p>
+<p id="p-0104" num="0124">As shown in <figref idref="DRAWINGS">FIG. 11</figref>, by maintaining the PCI bus number to be identical before and after the changeover, the configuration of the PCI buses in the standby computer module <b>110</b><i>e </i>is intentionally kept the same as that of the active computer module <b>100</b><i>a</i>. As a result, substantially the same I/O environment can be realized in both of active and standby systems.</p>
+<p id="p-0105" num="0125"><figref idref="DRAWINGS">FIG. 12</figref> is a sequence diagram illustrating operations in each of the devices when the active computer module <b>100</b><i>a </i>is changed over to the standby computer module <b>110</b><i>e</i>. In the following description, each of the steps in <figref idref="DRAWINGS">FIG. 12</figref> is explained.</p>
+<p id="h-0008" num="0000">(<figref idref="DRAWINGS">FIG. 12</figref>: Step S<b>1201</b>)</p>
+<p id="p-0106" num="0126">Suppose that a failure occurs in the active computer module <b>100</b><i>a </i>in this step. This failure is assumed to be damages in an important function of the active computer module <b>100</b><i>a </i>such as damage in some of I/O bridges.</p>
+<p id="h-0009" num="0000">(<figref idref="DRAWINGS">FIG. 12</figref>: Step S<b>1202</b>)</p>
+<p id="p-0107" num="0127">The active computer module <b>100</b><i>a </i>detects the failure occurrence in itself, and notifies the service processor <b>150</b> of the failure occurrence via the management port <b>106</b><i>a. </i></p>
+<p id="h-0010" num="0000">(<figref idref="DRAWINGS">FIG. 12</figref>: Step S<b>1203</b>)</p>
+<p id="p-0108" num="0128">The service processor <b>150</b> reports the failure occurrence in the active computer module <b>100</b><i>a </i>to the PCI manager <b>400</b>. The type of the failure can also be reported.</p>
+<p id="h-0011" num="0000">(<figref idref="DRAWINGS">FIG. 12</figref>: Step S<b>1204</b>)</p>
+<p id="p-0109" num="0129">The PCI manager <b>400</b> instructs the service processor <b>150</b> to forcibly turn off the power of the active computer module <b>100</b><i>a. </i></p>
+<p id="h-0012" num="0000">(<figref idref="DRAWINGS">FIG. 12</figref>: Step S<b>1205</b>)</p>
+<p id="p-0110" num="0130">The service processor <b>150</b> instructs the active computer module <b>100</b><i>a </i>to forcibly turn off the power.</p>
+<p id="h-0013" num="0000">(<figref idref="DRAWINGS">FIG. 12</figref>: Step S<b>1206</b>)</p>
+<p id="p-0111" num="0131">The active computer module <b>100</b><i>a </i>turns off the power in accordance with the instruction from the service processor <b>150</b>.</p>
+<p id="h-0014" num="0000">(<figref idref="DRAWINGS">FIG. 12</figref>: Step S<b>1207</b>)</p>
+<p id="p-0112" num="0132">The service processor <b>150</b> confirms that the power of the active computer module <b>100</b><i>a </i>is turned off, and reports to the PCI manager <b>400</b> that the active computer module <b>100</b><i>a </i>is turned off.</p>
+<p id="h-0015" num="0000">(<figref idref="DRAWINGS">FIG. 12</figref>: Step S<b>1208</b>)</p>
+<p id="p-0113" num="0133">The PCI manager <b>400</b> instructs the virtual switch generator <b>310</b><i>b </i>to update the virtual switch management table <b>330</b>, the virtual bridge management table <b>340</b>, and the bus assignment management table <b>370</b> of the PCIe switches <b>300</b><i>a </i>and <b>300</b><i>b </i>so as to be the state explained with reference to <figref idref="DRAWINGS">FIG. 9</figref>. The virtual switch generator <b>310</b><i>b </i>updates each of the tables in accordance with the instruction. The virtual switch generator <b>310</b><i>a </i>also receives the update instruction in the same manner via the management port <b>399</b>, and updates each of the table.</p>
+<p id="h-0016" num="0000">(<figref idref="DRAWINGS">FIG. 12</figref>: Step S<b>1209</b>)</p>
+<p id="p-0114" num="0134">The PCI manager <b>400</b> instructs the service processor <b>150</b> to turn on the power of the standby computer module <b>110</b><i>e</i>. At that time, the PCI bus numbers that correspond to the virtual bridges <b>360</b>-<b>10</b>, <b>360</b>-<b>11</b>, and <b>360</b>-<b>12</b> and are retained in the bus assignment management table <b>350</b> are also notified.</p>
+<p id="h-0017" num="0000">(<figref idref="DRAWINGS">FIG. 12</figref>: Step S<b>1210</b>)</p>
+<p id="p-0115" num="0135">The service processor <b>150</b> instructs the standby computer module <b>110</b><i>e </i>to turn on the power. In addition, the PCI bus numbers notified from the PCI manager <b>400</b> are notified as well.</p>
+<p id="h-0018" num="0000">(<figref idref="DRAWINGS">FIG. 12</figref>: Step S<b>1211</b>)</p>
+<p id="p-0116" num="0136">The standby computer module <b>110</b><i>e </i>turns on the power in accordance with the instruction from the service processor <b>150</b>. In addition, by using the PCI bus numbers notified from the service processor <b>150</b>, a connection path from the I/O bridge <b>104</b><i>e </i>to the I/O adapters <b>220</b> is recognized. Thereafter the standby computer module <b>110</b><i>e </i>executes normal operations.</p>
+<p id="p-0117" num="0137">In the above description, the operations when the system is changed over from the active computer module <b>100</b><i>a </i>to the standby computer module <b>110</b><i>e </i>are explained.</p>
+<p id="p-0118" num="0138">As described above, according to Embodiment 1, the standby computer module carries over the PCI bus numbers used by the active computer module and starts the operation when the active computer module is shifted to non-operational state. As a result, the standby computer module can realize the same I/O environment as that of the active computer module. Consequently, troubles caused by different I/O environments before and after the changeover from the active computer module to the standby computer module such as occurrence of boot failure of OS (Operating System) can be prevented.</p>
+<p id="p-0119" num="0139">In addition, according to Embodiment 1, the virtual switch generator <b>310</b> of the PCIe switch <b>300</b> generates virtual switches to logically connect each computer module and I/O adapters, and each computer module identifies the logical connection paths by assigning PCI bus numbers. As a result, each computer module can recognize connection paths equally as PCI buses regardless of whether a connection path is virtual or not. By taking over the PCI bus number from the active computer module to the standby computer module, even if the state of a virtual switch is changed in the PCIe switch <b>300</b> with the changeover, the standby computer module can recognize PCI buses as the same PCI buses as those before the changeover without recognizing the change.</p>
+<p id="h-0019" num="0000">&#x3c;Embodiment 2&#x3e;</p>
+<p id="p-0120" num="0140">In the Embodiment 2 of the present invention, an example that the computer system <b>1000</b> explained in Embodiment 1 is configured as a multiple structure is explained. With the multiple structure system, improvement in system availability is intended.</p>
+<p id="p-0121" num="0141"><figref idref="DRAWINGS">FIG. 13</figref> is a configuration diagram of a computer system <b>2000</b> according to Embodiment 2. The computer system <b>2000</b> according to Embodiment 2 includes plural server chassis <b>700</b> housing one or more computer modules and plural I/O drawers <b>720</b> housing one or more I/O adapters <b>220</b>. Two stages of PCIe switches are introduced between the computer modules and the I/O adapters <b>220</b>, and connection paths are constructed in a mesh-like pattern across each of the server chassis <b>700</b>. In the following description, each configuration will be explained.</p>
+<p id="p-0122" num="0142">The server chassis <b>700</b>-<b>1</b> stores one or more (eight in <figref idref="DRAWINGS">FIG. 13</figref>) blade servers <b>710</b>, a service processor <b>150</b> and one or more PCIe switches <b>300</b>.</p>
+<p id="p-0123" num="0143">The blade servers <b>710</b> correspond to computer modules in Embodiment 1.</p>
+<p id="p-0124" num="0144">The service processor <b>150</b> manages operations of the blade servers <b>710</b> stored in the server chassis <b>700</b>. The service processor <b>150</b> is connected to the PCI manager <b>400</b> via the management connection line <b>170</b>. The service processor <b>150</b> is also connected to the management console <b>180</b> via arbitrarily interface.</p>
+<p id="p-0125" num="0145">The PCIe switch <b>300</b> in the server chassis <b>700</b> is connected to I/O bridges of one or more blade servers <b>710</b>. The PCIe switches <b>300</b> are connected in cascade via the management ports <b>399</b>. One of the PCIe switches <b>300</b> stored in the server chassis <b>700</b>-<b>1</b> is connected to the management port <b>399</b> in one of the PCIe switch <b>300</b> stored in the server chassis <b>700</b>-<b>2</b>.</p>
+<p id="p-0126" num="0146">Although the server chassis <b>700</b>-<b>2</b> has the same configuration as that of the server chassis <b>700</b>-<b>1</b>, there is a difference that one of the PCIe switches <b>300</b> is connected to the PCI manager <b>400</b> via the management port <b>399</b>. The PCI manager <b>400</b> transmits/receives a control signal to/from the PCIe switch <b>300</b> stored in the server chassis <b>700</b>-<b>2</b>. This control signal is shared among other PCIe switches <b>300</b> via the management ports <b>399</b>, and is also shared among PCIe switches <b>300</b> in the server chassis <b>700</b>-<b>1</b>.</p>
+<p id="p-0127" num="0147">The I/O drawers <b>720</b> store one or more PCIe switches <b>300</b> and one or more I/O adapters <b>220</b>.</p>
+<p id="p-0128" num="0148">The PCIe switches <b>300</b> in the I/O drawers <b>720</b> are connected to one or more I/O adapters <b>220</b>. The PCIe switches <b>300</b> are connected in cascade via the management ports <b>399</b>. One of the PCIe switches stored in the I/O drawer <b>720</b> is connected to the management port <b>399</b> in one of the PCIe switch stored in another I/O drawer <b>720</b>. In addition, one of the PCIe switches <b>300</b> stored in the I/O drawer <b>720</b>-<b>4</b> is connected to the PCI manager <b>400</b> via the management port <b>399</b>.</p>
+<p id="p-0129" num="0149">The PCIe switches <b>300</b> stored in the server chassis <b>700</b> and the PCIe switches <b>300</b> stored in the I/O drawers <b>720</b> are connected in a mesh-like pattern via the buses <b>220</b>.</p>
+<p id="p-0130" num="0150">The PCIe switches <b>300</b> as many as the blade servers <b>710</b> (eight) are disposed in the server chassis <b>700</b>. Each of the blade servers <b>710</b> has four I/O bridges <b>104</b>. Each of the I/O bridges <b>104</b> is connected to different PCIe switches <b>300</b>. The I/O bridges <b>104</b> in the first through fourth blade servers <b>710</b> are connected to the first through fourth PCIe switches <b>300</b>. The I/O bridges <b>104</b> in the fifth through eighth blade servers <b>710</b> are connected to the fifth through eighth PCIe switches <b>300</b>.</p>
+<p id="p-0131" num="0151">Two PCIe switches <b>300</b> are disposed in the I/O drawer <b>720</b>-<b>1</b>. Each of the PCIe switches <b>300</b> has four upstream ports. Two of the upstream ports are connected to the first and the fifth PCIe switches <b>300</b> in the server chassis <b>700</b>-<b>1</b>, and the remaining two upstream ports are connected to the first and the fifth PCIe switches <b>300</b> in the server chassis <b>700</b>-<b>2</b>. In the same manner, for the PCIe switches <b>300</b> in the I/O drawer <b>720</b>-<b>2</b>, two upstream ports are connected to the second and the sixth PCIe switches <b>300</b> in the server chassis <b>700</b>-<b>1</b> and the remaining two upstream ports are connected to the second and the sixth PCIe switches <b>300</b> in the server chassis <b>700</b>-<b>2</b>. The rest of the switchers are connected in a similar manner.</p>
+<p id="p-0132" num="0152">The above-described configuration offers the following technical advantages.</p>
+<p id="p-0133" num="0153">In the redundancy made by normal cold standby system, the configuration of the I/O adapters in the standby blade servers has to be the same configuration as the I/O adapters used in the active blade server. However, in this system, the I/O adapters used in the active blade server can be used in the standby blade server, and the I/O adapters for the standby blade servers are not necessary. Therefore, in the system with a number of I/O adapters like the configuration in the present invention, the cost of the I/O adapters in the standby system can be reduced.</p>
+<p id="p-0134" num="0154">In the redundancy made by normal cold standby system, additionally, the configuration of the I/O adapters in the standby system needs to be the same as that of the active blade server. Therefore when the configurations of the I/O adapters in plural active blade servers are different from one another, a number of the standby blade servers as many as the configuration of the I/O adapters of the active blade servers are required. In this system, however, no matter what configuration the I/O adapters of the active blade servers have, the configuration can be carried over to the standby blade server, and therefore, sixteen blade servers stored in the server chassis <b>700</b>-<b>1</b> and the server chassis <b>700</b>-<b>2</b> in the present configuration can be arbitrarily used either in the active system/standby system. For example, if many of the blade servers are assigned as the active system, a system with high usability can be established. If many of the blade servers are assigned as the standby system, a highly available system can be established.</p>
+<p id="p-0135" num="0155">As described above, according to Embodiment 2, the blade servers <b>710</b> can complement one another between the server chassis <b>700</b>, in addition to complement one another in each server chassis <b>700</b>. As a result, the availability of the computer system <b>2000</b> can be improved.</p>
+<p id="p-0136" num="0156">Moreover, according to Embodiment 2, since a multistage configuration is achieved by disposing PCIe switches <b>300</b> in the server chassis <b>700</b> and in the I/O drawers <b>720</b>, a further flexible configuration of the computer system <b>2000</b> can be realized. For example, when there are unused ports in a PCIe switches <b>300</b>, a new server chassis <b>700</b>-<b>3</b> and I/O drawer <b>720</b>-<b>5</b> can be introduced so as to establish a configuration with three server chassis <b>700</b> in parallel and five I/O drawers <b>720</b> in parallel.</p>
+<p id="p-0137" num="0157">Furthermore, according to Embodiment 2, PCI bus numbers can be carried over to the standby computer module (the blade server <b>710</b> in Embodiment 2) across server chassis via the service processor <b>150</b> to the PCI manager <b>400</b>. As a result, the same I/O environment can be achieved in the active system and standby system across the server chassis, and therefore a further flexible cold standby system can be realized. For example, additional server operations such as adding a server chassis <b>700</b> later on and use the computer module in the server chassis as a standby system can be realized.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A computer apparatus comprising:
+<claim-text>a plurality of computer modules including processing devices;</claim-text>
+<claim-text>an I/O adapter;</claim-text>
+<claim-text>a switch including an upstream port connected to the computer modules and a downstream port connected to the I/O adapter; and</claim-text>
+<claim-text>a PCI manager,</claim-text>
+<claim-text>wherein the switch includes a virtual switch logically connecting the upstream port and the downstream port, and stores a first identifier assigned to a connection path between a first computer module in an operating state and a first virtual switch and a second identifier assigned to a connection path between the first virtual switch and the I/O adapter,</claim-text>
+<claim-text>wherein when the first computer module in the operating state moves to a non-operating state, the PCI manager detecting the non-operating state moves to a non-operating state, the PCI manager detecting the non-operating state issues an assignment update instruction of the first and second identifiers to the switch,</claim-text>
+<claim-text>wherein the switch that received the assignment update instruction of the first and second identifiers carries over and assigns the first identifier to a connection path between a second computer module in a standby state and a second virtual switch, and carries over and assigns the second identifier to a connection path between the second virtual switch and the I/O adapter, and</claim-text>
+<claim-text>wherein the second computer module moves to the operating state after the carryovers of the first and second identifiers in the second virtual switch, and takes over and uses the I/O adapter that was used by the first computer module.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The computer apparatus of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>the switch includes a virtual switch generator for generating a virtual switch logically connecting the upstream port and the downstream port, and stores an identifier assigned to a connection path between the computer module and the virtual switch and an identifier assigned to a connection path between the virtual switch and the I/O adapter as virtual bridge management information.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The computer apparatus of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein:
+<claim-text>the switch stores a switch identifier assigned to a logical connection path between the upstream port and the downstream port as virtual switch management information.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The computer apparatus of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>the switch that received the update instruction of the identifier from the PCI manager carries over and assigns the switch identifier assigned to the first virtual switch to the second virtual switch.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. A computer system comprising one or more computer apparatuses of <claim-ref idref="CLM-00001">claim 1</claim-ref>.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The computer system of <claim-ref idref="CLM-00005">claim 5</claim-ref>, further comprising:
+<claim-text>one or more second switches connected to a communication device used by the computer module,</claim-text>
+<claim-text>wherein the switch and the second switch are connected.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The computer system of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein:
+<claim-text>the second switch includes an upstream port connected to the switch and a downstream port connected to a communication device used by the computer module, and</claim-text>
+<claim-text>wherein the downstream port in the switch and the upstream port in the second switch are connected.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. An adapter carry-over method in a computer apparatus including a plurality of computer modules including processing devices, an I/O adapter, a switch including an upstream port connected to the computer modules and a downstream port connected to the I/O adapter, and a PCI manager,
+<claim-text>wherein the switch logically connects the upstream port and the downstream port, and stores a first identifier assigned to a connection path between a first computer module in an operating state and a first virtual switch and a second identifier assigned to a connection path between the first virtual switch and the I/O adapter,</claim-text>
+<claim-text>wherein when the first computer module in the operating state moves to a non-operating state, the PCI manager detecting the non-operating state issues an assignment update instruction of the first and second identifiers to the switch,</claim-text>
+<claim-text>wherein the switch that received the assignment update instruction of the first and second identifiers carries over and assigns the first identifier to a connection path between a second computer module in a standby state and a second virtual switch, and carries over and assigns the second identifier to a connection path between the second virtual switch and the I/O adapter, and</claim-text>
+<claim-text>wherein the second computer module moves to the operating state after the carryovers of the first and second identifiers in the second virtual switch, and takes over and uses the I/O adapter that was used by the first computer module. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

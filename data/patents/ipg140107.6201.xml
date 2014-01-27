@@ -1,0 +1,591 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627325-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627325</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12258226</doc-number>
+<date>20081024</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>1114</us-term-extension>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>10</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>718103</main-classification>
+<further-classification>718105</further-classification>
+</classification-national>
+<invention-title id="d2e55">Scheduling memory usage of a workload</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>3411139</doc-number>
+<kind>A</kind>
+<name>Lynch et al.</name>
+<date>19681100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>710  1</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5881284</doc-number>
+<kind>A</kind>
+<name>Kubo</name>
+<date>19990300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718100</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>6338072</doc-number>
+<kind>B1</kind>
+<name>Durand et al.</name>
+<date>20020100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718104</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6353844</doc-number>
+<kind>B1</kind>
+<name>Bitar et al.</name>
+<date>20020300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718102</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>6763519</doc-number>
+<kind>B1</kind>
+<name>McColl et al.</name>
+<date>20040700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718100</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>7657501</doc-number>
+<kind>B1</kind>
+<name>Brown et al.</name>
+<date>20100200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707999002</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>7664561</doc-number>
+<kind>B1</kind>
+<name>Chen et al.</name>
+<date>20100200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>700101</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>2002/0138679</doc-number>
+<kind>A1</kind>
+<name>Koning et al.</name>
+<date>20020900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>710244</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>2005/0160074</doc-number>
+<kind>A1</kind>
+<name>Vos et al.</name>
+<date>20050700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707  1</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>2005/0235289</doc-number>
+<kind>A1</kind>
+<name>Barillari et al.</name>
+<date>20051000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718100</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>2006/0206900</doc-number>
+<kind>A1</kind>
+<name>Ooyama et al.</name>
+<date>20060900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718105</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>2007/0100793</doc-number>
+<kind>A1</kind>
+<name>Brown et al.</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>707  2</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>2007/0106991</doc-number>
+<kind>A1</kind>
+<name>Yoo</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718103</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>2007/0169125</doc-number>
+<kind>A1</kind>
+<name>Qin</name>
+<date>20070700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718102</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>2007/0271570</doc-number>
+<kind>A1</kind>
+<name>Brown et al.</name>
+<date>20071100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718105</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>2008/0077932</doc-number>
+<kind>A1</kind>
+<name>Ruppach et al.</name>
+<date>20080300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>718105</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00017">
+<othercit>Brown et al. &#x201c;Managing Memory to Meet Multiclass Workload Response Time Goals&#x201d;, Technical Report # 1146, Apr. 1993.</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>20</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>None</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>4</number-of-drawing-sheets>
+<number-of-figures>4</number-of-figures>
+</figures>
+<us-related-documents>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61042942</doc-number>
+<date>20080407</date>
+</document-id>
+</us-provisional-application>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61010132</doc-number>
+<date>20080103</date>
+</document-id>
+</us-provisional-application>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20090178045</doc-number>
+<kind>A1</kind>
+<date>20090709</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Gupta</last-name>
+<first-name>Chetan Kumar</first-name>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Mehta</last-name>
+<first-name>Abbay</first-name>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Dayal</last-name>
+<first-name>Umeshwar</first-name>
+<address>
+<city>Saratoga</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Gupta</last-name>
+<first-name>Chetan Kumar</first-name>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Mehta</last-name>
+<first-name>Abbay</first-name>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Dayal</last-name>
+<first-name>Umeshwar</first-name>
+<address>
+<city>Saratoga</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Hewlett-Packard Development Company, L.P.</orgname>
+<role>02</role>
+<address>
+<city>Houston</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Coleman</last-name>
+<first-name>Eric</first-name>
+<department>2183</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Described herein is a method for scheduling memory usage of a workload, the method comprising: receiving the workload, wherein the workload includes a plurality of jobs; determining a memory requirement to execute each of the plurality of jobs; arranging the plurality of jobs in an order of the memory requirements of the plurality of jobs such that the job with the largest memory requirement is at one end of the order and the job with the smallest memory requirement is at the other end of the order; assigning in order a unique priority to each of the plurality of jobs in accordance with the arranged order such that the job with the largest memory requirement is assigned the highest priority for execution and the job with the smallest memory requirement is assigned the lowest priority for execution; and executing the workload by concurrently executing the jobs in the workload in accordance with the arranged order of the plurality of jobs and the unique priority assigned to each of the plurality of jobs.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="163.91mm" wi="96.44mm" file="US08627325-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="180.00mm" wi="166.88mm" orientation="landscape" file="US08627325-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="191.35mm" wi="118.19mm" file="US08627325-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="207.43mm" wi="166.88mm" file="US08627325-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="215.98mm" wi="172.89mm" orientation="landscape" file="US08627325-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CROSS-REFERENCE</heading>
+<p id="p-0002" num="0001">This application is related to the following applications: U.S. Patent Application No. 61/042942, entitled, &#x201c;MANAGING A WORKLOAD IN AN ELECTRONIC DATABASE,&#x201d; as filed on Apr. 7, 2008; U.S. Patent Application No. 61/010132, entitled, &#x201c;PROCESSING BATCH DATABASE WORKLOAD WHILE AVOIDING OVERLOAD&#x201d;, as filed on Jan. 3, 2008. These applications are herein incorporated by reference in their entireties.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">BACKGROUND</heading>
+<p id="p-0003" num="0002">A computerized system such as a personal computer, a workstation, a server, and an electronic database, is often required to run, process, or execute a set of jobs, or a workload. A workload may include batch and incremental data load jobs, batch reporting jobs, and/or complex ad hoc querying jobs (for example, queries to a database). As the system is required to run more and larger workloads, memory contention arises and can cause severe degradation of system performance and destabilize the system. Thus, a key challenge to such a computerized system is to manage its workloads in order to meet stringent performance objectives for productivity enhancement. For example, there may be a desire to minimize the response time, that is, the duration of the execution, of a workload in the computerized system.</p>
+<p id="p-0004" num="0003">Accordingly, there is a desire to increase the performance of a computerized system by minimizing the response time of a system workload while maintaining the stability of the system so as to positively contribute to the workload management of the system.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0005" num="0004">Embodiments are illustrated by way of example and not limited in the following figure(s), in which like numerals indicate like elements, in which:</p>
+<p id="p-0006" num="0005"><figref idref="DRAWINGS">FIG. 1</figref> illustrates a graph of throughput curves for different workloads to show optimum throughput desired to be achieved, in accordance with one embodiment.</p>
+<p id="p-0007" num="0006"><figref idref="DRAWINGS">FIG. 2</figref> illustrates a largest memory priority (LMP) process, in accordance with one embodiment.</p>
+<p id="p-0008" num="0007"><figref idref="DRAWINGS">FIG. 3</figref> illustrates an execution of a workload in accordance with the LMP process, in accordance with one embodiment.</p>
+<p id="p-0009" num="0008"><figref idref="DRAWINGS">FIG. 4</figref> illustrates a platform in which the LMP process and execution of workloads may be implemented, in accordance with one embodiment.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0010" num="0009">For simplicity and illustrative purposes, the principles of the embodiments are described by referring mainly to examples thereof. In the following description, numerous specific details are set forth in order to provide a thorough understanding of the embodiments. It will be apparent however, to one of ordinary skill in the art, that the embodiments may be practiced without limitation to these specific details. In other instances, well known methods and structures have not been described in detail so as not to unnecessarily obscure the embodiments.</p>
+<p id="p-0011" num="0010">The response time of a workload running on a computerized system depends on a number of factors, including but are not limited to the number or type of jobs in the workload, the configuration of the computerized system, the number of concurrent jobs that can run in the system, etc. One metric of measuring the response time of a workload is throughput. The throughput is measured in jobs completed in a unit time. For example, in the context of a batch of queries, throughput is more concerned with the overall response time for a batch of queries rather than the individual response time of each query in the batch.</p>
+<p id="p-0012" num="0011">One way of looking at throughput is with a throughput curve, wherein throughput is plotted against a &#x201c;load&#x201d; on a computerized system. Typically, a &#x201c;load&#x201d; is measured by measuring the number of jobs that can concurrently run on the system, also referred herein and understood in the art as multiprogramming level (MPL). MPL is also typically used as the manipulated variable of choice for workload management to control the load on the system. <figref idref="DRAWINGS">FIG. 1</figref> illustrates a graph of throughput curves for two different workloads, a &#x201c;large&#x201d; workload (curve <b>110</b>) that includes several large, resource intensive queries and a &#x201c;medium&#x201d; workload (curve <b>120</b>) that includes several medium queries. In the graph, the x-axis is the multiprogramming level (MPL) and the y-axis is throughput. The throughput curves <b>110</b> and <b>120</b> may be divided into three regions. <figref idref="DRAWINGS">FIG. 1</figref> illustrates these three regions for the throughput curve <b>120</b> of the medium workload: (i) the underload region <b>142</b> (where, by increasing MPL a higher throughput can be achieved), (ii) the optimal load region <b>144</b> (also known as saturation where by increasing MPL there is not much change in throughput), and (iii) the overload region <b>146</b> (where increasing MPL results in lower throughputs).</p>
+<p id="p-0013" num="0012">The overload or thrashing region <b>146</b> is considered as a serious problem for maintaining optimal throughput. A main cause of overload is memory contention, that is, the total memory requirement of the jobs in the workload is greater than the available memory on the system at any instance. Memory contention may be explained in the context of a global page replacement policy that replaces virtual memory pages (or memory frames in the case of physical memory) regardless of the process to which such pages belong. For example, when a job or process (such as a query) input to the EDW system requires more memory pages, it starts page faulting and taking away pages from other processes. Because these other processes also need those pages, they also fault and take pages from other processes. These faulting processes must use a paging device to swap pages in and out. As they queue up for the paging device, the ready queue empties. As processes wait for the paging device, the system CPU (central processing unit) utilization drops. The CPU has a scheduler that sees the decreasing CPU utilization and increases the number of jobs or processes. The new processes start by taking pages from the existing running processes, which further exacerbates the problem and CPU utilization drops further. As a result, the CPU executes more processes, and thrashing occurs with the throughput plunging significantly because the processes are spending all their time in page faulting.</p>
+<p id="p-0014" num="0013">Accordingly, described herein are methods and systems for scheduling memory usage by one or more workloads in a computerized system to offset possible memory thrashing. According to various embodiments described herein, ordering of jobs in workloads and memory prioritization for such jobs are used for memory scheduling. This extends the optimal region of a workload throughput in order to eliminate or at least minimize thrashing or overload that can cause system destabilization. Consequently, these memory prioritization embodiments may be employed for workload management of computerized systems or for increasing throughput of applications that have extensive system memory requirement or require frequent access to system memory.</p>
+<p id="p-0015" num="0014">In one embodiment, an ordering policy is applied to an incoming workload to a computerized system, such as an enterprise data warehouse, which may include one or more electrical or electronic data storage devices such as computers, servers, computer databases, and the like. The ordering policy arranges the jobs in the workload in an order based on a predetermined ordering function F<sub>ord</sub>, so as to stabilize the system for memory contention while maintaining throughput in the optimal region. Then, a unique priority is given to each job in the workload in accordance with the order in which it was arranged by the ordering policy.</p>
+<p id="p-0016" num="0015">Typically, an ordering scheme is employed without priority awareness, wherein the ordering of jobs is implemented by having a time lag&#xb7;between the start time of the jobs. For example, a first job J<sub>1 </sub>is set to start (that is, to be executed by the system) at time t<sub>1</sub>, then a second job J<sub>2 </sub>is set to start at time t<sub>2</sub>=t<sub>1</sub>+&#xb7;, where&#xb7;&#x3e;0 and so on to the last job of the workload. However, such a typical ordering scheme can lead to a loss in throughput because the system may not get into the optimal region <b>144</b> until some job J<sub>m </sub>has been started. Thus, from time t<sub>1 </sub>to t<sub>m</sub>, the system is underloaded in the region <b>142</b>. In another example, an ordering scheme is based on a first-come, first-serve basis, wherein each of the jobs J<sub>1</sub>. . . J<sub>n </sub>is started when it is received by the system. Thus, there is no priority awareness among the jobs. This also leads to a loss of throughput. As referred herein, an ordering scheme of jobs in a workload, with or without priority awareness, does not denote that the jobs are executed serially with one starting only after another is finished. Rather, the ordering scheme of jobs denote the order in which the jobs are started. Once the jobs are started, they are concurrently executed in a pipeline or interleaving manner in accordance with the order in which they started.</p>
+<p id="p-0017" num="0016">In a priority aware setting as described herein, all jobs in the workload are concurrently started in the system at time t<sub>0</sub>. However, an ordering scheme is imposed on the jobs, and a unique priority is assigned to each job based on the ordering scheme. Job prioritization is based on memory usage requirement for each job as applied to the ordering scheme. In one embodiment, highest priority is assigned to the job with the largest (that is, highest) memory requirement, next highest priority is assigned to the job with the next largest memory requirement, and so, to the lowest priority assignment to the job with the lowest memory requirement. In instances where a workload may be divided into batches of jobs for batch execution, the aforementioned ordering scheme and job prioritization are applied to each batch for execution in the system.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 2</figref> illustrates a largest memory requirement (LMP) process <b>200</b> for ordering and prioritizing jobs in a workload (or in a batch of workload) in accordance with largest memory requirements for the jobs, whereby all jobs in the workload may be started together at a time t<sub>0 </sub>for execution in a computerized system, in accordance with one embodiment.</p>
+<p id="p-0019" num="0018">At <b>210</b>, the computerized system receives a workload having a plurality of jobs for execution. The workload may be further divided into batches of jobs within the system or prior to reception of such batches at the computerized system. For simplicity, the LMP process <b>200</b> is further described with reference to ordering and prioritizing jobs in a workload that is not further divided into batches. However, it should be understood that such a description is also applicable to ordering and prioritizing jobs in each batch of the workload.</p>
+<p id="p-0020" num="0019">At <b>212</b>, the computerized system determines the memory requirement of each job, that is, the memory required of the computerized system to effectively execute or run the job. This determination is commonly known in the art and will not be described herein.</p>
+<p id="p-0021" num="0020">At <b>214</b>, based on the determination at <b>212</b>, an ordering policy is implemented by the computerized system, wherein the jobs are arranged in descending order of memory requirement m<sub>i </sub>such that:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>m<sub>i</sub>&#xb7;m<sub>i+1</sub>, i&#xb7;[1 . . . n],<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+and the jobs are ordered as J<sub>1</sub>, J<sub>2</sub>, J<sub>3</sub>, . . . , J<sub>n</sub>&#xb7;W (jobs J<sub>1 </sub>. . . J<sub>n </sub>belong to workload W), with job J<sub>1 </sub>being the first job in the order because it has the largest memory requirement, job J<sub>n </sub>being the last job in the order because it has the lowest memory requirement, and jobs in between arranged in descending order in accordance with their corresponding memory requirements. Alternatively embodiments are contemplated wherein the jobs are arranged in ascending order of memory requirement. That is, the jobs may be arranged in ascending or descending order so long as they are arranged in the order of their memory requirements.
+</p>
+<p id="p-0022" num="0021">At <b>216</b>, a unique priority is assigned in order to each of the jobs as arranged in the order at <b>214</b>. That is, job J<sub>1 </sub>is assigned the highest priority P<sub>1</sub>, job J<sub>2 </sub>is assigned the second highest priority P<sub>2</sub>, and so on until all jobs J<sub>i</sub>&#xb7;W are assigned unique priorities.</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 3</figref> illustrates a process <b>300</b> for starting all the jobs in a workload together at time t<sub>0 </sub>based on the LMP process <b>200</b>, in accordance with one embodiment.</p>
+<p id="p-0024" num="0023">At <b>310</b>, all jobs J<sub>1 </sub>. . . J<sub>n </sub>in the workload are started or initiated at time t<sub>0 </sub>for execution by the computerized system, particularly by one or more CPUs in the computerized system.</p>
+<p id="p-0025" num="0024">At <b>312</b>, in the order provided by the LMP process <b>200</b>, the computerized system determines whether there is available system memory to continue executing each of the jobs. For example, it is first determined whether there is available system memory to execute job J<sub>1</sub>, then J<sub>2</sub>, then J<sub>3</sub>, and so on to J<sub>n</sub>. The availability of the system memory depends on known factors such as how much memory resources (for example, random access memory or CPU cache memory) the system has for job execution and the number of jobs are currently being executed by the system.</p>
+<p id="p-0026" num="0025">At <b>314</b>, if there is available system memory for one or more jobs, the system memory is allocated to execute such job(s). It should be noted that the allocation of system memory is based on the ordering of the jobs. For example, if system memory is available to execute job J<sub>1</sub>, the remaining system memory after memory allocation to J<sub>1 </sub>is used for job J<sub>2</sub>. Only when the remaining system memory is not sufficient to execute job J<sub>2</sub>, will such remaining memory be used for job J<sub>3</sub>, and so on. The same applies for the remaining system memory after, for example, memory has been allocated to execute, for example, both J<sub>1 </sub>and J<sub>2 </sub>(if enough system memory is available for both).</p>
+<p id="p-0027" num="0026">At <b>316</b>, those jobs with allocated system memory are placed in the CPU ready queue for execution by one or more CPUs in the computerized system. If any of the jobs in the ready queue has a higher priority than the present job that the CPU(s) is executing, it pre-empts or trumps the present job, whereby the CPU releases the present job to the ready queue and completes the higher-priority job before it goes back to complete the present job (unless, of course, there exists another higher-priority job in the CPU ready queue).</p>
+<p id="p-0028" num="0027">At <b>318</b>, if there is not available system memory for any of the jobs, they are placed in a CPU wait queue until system memory becomes available for them. As with the execution of jobs in the CPU ready queue, memory allocation for the jobs in the wait queue are also based on their assigned priorities. For example, if jobs J<b>1</b>, J<b>3</b>, and J<b>7</b> are placed in the wait queue, any available system memory is applied to J<b>1</b> before J<b>3</b>. That is, only when the available system memory is not sufficient for J<b>1</b>, will such memory be applied to J<b>3</b>, and then to J<b>7</b>. Likewise, if the available system memory is sufficient for J<b>1</b> with some remaining memory for another job, that remaining memory is applied to J<b>3</b> before J<b>7</b>.</p>
+<p id="p-0029" num="0028">Accordingly, the LMP process alleviates memory contention in a computerized system during execution of workloads by assigning the higher priorities for system execution to those workload jobs that require higher (that is, larger) system memory requirement. Because higher-priority jobs are executed earlier, they are amongst the earliest to complete and release their memories. This eases memory pressure on the system to reduce memory contention, which then averts a system thrashing.</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 4</figref> illustrates a block diagram of a computerized system <b>400</b> that is operable to be used as a platform for implementing the aforementioned LMP process <b>200</b> and the job execution process <b>300</b> for running workloads therein or in a separate computerized system, such as in an enterprise data warehouse, that is accessible to the computerized system <b>400</b>.</p>
+<p id="p-0031" num="0030">The computerized system <b>400</b> includes one or more processors, such as processor <b>402</b>, providing an execution platform for executing software and workloads. Thus, the computerized system <b>400</b> includes one or more single-core or multi-core processors of any of a number of computer processors, such as processors from Intel, AMD, and Cyrix. As referred herein, a computer processor may be a general-purpose processor, such as a central processing unit (CPU) or any other multi-purpose processor or microprocessor. A computer processor also may be a special-purpose processor, such as a graphics processing unit (GPU), an audio processor, a digital signal processor, or another processor dedicated for one or more processing purposes. Commands and data from the processor <b>402</b> are communicated over a communication bus <b>404</b> or through point-to-point links with other components in the computer system <b>400</b>.</p>
+<p id="p-0032" num="0031">The computer system <b>400</b> also includes a main memory <b>406</b> where software is resident during runtime, and a secondary memory <b>408</b>. Thus, the main memory <b>408</b> may be used to provide the available memory for executing workloads as discussed in the process <b>300</b>. The secondary memory <b>408</b> may also be a computer-readable medium (CRM) that may be used to store software programs, applications, or modules that implement the processes <b>200</b> and <b>300</b> to execute workloads in the computerized system <b>400</b> or an external system as noted above. The main memory <b>406</b> and secondary memory <b>408</b> (and an optional removable storage unit <b>414</b>) each includes, for example, a hard disk drive <b>410</b> and/or a removable storage drive <b>412</b> representing a floppy diskette drive, a magnetic tape drive, a compact disk drive, etc., or a nonvolatile memory where a copy of the software is stored. In one example, the secondary memory <b>408</b> also includes ROM (read only memory), EPROM (erasable, programmable ROM), EEPROM (electrically erasable, programmable ROM), or any other electronic, optical, magnetic, or other storage or transmission device capable of providing a processor or processing unit with computer-readable instructions. The computer system <b>400</b> includes a display <b>420</b> connected via a display adapter <b>422</b>, user interfaces comprising one or more input devices <b>418</b>, such as a keyboard, a mouse, a stylus, and the like. However, the input devices <b>418</b> and the display <b>420</b> are optional. A network interface <b>430</b> is provided for communicating with other computer systems via, for example, a network.</p>
+<p id="p-0033" num="0032">What has been described and illustrated herein is an embodiment along with some of its variations. The terms, descriptions and figures used herein are set forth by way of illustration only and are not meant as limitations. Those skilled in the art will recognize that many variations are possible within the spirit and scope of the subject matter, which is intended to be defined by the following claims&#x2014;and their equivalents&#x2014;in which all terms are meant in their broadest reasonable sense unless otherwise indicated.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method for scheduling memory usage of a workload, comprising:
+<claim-text>receiving the workload, wherein the workload includes a plurality of jobs;</claim-text>
+<claim-text>determining a memory requirement to execute each of the plurality of jobs;</claim-text>
+<claim-text>arranging the plurality of jobs in an order of the memory requirements of the plurality of jobs such that the job with the largest memory requirement is at one end of the order and the job with the smallest memory requirement is at the other end of the order;</claim-text>
+<claim-text>assigning a unique priority to each of the plurality of jobs in accordance with the arranged order such that the job with a largest memory requirement is assigned the highest priority for execution and the job with the smallest memory requirement is assigned the lowest priority for execution, wherein each assigned unique priority is different from any other of the assigned unique priorities; and</claim-text>
+<claim-text>executing the workload in accordance with the arranged order of the plurality of jobs and the unique priority assigned to each of the plurality of jobs, from highest to lowest priority.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein receiving the workload comprises:
+<claim-text>receiving the workload as one of a plurality of batches of jobs divided from a larger workload.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein executing the workload comprises:
+<claim-text>concurrently initiating execution of the plurality of jobs; and</claim-text>
+<claim-text>determining, in the arranged order of the plurality of jobs, whether there is available memory to execute each of the plurality of jobs based on a memory requirement of each job.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein executing the workload further comprises:
+<claim-text>upon determining that there is available memory to execute one of the plurality of jobs,
+<claim-text>a) allocating a first memory from the available memory to execute the one job; and</claim-text>
+<claim-text>b) determining whether a remainder of the available memory after the allocation of the first memory is sufficient to execute another one of the plurality of jobs.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein executing the workload further comprises:
+<claim-text>upon determining that there is available memory to execute one of the plurality of jobs, determining whether the assigned unique priority of the one job is higher than the assigned unique priority of a current job being executed; and</claim-text>
+<claim-text>upon determining that the assigned unique priority of the one job is higher than the assigned unique priority of the current job, ceasing the execution of the current job in order to execute the one job.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00005">claim 5</claim-ref>, further comprising:
+<claim-text>releasing the first memory allocated to the one job once execution of the one job is complete; and</claim-text>
+<claim-text>returning the first memory as part of the available memory to execute one of the plurality of jobs.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein executing the workload further comprises:
+<claim-text>upon determining that there is not available memory to execute one of the plurality of jobs, placing the one job in a waiting queue until there is available memory to execute the one job.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method of <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein executing the workload further comprises:
+<claim-text>once there is available memory to execute the one job in the waiting queue, allocating the available memory to execute the one job in the waiting queue with respect to other jobs in an order of the assigned unique priorities of the plurality of jobs such that a job with a higher priority in the waiting queue is given priority to use the available memory before a job with a lower priority.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the plurality of jobs comprise a plurality queries to an electronic database.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. A computerized system for executing a workload therein, wherein the workload includes a plurality of jobs to be executed, the computerized system comprises:
+<claim-text>a processor to execute the workload;</claim-text>
+<claim-text>a first memory storage device to execute the workload; and</claim-text>
+<claim-text>a second memory storage device to provide instructions to the processor to:
+<claim-text>determine a memory requirement of each of the plurality of jobs;</claim-text>
+<claim-text>arrange the plurality of jobs in an order of the memory requirements of the plurality of jobs;</claim-text>
+<claim-text>assign a unique priority, from highest priority to lowest priority, to each of the plurality of jobs in the arranged order of the plurality of jobs, wherein each assigned unique priority is different from any other of the assigned unique priorities; and</claim-text>
+<claim-text>queue the execution of the plurality of jobs from highest priority to lowest priority based on the arranged order and the assigned unique priorities of the plurality of jobs.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The computerized system of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein to queue the execution of the plurality of jobs, the processor is to:
+<claim-text>determine, for each of the plurality of jobs in the assigned order starting with the job with the highest priority, whether there is sufficient memory in the first memory storage device to execute each of the plurality of jobs based on the determined memory requirement of each job; and then</claim-text>
+<claim-text>execute a first job of the plurality of jobs, placing the first job in a waiting queue of the processor until there is sufficient memory in the first memory storage device to execute the first job.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The computerized system of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein to queue the execution of the plurality of jobs, the processor is to:
+<claim-text>allocate memory in the first memory storage device to execute the plurality of jobs such that the memory is allocated to each of the plurality of jobs in the assigned order, wherein the first job with the highest priority is first allocated with the memory; and</claim-text>
+<claim-text>determine whether a remainder of the memory in the first memory storage device after the first allocation is sufficient to execute one or more remaining ones of the plurality of jobs.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The computerized system of <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein the processor is to execute the first job once the memory is first allocated and release the memory once the first job is completed such that the memory is available for the remainder of the plurality of jobs with the second job with the second highest priority given a next allocation of the memory.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The computerized system of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the processor is to arrange the plurality of jobs in an order of the memory requirements of the plurality of jobs by arranging the job with the largest memory requirement on one end of the arranged order and the job with the smallest requirement on the other end of the arranged order.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The computerized system of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the processor is to assign the unique priority to each of the plurality of jobs by assigning the highest priority to the job with the largest memory requirement and the lowest priority to the job with the smallest memory requirement.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The computerized system of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the plurality of jobs comprise a plurality of queries to an electronic database.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The computerized system of <claim-ref idref="CLM-00016">claim 16</claim-ref>, wherein the computerized system includes the electronic database.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. A non-transitory computer readable medium encoded with programming code executed by a computer processor to:
+<claim-text>receive the workload, wherein the workload includes a plurality of jobs;</claim-text>
+<claim-text>determine a memory requirement to execute each of the plurality of jobs;</claim-text>
+<claim-text>arrange the plurality of jobs in an order of the memory requirements of the plurality of jobs such that the job with the largest memory requirement is at one end of the order and the job with the smallest memory requirement is at the other end of the order;</claim-text>
+<claim-text>assign a unique priority to each of the plurality of jobs in accordance with the arranged order such that the job with the largest memory requirement is assigned the highest priority for execution and the job with the smallest memory requirement is assigned the lowest priority for execution, wherein each assigned unique priority is different from any other of the assigned unique priorities; and</claim-text>
+<claim-text>execute the workload in accordance with the arranged order of the plurality of jobs and the unique priority assigned to each of the plurality of jobs, from highest priority to lowest priority.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The non-transitory computer readable medium of <claim-ref idref="CLM-00018">claim 18</claim-ref>, wherein the programming code to receive the workload comprises programming code to:
+<claim-text>receive the workload as one of a plurality of batches of jobs divided from a larger workload.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The non-transitory computer readable medium of <claim-ref idref="CLM-00018">claim 18</claim-ref>, wherein the programming code to execute the workload comprises programming code to:
+<claim-text>concurrently initiate execution of the plurality of jobs; and</claim-text>
+<claim-text>determine, in the arranged order of the plurality of jobs, whether there is available memory to execute each of the plurality of jobs based on the memory requirement of each job.</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

@@ -1,0 +1,959 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627014-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627014</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12346539</doc-number>
+<date>20081230</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>680</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>12</main-group>
+<subgroup>08</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>711141</main-classification>
+<further-classification>711145</further-classification>
+<further-classification>711E12026</further-classification>
+</classification-national>
+<invention-title id="d2e53">Memory model for hardware attributes within a transactional memory system</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5008813</doc-number>
+<kind>A</kind>
+<name>Crane et al.</name>
+<date>19910400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5301294</doc-number>
+<kind>A</kind>
+<name>Kawai et al.</name>
+<date>19940400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>6216200</doc-number>
+<kind>B1</kind>
+<name>Yeager</name>
+<date>20010400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711100</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6549996</doc-number>
+<kind>B1</kind>
+<name>Manry, IV et al.</name>
+<date>20030400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>2003/0014697</doc-number>
+<kind>A1</kind>
+<name>Hornung et al.</name>
+<date>20030100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>2003/0154296</doc-number>
+<kind>A1</kind>
+<name>Noguchi et al.</name>
+<date>20030800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>709229</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>2004/0064813</doc-number>
+<kind>A1</kind>
+<name>Neiger et al.</name>
+<date>20040400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>2005/0060495</doc-number>
+<kind>A1</kind>
+<name>Pistoulet</name>
+<date>20050300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>2005/0091459</doc-number>
+<kind>A1</kind>
+<name>Quach et al.</name>
+<date>20050400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>2005/0160230</doc-number>
+<kind>A1</kind>
+<name>Doren et al.</name>
+<date>20050700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>2005/0160232</doc-number>
+<kind>A1</kind>
+<name>Tierney et al.</name>
+<date>20050700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>2005/0246487</doc-number>
+<kind>A1</kind>
+<name>Ergan</name>
+<date>20051100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>2006/0085611</doc-number>
+<kind>A1</kind>
+<name>Ikeda et al.</name>
+<date>20060400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>2007/0239942</doc-number>
+<kind>A1</kind>
+<name>Rajwar et al.</name>
+<date>20071000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>2008/0005504</doc-number>
+<kind>A1</kind>
+<name>Barnes et al.</name>
+<date>20080100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>2008/0126647</doc-number>
+<kind>A1</kind>
+<name>Cometto et al.</name>
+<date>20080500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>710200</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>2008/0209133</doc-number>
+<kind>A1</kind>
+<name>Ozer et al.</name>
+<date>20080800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>2008/0229070</doc-number>
+<kind>A1</kind>
+<name>Charra et al.</name>
+<date>20080900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>712207</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>2009/0158006</doc-number>
+<kind>A1</kind>
+<name>Nam</name>
+<date>20090600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>2011/0302446</doc-number>
+<kind>A1</kind>
+<name>Becker-Szendy et al.</name>
+<date>20111200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>WO</country>
+<doc-number>2010/077884</doc-number>
+<kind>A2</kind>
+<date>20100700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00022">
+<othercit>International Search Report and Written Opinion received for PCT Application No. PCT/US2009/068114, mailed on Aug. 9, 2010, 9 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00023">
+<othercit>Moir et al., &#x201c;The Adaptive Transactional Memory Test Platform: A Tool for Experimenting with Transactional Code for Rock&#x201d;, Sun Micro Systems, In: The third annual ACM SIGPLAN workshop on transactional Computing, Feb. 2008, 18 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00024">
+<othercit>Kumar et al., &#x201c;Hybrid Transactional Memory&#x201d;, In proceedings of the eleventh ACM SIGPLAN symposium on Principles and practice of parallel programming, Mar. 2006, pp. 209-220.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00025">
+<othercit>International Preliminary Report on Patentability received for PCT Application No. PCT/US2009/068114, Mailed on Jul. 14, 2011, 6 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00026">
+<othercit>Office Action mailed Jul. 20, 2012, Korean Patent Application No. 2011-7007724, 4 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00027">
+<othercit>Office Action mailed May 14, 2012, Chinese Patent Application No. 200911000212.5, 6 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>29</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>711141</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711100</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711118</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711151</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711152</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>711E12002</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>5</number-of-drawing-sheets>
+<number-of-figures>5</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20100169580</doc-number>
+<kind>A1</kind>
+<date>20100701</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Sheaffer</last-name>
+<first-name>Gad</first-name>
+<address>
+<city>Haifa</city>
+<country>IL</country>
+</address>
+</addressbook>
+<residence>
+<country>IL</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Raikin</last-name>
+<first-name>Shlomo</first-name>
+<address>
+<city>Geva Carmel</city>
+<country>IL</country>
+</address>
+</addressbook>
+<residence>
+<country>IL</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Bassin</last-name>
+<first-name>Vadim</first-name>
+<address>
+<city>Raanana</city>
+<country>IL</country>
+</address>
+</addressbook>
+<residence>
+<country>IL</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="004" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Cohen</last-name>
+<first-name>Ehud</first-name>
+<address>
+<city>Kiryat Motskin</city>
+<country>IL</country>
+</address>
+</addressbook>
+<residence>
+<country>IL</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="005" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Margulis</last-name>
+<first-name>Oleg</first-name>
+<address>
+<city>Haifa</city>
+<country>IL</country>
+</address>
+</addressbook>
+<residence>
+<country>IL</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Sheaffer</last-name>
+<first-name>Gad</first-name>
+<address>
+<city>Haifa</city>
+<country>IL</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Raikin</last-name>
+<first-name>Shlomo</first-name>
+<address>
+<city>Geva Carmel</city>
+<country>IL</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Bassin</last-name>
+<first-name>Vadim</first-name>
+<address>
+<city>Raanana</city>
+<country>IL</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="004" designation="us-only">
+<addressbook>
+<last-name>Cohen</last-name>
+<first-name>Ehud</first-name>
+<address>
+<city>Kiryat Motskin</city>
+<country>IL</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="005" designation="us-only">
+<addressbook>
+<last-name>Margulis</last-name>
+<first-name>Oleg</first-name>
+<address>
+<city>Haifa</city>
+<country>IL</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Blakely, Sokoloff, Taylor &#x26; Zafman LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Intel Corporation</orgname>
+<role>02</role>
+<address>
+<city>Santa Clara</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Bataille</last-name>
+<first-name>Pierre-Michel</first-name>
+<department>2186</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A method and apparatus for providing a memory model for hardware attributes to support transactional execution is herein described. Upon encountering a load of a hardware attribute, such as a test monitor operation to load a read monitor, write monitor, or buffering attribute, a fault is issued in response to a loss field indicating the hardware attribute has been lost. Furthermore, dependency actions, such as blocking and forwarding, are provided for the attribute access operations based on address dependency and access type dependency. As a result, different scenarios for attribute loss and testing thereof are allowed and restricted in a memory model.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="181.02mm" wi="145.46mm" file="US08627014-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="223.77mm" wi="191.77mm" file="US08627014-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="196.00mm" wi="167.13mm" orientation="landscape" file="US08627014-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="219.03mm" wi="171.45mm" orientation="landscape" file="US08627014-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="229.36mm" wi="174.58mm" orientation="landscape" file="US08627014-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="212.68mm" wi="151.81mm" file="US08627014-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">FIELD</heading>
+<p id="p-0002" num="0001">This invention relates to the field of processor execution and, in particular, to execution of groups of instructions.</p>
+<heading id="h-0002" level="1">CROSS REFERENCE TO RELATED APPLICATIONS</heading>
+<p id="p-0003" num="0002">This application is related to the following patent applications filed herewith: U.S. patent application Ser. No. 12/346,518 entitled &#x201c;Registering a User-Handler in Hardware for Transactional Memory Event Handling,&#x201d; by Gad Sheaffer et al., filed on Dec. 30, 2008; U.S. patent application Ser. No. 12/346,543, entitled &#x201c;Extending Cache Coherency Protocols to Support Locally Buffered Data,&#x201d; by Gad Sheaffer et al., filed on Dec. 30, 2008; U.S. patent application Ser. No. 12/346,530, entitled &#x201c;Read and Write Monitoring Attributes in Transactional Memory (TM) Systems,&#x201d; by Gad Sheaffer et al., filed on Dec. 30, 2008; U.S. patent application Ser. No. 12/346,500, entitled &#x201c;Metaphysical Address Space for Holding Lossy Meta-data in Hardware,&#x201d; by Gad Sheaffer et al., filed on Dec. 30, 2008.</p>
+<heading id="h-0003" level="1">BACKGROUND</heading>
+<p id="p-0004" num="0003">Advances in semi-conductor processing and logic design have permitted an increase in the amount of logic that may be present on integrated circuit devices. As a result, computer system configurations have evolved from a single or multiple integrated circuits in a system to multiple cores and multiple logical processors present on individual integrated circuits. A processor or integrated circuit typically comprises a single processor die, where the processor die may include any number of cores or logical processors.</p>
+<p id="p-0005" num="0004">The ever increasing number of cores and logical processors on integrated circuits enables more software threads to be concurrently executed. However, the increase in the number of software threads that may be executed simultaneously have created problems with synchronizing data shared among the software threads. One common solution to accessing shared data in multiple core or multiple logical processor systems comprises the use of locks to guarantee mutual exclusion across multiple accesses to shared data. However, the ever increasing ability to execute multiple software threads potentially results in false contention and a serialization of execution.</p>
+<p id="p-0006" num="0005">For example, consider a hash table holding shared data. With a lock system, a programmer may lock the entire hash table, allowing one thread to access the entire hash table. However, throughput and performance of other threads is potentially adversely affected, as they are unable to access any entries in the hash table, until the lock is released. Alternatively, each entry in the hash table may be locked. Either way, after extrapolating this simple example into a large scalable program, it is apparent that the complexity of lock contention, serialization, fine-grain synchronization, and deadlock avoidance become extremely cumbersome burdens for programmers.</p>
+<p id="p-0007" num="0006">Another recent data synchronization technique includes the use of transactional memory (TM). Often transactional execution includes executing a grouping of a plurality of micro-operations, operations, or instructions. In the example above, both threads execute within the hash table, and their memory accesses are monitored/tracked. If both threads access/alter the same entry, conflict resolution may be performed to ensure data validity. One type of transactional execution includes Software Transactional Memory (STM), where tracking of memory accesses, conflict resolution, abort tasks, and other transactional tasks are performed in software, often without the support of hardware.</p>
+<p id="p-0008" num="0007">Another type of transactional execution includes a Hardware Transactional Memory (HTM) System, where hardware is included to support access tracking, conflict resolution, and other transactional tasks. As an example, hardware attributes may be included to support read monitoring, write monitoring, and buffering for transactional execution. However, instructions to set and read these attributes according to current memory ordering implementations may result in ordering violations. Furthermore, if the hardware attributes are held in a lossy manner, i.e. lost upon eviction/write-back, then read/test monitor instructions may see incorrect monitor data.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0009" num="0008">The present invention is illustrated by way of example and not intended to be limited by the figures of the accompanying drawings.</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 1</figref> illustrates an embodiment of a processor including multiple processing elements capable of executing multiple software threads concurrently.</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 2</figref> illustrates an embodiment of a processor including structures to support memory ordering for accesses to hardware attributes.</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 3</figref> illustrates another embodiment of a processor including structures to support memory ordering for accesses to hardware attributes.</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 4</figref> illustrates another embodiment of a processor including structures to support memory ordering for accesses to hardware attributes.</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 5</figref> illustrates an embodiment of a flow diagram for a method of providing proper memory ordering upon a read of a hardware attribute.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0015" num="0014">In the following description, numerous specific details are set forth such as examples of specific hardware structures for transactional execution, specific types and implementations of access monitors, specific cache implementations, specific types cache coherency models, specific data granularities, specific types of attributes, and specific structures to detect dependencies etc. in order to provide a thorough understanding of the present invention. It will be apparent, however, to one skilled in the art that these specific details need not be employed to practice the present invention. In other instances, well known components or methods, such as implementation details of hardware monitors/attributes, demarcation of transactions, specific and alternative multi-core and multi-threaded processor architectures, specific compiler methods/implementations, and specific operational details of microprocessors, have not been described in detail in order to avoid unnecessarily obscuring the present invention.</p>
+<p id="p-0016" num="0015">The method and apparatus described herein are for providing a memory model for hardware attributes to support transactional execution. Specifically, the memory model is discussed in reference to an out-of-order processor including access buffers. In fact, <figref idref="DRAWINGS">FIGS. 2-4</figref> refer to embodiments for modification of buffers, such as store buffers. However, the methods and apparatus for providing a memory model for hardware attributes is not so limited, as they may be implemented in any style of processor including any structures for handling accesses to hardware attributes.</p>
+<p id="p-0017" num="0016">Referring to <figref idref="DRAWINGS">FIG. 1</figref>, an embodiment of a processor capable of executing multiple threads concurrently is illustrated. Note, processor <b>100</b> may include hardware support for hardware transactional execution. Either in conjunction with hardware transactional execution, or separately, processor <b>100</b> may also provide hardware support for hardware acceleration of a Software Transactional Memory (STM), separate execution of a STM, or a combination thereof, such as a hybrid Transactional Memory (TM) system. Processor <b>100</b> includes any processor, such as a micro-processor, an embedded processor, a digital signal processor (DSP), a network processor, or other device to execute code. Processor <b>100</b>, as illustrated, includes a plurality of processing elements.</p>
+<p id="p-0018" num="0017">In one embodiment, a processing element refers to a thread unit, a process unit, a context, a logical processor, a hardware thread, a core, and/or any other element, which is capable of holding a state for a processor, such as an execution state or architectural state. In other words, a processing element, in one embodiment, refers to any hardware capable of being independently associated with code, such as a software thread, operating system, application, or other code. A physical processor typically refers to an integrated circuit, which potentially includes any number of other processing elements, such as cores or hardware threads.</p>
+<p id="p-0019" num="0018">A core often refers to logic located on an integrated circuit capable of maintaining an independent architectural state wherein each independently maintained architectural state is associated with at least some dedicated execution resources. In contrast to cores, a hardware thread typically refers to any logic located on an integrated circuit capable of maintaining an independent architectural state wherein the independently maintained architectural states share access to execution resources. As can be seen, when certain resources are shared and others are dedicated to an architectural state, the line between the nomenclature of a hardware thread and core overlaps. Yet often, a core and a hardware thread are viewed by an operating system as individual logical processors, where the operating system is able to individually schedule operations on each logical processor.</p>
+<p id="p-0020" num="0019">Physical processor <b>100</b>, as illustrated in <figref idref="DRAWINGS">FIG. 1</figref>, includes two cores, core <b>101</b> and <b>102</b>, which share access to higher level cache <b>110</b>. Although processor <b>100</b> may include asymmetric cores, i.e. cores with different configurations, functional units, and/or logic, symmetric cores are illustrated. As a result, core <b>102</b>, which is illustrated as identical to core <b>101</b>, will not be discussed in detail to avoid repetitive discussion. In addition, core <b>101</b> includes two hardware threads <b>101</b><i>a </i>and <b>101</b><i>b</i>, while core <b>102</b> includes two hardware threads <b>102</b><i>a </i>and <b>102</b><i>b</i>. Therefore, software entities, such as an operating system, potentially view processor <b>100</b> as four separate processors, i.e. four logical processors or processing elements capable of executing four software threads concurrently.</p>
+<p id="p-0021" num="0020">Here, a first thread is associated with architecture state registers <b>101</b><i>a</i>, a second thread is associated with architecture state registers <b>101</b><i>b</i>, a third thread is associated with architecture state registers <b>102</b><i>a</i>, and a fourth thread is associated with architecture state registers <b>102</b><i>b</i>. As illustrated, architecture state registers <b>101</b><i>a </i>are replicated in architecture state registers <b>101</b><i>b</i>, so individual architecture states/contexts are capable of being stored for logical processor <b>101</b><i>a </i>and logical processor <b>101</b><i>b</i>. Other smaller resources, such as instruction pointers and renaming logic in rename allocater logic <b>130</b> may also be replicated for threads <b>101</b><i>a </i>and <b>101</b><i>b</i>. Some resources, such as re-order buffers in reorder/retirement unit <b>135</b>, ILTB <b>120</b>, load/store buffers, and queues may be shared through partitioning. Other resources, such as general purpose internal registers, page-table base register, low-level data-cache and data-TLB <b>115</b>, execution unit(s) <b>140</b>, and portions of out-of-order unit <b>135</b> are potentially fully shared.</p>
+<p id="p-0022" num="0021">Processor <b>100</b> often includes other resources, which may be fully shared, shared through partitioning, or dedicated by/to processing elements. In <figref idref="DRAWINGS">FIG. 1</figref>, an embodiment of a purely exemplary processor with illustrative functional units/resources of a processor is illustrated. Note that a processor may include, or omit, any of these functional units, as well as include any other known functional units, logic, or firmware not depicted.</p>
+<p id="p-0023" num="0022">As illustrated, processor <b>100</b> includes bus interface module <b>105</b> to communicate with devices external to processor <b>100</b>, such as system memory <b>175</b>, a chipset, a northbridge, or other integrated circuit. Memory <b>175</b> may be dedicated to processor <b>100</b> or shared with other devices in a system. Higher-level or further-out cache <b>110</b> is to cache recently fetched elements from higher-level cache <b>110</b>. Note that higher-level or further-out refers to cache levels increasing or getting further way from the execution unit(s). In one embodiment, higher-level cache <b>110</b> is a second-level data cache. However, higher level cache <b>110</b> is not so limited, as it may be associated with or include an instruction cache. A trace cache, i.e. a type of instruction cache, may instead be coupled after decoder <b>125</b> to store recently decoded traces. Module <b>120</b> also potentially includes a branch target buffer to predict branches to be executed/taken and an instruction-translation buffer (I-TLB) to store address translation entries for instructions.</p>
+<p id="p-0024" num="0023">Decode module <b>125</b> is coupled to fetch unit <b>120</b> to decode fetched elements. In one embodiment, processor <b>100</b> is associated with an Instruction Set Architecture (ISA), which defines/specifies instructions executable on processor <b>100</b>. Here, often machine code instructions recognized by the ISA include a portion of the instruction referred to as an opcode, which references/specifies an instruction or operation to be performed.</p>
+<p id="p-0025" num="0024">In one example, allocator and renamer block <b>130</b> includes an allocator to reserve resources, such as register files to store instruction processing results. However, threads <b>110</b><i>a </i>and <b>101</b><i>b </i>are potentially capable of out-of-order execution, where allocator and renamer block <b>130</b> also reserves other resources, such as reorder buffers to track instruction results. Unit <b>130</b> may also include a register renamer to rename program/instruction reference registers to other registers internal to processor <b>100</b>. Reorder/retirement unit <b>135</b> includes components, such as the reorder buffers mentioned above, load buffers, and store buffers, to support out-of-order execution and later in-order retirement of instructions executed out-of-order.</p>
+<p id="p-0026" num="0025">Scheduler and execution unit(s) block <b>140</b>, in one embodiment, includes a scheduler unit to schedule instructions/operation on execution units. For example, a floating point instruction is scheduled on a port of an execution unit that has an available floating point execution unit. Register files associated with the execution units are also included to store information instruction processing results. Exemplary execution units include a floating point execution unit, an integer execution unit, a jump execution unit, a load execution unit, a store execution unit, and other known execution units.</p>
+<p id="p-0027" num="0026">Lower level data cache and data translation buffer (D-TLB) <b>150</b> are coupled to execution unit(s) <b>140</b>. The data cache is to store recently used/operated on elements, such as data operands, which are potentially held in memory coherency states. The D-TLB is to store recent virtual/linear to physical address translations. As a specific example, a processor may include a page table structure to break physical memory into a plurality of virtual pages.</p>
+<p id="p-0028" num="0027">In one embodiment, processor <b>100</b> is capable of hardware transactional execution, software transactional execution, or a combination or hybrid thereof. A transaction, which may also be referred to as a critical or atomic section of code, includes a grouping of instructions, operations, or micro-operations to be executed as an atomic group. For example, instructions or operations may be used to demarcate a transaction or a critical section. In one embodiment, described in more detail below, these instructions are part of a set of instructions, such as an Instruction Set Architecture (ISA), which are recognizable by hardware of processor <b>100</b>, such as decoders described above. Often, these instructions, once compiled from a high-level language to hardware recognizable assembly langue include operation codes (opcodes), or other portions of the instructions, that decoders recognize during a decode stage.</p>
+<p id="p-0029" num="0028">Typically, during execution of a transaction, updates to memory are not made globally visible until the transaction is committed. As an example, a transactional write to a location is potentially visible to a local thread, yet, in response to a read from another thread the write data is not forwarded until the transaction including the transactional write is committed. While the transaction is still pending, data items/elements loaded from and written to within a memory are tracked, as discussed in more detail below. Once the transaction reaches a commit point, if conflicts have not been detected for the transaction, then the transaction is committed and updates made during the transaction are made globally visible.</p>
+<p id="p-0030" num="0029">However, if the transaction is invalidated during its pendency, the transaction is aborted and potentially restarted without making the updates globally visible. As a result, pendency of a transaction, as used herein, refers to a transaction that has begun execution and has not been committed or aborted, i.e. pending.</p>
+<p id="p-0031" num="0030">A Software Transactional Memory (STM) system often refers to performing access tracking, conflict resolution, or other transactional memory tasks in or at least partially in software. In one embodiment, processor <b>100</b> is capable of executing a compiler to compile program code to support transactional execution. Here, the compiler may insert operations, calls, functions, and other code to enable execution of transactions.</p>
+<p id="p-0032" num="0031">A compiler often includes a program or set of programs to translate source text/code into target text/code. Usually, compilation of program/application code with a compiler is done in multiple phases and passes to transform hi-level programming language code into low-level machine or assembly language code. Yet, single pass compilers may still be utilized for simple compilation. A compiler may utilize any known compilation techniques and perform any known compiler operations, such as lexical analysis, preprocessing, parsing, semantic analysis, code generation, code transformation, and code optimization.</p>
+<p id="p-0033" num="0032">Larger compilers often include multiple phases, but most often these phases are included within two general phases: (1) a front-end, i.e. generally where syntactic processing, semantic processing, and some transformation/optimization may take place, and (2) a back-end, i.e. generally where analysis, transformations, optimizations, and code generation takes place. Some compilers refer to a middle end, which illustrates the blurring of delineation between a front-end and back end of a compiler. As a result, reference to insertion, association, generation, or other operation of a compiler may take place in any of the aforementioned phases or passes, as well as any other known phases or passes of a compiler. As an illustrative example, a compiler potentially inserts transactional operations, calls, functions, etc. in one or more phases of compilation, such as insertion of calls/operations in a front-end phase of compilation and then transformation of the calls/operations into lower-level code during a transactional memory transformation phase.</p>
+<p id="p-0034" num="0033">Nevertheless, despite the execution environment and dynamic or static nature of a compiler, the compiler, in one embodiment, compiles program code to enable transactional execution. Therefore, reference to execution of program code, in one embodiment, refers to (1) execution of a compiler program(s), either dynamically or statically, to compile main program code, to maintain transactional structures, or to perform other transaction related operations, (2) execution of main program code including transactional operations/calls, (3) execution of other program code, such as libraries, associated with the main program code, or (4) a combination thereof.</p>
+<p id="p-0035" num="0034">In one embodiment, processor <b>100</b> is capable of executing transactions utilizing hardware/logic, i.e. within a Hardware Transactional Memory (HTM) system. Numerous specific implementation details exist both from an architectural and microarchitectural perspective when implementing an HTM; most of which are not discussed herein to avoid unnecessarily obscuring the invention. However, some structures and implementations are disclosed for illustrative purposes. Yet, it should be noted that these structures and implementations are not required and may be augmented and/or replaced with other structures having different implementation details.</p>
+<p id="p-0036" num="0035">Accesses and requests may be made to data items both by local processing elements, as well as potentially by other processing elements. Without safety mechanisms in a transactional memory system, some of these accesses would potentially result in invalid data and execution, i.e. a write to data invalidating a read, or a read of invalid data. As a result, processor <b>100</b> potentially includes logic to track or monitor memory accesses to and from data items for identification of potential conflicts.</p>
+<p id="p-0037" num="0036">A data item or data element may include data at any granularity level, as defined by hardware, software or a combination thereof. A non-exhaustive list of examples of data, data elements, data items, or references thereto, include a memory address, a data object, a class, a field of a type of dynamic language code, a type of dynamic language code, a variable, an operand, a data structure, and an indirect reference to a memory address. However, any known grouping of data may be referred to as a data element or data item. A few of the examples above, such as a field of a type of dynamic language code and a type of dynamic language code refer to data structures of dynamic language code. To illustrate, dynamic language code, such as Java&#x2122; from Sun Microsystems, Inc, is a strongly typed language. Each variable has a type that is known at compile time. The types are divided in two categories&#x2014;primitive types (boolean and numeric, e.g., int, float) and reference types (classes, interfaces and arrays). The values of reference types are references to objects. In Java&#x2122;, an object, which consists of fields, may be a class instance or an array. Given object a of class A it is customary to use the notation A::x to refer to the field x of type A and a.x to the field x of object a of class A. For example, an expression may be couched as a.x=a.y+a.z. Here, field y and field z are loaded to be added and the result is to be written to field x.</p>
+<p id="p-0038" num="0037">Therefore, monitoring/buffering memory accesses to data items may be performed at any of data level granularity. For example, in one embodiment, memory accesses to data are monitored at a type level. Here, a transactional write to a field A::x and a non-transactional load of field A::y may be monitored as accesses to the same data item, i.e. type A. In another embodiment, memory access monitoring/buffering is performed at a field level granularity. Here, a transactional write to A::x and a non-transactional load of A::y are not monitored as accesses to the same data item, as they are references to separate fields. Note, other data structures or programming techniques may be taken into account in tracking memory accesses to data items. As an example, assume that fields x and y of object of class A, i.e. A::x and A::y, point to objects of class B, are initialized to newly allocated objects, and are never written to after initialization. In one embodiment, a transactional write to a field B::z of an object pointed to by A::x are not monitored as memory access to the same data item in regards to a non-transactional load of field B::z of an object pointed to by A::y. Extrapolating from these examples, it is possible to determine that monitors may perform monitoring/buffering at any data granularity level.</p>
+<p id="p-0039" num="0038">In one embodiment, monitors include read monitors and write monitors to track loads and stores, which are determined to be monitored, accordingly. As an example, hardware read monitors and write monitors are to monitor data items at a granularity of the data items despite the granularity of underlying storage structures. In one embodiment, a data item is bounded by tracking mechanisms associated at the granularity of the storage structures to ensure the at least the entire data item is monitored appropriately. An example of utilizing read monitors/attributes to monitor data items is discussed in more detail in co-pending application Ser. No. 12/346,530, entitled &#x201c;Read and Write Monitoring Attributes in Transactional Memory (TM) Systems,&#x201d; by Gad Sheaffer et al., filed herewith. However, monitors, attributes, annotations, or other tracking mechanisms may be utilized to detect conflicts associated with transactional execution utilizing any granularity of data or structures to hold the data.</p>
+<p id="p-0040" num="0039">Attributes include any logic, firmware, or structure for holding states associated with data items. For example, attributes for a data item include a bit vector, where each bit in the bit vector represents an attribute of a data item, such as transactionally loaded, transactionally written, non-transactionally loaded, non-transactionally written, not transactionally loaded, not transactionally written, not non-transactionally loaded, not non-transactionally written, buffered, not buffered, access conflict detected, no access conflict detected, a read request, no read request, a write request, no write request, an ownership request, no ownership request, or any other attribute or state associated with a data item or memory location to hold the data item. As another example, the attributes for a data item includes an encoded value. For example, states, such as the four states: (1) read monitored; (2) not read monitored; (3) write monitored; (4) not write monitored; (5) buffered; and (6) not buffered, are encoded utilizing three attribute bits, i.e. six binary values of 000, 001, 010, 011, 100, 101, 110.</p>
+<p id="p-0041" num="0040">As yet another example, attributes are included as part of a coherency state array associated with a cache memory, such as data cache <b>150</b>. A non-exhaustive list of exemplary cache coherency states include: a modified, an exclusive, a shared, or an invalid (MESI) state which are supplemented or augmented with a read monitor attribute, a write monitor attribute, a buffered attribute, another attribute, or a combination thereof As a result, new coherency states are essentially created, such as a read monitored buffered coherency state or a write monitored buffered coherency state. Consequently, existing known coherency and communication/snoop protocols may be utilized in combination with hardware monitors/attributes to detect conflicts.</p>
+<p id="p-0042" num="0041">Based on the design, different combinations of cache coherency requests and monitored coherency states of cache lines result in potential conflicts, such as a cache line holding a data item being in a shared read state and a snoop indicating a write request to the data item. Inversely, a cache line holding a data item being in a buffered write state and an external snoop indicating a read request to the data item may be considered potentially conflicting. In one embodiment, to detect such combinations of access requests and attribute states snoop logic is coupled to conflict detection/reporting logic, such as monitors and/or logic for conflict detection/reporting.</p>
+<p id="p-0043" num="0042">In one embodiment, a handler is registered in hardware to support efficient handling of conflicts, such as access conflicts, loss of monitor conflicts, loss of data conflicts, etc. As an example, a register is modifiable by software, such as transactional runtime or application code, to register an address of a transaction handler. When an event of interest, such as the an access conflict or a loss of information described above, is detected, then in one embodiment, the control flow is vectored to the transactional handler registered in the register without intervention of privileged software, such as an Operating System (OS). A version of registering a handler in hardware is discussed in a related application filed herewith having Ser. No. 12/346,518, entitled &#x201c;Registering a User-Handler in Hardware for Transactional Memory Event Handling,&#x201d; by Gad Sheaffer et al.</p>
+<p id="p-0044" num="0043">Whether attributes are held has lossy data, i.e. information lost upon an associated eviction from a cache, or as part of data written-back on an eviction, an architecture of processor <b>100</b>, in one embodiment, supports instructions, operations, or micro-operations to access the attributes. For example, a set monitor instruction is to set an attribute to a specified value, a clear monitor instruction is to clear an attribute to a default value, and a test attribute instruction is to read an attribute. Additionally, specific operations, such as transactional loads and transactional stores, may implicitly set an attribute. For example, a transactional store may implicitly set both a buffering attribute to indicate data is buffered and a write monitoring attribute to indicate the buffered data is write monitored.</p>
+<p id="p-0045" num="0044">In one embodiment, a memory model is provided to support proper ordering of accesses to attributes, which may include explicit or implicit accesses. For example, previously when a first and second load of an attribute is executed out-of-order, an illegal memory ordering scenario may be allowed. To illustrate pseudo code and potential outcomes in an out-of-order execution processor is included below.</p>
+<p id="p-0046" num="0045">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="35pt" align="left"/>
+<colspec colname="1" colwidth="182pt" align="left"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>Set_monitor[M]</entry>
+</row>
+<row>
+<entry/>
+<entry>R0 = test _monitor[M]</entry>
+</row>
+<row>
+<entry/>
+<entry>R1 = test _monitor[M]</entry>
+</row>
+<row>
+<entry/>
+<entry>1) R0 = TRUE and R1 = FALSE is allowed.</entry>
+</row>
+<row>
+<entry/>
+<entry>2) R0 = FALSE and R1 = TRUE is not allowed.</entry>
+</row>
+<row>
+<entry/>
+<entry>3) R0 = TRUE and R1 = TRUE is allowed.</entry>
+</row>
+<row>
+<entry/>
+<entry>4) R0 = FALSE and R1 = FALSE is allowed.</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0047" num="0046">Note that in one embodiment, scenarios 1, 3, and 4 are allowed. However, with regard to scenario two assume a read monitor is set to indicate an address M is read monitored before a first test of a read attribute (R0) associated with address M. Furthermore, a cache line associated with address M and the read monitor is evicted before a second test (R1) of the read attribute. Here, if the first and the second test are executed out-of order, then the first test (R0) may return a no read monitoring indication (FALSE) due to the eviction, while the second test returns a read monitoring indication (TRUE). This scenario, in one embodiment, is illegal, and may result in potential inconsistency between the test operations in program order that were executed out of order.</p>
+<p id="p-0048" num="0047">Therefore, in one embodiment, a cache element, such as a cache set, cache line, cache location, or cache entry, is associated with a loss field. As an example, the loss field is included within a portion of a data cache, such that the information is not lost upon an eviction. Here, consistency is provided upon a subsequent access, such as a next load operation, when the loss field is set to a loss value to indicate attribute information has been lost and may be incorrect. To illustrate, the previous example is re-examined. As stated above, the second test operation (R1) is executed first, and subsequently, a loss of the read attribute occurs from the eviction, which results in the loss field being set to the loss value. When the first test operation (R0) subsequently executes out-of-order with the loss field being set, then a conflict is detected. As an example, R0 is faulted in this scenario. In response to the fault, both operations are restarted to ensure the memory model is not broken, i.e. scenario two from above is not allowed</p>
+<p id="p-0049" num="0048">In addition to loss of attribute information, other memory consistency violations are potentially present in previous processor architectures, such as inconsistencies caused by attribute access instructions/operations with regard to external accesses. As an example, assume a set read monitor operation associated with address A is to be executed before a load operation of address A. Note, in a scenario where buffering of a read monitor is enabled, then the set read monitor operation may retire and then update the read monitor after the load operation has retired. The time between the load operation's retirement and the actual update of the read attribute is an area of vulnerability.</p>
+<p id="p-0050" num="0049">To illustrate, assume an external snoop is received during this time, where a local processing element believes that the read attribute is set to indicate address A is read monitored; however, the attribute is not marked as of yet, so the external snoop believes address A is not read monitored. Essentially, there is not a consistent view of the read monitor/attributes. Therefore, in one embodiment, in response to a snoop, a store buffer is snooped to determine if a previous store, such as the set read monitor store operation above, is in-flight and has not marked the read attribute. For example, if an entry in the store buffer is hit, i.e. there is an in-flight store to a hardware attribute, then forwarding of the attribute information from the entry, as well as updating the read attribute is prevented.</p>
+<p id="p-0051" num="0050">In addition to the potential consistency problems between attribute access instructions and external accesses, out-of-order execution of attribute accesses potentially also results in consistency issues. For example, take the scenario where a transactional load implicitly sets a read monitor, a test monitor instruction is to subsequently test the read monitor, and the operations are executed out-of-order. As a result, the test monitor instruction may return either monitored or unmonitored based on the timing of executing the operations. A number of memory model implementations may be utilized to alleviate this problem.</p>
+<p id="p-0052" num="0051">As a first example, an operation to set a read monitor, such as a set read monitor operation, blocks/prevents an operation to load the read monitor, such as a test read monitor operation, until the operation to set the read monitor updates the read monitor, accordingly. Therefore, the area of vulnerability described above is avoided, as a subsequent test operation is blocked until the marking of the read monitor occurs. As another example, monitored information is forwarded from instructions that set a monitor to instructions that test the monitor. In addition, buffering of read monitors may be emulated without actually buffering read monitors.</p>
+<p id="p-0053" num="0052">To provide forwarding or perform blocking, a memory order buffer, which may include store and/or load buffers, is to detect dependencies between producer and consumer operations. However, dependency may rely not only on address dependency but also on access type dependency, i.e. an attribute type of producer access and an attribute type of consumer access. Table A below illustrates examples of dependency between attribute access instructions.</p>
+<p id="p-0054" num="0053">
+<tables id="TABLE-US-00002" num="00002">
+<table frame="none" colsep="0" rowsep="0" pgwide="1">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="399pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" rowsep="1">TABLE A</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>Embodiment of dependent attribute access instrutions</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="35pt" align="left"/>
+<colspec colname="1" colwidth="364pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>producers</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="7">
+<colspec colname="offset" colwidth="105pt" align="left"/>
+<colspec colname="1" colwidth="63pt" align="center"/>
+<colspec colname="2" colwidth="63pt" align="center"/>
+<colspec colname="3" colwidth="35pt" align="center"/>
+<colspec colname="4" colwidth="42pt" align="center"/>
+<colspec colname="5" colwidth="35pt" align="center"/>
+<colspec colname="6" colwidth="56pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>implicit</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>Buffered</entry>
+<entry>Implicit</entry>
+<entry>monitored</entry>
+<entry>implicit buffered</entry>
+</row>
+<row>
+<entry/>
+<entry>Set_Read_Monitor</entry>
+<entry>Set_Write_Monitor</entry>
+<entry>store</entry>
+<entry>monitor load</entry>
+<entry>store</entry>
+<entry>store</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="6" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="8">
+<colspec colname="1" colwidth="35pt" align="left"/>
+<colspec colname="2" colwidth="70pt" align="left"/>
+<colspec colname="3" colwidth="63pt" align="center"/>
+<colspec colname="4" colwidth="63pt" align="center"/>
+<colspec colname="5" colwidth="35pt" align="center"/>
+<colspec colname="6" colwidth="42pt" align="center"/>
+<colspec colname="7" colwidth="35pt" align="center"/>
+<colspec colname="8" colwidth="56pt" align="center"/>
+<tbody valign="top">
+<row>
+<entry>consumers</entry>
+<entry>Test_read_monitor</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+</row>
+<row>
+<entry/>
+<entry>Test_write_monitor</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+</row>
+<row>
+<entry/>
+<entry>Test_buffering</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+</row>
+<row>
+<entry/>
+<entry>load</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>1</entry>
+<entry>1</entry>
+</row>
+<row>
+<entry namest="1" nameend="8" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0055" num="0054">Note that the table is not an exhaustive list of instructions/operations and their potential dependencies. Within Table A, a value of 1 represents a dependency exists, which may result in a forwarding or blocking dependency action, as described above. Discussion of structures to support forwarding or blocking are discussed in reference to <figref idref="DRAWINGS">FIGS. 3-4</figref> below. Once dependency is detected, then it is determined if the information from the producer should be forwarded or the consumer should be blocked until the producer is done updating an attribute with the information.</p>
+<p id="p-0056" num="0055">As stated above in the initial reference to <figref idref="DRAWINGS">FIG. 1</figref>, the architecture of processor <b>100</b> is purely illustrative for purpose of discussion. Similarly, the specific examples of associating attributes with data items/elements is also exemplary, as any method of associating hardware monitors/attributes at different granularity data items may be utilized.</p>
+<p id="p-0057" num="0056">Referring to <figref idref="DRAWINGS">FIG. 2</figref>, an embodiment of a processor including structures to implement a memory model to support hardware attributes for transactional execution is illustrated. Processor <b>250</b> includes any type of known processor with any number of processing elements capable of transactional execution. Although not illustrated, processor <b>250</b> may be coupled to other system components, such as a chipset, i.e. memory controller hub and input/output (I/O) controller hub, and system memory. Common examples of I/O devices in a computer system include a network controller, a video display adapter, a graphics processor, an audio controller, or other input/output device.</p>
+<p id="p-0058" num="0057">In one embodiment, processor <b>250</b> includes a cache memory. The most common example of a cache includes a data cache, such as a first level cache or second level cache as illustrated in <figref idref="DRAWINGS">FIG. 1</figref>. However, a cache may also include an instruction cache, trace cache, or other known cache. Although cache architecture is not described in detail to avoid unnecessarily obscuring the discussion, a cache may be organized in numerous ways. For example, a cache may be fully associative, i.e. memory addresses may be held anywhere in the cache, set associative where certain ranges of memory addresses are restricted to specific sets of the cache, or direct mapped cache where multiple addresses are to be held in single locations within the cache. Note that the methods and apparatus described herein may be implemented with any cache organization.</p>
+<p id="p-0059" num="0058">As illustrated, the cache includes data portion <b>205</b>, which may also be referred to as cache memory or a data array, and control logic <b>230</b> associated with cache memory <b>205</b>. Cache memory <b>205</b> includes elements <b>210</b>, <b>215</b>, <b>220</b>, and <b>225</b>. A cache element, as utilized herein, refers to any granularity of a structural element of a cache, such as a cache line, a cache entry, a cache location, or a cache set. For example, element <b>210</b> may include a cache set having a number of lines for a set associative cache. In contrast, element <b>210</b>, in another embodiment, includes an entry of a plurality of entries within a set that is associated with array <b>235</b> in a similar manner.</p>
+<p id="p-0060" num="0059">Control logic <b>230</b> includes array <b>235</b> having entries <b>211</b>, <b>216</b>, <b>221</b>, and <b>226</b> associated with/corresponding to cache elements <b>210</b>, <b>215</b>, <b>220</b>, and <b>225</b>, respectively. Furthermore, hardware read attributes, write attributes, and buffering attributes <b>211</b><i>r</i>, <b>211</b><i>w</i>, <b>211</b><i>b</i>, <b>216</b><i>r</i>, <b>216</b><i>w</i>, <b>216</b><i>b</i>, <b>221</b><i>r</i>, <b>221</b><i>w</i>, <b>221</b><i>b</i>, <b>226</b><i>r</i>, <b>226</b><i>w </i>and <b>226</b><i>b </i>are similarly associated with cache elements <b>210</b>, <b>215</b>, <b>220</b>, and <b>225</b>. Although hardware monitors and their various embodiments are described in more detail within a co-pending application filed herewith having Ser. No. 12/346,530, entitled &#x201c;Read and Write Monitoring Attributes in Transactional Memory (TM) Systems,&#x201d; by Gad Sheaffer et al., embodiments of attributes are briefly described herein to further the discussion.</p>
+<p id="p-0061" num="0060">In one embodiment, read and write monitors are to bound monitoring of data, such as data item <b>201</b>, despite a granularity of the physical structures to hold the data. Note from the discussion above that a data item may have any granularity. In fact, a programmer may define a data item by providing a starting address and then a number of additional bytes that make up the data item. Here, it is assumed that element <b>210</b> includes a line of cache. As a result, the data item may be smaller than a line, such as line <b>210</b>, of cache <b>205</b>, the size of a cache line of cache <b>205</b>, or bigger than a cache line of cache <b>205</b>, as well as potentially unaligned with the starting and ending boundaries of a cache line of cache <b>205</b>.</p>
+<p id="p-0062" num="0061">In the example of <figref idref="DRAWINGS">FIG. 2</figref>, data item <b>201</b> spans a single cache line. Although P29130 discusses potential dynamic assignment of monitoring attributes, attributes <b>211</b><i>r</i>, <b>211</b><i>w</i>, <b>211</b><i>b</i>, <b>216</b><i>r</i>, <b>216</b><i>w</i>, <b>216</b><i>b</i>, <b>221</b><i>r</i>, <b>221</b><i>w</i>, <b>221</b><i>b</i>, <b>226</b><i>r</i>, <b>226</b><i>w </i>and <b>226</b><i>b </i>are provided, in this example, on a cache element basis. Therefore, if data item <b>201</b> is to be read monitored, then read monitor <b>211</b><i>r </i>is updated to a monitored state to indicate corresponding elements <b>211</b> are read monitored.</p>
+<p id="p-0063" num="0062">In one embodiment, attributes <b>211</b><i>r</i>, <b>211</b><i>w</i>, <b>211</b><i>b</i>, <b>216</b><i>r</i>, <b>216</b><i>w</i>, <b>216</b><i>b</i>, <b>221</b><i>r, </i><b>221</b><i>w</i>, <b>221</b><i>b</i>, <b>226</b><i>r</i>, <b>226</b><i>w </i>and <b>226</b><i>b </i>are considered lossy data. Often, lossy data refers to local data, which may be lost upon an event, such as an eviction of at least a portion of cache element <b>210</b> and a write-back to a higher level cache. In one embodiment, array <b>235</b> includes a coherency state array, where entries <b>211</b>, <b>216</b>, <b>221</b>, and <b>226</b> are coherency entries to hold coherency state values corresponding to cache elements <b>210</b>, <b>215</b>, <b>220</b>, and <b>225</b>, respectively. Common cache coherency states include MESI, i.e. Modified Exclusive Shared and Invalid, cache coherency states. However, addition of the illustrated three attribute bits essentially create new coherency states based on read monitoring, write monitoring, and buffering.</p>
+<p id="p-0064" num="0063">Therefore, assuming cache element <b>210</b> includes a cache line, then in response to an eviction of cache line <b>210</b>, the associated state information including entry <b>211</b> having attributes <b>211</b><i>b</i>, <b>211</b><i>r</i>, and <b>211</b><i>w </i>is lost, i.e. not written back. As a result, a consistency problem may occur when a local element believes an attribute is set, but the attribute has been lost. Here, the consistency problem may occur with another attribute access or an external access, since the proper information has been lost.</p>
+<p id="p-0065" num="0064">Therefore, in one embodiment, loss fields <b>212</b>, <b>217</b>, <b>222</b>, and <b>227</b> are associated with elements <b>210</b>, <b>215</b>, <b>220</b>, and <b>225</b>, respectively. As illustrated, loss fields <b>212</b>, <b>217</b>, <b>222</b>, and <b>227</b> are included within elements <b>210</b>, <b>215</b>, <b>220</b>, and <b>225</b>. However, a loss field may be held anywhere that is not lost upon an eviction. For example, loss field <b>212</b> may be included in a data cache structure that is not lost upon eviction of line <b>210</b>, or that may be easily logged and associated with cache line <b>210</b>.</p>
+<p id="p-0066" num="0065">Typically, control logic <b>230</b> includes snoop logic, replacement logic, state logic, and other cache related logic to perform any known cache operations. In one embodiment, control logic <b>230</b>, either individually or in conjunction with other logic in processor <b>250</b>, is to update a loss field to a loss value in response to determining associated lossy data is to be lost. For example, assume lossy data includes attributes <b>211</b><i>b</i>, <b>211</b><i>r</i>, and <b>211</b><i>w </i>in a coherency entry <b>211</b>. Here, when an attribute, such as <b>211</b><i>b, </i>is set and cache element <b>210</b> is selected for eviction, control logic <b>230</b> updates loss field <b>212</b>. Note in one embodiment, when no data is to be lost, i.e. lossy data is not present, such as attributes <b>211</b><i>b</i>, <b>211</b><i>r</i>, and <b>211</b><i>w </i>not being set, then an eviction does not result in setting of loss field <b>212</b>. In other words, there is no reason to indicate a loss if there is no data to lose.</p>
+<p id="p-0067" num="0066">In one embodiment, a handler may be invoked, as described above, to handle the loss. However, in another embodiment, consistency is ensured upon a subsequent access. For example, assume a transactional load results in attribute <b>211</b>.<i>r </i>being set to indicate read monitoring, and then subsequently, line <b>210</b> is selected for eviction. As a result, control logic <b>230</b> sets loss field <b>212</b> to a loss value. Here, a version of address hashing may be utilized, as after eviction, the address of entry <b>210</b> is different. Before eviction either lossy data, such as the tag for line <b>210</b> is stored separately, or information that is the same between an evicted line and a newly allocated line is utilized for loss field <b>212</b>, such as set bits for a cache array that is not fully associative. Previously, without loss field <b>212</b>, a subsequent load, such as test monitor operation, would receive incorrect monitor information from <b>211</b>.<i>b</i>, since it was lost during the eviction. Instead, in one embodiment, the subsequent test read monitor operation is faulted in response to the loss value being held in field <b>212</b>. Consequently, consistency is ensured through the next access operation.</p>
+<p id="p-0068" num="0067">Turning to <figref idref="DRAWINGS">FIG. 3</figref> an embodiment of a processor including structures to support memory ordering for accesses to hardware attributes is illustrated. Note that only a select few structures of a processor are illustrated for simplicity. In one embodiment, logic is included in processor <b>305</b> to determine if a dependency exists between a store operation to a hardware attribute and a subsequent load operation to a hardware attribute, such that a proper dependency action may be performed.</p>
+<p id="p-0069" num="0068">As an example, determining a dependency between producer and consumer operations is based on attribute access types. As stated above, exemplary attributes include a read monitor, a write monitor, and a buffering attribute. Here, associated access types include a read monitor access type, a write monitor access type, and a buffering access type. Previously, store forwarding has been implemented purely on address dependency.</p>
+<p id="p-0070" num="0069">However, in on embodiment, access types of producer and consumer operations in conjunction with addresses of the producer and consumer operations are utilized in determining a dependency. As discussed above in reference to Table A, different types of accesses to the same address may not be dependent. As a result, in one embodiment, a dependency does not exist between a set write monitor access type and a test read monitor access type.</p>
+<p id="p-0071" num="0070">One embodiment of determining dependency based on access types of operations is depicted in <figref idref="DRAWINGS">FIG. 3</figref>. Here, a memory order buffer, not specifically illustrated, potentially includes store buffer <b>310</b> and load buffer <b>350</b>. Both buffers are to hold entries associated with corresponding operations. As illustrated, entry <b>325</b> is to be associated with a store operation referencing address <b>328</b> having attribute access type <b>327</b> to store attribute data <b>326</b>. Although the store buffer is illustrated for exemplary purposes as having two separate arrays, i.e. store data buffer <b>320</b> and store address buffer <b>315</b>, any known implementation of a store buffer may be utilized.</p>
+<p id="p-0072" num="0071">Essentially, store buffer logic <b>310</b> holds attribute access type <b>327</b> associated with a store operation, i.e. within store address buffer <b>315</b> of store buffer entry <b>325</b>. Load buffer <b>350</b> operates in a similar manner with respect to load operations. As depicted, entry <b>355</b> holds address <b>358</b> associated with access type <b>357</b> and data entry <b>356</b>. To illustrate, assume that entry <b>325</b> is associated with a previous in-flight store operation, such as a set read monitor operation, to update an hardware attribute, such as a read monitor attribute, with updated attribute information <b>326</b>. Subsequently, a load operation is encountered. Here, buffer entry <b>355</b> is associated with the subsequent load operation.</p>
+<p id="p-0073" num="0072">Dependency/blocker logic <b>360</b> compares access type <b>357</b> and address <b>358</b> of the subsequent load operation with access type <b>327</b> and address <b>328</b> of the previous store operation. In one embodiment, the comparison is performed in a searching manner, i.e. access type <b>357</b> is appended to address <b>358</b> to search store address buffer <b>315</b>. If the entire appended search criteria hits an entry in store buffer <b>310</b>, then a dependency exists. Here, if the combination of access type <b>357</b> appended to address <b>358</b> matches access type <b>337</b> appended to address <b>338</b>, then it is determined a dependency exists between the store operation and the subsequent load operation.</p>
+<p id="p-0074" num="0073">In other words, the access types, i.e. a read monitor, write monitor, or buffer access type, match and the addresses match, so a dependency exists between the producer store operation and consumer subsequent load operation. Note that in one embodiment, subsequent refers to program order, such that a search of store buffer <b>310</b> is only made of store buffer entries before the load buffer entry in program order.</p>
+<p id="p-0075" num="0074">In addition, forwarding logic <b>370</b> is coupled to dependency/blocker logic <b>360</b>, which either separately or in conjunction with dependency/blocker logic, is to perform a dependency action, accordingly. In one embodiment, the dependency action includes a blocking action. As one example, read monitors may not be forwarded. As a result, if the access types include read monitor access types and a dependency is detected, then the subsequent load operation is blocked until the store operation associated with entry <b>325</b> updates the appropriate read monitor for address <b>328</b> to updated attribute information <b>326</b>. As an example, blocking logic <b>360</b> includes logic to update a blocking field within load buffer entry <b>355</b> to a blocking value. Based on the blocking field holding the blocking value in entry <b>355</b>, the load is not dispatched until the blocking value is cleared.</p>
+<p id="p-0076" num="0075">In contrast, another dependency action includes forwarding monitor data. Here, if a dependency is determined by dependency logic <b>360</b>, then logic <b>370</b> is to forward updated data <b>326</b> to the load operation. Yet, if dependency logic <b>360</b> determines there is no dependency, then no dependency action is undertaken. However, where forwarding of monitor data is allowed, then in one embodiment, snoop logic is to snoop store buffer <b>310</b> in response to an external access request. Here, if an external access request results in snoop hit, such as a hit of entry <b>325</b>, then forwarding logic <b>370</b> is not to forward updated attribute data <b>326</b>. Furthermore, the store operation, such as a set monitor operation, may not be allowed to update a corresponding monitor in response to the hit of the external snoop.</p>
+<p id="p-0077" num="0076">Referring to <figref idref="DRAWINGS">FIG. 4</figref> another embodiment of determining dependency between attribute access operations is illustrated. Note in <figref idref="DRAWINGS">FIG. 3</figref>, that an explicit attribute access type, such as a type specified by consideration of an opcode, is associated with a store entry. There, the access type is essentially an extension of the address, such as a 2-bit extension to represent the three states described above. Furthermore, dependency checking included a search/compare with the 2-bit extension as part of the address.</p>
+<p id="p-0078" num="0077">In contrast, dependency checking based on access type, in one embodiment, is implicit. As depicted, similar structures are included in processor <b>405</b>, as to those shown in processor <b>305</b> from <figref idref="DRAWINGS">FIG. 3</figref>. However, instead of generic updated attribute information, which may include read monitor, write monitor, or buffering attribute information, held in one position of an entry of store buffer <b>320</b>, attribute information is held in positions <b>431</b>, <b>432</b>, and <b>433</b>. As a result, a traditional address dependency check may be performed with an additional check of the position of attribute information.</p>
+<p id="p-0079" num="0078">To illustrate, assume attribute information position <b>431</b> is to hold read monitor information, attribute information position <b>432</b> is to hold write monitor information, and attribute information position <b>433</b> is to hold buffering attribute information. When a load is encountered a traditional address dependency check is performed, i.e. address <b>458</b> is utilized to search store address buffer <b>415</b>. When a hit occurs to entry <b>425</b>, i.e. address <b>458</b> and <b>428</b> match, then the access type is compared based on the position of data held in the store buffer <b>420</b>. In one embodiment, access type comparison may be performed in parallel to an address match. Therefore, it is further assumed, that a set buffering attribute operation is associated with entry <b>425</b>. As a result, the updated attribute information for the buffering attribute associated with address <b>428</b> is held in position <b>433</b>, such as a third least significant bit.</p>
+<p id="p-0080" num="0079">Upon a subsequent load, such as a test write monitor operation, the addresses are compared by dependency logic <b>460</b>. Since, the test write monitor operation is of a write monitor access type and buffer entry <b>425</b> holds the update information in position <b>433</b> indicating a buffering access type, then there is no dependency match. However, if the subsequent load is a test buffered attribute operation with the addresses matching, then the access types based on the position of information in store data buffer entry <b>425</b> are matching and a dependency is determined to exist. As a result of either determining a dependency exists or does not exist, forwarding/blocking logic <b>470</b> performs similar operations as those described above in reference to <figref idref="DRAWINGS">FIG. 3</figref>.</p>
+<p id="p-0081" num="0080">Turning to <figref idref="DRAWINGS">FIG. 5</figref>, an embodiment of a flow diagram for a method of providing proper memory ordering upon a read, load, or test of a hardware attribute is illustrated. Note the flowchart of <figref idref="DRAWINGS">FIG. 5</figref> is illustrated in a substantially serial fashion. However, the methods illustrated and described in relation to this figure are not so limited, as they may occur in any order, as well as being performed at least partially in parallel.</p>
+<p id="p-0082" num="0081">In flow <b>505</b>, a load a load operation to read a hardware attribute is encountered. As an example, the load operation includes a test monitor instruction, operation, or micro-operation, which may be included in larger instructions to perform other operations/micro-operations as well. In one example, the load operation is associated with an attribute type and references an address associated with a hardware attribute. As described above, examples of hardware attributes include a read monitor attribute, a write monitor attribute, and a buffering attribute. Yet, an attribute may include any storage of a state associated with data or an address.</p>
+<p id="p-0083" num="0082">In flow <b>506</b>, it is determined if a loss field associated with the hardware attribute, i.e. the address referenced by the load operation that is associated with the hardware attribute, is set to a loss value. In response to the field holding a loss value to indicate lossy data, such as attribute information, has been lost, then a fault is initiated for the load operation in flow <b>507</b> to ensure proper data consistency.</p>
+<p id="p-0084" num="0083">However, if the loss field does not hold a loss value, then the flow continues to flow <b>510</b>. In flow <b>510</b>, it is determined if a dependency exists between the load operation and a previous in-flight store operation, such as a set hardware attribute instruction, operations, or micro-operation. Note that flow <b>510</b> encompasses both flows <b>511</b> and <b>512</b>, as the dependency check includes both of these flows in this example.</p>
+<p id="p-0085" num="0084">In flow <b>511</b>, it is determined if there is an address match between the load operation and the previous in-flight store operation, and in flow <b>512</b>, it is determined if there is an access type match between the load operation and the previous in-flight store operation. In one embodiment, these flows are performed together, such as when an access type is held as an address extension, which is described in <figref idref="DRAWINGS">FIG. 3</figref>. Here, a store address buffer is searched with a representation of the attribute type, i.e. the address bit extension, appended to the address. If a hit occurs with the access type appended to the address, then it is determined that a dependency exists, since the both the addresses and access types of the load operation and the previous store operation match.</p>
+<p id="p-0086" num="0085">In another embodiment, where access type is implicit within a design, such as based on position of store data described in reference to <figref idref="DRAWINGS">FIG. 4</figref>, then flows <b>511</b> and <b>512</b> may be performed separately. Here, a store buffer is searched for a store buffer entry associated with the address referenced by the load for flow <b>511</b>. In response to a hit, i.e. an address match, then a position of store data held in the hit store buffer entry of the store buffer is determined. Based on the position of the store data, such as a third least significant bit (LSB), a store attribute type, such as a buffering, read monitoring, or write monitoring type is determined. If the determined store access type is the same as the load type, then it is determined that a dependency exits.</p>
+<p id="p-0087" num="0086">In either case, if a dependency does not exists, then in flow <b>515</b>, the load is performed normally without performing an attribute related dependency action. However, if a dependency is detected, then in flow <b>520</b>, an appropriate dependency action is performed. In one embodiment, the dependency action includes forwarding the store data associated with the in-flight previous store operation. Here, if the previous store operation includes a set write monitor operation to update a write monitor with an updated value, then the updated value is forwarded to a dependent test monitor operation to read the write monitor value.</p>
+<p id="p-0088" num="0087">In another embodiment, a dependency action includes blocking the load operation until the hardware attribute is updated by the in-flight previous store operation. To illustrate, assume the previous store includes a set read monitor operation to update the read monitor to an updated value and the load operation includes a test read monitor operation to load the read monitor value. Here, the load operation to load the read monitor value is blocked until the set read monitor operation actually updates the read monitor. In either case, i.e. forwarding or blocking, data consistency is maintained through the provided memory model.</p>
+<p id="p-0089" num="0088">A module as used herein refers to any hardware, software, firmware, or a combination thereof. Often module boundaries that are illustrated as separate commonly vary and potentially overlap. For example, a first and a second module may share hardware, software, firmware, or a combination thereof, while potentially retaining some independent hardware, software, or firmware. In one embodiment, use of the term logic includes hardware, such as transistors, registers, or other hardware, such as programmable logic devices. However, in another embodiment, logic also includes software or code integrated with hardware, such as firmware or micro-code.</p>
+<p id="p-0090" num="0089">A value, as used herein, includes any known representation of a number, a state, a logical state, or a binary logical state. Often, the use of logic levels, logic values, or logical values is also referred to as 1's and 0's, which simply represents binary logic states. For example, a 1 refers to a high logic level and 0 refers to a low logic level. In one embodiment, a storage cell, such as a transistor or flash cell, may be capable of holding a single logical value or multiple logical values. However, other representations of values in computer systems have been used. For example the decimal number ten may also be represented as a binary value of 1010 and a hexadecimal letter A. Therefore, a value includes any representation of information capable of being held in a computer system.</p>
+<p id="p-0091" num="0090">Moreover, states may be represented by values or portions of values. As an example, a first value, such as a logical one, may represent a default or initial state, while a second value, such as a logical zero, may represent a non-default state. In addition, the terms reset and set, in one embodiment, refer to a default and an updated value or state, respectively. For example, a default value potentially includes a high logical value, i.e. reset, while an updated value potentially includes a low logical value, i.e. set. Note that any combination of values may be utilized to represent any number of states.</p>
+<p id="p-0092" num="0091">The embodiments of methods, hardware, software, firmware or code set forth above may be implemented via instructions or code stored on a machine-accessible or machine readable medium which are executable by a processing element. A machine-accessible/readable medium includes any mechanism that provides (i.e., stores and/or transmits) information in a form readable by a machine, such as a computer or electronic system. For example, a machine-accessible medium includes random-access memory (RAM), such as static RAM (SRAM) or dynamic RAM (DRAM); ROM; magnetic or optical storage medium; flash memory devices; electrical storage device, optical storage devices, acoustical storage devices or other form of propagated signal (e.g., carrier waves, infrared signals, digital signals) storage device; etc. For example, a machine may access a storage device through receiving a propagated signal, such as a carrier wave, from a medium capable of holding the information to be transmitted on the propagated signal.</p>
+<p id="p-0093" num="0092">Reference throughout this specification to &#x201c;one embodiment&#x201d; or &#x201c;an embodiment&#x201d; means that a particular feature, structure, or characteristic described in connection with the embodiment is included in at least one embodiment of the present invention. Thus, the appearances of the phrases &#x201c;in one embodiment&#x201d; or &#x201c;in an embodiment&#x201d; in various places throughout this specification are not necessarily all referring to the same embodiment. Furthermore, the particular features, structures, or characteristics may be combined in any suitable manner in one or more embodiments.</p>
+<p id="p-0094" num="0093">In the foregoing specification, a detailed description has been given with reference to specific exemplary embodiments. It will, however, be evident that various modifications and changes may be made thereto without departing from the broader spirit and scope of the invention as set forth in the appended claims. The specification and drawings are, accordingly, to be regarded in an illustrative sense rather than a restrictive sense. Furthermore, the foregoing use of embodiment and other exemplarily language does not necessarily refer to the same embodiment or the same example, but may refer to different and distinct embodiments, as well as potentially the same embodiment.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method comprising:
+<claim-text>encountering a load operation to read a hardware attribute, the load operation being associated with an attribute type and referencing an address associated with a hardware attribute of the attribute type;</claim-text>
+<claim-text>searching a store address buffer with a representation of the attribute type appended to the address;</claim-text>
+<claim-text>determining the in-flight previous store operation is associated with the attribute type and references the address associated with the hardware attribute in response to finding a store address buffer entry of the store address buffer holding the representation of the attribute type appended to the address; and</claim-text>
+<claim-text>performing a dependency action in response to determining the in-flight previous store operation is associated with the attribute type and references the address associated with the hardware attribute.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the load operation includes a test a hardware attribute operation, and wherein the in-flight previous store operation includes a set a hardware attribute operation.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the attribute type is selected from a group consisting of a read monitor attribute type, a write monitor attribute type, and a buffering attribute type.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein performing a dependency action comprises forwarding store data associated with the in-flight previous store operation.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein performing a dependency action comprises blocking the load operation until the hardware attribute is updated by the in-flight previous store operation.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising updating a loss field associated with the hardware attribute to a loss value in response to an eviction of a cache location associated with the hardware attribute, which is to result in loss of the hardware attribute.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein the load operation is faulted in response to encountering the load operation to read the hardware attribute and the loss field holding the loss value.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. A method comprising:
+<claim-text>encountering a load operation to read a hardware attribute, the load operation being associated with an attribute type and referencing an address associated with a hardware attribute of the attribute type;</claim-text>
+<claim-text>searching a store buffer for a store buffer entry associated with the address;</claim-text>
+<claim-text>determining a position of store data associated with the hardware attribute held in a store buffer entry of the store buffer in response to finding the store buffer entry associated with the address;</claim-text>
+<claim-text>determining a store attribute type based on the position of the store data held in the store buffer entry;</claim-text>
+<claim-text>determining the in-flight previous store operation is associated with the attribute type and references the address associated with the hardware attribute in response to determining the store attribute type is the same as the attribute type associated with the load operation; and</claim-text>
+<claim-text>performing a dependency action in response to determining the in-flight previous store operation is associated with the attribute type and references the address associated with the hardware attribute.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the load operation includes a test a hardware attribute operation, and wherein the in-flight previous store operation includes a set a hardware attribute operation.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the attribute type is selected from a group consisting of a read monitor attribute type, a write monitor attribute type, and a buffering attribute type.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The method of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein performing a dependency action comprises forwarding store data associated with the in-flight previous store operation.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The method of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein performing a dependency action comprises blocking the load operation until the hardware attribute is updated by the in-flight previous store operation.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. A method comprising:
+<claim-text>encountering a load operation to read a hardware attribute, the load operation being associated with an attribute type and referencing an address associated with a hardware attribute of the attribute type;</claim-text>
+<claim-text>determining if an in-flight previous store operation is associated with the attribute type and references the address associated with the hardware attribute;</claim-text>
+<claim-text>performing a dependency action in response to determining the in-flight previous store operation is associated with the attribute type and references the address associated with the hardware attribute; and</claim-text>
+<claim-text>updating a loss field associated with the hardware attribute to a loss value in response to an eviction of a cache location associated with the hardware attribute, which is to result in loss of the hardware attribute.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The method of <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein the load operation includes a test a hardware attribute operation, and wherein the in-flight previous store operation includes a set a hardware attribute operation.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The method of <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein the attribute type is selected from a group consisting of a read monitor attribute type, a write monitor attribute type, and a buffering attribute type.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The method of <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein determining if an in-flight previous store operation is associated with the attribute type and references the address associated with the hardware attribute comprises searching a store address buffer with a representation of the attribute type appended to the address and determining the in-flight previous store operation is associated with the attribute type and references the address associated with the hardware attribute in response to finding a store address buffer entry of the store address buffer holding the representation of the attribute type appended to the address.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The method of <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein determining if an in-flight previous store operation is associated with the attribute type and references the address associated with the hardware attribute comprises:
+<claim-text>searching a store buffer for a store buffer entry associated with the address;</claim-text>
+<claim-text>determining a position of store data associated with the hardware attribute held in a store buffer entry of the store buffer in response to finding the store buffer entry associated with the address;</claim-text>
+<claim-text>determining a store attribute type based on the position of the store data held in the store buffer entry; and</claim-text>
+<claim-text>determining the in-flight previous store operation is associated with the attribute type and references the address associated with the hardware attribute in response to determining the store attribute type is the same as the attribute type associated with the load operation.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The method of <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein performing a dependency action comprises forwarding store data associated with the in-flight previous store operation.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The method of <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein performing a dependency action comprises blocking the load operation until the hardware attribute is updated by the in-flight previous store operation.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The method of <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein the load operation is faulted in response to encountering the load operation to read the hardware attribute and the loss field holding the loss value.</claim-text>
+</claim>
+<claim id="CLM-00021" num="00021">
+<claim-text>21. An apparatus comprising:
+<claim-text>a plurality of hardware attributes to be associated with a cache element of a cache memory;</claim-text>
+<claim-text>store buffer logic configured to hold a reference to a store operation associated with a first attibute access type, wherein the store operation is to update at least one of the plurality of hardware attributes;</claim-text>
+<claim-text>dependency logic coupled to the store buffer logic, the dependency logic configured to compare at least the first attribute access type and a second attributed access type to be associated with a subsequent load operation to at least one of the plurality of hardware attributes and to determine if a dependency exists between the store operation and the subsequent load operation based on at least the dependency logic comparing the first attribute access type and the second attribute access type; and</claim-text>
+<claim-text>forwarding logic coupled to the logic, the forwarding logic to forward updated attribute data of the store operation to the subsequent load operation in response to determining the dependency exists between the store operation and the subsequent load operation.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00022" num="00022">
+<claim-text>22. The apparatus of <claim-ref idref="CLM-00021">claim 21</claim-ref>, wherein the first attribute access type and the second attribute access type are each individually selected from a read monitor access type, a write monitor access type, and a buffering access type.</claim-text>
+</claim>
+<claim id="CLM-00023" num="00023">
+<claim-text>23. The apparatus of <claim-ref idref="CLM-00021">claim 21</claim-ref>, wherein the store buffer logic configured to hold the first attribute access type associated with the reference to the store operation comprises store address buffer logic to hold the first attribute access type appended to a store address associated with the store operation, and wherein the dependency logic configured to compare at least the first attribute access type and the second attribute access type comprises the dependency logic to compare the first attribute access type appended to the store address and the second access type appended to a load address associated with the subsequent load.</claim-text>
+</claim>
+<claim id="CLM-00024" num="00024">
+<claim-text>24. The apparatus of <claim-ref idref="CLM-00023">claim 23</claim-ref>, further comprising snoop logic to snoop the store buffer in response to an external access request, wherein the forwarding logic is not to forward the updated attribute data in response to the external access request referencing the store address.</claim-text>
+</claim>
+<claim id="CLM-00025" num="00025">
+<claim-text>25. The apparatus of <claim-ref idref="CLM-00023">claim 23</claim-ref>, wherein the dependency logic is further to determine the dependency exists between the store operation and the subsequent load operation in response to the first attribute access type appended to the store address matching the second access type appended to the load address.</claim-text>
+</claim>
+<claim id="CLM-00026" num="00026">
+<claim-text>26. The apparatus of <claim-ref idref="CLM-00025">claim 25</claim-ref>, wherein the dependency logic is further to determine the dependency does not exist between the store operation and the subsequent load operation in response to the first attribute access type appended to the store address not matching the second access type appended to the load address, and wherein the forwarding logic is not to forward the updated attribute data in response to the dependency logic determining the dependency does not exist between the store operation and the subsequent load operation.</claim-text>
+</claim>
+<claim id="CLM-00027" num="00027">
+<claim-text>27. The apparatus of <claim-ref idref="CLM-00021">claim 21</claim-ref>, wherein the store buffer logic configured to hold a reference to a store operation associated with a first attibute access type comprises: the store buffer logic being configured to hold store data in a a store buffer entry associated with the store operation, wherein the position of the store data in the store buffer entry represents the first attribute access type.</claim-text>
+</claim>
+<claim id="CLM-00028" num="00028">
+<claim-text>28. The apparatus of <claim-ref idref="CLM-00027">claim 27</claim-ref>, wherein the dependency logic configured to determine if a dependency exists between the store operation and the subsequent load operation based on the dependency logic comparing the first attribute access type and the second attribute access type comprises: the dependency logic being configured to determine the dependency exists between the store operation and the subsequent load operation in response to a store address associated with the store operation matching a load address associated with the subsequent load operation and the second attribute access type being the same as the first attribute access type based on the position of the store data.</claim-text>
+</claim>
+<claim id="CLM-00029" num="00029">
+<claim-text>29. The apparatus of <claim-ref idref="CLM-00028">claim 28</claim-ref>, wherein the dependency logic is to determine the dependency does not exist between the store operation and the subsequent load operation in response to the store address associated with the store operation not matching the load address associated with the subsequent load operation or the second attribute access type not being the same as the first attribute access type based on the position of the store data held in the store data buffer entry, and wherein the forwarding logic is to not forward the store data in response to the dependency logic determining the dependency does not exist between the store operation and the subsequent load operation.</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

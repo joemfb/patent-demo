@@ -1,0 +1,1715 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626350-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626350</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12662377</doc-number>
+<date>20100414</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>928</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>1</main-group>
+<subgroup>26</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>700287</main-classification>
+<further-classification>700 28</further-classification>
+<further-classification>706 13</further-classification>
+</classification-national>
+<invention-title id="d2e53">Sliding mode AGC controller and method</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>6411944</doc-number>
+<kind>B1</kind>
+<name>Ulyanov</name>
+<date>20020600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>706 13</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>6415272</doc-number>
+<kind>B1</kind>
+<name>Ulyanov</name>
+<date>20020700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>706  2</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>6578018</doc-number>
+<kind>B1</kind>
+<name>Ulyanov</name>
+<date>20030600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>706 14</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6578176</doc-number>
+<kind>B1</kind>
+<name>Wang et al.</name>
+<date>20030600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>716133</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>6721718</doc-number>
+<kind>B2</kind>
+<name>Ulyanov</name>
+<date>20040400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>706  2</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>7383235</doc-number>
+<kind>B1</kind>
+<name>Ulyanov et al.</name>
+<date>20080600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>706 13</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>2002/0078429</doc-number>
+<kind>A1</kind>
+<name>Yoshida</name>
+<date>20020600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>716 21</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>2007/0120424</doc-number>
+<kind>A1</kind>
+<name>Lombardi et al.</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>2009/0083680</doc-number>
+<kind>A1</kind>
+<name>McConaghy et al.</name>
+<date>20090300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>716  3</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00010">
+<othercit>A Tabu Search Approach for the Design of Variable Structure Load Frequency Controller Incorporating Model Nonlinearities, Journal of Electrical Engineering, vol. 58, No. 5, 2007, 264-270.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>4</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>700 28</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>700 32</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>700 33</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>700 34</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>700 37</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>700 38</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>700 40</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>700286</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>700287</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>706 13</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>10</number-of-drawing-sheets>
+<number-of-figures>12</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110257799</doc-number>
+<kind>A1</kind>
+<date>20111020</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Al-Hamouz</last-name>
+<first-name>Zakariya M.</first-name>
+<address>
+<city>Dhahran</city>
+<country>SA</country>
+</address>
+</addressbook>
+<residence>
+<country>SA</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Al-Duwaish</last-name>
+<first-name>Hussain N.</first-name>
+<address>
+<city>Dhahran</city>
+<country>SA</country>
+</address>
+</addressbook>
+<residence>
+<country>SA</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Al-Musabi</last-name>
+<first-name>Naji A.</first-name>
+<address>
+<city>Abu Dhabi</city>
+<country>SA</country>
+</address>
+</addressbook>
+<residence>
+<country>SA</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Al-Hamouz</last-name>
+<first-name>Zakariya M.</first-name>
+<address>
+<city>Dhahran</city>
+<country>SA</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Al-Duwaish</last-name>
+<first-name>Hussain N.</first-name>
+<address>
+<city>Dhahran</city>
+<country>SA</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Al-Musabi</last-name>
+<first-name>Naji A.</first-name>
+<address>
+<city>Abu Dhabi</city>
+<country>SA</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<last-name>Litman</last-name>
+<first-name>Richard C.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>King Fahd University of Petroleum and Minerals</orgname>
+<role>03</role>
+<address>
+<city>Dhahran</city>
+<country>SA</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Kasenge</last-name>
+<first-name>Charles</first-name>
+<department>2121</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">The sliding mode AGC controller and method includes Genetic Algorithms (GA) to find the optimal feedback gains and switching vector values of the controller. In order to provide enhancement of the system dynamical performance and a reduction in the SMC chattering, two objective functions are provided in the optimization process. The tested two-area interconnected AGC model incorporates nonlinearities in terms of Generation Rate Constraint (GRC) and a limiter on the integral control value. Comparison with previous AGC methods reported in the literature validates the significance of the sliding mode AGC controller.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="166.29mm" wi="243.16mm" file="US08626350-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="243.92mm" wi="172.64mm" orientation="landscape" file="US08626350-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="109.90mm" wi="119.63mm" file="US08626350-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="210.65mm" wi="153.42mm" file="US08626350-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="236.39mm" wi="179.24mm" orientation="landscape" file="US08626350-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="233.76mm" wi="179.41mm" orientation="landscape" file="US08626350-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="229.53mm" wi="179.58mm" orientation="landscape" file="US08626350-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="228.43mm" wi="175.85mm" orientation="landscape" file="US08626350-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="225.64mm" wi="178.48mm" orientation="landscape" file="US08626350-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="225.81mm" wi="179.92mm" orientation="landscape" file="US08626350-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="243.84mm" wi="178.73mm" orientation="landscape" file="US08626350-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0002" num="0001">1. Field of the Invention</p>
+<p id="p-0003" num="0002">The present invention relates to a electrical control devices and circuits, and particularly to a sliding mode AGC controller and method that provides a chattering reduction feature applied to interconnected automatic generation control (AGC).</p>
+<p id="p-0004" num="0003">2. Description of the Related Art</p>
+<p id="p-0005" num="0004">The Automatic Generation Control (AGC) problem has been one of the most important issues in the operation and design of contemporary electric power systems. This importance is due to the role of the AGC in securing satisfactory operation of power systems and ensuring constancy of speed for induction and synchronous motors, thereby improving the performance of generating units. The purpose of AGC is to track load variation while maintaining system frequency and tie line power interchanges (for interconnected areas) close to specified values. In this way, transient errors in frequency and tie line power should be minimized, and steady error should not appear.</p>
+<p id="p-0006" num="0005">In the last two decades, many techniques were proposed for the supplementary control of AGC systems. Conventionally, PI and PID controllers are used for AGC. However, PI has many drawbacks, some of which are long settling time and relatively large overshoots in the transient frequency deviations. Furthermore, utilization of optimal control theory has already been examined. The controller design is normally based on the parameters of the linear incremental model of the power system, which, in turn, depend on the condition of the power system. Therefore, the linear optimal controller is sensitive to variations in the plant parameters or operating conditions of the power system. Moreover, the linear optimal controller yields unsatisfactory dynamic response in the presence of Generation Rate Constraint. Other techniques used for designing the secondary control loop for the AGC include Neural Network methods, Superconducting Magnetic Energy Storage (SMES) unit applications, and spline techniques.</p>
+<p id="p-0007" num="0006">Furthermore, the application of a sliding mode controller (SMC) to the AGC problem was considered by many authors. SMC possesses some attractive features, including robustness and good transient response. In the literature, a SM controller has been compared with conventional and optimal control methods for two equal-area non-reheat and reheat thermal systems. However, a systematic method for obtaining the switching vector and optimum feedback gain of the SMC has heretofore not been discussed. Pole placement technique has been utilized in designing the SMC for a single area non-reheat AGC system in previous work, in which the feedback gains were selected by trial and error.</p>
+<p id="p-0008" num="0007">In practice, AGC models are nonlinear. Unfortunately, conventional control design methods are not efficient when nonlinearities are introduced to the incremental models of control systems. Thus, other methods should be utilized for the design of the controllers. One of the most reliable techniques is the iterative heuristic optimization algorithms, which can be used to tune the controllers to obtain their optimum settings. Some of the recent attempts that utilized the iterative heuristic algorithms for solving the AGC problems (for linearized models) can be found in previous work.</p>
+<p id="p-0009" num="0008">Genetic Algorithm (GA) approaches have been used to optimize the feedback gains of the SMC applied to a single area non-reheat AGC. In other related work, Particle Swarm Optimization (PSO) was used for the same purpose. In other related work, only the feedback gains were selected optimally. On the other hand, the switching vector was obtained from another design method reported in literature.</p>
+<p id="p-0010" num="0009">Thus, a sliding mode AGC controller and method solving the aforementioned problems is desired.</p>
+<heading id="h-0002" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0011" num="0010">The sliding mode AGC controller and method includes Genetic Algorithms (GA) to find the optimal feedback gains and switching vector values of the controller. In order to guarantee enhancement of the system's dynamical performance and a reduction in the SMC chattering, two objective functions were investigated in the optimization process. The tested two-interconnected AGC model incorporates nonlinearities in terms of Generation Rate Constraint (GRC) and a limiter on the integral control value. Comparison with previous AGC methods reported in the literature validates the significance of the proposed SMC design.</p>
+<p id="p-0012" num="0011">These and other features of the present invention will become readily apparent upon further review of the following specification and drawings.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram showing the interconnected power systems under control of a sliding mode AGC controller according to the present invention.</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram of the sliding mode AGC controller according to the present invention.</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 3</figref> is a flowchart of a GA used by the sliding mode AGC controller according to the present invention.</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 4</figref> is a plot showing convergence of the two performance indices J<b>1</b> and J<b>2</b>.</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 5</figref> is a plot showing a comparison of frequency deviation in area <b>1</b> when using GA SMC controllers and an LQR controller.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 6</figref> is a plot showing a comparison of frequency deviation in area <b>2</b> when using GA SMC controllers and an LQR controller.</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 7</figref> is a plot showing a comparison of tie-line power deviation when using a sliding mode AGC controller according to the present invention and an LQR controller.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIGS. 8A and 8B</figref> are plots showing control signals (efforts) for u<b>1</b> when minimizing J<b>1</b>, and J<b>2</b>, respectively.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIGS. 9A and 9B</figref>: are plots showing control signals (efforts) u<b>2</b> when minimizing J<b>1</b> and J<b>2</b>, respectively</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 10</figref> is a plot showing frequency deviation with rapid load variation.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<p id="p-0023" num="0022">Similar reference characters denote corresponding features consistently throughout the attached drawings.</p>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS</heading>
+<p id="p-0024" num="0023">The sliding mode AGC controller and method includes Genetic Algorithms (GA) to find the optimal feedback gains and switching vector values of a sliding mode controller (SMC). In order to guarantee enhancement of the system dynamical performance and a reduction in the SMC chattering, two objective functions are used in the optimization process. The tested two-interconnected AGC model incorporates nonlinearities in terms of Generation Rate Constraint (GRC) and a limiter on the integral control value. Comparison with previous AGC methods reported in the literature validates the significance of the proposed SMC design. An optimal design of the whole sliding mode automatic generation controller parameters (both the feedback gains and the switching vectors) uses the Genetic Algorithm (GA). The controller is applied to a two-areas interconnected nonlinear AGC model. The dynamical behavior of the controlled system is compared to another method reported in the literature.</p>
+<p id="p-0025" num="0024">As shown in <figref idref="DRAWINGS">FIG. 1</figref>, exemplary interconnected power generation systems <b>100</b> include steam turbine generator subsystems <b>101</b>, which function as the prime movers for the electrical power generators. The model includes the effect of a Generation Rate Constraint (GRC) and limits on the position of the governor valve, which are caused by the mechanical and thermodynamic constraints in practical steam turbine systems. In addition, a limiter on the integral control value is included to prevent excessive control.</p>
+<p id="p-0026" num="0025">A typical value of 0.015 per unit/min (p.u./min) has been included in the model. T<sub>p </sub>is the plant model time constant, T<sub>t </sub>is the turbine time constant, T<sub>g </sub>is the governor time constant, K<sub>p </sub>(Hz/p.u. MW) is the plant gain, K is the integral control gain, and R (Hz/p.u. MW) is the speed regulation due to governor action. The tie line power is x<sub>5</sub>. On the other hand, x<sub>7</sub>, x<sub>8</sub>, and x<sub>9 </sub>are, respectively, the incremental changes in generator output (p.u. MW), governor valve position (p.u. MW) and integral control of area <b>2</b>. The control objective in the AGC problem is to keep the change in frequencies (Hz) &#x394;f<sub>1</sub>=x<sub>1 </sub>and &#x394;f<sub>2</sub>=x<sub>6</sub>, as well as the change in tie-line power &#x394;P<sub>tie</sub>=x<sub>5 </sub>as close to zero as possible when the system is subjected to load disturbance &#x394;P<sub>L1 </sub>and &#x394;P<sub>L2 </sub>by manipulating the inputs u<sub>1 </sub>and u<sub>2</sub>, respectively. The values of the parameters used for the interconnected system are as in Table 1.</p>
+<p id="p-0027" num="0026">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" rowsep="1">TABLE 1</entry>
+</row>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>Interconnected system parameters</entry>
+</row>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="98pt" align="left"/>
+<colspec colname="2" colwidth="105pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>T<sub>P1 </sub>= T<sub>p2 </sub>= 20 s</entry>
+<entry>K<sub>p1 </sub>= K<sub>p2 </sub>= 120 Hz p.u. MW<sup>&#x2212;1</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>T<sub>t1 </sub>= T<sub>t2 </sub>= 0.3 s</entry>
+<entry>K<sub>1 </sub>= K<sub>2 </sub>= 1 p.u. MW rad<sup>&#x2212;1</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>T<sub>g1 </sub>= T<sub>g2 </sub>= 0.08 s</entry>
+<entry>R<sub>1 </sub>= R<sub>2 </sub>= 2.4 Hz p.u. MW<sup>&#x2212;1</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>B<sub>1 </sub>= B<sub>2 </sub>= 0.425 p.u. MW/Hz</entry>
+<entry>T<sub>12 </sub>= 0.545 p.u. MW</entry>
+</row>
+<row>
+<entry/>
+<entry>a<sub>12 </sub>= &#x2212;1</entry>
+<entry>GRC (Generation rate</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>constraint) = 0.015</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0028" num="0027">It will be understood that the diagrams in the Figures depicting the sliding mode AGC controller are exemplary only, and may be embodied in a dedicated electronic device having a microprocessor, microcontroller, digital signal processor, application specific integrated circuit, field programmable gate array, any combination of the aforementioned devices, or other device that combines the functionality of the sliding mode AGC controller onto a single chip or multiple chips programmed to carry out the method steps described herein, or may be embodied in a general purpose computer having the appropriate peripherals attached thereto and software stored on a computer readable media that can be loaded into main memory and executed by a processing unit to carry out the functionality of the apparatus and steps of the method described herein.</p>
+<p id="p-0029" num="0028">The fundamental theory of SMC is well known to persons having ordinary skill in the art. Different control goals, such as stabilization, tracking, and regulation, can be achieved using SMC by the proper design of the sliding surface. The regulation problem is addressed wherein the objective is to keep specified states as close to zero as possible. The sliding mode AGC controller has a plurality of feedback gain inputs, and a control signal output, the control signal output being adapted for connection to a control input of the two area power generation system <b>100</b>, the feedback gain inputs being adapted for connection to operating point outputs of the two area power generation system <b>100</b>. A block diagram of the SMC <b>200</b> for the regulation problem is shown in <figref idref="DRAWINGS">FIG. 2</figref>. The output U <b>212</b> switches between gain values having &#x2212;&#x3b1;<sup>T </sup><b>210</b> and +&#x3b1;<sup>T </sup><b>208</b> based on input X, switching vectors C<sup>T </sup><b>202</b>, and their product <b>204</b>. The control law is a linear state feedback whose coefficients are piecewise constant functions. Consider the linear time-invariant controllable system given by:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>{dot over (X)}</i>(<i>t</i>)=<i>AX</i>(<i>t</i>)+<i>BU</i>(<i>t</i>)&#x2003;&#x2003;(1)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+where
+</p>
+<p id="p-0030" num="0029">X(t) is an n-dimensional state vector;</p>
+<p id="p-0031" num="0030">U(t) is an m-dimensional control force vector;</p>
+<p id="p-0032" num="0031">A is an n&#xd7;n system matrix, and</p>
+<p id="p-0033" num="0032">B is an n&#xd7;m input matrix.</p>
+<p id="p-0034" num="0033">The SMC control laws for the system of (1) are given by</p>
+<p id="p-0035" num="0034">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mrow>
+            <msub>
+              <mi>u</mi>
+              <mi>i</mi>
+            </msub>
+            <mo>=</mo>
+            <mrow>
+              <mrow>
+                <mrow>
+                  <mo>-</mo>
+                  <msubsup>
+                    <mi>&#x3c8;</mi>
+                    <mi>i</mi>
+                    <mi>T</mi>
+                  </msubsup>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mi>X</mi>
+              </mrow>
+              <mo>=</mo>
+              <mrow>
+                <mo>-</mo>
+                <mrow>
+                  <munderover>
+                    <mo>&#x2211;</mo>
+                    <mrow>
+                      <mi>j</mi>
+                      <mo>=</mo>
+                      <mn>1</mn>
+                    </mrow>
+                    <mi>n</mi>
+                  </munderover>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <msub>
+                      <mi>&#x3c8;</mi>
+                      <mi>ij</mi>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>x</mi>
+                      <mi>j</mi>
+                    </msub>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mo>;</mo>
+          <mrow>
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <mi>&#x2026;</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>,</mo>
+        <mi>m</mi>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>2</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+where the feedback gains are given as:
+</p>
+<p id="p-0036" num="0035">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>&#x3c8;</mi>
+          <mi>ij</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mo>{</mo>
+          <mrow>
+            <mrow>
+              <mrow>
+                <mtable>
+                  <mtr>
+                    <mtd>
+                      <mrow>
+                        <msub>
+                          <mi>&#x3b1;</mi>
+                          <mi>ij</mi>
+                        </msub>
+                        <mo>,</mo>
+                      </mrow>
+                    </mtd>
+                    <mtd>
+                      <mrow>
+                        <mrow>
+                          <mi>if</mi>
+                          <mo>&#x2062;</mo>
+                          <mstyle>
+                            <mspace width="0.8em" height="0.8ex"/>
+                          </mstyle>
+                          <mo>&#x2062;</mo>
+                          <msub>
+                            <mi>x</mi>
+                            <mi>i</mi>
+                          </msub>
+                          <mo>&#x2062;</mo>
+                          <msub>
+                            <mi>&#x3c3;</mi>
+                            <mi>j</mi>
+                          </msub>
+                        </mrow>
+                        <mo>&#x3e;</mo>
+                        <mn>0</mn>
+                      </mrow>
+                    </mtd>
+                  </mtr>
+                  <mtr>
+                    <mtd>
+                      <mrow>
+                        <mrow>
+                          <mo>-</mo>
+                          <msub>
+                            <mi>&#x3b1;</mi>
+                            <mi>ij</mi>
+                          </msub>
+                        </mrow>
+                        <mo>,</mo>
+                      </mrow>
+                    </mtd>
+                    <mtd>
+                      <mrow>
+                        <mrow>
+                          <mi>if</mi>
+                          <mo>&#x2062;</mo>
+                          <mstyle>
+                            <mspace width="0.8em" height="0.8ex"/>
+                          </mstyle>
+                          <mo>&#x2062;</mo>
+                          <msub>
+                            <mi>x</mi>
+                            <mi>j</mi>
+                          </msub>
+                          <mo>&#x2062;</mo>
+                          <msub>
+                            <mi>&#x3c3;</mi>
+                            <mi>i</mi>
+                          </msub>
+                        </mrow>
+                        <mo>&#x3c;</mo>
+                        <mn>0</mn>
+                      </mrow>
+                    </mtd>
+                  </mtr>
+                </mtable>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.8em" height="0.8ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mi>i</mi>
+              </mrow>
+              <mo>=</mo>
+              <mn>1</mn>
+            </mrow>
+            <mo>,</mo>
+            <mi>&#x2026;</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.8em" height="0.8ex"/>
+            </mstyle>
+            <mo>,</mo>
+            <mrow>
+              <mi>m</mi>
+              <mo>;</mo>
+              <mrow>
+                <mi>j</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+              </mrow>
+            </mrow>
+            <mo>,</mo>
+            <mi>&#x2026;</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.8em" height="0.8ex"/>
+            </mstyle>
+            <mo>,</mo>
+            <mrow>
+              <mrow>
+                <mi>n</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mtext>
+</mtext>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mi>and</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mtext>
+</mtext>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <msub>
+                    <mi>&#x3c3;</mi>
+                    <mi>i</mi>
+                  </msub>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>X</mi>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+              <mo>=</mo>
+              <mrow>
+                <mrow>
+                  <msubsup>
+                    <mi>C</mi>
+                    <mi>i</mi>
+                    <mi>T</mi>
+                  </msubsup>
+                  <mo>&#x2062;</mo>
+                  <mi>X</mi>
+                </mrow>
+                <mo>=</mo>
+                <mn>0</mn>
+              </mrow>
+            </mrow>
+            <mo>,</mo>
+            <mrow>
+              <mi>i</mi>
+              <mo>=</mo>
+              <mn>1</mn>
+            </mrow>
+            <mo>,</mo>
+            <mi>&#x2026;</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.8em" height="0.8ex"/>
+            </mstyle>
+            <mo>,</mo>
+            <mi>m</mi>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>3</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+where c<sub>i</sub>'s are the switching vectors, which are selected by pole placement or linear optimal control theory.
+</p>
+<p id="p-0037" num="0036">Genetic algorithms are directed random search techniques that can find the global optimal solution in complex multidimensional search spaces. GA is an adaptive learning heuristic technique that imitates the natural process of evolution to progress toward the optimum by performing an efficient and systematic search of the solution space. A set of solutions, described as a population of individuals, is encoded as binary strings, termed as chromosomes. This population represents points in the solution space. A new set of solutions, called offspring, are created in a new generation (iteration) by crossing some of the strings of the current generation. This process is called crossover. Furthermore, the crossover is repeated at every generation and new characteristics are introduced to add diversity. The process of altering some of the strings of the offspring randomly is known as mutation. GA employs different genetic operators to manipulate individuals in a population of solutions over several generations to improve their fitness gradually. Normally, the parameters to be optimized are represented in a binary string. To start the optimization, GA uses randomly produced initial solutions created by a random number generator. This method is preferred when a priori knowledge about the problem is not available.</p>
+<p id="p-0038" num="0037">The flowchart of a simple GA procedure <b>300</b> is shown in <figref idref="DRAWINGS">FIG. 3</figref>. There are basically three genetic operators used to generate and explore the neighborhood of a population and select a new generation. These operators are selection, crossover, and mutation. After randomly generating the initial population of, e.g., N solutions, the GA uses the three genetic operators to yield N new solutions at each iteration. In the selection operation, each solution of the current population is evaluated by its fitness, normally represented by the value of some objective function, and individuals with higher fitness value are selected. Different selection methods, such as stochastic selection or ranking-based selection, can be used.</p>
+<p id="p-0039" num="0038">The crossover operator works on pairs of selected solutions with certain crossover rate. The crossover rate is defined as the probability of applying crossover to a pair of selected solutions. There are many ways of defining this operator. The most common way is called the one-point crossover, which can be described as follows. Given two binary coded solutions of certain bit length, a point is determined randomly in the two strings, and corresponding bits are swapped to generate two new solutions. Mutation is a random alteration with small probability of the binary value of a string position. This operation will prevent GA from being trapped in a local minimum. The fitness evaluation unit in the flowchart acts as an interface between the GA and the optimization problem. Information generated by this unit about the quality of different solutions is used by the selection operation in the GA. The algorithm is repeated until a predefined number of generations have been produced.</p>
+<p id="p-0040" num="0039">The basic steps of GA can be described as follows, and are shown in <figref idref="DRAWINGS">FIG. 3</figref>. Step <b>1</b> is the generation of initial population of solutions represented by chromosomes. Step <b>2</b> is the evaluation of the solutions generated using the fitness function, which is usually the objective function of the problem under study. Step <b>3</b> is the selection of individual solutions that have higher fitness value. There are different selection methods, such as roulette wheel selection, stochastic selection, and Ranking-based selection.</p>
+<p id="p-0041" num="0040">Step <b>4</b> is the generation of new offspring from the selected individual solutions. This is done for a certain number of generations using two main operations. One operation is Crossover. There are various Crossover operators. The most common is the one-point crossover. In one-point Crossover, one bit in each solution of two given binary coded solutions, is determined randomly and then swapped to generate two new solutions. The second operation is Mutation, which involves incremental random changes applied in selected offsprings by altering randomly some of their bits. Mutation is usually probabilistically applied to only a few members of the population, and therefore has a small value.</p>
+<p id="p-0042" num="0041">In Step <b>5</b>, Steps <b>2</b> through <b>4</b> are repeated until a predefined number of generations have been produced.</p>
+<p id="p-0043" num="0042">In conventional methods of designing SMC, the nonlinear system has to be transformed into a suitable controllable form before the feedback control theory techniques, such as linear optimal control and pole placement, can be applied. In addition, the feedback gains &#x3b1;<sub>ij </sub>were selected by trial and error. To overcome the above-mentioned two difficulties in the design of SMC, the sliding mode AGC controller provides an optimal design using a GA algorithm. This provides a simple and more systematic way of arriving at the optimal settings of the SMC and cuts down the need for nonlinear or coordinate transformations when studying nonlinear AGC models.</p>
+<p id="p-0044" num="0043">To find the switching vector and feedback gains that minimize an objective function, a load disturbance is applied to the two-area system, and the GA algorithm is used to search for the optimal values of both the switching vector and feedback gains on a pre-defined search space. Any change in the objective function will be reflected in these optimally found values.</p>
+<p id="p-0045" num="0044">Using GA, both the elements of the switching vector and feedback gains of the SM controller, C<sub>i </sub>and &#x3b1;<sub>ij</sub>, are determined optimally as follows. (1) Generate random values for feedback gains and switching vector values from a pre-defined space. (2) Evaluate a performance index that reflects the objective of the design. For present purposes, the following two objective functions are used:</p>
+<p id="p-0046" num="0045">
+<maths id="MATH-US-00003" num="00003">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>J</mi>
+          <mn>1</mn>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <msubsup>
+              <mo>&#x222b;</mo>
+              <mn>0</mn>
+              <mi>&#x221e;</mi>
+            </msubsup>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mrow>
+                <mn>0.75</mn>
+                <mo>.</mo>
+                <mi>t</mi>
+              </mrow>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mo>&#xf603;</mo>
+                <msub>
+                  <mi>&#x394;&#x3c9;</mi>
+                  <mn>1</mn>
+                </msub>
+                <mo>&#xf604;</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mo>+</mo>
+          <mrow>
+            <mi>t</mi>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mo>&#xf603;</mo>
+              <msub>
+                <mi>&#x394;&#x3c9;</mi>
+                <mn>2</mn>
+              </msub>
+              <mo>&#xf604;</mo>
+            </mrow>
+          </mrow>
+          <mo>+</mo>
+          <mrow>
+            <mrow>
+              <mn>0.5</mn>
+              <mo>.</mo>
+              <mi>t</mi>
+            </mrow>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mo>&#xf603;</mo>
+              <mrow>
+                <mi>&#x394;</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <msub>
+                  <mi>P</mi>
+                  <mi>tie</mi>
+                </msub>
+              </mrow>
+              <mo>&#xf604;</mo>
+            </mrow>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mo>&#x2146;</mo>
+              <mi>t</mi>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>3</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>J</mi>
+          <mn>2</mn>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <msubsup>
+              <mo>&#x222b;</mo>
+              <mn>0</mn>
+              <mi>&#x221e;</mi>
+            </msubsup>
+            <mo>&#x2062;</mo>
+            <msubsup>
+              <mi>&#x394;&#x3c9;</mi>
+              <mn>1</mn>
+              <mn>2</mn>
+            </msubsup>
+          </mrow>
+          <mo>+</mo>
+          <msubsup>
+            <mi>&#x394;&#x3c9;</mi>
+            <mn>2</mn>
+            <mn>2</mn>
+          </msubsup>
+          <mo>+</mo>
+          <mrow>
+            <mi>&#x394;</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <msubsup>
+              <mi>P</mi>
+              <mi>tie</mi>
+              <mn>2</mn>
+            </msubsup>
+          </mrow>
+          <mo>+</mo>
+          <mrow>
+            <mi>&#x394;</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <msubsup>
+              <mi>u</mi>
+              <mn>1</mn>
+              <mn>2</mn>
+            </msubsup>
+          </mrow>
+          <mo>+</mo>
+          <mrow>
+            <mi>&#x394;</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <msubsup>
+              <mi>u</mi>
+              <mn>2</mn>
+              <mn>2</mn>
+            </msubsup>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mo>&#x2146;</mo>
+              <mi>t</mi>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>4</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+(3) Use GA to generate new feedback gains and switching vector values. (4) Evaluate the performance index in step <b>2</b> for the new feedback gains and switching vector. Stop if there is no more improvement in the value of the performance index for the last 50 iterations, or if the maximum number of iterations is reached. Otherwise, go to step <b>3</b>.
+</p>
+<p id="p-0047" num="0046">The first objective function of step <b>2</b> emphasizes improving the dynamical behavior of the AGC system. This was done by including the absolute error time of the internal parameters of the AGC system into the objective function. On the other hand, the second objective function of step <b>2</b> includes the deviation of the control effort to reduce the chattering in the control effort signal.</p>
+<p id="p-0048" num="0047">It should be understood, as has been reported in the literature, that the GA algorithm is guaranteed to converge to a global minimum, as the algorithm is designed not to fall in local minima.</p>
+<p id="p-0049" num="0048">The sliding mode AGC controller focuses on SMC design for a two-area interconnected AGC problem including nonlinearities. The controller will be compared with a Linear Quadratic Regulator (LQR) design based on structured singular values (SSVs).</p>
+<p id="p-0050" num="0049">In the proposed SM-GA controller, the GA parameters were set as the optimum switching vector values, and the feedback gains were found to be as follows. Using the objective function J<sub>1</sub>:</p>
+<p id="p-0051" num="0050">
+<maths id="MATH-US-00004" num="00004">
+<math overflow="scroll">
+  <mrow>
+    <msubsup>
+      <mi>C</mi>
+      <mn>1</mn>
+      <mi>T</mi>
+    </msubsup>
+    <mo>=</mo>
+    <mrow>
+      <mo>[</mo>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mn>17.0620</mn>
+          </mtd>
+          <mtd>
+            <mn>14.8945</mn>
+          </mtd>
+          <mtd>
+            <mn>4.9056</mn>
+          </mtd>
+          <mtd>
+            <mn>23.4891</mn>
+          </mtd>
+          <mtd>
+            <mn>19.9278</mn>
+          </mtd>
+          <mtd>
+            <mrow>
+              <mo>-</mo>
+              <mn>0.7254</mn>
+            </mrow>
+          </mtd>
+          <mtd>
+            <mn>8.7202</mn>
+          </mtd>
+          <mtd>
+            <mn>5.4855</mn>
+          </mtd>
+          <mtd>
+            <mn>1.1284</mn>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mn>11.8467</mn>
+          </mtd>
+          <mtd>
+            <mn>6.1719</mn>
+          </mtd>
+          <mtd>
+            <mn>4.0573</mn>
+          </mtd>
+          <mtd>
+            <mn>15.0380</mn>
+          </mtd>
+          <mtd>
+            <mn>18.3914</mn>
+          </mtd>
+          <mtd>
+            <mn>20.6820</mn>
+          </mtd>
+          <mtd>
+            <mn>25.6712</mn>
+          </mtd>
+          <mtd>
+            <mn>17.1209</mn>
+          </mtd>
+          <mtd>
+            <mn>22.3109</mn>
+          </mtd>
+        </mtr>
+      </mtable>
+      <mo>]</mo>
+    </mrow>
+  </mrow>
+</math>
+</maths>
+<maths id="MATH-US-00004-2" num="00004.2">
+<math overflow="scroll">
+  <mrow>
+    <msub>
+      <mi>&#x3b1;</mi>
+      <mn>1</mn>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <mo>[</mo>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mn>3.5751</mn>
+          </mtd>
+          <mtd>
+            <mn>4.0484</mn>
+          </mtd>
+          <mtd>
+            <mn>1.5769</mn>
+          </mtd>
+          <mtd>
+            <mn>5.8136</mn>
+          </mtd>
+          <mtd>
+            <mn>3.2300</mn>
+          </mtd>
+          <mtd>
+            <mn>0.4441</mn>
+          </mtd>
+          <mtd>
+            <mn>5.0872</mn>
+          </mtd>
+          <mtd>
+            <mn>1.3243</mn>
+          </mtd>
+          <mtd>
+            <mn>7.4557</mn>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mn>2.5144</mn>
+          </mtd>
+          <mtd>
+            <mn>0.2132</mn>
+          </mtd>
+          <mtd>
+            <mn>1.3909</mn>
+          </mtd>
+          <mtd>
+            <mn>0.5006</mn>
+          </mtd>
+          <mtd>
+            <mn>8.8998</mn>
+          </mtd>
+          <mtd>
+            <mn>0.7260</mn>
+          </mtd>
+          <mtd>
+            <mn>3.6326</mn>
+          </mtd>
+          <mtd>
+            <mn>5.9606</mn>
+          </mtd>
+          <mtd>
+            <mn>0.8096</mn>
+          </mtd>
+        </mtr>
+      </mtable>
+      <mo>]</mo>
+    </mrow>
+  </mrow>
+</math>
+</maths>
+<br/>
+Using the objective function J<sub>2</sub>:
+</p>
+<p id="p-0052" num="0051">
+<maths id="MATH-US-00005" num="00005">
+<math overflow="scroll">
+  <mrow>
+    <msubsup>
+      <mi>C</mi>
+      <mn>2</mn>
+      <mi>T</mi>
+    </msubsup>
+    <mo>=</mo>
+    <mrow>
+      <mo>[</mo>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mn>29.1559</mn>
+          </mtd>
+          <mtd>
+            <mn>15.5157</mn>
+          </mtd>
+          <mtd>
+            <mn>10.9371</mn>
+          </mtd>
+          <mtd>
+            <mn>29.9919</mn>
+          </mtd>
+          <mtd>
+            <mn>17.4893</mn>
+          </mtd>
+          <mtd>
+            <mn>8.4144</mn>
+          </mtd>
+          <mtd>
+            <mn>20.9650</mn>
+          </mtd>
+          <mtd>
+            <mn>15.7446</mn>
+          </mtd>
+          <mtd>
+            <mn>15.9439</mn>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mn>23.6313</mn>
+          </mtd>
+          <mtd>
+            <mn>2.9241</mn>
+          </mtd>
+          <mtd>
+            <mn>8.8227</mn>
+          </mtd>
+          <mtd>
+            <mn>16.0523</mn>
+          </mtd>
+          <mtd>
+            <mrow>
+              <mo>-</mo>
+              <mn>2.9328</mn>
+            </mrow>
+          </mtd>
+          <mtd>
+            <mrow>
+              <mo>-</mo>
+              <mn>0.6177</mn>
+            </mrow>
+          </mtd>
+          <mtd>
+            <mrow>
+              <mo>-</mo>
+              <mn>2.1126</mn>
+            </mrow>
+          </mtd>
+          <mtd>
+            <mn>26.8925</mn>
+          </mtd>
+          <mtd>
+            <mn>0.6376</mn>
+          </mtd>
+        </mtr>
+      </mtable>
+      <mo>]</mo>
+    </mrow>
+  </mrow>
+</math>
+</maths>
+<maths id="MATH-US-00005-2" num="00005.2">
+<math overflow="scroll">
+  <mrow>
+    <msub>
+      <mi>&#x3b1;</mi>
+      <mn>2</mn>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <mo>[</mo>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mn>2.4164</mn>
+          </mtd>
+          <mtd>
+            <mn>0.0010</mn>
+          </mtd>
+          <mtd>
+            <mn>0.0175</mn>
+          </mtd>
+          <mtd>
+            <mn>0.0010</mn>
+          </mtd>
+          <mtd>
+            <mn>0.0010</mn>
+          </mtd>
+          <mtd>
+            <mn>0.0010</mn>
+          </mtd>
+          <mtd>
+            <mn>5.8201</mn>
+          </mtd>
+          <mtd>
+            <mn>1.2820</mn>
+          </mtd>
+          <mtd>
+            <mn>0.0010</mn>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mn>4.0454</mn>
+          </mtd>
+          <mtd>
+            <mn>4.0643</mn>
+          </mtd>
+          <mtd>
+            <mn>0.0121</mn>
+          </mtd>
+          <mtd>
+            <mn>2.8374</mn>
+          </mtd>
+          <mtd>
+            <mn>7.0902</mn>
+          </mtd>
+          <mtd>
+            <mn>6.8646</mn>
+          </mtd>
+          <mtd>
+            <mn>0.7096</mn>
+          </mtd>
+          <mtd>
+            <mn>4.2269</mn>
+          </mtd>
+          <mtd>
+            <mn>3.5232</mn>
+          </mtd>
+        </mtr>
+      </mtable>
+      <mo>]</mo>
+    </mrow>
+  </mrow>
+</math>
+</maths>
+<br/>
+Plot <b>400</b> of <figref idref="DRAWINGS">FIG. 4</figref> shows the fast convergence of the performance indices J<sub>1 </sub>and J<sub>2</sub>.
+</p>
+<p id="p-0053" num="0052">When using the optimally found SMC switching vector and feedback gain values for J<sub>1 </sub>and J<sub>2</sub>, the dynamical behavior of the system (deviation in frequency of area <b>1</b>, deviation in frequency of area <b>2</b>, and deviation in tie line power) after 0.01 p.u. load disturbance in area <b>1</b> is shown in plots <b>500</b>, <b>600</b>, and <b>700</b> of <figref idref="DRAWINGS">FIGS. 5-7</figref>, respectively. It is clear that using the optimum switching vector and feedback gains of the SMC obtained by minimizing the objective function J<sub>1 </sub>improved the response of the system in comparison with the dynamics of the optimal integral control and LQR design methods.</p>
+<p id="p-0054" num="0053">However, more chattering is noticed in the control signal u<sub>1 </sub>and u<sub>2</sub>, as shown in plots <b>800</b> and <b>900</b> of <figref idref="DRAWINGS">FIGS. 8A and 9A</figref>, respectively. On the other hand, using the switching vector and feedback gains obtained when minimizing the objective function J<sub>2 </sub>reduced dramatically the chattering in the control signals, as shown in plots <b>802</b> and <b>902</b> of <figref idref="DRAWINGS">FIGS. 8B and 9B</figref>, respectively. This enhancement of the control signal is at the expense of some degradation (but still acceptable) in the dynamical behavior of the system performance.</p>
+<p id="p-0055" num="0054">To demonstrate the effectiveness of the proposed SMC-GA controller when the load disturbance is different than the one designed for, the load has been changed to 0.01 p.u for 10 seconds then increased to 0.02 p.u for the next 20 seconds and then back to 0.01 p.u. This load variation and the change in frequency of areas <b>1</b> and <b>2</b> are shown in plot <b>1000</b> of <figref idref="DRAWINGS">FIG. 10</figref>. It is clear that the proposed SMC-GA controller performs well with this variation in load.</p>
+<p id="p-0056" num="0055">An efficient sliding mode AGC controller (SMC) has been designed with a chattering reduction feature. Unlike the classical sliding mode controller design reported in the literature, the proposed SM controller optimal feedback gains and switching vector values are selected based on formulating the SMC design as an optimization problem. The dynamical behavior and control efforts were investigated when using two performance indices. The first performance index emphasizes improving the dynamical behavior of the AGC system. On the other hand, the second performance index includes the deviation of the control effort to reduce the chattering in the control effort signal. The proposed controller has been applied effectively on a two-area AGC problem with nonlinearities in the model. The dynamical performance of the system and chattering reduction feature when using the proposed controller are enhanced as compared to the dynamics when using previous controllers. The performance of the proposed SMC-GA controller under rapid load variations is satisfactory.</p>
+<p id="p-0057" num="0056">It is to be understood that the present invention is not limited to the embodiment described above, but encompasses any and all embodiments within the scope of the following claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08626350-20140107-M00001.NB">
+<img id="EMI-M00001" he="8.81mm" wi="76.20mm" file="US08626350-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08626350-20140107-M00002.NB">
+<img id="EMI-M00002" he="16.26mm" wi="76.20mm" file="US08626350-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00003" nb-file="US08626350-20140107-M00003.NB">
+<img id="EMI-M00003" he="14.82mm" wi="76.20mm" file="US08626350-20140107-M00003.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00004 MATH-US-00004-2" nb-file="US08626350-20140107-M00004.NB">
+<img id="EMI-M00004" he="15.49mm" wi="116.08mm" file="US08626350-20140107-M00004.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00005 MATH-US-00005-2" nb-file="US08626350-20140107-M00005.NB">
+<img id="EMI-M00005" he="15.49mm" wi="116.08mm" file="US08626350-20140107-M00005.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00006" nb-file="US08626350-20140107-M00006.NB">
+<img id="EMI-M00006" he="6.69mm" wi="76.20mm" file="US08626350-20140107-M00006.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00007" nb-file="US08626350-20140107-M00007.NB">
+<img id="EMI-M00007" he="6.69mm" wi="76.20mm" file="US08626350-20140107-M00007.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00008" nb-file="US08626350-20140107-M00008.NB">
+<img id="EMI-M00008" he="6.69mm" wi="76.20mm" file="US08626350-20140107-M00008.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00009" nb-file="US08626350-20140107-M00009.NB">
+<img id="EMI-M00009" he="6.69mm" wi="76.20mm" file="US08626350-20140107-M00009.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>We claim:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A sliding mode automatic generation control controller, comprising:
+<claim-text>a sliding mode controller having a plurality of feedback gain inputs, and a control signal output, the control signal output being adapted for connection to a control input of a circuit under control, the feedback gain inputs being adapted for connection to operating point outputs of the circuit under control, the sliding mode controller generating a plurality of switching vectors and, generating a plurality of feedback gain outputs responsive to the operating point outputs and the switching vectors;</claim-text>
+<claim-text>means for applying a load disturbance to the circuit under control; and</claim-text>
+<claim-text>a genetic algorithmic optimizer connected to the sliding mode controller, the genetic algorithmic optimizer having an output responsive to the load disturbance, the genetic algorithmic optimizer including:
+<claim-text>means for searching for optimal values of both the switching vectors and the feedback gain outputs on a predefined search space; and</claim-text>
+<claim-text>means for determining the optimal values by minimizing a plurality of objective functions used by the genetic algorithmic optimizer, wherein said means for determining the optimal values comprises:</claim-text>
+<claim-text>means for evaluating a first objective function J<sub>1 </sub>characterized by the equation</claim-text>
+</claim-text>
+</claim-text>
+<claim-text>
+<maths id="MATH-US-00006" num="00006">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <msub>
+      <mi>J</mi>
+      <mn>1</mn>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <msubsup>
+          <mo>&#x222b;</mo>
+          <mn>0</mn>
+          <mi>&#x221e;</mi>
+        </msubsup>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mn>0.75</mn>
+          <mo>&#x2062;</mo>
+          <mi>t</mi>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mo>&#xf603;</mo>
+            <msub>
+              <mi>&#x394;&#x3c9;</mi>
+              <mn>1</mn>
+            </msub>
+            <mo>&#xf604;</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <mi>t</mi>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>&#xf603;</mo>
+          <msub>
+            <mi>&#x394;&#x3c9;</mi>
+            <mn>2</mn>
+          </msub>
+          <mo>&#xf604;</mo>
+        </mrow>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <mn>0.5</mn>
+        <mo>&#x2062;</mo>
+        <mi>t</mi>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>&#xf603;</mo>
+          <mrow>
+            <mi>&#x394;</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>P</mi>
+              <mi>tie</mi>
+            </msub>
+          </mrow>
+          <mo>&#xf604;</mo>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>&#x2146;</mo>
+          <mi>t</mi>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+</mrow>
+</math>
+</maths>
+</claim-text>
+<claim-text>wherein t represents time, &#x394;&#x3c9;<sub>1 </sub>and &#x394;&#x3c9;<sub>2 </sub>represent first and second changes in frequency, respectively, and &#x394;P<sub>tie </sub>represents a change in tie line power; and
+<claim-text>
+<claim-text>means for evaluating a second objective J<sub>2 </sub>function characterized by the equation</claim-text>
+</claim-text>
+</claim-text>
+<claim-text>
+<maths id="MATH-US-00007" num="00007">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <msub>
+      <mi>J</mi>
+      <mn>2</mn>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <msubsup>
+        <mo>&#x222b;</mo>
+        <mn>0</mn>
+        <mi>&#x221e;</mi>
+      </msubsup>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msubsup>
+              <mi>&#x394;&#x3c9;</mi>
+              <mn>1</mn>
+              <mn>2</mn>
+            </msubsup>
+            <mo>+</mo>
+            <msubsup>
+              <mi>&#x394;&#x3c9;</mi>
+              <mn>2</mn>
+              <mn>2</mn>
+            </msubsup>
+            <mo>+</mo>
+            <mrow>
+              <mi>&#x394;</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.3em" height="0.3ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <msubsup>
+                <mi>P</mi>
+                <mi>tie</mi>
+                <mn>2</mn>
+              </msubsup>
+            </mrow>
+            <mo>+</mo>
+            <mrow>
+              <mi>&#x394;</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.3em" height="0.3ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <msubsup>
+                <mi>u</mi>
+                <mn>1</mn>
+                <mn>2</mn>
+              </msubsup>
+            </mrow>
+            <mo>+</mo>
+            <mrow>
+              <mi>&#x394;</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.3em" height="0.3ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <msubsup>
+                <mi>u</mi>
+                <mn>2</mn>
+                <mn>2</mn>
+              </msubsup>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>&#x2146;</mo>
+          <mi>t</mi>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+</mrow>
+</math>
+</maths>
+</claim-text>
+<claim-text>whereby &#x394;u<sub>1 </sub>and &#x394;u<sub>2 </sub>represent changes in first and second inputs, respectively, thereby minimizing frequency deviation and tie line power of the two interconnected electrical power generating systems.</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The sliding mode automatic generation control controller according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the circuit under control is comprised of two interconnected electrical power generating systems having a system frequency and a tie line power.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. A sliding mode automatic generation control control method for a sliding mode controller connected to two interconnected electrical power generating systems, the power systems having a system frequency, a tie line power and a plurality of operating point outputs, the method comprising the step of using a genetic algorithm to perform the steps of:
+<claim-text>(a) generating a plurality of switching vectors;</claim-text>
+<claim-text>(b) generating a plurality of feedback gain outputs responsive to the operating point outputs and the switching vectors;</claim-text>
+<claim-text>(c) searching for optimal values of both the switching vectors and the feedback gain outputs on a predefined search space; and</claim-text>
+<claim-text>(d) determining the optimal values minimizing a plurality of objective functions used by the genetic algorithm, wherein the step of determining the optimal values comprises the steps of:
+<claim-text>(e) minimizing a first objective function J<sub>1 </sub>characterized by the equation</claim-text>
+</claim-text>
+</claim-text>
+<claim-text>
+<maths id="MATH-US-00008" num="00008">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <msub>
+      <mi>J</mi>
+      <mn>1</mn>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <msubsup>
+          <mo>&#x222b;</mo>
+          <mn>0</mn>
+          <mi>&#x221e;</mi>
+        </msubsup>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mn>0.75</mn>
+          <mo>&#x2062;</mo>
+          <mi>t</mi>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mo>&#xf603;</mo>
+            <msub>
+              <mi>&#x394;&#x3c9;</mi>
+              <mn>1</mn>
+            </msub>
+            <mo>&#xf604;</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <mi>t</mi>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>&#xf603;</mo>
+          <msub>
+            <mi>&#x394;&#x3c9;</mi>
+            <mn>2</mn>
+          </msub>
+          <mo>&#xf604;</mo>
+        </mrow>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <mn>0.5</mn>
+        <mo>&#x2062;</mo>
+        <mi>t</mi>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>&#xf603;</mo>
+          <mrow>
+            <mi>&#x394;</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>P</mi>
+              <mi>tie</mi>
+            </msub>
+          </mrow>
+          <mo>&#xf604;</mo>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>&#x2146;</mo>
+          <mi>t</mi>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+</mrow>
+</math>
+</maths>
+</claim-text>
+<claim-text>wherein t represents time, &#x394;&#x3c9;<sub>1 </sub>and &#x394;&#x3c9;<sub>2 </sub>represent first and second changes in frequency, respectively, and &#x394;P<sub>tie </sub>represents a change in tie line power; and
+<claim-text>
+<claim-text>(f) minimizing a second objective J<sub>2 </sub>function characterized by the equation</claim-text>
+</claim-text>
+</claim-text>
+<claim-text>
+<maths id="MATH-US-00009" num="00009">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <msub>
+      <mi>J</mi>
+      <mn>2</mn>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <msubsup>
+        <mo>&#x222b;</mo>
+        <mn>0</mn>
+        <mi>&#x221e;</mi>
+      </msubsup>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msubsup>
+              <mi>&#x394;&#x3c9;</mi>
+              <mn>1</mn>
+              <mn>2</mn>
+            </msubsup>
+            <mo>+</mo>
+            <msubsup>
+              <mi>&#x394;&#x3c9;</mi>
+              <mn>2</mn>
+              <mn>2</mn>
+            </msubsup>
+            <mo>+</mo>
+            <mrow>
+              <mi>&#x394;</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.3em" height="0.3ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <msubsup>
+                <mi>P</mi>
+                <mi>tie</mi>
+                <mn>2</mn>
+              </msubsup>
+            </mrow>
+            <mo>+</mo>
+            <mrow>
+              <mi>&#x394;</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.3em" height="0.3ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <msubsup>
+                <mi>u</mi>
+                <mn>1</mn>
+                <mn>2</mn>
+              </msubsup>
+            </mrow>
+            <mo>+</mo>
+            <mrow>
+              <mi>&#x394;</mi>
+              <mo>&#x2062;</mo>
+              <mstyle>
+                <mspace width="0.3em" height="0.3ex"/>
+              </mstyle>
+              <mo>&#x2062;</mo>
+              <msubsup>
+                <mi>u</mi>
+                <mn>2</mn>
+                <mn>2</mn>
+              </msubsup>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mo>&#x2146;</mo>
+          <mi>t</mi>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+</mrow>
+</math>
+</maths>
+</claim-text>
+<claim-text>whereby &#x394;u<sub>1 </sub>and &#x394;u<sub>2 </sub>represent changes in first and second inputs, respectively, thereby minimizing frequency deviation and tie line power of the two interconnected electrical power generating systems.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The sliding mode automatic generation control control method according to <claim-ref idref="CLM-00003">claim 3</claim-ref>, further comprising the step of iteratively performing steps (a) through (f) until a stopping criterion has been reached. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

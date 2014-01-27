@@ -1,0 +1,567 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626435-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626435</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12920315</doc-number>
+<date>20080228</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>153</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>01</class>
+<subclass>C</subclass>
+<main-group>21</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>701408</main-classification>
+<further-classification>701 14</further-classification>
+<further-classification>701 16</further-classification>
+<further-classification>701454</further-classification>
+<further-classification>701472</further-classification>
+<further-classification>701 20</further-classification>
+<further-classification>701468</further-classification>
+<further-classification>701517</further-classification>
+<further-classification>701469</further-classification>
+<further-classification>34235729</further-classification>
+<further-classification>34235731</further-classification>
+<further-classification>34235744</further-classification>
+<further-classification>34235764</further-classification>
+<further-classification>340632</further-classification>
+<further-classification>340947</further-classification>
+<further-classification>340988</further-classification>
+<further-classification>340990</further-classification>
+<further-classification>340979</further-classification>
+</classification-national>
+<invention-title id="d2e53">GPS filter algorithm</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5361212</doc-number>
+<kind>A</kind>
+<name>Class et al.</name>
+<date>19941100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>701 16</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5436632</doc-number>
+<kind>A</kind>
+<name>Sheynblat</name>
+<date>19950700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>34235764</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>5504492</doc-number>
+<kind>A</kind>
+<name>Class et al.</name>
+<date>19960400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>34235731</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>5596328</doc-number>
+<kind>A</kind>
+<name>Stangeland</name>
+<date>19970100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>34235744</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>5600329</doc-number>
+<kind>A</kind>
+<name>Brenner</name>
+<date>19970200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>34235744</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>5608393</doc-number>
+<kind>A</kind>
+<name>Hartman</name>
+<date>19970300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>340988</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>5610616</doc-number>
+<kind>A</kind>
+<name>Vallot et al.</name>
+<date>19970300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>34235744</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>6067484</doc-number>
+<kind>A</kind>
+<name>Rowson et al.</name>
+<date>20000500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>701 16</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>6456938</doc-number>
+<kind>B1</kind>
+<name>Barnard</name>
+<date>20020900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>701454</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>6490524</doc-number>
+<kind>B1</kind>
+<name>White et al.</name>
+<date>20021200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>6522698</doc-number>
+<kind>B1</kind>
+<name>Irving et al.</name>
+<date>20030200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>6944541</doc-number>
+<kind>B2</kind>
+<name>Pasturel et al.</name>
+<date>20050900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>7069021</doc-number>
+<kind>B2</kind>
+<name>Lehtinen</name>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>7219013</doc-number>
+<kind>B1</kind>
+<name>Young et al.</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>2007/0072625</doc-number>
+<kind>A1</kind>
+<name>Fournier et al.</name>
+<date>20070300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00016">
+<othercit>Written Opinion of the International Search Authority mailed Aug. 1, 2008.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>14</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>701 16</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>701454</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>4</number-of-drawing-sheets>
+<number-of-figures>6</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110018760</doc-number>
+<kind>A1</kind>
+<date>20110127</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Gardea</last-name>
+<first-name>Raymond</first-name>
+<address>
+<city>Winston-Salem</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Gwynn</last-name>
+<first-name>James</first-name>
+<address>
+<city>Greensboro</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Bate</last-name>
+<first-name>John</first-name>
+<address>
+<city>Oak Ridge</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Gardea</last-name>
+<first-name>Raymond</first-name>
+<address>
+<city>Winston-Salem</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Gwynn</last-name>
+<first-name>James</first-name>
+<address>
+<city>Greensboro</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Bate</last-name>
+<first-name>John</first-name>
+<address>
+<city>Oak Ridge</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Potomac Patent Group PLLC</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Volvo Group North America LLC</orgname>
+<role>02</role>
+<address>
+<city>Greensboro</city>
+<state>NC</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Mawari</last-name>
+<first-name>Redhwan K</first-name>
+<department>3665</department>
+</primary-examiner>
+</examiners>
+<pct-or-regional-filing-data>
+<document-id>
+<country>WO</country>
+<doc-number>PCT/US2008/002673</doc-number>
+<kind>00</kind>
+<date>20080228</date>
+</document-id>
+<us-371c124-date>
+<date>20100830</date>
+</us-371c124-date>
+</pct-or-regional-filing-data>
+<pct-or-regional-publishing-data>
+<document-id>
+<country>WO</country>
+<doc-number>WO2009/108150</doc-number>
+<kind>A </kind>
+<date>20090903</date>
+</document-id>
+</pct-or-regional-publishing-data>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A method for determining location such as vehicle location receives data at a predetermined frequency, validates the received data, stores the received data based on the validation and computes a location based on the stored data. The validation includes verifying a presence of particular data substrings within the received data, verifying a presence of a plurality of data fields within each data substring, computing a parameter based on information contained in two of the plurality of data fields and comparing the computer parameter with a pre-defined threshold.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="223.77mm" wi="183.13mm" file="US08626435-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="201.25mm" wi="171.45mm" file="US08626435-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="231.14mm" wi="175.60mm" file="US08626435-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="124.71mm" wi="173.48mm" file="US08626435-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="249.85mm" wi="189.48mm" file="US08626435-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND</heading>
+<p id="p-0002" num="0001">This invention relates to tracking of vehicles and more particularly to a method for increasing the accuracy in determining the location of a vehicle.</p>
+<p id="p-0003" num="0002">Existing technology makes it possible to determine the approximate current location of a vehicle. Such information has proven useful in tracking vehicles which can be stationary or in motion. Any company or entity with a fleet of vehicles typically can monitor movement or location of one or more of its vehicles. GPS systems are utilized in determining vehicle location. GPS systems make use of orbiting satellites to provide the location information of vehicles such as trucks to an operations center of a trucking company for example.</p>
+<p id="p-0004" num="0003">The accuracy in determining the vehicle location depends on many factors including the number of satellites visible in the system for example. The factors may also include landscape features such as buildings, urban density, mountains or forested terrain for example. Other factors may include the selective availability (SA) feature of satellites which is an artificial falsification of the time in the transmitted satellite signal that is used by the United States military to (deliberately) introduce errors for non-military applications.</p>
+<p id="p-0005" num="0004">It has been observed that, for stationary vehicles for example, the location as determined by existing methods varies by as much as 200 to 500 meters from the actual vehicle location. It is, therefore, desirable to increase the reliability (and as a result, the accuracy) in locating a vehicle.</p>
+<p id="p-0006" num="0005">In exemplary embodiments, a method is provided for determining a vehicle location with a higher degree of accuracy.</p>
+<heading id="h-0002" level="1">SUMMARY</heading>
+<p id="p-0007" num="0006">In one embodiment, a method for determining location such as vehicle location is disclosed. The method comprises receiving data at a predetermined frequency, validating the received data, storing the received data based on the validation and computing a location based on the stored data. The validation includes verifying a presence of particular data substrings within the received data, verifying a presence of a plurality of data fields within each data substring, computing a parameter based on information contained in two of the plurality of data fields and comparing the computer parameter with a pre-defined threshold.</p>
+<p id="p-0008" num="0007">In another embodiment, a system for determining a vehicle location is disclosed. The system comprises a communication means for receiving data representing vehicle location, a processing means for determining validity of the received data and determining the vehicle location and a storage means for storing validated data. The processing means verifies a presence of a particular data substrings within the received data, verifies a presence of a plurality of data fields within each data substring, computes a parameter based on information contained in two of the plurality of data fields and compares the computed parameter with a pre-defined parameter threshold.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0009" num="0008">The several features, objects, and advantages of Applicants' invention will be understood by reading this description in conjunction with the drawings, in which:</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 1</figref> illustrates an electronic control unit (ECU) of a vehicle;</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 2</figref> illustrates an exemplary operations center for processing location information;</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIGS. 3A-3C</figref> illustrate various memory arrangements for storing received location information; and</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 4</figref> illustrates a method according to exemplary embodiments;</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0014" num="0013">The following description of the implementations consistent with the present invention refers to the accompanying drawings. The same reference numbers in different drawings identify the same or similar elements. The following detailed description does not limit the invention. Instead, the scope of the invention is defined by the appended claims.</p>
+<p id="p-0015" num="0014">GPS systems (in vehicles) receive signals from positioning satellites to determine the vehicle location. GPS chipsets decode the signals and process the information. The chipsets generate data strings representative of the vehicle location that may be represented according to one of many protocols/standards. One protocol/standard that is currently in use is the NMEA-0183 (National Maritime Electronic Association) standard that can be used to determine location of a vehicle. The NMEA standard specifies a plurality of strings which include, but are not limited to, an RMC string and a GSA string. The RMC and GSA strings may also be referred to as substrings as they are a subset of the NMEA-0183 string for example. The terms, &#x201c;RMC string&#x201d; and &#x201c;RMC substring&#x201d; (as well as &#x201c;GSA string&#x201d; and &#x201c;GSA substring&#x201d;) may be used interchangeably while referring to the same data item for purposes of this description. Some of the information contained in the RMC and GSA strings may also be duplicated in other strings that are included in the NMEA standard.</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 1</figref> illustrates an electronic control unit (ECU) <b>100</b> of a vehicle. ECU <b>100</b> includes a micro-controller <b>110</b>, GPS chip <b>120</b>, modem <b>130</b> and antenna <b>140</b>. In exemplary embodiment, GPS chip <b>120</b> may generate a data string. The data string may be, but is not limited to, a NMEA string according to a NMEA-0183 standard for example. The data string may also be another type of proprietary string or a binary interface.</p>
+<p id="p-0017" num="0016">GPS chip <b>120</b> may communicate with micro-controller <b>110</b> via interface <b>125</b>. Interface <b>125</b> may be, but is not limited to, a RS-232 interface. GPS chip <b>120</b> may communicate the NMEA-0183 data string (or other proprietary string) via interface <b>125</b> to micro-controller <b>110</b>. Another interface <b>135</b> may provide communication between micro-controller <b>110</b> and modem <b>130</b>. Interface <b>135</b> may also be, but is not limited to, a RS-232 interface. Modem <b>130</b> may transmit and/or receive data to a remote or central location. The vehicle location may be determined at the remote location based on data received from ECU <b>100</b>. Exemplary remote locations may include, but are not limited to, an operations center or a back office of a shipping company that operates a fleet of trucks or that of a rental car company. The information from ECU <b>100</b> may be transmitted in known wireless manner to the remote location. ECU <b>100</b> may receive data such as instructions from the remote location.</p>
+<p id="p-0018" num="0017">ECU <b>100</b> (or, micro-controller <b>110</b>) may also be connected to one or more other ECUs <b>150</b>, <b>160</b>, <b>170</b> and <b>180</b> via a vehicle data bus (The vehicle data bus may be, but is not limited to one of j1708, j1939, LIN, Flexray, etc). Other ECUs may include an engine ECU <b>150</b>, a vehicle ECU <b>160</b>, a cluster ECU <b>170</b> and/or other type of ECU <b>180</b>. ECU <b>100</b> is a gateway to the satellite or cell based back office whose purpose is to transfer information to and from the vehicle; Vehicle ECU <b>160</b> works more with vehicle body functions (such as converting wheel sensor pulses to road speed for example).</p>
+<p id="p-0019" num="0018">Exemplary embodiments utilize the RMC string and the GSA string, which originate in GPS chip <b>120</b> and may be sampled every second by the micro-controller <b>110</b>. The sampling frequency is not limited to a second; it may be adjusted to a frequency other than every second.</p>
+<p id="p-0020" num="0019">A sample RMC string may have the following format: GPRMC, 114200.00, A, 3604.85806, N, 07958.12565, W, 000.2, 161.2, 070904, 006.8, W. A sample GSA string may have the following format: GPGSA, A, 3, 26, 29, 21, 22, . . . , 06, . . . , 2.6, 2.4, 2.2.</p>
+<p id="p-0021" num="0020">The data or information from the RMC and GSA strings (or, substrings) may be used to obtain a &#x201c;fix&#x201d; for each sample. The &#x201c;fix&#x201d; represents a location that the GPS chip <b>120</b> thinks is the location of the vehicle. The &#x201c;fix&#x201d; includes the current latitude (CLA), the current longitude (CLO), the current time (CT), the current horizontal dilution of precision (HDoP), the current vertical dilution of precision (VDoP) and the position dilution of precision (PDoP). The horizontal and vertical dilution of precision may be combined (or, summed) to form a probability factor (PF). That is, PF=HDoP+VDoP.</p>
+<p id="p-0022" num="0021">RMC and GSA strings provide the various parameters described above. The RMC substring may include position and time values (CLA, CLO and CT from above) and the GSA substring may include PDoP, HDoP, VDoP and the number of satellites, etc. Since PF=HDoP+VDoP, the probability factor is computed from parameters in the GSA substring.</p>
+<p id="p-0023" num="0022">An operations center may receive the RMC and GSA substrings and determine the location of the vehicle based on the received data. <figref idref="DRAWINGS">FIG. 2</figref> illustrates an exemplary operations center <b>200</b>. Operations center <b>200</b> may include a computer <b>210</b>, modem <b>230</b> and antenna <b>240</b>. Computer <b>210</b> may be a general purpose computer having a processor <b>215</b> and memory <b>220</b>. Computer <b>210</b> may be connected externally to modem <b>230</b> or modem <b>230</b> may be integrated within computer <b>210</b>. Similarly, memory <b>220</b> may also be external to computer <b>210</b>. Modem <b>230</b> may be utilized for receiving data from a vehicle. Processor <b>215</b> may compute the various parameters necessary to determine validity of the received data strings. Memory <b>220</b> may be utilized to store valid received data strings as well as pre-determined parameter and time thresholds.</p>
+<p id="p-0024" num="0023">Memory <b>220</b> may store the data strings (i.e. the RMC and GSA strings) as they are received at the operations center <b>200</b>. Memory <b>220</b> may store a predetermined (or, pre-defined) number of the most recently received valid data strings. In an exemplary embodiment, memory <b>220</b> may store sixteen (16) of the most recently received valid data strings.</p>
+<p id="p-0025" num="0024">As described above, a received data string may include values representing current latitude (CLA), current longitude (CLO) and current time (CT) where the current time may represent the time at which the strings are generated or reported by GPS chip <b>120</b>.</p>
+<p id="p-0026" num="0025">The values stored in memory <b>220</b> may include the latitude, longitude, time and probability factor that is computed from parameters in the received GSA string (i.e. PF=HDoP+VDoP). The data strings stored in memory <b>220</b> may form the basis for determining the current location of a vehicle. The current location may be determined by computing the average of the sixteen values.</p>
+<p id="p-0027" num="0026">The validity of the received string may determine whether or not the received string is stored in memory <b>220</b>. A valid string may be placed in memory <b>220</b> while an invalid string may not be placed in memory <b>220</b>. The validity may be based on the probability factor (PF). A pre-determined (or, pre-defined) probability factor threshold may be established. If the probability factor of a received data string satisfies the pre-defined threshold value, the received data string may be stored in memory <b>220</b>.</p>
+<p id="p-0028" num="0027">An invalid string may result from not receiving all fields of data within the string(s) for example. It may also result from not receiving one of the RMC or GSA strings. It may result from a reduction in the number of satellites used. Invalid strings may also be generated as a result of a hardware failure.</p>
+<p id="p-0029" num="0028">In the example mentioned above, memory <b>220</b> may store sixteen valid data strings. If the next received string is valid, the received string may be placed in memory <b>220</b> replacing the oldest string in memory <b>220</b>. While the use of sixteen samples is illustrated in exemplary embodiments, the invention is not limited to processing only sixteen samples. In other embodiments, a greater number (i.e. greater than sixteen) of samples may be processed.</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 3A</figref> illustrates an exemplary memory <b>320</b> with sixteen locations represented by hexadecimal digits 0 to 9 and A to F. As data strings are received, their validity may be verified and they may be placed in memory locations starting with memory location 0 until sixteen such valid data strings are received and placed in locations 0 to 9 and A to F. Upon receipt of the next valid data string (number 17 in this case), the data strings may be pushed down by one memory location in memory <b>320</b> as shown in <figref idref="DRAWINGS">FIG. 3B</figref>. The oldest data string from memory location 0 may be removed and the newest received and verified data string may be placed in memory location F.</p>
+<p id="p-0031" num="0030">Other methods may be utilized to store valid data strings in memory <b>320</b> as illustrated in <figref idref="DRAWINGS">FIG. 3C</figref>. For example, after the first sixteen strings are placed in locations 0 to F, the next sixteen samples may be placed starting again with memory location 0 and continuing to memory location F. This process may be repeated. An exemplary method maintains the most recent sixteen valid data strings in memory <b>320</b> in exemplary embodiments regardless of the type of method utilized to store the data strings (i.e. whether that illustrated in <figref idref="DRAWINGS">FIG. 3B</figref> or that illustrated in <figref idref="DRAWINGS">FIG. 3C</figref> is utilized).</p>
+<p id="p-0032" num="0031">Upon the placement of a valid data string in memory <b>320</b>, the average value of each of the parameters in the memory may be computed and this computed value may represent the current location of the vehicle.</p>
+<p id="p-0033" num="0032">In certain conditions, GPS chip <b>120</b> may not provide a data string such as if the vehicle travels within a tunnel or is underground. Modem <b>130</b> may not be able to communicate in such settings. When this occurs, the last valid location may be latched on for a predetermined period of time. Upon expiration of this predetermined time, an alarm or notification may be generated indicating that signals from the vehicle are not being received.</p>
+<p id="p-0034" num="0033">A method or process <b>400</b> in accordance with exemplary embodiments is illustrated in <figref idref="DRAWINGS">FIG. 4</figref>. A data string may be received at step <b>405</b>. The received string may be analyzed to determine if it is a GSA string at step <b>410</b>. The string may be analyzed to determine if all fields (of a GSA string) are present for example. If the received string is a GSA string, the received string may be processed at <b>415</b>.</p>
+<p id="p-0035" num="0034">If the received string is not a GSA string, it may be analyzed to determine if it is a RMC string at <b>420</b> (i.e., determine if all fields of a RMC string are present for example). If the received string is a RMC string, it may be processed at <b>425</b>. If it is not a RMC string, then the process may return to <b>405</b>. Upon processing of either a GSA string (<b>415</b>) or a RMC string (<b>425</b>), it may be determined whether both strings have been received at <b>430</b>. If both strings have not been received, the process may return to step <b>405</b> to receive the next data string. As described previously, validity of a received string means receiving a complete valid GSA string and a complete valid RSC string.</p>
+<p id="p-0036" num="0035">If both strings have been received, the probability factor (PF) may be calculated at <b>435</b> (i.e. PF=HDoP+VDoP). The validity of the probability factor may be determined at <b>440</b>. The probability factor may be compared to a predetermined threshold. The probability factor may be designated as being valid if it is less than the predetermined threshold value; the probability factor may be designated as being invalid if it is equal to or greater than the predetermined threshold value. In other embodiments, the string may be valid if it is greater than or equal to the threshold value and may be invalid if it is less than the threshold value.</p>
+<p id="p-0037" num="0036">If the probability factor is found to be valid, the string is placed in the memory at <b>460</b>. If the probability factor is found not to be valid, the time difference between the present time and time of receipt of the last valid entry (that was placed in the memory) may be determined at <b>445</b>. The time difference may be analyzed at <b>450</b>. If the time difference is less than or equal to (i.e. at or below) a predetermined threshold value, the last valid string that was received may be placed in memory at <b>455</b>. That is, the last stored valid entry may be overwritten by itself (i.e. being replaced by itself). If the time difference is above a predetermined threshold value, an alarm may be triggered at <b>470</b> and the process may return to step <b>405</b> for receiving data strings (i.e., no new string is stored in memory).</p>
+<p id="p-0038" num="0037">The alarm may indicate that no valid data has been received for a period of time that is above a predetermined threshold (i.e. the time lapse since the receipt of the last valid data is above a predetermined threshold value). Such a scenario may result due to the lack of reception of a signal from the vehicle because it is in a tunnel for example. It could also be due to a reduction in the number of satellites that are in communication with the vehicle. As a result, only valid data may be placed in memory <b>220</b>.</p>
+<p id="p-0039" num="0038">Upon placing the present string (step <b>460</b>) or rewriting the last valid string one more time (step <b>455</b>), the location may be calculated at <b>465</b> based on the values currently stored in memory.</p>
+<p id="p-0040" num="0039">Exemplary embodiments as described herein increase the reliability of data used in computing the location of a vehicle. The increased reliability also lead to increased accuracy (relative to current methods) in determining the location of a vehicle.</p>
+<p id="p-0041" num="0040">It will be appreciated that procedures described above may be carried out repetitively as necessary to control determine location vehicle. To facilitate understanding, many aspects of the invention are described in terms of sequences of actions that can be performed by, for example, elements of a programmable computer system. It will be recognized that the various actions could be performed by specialized circuits (e.g., discrete logic gates interconnected to perform a specialized function or application-specific integrated circuits), by program instructions executed by one or more processors, or by a combination of both.</p>
+<p id="p-0042" num="0041">Moreover, the invention can additionally be considered to be embodied entirely within any form of computer-readable storage medium having stored therein an appropriate set of instructions for use by or in connection with an instruction-execution system, apparatus, or device, such as a computer-based system, processor-containing system, or other system that can fetch instructions from a medium and execute the instructions. As used here, a &#x201c;computer-readable medium&#x201d; can be any means that can contain, store, communicate, propagate, or transport the program for use by or in connection with the instruction-execution system, apparatus, or device. The computer-readable medium can be, for example but not limited to, an electronic, magnetic, optical, electromagnetic, infrared, or semiconductor system, apparatus, device, or propagation medium. More specific examples (a non-exhaustive list) of the computer-readable medium include an electrical connection having one or more wires, a portable computer diskette, a random-access memory (RAM), a read-only memory (ROM), an erasable programmable read-only memory (EPROM, EEPROM, or Flash memory), an optical fiber, and a portable compact disc read-only memory (CD-ROM).</p>
+<p id="p-0043" num="0042">Thus, the invention may be embodied in many different forms, not all of which are described above, and all such forms are contemplated to be within the scope of the invention. It is emphasized that the terms &#x201c;comprises&#x201d; and &#x201c;comprising&#x201d;, when used in this application, specify the presence of stated features, integers, steps, or components and do not preclude the presence or addition of one or more other features, integers, steps, components, or groups thereof.</p>
+<p id="p-0044" num="0043">The particular embodiments described above are merely illustrative and should not be considered restrictive in any way. The scope of the invention is determined by the following claims, and all variations and equivalents that fall within the range of the claims are intended to be embraced therein.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method for determining vehicle location comprising:
+<claim-text>receiving data at a predetermined frequency;</claim-text>
+<claim-text>validating the received data;</claim-text>
+<claim-text>storing the received data based on the validation; and</claim-text>
+<claim-text>a processor computing a location based on the stored data, wherein the validation further comprises:
+<claim-text>verifying a presence of particular data substrings within the received data, said substrings including at least one of a GSA substring and a RMC substring;</claim-text>
+<claim-text>verifying a presence of a plurality of data fields within each data substring including fields representing at least a horizontal dilution of precision and a vertical dilution of precision;</claim-text>
+<claim-text>computing a probability factor by adding the horizontal dilution of precision and the vertical dilution of precision; and</claim-text>
+<claim-text>validating the probability factor by comparing the computed probability factor with a pre-defined threshold, wherein the probability factor is valid if it is less than the pre-defined threshold.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising receiving the data at a central station remote from the vehicle.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>designating the received data as invalid data if the computed probability factor is greater than or equal to the pre-defined parameter threshold.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00003">claim 3</claim-ref>, further comprising:
+<claim-text>measuring a time lapse since a storage of a last data; and</claim-text>
+<claim-text>overwriting the last stored data with the last stored data if the time lapse is less than a pre-defined time threshold.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00004">claim 4</claim-ref>, further comprising:
+<claim-text>triggering a notification that a signal is not being received if the time lapse is equal to or greater than the pre-defined time threshold.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the RMC substring includes fields representing at least latitude, longitude and time.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein storing the received data comprises storing sixteen discrete data strings.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method of <claim-ref idref="CLM-00007">claim 7</claim-ref>, further comprising receiving the data strings at one second intervals.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. A system for determining vehicle location, the system comprising:
+<claim-text>a modem for receiving data;</claim-text>
+<claim-text>a processing means processor for determining validity of the received data and determining the vehicle location; and</claim-text>
+<claim-text>a memory for storing validated data, wherein</claim-text>
+<claim-text>the processor
+<claim-text>verifies a presence of particular data substrings within the received data, said substrings including at least one of a GSA substring and a RMC substring;</claim-text>
+<claim-text>verifies a presence of a plurality of data fields within each data substring including fields representing at least a horizontal dilution of precision and a vertical dilution of precision;</claim-text>
+<claim-text>computes a probability factor, by adding the horizontal dilution of precision and the vertical dilution of precision; and</claim-text>
+<claim-text>validates the probability factor by comparing the computed probability factor with a pre-defined parameter threshold, wherein the probability factor is valid if it is less than the pre-defined threshold.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The system of <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein the processor verifies receipt of data corresponding to a NMEA-0183 standard.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The system of <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein the processor compares the computed probability factor with the pre-defined threshold stored in the memory.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The system of <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein the modem receives data from an electronic control unit of a vehicle.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the received data is a NMEA-0183 data string.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising:
+<claim-text>storing the received data if the probability factor is valid. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

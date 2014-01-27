@@ -1,0 +1,644 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627007-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627007</doc-number>
+<kind>B1</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12607510</doc-number>
+<date>20091028</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>662</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>12</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>711118</main-classification>
+<further-classification>711158</further-classification>
+<further-classification>711151</further-classification>
+<further-classification>711154</further-classification>
+<further-classification>711167</further-classification>
+<further-classification>711169</further-classification>
+</classification-national>
+<invention-title id="d2e53">Use of cache to reduce memory bandwidth pressure with processing pipeline</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>6148381</doc-number>
+<kind>A</kind>
+<name>Jotwani</name>
+<date>20001100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711158</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2004/0107220</doc-number>
+<kind>A1</kind>
+<name>Natesan et al.</name>
+<date>20040600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>7071041</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>2009/0182940</doc-number>
+<kind>A1</kind>
+<name>Matsuda et al.</name>
+<date>20090700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>711114</main-classification></classification-national>
+</us-citation>
+</us-references-cited>
+<number-of-claims>20</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>None</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>14</number-of-drawing-sheets>
+<number-of-figures>14</number-of-figures>
+</figures>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Huang</last-name>
+<first-name>Jianhui</first-name>
+<address>
+<city>Fremont</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Yeluri</last-name>
+<first-name>Sharada</first-name>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Frailong</last-name>
+<first-name>Jean-Marc</first-name>
+<address>
+<city>Los Altos</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="004" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Libby</last-name>
+<first-name>Jeffrey G.</first-name>
+<address>
+<city>Cupertino</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="005" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Gupta</last-name>
+<first-name>Anurag P.</first-name>
+<address>
+<city>Saratoga</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="006" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Coelho</last-name>
+<first-name>Paul</first-name>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Huang</last-name>
+<first-name>Jianhui</first-name>
+<address>
+<city>Fremont</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Yeluri</last-name>
+<first-name>Sharada</first-name>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Frailong</last-name>
+<first-name>Jean-Marc</first-name>
+<address>
+<city>Los Altos</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="004" designation="us-only">
+<addressbook>
+<last-name>Libby</last-name>
+<first-name>Jeffrey G.</first-name>
+<address>
+<city>Cupertino</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="005" designation="us-only">
+<addressbook>
+<last-name>Gupta</last-name>
+<first-name>Anurag P.</first-name>
+<address>
+<city>Saratoga</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="006" designation="us-only">
+<addressbook>
+<last-name>Coelho</last-name>
+<first-name>Paul</first-name>
+<address>
+<city>San Jose</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Harrity &#x26; Harrity, LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Juniper Networks, Inc.</orgname>
+<role>02</role>
+<address>
+<city>Sunnyvale</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Chace</last-name>
+<first-name>Christian</first-name>
+<department>2182</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Otto</last-name>
+<first-name>Alan</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A data read/write system includes a system clock, a single port memory, a cache memory that is separate from the single port memory, and a controller coupled to an instruction pipeline. The controller receives, via the instruction pipeline, first data to write to an address of the single port memory, and further receives, via the instruction pipeline, a request to read second data from the single port memory. The controller stores the first data in the cache memory, and retrieves the second data from either the cache memory or the single port memory during one or more first clock cycles of the system clock. The controller copies the first data from the cache memory and stores the first data at the address in the single port memory during a second clock cycle of the system clock that is different than the one or more first clock cycles.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="191.69mm" wi="134.37mm" file="US08627007-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="186.77mm" wi="145.29mm" orientation="landscape" file="US08627007-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="196.34mm" wi="159.43mm" orientation="landscape" file="US08627007-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="167.05mm" wi="151.89mm" orientation="landscape" file="US08627007-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="184.15mm" wi="147.91mm" orientation="landscape" file="US08627007-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="205.23mm" wi="158.83mm" orientation="landscape" file="US08627007-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="214.80mm" wi="173.65mm" file="US08627007-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="235.54mm" wi="117.60mm" orientation="landscape" file="US08627007-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="229.02mm" wi="124.21mm" orientation="landscape" file="US08627007-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="218.78mm" wi="140.38mm" file="US08627007-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="197.36mm" wi="160.44mm" orientation="landscape" file="US08627007-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="229.02mm" wi="166.37mm" file="US08627007-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="240.54mm" wi="93.22mm" orientation="landscape" file="US08627007-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="155.87mm" wi="129.79mm" file="US08627007-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="239.86mm" wi="148.93mm" orientation="landscape" file="US08627007-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND</heading>
+<p id="p-0002" num="0001">Various types of memory devices may be used, for example, in network devices, including routers, bridges, switches, etc. Such memory devices may be used for storing various data associated with the operation of the network devices, including packet storage, context storage, lookup table storage, etc. One type of memory device that may be used in a network device is a single port Random Access Memory (RAM). A single port RAM may be accessed at one memory address at one time and, therefore, only one memory cell may be read from, or written to, during each clock cycle. Another type of memory device that may be used in a network device is a dual port RAM that can read and write different memory cells at different addresses during each clock cycle. A single port RAM, however, is smaller and consumes less power than a dual port RAM, or some other types of memory devices.</p>
+<heading id="h-0002" level="1">SUMMARY</heading>
+<p id="p-0003" num="0002">In accordance with one embodiment, a method implemented in a data read/write system that includes a single port memory may include receiving, at a controller of the data read/write system, first data to write to an address of the single port memory, and receiving, at the controller, a request to read second data from the single port memory. The method may further include storing the first data in a cache memory that is separate from the single port memory and retrieving the second data from either the cache memory or the single port memory during a first system clock cycle. The method may also include copying the first data from the cache memory and storing the first data at the address in the single port memory during a second system clock cycle that is different than the first clock cycle.</p>
+<p id="p-0004" num="0003">In another embodiment, a method may include receiving read requests for reading data from a single port memory and receiving write requests for writing data to the single port memory. The method may further include temporarily storing data associated with the write requests to a cache memory that is external to the single port memory, and assigning a first priority to at least a portion of the read requests and a second priority to the write requests, where the first priority is higher than the second priority. The method may also include accessing the single port memory to read the first data from the single port memory, or to write the second data from storage in the cache memory to the single port memory, based on the assigned first and second priorities.</p>
+<p id="p-0005" num="0004">In still another embodiment, a method implemented in a data storage system may include receiving, at a controller of the data storage system, data to store at an address of a single port memory and storing the data, at a first system clock cycle, in a cache memory of the data storage system that is separate from the single port memory. The method may further include copying the data from the cache memory, at a second system clock cycle, and storing the data at the address in the single port memory and receiving, at the controller, a request to read the data from the single port memory. The method may also include determining, by the controller, if the data remains stored in the cache memory. The method may additionally include retrieving the data from the cache memory, and not from the single port memory, if the data remains stored in the cache memory, and retrieving the data from the address in the single port memory if the data is no longer stored in the cache memory. The method may also include returning the retrieved data in response to the data read request.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0006" num="0005">The accompanying drawings, which are incorporated in and constitute a part of this specification, illustrate one or more embodiments described herein and, together with the description, explain the invention. In the drawings,</p>
+<p id="p-0007" num="0006"><figref idref="DRAWINGS">FIG. 1</figref> is a diagram of an exemplary system in which multiple data readers/writers may send read/write requests to a single port read/write memory;</p>
+<p id="p-0008" num="0007"><figref idref="DRAWINGS">FIG. 2</figref> is a diagram that illustrates further details of the exemplary system of <figref idref="DRAWINGS">FIG. 1</figref>;</p>
+<p id="p-0009" num="0008"><figref idref="DRAWINGS">FIG. 3</figref> is an exemplary diagram of the single port read/write memory of <figref idref="DRAWINGS">FIG. 2</figref>;</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 4A</figref> is an exemplary diagram of the cache memory of <figref idref="DRAWINGS">FIG. 2</figref>;</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 4B</figref> is an exemplary diagram of per-bit data writing that may occur in the cache memory of <figref idref="DRAWINGS">FIG. 2</figref>;</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 5</figref> is a flow chart that illustrates an exemplary process for handling read or write requests received from the data reader/writer of <figref idref="DRAWINGS">FIG. 2</figref>;</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 6A</figref> is a diagram that depicts an example of reading data from the cache memory of <figref idref="DRAWINGS">FIG. 2</figref>;</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 6B</figref> is a diagram that depicts an example of reading data from the single port memory of <figref idref="DRAWINGS">FIG. 2</figref>;</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 7</figref> is a flow chart that illustrates an exemplary process for blocking read/write requests from data readers/writers of <figref idref="DRAWINGS">FIG. 1</figref>;</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 8</figref> is a diagram that depicts an example of a situation in which too many dirty entries are stored in the cache memory of <figref idref="DRAWINGS">FIG. 2</figref>;</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 9</figref> is a flow chart that illustrates an exemplary process for performing a per-clock cycle writeback of data from the cache memory to the single port memory of <figref idref="DRAWINGS">FIG. 2</figref>;</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 10</figref> is a diagram that depicts an example of the writing back of a dirty entry from the cache memory to the single port memory of <figref idref="DRAWINGS">FIG. 2</figref>;</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 11</figref> is a flow chart that illustrates an exemplary process for &#x201c;flushing&#x201d; dirty entries from the cache memory of <figref idref="DRAWINGS">FIG. 2</figref>; and</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 12</figref> is a diagram that depicts an example of the exemplary cache flushing process of <figref idref="DRAWINGS">FIG. 11</figref>.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0021" num="0020">The following detailed description refers to the accompanying drawings. The same reference numbers may be used in different drawings to identify the same or similar elements. Also, the following detailed description does not limit the invention. Instead, the scope of the invention is defined by the appended claims and equivalents.</p>
+<p id="p-0022" num="0021">Exemplary embodiments described herein implement a data reading/writing system for reading data from, and/or writing data to, a single port memory. The exemplary embodiments use a separate cache memory to reduce memory bandwidth pressure by delaying data writes to the single port memory. By using a separate cache memory, the single port memory may be used in the data read/write system as opposed to, for example, using a dual port memory. Use of the separate cache memory in conjunction with the single port memory reduces the physical space and power required by the overall read/write system.</p>
+<p id="p-0023" num="0022">The separate cache memory may be used, as described herein, to temporarily store data being written to, or being read from, the single port memory. A cache controller may control the reading of data to, and data from, the cache memory according to a priority mechanism in which reads and writes have different priorities for accessing the single port memory. According to exemplary embodiments described herein, requests to read data from the single port memory, when the requested data is not stored in the cache memory, receive a higher priority than requests to write data to the single port memory. Write data, after being temporarily stored in the cache memory, may be &#x201c;written back&#x201d; to the single port memory during clock cycles in which no read requests are pending. The separate cache memory described herein additionally permits per-bit data writing in which each item of data stored in the cache may be written per bit into the cache memory (i.e., as opposed to writing the entirety of one or more memory words into the cache memory).</p>
+<heading id="h-0005" level="1">Exemplary Data Read/Write System</heading>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 1</figref> is a diagram of a data read/write system <b>100</b> according to an exemplary embodiment. System <b>100</b> may include multiple data readers/writers <b>110</b>-<b>1</b> through <b>110</b>-N (generically referred to herein as &#x201c;data reader/writer <b>110</b>&#x201d;) which may send respective read/write requests <b>120</b>-<b>1</b> through <b>120</b>-N to a single port read/write memory <b>130</b>. Each of data readers/writers <b>110</b>-<b>1</b> through <b>110</b>-N may, in some embodiments, include a separate &#x201c;thread&#x201d; that sends respective read/write requests <b>120</b> to memory <b>130</b>. As a single port memory, memory <b>130</b> may only be accessed one memory address at a time during each clock cycle. Memory <b>130</b> may include, for example, a single port Random Access Memory (RAM).</p>
+<p id="p-0025" num="0024">In one exemplary embodiment, data readers/writers <b>110</b>-<b>1</b> through <b>110</b>-N may reside in an instruction processing pipeline (not shown). The instruction processing pipeline may include, for example, a barrel pipeline. Each of read/write requests <b>120</b>-<b>1</b> through <b>120</b>-N may include one or more requests to read data from memory <b>130</b>, or to write data to memory <b>130</b>.</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 2</figref> illustrates further details of the exemplary system <b>100</b> of <figref idref="DRAWINGS">FIG. 1</figref>. As shown in <figref idref="DRAWINGS">FIG. 2</figref>, which depicts a single data reader/writer <b>110</b> for purposes of simplicity, cache controller <b>210</b> may be located between data reader/writer <b>110</b> and single port memory <b>130</b> to intercept read/write requests from data reader/writer <b>110</b>. A cache memory <b>220</b>, that may be separate from, and external to, single port memory <b>130</b>, may additionally connect to cache controller <b>210</b>. Cache controller <b>210</b> may include any type of processing logic, such as, for example, hardware logic, or a combination of software and hardware logic, which may operate to control the reading and writing of data from/to cache memory <b>220</b> and single port memory <b>130</b>.</p>
+<p id="p-0027" num="0026">Cache memory <b>220</b> may store data associated with read and write requests received by cache controller <b>210</b>. Cache memory <b>220</b> may store the data based on control signals received from cache controller <b>210</b>. Given that memory <b>130</b> includes a single port memory that permits only one read or write to a memory address per clock cycle, cache controller <b>210</b>, in conjunction with cache memory <b>220</b>, serves to reduce memory bandwidth pressure by prioritizing and scheduling read and write requests received from data reader/writer <b>110</b>.</p>
+<p id="p-0028" num="0027">Data read from memory <b>130</b> may be stored in cache memory <b>220</b> in conjunction with being returned to data reader/writer <b>110</b>. Data to be written to memory <b>130</b> may initially be stored in cache memory <b>220</b> prior to being &#x201c;written back&#x201d; to memory <b>130</b> using opportunistic or forced &#x201c;writeback&#x201d; techniques (described further below). Read and write requests may be given different levels of priority by cache controller <b>210</b>. For example, when read requests from data reader/writer <b>110</b> find no corresponding data in cache memory <b>220</b>, causing read requests to memory <b>130</b>, the read requests may be given priority over all writebacks to memory <b>130</b>. Write requests may be given two different priorities, depending on whether the data is being &#x201c;written back&#x201d; to memory <b>130</b> using forced, or opportunistic, writeback techniques. In forced &#x201c;writeback,&#x201d; an entry stored in cache memory <b>220</b>, that has not yet been written back to memory <b>130</b> (i.e., the data is marked as &#x201c;dirty&#x201d; in cache memory <b>220</b>), may be written back to memory <b>130</b> during any clock cycle in which no read requests are pending and prior to any opportunistic writebacks. In opportunistic &#x201c;writeback,&#x201d; an entry stored in cache memory <b>220</b>, which has not yet been written back to memory <b>130</b>, may be written to memory <b>130</b> during any clock cycle in which no read requests are pending, but subsequent to any forced &#x201c;writebacks.&#x201d; Therefore, cache controller <b>210</b> may prioritize read/write access to single port memory <b>130</b> via three different priorities: 1) read requests receive the highest priority; 2) forced writebacks receive the second highest priority; and 3) opportunistic writebacks receive the lowest priority.</p>
+<p id="p-0029" num="0028">A system clock (not shown in <figref idref="DRAWINGS">FIG. 2</figref>) may further be associated with system <b>100</b>. The system clock may provide timing cycles to the components of system <b>100</b> to control the timing of logic execution by the various components (e.g., control when data is written to cache memory <b>220</b> or memory <b>130</b>, or read from cache memory <b>220</b> or memory <b>130</b>). The timing cycles may include, for example, a train of high and low signals.</p>
+<p id="p-0030" num="0029">The number of components of system <b>100</b> depicted in <figref idref="DRAWINGS">FIG. 2</figref> is exemplary. Fewer, more, or different components may be included in system <b>100</b>. Additionally, the tasks described herein as being executed by specific components of system <b>100</b> may, in other embodiments, be executed by different components.</p>
+<heading id="h-0006" level="1">Exemplary Single Port Read/Write Memory</heading>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIG. 3</figref> is a diagram of single port read/write memory <b>130</b> according to an exemplary embodiment. Memory <b>130</b> may include read/write data <b>310</b> that may be stored in respective read/write addresses <b>300</b>-<b>1</b> through <b>300</b>-<i>p </i>in memory <b>130</b>. Each item of data stored in read/write data <b>310</b> may include data that has been written to a respective read/write address <b>300</b>, and which may be subsequently read from the respective read/write address <b>300</b>.</p>
+<heading id="h-0007" level="1">Exemplary Cache Memory</heading>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIG. 4A</figref> is a diagram of cache memory <b>220</b> according to an exemplary embodiment. Cache memory <b>220</b> may include multiple cache entries <b>400</b>, each of which may include a read/write data field <b>410</b>, a &#x201c;valid&#x201d; bit field <b>420</b>, a &#x201c;dirty&#x201d; bit field <b>430</b>, and a read/write address field <b>440</b>. Cache memory <b>220</b> may include additional or different fields than those depicted in <figref idref="DRAWINGS">FIG. 4A</figref>. <figref idref="DRAWINGS">FIG. 4A</figref> depicts a number of cache entries <b>400</b> for data associated with read/write requests from a single data reader/writer <b>110</b>. Therefore, each one of data readers/writers <b>110</b>-<b>1</b> through <b>110</b>-N, which sends a read or write request to cache controller <b>210</b>, may have a section of entries <b>400</b> in cache memory <b>220</b>. The number of entries <b>400</b> in cache memory <b>220</b> may be selectively limited by cache controller <b>210</b> (e.g., four entries <b>400</b> per data reader/writer <b>110</b>). Cache memory <b>220</b>, therefore, may be partitioned on a per-data reader/writer basis (i.e., cache memory <b>220</b> may be partitioned into groups of entries <b>400</b>, with each group being assigned to a data reader/writer that sends a read or write request to cache controller <b>210</b>).</p>
+<p id="p-0033" num="0032">Read/write data field <b>410</b> may store data that has been read from memory <b>130</b>, or which is going to be written to memory <b>130</b>. Valid bit field <b>420</b> may store a single bit that indicates whether or not the data stored in read/write data field <b>410</b> is valid for use. If, for example, valid bit field <b>420</b> is set to zero, then any data stored in read/write data field <b>410</b> may be considered invalid, and may be ignored by cache controller <b>210</b> (i.e., can be written over with new data). Dirty bit field <b>430</b> may store a single bit that indicates whether the data stored in read/write data field <b>410</b> needs to be written back to memory <b>120</b> subsequent to being stored in cache memory <b>220</b>. If, for example, dirty bit field <b>430</b> is set to one, then the data stored in read/write data field <b>410</b> has not yet been written back from cache memory <b>220</b> to memory <b>130</b> (i.e., data is &#x201c;dirty&#x201d;). If dirty bit field <b>430</b> is set to zero, then the data stored in read/write data field <b>410</b> has been written back from cache memory <b>220</b> to memory <b>130</b> (i.e., data is &#x201c;clean&#x201d;). Read/write address field <b>440</b> may specify the memory address in memory <b>130</b> to which the data stored in read/write data field <b>410</b> is to be written, or may specify the memory address in memory <b>130</b> from which the data stored in read/write data field <b>410</b> was read.</p>
+<heading id="h-0008" level="1">Exemplary Per-Bit Cache Writing</heading>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIG. 4B</figref> is a diagram that illustrates exemplary per-bit writing of data to cache memory <b>220</b>. The data stored in read/write data field <b>410</b> of may include multiple memory words. Cache controller <b>210</b> may permit data reader/writer <b>110</b> to write to individual bits within the multiple memory words in read/write data field <b>410</b>. As shown in <figref idref="DRAWINGS">FIG. 4B</figref>, each read/write data field <b>410</b> may include multiple bits <b>450</b> of read/write data. Via per-bit write enables, cache controller <b>210</b> may write individual bits of data to read/write data field <b>410</b> based on write requests received from data reader/writer <b>110</b>. Write requests received from data reader/writer <b>110</b> may, therefore, write to only selected bits of read/write data field <b>410</b> in cache memory <b>220</b>. The use of per-bit writing requires that the data for the address to be written to be present in cache memory <b>220</b> at the time that the write request is processed.</p>
+<heading id="h-0009" level="1">Exemplary Read/Write Request Handling Process</heading>
+<p id="p-0035" num="0034"><figref idref="DRAWINGS">FIG. 5</figref> is a flow chart that illustrates an exemplary process for handling read or write requests received from data reader/writer <b>110</b>. The exemplary process of <figref idref="DRAWINGS">FIG. 5</figref> may be performed by cache controller <b>210</b>. In other embodiments, some or all of the blocks described below may be performed by another component or device, or a combination of components or devices.</p>
+<p id="p-0036" num="0035">The exemplary process may include receiving a read or write request (block <b>500</b>). Cache controller <b>210</b> may receive a read or write request from data reader/writer <b>110</b>. The read request may include the address in memory <b>130</b> from which data is to be read. The write request may include the data to be written into memory <b>130</b>, and the address in memory <b>130</b> into which the data is to be written.</p>
+<p id="p-0037" num="0036">It may be determined whether the received request is a read request (block <b>505</b>). Cache controller <b>210</b> may analyze the received read or write request to identify if it is a read request. If the received request is a read request (block <b>505</b>&#x2014;YES), then it may be determined if the requested data is stored in cache memory <b>220</b> (block <b>510</b>). Upon determining that the received request is a read request, cache controller <b>210</b> may search through each read/write address field <b>440</b> of cache entries <b>400</b> to identify a read/write address stored in field <b>440</b> that matches the read address contained in the read request. If there are no matches between the read address contained in the read request, and the contents of read/write address field <b>440</b> of entries <b>400</b> of cache memory <b>220</b>, then cache controller <b>210</b> may determine that the requested data is not stored in cache memory <b>220</b>. If a match is found between the read address contained in the read request, and the contents of a read/write address field <b>440</b> of an entry <b>400</b> of cache memory <b>220</b>, then cache controller <b>210</b> may determine that the requested data is stored in cache memory <b>220</b>.</p>
+<p id="p-0038" num="0037">If the requested data is stored in cache memory <b>220</b> (block <b>510</b>&#x2014;YES), then the requested data may be retrieved from the corresponding entry in cache memory <b>220</b> (block <b>515</b>). Cache controller <b>210</b> may retrieve data from read/write data field <b>410</b> of the cache entry identified in block <b>510</b>. The data retrieved from cache memory <b>220</b> may be subsequently returned to data reader/writer <b>110</b> that requested the data read operation. <figref idref="DRAWINGS">FIG. 6A</figref> depicts an example of retrieval of read data from cache memory <b>220</b>. As shown in <figref idref="DRAWINGS">FIG. 6A</figref>, an identification of an entry <b>400</b> whose memory address <b>440</b> (read_address_m shown in <figref idref="DRAWINGS">FIG. 6A</figref>) matches the address contained in the read request permits cache controller <b>210</b> (not shown in <figref idref="DRAWINGS">FIG. 6A</figref>) to read <b>600</b> the data from read/write data field <b>410</b> of entry <b>410</b> of cache memory <b>220</b>. Retrieval of read data from cache memory <b>220</b> saves power as opposed to having to read the data from read/write data <b>310</b> of memory <b>130</b>. The data retrieved from cache memory <b>220</b> may be returned to the requesting data reader/writer <b>110</b>.</p>
+<p id="p-0039" num="0038">If the requested data is not stored in cache memory <b>220</b> (block <b>510</b>&#x2014;NO), then the requested data may be retrieved from memory <b>130</b>, using the memory address contained in the read request, during the earliest clock cycle that memory <b>130</b> is free, giving priority to the memory read over any writebacks (block <b>520</b>). Memory <b>130</b> is free when no other memory reads have been previously scheduled for execution. The memory read being performed in block <b>520</b> may be performed prior to any other pending data writebacks from cache memory <b>220</b> to memory <b>130</b>. <figref idref="DRAWINGS">FIG. 6B</figref> depicts an example of retrieval of read data from memory <b>130</b>. As shown in <figref idref="DRAWINGS">FIG. 6B</figref>, an attempt <b>610</b> to retrieve data from cache memory <b>220</b> may fail (i.e., the requested read data is not stored in cache memory <b>220</b>) and may then result in retrieval <b>620</b> of the requested data from read/write data <b>310</b> of memory <b>130</b>. The data retrieved from memory <b>130</b> may be returned to the requesting data reader/writer <b>110</b>, in addition to being stored (i.e., similar to a read request) in an entry <b>400</b> of cache memory <b>220</b>.</p>
+<p id="p-0040" num="0039">Returning to block <b>505</b>, if it is determined that the received request is not a read request (i.e., it is a write request), then per-bit data may be written to cache memory <b>220</b> for subsequent writeback to memory (as described below with respect to <figref idref="DRAWINGS">FIG. 8</figref>), and the exemplary process of <figref idref="DRAWINGS">FIG. 5</figref> may end. Cache controller <b>210</b> may analyze the received request to identify that the request is a write request. Data may be written to cache memory <b>220</b> per-bit, as described above with respect to <figref idref="DRAWINGS">FIG. 4A</figref>. Once the per-bit data has been written to cache memory <b>220</b>, subsequent writeback of the data from cache memory <b>220</b> to memory <b>130</b> may occur at a clock cycle that is subsequent to a current clock cycle (i.e., a delay occurs between storing the data in cache memory <b>220</b>, and writing the data back to memory <b>130</b> from cache memory <b>220</b>).</p>
+<p id="p-0041" num="0040">The exemplary process of <figref idref="DRAWINGS">FIG. 5</figref> may be selectively repeated by cache controller <b>210</b> for each read or write request received from data reader/writer <b>110</b>.</p>
+<heading id="h-0010" level="1">Exemplary Read/Write Request Blocking Process</heading>
+<p id="p-0042" num="0041"><figref idref="DRAWINGS">FIG. 7</figref> is a flow chart that illustrates an exemplary process for blocking read/write requests from data readers/writers <b>110</b>. The exemplary process of <figref idref="DRAWINGS">FIG. 7</figref> may be performed by cache controller <b>210</b>. In other embodiments, some or all of the blocks described below may be performed by another component or device, or a combination of components or devices. The exemplary process of <figref idref="DRAWINGS">FIG. 7</figref> may be performed for each one of data readers/writers <b>110</b>-<b>1</b> through <b>110</b>-N that has data stored in cache memory <b>220</b>. Therefore, since cache memory <b>220</b> may be partitioned on a per-data reader/writer basis, as described above, a determination of a number of dirty entries in cache memory <b>220</b> (described below with respect to blocks <b>700</b> and <b>710</b>) may be performed separately for each data reader/writer's entries in cache memory <b>220</b>.</p>
+<p id="p-0043" num="0042">The exemplary process may include determining the number of dirty entries in cache memory <b>220</b> for a given data reader/writer <b>110</b> (block <b>700</b>). Though not shown in <figref idref="DRAWINGS">FIG. 4A</figref>, cache entries <b>400</b> may be grouped together for each data reader/writer <b>110</b> that has data stored in cache memory <b>220</b>. For example, data reader/writer <b>110</b>-<b>1</b> may be associated with a first group of cache entries <b>400</b>, and data reader/writer <b>110</b>-N may be associated with a second, different group of cache entries <b>400</b>. The entries for each groups of cache entries associated with a given data reader/writer <b>110</b> may be contiguous in cache memory <b>220</b> (i.e., partitioned together).</p>
+<p id="p-0044" num="0043">If there are not too many dirty entries in cache memory <b>220</b> (block <b>710</b>&#x2014;NO), then the exemplary process may return to block <b>700</b> (i.e., a continuous loop that keeps track of whether a data reader/writer has too many dirty entries stored in cache memory <b>220</b>). Cache controller <b>210</b> may determine that a threshold number of dirty entries, per data reader/writer, (e.g., four) are &#x201c;too many.&#x201d; The threshold number may be a static, pre-set value, or may be set dynamically.</p>
+<p id="p-0045" num="0044">If there are too many dirty entries in cache memory <b>220</b> (block <b>710</b>&#x2014;YES), then a blocking notification may be sent to the data reader/writer <b>110</b> (block <b>720</b>). <figref idref="DRAWINGS">FIG. 8</figref> depicts an example where cache controller <b>210</b> has determined that four entries <b>400</b> in cache memory <b>220</b> have dirty bits <b>430</b> set to one (i.e., indicating that they are dirty). In this example, the threshold for &#x201c;too many dirty entries&#x201d; is pre-set at four, and, therefore, cache controller <b>210</b> may determine that too many dirty entries are contained in cache memory <b>220</b>. The blocking notification sent by cache controller <b>210</b> notifies the data reader/writer (i.e., that has too many dirty entries in cache memory <b>220</b>) that the data reader/writer may not issue any additional read/write requests to cache controller <b>210</b> until cache controller <b>210</b> notifies the data reader/writer that the blocking has been discontinued. Read/write requests from the data reader/writer may continue to be blocked until cache memory <b>200</b> has few enough dirty entries for the data reader/writer (block <b>730</b>). Cache controller <b>210</b> may monitor the number of dirty entries stored in cache memory <b>220</b> for a given data reader/writer and, if the number of dirty entries is reduced to a few enough number (e.g., below a certain threshold number), cache controller <b>210</b> may send a notification to the data reader/writer notifying the data reader/writer that it may now send new read/write requests.</p>
+<p id="p-0046" num="0045">Cache controller <b>210</b> may determine that a threshold number of dirty entries (e.g., four) are &#x201c;too many.&#x201d; The threshold number may be a static, pre-set value, or may be set dynamically. <figref idref="DRAWINGS">FIG. 7</figref> depicts an example where cache controller <b>210</b> has determined that four entries <b>400</b> in cache memory <b>220</b> have dirty bits set to one (i.e., indicating that they are dirty). In this example, the threshold for &#x201c;too many dirty entries&#x201d; is pre-set at four, and, therefore, cache controller <b>210</b> may determine that too many dirty entries are contained in cache memory <b>220</b>.</p>
+<p id="p-0047" num="0046">If there are too many dirty entries in cache <b>220</b> (block <b>525</b>&#x2014;YES), then the writing of data to cache memory <b>220</b> may be blocked until the number of dirty entries in cache memory <b>220</b> is below the threshold (block <b>530</b>). While the writing of data to cache memory <b>220</b> is blocked, cache controller <b>210</b> may permit no further writing of data to, or reading of data from, cache memory <b>220</b> and memory <b>130</b> until there are few enough dirty entries stored in cache memory <b>220</b>. Reduction of the number dirty entries in cache memory <b>220</b> may occur due to forced or opportunistic writebacks, as described below with respect to blocks <b>915</b> and <b>925</b> in <figref idref="DRAWINGS">FIG. 9</figref>.</p>
+<heading id="h-0011" level="1">Exemplary Per Cycle Memory Writeback Process</heading>
+<p id="p-0048" num="0047"><figref idref="DRAWINGS">FIG. 9</figref> is a flow chart that illustrates an exemplary process for performing a per-clock cycle writeback of data from cache memory <b>220</b> to memory <b>130</b>. The exemplary process of <figref idref="DRAWINGS">FIG. 9</figref> may be performed by cache controller <b>210</b>. In other embodiments, some or all of the blocks described below may be performed by another component or device, or a combination of components or devices. The exemplary process of <figref idref="DRAWINGS">FIG. 9</figref> may, for example, be performed during each system clock cycle of system <b>100</b>.</p>
+<p id="p-0049" num="0048">Subsequent to the start of a system clock cycle, the exemplary process may include determining if there is a pending read request(s) (block <b>900</b>). Cache controller <b>210</b> may receive one or more read requests from data reader/writers <b>110</b>-<b>1</b> through <b>110</b>-N. Since memory <b>130</b> is a single port memory, and, therefore, permits only one memory read or write per clock cycle, multiple pending read requests may be queued based on their arrival time at cache controller <b>210</b>. As described with respect to blocks <b>510</b>, <b>515</b> and <b>520</b> of <figref idref="DRAWINGS">FIG. 5</figref> above, cache controller <b>210</b> may determine, for a given read request from data reader/writer <b>110</b>, that the requested data is not stored in cache memory <b>220</b>. If the requested data is not stored in cache memory <b>220</b>, then the read request may be pending to read the data from memory <b>130</b>. If a read request(s) is pending (block <b>900</b>&#x2014;YES), cache controller <b>210</b> may wait until the next clock cycle to attempt to perform any data writebacks from cache memory <b>220</b> to memory <b>130</b> (block <b>905</b>). Read requests may be performed as described above with respect to blocks <b>510</b>-<b>520</b> of <figref idref="DRAWINGS">FIG. 5</figref>, where the data reads are performed prior to any data writes.</p>
+<p id="p-0050" num="0049">If there is no pending reading request(s) (block <b>900</b>&#x2014;NO), then it may be determined whether data writing to cache memory <b>220</b> has been blocked (block <b>910</b>). Data writing to cache <b>220</b> may have been blocked due to too many dirty entries being stored in cache memory <b>220</b> at the time an attempt was made to write a new data item to cache <b>220</b> (see block <b>530</b> above). If data writing to cache memory <b>220</b> is currently blocked (block <b>910</b>&#x2014;YES), then a dirty entry from cache memory <b>220</b> may be written back from cache memory <b>220</b> to memory <b>130</b> prior to any opportunistic writeback (i.e., that occurs in block <b>925</b> below) (block <b>915</b>). The dirty entry from cache memory <b>220</b> that is written back from cache memory <b>220</b> to memory <b>130</b> may be set to clean (block <b>920</b>). Block <b>915</b>, thus, may use a &#x201c;forced writeback&#x201d; technique in which a dirty entry in cache memory <b>220</b> is written back to memory <b>130</b>, if no data reads are being performed, and prior to any opportunistic writebacks (described with respect to block <b>925</b> below). The &#x201c;forced writeback,&#x201d; therefore, copies data from cache memory <b>220</b> to memory at a higher priority than opportunistic writebacks, but at a lower priority than memory reads. Upon the writing back of data from cache memory <b>220</b> to memory <b>130</b>, dirty bit <b>430</b> of the written data's entry <b>400</b> in cache memory <b>220</b> may be set to zero, indicating that the entry is clean (i.e., has been written to memory <b>130</b>). <figref idref="DRAWINGS">FIG. 10</figref> depicts an example of the writing back of data from cache memory <b>220</b> to memory <b>130</b>. As shown, entry <b>400</b> of cache memory <b>220</b> includes a dirty entry (i.e., dirty bit <b>430</b> set to one), and is written back <b>1000</b> from cache memory <b>220</b> to an address of memory <b>130</b> that corresponds to the write address contained in read/write address field <b>440</b>.</p>
+<p id="p-0051" num="0050">If data writing to cache memory <b>220</b> is not currently being blocked (block <b>910</b>&#x2014;NO), then a dirty entry from cache memory <b>220</b> may be written back from cache memory <b>220</b> to memory <b>130</b> subsequent to any forced writebacks (i.e., that occur in block <b>915</b> above). The dirty entry from cache memory <b>220</b> that is written back from cache memory <b>220</b> to memory <b>130</b> may be set to clean (block <b>930</b>). Block <b>925</b> may, thus, use an &#x201c;opportunistic writeback&#x201d; technique in which a dirty entry in cache memory <b>220</b> is written back to memory <b>130</b>, if no data reads are being performed, subsequent to any forced writebacks (described with respect to block <b>915</b> above). The &#x201c;opportunistic writeback,&#x201d; therefore, copies data from cache <b>220</b> to memory <b>130</b> at a lower priority than both forced writebacks and data reads. Upon the writing back of data from cache memory <b>220</b> to memory <b>130</b>, dirty bit <b>430</b> of the written data's entry <b>400</b> in cache memory <b>220</b> may be set to zero, indicating that the entry is clean.</p>
+<p id="p-0052" num="0051">Blocks <b>900</b> through <b>930</b> may be repeated for each clock cycle of system <b>100</b>. The exemplary process of <figref idref="DRAWINGS">FIG. 9</figref> may be executed in parallel with the exemplary process of <figref idref="DRAWINGS">FIG. 5</figref>. Thus, the exemplary process of <figref idref="DRAWINGS">FIG. 9</figref> may be executed simultaneously with the exemplary process of <figref idref="DRAWINGS">FIG. 9</figref> by cache controller <b>210</b>.</p>
+<heading id="h-0012" level="1">Exemplary Cache Flushing Process</heading>
+<p id="p-0053" num="0052"><figref idref="DRAWINGS">FIG. 11</figref> is a flow chart that illustrates an exemplary process for flushing dirty entries from cache <b>220</b>. The exemplary process of <figref idref="DRAWINGS">FIG. 11</figref> may be performed by cache controller <b>210</b>. In other embodiments, some or all of the blocks described below may be performed by another component or device, or a combination of components or devices.</p>
+<p id="p-0054" num="0053">The exemplary process may include determining whether a cache flush should be performed (block <b>1100</b>). A cache flush may be pre-configured to occur at periodic intervals, or may occur based on dynamic factors (e.g., a number of read and/or write requests received, etc.). In some embodiments, the cache flush may occur upon the execution of a specific instruction. Cache controller <b>210</b> may make the determination of whether a cache flush should be performed. If a cache flush is to be performed (block <b>1100</b>&#x2014;YES), then dirty entries from cache memory <b>220</b> may be written back to memory <b>130</b> at an earliest clock cycle during which memory <b>130</b> is free, after any pending memory reads, but prior to any opportunistic writebacks. The cache flush process may include writing back all dirty entries stored in cache memory <b>220</b> to memory <b>130</b>. The cache flush write back process, however, may occur only after all pending reads have been performed, but prior to any opportunistic writebacks (described above with respect to block <b>925</b> of <figref idref="DRAWINGS">FIG. 9</figref>). The cache flush process, therefore, may result in all dirty entries stored in cache memory <b>220</b> being written back to memory <b>130</b>. Given that memory <b>130</b> includes a single port memory, the cache flush process of <figref idref="DRAWINGS">FIG. 10</figref> may be performed over multiple clock cycles, with one writeback from cache memory <b>220</b> to memory <b>130</b> occurring for each clock cycle. <figref idref="DRAWINGS">FIG. 12</figref> depicts an example of cache flushing. As shown in <figref idref="DRAWINGS">FIG. 12</figref>, multiple dirty entries (i.e., having dirty bit <b>430</b> set to one) are written back <b>1200</b> from cache memory <b>220</b> to a respective address of memory <b>130</b> that corresponds to the dirty entry's write address contained in read/write address field <b>440</b>. The cache flushing of <figref idref="DRAWINGS">FIG. 12</figref> may occur over multiple clock cycles (i.e., at least one clock cycle per dirty entry writeback to memory <b>130</b>).</p>
+<p id="p-0055" num="0054">The exemplary process of <figref idref="DRAWINGS">FIG. 11</figref> may be executed in parallel with the exemplary processes of <figref idref="DRAWINGS">FIGS. 5 and 9</figref>. Thus, the exemplary process of <figref idref="DRAWINGS">FIG. 11</figref> may be executed simultaneously with the exemplary processes of <figref idref="DRAWINGS">FIGS. 5 and 9</figref> by cache controller <b>210</b>.</p>
+<heading id="h-0013" level="1">CONCLUSION</heading>
+<p id="p-0056" num="0055">As described herein, a separate cache memory may be used in conjunction with reading data from, or writing data to, a single port memory in a memory read/write system. The separate cache memory reduces memory bandwidth pressure by delaying data writes to the single port memory until subsequent clock cycles in which no read requests are pending. Read requests, therefore, are given priority over write requests when accessing the single port memory.</p>
+<p id="p-0057" num="0056">The foregoing description of embodiments described herein provides illustration and description, but is not intended to be exhaustive or to limit the embodiments described herein to the precise form disclosed. Modifications and variations are possible in light of the above teachings or may be acquired from practice of the invention.</p>
+<p id="p-0058" num="0057">While series of blocks have been described in <figref idref="DRAWINGS">FIGS. 5</figref>, <b>7</b>, <b>9</b> and <b>11</b>, the order of the blocks may vary in other implementations. Also, non-dependent blocks may be performed in parallel. Even though particular combinations of features are recited in the claims and/or disclosed in the specification, these combinations are not intended to limit the invention. In fact, many of these features may be combined in ways not specifically recited in the claims and/or disclosed in the specification.</p>
+<p id="p-0059" num="0058">No element, act, or instruction used in the description of the present application should be construed as critical or essential to the invention unless explicitly described as such. Also, as used herein, the article &#x201c;a&#x201d; is intended to include one or more items. Where only one item is intended, the term &#x201c;one&#x201d; or similar language is used. Further, the phrase &#x201c;based on&#x201d; is intended to mean &#x201c;based, at least in part, on&#x201d; unless explicitly stated otherwise. The scope of the invention is defined by the claims and their equivalents.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method comprising:
+<claim-text>receiving, at a controller of a data read/write system, first data to write to an address of a single port memory;</claim-text>
+<claim-text>receiving, at the controller, a request to read second data from the single port memory;</claim-text>
+<claim-text>determining, by the controller, a quantity of entries stored in a cache memory that is separate from the single port memory,
+<claim-text>each of the quantity of entries including a dirty bit field,
+<claim-text>the dirty bit field indicating whether data stored in a data field of an entry, of the quantity of entries, has been written back from the cache memory to the single port memory;</claim-text>
+</claim-text>
+</claim-text>
+<claim-text>transmitting, by the controller and when a determined quantity of entries including a dirty bit field indicating that the data stored in the data field has not been written back from the cache memory to the single port memory is greater than a threshold, a blocking notification,
+<claim-text>the blocking notification indicating that write requests will be blocked until the determined quantity is less than the threshold;</claim-text>
+</claim-text>
+<claim-text>writing, by the controller and when the determined quantity is greater than the threshold, an entry, of the quantity of entries, to the single port memory based on a first priority,
+<claim-text>the dirty bit field of the entry indicating that the data stored in the data field of the entry has not been written back from the cache memory to the single port memory;</claim-text>
+</claim-text>
+<claim-text>changing, by the controller and based on writing the entry, a value associated with the dirty bit field of the entry;</claim-text>
+<claim-text>storing, by the controller and when the determined quantity is less than the threshold, the first data in the cache memory based on a second priority,
+<claim-text>the second priority being less than the first priority;</claim-text>
+</claim-text>
+<claim-text>retrieving the second data from either the cache memory or the single port memory during a first system clock cycle; and</claim-text>
+<claim-text>copying the first data from the cache memory and storing the first data at the address in the single port memory during a second system clock cycle that is different than the first system clock cycle.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, where retrieving the second data from either the cache memory or the single port memory comprises:
+<claim-text>determining, by the controller, if the second data is stored in the cache memory;</claim-text>
+<claim-text>retrieving the second data from the cache memory, and not from the single port memory, when the second data is stored in the cache memory; and</claim-text>
+<claim-text>retrieving the second data from the single port memory, and not the cache memory, when the second data is not stored in the cache memory.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, where storing the first data in the memory cache comprises:
+<claim-text>using per-bit write enables to store bits of the first data in the cache memory.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, where the request to read the second data from the single port memory is received from a data reader, the method further comprising:
+<claim-text>determining, for the data reader, a number of items of data stored in the cache memory that have not been copied from the cache memory and stored in the single port memory; and</claim-text>
+<claim-text>sending a blocking notification to the data reader notifying the data reader that future read requests are blocked.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00004">claim 4</claim-ref>, where the blocking notification is sent if the determined number of items of data is greater than a specified number.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. A system comprising:
+<claim-text>a system clock;</claim-text>
+<claim-text>a single port memory;</claim-text>
+<claim-text>a cache memory that is separate from the single port memory; and</claim-text>
+<claim-text>a controller to:
+<claim-text>receive first data to write to an address of the single port memory;</claim-text>
+<claim-text>receive a request to read second data from the single port memory;</claim-text>
+<claim-text>determine a quantity of entries stored in the cache memory,
+<claim-text>each of the quantity of entries including a dirty bit field,</claim-text>
+<claim-text>the dirty bit field indicating whether data stored in a data field of an entry, of the quantity of entries, has been written back from the cache memory to the single port memory;</claim-text>
+</claim-text>
+<claim-text>transmit, when a determined quantity of entries including a dirty bit field indicating that the data stored in the data field has not been written back from the cache memory to the single port memory is greater than a threshold, a blocking notification,
+<claim-text>the blocking notification indicating that write requests will be blocked until the determined quantity is less than the threshold;</claim-text>
+</claim-text>
+<claim-text>write when the determined quantity is greater than the threshold, an entry, of the quantity of entries, to the single port memory based on a first priority,
+<claim-text>the dirty bit field of the entry indicating that the data stored in the data field of the entry has not been written back from the cache memory to the single port memory;</claim-text>
+</claim-text>
+<claim-text>change, based on writing the entry, a value associated with the dirty bit field of the entry;</claim-text>
+<claim-text>store, when the determined quantity is less than the threshold, the first data in the cache memory based on a second priority,
+<claim-text>the second priority being less than the first priority;</claim-text>
+</claim-text>
+<claim-text>retrieve the second data from either the cache memory or the single port memory during a first clock cycle of the system clock; and</claim-text>
+<claim-text>copy the first data from the cache memory and store the first data at the address in the single port memory during a second clock cycle of the system clock that is different than the first clock cycle.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The system of <claim-ref idref="CLM-00006">claim 6</claim-ref>, where, when retrieving the second data from either the cache memory or the single port memory, the controller is further to:
+<claim-text>determine if the second data is stored in the cache memory,</claim-text>
+<claim-text>retrieve the second data from the cache memory, and not from the single port memory, when the second data is stored in the cache memory, and</claim-text>
+<claim-text>retrieve the second data from the single port memory when the second data is not stored in the cache memory.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The system of <claim-ref idref="CLM-00006">claim 6</claim-ref>, where, when storing the first data in the memory cache, the controller is further to:
+<claim-text>use per-bit write enables to store bits of the first data in the cache memory.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The system of <claim-ref idref="CLM-00006">claim 6</claim-ref>, where the request to read the second data from the single port memory is received from a data reader and where the controller is further to:
+<claim-text>determine, for the data reader, a number of items of data stored in the cache memory that have not been copied from the cache memory and stored in the single port memory, and</claim-text>
+<claim-text>send a blocking notification to the data reader notifying the data reader that future read requests are blocked.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The system of <claim-ref idref="CLM-00009">claim 9</claim-ref>, where the blocking notification is sent when the determined number of items of data is greater than a specified number.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. A method comprising:
+<claim-text>receiving, by at least one controller, read requests for reading data from a single port memory;</claim-text>
+<claim-text>receiving, by the at least one controller, write requests for writing data to the single port memory;</claim-text>
+<claim-text>determining, by the at least one controller, a quantity of entries stored in a cache memory that is external to the single port memory,
+<claim-text>each of the quantity of entries including a dirty bit field,
+<claim-text>the dirty bit field indicating whether data stored in a data field of an entry, of the quantity of entries, has been written back from the cache memory to the single port memory;</claim-text>
+</claim-text>
+</claim-text>
+<claim-text>transmitting, by the at least one controller and when a determined quantity of entries including a dirty bit field indicating that the data stored in the data field has not been written back from the cache memory to the single port memory is greater than a threshold, a blocking notification,
+<claim-text>the blocking notification indicating that write requests will be blocked until the determined quantity is less than the threshold;</claim-text>
+</claim-text>
+<claim-text>writing, by the at least one controller and when the determined quantity is greater than the threshold, an entry, of the quantity of entries, to the single port memory based on a first priority,
+<claim-text>the dirty bit field of the entry indicating that the data stored in the data field of the entry has not been written back from the cache memory to the single port memory;</claim-text>
+</claim-text>
+<claim-text>changing, by the at least one controller and based on writing the entry, a value associated with the dirty bit field of the entry;</claim-text>
+<claim-text>storing, by the at least one controller and when the determined quantity is less than the threshold, data associated with the write requests to the cache memory based on a second priority,
+<claim-text>the second priority being less than the first priority;</claim-text>
+</claim-text>
+<claim-text>assigning, by the at least one controller, a third priority to at least a portion of the read requests and a fourth priority to the write requests,
+<claim-text>the first priority being greater than the fourth priority; and</claim-text>
+</claim-text>
+<claim-text>accessing, by the at least one controller, the single port memory to read the first data from the single port memory, or to write the second data from storage in the cache memory to the single port memory, based on the assigned third priority and fourth priority.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The method of <claim-ref idref="CLM-00011">claim 11</claim-ref>, further comprising:
+<claim-text>determining whether the data requested in the read requests is stored in the cache memory, and</claim-text>
+<claim-text>where the at least a portion of the read requests comprise the read requests including requested data that is not stored in the cache memory.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The method of <claim-ref idref="CLM-00011">claim 11</claim-ref>, where accessing the single port memory based on the assigned third priority and the assigned fourth priority comprises:
+<claim-text>accessing the single port memory to read the first data from the single port memory prior to accessing the single port memory to write the second data from storage in the cache memory to the single port memory.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The method of <claim-ref idref="CLM-00011">claim 11</claim-ref>, where
+<claim-text>accessing the single port memory to read the first data from the single port memory occurs during one or more first clock cycles, and</claim-text>
+<claim-text>accessing the single port memory to write the second data from storage in the cache to the single port memory occurs during one or more second clock cycles that are subsequent to the one or more first clock cycles.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. A system comprising:
+<claim-text>a single port memory;</claim-text>
+<claim-text>a cache memory that is separate from the single port memory; and</claim-text>
+<claim-text>a controller to:
+<claim-text>receive read requests for reading first data from the single port memory;</claim-text>
+<claim-text>receive write requests for writing second data to the single port memory;</claim-text>
+<claim-text>determine a quantity of entries stored in the cache memory,
+<claim-text>each of the quantity of entries being associated with a dirty bit field,
+<claim-text>the dirty bit field indicating whether data stored in a data field of an entry, of the quantity of entries, has been written back from the cache memory to the single port memory;</claim-text>
+</claim-text>
+</claim-text>
+<claim-text>transmit, when a determined quantity of entries including a dirty bit field indicating that the data stored in the data field has not been written back from the cache memory to the single port memory is greater than a threshold, a blocking notification,
+<claim-text>the blocking notification indicating that write requests will be blocked until the determined quantity is less than the threshold;</claim-text>
+</claim-text>
+<claim-text>write when the determined quantity is greater than the threshold, an entry, of the quantity of entries, to the single port memory based on a first priority,
+<claim-text>the dirty bit field of the entry indicating that the data stored in the data field of the entry has not been written back from the cache memory to the single port memory;</claim-text>
+</claim-text>
+<claim-text>change, based on writing the entry, a value associated with the dirty bit field of the entry;</claim-text>
+<claim-text>store, when the determined quantity is less than the threshold, the second data associated with the write requests to the cache memory based on a second priority,
+<claim-text>the second priority being less than the first priority; and</claim-text>
+</claim-text>
+<claim-text>assign a priority to the read requests over the write requests when accessing the single port memory to read the first data from the single port memory or write the second data from the cache memory to the single port memory.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, where, when accessing the single port memory, the cache controller is further to:
+<claim-text>access the single port memory to read the first data from the single port memory prior to accessing the single port memory to write the second data from the cache memory to the single port memory.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, where accessing the single port memory to read the first data from the single port memory occurs during first clock cycles, and where accessing the single port memory to write the second data from the memory cache to the single port memory occurs during second clock cycles that are subsequent to the first clock cycles.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. A method comprising:
+<claim-text>receiving, by a controller, data to store at an address of a single port memory;</claim-text>
+<claim-text>determining, by the controller, a quantity of entries stored in a cache memory that is separate from the single port memory;</claim-text>
+<claim-text>transmitting, by the controller and when the determined quantity of entries is greater than a threshold, a blocking notification,
+<claim-text>the blocking notification indicating that write requests will be blocked until the determined quantity is less than the threshold;</claim-text>
+</claim-text>
+<claim-text>writing, by the controller and when the determined quantity is greater than the threshold, an entry, of the quantity of entries, to the single port memory based on a first priority,</claim-text>
+<claim-text>changing, by the controller and based on writing the entry, a value associated with a bit field of the entry;</claim-text>
+<claim-text>storing, by the controller and when the determined quantity is less than the threshold, the data, at a first system clock cycle, in the cache memory based on a second priority,
+<claim-text>the second priority being less than the first priority;</claim-text>
+</claim-text>
+<claim-text>copying the data from the cache memory, at a second system clock cycle;</claim-text>
+<claim-text>storing the data at the address in the single port memory;</claim-text>
+<claim-text>receiving, at the controller, a request to read the data from the single port memory;</claim-text>
+<claim-text>determining, by the controller, if the data remains stored in the cache memory;</claim-text>
+<claim-text>retrieving the data from the cache memory, and not from the single port memory, if the data remains stored in the cache memory;</claim-text>
+<claim-text>retrieving the data from the address in the single port memory if the data is no longer stored in the cache memory; and</claim-text>
+<claim-text>returning the retrieved data based on the request to read the data.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The method of <claim-ref idref="CLM-00018">claim 18</claim-ref>, where the second system clock cycle is subsequent to the first system clock cycle.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. A system comprising:
+<claim-text>a single port memory;</claim-text>
+<claim-text>a cache memory that is separate from the single port memory; and</claim-text>
+<claim-text>at least one controller to:
+<claim-text>receive data to store at an address of the single port memory;</claim-text>
+<claim-text>determine a quantity of entries stored in the cache memory;</claim-text>
+<claim-text>transmit, when the determined quantity of entries is greater than a threshold, a blocking notification,
+<claim-text>the blocking notification indicating that write requests will be blocked until the determined quantity is less than the threshold;</claim-text>
+</claim-text>
+<claim-text>write when the determined quantity is greater than the threshold, an entry, of the quantity of entries, to the single port memory based on a first priority;</claim-text>
+<claim-text>change, based on writing the entry, a value associated with a bit field of the entry;</claim-text>
+<claim-text>store, when the determined quantity is less than the threshold, the data, at a first system clock cycle, in the cache memory based on a second priority,
+<claim-text>the second priority being less than the first priority;</claim-text>
+</claim-text>
+<claim-text>copy the data from the cache memory at a second system clock cycle, the second system clock cycle being subsequent to the first system clock cycle;</claim-text>
+<claim-text>store the data at the address in the single port memory;</claim-text>
+<claim-text>receive a request to read the data from the single port memory;</claim-text>
+<claim-text>determine if the data remains stored in the cache memory;</claim-text>
+<claim-text>retrieve the data from the cache memory, and not from the single port memory, if the data remains stored in the cache memory; and</claim-text>
+<claim-text>retrieve the data from the address in the single port memory if the data is no longer stored in the cache memory.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

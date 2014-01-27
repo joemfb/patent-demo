@@ -1,0 +1,2034 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08624574-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08624574</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13759640</doc-number>
+<date>20130205</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>05</class>
+<subclass>F</subclass>
+<main-group>1</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>323288</main-classification>
+</classification-national>
+<invention-title id="d2e51">Pulse width modulation controller of DC-DC converter</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>6377032</doc-number>
+<kind>B1</kind>
+<name>Andruzzi et al.</name>
+<date>20020400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>6583610</doc-number>
+<kind>B2</kind>
+<name>Groom et al.</name>
+<date>20030600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>6661214</doc-number>
+<kind>B1</kind>
+<name>Hann et al.</name>
+<date>20031200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>2004/0036458</doc-number>
+<kind>A1</kind>
+<name>Johnson et al.</name>
+<date>20040200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>2005/0184717</doc-number>
+<kind>A1</kind>
+<name>Walters</name>
+<date>20050800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>323284</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>2009/0128110</doc-number>
+<kind>A1</kind>
+<name>DeLurio et al.</name>
+<date>20090500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>11</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>323282</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>323284</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>323285</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>323288</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>10</number-of-drawing-sheets>
+<number-of-figures>12</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>12536086</doc-number>
+<date>20090805</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8395367</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13759640</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20130147456</doc-number>
+<kind>A1</kind>
+<date>20130613</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only" applicant-authority-category="assignee">
+<addressbook>
+<orgname>uPI Semiconductor Corporation</orgname>
+<address>
+<city>Zhubei</city>
+<country>TW</country>
+</address>
+</addressbook>
+<residence>
+<country>TW</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Chien</last-name>
+<first-name>Min-Chu</first-name>
+<address>
+<city>Hsinchu</city>
+<country>TW</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Huang</last-name>
+<first-name>Yung-Peng</first-name>
+<address>
+<city>Taipei</city>
+<country>TW</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>McClure, Qualey &#x26; Rodack, LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>UPI Semiconductor Corporation</orgname>
+<role>03</role>
+<address>
+<city>Taipei</city>
+<country>TW</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Behm</last-name>
+<first-name>Harry</first-name>
+<department>2838</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Grubb</last-name>
+<first-name>Matthew</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A DC-DC converter including a Pulse Width Modulation (PWM) controller for converting an input voltage into an output voltage is provided. The PWM controller includes: an error amplifier, receiving a reference voltage and a feedback voltage and provides an error signal; a compensation unit coupled to an output of the error amplifier, compensating the error signal and comprising a first resister and a first capacitor; a ramp generator, generating a ramp signal according to a constant on time PWM signal; a first comparator coupled to the compensation unit and the ramp generator, comparing the compensated error signal with the ramp signal to generate a trigger signal; and a PWM generator coupled to the first comparator, providing the constant on time PWM signal according to the trigger signal, an input voltage of the DC-DC converter and the output voltage of the DC-DC converter.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="165.27mm" wi="240.28mm" file="US08624574-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="247.48mm" wi="165.69mm" orientation="landscape" file="US08624574-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="153.50mm" wi="141.05mm" file="US08624574-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="240.54mm" wi="162.48mm" file="US08624574-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="222.42mm" wi="162.14mm" file="US08624574-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="168.66mm" wi="140.72mm" file="US08624574-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="246.13mm" wi="187.11mm" file="US08624574-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="252.39mm" wi="178.22mm" orientation="landscape" file="US08624574-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="250.70mm" wi="170.69mm" orientation="landscape" file="US08624574-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="247.48mm" wi="175.94mm" orientation="landscape" file="US08624574-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="240.88mm" wi="177.88mm" orientation="landscape" file="US08624574-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<p id="p-0002" num="0001">This application is a Continuation of pending U.S. patent application Ser. No. 12/536,086, filed Aug. 5, 2009, and entitled &#x201c;DC-DC Converter with a Constant On-Time Pulse Width Modulation Controller&#x201d;, the entirety of which is incorporated by reference herein.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0003" num="0002">1. Field of the Invention</p>
+<p id="p-0004" num="0003">The invention relates to a controller of a DC-DC converter, and more particularly to a DC-DC converter with a constant on time (COT) pulse width modulation (PWM) controller.</p>
+<p id="p-0005" num="0004">2. Description of the Related Art</p>
+<p id="p-0006" num="0005">DC-DC converters are widely used for various electronic devices. A constant on-time (COT) voltage regulator is one type of DC-DC converter. In general, a COT voltage regulator may turn on a main switch during a fixed period when a feedback voltage is smaller than a reference voltage, and the COT voltage regulator may adjust a turn off period of the main switch so that a steady output voltage may be provided. An output capacitor with a high equivalent series resistance (ESR) disposed in parallel with a load is necessary for a conventional COT voltage regulator, so that a steady output voltage may be provided. However, although a high ESR may help to provide system stability, for a COT voltage regulator, probability of output ripples increase due to the high ESR, which negatively influence the output voltage and power conversion efficiency of the COT voltage regulator.</p>
+<p id="p-0007" num="0006">U.S. Pat. No. 6,583,610 discloses a voltage regulator which operates in ripple-mode and comprises a virtual ripple generator. The virtual ripple generator provides a regulator feedback signal that includes a generated ripple component as a composite signal. The composite signal is generated according to an actual output signal and a ripple signal synchronized to switching cycles of the voltage regulator. Thus, the regulation feedback signal reflects the DC value of the output signal and is responsive to transient changes in the output signal level.</p>
+<heading id="h-0002" level="1">BRIEF SUMMARY OF THE INVENTION</heading>
+<p id="p-0008" num="0007">DC-DC converters are provided. An exemplary embodiment of the DC-DC converter for converting an input voltage into an output voltage is provided. The DC-DC converter comprises an input node for receiving the input voltage, an output node for providing the output voltage to a load, an inductor coupled between the output node and a first node, a first transistor coupled between the input node and the first node, a second transistor coupled between the first node and a ground, and a Pulse Width Modulation (PWM) controller. The PWM controller comprises an error amplifier, a first comparator, a PWM generator, and a ramp generator. The error amplifier receives a reference voltage and the output voltage to generate an error signal according to a difference between the reference voltage and the output voltage. The first comparator compares the error signal with a ramp signal to generate a trigger signal. The PWM generator generates a PWM signal with a fixed turn-on time, wherein a frequency of the PWM signal is adjusted according to the trigger signal, the input voltage and the output voltage. The ramp generator generates the ramp signal according to the PWM signal, the input voltage and the output voltage. The PWM controller provides the PWM signal to control the first transistor and the second transistor, so as to convert the input voltage into the output voltage.</p>
+<p id="p-0009" num="0008">Furthermore, another exemplary embodiment of a DC-DC converter for converting an input voltage into an output voltage is provided. The DC-DC converter comprises an input node for receiving the input voltage, an output node for providing the output voltage to a load, an inductor coupled between the output node and a first node, a first transistor coupled between the input node and the first node, a second transistor coupled between the first node and a ground, and a PWM controller. The PWM controller comprises an error amplifier, a sense unit, a compensation unit, a first comparator, a PWM generator, and a ramp generator. The error amplifier receives a reference voltage and the output voltage to generate an error signal according to a difference between the reference voltage and the output voltage. The sense unit senses the inductor to generate a sense current. The compensation unit generates a compensation signal according to the error signal and the sense current. The first comparator compares the compensation signal with a ramp signal to generate a trigger signal. The PWM generator generates a PWM signal with a fixed turn-on time, wherein a frequency of the PWM signal is adjusted according to the trigger signal, the input voltage and the output voltage. The ramp generator generates the ramp signal according to the PWM signal, the input voltage and the output voltage. The PWM controller provides the PWM signal to control the first transistor and the second transistor, so as to convert the input voltage into the output voltage.</p>
+<p id="p-0010" num="0009">Moreover, another exemplary embodiment of a DC-DC converter for converting an input voltage into an output voltage is provided. The DC-DC converter comprises an input node for receiving the input voltage, an output node for providing the output voltage to a load, an inductor coupled between the output node and a first node, a first transistor coupled between the input node and the first node, a second transistor coupled between the first node and a ground, and a PWM controller. The PWM controller comprises an error amplifier, a sense unit, a compensation unit, a first comparator, a PWM generator, and a ramp generator. The error amplifier receives a reference voltage and the output voltage to generate an error signal according to a difference between the reference voltage and the output voltage. The sense unit generates a sense current corresponding to a loading of the load. The compensation unit generates a compensation signal according to the sense current and a ramp signal. The first comparator compares the compensation signal with error signal to generate a trigger signal. The PWM generator generates a PWM signal with a fixed turn-on time, wherein a frequency of the PWM signal is adjusted according to the trigger signal, the input voltage and the output voltage. The ramp generator generates the ramp signal according to the PWM signal, the input voltage and the output voltage. The PWM controller provides the PWM signal to control the first transistor and the second transistor, so as to convert the input voltage into the output voltage.</p>
+<p id="p-0011" num="0010">A detailed description is given in the following embodiments with reference to the accompanying drawings.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF DRAWINGS</heading>
+<p id="p-0012" num="0011">The invention can be more fully understood by reading the subsequent detailed description and examples with references made to the accompanying drawings, wherein:</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 1</figref> shows a DC-DC converter according to an embodiment of the invention;</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 2</figref> shows a waveform diagram illustrating the relationship between the PWM signal S<sub>PWM </sub>and a current I<sub>L </sub>flowing through the inductor L of <figref idref="DRAWINGS">FIG. 1</figref>;</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 3A</figref> shows a PWM generator according to an embodiment of the invention;</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 3B</figref> shows a waveform diagram of the signals in the PWM generator of <figref idref="DRAWINGS">FIG. 3A</figref>;</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 4A</figref> shows a ramp generator according to an embodiment of the invention;</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 4B</figref> shows a waveform diagram of the signals in the ramp generator of <figref idref="DRAWINGS">FIG. 4A</figref>;</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 5</figref> shows an example illustrating a waveform diagram of the signals of the DC-DC converter of <figref idref="DRAWINGS">FIG. 1</figref>;</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 6</figref> shows another example illustrating a waveform diagram of the signals of the DC-DC converter of <figref idref="DRAWINGS">FIG. 1</figref>;</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 7</figref> shows a DC-DC converter according to another embodiment of the invention.</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 8</figref> shows a DC-DC converter according to another embodiment of the invention;</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 9</figref> shows a DC-DC converter according to another embodiment of the invention; and</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 10</figref> shows a DC-DC converter according to another embodiment of the invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION OF THE INVENTION</heading>
+<p id="p-0025" num="0024">The following description is of the best-contemplated mode of carrying out the invention. This description is made for the purpose of illustrating the general principles of the invention and should not be taken in a limiting sense. The scope of the invention is best determined by reference to the appended claims.</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 1</figref> shows a DC-DC converter <b>100</b> according to an embodiment of the invention. The DC-DC converter <b>100</b> converts an input voltage V<sub>IN </sub>received from an input node N<sub>in </sub>into an output voltage V<sub>OUT</sub>. The DC-DC converter <b>100</b> comprises two transistors MU and ML, an inductor L, a control unit <b>110</b> and a PWM controller <b>120</b>. The transistor MU is coupled between the input node N<sub>in </sub>and a node N<sub>1</sub>, and the transistor ML is coupled between the node N<sub>1 </sub>and a ground GND. In this embodiment, the transistors MU and ML are N-type transistors which function as the switches. The control unit <b>110</b> receives a pulse width modulation (PWM) signal S<sub>PWM </sub>provided by the PWM controller <b>120</b> and controls the transistors MU and ML to switch on or off according to the PWM signal S<sub>PWM</sub>. The inductor L is coupled between the node N<sub>1</sub>, and an output node N<sub>out</sub>, wherein the output voltage V<sub>OUT </sub>is outputted to a load <b>180</b> via the output node N<sub>out</sub>. Furthermore, an output capacitor C<b>1</b> with a lower equivalent series resistance (ESR) is coupled between the N<sub>out </sub>and the ground GND, and a resistor Resr represents an ESR of the output capacitor C<b>1</b>.</p>
+<p id="p-0027" num="0026">As shown in <figref idref="DRAWINGS">FIG. 1</figref>, the PWM controller <b>120</b> comprises a ramp generator <b>130</b>, a PWM generator <b>140</b>, a compensation unit <b>150</b>, an error amplifier <b>160</b> and a comparator <b>170</b>. The error amplifier <b>160</b> receives a reference voltage Y<sub>REF </sub>and the output voltage V<sub>OUT </sub>to generate an error signal V<sub>ERR </sub>according to a difference between the reference voltage V<sub>REF </sub>and the output voltage V<sub>OUT</sub>. The compensation unit <b>150</b> coupled between an output terminal of the error amplifier <b>160</b> and the comparator <b>170</b> is used to compensate the error signal V<sub>ERR</sub>, and the compensation unit <b>150</b> comprises a resistor <b>152</b> coupled to the output terminal of the error amplifier <b>160</b> and a capacitor <b>154</b> coupled between the resistor <b>152</b> and the ground GND. After the error signal V<sub>ERR </sub>is compensated, the comparator <b>170</b> compares the error signal V<sub>ERR </sub>with a ramp signal S<sub>RAMP </sub>provided by the ramp generator <b>130</b> to generate a trigger signal S<sub>TR</sub>. The PWM generator <b>140</b> generates the PWM signal S<sub>PWM </sub>according to the trigger signal S<sub>TR</sub>, the input voltage V<sub>IN </sub>and the output voltage Y<sub>OUT</sub>. The ramp generator <b>130</b> generates the ramp signal S<sub>RAMP </sub>according to the PWM signal S<sub>PWM</sub>, the input voltage Y<sub>IN </sub>and the output voltage Y<sub>OUT</sub>.</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 2</figref> shows a waveform diagram illustrating the relationship between the PWM signal S<sub>PWM </sub>and a current I<sub>L </sub>flowing through the inductor L of <figref idref="DRAWINGS">FIG. 1</figref>. Referring to <figref idref="DRAWINGS">FIG. 1</figref> and <figref idref="DRAWINGS">FIG. 2</figref> together, during a period T<sub>on </sub>(i.e. a turn-on time of the PWM signal), the PWM signal S<sub>PWM </sub>controls the transistor MU to turn on and controls the transistor ML to turn off. During a period T<sub>off </sub>(i.e. a turn-off time of the PWM signal), the PWM signal S<sub>PWM </sub>controls the transistor MU to turn off and controls the transistor ML to turn on. As shown in <figref idref="DRAWINGS">FIG. 2</figref>, the current I<sub>L </sub>has a minimum current value I<sub>min </sub>(ex. I<sub>min</sub>=O) at time t<b>1</b>, and then the current I<sub>L </sub>starts to increase and reaches a maximum current value I<sub>max </sub>at time t<b>2</b>, wherein I<sub>max</sub>=2&#xd7;I<sub>avg </sub>and I<sub>avg </sub>represents an average current value of the current I<sub>L</sub>. Next, the current I<sub>L </sub>starts to decrease and reaches the minimum current value I<sub>min </sub>at time t<b>3</b>. A rising slope SI of the current I<sub>L </sub>may be given by the following Equation (1):</p>
+<p id="p-0029" num="0028">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mi>S</mi>
+          <mo>&#x2062;</mo>
+          <mstyle>
+            <mspace width="0.3em" height="0.3ex"/>
+          </mstyle>
+          <mo>&#x2062;</mo>
+          <mn>1</mn>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>V</mi>
+                <mi>IN</mi>
+              </msub>
+              <mo>-</mo>
+              <msub>
+                <mi>V</mi>
+                <mi>OUT</mi>
+              </msub>
+            </mrow>
+            <mi>L</mi>
+          </mfrac>
+          <mo>=</mo>
+          <mrow>
+            <mfrac>
+              <mrow>
+                <mn>2</mn>
+                <mo>&#xd7;</mo>
+                <msub>
+                  <mi>I</mi>
+                  <mi>avg</mi>
+                </msub>
+              </mrow>
+              <msub>
+                <mi>T</mi>
+                <mi>on</mi>
+              </msub>
+            </mfrac>
+            <mo>.</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>1</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+According to the Equation (1), the period T<sub>on </sub>may be given by the following Equation (2):
+</p>
+<p id="p-0030" num="0029">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>T</mi>
+          <mi>on</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <mn>2</mn>
+              <mo>&#xd7;</mo>
+              <msub>
+                <mi>I</mi>
+                <mi>avg</mi>
+              </msub>
+              <mo>&#xd7;</mo>
+              <mi>L</mi>
+            </mrow>
+            <mrow>
+              <msub>
+                <mi>V</mi>
+                <mi>IN</mi>
+              </msub>
+              <mo>-</mo>
+              <msub>
+                <mi>V</mi>
+                <mi>OUT</mi>
+              </msub>
+            </mrow>
+          </mfrac>
+          <mo>.</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>2</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+In addition, a falling slope S<b>2</b> of the current I<sub>L </sub>may be given by the following Equation (3):
+</p>
+<p id="p-0031" num="0030">
+<maths id="MATH-US-00003" num="00003">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mo>&#xf603;</mo>
+          <mrow>
+            <mi>S</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mn>2</mn>
+          </mrow>
+          <mo>&#xf604;</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <msub>
+              <mi>V</mi>
+              <mi>OUT</mi>
+            </msub>
+            <mi>L</mi>
+          </mfrac>
+          <mo>=</mo>
+          <mrow>
+            <mfrac>
+              <mrow>
+                <mn>2</mn>
+                <mo>&#xd7;</mo>
+                <msub>
+                  <mi>I</mi>
+                  <mi>avg</mi>
+                </msub>
+              </mrow>
+              <msub>
+                <mi>T</mi>
+                <mi>off</mi>
+              </msub>
+            </mfrac>
+            <mo>.</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>3</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+According to the Equation (3), the period T<sub>off </sub>may be given by the following Equation (4):
+</p>
+<p id="p-0032" num="0031">
+<maths id="MATH-US-00004" num="00004">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>T</mi>
+          <mi>off</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <mn>2</mn>
+              <mo>&#xd7;</mo>
+              <msub>
+                <mi>I</mi>
+                <mi>avg</mi>
+              </msub>
+              <mo>&#xd7;</mo>
+              <mi>L</mi>
+            </mrow>
+            <msub>
+              <mi>V</mi>
+              <mi>OUT</mi>
+            </msub>
+          </mfrac>
+          <mo>.</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>4</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+Therefore, according to the Equations (2) and (4), a period T and a frequency F<sub>SW </sub>of the PWM signal S<sub>PWM </sub>may be given by the following Equations (5) and (6), respectively:
+</p>
+<p id="p-0033" num="0032">
+<maths id="MATH-US-00005" num="00005">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mrow>
+            <mi>T</mi>
+            <mo>=</mo>
+            <mrow>
+              <mrow>
+                <msub>
+                  <mi>T</mi>
+                  <mi>on</mi>
+                </msub>
+                <mo>+</mo>
+                <msub>
+                  <mi>T</mi>
+                  <mi>off</mi>
+                </msub>
+              </mrow>
+              <mo>=</mo>
+              <mrow>
+                <mn>2</mn>
+                <mo>&#xd7;</mo>
+                <msub>
+                  <mi>I</mi>
+                  <mi>avg</mi>
+                </msub>
+                <mo>&#xd7;</mo>
+                <mrow>
+                  <mi>L</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                          <msub>
+                            <mi>V</mi>
+                            <mi>IN</mi>
+                          </msub>
+                          <mo>-</mo>
+                          <msub>
+                            <mi>V</mi>
+                            <mi>OUT</mi>
+                          </msub>
+                        </mrow>
+                      </mfrac>
+                      <mo>+</mo>
+                      <mfrac>
+                        <mn>1</mn>
+                        <msub>
+                          <mi>V</mi>
+                          <mi>OUT</mi>
+                        </msub>
+                      </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mo>;</mo>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mtext>
+</mtext>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mi>and</mi>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>5</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>F</mi>
+          <mi>SW</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mn>1</mn>
+            <mi>T</mi>
+          </mfrac>
+          <mo>=</mo>
+          <mrow>
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mn>2</mn>
+                <mo>&#xd7;</mo>
+                <msub>
+                  <mi>I</mi>
+                  <mi>avg</mi>
+                </msub>
+                <mo>&#xd7;</mo>
+                <mi>L</mi>
+              </mrow>
+            </mfrac>
+            <mo>&#xd7;</mo>
+            <mrow>
+              <mfrac>
+                <mrow>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <msub>
+                        <mi>V</mi>
+                        <mi>IN</mi>
+                      </msub>
+                      <mo>-</mo>
+                      <msub>
+                        <mi>V</mi>
+                        <mi>OUT</mi>
+                      </msub>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>&#xd7;</mo>
+                  <msub>
+                    <mi>V</mi>
+                    <mi>OUT</mi>
+                  </msub>
+                </mrow>
+                <msub>
+                  <mi>V</mi>
+                  <mi>IN</mi>
+                </msub>
+              </mfrac>
+              <mo>.</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>6</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0034" num="0033">Suppose that the period T<sub>on </sub>has a relationship with a ratio of the output voltage V<sub>OUT </sub>to the input voltage V<sub>IN</sub>, i.e.</p>
+<p id="p-0035" num="0034">
+<maths id="MATH-US-00006" num="00006">
+<math overflow="scroll">
+<mrow>
+  <mrow>
+    <msub>
+      <mi>T</mi>
+      <mi>on</mi>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <mi>RCK</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo>(</mo>
+        <mfrac>
+          <msub>
+            <mi>V</mi>
+            <mi>OUT</mi>
+          </msub>
+          <msub>
+            <mi>V</mi>
+            <mi>IN</mi>
+          </msub>
+        </mfrac>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+</mrow>
+</math>
+</maths>
+<br/>
+wherein the parameters R, C and K are constant. Therefore, the period T<sub>on </sub>may be rewritten as the following Equation (7) to obtain the following Equation (8):
+</p>
+<p id="p-0036" num="0035">
+<maths id="MATH-US-00007" num="00007">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mrow>
+            <msub>
+              <mi>T</mi>
+              <mi>on</mi>
+            </msub>
+            <mo>=</mo>
+            <mrow>
+              <mrow>
+                <mi>R</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mi>C</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mi>K</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mfrac>
+                      <msub>
+                        <mi>V</mi>
+                        <mi>OUT</mi>
+                      </msub>
+                      <msub>
+                        <mi>V</mi>
+                        <mi>IN</mi>
+                      </msub>
+                    </mfrac>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mn>2</mn>
+                  <mo>&#xd7;</mo>
+                  <msub>
+                    <mi>I</mi>
+                    <mi>avg</mi>
+                  </msub>
+                  <mo>&#xd7;</mo>
+                  <mi>L</mi>
+                </mrow>
+                <mrow>
+                  <msub>
+                    <mi>V</mi>
+                    <mi>IN</mi>
+                  </msub>
+                  <mo>-</mo>
+                  <msub>
+                    <mi>V</mi>
+                    <mi>OUT</mi>
+                  </msub>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>;</mo>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mtext>
+</mtext>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mi>and</mi>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>7</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mn>2</mn>
+          <mo>&#xd7;</mo>
+          <msub>
+            <mi>I</mi>
+            <mi>avg</mi>
+          </msub>
+          <mo>&#xd7;</mo>
+          <mi>L</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mi>R</mi>
+          <mo>&#x2062;</mo>
+          <mstyle>
+            <mspace width="0.3em" height="0.3ex"/>
+          </mstyle>
+          <mo>&#x2062;</mo>
+          <mi>C</mi>
+          <mo>&#x2062;</mo>
+          <mstyle>
+            <mspace width="0.3em" height="0.3ex"/>
+          </mstyle>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mi>K</mi>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mfrac>
+                <msub>
+                  <mi>V</mi>
+                  <mi>OUT</mi>
+                </msub>
+                <msub>
+                  <mi>V</mi>
+                  <mi>IN</mi>
+                </msub>
+              </mfrac>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <msub>
+                  <mi>V</mi>
+                  <mi>IN</mi>
+                </msub>
+                <mo>-</mo>
+                <msub>
+                  <mi>V</mi>
+                  <mi>OUT</mi>
+                </msub>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mo>.</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>8</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+According to the Equation (8), the period T<sub>off </sub>may be rewritten as the following Equation (9):
+</p>
+<p id="p-0037" num="0036">
+<maths id="MATH-US-00008" num="00008">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>T</mi>
+          <mi>off</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <mn>2</mn>
+              <mo>&#xd7;</mo>
+              <msub>
+                <mi>I</mi>
+                <mi>avg</mi>
+              </msub>
+              <mo>&#xd7;</mo>
+              <mi>L</mi>
+            </mrow>
+            <msub>
+              <mi>V</mi>
+              <mi>OUT</mi>
+            </msub>
+          </mfrac>
+          <mo>=</mo>
+          <mrow>
+            <mi>R</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mi>C</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <mrow>
+                <mi>K</mi>
+                <mo>&#x2061;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mfrac>
+                    <mrow>
+                      <msub>
+                        <mi>V</mi>
+                        <mi>IN</mi>
+                      </msub>
+                      <mo>-</mo>
+                      <msub>
+                        <mi>V</mi>
+                        <mi>OUT</mi>
+                      </msub>
+                    </mrow>
+                    <msub>
+                      <mi>V</mi>
+                      <mi>IN</mi>
+                    </msub>
+                  </mfrac>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>.</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>9</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+Thus, according to the Equations (7) and (9), the period T of the PWM signal S<sub>PWM </sub>may be rewritten as the following Equation (10):
+</p>
+<p id="p-0038" num="0037">
+<maths id="MATH-US-00009" num="00009">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mi>T</mi>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>Ton</mi>
+                <mo>+</mo>
+                <mi>Toff</mi>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mi>R</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mi>C</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mi>K</mi>
+                    <mo>&#x2061;</mo>
+                    <mrow>
+                      <mo>(</mo>
+                      <mfrac>
+                        <msub>
+                          <mi>V</mi>
+                          <mi>OUT</mi>
+                        </msub>
+                        <msub>
+                          <mi>V</mi>
+                          <mi>IN</mi>
+                        </msub>
+                      </mfrac>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                </mrow>
+                <mo>+</mo>
+                <mrow>
+                  <mi>R</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mi>C</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mi>K</mi>
+                    <mo>&#x2061;</mo>
+                    <mrow>
+                      <mo>(</mo>
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>V</mi>
+                            <mi>IN</mi>
+                          </msub>
+                          <mo>-</mo>
+                          <msub>
+                            <mi>V</mi>
+                            <mi>OUT</mi>
+                          </msub>
+                        </mrow>
+                        <msub>
+                          <mi>V</mi>
+                          <mi>IN</mi>
+                        </msub>
+                      </mfrac>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>R</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mi>C</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mi>K</mi>
+                  <mo>.</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>10</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0039" num="0038">Due to the parameters R, C and K being constant, the period T of the PWM signal S<sub>PWM </sub>is fixed.</p>
+<p id="p-0040" num="0039"><figref idref="DRAWINGS">FIG. 3A</figref> shows a PWM generator <b>300</b> according to an embodiment of the invention. The PWM generator <b>300</b> comprises an amplifier <b>310</b>, a current generating unit <b>320</b>, a comparator <b>330</b>, a transistor MI, a resistor R<sub>RT </sub>and a capacitor C<sub>ON</sub>. The amplifier <b>310</b> has an inverting input terminal coupled to a node N<sub>2</sub>, a non-inverting input terminal for receiving a voltage V<b>1</b> and an output terminal coupled to a gate of the transistor M<b>1</b>, wherein the voltage V<b>1</b> is a voltage in proportion to the input voltage V<sub>IN</sub>, i.e. VI=KI&#xd7;V<sub>IN</sub>. The current generating unit <b>320</b> is used as an example for description, and does not limit the invention. For example, the current generating unit <b>320</b> may be a current mirror circuit. When the trigger signal S<sub>TR </sub>is triggered, a current I<b>1</b> provided by the current generating unit <b>320</b> may flow through the transistor MI and the resistor R<sub>RT</sub>, wherein a current value of the current I<b>1</b> is determined according to the voltage VI and the resistor R<sub>RT</sub>, ex. I<b>1</b>=VI/R<sub>RT</sub>=KI&#xd7;V<sub>IN</sub>/R<sub>RT</sub>. Simultaneously, the capacitor C<sub>ON </sub>is charged by a current I<b>2</b> provided by the current generating unit <b>320</b> when the trigger signal S<sub>TR </sub>is triggered. In one embodiment, a current value of the current I<b>2</b> is equal to that of the current I<b>1</b>, ex. I<b>2</b>=K<b>1</b>&#xd7;V<sub>IN</sub>/R<sub>RT</sub>. In another embodiment, the current I<b>2</b> is a current in proportion to the current I<b>1</b>.</p>
+<p id="p-0041" num="0040"><figref idref="DRAWINGS">FIG. 3B</figref> shows a waveform diagram of the signals in the PWM generator <b>300</b> of <figref idref="DRAWINGS">FIG. 3A</figref>. Referring to <figref idref="DRAWINGS">FIG. 3A</figref> and <figref idref="DRAWINGS">FIG. 3B</figref> together, a voltage V c represents a voltage across the capacitor C<sub>ON</sub>. The comparator <b>330</b> is used to compare the voltage V<sub>C </sub>with a voltage V<b>2</b>, wherein the voltage V<b>2</b> is a voltage in proportion to the output voltage V<sub>OUT</sub>, i.e. V<b>2</b>=K<b>2</b>&#xd7;V<sub>OUT</sub>. When the voltage V<sub>C </sub>is smaller than the voltage V<b>2</b>, an active state of the PWM signal S<sub>PWM </sub>is asserted, i.e. the period T<sub>on</sub>. On the contrary, when the voltage V<sub>C </sub>is larger than the voltage V<b>2</b>, an inactive state of the PWM signal S<sub>PWM </sub>is asserted, i.e. the period T<sub>off</sub>. Therefore, the period T<sub>on </sub>and the period T<sub>off </sub>may be given by the following Equations (11) and (12), respectively:</p>
+<p id="p-0042" num="0041">
+<maths id="MATH-US-00010" num="00010">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mrow>
+            <msub>
+              <mi>T</mi>
+              <mi>on</mi>
+            </msub>
+            <mo>=</mo>
+            <mrow>
+              <mrow>
+                <mfrac>
+                  <msub>
+                    <mi>C</mi>
+                    <mi>ON</mi>
+                  </msub>
+                  <mrow>
+                    <mi>I</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>2</mn>
+                  </mrow>
+                </mfrac>
+                <mo>&#x2062;</mo>
+                <mi>dV</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mn>2</mn>
+              </mrow>
+              <mo>=</mo>
+              <mrow>
+                <msub>
+                  <mi>R</mi>
+                  <mi>RT</mi>
+                </msub>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <msub>
+                    <mi>C</mi>
+                    <mi>on</mi>
+                  </msub>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mfrac>
+                      <mrow>
+                        <mi>K</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>2</mn>
+                      </mrow>
+                      <mrow>
+                        <mi>K</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </mfrac>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mfrac>
+                  <msub>
+                    <mi>V</mi>
+                    <mi>OUT</mi>
+                  </msub>
+                  <msub>
+                    <mi>V</mi>
+                    <mi>IN</mi>
+                  </msub>
+                </mfrac>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mo>;</mo>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mtext>
+</mtext>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mi>and</mi>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>11</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mi>Toff</mi>
+        <mo>=</mo>
+        <mrow>
+          <msub>
+            <mi>R</mi>
+            <mi>RT</mi>
+          </msub>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <msub>
+              <mi>C</mi>
+              <mi>on</mi>
+            </msub>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>(</mo>
+              <mfrac>
+                <mrow>
+                  <mi>K</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>2</mn>
+                </mrow>
+                <mrow>
+                  <mi>K</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>1</mn>
+                </mrow>
+              </mfrac>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>&#x2062;</mo>
+          <mstyle>
+            <mspace width="0.3em" height="0.3ex"/>
+          </mstyle>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mfrac>
+              <mrow>
+                <msub>
+                  <mi>V</mi>
+                  <mi>IN</mi>
+                </msub>
+                <mo>-</mo>
+                <msub>
+                  <mi>V</mi>
+                  <mi>OUT</mi>
+                </msub>
+              </mrow>
+              <msub>
+                <mi>V</mi>
+                <mi>IN</mi>
+              </msub>
+            </mfrac>
+            <mo>.</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>12</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+Due to the resistor R<sub>RT</sub>, the capacitor C<sub>ON </sub>and the parameters K<b>1</b> and K<b>2</b> being constant, the period T<sub>on </sub>and the period T<sub>off </sub>are determined according to the input voltage V<sub>IN </sub>and the output voltage V<sub>OUT</sub>.
+</p>
+<p id="p-0043" num="0042"><figref idref="DRAWINGS">FIG. 4A</figref> shows a ramp generator <b>400</b> according to an embodiment of the invention. The ramp generator <b>400</b> comprises an amplifier <b>410</b>, two transistors M<b>2</b> and M<b>3</b>, a capacitor C<sub>OFF </sub>and a current source <b>420</b>. The amplifier <b>410</b> has an invelting input terminal coupled to the transistor M<b>2</b>, a non-inverting input terminal for receiving a voltage V<b>3</b> and an output terminal coupled to the inverting input terminal, wherein the voltage V<b>3</b> is a voltage in proportion to a difference between the input voltage V<sub>IN </sub>and the output voltage V<sub>OUT</sub>, i.e. V<b>3</b>=K<b>3</b>&#xd7;K<b>1</b>&#xd7;(V<sub>IN</sub>&#x2212;V<sub>OUT</sub>). The transistor M<b>2</b> is coupled between the output terminal of the amplifier <b>410</b> and a node N<sub>3</sub>, and the transistor M<b>3</b> is coupled between the node N<sub>3 </sub>and the current source <b>420</b>, wherein the ramp signal S<sub>RAMP </sub>is a voltage at the node N<sub>3</sub>. The transistors M<b>2</b> and M<b>3</b> are controlled by the PWM signal S<sub>PWM </sub>and a signal SB<sub>PWM</sub>, respectively, wherein the signal SB<sub>PWM </sub>is a reversed signal for the PWM signal S<sub>PWM</sub>. Therefore, the transistor M<b>2</b> is turned on and the transistor M<b>3</b> is turned off when an active state of the PWM signal S<sub>PWM </sub>is asserted, and the transistor M<b>2</b> is turned off and the transistor M<b>3</b> is trned on when an inactive state of the PWM signal S<sub>PWM </sub>is asserted.</p>
+<p id="p-0044" num="0043"><figref idref="DRAWINGS">FIG. 4B</figref> shows a waveform diagram of the signals in the ramp generator <b>400</b> of <figref idref="DRAWINGS">FIG. 4A</figref>. Referring to <figref idref="DRAWINGS">FIG. 4A</figref> and <figref idref="DRAWINGS">FIG. 4B</figref> together, the ramp signal S<sub>RAMP </sub>represents the voltage of the node N<sub>3</sub>, i.e. a voltage across the capacitor C<sub>OFF</sub>. When an active state of the PWM signal S<sub>PWM </sub>is asserted, the transistor M<b>2</b> is turned on and the transistor M<b>3</b> is turned off, such that the capacitor C<sub>OFF </sub>is charged by the amplifier <b>410</b> via the transistor M<b>2</b>, and then the voltage across the capacitor C<sub>OFF </sub>is charged to a voltage level of the voltage V<b>3</b>. On the contrary, when an inactive state of the PWM signal S<sub>PWM </sub>is asserted, the transistor M<b>2</b> is turned off and the transistor M<b>3</b> is turned on, such that the capacitor C<sub>OFF </sub>is discharged by the current source <b>420</b> via the transistor M<b>3</b>, and then the voltage across the capacitor C<sub>OFF </sub>is decreased until a subsequent active state of the PWM signal S<sub>PWM </sub>is asserted. In the embodiment, the current source <b>420</b> may sink a current I<b>3</b> from the node N<sub>3 </sub>to the ground GND to decrease the ramp signal S<sub>RAMP</sub>, wherein the current I<b>3</b> corresponds to the input voltage V<sub>IN</sub>. The current source <b>420</b> is used as an example, and does not limit the invention. In one embodiment, a current value of the current I<b>3</b> is equal to that of the current I<b>1</b> of the PWM generator <b>300</b> in <figref idref="DRAWINGS">FIG. 3A</figref>, ex. I<b>3</b>=KI&#xd7;V<sub>IN</sub>/R<sub>RT</sub>. In another embodiment, the current I<b>3</b> is a current in proportion to the current U<b>1</b>. Therefore, a voltage variation dV<sub>RAMP </sub>of the ramp signal S<sub>RAMP </sub>during the period T<sub>off </sub>may be given by the following Equation (13):</p>
+<p id="p-0045" num="0044">
+<maths id="MATH-US-00011" num="00011">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mrow>
+              <msub>
+                <mi>dV</mi>
+                <mi>RAMP</mi>
+              </msub>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mfrac>
+                <mrow>
+                  <mi>I</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>3</mn>
+                </mrow>
+                <mrow>
+                  <msub>
+                    <mi>C</mi>
+                    <mi>OFF</mi>
+                  </msub>
+                  <mo>&#x2062;</mo>
+                  <mi>dT</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mfrac>
+                  <mrow>
+                    <mi>K</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>1</mn>
+                    <mo>&#xd7;</mo>
+                    <msub>
+                      <mi>V</mi>
+                      <mi>IN</mi>
+                    </msub>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mi>R</mi>
+                      <mi>RT</mi>
+                    </msub>
+                    <mo>&#xd7;</mo>
+                    <msub>
+                      <mi>C</mi>
+                      <mi>OFF</mi>
+                    </msub>
+                  </mrow>
+                </mfrac>
+                <mo>&#x2062;</mo>
+                <msub>
+                  <mi>T</mi>
+                  <mi>off</mi>
+                </msub>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mfrac>
+                  <mrow>
+                    <mi>K</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>1</mn>
+                    <mo>&#xd7;</mo>
+                    <msub>
+                      <mi>V</mi>
+                      <mi>IN</mi>
+                    </msub>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mi>R</mi>
+                      <mi>RT</mi>
+                    </msub>
+                    <mo>&#xd7;</mo>
+                    <msub>
+                      <mi>C</mi>
+                      <mi>OFF</mi>
+                    </msub>
+                  </mrow>
+                </mfrac>
+                <mo>&#xd7;</mo>
+                <msub>
+                  <mi>R</mi>
+                  <mi>RT</mi>
+                </msub>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <msub>
+                    <mi>C</mi>
+                    <mi>ON</mi>
+                  </msub>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mfrac>
+                      <mrow>
+                        <mi>K</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>2</mn>
+                      </mrow>
+                      <mrow>
+                        <mi>K</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </mfrac>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mfrac>
+                  <mrow>
+                    <msub>
+                      <mi>V</mi>
+                      <mi>IN</mi>
+                    </msub>
+                    <mo>-</mo>
+                    <msub>
+                      <mi>V</mi>
+                      <mi>OUT</mi>
+                    </msub>
+                  </mrow>
+                  <msub>
+                    <mi>V</mi>
+                    <mi>IN</mi>
+                  </msub>
+                </mfrac>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>K</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mn>2</mn>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mfrac>
+                    <msub>
+                      <mi>C</mi>
+                      <mi>ON</mi>
+                    </msub>
+                    <msub>
+                      <mi>C</mi>
+                      <mi>OFF</mi>
+                    </msub>
+                  </mfrac>
+                  <mo>)</mo>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msub>
+                      <mi>V</mi>
+                      <mi>IN</mi>
+                    </msub>
+                    <mo>-</mo>
+                    <msub>
+                      <mi>V</mi>
+                      <mi>OUT</mi>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mrow>
+                <mo>=</mo>
+                <mi/>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mrow>
+                    <mi>V</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>3</mn>
+                  </mrow>
+                  <mo>-</mo>
+                  <msub>
+                    <mi>V</mi>
+                    <mi>steady</mi>
+                  </msub>
+                </mrow>
+              </mrow>
+              <mo>,</mo>
+            </mrow>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>13</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+wherein a voltage level V<sub>steady </sub>represents an ideal steady voltage level of the error signal V<sub>ERR </sub>in <figref idref="DRAWINGS">FIG. 1</figref>. Therefore, according to the Equation (13), the voltage level V<sub>steady </sub>of the error signal V<sub>ERR </sub>may be given by the following Equation (14):
+</p>
+<p id="p-0046" num="0045">
+<maths id="MATH-US-00012" num="00012">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mrow>
+              <msub>
+                <mi>V</mi>
+                <mi>steady</mi>
+              </msub>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mi>V</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>3</mn>
+                </mrow>
+                <mo>-</mo>
+                <mrow>
+                  <mi>K</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>2</mn>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mfrac>
+                      <msub>
+                        <mi>C</mi>
+                        <mi>ON</mi>
+                      </msub>
+                      <msub>
+                        <mi>C</mi>
+                        <mi>OFF</mi>
+                      </msub>
+                    </mfrac>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <msub>
+                        <mi>V</mi>
+                        <mi>IN</mi>
+                      </msub>
+                      <mo>-</mo>
+                      <msub>
+                        <mi>V</mi>
+                        <mi>OUT</mi>
+                      </msub>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mi>K</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>3</mn>
+                  <mo>&#xd7;</mo>
+                  <mi>K</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>1</mn>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <msub>
+                        <mi>V</mi>
+                        <mi>IN</mi>
+                      </msub>
+                      <mo>-</mo>
+                      <msub>
+                        <mi>V</mi>
+                        <mi>OUT</mi>
+                      </msub>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>-</mo>
+                <mrow>
+                  <mi>K</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>2</mn>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mfrac>
+                      <msub>
+                        <mi>C</mi>
+                        <mi>ON</mi>
+                      </msub>
+                      <msub>
+                        <mi>C</mi>
+                        <mi>OFF</mi>
+                      </msub>
+                    </mfrac>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <msub>
+                        <mi>V</mi>
+                        <mi>IN</mi>
+                      </msub>
+                      <mo>-</mo>
+                      <msub>
+                        <mi>V</mi>
+                        <mi>OUT</mi>
+                      </msub>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mi>K</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>3</mn>
+                        <mo>&#xd7;</mo>
+                        <mi>K</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <mo>-</mo>
+                    <mrow>
+                      <mi>K</mi>
+                      <mo>&#x2062;</mo>
+                      <mstyle>
+                        <mspace width="0.3em" height="0.3ex"/>
+                      </mstyle>
+                      <mo>&#x2062;</mo>
+                      <mn>2</mn>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mfrac>
+                          <msub>
+                            <mi>C</mi>
+                            <mi>ON</mi>
+                          </msub>
+                          <msub>
+                            <mi>C</mi>
+                            <mi>OFF</mi>
+                          </msub>
+                        </mfrac>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <msub>
+                        <mi>V</mi>
+                        <mi>IN</mi>
+                      </msub>
+                      <mo>-</mo>
+                      <msub>
+                        <mi>V</mi>
+                        <mi>OUT</mi>
+                      </msub>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>.</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>14</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+By choosing the parameters K<b>1</b>, K<b>2</b> and K<b>3</b> and the capacitors C<sub>ON </sub>and C<sub>OFF </sub>appropriately, the error signal V<sub>ERR </sub>is designed to operate at a direct current (DC) operation voltage level, i.e. the ideal steady voltage level V<sub>steady</sub>.
+</p>
+<p id="p-0047" num="0046">Referring to <figref idref="DRAWINGS">FIG. 1</figref>, a fine adjustment of the error signal V<sub>ERR </sub>is automatically performed for a feedback loop of the DC-DC converter <b>100</b> according to the determined DC operation voltage level of the error signal V<sub>ERR</sub>, so as to determine a time period that the trigger signal STR is triggered for every period T of the PWM signal S<sub>PWM</sub>, thus obtaining a pseudo fix frequency PWM controller.</p>
+<p id="p-0048" num="0047"><figref idref="DRAWINGS">FIG. 5</figref> shows an example illustrating a waveform diagram of the signals of the DC-DC converter <b>100</b> of <figref idref="DRAWINGS">FIG. 1</figref>. By using the error amplifier <b>160</b> to generate the error signal V<sub>ERR </sub>and comparing the error signal V<sub>ERR </sub>with the ramp signal S<sub>RAMP </sub>to adjust a duty cycle of the PWM signal S<sub>PWM</sub>, an included angle &#x3b8; between the error signal V<sub>ERR </sub>and the ramp signal S<sub>RAMP </sub>is large at time t<b>4</b> and sufficient to avoid noise interference, thus increasing a signal to noise ratio (SNR) thereof. <figref idref="DRAWINGS">FIG. 6</figref> shows another example illustrating a waveform diagram of the signals of the DC-DC converter <b>100</b> of <figref idref="DRAWINGS">FIG. 1</figref>. Referring to <figref idref="DRAWINGS">FIG. 6</figref> and <figref idref="DRAWINGS">FIG. 1</figref> together, the period T<sub>H </sub>represents that the load <b>180</b> has a higher loading, and the period T<sub>L </sub>represents that the load <b>180</b> has a lower loading. In addition, the load <b>180</b> is changed from the lower to higher loading at time t<b>5</b> and changed from the higher to lower loading at time t<b>6</b>. When the loading of the load <b>180</b> is changed, the comparator <b>170</b> may immediately adjust the time period that the trigger signal S<sub>TR </sub>is triggered by comparing the ramp signal S<sub>RAMP </sub>and the error signal V<sub>ERR</sub>. Therefore, the DC-DC converter <b>100</b> may promptly provide the output voltage V<sub>OUT </sub>in response to the loading of the load <b>180</b>, thereby increasing system stability.</p>
+<p id="p-0049" num="0048"><figref idref="DRAWINGS">FIG. 7</figref> shows a DC-DC conve1ter <b>700</b> according to another embodiment of the invention. The DC-DC converter <b>700</b> is applied to a capacitor C<b>2</b> with a smaller or zero ESR. Compared with the PWM controller <b>120</b> of <figref idref="DRAWINGS">FIG. 1</figref>, a PWM controller <b>720</b> of the DCDC converter <b>700</b> further comprises a sense unit <b>730</b> for sensing a current flowing through the inductor L to generate a sense current I<sub>sense </sub>to a compensation unit <b>710</b>, wherein the sense current I<sub>sense </sub>corresponds to the loading of the load <b>180</b>. The compensation unit <b>710</b> comprises a resistor <b>712</b>, a capacitor <b>714</b>, a resistor R<sub>comp </sub>coupled between the error amplifier <b>160</b> and the comparator <b>170</b>, and a current source <b>716</b> for sinking a current I<b>4</b> from the resistor R<sub>comp </sub>to the ground GND. In one embodiment, the current I<b>4</b> is a current in proportion to the sense current I<sub>sense</sub>. The current source <b>716</b> is used as an example, and does not limit the invention. In the embodiment, a current value of the current I<b>4</b> is equal to that of the sense current I<sub>sense</sub>. Therefore, a voltage across the resistor R<sub>comp </sub>is determined according to the sense current I<sub>sense </sub>and a resistance of the resistor R<sub>comp</sub>. The compensation unit <b>710</b> receives the error signal V<sub>ERR </sub>and generates a compensation signal V<sub>COMP </sub>to the comparator <b>170</b> according to the error signal V<sub>ERR </sub>and the voltage across the resistor R<sub>comp</sub>, such that the comparator <b>170</b> of the PWM controller <b>720</b> may compare the compensation signal V<sub>COMP </sub>with the ramp signal S<sub>RAMP </sub>provided by the ramp generator <b>130</b> to generate the trigger signal S<sub>TR</sub>. The compensation signal V<sub>COMP </sub>comprises a feedback signal from the output voltage V<sub>OUT </sub>associated with a feedback signal from the current flowing through the inductor L, thus avoiding harmonic oscillation and assuring that the output voltage V<sub>OUT </sub>is stabilized when the capacitor C<b>2</b> with a smaller ESR. In addition, by adjusting the resistor R<sub>comp </sub>or detecting a gain of the sense current I<sub>sense</sub>, a gain of a current loop component is adjusted to increase system stability.</p>
+<p id="p-0050" num="0049"><figref idref="DRAWINGS">FIG. 8</figref> shows a DC-DC converter <b>800</b> according to another embodiment of the invention. Compared with the DC-DC converter <b>700</b> of <figref idref="DRAWINGS">FIG. 7</figref>, the sense unit <b>730</b> of the DC-DC conve1ter <b>800</b> is coupled to a node between the transistor MU and the transistor ML, and senses a current flowing through the transistor ML to generate the sense current I<sub>sense</sub>. Similarly, the sense current I<sub>sense </sub>provided by the sense unit <b>830</b> corresponds to the loading of the load <b>180</b>.</p>
+<p id="p-0051" num="0050"><figref idref="DRAWINGS">FIG. 9</figref> shows a DC-DC converter <b>900</b> according to another embodiment of the invention. Compared with the DC-DC converter <b>700</b> of <figref idref="DRAWINGS">FIG. 7</figref>, the DC-DC converter <b>900</b> further comprises a resistor R<sub>sense </sub>coupled between the transistor ML and the ground GND. Furthermore, the sense unit <b>730</b> of the DC-DC converter <b>900</b> is coupled to the resistor R<sub>sense</sub>, and senses a current flowing through the resistor R<sub>sense </sub>to generate the sense current I<sub>sense</sub>. Similarly, the sense current I<sub>sense </sub>provided by the sense unit <b>930</b> corresponds to the loading of the load <b>180</b>.</p>
+<p id="p-0052" num="0051"><figref idref="DRAWINGS">FIG. 10</figref> shows a DC-DC converter <b>1000</b> according to another embodiment of the invention. In a PWM controller <b>1020</b> of the DC-DC converter <b>1000</b>, the comparator <b>170</b> compares the error signal V<sub>ERR </sub>with a compensation signal V<sub>comp </sub>provided by a compensation unit <b>1010</b> to generate the trigger signal S<sub>TR</sub>. In the embodiment, the sense unit <b>730</b> senses a current flowing through the inductor L to generate the sense current I<sub>sense</sub>, wherein the sense current I<sub>sense </sub>corresponds to the loading of the load <b>180</b>. In one embodiment, the sense unit <b>730</b> may sense a current flowing through the transistor ML to generate the sense current I<sub>sense</sub>. In another embodiment, the DC-DC converter <b>1000</b> further comprises a resistor coupled between the transistor ML and the ground GND, e.g. the resistor R<sub>sense </sub>of <figref idref="DRAWINGS">FIG. 9</figref>, and the sense unit <b>730</b> may sense a current flowing through the resistor to generate the sense current I<sub>sense</sub>. The compensation unit <b>1010</b> comprises the resistor <b>712</b>, the capacitor <b>714</b>, a resistor R<sub>comp </sub>coupled between the sense unit <b>730</b> and the ramp generator <b>130</b>, and a current source <b>716</b> for sinking a current I<b>4</b> from the resistor R<sub>comp </sub>to the ground GND. Therefore, the compensation unit <b>1010</b> generates the compensation signal V<sub>COMP </sub>to the comparator <b>170</b> according to the sense current I<sub>sense</sub>, a voltage across the resistor R<sub>comp </sub>and the ramp signal S<sub>RAMP</sub>. Similarly, the compensation signal V<sub>COMP </sub>comprises a feedback signal from the output voltage V<sub>OUT </sub>associated with a feedback signal from the current flowing through the inductor L, thus avoiding harmonic oscillation and assuring that the output voltage V<sub>OUT </sub>is stabilized when the capacitor C<b>2</b> with a smaller ESR. In addition, by adjusting the resistor R<sub>comp </sub>or detecting a gain of the sense current I<sub>sense</sub>, a gain of a current loop component is adjusted to increase system stability.</p>
+<p id="p-0053" num="0052">While the invention has been described by way of example and in terms of preferred embodiment, it is to be understood that the invention is not limited thereto. Those who are skilled in this technology can still make various alterations and modifications without departing from the scope and spirit of this invention. Therefore, the scope of the present invention shall be defined and protected by the following claims and their equivalents.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08624574-20140107-M00001.NB">
+<img id="EMI-M00001" he="6.69mm" wi="76.20mm" file="US08624574-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08624574-20140107-M00002.NB">
+<img id="EMI-M00002" he="6.69mm" wi="76.20mm" file="US08624574-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00003" nb-file="US08624574-20140107-M00003.NB">
+<img id="EMI-M00003" he="7.03mm" wi="76.20mm" file="US08624574-20140107-M00003.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00004" nb-file="US08624574-20140107-M00004.NB">
+<img id="EMI-M00004" he="6.69mm" wi="76.20mm" file="US08624574-20140107-M00004.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00005" nb-file="US08624574-20140107-M00005.NB">
+<img id="EMI-M00005" he="19.39mm" wi="76.20mm" file="US08624574-20140107-M00005.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00006" nb-file="US08624574-20140107-M00006.NB">
+<img id="EMI-M00006" he="6.35mm" wi="76.20mm" file="US08624574-20140107-M00006.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00007" nb-file="US08624574-20140107-M00007.NB">
+<img id="EMI-M00007" he="19.05mm" wi="76.20mm" file="US08624574-20140107-M00007.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00008" nb-file="US08624574-20140107-M00008.NB">
+<img id="EMI-M00008" he="6.69mm" wi="76.20mm" file="US08624574-20140107-M00008.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00009" nb-file="US08624574-20140107-M00009.NB">
+<img id="EMI-M00009" he="14.48mm" wi="76.20mm" file="US08624574-20140107-M00009.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00010" nb-file="US08624574-20140107-M00010.NB">
+<img id="EMI-M00010" he="19.05mm" wi="76.20mm" file="US08624574-20140107-M00010.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00011" nb-file="US08624574-20140107-M00011.NB">
+<img id="EMI-M00011" he="32.09mm" wi="76.20mm" file="US08624574-20140107-M00011.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00012" nb-file="US08624574-20140107-M00012.NB">
+<img id="EMI-M00012" he="20.83mm" wi="76.20mm" file="US08624574-20140107-M00012.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A Pulse Width Modulation (PWM) controller of a DC-DC converter, comprising:
+<claim-text>an error amplifier, receiving a reference voltage and a feedback voltage corresponding to an output voltage of the DC-DC converter to provide an error signal;</claim-text>
+<claim-text>a compensation unit coupled to an output of the error amplifier, compensating the error signal and comprising a first resistor and a first capacitor, wherein the capacitor is coupled between the first resistor and a ground;</claim-text>
+<claim-text>a ramp generator, generating a ramp signal according to an on time signal;</claim-text>
+<claim-text>a first comparator coupled to the compensation unit and the ramp generator, wherein when the compensated error signal exceeds the ramp signal, the first comparator generates a trigger signal, wherein the compensation unit causes an included angle between the compensated error signal and the ramp signal to increase; and</claim-text>
+<claim-text>a PWM generator coupled to the first comparator, providing the on time signal according to the trigger signal, an input voltage of the DC-DC converter and the output voltage of the DC-DC converter.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The PWM controller as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the PWM generator comprises:
+<claim-text>a current generating unit, providing a first current corresponding to the input voltage of the DC-DC converter when the trigger signal is triggered;</claim-text>
+<claim-text>a second capacitor coupled between the current generating unit and the ground, wherein the second capacitor is charged by the first current when the trigger signal is triggered; and</claim-text>
+<claim-text>a second comparator, comparing a voltage of the second capacitor with a voltage corresponding to the output voltage of the DC-DC converter to generate the on time signal.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The PWM controller as claimed in <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the PWM generator further comprises:
+<claim-text>a second resistor coupled to the ground;</claim-text>
+<claim-text>a first amplifier, having an first input terminal coupled to the second resistor, a second input terminal for receiving a first voltage corresponding to the input voltage of the DC-DC converter, and an output terminal;</claim-text>
+<claim-text>a transistor coupled to the second resistor, the first amplifier and the current generating unit, wherein the first current from the current generating unit flows to the second resistor through the transistor when the trigger signal is triggered, and the first current corresponds to the first voltage.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. A constant on time PWM controller of a DC-DC converter, comprising:
+<claim-text>an error amplifier, receiving a reference voltage and a feedback voltage corresponding to an output voltage of the DC-DC converter to provide an error signal;</claim-text>
+<claim-text>a first comparator, comparing the error signal with a ramp signal to generate a trigger signal;</claim-text>
+<claim-text>a PWM generator coupled to the first comparator, generating a constant on time PWM signal according to the trigger signal, an input voltage of the DC-DC converter and the output voltage of the DC-DC converter; and</claim-text>
+<claim-text>a ramp generator, generating the ramp signal according to the constant on time PWM signal,</claim-text>
+</claim-text>
+<claim-text>wherein the PWM generator comprises:
+<claim-text>a current generating unit, providing a first current corresponding to the input voltage of the DC-DC converter when the trigger signal is triggered;</claim-text>
+<claim-text>a first capacitor coupled between the current generating unit and a ground, wherein the first capacitor is charged by the first current when the trigger signal is triggered; and</claim-text>
+<claim-text>a second comparator, comparing a voltage of the first capacitor with a voltage corresponding to the output voltage of the DC-DC converter to generate the constant on time PWM signal.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The constant on time PWM controller of a DC-DC converter as claimed in <claim-ref idref="CLM-00004">claim 4</claim-ref>, further comprising:
+<claim-text>a compensation unit, compensating the error signal and causing an included angle between the compensated error signal and the ramp signal to increase.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The constant on time PWM controller of a DC-DC converter as claimed in <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein the PWM generator further comprises:
+<claim-text>a resistor coupled to a ground;</claim-text>
+<claim-text>a first amplifier, having an first input terminal connected to the resistor, a second input terminal for receiving a first voltage corresponding to the input voltage of the DC-DC converter, and an output terminal;</claim-text>
+<claim-text>a transistor coupled to the second resistor, the first amplifier and the current generating unit, wherein the first current from the current generating unit flows to the resistor through the transistor when the trigger signal is triggered, and the first current corresponds to the first voltage.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The constant on time PWM controller of a DC-DC converter as claimed in <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein the ramp generator comprises:
+<claim-text>a second amplifier having a first input terminal for receiving a second voltage, an second input terminal, and an output terminal;</claim-text>
+<claim-text>a first switch coupled to the second input terminal and the output terminal of the second amplifier;</claim-text>
+<claim-text>a current source;</claim-text>
+<claim-text>a second switch, coupled between the first switch and the current source, wherein the first switch and the second switch are controlled by the constant on time PWM signal; and</claim-text>
+<claim-text>a second capacitor coupled to the first switch and the second switch.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. A constant on time PWM controller of a DC-DC converter, comprising:
+<claim-text>an error amplifier, receiving a reference voltage and a feedback voltage corresponding to an output voltage of the DC-DC converter to generate an error signal;</claim-text>
+<claim-text>a sense unit, generating a sense current corresponding to a loading of the DC-DC converter;</claim-text>
+<claim-text>a compensation unit coupled to an output terminal of the error amplifier, generating a compensation signal according to the error signal and the sense current;</claim-text>
+<claim-text>a first comparator, comparing the compensation signal with a ramp signal to generate a trigger signal;</claim-text>
+<claim-text>a PWM generator, generating a constant on time PWM signal according to the trigger signal, an input voltage of the DC-DC converter and the output voltage of the DC-DC converter; and</claim-text>
+<claim-text>a ramp generator, generating the ramp signal according to the constant on time PWM signal.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. A constant on time PWM controller of a DC-DC converter, comprising:
+<claim-text>an error amplifier, receiving a reference voltage and a feedback voltage corresponding to an output voltage of the DC-DC converter to generate an error signal;</claim-text>
+<claim-text>a sense unit, generating a sense current corresponding to a loading of the DC-DC converter;</claim-text>
+<claim-text>a compensation unit, generating a compensation signal according to the sense current and a ramp signal, and comprising a first resistor and a first capacitor connected in series for compensating the error signal;</claim-text>
+<claim-text>a first comparator, comparing the compensation signal with the error signal to generate a trigger signal;</claim-text>
+<claim-text>a PWM generator, generating a PWM signal with a fixed turn-on time, wherein a frequency of the PWM signal is adjusted according to the trigger signal, an input voltage of the DC-DC converter and the output voltage of the DC-DC converter; and</claim-text>
+<claim-text>a ramp generator, generating the ramp signal,</claim-text>
+</claim-text>
+<claim-text>wherein the PWM generator comprises:
+<claim-text>a current generating unit, providing a first current corresponding to the input voltage of the DC-DC converter when the trigger signal is triggered;</claim-text>
+<claim-text>a second capacitor coupled between the current generating unit and a ground, wherein the second capacitor is charged by the first current when the trigger signal is triggered; and</claim-text>
+<claim-text>a second comparator, comparing a voltage of the second capacitor with a voltage corresponding to the output voltage of the DC-DC converter to generate the PWM signal.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The constant on time PWM controller of a DC-DC converter as claimed in <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein the PWM generator further comprises:
+<claim-text>a first amplifier, having an inverting input terminal coupled to a node, a non-inverting input terminal for receiving a first voltage corresponding to the input voltage of the DC-DC converter, and an output terminal;</claim-text>
+<claim-text>a second resistor coupled between the node and the ground;</claim-text>
+<claim-text>a transistor coupled between the node and the current generating unit, having a gate coupled to the output terminal of the first amplifier, wherein the first current from the current generating unit flows to the second resistor through the transistor when the trigger signal is triggered, and the first current corresponds to the first voltage.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The constant on time PWM controller of a DC-DC converter as claimed in <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein the compensation unit further comprises:
+<claim-text>a second resistor coupled between the sense unit and the ramp generator, wherein a voltage across the second resistor corresponds to the sense current, and the compensation signal is generated according to the sense current, the ramp signal and the voltage across the second resistor.</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

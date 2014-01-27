@@ -1,0 +1,981 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626154-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626154</doc-number>
+<kind>B1</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12940513</doc-number>
+<date>20101105</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>281</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20090101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>04</class>
+<subclass>W</subclass>
+<main-group>4</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>4554321</main-classification>
+<further-classification>4554351</further-classification>
+<further-classification>455436</further-classification>
+<further-classification>455438</further-classification>
+<further-classification>455441</further-classification>
+<further-classification>455443</further-classification>
+<further-classification>455444</further-classification>
+</classification-national>
+<invention-title id="d2e53">Active set management based on the likelihood of a mobile station roaming</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5369681</doc-number>
+<kind>A</kind>
+<name>Boudreau et al.</name>
+<date>19941100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5577022</doc-number>
+<kind>A</kind>
+<name>Padovani et al.</name>
+<date>19961100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>5999522</doc-number>
+<kind>A</kind>
+<name>Rohani</name>
+<date>19991200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6058136</doc-number>
+<kind>A</kind>
+<name>Ganesh et al.</name>
+<date>20000500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>6160999</doc-number>
+<kind>A</kind>
+<name>Chheda et al.</name>
+<date>20001200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>6181945</doc-number>
+<kind>B1</kind>
+<name>Lee</name>
+<date>20010100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>6223042</doc-number>
+<kind>B1</kind>
+<name>Raffel</name>
+<date>20010400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>6317453</doc-number>
+<kind>B1</kind>
+<name>Chang</name>
+<date>20011100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>6643520</doc-number>
+<kind>B1</kind>
+<name>Kim et al.</name>
+<date>20031100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>6745039</doc-number>
+<kind>B1</kind>
+<name>Di Lalla</name>
+<date>20040600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>6922561</doc-number>
+<kind>B2</kind>
+<name>Chen et al.</name>
+<date>20050700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>6960939</doc-number>
+<kind>B2</kind>
+<name>Ngo</name>
+<date>20051100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>6963750</doc-number>
+<kind>B1</kind>
+<name>Cheng et al.</name>
+<date>20051100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>7050804</doc-number>
+<kind>B1</kind>
+<name>Wurtenberger et al.</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>7076265</doc-number>
+<kind>B2</kind>
+<name>Tayloe et al.</name>
+<date>20060700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>7302265</doc-number>
+<kind>B1</kind>
+<name>Chalishazar et al.</name>
+<date>20071100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>7366526</doc-number>
+<kind>B2</kind>
+<name>Zhang et al.</name>
+<date>20080400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>7529546</doc-number>
+<kind>B1</kind>
+<name>Sigg</name>
+<date>20090500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>2002/0049058</doc-number>
+<kind>A1</kind>
+<name>Tee</name>
+<date>20020400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>2002/0068566</doc-number>
+<kind>A1</kind>
+<name>Ohlsson et al.</name>
+<date>20020600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455436</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>2002/0119787</doc-number>
+<kind>A1</kind>
+<name>Hunzinger</name>
+<date>20020800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>2002/0142772</doc-number>
+<kind>A1</kind>
+<name>Hunzinger</name>
+<date>20021000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>2003/0186707</doc-number>
+<kind>A1</kind>
+<name>Pihl et al.</name>
+<date>20031000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>2003/0195017</doc-number>
+<kind>A1</kind>
+<name>Chen et al.</name>
+<date>20031000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>2005/0020203</doc-number>
+<kind>A1</kind>
+<name>Losh et al.</name>
+<date>20050100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>2006/0135173</doc-number>
+<kind>A1</kind>
+<name>Vannithamby</name>
+<date>20060600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>US</country>
+<doc-number>2006/0159051</doc-number>
+<kind>A1</kind>
+<name>English</name>
+<date>20060700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>US</country>
+<doc-number>2006/0227744</doc-number>
+<kind>A1</kind>
+<name>Metke et al.</name>
+<date>20061000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>US</country>
+<doc-number>2006/0229074</doc-number>
+<kind>A1</kind>
+<name>Semper</name>
+<date>20061000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455436</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>US</country>
+<doc-number>2007/0097924</doc-number>
+<kind>A1</kind>
+<name>Martinovich et al.</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>370332</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00031">
+<document-id>
+<country>US</country>
+<doc-number>2007/0105535</doc-number>
+<kind>A1</kind>
+<name>Jacobson et al.</name>
+<date>20070500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00032">
+<document-id>
+<country>US</country>
+<doc-number>2008/0032713</doc-number>
+<kind>A1</kind>
+<name>Yang</name>
+<date>20080200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00033">
+<document-id>
+<country>US</country>
+<doc-number>2008/0076432</doc-number>
+<kind>A1</kind>
+<name>Senarath et al.</name>
+<date>20080300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00034">
+<document-id>
+<country>US</country>
+<doc-number>2008/0096520</doc-number>
+<kind>A1</kind>
+<name>Benco et al.</name>
+<date>20080400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00035">
+<document-id>
+<country>US</country>
+<doc-number>2008/0293437</doc-number>
+<kind>A1</kind>
+<name>Ranganathan et al.</name>
+<date>20081100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00036">
+<document-id>
+<country>US</country>
+<doc-number>2009/0061854</doc-number>
+<kind>A1</kind>
+<name>Gillot et al.</name>
+<date>20090300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00037">
+<document-id>
+<country>US</country>
+<doc-number>2009/0215447</doc-number>
+<kind>A1</kind>
+<name>Catalano et al.</name>
+<date>20090800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>4554321</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00038">
+<document-id>
+<country>US</country>
+<doc-number>2009/0239536</doc-number>
+<kind>A1</kind>
+<name>Fallgren et al.</name>
+<date>20090900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455436</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00039">
+<document-id>
+<country>US</country>
+<doc-number>2009/0247137</doc-number>
+<kind>A1</kind>
+<name>Awad</name>
+<date>20091000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00040">
+<document-id>
+<country>US</country>
+<doc-number>2012/0076018</doc-number>
+<kind>A1</kind>
+<name>Singh et al.</name>
+<date>20120300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>370252</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00041">
+<othercit>Office Action mailed Oct. 16, 2008 in U.S. Appl. No. 11/265,433, filed Nov. 1, 2005.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00042">
+<othercit>Scott Baxter, &#x201c;Course 132 Technical Introduction to CDMA, IS-95 CDMA and a few details of CDMA 2000 1X&#x201d; available at www.howcdmaworks.com (Feb. 2003) pp. 1-25.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00043">
+<othercit>Scott Baxter, &#x201c;Course 132 Technical Introduction to CDMA, IS-95 CDMA and a few details of CDMA 2000 1X&#x201d; available at www.howcdmaworks.com (Feb. 2003) pp. 26-50.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00044">
+<othercit>Scott Baxter, &#x201c;Course 132 Technical Introduction to CDMA, IS-95 CDMA and a few details of CDMA 2000 1X&#x201d; available at www.howcdmaworks.com (Feb. 2003) pp. 51-80.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00045">
+<othercit>Scott Baxter, &#x201c;Course 132 Technical Introduction to CDMA, IS-95 CDMA and a few details of CDMA 2000 1X&#x201d; available at www.howcdmaworks.com (Feb. 2003) pp. 81-120.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00046">
+<othercit>Scott Baxter, &#x201c;Course 132 Technical Introduction to CDMA, IS-95 CDMA and a few details of CDMA 2000 1X&#x201d; available at www.howcdmaworks.com (Feb. 2003) pp. 121-155.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00047">
+<othercit>Cai et al., &#x201c;Mitigating DoS Attacks on the Paging Channel by Efficient Encoding in Page Messages,&#x201d; Computer Science Department, University of California, Davis, Sep. 14-18, 2009.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00048">
+<othercit>Unpublished U.S. Appl. No. 12/854,114, filed Aug. 10, 2010 entitled &#x201c;Dynamic Paging Concatentation Based on the Likelihood of Roaming&#x201d;.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00049">
+<othercit>Unpublished U.S. Appl. No. 12/794,518, filed Jun. 4, 2010 entitled &#x201c;Active Set Management Based on Mobile Station Battery Power&#x201d;.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00050">
+<othercit>Unpublished U.S. Appl. No. 12/854,119, filed Aug. 10, 2010 entitled &#x201c;Paging Scheme Settings of Switch Based on Likelihood of Roaming&#x201d;.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>12</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>4554321</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>4554351</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>455436</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>455438-441</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>455443</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>455444</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>8</number-of-drawing-sheets>
+<number-of-figures>8</number-of-figures>
+</figures>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Oroskar</last-name>
+<first-name>Siddharth S.</first-name>
+<address>
+<city>Overland Park</city>
+<state>KS</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Pulugurta</last-name>
+<first-name>Srikanth</first-name>
+<address>
+<city>Woodstock</city>
+<state>VA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Shah</last-name>
+<first-name>Maulik K.</first-name>
+<address>
+<city>Overland Park</city>
+<state>KS</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Oroskar</last-name>
+<first-name>Siddharth S.</first-name>
+<address>
+<city>Overland Park</city>
+<state>KS</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Pulugurta</last-name>
+<first-name>Srikanth</first-name>
+<address>
+<city>Woodstock</city>
+<state>VA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Shah</last-name>
+<first-name>Maulik K.</first-name>
+<address>
+<city>Overland Park</city>
+<state>KS</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Sprint Spectrum L.P.</orgname>
+<role>02</role>
+<address>
+<city>Overland Park</city>
+<state>KS</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Zewdu</last-name>
+<first-name>Meless N</first-name>
+<department>2643</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Nguyen</last-name>
+<first-name>Michael</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">In one aspect, an exemplary method involves a WCD: (i) determining a likelihood of roaming, wherein the likelihood of roaming indicates a likelihood that the WCD will be handed off from a preferred coverage area to a non-preferred coverage area; and (ii) using the likelihood of roaming as a basis for managing an active set of the WCD. In particular, the WCD may manage its active set by setting at least one active-set parameter affecting the number of active sectors in an active set of the WCD, and then maintaining its active set according to the setting of the at least one active-set parameter. According to an exemplary embodiment, a WCD will make an effort to increase the number of sectors in its active set when the likelihood of roaming is greater, and vice versa.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="213.02mm" wi="191.01mm" file="US08626154-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="215.48mm" wi="141.99mm" orientation="landscape" file="US08626154-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="192.79mm" wi="156.80mm" file="US08626154-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="176.61mm" wi="161.12mm" file="US08626154-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="230.29mm" wi="141.05mm" orientation="landscape" file="US08626154-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="231.99mm" wi="145.29mm" file="US08626154-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="217.42mm" wi="190.08mm" file="US08626154-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="204.98mm" wi="105.75mm" orientation="landscape" file="US08626154-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="231.99mm" wi="191.77mm" file="US08626154-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND</heading>
+<p id="p-0002" num="0001">To provide cellular wireless communication service, a wireless service provider or &#x201c;wireless carrier&#x201d; typically operates a radio access network (RAN) that defines one or more coverage areas in which WCDs can be served by the RAN and can thereby obtain connectivity to broader networks such as the public switched telephone network (PSTN) and the Internet. A typical RAN may include one or more base transceiver stations (BTSs) (e.g., macro network cell towers and/or femtocells), each of which may radiate to define a cell and cell sectors in which WCDs can operate. Further, the RAN may include one or more base station controllers (BSCs) (which may also be referred to as radio network controllers (RNCs)) or the like, which may be integrated with or otherwise in communication with the BTSs, and which may include or be in communication with a switch or gateway that provides connectivity with one or more transport networks. Conveniently with this arrangement, a cell phone, personal digital assistant, wirelessly equipped computer, or other wireless communication device (WCD) that is positioned within coverage of the RAN can then communicate with a BTS and in turn, via the BTS, with other served devices or with other entities on the transport network.</p>
+<p id="p-0003" num="0002">Wireless communications between a WCD and a serving BTS in a given coverage area will typically be carried out in accordance with one or more agreed air interface protocols that define a mechanism for wireless exchange of information between the WCD and BTS. Examples of such protocols include CDMA (e.g., EIA/TIA/IS-2000 Rel. 0, A (commonly referred to as &#x201c;IS-2000&#x201d; or &#x201c;1xRTT&#x201d;), EIA/TIA/IS-856 Rel. 0, A, or other version thereof (commonly referred to as &#x201c;IS-856&#x201d;, &#x201c;1xEV-DO&#x201d;, or &#x201c;EVDO&#x201d;)), iDEN, WiMAX (e.g., IEEE 802.16), LTE, TDMA, AMPS, GSM, GPRS, UMTS, or EDGE, and others now known or later developed.</p>
+<p id="p-0004" num="0003">The air interface protocol will generally define a &#x201c;forward link&#x201d; encompassing communications from the BTS to WCDs and a &#x201c;reverse link&#x201d; encompassing communications from WCDs to the BTS. Further, each of these links may be structured to define particular channels, through use of time division multiplexing, code division multiplexing (e.g., spread-spectrum modulation), frequency division multiplexing, and/or some other mechanism. The forward link, for example, may define (i) a pilot channel on which the RAN may broadcast a pilot signal to allow WCDs to detect wireless coverage, (ii) system parameter channels (e.g., a sync channel) on which the RAN may broadcast system operational parameters for reference by WCDs so that the WCDs can then seek network access, (iii) paging channels on which the RAN may broadcast page messages to alert WCDs of incoming communications, and (iv) traffic channels on which the RAN may transmit bearer traffic (e.g., application data) for receipt by WCDs. And the reverse link may define, for example: (i) access channels on which WCDs may transmit &#x201c;access probes&#x201d; such as registration messages and call origination requests, and (ii) traffic channels on which WCDs may transmit bearer traffic for receipt by the RAN.</p>
+<p id="p-0005" num="0004">In a conventional CDMA wireless network compliant with the well known IS-2000 standard, each cell employs one or more carrier frequencies, typically 1.25 MHz in bandwidth each, and each sector is distinguished from adjacent sectors by a pseudo-random number offset (&#x201c;PN offset&#x201d;). Further, each sector can concurrently communicate on multiple different channels, distinguished by &#x201c;Walsh codes.&#x201d; In doing so, each channel is allocated a fraction of the total power available in the sector. When a WCD operates in a given sector, communications between the WCD and the BTS of the sector are carried on a given frequency and are encoded by the sector's PN offset and a given Walsh code.</p>
+<p id="p-0006" num="0005">When a RAN receives an incoming communication for a WCD, the RAN typically pages the WCD via a paging channel in at least the coverage area in which the WCD last registered. When a cellular wireless communication system seeks to page a WCD (e.g., for an incoming call or for some other reason), a switch in the network may send the page message to numerous base stations in the switch's coverage area, with the hope that when the base stations broadcast the page message, the WCD will receive the page message in one of the associated sectors, and will respond. Further, a switch may be configured to re-send a page in the event that a given attempt to page a WCD fails.</p>
+<p id="p-0007" num="0006">Wireless service providers typically design their wireless networks to comprise a number of partially-overlapping wireless coverage areas. As a WCD that is subscribed to a wireless service provider moves about, the wireless network may hand off the WCD from one wireless coverage area to another. A goal of performing such handoffs is to provide a substantially continuous wireless coverage to the WCD, so that any communication sessions conducted by the WCD are not dropped or degraded due to loss of wireless coverage.</p>
+<p id="p-0008" num="0007">However, it is not economically feasible for any given wireless service provider to deploy perfect wireless coverage. Thus, wireless service providers often partner with other wireless service providers to form roaming agreements. According to these roaming agreements, when a wireless service provider cannot provide reasonable wireless coverage to a WCD, the WCD may instead be served by one of the wireless service provider's roaming partners. Consequently, the roaming partner provides wireless service for the WCD for a period of time, typically until the wireless service provider can once again provide a reasonable wireless coverage to a WCD.</p>
+<heading id="h-0002" level="1">OVERVIEW</heading>
+<p id="p-0009" num="0008">According to the embodiments herein, a radio access network (RAN) and/or a wireless communication device (WCD) may be able to determine when the WCD is likely to roam to a coverage area served by a different service provider. The RAN and/or the WCD may then proactively take steps to reduce the likelihood of this roaming. In an exemplary embodiment, active-set parameters of a WCD may be adjusted according to the likelihood of the WCD roaming.</p>
+<p id="p-0010" num="0009">More specifically, a wireless service provider may operate and/or control a RAN that provides a preferred wireless coverage area to serve WCDs. The wireless service provider may categorize wireless coverage areas that the wireless service provider operates and/or controls as &#x201c;preferred,&#x201d; while categorizing wireless coverage areas that the wireless service provider's roaming partners operate and/or control as &#x201c;non-preferred.&#x201d; Further, the wireless service provider that provides service in a preferred coverage area may be referred to as the &#x201c;home&#x201d; service provider. In order to avoid handing off a WCD to a non-preferred wireless coverage area, a RAN and/or a WCD may consider roaming data associated with the WCD. This roaming data may be, for instance, historical data representing the WCD's past handoff behavior. For instance, in an exemplary embodiment, a WCD and/or a RAN may attempt to reduce the likelihood of a handoff to a non-preferred coverage area by adjusting one or more of the WCD's active-set parameters in an effort to increase the number of sectors that are included in the WCD's active set.</p>
+<p id="p-0011" num="0010">WCDs are typically configured such that only sectors that are served by the home service provider are added to the active set. Therefore, having more active sectors typically means that a WCD has more preferred coverage areas to which the WCD can attempt to connect. When no sectors of the home service provider meet the criteria, the WCD may add a sector from a non-preferred coverage area to its active set, thus creating the possibility that the WCD will hand off to the non-preferred coverage area. Accordingly, a WCD may attempt to increase or decrease the number of sectors that are included in its active set at a given point in time by adjusting the parameters that govern, for example: (a) the maximum number of active sectors that can be included in the active set, (b) the criteria for adding a sector to the active set, and/or (c) the criteria for keeping a sector in the active set. Increasing such active set parameters in an effort to increase the number of active sectors may therefore reduce the probability of a scenario where no sector that is served by the home service provider meets the criteria to be added to or kept in the active set.</p>
+<p id="p-0012" num="0011">In one aspect, an exemplary method involves a WCD: (i) determining a likelihood of roaming, wherein the likelihood of roaming indicates a likelihood that the WCD will be handed off from a preferred coverage area to a non-preferred coverage area; and (ii) using the likelihood of roaming as a basis for managing an active set of the WCD. In particular, the WCD may manage its active set by setting at least one active-set parameter affecting the number of active sectors in an active set of the WCD, and then maintaining its active set according to the setting of the at least one active-set parameter.</p>
+<p id="p-0013" num="0012">The function of using the likelihood of roaming as a basis for managing an active set may involve setting a maximum number of active sectors that the WCD can include in the active set of the WCD. For example, if the likelihood of roaming is below a first threshold, then a WCD may set the maximum number of active sectors to a first maximum number. On the other hand, if the likelihood of roaming is above the first threshold, then the WCD may set the maximum number of active sectors to a second maximum number that is greater than the first maximum number. Additionally or alternatively, setting the at least one active-set parameter may involve setting at least one of (a) a threshold pilot strength for addition to the active set (T_ADD), (b) a threshold difference in signal strength from an active set pilot (T_COMP), (c) a threshold pilot strength for removal from the active set (T_DROP), and (d) a time for which an active set pilot falls below T_DROP to justify removal from the active set (T_TDROP).</p>
+<p id="p-0014" num="0013">In a further aspect, another exemplary method involves a RAN: (i) determining a likelihood of roaming for a wireless communication device (WCD), wherein the WCD is operating in a preferred coverage area of the RAN, and wherein the likelihood of roaming indicates a likelihood that the WCD will be handed off from the preferred coverage area to a non-preferred coverage area; and (ii) the RAN using the likelihood of roaming for the WCD as a basis for managing an active set of the WCD.</p>
+<p id="p-0015" num="0014">In yet a further aspect, an exemplary WCD system may include: (i) a non-transitory computer-readable medium; and (ii) program instructions stored on the non-transitory computer-readable medium and executable by at least one processor to: (a) determine a likelihood of roaming, wherein the likelihood of roaming indicates a likelihood that a wireless communication device (WCD) will be handed off from a preferred coverage area to a non-preferred coverage area; and (b) use the likelihood of roaming as a basis to manage an active set of the WCD.</p>
+<p id="p-0016" num="0015">And in yet a further aspect, an exemplary RAN system may include: (i) a non-transitory computer-readable medium; and (ii) program instructions stored on the non-transitory computer-readable medium and executable by at least one processor to: (a) determine a likelihood of roaming for a wireless communication device (WCD), wherein the WCD is operating in a preferred coverage area of the RAN, and wherein the likelihood of roaming indicates a likelihood that the WCD will be handed off from the preferred coverage area to a non-preferred coverage area; and (b) use the likelihood of roaming for the WCD as a basis to manage an active set of the WCD.</p>
+<p id="p-0017" num="0016">These and other aspects and advantages will become apparent to those of ordinary skill in the art by reading the following detailed description, with reference where appropriate to the accompanying drawings. Further, it should be understood that the foregoing overview is merely for purposes of example and is not intended to limit the scope of the invention as claimed.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0018" num="0017">An exemplary embodiment of the present invention is described herein with reference to the drawings, in which:</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 1</figref> depicts an exemplary communication system in which an exemplary embodiment can be carried out or deployed;</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 2</figref> is a simplified block diagram illustrating a wireless communication device, according to an exemplary embodiment;</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 3</figref> is a simplified block diagram exemplifying a component of a radio access network, according to an exemplary embodiment;</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 4</figref> is a table illustrating historical roaming data, according to an exemplary embodiment;</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 5A</figref> is a flow chart illustrating a method that may be implemented by a wireless communication device, according to an exemplary embodiment;</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 5B</figref> is a flow chart illustrating another method that may be implemented by a wireless communication device, according to an exemplary embodiment;</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 6</figref> shows a table that includes data indicating, for various likelihood of roaming ranges, the corresponding setting for the maximum-active-sector parameter, the corresponding T_ADD setting, and the corresponding T_DROP setting; and</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 7</figref> is a flow chart illustrating a method that may be implemented by a component of a radio access network, according to an exemplary embodiment.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0027" num="0026">Exemplary embodiments of the present invention are described herein. Employing various embodiments of the present invention, a wireless service provider may be able to, in some cases, avoid the usage of non-preferred wireless coverage by its subscribed wireless communication devices (WCDs). In turn, this may reduce the roaming fees that the wireless service provider is charged by other wireless service providers (e.g., roaming partners).</p>
+<p id="p-0028" num="0027">It should be understood that the word &#x201c;exemplary&#x201d; is used herein to mean &#x201c;serving as an example, instance, or illustration.&#x201d; Any embodiment described herein as &#x201c;exemplary&#x201d; is not necessarily to be construed as preferred or advantageous over other embodiments. Further, those skilled in the art will understand that changes and modifications may be made to these embodiments without departing from the true scope and spirit of the invention, which is defined by the claims.</p>
+<p id="p-0029" num="0028">It should be noted that the term &#x201c;handoff&#x201d; is to be interpreted broadly herein. Thus, a WCD being &#x201c;handed off&#x201d; from a preferred wireless coverage area to a non-preferred wireless coverage area may include scenarios in which (i) the WCD is participating in communication via the preferred wireless coverage area when the handoff occurs, (ii) the WCD is not participating in communication via the preferred wireless coverage area when the handoff occurs, and (iii) the WCD engages in a first call via a preferred wireless coverage area, the first call is terminated, and soon after the WCD engages in a second call via a non-preferred wireless coverage area.</p>
+<p id="h-0005" num="0000">I. Network Architecture</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 1</figref> depicts an exemplary communication system <b>100</b> in which the embodiments herein can be carried out or deployed. At a high level, communication system <b>100</b> comprises a network <b>102</b>, a RAN <b>103</b>, a preferred wireless coverage area <b>110</b>, and non-preferred wireless coverage areas <b>112</b> and <b>114</b>. Any of the wireless coverage areas may provide wireless communication services to WCD <b>108</b> and/or WCD <b>109</b>.</p>
+<p id="p-0031" num="0030">Network <b>102</b> is preferably a packet-switched and/or circuit-switched communication network that links RAN <b>103</b> to other networks, devices, applications, and/or services. Network <b>102</b> may be, for instance, the Internet, a private IP network, the public-switched telephone network (PSTN) or a private circuit-switched network. Network <b>102</b> may comprise one or more switches, gateways, routers, signaling nodes, application servers, and/or other types of devices, systems and networks. In one possible embodiment, network <b>102</b> includes both packet-switching and circuit-switching capabilities.</p>
+<p id="p-0032" num="0031">RAN <b>103</b> may include a base station controller (BSC) <b>104</b>, a mobile switching center (MSC) <b>105</b>, a base transceiver station (BTS) <b>106</b>, and other RAN components. However, for sake of simplicity, <figref idref="DRAWINGS">FIG. 1</figref> excludes some of these components, such as softswitches, media gateways, media gateway controllers, signaling nodes, authentication servers, registration servers, and so on. Furthermore, throughout this description, the term &#x201c;RAN component&#x201d; may be used to refer to a BTS, a BSC, a combination of one or more BTSs and a BSC, or any other type of component used for RAN functionality.</p>
+<p id="p-0033" num="0032">BTS <b>106</b> may radiate on one or more frequencies to define preferred wireless coverage area <b>110</b>. Preferred wireless coverage area <b>110</b>, may, in turn, serve WCD <b>108</b> and/or WCD <b>109</b>. To supply wireless service to these WCDs, as well as other WCDs, preferred wireless coverage area <b>110</b> may include an air interface that comprises one or more forward link and/or reverse link channels. Through the forward and reverse link channels, BTS <b>106</b> and WCD <b>108</b> and/or WCD <b>109</b> may exchange signaling and bearer traffic.</p>
+<p id="p-0034" num="0033">In one possible embodiment, these channels may be formed via a set of orthogonal Code Division Multiple Access (CDMA) codes, each of which may be used to modulate the data transmitted on a particular channel. However, other embodiments using different technologies are also possible. These other technologies include, but are not limited to, Worldwide Interoperability for Microwave Access (WIMAX&#xae;), Universal Mobile Telecommunications System (UMTS&#xae;), Long Term Evolution (LTE&#xae;), IDEN&#xae;, or 802.11 (Wifi). Thus, RAN <b>103</b> may operate according to one or more of CDMA, any of these other technologies, and/or additional technologies now known or developed in the future.</p>
+<p id="p-0035" num="0034">The forward link channels, which carry data from BTS <b>106</b> to WCD <b>108</b> and from BTS <b>106</b> to WCD <b>109</b>, may include a pilot channel, over which a phase offset pattern is repeatedly transmitted, a sync channel over which synchronization data, such as a timing reference, is transmitted, and traffic channels over which bearer traffic directed to WCD <b>108</b> and/or WCD <b>109</b> is transmitted. Additionally, one or more of the forward link channels may be designated as primary and/or secondary paging channels, and may be used for contacting WCDs.</p>
+<p id="p-0036" num="0035">The reverse link channels, which carry data from WCDs <b>108</b> and <b>109</b> to BTS <b>106</b>, may also be formed through the use of CDMA or other technologies. These reverse link channels may include, for example, an access channel for responding to paging messages and for initiating communications, and reverse traffic channels for transmitting bearer traffic from WCD <b>108</b> to BTS <b>106</b> and from WCD <b>109</b> to BTS <b>106</b>.</p>
+<p id="p-0037" num="0036">BSC <b>104</b> may perform a variety of tasks, including management of the wireless resources associated with BTS <b>106</b>, and routing of traffic to and from BTS <b>106</b>. Further, BSC <b>104</b> may be able to facilitate handoff of WCD <b>108</b> and/or WCD <b>109</b> from one wireless coverage area to another (e.g., between preferred wireless coverage area <b>110</b> and one of the non-preferred wireless coverage areas). BSC <b>104</b> may be communicatively coupled to network <b>102</b> either directly or via one or more links or other devices. For instance, BSC <b>104</b> may communicate with network <b>102</b> via MSC <b>105</b> or via an access gateway (not shown), such as a packet data serving node (PDSN) or an access serving network gateway (ASN-GW).</p>
+<p id="p-0038" num="0037">MSC <b>105</b> may perform many of the functions of a Class <b>5</b> telephony switch, but with additional functionality to manage the mobility of subscriber devices, such as WCD <b>108</b> and <b>109</b>. For example, MSC <b>105</b> may comprise or be communicatively coupled with a visitor location register (VLR) and a home location register (HLR). MSC <b>105</b> may be responsible for switching functions, media transport functions, transcoding functions, short message service (SMS) functions, and managing the communications between WCDs and any the circuit switched functions of network <b>102</b> or other networks.</p>
+<p id="p-0039" num="0038">Furthermore, MSC <b>105</b> may track subscriber usage to facilitate billing and performance monitoring. To do so, for each call that the MSC <b>105</b> handles, MSC <b>105</b> may generate a Call Detail Record (CDR). The CDR may take various forms but often includes certain information about the call, such as the originating number, terminating number, the sector or sectors in which the call occurred, start time, stop time, and/or call type (e.g., local or long-distance, voice or data, and so on). MSC <b>105</b> may transmit these CDRs to a central entity that maintains a database in which the CDRs are compiled. It should be understood that RAN components other than MSCs may generate CDRs in addition to or instead of MSC <b>105</b> generating CDRs.</p>
+<p id="p-0040" num="0039">Preferred wireless coverage area <b>110</b> may be defined by BTS <b>106</b> radiating on one or more frequencies. Similarly, BTSs that are under the control of other entities may radiate on one or more frequencies to define non-preferred wireless coverage areas <b>112</b> and <b>114</b>. The frequencies used to define each of these wireless coverage areas may be non-overlapping in order to reduce interference. Alternatively, the frequencies used by these wireless coverage areas may overlap with one another to some extent.</p>
+<p id="p-0041" num="0040">Although three wireless coverage areas are shown in <figref idref="DRAWINGS">FIG. 1</figref>, the embodiments herein may make use of more or fewer wireless coverage areas. For example, RAN <b>103</b> may radiate to define more than one preferred wireless coverage area. Similarly, there may be only one or more than two non-preferred wireless coverage areas. While <figref idref="DRAWINGS">FIG. 1</figref> depicts the physical coverage of preferred wireless coverage area <b>110</b> partially overlapping with that of non-preferred wireless coverage areas <b>112</b> and <b>114</b>, preferred wireless coverage area <b>110</b> may overlap with these non-preferred wireless coverage areas more or less than is shown. Thus, for instance, preferred wireless coverage area <b>110</b> may fully overlap or not overlap at all with one or more of non-preferred wireless coverage areas <b>112</b> and <b>114</b>.</p>
+<p id="p-0042" num="0041">WCD <b>108</b> and WCD <b>109</b> may be two of potentially many WCDs being provided service in preferred wireless coverage area <b>110</b>. Such WCDs could be a wireless telephone, a wireless personal digital assistant, a wirelessly equipped laptop computer, a wireless router, or another type of mobile or fixed wireless device. Preferably, a WCD is a subscriber device that is manipulated by a human in order to establish and engage in circuit-switched or packet-switched voice and/or data calls. However, a WCD could also be an automated device without a human interface.</p>
+<p id="p-0043" num="0042">A WCD may be associated with zero or more RANs at a time and may use the wireless coverage areas of these RANs to communicate, via network <b>102</b>, with correspondent nodes, such as web servers, gaming servers, short message service (SMS) servers, signaling and media nodes, other WCDs, and other communication devices (e.g., wireline phones). Further, a WCD may be in communication with one or more preferred and/or non-preferred wireless coverage areas simultaneously, even if the WCD is only using one of these wireless coverage areas to communicate with the correspondent nodes.</p>
+<p id="p-0044" num="0043">Receiving signals from multiple wireless coverage areas simultaneously may provide advantages for a WCD. For instance, doing so allows the WCD to keep track of neighboring wireless coverage areas that are candidates for a handoff. Regularly, or from time to time, the WCD may measure the strength of the signals received from each wireless coverage area. These signals may be received on a traffic channel, a paging channel, or some other type of channel, and the measurements may involve determining the signal-to-noise ratio (SNR) and/or the frame error rate (FER) of the signals. When a WCD is served by a given wireless coverage area and determines that the signal strength the WCD received from this given wireless coverage area has dropped below a signal-strength threshold, the WCD may request a handoff from the given wireless coverage area to a new wireless coverage area from which the WCD has received a higher signal strength. The WCD may also request a handoff to a new wireless coverage area when the received signal strength of the new wireless coverage area exceeds that of the given wireless coverage area by some amount. As a result of measuring this received signal strength and using these measurements to influence handoff behavior, handoffs may be faster and less disruptive. For instance, the WCD may be handed off from the given wireless coverage area before it experiences a poor signal strength from the given wireless coverage area that substantially compromises the WCD's ability to communicate.</p>
+<p id="p-0045" num="0044">It should be understood that <figref idref="DRAWINGS">FIG. 1</figref> is presented merely for purposes of example, and that communication network <b>100</b> may comprise more or fewer components in different arrangements than shown. Further, each of these devices, such as BSC <b>104</b>, MSC <b>105</b>, and BTS <b>106</b>, may include multiple physical or logical components arranged to operate in conjunction with one another. Alternatively or additionally, these devices may be able to be combined with one another into a smaller number of logical or physical devices. In sum, changes may be made to the arrangement illustrated by <figref idref="DRAWINGS">FIG. 1</figref> without departing from the scope of the invention.</p>
+<p id="h-0006" num="0000">II. Service-Provider Roaming Agreements</p>
+<p id="p-0046" num="0045">In an exemplary embodiment, a preferred coverage area may be a coverage area served by a subscriber's own service provider (i.e., the subscriber's home service provider), while a non-preferred coverage area may be a coverage area served by another service provider. For instance, turning back to <figref idref="DRAWINGS">FIG. 1</figref>, WCD <b>108</b> and WCD <b>109</b> may be subscribed to the wireless service provider that controls and/or operates preferred wireless coverage area <b>110</b>. One way in which the preferred status for a given coverage area may be established is that a user of one of these WCDs may purchase or lease their WCD from the service provider that provides service in that coverage area (i.e., the home service provider for the coverage area). Then, for pre-determined fees, the WCD may be used to communicate via any of the home service provider's wireless coverage areas. Alternatively, a user of the WCD may purchase or lease the WCD from a third-party entity, such as a wholesaler or reseller, and then register the WCD for service with the home service provider.</p>
+<p id="p-0047" num="0046">As noted above, it may not be feasible for any given wireless service provider to deploy perfect wireless coverage. Thus, wireless service providers often partner with other wireless service providers to form roaming agreements. According to these roaming agreements, when a wireless service provider cannot provide a reasonable wireless coverage to a WCD, the WCD may instead be served by one of the wireless service provider's roaming partners. Roaming partners may be wireless service providers in their own right, and therefore may also serve their own subscribed WCDs. A roaming partner may provide wireless service to the WCD for a period of time, typically until the wireless service provider can once again provide a reasonable wireless coverage to the WCD. In <figref idref="DRAWINGS">FIG. 1</figref>, non-preferred wireless coverage areas <b>112</b> and <b>114</b> may be controlled and/or operated by one or more roaming partners of the home service provider.</p>
+<p id="p-0048" num="0047">It may be advantageous for the home service provider to have one or more roaming partners, because allowing WCD <b>108</b> and/or WCD <b>109</b> to use these roaming partners' wireless service areas may increase the overall wireless coverage available to WCD <b>108</b> and/or WCD <b>109</b>, thereby increasing customer satisfaction. However, roaming agreements between wireless service providers often involve an assessment of fees. For example, a roaming partner of the home service provider may charge the home service provider a fee when WCD <b>108</b> or WCD <b>109</b> uses one or more of the roaming partner's wireless coverage areas. Typically, no fees are charged if a roaming WCD is idle. But, if the roaming WCD makes a substantial use of the roaming partner's wireless coverage area(s), the home service provider may be charged for that use. Such a substantial use might include, for example, making a voice or data call, or transmitting or receiving a text or multimedia message.</p>
+<p id="p-0049" num="0048">The fee for this use may be assessed on a per-time-unit basis, per-data-unit basis, per transaction basis, or some other basis. Thus, for example, if a WCD participated in a voice or data call while roaming, a fee may be assessed based on the number of minutes (or fractions of minutes) that the call lasted (e.g., eight cents per minute). Alternatively, the fee may be assessed based on the amount of data transferred to and/or from the WCD during the course of the call (e.g., twenty-five cents per megabyte of data sent or received by the WCD). For some applications or services, such as text or multimedia messaging, fees may be assessed on a per-transaction basis (e.g., ten cents per text message).</p>
+<p id="p-0050" num="0049">While the home service provider can pass on some or all of these roaming fees to the user of the WCD, doing so may lead to the user becoming frustrated with the home service provider. Thus, it may be advantageous for the home service provider to try to reduce the extent of roaming so that roaming fees are reduced. The effect of doing so may be lower costs paid by the home service provider and/or users, ultimately resulting in higher user satisfaction with the home service provider.</p>
+<p id="h-0007" num="0000">III. Wireless Communication Device Embodiment</p>
+<p id="p-0051" num="0050"><figref idref="DRAWINGS">FIG. 2</figref> is a simplified block diagram exemplifying a WCD <b>200</b>, and illustrating some of the functional components that would likely be found in a WCD arranged to operate in accordance with the embodiments herein. As shown, WCD <b>200</b> preferably includes at least one processor <b>202</b>, data storage <b>204</b> (i.e., a non-transitory computer readable medium), and at least one transceiver <b>206</b> and antenna <b>207</b> for sending and/or receiving wireless communication under one or more air-interface protocols. Some or all of these components of WCD <b>200</b> may be coupled together by a system bus <b>208</b> or a similar mechanism.</p>
+<p id="p-0052" num="0051">Further, as shown, an exemplary WCD <b>200</b> may also include an input/output function <b>210</b>. Input/output function <b>210</b> may facilitate user interaction with example RAN component <b>210</b>. Input/output function <b>210</b> may comprise multiple types of input devices, such as a keyboard, a mouse, a touch screen, and so on. Similarly, input/output function <b>210</b> may comprise multiple types of output devices, such as a monitor, printer, or one or more light emitting diodes (LEDs).</p>
+<p id="p-0053" num="0052">In an exemplary embodiment, WCD <b>200</b> may be configured to maintain an &#x201c;active set&#x201d; of sectors (each referred to as an &#x201c;active sector&#x201d;) for which the WCD monitors the signal strength, and which the WCD is in communication with during a call. For example, under IS-2000, a base station may provide the WCD the following parameters, which relate to pilot signal strength and are used by the WCD to maintain its active set:
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0000">
+    <ul id="ul0002" list-style="none">
+        <li id="ul0002-0001" num="0053">T_ADD: Threshold pilot strength for addition to the active set (e.g., &#x2212;14 dB)</li>
+        <li id="ul0002-0002" num="0054">T_COMP: Threshold difference in signal strength from an active set pilot (e.g., 2 dB)</li>
+        <li id="ul0002-0003" num="0055">T_DROP: Threshold pilot strength for removal from the active set (e.g., &#x2212;16 dB)</li>
+        <li id="ul0002-0004" num="0056">T_TDROP: Time for which an active set pilot falls below T_DROP to justify removal from the active set (e.g., 2 seconds)
+<br/>
+The base station also provides the WCD with a Neighbor List Update Message (NLUM), which identifies the &#x201c;neighbor&#x201d; sectors, which are not in the active set, but are identified as candidates for the active set.
+</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0054" num="0057">The WCD <b>200</b> then scans for all of the pilot signals from the sectors in its active set, and measures the received signal strength for each. For example, WCD <b>200</b> may calculate Ec/Io for each sector in the active set, where Ec is energy per chip and Io is the total power received. If the pilot signal strength of any neighbor sector exceeds T_ADD, the WCD <b>200</b> adds the pilot to its &#x201c;candidate&#x201d; set and sends a Pilot Strength Measurement Message (PSMM) to the base station with the estimated Ec/Io for the pilot and information indicative of the identity of the sector. Further, if the pilot strength exceeds the strength of any active-sector signal by T_COMP (and possibly also depending on current capacity and other issues), then the base station may send a Handoff Direction Message (HDM) to the WCD, listing the pilot as a new member of the active set. Upon receipt of the HDM, the WCD <b>200</b> then adds the pilot to its active set as instructed, and the WCD sends a Handoff Completion Message (HCM) to the base station (e.g., to BTS <b>108</b>), acknowledging the instruction, and providing a list of the pilots (PN offsets) in its active set. Depending on system configuration, the WCD may also identify pilot signals from the remaining set of sectors if they exceed the thresholds. It should be understood that each active sector in the active set is represented by its corresponding PN offset, and that references to an active sector may also be considered to refer to the PN offset of the active sector.</p>
+<p id="p-0055" num="0058">Similarly, if the WCD <b>200</b> detects that the signal strength of a pilot in its active set drops below T_DROP, the WCD starts a handoff drop timer. If T_TDROP passes, the WCD then sends a PSMM to the base station, indicating the Ec/Io and drop timer. The base station may then respond by sending an HDM to the WCD, without the pilot in the active set. The WCD would then receive the HDM and responsively move the pilot to its neighbor set and send an HCM to the base station.</p>
+<p id="p-0056" num="0059">Under IS-2000, a WCD <b>200</b> will continually scan its active sectors, neighbor sectors, and candidate sectors in a cyclical manner, according to a schedule under which active sectors are scanned twice as frequently of neighbor sectors, and neighbor sectors in turn are scanned twice as frequently as candidate sectors. The details of this scanning process are generally known to those skilled in the art, and thus not discussed in further detail herein. Further, when the WCD <b>200</b> is engaged in IS-2000 communications, WCD <b>200</b> decodes transmissions using all the PN offsets in its active set, together with the respective Walsh codes assigned for each PN-identified sector. Then, on a frame-by-frame basis, the WCD may select a sector from its active set from which to receive forward-link traffic.</p>
+<p id="p-0057" num="0060">To implement this functionality (and other mobile-station functionality described herein), an exemplary WCD may include a tangible computer-readable medium with program instructions stored thereon, which are executable by a processor to carry out the various functions described herein. For example, an exemplary WCD may include program instructions that are executable to: (a) determine a likelihood of roaming, which indicates a likelihood that a given WCD will be handed off from a preferred coverage area to a non-preferred coverage area; and (b) use the likelihood of roaming as a basis to manage an active set of the WCD.</p>
+<p id="p-0058" num="0061">In an exemplary embodiment, a WCD may be configured to manage its active set using a number of techniques. In particular, since increasing the number of sectors in the active set may reduce the likelihood of a handoff to a non-preferred coverage area, an exemplary WCD may be configured to dynamically adjust the active-set parameters that can affect the size of its active set.</p>
+<p id="p-0059" num="0062">For instance, an exemplary WCD may be configured vary the maximum number of active sectors by updating a maximum-active-sector parameter, which is stored locally in memory, and which indicates the current maximum number of active sectors that are allowable in the active set. As an example, the WCD may by default set a maximum-active-sector parameter to three, in which case up to three sectors may be included in the active set and scanned as active sectors. However, the WCD may adjust the maximum number of active sectors by setting the maximum-active-sector parameter to six, for instance, in which case up to six sectors may be included in its active set. Other adjustments to the maximum number of active sectors are also possible.</p>
+<p id="p-0060" num="0063">It should be understood that there is no requirement that a WCD actually include the maximum number of active sectors in its active set. This maximum number should therefore be understood as a constraint on the active set, but not necessarily a requirement. As such, it is possible that, at a given point in time, less than the maximum number of sectors meet the criteria for the active set, and as a result, less than the maximum number of sectors will be included in the active set.</p>
+<p id="p-0061" num="0064">In addition or in the alternative to adjusting the maximum-active-sector parameter, an exemplary WCD may be configured to adjust a number of parameters affecting whether a sector is included in the active set, either alone or in combination with each other. For example, the WCD may adjust the value of T_ADD, T_COMP, T_DROP, and/or T_TDROP in an effort to, for example, increase the probability a sector is added to its active set or increase the probability that an active sector is kept in the active set.</p>
+<p id="h-0008" num="0000">IV. RAN Component Embodiment</p>
+<p id="p-0062" num="0065"><figref idref="DRAWINGS">FIG. 3</figref> is a simplified block diagram exemplifying a RAN component <b>300</b>, and illustrating some of the functional components that would likely be found in a RAN component arranged to operate in accordance with the embodiments herein. Example RAN component <b>300</b> could be any type of device found in or associated with a RAN, such as a BTS, an BSC, and/or an MSC.</p>
+<p id="p-0063" num="0066">Example RAN component <b>300</b> preferably includes a processor <b>302</b>, a data storage <b>304</b>, a network interface <b>306</b>, and an input/output function <b>308</b>, all of which may be coupled together by a system bus <b>310</b> or a similar mechanism. Processor <b>302</b> preferably includes one or more CPUs, such as one or more general purpose processors and/or one or more dedicated processors (e.g., application specific integrated circuits (ASICs) or digital signal processors (DSPs), etc.)</p>
+<p id="p-0064" num="0067">Data storage <b>304</b>, in turn, may comprise volatile and/or non-volatile memory and can be integrated in whole or in part with processor <b>302</b>. Data storage <b>304</b> preferably holds program instructions that are executable by processor <b>302</b>, and further may hold data that is manipulated by these instructions to carry out the various methods, processes, or functions described herein. Alternatively, these methods, processes, or functions can be defined by hardware, firmware, and/or any combination of hardware, firmware and software. By way of example, the data in data storage <b>304</b> may contain program instructions executable by processor <b>302</b> to carry out any of the methods, processes, or functions disclosed in this specification or the accompanying drawings.</p>
+<p id="p-0065" num="0068">Network interface <b>306</b> may take the form of a wireline connection, such as an Ethernet, Token Ring, or T-carrier connection. Network interface <b>306</b> may also take the form of a wireless connection, such as IEEE 802.11 (Wifi), BLUETOOTH&#xae;, or a wide-area wireless connection. However, other forms of physical layer connections and other types of standard or proprietary communication protocols may be used over network interface <b>306</b>. Furthermore, network interface <b>306</b> may comprise multiple physical interfaces.</p>
+<p id="p-0066" num="0069">In an exemplary embodiment, the RAN component may be a BTS that is configured to (a) determine a likelihood of roaming for a WCD that is operating in a preferred coverage area of the RAN, where the likelihood of roaming indicates a likelihood that the WCD will be handed off from the preferred coverage area to a non-preferred coverage area; and (b) use the likelihood of roaming for the WCD as a basis to manage an active set of the WCD.</p>
+<p id="h-0009" num="0000">V. Determining the Likelihood Roaming for a WCD</p>
+<p id="p-0067" num="0070">As noted, in an exemplary embodiment a WCD may be sent an indication of the likelihood of roaming whenever it registers with the RAN in a new sector. Accordingly, a RAN may be configured to determine the likelihood of roaming, and to send an indication of the likelihood of roaming (i.e., a &#x201c;roaming-likelihood indicator&#x201d;) to a WCD. In an exemplary embodiment, a RAN may determine the likelihood of roaming using various different techniques.</p>
+<p id="p-0068" num="0071">More specifically, referring back to <figref idref="DRAWINGS">FIG. 1</figref>, if WCD <b>108</b> has exhibited a tendency to roam from the preferred coverage area <b>110</b> in which the WCD is located, to an adjacent non-preferred wireless coverage area, then it may be likely that WCD <b>108</b> will do so again. For instance, suppose that WCD <b>108</b> has been served by preferred wireless coverage area <b>110</b> ten times in the last week. If, out of these ten occasions, WCD <b>108</b> roamed from preferred wireless coverage area <b>110</b> to non-preferred wireless coverage area <b>112</b> five times and to non-preferred wireless coverage area <b>114</b> two times, then WCD <b>108</b> has demonstrated a tendency to roam. In this case, 70% of the time that WCD <b>108</b> was served by preferred wireless coverage area <b>110</b>, WCD <b>108</b> began roaming to a wireless coverage area of a roaming partner.</p>
+<p id="p-0069" num="0072">There are several possible reasons for why WCD <b>108</b> could exhibit this behavior. One reason may be that WCD <b>108</b> may have hardware, software, or mechanical characteristics that make it difficult for WCD <b>108</b> to transmit or receive properly on the frequency or frequencies used by preferred wireless coverage area <b>110</b>. For example, WCD <b>108</b> might be a relatively old model with a transceiver that has deteriorated over time. Even if WCD <b>108</b> is not able to transmit or receive properly via preferred wireless coverage area <b>110</b>, WCD <b>108</b> may be able to transmit and receive properly on other preferred or non-preferred wireless coverage areas. For instance, WCD <b>108</b> may be able to communicate with fewer problems when using the frequencies of non-preferred wireless coverage areas <b>112</b> and <b>114</b>. In other words, communication problems that WCD <b>108</b> experiences in preferred wireless coverage area <b>110</b> may or may not occur in other wireless coverage areas.</p>
+<p id="p-0070" num="0073">Another possible reason for WCD <b>108</b> being handed off to a non-preferred wireless coverage area with some frequency could be the physical location in which WCD <b>108</b> is typically used. For instance, a user of WCD <b>108</b> may live, work, or spend a substantial amount of time near a border of preferred wireless coverage area <b>110</b>. Due to this physical proximity to the border, the signal strength of preferred wireless coverage area <b>110</b> received by WCD <b>108</b> may be poor. Alternatively, the user of WCD <b>108</b> may spend a substantial amount of time in a physical location within the bounds of preferred wireless coverage area <b>110</b>, but still receive a poor signal strength from this wireless coverage area. For example, this location could be a basement or the center of a large structure. As another example, the user of the WCD may simply be a highly mobile user, or may be highly mobile in a particular region. Under such conditions, WCD <b>108</b> may frequently roam to one of non-preferred wireless coverage areas <b>112</b> and <b>114</b>. For any of these reasons, or for other reasons, the historical roaming data of a WCD, such as WCD <b>108</b>, may indicate that the WCD is likely to roam from a preferred wireless coverage area to a non-preferred wireless coverage area again in the future.</p>
+<p id="p-0071" num="0074">In order to detect that a WCD <b>108</b> is likely to begin roaming, a RAN <b>103</b> may collect data regarding when the WCD engages in a handoff. To that end, there may be multiple ways through which the RAN <b>103</b> can learn that a WCD <b>108</b> has been handed off. For instance, during the handoff process, the WCD <b>108</b> may inform the RAN <b>103</b> (via BTS <b>106</b>, BSC <b>104</b>, and MSC <b>105</b>) of the non-preferred wireless coverage area <b>112</b> to which the WCD is being handed off. Alternatively, the RAN <b>103</b> may receive, from the roaming partner that controls the non-preferred wireless coverage area <b>112</b>, signaling messages indicating that the WCD has been handed off to the non-preferred wireless coverage area.</p>
+<p id="p-0072" num="0075">However, if the RAN <b>103</b> does not receive an explicit indication that the WCD <b>108</b> was handed off, the RAN may infer that a handoff occurred. For example, the WCD <b>108</b> may be taking part in a call via the preferred wireless coverage area <b>110</b>. The RAN <b>103</b> may receive an indication that a call leg between the RAN <b>103</b> and the WCD <b>108</b> was terminated, and may record the time of the termination, as well as the caller, callee, an identifier of the preferred wireless coverage area, and related information. (It should be understood that a call leg is segment of a call between two endpoints. Thus, when the WCD <b>108</b> is handed off from a first BTS <b>106</b> to a second BTS, the WCD may maintain the end-to-end call, but replace the call leg between the WCD and the first BTS with a call leg between the WCD and the second BTS.) These records may take the form of CDRs.</p>
+<p id="p-0073" num="0076">At a later point in time (e.g., minutes, hours, or days after the call was terminated), the home service provider may receive records of call legs and/or calls engaged in by the home service provider's subscribed mobiles in roaming partners' wireless coverage areas. In an exemplary embodiment, the records may be formatted according to Transferred Account Procedure (TAP) or Cellular Intercarrier Billing Exchange Roamer (CIBER). Such records may comprise CDRs for each call or call leg made by a roaming WCD, including the WCD's location, the calling party, the called party, the time of the call, and the duration of the call. The home service provider may accordingly implement systems that store such data provided by roaming partners. Further, such records may be sent directly from a roaming partner to the home service provider, or be relayed to the home service provider via a third party billing aggregator.</p>
+<p id="p-0074" num="0077">By correlating these received records with similar records recorded by the RAN <b>103</b>, the home service provider may be able to determine whether a WCD <b>108</b> that took part in a call via the preferred wireless coverage area <b>110</b> was rapidly handed off to a non-preferred wireless coverage area and took part in another call via the non-preferred wireless coverage area. For instance, the RAN <b>103</b> may compare the caller and callee of a terminated call leg that took place in the preferred wireless coverage area <b>110</b> to the caller and callee of call leg that subsequently took place in the non-preferred wireless coverage area <b>112</b>. If the parties that took part in these calls are the same, this may indicate that the call was handed off from the preferred wireless coverage area <b>110</b> to the non-preferred wireless coverage area <b>112</b>, or that the call was dropped during the course of such a handoff, and then reestablished via the non-preferred wireless coverage area. Regardless, if the time between the call being terminated in the preferred wireless coverage area and a corresponding call being initiated in the non-preferred wireless coverage area is below a threshold value, the RAN <b>103</b> may consider these events to be a &#x201c;handoff.&#x201d;</p>
+<p id="p-0075" num="0078">In order to efficiently use such historical roaming data, the RAN may have access to information such as that in <figref idref="DRAWINGS">FIG. 4</figref>. Table <b>400</b> in <figref idref="DRAWINGS">FIG. 4</figref> contains entries <b>402</b>, <b>404</b>, <b>406</b>, and <b>408</b> of example data that could assist a RAN in performing this task. For each entry, table <b>400</b> stores a WCD identifier, a number of recent visits/calls, another number of recent visits/calls resulting in a rapid handoff to a non-preferred wireless coverage area, and a percentage.</p>
+<p id="p-0076" num="0079">A table like table <b>400</b> may be maintained for each preferred wireless coverage area. Further, a database storing data such as that of table <b>400</b> may be maintained by a service provider, or by a third party entity. Thus, the data may be maintained at an existing RAN component, at a standalone RAN component, or at a separate component to which the RAN has access. The information in table <b>400</b> may be presented or stored in other ways as well. As an alternative, the RAN may not have direct access to such a table, and may instead retrieve historical roaming data on an as-needed basis.</p>
+<p id="p-0077" num="0080">With respect to the contents of table <b>400</b>, a WCD identifier may be a string of characters or bits that can be used to identify a WCD. As noted above, examples of WCD identifiers include NAIs, MDNs, MINs, IMSIs, ESNs, and MEIDs. Any of these types of WCD identifiers, or other data that can be used to identify WCDs, may be used in the &#x201c;WCD identifier&#x201d; column of table <b>400</b>. For purposes of simplicity, entries <b>402</b>, <b>404</b>, <b>406</b>, and <b>408</b> contain MDNs (phone numbers) as WCD identifiers, but other types of WCD identifiers may be used instead.</p>
+<p id="p-0078" num="0081">An entry in the &#x201c;recent visits (calls)&#x201d; column may be a count of recent visits that the WCD made to the preferred wireless coverage area. Such a visit may entail a WCD registering for service with the preferred wireless coverage area, but not necessarily making any calls in the preferred wireless coverage area. On the other hand, an entry in the recent visits/calls column may be a count of recent calls that the WCD made using resources of the preferred wireless coverage area. Such a call might be a voice call, a data call, or some other type of communication.</p>
+<p id="p-0079" num="0082">An entry in the &#x201c;recent visits (calls) resulting in rapid handoff&#x201d; column may be a count of recent visits that the WCD made to the preferred wireless coverage area wherein the WCD was handed off to a non-preferred wireless coverage area, either during or after the visit, within a relatively short period of time. Alternatively, an entry in this column may be count of recent calls that the WCD made, using the resources of the preferred wireless coverage area, in which the WCD was handed off to a non-preferred wireless coverage area within a relatively short period of time after call initiation. Preferably, this column measures the same types of event (i.e., calls or visits) that the &#x201c;recent calls (visits)&#x201d; column measures.</p>
+<p id="p-0080" num="0083">Regardless of how calls or visits are measured, the &#x201c;recent visits (calls) resulting in rapid handoff&#x201d; column may be used to determine how frequently in the past that the WCD with the specified WCD identifier either registered for service with the preferred wireless coverage area and was rapidly handed off, or used resources of the preferred wireless coverage area and was rapidly handed off. If either event or both events occurs frequently, this may indicate that the WCD is likely to be handed off from the preferred wireless coverage area to a non-preferred wireless coverage area.</p>
+<p id="p-0081" num="0084">For example, a WCD may register for service in the preferred wireless coverage area. Whether or not the WCD actually uses any bearer resources of the preferred wireless coverage area, the RAN may record the time of this registration. Accordingly, the RAN may increment the WCD's entry in the &#x201c;recent visits (calls)&#x201d; column of table <b>400</b>. Then, the RAN may determine that the WCD has been handed off to a non-preferred wireless coverage area, and may record the time of the handoff. If the time between these two recorded events is less than a threshold duration (e.g., a few seconds to a few minutes), the RAN may deem the WCD to have been rapidly handed off to a non-preferred wireless coverage area. Therefore, the RAN may increment the WCD's entry in the &#x201c;recent visits (calls) resulting in rapid handoff&#x201d; column.</p>
+<p id="p-0082" num="0085">An entry in the &#x201c;percentage&#x201d; column of table <b>400</b> indicates, for the WCD with the specified WCD identifier, the percentage of recent visits (calls) that were rapidly handed off to a non-preferred, wireless coverage area. Preferably, these entries result from dividing the WCD's entry in the &#x201c;recent visits (calls) resulting in rapid handoff&#x201d; by the WCD's entry in the &#x201c;recent visits (calls)&#x201d; column.</p>
+<p id="p-0083" num="0086">For instance, in record <b>402</b> for WCD identifier <b>312</b>-<b>555</b>-<b>1000</b>, out of five recent visits (calls), none resulted in such a rapid handoff. Thus, the entry in the &#x201c;percentage&#x201d; column is 0%, indicating that the WCD with this identifier is unlikely to be handed off to a non-preferred wireless coverage area in the future. Similarly, in record <b>406</b> for WCD identifier <b>312</b>-<b>555</b>-<b>1002</b>, the entry in the &#x201c;percentage&#x201d; column is 10%, also indicating that the WCD with this identifier is unlikely to be handed off to a non-preferred wireless coverage area in the future. On the other hand, the entries in the &#x201c;percentage&#x201d; column for records <b>404</b> and <b>408</b> are 50% and 100%, respectively. Thus, the WCDs with the identifiers <b>312</b>-<b>555</b>-<b>1001</b> and <b>312</b>-<b>555</b>-<b>1003</b> are likely to be handed off to a non-preferred wireless coverage area again in the future.</p>
+<p id="p-0084" num="0087">It should be understood that table <b>400</b> contains examples of the type of information that a home service provider might use to determine whether a WCD is likely to roam. Thus, table <b>400</b> may include more or fewer columns or rows, each containing potentially different information than is shown in table <b>400</b>. For instance, contents of the &#x201c;percentage&#x201d; column could be integer values or non-integer values, or could signify a percentage using other types of representations.</p>
+<p id="p-0085" num="0088">In practice, because of the large number of WCDs that typically subscribe with a given service provider, the size of a roaming-data database, such as table <b>400</b>, may be quite large. Accordingly, in a further aspect, a switch or BTS may pre-load or cache roaming data for WCDs registered in the coverage area it serves. For example, when a WCD registers with the RAN in a coverage area served by a given BTS, the BTS may coordinate with its serving MSC to look up the roaming data for the WCD in the sector in which the WCD is registered. The BTS may then store the roaming data for the WCD in local data storage (i.e., data storage located at the switch) so that it is readily available in the event that the switch needs to page the WCD.</p>
+<p id="p-0086" num="0089">While the likelihood of roaming for a given WCD is preferably based on that WCD's roaming data for the coverage area (i.e., sector) in which the WCD is located, it also possible that the likelihood of roaming may be calculated based upon historical roaming data for all WCDs in a given coverage area. In such an embodiment, the likelihood of roaming for a given WCD may simply be the overall roaming-likelihood indicator for the coverage area in which the WCD is registered. Since the overall roaming-likelihood indicator does not indicate roaming tendency on a per-WCD basis, the overall roaming-likelihood indicator for a given WCD registered in a given coverage area will be the same as for all other WCDs registered in the coverage area.</p>
+<p id="p-0087" num="0090">In addition to the techniques for determining the likelihood of roaming discussed above, there may be other ways to accomplish such a determination that are in accordance with the embodiments herein. Furthermore, in some embodiments, a quantitative indication of the likelihood of roaming, which may be included in messaging between a RAN and a WCD, and/or between components of a RAN, may be referred to as a &#x201c;roaming-likelihood indicator&#x201d;. For example, the &#x201c;percentage&#x201d; column of table <b>400</b> may be included as a roaming-likelihood indicator in messaging between a RAN and a WCD. A roaming-likelihood indicator may take other forms as well, without departing from the scope of the invention.</p>
+<p id="h-0010" num="0000">VI. Exemplary WCD-Implemented Methods</p>
+<p id="p-0088" num="0091">An exemplary method may be carried out by a WCD in an effort to reduce the likelihood of the WCD roaming to a non-preferred coverage area. In particular, the WCD may determine a likelihood of roaming, which indicates a likelihood that the WCD will be handed off from a preferred coverage area to a non-preferred coverage area, and then use the likelihood of roaming as a basis for managing its active set.</p>
+<p id="p-0089" num="0092"><figref idref="DRAWINGS">FIG. 5A</figref> is a flow chart illustrating an exemplary method <b>500</b> that may be implemented by a WCD. As shown by block <b>502</b>, the WCD initially determines its likelihood of roaming. The WCD then uses its likelihood of roaming as a basis for determining a setting for at least one active-set parameter that affects the number of active sectors in its active set, as shown by block <b>504</b>. Then, as shown by block <b>506</b>, the WCD maintains its active set according to the determined setting of the at least one active-set parameter.</p>
+<p id="p-0090" num="0093">The function of determining the likelihood of roaming may involve the WCD receiving an indication of the likelihood of roaming from a radio access network. In an exemplary embodiment, the mobile station may receive an indication of its likelihood of roaming whenever it registers with the RAN in a new coverage area (i.e., a new sector) and/or or whenever it is handed off from one preferred coverage area to another preferred coverage area within the RAN. For example, a roaming-likelihood indicator may be included as overhead information in each system parameters message that a mobile station receives upon registration in a new coverage area. Additionally or alternatively, a roaming-likelihood indicator may be included as overhead information in each HDM that is received from the RAN.</p>
+<p id="p-0091" num="0094">In some embodiments, the active-set parameter (or one of the active-set parameters) that is set by the WCD may be the maximum-active-sector parameter. In an effort to increase the number of sectors that can be included in the active set, the WCD may increase the value of the maximum-active-sector parameter as the likelihood of roaming increases. Conversely, as the likelihood of roaming decreases, the WCD may decrease the value of the maximum-active-sector parameter. Adjusting the maximum-active-sector parameter in this manner may help a WCD to include more sectors in the active set at times when the WCD is more likely to roam, which in turn may reduce the probability that the WCD is handed off to a non-preferred coverage area.</p>
+<p id="p-0092" num="0095">More specifically, WCDs are typically configured such that only sectors that are served by the home service provider are added to the active set, unless there are no such sectors that meet the criteria to be added to and/or kept in the active set. When no sector that is served by the home service provider meets the criteria to be added to or to be kept in the active set, the WCD may search for a sector that meets the requirements for its active set, without regard to whether or not the sector is served by its home service provider. In this scenario, the WCD may add a sector in a non-preferred coverage area to its active set, which may ultimately result in a handoff to the non-preferred coverage area. Therefore, increasing the number of sectors in the active set, this may help to prevent the scenario where the active set is empty, and the WCD consequently roams to a non-preferred coverage area.</p>
+<p id="p-0093" num="0096">Additionally or alternatively, the active-set parameter or parameters that are set by the WCD may include those that affect how likely a given sector is to be added to or kept in the active set (and thus ultimately may affect how many active sectors are in the active set). Such active-set parameters may include, but are not limited to, T_ADD, T_COMP, T_DROP, and/or T_TDROP. In an exemplary embodiment, the WCD may adjust one or more of these active-set parameters such that a given sector is more likely to be added to the active set and/or such that a given active sector is more likely to be kept in the active set. For example, the WCD may decrease T_ADD and/or decrease T_COMP, which may help to increase the probability that a given sector is added to the active set. Additionally or alternatively, the WCD may decrease T_DROP, and/or increase T_TDROP, which may help to increase the probability that a given sector is kept in the active set. By increasing the probability that a given sector is added to the active set and/or that a given active sector is kept in the active set, a WCD may be able to prevent a scenario where all sectors from a preferred coverage area are dropped from the active set of a WCD, and the WCD ends up roaming to a sector in a non-preferred coverage area. It should be understood, however, that these and other active-set parameters may be adjusted in other ways, and in a such a way as to achieve other benefits, without departing from the scope of the invention.</p>
+<p id="p-0094" num="0097">In an exemplary embodiment, the step of using the likelihood of roaming as a basis for determining a setting for at least one active-set parameter may involve determining whether or not the determined likelihood of roaming is above a predetermined threshold. <figref idref="DRAWINGS">FIG. 5B</figref> is a flow chart illustrating a method <b>550</b>, according to an exemplary embodiment in which a WCD adjusts the setting for at least one active-set parameter when the determined likelihood of roaming is above a predetermined threshold.</p>
+<p id="p-0095" num="0098">More specifically, method <b>550</b> involves the WCD periodically receiving a roaming-likelihood indicator from the RAN, which provides the WCD with an indication of the likelihood of roaming, as shown by block <b>552</b>. Upon the receipt of each roaming-likelihood indicator or shortly thereafter, the WCD uses the roaming-likelihood indicator to determine whether or not its likelihood of roaming is above a predetermined threshold, as shown by block <b>554</b>. If the WCD determines that its likelihood of roaming is below the predetermined threshold, then the WCD may continue to operate without adjusting the settings for its active set (and continue to check its likelihood of roaming as subsequent roaming-likelihood indicators are received from the RAN), as shown by block <b>556</b>. However, if the WCD determines that its likelihood of roaming is above the predetermined threshold, then the WCD may adjust the setting of at least one active-set parameter in an effort to increase the number of active sectors that are included in its active set, as shown by block <b>558</b>. The WCD may then maintain its active set according to the adjusted setting of the at least one active-set parameter, as shown by block <b>560</b>.</p>
+<p id="p-0096" num="0099">In effort to increase the number of active sectors, an exemplary method may involve the WCD increasing the value of its locally-stored maximum-active-sector parameter from an initial maximum number to an increased maximum number, thereby allowing a greater total number of sectors to be included in the active set. For instance, the WCD may by default allow for up to three active sectors (i.e., set the maximum-active-sector parameter equal to three). The WCD may then increase the maximum number of active sectors to six (i.e., set the maximum-active-sector parameter equal to six) when the WCD detects that its likelihood of roaming is greater than a predetermined threshold of 50%, for example.</p>
+<p id="p-0097" num="0100">As noted above, <figref idref="DRAWINGS">FIG. 5B</figref> illustrates an exemplary method in which a WCD switches between two different settings for a given active sector, depending upon whether or not the likelihood of roaming is above a predetermined threshold. It should be understood, however, that a given active-set parameter may be adjusted more granularly, without departing from the scope of the invention. For example, the likelihood of roaming may be divided into percentage ranges (i.e., ranges of percentages for the percentage column of table <b>300</b> of <figref idref="DRAWINGS">FIG. 3</figref>), or may be divided into ranges that are quantified in another manner.</p>
+<p id="p-0098" num="0101"><figref idref="DRAWINGS">FIG. 6</figref> shows a table <b>600</b> that includes data indicating, for various likelihood of roaming ranges <b>602</b>, the corresponding setting for the maximum-active-sector parameter <b>604</b>, the corresponding T_ADD setting <b>606</b>, and the corresponding T_DROP setting <b>608</b>. In this example, likelihood of roaming ranges <b>602</b> are percentage ranges for a WCD that determines its likelihood of roaming as a percentage in a manner described herein. The maximum-active-sector parameter indicates the maximum number of sectors that can be included in the WCD's active set. Further, T_ADD and T_DROP are indicated as the Ec/Io value at which a sector is eligible to be added to or dropped from the active set, respectively.</p>
+<p id="p-0099" num="0102">Once a WCD has determined its likelihood of roaming, the WCD may access data such as that stored in table <b>600</b> to determine the appropriate settings for these active-set parameters. In particular, if a WCD determines that the likelihood of roaming is greater than 90%, then based on table <b>600</b> the WCD will set the maximum-active-sector parameter equal to 6, set T_ADD equal to &#x2212;14, and set T_DROP equal to &#x2212;17. If, however, the WCD determines that the likelihood of roaming is between 70% and 90%, this means there is a lower probability that the WCD will be handed off to a non-preferred coverage area. Since the likelihood of roaming is lower, there is less need to maximize the number of active sectors, and the active-set parameters may be set accordingly. In particular, if the WCD determines that the likelihood of roaming is 76%, for instance, then table <b>600</b> indicates that the maximum-active-sector parameter should be set to 5, that T_ADD should be set equal to &#x2212;14, and that T_DROP should be set equal to &#x2212;17. Thus, while T_ADD and T_DROP remain set in the same manner as for the &#x3e;90% range, the maximum number of active sectors is reduced from 6 to 5.</p>
+<p id="p-0100" num="0103">Table <b>600</b> also indicates that further reduction of efforts to maximize the number of active sectors should occur as the likelihood of roaming falls to the 50-70% range, and then below 50%. In particular, if the likelihood of roaming is between 50% and 70%, then table <b>600</b> indicates that the maximum-active-sector parameter should be reduced to 4, that T_ADD should be reduced to &#x2212;13, and that T_DROP should reduced to &#x2212;16. And if the likelihood of roaming is below 50%, then table <b>600</b> indicates that the maximum-active-sector parameter should be further reduced to 3, that T_ADD should be further reduced to &#x2212;12, and that T_DROP should again be set to &#x2212;16.</p>
+<p id="p-0101" num="0104">It should be understood that the specific likelihood of roaming ranges <b>602</b> and/or the corresponding values of the active-set parameters <b>604</b>-<b>608</b> may be set as a matter of engineering design choice, without departing from the scope of the invention. Furthermore, it should be understood that the combination of active-set parameters shown in table <b>600</b> is but one example, and that similar data may be provided for other combinations of one or more active-set parameters without departing from the scope of the invention.</p>
+<p id="h-0011" num="0000">VII. Exemplary RAN-Implemented Methods</p>
+<p id="p-0102" num="0105">In another aspect, an exemplary method may be implemented by a RAN, and in particular by a BTS, which may implement an exemplary method in order to help manage (or to facilitate the management of) a WCD's active set. For instance, an exemplary BTS may be configured to (i) determine the likelihood of roaming for a WCD operating in a preferred coverage area, and (ii) use the likelihood of roaming for the WCD as a basis for managing an active set of the WCD.</p>
+<p id="p-0103" num="0106">The management of a given WCD's active set by a BTS may involve the BTS automatically sending the WCD a roaming-likelihood indicator when the WCD registers in a coverage area served by the BTS. The WCD may then use the roaming-likelihood indicator to determine the setting for one or more active-set parameters, as described in reference to <figref idref="DRAWINGS">FIGS. 5A and 5B</figref>, for example. In an exemplary embodiment, a BTS may include a roaming-likelihood indicator as overhead information in the system parameters message that is sent when a mobile station registers in a given sector that is served by the BTS. The WCD may then evaluate whether the likelihood of roaming is such that while the WCD is located in the given sector, the WCD should adjust its active-set parameters in an effort to prevent roaming to a non-preferred coverage area. The BTS may also include a roaming-likelihood indicator as overhead information in each HDM sent by the BTS. By doing so, the BTS may provide each WCD that is handed off to a sector served by the BTS with an indication of the likelihood of roaming in that sector.</p>
+<p id="p-0104" num="0107">The roaming-likelihood indicator itself may take various forms. For example, each roaming-likelihood indicator may be a percentage indicating how likely a WCD is to roam. More specifically, the roaming-likelihood indicator may indicate the percentage of the particular WCD's calls that have historically been handed off from a preferred coverage area in which the WCD just registered to a non-preferred coverage area. In such an embodiment, the roaming-likelihood indicator may be determined using data such as that illustrated by table <b>400</b> of <figref idref="DRAWINGS">FIG. 4</figref>. However, the percentage indicated by the roaming-likelihood indicator may be determined in other ways as well. As one example, the percentage may be calculated based upon historical roaming data for all WCDs in the preferred coverage area in which a WCD has just registered (and thus is the same for all WCDs in that coverage area). As another example, the percentage may be calculated based upon historical roaming data for the particular WCD over all sectors in the RAN, or possibly over a subset of sectors in the RAN (e.g., the sector in which the WCD has just registered and nearby sectors within a certain distance from this sector).</p>
+<p id="p-0105" num="0108">To provide roaming-likelihood indicators, a RAN preferably maintains a database containing roaming data such as that illustrated by table <b>400</b> of <figref idref="DRAWINGS">FIG. 4</figref>. As such, whenever a mobile station registers in and/or is handed off to a sector served by a given BTS, the BTS may access this database (possibly via its serving MSC) in order to retrieve the roaming data necessary to provide a roaming-likelihood indication to the WCD. Alternatively, the BTS may notify its serving MSC when a mobile station registers in and/or is handed off to a sector served by the BTS. The MSC may then retrieve the appropriate roaming data and provide the roaming likelihood indication to the BTS for transmission to the WCD.</p>
+<p id="p-0106" num="0109">In an alternative embodiment, a BTS may take a more active role in managing a WCD's active set. For example, a BTS may evaluate the likelihood of roaming before sending a roaming-likelihood indicator to a WCD, and only send the roaming-likelihood indicator when the BTS determines that the likelihood of roaming warrants the WCD making an effort to prevent a handoff to a non-preferred coverage area.</p>
+<p id="p-0107" num="0110"><figref idref="DRAWINGS">FIG. 7</figref> is a flow chart illustrating a method <b>700</b> that may be implemented by a BTS, according to an exemplary embodiment in which the BTS takes a more active role in managing a WCD's active set. According to method <b>700</b>, the BTS initially determines the likelihood of roaming for a WCD, as shown by block <b>702</b>. The BTS then determines whether or not the likelihood of roaming for the WCD is above a predetermined threshold, as shown by block <b>704</b>. If the likelihood of roaming is above the predetermined threshold, then the BTS sends the WCD an active-set management message, as shown by block <b>706</b>. The active-set management message preferably indicates that the likelihood of roaming for the WCD is such that the WCD should set at least one active-set parameter in an effort to increase the size of the WCD's active set (i.e., in an effort to increase the number of active sectors). On the other hand, if the likelihood of roaming is below the predetermined threshold, then the BTS refrains from sending the active-set management message that indicates that the WCD should set at least one active-set parameter in an effort to increase the number of active sectors, as shown by block <b>708</b>.</p>
+<p id="p-0108" num="0111">In one embodiment of method <b>700</b>, the BTS may only sends an active-set management message when it is determined that the likelihood of roaming is such that a WCD should make an effort to increase the number of sectors in its active set and/or to keep more sectors in its active set. Accordingly, a WCD may take the receipt of such an active-set management message as de facto indication that it should adjust the settings for its active set in an effort to prevent being handed off to a non-preferred coverage area.</p>
+<p id="p-0109" num="0112">Alternatively, the BTS may automatically send active-set management messages, each of which may or may not indicate that the WCD should adjust its active-set parameters. As such, when the BTS refrains from sending the active-set management message that indicates that the WCD should set at least one active-set parameter in an effort to increase the number of active sectors, as in block <b>708</b>, the BTS may instead send an active-set management message that indicates to the WCD that it should continue to function as it has been, without adjusting its active-set parameters. For example, each active-set management message may simply be a roaming-likelihood indicator that is automatically included in a system parameters message and/or an HDM whenever the BTS sends these messages. In particular, each roaming-likelihood indicator may be a bit that is included as overhead information in a system parameter message and/or an HDM. This roaming-likelihood bit may be set to &#x201c;1&#x201d; when the likelihood of roaming is greater than a predetermined threshold, and set to &#x201c;0&#x201d; when the likelihood of roaming is below the predetermined threshold. Accordingly, when the WCD receives a system parameters message in which the roaming-likelihood bit is set to &#x201c;1&#x201d;, this indicates to the WCD to adjust its active-set parameters in an effort to keep a greater number of sectors in its active set.</p>
+<p id="p-0110" num="0113">In another alternative embodiment, the active-set management message may identify the specific active-set parameters that the WCD should adjust (e.g., the maximum-active-sector parameter, T_ADD, T_COMP, T_DROP, and/or T_TDROP), and possibly the specific setting that should be used for each active-set parameter that is identified. For example, the BTS and/or the MSC may determine settings for one or more of these active-set parameters based on the likelihood of roaming, and indicate the determined settings in a system parameter message or an HDM. It should be understood that in this and other embodiments, the active-set management message may alternatively be sent as a separate message and not included as part of a system parameter message or an HDM. Furthermore, active-set management messages may indicate how a WCD should set its active-set parameters in other ways, without departing from the scope of the invention.</p>
+<p id="p-0111" num="0114">It should be understood the arrangements and functions described herein are presented for purposes of example only, and that numerous variations are possible. For instance, elements can be added, omitted, combined, distributed, reordered, or otherwise modified. Further, where this document mentions functions that can be carried out by a device or other entity, it should be understood that the functions may be implemented by software (e.g., machine language instructions stored in data storage and executable by a processor), firmware, and/or hardware.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>We claim:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method comprising:
+<claim-text>a wireless communication device (WCD) determining a likelihood of roaming, wherein the likelihood of roaming indicates a probability that the WCD will be handed off from a preferred coverage area to a non-preferred coverage area, wherein the preferred coverage area is operated by a home service provider, and wherein the non-preferred coverage area is operated by another service provider; and</claim-text>
+<claim-text>the WCD using the likelihood of roaming as a basis for managing an active set of the WCD, wherein managing the active set comprises:
+<claim-text>if the likelihood of roaming is above a first threshold, then adjusting at least one active-set parameter in an effort to reduce the probability that the WCD will be handed off to the non-preferred coverage area, wherein adjusting the at least one active-set parameter comprises setting a maximum number of active sectors that the WCD can include in the active set of the WCD to a second maximum number; and</claim-text>
+<claim-text>otherwise, if the likelihood of roaming is equal to or below the first threshold, then refraining from adjusting the at least one active-set parameter in an effort to reduce a probability of a handoff to the non-preferred coverage area and setting the maximum number of active sectors to a first maximum number, wherein the second maximum number that is greater than the first maximum number.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein determining the likelihood of roaming comprises receiving an indication of the likelihood of roaming from a radio access network.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein adjusting the at least one active-set parameter comprises setting a value of a maximum-active-sector parameter that is stored at the WCD.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein adjusting the at least one active-set parameter further comprises:
+<claim-text>if the likelihood of roaming is above a second threshold, then setting the maximum number of active sectors to a third maximum number, wherein the second threshold corresponds to a greater probability of roaming than the first threshold, and wherein the third maximum number is greater than the second maximum number.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein adjusting the at least one active-set parameter further comprises:
+<claim-text>setting at least one active-set parameter affecting the number of active sectors in the active set of the WCD; and</claim-text>
+<claim-text>maintaining the active set according to the at least one active-set parameter.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00005">claim 5</claim-ref>, wherein setting the at least one active-set parameter affecting the number of active sectors in the active set of the WCD comprises setting at least one active-set parameter affecting whether or not a given sector is included in the active set.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein setting the at least one active-set parameter affecting whether or not a given sector is included in the active set comprises setting at least one of (a) a threshold pilot strength for addition to the active set (T_ADD), (b) a threshold difference in signal strength from an active set pilot (T_COMP), (c) a threshold pilot strength for removal from the active set (T_DROP), and (d) a time for which an active set pilot falls below T_DROP to justify removal from the active set (T_TDROP).</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein setting at least one active-set parameter affecting whether or not a given sector is included in the active set comprises at least one of (a) setting at least one active-set parameter affecting a probability that a given sector will be added to the active set, (b) setting at least one active-set parameter affecting a probability that a given active sector will be kept in the active set, and (c) setting at least one active-set parameter affecting a probability that a given active sector will be dropped from the active set.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein adjusting at least one active-set parameter in an effort to reduce the probability that the WCD will be handed off to the non-preferred coverage comprises:
+<claim-text>determining whether or not the likelihood of roaming is above the first threshold;</claim-text>
+<claim-text>if the likelihood of roaming is above the first threshold, then at least one of (a) setting at least one active-set parameter in an effort to increase a probability that a given sector will be added to the active set, (b) setting at least one active-set parameter in an effort to increase a probability that a given active sector will be kept in the active set, and (c) setting at least one active-set parameter in an effort to decrease a probability that a given active sector will be dropped from the active set; and</claim-text>
+<claim-text>if the likelihood of roaming is below the first threshold, then setting the at least one active-set parameter to a default setting.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. A wireless-communication-device system comprising:
+<claim-text>a non-transitory computer-readable medium; and</claim-text>
+<claim-text>program instructions stored on the non-transitory computer-readable medium and executable by at least one processor to:
+<claim-text>(a) determine a likelihood of roaming, wherein the likelihood of roaming indicates a probability that a wireless communication device (WCD) will be handed off from a preferred coverage area to a non-preferred coverage area, wherein the preferred coverage area is operated by a home service provider, and wherein the non-preferred coverage area is operated by another service provider; and</claim-text>
+<claim-text>(b) use the likelihood of roaming as a basis to manage an active set of the WCD, wherein management of the active set comprises:
+<claim-text>(i) if the likelihood of roaming is above a first threshold, then adjusting at least one active-set parameter in an effort to reduce the probability that the WCD will be handed off to the non-preferred coverage area, wherein adjusting the at least one active-set parameter comprises setting a maximum number of active sectors that the WCD can include in the active set of the WCD to a second maximum number; and</claim-text>
+<claim-text>(ii) otherwise, if the likelihood of roaming is equal to or below the first threshold, then refraining from adjusting the at least one active-set parameter in an effort to reduce a probability of a handoff to the non-preferred coverage area and setting the maximum number of active sectors to a first maximum number, wherein the second maximum number that is greater than the first maximum number.</claim-text>
+</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The wireless-communication-device system of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the program instructions stored on the non-transitory tangible computer-readable medium and executable by at least one processor to adjust the at least one active-set parameter comprise program instructions stored on the non-transitory tangible computer-readable medium and executable by at least one processor to:
+<claim-text>set at least one active-set parameter that affects whether or not a given sector is included in the active set; and</claim-text>
+<claim-text>maintain the active set according to the setting of the at least one active-set parameter that affects whether or not a given sector is included in the active set.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The wireless-communication-device system of <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the at least one active-set parameter that affects whether or not a given sector is included in the active set comprises at least one of: (a) a threshold pilot strength for addition to the active set (T_ADD), (b) a threshold difference in signal strength from an active set pilot (T_COMP), (c) a threshold pilot strength for removal from the active set (T_DROP), and (d) a time for which an active set pilot falls below T_DROP to justify removal from the active set (T_TDROP). </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

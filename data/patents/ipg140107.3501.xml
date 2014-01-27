@@ -1,0 +1,934 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08624566-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08624566</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12990607</doc-number>
+<date>20090407</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>2008-125715</doc-number>
+<date>20080513</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<us-term-extension>421</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>05</class>
+<subclass>F</subclass>
+<main-group>1</main-group>
+<subgroup>56</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>323222</main-classification>
+<further-classification>323283</further-classification>
+<further-classification>323299</further-classification>
+</classification-national>
+<invention-title id="d2e71">Current-mode control switching regulator and operations control method thereof</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>4975820</doc-number>
+<kind>A</kind>
+<name>Szepesi</name>
+<date>19901200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5600234</doc-number>
+<kind>A</kind>
+<name>Hastings et al.</name>
+<date>19970200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>323282</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>6069807</doc-number>
+<kind>A</kind>
+<name>Boylan et al.</name>
+<date>20000500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6137182</doc-number>
+<kind>A</kind>
+<name>Hause et al.</name>
+<date>20001000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>257774</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>6522116</doc-number>
+<kind>B1</kind>
+<name>Jordan</name>
+<date>20030200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>323288</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>6750637</doc-number>
+<kind>B2</kind>
+<name>Nagaki et al.</name>
+<date>20040600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>6781356</doc-number>
+<kind>B1</kind>
+<name>Yang et al.</name>
+<date>20040800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>323282</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>7649346</doc-number>
+<kind>B2</kind>
+<name>Sohma</name>
+<date>20100100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>7679348</doc-number>
+<kind>B2</kind>
+<name>Sohma</name>
+<date>20100300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>8334682</doc-number>
+<kind>B2</kind>
+<name>Chiu et al.</name>
+<date>20121200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>323282</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>2006/0284607</doc-number>
+<kind>A1</kind>
+<name>Isobe</name>
+<date>20061200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>2007/0217698</doc-number>
+<kind>A1</kind>
+<name>Son</name>
+<date>20070900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>2007/0247131</doc-number>
+<kind>A1</kind>
+<name>Sohma</name>
+<date>20071000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>2007/0285073</doc-number>
+<kind>A1</kind>
+<name>Nishida</name>
+<date>20071200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>2008/0080219</doc-number>
+<kind>A1</kind>
+<name>Sohma</name>
+<date>20080400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>2008/0150508</doc-number>
+<kind>A1</kind>
+<name>Sohma</name>
+<date>20080600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>2009/0135632</doc-number>
+<kind>A1</kind>
+<name>Sohma</name>
+<date>20090500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>2010/0013447</doc-number>
+<kind>A1</kind>
+<name>Furuse et al.</name>
+<date>20100100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>2010/0181977</doc-number>
+<kind>A1</kind>
+<name>Sohma</name>
+<date>20100700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>JP</country>
+<doc-number>3-178551</doc-number>
+<date>19910800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>JP</country>
+<doc-number>2001-112250</doc-number>
+<date>20010400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>JP</country>
+<doc-number>2004-40856</doc-number>
+<date>20040200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>JP</country>
+<doc-number>2006-33958</doc-number>
+<date>20060200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>JP</country>
+<doc-number>2006-246626</doc-number>
+<date>20060900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>JP</country>
+<doc-number>2007-244128</doc-number>
+<date>20070900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>JP</country>
+<doc-number>2007-252113</doc-number>
+<date>20070900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>JP</country>
+<doc-number>2007-259599</doc-number>
+<date>20071000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>JP</country>
+<doc-number>2008-92635</doc-number>
+<date>20080400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>JP</country>
+<doc-number>2008-161001</doc-number>
+<date>20080700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>JP</country>
+<doc-number>2009-33883</doc-number>
+<date>20090200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00031">
+<document-id>
+<country>JP</country>
+<doc-number>2009-131062</doc-number>
+<date>20090600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00032">
+<document-id>
+<country>JP</country>
+<doc-number>2009-278719</doc-number>
+<date>20091100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00033">
+<document-id>
+<country>JP</country>
+<doc-number>2009-278720</doc-number>
+<date>20091100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00034">
+<document-id>
+<country>JP</country>
+<doc-number>2010-28951</doc-number>
+<date>20100200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00035">
+<document-id>
+<country>WO</country>
+<doc-number>WO2009/139249</doc-number>
+<date>20091100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00036">
+<document-id>
+<country>WO</country>
+<doc-number>WO2009/139430</doc-number>
+<date>20091100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00037">
+<othercit>International Search Report and Written Opinion in PCT/JP2009/057425.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00038">
+<othercit>Mar. 30, 2012 Korean official action (and English translation thereof) in connection with a counterpart Korean patent application.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>17</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>323222</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>323282-288</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>323299</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>323280</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>10</number-of-drawing-sheets>
+<number-of-figures>10</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110043175</doc-number>
+<kind>A1</kind>
+<date>20110224</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Sohma</last-name>
+<first-name>Shohtaroh</first-name>
+<address>
+<city>Osaka</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Sohma</last-name>
+<first-name>Shohtaroh</first-name>
+<address>
+<city>Osaka</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Cooper &#x26; Dunham LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Ricoh Company, Ltd.</orgname>
+<role>03</role>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Patel</last-name>
+<first-name>Rajnikant</first-name>
+<department>2838</department>
+</primary-examiner>
+</examiners>
+<pct-or-regional-filing-data>
+<document-id>
+<country>WO</country>
+<doc-number>PCT/JP2009/057425</doc-number>
+<kind>00</kind>
+<date>20090407</date>
+</document-id>
+<us-371c124-date>
+<date>20101101</date>
+</us-371c124-date>
+</pct-or-regional-filing-data>
+<pct-or-regional-publishing-data>
+<document-id>
+<country>WO</country>
+<doc-number>WO2009/139249</doc-number>
+<kind>A </kind>
+<date>20091119</date>
+</document-id>
+</pct-or-regional-publishing-data>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Disclosed is a current-mode control switching regulator that steps down or steps up an input voltage input to an input terminal to a predetermined constant voltage and outputs the stepped input voltage from an output terminal as an output voltage. The current-mode control switching regulator includes a switching element, an inductor, a rectifying element, an error amplification circuit unit, an oscillation circuit unit with variable oscillation frequency, a slope voltage generation circuit unit, and a switching control circuit unit.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="178.65mm" wi="248.16mm" file="US08624566-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="239.52mm" wi="169.50mm" orientation="landscape" file="US08624566-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="248.16mm" wi="177.72mm" orientation="landscape" file="US08624566-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="151.72mm" wi="151.13mm" file="US08624566-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="206.59mm" wi="145.20mm" orientation="landscape" file="US08624566-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="256.88mm" wi="170.01mm" orientation="landscape" file="US08624566-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="147.66mm" wi="150.88mm" file="US08624566-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="218.86mm" wi="154.43mm" orientation="landscape" file="US08624566-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="146.39mm" wi="76.03mm" file="US08624566-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="119.38mm" wi="77.98mm" file="US08624566-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="146.47mm" wi="88.39mm" file="US08624566-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">TECHNICAL FIELD</heading>
+<p id="p-0002" num="0001">The present invention relates to a current-mode control switching regulator that operates in a wide input/output voltage range and a wide frequency range.</p>
+<heading id="h-0002" level="1">BACKGROUND ART</heading>
+<p id="p-0003" num="0002">In general, voltage-mode control switching regulators have been widely used. The voltage-mode control switching regulators perform PWM control on a switching element in accordance with a voltage difference between an output voltage and a reference voltage, thereby stabilizing the output voltage. However, since the voltage-mode control switching regulators detect a returned signal from the output voltage, their response speed to fluctuation in the output voltage is slow and the phase compensation of an error amplification circuit which amplifies the voltage difference between the output voltage and the reference voltage becomes complicated.</p>
+<p id="p-0004" num="0003">As a technology to solve these deficiencies, current-mode control switching regulators have been used in many cases. However, it is known that, when the on-duty cycle of PWM control exceeds 50%, the current mode control switching regulators cause subharmonic oscillation and go out of control. Therefore, slope compensation is performed on PWM control to prevent subharmonic oscillation.</p>
+<p id="p-0005" num="0004"><figref idref="DRAWINGS">FIG. 1</figref> is a circuit diagram showing an example of a current-mode control switching regulator having a circuit that performs such slope compensation and shows a step-down switching regulator.</p>
+<p id="p-0006" num="0005">In <figref idref="DRAWINGS">FIG. 1</figref>, when a switching transistor <b>105</b> is turned on, power is supplied to an inductor <b>104</b>, a smoothing capacitor <b>102</b>, and a load <b>101</b>. When the switching transistor <b>105</b> is turned off, the energies accumulated in the inductor <b>104</b> and the smoothing capacitor <b>102</b> are supplied to the load <b>101</b>. A current/voltage conversion circuit <b>106</b> has impedance Rsense and outputs a converted voltage Vsense (=Rsense&#xd7;iL) obtained by converting the voltage of a current iL fed to the inductor <b>104</b> with the impedance Rsense.</p>
+<p id="p-0007" num="0006">Furthermore, an oscillation circuit <b>110</b> generates and outputs a predetermined reference clock signal CLK and a predetermined sawtooth wave voltage Vramp. An accumulator <b>108</b> performs slope compensation by adding the sawtooth wave voltage Vramp to the converted voltage Vsense and outputs the result to the non-inverting input terminal of a PWM comparator <b>107</b> as a slope voltage Vs. An error amplification circuit <b>115</b> amplifies a voltage difference between a reference voltage Vref and a divided voltage Vfb obtained by dividing an output voltage Vout and outputs a generated error voltage Ve to the inverting input terminal of the PWM comparator <b>107</b>. The PWM comparator <b>107</b> compares the error voltage Ve with the slope voltage Vs. When the error voltage Ve exceeds the slope voltage Vs, the PWM comparator <b>107</b> resets an RS latch circuit <b>112</b> to turn off the switching transistor <b>105</b>. Therefore, the peak current value of the inductor current iL depends on the error voltage Ve.</p>
+<p id="p-0008" num="0007">In regulating the output voltage Vout, the PWM comparator <b>107</b> reduces the error voltage Ve to reduce the output voltage Vout when the divided voltage Vfb is larger than the reference voltage Vref. Furthermore, the PWM comparator <b>107</b> increases the error voltage Ve to increase the output voltage Vout when the divided voltage Vfb is smaller than the reference voltage Vref.</p>
+<p id="p-0009" num="0008">In order to prevent the subharmonic oscillation described above, it is necessary to perform slope compensation so that the inclination of the slope voltage Vs becomes one-half or more of that of the inductor current iL when the switching transistor <b>105</b> is turned off.</p>
+<p id="p-0010" num="0009">Specifically, in <figref idref="DRAWINGS">FIG. 1</figref>, assuming that the inductance of the inductor <b>104</b> is L, the inclination diL/dt of the inductor current iL when the switching transistor <b>105</b> is turned on is obtained by the following formula (a). Furthermore, the inclination diL/dt of the inductor current iL when the switching transistor <b>105</b> is turned off is obtained by the following formula (b).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>diL/dt</i>=(<i>V</i>in&#x2212;<i>V</i>out)/<i>L</i>&#x2003;&#x2003;(a)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>diL/dt=&#x2212;V</i>out/<i>L</i>&#x2003;&#x2003;(b)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0011" num="0010">When the inclination of the sawtooth wave voltage Vramp is slope compensation Iramp, the slope compensation at this time is obtained by the following formula (c).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>I</i>ramp&#x3e;<i>V</i>out/2<i>/L&#xd7;R</i>sense&#x2003;&#x2003;(c)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0012" num="0011">Note that in a step-up switching regulator, the formulae (a), (b), and (c) are represented by the following formulae (d), (e), and (f), respectively.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>diL/dt=V</i>in/<i>L</i>&#x2003;&#x2003;(d)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>diL/dt</i>=&#x2212;(<i>V</i>out&#x2212;<i>V</i>in)/<i>L</i>&#x2003;&#x2003;(e)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>I</i>ramp&#x3e;(<i>V</i>out&#x2212;<i>V</i>in)/<i>L/</i>2<i>&#xd7;R</i>sense&#x2003;&#x2003;(f)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0013" num="0012">As described above, the slope compensation Iramp can be represented using the variables of the output voltage Vout and the input voltage Vin. When the input voltage Vin and the output voltage Vout are constant values, no problem occurs. However, the input voltage Vin and the output voltage Vout generally fluctuate in a wide range. Therefore, when the slope compensation Iramp is set to a fixed value, the slope compensation Iramp is required to be set to the maximum value within the fluctuation range of the expected input voltage Vin and the output voltage Vout. However, although subharmonic oscillation can be prevented when excessive slope compensation is performed, the advantages of current feedback are lost. As a result, the current-mode control switching regulator operates like the voltage-mode switching regulator to degrade its controllability. In order to deal with this, a slope control amount is determined in accordance with an input/output voltage to properly perform slope compensation in a wide input/output voltage range (see, e.g., Patent Document 1).</p>
+<p id="p-0014" num="0013">Patent Document 1: JP-2006-33958</p>
+<p id="p-0015" num="0014">However, in this case, since the slope compensation amount is changed in accordance with an input voltage and an output voltage, the circuit becomes complicated. Furthermore, since the general-purpose IC of the switching regulator generally has an external resistor for generating the divided voltage obtained by dividing an output voltage and cannot monitor the output voltage, it cannot perform slope compensation in accordance with the output voltage.</p>
+<p id="p-0016" num="0015">On the other hand, the inductance L selected by a designer is changed as the operating frequency of the switching regulator changes. Therefore, when the slope compensation Iramp is set to a fixed value, it is required to be set to the maximum value within the fluctuation range of the expected input voltage Vin, the output voltage Vout, and the inductance L. For example, when the oscillation frequencies of the oscillation circuit are 2 MHz, 1 MHz, 500 kHz, and 300 kHz, the selected inductances L are 2.2 &#x3bc;H, 4.7 &#x3bc;H, 10 &#x3bc;H, and 15 &#x3bc;H, respectively, which are inversely proportional to the oscillation frequencies. However, as described above, although subharmonic oscillation can be prevented when excessive slope compensation is performed, the advantages of current feedback are lost. As a result, the current-mode control switching regulator operates like the voltage-mode switching regulator to degrade its controllability. However, the known switching regulator cannot perform the slope compensation in accordance with the inductance L.</p>
+<heading id="h-0003" level="1">DISCLOSURE OF INVENTION</heading>
+<p id="p-0017" num="0016">The present invention has been made to solve the above problems and may provide a current-mode control switching regulator capable of preventing subharmonic oscillation in a wide input/output voltage range and a wide variable frequency range with a simple circuit and suppressing fluctuation in frequency characteristics. Specifically, a step-down switching regulator changes the inclination of a slope voltage in accordance with an input voltage and an oscillation frequency, while a step-up switching regulator changes the inclination of a slope voltage in accordance with an output voltage and an oscillation frequency. The present invention may also provide the operations control method of the current-mode control switching regulator.</p>
+<p id="p-0018" num="0017">According to a first aspect of the present invention, there is provided a current-mode control switching regulator that steps down an input voltage input to an input terminal to a predetermined constant voltage and outputs the stepped input voltage from an output terminal as an output voltage. The current-mode control switching regulator includes a switching element that performs a switching operation in accordance with an input control signal; an inductor that is charged with the input voltage by the switching operation of the switching element; a rectifying element that discharges the inductor; an error amplification circuit unit that amplifies a voltage difference between a divided voltage obtained by dividing the output voltage at a predetermined ratio and a predetermined reference voltage; an oscillation circuit unit with variable oscillation frequency that generates and outputs a clock signal having a set oscillation frequency; a slope voltage generation circuit unit that generates and outputs a slope voltage having an inclination corresponding to the input voltage and the oscillation frequency; and a switching control circuit unit that compares an output voltage from the error amplification circuit unit with the slope voltage, generates a pulse signal of a duty cycle corresponding to a comparison result using the clock signal, and performs switching control on the switching element in accordance with the pulse signal.</p>
+<p id="p-0019" num="0018">According to a second aspect of the present invention, there is provided a current-mode control switching regulator that steps up an input voltage input to an input terminal to a predetermined constant voltage and outputs the stepped input voltage from an output terminal as an output voltage. The current-mode control switching regulator includes a switching element that performs a switching operation in accordance with an input control signal; an inductor that is charged with the input voltage by the switching operation of the switching element; a rectifying element that discharges the inductor; an error amplification circuit unit that amplifies a voltage difference between a divided voltage obtained by dividing the output voltage at a predetermined ratio and a predetermined reference voltage; an oscillation circuit unit with variable oscillation frequency that generates and outputs a clock signal having a set oscillation frequency; a slope voltage generation circuit unit that generates and outputs a slope voltage having an inclination corresponding to the output voltage and the oscillation frequency; and a switching control circuit unit that compares an output voltage from the error amplification circuit unit with the slope voltage, generates a pulse signal of a duty cycle corresponding to a comparison result using the clock signal, and performs switching control on the switching element in accordance with the pulse signal.</p>
+<p id="p-0020" num="0019">According to a third aspect of the present invention, there is provided an operations control method of a current-mode control switching regulator having a switching element that performs a switching operation in accordance with an input control signal; an inductor that is charged with an input voltage input to an input terminal by the switching operation of the switching element; a rectifying element that discharges the inductor; and an oscillation circuit unit with variable oscillation frequency that generates and outputs a clock signal having a set oscillation frequency, the current-mode control switching regulator performing switching control on the switching element in accordance with a pulse signal generated using the clock signal so that an output voltage from an output terminal becomes a predetermined constant voltage and stepping down the input voltage input to the input terminal to a predetermined constant voltage and outputting the stepped input voltage from the output terminal as the output voltage. The operations control method includes varying an inclination of a slope voltage used for generating the pulse signal to perform the switching control on the switching element in accordance with the input voltage and the oscillation frequency.</p>
+<p id="p-0021" num="0020">According to a fourth aspect of the present invention, there is provided an operations control method of a current-mode control switching regulator having a switching element that performs a switching operation in accordance with an input control signal; an inductor that is charged with an input voltage input to an input terminal by the switching operation of the switching element; a rectifying element that discharges the inductor; and an oscillation circuit unit with variable oscillation frequency that generates and outputs a clock signal having a set oscillation frequency, the current-mode control switching regulator performing switching control on the switching element in accordance with a pulse signal generated using the clock signal so that an output voltage from an output terminal becomes a predetermined constant voltage and stepping up the input voltage input to the input terminal to a predetermined constant voltage and outputting the stepped input voltage from the output terminal as the output voltage. The operations control method includes varying an inclination of a slope voltage used for generating the pulse signal to perform the switching control on the switching element in accordance with the output voltage and the oscillation frequency.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF DRAWINGS</heading>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 1</figref> is a circuit diagram showing a circuit example of a current-mode control switching regulator;</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 2</figref> is a circuit diagram showing a circuit example of a current-mode control switching regulator according to a first embodiment of the present invention;</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 3</figref> is a timing chart showing waveform examples of respective parts shown in <figref idref="DRAWINGS">FIG. 2</figref>;</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 4</figref> is a circuit diagram showing a circuit example of an oscillation circuit <b>8</b> and a voltage/current conversion circuit <b>12</b> shown in <figref idref="DRAWINGS">FIG. 2</figref>;</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 5</figref> is a circuit diagram showing a circuit example of a current-mode control switching regulator according to a second embodiment of the present invention;</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 6</figref> is a timing chart showing waveform examples of respective parts shown in <figref idref="DRAWINGS">FIG. 5</figref>;</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 7</figref> is a circuit diagram showing a circuit example of the oscillation circuit <b>8</b> and the voltage/current conversion circuit <b>52</b> shown in <figref idref="DRAWINGS">FIG. 5</figref>;</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 8</figref> is a circuit diagram showing a circuit example of a variable resistor <b>35</b> shown in <figref idref="DRAWINGS">FIGS. 4 and 7</figref>;</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 9</figref> is a circuit diagram showing another circuit example of the variable resistor <b>35</b> shown in <figref idref="DRAWINGS">FIGS. 4 and 7</figref>; and</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIG. 10</figref> is a circuit diagram showing still another circuit example of the variable resistor <b>35</b> shown in <figref idref="DRAWINGS">FIGS. 4 and 7</figref>.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">BEST MODE FOR CARRYING OUT THE INVENTION</heading>
+<p id="p-0032" num="0031">Next, referring to the accompanying drawings, a description is made of embodiments of the present invention.</p>
+<heading id="h-0006" level="1">First Embodiment</heading>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIG. 2</figref> is a circuit diagram showing a circuit example of a current-mode control switching regulator according to a first embodiment of the present invention.</p>
+<p id="p-0034" num="0033">The current-mode control switching regulator (hereinafter referred to as a switching regulator) <b>1</b> shown in <figref idref="DRAWINGS">FIG. 2</figref> constitutes a step-down switching regulator that steps down an input voltage Vin input from a DC power supply <b>20</b> to an input terminal IN to a predetermined constant voltage and outputs the stepped input voltage from an output terminal OUT to a load <b>21</b> as an output voltage Vout.</p>
+<p id="p-0035" num="0034">The switching regulator <b>1</b> has a switching transistor M<b>1</b> that is composed of a PMOS transistor for controlling the output of a current from the input terminal IN; a rectifying diode D<b>1</b>; an inductor L<b>1</b>; a smoothing capacitor C<b>1</b>; and output voltage detecting resistors <b>2</b> and <b>3</b> that divide the output voltage Vout and generate and output a divided voltage Vfb. In addition, the switching regulator <b>1</b> has a reference voltage generation circuit <b>4</b> that generates and outputs a predetermined reference voltage Vref; an error amplification circuit <b>5</b> that compares the divided voltage Vfb with the reference voltage Vref, amplifies a voltage difference between the divided voltage Vfb and the reference voltage Vref, and generates and outputs an error voltage Ve; and a slope voltage generation circuit <b>6</b> that generates and outputs a slope voltage Vs.</p>
+<p id="p-0036" num="0035">Moreover, the switching regulator <b>1</b> has a PWM comparator <b>7</b>, an oscillation circuit <b>8</b> with variable oscillation frequency, an RS flip-flop circuit <b>9</b>, and an inverter <b>10</b>. The PWM comparator <b>7</b> compares the error voltage Ve from the error amplification circuit <b>5</b> with the slope voltage Vs and generates and outputs a pulse signal Spw for performing PWM control having a pulse width corresponding to the error voltage Ve. The oscillation circuit <b>8</b> with variable oscillation frequency generates and outputs the clock signal CLK having a set oscillation frequency Fosc. The RS flip-flop circuit <b>9</b> has a set input terminal S to which the clock signal CLK from the oscillation circuit <b>8</b> is input and a reset input terminal R to which the pulse signal Spw from the PWM comparator <b>7</b> is input. The inverter <b>10</b> generates a control signal for performing switching control on the switching transistor M<b>1</b> in accordance with an output signal Sq from the RS flip-flop circuit <b>9</b>, thereby driving the switching transistor M<b>1</b>.</p>
+<p id="p-0037" num="0036">On the other hand, the slope voltage generation circuit <b>6</b> is composed of an inverter <b>11</b>, a voltage/current conversion circuit <b>12</b>, an offset diode <b>13</b>, PMOS transistors <b>14</b> and <b>15</b>, and a capacitor <b>16</b>. Note that the switching transistor M<b>1</b> constitutes a switching element; the diode D<b>1</b> constitutes a rectifying element; and the resistors <b>2</b> and <b>3</b>, the reference voltage generation circuit <b>4</b>, and the error amplification circuit <b>5</b> constitute an error amplification circuit unit. Furthermore, the slope voltage generation circuit <b>6</b> constitutes a slope voltage generation circuit unit; the oscillation circuit <b>8</b> constitutes an oscillation circuit unit; and the PWM comparator <b>7</b>, the RS flip-flop circuit <b>9</b>, and the inverter <b>10</b> constitute a switching control circuit unit. Furthermore, the PWM comparator <b>7</b> constitutes a voltage comparison circuit; the RS flip-flop circuit <b>9</b> constitutes a control circuit; the voltage/current conversion circuit <b>12</b> constitutes a current supply; the PMOS transistor <b>14</b> constitutes a voltage supply circuit; and the PMOS transistor <b>15</b> constitutes a discharge circuit. Furthermore, in the switching regulator <b>1</b> shown in <figref idref="DRAWINGS">FIG. 2</figref>, the respective circuits other than the inductor L<b>1</b>, the diode D<b>1</b>, the capacitor C<b>1</b>, and the resistors <b>2</b> and <b>3</b> are integrated in a circuit.</p>
+<p id="p-0038" num="0037">The switching transistor M<b>1</b> is connected between the input voltage Vin and the cathode of the diode D<b>1</b>, and the anode of the diode D<b>1</b> is connected to ground potential. The inductor L<b>1</b> is connected between the drain of the switching transistor M<b>1</b> and the output terminal OUT, and the series circuit of the resistors <b>2</b> and <b>3</b> and the capacitor C<b>1</b> are connected in parallel between the output terminal OUT and ground potential. The divided voltage Vfb serving as the voltage of the connection part between the resistors <b>2</b> and <b>3</b> is input to the non-inverting input terminal of the error amplification circuit <b>5</b>, and the reference voltage Vref is input to the inverting input terminal of the error amplification circuit <b>5</b>. Furthermore, the error voltage Ve from the error amplification circuit <b>5</b> is input to the non-inverting input terminal of the PWM comparator <b>7</b>, and the slope voltage Vs is input to the inverting input terminal of the PWM comparator <b>7</b>. The signal level of the output signal Sq of the RS flip-flop circuit <b>9</b> is inverted by the inverter <b>10</b> and input to the gate of the switching transistor M<b>1</b>.</p>
+<p id="p-0039" num="0038">In the slope voltage generation circuit <b>6</b>, the PMOS transistor <b>14</b> is connected between the drain of the switching transistor M<b>1</b> and the anode of the offset diode <b>13</b>. The cathode of the offset diode <b>13</b> is connected to the inverting input terminal of the PWM comparator <b>7</b>, and the voltage/current conversion circuit <b>12</b> is connected between the inverting input terminal of the PWM comparator <b>7</b> and ground potential. The voltage/current conversion circuit <b>12</b> has a control signal input terminal to which the input voltage Vin is input and is connected to the oscillation circuit <b>8</b>. The voltage/current conversion circuit <b>12</b> feeds a current islope corresponding to the input voltage Vin and the oscillation frequency Fosc from the offset diode <b>13</b> to ground potential.</p>
+<p id="p-0040" num="0039">The connection part between the offset diode <b>13</b> and the voltage/current conversion circuit <b>12</b> serves as the output terminal of the slope voltage generation circuit <b>6</b>, and the slope voltage Vs is output from the connection part. The inverter <b>11</b> inverts the signal level of the clock signal CLK and outputs the inverted clock signal CLK to the gate of the PMOS transistor <b>14</b>. Furthermore, the PMOS transistor <b>15</b> and the capacitor <b>16</b> are connected in parallel between the input voltage Vin and the drain of the PMOS transistor <b>14</b>, and the output signal Sq of the RS flip-flop circuit <b>9</b> is input to the gate of the PMOS transistor <b>15</b>.</p>
+<p id="p-0041" num="0040">In such a configuration, when the error voltage Ve is smaller than or equal to the slope voltage Vs, the PWM comparator <b>7</b> outputs a low level signal, the RS flip-flop circuit <b>9</b> outputs a high level signal while the clock signal CLK becomes a high level, and the switching transistor M<b>1</b> is turned on by the inverter <b>10</b> to establish an electrical connection. When the switching transistor M<b>1</b> is turned on, power is supplied to the inductor L<b>1</b>, the smoothing capacitor C<b>1</b>, and the load <b>21</b>. When the switching transistor M<b>1</b> is turned off, the energies accumulated in the inductor L<b>1</b> and the smoothing capacitor C<b>1</b> are supplied to the load <b>21</b>.</p>
+<p id="p-0042" num="0041">The error amplification circuit <b>5</b> amplifies a voltage difference between the divided voltage Vfb obtained by dividing the output voltage Vout and the predetermined reference voltage Vref and outputs the generated error voltage Ve to the non-inverting input terminal of the PWM comparator <b>7</b>. The PWM comparator <b>7</b> compares the error voltage Ve with the slope voltage Vs from the slope voltage generation circuit <b>6</b>. When the error voltage Ve exceeds the slope voltage Vs, the PWM comparator <b>7</b> resets the RS flip-flop circuit <b>9</b> to turn off the switching transistor M<b>1</b>. Therefore, the peak current value of the inductor current iL depends on the error voltage Ve.</p>
+<p id="p-0043" num="0042">In regulating the output voltage Vout, the PWM comparator <b>7</b> increases the error voltage Ve to reduce the output voltage Vout when the divided voltage Vfb is larger than the reference voltage Vref. Furthermore, the PWM comparator <b>7</b> reduces the error voltage Ve to increase the output voltage Vout when the divided voltage Vfb is smaller than the reference voltage Vref.</p>
+<p id="p-0044" num="0043">Next, <figref idref="DRAWINGS">FIG. 3</figref> is a timing chart showing waveform examples of the respective parts shown in <figref idref="DRAWINGS">FIG. 2</figref>. Referring here to <figref idref="DRAWINGS">FIG. 3</figref>, a description is made of operations of the slope voltage generation circuit <b>6</b> shown in <figref idref="DRAWINGS">FIG. 2</figref>.</p>
+<p id="p-0045" num="0044">The voltage/current conversion circuit <b>12</b> generates and outputs the current islope corresponding to the input voltage Vin and the oscillation frequency Fosc, where the current islope is obtained by &#x201c;A&#xd7;Vin&#xd7;Fosc.&#x201d; Note that A represents a predetermined value. The offset voltage Voffset, which is added to the input voltage Vin by the offset diode <b>13</b>, becomes the forward dropping voltage of the offset diode <b>13</b>.</p>
+<p id="p-0046" num="0045">The input voltage is applied to one end of the capacitor <b>16</b>. When the clock signal CLK becomes a high level and the PMOS transistor <b>14</b> is turned on, the drain voltage VA of the switching transistor M<b>1</b> is applied to the other end of the capacitor <b>16</b> via the transistor <b>14</b>. Therefore, a voltage difference occurs between voltages at corresponding ends of the capacitor <b>16</b>, and the capacitor <b>16</b> is charged with the voltage difference. Assuming that the on-resistance of the switching transistor M<b>1</b> is Ron and a current value at the valleys of the inductor current iL is iLvalley, the drain voltage VA of the switching transistor M<b>1</b> when the switching transistor M<b>1</b> is turned on is obtained by &#x201c;VA=Vin&#x2212;Ron&#xd7;iLvalley.&#x201d;</p>
+<p id="p-0047" num="0046">When the PMOS transistor <b>14</b> is turned off to cut off an electrical connection, the electrical charge of the capacitor <b>16</b> is extracted by the voltage/current conversion circuit <b>12</b>. Assuming that the capacity of the capacitor <b>16</b> is Cvs, the inclination of the voltage of the capacitor <b>16</b> is obtained by &#x201c;&#x2014;A&#xd7;Vin&#xd7;Fosc/Cvs.&#x201d;</p>
+<p id="p-0048" num="0047">Therefore, assuming that an elapsed time since the switching transistor M<b>1</b> is turned on is t, the slope voltage Vs when the switching transistor M<b>1</b> is turned on is obtained by the following formula (1).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>Vs=V</i>in&#x2212;<i>V</i>offset&#x2212;<i>R</i>on&#xd7;<i>iL</i>valley&#x2212;<i>A&#xd7;V</i>in&#xd7;<i>Fosc/Cvs&#xd7;t</i>&#x2003;&#x2003;(1)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0049" num="0048">If it is desired that the inductance L of the inductor L<b>1</b> be set to 2.2 &#x3bc;H, 4.7 &#x3bc;H, 10 &#x3bc;H, and 15 &#x3bc;H when the oscillation frequency Fosc is 2 MHz, 1 MHz, 500 kHz, and 300 kHz, respectively, the following relationship is established.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>A/Cvs=R</i>on/{500 k(Hz)&#xd7;10 &#x3bc;(H)}&#x2003;&#x2003;(2)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0050" num="0049">Accordingly, the following formula (3) can be obtained by formula (1).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>dVs/dt=&#x2212;R</i>on&#xd7;<i>V</i>in&#xd7;<i>Fosc/{</i>500 k(Hz)&#xd7;10 &#x3bc;(H)}&#x2003;&#x2003;(3)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0051" num="0050">Since the relationship &#x201c;L=10 &#x3bc;(H)&#xd7;{500 k(Hz)/Fosc}&#x201d; is established, formula (3) is transformed into the following formula (4).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>dVs/dt=&#x2212;R</i>on&#xd7;<i>V</i>in/<i>L</i>&#x2003;&#x2003;(4)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0052" num="0051">As described above, it is found that dVs/dt is transformed so as to correspond to the inductor L<b>1</b> having the inductance L inversely proportional to the oscillation frequency Fosc, and the inclination dVs/dt of the slope voltage Vs varies in accordance with fluctuation in the input voltage Vin and the oscillation frequency Fosc.</p>
+<p id="p-0053" num="0052">On the other hand, when the output signal Sq of the RS flip-flop circuit <b>9</b> becomes a low level, the switching transistor M<b>1</b> is turned off and the PMOS transistor <b>15</b> is turned on. Accordingly, the electrical charge stored in the capacitor <b>16</b> is completely discharged and reset.</p>
+<p id="p-0054" num="0053">In the above description, although formula (1) is obtained assuming that the on-resistance Ron is constant and the current islope generated by the voltage/current conversion circuit <b>12</b> serving as a current source is obtained by &#x201c;islope=A&#xd7;Vin&#xd7;Fosc,&#x201d; the on-resistance Ron generally varies in accordance with the temperature of the switching transistor M<b>1</b> and a gate voltage when the switching transistor M<b>1</b> is turned on.</p>
+<p id="p-0055" num="0054">Therefore, when the relationship &#x201c;islope=B&#xd7;Ron&#xd7;Vin&#xd7;Fosc (where B represents a predetermined value)&#x201d; is established so that the current islope includes fluctuation in the on-resistance Ron, formula (1) is transformed into the following formula (5).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>Vs=V</i>in&#x2212;<i>V</i>offset&#x2212;<i>R</i>on&#xd7;<i>iL</i>valley&#x2212;<i>B&#xd7;R</i>on&#xd7;<i>V</i>in&#xd7;<i>Fosc/Cvs&#xd7;t</i>&#x2003;&#x2003;(5)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0056" num="0055">The following formula (7) can be obtained by formula (5) as in the case of formula (4) when the relationship (6) is established.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>B/Cvs=</i>1/{500 k(Hz)&#xd7;10 &#x3bc;(H)}&#x2003;&#x2003;(6)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>dVs/dt=&#x2212;R</i>on&#xd7;<i>V</i>in/<i>L</i>&#x2003;&#x2003;(7)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0057" num="0056">Since the inductance L varies in accordance with fluctuation in the oscillation frequency Fosc, it is found that the inclination dVs/dt of the slope voltage Vs varies in accordance with fluctuation in the input voltage Vin and the oscillation frequency Fosc.</p>
+<p id="p-0058" num="0057">Next, <figref idref="DRAWINGS">FIG. 4</figref> is a circuit diagram showing a circuit example of the oscillation circuit <b>8</b> and the voltage/current conversion circuit <b>12</b> shown in <figref idref="DRAWINGS">FIG. 2</figref>.</p>
+<p id="p-0059" num="0058">In <figref idref="DRAWINGS">FIG. 4</figref>, the oscillation circuit <b>8</b> is composed of resistors <b>31</b> and <b>32</b>, an error amplification circuit <b>33</b>, NMOS transistors <b>34</b> and <b>39</b>, a variable resistor <b>35</b>, PMOS transistor <b>36</b> and <b>37</b>, a capacitor <b>38</b>, and a hysteresis comparator <b>40</b>. Furthermore, the voltage/current conversion circuit <b>12</b> is composed of PMOS transistors <b>41</b>, <b>44</b>, and <b>47</b>, NMOS transistors <b>42</b>, <b>43</b>, <b>48</b>, and <b>49</b>, an error amplification circuit <b>45</b>, and a resistor <b>46</b>. Note that in the following description, the resistance values of the resistors <b>31</b>, <b>32</b>, and <b>46</b> are represented as R<b>31</b>, R<b>32</b>, and R<b>33</b>, respectively, and the capacity of the capacitor <b>38</b> is represented as C<b>38</b>.</p>
+<p id="p-0060" num="0059">In the oscillation circuit <b>8</b>, the resistors <b>31</b> and <b>32</b> are connected in series between the input voltage Vin and ground potential, and the connection part between the resistors <b>31</b> and <b>32</b> is connected to the non-inverting input terminal of the error amplification circuit <b>33</b> and the inverting input terminal of the hysteresis comparator <b>40</b>. The output terminal of the error amplification circuit <b>33</b> is connected to the gate of the NMOS transistor <b>34</b>, the variable resistor <b>35</b> is connected between the source of the NMOS transistor <b>34</b> and ground potential, and the connection part between the NMOS transistor <b>34</b> and the variable resistor <b>35</b> is connected to the inverting input terminal of the error amplification circuit <b>33</b>.</p>
+<p id="p-0061" num="0060">The PMOS transistors <b>36</b> and <b>37</b> constitute a current mirror circuit, and the sources of the PMOS transistors <b>36</b> and <b>37</b> are connected to the input voltage Vin. The gates of the PMOS transistors <b>36</b> and <b>37</b> are connected to each other. The connection part between the gates of the PMOS transistors <b>36</b> and <b>37</b> is connected to the drain of the PMOS transistor <b>36</b>. The drain of the PMOS transistor <b>36</b> is connected to the drain of the NMOS transistor <b>34</b>, and the capacitor <b>38</b> is connected between the drain of the PMOS transistor <b>37</b> and ground potential. The connection part between the PMOS transistor <b>37</b> and the capacitor <b>38</b> is connected to the non-inverting input terminal of the hysteresis comparator <b>40</b>, and the NMOS transistor <b>39</b> is connected parallel to the capacitor <b>38</b>. The output terminal of the hysteresis comparator <b>40</b> is connected to the gate of the NMOS transistor <b>39</b>. The clock signal CLK is output from the connection part between the output terminal of the hysteresis comparator <b>40</b> and the gate of the NMOS transistor <b>39</b>.</p>
+<p id="p-0062" num="0061">Next, in the voltage/current conversion circuit <b>12</b>, the PMOS transistors <b>41</b> and <b>36</b> constitute a current mirror circuit. The source of the PMOS transistor <b>41</b> is connected to the input voltage Vin. The gate of the PMOS transistor <b>41</b> is connected to the gate of the transistor <b>36</b>. The connection part between the gate of the PMOS transistor <b>41</b> and the gate of the transistor <b>36</b> is connected to the drain of the PMOS transistor <b>36</b>. Furthermore, the NMOS transistors <b>42</b> and <b>43</b> constitute a current mirror circuit. The sources of the NMOS transistors <b>42</b> and <b>43</b> are connected to ground potential. The gates of the NMOS transistors <b>42</b> and <b>43</b> are connected to each other. The connection part between the gates of the NMOS transistors <b>42</b> and <b>43</b> is connected to the drain of the NMOS transistor <b>42</b>. The drain of the NMOS transistor <b>42</b> is connected to the drain of the PMOS transistor <b>41</b>, and the PMOS transistor <b>44</b> is connected between the input voltage Vin and the drain of the NMOS transistor <b>43</b>. The connection part between the PMOS transistor <b>44</b> and the NMOS transistor <b>43</b> is connected to the non-inverting input terminal of the error amplification circuit <b>45</b>, and the gate of the PMOS transistor <b>44</b> is connected to ground potential.</p>
+<p id="p-0063" num="0062">The output terminal of the error amplification circuit <b>45</b> is connected to the gate of the PMOS transistor <b>47</b>, and the inverting input terminal of the error amplification circuit <b>45</b> is connected to the source of the PMOS transistor <b>47</b>. The resistor <b>46</b> is connected between the input voltage Vin and the source of the PMOS transistor <b>47</b>, and the drain of the PMOS transistor <b>47</b> is connected to the drain of the NMOS transistor <b>48</b>. The NMOS transistor <b>48</b> and <b>49</b> constitute a current mirror circuit. The sources of the NMOS transistor <b>48</b> and <b>49</b> are connected to ground potential. The gates of the NMOS transistors <b>48</b> and <b>49</b> are connected to each other. The connection part between the gates of the NMOS transistors <b>48</b> and <b>49</b> is connected to the drain of the NMOS transistor <b>48</b>. The current fed to the drain of the NMOS transistor <b>49</b> is the current islope.</p>
+<p id="p-0064" num="0063">In such a configuration, the divided voltage &#x201c;Vdev (=Vin&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>))&#x201d; obtained by dividing the input voltage Vin with the resistors <b>31</b> and <b>32</b> is input to the non-inverting input terminal of the error amplification circuit <b>33</b> and the inverting input terminal of the hysteresis comparator <b>40</b>. The error amplification circuit <b>33</b> performs operations control on the NMOS transistor <b>34</b> so that the voltage of the connection part between the NMOS transistor <b>34</b> and the variable resistor <b>35</b> becomes equal to the divided voltage Vdev. Assuming that the resistance value of the variable resistor <b>35</b> is F/Fosc, the current fed to the variable resistor <b>35</b> is obtained by &#x201c;{Vin&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F},&#x201d; the value of which becomes proportional to the oscillation frequency Fosc and the input voltage Vin.</p>
+<p id="p-0065" num="0064">The current fed through the NMOS transistor <b>34</b> is returned by the current mirror circuit of the PMOS transistors <b>36</b> and <b>37</b> and output to the capacitor <b>38</b> via the drain of the PMOS transistor <b>37</b>. Simultaneously, the current fed through the NMOS transistor <b>34</b> is returned by the current mirror circuit of the PMOS transistors <b>36</b> and <b>41</b> and further returned by the current mirror circuit of the NMOS transistors <b>42</b> and <b>43</b>, and then it is supplied to the PMOS transistor <b>44</b>.</p>
+<p id="p-0066" num="0065">The hysteresis comparator <b>40</b> has a non-inverting input terminal to which the voltage Vosc of the connection part between the PMOS transistor <b>37</b>, the capacitor <b>38</b>, and the NMOS transistor <b>39</b> is input, and it also has an inverting input terminal to which the divided voltage Vdev is input. When the voltage Vosc is smaller than the divided voltage Vdev, a low level signal is output from the hysteresis comparator <b>40</b> and the NMOS transistor <b>39</b> is turned off to cut off an electrical connection. Therefore, the capacitor <b>38</b> is charged with the current obtained by &#x201c;{Vin&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F}&#x201d; or a current proportional to the current involved.</p>
+<p id="p-0067" num="0066">Furthermore, when the voltage Vosc exceeds the divided voltage Vdev, a high level signal is output from the hysteresis comparator <b>40</b>, the NMOS transistor <b>39</b> is turned on to immediately discharge the electrical charge of the capacitor <b>38</b>, and the voltage Vosc becomes ground potential. Moreover, when the voltage Vosc becomes smaller than the divided voltage Vdev, the hysteresis comparator <b>40</b> outputs a low level signal again, and the NMOS transistor <b>39</b> is turned off to cut off an electrical connection. When such operations are repeatedly performed, the clock signal CLK of the oscillation frequency Fosc is generated. Since &#x201c;{Vin&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F/C<b>38</b>/Vdev}&#x201d; and &#x201c;Vdev=Vin&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#x201d; are established, the oscillation frequency Fosc at this time is obtained by &#x201c;Fosc=Fosc/F/C<b>38</b>.&#x201d; It should be arranged that the relationship &#x201c;F&#xd7;C<b>38</b>=1&#x201d; is established.</p>
+<p id="p-0068" num="0067">The PMOS transistor <b>44</b> is manufactured in the same processing step as the switching transistor M<b>1</b>, and the assumed voltage when the switching transistor M<b>1</b> is turned on, i.e., ground potential is input to the gate of the PMOS transistor <b>44</b>. Here, it is assumed that the size of the PMOS transistor <b>44</b> is 1/n (where n is a positive integer) of the switching transistor M<b>1</b> and the on-resistance of the PMOS transistor <b>44</b> is obtained by &#x201c;n&#xd7;Ron.&#x201d; The current obtained by &#x201c;{Vin&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F}&#x201d; is fed to the PMOS transistor <b>44</b> by the current mirror circuit. Therefore, the voltage difference between both ends of the PMOS transistor <b>44</b> is obtained by &#x201c;{n&#xd7;Ron&#xd7;(Vin&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F)}.&#x201d;</p>
+<p id="p-0069" num="0068">Furthermore, since the error amplification circuit <b>45</b> performs operations control on the PMOS transistor <b>47</b> so that the voltage difference between both ends of the resistor <b>46</b> is the one obtained by &#x201c;{n&#xd7;Ron&#xd7;(Vin&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F)},&#x201d; the current obtained by &#x201c;{n&#xd7;Ron&#xd7;(Vin&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F)}&#x201d; is fed to the resistor <b>46</b>. Accordingly, the currents of the drains of the NMOS transistors <b>48</b> and <b>49</b> constituting the current mirror circuit are obtained by &#x201c;{n&#xd7;Ron&#xd7;(Vin&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F)/R<b>47</b>}.&#x201d; Assuming that the relationship &#x201c;B=n&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)/F/R<b>47</b>&#x201d; is established, the current islope is obtained by the following formula (8).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>i</i>slope=<i>B&#xd7;R</i>on&#xd7;<i>V</i>in&#xd7;<i>Fosc</i>&#x2003;&#x2003;(8)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0070" num="0069">Note that in the above description, the on-resistance of the switching transistor M<b>1</b> is used for converting the current fed when the switching transistor M<b>1</b> is turned on into a voltage. Alternatively, a sense resistor for detecting the output current of the switching transistor M<b>1</b> may be connected in series to the inductor L<b>1</b> so as to convert the current when the switching transistor M<b>1</b> is turned on into a voltage. In this case, in the oscillation circuit <b>8</b> and the voltage/current conversion circuit <b>12</b> shown in <figref idref="DRAWINGS">FIG. 4</figref>, a resistor having the same temperature characteristics as the sense resistor may be used instead of the PMOS transistor <b>44</b>. Furthermore, when fluctuation in the on-resistance of the switching transistor M<b>1</b> is small, the current of the drain of the NMOS transistor <b>43</b> may be used as it is.</p>
+<p id="p-0071" num="0070">As described above, the current mode control switching regulator according to the first embodiment of the present invention varies the inclination of the slope voltage Vs in accordance with fluctuation in the input voltage Vin and the oscillation frequency Fosc, thereby making it possible to properly perform slope compensation under a wide input/output voltage range and a variable frequency with a simple circuit. As a result, it is possible to prevent the occurrence of subharmonic oscillation and suppress fluctuation in frequency characteristics.</p>
+<heading id="h-0007" level="1">Second Embodiment</heading>
+<p id="p-0072" num="0071">Although the first embodiment describes the step-down switching regulator as an example, the present invention can also be applied to a step-up switching regulator, which is described as a second embodiment below.</p>
+<p id="p-0073" num="0072"><figref idref="DRAWINGS">FIG. 5</figref> is a circuit diagram showing a circuit example of a current-mode control switching regulator according to the second embodiment of the present invention. Note that in <figref idref="DRAWINGS">FIG. 5</figref>, parts the same as or similar to those of <figref idref="DRAWINGS">FIG. 2</figref> are denoted by the same reference numerals.</p>
+<p id="p-0074" num="0073">The switching regulator <b>1</b><i>a </i>shown in <figref idref="DRAWINGS">FIG. 5</figref> constitutes the step-up switching regulator that converts an input voltage Vin input from a DC power supply <b>20</b> to an input terminal IN to a predetermined constant voltage and outputs the stepped input voltage from an output terminal OUT to a load <b>21</b> as an output voltage Vout.</p>
+<p id="p-0075" num="0074">The switching regulator <b>1</b><i>a </i>has a switching transistor M<b>11</b> that is composed of a NMOS transistor; a rectifying diode D<b>11</b>; an inductor L<b>1</b>; a smoothing capacitor C<b>1</b>; and output voltage detecting resistors <b>2</b> and <b>3</b> that divide an output voltage Vout output from the output terminal OUT and generate and output a divided voltage Vfb. In addition, the switching regulator <b>1</b><i>a </i>has a reference voltage generation circuit <b>4</b> that generates and outputs a predetermined reference voltage Vref; an error amplification circuit <b>5</b> that compares the divided voltage Vfb with the reference voltage Vref, amplifies a voltage difference between the divided voltage Vfb and the reference voltage Vref, and generates and outputs an error voltage Ve; and a slope voltage generation circuit <b>6</b><i>a </i>that generates and outputs a slope voltage Vs.</p>
+<p id="p-0076" num="0075">Moreover, the switching regulator <b>1</b><i>a </i>has a PWM comparator <b>7</b>, an oscillation circuit <b>8</b> with variable oscillation frequency, an RS flip-flop circuit <b>9</b>, and a buffer <b>25</b>. The PWM comparator <b>7</b> compares the error voltage Ve from the error amplification circuit <b>5</b> with the slope voltage Vs and generates and outputs a pulse signal Spw for performing PWM control having a pulse width corresponding to the error voltage Ve. The oscillation circuit <b>8</b> with variable oscillation frequency generates and outputs the clock signal CLK having a set oscillation frequency Fosc. The RS flip-flop circuit <b>9</b> has a set input terminal S to which the clock signal CLK from the oscillation circuit <b>8</b> is input and a reset input terminal R to which the pulse signal Spw from the PWM comparator <b>7</b> is input.</p>
+<p id="p-0077" num="0076">On the other hand, the slope voltage generation circuit <b>6</b><i>a </i>is composed of an inverter <b>51</b>, a voltage/current conversion circuit <b>52</b>, an offset diode <b>53</b>, NMOS transistors <b>54</b>, <b>55</b>, and <b>57</b>, and capacitors <b>56</b> and <b>58</b>. Note that the switching transistor M<b>11</b> constitutes a switching element, and the diode D<b>11</b> constitutes a rectifying element. Furthermore, the slope voltage generation circuit <b>6</b><i>a </i>constitutes a slope voltage generation circuit unit, and the PWM comparator <b>7</b>, the RS flip-flop circuit <b>9</b>, and the buffer <b>25</b> constitute a switching control circuit unit. Furthermore, the voltage/current conversion circuit <b>52</b> constitutes a current supply, the NMOS transistor <b>54</b> constitutes a voltage supply circuit, and the NMOS transistor <b>55</b> constitutes a discharge circuit. Furthermore, in the switching regulator <b>1</b><i>a </i>shown in <figref idref="DRAWINGS">FIG. 5</figref>, the respective circuits other than the inductor L<b>1</b>, the diode D<b>11</b>, the capacitor C<b>1</b>, and the resistors <b>2</b> and <b>3</b> are integrated in a circuit.</p>
+<p id="p-0078" num="0077">The inductor L<b>1</b> is connected between the input voltage Vin and the drain of the switching transistor M<b>11</b>. The anode of the diode D<b>11</b> is connected to the drain of the switching transistor M<b>11</b>, and the cathode of the diode D<b>11</b> is connected to the output terminal OUT. The series circuit of the resistors <b>2</b> and <b>3</b> and the capacitor C<b>1</b> are connected in parallel between the output terminal OUT and ground potential. The divided voltage Vfb serving as the voltage of the connection part between the resistors <b>2</b> and <b>3</b> is input to the inverting input terminal of the error amplification circuit <b>5</b>, and the reference voltage Vref is input to the non-inverting input terminal of the error amplification circuit <b>5</b>. Furthermore, the error voltage Ve from the error amplification circuit <b>5</b> is input to the inverting input terminal of the PWM comparator <b>7</b>, and the slope voltage Vs is input to the non-inverting input terminal of the PWM comparator <b>7</b>. The output signal of the RS flip-flop circuit <b>9</b> is output via the buffer <b>25</b> as an output signal Sq. The output signal Sq is input to the gate of the switching transistor M<b>11</b>, and the signal level of the output signal Sq is inverted by the inverter <b>51</b> and input to the gates of the NMOS transistors <b>55</b> and <b>57</b>.</p>
+<p id="p-0079" num="0078">In the slope voltage generation circuit <b>6</b><i>a</i>, the voltage/current conversion circuit <b>52</b>, the offset diode <b>53</b>, and the capacitor <b>56</b> are connected in series between the input voltage Vin and ground potential, and the NMOS transistor <b>55</b> is connected parallel to the capacitor <b>56</b>. The NMOS transistor <b>54</b> is connected between the connection part between the cathode of the offset diode <b>53</b> and the capacitor <b>56</b> and the drain of the switching transistor M<b>11</b>, and the clock signal CLK is input to the gate of the NMOS transistor <b>54</b>. Furthermore, the NMOS transistor <b>57</b> and the capacitor <b>58</b> are connected in series between the drain of the switching transistor M<b>11</b> and ground potential. The control signal input terminal of the voltage/current conversion circuit <b>52</b> is connected to the connection part between the NMOS transistor <b>57</b> and the capacitor <b>58</b>. Furthermore, the voltage/current conversion circuit <b>52</b> is connected to the oscillation circuit <b>8</b>. The slope voltage Vs is output from the connection part between the voltage/current conversion circuit <b>52</b> and the anode of the offset diode <b>53</b> to the non-inverting input terminal of the PWM comparator <b>7</b>.</p>
+<p id="p-0080" num="0079">In such a configuration, when the switching transistor M<b>11</b> is turned on to establish an electrical connection, power is supplied from the DC power supply <b>20</b> to the inductor L<b>1</b>. When the switching transistor M<b>11</b> is turned off to cut off the electrical connection, the energy accumulated in the inductor L<b>1</b> is added to the input voltage Vin and output from the output terminal OUT. The RS flip-flop circuit <b>9</b> is set when the clock signal CLK becomes a high level and causes the output signal Sq to be a high level. Thus, the switching transistor M<b>11</b> is turned on to establish the electrical connection. The error amplification circuit <b>5</b> outputs the error voltage Ve so that the divided voltage Vfb becomes equal to the reference voltage Vref. The PWM comparator <b>7</b> compares the slope voltage Vs with the error voltage Ve. When the slope voltage Vs exceeds the error voltage Ve, the PWM comparator <b>7</b> resets the RS flip-flop circuit <b>9</b> to turn off the switching transistor M<b>11</b> and cut off the electrical connection.</p>
+<p id="p-0081" num="0080">Next, <figref idref="DRAWINGS">FIG. 6</figref> is a timing chart showing waveform examples of the respective parts shown in <figref idref="DRAWINGS">FIG. 5</figref>. Referring to <figref idref="DRAWINGS">FIG. 6</figref>, a description is made of the generation of the slope voltage Vs with the slope voltage generation circuit <b>6</b><i>a. </i></p>
+<p id="p-0082" num="0081">Since the connection part between the NMOS transistor <b>57</b> and the capacitor <b>58</b> has the same voltage as the output voltage Vout, the voltage/current conversion circuit <b>52</b> generates and outputs the current islope corresponding to the output voltage Vout and the oscillation frequency Fosc, where the current islope is obtained by &#x201c;D&#xd7;Vout&#xd7;Fosc.&#x201d; Note that D represents a predetermined value. The offset voltage Voffset, which is added by the offset diode <b>53</b>, becomes the forward dropping voltage of the offset diode <b>53</b>.</p>
+<p id="p-0083" num="0082">The output voltage Vout is the drain voltage VB of the switching transistor M<b>11</b> when the switching transistor M<b>11</b> is turned off. When the NMOS transistor <b>57</b> is turned on while the switching transistor M<b>11</b> is turned off, the voltages at both ends of the capacitor <b>58</b> are held to the output voltage Vout. Thus, the relationship &#x201c;islope=D&#xd7;Vout&#xd7;Fosc&#x201d; is established. Furthermore, since the voltages serve as the power supply for the buffer <b>25</b>, the gate voltage of the switching transistor M<b>11</b> can be driven with a voltage higher than the input voltage Vin.</p>
+<p id="p-0084" num="0083">The NMOS transistor <b>54</b> samples the drain voltage VB of the switching transistor M<b>11</b> in the capacitor <b>56</b> during the period in which the clock signal CLK from the oscillation circuit <b>8</b> is high-level. Assuming that the on-resistance of the switching transistor M<b>11</b> is Ron, the drain voltage VB of the sampled switching transistor M<b>11</b> is obtained by &#x201c;VB=Ron&#xd7;iLvalley.&#x201d; Note that iLvalley represents a current value between the valleys of the inductor current iL.</p>
+<p id="p-0085" num="0084">When the NMOS transistor <b>54</b> is turned off to cut off an electrical connection, the capacitor <b>56</b> is charged with the voltage/current conversion circuit <b>52</b> serving as a current supply. Assuming that the capacity value of the capacitor <b>56</b> is Cvs, the inclination of the voltage of the capacitor <b>56</b> is obtained by &#x201c;D&#xd7;Vout&#xd7;Fosc/Cvs.&#x201d; Therefore, assuming that an elapsed time since the switching transistor M<b>11</b> is turned on is t, the slope voltage Vs when the switching transistor M<b>11</b> is turned on is obtained by the following formula (9).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>Vs=V</i>offset+<i>R</i>on&#xd7;<i>iL</i>valley+<i>D&#xd7;V</i>out&#xd7;<i>Fosc/Cvs&#xd7;t</i>&#x2003;&#x2003;(9)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0086" num="0085">If it is desired that the inductance L of the inductor L<b>1</b> be set to 2.2 &#x3bc;H, 4.7 &#x3bc;H, 10 &#x3bc;H, and 15 &#x3bc;H when the oscillation frequency Fosc is 2 MHz, 1 MHz, 500 kHz, and 300 kHz, respectively, the following relationship is established.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>D/Cvs=R</i>on/{500 k(Hz)&#xd7;10 &#x3bc;(H)}&#x2003;&#x2003;(10)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0087" num="0086">Accordingly, the following formula (11) can be obtained by formula (9).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>dVs/dt=R</i>on&#xd7;<i>V</i>out&#xd7;<i>Fosc/{</i>500 k(Hz)&#xd7;10 &#x3bc;(H)}&#x2003;&#x2003;(11)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0088" num="0087">Since the relationship &#x201c;L=10 &#x3bc;(H)&#xd7;{500 k(Hz)/Fosc}&#x201d; is established, formula (11) is transformed into the following formula (12).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>dVs/dt=R</i>on&#xd7;<i>V</i>out/<i>L</i>&#x2003;&#x2003;(12)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0089" num="0088">As described above, it is found that dVs/dt is transformed so as to correspond to the inductor L<b>1</b> having the inductance L inversely proportional to the oscillation frequency Fosc, and the inclination dVs/dt of the slope voltage Vs varies in accordance with the fluctuation in the input voltage Vin and the oscillation frequency Fosc.</p>
+<p id="p-0090" num="0089">On the other hand, when the switching transistor M<b>11</b> is turned off, the NMOS transistor <b>55</b> is turned on to discharge the electrical charge stored in the capacitor <b>56</b>. Therefore, the voltage of the capacitor <b>56</b> is reset to ground potential.</p>
+<p id="p-0091" num="0090">In the above description, although formula (10) is obtained assuming that the on-resistance Ron is constant and the current islope generated by the voltage/current conversion circuit <b>52</b> serving as the current supply is obtained by &#x201c;islope=D&#xd7;Vout&#xd7;Fosc,&#x201d; the on-resistance Ron generally varies in accordance with the temperature of the switching transistor M<b>11</b> and a gate voltage when the switching transistor M<b>11</b> is turned on.</p>
+<p id="p-0092" num="0091">Therefore, when the relationship &#x201c;islope=E&#xd7;Ron&#xd7;Vout&#xd7;Fosc (where E represents a predetermined value)&#x201d; is established so that the current islope includes fluctuation in the on-resistance Ron, formula (9) is transformed into the following formula (13).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>Vs=V</i>offset+<i>R</i>on&#xd7;<i>iL</i>valley+<i>E&#xd7;R</i>on&#xd7;<i>V</i>out&#xd7;<i>Fosc/Cvs&#xd7;t</i>&#x2003;&#x2003;(13)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0093" num="0092">The following formula (15) can be obtained by formula (13) as in the case of formula (12) when the relationship (14) is established.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>E/Cvs=</i>1/{500 k(Hz)&#xd7;10 &#x3bc;(H)}&#x2003;&#x2003;(14)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>dVs/dt=R</i>on&#xd7;<i>V</i>out/<i>L</i>&#x2003;&#x2003;(15)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0094" num="0093">Since the inductance L varies in accordance with fluctuation in the oscillation frequency Fosc, it is found that the inclination dVs/dt of the slope voltage Vs varies in accordance with fluctuation in the output voltage Vout and the oscillation frequency Fosc.</p>
+<p id="p-0095" num="0094">Next, <figref idref="DRAWINGS">FIG. 7</figref> is a circuit diagram showing a circuit example of the oscillation circuit <b>8</b> and the voltage/current conversion circuit <b>52</b> shown in <figref idref="DRAWINGS">FIG. 5</figref>. Note that in <figref idref="DRAWINGS">FIG. 7</figref>, parts the same as or similar to those of <figref idref="DRAWINGS">FIG. 4</figref> are denoted by the same reference numerals.</p>
+<p id="p-0096" num="0095">The oscillation circuit <b>8</b> is composed of resistors <b>31</b> and <b>32</b>, an error amplification circuit <b>33</b>, NMOS transistors <b>34</b> and <b>39</b>, a variable resistor <b>35</b>, PMOS transistor <b>36</b> and <b>37</b>, a capacitor <b>38</b>, and a hysteresis comparator <b>40</b>. Furthermore, the voltage/current conversion circuit <b>52</b> is composed of PMOS transistors <b>61</b>, <b>66</b>, and <b>67</b>, NMOS transistors <b>62</b> and <b>64</b>, an error amplification circuit <b>63</b>, and a resistor <b>65</b>. Note that in the following description, the resistance value of the resistor <b>65</b> is represented as R<b>65</b>.</p>
+<p id="p-0097" num="0096">The oscillation circuit <b>8</b> shown in <figref idref="DRAWINGS">FIG. 7</figref> is different from that shown in <figref idref="DRAWINGS">FIG. 4</figref> only in that the series circuit of the resistors <b>31</b> and <b>32</b> is connected between the output voltage Vout and ground potential.</p>
+<p id="p-0098" num="0097">In the voltage/current conversion circuit <b>52</b>, the PMOS transistors <b>61</b> and <b>36</b> constitute a current mirror circuit. The source of the PMOS transistor <b>61</b> is connected to the input voltage Vin, and the gate of the PMOS transistor <b>61</b> is connected to the gate of the PMOS transistor <b>36</b>. The connection part between the gate of the PMOS transistor <b>61</b> and the gate of the PMOS transistor <b>36</b> is connected to the drain of the PMOS transistor <b>36</b>. The NMOS transistor <b>62</b> is connected between the drain of the PMOS transistor <b>61</b> and ground potential, and the output voltage Vout is input to the gate of the NMOS transistor <b>62</b>. The connection part between the PMOS transistor <b>61</b> and the NMOS transistor <b>62</b> is connected to the non-inverting input terminal of the error amplification circuit <b>63</b>.</p>
+<p id="p-0099" num="0098">The output terminal of the error amplification circuit <b>63</b> is connected to the gate of the NMOS transistor <b>64</b>, and the inverting input terminal of the error amplification circuit <b>63</b> is connected to the source of the NMOS transistor <b>64</b>. The resistor <b>65</b> is connected between the source of the NMOS transistor <b>64</b> and ground potential, the drain of the NMOS transistor <b>64</b> is connected to the drain of the PMOS transistor <b>66</b>. The PMOS transistors <b>66</b> and <b>67</b> constitute a current mirror circuit. The sources of the PMOS transistors <b>66</b> and <b>67</b> are connected to the input voltage Vin. The gates of the PMOS transistors <b>66</b> and <b>67</b> are connected to each other. The connection part between the gates of the PMOS transistors <b>66</b> and <b>67</b> is connected to the drain of the PMOS transistor <b>66</b>. The current output from the drain of the PMOS transistor <b>67</b> is the current islope.</p>
+<p id="p-0100" num="0099">In such a configuration, the divided voltage Vdev (=Vout&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)) obtained by dividing the output voltage Vout with the resistors <b>31</b> and <b>32</b> is input to the non-inverting input terminal of the error amplification circuit <b>33</b> and the inverting input terminal of the hysteresis comparator <b>40</b>. The error amplification circuit <b>33</b> performs operations control on the NMOS transistor <b>34</b> so that the voltage of the connection part between the NMOS transistor <b>34</b> and the variable resistor <b>35</b> becomes equal to the divided voltage Vdev. Assuming that the resistance value of the variable resistor <b>35</b> is F/Fosc, the current fed to the variable resistor <b>35</b> is obtained by &#x201c;{Vout&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F},&#x201d; the value of which becomes proportional to the oscillation frequency Fosc and the output voltage Vout.</p>
+<p id="p-0101" num="0100">The current fed through the NMOS transistor <b>34</b> is returned by the current mirror circuit of the PMOS transistors <b>36</b> and <b>37</b> and output to the capacitor <b>38</b> via the drain of the PMOS transistor <b>37</b>. Simultaneously, the current fed through the NMOS transistor <b>34</b> is returned by the current mirror circuit of the PMOS transistors <b>36</b> and <b>61</b> and then supplied to the NMOS transistor <b>62</b>.</p>
+<p id="p-0102" num="0101">The hysteresis comparator <b>40</b> has a non-inverting input terminal to which the voltage Vosc of the connection part between the PMOS transistor <b>37</b>, the capacitor <b>38</b>, and the NMOS transistor <b>39</b> is input, and it also has an inverting input terminal to which the divided voltage Vdev is input. When the voltage Vosc is smaller than the divided voltage Vdev, a low level signal is output from the hysteresis comparator <b>40</b> and the NMOS transistor <b>39</b> is turned off to cut off an electrical connection. Therefore, the capacitor <b>38</b> is charged with the current obtained by &#x201c;{Vout&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F}&#x201d; or a current proportional to the current involved.</p>
+<p id="p-0103" num="0102">Furthermore, when the voltage Vosc exceeds the divided voltage Vdev, a high level signal is output from the hysteresis comparator <b>40</b>, the NMOS transistor <b>39</b> is turned on to immediately discharge the electrical charge of the capacitor <b>38</b>, and the voltage Vosc becomes ground potential. Moreover, when the voltage Vosc becomes smaller than the divided voltage Vdev, the hysteresis comparator <b>40</b> outputs a low level signal again, and the NMOS transistor <b>39</b> is turned off to cut off an electrical connection. When such operations are repeatedly performed, the clock signal CLK of the oscillation frequency Fosc is generated. Since &#x201c;{Vout&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F/C<b>38</b>/Vdev}&#x201d; and &#x201c;Vdev=Vout&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#x201d; are established, the oscillation frequency Fosc at this time is obtained by &#x201c;Fosc=Fosc/F/C<b>38</b>.&#x201d; It should be arranged that the relationship &#x201c;F&#xd7;C<b>38</b>=1&#x201d; is established.</p>
+<p id="p-0104" num="0103">The NMOS transistor <b>62</b> is manufactured in the same processing step as the switching transistor M<b>11</b>, and the assumed voltage when the switching transistor M<b>11</b> is turned on is input to the gate of the NMOS transistor <b>62</b>. Here, it is assumed that the size of the NMOS transistor <b>62</b> is 1/n of the switching transistor M<b>11</b> and the on-resistance of the NMOS transistor <b>62</b> is obtained by &#x201c;n&#xd7;Ron.&#x201d; The current obtained by &#x201c;{Vout&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F}&#x201d; is fed to the NMOS transistor <b>62</b> by the current mirror circuit. Therefore, the voltage difference between both ends of the NMOS transistor <b>62</b> is obtained by &#x201c;{n&#xd7;Ron&#xd7;(Vout&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F)}.&#x201d;</p>
+<p id="p-0105" num="0104">Furthermore, since the error amplification circuit <b>63</b> performs operations control on the NMOS transistor <b>64</b> so that the voltage difference between both ends of the resistor <b>65</b> is the one obtained by &#x201c;{n&#xd7;Ron&#xd7;(Vout&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F)},&#x201d; the current obtained by &#x201c;{n&#xd7;Ron&#xd7;(Vout&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F)}&#x201d; is fed to the resistor <b>65</b>. Accordingly, the currents of the drains of the PMOS transistors <b>66</b> and <b>67</b> constituting the current mirror circuit are obtained by &#x201c;{n&#xd7;Ron&#xd7;(Vout&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)&#xd7;Fosc/F)/R<b>65</b>}.&#x201d; Assuming that the relationship &#x201c;E=n&#xd7;R<b>31</b>/(R<b>31</b>+R<b>32</b>)/F/R<b>65</b>,&#x201d; the current islope is obtained by the following formula (16).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>i</i>slope=<i>E&#xd7;R</i>on&#xd7;<i>V</i>out&#xd7;<i>Fosc</i>&#x2003;&#x2003;(16)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0106" num="0105">Note that in the above description, the on-resistance of the switching transistor M<b>11</b> is used for converting the current fed when the switching transistor M<b>11</b> is turned on into a voltage. Alternatively, a sense resistor for detecting the output current of the switching transistor M<b>11</b> may be connected in series to the inductor L<b>1</b> so as to convert the current when the switching transistor M<b>11</b> is turned on into a voltage. In this case, in the oscillation circuit <b>8</b> and the voltage/current conversion circuit <b>52</b> shown in <figref idref="DRAWINGS">FIG. 7</figref>, a resistor having the same temperature characteristics as the sense resistor may be used instead of the NMOS transistor <b>62</b>. Furthermore, when the fluctuation in the on-resistance of the switching transistor M<b>11</b> is small, the current of the drain of the PMOS transistor <b>61</b> may be used as it is.</p>
+<p id="p-0107" num="0106">As described above, the current mode control switching regulator according to the second embodiment of the present invention varies the inclination of the slope voltage Vs in accordance with fluctuation in the output voltage Vout and the oscillation frequency Fosc, thereby making it possible to properly perform slope compensation under a wide input/output voltage range and variable frequency with a simple circuit. As a result, it is possible to prevent the occurrence of subharmonic oscillation and suppress fluctuation in the frequency characteristics.</p>
+<p id="p-0108" num="0107">Note that in the first and second embodiments, the variable resistor <b>35</b> may be configured as shown in <figref idref="DRAWINGS">FIGS. 8 through 10</figref>.</p>
+<p id="p-0109" num="0108">In <figref idref="DRAWINGS">FIG. 8</figref>, the variable resistor <b>35</b> is composed of resistors <b>71</b> through <b>73</b>, an initial resistor <b>74</b>, and trimming fuses <b>75</b> through <b>77</b>. The resistors <b>71</b> through <b>73</b> and the initial resistor <b>74</b> are connected in series between the source of the NMOS transistor <b>34</b> and ground potential, and the trimming fuses <b>75</b> through <b>77</b> are connected parallel to the resistors <b>71</b> through <b>73</b>, correspondingly.</p>
+<p id="p-0110" num="0109">The elements of the resistors <b>71</b> through <b>73</b>, the initial resistor <b>74</b>, and the trimming fuses <b>75</b> through <b>77</b> are provided in an IC. When the trimming fuses <b>75</b> through <b>77</b> are selectively disconnected by trimming, the resistance value of the variable resistor <b>35</b> can be adjusted. The trimming is thus performed, thereby making it possible to automatically adjust the slope voltage Vs so as to set frequencies having various patterns.</p>
+<p id="p-0111" num="0110">Note that <figref idref="DRAWINGS">FIG. 8</figref> shows a case in which the three resistors and the trimming fuses connected parallel to the three resistors are provided in the variable resistor, but it is just an example. Alternatively, one or more resistors and trimming fuses connected parallel to the one or more resistors are only required to be provided in the variable resistor.</p>
+<p id="p-0112" num="0111">Next, in <figref idref="DRAWINGS">FIG. 9</figref>, the variable resistor <b>35</b> is composed of an external resistor <b>82</b> and a pad <b>81</b> serving as the connection point between the inside and the outside of an IC. When the external resistor <b>82</b> is changed, the resistance value of the variable resistor <b>35</b> can be varied. The user who uses the IC can freely change frequencies by changing the external resistor.</p>
+<p id="p-0113" num="0112">Next, in <figref idref="DRAWINGS">FIG. 10</figref>, the variable resistor <b>35</b> is composed of a pad <b>87</b> serving as the connection point between the inside and outside of an IC and resistors <b>85</b>, <b>86</b>, and <b>88</b>. When the resistor <b>88</b> becomes 0&#x3a9; (i.e., the pad <b>87</b> is grounded), the resistance value of the variable resistor <b>35</b> becomes equal to that of the resistor <b>85</b>. Furthermore, when the resistor <b>88</b> becomes &#x221e;&#x3a9; (i.e., the pad <b>87</b> is in a released state), the resistance value of the variable resistor <b>35</b> becomes equal to the sum of the resistance values of the resistors <b>85</b> and <b>86</b>. When the pad <b>87</b> becomes 0&#x3a9; (i.e., it is in a released state), it is not necessary to add external parts. Therefore, the frequency caused by the resistance value of the variable resistor <b>35</b> when the pad <b>87</b> is grounded (or it is in a released state) is set to the most frequently-used one, thereby making it possible to reduce the number of times that the user adds external parts. Furthermore, since the resistors <b>85</b> and <b>86</b> are provided inside the IC, the resistance values of the resistors <b>85</b> and <b>86</b> may be varied by trimming.</p>
+<p id="p-0114" num="0113">Moreover, the first and second embodiments describe the asynchronous rectification switching regulator as an example. However, the same effects can be achieved even with a synchronous rectification switching regulator using a synchronous rectification transistor that switches in an opposite phase relationship with the switching transistor instead of the rectifying diode.</p>
+<p id="p-0115" num="0114">According to the current-mode control switching regulator and the operations control method thereof, the inclination of a slope voltage used for generating a pulse signal for performing switching control on a switching element is varied in accordance with an input voltage and an oscillation frequency when the current-mode control switching regulator is of a step-down type, and it is varied in accordance with an output voltage and an oscillation frequency when the current-mode control switching regulator is of a step-up type. Therefore, the switching regulator with variable oscillation frequency and a relatively small fluctuation in input/output voltage can change the inclination of a slope voltage in accordance with an oscillation frequency. Furthermore, the step-down switching regulator with variable oscillation frequency and a relatively large fluctuation in input/output voltage can change the inclination of a slope voltage in accordance with an input voltage and an oscillation frequency. Furthermore, the step-up switching regulator with variable oscillation frequency and a relatively large fluctuation in input/output voltage can change the inclination of a slope voltage in accordance with an output voltage and an oscillation frequency. Thus, these switching regulators can prevent subharmonic oscillation in a wide input/output voltage range and a wide variable frequency range with a simple circuit and suppress the fluctuation in frequency characteristics.</p>
+<p id="p-0116" num="0115">The present application is based on Japanese Priority Application No. 2008-125715 filed on May 13, 2008, with the Japan Patent Office, the entire contents of which are hereby incorporated by reference.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>The invention claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A current-mode control switching regulator that steps down an input voltage input to an input terminal to a predetermined constant voltage and outputs the stepped input voltage from an output terminal as an output voltage, the current-mode control switching regulator comprising:
+<claim-text>a switching element that performs a switching operation in accordance with an input control signal;</claim-text>
+<claim-text>an inductor that is charged with the input voltage by the switching operation of the switching element;</claim-text>
+<claim-text>a rectifying element that discharges the inductor;</claim-text>
+<claim-text>an error amplification circuit unit that amplifies a voltage difference between a divided voltage obtained by dividing the output voltage at a predetermined ratio and a predetermined reference voltage;</claim-text>
+<claim-text>an oscillation circuit unit with variable oscillation frequency that generates and outputs a clock signal having a set oscillation frequency;</claim-text>
+<claim-text>a slope voltage generation circuit unit that generates and outputs a slope voltage having an inclination corresponding to the input voltage and the oscillation frequency; and</claim-text>
+<claim-text>a switching control circuit unit that compares an output voltage from the error amplification circuit unit with the slope voltage, generates a pulse signal of a duty cycle corresponding to a comparison result using the clock signal, and performs switching control on the switching element in accordance with the pulse signal.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The current-mode control switching regulator according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein,
+<claim-text>as the input voltage and the oscillation frequency are larger, the slope voltage generation circuit unit increases the inclination to generate the slope voltage so that the inclination of the slope voltage becomes one-half or more of the inclination of a change amount of a current fed to the inductor when the switching element is turned off to cut off an electrical connection.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The current-mode control switching regulator according to <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the slope voltage generation circuit unit has:
+<claim-text>a capacitor having one end connected to the input voltage;</claim-text>
+<claim-text>an offset diode having an anode connected to the other end of the capacitor;</claim-text>
+<claim-text>a current supply that is connected between a cathode of the offset diode and ground potential and feeds a current corresponding to the input voltage and the oscillation frequency;</claim-text>
+<claim-text>a voltage supply circuit that applies a voltage of an output terminal of the switching element to the other end of the capacitor for a predetermined time after the switching element is turned on to establish the electrical connection; and</claim-text>
+<claim-text>a discharge circuit that discharges an electrical charge stored in the capacitor when the switching element is turned off to cut off the electrical connection, and</claim-text>
+<claim-text>wherein the slope voltage generation circuit unit outputs the slope voltage from a connection part between the offset diode and the current supply.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The current-mode control switching regulator according to <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein the switching control circuit unit has:
+<claim-text>a voltage comparison circuit that compares the output voltage from the error amplification circuit unit with the slope voltage and generates and outputs the pulse signal of the duty cycle corresponding to the comparison result; and</claim-text>
+<claim-text>a control circuit to which the clock signal from the oscillation circuit unit for turning on the switching element and the pulse signal from the voltage comparison circuit for turning off the switching element are input and which performs the switching control on the switching element in accordance with the clock signal and the pulse signal, and</claim-text>
+<claim-text>wherein the voltage supply circuit applies the voltage of the output terminal of the switching element to the other end of the capacitor in accordance with the clock signal from the oscillation circuit unit.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The current-mode control switching regulator according to <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein
+<claim-text>the control circuit is configured by an RS flip-flop circuit to which the clock signal is input from the oscillation circuit unit as a set signal and the pulse signal is input from the voltage comparison circuit as a reset signal.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. A current-mode control switching regulator that steps up an input voltage input to an input terminal to a predetermined constant voltage and outputs the stepped input voltage from an output terminal as an output voltage, the current-mode control switching regulator comprising:
+<claim-text>a switching element that performs a switching operation in accordance with an input control signal;</claim-text>
+<claim-text>an inductor that is charged with the input voltage by the switching operation of the switching element;</claim-text>
+<claim-text>a rectifying element that discharges the inductor;</claim-text>
+<claim-text>an error amplification circuit unit that amplifies a voltage difference between a divided voltage obtained by dividing the output voltage at a predetermined ratio and a predetermined reference voltage;</claim-text>
+<claim-text>an oscillation circuit unit with variable oscillation frequency that generates and outputs a clock signal having a set oscillation frequency;</claim-text>
+<claim-text>a slope voltage generation circuit unit that generates and outputs a slope voltage having an inclination corresponding to the output voltage and the oscillation frequency; and</claim-text>
+<claim-text>a switching control circuit unit that compares an output voltage from the error amplification circuit unit with the slope voltage, generates a pulse signal of a duty cycle corresponding to a comparison result using the clock signal, and performs switching control on the switching element in accordance with the pulse signal.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The current-mode control switching regulator according to <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein,
+<claim-text>as the output voltage and the oscillation frequency are larger, the slope voltage generation circuit unit increases the inclination to generate the slope voltage so that the inclination of the slope voltage becomes one-half or more of the inclination of a change amount of a current fed to the inductor when the switching element is turned off to cut off an electrical connection.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The current-mode control switching regulator according to <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein the slope voltage generation circuit unit has:
+<claim-text>a capacitor having one end connected to ground potential;</claim-text>
+<claim-text>an offset diode having a cathode connected to the other end of the capacitor;</claim-text>
+<claim-text>a current supply that is connected between the input voltage and an anode of the offset diode and feeds a current corresponding to the output voltage and the oscillation frequency;</claim-text>
+<claim-text>a voltage supply circuit that applies a voltage of a connection part between the inductor and the switching element to the other end of the capacitor for a predetermined time after the switching element is turned on to establish the electrical connection; and</claim-text>
+<claim-text>a discharge circuit that discharges an electrical charge stored in the capacitor when the switching element is turned off to cut off the electrical connection, and</claim-text>
+<claim-text>wherein the slope voltage generation circuit unit outputs the slope voltage from a connection part between the current supply and the offset diode.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The current-mode control switching regulator according to <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the switching control circuit unit has:
+<claim-text>a voltage comparison circuit that compares the output voltage from the error amplification circuit unit with the slope voltage and generates and outputs the pulse signal of the duty cycle corresponding to the comparison result; and</claim-text>
+<claim-text>a control circuit to which the clock signal from the oscillation circuit unit for turning on the switching element and the pulse signal from the voltage comparison circuit for turning off the switching element are input and which performs the switching control on the switching element in accordance with the clock signal and the pulse signal, and</claim-text>
+<claim-text>wherein the voltage supply circuit applies the voltage of a connection part between the inductor and the switching element to the other end of the capacitor in accordance with the clock signal from the oscillation circuit unit.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The current-mode control switching regulator according to <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein
+<claim-text>the control circuit is configured by an RS flip-flop circuit to which the clock signal is input from the oscillation circuit unit as a set signal and the pulse signal is input from the voltage comparison circuit as a reset signal.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The current-mode control switching regulator according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein
+<claim-text>the error amplification circuit unit, the oscillation circuit unit, the slope voltage generation circuit unit, and the switching control circuit unit are integrated in an IC.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. An operations control method of a current-mode control switching regulator having a switching element that performs a switching operation in accordance with an input control signal; an inductor that is charged with an input voltage input to an input terminal by the switching operation of the switching element; a rectifying element that discharges the inductor; and an oscillation circuit unit with variable oscillation frequency that generates and outputs a clock signal having a set oscillation frequency, the current-mode control switching regulator performing switching control on the switching element in accordance with a pulse signal generated using the clock signal so that an output voltage from an output terminal becomes a predetermined constant voltage and stepping down the input voltage input to the input terminal to a predetermined constant voltage and outputting the stepped input voltage from the output terminal as the output voltage, the operations control method comprising:
+<claim-text>varying an inclination of a slope voltage used for generating the pulse signal to perform the switching control on the switching element in accordance with the input voltage and the oscillation frequency.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The operations control method of the current-mode control switching regulator according to <claim-ref idref="CLM-00012">claim 12</claim-ref>, the operations control method further comprising:
+<claim-text>dividing the output voltage from the output terminal at a predetermined ratio;</claim-text>
+<claim-text>amplifying a voltage difference between a divided voltage obtained by dividing the output voltage and a predetermined reference voltage;</claim-text>
+<claim-text>generating a slope voltage having an inclination corresponding to the input voltage and the oscillation frequency;</claim-text>
+<claim-text>comparing a voltage obtained by amplifying the voltage difference with the slope voltage to generate a pulse signal of a duty cycle corresponding to a comparison result; and</claim-text>
+<claim-text>performing switching control on the switching element in accordance with the pulse signal.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The operations control method of the current-mode control switching regulator according to <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein,
+<claim-text>as the input voltage and the oscillation frequency are larger, the inclination is increased to generate the slope voltage so that the inclination of the slope voltage becomes one-half or more of the inclination of a change amount of a current fed to the inductor when the switching element is turned off to cut off an electrical connection.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The operations control method according to <claim-ref idref="CLM-00012">claim 12</claim-ref>, further comprising:
+<claim-text>providing a slope voltage generation circuit unit in the current-mode control switching regulator, to generate and output the slope voltage, wherein</claim-text>
+<claim-text>the inclination of the slope voltage generated by the slope voltage generation circuit unit varies in accordance with the oscillation frequency of the clock signal generated by the oscillation circuit having the variable oscillation frequency and varies in accordance with the input voltage.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The current-mode control switching regulator according to <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein
+<claim-text>the inclination of the slope voltage generated by the slope voltage generation circuit unit varies in accordance with the oscillation frequency of the clock signal generated by the oscillation circuit having the variable oscillation frequency and varies in accordance with the output voltage.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The current-mode control switching regulator according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein
+<claim-text>the inclination of the slope voltage generated by the slope voltage generation circuit unit varies in accordance with the oscillation frequency of the clock signal generated by the oscillation circuit having the variable oscillation frequency and varies in accordance with the input voltage. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

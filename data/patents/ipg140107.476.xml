@@ -1,0 +1,860 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="USRE044692-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>RE044692</doc-number>
+<kind>E1</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="reissue">
+<document-id>
+<country>US</country>
+<doc-number>11826820</doc-number>
+<date>20070718</date>
+</document-id>
+</application-reference>
+<us-application-series-code>11</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>8-169489</doc-number>
+<date>19960628</date>
+</priority-claim>
+</priority-claims>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>04</class>
+<subclass>N</subclass>
+<main-group>7</main-group>
+<subgroup>12</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>37524014</main-classification>
+</classification-national>
+<invention-title id="d2e61">Image coding and decoding apparatus based on the coding mode of the image to be predicted</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>4591909</doc-number>
+<kind>A</kind>
+<name>Kuroda et al.</name>
+<date>19860500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>4689671</doc-number>
+<kind>A</kind>
+<name>Ohki et al.</name>
+<date>19870800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>4833535</doc-number>
+<kind>A</kind>
+<name>Ozeki et al.</name>
+<date>19890500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>5367629</doc-number>
+<kind>A</kind>
+<name>Chu et al.</name>
+<date>19941100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>5436666</doc-number>
+<kind>A</kind>
+<name>Astle</name>
+<date>19950700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>5592228</doc-number>
+<kind>A</kind>
+<name>Dachiku et al.</name>
+<date>19970100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>EP</country>
+<doc-number>0658053</doc-number>
+<kind>A1</kind>
+<date>19950600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00008">
+<othercit>Information Technology&#x2014;Generic Coding of Moving Pictures and Associated Audio Information: Video, Recommendation ITU-t H. 262, ISO/IEC 13818-2, Draft International Standard, International Organization for Standarisation, Nov. 9, 1994.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00009">
+<othercit>Wang, John Y. A.; &#x201c;Applying Mid-level Vision Techniques for Video Data Compression and Manipulation&#x201d;, XP000602741.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00010">
+<othercit>ISO/IEC JTC1/SC29/WG11 MPEG96/0653, &#x201c;Background Mosaicking,&#x201d; F. Dufaux, pp. 1-9, (Jan. 1996). XP001150630.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00011">
+<othercit>ISO/IEC JTC1/SC29/WG11, &#x201c;MPEG95/0340: Proposal of Video Coding for MPEG-4,&#x201d; K. Asai et al., pp. 1-38, (Nov. 1995). XP002326903.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00012">
+<othercit>Proceedings of the SPIE, SPIE, Bellingham, VA USA, vol. 2308, No. Part 3, &#x201c;Improved Image Segmentation Techniques for Hybrid Waveform/Object-Oriented Coding&#x201d;, P. Kauff et al., pp. 1987-1998, (Sep. 25, 1994). XP001108933, ISSN: 0277-786X.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00013">
+<othercit>Kohtaro Asai et al., Core Experiments of Video coding with Block-Partitioning and Adaptive Selection of Two Frame Memories (STFM/LTFM), ISO/IEC JTC1/SC29/WG11, Jan. 1996, Munich.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00014">
+<othercit>&#x201c;Moving Picture Information Engineering and Broadcasting Technology&#x201d;, pp. 29-60, Apr. 1995, Japan Television Society.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00015">
+<othercit>Information Technology-Generic Coding of Moving Pictures and Associated Audio Information: Video, Recommendation ITU-t H. 262, ISO/IEC 13818-2, Draft International Standard, International Organization for Standarisation, Nov. 9, 1994.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>11</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>37524001</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>37524014</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>37524026</main-classification>
+</classification-national>
+<us-classifications-ipcr>H04N 7/12</us-classifications-ipcr>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>33</number-of-drawing-sheets>
+<number-of-figures>38</number-of-figures>
+</figures>
+<us-related-documents>
+<reissue>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>08759834</doc-number>
+<date>19961204</date>
+</document-id>
+<parent-status>GRANTED</parent-status>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>6381275</doc-number>
+<date>20020430</date>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>11826820</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</reissue>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Fukuhara</last-name>
+<first-name>Takahiro</first-name>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Sekiguchi</last-name>
+<first-name>Shunichi</first-name>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Asai</last-name>
+<first-name>Kohtaro</first-name>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="004" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Murakami</last-name>
+<first-name>Tokumichi</first-name>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Fukuhara</last-name>
+<first-name>Takahiro</first-name>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Sekiguchi</last-name>
+<first-name>Shunichi</first-name>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Asai</last-name>
+<first-name>Kohtaro</first-name>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="004" designation="us-only">
+<addressbook>
+<last-name>Murakami</last-name>
+<first-name>Tokumichi</first-name>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Birch, Stewart, Kolasch &#x26; Birch, LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Mitsubishi Denki Kabushiki Kaisha</orgname>
+<role>03</role>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Lee</last-name>
+<first-name>Young</first-name>
+<department>2485</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">An image coding apparatus which includes a frame memory selecting unit (<b>35</b>) for selecting, in response to a selection signal, an image to be continuously stored in a plurality of frame memories (<b>9, 10</b>) as a background image and storing the background image into the plurality of frame memories (<b>9, 10</b>), and a background motion compensating unit (<b>14, 39</b>) for performing motion compensating prediction corresponding to an input image based on the background image to generate a predicted image based on the motion compensating prediction, and an image decoding apparatus corresponding to the image coding apparatus.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="148.08mm" wi="226.40mm" file="USRE044692-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="229.28mm" wi="155.28mm" orientation="landscape" file="USRE044692-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="211.84mm" wi="153.42mm" orientation="landscape" file="USRE044692-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="209.21mm" wi="155.79mm" orientation="landscape" file="USRE044692-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="229.79mm" wi="143.85mm" orientation="landscape" file="USRE044692-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="230.97mm" wi="136.31mm" file="USRE044692-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="231.99mm" wi="154.60mm" orientation="landscape" file="USRE044692-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="226.14mm" wi="148.67mm" orientation="landscape" file="USRE044692-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="200.41mm" wi="151.55mm" orientation="landscape" file="USRE044692-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="228.52mm" wi="154.69mm" orientation="landscape" file="USRE044692-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="209.97mm" wi="157.56mm" orientation="landscape" file="USRE044692-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="214.55mm" wi="154.52mm" orientation="landscape" file="USRE044692-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="228.77mm" wi="156.72mm" file="USRE044692-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="228.35mm" wi="157.31mm" orientation="landscape" file="USRE044692-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="197.61mm" wi="152.82mm" orientation="landscape" file="USRE044692-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="189.40mm" wi="155.96mm" orientation="landscape" file="USRE044692-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00016" num="00016">
+<img id="EMI-D00016" he="241.64mm" wi="156.72mm" orientation="landscape" file="USRE044692-20140107-D00016.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00017" num="00017">
+<img id="EMI-D00017" he="160.87mm" wi="146.30mm" orientation="landscape" file="USRE044692-20140107-D00017.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00018" num="00018">
+<img id="EMI-D00018" he="236.64mm" wi="155.96mm" orientation="landscape" file="USRE044692-20140107-D00018.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00019" num="00019">
+<img id="EMI-D00019" he="231.82mm" wi="147.40mm" orientation="landscape" file="USRE044692-20140107-D00019.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00020" num="00020">
+<img id="EMI-D00020" he="227.75mm" wi="148.51mm" orientation="landscape" file="USRE044692-20140107-D00020.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00021" num="00021">
+<img id="EMI-D00021" he="235.03mm" wi="129.03mm" orientation="landscape" file="USRE044692-20140107-D00021.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00022" num="00022">
+<img id="EMI-D00022" he="230.46mm" wi="153.25mm" orientation="landscape" file="USRE044692-20140107-D00022.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00023" num="00023">
+<img id="EMI-D00023" he="227.25mm" wi="151.89mm" orientation="landscape" file="USRE044692-20140107-D00023.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00024" num="00024">
+<img id="EMI-D00024" he="228.35mm" wi="153.33mm" orientation="landscape" file="USRE044692-20140107-D00024.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00025" num="00025">
+<img id="EMI-D00025" he="228.52mm" wi="156.38mm" orientation="landscape" file="USRE044692-20140107-D00025.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00026" num="00026">
+<img id="EMI-D00026" he="185.08mm" wi="142.92mm" orientation="landscape" file="USRE044692-20140107-D00026.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00027" num="00027">
+<img id="EMI-D00027" he="242.15mm" wi="155.11mm" orientation="landscape" file="USRE044692-20140107-D00027.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00028" num="00028">
+<img id="EMI-D00028" he="231.73mm" wi="151.47mm" orientation="landscape" file="USRE044692-20140107-D00028.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00029" num="00029">
+<img id="EMI-D00029" he="240.28mm" wi="166.29mm" orientation="landscape" file="USRE044692-20140107-D00029.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00030" num="00030">
+<img id="EMI-D00030" he="234.19mm" wi="154.09mm" orientation="landscape" file="USRE044692-20140107-D00030.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00031" num="00031">
+<img id="EMI-D00031" he="230.80mm" wi="157.99mm" orientation="landscape" file="USRE044692-20140107-D00031.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00032" num="00032">
+<img id="EMI-D00032" he="228.01mm" wi="146.56mm" orientation="landscape" file="USRE044692-20140107-D00032.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00033" num="00033">
+<img id="EMI-D00033" he="111.59mm" wi="161.29mm" file="USRE044692-20140107-D00033.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<p id="p-0002" num="0001"><?insert-start id="REI-00001"  date="20140107" ?>More than one reissue application has been filed for the reissue of U.S. Pat. No. 6,381,275. The reissue applications are application Ser. Nos. 11/826,820 (the present application),  10/835,582, and 12/651,851, all of which are divisional reissues of U.S. Pat. No. 6,381,275.<?insert-end id="REI-00001" ?></p>
+<p id="p-0003" num="0002"><?insert-start id="REI-00002"  date="20140107" ?>This application is a Reissue Divisional of co-pending application Ser. No. 10/835,582 filed on Apr. 30, 2004, which is a Reissue Application of U.S. Pat. No. 6,381,275 B1, issued on Apr. 30, 2002.<?insert-end id="REI-00002" ?></p>
+<heading id="h-0001" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0004" num="0003">1. Field of the Invention</p>
+<p id="p-0005" num="0004">This invention relates to an image coding apparatus and an image decoding apparatus for use with a system which performs high efficiency coding or decoding of moving pictures to perform efficient transmission or storage of images, and more particularly to an image coding apparatus and an image decoding apparatus which can be applied to processing of, for example, a digital broadcasting system which is performed using a satellite or a ground wave or cable communication network, a digital video disk, a mobile video phone, a PHS video phone or a data base for images.</p>
+<p id="p-0006" num="0005">2. Description of the Prior Art</p>
+<p id="p-0007" num="0006">As a representative one of conventional high efficiency coding systems, the MPEG2 is known which is an international standard system recommended by the ISO/IEC/JTC1/SC29/WG11. For example, &#x201c;Image Information Engineering and Broadcasting Techniques&#x201d;, Journal of the Television Engineering Society of Japan, April, 1995 explains the MPEG as a theme of special editing. A coding system of the MPEG2 is disclosed in &#x201c;3-2 Video Compression&#x201d; of the same document, pp. 29-60.</p>
+<p id="p-0008" num="0007">The coding system of the MPEG2 is described below.</p>
+<p id="p-0009" num="0008"><figref idref="DRAWINGS">FIG. 31</figref> is a block diagram showing a basic construction of an ordinary encoder of the MPEG2, and <figref idref="DRAWINGS">FIG. 32</figref> is a block diagram showing a basic construction of an MPEG2 decoder. Referring to <figref idref="DRAWINGS">FIGS. 31 and 32</figref>, reference numeral <b>1</b> denotes a frame re-arranging unit, <b>2</b> a subtracting unit, reference characters <b>3</b>a and <b>3</b>b denote each an inter(interframe)/intra(intraframe) switching selector, reference numeral <b>4</b> denotes a converting unit, <b>5</b> a quantizing unit, <b>6</b> a reverse quantizing unit, <b>7</b> a reverse converting unit, <b>8</b> an adder, <b>9</b> a first frame memory, <b>10</b> a second frame memory, <b>11</b> a forward direction motion compensating unit, <b>12</b> a bidirection motion compensating unit, <b>13</b> a backward direction motion compensating unit, <b>151</b> a motion estimating unit, <b>16</b> a coding control unit, <b>17</b> a variable length coding unit, and <b>18</b> a buffer.</p>
+<p id="p-0010" num="0009">Further, reference numeral <b>100</b> denotes input image data in the form of digital data, <b>101</b> re-arranged input image data, <b>102</b> a predictive error image, <b>103</b> an original input image or predictive error image, <b>104</b> a conversion coefficient, <b>105</b> a quantization coefficient, <b>106</b> a reverse quantized conversion coefficient, <b>107</b> reversed converted image data, <b>108</b> a locally decoded image, <b>109</b> a reference image from the first frame memory, <b>110</b> a reference image from the second frame memory, <b>111</b> a forward direction motion predicted image, <b>112</b> a bidirection motion predicted image, <b>113</b> a backward direction motion predicted image, <b>115</b> a determined predicted image, <b>117</b> a control signal to the selector, <b>118</b> a control signal to the converting unit <b>4</b>, <b>119</b> an adaptive quantization value, <b>120</b> a variable length coder, <b>121</b> a bit stream, <b>123</b> a motion vector, <b>124</b> a reference image, and <b>125</b> an intra/inter switching signal.</p>
+<p id="p-0011" num="0010">Operation of the conventional image encoder is described below with reference to <figref idref="DRAWINGS">FIG. 31</figref>.</p>
+<p id="p-0012" num="0011">First, an input image signal <b>100</b> in the form of a digital signal is inputted to the frame re-arranging unit <b>1</b>, by which picture frames to be coded are re-arranged.</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 33</figref> illustrates such re-arrangement. Referring to <figref idref="DRAWINGS">FIG. 33</figref>, reference character I denotes an intra (intraframe) coded picture, P an interframe coded picture, and B a bidirectional predictive coded picture. It is to be noted that reference numerals 1 to 10 represent an order in time in which they are displayed.</p>
+<p id="p-0014" num="0013">The first frame is first coded as an I picture, and then the fourth frame is coded as a P picture, whereupon the already coded I picture is used as a reference frame for prediction.</p>
+<p id="p-0015" num="0014">Then, the second frame is coded as a B picture. Thereupon, the I picture of the first frame and the P picture of the fourth frame coded already are used as reference frames for the prediction. In <figref idref="DRAWINGS">FIG. 33</figref>, each arrow mark represents a direction in which prediction is performed.</p>
+<p id="p-0016" num="0015">Thereafter, coding is performed in the construction of I, B, B, P, B, B, P, . . . by similar processing. Accordingly, the action of the frame re-arranging unit <b>1</b> is to re-arrange the input image signal <b>100</b>, in which the picture frames are arranged in order of time, so that they appear in order of coding in order to allow the processing described above.</p>
+<p id="p-0017" num="0016">Subsequently, since predictive coding is not performed for the I picture mentioned above, when the re-arranged image <b>101</b> is inputted as it is to the selector <b>3</b>a, it is transmitted as a selector output <b>103</b> to the converting unit <b>4</b>. On the other hand, for predictive coding for the P picture or the B picture mentioned above, the re-arranged image <b>101</b> is subtracted from a predicted image <b>115</b> by the subtracting unit <b>2</b>, and a predictive error image <b>102</b> is transmitted as the selector output <b>103</b> to the converting unit <b>4</b>.</p>
+<p id="p-0018" num="0017">Then, the selector output <b>103</b> is inputted to the converting unit <b>4</b>, and a conversion coefficient <b>104</b> is outputted from the converting unit <b>4</b>. The conversion coefficient <b>104</b> passes the quantizing unit <b>5</b>, and a quantization coefficient <b>105</b> is obtained from the quantizing unit <b>5</b>. The quantization coefficient <b>105</b> is coded into a variable length code by the variable length coding unit <b>17</b>, and a variable length coded word <b>120</b> is outputted from the variable length coding unit <b>17</b>.</p>
+<p id="p-0019" num="0018">The quantization coefficient <b>105</b> is, on the other hand, inputted to the reverse quantizing unit <b>6</b>, and a quantization coefficient <b>106</b> is outputted from the reverse quantizing unit <b>6</b>.</p>
+<p id="p-0020" num="0019">Further, the quantization coefficient <b>106</b> is reverse converted back to an image level by the reverse converting unit <b>7</b>, and image data <b>107</b> is outputted from the reverse converting unit <b>7</b>. The image data <b>107</b> is, where it is data of the I picture, added to a predicted image <b>116</b> selected by the adding unit <b>8</b>, and a locally decoded image <b>108</b> is outputted from the adding unit <b>8</b>.</p>
+<p id="p-0021" num="0020">It is to be noted that the locally decoded image <b>108</b> is written as it is into the first frame memory <b>9</b> when it is an I picture, but, when it is a P picture, it is written into the second frame memory <b>10</b>.</p>
+<p id="p-0022" num="0021">On the other hand, when the locally decoded image <b>108</b> is a B picture, it is written into neither the first frame memory <b>9</b> nor the second frame memory <b>10</b>.</p>
+<p id="p-0023" num="0022">Thereafter, when the locally decoded image <b>108</b> is a P picture, since it is used only for forward direction prediction, a reference image <b>124</b> in the first frame memory <b>9</b> is read out, and motion prediction is performed for each macroblock (basic unit for processing of 16 pixels&#xd7;16 lines) by the motion estimating unit <b>151</b>. The motion estimating unit <b>151</b> thus selects one of the macroblocks which has a value nearest to that of the current macroblock as a predicted image, and simultaneously outputs a motion vector <b>123</b> therefrom.</p>
+<p id="p-0024" num="0023">The motion vector <b>123</b> is inputted to the motion compensating units <b>11</b>, <b>12</b> and <b>13</b> surrounded by a dotted line in FIG. <b>31</b>, and motion predictive pictures are outputted from the motion compensating units <b>11</b>, <b>12</b> and <b>13</b>.</p>
+<p id="p-0025" num="0024">In this instance, the forward direction motion compensating unit <b>11</b> produces a forward direction motion predicted image <b>111</b> using a reference image <b>109</b> from the first frame memory <b>9</b> and outputs a thus determined predicted image <b>115</b>.</p>
+<p id="p-0026" num="0025">Further, as described hereinabove, the locally decoded images <b>108</b> of all macroblocks in a P picture are written into the second frame memory. However, even with the P picture mentioned above, when the macroblocks thereof are intraframe (intra) coded, the frame re-arranged image <b>101</b> is outputted directly as the selector output.</p>
+<p id="p-0027" num="0026">Meanwhile, for a B picture, the procedure of coding processing is similar to that for a P picture described above, but different from the processing for a P picture, in that two reference frames are used for prediction.</p>
+<p id="p-0028" num="0027">The motion estimating unit <b>151</b> performs forward direction prediction using the reference image <b>109</b> from the first frame memory <b>9</b>, backward direction prediction using a reference image <b>110</b> from the second frame memory <b>10</b>, and bidirection prediction using both of the reference images <b>109</b> and <b>110</b> to select one of the prediction modes with which a value nearest to that of the current macroblock is obtained, and then outputs a motion vector <b>123</b>.</p>
+<p id="p-0029" num="0028">In accordance with the thus determined prediction mode, in the motion compensating unit, one of the motion compensating units <b>11</b>, <b>12</b> and <b>13</b> which corresponds to the determined prediction mode produces and outputs a predicted picture.</p>
+<p id="p-0030" num="0029">For example, when bidirection motion prediction is selected, the bidirection motion compensating unit <b>12</b> produces and outputs a predicted image <b>115</b> determined using a bidirection predicted image <b>112</b>.</p>
+<p id="p-0031" num="0030">After coding of the B pictures of the second and third frames shown in <figref idref="DRAWINGS">FIG. 33</figref> is completed, image data written in the second frame memory is transferred to the first frame memory. Thereafter, the P picture of the seventh frame is coded, and a decoded picture is written into the second frame memory.</p>
+<p id="p-0032" num="0031">Thereafter, B pictures (fifth and sixth frames) are coded by similar processing to that described above.</p>
+<p id="p-0033" num="0032">When the macroblocks are intraframe (intra) coded, the image <b>101</b> after frame re-arrangement is directly outputted as the selector output similarly as in the case of a P picture.</p>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIG. 32</figref> is a block diagram of a conventional decoder. Referring to <figref idref="DRAWINGS">FIG. 32</figref>, reference character <b>22</b> denotes a variable length decoding unit, <b>107</b>(a) an intra (intraframe) coded picture, and <b>107</b>(b) a prediction error picture.</p>
+<p id="p-0035" num="0034">Subsequently, operation of the conventional decoder will be described.</p>
+<p id="p-0036" num="0035">A bit stream <b>121</b> is stored for a certain period of time into the receiving buffer <b>18</b>, and a variable length coded word <b>120</b> is variable length decoded by the variable length decoding unit <b>22</b> and outputted as a quantization coefficient <b>105</b>.</p>
+<p id="p-0037" num="0036">The processing procedure after this is quite similar to the local decoding processing of the encoder described hereinabove.</p>
+<p id="p-0038" num="0037">When the macroblock is intra decoded, a reverse converted image <b>107</b> makes an image <b>107</b>(a) without passing the adding unit <b>8</b>, but when the macroblock is inter (interframe) decoded, the reverse converted image data <b>107</b> makes an image <b>107</b>(b). The image <b>107</b>(b) is added to a predicted image <b>115</b> by the adding unit <b>8</b>, and a decoded image <b>108</b> is outputted from the adding unit <b>8</b>. The decoded image <b>108</b> is processed by the displayed frame re-arranging unit <b>38</b> such that such decoded images are re-arranged so that they appear in order of time, and finally, an output image <b>137</b> is outputted the displayed frame re-arranging unit <b>38</b>.</p>
+<p id="p-0039" num="0038">The example of a conventional image coder and image decoder described above is a representative apparatus of a type which performs forward direction, bidirection and backward direction prediction coding in combination.</p>
+<p id="p-0040" num="0039">In the example, for coding of a P picture, only forward direction prediction is performed using the first frame memory to perform predictive coding. On the other hand, for coding of a B picture, one of the modes of forward direction prediction, backward direction prediction and bidirection prediction with which a minimum predictive error is provided is selected using the first and second frame memories.</p>
+<p id="p-0041" num="0040">Accordingly, as coding processing proceeds, decoded pictures written in the frame memories are erased. Consequently, for example, even if one of coded pictures processed in the past is similar to a picture of the currently coded frame, since the past decoded pictures have already been erased from the frame memories, the similar coded picture cannot be used for reference, resulting in a problem of lower image processing efficiency.</p>
+<heading id="h-0002" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0042" num="0041">It is an object of the present invention to provide, in order to solve the problems of the conventional image encoder and image decoder described above, an image coding apparatus and an image decoding apparatus wherein a decoded image obtained in the past can be utilized efficiently as a reference picture and the overall prediction efficiency is improved to achieve moving picture coding and decoding of a high efficiency.</p>
+<p id="p-0043" num="0042">According to an aspect of the present invention, there is provided an image coding apparatus, comprising storage means for storing a plurality of decoded images, motion compensating prediction means for performing motion compensating prediction corresponding to an input image based on the plurality of decoded images stored in the storage means to produce a motion vector and for generating a predicted image based on the motion compensating prediction, prediction error calculation means for calculating a difference between the predicted image generated by the motion compensating prediction means and the input image to calculate a prediction error image, decoding means for generating the decoded images from the prediction error image calculated by the prediction error calculation means and the predicted image, background image storage control means for selecting one of the decoded images which is to be continuously stored in the storage means as a background image and storing the background image into the storage means, and background motion compensation means for performing motion compensating prediction corresponding to the input image based on the background image to generate a motion vector and generating a predicted image based on the motion compensating prediction.</p>
+<p id="p-0044" num="0043">According to another aspect of the present invention, there is provided an image decoding apparatus, comprising storage means for storing a plurality of decoded images, motion compensation means for performing motion compensating prediction based on the decoded images stored in the storage means to generate a motion compensated image, decoding means for generating the coded images from the motion compensated image from the motion compensation means and a prediction error image, background image storage control means for selecting one of the decoded images which is to be continuously stored in the storage means as a background image and storing the background image into the storage means, and background predicted image generation means for generating a background predicted image based on the background image.</p>
+<p id="p-0045" num="0044">The image coding apparatus and the image decoding apparatus of the present invention may be constructed such that the storage means includes a frame memory for storing a decoded image, and another frame memory for storing the background image.</p>
+<p id="p-0046" num="0045">The image coding apparatus and the image decoding apparatus of the present invention may otherwise be constructed such that re-writing of image contents into the storage means by the background image storage control means is performed in units of a picture after a predetermined interval of time or in response to a control signal from the outside.</p>
+<p id="p-0047" num="0046">The image coding apparatus and the image decoding apparatus of the present invention may otherwise be constructed such that re-writing of image contents into the storage means by the background image storage control means is performed in units of a macroblock after a predetermined interval of time or in response to a control signal from the outside.</p>
+<p id="p-0048" num="0047">The image coding apparatus of the present invention may otherwise be constructed such that the background motion compensation means has a variable searching range for a motion vector from the background images.</p>
+<p id="p-0049" num="0048">The image coding apparatus of the present invention may otherwise be constructed such that it further comprises differential vector generation means for holding a motion vector obtained from the motion compensating prediction means or the background motion compensation means and calculating a difference vector between the generated motion vector and the motion vector in the past, and the difference vector is variable length coded.</p>
+<p id="p-0050" num="0049">The image decoding apparatus of the present invention may otherwise be constructed such that it further comprises a motion vector adding unit for holding a motion vector decoded in the past and adding the motion vector decoded in the past to a difference vector to regenerate a motion vector.</p>
+<p id="p-0051" num="0050">According to a further aspect of the present invention, there is provided an image decoding apparatus which outputs a coded bit stream of moving pictures, comprising a plurality of frame memory groups for storing, individually for a plurality of objects which compose a screen, decoded images of the objects in the past, a frame memory selecting unit for selecting, in response to a control signal, into a frame memory of which one of the plurality of frame memory groups a decoded image is to be written, a motion compensation predicting unit for selecting one of forward direction prediction, backward direction prediction, bidirection prediction and background prediction in units of an object using reference images read out from frame memories of the plurality of frame memory groups provided for the individual objects to perform motion compensating prediction, a subtractor for calculating a difference between the predicted image and a current image to calculate a prediction error image, an adding unit for adding the predicted image from the reference images and the prediction error image of the current image, and a variable length coding unit for variable length coding information.</p>
+<p id="p-0052" num="0051">According to a still further aspect of the present invention, there is provided an image decoding apparatus which decodes a coded bit stream of moving pictures, comprising a plurality of frame memory groups for storing, individually for a plurality of objects which construct a screen, decoded images of the objects, a frame memory selecting unit for selecting, in response to a control signal, into a frame memory of which one of the plurality of frame memory groups the coded images are to be written for the individual objects, a variable length decoding unit for variable length decoding the coded bit stream, and a motion compensating unit for selecting one of forward direction prediction, backward direction prediction, bidirection prediction and background prediction in units of an object using reference images read out from frame memories of the plurality of frame memory groups to generate a motion compensated image.</p>
+<p id="p-0053" num="0052">The image coding apparatus or the image decoding apparatus of the present invention may be constructed such that the plurality of frame memory groups include three frame memory groups.</p>
+<p id="p-0054" num="0053">The image coding apparatus of the present invention may otherwise be constructed such that re-writing of image contents of a region in which an object which is a subject of coding is included in the plurality of frame memory groups in which coded images of the object in the past are stored is performed after a certain interval of time or in response to a control signal from the outside.</p>
+<p id="p-0055" num="0054">The image decoding apparatus of the present invention may otherwise be constructed such that re-writing of image contents of a region in which an object which is a subject of decoding is included in the plurality of frame memory groups in which coded images of the object in the past are stored is performed after a certain interval of time or in response to a control signal from the outside.</p>
+<p id="p-0056" num="0055">The image coding apparatus of the present invention may otherwise be constructed such that searching ranges for a motion vector from reference images from the plurality of frame memory groups for the individual objects are variable for the individual objects.</p>
+<p id="p-0057" num="0056">The image coding apparatus of the present invention may otherwise be constructed such that it further comprises differential vector generation means for holding a motion vector in the past obtained by referring to images from the plurality of frame memory groups for the individual objects and calculating difference vectors separately for the individual objects, and the difference vectors are variable length coded.</p>
+<p id="p-0058" num="0057">The image decoding apparatus of the present invention may otherwise be constructed such that it further comprises a motion vector adding unit for holding decoded motion vectors in the past obtained by referring to images in the plurality of frame memory groups for the individual objects for a certain period of time and adding the motion vectors decoded in the past to the decoded difference vectors to regenerate motion vectors for the individual objects.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0059" num="0058">The present invention will become more fully understood accompanying drawings which are given by way of illustration only, and thus are not limitative of the present invention, and wherein:</p>
+<p id="p-0060" num="0059"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram of a coding apparatus for moving pictures according to an embodiment 1 of the present invention;</p>
+<p id="p-0061" num="0060"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram showing an internal construction of a motion estimating unit of the coding apparatus of the embodiment 1 of the present invention;</p>
+<p id="p-0062" num="0061"><figref idref="DRAWINGS">FIG. 3</figref> is a block diagram showing an internal construction of a motion compensation predicting unit of the coding apparatus of the embodiment 1 of the present invention;</p>
+<p id="p-0063" num="0062"><figref idref="DRAWINGS">FIG. 4</figref> is a block diagram showing another construction of the coding apparatus for moving pictures according to the embodiment 1 of the present invention;</p>
+<p id="p-0064" num="0063"><figref idref="DRAWINGS">FIGS. 5A to 5C</figref> are diagrammatic views illustrating an example of the relationship between patterns of pictures and prediction modes in the embodiment 1 of the present invention;</p>
+<p id="p-0065" num="0064"><figref idref="DRAWINGS">FIG. 6</figref> is a block diagram showing a further construction of the coding apparatus for moving pictures according to the embodiment 1 of the present invention;</p>
+<p id="p-0066" num="0065"><figref idref="DRAWINGS">FIG. 7</figref> is a block diagram of a decoding apparatus for moving pictures according to an embodiment 2 of the present invention;</p>
+<p id="p-0067" num="0066"><figref idref="DRAWINGS">FIG. 8</figref> is a block diagram of a motion compensating unit of the decoding apparatus of the embodiment 2 of the present invention;</p>
+<p id="p-0068" num="0067"><figref idref="DRAWINGS">FIG. 9</figref> is a block diagram of a coding apparatus for moving pictures according to an embodiment 3 of the present invention;</p>
+<p id="p-0069" num="0068"><figref idref="DRAWINGS">FIG. 10</figref> is a block diagram of a motion estimating unit of the coding apparatus in the embodiment 3 of the present invention;</p>
+<p id="p-0070" num="0069"><figref idref="DRAWINGS">FIG. 11</figref> is a block diagram of a motion compensating unit of the coding apparatus in the embodiment 3 of the present invention;</p>
+<p id="p-0071" num="0070"><figref idref="DRAWINGS">FIGS. 12A</figref>, <b>12</b>B and <b>12</b>C are diagrammatic views illustrating an example of the relationship between picture patterns and prediction modes in the embodiment 3 of the present invention;</p>
+<p id="p-0072" num="0071"><figref idref="DRAWINGS">FIG. 13</figref> is a block diagram of a decoding apparatus for moving pictures according to an embodiment 4 of the present invention;</p>
+<p id="p-0073" num="0072"><figref idref="DRAWINGS">FIG. 14</figref> is a block diagram of a motion compensating unit of the decoding apparatus of the embodiment 4 of the present invention;</p>
+<p id="p-0074" num="0073"><figref idref="DRAWINGS">FIG. 15</figref> is a diagrammatic view illustrating re-writing of a picture in a frame memory in units of a macroblock in a coding apparatus according to an embodiment 5 of the present invention;</p>
+<p id="p-0075" num="0074"><figref idref="DRAWINGS">FIG. 16</figref> is a block diagram of a coding apparatus according to an embodiment 8 of the present invention;</p>
+<p id="p-0076" num="0075"><figref idref="DRAWINGS">FIGS. 17A and 17B</figref> are diagrammatic views illustrating a coding method of a motion vector in the embodiment 8 of the present invention;</p>
+<p id="p-0077" num="0076"><figref idref="DRAWINGS">FIG. 18</figref> is a block diagram showing another construction of the coding apparatus according to the embodiment 8 of the present invention;</p>
+<p id="p-0078" num="0077"><figref idref="DRAWINGS">FIG. 19</figref> is a block diagram of a decoding apparatus according to an embodiment 9 of the present invention;</p>
+<p id="p-0079" num="0078"><figref idref="DRAWINGS">FIG. 20</figref> is a block diagram showing another construction of the decoding apparatus according to the embodiment 9 of the present invention;</p>
+<p id="p-0080" num="0079"><figref idref="DRAWINGS">FIG. 21</figref> is a diagrammatic view illustrating the relationship between pictures and objects;</p>
+<p id="p-0081" num="0080"><figref idref="DRAWINGS">FIG. 22</figref> is a block diagram of a coding apparatus according embodiments 10 and 15 of the present invention;</p>
+<p id="p-0082" num="0081"><figref idref="DRAWINGS">FIG. 23</figref> is a block diagram of a decoding apparatus according to an embodiment 11 of the present invention;</p>
+<p id="p-0083" num="0082"><figref idref="DRAWINGS">FIG. 24</figref> is a block diagram of a coding apparatus according to embodiments 12 and 15 of the present invention;</p>
+<p id="p-0084" num="0083"><figref idref="DRAWINGS">FIG. 25</figref> is a block diagram of a decoding apparatus according to an embodiment 13 of the present invention;</p>
+<p id="p-0085" num="0084"><figref idref="DRAWINGS">FIG. 26</figref> is a diagrammatic view illustrating re-writing of an image in an object region performed in a coding apparatus according to an embodiment 14 of the present invention;</p>
+<p id="p-0086" num="0085"><figref idref="DRAWINGS">FIG. 27</figref> is a diagrammatic view of a coding apparatus according to an embodiment 16 of the present invention;</p>
+<p id="p-0087" num="0086"><figref idref="DRAWINGS">FIG. 28</figref> is a diagrammatic view of a decoding apparatus according to an embodiment 17 of the present invention;</p>
+<p id="p-0088" num="0087"><figref idref="DRAWINGS">FIG. 29</figref> is a diagrammatic view of a coding apparatus according to an embodiment 18 of the present invention;</p>
+<p id="p-0089" num="0088"><figref idref="DRAWINGS">FIG. 30</figref> is a diagrammatic view of a decoding apparatus according to an embodiment 19 of the present invention;</p>
+<p id="p-0090" num="0089"><figref idref="DRAWINGS">FIG. 31</figref> is a block diagram of a conventional encoder;</p>
+<p id="p-0091" num="0090"><figref idref="DRAWINGS">FIG. 32</figref> is a block diagram of a conventional decoder; and</p>
+<p id="p-0092" num="0091"><figref idref="DRAWINGS">FIG. 33</figref> is a diagrammatic view showing an example of an array of pictures.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS</heading>
+<p id="p-0093" num="0092">Further scope of applicability of the present invention will become apparent from the detailed description given hereinafter. However, it should be understood that the detailed description and specific examples, while indicating preferred embodiments of the invention, are given by way of illustration only, since various changes and modifications within the spirit and scope of the invention will become apparent to those skilled in the art from this detailed description.</p>
+<p id="p-0094" num="0093">In the following, image coding apparatus and image decoding apparatus of preferred embodiments of the present invention will be described with reference to the accompanying drawings.</p>
+<p id="h-0005" num="0000">Embodiment 1</p>
+<p id="p-0095" num="0094"><figref idref="DRAWINGS">FIG. 1</figref> is a block diagram of a coding apparatus for moving pictures according to an embodiment 1 of the present invention. Referring to <figref idref="DRAWINGS">FIG. 1</figref>, reference numeral <b>21</b> denotes a motion compensation predicting unit as motion compensation predicting means, <b>35</b> a frame memory selecting unit as background image storing control means, and <b>45</b> a multiplexing unit. Further, reference numeral <b>126</b> denotes a determined motion prediction mode, reference numerals <b>134</b> and <b>135</b> denote each a selected decoded image, and reference numeral <b>139</b> denotes a multiplexed bit stream. Since the other components are similar to those used in the description of the prior art shown in <figref idref="DRAWINGS">FIGS. 31 to 33</figref>, they are denoted by same reference numerals and repetitive description of them is omitted here.</p>
+<p id="p-0096" num="0095">Subsequently, operation will be described.</p>
+<p id="p-0097" num="0096">Basic coding operation is equivalent to motion compensating prediction+conversion coding described hereinabove in connection with the conventional example. Accordingly, only differences will be described here.</p>
+<p id="p-0098" num="0097">A locally decoded image <b>108</b> is inputted to the frame memory selecting unit <b>35</b>, by which it is selected into which one of the first frame memory <b>9</b> and the second frame memory <b>10</b> it is to be written. Meanwhile, the motion estimating unit <b>15</b> reads out reference images <b>109</b> and <b>110</b> from the frame memories <b>9</b> and <b>10</b> and outputs a determined motion prediction mode <b>126</b> and a motion vector <b>123</b> with which the prediction error of the locally decoded image <b>108</b> from the re-arranged input image data <b>101</b> is minimized.</p>
+<p id="p-0099" num="0098">The motion compensation predicting unit <b>21</b> reads out the reference images <b>109</b> and <b>110</b> and outputs a motion predicted image <b>115</b> based on the determined motion prediction mode <b>126</b> and the motion vector <b>123</b>.</p>
+<p id="p-0100" num="0099">The bit stream <b>121</b> is multiplexed together with the prediction mode <b>126</b> by the multiplexing unit <b>45</b> and forwarded from the multiplexing unit <b>45</b>.</p>
+<p id="p-0101" num="0100">The foregoing is the basic operation of the image coding apparatus of the embodiment 1. In the following, details of the individual units will be described.</p>
+<p id="p-0102" num="0101"><figref idref="DRAWINGS">FIG. 2</figref> shows an internal construction of the motion estimating unit <b>15</b>. Referring to <figref idref="DRAWINGS">FIG. 2</figref>, reference numeral <b>27</b> denotes a forward direction predicted image generating unit, <b>28</b> a bidirection predicted image generating unit, <b>29</b> a backward direction predicted image generating unit, <b>30</b> a background predicted image generating unit, <b>31</b> a prediction mode determining unit, <b>127</b> a forward direction predicted image, <b>128</b> a bidirection predicted image, <b>129</b> a backward direction predicted image, and <b>130</b> a background predicted image.</p>
+<p id="p-0103" num="0102">Subsequently, operation of the motion estimating unit <b>15</b> will be described.</p>
+<p id="p-0104" num="0103">Each of the predicted image generating units <b>27</b>, <b>28</b>, <b>29</b> and <b>30</b> generates a predicted image in accordance with a predetermined prediction mode.</p>
+<p id="p-0105" num="0104">For example, the forward direction predicted image generating unit <b>27</b> reads out reference images <b>109</b> from the first frame memory <b>9</b> and searches the reference images <b>109</b> for an image which has a value nearest to the value of the input image data <b>101</b>.</p>
+<p id="p-0106" num="0105">To this end, for example, a block matching method which is employed also in the conventional example described in connection with the prior art may be used as it is. In particular, matching is performed for all pixels in macroblocks described above, and an image wherein the sum total of error values exhibits a minimum value is searched for. As a result, the forward direction predicted image generating unit <b>27</b> outputs a forward direction predicted image <b>127</b>.</p>
+<p id="p-0107" num="0106">The backward direction predicted image generating unit <b>29</b> performs searching of reference images <b>110</b> from the second frame memory <b>10</b> and then performs block matching similarly. Then, the backward direction predicted image generating unit <b>29</b> outputs a backward direction predicted image <b>129</b>.</p>
+<p id="p-0108" num="0107">The bidirection predicted image generating unit <b>28</b> outputs a bidirection predicted image <b>128</b> using the two frame memories <b>9</b> and <b>10</b>. The bidirection predicted image generating unit <b>28</b> generates a forward direction predicted image and a backward direction predicted image separately from each other, and generates a bidirection predicted image based on those images.</p>
+<p id="p-0109" num="0108">For example, a technique wherein an average image of the forward direction predicted image and the backward direction predicted image is obtained and determined as a bidirection predicted image <b>128</b> may be used.</p>
+<p id="p-0110" num="0109">Meanwhile, the background predicted image generating unit <b>30</b> reads out a reference image <b>110</b> from the second frame memory and outputs a background predicted image <b>130</b> by block matching.</p>
+<p id="p-0111" num="0110">The prediction mode determining unit <b>31</b> inputs predicted images selected in the predicted images <b>127</b>, <b>128</b>, <b>129</b> and <b>130</b> and selects a prediction mode in which the difference (prediction error) from the input image <b>101</b> is minimized. In this instance, a prediction mode <b>126</b> and a motion vector <b>123</b> are outputted from the prediction mode determining unit <b>31</b>. The prediction mode <b>126</b> may be determined such that, for example, it has a value 0 for the forward direction prediction mode, another value 1 for the backward direction prediction mode, a further value 2 for the bidirectional prediction mode, and a still further value 3 for the background prediction mode.</p>
+<p id="p-0112" num="0111">It is to be noted that processing operation of the motion vector <b>123</b> generated by and outputted from the prediction mode determining unit <b>31</b> of <figref idref="DRAWINGS">FIG. 2</figref> is such as follows.</p>
+<p id="p-0113" num="0112">In particular, when searching of reference images is performed within a predetermined range and a predicted image which exhibits a minimum prediction error is obtained by each of the predicted image generating units, motion vectors <b>123</b>(a), <b>123</b>(b), <b>123</b>(c) and <b>123</b>(d) are outputted from the predicted image generating units <b>27</b> to <b>30</b> together with the predicted images, respectively. The outputs are all inputted to the prediction mode determining unit <b>31</b>, by which one of the predicted images <b>127</b>, <b>128</b>, <b>129</b> and <b>130</b> which exhibits a minimum error from the current image <b>101</b> is selected. Thus, the motion vector (one of the motion vectors <b>123</b>(a), <b>123</b>(b), <b>123</b>(c) and <b>123</b>(d)) which provides the minimum value is finally outputted as a motion vector <b>123</b> from the prediction mode determining unit <b>31</b>.</p>
+<p id="p-0114" num="0113"><figref idref="DRAWINGS">FIG. 3</figref> is a block diagram showing an internal construction of the motion compensation predicting unit <b>21</b>. Referring to <figref idref="DRAWINGS">FIG. 3</figref>, reference numerals <b>24</b> and <b>26</b> denote each a selector (switch), and reference numeral <b>114</b> denotes a background predicted image. Subsequently, operation will be described. In the switch <b>24</b>, two switches SW<b>1</b> and SW<b>2</b> are opened or closed in accordance with the determined motion prediction mode <b>126</b>.</p>
+<p id="p-0115" num="0114">For example, when the prediction mode <b>126</b> outputted from the prediction mode determining unit <b>31</b> indicates the bidirection prediction image mode, the switch SW<b>1</b> of the selector <b>24</b> selects a node B and the switch SW<b>2</b> selects another node C. On the other hand, when the background prediction mode is selected, the switch SW<b>1</b> is OFF (provides no selection) and the switch SW<b>2</b> selects a further node E.</p>
+<p id="p-0116" num="0115">In the former case, the bidirection motion compensating unit <b>12</b> generates a bidirection predicted image <b>112</b> using a motion vector <b>123</b>. Simultaneously, the output node from the bidirection motion compensating unit <b>12</b> is selected by the switch <b>26</b>. Consequently, the bidirection predicted image <b>112</b> from the motion compensation predicting unit <b>21</b> is outputted as a determined predicted image <b>115</b>.</p>
+<p id="p-0117" num="0116">Further, while the embodiment 1 described above is constructed such that it includes a motion estimating unit and a motion compensation predicting unit separately from each other and a prediction mode and a motion vector obtained by the motion estimating unit are sent to the motion compensation predicting unit so that a predicted image is generated by the motion compensation predicting unit, an equivalent function can be realized even by such a construction that the two units are replaced by a motion estimating/compensating unit <b>39</b> as seen in <figref idref="DRAWINGS">FIG. 4</figref>.</p>
+<p id="p-0118" num="0117">By the way, in the embodiment 1 described above, similarly as in the conventional example, coding is performed in units of a macroblock which is a processing unit for images.</p>
+<p id="p-0119" num="0118">Meanwhile, in the processing of the MPEG2 of the conventional example described in connection with the prior art, three types of pictures including an I picture, a P picture and a B picture are involved, and a prediction mode is restricted by those pictures.</p>
+<p id="p-0120" num="0119">In particular, in an I picture, all macroblocks are intra coded, and no prediction mode is involved. In a P picture, only forward direction prediction is involved, and in a B picture, three prediction modes of forward direction prediction, backward direction prediction and bidirection prediction are involved.</p>
+<p id="p-0121" num="0120">In the meantime, according to the present invention, in addition to the pictures described above, two other picture types of a PG picture and a PBG picture, which will be hereinafter described, are involved. In a PG picture, two prediction modes including forward direction prediction and background prediction are involved, and in a PBG picture, four prediction modes of forward direction prediction, backward direction prediction, bidirection prediction and background prediction are involved.</p>
+<p id="p-0122" num="0121"><figref idref="DRAWINGS">FIGS. 5A</figref>, <b>5</b>B and <b>5</b>C show examples of patterns of coded pictures. For example, the pattern shown in <figref idref="DRAWINGS">FIG. 5A</figref> is similar to the conventional example, and similar means to that to the prior art may be applied. For the pattern shown in <figref idref="DRAWINGS">FIG. 5B</figref>, two prediction modes including background prediction from a background image (indicated at &#x201c;BG&#x201d; in <figref idref="DRAWINGS">FIG. 5B</figref>) written in the second frame memory <b>10</b> and forward direction prediction from an immediately preceding decoded picture are involved, and one of the two prediction modes which provides a smaller prediction error is selected.</p>
+<p id="p-0123" num="0122">This operation is performed up to the sixth picture, and then beginning with the seventh picture, the picture structure changes to the structure of P, B, B, P, . . . In this instance, up to the sixth picture, a background image is recorded in the second frame memory <b>10</b>. Thereafter, however, the ninth picture is first forward direction predicted referring to the sixth picture.</p>
+<p id="p-0124" num="0123">Then, similarly as in the conventional example, the seventh and eighth pictures are predicted referring to decoded pictures of the sixth picture and the ninth picture.</p>
+<p id="p-0125" num="0124">In <figref idref="DRAWINGS">FIG. 5B</figref>, a dotted line extending from the second picture to the &#x201c;BG&#x201d; signifies that, for example, contents of the decoded image of the second picture are written as a background image into the second frame memory.</p>
+<p id="p-0126" num="0125">As the writing timing, writing may be performed after each certain interval of time or in response to a control signal from the outside. However, the pattern described above is a mere example, and any other pattern may be available.</p>
+<p id="p-0127" num="0126"><figref idref="DRAWINGS">FIG. 5C</figref> shows a pattern wherein the first picture is an I picture, and it can be seen that a coded picture of the I picture is written as a background image into the second frame memory.</p>
+<p id="p-0128" num="0127">Then, the prediction modes of macroblocks of all pictures beginning with the third picture are selected either to background image prediction or to forward direction prediction. This is effective where the background image is stationary, and is very effective with a scene wherein some person speaks in front of the background image since a phenomenon called occlusion wherein the background image comes into and out of sight as movement of the person occurs. Further, when the background image is a still picture and is known in advance, the background image may be written into the second frame in advance before coding processing is started.</p>
+<p id="p-0129" num="0128">It is to be noted that the pattern of coded pictures may take any pattern other than those shown in <figref idref="DRAWINGS">FIGS. 5A</figref>, <b>5</b>B and <b>5</b>C.</p>
+<p id="p-0130" num="0129">Subsequently, operation of the frame memory selecting unit <b>35</b> shown in <figref idref="DRAWINGS">FIG. 1</figref> will be described.</p>
+<p id="p-0131" num="0130">In the frame memory selecting unit <b>35</b>, it is determined into which one of the first frame memory <b>9</b> and the second frame memory <b>10</b> the locally decoded image <b>108</b> is to be written. As the determination method, a technique may be employed wherein, for example, as seen from another construction of the coding apparatus of the embodiment 1 shown in <figref idref="DRAWINGS">FIG. 6</figref>, a control signal <b>140</b> from the frame re-arranging unit <b>1</b> is received by the frame memory selecting unit <b>35</b> and switching between the first frame memory <b>9</b> and the second frame memory <b>10</b> is performed in accordance with the received control signal <b>140</b> by the frame memory selecting unit <b>35</b>.</p>
+<p id="p-0132" num="0131">In this instance, since the types of a currently coded picture and another picture to be coded subsequently are known, for example, a decoded image is written into the first frame memory <b>9</b> till the &#x201c;BG&#x201d; end indicated in <figref idref="DRAWINGS">FIG. 5B</figref> unless a signal from the outside is received, and since the picture structure thereafter changes to the structure of P, B, B, P, . . . , the frame memory for a subject of writing should be selected adaptively as in the conventional example.</p>
+<p id="p-0133" num="0132">Further, as seen in <figref idref="DRAWINGS">FIG. 5B</figref>, as writing of a background image from a decoded picture at a certain position into the second frame memory <b>10</b>, for example, when a scene change is detected, the decoded image may be written after a predetermined interval of time.</p>
+<p id="p-0134" num="0133">For the detection method for a scene change, a technique conventionally used may be used. For example, a method wherein, if the number of those of macroblocks in one frame with which the prediction error is higher than a threshold value is larger than a certain value, then a scene change is detected.</p>
+<p id="p-0135" num="0134">It is a matter of course that various other techniques than that described just above are available.</p>
+<p id="p-0136" num="0135">Further, while, in the image coding apparatus of the present embodiment 1, the first and second frame memories are provided as storage means to realize a construction for switching of motion compensation prediction, for implementation of the hardware, a plurality of frame memories can be provided at a time by cutting a memory having a storage capacity for the plurality of frame memories based on internal addresses.</p>
+<p id="p-0137" num="0136">As described above, with the image coding apparatus of the present embodiment 1, since a background image is stored and motion compensating prediction is performed using background prediction based on the background image, coding can be performed while keeping a high prediction efficiency without being influenced by a coding sequence.</p>
+<p id="p-0138" num="0137">It is to be noted that, while storage control of a background image into the frame memories is described in the foregoing description, it is a matter of course that the background image here signifies an image which is stored continuously and does not signify contents themselves of an image.</p>
+<p id="p-0139" num="0138">In particular, since images which are successively updated like a conventional picture array include some image which is effective for later prediction, this image is continuously stored independently of storage by the updating procedure, and here, this image is referred to as background image.</p>
+<p id="h-0006" num="0000">Embodiment 2</p>
+<p id="p-0140" num="0139"><figref idref="DRAWINGS">FIG. 7</figref> is a block diagram of a decoding apparatus for moving pictures according to an embodiment 2 of the present invention. Referring to <figref idref="DRAWINGS">FIG. 7</figref>, reference numeral <b>23</b> denotes a motion compensating unit, and <b>46</b> a demultiplexing unit. The other components than those are similar to those employed in the embodiment 1, and accordingly, repetitive description of them is omitted here.</p>
+<p id="p-0141" num="0140">Operation will be described subsequently.</p>
+<p id="p-0142" num="0141">The decoding apparatus of the present embodiment 2 corresponds to the coding apparatus described in connection with the embodiment 1, and a basic processing procedure for decoding thereof is similar to that of the decoding apparatus described in the conventional example described in the prior art. Thus, description will be given here principally of differences between them.</p>
+<p id="p-0143" num="0142">A locally decoded image <b>108</b> is inputted to the frame memory selecting unit <b>35</b>. The frame memory selecting unit <b>35</b> receives the locally decoded image <b>108</b>, selects a frame memory of a subject of writing, and transfers a selected decoded image <b>134</b> or <b>135</b> to the first frame memory <b>9</b> and the second frame memory <b>10</b>.</p>
+<p id="p-0144" num="0143">Then, the decoded image is written into the first frame memory <b>9</b> or the second frame memory <b>10</b>.</p>
+<p id="p-0145" num="0144">Meanwhile, the motion compensating unit <b>23</b> reads out reference images <b>109</b> and <b>110</b> from the two frame memories and generates a predicted image <b>115</b> in accordance with a predetermined motion prediction mode <b>126</b> in a similar procedure to that in local decoding of the coding apparatus.</p>
+<p id="p-0146" num="0145"><figref idref="DRAWINGS">FIG. 8</figref> is a block diagram showing an internal construction of the motion compensating unit <b>23</b>. Referring to <figref idref="DRAWINGS">FIG. 8</figref>, reference numeral <b>32</b> denotes a switch.</p>
+<p id="p-0147" num="0146">Subsequently, operation will be described.</p>
+<p id="p-0148" num="0147">One of the predicted image generating units <b>27</b> to <b>30</b> which corresponds to a selected prediction mode <b>126</b> reads out reference images <b>109</b> or <b>110</b> to generate a predicted image. Further, the switch <b>32</b> is switched in response to the selected prediction mode so that a finally determined predicted image <b>115</b> is outputted.</p>
+<p id="h-0007" num="0000">Embodiment 3</p>
+<p id="p-0149" num="0148"><figref idref="DRAWINGS">FIG. 9</figref> is a block diagram of an image coding apparatus according to an embodiment 3 of the present invention. Referring to <figref idref="DRAWINGS">FIG. 9</figref>, reference numeral <b>33</b> denotes a motion compensation predicting unit, <b>34</b> a third frame memory, <b>37</b> a frame memory selecting unit, <b>41</b> a motion estimating unit, <b>133</b> a reference image of the third frame memory, and <b>136</b> a selected locally decoded image. The other components than those mentioned above are similar to those employed in the embodiment 1, and accordingly, repetitive description of them is omitted here.</p>
+<p id="p-0150" num="0149">The image coding apparatus of the present embodiment 3 is characterized in that it includes the third frame memory in addition to the construction of the image encoder of the embodiment 1 shown in <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0151" num="0150">Subsequently, operation will be described.</p>
+<p id="p-0152" num="0151">Reference images <b>109</b>, <b>110</b> and <b>133</b> are read out from the three frame memories <b>9</b>, <b>10</b> and <b>34</b> in which coded images in the past are stored, and motion prediction is performed by the motion estimating unit <b>41</b>. A motion vector <b>123</b> and a prediction mode <b>126</b> obtained by the motion prediction are inputted to the motion compensation predicting unit <b>33</b>.</p>
+<p id="p-0153" num="0152">The motion compensation predicting unit <b>33</b> selects a reference image necessary for generation of a predetermined motion predicted image from among the reference images <b>109</b>, <b>110</b> and <b>133</b> based on the determined prediction mode <b>126</b>, and outputs the determined predicted image <b>115</b>.</p>
+<p id="p-0154" num="0153">Meanwhile, a locally decoded image <b>108</b> is written, after it is determined by the frame memory selecting unit <b>37</b> into which frame memory the locally decoded image <b>108</b> should be written, as a reference image <b>134</b>, <b>135</b> or <b>136</b> into the thus determined frame memory.</p>
+<p id="p-0155" num="0154"><figref idref="DRAWINGS">FIG. 10</figref> shows an internal construction of the motion estimating unit <b>41</b>. Referring to <figref idref="DRAWINGS">FIG. 10</figref>, reference numeral <b>42</b> denotes a prediction mode determining unit.</p>
+<p id="p-0156" num="0155">The motion estimating unit <b>41</b> shown in <figref idref="DRAWINGS">FIG. 10</figref> has a construction which includes, in addition to the motion estimating unit <b>15</b> shown in <figref idref="DRAWINGS">FIG. 2</figref>, a background predicted image generating unit <b>30</b> for inputting a reference image <b>133</b> from the third frame memory.</p>
+<p id="p-0157" num="0156">The forward direction predicted image generating unit <b>27</b> inputs an input image <b>101</b> and a reference image <b>109</b> of the first frame memory and outputs a forward direction predicted image <b>127</b>, and the bidirection predicted image generating unit <b>28</b> inputs the input image <b>101</b>, the reference image <b>109</b> of the first frame memory and a reference image <b>110</b> of the second frame memory and outputs a bidirection predicted image <b>128</b>.</p>
+<p id="p-0158" num="0157">The backward direction predicted image generating unit <b>29</b> inputs the input image <b>101</b> and the reference image <b>110</b> of the second frame memory and outputs a backward direction predicted image <b>129</b>, and the background predicted image generating unit <b>30</b> inputs the input image <b>101</b> and a reference image <b>133</b> of the third frame memory and outputs a background predicted image <b>130</b>.</p>
+<p id="p-0159" num="0158">The prediction mode determining unit <b>42</b> calculates absolute value differences between predicted images <b>27</b>, <b>28</b>, <b>29</b> and <b>30</b> mentioned above and input the image <b>101</b>, determines a prediction mode which exhibits a minimum one of the absolute value differences, and outputs the determined prediction mode as a prediction mode <b>126</b>. Simultaneously, the prediction mode determining unit <b>42</b> outputs a motion vector <b>123</b>.</p>
+<p id="p-0160" num="0159"><figref idref="DRAWINGS">FIG. 11</figref> is a block diagram of an internal construction of the motion compensation predicting unit <b>33</b>. Referring to <figref idref="DRAWINGS">FIG. 11</figref>, a switch <b>25</b> is opened or closed in response to the prediction mode <b>126</b> so that the reference image <b>109</b> or <b>110</b> is inputted to a selected one of the motion compensating units. For example, when the forward direction prediction mode is selected, a switch SW<b>1</b> is switched to a node A while another SW<b>2</b> is switched off. However, when the bidirection prediction mode is selected, the switch SW<b>1</b> is switched to another node B while the switch SW<b>2</b> is switched to a further node C.</p>
+<p id="p-0161" num="0160">When the background prediction mode is selected, a reference image <b>133</b> is inputted directly and referred to. Subsequently, in the switch <b>26</b>, the switches SW<b>1</b> and SW<b>2</b> are switched to nodes corresponding to the prediction mode <b>126</b>, and a predicted image <b>115</b> determined finally is outputted from the switch <b>26</b>.</p>
+<p id="p-0162" num="0161">Further, while, in the present embodiment 3, the first, second and third frame memories are provided to realize a construction for switching of motion compensating prediction, for implementation of the hardware, a plurality of frame memories can be provided at a time by cutting a memory having a storage capacity for the plurality of frame memories based on internal addresses.</p>
+<p id="p-0163" num="0162"><figref idref="DRAWINGS">FIGS. 12A</figref>, <b>12</b>B and <b>12</b>C are diagrammatic views illustrating re-writing operation of the frame memories in the present embodiment 3, and in the following, the re-writing operation will be described including a relationship to the operation of the frame memory selecting unit <b>37</b> described hereinabove with reference to <figref idref="DRAWINGS">FIGS. 6A</figref>, <b>6</b>B and <b>6</b>C.</p>
+<p id="p-0164" num="0163"><figref idref="DRAWINGS">FIGS. 12A</figref>, <b>12</b>B and <b>12</b>C show three different patterns. In <figref idref="DRAWINGS">FIG. 12A</figref>, PG pictures of background prediction and forward direction prediction appear beginning with the sixth picture, and the construction continues up to the ninth picture. Thereafter, the structure of IBBP is restored beginning with the 10th picture.</p>
+<p id="p-0165" num="0164">In <figref idref="DRAWINGS">FIG. 12B</figref>, switching among all prediction modes of forward direction prediction, backward direction prediction, bidirection prediction and background prediction is possible with the first, second, fourth, fifth, seventh, eighth, tenth and eleventh pictures, and the prediction efficiency is highest. Further, also in this instance, while writing as a background image into the third frame memory is enabled at any time, in the example of <figref idref="DRAWINGS">FIG. 12B</figref>, writing into the third frame memory for a background image is performed from the fifth and tenth pictures.</p>
+<p id="p-0166" num="0165">In <figref idref="DRAWINGS">FIG. 12C</figref>, PG pictures of background prediction and forward direction prediction appear with the third, sixth, ninth and twelfth pictures.</p>
+<p id="p-0167" num="0166">In those operations, since it is already known of which picture type a currently decoded picture is, a frame memory into which the locally decoded image <b>108</b> is to be written is determined by itself in accordance with the picture type by the frame memory selecting unit <b>37</b>. In particular, where the pattern has the structure of IBBP, for the I picture, the locally decoded image <b>108</b> is written into the first frame memory, but, for the P picture, the locally decoded image <b>108</b> is written into the second frame memory. For the B pictures, the locally decoded image <b>108</b> is written into none of the frame memories.</p>
+<p id="p-0168" num="0167">It is to be noted that, as described already, a certain decoded image is written as a background image also into the third frame after a certain interval of time or in response to a control signal from the outside.</p>
+<p id="h-0008" num="0000">Embodiment 4</p>
+<p id="p-0169" num="0168"><figref idref="DRAWINGS">FIG. 13</figref> is a block diagram of a decoding apparatus for moving pictures according to an embodiment 4 of the present invention. The decoding apparatus corresponds to the coding apparatus of the embodiment 3 shown in <figref idref="DRAWINGS">FIG. 9</figref>. Referring to <figref idref="DRAWINGS">FIG. 13</figref>, reference numeral <b>36</b> denotes a motion compensating unit. Of the other components than that just mentioned, those components denoted by the same reference numerals to those used in the embodiments 1 to 3 are similar elements, and accordingly, repetitive description of them is omitted here.</p>
+<p id="p-0170" num="0169">Subsequently, operation will be described.</p>
+<p id="p-0171" num="0170">The motion compensating unit <b>36</b> performs motion compensation referring to reference images <b>109</b>, <b>110</b> and <b>133</b> read out from the first frame memory <b>9</b>, the second frame memory <b>10</b> and the third frame memory <b>11</b> and outputs a predicted image <b>115</b>.</p>
+<p id="p-0172" num="0171">Decoded images are re-arranged by the displayed frame re-arranging unit <b>38</b> again such that they appear in order of time for displaying, and an output image <b>137</b> is obtained as a result of the re-arrangement.</p>
+<p id="p-0173" num="0172"><figref idref="DRAWINGS">FIG. 14</figref> is a block diagram showing an internal construction of the motion compensating unit <b>36</b>. Referring to <figref idref="DRAWINGS">FIG. 14</figref>, one of predicted images generated by the individual predicted image generating units is selected in response to a prediction mode <b>126</b> by the switch <b>32</b>. Then, the selected predicted image <b>115</b> is outputted to the adding unit <b>8</b>.</p>
+<p id="p-0174" num="0173">The fourth embodiment presents similar effects to those of the imaging coding apparatus of the embodiment 3.</p>
+<p id="h-0009" num="0000">Embodiment 5</p>
+<p id="p-0175" num="0174">While the image coding apparatus such as embodiment 1 described above performs re-writing to a background image illustrated in <figref idref="DRAWINGS">FIGS. 5B and 5C</figref> in units of a picture, it is possible to perform prediction efficiently if writing to a background image is performed in units of a macroblock.</p>
+<p id="p-0176" num="0175">As the technique for re-writing to a background image, for example, a technique wherein updating is performed after each predetermined interval of time in coding processing or another technique wherein, when all pixels in a macroblock at a certain position are not referred to for prediction for more than a certain period of time, a control signal is generated to re-write only the macroblock in a background image with a decoded image may be used.</p>
+<p id="p-0177" num="0176"><figref idref="DRAWINGS">FIG. 15</figref> illustrates this. Referring to <figref idref="DRAWINGS">FIG. 15</figref>, at a timing for writing from the second picture of <figref idref="DRAWINGS">FIG. 5B</figref> into the background image &#x201c;BG&#x201d;, only a macroblock in a region of slanted lines in <figref idref="DRAWINGS">FIG. 15</figref> is written as it is into the second frame memory and is used as part of a reference image for direction of the third picture.</p>
+<p id="p-0178" num="0177">Similarly, also where the image coding apparatus such as embodiment 3 described above includes three frame memories, re-writing into a background image shown in <figref idref="DRAWINGS">FIGS. 12B and 12C</figref> is performed in units of a macroblock. As the technique for re-writing, the same operation as described above may be performed.</p>
+<p id="p-0179" num="0178">As described above, since re-writing of contents of an image in each frame memory is performed in units of a macroblock after each certain interval of time or in response to a control signal from the outside, the contents of the image in the frame memory can always be kept, at a finer level, to contents from which a high prediction efficiency for background prediction can be obtained.</p>
+<p id="h-0010" num="0000">Embodiment 6</p>
+<p id="p-0180" num="0179">Also an image decoding apparatus which corresponds to the image coding apparatus of the embodiment 5 can perform re-writing to the background image in units of a macroblock.</p>
+<p id="p-0181" num="0180">For example, in an image decoding apparatus shown in <figref idref="DRAWINGS">FIG. 7</figref>, after a decoded image <b>108</b> is selected by the frame memory selecting unit <b>35</b>, a macroblock of the background image at the same position as that of the macroblock mentioned above is re-written to a selected decoded image <b>135</b>. It is to be noted that the updating in units of a macroblock may be performed after a certain interval of time or in response to a control signal from the outside.</p>
+<p id="p-0182" num="0181">Similarly, also in the decoding apparatus shown in <figref idref="DRAWINGS">FIG. 13</figref>, which includes three frame memories, re-writing to a background image illustrated in <figref idref="DRAWINGS">FIGS. 12B and 12C</figref> is performed in units of a macroblock. As the technique for re-writing, the same operation as described above may be performed.</p>
+<p id="h-0011" num="0000">Embodiment 7</p>
+<p id="p-0183" num="0182">It is also effective to vary the motion searching range upon background prediction by the motion estimating unit <b>15</b> of the image coding apparatus of the embodiment 1 shown in <figref idref="DRAWINGS">FIG. 1</figref> or the motion compensation predicting unit <b>33</b> shown in <figref idref="DRAWINGS">FIG. 3</figref> to the searching range of forward direction prediction or backward direction prediction.</p>
+<p id="p-0184" num="0183">To this end, it is advisable to set, making use of the fact that, for example, background prediction acts effectively when the motion vector from the background is 0, the searching range to a smaller range than that for any other prediction.</p>
+<p id="p-0185" num="0184">The image coding apparatus of the present embodiment 7 exhibits an additional effect in that the searching time is reduced and that, since codes obtained by variable length coding of motion vectors can be set comparatively short, the coding information amount of motion vectors can be reduced.</p>
+<p id="h-0012" num="0000">Embodiment 8</p>
+<p id="p-0186" num="0185"><figref idref="DRAWINGS">FIG. 16</figref> is a block diagram of an image coding apparatus according to an embodiment 8 of the present invention. Referring to <figref idref="DRAWINGS">FIG. 16</figref>, reference numeral <b>47</b> denotes a differential vector generating unit, and <b>141</b> a difference vector. Of the other components than those mentioned above, those components denoted by the same reference numerals to those used in the embodiment 1 are similar elements, and accordingly, repetitive description of them is omitted here.</p>
+<p id="p-0187" num="0186">The differential vector generating unit <b>47</b> calculates a difference vector <b>141</b> between a current motion vector <b>123</b> and a reference vector. Then, the difference vector <b>141</b> is variable length coded by the variable length coding unit <b>17</b>.</p>
+<p id="p-0188" num="0187"><figref idref="DRAWINGS">FIGS. 17A and 17B</figref> illustrates a coding method for a motion vector, and particularly, <figref idref="DRAWINGS">FIG. 17A</figref> shows a reference motion vector for the first frame memory <b>9</b> and <figref idref="DRAWINGS">FIG. 17B</figref> shows a reference motion vector for the second frame memory <b>10</b>.</p>
+<p id="p-0189" num="0188">Operation will be described subsequently.</p>
+<p id="p-0190" num="0189">Referring to <figref idref="DRAWINGS">FIGS. 17A and 17B</figref>, each rectangular frame denotes one macroblock. It is known that, for a motion vector MV(1) of a current macroblock obtained by reading out a reference image in the first frame memory and performing motion compensating prediction of the reference image, it is effective to actually variable length code, using three motion vectors MV1(1), MV2(1) and MV3(1) of already coded and decoded macroblocks as candidate vectors, difference values of the motion vector MV(1) from them.</p>
+<p id="p-0191" num="0190">For example, if it is tried to use a median of the motion vectors MV1(1), MV2(1) and MV3(1) as a candidate vector, then the difference vector PMV(1) can be represented by the following expression:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>PMV(1)=MV(1)&#x2212;median (MV1(1), MV2(1), MV3(1))<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+where &#x201c;median&#x201d; is an operator for calculation of a median.
+</p>
+<p id="p-0192" num="0191">Similarly, for the second frame memory,
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>PMV(2)=MV(2)&#x2212;median (MV1(2), MV2(2), MV3(2))<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0193" num="0192"><figref idref="DRAWINGS">FIG. 18</figref> is a block diagram of an image coding apparatus which includes a differential vector generating unit <b>47</b> in addition to the construction of the image coding apparatus shown in <figref idref="DRAWINGS">FIG. 9</figref>.</p>
+<p id="p-0194" num="0193">For calculation of a difference vector, in addition to the operation described above, a reference motion vector PMV(3) for the third frame memory may be calculated and variable length coded.</p>
+<p id="p-0195" num="0194">The information generation amount of motion vectors can be supplied in such a manner as described above.</p>
+<p id="h-0013" num="0000">Embodiment 9</p>
+<p id="p-0196" num="0195"><figref idref="DRAWINGS">FIGS. 19 and 20</figref> are block diagrams of decoding apparatus which correspond to the coding apparatus of the embodiment 8 described hereinabove with reference to <figref idref="DRAWINGS">FIGS. 16 and 18</figref> in which a difference vector is used, respectively. Referring to <figref idref="DRAWINGS">FIGS. 19 and 20</figref>, reference numeral <b>48</b> denotes a motion vector adding unit. The other components are similar to those of the decoding apparatus of the embodiment 2 shown in <figref idref="DRAWINGS">FIG. 7</figref>, and accordingly, repetitive description of them is omitted here.</p>
+<p id="p-0197" num="0196">In the decoding apparatus of the present embodiment 9, a difference vector <b>141</b> variable length decoded by the variable length decoding unit <b>22</b> is added to a reference vector by the variable length decoding unit <b>22</b> to calculate a motion vector <b>123</b>.</p>
+<p id="p-0198" num="0197">The processing following it is the same as the operation of the decoding apparatus of the embodiment 2 shown in <figref idref="DRAWINGS">FIG. 7</figref>, and therefore, repetitive description of it is omitted here.</p>
+<p id="h-0014" num="0000">Embodiment 10</p>
+<p id="p-0199" num="0198">While, in the coding apparatus of <figref idref="DRAWINGS">FIG. 1</figref>, an entire screen in a picture is used as a subject of coding, the image coding apparatus of the present embodiment 10 is constructed such that the picture type for coding is variable in units of one of a plurality of subject images (objects) which construct the screen.</p>
+<p id="p-0200" num="0199">Referring to <figref idref="DRAWINGS">FIG. 21</figref>, for example, if a screen is composed of an object <b>1</b> (fish), an object <b>2</b> (water: background picture) and an object <b>3</b> (ball) and boundaries among them are known, then those objects can be coded using different techniques from one another.</p>
+<p id="p-0201" num="0200">In the image coding apparatus of the present embodiment 10, such coding techniques are realized by using different picture types from one another. For example, since the object <b>1</b> exhibits a comparatively large amount of motion, the construction of picture types of <figref idref="DRAWINGS">FIG. 5A</figref> is used for the object <b>1</b> taking it into consideration that bidirection prediction is higher in prediction efficiency than background prediction.</p>
+<p id="p-0202" num="0201">On the other hand, since the object <b>2</b> is an image which exhibits little motion, it is effective to use background prediction for it. Accordingly, the construction of <figref idref="DRAWINGS">FIG. 5C</figref> should be used. However, if such a variation that a scene changes rapidly occurs with a certain midst picture, then the construction which includes B pictures beginning with the midst picture as seen in <figref idref="DRAWINGS">FIG. 5B</figref> should be employed.</p>
+<p id="p-0203" num="0202"><figref idref="DRAWINGS">FIG. 22</figref> is a block diagram showing a concrete example of the image coding apparatus provided by the present embodiment 10. Referring to <figref idref="DRAWINGS">FIG. 22</figref>, reference numeral <b>42</b> denotes an object distinguishing unit, <b>43</b> a first frame memory group, <b>44</b> a second frame memory group, and <b>138</b> an object identification signal.</p>
+<p id="p-0204" num="0203">Operation will be described subsequently.</p>
+<p id="p-0205" num="0204">An input image <b>100</b> includes identification signals applied to individual objects in advance, and the identification signals are identified by the object distinguishing unit <b>42</b>. The number of each of the thus identified objects is outputted as an object identification signal <b>138</b> from the object distinguishing unit <b>42</b>.</p>
+<p id="p-0206" num="0205">The motion estimating unit <b>15</b> selects, from among the first frame memory group <b>43</b> and the second frame memory group <b>44</b>, a frame memory which corresponds to the object of the subject of coding in accordance with the object identification signal <b>138</b>, reads out a reference image from the selected frame memory and performs motion prediction.</p>
+<p id="p-0207" num="0206">Meanwhile, the motion compensation predicting unit <b>21</b> selects a frame memory corresponding to a predetermined object in accordance with a motion prediction mode <b>126</b> determined by the motion estimating unit <b>15</b> and generates a predicted image <b>115</b>.</p>
+<p id="p-0208" num="0207">On the other hand, the frame memory selecting unit <b>35</b> writes a decoded image <b>108</b> into one of the frame memories of a predetermined one of the frame memory groups which corresponds to a predetermined object in accordance with the object identification signal <b>138</b>.</p>
+<p id="p-0209" num="0208">Further, the object identification signal <b>138</b> is multiplexed together with other coding information by the multiplexing unit <b>45</b> and sent out as a multiplexed bit stream <b>139</b> to an external apparatus (not shown).</p>
+<p id="p-0210" num="0209">While, in the image coding apparatus of the present embodiment 10, the first and second memory groups are provided to realize the construction for switching of motion compensating prediction, for implementation of the hardware, a plurality of frame memories can be provided at a time by cutting a memory having a storage capacity for the plurality of frame memories based on internal addresses. As described above, with the image coding apparatus of the present embodiment 10, since a prediction structure which conforms with motion of an object can be taken, the overall prediction efficiency is improved.</p>
+<p id="h-0015" num="0000">Embodiment 11</p>
+<p id="p-0211" num="0210">A block diagram of an image decoding apparatus which corresponds to the image coding apparatus of the embodiment 10 shown in <figref idref="DRAWINGS">FIG. 22</figref> is shown in <figref idref="DRAWINGS">FIG. 23</figref>. Referring to <figref idref="DRAWINGS">FIG. 23</figref>, reference numeral <b>46</b> denotes a demultiplexing unit, <b>43</b> a first frame memory group, <b>44</b> a second frame memory group, and <b>138</b> an object identification signal. The other components are similar to those of the image decoding apparatus of, for example, the embodiment 4 shown in <figref idref="DRAWINGS">FIG. 13</figref>, and accordingly, repetitive description of them is omitted here.</p>
+<p id="p-0212" num="0211">Operation will be described subsequently.</p>
+<p id="p-0213" num="0212">In response to an object identification signal <b>138</b> demultiplexed by the demultiplexing unit <b>46</b>, the motion compensating unit <b>23</b> reads out a reference image from one of frame memories of a predetermined frame memory group which corresponds to a predetermined object, and performs motion compensation corresponding to a prediction mode to generate a predicted image <b>115</b>.</p>
+<p id="p-0214" num="0213">In the meantime, the frame memory selecting unit <b>35</b> writes a decoded image <b>108</b> into one of the frame memories of a predetermined frame memory group which corresponds to a predetermined object in accordance with the object identification signal <b>138</b>. The other processing is similar to that of the image decoding apparatus of the embodiment 4 shown in <figref idref="DRAWINGS">FIG. 13</figref>, and accordingly, repetitive description of it is omitted here.</p>
+<p id="h-0016" num="0000">Embodiment 12</p>
+<p id="p-0215" num="0214"><figref idref="DRAWINGS">FIG. 24</figref> is a block diagram of an image coding apparatus which includes a further frame memory group in addition to the construction of the embodiment 10 described hereinabove with reference to <figref idref="DRAWINGS">FIG. 22</figref> such that it may include totaling three frame memory groups. Referring to <figref idref="DRAWINGS">FIG. 24</figref>, reference numeral <b>49</b> denotes a third frame memory group. The other components are similar to those of the image coding apparatus of the embodiment 10 shown in <figref idref="DRAWINGS">FIG. 22</figref>, and accordingly, repetitive description of them is omitted here.</p>
+<p id="p-0216" num="0215">Subsequently, operation will be described.</p>
+<p id="p-0217" num="0216">An input image <b>100</b> includes identification signals applied to individual objects in advance, and the identification signals are identified by the object distinguishing unit <b>42</b>. The number of each of the thus identified objects is outputted as an object identification signal <b>138</b> from the object distinguishing unit <b>42</b>.</p>
+<p id="p-0218" num="0217">The motion estimating unit <b>15</b> selects, from among the first frame memory group <b>43</b>, the second frame memory group <b>44</b> and the third frame memory group <b>49</b>, a frame memory which corresponds to the object of the subject of coding in accordance with the object identification signal <b>138</b>, reads out a reference image from the selected frame memory and performs motion prediction.</p>
+<p id="p-0219" num="0218">Meanwhile, the motion compensation predicting unit <b>21</b> selects a frame memory corresponding to a predetermined object in accordance with a motion prediction mode <b>126</b> determined by the motion estimating unit <b>15</b> and generates a predicted image <b>115</b>.</p>
+<p id="p-0220" num="0219">On the other hand, the frame memory selecting unit <b>35</b> writes a decoded image <b>108</b> into one of the frame memories of a predetermined one of the frame memory groups which corresponds to a predetermined object in accordance with the object identification signal <b>138</b>. Further, the object identification signal <b>138</b> is multiplexed together with other coding information by the multiplexing unit <b>45</b> and sent out as a multiplexed bit stream <b>139</b>.</p>
+<p id="p-0221" num="0220">While, in the image coding apparatus of the present embodiment 12, the first, second and third memory groups are provided to realize the construction for switching of motion compensating prediction, for implementation of the hardware, a plurality of frame memories can be provided at a time by cutting a memory having a storage capacity for the plurality of frame memories based on internal addresses.</p>
+<p id="h-0017" num="0000">Embodiment 13</p>
+<p id="p-0222" num="0221">A block diagram of an image decoding apparatus corresponding to the image coding apparatus of the embodiment 12 shown in <figref idref="DRAWINGS">FIG. 24</figref> is shown in <figref idref="DRAWINGS">FIG. 25</figref>. Referring to <figref idref="DRAWINGS">FIG. 25</figref>, reference numeral <b>49</b> denotes a third frame memory group. The other components are similar to those of the image decoding apparatus of, for example, the embodiment 11 shown in <figref idref="DRAWINGS">FIG. 23</figref>, and accordingly, repetitive description of them is omitted here.</p>
+<p id="p-0223" num="0222">Operation will be described subsequently.</p>
+<p id="p-0224" num="0223">In response to an object identification signal <b>138</b> demultiplexed by the demultiplexing unit <b>46</b>, the motion compensating unit <b>23</b> reads out a reference image from one of frame memories of a predetermined frame memory group which corresponds to a predetermined object, and performs motion compensation corresponding to a prediction mode to generate a predicted image <b>115</b>.</p>
+<p id="p-0225" num="0224">In the meantime, the frame memory selecting unit <b>35</b> writes a decoded image <b>108</b> into one of the frame memories of a predetermined frame memory group which corresponds to a predetermined object in accordance with the object identification signal <b>138</b>.</p>
+<p id="p-0226" num="0225">The other processing is similar to that of the image decoding apparatus of the embodiment 11 shown in <figref idref="DRAWINGS">FIG. 23</figref>, and accordingly, repetitive description of it is omitted here.</p>
+<p id="h-0018" num="0000">Embodiment 14</p>
+<p id="p-0227" num="0226">The image coding apparatus such as embodiment 12 shown in <figref idref="DRAWINGS">FIG. 24</figref> may be modified such that re-writing of image contents of a region, in which an object of a subject of coding is included, of a frame memory corresponding to the object in the second frame memory in which a decoded image of the object in the past is stored is performed after each certain interval of time or in response to a control signal from the outside.</p>
+<p id="p-0228" num="0227"><figref idref="DRAWINGS">FIG. 26</figref> is a diagrammatic view illustrating that, for example, with a decoded image of all macroblocks including a region occupied by a certain object, image contents in a macroblock or macroblocks at the same position of a frame memory in the second frame memory group which corresponds to the object are re-written. Accordingly, in the case of <figref idref="DRAWINGS">FIG. 26</figref>, contents of totaling four macroblocks in two vertical columns and two horizontal rows are updated.</p>
+<p id="p-0229" num="0228">Further, where re-writing of image contents of a region, in which an object of a subject of coding is included, of a frame memory corresponding to the object in the third frame memory in which a decoded image of the object in the past is stored is performed after each certain interval of time or in response to a control signal from the outside, the writing operation into a frame memory in the second frame memory group in the foregoing description should be applied to the writing operation into a frame memory in the third frame memory group.</p>
+<p id="p-0230" num="0229">Also with a decoding apparatus which corresponds to the image coding apparatus such as embodiment 12 shown in <figref idref="DRAWINGS">FIG. 24</figref> as described above, re-writing of image contents of a region, in which an object is included, of a frame memory corresponding to the object in the second frame memory group in which a decoded image of the object in the past is stored can be controllably performed after a certain interval of time or in response to a control signal from the outside.</p>
+<p id="h-0019" num="0000">Embodiment 15</p>
+<p id="p-0231" num="0230">The image coding apparatus of the embodiment 10 shown in <figref idref="DRAWINGS">FIG. 22</figref> can be modified such that searching ranges of motion vector searching for a reference image from a frame memory of the first frame memory group which corresponds to an object and another reference image from another frame memory of the second frame memory group which corresponds to another object are varied for the individual objects.</p>
+<p id="p-0232" num="0231">For example, in the image coding apparatus of the embodiment 10 shown in <figref idref="DRAWINGS">FIG. 22</figref>, if a background which exhibits a comparatively small amount of motion as an object is stored in advance in a frame memory of the second frame memory group which corresponds to the object whereas an operation of successively writing a decoded image of another object which exhibits a comparatively large amount of motion at any time into another frame memory of the first frame memory group which corresponds to the object is performed, then a high prediction efficiency can be maintained for both of the objects.</p>
+<p id="p-0233" num="0232">Further, the image coding apparatus of the embodiment 12 shown in <figref idref="DRAWINGS">FIG. 24</figref> may be modified such that searching ranges of motion vector searching for a reference image from s from memory of the first frame memory group which corresponds to an object, another reference image from another frame memory of the second frame memory group which corresponds to another object and a further reference image from a further frame memory of the third frame memory group which corresponds to a further object are varied for the individual objects.</p>
+<p id="p-0234" num="0233">For example, in the image coding apparatus of the embodiment 12 shown in <figref idref="DRAWINGS">FIG. 24</figref>, if a background which exhibits a comparatively small amount of motion as an object is stored in advance in a frame memory of the third frame memory group which corresponds to the object whereas an operation of successively writing a decoded image of another object which exhibits a comparatively large amount of motion at any time into another frame memory of the first frame memory group or the second frame memory group which corresponds to the object is performed, then a high prediction efficiency can be maintained for all of the three objects.</p>
+<p id="p-0235" num="0234">As described above, since searching ranges for a motion vector are set separately from each other for a plurality of frame memory groups referred to by objects. for example, for an object which exhibits a comparatively small amount of motion, the information generation amount of motion vectors can be reduced by making the searching range for a motion vector narrow.</p>
+<p id="h-0020" num="0000">Embodiment 16</p>
+<p id="p-0236" num="0235"><figref idref="DRAWINGS">FIG. 27</figref> is a block diagram showing an image coding apparatus according to an embodiment 16 of the present invention. Referring to <figref idref="DRAWINGS">FIG. 27</figref>, reference <b>47</b> denotes a differential vector generating unit. The differential vector generating unit <b>47</b> holds motion vectors in the past obtained by referring to images of individual objects from frame memories of the first frame memory group which correspond to the objects and motion vectors in the past obtained by referring to images of the individual objects from frame memories of the second frame memory group which correspond to the objects in the image coding apparatus of the embodiment 10 shown in <figref idref="DRAWINGS">FIG. 22</figref> separately for certain periods of time and calculates difference vectors separately for the individual objects. The other construction is similar to that of the image coding apparatus of the embodiment 10 shown in <figref idref="DRAWINGS">FIG. 22</figref>, and accordingly, repetitive description of it is omitted here.</p>
+<p id="p-0237" num="0236">Subsequently, operation will be described.</p>
+<p id="p-0238" num="0237">The motion estimating unit <b>15</b> performs motion estimation of a current image <b>101</b> of an object of a subject of coding using an image in a frame memory corresponding to the object in one of the first frame memory group and the second frame memory group selected by motion estimation as a reference image to detect a motion vector <b>123</b>.</p>
+<p id="p-0239" num="0238">Based on the motion vector <b>123</b>, the differential vector generating unit <b>47</b> selects a candidate vector (MV<b>1</b>, MV<b>2</b> or MV<b>3</b> mentioned hereinabove) from among motion vectors of the object in the past stored in the differential vector generating unit <b>47</b> and outputs a difference vector <b>141</b> of the candidate vector from the motion vector <b>123</b>. The difference vector <b>141</b> is coded into a variable length codeword by the variable length coding unit <b>17</b>. Accordingly, the differential vector generating unit <b>47</b> has a memory function of holding motion vectors in the past separately for certain periods of time for the individual frame memory groups.</p>
+<p id="h-0021" num="0000">Embodiment 17</p>
+<p id="p-0240" num="0239">A block diagram of a decoding apparatus corresponding to the image coding apparatus of the embodiment 16 shown in <figref idref="DRAWINGS">FIG. 27</figref> is shown in <figref idref="DRAWINGS">FIG. 28</figref>. Referring to <figref idref="DRAWINGS">FIG. 28</figref>, reference numeral <b>48</b> denotes a motion vector adding unit which selects a candidate vector from among motion vectors of an object in the past stored in advance therein and adds the selected candidate vector to a difference vector <b>141</b> variable length decoded by the variable length decoding unit <b>22</b>. The other construction is similar to that of the image decoding apparatus of the embodiment 11 shown in <figref idref="DRAWINGS">FIG. 22</figref>, and accordingly, repetitive description of it is omitted here.</p>
+<p id="p-0241" num="0240">Subsequently, operation will be described.</p>
+<p id="p-0242" num="0241">In the image decoding apparatus of the present embodiment 17, a difference vector <b>141</b> variable length coded by the variable length decoding unit <b>22</b> is supplied to the motion vector adding unit <b>48</b>, by which a candidate vector is selected from among motion vectors of an object in the past stored therein and added to the difference vector <b>141</b> to regenerate a motion vector <b>123</b>.</p>
+<p id="p-0243" num="0242">The motion vector <b>123</b> is sent to the motion compensating unit <b>23</b>. The motion compensating unit <b>23</b> receives the motion vector <b>123</b>, reads out an image in the memory group <b>43</b> or <b>44</b> corresponding to the object in the frame memory group selected by the frame memory selecting unit <b>35</b> as a reference image, and outputs a predicted image <b>115</b>. The other processing is similar to the operation of the image decoding apparatus of the embodiment 11 shown in <figref idref="DRAWINGS">FIG. 23</figref>, and accordingly, repetitive description of it is omitted here.</p>
+<p id="h-0022" num="0000">Embodiment 18</p>
+<p id="p-0244" num="0243">A construction of an image coding apparatus which includes a third frame memory group <b>49</b> in addition to the construction of the image coding apparatus of the embodiment 16 shown in <figref idref="DRAWINGS">FIG. 27</figref> is shown in <figref idref="DRAWINGS">FIG. 29</figref>. The other construction is similar to that of the image coding apparatus of the embodiment 16 shown in <figref idref="DRAWINGS">FIG. 27</figref>, and accordingly, repetitive description of it is omitted here.</p>
+<p id="p-0245" num="0244">Subsequently, operation will be described.</p>
+<p id="p-0246" num="0245">The motion estimating unit <b>15</b> performs motion estimation of a current image <b>101</b> of an object of a subject of coding using an image in a frame memory corresponding to the object in one of the first frame memory group, the second frame memory group and the third frame memory group selected by motion estimation as a reference image to detect a motion vector <b>123</b>.</p>
+<p id="p-0247" num="0246">Based on the motion vector <b>123</b>, the differential vector generating unit <b>47</b> selects a candidate vector (MV1, MV2 or MV3 mentioned hereinabove) from among motion vectors of the object in the past stored in the differential vector generating unit <b>47</b> and outputs a difference vector <b>141</b> of the candidate vector from the motion vector <b>123</b>. The difference vector <b>141</b> is coded into a variable length codeword by the variable length coding unit <b>17</b>.</p>
+<p id="p-0248" num="0247">Also in this instance, the differential vector generating unit <b>47</b> has a memory function of holding motion vectors in the past separately for certain periods of time for the individual frame memory groups. Since the other processing is similar to the operation of the image coding apparatus of the embodiment 16 shown in <figref idref="DRAWINGS">FIG. 27</figref>, repetitive description of it is omitted herein.</p>
+<p id="h-0023" num="0000">Embodiment 19</p>
+<p id="p-0249" num="0248">A construction of an image decoding apparatus corresponding to the image coding apparatus of the embodiment 18 shown in <figref idref="DRAWINGS">FIG. 29</figref> is shown in <figref idref="DRAWINGS">FIG. 30</figref>. Referring to <figref idref="DRAWINGS">FIG. 30</figref>, reference numeral <b>49</b> denotes a third frame memory group. Since the other construction is similar to that of the image decoding apparatus of the embodiment 17 shown in <figref idref="DRAWINGS">FIG. 28</figref>, repetitive description of it is omitted here.</p>
+<p id="p-0250" num="0249">Subsequently, operation will be described.</p>
+<p id="p-0251" num="0250">A difference vector <b>141</b> variable length coded by the variable length decoding unit <b>22</b> is supplied to the motion vector adding unit <b>48</b>, by which a candidate vector is selected from among motion vectors of an object in the past stored therein and added to the difference vector <b>141</b> to regenerate a motion vector <b>123</b>. The motion vector <b>123</b> is sent to the motion compensating unit <b>23</b>. The motion compensating unit <b>23</b> reads out a reference image in a frame memory corresponding to the object in the selected frame memory group, and outputs a predicted image <b>115</b>.</p>
+<p id="p-0252" num="0251">As described above, if a differential vector generating unit which has a memory function of holding a number of motion vectors, which is equal to the number of the frame memory groups, in the past separately for certain periods of time for the individual frame memory groups and calculates a difference vector between a detected motion vector and a candidate vector is provided, then the information generation amount of motion vectors can be suppressed.</p>
+<p id="p-0253" num="0252">As described above, with the image coding apparatus of the present invention, since a background image is stored and motion compensating prediction is performed using background prediction based on the stored background image, there is an effect that coding can be performed while keeping a high prediction efficiency without being influenced by a coding sequence.</p>
+<p id="p-0254" num="0253">Further, with the image coding apparatus and the image decoding apparatus of the present invention, since re-writing of image contents in the individual frame memories is performed in units of a picture after a certain interval of time or in response to a control signal from the outside, there is another effect that the image contents of the frame memories can always be kept to contents with which a high prediction efficiency in background prediction can be obtained.</p>
+<p id="p-0255" num="0254">Further, with the image coding apparatus and the image decoding apparatus of the present invention, since re-writing of the image contents of the individual frame memories is performed in units of a macroblock after a certain interval of time or in response to a control signal from the outside, there is a further effect that the image contents of the frame memories can always be kept to contents with which a high prediction efficiency in background prediction can be obtained with a finer level.</p>
+<p id="p-0256" num="0255">Further, with the image coding apparatus and the image decoding apparatus of the present invention, since the searching ranges for a motion vector to be used for motion estimation are variably set for the plurality of frame memories provided in the coding apparatus, for example, when motion is to be searched for from reference to a frame memory in which a screen which involves a comparatively small amount of motion is written, a comparatively short code can be given, and accordingly, there is a still further effect that the coding information amount of motion vectors can be reduced.</p>
+<p id="p-0257" num="0256">Further, with the image coding apparatus and the image decoding apparatus of the present invention, since the differential vector generating unit which has a memory function of holding a number of motion vectors, which is equal to the number of the frame memories, in the past separately for a certain period of time and calculates a difference vector between a detected motion vector and a candidate vector is provided, there is a yet further effect that the information generation amount of motion vectors can be suppressed.</p>
+<p id="p-0258" num="0257">Further, with the image coding apparatus and the image decoding apparatus of the present invention, since motion compensating prediction is performed using the plurality of frame memories for the individual objects which construct a screen, a prediction structure conforming to motion of the objects can be taken, and consequently, there is a yet further effect that the overall prediction efficiency is improved.</p>
+<p id="p-0259" num="0258">Further, with the image coding apparatus and the image decoding apparatus of the present invention, since only regions of the frame memories in the frame memory groups in which an object of a subject of coding is included are re-written after a certain interval of time or in response to an external control signal, there is a yet further effect that a high efficiency in background prediction can be maintained.</p>
+<p id="p-0260" num="0259">Further, with the image coding apparatus and the image decoding apparatus of the present invention, since the searching ranges for a motion vector are set separately for the plurality of frame memory groups referred to by an object, there is a yet further effect that, for example, for an object which exhibits a comparatively small amount of motion, the information generation amount of motion vectors can be reduced by making the searching range for a motion vector narrow.</p>
+<p id="p-0261" num="0260">Furthermore, with the image coding apparatus and the image decoding apparatus of the present invention, since the differential vector generating unit which has a memory function of holding a number of motion vectors, which is equal to the number of the frame memory groups, in the past separately for certain periods of time for the individual frame memory groups and calculates a difference vector between a detected motion vector and a candidate vector is provided, there is an additional effect that the information generation amount of motion vectors can be suppressed.</p>
+<p id="p-0262" num="0261">The invention being thus described, it will be obvious that the same may be varied in many ways. Such variations are not to be regarded as a departure from the spirit and scope of the invention, and all such modifications as would be obvious to one skilled in the art are intended to be included within the scope of the following claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. An image coding apparatus, comprising:
+<claim-text>frame memories for storing a plurality of decoded images;</claim-text>
+<claim-text>motion compensating prediction means for performing motion compensating prediction corresponding to an input image based on the plurality of decoded images stored in said frame memories to produce a motion vector and for generating a predicted image based on the motion compensating prediction;</claim-text>
+<claim-text>prediction error calculation means for calculating a difference between the predicted image generated by said motion compensating prediction means and the input image to calculate a prediction error image;</claim-text>
+<claim-text>decoding means for generating the decoded images from the prediction error image calculated by said prediction error calculation means and the predicted image;</claim-text>
+<claim-text>image storage controller for determining and outputting the coding mode of the image to be predicted according to an input control signal, and allocating the type of the reference image to be stored in one of said frame memories to continuously decoded image or the stationary background image based on the selected coding mode of the image to be predicted; and</claim-text>
+<claim-text>background motion compensation means for performing motion compensating prediction corresponding to the input image based on the background image to generate a motion vector and generating a predicted image based on the motion compensating prediction, wherein said image storage controller performs re-writing of image contents into said frame memories in response to a given control signal.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. An image coding apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said frame memories includes a frame memory for storing a decoded image, and another frame memory for storing the background image.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. An image coding apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein re-writing of image contents into said storage means by said background image storage control means is performed in units of a picture after a predetermined interval of time or in response to a control signal from the outside.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. An image coding apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein re-writing of image contents into said storage means by said background image storage control means is performed in units of a macroblock after a predetermined interval of time or in response to a control signal from the outside.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. An image coding apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said background motion compensation means has a variable searching range for a motion vector from the background images.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. An image coding apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising differential vector generation means for holding a motion vector obtained from said motion compensation means or said background motion compensation means and calculating a difference vector between the generated motion vector and the motion vector in the past, and the difference vector is variable length coded.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. An image coding apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said background image storage control means performs re-writing of image contents into said storage means per unit of a picture after a predetermined time-interval.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. An image coding apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said background image storage control means performs re-writing of image contents into said storage means per unit of a macro-block after a predetermined time-interval.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. An image coding apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said background image storage control means performs re-writing of image contents into said storage means per unit of a picture in response to an outside control signal.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. An image coding apparatus according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said background image storage control means performs re-writing of image contents into said storage means per unit of a macro-block in response to an outside control signal.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text><?delete-start id="REI-00003"  date="20140107" ?>11. An image decoding apparatus, comprising:
+<claim-text>frame memories for storing a plurality of decoded images;</claim-text>
+<claim-text>motion compensation means for performing motion compensating prediction based on the decoded images stored in said frame memories to generate a motion compensated image;</claim-text>
+<claim-text>decoding means for generating coded images from the motion compensated image from said motion compensation means and a prediction error image;</claim-text>
+<claim-text>an image storage controller for allocating the type of the reference image to be stored in one of said frame memories to continuously decoded image or the stationary background image based on the coding mode of the image to be decoded, which is extracted from encoded bitstream; and</claim-text>
+<claim-text>background predicted image generation means for generating a background predicted image based on the background image, wherein said image storage controller performs re-writing of image contents into said frame memories in response to a given control signal.<?delete-end id="REI-00003" ?></claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text><?delete-start id="REI-00004"  date="20140107" ?>12. An image decoding apparatus according to <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein said frame memories includes a frame memory for storing a decoded image, and another frame memory for storing the background image.<?delete-end id="REI-00004" ?></claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text><?delete-start id="REI-00005"  date="20140107" ?>13. An image decoding apparatus according to <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein re-writing of image contents into said storage means by said background image storage control means is performed in units of a picture after a predetermined interval of time or in response to a control signal from the outside.<?delete-end id="REI-00005" ?></claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text><?delete-start id="REI-00006"  date="20140107" ?>14. An image decoding apparatus according to <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein re-writing of image contents into said storage means by said background image storage control means is performed in units of a macroblock after a predetermined interval of time or in response to a control signal from the outside.<?delete-end id="REI-00006" ?></claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text><?delete-start id="REI-00007"  date="20140107" ?>15. An image decoding apparatus according to <claim-ref idref="CLM-00011">claim 11</claim-ref>, further comprising a motion vector adding unit for holding a motion vector decoded in the past and adding the motion vector decoded in the past to a difference vector to regenerate a motion vector.<?delete-end id="REI-00007" ?></claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text><?delete-start id="REI-00008"  date="20140107" ?>16. An image coding apparatus according to <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein said background image storage control means performs re-writing of image contents into said storage means per unit of a picture after a predetermined time-interval.<?delete-end id="REI-00008" ?></claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text><?delete-start id="REI-00009"  date="20140107" ?>17. An image coding apparatus according to <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein said background image storage control means performs re-writing of image contents into said storage means per unit of a macro-block after a predetermined time-interval.<?delete-end id="REI-00009" ?></claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text><?delete-start id="REI-00010"  date="20140107" ?>18. An image coding apparatus according to <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein said background image storage control means performs re-writing of image contents into said storage means per unit of a picture in response to an outside control signal.<?delete-end id="REI-00010" ?></claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text><?delete-start id="REI-00011"  date="20140107" ?>19. An image coding apparatus according to <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein said background image storage control means performs re-writing of image contents into said storage means per unit of a macro-block in response to an outside control signal.<?delete-end id="REI-00011" ?></claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. An image coding/decoding apparatus, comprising:
+<claim-text>an image coding apparatus, including,
+<claim-text>image coding frame memories for storing a plurality of decoded images;</claim-text>
+<claim-text>image coding motion compensating prediction means for performing motion compensating prediction corresponding to an input image based on the plurality of decoded images stored in said image coding frame memories to produce a motion vector and for generating a predicted image based on the motion compensating prediction;</claim-text>
+<claim-text>image coding prediction error calculation means for calculating a difference between the predicted image generated by said image coding motion compensating prediction means and the input image to calculate a prediction error image;</claim-text>
+<claim-text>first decoding means for generating the decoded images from the prediction error image calculated by said image coding prediction error calculation means and the predicted image;</claim-text>
+<claim-text>an image coding image storage controller for determining and outputting the coding mode of the image to be predicted according to an input control signal, and allocating the type of the reference image to be stored in one of said image coding frame memories to continuously decoded image or the stationary background image based on the selected coding mode of the image to be predicted; and</claim-text>
+<claim-text>image coding background motion compensation means for performing motion compensating prediction corresponding to the input image based on the background image to generate a motion vector and generating a predicted image based on the motion compensating prediction; and</claim-text>
+</claim-text>
+<claim-text>an image decoding apparatus, including,
+<claim-text>image decoding frame memories for storing a plurality of decoded images;</claim-text>
+<claim-text>image decoding motion compensation means for performing motion compensating prediction based on the decoded images stored in said image decoding frame memories to generate a motion compensated image;</claim-text>
+<claim-text>second decoding means for generating coded images from the motion compensated image from said image decoding motion compensation means and a prediction error image;</claim-text>
+<claim-text>an image decoding image storage controller for allocating the type of the reference image to be stored in one of said image decoding frame memories to continuously decoded image or the stationary background image based on the coding mode of the image to be decoded, which is extracted from encoded bitstream; and</claim-text>
+</claim-text>
+<claim-text>image decoding background predicted image generation means for generating a background predicted image based on the background image,</claim-text>
+</claim-text>
+<claim-text>wherein said image decoding image storage controller performs re-writing of image contents into said image decoding frame memories in response to a given control signal.</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

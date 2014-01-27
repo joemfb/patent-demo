@@ -1,0 +1,1394 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08625716-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08625716</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12638961</doc-number>
+<date>20091215</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>1057</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>04</class>
+<subclass>L</subclass>
+<main-group>27</main-group>
+<subgroup>36</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>375298</main-classification>
+<further-classification>375267</further-classification>
+<further-classification>375260</further-classification>
+<further-classification>375299</further-classification>
+<further-classification>375347</further-classification>
+<further-classification>375349</further-classification>
+</classification-national>
+<invention-title id="d2e53">Method and apparatus for performing HARQ in wireless communication system</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>2006/0040700</doc-number>
+<kind>A1</kind>
+<name>Roberts et al.</name>
+<date>20060200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2009/0041110</doc-number>
+<kind>A1</kind>
+<name>Malladi</name>
+<date>20090200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>375240</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>2009/0052473</doc-number>
+<kind>A1</kind>
+<name>Choi et al.</name>
+<date>20090200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>370498</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>JP</country>
+<doc-number>2005-027336</doc-number>
+<date>20050100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>KR</country>
+<doc-number>10-2006-0052441</doc-number>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>KR</country>
+<doc-number>10-2008-0024419</doc-number>
+<date>20080300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>WO</country>
+<doc-number>03/009633</doc-number>
+<date>20030100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>WO</country>
+<doc-number>2006/109161</doc-number>
+<date>20061000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00009">
+<othercit>CDG, &#x201c;Recommended System Selection Requirements for 1X and 1xEV-DO-Capable Terminals&#x201d;, CDG Document 143,Version 1.1, Mar. 2007, XP-002599308.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>6</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>375267</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>375260</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>375299</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>375347</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>375349</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>375298</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>24</number-of-drawing-sheets>
+<number-of-figures>24</number-of-figures>
+</figures>
+<us-related-documents>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61122740</doc-number>
+<date>20081216</date>
+</document-id>
+</us-provisional-application>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61151805</doc-number>
+<date>20090211</date>
+</document-id>
+</us-provisional-application>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61153647</doc-number>
+<date>20090219</date>
+</document-id>
+</us-provisional-application>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61155500</doc-number>
+<date>20090225</date>
+</document-id>
+</us-provisional-application>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61159790</doc-number>
+<date>20090312</date>
+</document-id>
+</us-provisional-application>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61172223</doc-number>
+<date>20090424</date>
+</document-id>
+</us-provisional-application>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20100166111</doc-number>
+<kind>A1</kind>
+<date>20100701</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Park</last-name>
+<first-name>Hyung Ho</first-name>
+<address>
+<city>Gyeongki-do</city>
+<country>KR</country>
+</address>
+</addressbook>
+<residence>
+<country>KR</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Kwak</last-name>
+<first-name>Jin Sam</first-name>
+<address>
+<city>Gyeongki-do</city>
+<country>KR</country>
+</address>
+</addressbook>
+<residence>
+<country>KR</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Lee</last-name>
+<first-name>Suk Woo</first-name>
+<address>
+<city>Gyeongki-do</city>
+<country>KR</country>
+</address>
+</addressbook>
+<residence>
+<country>KR</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="004" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Kang</last-name>
+<first-name>Seung Hyun</first-name>
+<address>
+<city>Gyeongki-do</city>
+<country>KR</country>
+</address>
+</addressbook>
+<residence>
+<country>KR</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Park</last-name>
+<first-name>Hyung Ho</first-name>
+<address>
+<city>Gyeongki-do</city>
+<country>KR</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Kwak</last-name>
+<first-name>Jin Sam</first-name>
+<address>
+<city>Gyeongki-do</city>
+<country>KR</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Lee</last-name>
+<first-name>Suk Woo</first-name>
+<address>
+<city>Gyeongki-do</city>
+<country>KR</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="004" designation="us-only">
+<addressbook>
+<last-name>Kang</last-name>
+<first-name>Seung Hyun</first-name>
+<address>
+<city>Gyeongki-do</city>
+<country>KR</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Lee, Hong, Degerman, Kang &#x26; Waimey</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>LG Electronics Inc.</orgname>
+<role>03</role>
+<address>
+<city>Seoul</city>
+<country>KR</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Timory</last-name>
+<first-name>Kabir A</first-name>
+<department>2631</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A method and an apparatus for performing hybrid automatic repeat request (HARQ) using constellation rearrangement and a circular buffer in a wireless communication system is provided. An encoded information bit is stored into a circular buffer. A transport block in selected from the circular buffer. A bit set comprising n bits of the transport block is mapped to a data symbol on a constellation for 2<sup>n</sup>-QAM modulation according to a first mapping order. The bit set is mapped according to a second mapping order when the bits of the transport block are subject to wrap-around at the end of the circular buffer.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="91.36mm" wi="119.04mm" file="US08625716-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="174.75mm" wi="141.82mm" file="US08625716-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="162.64mm" wi="172.55mm" file="US08625716-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="144.70mm" wi="116.92mm" file="US08625716-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="168.40mm" wi="163.24mm" file="US08625716-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="82.47mm" wi="120.48mm" file="US08625716-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="139.28mm" wi="115.32mm" file="US08625716-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="112.44mm" wi="125.22mm" file="US08625716-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="110.57mm" wi="140.55mm" file="US08625716-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="192.62mm" wi="155.62mm" file="US08625716-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="203.20mm" wi="144.10mm" file="US08625716-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="156.21mm" wi="157.82mm" file="US08625716-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="162.31mm" wi="159.43mm" file="US08625716-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="170.01mm" wi="165.18mm" file="US08625716-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="165.78mm" wi="168.06mm" file="US08625716-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="157.82mm" wi="167.13mm" file="US08625716-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00016" num="00016">
+<img id="EMI-D00016" he="182.12mm" wi="166.45mm" file="US08625716-20140107-D00016.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00017" num="00017">
+<img id="EMI-D00017" he="158.75mm" wi="156.55mm" file="US08625716-20140107-D00017.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00018" num="00018">
+<img id="EMI-D00018" he="153.67mm" wi="154.60mm" file="US08625716-20140107-D00018.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00019" num="00019">
+<img id="EMI-D00019" he="161.63mm" wi="156.21mm" file="US08625716-20140107-D00019.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00020" num="00020">
+<img id="EMI-D00020" he="151.47mm" wi="158.50mm" file="US08625716-20140107-D00020.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00021" num="00021">
+<img id="EMI-D00021" he="173.82mm" wi="169.33mm" file="US08625716-20140107-D00021.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00022" num="00022">
+<img id="EMI-D00022" he="168.40mm" wi="158.16mm" file="US08625716-20140107-D00022.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00023" num="00023">
+<img id="EMI-D00023" he="115.65mm" wi="98.04mm" file="US08625716-20140107-D00023.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00024" num="00024">
+<img id="EMI-D00024" he="92.03mm" wi="99.06mm" file="US08625716-20140107-D00024.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CROSS-REFERENCE TO RELATED APPLICATIONS</heading>
+<p id="p-0002" num="0001">This application claims the benefit of priority of U.S. Provisional applications No. 61/122,740 filed on Dec. 16, 2008, U.S. Provisional applications No. 61/151,805 filed on Feb. 11, 2009, U.S. Provisional applications No. 61/153,647 filed on Feb. 19, 2009, U.S. Provisional applications No. 61/155,500 filed on Feb. 25, 2009, U.S. Provisional applications No. 61/159,790 filed on Mar. 12, 2009, and U.S. Provisional applications No. 61/172,223 filed on Apr. 24, 2009, all of which are incorporated by reference in their entirety herein.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0002" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0003" num="0002">1. Field of the Invention</p>
+<p id="p-0004" num="0003">The present invention provides wireless communications, and more particularly, to a method and apparatus for performing hybrid automatic repeat request (HARQ) using constellation rearrangement and a circular buffer in a wireless communication system.</p>
+<p id="p-0005" num="0004">2. Related Art</p>
+<p id="p-0006" num="0005">Wireless communication has recently been developed to satisfy requirements of high spectral efficiency and reliable communication. However, a fading channel environment and an interference caused by various factors result in a packet error which limits overall system capacity.</p>
+<p id="p-0007" num="0006">Hybrid automatic repeat request (HARQ) is an automatic repeat request (ARQ) protocol combined with forward error correction (FEC) and is strongly considered as one of cutting edge technologies for future reliable communication. The HARQ scheme can largely be classified into two types. One is chase combining (CC) HARQ which is introduced in D. Chase, Code Combining A maximum-likelihood decoding approach for combining an arbitrary number of noisy packets, IEEE Trans. on Commun., Vol. 33, pp. 593-607, May 1985. The other is increment redundancy (IR) HARQ. In the CC HARQ, when a receiver detects an error through cyclic redundancy checking (CRC) while decoding the transmitted packet, the same packet with the same modulation and coding is retransmitted to the receiver. Meanwhile, the IR HARQ retransmits different packets in which parity bits may be manipulated through puncturing or repetition in order to obtain a coding gain.</p>
+<p id="p-0008" num="0007">A multiple input multiple output (MIMO) system is one of promising techniques researched for wireless communication. It is known that spatial diversity significantly increases system capacity without an additional bandwidth by constructing multiple antennas in both of a transmitter and a receiver. Consequently, there is ongoing research on a method of using a transmit diversity gain and a receive diversity gain.</p>
+<p id="p-0009" num="0008">Meanwhile, constellation rearrangement is one of methods for improving an HARQ gain by averaging a reliability difference between constitutional element bits in a quadrature amplitude modulation (QAM) constellation. The constellation rearrangement method may apply for multi-modulation transmission, may apply for a MIMO system using HARQ, and may apply for the support of increment redundancy (IR). The constellation rearrangement introduced in PCT International Unexamined Patent Publication No. WO 2008/018742 filed by the present Applicant provides an additional gain by averaging an intrinsic reliability difference between element bits.</p>
+<p id="p-0010" num="0009">In addition, a circular buffer has one of data structures using a fixed-sized buffer. In a process of storing data in the circular buffer, the data is stored in the circular buffer as if the front and the end of the buffer are in contact with each other. The circular buffer may be used to temporarily store an information bit when the information bit is mapped to a data symbol on the constellation. In particular, the circular buffer may be used for data retransmission when HARQ is performed. After the bit at the end of the buffer is transmitted, if it is required to transmit more information bits, the bits are subject to wrap-around at the end of the buffer and they are transmitted starting from the bit in the front of the buffer.</p>
+<p id="p-0011" num="0010">Accordingly, there is a need to provide a further effective method for performing HARQ by using the constellation rearrangement and the circular buffer.</p>
+<heading id="h-0003" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0012" num="0011">The present invention provides a method and apparatus for performing hybrid automatic repeat request (HARQ) in a wireless communication system.</p>
+<p id="p-0013" num="0012">In an aspect, a method of performing hybrid automatic repeat request (HARQ) in a wireless communication system is provided. The method includes storing an encoded information bit into a circular buffer, selecting a transport block from the circular buffer, and mapping a bit set comprising n bits of the transport block to a data symbol on a constellation for 2<sup>n</sup>-QAM modulation according to a first mapping order, wherein the bit set is mapped according to a second mapping order when the bits of the transport block are subject to wrap-around at the end of the circular buffer. The method may further includes transmitting to a mobile station a constellation rearrangement version (CRV) for indicating a mapping order of the bit set, wherein the CRV is modified when the bits of the transport block are subject to wrap-around at the end of the circular buffer. The first mapping order may be {b<sub>0</sub>, . . . , b<sub>n-1</sub>}, and the second mapping order is {b<sub>n-1</sub>, . . . , b<sub>0</sub>}. n may be 4 or 6.</p>
+<p id="p-0014" num="0013">The mapping to the data symbol includes mapping a first bit set comprising n bits of the transport block to a first data symbol, and mapping a second bit set comprising n bits of the transport block to a second data symbol. If the first bit set is {b<sub>0</sub>,b<sub>1</sub>,b<sub>2</sub>,b<sub>3</sub>} and the second bit set is {b<sub>4</sub>,b<sub>5</sub>,b<sub>6</sub>,b<sub>7</sub>}, the first mapping order may be {b<sub>0</sub>,b<sub>1</sub>,b<sub>2</sub>,b<sub>3</sub>} and {b<sub>4</sub>,b<sub>5</sub>,b<sub>6</sub>,b<sub>7</sub>}, respectively, and the second mapping order may be {b<sub>1</sub>,b<sub>4</sub>,b<sub>3</sub>,b<sub>6</sub>} and {b<sub>5</sub>,b<sub>0</sub>,b<sub>7</sub>,b<sub>2</sub>}, respectively. If the first bit set is {b<sub>0</sub>,b<sub>1</sub>,b<sub>2</sub>,b<sub>3</sub>,b<sub>4</sub>,b<sub>5</sub>} and the second bit set is {b<sub>6</sub>,b<sub>7</sub>,b<sub>8</sub>,b<sub>9</sub>,b<sub>10</sub>,b<sub>11</sub>}, the first mapping order may be {b<sub>0</sub>,b<sub>1</sub>,b<sub>2</sub>,b<sub>3</sub>,b<sub>4</sub>,b<sub>5</sub>} and {b<sub>6</sub>,b<sub>7</sub>,b<sub>8</sub>,b<sub>9</sub>,b<sub>10</sub>,b<sub>11</sub>}, respectively, and the second mapping order may be {b<sub>2</sub>,b<sub>7</sub>,b<sub>0</sub>,b<sub>5</sub>,b<sub>10</sub>,b<sub>3</sub>} and {b<sub>5</sub>,b<sub>1</sub>,b<sub>6</sub>,b<sub>11</sub>,b<sub>4</sub>,b<sub>9</sub>}, respectively.</p>
+<p id="p-0015" num="0014">In another aspect, a method of performing hybrid automatic repeat request (HARQ) in a wireless communication system is provided. The method includes storing an encoded information bit into a circular buffer, selecting a first transport block from the circular buffer, mapping a bit set comprising n bits of the first transport block to a data symbol on a constellation for 2<sup>n</sup>-QAM modulation according to a first mapping order, transmitting the data symbol of the first transport block, receiving a retransmission request for the information bit, selecting a second transport block for retransmission of the information bit from the circular buffer, mapping a bit set comprising n bits of the second transport block to a data symbol on a constellation for 2<sup>n</sup>-QAM modulation, and transmitting the data symbol of the second transport block, wherein a bit set of the first transport block or the second transport block is mapped according to a second mapping order when bits of the first transport block or the second transport block are subject to wrap-around at the end of the circular buffer.</p>
+<p id="p-0016" num="0015">In another aspect, a transmitter in a wireless communication system is provided. The transmitter includes a circular buffer configured to store an encoded information bit, a mapper configure to select a transport block from the circular buffer and map a bit set comprising n bits of the transport block to a data symbol on a constellation for 2<sup>n</sup>-QAM modulation according to a first mapping order, and a radio frequency (RF) unit coupled to the mapper, wherein the mapper maps the bit set according to a second mapping order when the bits of the transport block are subject to wrap-around at the end of the circular buffer.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 1</figref> shows a wireless communication system.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram showing a transmitter and a receiver according to an embodiment of the proposed invention.</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 3</figref> shows an example of a constellation of a 16-quadrature amplitude modulation (QAM) modulation scheme.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 4</figref> shows an example of a constellation of a 64-QAM modulation scheme.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 5</figref> shows an example of constellation rearrangement using horizontal mapping.</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 6</figref> shows another example of constellation rearrangement using horizontal mapping.</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 7</figref> shows an example of constellation rearrangement using vertical mapping.</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 8</figref> is a flowchart showing an embodiment of the proposed method of performing hybrid automatic repeat request (HARQ).</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 9</figref> is a flowchart showing another embodiment of the proposed method of performing HARQ.</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 10</figref> shows an example of an operation of a circular buffer according to the proposed method of performing HARQ.</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 11</figref> is a graph showing a performance difference depending on the number of constellation rearrangement versions (CRVs) when HARQ is performed based on increment redundancy (IR) HARQ.</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 12</figref> is a graph showing a performance difference depending on the number of CRVs when HARQ is performed based on IR HARQ.</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 13</figref> is a graph showing a performance difference depending on the number of CRVs when HARQ is performed based on chase combining (CC) HARQ.</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 14</figref> is a graph showing a performance difference between CC HARQ and IR HARQ based on vertical mapping proposed in the present invention.</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIG. 15</figref> is a graph showing a difference of HARQ performance according to various embodiments of vertical mapping among HARQ methods proposed in the present invention.</p>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIG. 16</figref> is a graph showing a difference of HARQ performance according to various embodiments of vertical mapping among HARQ methods proposed in the present invention.</p>
+<p id="p-0033" num="0032"><figref idref="DRAWINGS">FIG. 17</figref> is a graph showing a difference of HARQ performance between HARQ based on the proposed HARQ method and CC HARQ in an institute of electrical and electronics engineers (IEEE) 802.16e system when using a 16-QAM modulation scheme.</p>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIG. 18</figref> is a graph showing a performance difference between HARQ based on the proposed HARQ method and CC HARQ in an IEEE 802.16e system when using a 64-QAM modulation scheme.</p>
+<p id="p-0035" num="0034"><figref idref="DRAWINGS">FIG. 19</figref> is a graph showing a performance difference between HARQ based on the proposed HARQ method and IR HARQ in an IEEE 802.16e system when using a 16-QAM modulation scheme.</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 20</figref> is a graph showing a performance difference between HARQ based on the proposed HARQ method and IR HARQ in an IEEE 802.16e system when using a 16-QAM modulation scheme.</p>
+<p id="p-0037" num="0036"><figref idref="DRAWINGS">FIG. 21</figref> is a graph showing a performance difference between HARQ based on the proposed HARQ method and IR HARQ in an IEEE 802.16e system when using a 64-QAM modulation scheme.</p>
+<p id="p-0038" num="0037"><figref idref="DRAWINGS">FIG. 22</figref> is a graph showing a performance difference between HARQ based on the proposed HARQ method and IR HARQ in an IEEE 802.16e system when using a 64-QAM modulation scheme.</p>
+<p id="p-0039" num="0038"><figref idref="DRAWINGS">FIG. 23</figref> is a block diagram showing an example of a transmitter according to an embodiment of the present invention.</p>
+<p id="p-0040" num="0039"><figref idref="DRAWINGS">FIG. 24</figref> is a block diagram showing another example of a transmitter according to an embodiment of the present invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DESCRIPTION OF EXEMPLARY EMBODIMENTS</heading>
+<p id="p-0041" num="0040">A technology below can be used in a variety of wireless communication systems, such as Code Division Multiple Access (CDMA), Frequency Division Multiple Access (FDMA), Time Division Multiple Access (TDMA), Orthogonal Frequency Division Multiple Access (OFDMA), and Single Carrier Frequency Division Multiple Access (SC-FDMA). CDMA can be implemented using radio technology, such as Universal Terrestrial Radio Access (UTRA) or CDMA2000. TDMA can be implemented using radio technology, such as Global System for Mobile communications (GSM)/General Packet Radio Service (GPRS)/Enhanced Data Rates for GSM Evolution (EDGE). OFDMA can be implemented using radio technology, such as IEEE 802.11 (Wi-Fi), IEEE 802.16 (WiMAX), IEEE 802-20, or Evolved UTRA (E-UTRA). IEEE 802.16m is the evolution of IEEE 802.16e, and it provides a backward compatibility with an IEEE 802.16e-based system. UTRA is part of a Universal Mobile Telecommunications System (UMTS). 3rd Generation Partnership Project (3GPP) Long Term Evolution (LET) is part of Evolved UMTS (E-UMTS) using Evolved-UMTS Terrestrial Radio Access (E-UTRA), and it adopts OFDMA in downlink (DL) and SC-FDMA in uplink (UL). LTE-A (Advanced) is the evolution of 3GPP LTE.</p>
+<p id="p-0042" num="0041">IEEE 802.16m is chiefly described as an example in order to clarify the description, but the technical spirit of the present invention is not limited to IEEE 802.16m.</p>
+<p id="p-0043" num="0042"><figref idref="DRAWINGS">FIG. 1</figref> shows a wireless communication system.</p>
+<p id="p-0044" num="0043">Referring to <figref idref="DRAWINGS">FIG. 1</figref>, the wireless communication system <b>10</b> includes one or more Base Stations (BSs) <b>11</b>. The BSs <b>11</b> provide communication services to respective geographical areas (in general called &#x2018;cells&#x2019;) <b>15</b><i>a</i>, <b>15</b><i>b</i>, and <b>15</b><i>c</i>. Each of the cells can be divided into a number of areas (called &#x2018;sectors&#x2019;). A User Equipment (UE) <b>12</b> can be fixed or mobile and may be referred to as another terminology, such as a Mobile Station (MS), a Mobile Terminal (MT), a User Terminal (UT), a Subscriber Station (SS), a wireless device, a Personal Digital Assistant (PDA), a wireless modem, or a handheld device. In general, the BS <b>11</b> refers to a fixed station that communicates with the UEs <b>12</b>, and it may be referred to as another terminology, such as an evolved-NodeB (eNB), a Base Transceiver System (BTS), or an access point.</p>
+<p id="p-0045" num="0044">The UE belongs to one cell. A cell to which a UE belongs is called a serving cell. A BS providing the serving cell with communication services is called a serving BS. A wireless communication system is a cellular system, and so it includes other cells neighboring a serving cell. Other cells neighboring the serving cell are called neighbor cells. A BS providing the neighbor cells with communication services is called as a neighbor BS. The serving cell and the neighbor cells are relatively determined on the basis of a UE.</p>
+<p id="p-0046" num="0045">This technology can be used in the downlink (DL) or the uplink (UL). In general, DL refers to communication from the BS <b>11</b> to the UE <b>12</b>, and UL refers to communication from the UE <b>12</b> to the BS <b>11</b>. In the DL, a transmitter may be part of the BS <b>11</b> and a receiver may be part of the UE <b>12</b>. In the UL, a transmitter may be part of the UE <b>12</b> and a receiver may be part of the BS <b>11</b>.</p>
+<p id="p-0047" num="0046">An institute of electrical and electronics engineers (IEEE) 802.16m system performs channel coding and modulation on data in a process of transmitting the data. Information bits are segmented into forward error correction (FEC) blocks and are subject to FEC encoding. Subcarriers of a logical resource unit (LRU) are segmented into the respective FEC blocks. In addition, a bit selection process and a bit repetition process are performed to achieve rate matching. The bit selection process is performed to adjust the number of coded bit to either the LRU or a resource allocation size depending on a subframe type. The bit repetition process is performed when the number of bits to be transmitted is greater than the number of selected bits. Modulation is performed on bits that have undergone the selection and repetition processes.</p>
+<p id="p-0048" num="0047"><figref idref="DRAWINGS">FIG. 2</figref> is a block diagram showing a transmitter and a receiver according to an embodiment of the proposed invention.</p>
+<p id="p-0049" num="0048">A transmitter <b>20</b> and a receiver <b>30</b> implement hybrid automatic repeat request (HARQ). The transmitter <b>20</b> and the receiver <b>30</b> may be a transceiver for performing both a transmission function and a reception function. For clear explanation on data retransmission, it will be described hereinafter that one side that serves for data transmission and retransmission is referred to as the transmitter <b>20</b> and the other side that receives data and requests retransmission is referred to as the receiver <b>30</b>. In a downlink, the transmitter <b>20</b> may be part of a base station (BS), and the receiver <b>30</b> may be a part of a user equipment (UE). In an uplink, the transmitter <b>20</b> may be a part of the UE, and the receiver <b>30</b> may be a part of the BS. The BS may include a plurality of transmitters <b>20</b> and a plurality of receivers <b>30</b>. The UE may include a plurality of transmitters <b>20</b> and a plurality of receivers <b>30</b>.</p>
+<p id="p-0050" num="0049">Referring to <figref idref="DRAWINGS">FIG. 2</figref>, the transmitter <b>20</b> includes a channel encoder <b>21</b>, a resource mapper <b>22</b>, a mapper <b>23</b>, a circular buffer <b>24</b>, a modulator <b>25</b>, and transmit (Tx) antennas <b>29</b>-<b>1</b>, . . . , <b>29</b>-Nt.</p>
+<p id="p-0051" num="0050">The channel encoder <b>21</b> receives a stream of information bits, and generates coded data by encoding the received stream of information bits according to a predetermined coding scheme. The resource mapper <b>23</b> allocates a resource for transmitting the coded data. The mapper <b>23</b> provides a data symbol by modulating the coded data according to a predetermined modulation scheme. The mapper <b>23</b> may use at least two or more modulation schemes. The mapper <b>23</b> maps the coded data to a data symbol representing a position on a signal constellation. Further, the mapper <b>23</b> remaps the coded data according to a retransmission request signal. There is no restriction on the modulation scheme used by the mapper <b>23</b>. The modulation scheme may be M-quadrature amplitude modulation (M-QAM). Examples of the M-QAM include 16-QAM and 64-QAM. The circular buffer <b>24</b> temporarily stores data when the coded data is mapped to the data symbol. The modulator <b>25</b> modulates the data symbol output from the mapper <b>23</b> and transmits the modulated data symbol through each of the Tx antennas <b>29</b>-<b>1</b>, . . . , <b>29</b>-Nt.</p>
+<p id="p-0052" num="0051">The receiver <b>30</b> includes a channel decoder <b>31</b>, a demapper <b>32</b>, a demodulator <b>33</b>, and receive (Rx) antennas <b>39</b>-<b>1</b>, . . . , <b>39</b>-Nr. Signals received from the Rx <b>39</b>-<b>1</b>, . . . , <b>39</b>-Nr are demodulated by the demodulator <b>33</b>. The demapper <b>32</b> demaps the coded data from the data symbol according to a demapping control signal. The channel decoder <b>31</b> decodes the coded data according to a predetermined decoding scheme.</p>
+<p id="p-0053" num="0052">The M-QAM modulation scheme maps n bits (where M=2<sup>n</sup>) to one data symbol on a constellation. Since the n bits mapped to one data symbol are concurrently transmitted, transmission efficiency can be improved. For example, when using the 16-QAM modulation scheme, since 16=2<sup>4</sup>, 4-bit information {b<sub>0</sub>,b<sub>1</sub>,b<sub>2</sub>,b<sub>3</sub>} may be mapped to one data symbol. The {b<sub>0</sub>,b<sub>1</sub>,b<sub>2</sub>,b<sub>3</sub>} can be mapped in any order without restriction.</p>
+<p id="p-0054" num="0053"><figref idref="DRAWINGS">FIG. 3</figref> shows an example of a constellation of a 16-QAM modulation scheme. Referring to <figref idref="DRAWINGS">FIG. 3</figref>, the constellation consists of two constitutional elements, i.e., in-phase (hereinafter I-axis) and quadrature (hereinafter Q-axis). The I-axis consists of 2 bits of b<sub>3</sub>b<sub>2</sub>, and the Q-axis consists of 2 bits of b<sub>1</sub>b<sub>0</sub>. However, this is for exemplary purposes only, and the I-axis and the Q-axis can use all combinations of the constitutional elements while avoiding the respective 2 bits from overlapping. The 2 bits of the I-axis and the 2 bits of the Q-axis may be combined to concurrently transmit 4-bit information. The b<sub>3 </sub>may be a most significant bit (MSB), and the b<sub>0 </sub>may be a least significant bit (LSB).</p>
+<p id="p-0055" num="0054"><figref idref="DRAWINGS">FIG. 4</figref> shows an example of a constellation of a 64-QAM modulation scheme. Referring to <figref idref="DRAWINGS">FIG. 4</figref>, the constellation consists of two constitutional elements, i.e., the I-axis and the Q-axis. The I-axis consists of 3 bits of b<sub>5</sub>b<sub>4</sub>b<sub>3</sub>, and the Q-axis consists of 3 bits of b<sub>2</sub>b<sub>1</sub>b<sub>0</sub>. However, this is for exemplary purposes only, and the I-axis and the Q-axis can use all combinations of the constitutional elements while avoiding the respective 3 bits from overlapping. The 3 bits of the I-axis and the 3 bits of the Q-axis may be combined to concurrently transmit 6-bit information. The b<sub>5 </sub>may be an MSB, and the b<sub>0 </sub>may be an LSB.</p>
+<p id="p-0056" num="0055">Meanwhile, the constellation may be optionally rearranged. In general, the constellation rearrangement may apply to the 16-QAM or 64-QAM modulation scheme to increase a gain when HARQ is performed. The constellation rearrangement may be performed for respective bits constituting each constellation, and can be classified into horizontal mapping and vertical mapping.</p>
+<p id="p-0057" num="0056">The horizontal mapping differs from original mapping in that the horizontal mapping performs mapping by changing a position or value of a bit constituting the constellation. The horizontal mapping can decrease a reliability difference between coded information bits. A swapping operation and an inversion operation can be considered as an operation for the horizontal mapping. The swapping operation is used to change positions of an MSB, a significant bit (SB), and an LSB in the constellation. The inverse operation is used to inversely change a value of an information bit. That is, the inverse operation changes 1 to 0, and change 0 to 1. In the two operations above, the swapping operation can decrease a difference of per-bit error probability.</p>
+<p id="p-0058" num="0057"><figref idref="DRAWINGS">FIG. 5</figref> shows an example of constellation rearrangement using horizontal mapping. Referring to <figref idref="DRAWINGS">FIG. 5</figref>, the 16-QAM modulation scheme may be used to transmit a data symbol through an antenna <b>49</b>, and the data symbol exists on a constellation to which 4-bit information bit {b<sub>0</sub>,b<sub>1</sub>,b<sub>2</sub>,b<sub>3</sub>} is mapped. A data symbol <b>40</b> mapped in the order of b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3 </sub>is transmitted in initial transmission. b<sub>0 </sub>may be an MSB, and b<sub>3 </sub>may be an LSB. An error occurs in data symbols transmitted from each Tx antenna according to a channel condition, and the erroneous data symbols are retransmitted. When a retransmission request is received for the initial transmission, a data symbol <b>41</b> mapped in the order of b<sub>3</sub>b<sub>2</sub>b<sub>1</sub>b<sub>0 </sub>is transmitted in first retransmission. The data symbol <b>41</b> mapped in the order of b<sub>3</sub>b<sub>2</sub>b<sub>1</sub>b<sub>0 </sub>is obtained in such a manner that horizontal mapping is performed on the data symbol <b>40</b> mapped in the order of b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3 </sub>to completely reversing the mapping order of the data symbol <b>40</b>.</p>
+<p id="p-0059" num="0058"><figref idref="DRAWINGS">FIG. 6</figref> shows another example of constellation rearrangement using horizontal mapping. The example of the horizontal mapping described with reference to <figref idref="DRAWINGS">FIG. 5</figref> is expressed on a constellation in <figref idref="DRAWINGS">FIG. 6</figref>. A 4-bit information bit {b<sub>0</sub>,b<sub>1</sub>,b<sub>2</sub>,b<sub>3</sub>} has a value of {1,0,1,1}, respectively. Referring to <figref idref="DRAWINGS">FIG. 6</figref>, a data symbol &#x2018;1011&#x2019; <b>50</b> mapped in the order of b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3 </sub>is transmitted in initial transmission. When a retransmission request is received for the initial transmission, a data symbol &#x2018;1101&#x2019; <b>51</b> mapped in the order of b<sub>3</sub>b<sub>2</sub>b<sub>1</sub>b<sub>0 </sub>is transmitted in first retransmission.</p>
+<p id="p-0060" num="0059">Meanwhile, vertical mapping implies that mapping is performed by changing a mapping position between two or more data symbols when the two or more data symbols exist in one tone. Since two or more data symbols exist, it implies that the number of input streams of a precoder, that is, a rank is 2 or higher. The vertical mapping may be used to average a channel state difference between initial transmission and retransmission.</p>
+<p id="p-0061" num="0060"><figref idref="DRAWINGS">FIG. 7</figref> shows an example of constellation rearrangement using vertical mapping.</p>
+<p id="p-0062" num="0061">Referring to <figref idref="DRAWINGS">FIG. 7</figref>, data symbols are transmitted through respective antennas. The 16-QAM modulation scheme may be used to transmit data symbols through antennas <b>69</b>-<b>1</b> and <b>69</b>-<b>2</b>, and the data symbols exist on a constellation to which 4-bit information bits {b<sub>0</sub>,b<sub>1</sub>,b<sub>2</sub>,b<sub>3</sub>} and {b<sub>4</sub>,b<sub>5</sub>,b<sub>6</sub>,b<sub>7</sub>} are mapped. A data symbol <b>60</b> mapped in the order of b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3 </sub>and a data symbol <b>61</b> mapped in the order of b<sub>4</sub>b<sub>5</sub>b<sub>6</sub>b<sub>7 </sub>are transmitted in initial transmission. b<sub>0 </sub>and b<sub>4 </sub>may be an MSB. b<sub>3 </sub>and b<sub>7 </sub>may be an LSB. When a retransmission request is received for a signal of the initial transmission, a data symbol <b>62</b> mapped in the order of b<sub>0</sub>b<sub>5</sub>b<sub>2</sub>b<sub>7 </sub>and a data symbol <b>63</b> mapped in the order of b<sub>4</sub>b<sub>1</sub>b<sub>6</sub>b<sub>3 </sub>are transmitted in first retransmission. The data symbol <b>62</b> mapped in the order of b<sub>0</sub>b<sub>5</sub>b<sub>2</sub>b<sub>7 </sub>and the data symbol <b>63</b> mapped in the order of b<sub>4</sub>b<sub>1</sub>b<sub>6</sub>b<sub>3 </sub>are obtained in such a manner that vertical mapping is performed on the data symbol <b>60</b> mapped in the order of b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3 </sub>and the data symbol <b>61</b> mapped in the order of b<sub>4</sub>b<sub>5</sub>b<sub>6</sub>b<sub>7 </sub>so that bits b<sub>1 </sub>and b<sub>5 </sub>mapped in a second position in each data symbol and bits b<sub>3 </sub>and b<sub>7 </sub>mapped in a fourth position in each data symbol swap their positions between the data symbols.</p>
+<p id="p-0063" num="0062">Hereinafter, the proposed method of performing HARQ will be described according to an embodiment of the present invention.</p>
+<p id="p-0064" num="0063"><figref idref="DRAWINGS">FIG. 8</figref> is a flowchart showing an embodiment of the proposed method of performing HARQ.</p>
+<p id="p-0065" num="0064">In step S<b>100</b>, a transmitter stores an encoded information bit into a circular buffer.</p>
+<p id="p-0066" num="0065">In step S<b>110</b>, the transmitter selects a transport block from the circular buffer. The transport block may be a part or the entirety of the information bit stored in the circular buffer.</p>
+<p id="p-0067" num="0066">In step S<b>120</b>, the transmitter maps a bit set including n bits of the transport block to a data symbol on a constellation for 2<sup>n</sup>-QAM modulation according to a first mapping order. When bits of the transport block are subject to wrap-around at the end of the circular buffer, the transmitter maps the bit set according to a second mapping order. The wrap-around implies that the bits of the transport block return to the front of the circular buffer from the end of the circular buffer.</p>
+<p id="p-0068" num="0067">Changing of the mapping order implies constellation rearrangement. Rearrangement of constitutional bits on the constellation may be performed by using interleaving, and then rearrangement may be performed among constitutional bits of a spatial data stream. On the contrary, rearrangement may be performed among the constitutional bits of the spatial data stream and then rearrangement of the constitutional bits on the constellation may be performed. The rearrangement of the constitutional bits on the constellation may be horizontal mapping. The rearrangement among the constitutional bits of the spatial data stream may be vertical mapping. The interleaving may include the swapping operation and the inverse operation of the horizontal mapping, and may include the vertical mapping.</p>
+<p id="p-0069" num="0068">The transmitter can additionally transmit a constellation rearrangement version (CRV) when changing the mapping order or when performing constellation rearrangement. The CRV is a numerical expression of a specific mapping order determined according to the number of ranks and a modulation scheme. Therefore, the CRV may be one-to-one mapped to a part of a rearrangement pattern that can be used for bits constituting a retransmission symbol. In addition, when the bits of the transport block are subject to wrap-around at the end of the circular buffer, the CRV is modified along with a change of a mapping order.</p>
+<p id="p-0070" num="0069">The CRV is important information when performing HARQ, and thus needs to be known both to a BS and a UE. In case of downlink HARQ, the transmitter transmits a starting value of the CRV with respect to each sub-packet. In case of uplink HARQ, the BS and the UE can implicitly know information on the CRV. In this case, for each transmission symbol, the CRV may be predetermined by the number of symbol transmissions.</p>
+<p id="p-0071" num="0070">Table 1 shows an example of a mapping rule according to a CRV in a system with a rank 1 when using the 16-QAM modulation scheme. Horizontal mapping is applied in this example.</p>
+<p id="p-0072" num="0071">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="126pt" align="center"/>
+<colspec colname="2" colwidth="91pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="2" rowsep="1">TABLE 1</entry>
+</row>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>CoRe version</entry>
+<entry>Mapping rule</entry>
+</row>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>1</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>2</entry>
+<entry>b<sub>1</sub>b<sub>0</sub>b<sub>3</sub>b<sub>2</sub></entry>
+</row>
+<row>
+<entry>3</entry>
+<entry>b<sub>0</sub> <o ostyle="single">b</o><sub>1</sub>b<sub>2</sub> <o ostyle="single">b</o><sub>3</sub></entry>
+</row>
+<row>
+<entry>4</entry>
+<entry> <o ostyle="single">b</o><sub>0</sub>b<sub>1</sub> <o ostyle="single">b</o><sub>2</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>5</entry>
+<entry>b<sub>1</sub> <o ostyle="single">b</o><sub>0</sub>b<sub>3</sub> <o ostyle="single">b</o><sub>2</sub></entry>
+</row>
+<row>
+<entry>6</entry>
+<entry> <o ostyle="single">b</o><sub>1</sub>b<sub>0</sub> <o ostyle="single">b</o><sub>3</sub>b<sub>2</sub></entry>
+</row>
+<row>
+<entry>7</entry>
+<entry> <o ostyle="single">b</o><sub>0</sub> <o ostyle="single">b</o><sub>1</sub> <o ostyle="single">b</o><sub>2</sub> <o ostyle="single">b</o><sub>3</sub></entry>
+</row>
+<row>
+<entry>8</entry>
+<entry> <o ostyle="single">b</o><sub>1</sub> <o ostyle="single">b</o><sub>0</sub> <o ostyle="single">b</o><sub>3</sub> <o ostyle="single">b</o><sub>2</sub></entry>
+</row>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0073" num="0072">In Table 1 above, b<sub>0 </sub>denotes an MSB on the I-axis, b<sub>1 </sub>denotes an LSB on the I-axis, b<sub>2 </sub>denotes an MSB on the Q-axis, and b<sub>3 </sub>denotes an LSB on the Q-axis. The overline ( <o ostyle="single"> </o>) denotes an inverse operation of a specific bit. A retransmission symbol can be selected from any one of the CRVs above, and an order of bits constituting the symbol can be changed.</p>
+<p id="p-0074" num="0073">Table 2 shows an example of a mapping rule according to a CRV in a system with a rank 1 when using the 64-QAM modulation scheme. Horizontal mapping is applied in this example.</p>
+<p id="p-0075" num="0074">
+<tables id="TABLE-US-00002" num="00002">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="126pt" align="center"/>
+<colspec colname="2" colwidth="91pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="2" rowsep="1">TABLE 2</entry>
+</row>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>CoRe version</entry>
+<entry>Mapping rule</entry>
+</row>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="1" colwidth="126pt" align="char" char="."/>
+<colspec colname="2" colwidth="91pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>1</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>2</entry>
+<entry>b<sub>0</sub>b<sub>2</sub>b<sub>1</sub>b<sub>3</sub>b<sub>5</sub>b<sub>4</sub></entry>
+</row>
+<row>
+<entry>3</entry>
+<entry>b<sub>1</sub>b<sub>0</sub>b<sub>2</sub>b<sub>4</sub>b<sub>3</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>4</entry>
+<entry>b<sub>1</sub>b<sub>2</sub>b<sub>0</sub>b<sub>4</sub>b<sub>5</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>5</entry>
+<entry>b<sub>2</sub>b<sub>1</sub>b<sub>0</sub>b<sub>5</sub>b<sub>4</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>6</entry>
+<entry>b<sub>2</sub>b<sub>0</sub>b<sub>1</sub>b<sub>5</sub>b<sub>3</sub>b<sub>4</sub></entry>
+</row>
+<row>
+<entry>7</entry>
+<entry> <o ostyle="single">b</o><sub>0</sub>b<sub>1</sub>b<sub>2</sub> <o ostyle="single">b</o><sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>8</entry>
+<entry> <o ostyle="single">b</o><sub>0</sub>b<sub>1</sub>b<sub>2</sub> <o ostyle="single">b</o><sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>9</entry>
+<entry>b<sub>0</sub> <o ostyle="single">b</o><sub>1</sub>b<sub>2</sub>b<sub>3</sub> <o ostyle="single">b</o><sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>10</entry>
+<entry>b<sub>0</sub>b<sub>1</sub> <o ostyle="single">b</o><sub>2</sub>b<sub>3</sub>b<sub>4</sub> <o ostyle="single">b</o><sub>5</sub></entry>
+</row>
+<row>
+<entry>11</entry>
+<entry> <o ostyle="single">b</o><sub>0</sub>b<sub>2</sub>b<sub>1</sub> <o ostyle="single">b</o><sub>3</sub>b<sub>5</sub>b<sub>4</sub></entry>
+</row>
+<row>
+<entry>12</entry>
+<entry>b<sub>0</sub> <o ostyle="single">b</o><sub>2</sub>b<sub>1</sub>b<sub>3</sub> <o ostyle="single">b</o><sub>5</sub>b<sub>4</sub></entry>
+</row>
+<row>
+<entry>13</entry>
+<entry>b<sub>0</sub>b<sub>2</sub> <o ostyle="single">b</o><sub>1</sub>b<sub>3</sub>b<sub>5</sub> <o ostyle="single">b</o><sub>4</sub></entry>
+</row>
+<row>
+<entry>14</entry>
+<entry> <o ostyle="single">b</o><sub>1</sub>b<sub>0</sub>b<sub>2</sub> <o ostyle="single">b</o><sub>4</sub>b<sub>3</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>15</entry>
+<entry>b<sub>1</sub> <o ostyle="single">b</o><sub>0</sub>b<sub>2</sub>b<sub>4</sub> <o ostyle="single">b</o><sub>3</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>16</entry>
+<entry>b<sub>1</sub>b<sub>0</sub> <o ostyle="single">b</o><sub>2</sub>b<sub>4</sub>b<sub>3</sub> <o ostyle="single">b</o><sub>5</sub></entry>
+</row>
+<row>
+<entry>17</entry>
+<entry> <o ostyle="single">b</o><sub>1</sub>b<sub>2</sub>b<sub>0</sub> <o ostyle="single">b</o><sub>4</sub>b<sub>5</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>18</entry>
+<entry>b<sub>1</sub> <o ostyle="single">b</o><sub>2</sub>b<sub>0</sub>b<sub>4</sub> <o ostyle="single">b</o><sub>5</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>19</entry>
+<entry>b<sub>1</sub>b<sub>2</sub> <o ostyle="single">b</o><sub>0</sub>b<sub>4</sub>b<sub>5</sub> <o ostyle="single">b</o><sub>3</sub></entry>
+</row>
+<row>
+<entry>20</entry>
+<entry> <o ostyle="single">b</o><sub>2</sub>b<sub>1</sub>b<sub>0</sub> <o ostyle="single">b</o><sub>5</sub>b<sub>4</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>21</entry>
+<entry>b<sub>2</sub> <o ostyle="single">b</o><sub>1</sub>b<sub>0</sub>b<sub>5</sub> <o ostyle="single">b</o><sub>4</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>22</entry>
+<entry>b<sub>2</sub>b<sub>1</sub> <o ostyle="single">b</o><sub>0</sub>b<sub>5</sub>b<sub>4</sub> <o ostyle="single">b</o><sub>3</sub></entry>
+</row>
+<row>
+<entry>23</entry>
+<entry> <o ostyle="single">b</o><sub>2</sub>b<sub>0</sub>b<sub>1</sub> <o ostyle="single">b</o><sub>5</sub>b<sub>3</sub>b<sub>4</sub></entry>
+</row>
+<row>
+<entry>24</entry>
+<entry>b<sub>2</sub> <o ostyle="single">b</o><sub>0</sub>b<sub>1</sub>b<sub>5</sub> <o ostyle="single">b</o><sub>3</sub>b<sub>4</sub></entry>
+</row>
+<row>
+<entry>25</entry>
+<entry>b<sub>2</sub>b<sub>0</sub> <o ostyle="single">b</o><sub>1</sub>b<sub>5</sub>b<sub>3</sub> <o ostyle="single">b</o><sub>4</sub></entry>
+</row>
+<row>
+<entry>26</entry>
+<entry> <o ostyle="single">b</o><sub>0</sub> <o ostyle="single">b</o><sub>1</sub>b<sub>2</sub> <o ostyle="single">b</o><sub>3</sub> <o ostyle="single">b</o><sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>27</entry>
+<entry> <o ostyle="single">b</o><sub>0</sub>b<sub>1</sub> <o ostyle="single">b</o><sub>2</sub> <o ostyle="single">b</o><sub>3</sub>b<sub>4</sub> <o ostyle="single">b</o><sub>5</sub></entry>
+</row>
+<row>
+<entry>28</entry>
+<entry>b<sub>0</sub> <o ostyle="single">b</o><sub>1</sub> <o ostyle="single">b</o><sub>2</sub>b<sub>3</sub> <o ostyle="single">b</o><sub>4</sub> <o ostyle="single">b</o><sub>5</sub></entry>
+</row>
+<row>
+<entry>29</entry>
+<entry> <o ostyle="single">b</o><sub>0</sub> <o ostyle="single">b</o><sub>2</sub>b<sub>1</sub> <o ostyle="single">b</o><sub>3</sub> <o ostyle="single">b</o><sub>5</sub>b<sub>4</sub></entry>
+</row>
+<row>
+<entry>30</entry>
+<entry> <o ostyle="single">b</o><sub>0</sub>b<sub>2</sub> <o ostyle="single">b</o><sub>1</sub> <o ostyle="single">b</o><sub>3</sub>b<sub>5</sub> <o ostyle="single">b</o><sub>4</sub></entry>
+</row>
+<row>
+<entry>31</entry>
+<entry>b<sub>0</sub> <o ostyle="single">b</o><sub>2</sub> <o ostyle="single">b</o><sub>1</sub>b<sub>3</sub> <o ostyle="single">b</o><sub>5</sub> <o ostyle="single">b</o><sub>4</sub></entry>
+</row>
+<row>
+<entry>32</entry>
+<entry> <o ostyle="single">b</o><sub>1</sub> <o ostyle="single">b</o><sub>0</sub>b<sub>2</sub> <o ostyle="single">b</o><sub>4</sub> <o ostyle="single">b</o><sub>3</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>33</entry>
+<entry> <o ostyle="single">b</o><sub>1</sub>b<sub>0</sub> <o ostyle="single">b</o><sub>2</sub> <o ostyle="single">b</o><sub>4</sub>b<sub>3</sub> <o ostyle="single">b</o><sub>5</sub></entry>
+</row>
+<row>
+<entry>34</entry>
+<entry>b<sub>1</sub> <o ostyle="single">b</o><sub>0</sub> <o ostyle="single">b</o><sub>2</sub>b<sub>4</sub> <o ostyle="single">b</o><sub>3</sub> <o ostyle="single">b</o><sub>5</sub></entry>
+</row>
+<row>
+<entry>36</entry>
+<entry> <o ostyle="single">b</o><sub>1</sub> <o ostyle="single">b</o><sub>2</sub>b<sub>0</sub> <o ostyle="single">b</o><sub>4</sub> <o ostyle="single">b</o><sub>5</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>37</entry>
+<entry> <o ostyle="single">b</o><sub>1</sub>b<sub>2</sub> <o ostyle="single">b</o><sub>0</sub> <o ostyle="single">b</o><sub>4</sub>b<sub>5</sub> <o ostyle="single">b</o><sub>3</sub></entry>
+</row>
+<row>
+<entry>38</entry>
+<entry>b<sub>1</sub> <o ostyle="single">b</o><sub>2</sub> <o ostyle="single">b</o><sub>0</sub>b<sub>4</sub> <o ostyle="single">b</o><sub>5</sub> <o ostyle="single">b</o><sub>3</sub></entry>
+</row>
+<row>
+<entry>39</entry>
+<entry> <o ostyle="single">b</o><sub>2</sub> <o ostyle="single">b</o><sub>1</sub>b<sub>0</sub> <o ostyle="single">b</o><sub>5</sub> <o ostyle="single">b</o><sub>4</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>40</entry>
+<entry> <o ostyle="single">b</o><sub>2</sub>b<sub>1</sub> <o ostyle="single">b</o><sub>0</sub> <o ostyle="single">b</o><sub>5</sub>b<sub>4</sub> <o ostyle="single">b</o><sub>3</sub></entry>
+</row>
+<row>
+<entry>41</entry>
+<entry>b<sub>2</sub> <o ostyle="single">b</o><sub>1</sub> <o ostyle="single">b</o><sub>0</sub>b<sub>5</sub> <o ostyle="single">b</o><sub>4</sub> <o ostyle="single">b</o><sub>3</sub></entry>
+</row>
+<row>
+<entry>42</entry>
+<entry> <o ostyle="single">b</o><sub>2</sub> <o ostyle="single">b</o><sub>0</sub>b<sub>1</sub> <o ostyle="single">b</o><sub>5</sub> <o ostyle="single">b</o><sub>3</sub>b<sub>4</sub></entry>
+</row>
+<row>
+<entry>43</entry>
+<entry> <o ostyle="single">b</o><sub>2</sub>b<sub>0</sub> <o ostyle="single">b</o><sub>1</sub> <o ostyle="single">b</o><sub>5</sub>b<sub>3</sub> <o ostyle="single">b</o><sub>4</sub></entry>
+</row>
+<row>
+<entry>44</entry>
+<entry>b<sub>2</sub> <o ostyle="single">b</o><sub>0</sub> <o ostyle="single">b</o><sub>1</sub>b<sub>5</sub> <o ostyle="single">b</o><sub>3</sub> <o ostyle="single">b</o><sub>4</sub></entry>
+</row>
+<row>
+<entry>45</entry>
+<entry> <o ostyle="single">b</o><sub>2</sub> <o ostyle="single">b</o><sub>0</sub>b<sub>1</sub> <o ostyle="single">b</o><sub>5</sub> <o ostyle="single">b</o><sub>3</sub>b<sub>4</sub></entry>
+</row>
+<row>
+<entry>46</entry>
+<entry> <o ostyle="single">b</o><sub>2</sub>b<sub>0</sub> <o ostyle="single">b</o><sub>1</sub> <o ostyle="single">b</o><sub>5</sub>b<sub>3</sub> <o ostyle="single">b</o><sub>4</sub></entry>
+</row>
+<row>
+<entry>47</entry>
+<entry>b<sub>2</sub> <o ostyle="single">b</o><sub>0</sub> <o ostyle="single">b</o><sub>1</sub>b<sub>5</sub> <o ostyle="single">b</o><sub>3</sub> <o ostyle="single">b</o><sub>4</sub></entry>
+</row>
+<row>
+<entry>48</entry>
+<entry>b<sub>2</sub> <o ostyle="single">b</o><sub>0</sub> <o ostyle="single">b</o><sub>1</sub>b<sub>5</sub> <o ostyle="single">b</o><sub>3</sub> <o ostyle="single">b</o><sub>4</sub></entry>
+</row>
+<row>
+<entry>49</entry>
+<entry>b<sub>0</sub>b<sub>2</sub>b<sub>1</sub>b<sub>3</sub>b<sub>5</sub>b<sub>4</sub></entry>
+</row>
+<row>
+<entry>50</entry>
+<entry> <o ostyle="single">b</o><sub>1</sub> <o ostyle="single">b</o><sub>0</sub> <o ostyle="single">b</o><sub>2</sub> <o ostyle="single">b</o><sub>4</sub> <o ostyle="single">b</o><sub>3</sub> <o ostyle="single">b</o><sub>5</sub></entry>
+</row>
+<row>
+<entry>51</entry>
+<entry> <o ostyle="single">b</o><sub>1</sub> <o ostyle="single">b</o><sub>2</sub> <o ostyle="single">b</o><sub>0</sub> <o ostyle="single">b</o><sub>4</sub> <o ostyle="single">b</o><sub>5</sub> <o ostyle="single">b</o><sub>3</sub></entry>
+</row>
+<row>
+<entry>52</entry>
+<entry> <o ostyle="single">b</o><sub>2</sub> <o ostyle="single">b</o><sub>1</sub> <o ostyle="single">b</o><sub>0</sub> <o ostyle="single">b</o><sub>5</sub> <o ostyle="single">b</o><sub>4</sub> <o ostyle="single">b</o><sub>3</sub></entry>
+</row>
+<row>
+<entry>53</entry>
+<entry> <o ostyle="single">b</o><sub>2</sub> <o ostyle="single">b</o><sub>0</sub> <o ostyle="single">b</o><sub>1</sub> <o ostyle="single">b</o><sub>5</sub> <o ostyle="single">b</o><sub>3</sub> <o ostyle="single">b</o><sub>4</sub></entry>
+</row>
+<row>
+<entry namest="1" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0076" num="0075">In Table 2 above, b<sub>0 </sub>denotes an MSB on the I-axis, b<sub>1 </sub>denotes an SB on the I-axis, b<sub>2 </sub>denotes an LSB on the I-axis, b<sub>3 </sub>denotes an MSB on the Q-axis, b<sub>4 </sub>denotes an SB on the Q-axis, and b<sub>5 </sub>denotes an LSB on the Q-axis. The overline ( <o ostyle="single"> </o>) denotes an inverse operation of a specific bit. A retransmission symbol can be selected from any one of the CRVs above, and an order of bits constituting the symbol can be changed.</p>
+<p id="p-0077" num="0076">Table 3 shows an example of a mapping rule according to a CRV in a system with a rank 2 when using the 16-QAM modulation scheme. Vertical mapping is applied in this example. The vertical mapping may be included in the horizontal mapping in the CRV. Irrespective of the horizontal mapping, a spatial diversity can be obtained by using the same mapping rule in every transmission.</p>
+<p id="p-0078" num="0077">
+<tables id="TABLE-US-00003" num="00003">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="98pt" align="center"/>
+<colspec colname="2" colwidth="98pt" align="center"/>
+<colspec colname="3" colwidth="21pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="3" rowsep="1">TABLE 3</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>CoRe version</entry>
+<entry>Mapping rule</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="98pt" align="char" char="."/>
+<colspec colname="2" colwidth="56pt" align="left"/>
+<colspec colname="3" colwidth="63pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>0</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub></entry>
+<entry>b<sub>4</sub>b<sub>5</sub>b<sub>6</sub>b<sub>7</sub></entry>
+</row>
+<row>
+<entry>1</entry>
+<entry>b<sub>4</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub></entry>
+<entry>b<sub>0</sub>b<sub>5</sub>b<sub>6</sub>b<sub>7</sub></entry>
+</row>
+<row>
+<entry>2</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>6</sub>b<sub>3</sub></entry>
+<entry>b<sub>4</sub>b<sub>5</sub>b<sub>2</sub>b<sub>7</sub></entry>
+</row>
+<row>
+<entry>3</entry>
+<entry>b<sub>0</sub>b<sub>5</sub>b<sub>2</sub>b<sub>3</sub></entry>
+<entry>b<sub>4</sub>b<sub>1</sub>b<sub>6</sub>b<sub>7</sub></entry>
+</row>
+<row>
+<entry>4</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>7</sub></entry>
+<entry>b<sub>4</sub>b<sub>5</sub>b<sub>6</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>5</entry>
+<entry>b<sub>4</sub>b<sub>5</sub>b<sub>2</sub>b<sub>3</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>6</sub>b<sub>7</sub></entry>
+</row>
+<row>
+<entry>6</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>6</sub>b<sub>7</sub></entry>
+<entry>b<sub>4</sub>b<sub>5</sub>b<sub>2</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>7</entry>
+<entry>b<sub>4</sub>b<sub>1</sub>b<sub>6</sub>b<sub>3</sub></entry>
+<entry>b<sub>0</sub>b<sub>5</sub>b<sub>2</sub>b<sub>7</sub></entry>
+</row>
+<row>
+<entry>8</entry>
+<entry>b<sub>0</sub>b<sub>5</sub>b<sub>2</sub>b<sub>7</sub></entry>
+<entry>b<sub>4</sub>b<sub>1</sub>b<sub>6</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>9</entry>
+<entry>b<sub>4</sub>b<sub>1</sub>b<sub>2</sub>b<sub>7</sub></entry>
+<entry>b<sub>0</sub>b<sub>5</sub>b<sub>6</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>10</entry>
+<entry>b<sub>0</sub>b<sub>5</sub>b<sub>6</sub>b<sub>3</sub></entry>
+<entry>b<sub>4</sub>b<sub>1</sub>b<sub>2</sub>b<sub>7</sub></entry>
+</row>
+<row>
+<entry>11</entry>
+<entry>b<sub>4</sub>b<sub>5</sub>b<sub>6</sub>b<sub>3</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>7</sub></entry>
+</row>
+<row>
+<entry>12</entry>
+<entry>b<sub>4</sub>b<sub>5</sub>b<sub>2</sub>b<sub>7</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>6</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>13</entry>
+<entry>b<sub>4</sub>b<sub>1</sub>b<sub>6</sub>b<sub>7</sub></entry>
+<entry>b<sub>0</sub>b<sub>5</sub>b<sub>2</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>14</entry>
+<entry>b<sub>0</sub>b<sub>5</sub>b<sub>6</sub>b<sub>7</sub></entry>
+<entry>b<sub>4</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry>15</entry>
+<entry>b<sub>4</sub>b<sub>5</sub>b<sub>6</sub>b<sub>7</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub></entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0079" num="0078">In Table 3 above, a first column may denote 16-QAM mapping for a symbol belonging to a first spatial stream of two spatial streams, and a second column may denote 16-QAM mapping for a symbol belonging to a second spatial stream thereof. MSB and LSB orders of the second symbol follow MSB and LSB orders of the first symbol.</p>
+<p id="p-0080" num="0079">Table 4 shows an example of a mapping rule according to a CRV in a system with a rank 2 when using the 64-QAM modulation scheme. Vertical mapping is applied in this example. The vertical mapping may be included in the horizontal mapping in the CRV. Irrespective of the horizontal mapping, a spatial diversity can be obtained by using the same mapping rule in every transmission.</p>
+<p id="p-0081" num="0080">
+<tables id="TABLE-US-00004" num="00004">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="84pt" align="center"/>
+<colspec colname="2" colwidth="119pt" align="center"/>
+<colspec colname="3" colwidth="14pt" align="center"/>
+<thead>
+<row>
+<entry namest="1" nameend="3" rowsep="1">TABLE 4</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>CoRe version</entry>
+<entry>Mapping rule</entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="1" colwidth="84pt" align="char" char="."/>
+<colspec colname="2" colwidth="63pt" align="left"/>
+<colspec colname="3" colwidth="70pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>0</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>1</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>8</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>2</entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>s</sub></entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>8</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>3</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>4</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>4</sub>b<sub>5</sub></entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>10</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>5</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>10</sub>b<sub>5</sub></entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>9</sub>b<sub>4</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>6</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>9</sub>b<sub>10</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>7</entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>4</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>10</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>8</entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>b<sub>3</sub>b<sub>10</sub>b<sub>5</sub></entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>8</sub>b<sub>9</sub>b<sub>4</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>9</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>10</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>8</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>11</entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>12</entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>13</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>5</sub></entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>14</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>4</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>10</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>15</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>9</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>16</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>17</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>18</entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>8</sub>b<sub>9</sub>b<sub>4</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>b<sub>3</sub>b<sub>10</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>19</entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>4</sub>b<sub>11</sub></entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>10</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>20</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>2</sub>b<sub>9</sub>b<sub>4</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>8</sub>b<sub>3</sub>b<sub>10</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>21</entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>22</entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>8</sub>b<sub>9</sub>b<sub>4</sub>b<sub>5</sub></entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>10</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>23</entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>8</sub>b<sub>9</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>24</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>2</sub>b<sub>3</sub>b<sub>10</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>8</sub>b<sub>9</sub>b<sub>4</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>25</entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>5</sub></entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>26</entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>8</sub>b<sub>3</sub>b<sub>10</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>b<sub>9</sub>b<sub>4</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>27</entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>b<sub>9</sub>b<sub>4</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>8</sub>b<sub>3</sub>b<sub>10</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>28</entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>10</sub>b<sub>5</sub></entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>4</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>20</entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>b<sub>3</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>8</sub>b<sub>9</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>30</entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>11</sub></entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>31</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>8</sub>b<sub>9</sub>b<sub>4</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>2</sub>b<sub>3</sub>b<sub>10</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>32</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>11</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>8</sub>b<sub>9</sub>b<sub>10</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>33</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>8</sub>b<sub>9</sub>b<sub>10</sub>b<sub>5</sub></entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>34</entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>35</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>8</sub>b<sub>3</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>2</sub>b<sub>9</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>36</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>9</sub>b<sub>4</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>10</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>37</entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>38</entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>39</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>10</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>4</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>40</entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>8</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>41</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>11</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>42</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>43</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>2</sub>b<sub>9</sub>b<sub>4</sub>b<sub>11</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>8</sub>b<sub>3</sub>b<sub>10</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>44</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>2</sub>b<sub>3</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>8</sub>b<sub>9</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>45</entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>8</sub>b<sub>9</sub>b<sub>10</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>46</entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>8</sub>b<sub>9</sub>b<sub>4</sub>b<sub>10</sub></entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>b<sub>3</sub>b<sub>10</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>47</entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>8</sub>b<sub>3</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>b<sub>9</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>48</entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>8</sub>b<sub>9</sub>b<sub>10</sub>b<sub>5</sub></entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>49</entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>8</sub>b<sub>9</sub>b<sub>4</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>10</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>50</entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>51</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>9</sub>b<sub>10</sub>b<sub>5</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>11</sub></entry>
+</row>
+<row>
+<entry>52</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>9</sub>b<sub>4</sub>b<sub>11</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>10</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>53</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>3</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>9</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>54</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>2</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>8</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>55</entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>8</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>56</entry>
+<entry>b<sub>0</sub>b<sub>7</sub>b<sub>8</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>6</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry>57</entry>
+<entry>b<sub>6</sub>b<sub>7</sub>b<sub>8</sub>b<sub>9</sub>b<sub>10</sub>b<sub>11</sub></entry>
+<entry>b<sub>0</sub>b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub>b<sub>5</sub></entry>
+</row>
+<row>
+<entry namest="1" nameend="3" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0082" num="0081">In Table 4 above, a first column may denote 64-QAM mapping for a symbol belonging to a first spatial stream of two spatial streams, and a second column may denote 64-QAM mapping for a symbol belonging to a second spatial stream thereof. MSB and LSB orders of the second symbol follow MSB and LSB orders of the first symbol.</p>
+<p id="p-0083" num="0082">The mapping rules of Table 1 to Table 4 above are designed in terms of an average performance gain in maximum retransmission. In addition, the mapping rules of Table 1 to Table 4 above are designed to achieve relatively low implementation complexity. The mapping rules of Table 1 to Table 4 above can be applied in initial transmission. In this case, bit reliability of convolution turbo code (CTC) bit grouping can be diversified.</p>
+<p id="p-0084" num="0083">When the horizontal mapping or vertical mapping is applied, an operation applied to the I-axis and an operation applied to the Q-axis can be changed to each other. That is, the operation applied to the I-axis is equivalent to that applied to the Q-axis. For example, when the horizontal mapping or vertical mapping is applied to an MSB and an SB on the I-axis and to an SB on the Q-axis, this is identical to a case where a corresponding operation is applied to the SB on the I-axis and to the MSB and the SB on the Q-axis.</p>
+<p id="p-0085" num="0084">In addition, constellation rearrangement can be performed by combining the proposed mapping rules. That is, when using the 16-QAM modulation scheme, the horizontal mapping of Table 1 and the vertical mapping of Table 3 can be combined to construct a new mapping rule, and when using the 64-QAM modulation scheme, the horizontal mapping of Table 2 and the vertical mapping of Table 4 can be combined to construct a new mapping rule.</p>
+<p id="p-0086" num="0085">For example, the mapping rule corresponding to the CRV 2 of Table 1 and the mapping rule corresponding to the CRV 7 of Table 3 can be combined to construct a new mapping rule, i.e., CRV x. Subscripts 1, 0, 3, and 2 in the CRV 2 of Table 1 denote indices indicating bits in each symbol before rearrangement, and thus the indices denote horizontal mapping patterns. That is, vertical mapping is performed on a first symbol and a second symbol by applying a mapping rule corresponding to the CRV 7 of Table 3, and then a mapping rule corresponding to the CRV 7 of Table 1 can be applied thereto. In this case, the first symbol is mapped to b<sub>1</sub>b<sub>4</sub>b<sub>3</sub>b<sub>6</sub>, and the second symbol is mapped to b<sub>5</sub>b<sub>0</sub>b<sub>7</sub>b<sub>2</sub>. Although two symbols exist in the above example, the vertical mapping of the same concept can apply even when three or more symbols exist.</p>
+<p id="p-0087" num="0086">Hereinafter, examples of a new mapping rule constructed by combining horizontal mapping and vertical mapping will be described. In the following examples, an MSB and an LSB change (or swap) their positions in the I-axis and in the Q-axis by using horizontal mapping prior to vertical mapping.</p>
+<p id="p-0088" num="0087">In case of using the 16-QAM modulation scheme</p>
+<p id="p-0089" num="0088">1) When an MSB on the I-axis and an LSB on the Q-axis are swapped between two symbols by using vertical mapping, b<sub>5</sub>b<sub>0</sub>b<sub>3</sub>b<sub>6 </sub>can be obtained as a first symbol, and b<sub>1</sub>b<sub>4</sub>b<sub>7</sub>b<sub>2 </sub>can be obtained as a second symbol.</p>
+<p id="p-0090" num="0089">2) When an LSB on the I-axis and an MSB on the Q-axis are swapped between two symbols by using vertical mapping, b<sub>1</sub>b<sub>4</sub>b<sub>7</sub>b<sub>2 </sub>can be obtained as a first symbol, and b<sub>5</sub>b<sub>0</sub>b<sub>3</sub>b<sub>6 </sub>can be obtained as a second symbol.</p>
+<p id="p-0091" num="0090">3) When an LSB on the I-axis and an LSB on the Q-axis are swapped between two symbols by using vertical mapping, b<sub>1</sub>b<sub>4</sub>b<sub>3</sub>b<sub>6 </sub>can be obtained as a first symbol, and b<sub>5</sub>b<sub>0</sub>b<sub>7</sub>b<sub>2 </sub>can be obtained as a second symbol.</p>
+<p id="p-0092" num="0091">4) When an MSB on the I-axis and an MSB on the Q-axis are swapped between two symbols by using vertical mapping, b<sub>5</sub>b<sub>0</sub>b<sub>7</sub>b<sub>2 </sub>can be obtained as a first symbol, and b<sub>1</sub>b<sub>4</sub>b<sub>3</sub>b<sub>6 </sub>can be obtained as a second symbol.</p>
+<p id="p-0093" num="0092">5) When all bits on the I-axis and the Q-axis are swapped between two symbols by using vertical mapping, b<sub>5</sub>b<sub>4</sub>b<sub>7</sub>b<sub>6 </sub>can be obtained as a first symbol, and b<sub>1</sub>b<sub>0</sub>b<sub>3</sub>b<sub>2 </sub>can be obtained as a second symbol.</p>
+<p id="p-0094" num="0093">In case of using the 64-QAM modulation scheme</p>
+<p id="p-0095" num="0094">1) When an MSB and an LSB on the I-axis and an SB on the Q-axis are swapped between two symbols by using vertical mapping, b<sub>8</sub>b<sub>1</sub>b<sub>6</sub>b<sub>5</sub>b<sub>10</sub>b<sub>3 </sub>can be obtained as a first symbol, and b<sub>2</sub>b<sub>7</sub>b<sub>0</sub>b<sub>1l</sub>b<sub>4</sub>b<sub>9 </sub>can be obtained as a second symbol.</p>
+<p id="p-0096" num="0095">2) When an MSB and an LSB on the I-axis and an MSB on the Q-axis are swapped between two symbols by using vertical mapping, b<sub>8</sub>b<sub>1</sub>b<sub>6</sub>b<sub>11</sub>b<sub>4</sub>b<sub>3 </sub>can be obtained as a first symbol, and b<sub>2</sub>b<sub>7</sub>b<sub>0</sub>b<sub>5</sub>b<sub>10</sub>b<sub>9 </sub>can be obtained as a second symbol.</p>
+<p id="p-0097" num="0096">3) When an SB of on the I-axis and an SB on the Q-axis are swapped between two symbols by using vertical mapping, b<sub>2</sub>b<sub>7</sub>b<sub>0</sub>b<sub>5</sub>b<sub>10</sub>b<sub>3 </sub>can be obtained as a first symbol, and b<sub>8</sub>b<sub>1</sub>b<sub>6</sub>b<sub>11</sub>b<sub>4</sub>b<sub>9 </sub>can be obtained as a second symbol.</p>
+<p id="p-0098" num="0097">4) When an MSB on the I-axis and an MSB on the Q-axis are swapped between two symbols by using vertical mapping, b<sub>8</sub>b<sub>1</sub>b<sub>0</sub>b<sub>11</sub>b<sub>4</sub>b<sub>3 </sub>can be obtained as a first symbol, and b<sub>2</sub>b<sub>7</sub>b<sub>6</sub>b<sub>5</sub>b<sub>10</sub>b<sub>9 </sub>can be obtained as a second symbol.</p>
+<p id="p-0099" num="0098">5) When all bits on the I-axis and the Q-axis are swapped between two symbols by using vertical mapping, b<sub>8</sub>b<sub>7</sub>b<sub>6</sub>b<sub>11</sub>b<sub>10</sub>b<sub>9 </sub>can be obtained as a first symbol, and b<sub>2</sub>b<sub>1</sub>b<sub>0</sub>b<sub>5</sub>b<sub>4</sub>b<sub>3 </sub>can be obtained as a second symbol.</p>
+<p id="p-0100" num="0099">When a retransmission symbol is transmitted, each of bits constituting the retransmission symbol can be remapped by applying the various mapping rules above. According to the number of retransmissions, N mapping rules can be selected and used. A criterion of selecting the mapping rule can be selected such that an HARQ gain can be obtained to the maximum extent possible, or can be selected such that an overhead imposed on a system can be minimized in terms of implementations. If a CRV is 1 bit, two mapping rules may exist, and thus the two mapping rules can be applied to the retransmission symbol. Mapping rules corresponding to the CRV 0 and the CRV 1 may be alternately applied according to retransmission, or a mapping rule corresponding to a specific CRV may be continuously applied. If the CRV is 2 bits, four mapping rules may exist, and in this case, the four mapping rules can be selected to be applied to the retransmission symbol. If a maximum transmission number is 4, a different CRV construction may be applied in every transmission including initial transmission. In general, if the CRV is N bits, 2<sup>N </sup>mapping rules may exist.</p>
+<p id="p-0101" num="0100"><figref idref="DRAWINGS">FIG. 9</figref> is a flowchart showing another embodiment of the proposed method of performing HARQ.</p>
+<p id="p-0102" num="0101">Referring to <figref idref="DRAWINGS">FIG. 9</figref>, in step S<b>200</b>, a transmitter stores an encoded information bit into a circular buffer.</p>
+<p id="p-0103" num="0102">In step S<b>210</b>, the transmitter selects a first transport block from the circular buffer.</p>
+<p id="p-0104" num="0103">In step S<b>220</b>, the transmitter maps a bit set including n bits of the first transport block to a data symbol on a constellation for 2<sup>n</sup>-QAM modulation according to a first mapping order.</p>
+<p id="p-0105" num="0104">In step S<b>230</b>, the transmitter transmits the data symbol of the first transport block.</p>
+<p id="p-0106" num="0105">In step S<b>240</b>, the transmitter receives a retransmission request for the information bit.</p>
+<p id="p-0107" num="0106">In step S<b>250</b>, the transmitter selects a second transport block for retransmission of the information bit from the circular buffer.</p>
+<p id="p-0108" num="0107">In step S<b>260</b>, the transmitter maps a bit set including n bits of the second transport block to a data symbol on a constellation for 2<sup>n</sup>-QAM modulation. In this case, when the n bits of the second transport block are subject to wrap-around at the end of the circular buffer, the n bits can be mapped according to a second mapping order.</p>
+<p id="p-0109" num="0108">In step S<b>270</b>, the transmitter transmits the data symbol of the second transport block.</p>
+<p id="p-0110" num="0109"><figref idref="DRAWINGS">FIG. 10</figref> shows an example of an operation of a circular buffer according to the proposed method of performing HARQ.</p>
+<p id="p-0111" num="0110">A circular buffer <b>300</b> stores a code block. An initial transport block <b>310</b> which is a part of the code block is transmitted. A CRV of the initial transport block <b>310</b> may be 0. According to a retransmission request, first retransmission is performed and a first retransmission block <b>320</b> consecutive to the initial transport block is transmitted. The first retransmission block <b>320</b> can be divided into a non-overlapping block <b>320</b><i>a </i>not overlapping with the initial transport block <b>310</b> and an overlapping block <b>320</b><i>b </i>overlapping with the initial transport block <b>310</b>. In this case, the CRV can be changed to 1 in the overlapping block <b>320</b><i>b </i>transmitted in a front portion of the circular buffer. In second retransmission, a second retransmission block <b>330</b> consecutive to the first retransmission block <b>320</b> is transmitted. In third retransmission, a third retransmission block <b>340</b> consecutive to the second retransmission block <b>330</b> is transmitted. The third retransmission block <b>340</b> can be divided into a first-time overlapping block <b>340</b><i>a </i>and a second-time overlapping block <b>340</b><i>b</i>. The first-time overlapping block is a block transmitted one time in previous transmissions. The second-time overlapping block is a block transmitted twice in previous transmissions. The CRV can be changed back to 0 in the two-time overlapping block <b>340</b><i>b </i>in a first portion of the circular buffer.</p>
+<p id="p-0112" num="0111">Hereinafter, improvement of HARQ performance will be described when using the proposed method of performing HARQ.</p>
+<p id="p-0113" num="0112"><figref idref="DRAWINGS">FIG. 11</figref> is a graph showing a performance difference depending on the number of CRVs when HARQ is performed based on IR HARQ. The performance of HARQ can be known according to a relation between a signal-to-noise ratio (SNR) and a frame error rate (FER). 64 QAM is used as a modulation scheme, and a &#xbd; CTC is used. Referring to <figref idref="DRAWINGS">FIG. 11</figref>, as the number of CRVs increases to 2 and 4, the FER against the SNR decreases and thus HARQ performance is improved. In addition, the performance of HARQ is improved as the number of retransmissions increases.</p>
+<p id="p-0114" num="0113"><figref idref="DRAWINGS">FIG. 12</figref> is a graph showing a performance difference depending on the number of CRVs when HARQ is performed based on IR HARQ. The performance of HARQ can be known according to a relation between an SNR and a throughput. 64 QAM is used as a modulation scheme, and a &#xbd; CTC is used. Referring to <figref idref="DRAWINGS">FIG. 12</figref>, as the number of CRVs increases to 2 and 4, the throughput against the SNR increases and thus the performance of HARQ is improved.</p>
+<p id="p-0115" num="0114"><figref idref="DRAWINGS">FIG. 13</figref> is a graph showing a performance difference depending on the number of CRVs when HARQ is performed based on CC HARQ. 64 QAM is used as a modulation scheme, and a &#xbd; CTC is used. Referring to <figref idref="DRAWINGS">FIG. 13</figref>, when the number of CRVs is 4, the throughput against the SNR increases, and thus the performance of HARQ is improved.</p>
+<p id="p-0116" num="0115"><figref idref="DRAWINGS">FIG. 14</figref> is a graph showing a performance difference between CC HARQ and IR HARQ based on vertical mapping proposed in the present invention. 64 QAM is used as a modulation scheme, and a &#xbd; CTC is used. Referring to <figref idref="DRAWINGS">FIG. 14</figref>, the CC HARQ is inferior in performance to the IR HARQ based on constellation rearrangement using vertical mapping proposed in the present invention. As the number of retransmissions increases, the performance of HARQ is improved.</p>
+<p id="p-0117" num="0116"><figref idref="DRAWINGS">FIG. 15</figref> and <figref idref="DRAWINGS">FIG. 16</figref> are graphs showing a difference of HARQ performance according to various embodiments of vertical mapping among HARQ methods proposed in the present invention. In a legend of <figref idref="DRAWINGS">FIG. 15</figref> and <figref idref="DRAWINGS">FIG. 16</figref>, N bit (I:A, Q:B) denotes that an A bit on the I-axis and a B bit on the Q-axis are swapped between two symbols. In <figref idref="DRAWINGS">FIG. 15</figref>, 16 QAM is used as a modulation scheme. In <figref idref="DRAWINGS">FIG. 16</figref>, 64 QAM is used as a modulation scheme. Referring to <figref idref="DRAWINGS">FIG. 15</figref>, among the various embodiments of vertical mapping, HARQ has best performance when using constellation rearrangement in which MSBs are swapped on the I-axis and MSBs are swapped on the Q-axis. Referring to <figref idref="DRAWINGS">FIG. 16</figref>, among the various embodiments of vertical mapping, HARQ has best performance when using constellation rearrangement in which SBs are swapped on the I-axis and SBs are swapped on the Q-axis. In addition, the CC HARQ is inferior in performance to the HARQ method based on constellation rearrangement of vertical mapping. The constellation rearrangement based on swapping of each bit increases the HARQ performance in comparison with constellation rearrangement based on swapping of each symbol.</p>
+<p id="p-0118" num="0117"><figref idref="DRAWINGS">FIG. 17</figref> is a graph showing a difference of HARQ performance between HARQ based on the proposed HARQ method and CC HARQ in an IEEE 802.16e system when using the 16-QAM modulation scheme. An experiment is conducted by using a &#xbd; CTC and a vehicle driving at 120 km/h. Referring to <figref idref="DRAWINGS">FIG. 17</figref>, the HARQ based on the proposed HARQ method obtains a gain of 2.6 dB in a level of 10% FER in comparison with the CC HARQ.</p>
+<p id="p-0119" num="0118"><figref idref="DRAWINGS">FIG. 18</figref> is a graph showing a performance difference between HARQ based on the proposed HARQ method and CC HARQ in an IEEE 802.16e system when using the 64-QAM modulation scheme. An experiment is conducted by using a &#xbd; CTC and a vehicle driving at 120 km/h. Referring to <figref idref="DRAWINGS">FIG. 18</figref>, the HARQ based on the proposed HARQ method obtains a gain of 4.7 dB in a level of 10% FER in comparison with the CC HARQ.</p>
+<p id="p-0120" num="0119"><figref idref="DRAWINGS">FIG. 19</figref> is a graph showing a performance difference between HARQ based on the proposed HARQ method and IR HARQ in an IEEE 802.16e system when using the 16-QAM modulation scheme. An experiment is conducted by using a &#xbd; CTC and a vehicle driving at 3 km/h. Referring to <figref idref="DRAWINGS">FIG. 19</figref>, the HARQ based on the proposed HARQ method obtains a gain of 1.0 dB when a maximum transmission number is 2 and a gain of 1.3 dB when the maximum transmission number is 4 in a level of 10% FER in comparison with the IR HARQ.</p>
+<p id="p-0121" num="0120"><figref idref="DRAWINGS">FIG. 20</figref> is a graph showing a performance difference between HARQ based on the proposed HARQ method and IR HARQ in an IEEE 802.16e system when using the 16-QAM modulation scheme. An experiment is conducted by using a &#xbd; CTC and a vehicle driving at 120 km/h. Referring to <figref idref="DRAWINGS">FIG. 20</figref>, the HARQ based on the proposed HARQ method obtains a gain of 1.2 dB when a maximum transmission number is 2 and a gain of 0.8 dB when the maximum transmission number is 4 in a level of 10% FER in comparison with the IR HARQ.</p>
+<p id="p-0122" num="0121"><figref idref="DRAWINGS">FIG. 21</figref> is a graph showing a performance difference between HARQ based on the proposed HARQ method and IR HARQ in an IEEE 802.16e system when using the 64-QAM modulation scheme. An experiment is conducted by using a &#xbd; CTC and a vehicle driving at 3 km/h. Referring to <figref idref="DRAWINGS">FIG. 21</figref>, the HARQ based on the proposed HARQ method obtains a gain of 3.1 dB when a maximum transmission number is 2 and a gain of 4.2 dB when the maximum transmission number is 4 in a level of 10% FER in comparison with the IR HARQ.</p>
+<p id="p-0123" num="0122"><figref idref="DRAWINGS">FIG. 22</figref> is a graph showing a performance difference between HARQ based on the proposed HARQ method and IR HARQ in an IEEE 802.16e system when using the 64-QAM modulation scheme. An experiment is conducted by using a &#xbd; CTC and a vehicle driving at 120 km/h. Referring to <figref idref="DRAWINGS">FIG. 22</figref>, the HARQ based on the proposed HARQ method obtains a gain of 3.3 dB when a maximum transmission number is 2 and a gain of 4.2 dB when the maximum transmission number is 4 in a level of 10% FER in comparison with the IR HARQ.</p>
+<p id="p-0124" num="0123"><figref idref="DRAWINGS">FIG. 23</figref> is a block diagram showing an example of a transmitter according to an embodiment of the present invention.</p>
+<p id="p-0125" num="0124">A transmitter <b>800</b> includes a circular buffer <b>810</b>, a mapper <b>820</b>, and a radio frequency (RF) unit <b>830</b>. The circular buffer <b>810</b> and the mapper <b>820</b> implement a proposed function, process, and/or method.</p>
+<p id="p-0126" num="0125">The circular buffer <b>810</b> stores an encoded information bit. The mapper <b>820</b> selects a transport block from the circular buffer <b>810</b>, and maps a bit set including n bits of the transport block to a data symbol on a constellation for 2<sup>n</sup>-QAM modulation according to a first mapping order. When bits of the transport block are subject to wrap-around at the end of the circular buffer <b>810</b>, the bit set is mapped according to a second mapping order. The RF unit <b>830</b> is coupled to the mapper <b>820</b>, and transmits and/or receives a radio signal.</p>
+<p id="p-0127" num="0126">The circular buffer <b>810</b> and the mapper <b>820</b> may include an application-specific integrated circuit (ASIC), another chip set, a logical circuit, and/or a data processing unit. The RF unit <b>830</b> may include a baseband circuit for processing radio signals. When the embodiment is implemented in software, the aforementioned methods can be implemented with a module (i.e., process, function, etc.) for performing the aforementioned functions. The module may be performed by the circular buffer <b>810</b> and the mapper <b>820</b>.</p>
+<p id="p-0128" num="0127"><figref idref="DRAWINGS">FIG. 24</figref> is a block diagram showing another example of a transmitter according to an embodiment of the present invention.</p>
+<p id="p-0129" num="0128">A transmitter <b>900</b> includes a processor <b>910</b> and an RF unit <b>920</b>. The processor <b>910</b> implements a proposed function, process, and/or method.</p>
+<p id="p-0130" num="0129">The processor <b>910</b> stores an encoded information bit in a circular buffer, selects a transport block from the circular buffer, and maps a bit set including n bits of the transport block to a data symbol on a constellation for 2<sup>n</sup>-QAM modulation according to a first mapping order. In this case, when bits of the transport block are subject to wrap-around at the end of the circular buffer, the bit set is mapped according to a second mapping order. The RF unit <b>920</b> is coupled to the processor <b>910</b>, and transmits and/receives a radio signal.</p>
+<p id="p-0131" num="0130">The processor <b>910</b> may include an ASIC, another chip set, a logical circuit, and/or a data processing unit. The RF unit <b>920</b> may include a baseband circuit for processing radio signals. When the embodiment is implemented in software, the aforementioned methods can be implemented with a module (i.e., process, function, etc.) for performing the aforementioned functions. The module may be performed by the processor <b>910</b>.</p>
+<p id="p-0132" num="0131">According to the present invention, an additional diversity gain can be obtained by using constellation rearrangement in a multiple input multiple output (MIMO) system. Therefore, performance of a wireless communication system can be improved.</p>
+<p id="p-0133" num="0132">In view of the exemplary systems described herein, methodologies that may be implemented in accordance with the disclosed subject matter have been described with reference to several flow diagrams. While for purposed of simplicity, the methodologies are shown and described as a series of steps or blocks, it is to be understood and appreciated that the claimed subject matter is not limited by the order of the steps or blocks, as some steps may occur in different orders or concurrently with other steps from what is depicted and described herein. Moreover, one skilled in the art would understand that the steps illustrated in the flow diagram are not exclusive and other steps may be included or one or more of the steps in the example flow diagram may be deleted without affecting the scope and spirit of the present disclosure.</p>
+<p id="p-0134" num="0133">What has been described above includes examples of the various aspects. It is, of course, not possible to describe every conceivable combination of components or methodologies for purposes of describing the various aspects, but one of ordinary skill in the art may recognize that many further combinations and permutations are possible. Accordingly, the subject specification is intended to embrace all such alternations, modifications and variations that fall within the spirit and scope of the appended claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method of performing hybrid automatic repeat request (HARQ) increment redundancy (IR) in a wireless communication system, the method comprising:
+<claim-text>storing encoded information bits in a circular buffer;</claim-text>
+<claim-text>selecting a transport block from the encoded information bits stored in the circular buffer to perform the HARQ IR, wherein a starting point of the transport block is changed for HARQ retransmission;</claim-text>
+<claim-text>selecting a mapping rule to map the transport block on a constellation for 2<sup>m</sup>-Quadrature Amplitude Modulation (QAM), wherein m is a modulation order and the mapping rule is changed when transmitted bits wrap-around at an end of the circular buffer, and wherein the mapping rule is selected as a first mapping rule or a second mapping rule;</claim-text>
+<claim-text>mapping the transport block to data symbols according to the mapping rule, wherein if the transport block includes n bits represented by {b<sub>0</sub>, . . . , b<sub>n-1</sub>}, the first mapping rule for the n bits is represented by {b<sub>0</sub>, . . . , b<sub>n-1</sub>} and the second mapping rule for the n bits is represented by {b<sub>n-1</sub>, . . . , b<sub>0</sub>}; and</claim-text>
+<claim-text>transmitting the data symbols to a receiver,</claim-text>
+<claim-text>wherein n indicates a size of the encoded information bits included in the transport block.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>each 2m bits of the transport block are mapped to each pair of two data symbols on the constellation for 2<sup>m</sup>-QAM; and</claim-text>
+<claim-text>each pair of two data symbols includes an even symbol and an odd symbol.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein each pair of two data symbols uses a same mapping rule.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. A transmitter for performing hybrid automatic repeat request (HARQ) increment redundancy (IR) in a wireless communication system, the transmitter comprising:
+<claim-text>a circular buffer configured to store encoded information bits;</claim-text>
+<claim-text>a radio frequency unit configured to transmit data symbols to a receiver; and</claim-text>
+<claim-text>a mapper configure to:
+<claim-text>select a transport block from the encoded information bits stored in the circular buffer to perform the HARQ IR, wherein a starting point of the transport block is changed for HARQ retransmission;</claim-text>
+<claim-text>select a mapping rule to map the transport block including a plurality of bits on a constellation for 2<sup>m</sup>-Quadrature Amplitude Modulation (QAM), wherein m is a modulation order and the mapping rule is changed when transmitted bits wrap-around at an end of the circular buffer and wherein the mapping rule is selected as a first mapping rule or a second mapping rule; and</claim-text>
+</claim-text>
+<claim-text>map the transport block to the data symbols according to the mapping rule,</claim-text>
+<claim-text>wherein the plurality of bits are mapped to the constellation for the 2<sup>m</sup>-QAM in an original order of the plurality of bits if the first mapping rule is selected, and</claim-text>
+<claim-text>wherein the plurality of bits are mapped to the constellation for the 2<sup>m</sup>-QAM in a reverse order of the plurality of bits if the second mapping rule is selected.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The transmitter of <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein:
+<claim-text>the transport block includes n bits represented by {b<sub>0</sub>, . . . , b<sub>n&#x2014;</sub>1};</claim-text>
+<claim-text>the first mapping rule for the n bits is represented by {b<sub>0</sub>, . . . , b<sub>n-1</sub>};</claim-text>
+<claim-text>the second mapping rule for the n bits is represented by {b<sub>n-1</sub>, . . . , b<sub>0</sub>}; and</claim-text>
+<claim-text>n indicates a size of the encoded information bits included in the transport block.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The transmitter of <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein:
+<claim-text>each 2m bits in the transport block are mapped to each pair of two data symbols on the constellation for 2<sup>m</sup>-QAM; and</claim-text>
+<claim-text>each pair of two data symbols includes an even symbol and an odd symbol. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

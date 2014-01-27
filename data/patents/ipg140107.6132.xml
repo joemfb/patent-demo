@@ -1,0 +1,558 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627256-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627256</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13093472</doc-number>
+<date>20110425</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>17</main-group>
+<subgroup>50</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>716126</main-classification>
+</classification-national>
+<invention-title id="d2e43">Method for computing IO redistribution routing</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>6057169</doc-number>
+<kind>A</kind>
+<name>Singh et al.</name>
+<date>20000500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>438 14</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>6457157</doc-number>
+<kind>B1</kind>
+<name>Singh et al.</name>
+<date>20020900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>716122</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>6593300</doc-number>
+<kind>B1</kind>
+<name>Bajusz et al.</name>
+<date>20030700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>514 202</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6674166</doc-number>
+<kind>B2</kind>
+<name>Rao et al.</name>
+<date>20040100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>8456025</doc-number>
+<kind>B2</kind>
+<name>Yokoyama</name>
+<date>20130600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>257786</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>2001/0039644</doc-number>
+<kind>A1</kind>
+<name>Le Coz</name>
+<date>20011100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>716 11</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>2011/0309515</doc-number>
+<kind>A1</kind>
+<name>Yokoyama</name>
+<date>20111200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>257773</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<nplcit num="00008">
+<othercit>Fang, Jia-Wei, et al.; &#x201c;A Routing Algorithm for Flip-Chip Design&#x201d;, 2005 IEEE, pp. 752-757.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>26</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>716100</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>716126</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>8</number-of-drawing-sheets>
+<number-of-figures>19</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120272203</doc-number>
+<kind>A1</kind>
+<date>20121025</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Hawk</last-name>
+<first-name>Donald E.</first-name>
+<address>
+<city>King of Prussia</city>
+<state>PA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Hawk</last-name>
+<first-name>Donald E.</first-name>
+<address>
+<city>King of Prussia</city>
+<state>PA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>LSI Corporation</orgname>
+<role>02</role>
+<address>
+<city>Milpitas</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Parihar</last-name>
+<first-name>Suchin</first-name>
+<department>2825</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A method of determining signal routing in an integrated circuit includes providing first coordinates of an input/output cell and second coordinates of an input/output pad to a parametric routing module. The parametric routing module receives at least one wire path parameter. The parametric routing module uses the at least one connection path parameter to determine a physical dimension of a wire path between the first coordinates and the second coordinates.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="131.40mm" wi="137.33mm" file="US08627256-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="255.02mm" wi="170.94mm" file="US08627256-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="225.21mm" wi="173.40mm" file="US08627256-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="248.67mm" wi="173.40mm" file="US08627256-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="218.19mm" wi="168.49mm" file="US08627256-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="232.92mm" wi="94.23mm" file="US08627256-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="263.06mm" wi="173.40mm" file="US08627256-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="264.75mm" wi="115.91mm" file="US08627256-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="257.98mm" wi="153.50mm" file="US08627256-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">COPYRIGHT NOTICE</heading>
+<p id="p-0002" num="0001">A portion of the disclosure of this patent document contains material which is subject to copyright protection. The copyright owner has no objection to the facsimile reproduction by anyone of the patent document or the patent disclosure, as it appears in the Patent and Trademark Office patent file or records, but otherwise reserves all copyright rights whatsoever.</p>
+<heading id="h-0002" level="1">REFERENCE TO A COMPUTER PROGRAM</heading>
+<p id="p-0003" num="0002">A computer program listing appendix is filed herewith submitted on a single compact disc and a copy of the compact disk. The compact disk, and its duplicate copy, includes a single Adobe Acrobat file entitled &#x201c;Appendix A.txt&#x201d;, created on Mar. 9, 2011, which is about 27,179 bytes in, size. The file and the duplicate copy are identical. The file includes portions of illustrative computer code implementing one embodiment of the disclosure. The contents of this file are incorporated herein by reference. The contents of Appendix A are protected by copyright, subject to the copyright notice above, &#xa9;LSI Corporation, unpublished work.</p>
+<heading id="h-0003" level="1">TECHNICAL FIELD</heading>
+<p id="p-0004" num="0003">This application is directed, in general, to systems and methods for electronic design automation.</p>
+<heading id="h-0004" level="1">BACKGROUND</heading>
+<p id="p-0005" num="0004">An integrated circuit (IC) typically includes numerous connections between electrical components. These connections are often designed with the assistance of an electronic design automation (EDA) tool. The EDA tool typically includes software instructions operating on an engineering workstation to provide visualization of the IC design. A design engineer manipulates modular design cells from a cell library to build up a design database. An autorouter within the EDA tool determines the connection paths between the design cells. When the design layout is complete, the layout data are used in a pattern generation (PG) step that generates pattern data suitable to produce a set of pattern masks used in photolithographic steps of an IC manufacturing process.</p>
+<p id="p-0006" num="0005">Among the connections made on the IC are input/output redistribution connections formed between IO cells and corresponding wirebond pads and/or bump pads, collectively referred to as IO pads. The redistribution connections are typically formed in a redistribution layer. Signal routing within the redistribution layer is often constrained by factors including the congestion of the connection and the mapping of IO signals to the IO pads. In many cases these constraints cause the routing of the IO connections to be deficient in some way, such as being is undesirably circuitous. In some cases the autorouter may even fail to find a path between an IO cell and its corresponding IO pad.</p>
+<p id="p-0007" num="0006">Such cases may require manual intervention by a design engineer, consuming valuable engineering resources and increasing the design cost. Improved methods of forming connections within the redistribution layer are needed to reduce these costs.</p>
+<heading id="h-0005" level="1">SUMMARY</heading>
+<p id="p-0008" num="0007">One aspect provides a method of determining interconnect routing in an integrated circuit. The method includes providing first coordinates of an input/output cell and second coordinates of an input/output pad to a parametric routing module. The parametric routing module receives at least one wire path parameter. The parametric routing module uses the at least one path parameter to determine a physical dimension of an interconnect between the first coordinates and the second coordinates.</p>
+<p id="p-0009" num="0008">Another aspect provides an integrated circuit input/output signal routing system. The signal routing system includes a functional design module and a parametric routing module. The parametric routing module is configured to receive from the functional design module first coordinates of an input/output cell, second coordinates of an input/output pad, and at least one wire path parameter. The parametric routing module is further configured to use the at least one path parameter to determine a physical dimension of an interconnect between the input/output cell and the input/output pad.</p>
+<p id="p-0010" num="0009">Another aspect provides a computer program product. The computer program product includes a non-transitory computer readable medium having a series of operating instructions embodied therein. The series of operating instructions is adapted to be executed to implement a method of determining signal routing in an integrated circuit. The method includes providing first coordinates of an input/output cell and second coordinates of an input/output pad to a parametric routing module. At least one wire path parameter is provided to the parametric routing module. The parametric routing module uses the at least one path parameter to determine a physical dimension of an interconnect between the first coordinates and the second coordinates.</p>
+<p id="p-0011" num="0010">Yet another aspect provides a computer program product. The computer program product includes a non-transitory computer readable medium having a series of operating instructions embodied therein. The series of operating instructions is adapted to be executed to implement a method of determining signal routing in an integrated circuit. The method includes receiving first coordinates of an input/output cell and second coordinates of an input/output pad into a parametric routing module. The parametric routing module receives at least one wire path parameter. The at least one path parameter is used to determine a physical dimension of an interconnect between the first coordinates and the second coordinates.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0006" level="1">BRIEF DESCRIPTION</heading>
+<p id="p-0012" num="0011">Reference is now made to the following descriptions taken in conjunction with the accompanying drawings, in which:</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 1</figref> illustrates an integrated circuit including IO cells and IO pads;</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIGS. 2A-2C</figref> illustrate examples of wire paths between an IO cell and an IO pad;</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 3</figref> illustrates steps of a method of the disclosure, including a parametric routing step, for determining a wire path between an IO cell and an IO pad using a wire path parameter that describes an aspect of the physical layout of the wire path;</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 4</figref> illustrates expands on the parametric routing step of <figref idref="DRAWINGS">FIG. 3</figref>;</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 5</figref> illustrates a parametric routing tool in one embodiment according the principles of the present disclosure;</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 6</figref> illustrates aspects of a path description file that includes path definitions that describe wire paths that may be specified for connecting one or more IO pads to an IO cell of the IC of <figref idref="DRAWINGS">FIG. 1</figref>;</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIGS. 7</figref>, <b>8</b>A, <b>8</b>B, and <b>9</b> illustrate aspects of the path definitions of <figref idref="DRAWINGS">FIG. 6</figref>;</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIGS. 10A and 10B</figref> illustrate instances of an IO region that includes an IO pad and an IO cell, wherein a wire path is determined by the parametric routing tool of <figref idref="DRAWINGS">FIG. 5</figref>;</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIGS. 11A</figref>, <b>11</b>B and <b>12</b> illustrates aspects of parametric routing between an IO pad and an IO cell by the parametric routing tool of <figref idref="DRAWINGS">FIG. 5</figref>; and</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIGS. 13A and 13B</figref> illustrate a method of the disclosure for determining a wire path between an IO pad and an IO cell using a parameter that determines a routing feature of the wire path.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0007" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0023" num="0022">Embodiments of methods and systems described herein provide an innovative technique to determine the redistribution routing that substantially reduces manual intervention. Embodiments described herein provide methods and systems for computing a redistribution route based upon layout-specific and/or technology-specific parameters. Complex routes from IO cells to IO pads can be sequentially developed by adding additional routing to previously defined route descriptions through an inheritance mechanism. Moreover, the route of a desired IO path may be adjusted by overriding globally defined variables with locally defined variables.</p>
+<p id="p-0024" num="0023">In various embodiments a user selects from a library of route types and assigns the route type as a property to a particular IO cell and/or pad in the design. These route types may refer to a description of the routes in a text file format that includes a layer, a width, a net name and at least two points. The route may include parameter values based upon the actual layout or user defined values. A physical path is created based on the route description to be included in the layout.</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 1</figref> presents an IC <b>110</b> formed using one or more embodiments of the disclosure. The IC <b>110</b> includes functional circuitry <b>120</b> and IO pads <b>130</b>. The functional circuitry <b>120</b> may include, e.g. gates, transistors, and memory associated with desired functions provided by the IC <b>110</b>. Various IO signals may be provided by or to the functional circuitry <b>120</b> via IO cells <b>140</b>. The IO cells <b>140</b> may include ESD protection circuitry and/or other circuitry that provides an interface between the functional circuitry <b>120</b> and other devices or power sources to which the IC <b>110</b> may be connected. The IO pads <b>130</b> may be any structure suitable for electrically connecting the IC <b>110</b> to other devices, e.g. bump pads or wire bond pads.</p>
+<p id="p-0026" num="0025">The IC <b>110</b> may be represented as a database of geometrical elements and associated route designators. For example, all the geometrical elements of an interconnect (also referred to herein as a wire) between two electrical components of the IC <b>110</b> may be logically associated by a route name to support design and error checking of the IC <b>110</b> design.</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 2A</figref> presents an illustrative IO region <b>210</b> that includes an IO cell <b>220</b> and an IO pad <b>230</b>. The IO region <b>210</b> and the IO cell <b>220</b> may share a common designator that logically associates these elements with a signal path between them. A wire path <b>240</b> connects the IO region <b>210</b> and the IO cell <b>220</b>. The IO region <b>210</b> may be viewed as a local frame of reference within which geometrical relationships between the IO cell <b>220</b>, the IO pad <b>230</b> and the wire path <b>240</b> may be expressed mathematically. The wire path <b>240</b> may be viewed as a centerline of an interconnect (wire), the geometrical aspects of which are to be determined.</p>
+<p id="p-0028" num="0027">Points P<sub>0</sub>, P<sub>1 </sub>and P<sub>2 </sub>are respectively associated with the IO region <b>210</b>, the IO cell <b>220</b>, and the IO pad <b>230</b>, e.g. at the geometrical centers thereof. P<sub>0 </sub>may be regarded as the origin of the local frame of reference of the IO region <b>210</b>. The wire path <b>240</b> is a single segment between P<sub>1 </sub>and P<sub>2</sub>.</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 2B</figref> illustrates the IO region <b>210</b> including a reference object <b>250</b>, e.g. another IO pad. The reference object <b>250</b> has an associated center point P<sub>4</sub>. The reference object <b>250</b> may obstruct the wire path <b>240</b> in some way. For instance, in this example the IO cell <b>220</b> and the IO pad <b>230</b> are not vertically aligned so the wire path <b>240</b> includes two segments, one between P<sub>1 </sub>and P<sub>3</sub>, and another between P<sub>2 </sub>and P<sub>3</sub>. The presence of the reference object <b>250</b> constrains the location of P<sub>3 </sub>to be located above and left of P<sub>0</sub>. The alternative case, in which P<sub>3 </sub>would be located below and right of P<sub>0</sub>, is not possible without the wire path <b>240</b> intersecting the reference object <b>250</b>.</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 2C</figref> illustrates another example in which the IO region <b>210</b> includes the reference object <b>250</b>. In this case the wire path <b>240</b> includes a segment from P<sub>2 </sub>to P<sub>3 </sub>where P<sub>3 </sub>is located between P<sub>2 </sub>and P<sub>4</sub>, and a segment from P<sub>1 </sub>to P<sub>6</sub>, where P<sub>6 </sub>is located between P<sub>1 </sub>and P<sub>4</sub>. To avoid intersecting the reference object <b>250</b>, the wire path <b>240</b> includes two additional segments via point P<sub>5</sub>. The wire path <b>240</b> of this example may be desirable, e.g. when layout congestion makes the upper left of the IO region <b>210</b> unavailable.</p>
+<p id="p-0031" num="0030">Conventional EDA tools sometimes fail to adequately autoroute a wire path between the IO cell <b>220</b> and the IO pad <b>230</b>. For instance, sometimes a conventional EDA tool fails to provide an efficient wire path when an obstruction such as the reference object <b>250</b> is present. Methods and systems of the disclosure provide a designer with the ability to specify one or more wire path templates that may be specifically rendered using one or more wire path parameters, referred to herein briefly as path parameters. The path parameters may be determined by the designer based on desired properties of the rendered interconnect, such as length, width, or resistance. A parametric routing tool <b>500</b> described below may render the wire path based on the provided parameters. The resulting interconnects in many cases require less manual review and adjustment prior to generating a mask set for IC fabrication.</p>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIG. 3</figref> presents an illustrative design sequence <b>300</b> in accordance with the disclosure that may be used to form the IC <b>110</b>. The design sequence <b>300</b> includes a functional design layout step <b>310</b>, an IO pad layout step <b>320</b>, a parameter routing step <b>330</b>, a database merge step <b>340</b> and a tapeout step <b>350</b>. The design sequence <b>300</b> provides a database of geometrical elements that may be used to manufacture a mask set configured to fabricate the IC <b>110</b>.</p>
+<p id="p-0033" num="0032">In the functional design layout step <b>310</b>, the functional circuitry <b>120</b> may be rendered in a design database using a functional design module <b>510</b> described further below. In the IO pad layout step <b>320</b>, the locations of the IO pads <b>130</b> relative to the global coordinate space of the IC <b>110</b> are determined. In this step properties of the wire path <b>240</b> between each of the IO cells <b>140</b> and one or more of the IO pads <b>130</b> may be determined. For example, a template of the wire path <b>240</b> may be selected, and parameters appropriate to that template may be specified. Various aspects of the wire path parameters are described in detail below.</p>
+<p id="p-0034" num="0033">In the parameter routing step <b>330</b> the locations are determined of physical segments of an interconnect formed along the wire path <b>240</b>. The wire path <b>240</b> and characteristics of the rendered interconnect, such as segment lengths and path width, may be determined by employing the parameters determined in the layout step <b>320</b>. The wire path <b>240</b> is determined by program instructions in a parametric routing module <b>520</b>, as described further below. The parametric routing step produces a list of geometrical elements that complete the electrical connection between the IO cell <b>220</b> and the IO pad <b>230</b> in a manner consistent with the supplied parameter(s).</p>
+<p id="p-0035" num="0034">In the database merge step <b>340</b> the geometrical elements are merged with the functional circuitry database. The combined database may be used in the tapeout step <b>350</b> to fabricate one or more masks of the mask set associated with the IC <b>100</b>.</p>
+<p id="p-0036" num="0035"><figref idref="DRAWINGS">FIG. 4</figref> presents an embodiment of the parametric routing step <b>330</b> that illustrates various sub-steps that may be used therein. In a step <b>410</b> properties of the IO pads may be defined. Such properties may include width, metal layer, presence and width of optional dielectric spaces in wide metal lines, and the length of one or more segments of a wire that includes at least one bend.</p>
+<p id="p-0037" num="0036">In a step <b>420</b> a path description file is defined. The path description file may include a description of physical aspects of a wire path in terms of one or more parameters names. The path description file is described in additional detail below.</p>
+<p id="p-0038" num="0037">In a step <b>430</b> the parametric routing module <b>520</b> is invoked. The parametric routing module <b>520</b> may substitute parameter values specified in the IO pad layout step <b>320</b> for the one or more parameter names. Thus, for example, a wire path segment width may be defined in terms of a resistance parameter value. The width may be calculated based on the resistance using well-known relationships. A wire path segment may then be determined using the calculated width. This aspect is discussed in further detail below.</p>
+<p id="p-0039" num="0038">In a step <b>440</b> the parametric routing module <b>520</b> provides the geometrical definition of the wire path <b>240</b> to the functional design module <b>510</b>. The parametric routing step <b>330</b> may be repeated for each IO region <b>210</b> for which parametric routing is desired.</p>
+<p id="p-0040" num="0039"><figref idref="DRAWINGS">FIG. 5</figref> illustrates a block diagram of an embodiment of the parametric routing tool <b>500</b>, an apparatus, constructed according to the principles of the present disclosure. The parametric routing tool <b>500</b> is configured to perform parametric routing of an interconnect between an instance of the IO cell <b>140</b> and one or more instances of the IO pad <b>130</b> as described herein. To perform the described functions, the parametric routing tool <b>500</b> may be embodied as a series of operating instructions stored on a computer-readable medium, such as a non-transitory computer-readable medium, that directs the operation of a processor when initiated thereby. Herein and in the claims non-transitory media comprise all computer-readable media except for a transitory, propagating signal. Accordingly, the parametric routing tool <b>500</b> may include a processor and an associated memory. In one embodiment, the parametric routing tool <b>500</b> may be a dedicated computing device including any necessary circuitry (including a processor and memory) or software to perform the described functions. The parametric routing tool <b>500</b> may include a commercially available or a proprietary EDA tool configured to operate the functional design module <b>510</b> and the parametric routing module <b>520</b>. In one embodiment, the parametric routing tool <b>500</b> includes the IC Compiler tool from Synopsys, Inc., Mountain View, Calif., USA to provide an I/C layout database and instructions (code) to implement the functional design module <b>510</b> and the parametric routing module <b>520</b>.</p>
+<p id="p-0041" num="0040">The functional design module <b>510</b> executes instructions to design the functional circuitry <b>120</b>. The functional design module <b>510</b> receives design cells from a cell library <b>530</b> and provides interconnections between the design cells. The functional design module <b>510</b> derives cell tags from the cell library <b>530</b> that identify the IO cells <b>220</b> and the IO pads <b>230</b>, e.g. using an appropriately configured application programming interface (API). The functional design module <b>510</b> receives data from and provides data to a net list <b>535</b> that describes the interconnections between the design cells. The description may include, e.g. name tags that uniquely identify each signal net that connects two or more ports of a number of design cells. Among the signals nets are those that include connections between each IO cell <b>140</b> and one or more of the IO pads <b>130</b>. Thus the logical association between the IO cells <b>140</b> and the IO pads <b>130</b> may be determined.</p>
+<p id="p-0042" num="0041">The functional design module <b>510</b> also receives data from an IO pad property list <b>540</b>. The property list <b>540</b> includes parameters that describe aspects of the route taken by each wire path <b>240</b>. Such parameters may include without limitation the name of the template of the wire path <b>240</b>, the length and width of one or more segments of the wire path <b>240</b>, the spacing of one or more segments from a routing obstruction, or a resistance of the wire path <b>240</b>. The property list <b>540</b> may be created by a design engineer using any appropriate template or text editor, e.g. Microsoft Excel&#x2122;.</p>
+<p id="p-0043" num="0042">The functional design module <b>510</b> invokes the parametric routing module <b>520</b>, e.g. by another API call. The API call includes identification of a path description file <b>550</b> such as by file name or pointer. The path description file <b>550</b> may include one or more variables defined for local use by the parametric routing module <b>520</b>. The path description file <b>550</b> includes a number of metal definitions or &#x201c;metalDef&#x201d; lines that specify the characteristics of a named template for the wire path <b>240</b>. The parametric routing module <b>520</b> uses the parameters provided by the property list <b>540</b> to determine the specific characteristics of the wire path template using the metalDef lines of the path description file <b>550</b>. The parametric routing module <b>520</b> then returns the geometric elements of the wire paths <b>240</b> to the functional design module <b>510</b> to be integrated with the database of geometrical elements that describe the functional circuitry <b>120</b>.</p>
+<p id="p-0044" num="0043">The above-described apparatuses and methods may be embodied in or performed by various digital data processors or computers, wherein the computers are programmed or store executable programs of sequences of software instructions to perform one or more of the steps of the methods e.g., steps of the methods or processes of <figref idref="DRAWINGS">FIGS. 3</figref>, <b>4</b>, and/or <b>5</b>. The software instructions of such programs may represent algorithms and be encoded in machine-executable form on conventional digital data storage media, e.g., magnetic or optical disks, random-access memory (RAM), magnetic hard disks, flash memories, and/or read-only memory (ROM), to enable various types of digital data processors or computers to perform one, multiple or all of the steps of one or more of the above-described methods. Accordingly, computer storage products with a computer-readable medium that have program code thereon for performing various computer-implemented operations that embody the tools or carry out the steps of the methods set forth herein may be employed. The media and program code may be specially designed and constructed for the purposes of the disclosure, or they may be of the kind well known and available to those having skill in the computer software arts. An apparatus, such as an EDA tool, may be designed to include the necessary circuitry or series of operating instructions to perform each step of the disclosed methods.</p>
+<p id="p-0045" num="0044">Turning to <figref idref="DRAWINGS">FIG. 6</figref>, illustrated is a block diagram of one embodiment of the path description file <b>550</b> that may be used in various embodiments to specify characteristics of the wire path <b>240</b>. In the illustrated embodiment the path description file <b>550</b> includes a variable definition block <b>610</b> and a path definition block <b>620</b>.</p>
+<p id="p-0046" num="0045">Table 1 below illustrates one embodiment of a variable definition block <b>610</b>. This embodiment includes nine variable definitions. Each variable definition begins with a keyword, e.g. &#x201c;wireVal&#x201d;, that may signal a parsing routine of the parametric routing module <b>520</b> that the contents of the line following the keyword describes a variable definition. A variable may be equated with a direct value. For example, a first variable definition line defines a variable pitch as equal to 180.0, e.g. 180 &#x3bc;m. A variable may also be defined indirectly, e.g. in terms of another variable. For example, a second variable definition line defines a variable hpitch as one half the value of pitch. In some cases a variable specifies a value of a metal level in an IC design, e.g. topLayer is a metal level <b>74</b>. A variable gWidth may define a maximum width of the wire path <b>240</b> before a gap is added to the wire path <b>250</b>, e.g. to reduce dishing from chemical-mechanical polishing. A variable gGap may define a width of the gap, when present. The examples of variables provided by Table 1 are not exhaustive. Those skilled in the pertinent art will appreciate that other variables may be useful in determining the characteristics of the wire path <b>240</b>.</p>
+<p id="p-0047" num="0046">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="3">
+<colspec colname="offset" colwidth="35pt" align="left"/>
+<colspec colname="1" colwidth="56pt" align="left"/>
+<colspec colname="2" colwidth="126pt" align="char"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" rowsep="1">TABLE 1</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>wireVal pitch</entry>
+<entry>180.0</entry>
+</row>
+<row>
+<entry/>
+<entry>wireVal hpitch</entry>
+<entry>$pitch/2</entry>
+</row>
+<row>
+<entry/>
+<entry>wireVal bSize</entry>
+<entry>102.1</entry>
+</row>
+<row>
+<entry/>
+<entry>wireVal hbSize</entry>
+<entry>0.5 * $bSize</entry>
+</row>
+<row>
+<entry/>
+<entry>wireVal topLayer</entry>
+<entry>74</entry>
+</row>
+<row>
+<entry/>
+<entry>wireVal subLayer</entry>
+<entry>37</entry>
+</row>
+<row>
+<entry/>
+<entry>wireVal nxtLayer</entry>
+<entry>36</entry>
+</row>
+<row>
+<entry/>
+<entry>wireVal gWidth</entry>
+<entry>18.0</entry>
+</row>
+<row>
+<entry/>
+<entry>wireVal gGap</entry>
+<entry>8.0</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="2" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0048" num="0047">The path definition block <b>620</b> may include a number of path definitions, illustratively path definitions <b>630</b>, <b>640</b>, <b>650</b>. Table 2 below includes several illustrative path definitions, including examples using a keyword metalDef and an example using a keyword routeLike.</p>
+<p id="p-0049" num="0048">
+<tables id="TABLE-US-00002" num="00002">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" rowsep="1">TABLE 2</entry>
+</row>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>metalDef WXF $topLayer {{$gwidth **}} {{x<sub>1 </sub>y<sub>1</sub>} {x<sub>2 </sub>y<sub>2</sub>} ... {x<sub>n </sub>y<sub>n</sub>}}</entry>
+</row>
+<row>
+<entry>metalDef WXF $topLayer {{$gwidth **}} {{x<sub>1 </sub>y<sub>1</sub>} {* y<sub>2</sub>} {x<sub>3 </sub>*}}</entry>
+</row>
+<row>
+<entry>routeLike WXE WXF</entry>
+</row>
+<row>
+<entry>metalDef WXF $topLayer {{$gwidth *} {$gGap gap} \</entry>
+</row>
+<row>
+<entry>&#x2003;{$gWidth *}} {{&#x2212;$gOffsetb 0.0} {&#x2212;1.0*$pitch+0.5*$gWidth 0.0}}</entry>
+</row>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0050" num="0049"><figref idref="DRAWINGS">FIG. 7</figref> illustrates schematically the general syntax of one embodiment of a metalDef-type path definition line, e.g. the path definition <b>630</b>. The path definition <b>630</b> includes a template name field <b>710</b>, a layer field <b>720</b>, a composition field <b>730</b> and a centerline points field <b>740</b>. The layer, composition and centerline points fields <b>720</b>, <b>730</b> <b>740</b> may include references to variables previously defined, such as those of Table 1.</p>
+<p id="p-0051" num="0050">The template name field <b>710</b> may include any convenient name for associating a particular wire path template with an IO pad designated to use that template. For example, in the first line of Table 2 the template name is &#x201c;WXF&#x201d;. The layer field <b>720</b> specifies the layer of the defined segment of the wire is $topLayer, e.g. <b>74</b> as specified in Table 1. This layer number corresponds to a particular layer of the design database of the IC <b>100</b>. For example, layer <b>74</b> may designate a top-level metal layer. The layer can be given in a conditional form, e.g. $hLayer:$vLayer, wherein the layer number is dependent on whether the segment of the path is horizontal or vertical.</p>
+<p id="p-0052" num="0051"><figref idref="DRAWINGS">FIG. 8A</figref> illustrates the syntax of the composition field <b>730</b>. The composition field <b>730</b> includes at least one subfield, such as a subfield <b>810</b>, and may optionally include one or more additional subfields <b>820</b>, <b>830</b>. In one example, a simple segment that does not include any slots may include only the subfield <b>810</b>. In a more elaborate example multiple subfields may describe two or more metal paths electrically in parallel for the defined segment, with each path separated by a gap.</p>
+<p id="p-0053" num="0052">The subfield <b>810</b> includes a width, e.g. $gwidth in Table 2. Referring to Table 1, $gwidth is specified as 18.0 &#x3bc;m. Following the width is a net name, e.g. net_<b>1</b>. In various cases, the net name may be the input/output of the IO cells port, or may be a power or ground supply name. An optional flag may replace the net name for special purposes or overriding default operation of the parametric routing module <b>520</b>.</p>
+<p id="p-0054" num="0053">For example, in Table 2 &#x201c;*&#x201d; or &#x201c;**&#x201d; may follow the composition field value. These flags may direct the parametric routing module <b>520</b> to perform certain actions related to routing the wire path <b>240</b>. In one example, a &#x201c;*&#x201d; flag may direct the parametric routing module <b>520</b> to assign the signal name associated with the IO pad <b>230</b> to the net name of the wire path <b>240</b> segments defined by the metalDef line.</p>
+<p id="p-0055" num="0054">In another example, a &#x201c;**&#x201d; flag may direct the parametric routing module <b>520</b> to assign the signal name of the path to the net name, and may additionally prevent subsequent operations from occurring on the path. For instance this flag may be used to prevent the parametric routing module <b>520</b> from tapping into the wire path <b>240</b>, e.g. for power or ground, when doing so would cause layout congestion, or when a power or ground wire path is intended for shielding.</p>
+<p id="p-0056" num="0055">The subfield <b>820</b>, if present, includes a width value width_<b>2</b>, and a flag &#x201c;gap&#x201d; that designates the current portion of the segment is a gap between parallel metal lines. The subfield <b>830</b> includes a width value width_<b>3</b> and a net name net_<b>2</b>. Typically net_<b>2</b> will be the same as net_<b>1</b>. In some cases net_<b>2</b>&#x2260;net_<b>1</b>, such as when the adjacent parallel metal line is a different power polarity such as when forming a shield. The two metal portions defined by the subfields <b>810</b>, <b>830</b> operate as a single composite segment between the IO pad <b>230</b> and the IO cell <b>220</b>. <figref idref="DRAWINGS">FIG. 8B</figref> illustrates a composite segment that includes two metal portions and a gap therebetween that results from the composition illustrated in <figref idref="DRAWINGS">FIG. 8A</figref>.</p>
+<p id="p-0057" num="0056">Returning to <figref idref="DRAWINGS">FIG. 7</figref> the centerline points field <b>740</b> may include one or more coordinates, e.g. x-y coordinate pairs, that specify the centerline of the wire path <b>240</b>. In some cases a wire path only include a single straight segment between the pad <b>230</b> and the IO cell <b>220</b>. In other cases multiple segments are specified.</p>
+<p id="p-0058" num="0057"><figref idref="DRAWINGS">FIG. 9</figref> illustrates an example in which the centerline points field <b>740</b> specifies multiple segments. Referring to <figref idref="DRAWINGS">FIG. 2B</figref>, the wire path <b>240</b> may be described by two segments. Coordinate pairs <b>910</b>, <b>920</b> may describe a first segment from P<sub>1 </sub>to P<sub>2</sub>. Coordinate pairs <b>920</b>, <b>930</b> may describe a second segment from P<sub>2 </sub>to P<sub>3</sub>. The wire path <b>240</b> may be specified by a single metalDef-type line with more than three coordinate pairs, or may be specified by two metalDef-type lines, e.g. one for each segment. The principles described with respect to the wire path <b>240</b> may be extended to wire paths with more than two segments.</p>
+<p id="p-0059" num="0058">As mentioned previously Table 2 includes a keyword routeLike. The routeLike keyword implements a mechanism referred to herein as &#x201c;inheritance&#x201d;. The routeLike keyword is followed by two template names, WXE and WXF. The routeLike keyword directs the parametric routing module <b>520</b> to create a new segment having the first following template name, e.g. WXE, thus overwriting any previous template definition named WXE. The new segment inherits the characteristics of the segment having the second following template name, e.g. WXF, up to the point of the routeLike keyword. Thus, WXE is defined including all the segments of the two metalDef lines preceding the routeLike line. After the template name WXE is defined, it may be used independently of the WXF template name. Additional segments may be added to the WXF template name via a third metalDef line without affecting the WXE template name.</p>
+<p id="p-0060" num="0059">A keyword inHerit may support &#x201c;multiple inheritance&#x201d;. In this case, characteristics of a template definition may be added to a previously defined template definition without overwriting the previously defined definition. Continuing the previous example, after defining characteristics of the template definition WXE, characteristics of another template definition WXG may be added to WXE by a definition line &#x201c;inHerit WXE WXG&#x201d;.</p>
+<p id="p-0061" num="0060"><figref idref="DRAWINGS">FIGS. 10-12</figref> illustrate specific examples of aspects of methods of the disclosure. <figref idref="DRAWINGS">FIG. 10A</figref> illustrates an IC <b>1010</b>. The IC <b>1010</b> includes four instances of an IO region <b>1020</b>, e.g. <b>10</b> regions <b>1020</b><i>t</i>, <b>1020</b><i>b</i>, <b>10201</b>, <b>1020</b><i>r</i>. Each IO region <b>1020</b> includes a single IO pad and a single IO cell.</p>
+<p id="p-0062" num="0061">A single instance of the IO region <b>1020</b> is illustrated in <figref idref="DRAWINGS">FIG. 10B</figref>. The parametric routing module <b>520</b> may rotate the frame of reference of the IO regions <b>1020</b><i>b</i>, <b>10201</b> and <b>1020</b><i>r </i>so that paths definitions may be specified in terms of a common frame of reference, e.g. that of the IO region <b>1020</b><i>a</i>. The IO region <b>1020</b> includes an IO path <b>1030</b> including three segments. A first segment is between points P<sub>1 </sub>and P<sub>2</sub>, a second segment is between points P<sub>2 </sub>and P<sub>3</sub>, and a third segment is between points P<sub>3 </sub>and P<sub>4</sub>. The point P<sub>1 </sub>may be selected as the IO region <b>1020</b> origin for convenience.</p>
+<p id="p-0063" num="0062"><figref idref="DRAWINGS">FIG. 11A</figref> illustrates a single instance of the IO region <b>1020</b> in greater detail. An IO pad <b>1110</b> and an IO cell <b>1120</b> each have a geometric center that is respectively located at P<sub>1 </sub>and P<sub>4</sub>. P<sub>1 </sub>and P<sub>4 </sub>may be determined from the locations of the cells that define the IO pad <b>1110</b> and the IO cell <b>1120</b>. P<sub>1 </sub>and P<sub>4 </sub>are fixed in various embodiments, meaning that the parametric routing module <b>520</b> does not modify these locations. P<sub>1 </sub>and P<sub>4 </sub>are vertically separated by a distance D<sub>1</sub>, and are horizontally separated by a distance D<sub>2</sub>. Thus, both D<sub>1 </sub>and D<sub>2 </sub>may be computed from P<sub>1 </sub>and P<sub>4</sub>. Points P<sub>1 </sub>and P<sub>2 </sub>are vertically separated by a distance D<sub>3</sub>, and points P<sub>3 </sub>and P<sub>4 </sub>are vertically separated by a distance D<sub>4</sub>. The points P<sub>2 </sub>and P<sub>3 </sub>are dynamic, meaning the parametric routing module <b>520</b> may changes their locations in various circumstances. A width W may be specified by a width parameter, or may determined indirectly from a resistance parameter. D<sub>1 </sub>and D<sub>2 </sub>may be determined from P<sub>1 </sub>and P<sub>2</sub>.</p>
+<p id="p-0064" num="0063">As a nonlimiting example, D<sub>1 </sub>may be about 100 &#x3bc;m. In the absence of any obstructions, a D<sub>3 </sub>may be about equal to D<sub>4</sub>. In some cases D<sub>3 </sub>may computed dynamically to be 0.5*D<sub>1</sub>, so that D<sub>3 </sub>is automatically updated when P<sub>1 </sub>and/or P<sub>4 </sub>changes. In other cases the distance D<sub>3 </sub>and/or the distance D<sub>4 </sub>may be specified by a global variable, e.g. by the property list <b>540</b>. Thus, the configuration of <figref idref="DRAWINGS">FIG. 11A</figref> may be a default configuration of the path <b>1030</b> when the IO pad <b>1110</b> and the IO cell <b>1120</b> are arranged as illustrated.</p>
+<p id="p-0065" num="0064">In some cases, it may be desirable to customize the IO path <b>1030</b> in some specific instances of the IO region <b>1020</b>. An entry may be placed in the property list <b>540</b> to specify a local value of a variable, e.g. offset<b>1</b>, that determines D<sub>3</sub>. The local value may be associated with the signal name of the IO path <b>1030</b> for the customized instance of the IO region <b>1020</b>. Thus, when the parametric routing module <b>520</b> determines the geometry of the path <b>1030</b> for the customized instance, it may render a configuration of the IO path <b>1030</b> as illustrated in <figref idref="DRAWINGS">FIG. 11B</figref>, in which D<sub>3 </sub>and D<sub>4 </sub>have a customized value. In various embodiments D<sub>4 </sub>is determined as a function of D<sub>3 </sub>so only one parameter need be specified to result in the desired configuration. Thus, e.g. D<sub>4</sub>=D<sub>1</sub>&#x2212;offset<b>1</b>.</p>
+<p id="p-0066" num="0065"><figref idref="DRAWINGS">FIG. 12</figref> illustrates aspects of operation of the parametric routing tool <b>500</b> when an IO region <b>1210</b> includes a reference object, e.g. an IO pad <b>1220</b>, that obstructs some possible configurations of the IO path <b>1030</b>. A local origin of the IO region <b>1210</b> is placed at the geometrical center of the IO cell <b>1120</b>, e.g. at P<sub>4</sub>. The IO pad <b>1220</b> has a radius R<sub>1 </sub>and a center point P<sub>5 </sub>at local coordinates (ru,rv). The configuration of <figref idref="DRAWINGS">FIG. 12</figref> may occur commonly in various high-density IO pad configurations, such as bump-pad arrays. However, the coordinates (ru,rv) may be different in various cases.</p>
+<p id="p-0067" num="0066">In the illustrated case, the relevant concern from a design perspective may be the distance between metal features of the manufactured IC. Thus an offset gap<sub>1 </sub>may represent a minimum desired distance between the IO pad <b>1220</b> and the IO path <b>1030</b> segment between the points P<sub>2 </sub>and P<sub>3</sub>. The value of gap<sub>1 </sub>may be expressed as a global or local variable value. The positions of centerline points P<sub>2 </sub>and P<sub>3 </sub>may be expressed in a metalDef line of the path description file <b>550</b> in terms of rv, R<sub>1</sub>, gap<sub>1</sub>, and a width W<sub>1 </sub>of the IO path <b>1030</b>. The parametric routing module <b>520</b> may then compute the positions of the geometric elements of the IO path <b>1030</b> to maintain the desired distance between the IO pad <b>1220</b> and the P<sub>2</sub>-P<sub>3 </sub>segment. Those skilled in the pertinent art will appreciate that the principles illustrated by this example may be applied to various configurations of the IO path <b>1030</b> and other types of obstructions.</p>
+<p id="p-0068" num="0067">Optionally the calling program may be configured to maintain a list of parametric routes whose positions are dependent on the location of a reference object such as the IO pad <b>1220</b>. When the location of the reference object changes, such as by manual repositioning by an operator, the calling program may update all the parametric routes associated with that reference object such that relevant design constraints are maintained.</p>
+<p id="p-0069" num="0068">In some embodiments the parametric routing tool <b>500</b> is configured to present a graphical representation of the computed wire path <b>240</b> to a user. If not satisfied with the resulting path, the user may dynamically change the value of one or more parameter values to produce a desired routing. The parameter entry may be by graphic user interface (GUI) using well-known techniques.</p>
+<p id="p-0070" num="0069"><figref idref="DRAWINGS">FIGS. 13A and 13B</figref> illustrate a method <b>1300</b> as a block diagram of the operation of the parametric routing module <b>520</b> according to one embodiment. The method <b>1300</b> presents a number of steps that may be executed by an apparatus such as the parametric routing tool <b>500</b>. Appendix A includes one specific embodiment of instructions that implement the method <b>1300</b>. The steps of the method <b>1300</b> may be performed in another order than the illustrated order. In some embodiments some of the steps are not performed.</p>
+<p id="p-0071" num="0070">In a step <b>1305</b> the method <b>1300</b> is invoked, e.g. by an API call from the functional design module <b>510</b> to the parametric routing module <b>520</b>. The parametric routing module <b>520</b> may receive via the API call coordinates of various features of an IO region, e.g. the center point P<sub>1 </sub>of the IO cell <b>220</b>, the center point P<sub>2 </sub>of the IO pad <b>230</b> and the center point P<sub>4 </sub>of the reference object <b>250</b>, and a pointer to a global array of route description variable names.</p>
+<p id="p-0072" num="0071">In a step <b>1310</b> the parametric routing module <b>520</b> maps the received coordinates to a local coordinate system of an invariant frame of reference of the IO region. The mapping may, e.g. adjust the coordinates of the various features taking into account rotation of the IO region from a side location of the IC <b>110</b>. The mapping may also include a step <b>1315</b> in which the coordinates of the IO region features are translated such that the center of the IO cell <b>220</b> is the origin of the IO region. In other words, the locations of the features other than the IO cell <b>220</b> are determined relative to the center of the IO cell <b>220</b>.</p>
+<p id="p-0073" num="0072">In a step <b>1320</b> the parametric routing module <b>520</b> determines the horizontal (x) and vertical (y) directions of the pad <b>230</b> relative to the IO cell <b>220</b>. For example, if the IO pad <b>230</b> is below and to the left of the IO cell <b>220</b> within the local coordinate system of the IO region, then the relative direction of the IO pad <b>230</b> to the IO cell <b>220</b> may be expressed as (&#x2212;1,&#x2212;1). This determination may be used for computational convenience in some of the steps that follow.</p>
+<p id="p-0074" num="0073">In a decisional step <b>1325</b> the parametric routing module <b>520</b> tests to see if each of the IO pads <b>230</b> of the IC <b>110</b> has been mapped to an IO cell <b>220</b>. If not then the method <b>1300</b> returns to the step <b>1305</b>. When all the IO pads <b>230</b> have been mapped, the method <b>1300</b> advances to a step <b>1330</b>.</p>
+<p id="p-0075" num="0074">In the step <b>1330</b> the parametric routing module <b>520</b> reads the path description file <b>550</b>. Each line of the path description file may be stored, e.g. in an array, for later parsing. The path description file <b>550</b> includes one or more path descriptions, and may include one or variable names that define values used by the path descriptions.</p>
+<p id="p-0076" num="0075">In a step <b>1335</b> the parametric routing module <b>520</b> unpacks the route description variable names within the global array of variable names. For example, the route description variable names may be read into a local array that may be indexed using a local indexing variable.</p>
+<p id="p-0077" num="0076">In a step <b>1340</b> the parametric routing module <b>520</b> overrides any route descriptions variable names contained by the global array that are associated with a path description in the path description file.</p>
+<p id="p-0078" num="0077">In a step <b>1342</b> the parametric routing module <b>520</b> begins parsing a path definition line of the path description file. The first field of the path definition line may include one of several keywords, e.g. metalDef, that signals a program instruction implementing the method <b>1300</b> that the path definition line has been encountered.</p>
+<p id="p-0079" num="0078">Referring to <figref idref="DRAWINGS">FIG. 13B</figref>, in steps <b>1345</b>, <b>1350</b>, <b>1355</b>, <b>1360</b> the parametric routing module <b>520</b> parses the first path description. In the step <b>1345</b> the path variable name is recovered. In the step <b>1350</b> the description of the width of the wire path <b>240</b> is recovered and the width is calculated. In the step <b>1355</b> the centerline points are decoded and stored. In the step <b>1360</b> the first segment of the wire path <b>240</b> is determined.</p>
+<p id="p-0080" num="0079">In a decisional step <b>1365</b> the parametric routing module <b>520</b> determines if an additional centerline point is provided by the path description. If additional points are specified, the method <b>1300</b> advances to a step <b>1370</b> in which the additional point is concatenated to the wire path <b>240</b>. Control returns to the step <b>1365</b>, where the parametric routing module <b>520</b> again determines if an additional centerline point remains to be added.</p>
+<p id="p-0081" num="0080">When no additional centerline points remain, the parametric routing module <b>520</b> advances to a step <b>1375</b>. In the step <b>1375</b> wire path <b>240</b> length is compared to a maximum allowed length. If the wire path <b>240</b> length exceeds the maximum allowed length the method <b>1300</b> advances to an error state <b>1377</b> and the parametric routing tool <b>500</b> may notify the user of the error condition for correction.</p>
+<p id="p-0082" num="0081">If the length of the wire path <b>240</b> does not exceed the allowed maximum, the parametric routing module <b>520</b> executes a step <b>1380</b> in which it determines whether the wire path <b>240</b> includes a repeating pattern across its width. A repeating pattern may include, e.g. a combination of metal segments and spaces (slots) such as to reduce dishing from CMP.</p>
+<p id="p-0083" num="0082">In a step <b>1385</b> the parametric routing module <b>520</b> determines the total width of the wire path <b>240</b>, including any spaces. In a step <b>1390</b> all the geometrical components of the wire path <b>240</b> are determined, including all aspects of length, width and any spaces.</p>
+<p id="p-0084" num="0083">In a decisional step <b>1392</b> the parametric routing module <b>520</b> determines if additional path definitions remain to be processed. If so the parametric routing module <b>520</b> reads the next path definition and the method <b>1300</b> returns to the step <b>1345</b>. If no additional path definitions remain, then the method returns control to the functional routing module <b>510</b> via a step <b>1399</b> to the calling EDA instructions.</p>
+<p id="p-0085" num="0084">Those skilled in the art to which this application relates will appreciate that other and further additions, deletions, substitutions and modifications may be made to the described embodiments.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method of determining signal routing in an integrated circuit, comprising:
+<claim-text>providing first coordinates of an input/output cell to a parametric routing module configured to be executed by a computer;</claim-text>
+<claim-text>providing second coordinates of an input/output pad to said parametric routing module;</claim-text>
+<claim-text>providing at least one wire path parameter to said parametric routing module, wherein said at least on wire path parameter includes at least a desired resistance; and</claim-text>
+<claim-text>executing on said computer said parametric routing module to determine a physical dimension of a wire path between said input/output cell and said input/output pad based on said at least one parameter.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein an electronic design automation tool executed by said computer provides said at least one parameter to said parametric routing module.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said parametric routing module is implemented as an application programming interface of an electronic design automation tool executed by said computer.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said parametric routing module is configured to read a path description file that defines said physical dimension based on said at least one parameter.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method as recited in <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein said parametric routing module is configured to assign to a first path template name an input/output path definition that is based on said at least one parameter and to copy said input/output definition to a second path template name.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said first and second coordinates are associated with a local frame of reference, and said parametric routing module is configured to rotate said local frame of reference.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said at least one parameter defines a width of said wire path.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The routing system of <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein said at least one parameter is a first parameter, and a second parameter defines a gap between two metal portions of said wire path.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. An integrated circuit input/output signal routing system, comprising:
+<claim-text>a computer; and</claim-text>
+<claim-text>a parametric routing module configured to receive from an electronic design automation tool operating on said computer first coordinates of an input/output cell, second coordinates of an input/output pad, and at least one wire path parameter,</claim-text>
+<claim-text>wherein said at least one wire path parameter includes at least a desired resistance and said parametric routing module is further configured to use said at least one parameter to determine a physical dimension of a wire path between said input/output cell and said input/output pad.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The routing system as recited in <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein said electronic design automation tool provides said at least one wire path parameter to said parametric routing module.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The routing system as recited in <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein said parametric routing module is implemented as an application programming interface of said electronic design automation tool.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The routing system as recited in <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein said parametric routing module is configured to read a path description file that defines said physical dimension based on said at least one parameter.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The routing system as recited in <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein said parametric routing module is configured to assign to a first path template name an input/output path definition that is based on said at least one parameter and to copy said input/output definition to a second path template name.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The routing system as recited in <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein said first and second coordinates are associated with a local frame of reference, and said parametric routing module is configured to rotate said local frame of reference.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The routing system as recited in <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein said at least one parameter defines a width of said wire path.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The routing system of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein said at least one parameter is a first parameter, and a second parameter defines a gap between two metal portions of said wire path.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The routing system of <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein said design database input module and said parameter assignment module are embodied in program code stored on a non-transitory computer-readable medium.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. A computer program product, comprising a non-transitory computer readable medium having a series of operating instructions embodied therein, said series of operating instructions adapted to be executed to implement a method of determining signal routing in an integrated circuit, the method comprising:
+<claim-text>providing first coordinates of an input/output cell to a parametric routing module;</claim-text>
+<claim-text>providing second coordinates of an input/output pad to said parametric routing module;</claim-text>
+<claim-text>providing at least one wire path parameter to said parametric routing module, wherein said at least one wire path parameter includes at least a desired resistance; and</claim-text>
+<claim-text>employing said parametric routing module to use said at least one parameter to determine a physical dimension of a connection between said input/output cell and said input/output pad.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The computer program product as recited in <claim-ref idref="CLM-00018">claim 18</claim-ref>, wherein an electronic design automation tool provides said at least one parameter to said parametric routing module.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The computer program product as recited in <claim-ref idref="CLM-00018">claim 18</claim-ref>, wherein said parametric routing module is implemented as application programming interface of an electronic design automation tool.</claim-text>
+</claim>
+<claim id="CLM-00021" num="00021">
+<claim-text>21. The computer program product as recited in <claim-ref idref="CLM-00018">claim 18</claim-ref>, wherein said parametric routing module is configured to read a path description file that defines said physical dimension based on said at least one parameter.</claim-text>
+</claim>
+<claim id="CLM-00022" num="00022">
+<claim-text>22. The computer program product as recited in <claim-ref idref="CLM-00021">claim 21</claim-ref>, wherein said parametric routing module is configured to assign to a first path template name an input/output path definition that is based on said at least one parameter and to copy said input/output definition to a second path template name.</claim-text>
+</claim>
+<claim id="CLM-00023" num="00023">
+<claim-text>23. The computer program product as recited in <claim-ref idref="CLM-00018">claim 18</claim-ref>, wherein said first and second coordinates are associated with a local frame of reference, and said parametric routing module is configured to rotate said local frame of reference.</claim-text>
+</claim>
+<claim id="CLM-00024" num="00024">
+<claim-text>24. The computer program product as recited in <claim-ref idref="CLM-00018">claim 18</claim-ref>, wherein said at least one parameter defines a width of said wire path.</claim-text>
+</claim>
+<claim id="CLM-00025" num="00025">
+<claim-text>25. The computer program product of <claim-ref idref="CLM-00024">claim 24</claim-ref>, wherein said at least one parameter is a first parameter, and a second parameter defines a gap between two metal portions of said wire path.</claim-text>
+</claim>
+<claim id="CLM-00026" num="00026">
+<claim-text>26. A computer program product, comprising a non-transitory computer readable medium having a series of operating instructions embodied therein, said series of operating instructions adapted to be executed to implement a method of determining signal routing in an integrated circuit, the method comprising:
+<claim-text>receiving first coordinates of an input/output cell into a parametric routing module;</claim-text>
+<claim-text>receiving second coordinates of an input/output pad into said parametric routing module;</claim-text>
+<claim-text>receiving at least one wire path parameter to said parametric routing module, wherein said at least one wire path parameter includes at least a desired resistance; and</claim-text>
+<claim-text>employing said at least one parameter to determine a physical dimension of a connection between said input/output cell and said input/output pad. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

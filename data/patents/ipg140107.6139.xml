@@ -1,0 +1,2207 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627263-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627263</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13365989</doc-number>
+<date>20120203</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="regional">
+<country>EP</country>
+<doc-number>11155645</doc-number>
+<date>20110223</date>
+</priority-claim>
+</priority-claims>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>17</main-group>
+<subgroup>50</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>716135</main-classification>
+<further-classification>716132</further-classification>
+<further-classification>716133</further-classification>
+<further-classification>716134</further-classification>
+</classification-national>
+<invention-title id="d2e61">Gate configuration determination and selection from standard cell library</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5847966</doc-number>
+<kind>A</kind>
+<name>Uchino et al.</name>
+<date>19981200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>6557151</doc-number>
+<kind>B1</kind>
+<name>Donath et al.</name>
+<date>20030400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>8407654</doc-number>
+<kind>B2</kind>
+<name>Buechner et al.</name>
+<date>20130300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>716133</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>2004/0060022</doc-number>
+<kind>A1</kind>
+<name>Allen et al.</name>
+<date>20040300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>2012/0216160</doc-number>
+<kind>A1</kind>
+<name>Buechner</name>
+<date>20120800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>2012/0266120</doc-number>
+<kind>A1</kind>
+<name>Buechner et al.</name>
+<date>20121000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>WO</country>
+<doc-number>2010004668</doc-number>
+<date>20100100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00008">
+<othercit>&#x201c;Dynamic Power Reduction in Flash FPGAs&#x201d;, Actel Mar. 2009 , 23 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00009">
+<othercit>Agrawal, Vishwani D. et al., &#x201c;Digital circuit design for minimum transient energy and a linear programming method&#x201d;, VLSI Design, 1999. Proceedings. Twelfth International Conference on Jan. 7-10, 1999 , pp. 434-439.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00010">
+<othercit>Alexander, Jins D. et al., &#x201c;Algorithms for Estimating Number of Glitches and Dynamic Power in CMOS Circuits with Delay Variations&#x201d;, 2009 IEEE Computer Society Annual Symposium on VLSI May 13-15, 2009 , 6 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00011">
+<othercit>Alexander, Jins D. et al., &#x201c;Computing Bounds on Dynamic Power Using Fast Zero-Delay Logic Simulation&#x201d;, System Theory, 2009. SSST 2009. 41st Southeastern Symposium Mar. 15-17, 2009 , pp. 107-112.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00012">
+<othercit>Berkelaar, Michel R. et al., &#x201c;Gate sizing in MOS digital circuits with linear programming&#x201d;, Design Automation Conference, 1990. EDAC. Proceedings of the European http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=136648 (Obtained from the Internet on Dec. 21, 2011) Mar. 12-15, 1990 , pp. 217-221.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00013">
+<othercit>Ding, Chih-Shun et al., &#x201c;Gate-level power estimation using tagged probabilistic simulation&#x201d;, Computer-Aided Design of Integrated Circuits and Systems, IEEE Transactions on http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&#x26;arnumber=736184 (Obtained from the Internet on Dec. 21, 2011) Nov. 2009 , pp. 1099-1107.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00014">
+<othercit>English, T. et al., &#x201c;HotSpot : Visualizing Dynamic Power Consumption in RTL Designs&#x201d;, Sep. 20, 2010 , pp. 45-48.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00015">
+<othercit>Hu, Fei et al., &#x201c;Input-specific Dynamic Power Optimization for VLSI Circuits&#x201d;, Low Power Electronics and Design, 2006. ISLPED'06. Proceedings of the 2006 International Symposium on http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4271842 (Obtained from the Internet on Dec. 21, 2011) Oct. 4-6, 2006 , pp. 232-237.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00016">
+<othercit>Najm, F. N. et al., &#x201c;An extension of probabilistic simulation for reliability analysis of CMOS VLSI circuits&#x201d;, vol. 10, Issue 11, Computer-Aided Design of Integrated Circuits and Systems, IEEE Transactions on http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=97616 (Obtained from the Internet on Dec. 21, 2011) Nov. 1991 , pp. 1372-1381.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00017">
+<othercit>Najm, F. N. , &#x201c;Low-pass filter for computing the transition density in digital circuits&#x201d;, vol. 13, Issue 9, Computer-Aided Design of Integrated Circuits and Systems, IEEE Transactions on http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=310901 (Obtained from the Internet on Dec. 21, 2011) Sep. 1994 , pp. 1123-1131.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00018">
+<othercit>Najm, F. N. , &#x201c;Transition density: a new measure of activity in digital circuits&#x201d;, vol. 12 , Issue 2 Computer-Aided Design of Integrated Circuits and Systems, IEEE Transactions on http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&#x26;arnumber=205010 (Obtained from the Internet on Dec. 21, 2011) Feb. 1993 , pp. 310-323.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00019">
+<othercit>Raja, Tezaswi et al., &#x201c;Minimum dynamic power CMOS circuit design by a reduced constraint set linear program&#x201d;, VLSI Design, 2003. Proceedings. 16th International Conference on http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1183188 (Obtained from the Internet on Dec. 21, 2011) Jan. 4-8, 2003 , pp. 527-532.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00020">
+<othercit>Raja, Tezaswi et al., &#x201c;Variable input delay CMOS logic for low power design&#x201d;, VLSI Design, 2005. 18th International Conference on http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1383340 (Obtained from the Internet on Dec. 21, 2011) Jan. 3-7, 2005 , pp. 598-605.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00021">
+<othercit>Wang, L. et al., &#x201c;Fast dynamic power estimation considering glitch filtering&#x201d;, SOC Conference, 2009. SOCC 2009. IEEE International Sep. 9-11, 2009 , pp. 361-364.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00022">
+<othercit>Wang, L. et al., &#x201c;On Glitch Power Reduction&#x201d;, SOC Conference (SOCC), 2011 IEEE International Nov. 21, 2011 , pp. 24-29.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00023">
+<othercit>U.S. Appl. No. 13/365,961, filed Feb. 3, 2012, Buechner, Thomas et al.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00024">
+<othercit>U.S. Appl. No. 13/365,972, filed Feb. 3, 2012, Buechner, Thomas et al.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00025">
+<othercit>&#x201c;U.S. Appl. No. 13/365,961 Office Action&#x201d;, Mar. 12, 2013 , 24 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>16</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>716132</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>716133</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>716134</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>716135</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>4</number-of-drawing-sheets>
+<number-of-figures>5</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120216168</doc-number>
+<kind>A1</kind>
+<date>20120823</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Buechner</last-name>
+<first-name>Thomas</first-name>
+<address>
+<city>Weil im Schoenbuch</city>
+<country>DE</country>
+</address>
+</addressbook>
+<residence>
+<country>DE</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Buehler</last-name>
+<first-name>Markus</first-name>
+<address>
+<city>Weil im Schoenbuch</city>
+<country>DE</country>
+</address>
+</addressbook>
+<residence>
+<country>DE</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Olbrich</last-name>
+<first-name>Markus</first-name>
+<address>
+<city>Langenhagen</city>
+<country>DE</country>
+</address>
+</addressbook>
+<residence>
+<country>DE</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="004" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Panitz</last-name>
+<first-name>Philipp</first-name>
+<address>
+<city>Schoenaich</city>
+<country>DE</country>
+</address>
+</addressbook>
+<residence>
+<country>DE</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="005" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Wang</last-name>
+<first-name>Lei</first-name>
+<address>
+<city>Hannover</city>
+<country>DE</country>
+</address>
+</addressbook>
+<residence>
+<country>DE</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Buechner</last-name>
+<first-name>Thomas</first-name>
+<address>
+<city>Weil im Schoenbuch</city>
+<country>DE</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Buehler</last-name>
+<first-name>Markus</first-name>
+<address>
+<city>Weil im Schoenbuch</city>
+<country>DE</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Olbrich</last-name>
+<first-name>Markus</first-name>
+<address>
+<city>Langenhagen</city>
+<country>DE</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="004" designation="us-only">
+<addressbook>
+<last-name>Panitz</last-name>
+<first-name>Philipp</first-name>
+<address>
+<city>Schoenaich</city>
+<country>DE</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="005" designation="us-only">
+<addressbook>
+<last-name>Wang</last-name>
+<first-name>Lei</first-name>
+<address>
+<city>Hannover</city>
+<country>DE</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>DeLizio Gilliam, PLLC</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>International Business Machines Corporation</orgname>
+<role>02</role>
+<address>
+<city>Armonk</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Lin</last-name>
+<first-name>Sun</first-name>
+<department>2825</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A method comprises determining gate configuration from a standard cell library for optimizing behavior of a logic gate in an electronic circuit to be resized. The determining includes defining variables for the logic gate to be resized and defining nets influenced by the logic gate to be resized. The determining includes determining constraints relative to other logic gates in the electronic circuit affected by the logic gate to be resized and formulating objective function. The determining includes solving the objective function using a linear programming solver based on the defined variables and the determined constraints. The determining includes outputting solving of the objective function obtained by linear programming solver for further processing. The gate configuration is selected from the standard cell library for optimizing behavior of the logic gate to be resized based on solving of the objective function.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="240.11mm" wi="165.35mm" file="US08627263-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="215.14mm" wi="156.46mm" file="US08627263-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="244.86mm" wi="169.50mm" file="US08627263-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="247.23mm" wi="171.87mm" file="US08627263-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="237.83mm" wi="161.71mm" file="US08627263-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">CROSS-REFERENCE TO RELATED APPLICATION</heading>
+<p id="p-0002" num="0001">This application claims priority under 35 U.S.C. 119 from European Patent Application No. EP11155645 filed Feb. 23, 2011, the entire contents of which are incorporated herein by reference.</p>
+<heading id="h-0002" level="1">BACKGROUND</heading>
+<p id="p-0003" num="0002">Embodiments relate in general to the field of developing integrated electrical circuits, and in particular to a method for determining and selecting gate configuration from standard cell library, method for reducing power consumption of an electronic circuit, and a system for determining and selecting gate configuration from standard cell library. Still more particularly, embodiments relate to a data processing program and a computer program product for determining and selecting gate configuration from standard cell library and for reducing power consumption of an electronic circuit.</p>
+<p id="p-0004" num="0003">In CMOS technology, glitch power dissipated in combinational circuits owns an important portion of the total dynamic power consumption. A State-of-the-Art method for power estimation is called Monte Carlo Simulation (MCS). For this technique, a digital simulator and information about gate and interconnect delays are necessary. The runtime of MCS is high.</p>
+<p id="p-0005" num="0004">Statistical Methods (SM), e.g. IMS-PE, CREST, TPS, are also extensively investigated techniques. SMs are like one-period simulation using a special gate model which requires signal probabilities instead of multi-valued logic. It's faster than Monte Carlo simulation. The nature of SM is like a one-period digital simulation. Therefore, its runtime is still not low enough. In the lack of consideration of correlations the accuracy is also limited. Test cases have shown that especially the estimated power on the nets near the POs may show up to 400% error.</p>
+<p id="p-0006" num="0005">In VLSI design, great attention is paid to the power consumption of circuits. Research covers power estimation and power optimization from system to electrical level. The challenge of lower-level power estimation is to find a reasonable trade-off between computational effort and accuracy of power estimation. For instance, the tools based on SMs can estimate the dynamic power of combinational circuits very efficiently. However, they all suffer more or less from a poor accuracy. Especially, if the dynamic power per net is considered, a satisfying accuracy cannot be reached.</p>
+<p id="p-0007" num="0006">In CMOS circuits, power is dissipated due to the static leakage current and the dynamic current caused by signal transition. During the signal transition a dynamic current flows through the transistor and charges or discharges the parasitic capacitances. The appropriate power is called dynamic power. It can be modeled according to equation (1):</p>
+<p id="p-0008" num="0007">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>P</mi>
+          <mi>dynamic</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <munder>
+            <mo>&#x2211;</mo>
+            <mi>n</mi>
+          </munder>
+          <mo>&#x2062;</mo>
+          <mstyle>
+            <mspace width="0.3em" height="0.3ex"/>
+          </mstyle>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+            <mo>&#x2062;</mo>
+            <msubsup>
+              <mi>V</mi>
+              <mi>dd</mi>
+              <mn>2</mn>
+            </msubsup>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>C</mi>
+              <mi>n</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>f</mi>
+              <mi>c</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>&#x3b1;</mi>
+              <mi>n</mi>
+            </msub>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>1</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0009" num="0008">Wherein V<sub>dd</sub>, f<sub>c</sub>, C<sub>n </sub>and &#x3b1;<sub>n </sub>are supply voltage, clock frequency, net capacitance and signal transition rate, respectively. It is obvious that besides scaling down supply voltage and clock frequency, one can also reduce the product of transition rate and net capacitance or either of them to reduce dynamic power.</p>
+<p id="p-0010" num="0009">In combinational circuits, signals are expected to change at most once in one clock period. However, there are almost always unnecessary signal transitions, which are called glitches. If the timing conditions such as setup-time and hold-time of the registers are satisfied, the circuit can still work. However, the signal transition rate &#x3b1;<sub>n </sub>is increased due to the glitches, and therefore more power is consumed by the unnecessary signal transitions. If glitches can be eliminated, dynamic power is reduced. Glitches are caused by different arrival times of signals at the inputs of the gate.</p>
+<p id="p-0011" num="0010">Algorithms were proposed to optimize dynamic power consumption. For full-custom design, power optimization algorithms can result in a glitch-free design. A conventional technique is called path balancing. Besides, hazard filtering is another technique proposed which can be considered as an extension of path balancing. It shows that it is not necessary to balance the signal path exactly to eliminate the glitches. This technique indicates that the gate inertia can stop not only the generation but also the propagation of glitches. According to hazard filtering, a glitch free design needs to satisfy the requirement that the differences of signal arrival times at the inputs of all gates in the circuit must be less than their inertial delays.</p>
+<p id="p-0012" num="0011">Conventional techniques apply a zero-delay model in the simulation to reduce the number of events per period since if normal delay model (non-zero delay model) is applied in the simulation, lots of events could probably be generated in every clock period to model the circuit behavior. In applying the zero-delay model the whole simulation must be shorter, obviously, because the number of events per period is no more than the number of the gates in the circuit. However, the accuracy would be destroyed, if no further method would be employed to take care of the glitches. The papers by Alexander et al. each propose such a method that the whole Monte Carlo simulation employed zero-delay model and the neglected signal transitions in ambiguous interval is estimated.</p>
+<heading id="h-0003" level="1">SUMMARY</heading>
+<p id="p-0013" num="0012">Some example embodiments include a method that comprises determining gate configuration from a standard cell library for optimizing behavior of a logic gate in an electronic circuit to be resized. The determining includes defining variables for a logic gate to be resized, that is within an electronic circuit and defining nets influenced by the logic gate to be resized. The determining includes determining constraints relative to other logic gates in the electronic circuit affected by the logic gate to be resized and formulating objective function to be solved by the electronic circuit. The determining includes solving the objective function using a linear programming solver based on the defined variables and the determined constraints. The determining includes outputting solving of the objective function obtained by linear programming solver for further processing. The method also includes selecting gate configuration from the standard cell library for optimizing behavior of the logic gate to be resized based on solving of the objective function.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0014" num="0013">Inventive features regarded as the characteristics of the present inventive subject matter are set forth in the Summary of the Inventive subject matter and the appended claims. However, the present inventive subject matter, its implementation mode, other objectives, features and advantages will be better understood through reading the following detailed description of the exemplary embodiments with reference to the accompanying drawings, wherein:</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 1</figref> depicts a schematic block diagram of a system for determining and selecting gate configuration from standard cell library, according to some example embodiments.</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 2</figref> depicts a schematic flow chart of a method for reducing power consumption of an electronic circuit, according to some example embodiments.</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 3</figref> depicts a schematic flow chart of a method for determining and selecting gate configuration from standard cell library, according to some example embodiments.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 4</figref> depicts a schematic flow chart of a method for gate model extraction, according to some example embodiments.</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 5</figref> depicts a circuit diagram of an embodiment of an electrical circuit to evaluate with corresponding waveform diagrams to explain definition of variables and constraints for linear programming, according to some example embodiments.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DESCRIPTION OF EMBODIMENTS</heading>
+<p id="p-0020" num="0019">The description that follows includes exemplary systems, methods, techniques, instruction sequences and computer program products that embody techniques of the present inventive subject matter. However, it is understood that the described embodiments may be practiced without these specific details. In other instances, well-known instruction instances, protocols, structures and techniques have not been shown in detail in order not to obfuscate the description.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 1</figref> shows a system <b>1</b> for determining and selecting gate configuration from standard cell library, according to some example embodiments. <figref idref="DRAWINGS">FIG. 5</figref> shows an embodiment of an electrical circuit to evaluate comprising exemplary a logic cone <b>100</b> and two logic gates X<b>1</b>, X<b>2</b>, wherein a first logic gate X<b>1</b> is to be resized during the optimization process.</p>
+<p id="p-0022" num="0021">Referring to <figref idref="DRAWINGS">FIG. 1</figref> the shown embodiment employs a system <b>1</b> for determining and selecting gate configuration from standard cell library. An Embodiment of such an electronic circuit to evaluate is shown exemplary in <figref idref="DRAWINGS">FIG. 5</figref> and comprises at least one cone <b>100</b> with at least one gate X<b>1</b>, X<b>2</b> having a single output net N<b>3</b>, N<b>4</b> only, wherein representations of the at least one gate X<b>1</b>, X<b>2</b> are instances of elements from a standard cell library.</p>
+<p id="p-0023" num="0022">The shown system <b>1</b> for determining and selecting gate configuration from standard cell library is represented by a computing environment and comprises a user interface <b>20</b> for managing I/O functions of the system <b>1</b>, a data storage <b>30</b> for storing computer usable program code, the standard cell library, data, etc., and a data processing engine <b>10</b> in electronic communication with the user interface <b>20</b> and the data storage <b>30</b>. According to some example embodiments, the data processing engine <b>10</b> defines variables for the logic gate X<b>1</b> to be resized and every net N<b>3</b>, N<b>4</b> influenced by the logic gate X<b>1</b> to be resized; determines constraints relative to logic gates X<b>2</b> influenced by the logic gate X<b>1</b> to be resized; formulates objective function to be solved; solves the objective function using a linear programming solver based on the defined variables and the determined constraints; and outputs solution obtained by the linear programming solver for further processing.</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 2</figref> shows a method for reducing power consumption of an electronic circuit, according to some example embodiments. The method of reducing power consumption of an electronic circuit may also be performed by the system shown in <figref idref="DRAWINGS">FIG. 1</figref>. <figref idref="DRAWINGS">FIG. 3</figref> shows a method for determining and selecting gate configuration from standard cell library, according to some example embodiments; used during performing the method of reducing power consumption of an electronic circuit according to <figref idref="DRAWINGS">FIG. 2</figref>. <figref idref="DRAWINGS">FIG. 4</figref> shows a method for gate model extraction, according to some example embodiments; used before performing the method for determining and selecting gate configuration from standard cell library according to <figref idref="DRAWINGS">FIG. 3</figref>.</p>
+<p id="p-0025" num="0024">Referring to <figref idref="DRAWINGS">FIG. 2</figref> the shown embodiment employs a method for reducing power consumption of an electronic circuit using a gate-level design description, wherein an embodiment of such an electronic circuit to evaluate is shown exemplary in <figref idref="DRAWINGS">FIG. 5</figref> and comprise at least one cone <b>100</b> with at least one gate X<b>1</b>, X<b>2</b> having a single output net N<b>3</b>, N<b>4</b>, only, wherein representations of the at least one gate X<b>1</b>, X<b>2</b> are instances of elements from a standard cell library.</p>
+<p id="p-0026" num="0025">According to some example embodiments, in step S<b>10</b> the electronic circuit to evaluate is levelized by sorting the gates X<b>1</b>, X<b>2</b>, in the electronic circuit in different levels according to their logic depth; and in step S<b>20</b> a freezing list <b>14</b> is initialized, shown in <figref idref="DRAWINGS">FIG. 1</figref>. In step S<b>30</b> an upper bound for dynamic power consumption is determined by calculating transition metrics and power metrics for each gate X<b>1</b>, X<b>2</b> in the electronic circuit. In step S<b>40</b> gates, here gate X<b>1</b>, with an upper bound for power consumption greater than a predetermined threshold value are selected and assigned to a gates to resize list <b>16</b>, shown in <figref idref="DRAWINGS">FIG. 1</figref>. Query S<b>50</b> checks if the gates to resize list <b>16</b> is empty. If the gates to resize list <b>16</b> is empty the method is finished. If the gates to resize list <b>16</b> is not empty the first gate X<b>1</b> of the gates to resize list <b>16</b> is popped in step S<b>60</b>. In step S<b>70</b> best fitting gate configurations from the standard cell library for the gate X<b>1</b> under consideration is determined and selected by using linear programming. According to some example embodiments, this is done by performing the method for determining and selecting gate configuration from standard cell library for optimizing behavior of the logic gate X<b>1</b> to be resized explained in the following referring to <figref idref="DRAWINGS">FIGS. 3 and 4</figref>. In step S<b>90</b> the gate-level design representation is modified according to the selected gate configuration. In step S<b>90</b> the gate X<b>1</b> under consideration is added to the freezing list <b>14</b> after testing. Query S<b>100</b> checks if the gates to resize list <b>16</b> is empty. If the gates to resize list <b>16</b> is not empty the optimizing process returns to step S<b>60</b>. If the gates to resize list <b>16</b> is empty a perturbance function is performed in step S<b>110</b>. The perturbance function is implemented to prevent the solution from a local optimum and to release randomly some gates frozen in the freezing list <b>14</b> after all selected gates are resized. The gates newly pushed into the freezing list <b>12</b> are much more likely to be released than the gates that stay in the freezing list for a long time. With the increase of optimization steps, the number of gates that are allowed to be released from the freezing list decreases as well. After such a stochastic decision the method returns to step S<b>30</b> and a new gates to resize list <b>16</b> is determined. The optimization procedure runs until the gates to resize list <b>16</b> is empty. If no gates are written to the new gates to resize list <b>16</b>, because the upper bound for power consumption of all gates X<b>1</b>, X<b>2</b> of the electronic circuit is smaller than the predetermined threshold value, an empty gates to resize list <b>16</b> is generated and the optimization procedure is finished.</p>
+<p id="p-0027" num="0026">The transition metric of an output net N<b>3</b> of the gate X<b>1</b> to be resized is defined as minimum value between a sum of signal transitions at input nets N<b>1</b>, N<b>2</b> of the gate X<b>1</b> to be resized and a component dependent on a glitch window defined as difference between latest and earliest signal arrival times AT_MaxN<b>3</b>, AT_MinN<b>3</b> at the output net N<b>3</b> of the gate X<b>1</b> to be resized and an inertial delay of the gate X<b>1</b> to be resized.</p>
+<p id="p-0028" num="0027">Further extracting gate model for each gate X<b>1</b>, X<b>2</b> of the electronic circuit to evaluate is performed according to the method shown in <figref idref="DRAWINGS">FIG. 4</figref>. Referring to <figref idref="DRAWINGS">FIG. 4</figref>, in step S<b>202</b> coefficients of delays and slews defined by equation (2) and (3) are determined by linear regression for all cells according to Look-up table (LUT).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Delay=&#x3b1;<sub>d</sub><i>C</i><sub>L</sub>+&#x3b2;<sub>d</sub><i>S</i><sub>in</sub>+&#x3b3;<sub>d</sub><i>C</i><sub>L</sub><i>S</i><sub>in</sub>+&#x3c4;<sub>d</sub>&#x2003;&#x2003;(2)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Slew<sub>out</sub>=&#x3b1;<sub>s</sub><i>C</i><sub>L</sub>+&#x3b2;<sub>s</sub><i>S</i><sub>in</sub>+&#x3b3;<sub>s</sub><i>C</i><sub>L</sub><i>S</i><sub>in</sub>+&#x3b3;<sub>s</sub>&#x2003;&#x2003;(3)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0029" num="0028">Wherein CL is the net capacitance in the circuit and &#x3b1;<sub>d</sub>, &#x3b2;<sub>d</sub>, &#x3b3;<sub>d</sub>, &#x3c4;<sub>d</sub>, &#x3b1;<sub>s</sub>, &#x3b2;<sub>s</sub>, &#x3b3;<sub>s</sub>, &#x3c4;<sub>s </sub>are parameters of this gate model. The parameters can be determined from look-up table (LUT) stored in the standard technology library.</p>
+<p id="p-0030" num="0029">Delays and slews in LUT are related with paths from input to output. The coefficients of the whole gate need to be calculated by averaging the coefficients obtained for every path. E.g. Gate AND2_X_A12TR has four LUTs for one drive strength. The coefficients of rising and falling transitions are determined by linear regression and averaged. In step S<b>204</b> all coefficients are averaged. E.g. Gate AND2_X_A12TR has 10 various drive strengths from _X0P5M_(0,5) to _X11M_(11) so ten groups of coefficients are averaged. For the gates with different drive strengths correlation (4) and (5) are used.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3b1;<sub>d</sub>,&#x3c7;<sub>d</sub>,&#x3b1;<sub>s</sub>,&#x3b3;<sub>s</sub>&#x221d;1<i>/s</i>&#x2003;&#x2003;(4)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0031" num="0030">Wherein 1/s represents drive strength or speed factor S=1/s, e.g. 0.7 for INV_X0P7M A12TR in CU45.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3b2;<sub>d</sub>,&#x3c4;<sub>d</sub>,&#x3b2;<sub>s</sub>,&#x3c4;<sub>s</sub>&#x2248;const.&#x2003;&#x2003;(5)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0032" num="0031">By defining the speed factor S or drive strength 1/s the gate model can be generalized with equations (6) and (7).</p>
+<p id="p-0033" num="0032">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mi>Delay</mi>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <msub>
+              <mover>
+                <mi>&#x3b1;</mi>
+                <mi>_</mi>
+              </mover>
+              <mi>d</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>C</mi>
+              <mi>L</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mi>s</mi>
+            </mfrac>
+          </mrow>
+          <mo>+</mo>
+          <mrow>
+            <msub>
+              <mover>
+                <mi>&#x3b2;</mi>
+                <mi>_</mi>
+              </mover>
+              <mi>d</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>S</mi>
+              <mrow>
+                <mi>i</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mo>+</mo>
+          <mrow>
+            <msub>
+              <mover>
+                <mi>&#x3b3;</mi>
+                <mi>_</mi>
+              </mover>
+              <mi>d</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>C</mi>
+              <mi>L</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>S</mi>
+              <mrow>
+                <mi>i</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mo>&#x2062;</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mi>s</mi>
+            </mfrac>
+          </mrow>
+          <mo>+</mo>
+          <msub>
+            <mover>
+              <mi>&#x3c4;</mi>
+              <mi>_</mi>
+            </mover>
+            <mi>d</mi>
+          </msub>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>6</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>Slew</mi>
+          <mi>out</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <msub>
+              <mover>
+                <mi>&#x3b1;</mi>
+                <mi>_</mi>
+              </mover>
+              <mi>s</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>C</mi>
+              <mi>L</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mi>s</mi>
+            </mfrac>
+          </mrow>
+          <mo>+</mo>
+          <mrow>
+            <msub>
+              <mover>
+                <mi>&#x3b2;</mi>
+                <mi>_</mi>
+              </mover>
+              <mi>s</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>S</mi>
+              <mrow>
+                <mi>i</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mo>+</mo>
+          <mrow>
+            <msub>
+              <mover>
+                <mi>&#x3b3;</mi>
+                <mi>_</mi>
+              </mover>
+              <mi>s</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>C</mi>
+              <mi>L</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>S</mi>
+              <mrow>
+                <mi>i</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mo>&#x2062;</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mi>s</mi>
+            </mfrac>
+          </mrow>
+          <mo>+</mo>
+          <msub>
+            <mover>
+              <mi>&#x3c4;</mi>
+              <mi>_</mi>
+            </mover>
+            <mi>s</mi>
+          </msub>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>7</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0034" num="0033">Other parameters are determined according to equations (8) to (15)
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?> <o ostyle="single">&#x3b1;</o><sub>d</sub><i>=E[&#x3b1;</i><sub>d</sub><i>s]</i>&#x2003;&#x2003;(8)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?> <o ostyle="single">&#x3b2;</o><sub>d</sub><i>=E[&#x3b2;</i><sub>d</sub>]&#x2003;&#x2003;(9)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?> <o ostyle="single">&#x3b3;</o><sub>d</sub><i>=E[&#x3c7;</i><sub>d</sub><i>s]</i>&#x2003;&#x2003;(10)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?> <o ostyle="single">&#x3c4;</o><sub>d</sub><i>=E[&#x3c4;</i><sub>d</sub>]&#x2003;&#x2003;(11)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?> <o ostyle="single">&#x3b1;</o><sub>s</sub><i>=E[&#x3b1;</i><sub>s</sub><i>s]</i>&#x2003;&#x2003;(12)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?> <o ostyle="single">&#x3b2;</o><sub>s</sub><i>=E[&#x3b2;</i><sub>s</sub>]&#x2003;&#x2003;(13)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?> <o ostyle="single">&#x3b3;</o><sub>s</sub><i>=E[&#x3c7;</i><sub>s</sub><i>s]</i>&#x2003;&#x2003;(14)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?> <o ostyle="single">&#x3c4;</o><sub>s</sub><i>=E[&#x3c4;</i><sub>s</sub>]&#x2003;&#x2003;(15)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0035" num="0034">In step S<b>206</b> slew parameters are set constant and target coefficients are calculated by linearization of the generalized gate model. Equations (16) to (21) show the result of the gate model extraction written to block <b>12</b>, shown in <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0036" num="0035">
+<maths id="MATH-US-00003" num="00003">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mi>Delay</mi>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <msub>
+              <mi>k</mi>
+              <mi>d</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>C</mi>
+              <mi>L</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mi>s</mi>
+            </mfrac>
+          </mrow>
+          <mo>+</mo>
+          <msub>
+            <mi>b</mi>
+            <mi>d</mi>
+          </msub>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>16</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>Slew</mi>
+          <mi>out</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <msub>
+              <mi>k</mi>
+              <mi>s</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>C</mi>
+              <mi>L</mi>
+            </msub>
+            <mo>&#x2062;</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mi>s</mi>
+            </mfrac>
+          </mrow>
+          <mo>+</mo>
+          <msub>
+            <mi>b</mi>
+            <mi>s</mi>
+          </msub>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>17</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>k</mi>
+          <mi>d</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msub>
+              <mover>
+                <mi>&#x3b1;</mi>
+                <mi>_</mi>
+              </mover>
+              <mi>d</mi>
+            </msub>
+            <mo>+</mo>
+            <mrow>
+              <msub>
+                <mover>
+                  <mi>&#x3b3;</mi>
+                  <mi>_</mi>
+                </mover>
+                <mi>d</mi>
+              </msub>
+              <mo>&#x2062;</mo>
+              <msub>
+                <mi>S</mi>
+                <mrow>
+                  <mi>i</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <msub>
+                    <mi>n</mi>
+                    <mi>const</mi>
+                  </msub>
+                </mrow>
+              </msub>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>18</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>b</mi>
+          <mi>d</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow>
+              <msub>
+                <mover>
+                  <mi>&#x3b2;</mi>
+                  <mi>_</mi>
+                </mover>
+                <mi>d</mi>
+              </msub>
+              <mo>&#x2062;</mo>
+              <msub>
+                <mi>S</mi>
+                <mrow>
+                  <mi>i</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <msub>
+                    <mi>n</mi>
+                    <mi>const</mi>
+                  </msub>
+                </mrow>
+              </msub>
+            </mrow>
+            <mo>+</mo>
+            <msub>
+              <mover>
+                <mi>&#x3c4;</mi>
+                <mi>_</mi>
+              </mover>
+              <mi>d</mi>
+            </msub>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>19</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>k</mi>
+          <mi>s</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msub>
+              <mover>
+                <mi>&#x3b1;</mi>
+                <mi>_</mi>
+              </mover>
+              <mi>s</mi>
+            </msub>
+            <mo>+</mo>
+            <mrow>
+              <msub>
+                <mover>
+                  <mi>&#x3b3;</mi>
+                  <mi>_</mi>
+                </mover>
+                <mi>s</mi>
+              </msub>
+              <mo>&#x2062;</mo>
+              <msub>
+                <mi>S</mi>
+                <mrow>
+                  <mi>i</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <msub>
+                    <mi>n</mi>
+                    <mi>const</mi>
+                  </msub>
+                </mrow>
+              </msub>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>20</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>b</mi>
+          <mi>s</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow>
+              <msub>
+                <mover>
+                  <mi>&#x3b2;</mi>
+                  <mi>_</mi>
+                </mover>
+                <mi>s</mi>
+              </msub>
+              <mo>&#x2062;</mo>
+              <msub>
+                <mi>S</mi>
+                <mrow>
+                  <mi>i</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <msub>
+                    <mi>n</mi>
+                    <mi>const</mi>
+                  </msub>
+                </mrow>
+              </msub>
+            </mrow>
+            <mo>+</mo>
+            <msub>
+              <mover>
+                <mi>&#x3c4;</mi>
+                <mi>_</mi>
+              </mover>
+              <mi>s</mi>
+            </msub>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>21</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0037" num="0036">Referring to <figref idref="DRAWINGS">FIG. 3</figref> the shown embodiment employs a method for determining and selecting gate configuration from standard cell library for optimizing behavior of a logic gate X<b>1</b> in an electronic circuit <b>100</b> to be resized.</p>
+<p id="p-0038" num="0037">In step S<b>210</b> variables for the logic gate X<b>1</b> to be resized and every net N<b>3</b>, N<b>4</b> influenced by the logic gate X<b>1</b> to be resized are defined. For example, for every net N<b>3</b>, N<b>4</b> influenced by the logic gate X<b>1</b> to be resized a latest arrival time AT_Max<sub>N3</sub>, AT_Max<sub>N4</sub>, and an earliest arrival time AT_Min<sub>N3</sub>, AT_Min<sub>N4 </sub>are defined as variables. For logic gate X<b>1</b> to be resized drive strength 1/s or speed factor S is defined as variable.</p>
+<p id="p-0039" num="0038">In step S<b>220</b> constraints relative to logic gates X<b>2</b> influenced by the logic gate X<b>1</b> to be resized are determined. The constraints restrict timing behavior at the output N<b>3</b>, N<b>4</b> of the involved gates. For example, latest arrival time AT_Max<sub>N3</sub>, AT_Max<sub>N4 </sub>at the output N<b>3</b>, N<b>4</b> must not be less than the latest arrival time AT_MaxN<b>1</b>, AT_Max<sub>N2</sub>, AT_Max<sub>N3 </sub>at any input N<b>1</b>, N<b>2</b>, N<b>3</b> plus a gate delay d. Earliest arrival time AT_Min<sub>N3</sub>, AT_Min<sub>N4 </sub>at the output N<b>3</b>, N<b>4</b> must not be greater than the earliest arrival time AT_Min<sub>N1</sub>, AT_Min<sub>N2</sub>, AT_Min<sub>N3</sub>, AT_Min<sub>N4 </sub>at any input N<b>1</b>, N<b>2</b>, N<b>3</b> plus gate delay d. Latest arrival time AT_Max must not be less than earliest arrival time AT_Min.</p>
+<p id="p-0040" num="0039">In step S<b>230</b> objective function to be solved by linear programming is formulated. The objective function is a sum of power metrics at all involved nets N<b>3</b>, N<b>4</b> according to correlation (22):
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3a3;<i>PM</i><sub>i</sub><i>, i</i>&#x3b5;{nets}&#x2003;&#x2003;(22)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0041" num="0040">Equation (23) defines a simplification of the power metric:</p>
+<p id="p-0042" num="0041">
+<maths id="MATH-US-00004" num="00004">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>PM</mi>
+          <mi>i</mi>
+        </msub>
+        <mo>=</mo>
+        <mfrac>
+          <mrow>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <msub>
+                  <mi>AT_Max</mi>
+                  <mi>i</mi>
+                </msub>
+                <mo>-</mo>
+                <msub>
+                  <mi>AT_Min</mi>
+                  <mi>i</mi>
+                </msub>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>C</mi>
+              <mi>L</mi>
+            </msub>
+          </mrow>
+          <mi>d</mi>
+        </mfrac>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>23</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0043" num="0042">Wherein i represent output net of a gate and d represents gate delay. Linearization of the simplified power metric is represented by equation (24) and (25). The linearization and equations (24) and (25) are only used for the logic gate X<b>1</b> to be resized. For gates X<b>2</b> not to be resized Equation (23) is used.</p>
+<p id="p-0044" num="0043">
+<maths id="MATH-US-00005" num="00005">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>PM</mi>
+          <mi>i</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msub>
+                <mi>AT_Max</mi>
+                <mi>i</mi>
+              </msub>
+              <mo>-</mo>
+              <msub>
+                <mi>AT_Min</mi>
+                <mi>i</mi>
+              </msub>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <msub>
+              <mi>C</mi>
+              <mi>L</mi>
+            </msub>
+            <mo>&#x2061;</mo>
+            <mrow>
+              <mo>[</mo>
+              <mrow>
+                <mfrac>
+                  <mn>1</mn>
+                  <mrow>
+                    <mrow>
+                      <msub>
+                        <mi>k</mi>
+                        <mi>d</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>C</mi>
+                        <mi>L</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>S</mi>
+                        <mn>0</mn>
+                      </msub>
+                    </mrow>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mi>d</mi>
+                    </msub>
+                  </mrow>
+                </mfrac>
+                <mo>-</mo>
+                <mrow>
+                  <mfrac>
+                    <mrow>
+                      <msub>
+                        <mi>k</mi>
+                        <mi>d</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>C</mi>
+                        <mi>L</mi>
+                      </msub>
+                    </mrow>
+                    <mrow>
+                      <mrow>
+                        <msub>
+                          <mi>k</mi>
+                          <mi>d</mi>
+                        </msub>
+                        <mo>&#x2062;</mo>
+                        <msub>
+                          <mi>C</mi>
+                          <mi>L</mi>
+                        </msub>
+                        <mo>&#x2062;</mo>
+                        <msub>
+                          <mi>S</mi>
+                          <mn>0</mn>
+                        </msub>
+                      </mrow>
+                      <mo>+</mo>
+                      <msubsup>
+                        <mi>b</mi>
+                        <mi>d</mi>
+                        <mn>2</mn>
+                      </msubsup>
+                    </mrow>
+                  </mfrac>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mi>S</mi>
+                      <mo>-</mo>
+                      <msub>
+                        <mi>S</mi>
+                        <mn>0</mn>
+                      </msub>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+              <mo>]</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>24</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>PM</mi>
+          <mi>i</mi>
+        </msub>
+        <mo>&#x2248;</mo>
+        <mrow>
+          <mrow>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <msub>
+                  <mi>AT_Max</mi>
+                  <mi>i</mi>
+                </msub>
+                <mo>-</mo>
+                <msub>
+                  <mi>AT_Min</mi>
+                  <mi>i</mi>
+                </msub>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <msub>
+                <mi>C</mi>
+                <mi>L</mi>
+              </msub>
+              <mo>&#x2061;</mo>
+              <mrow>
+                <mo>[</mo>
+                <mrow>
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <mrow>
+                        <msub>
+                          <mi>k</mi>
+                          <mi>d</mi>
+                        </msub>
+                        <mo>&#x2062;</mo>
+                        <msub>
+                          <mi>C</mi>
+                          <mi>L</mi>
+                        </msub>
+                        <mo>&#x2062;</mo>
+                        <msub>
+                          <mi>S</mi>
+                          <mn>0</mn>
+                        </msub>
+                      </mrow>
+                      <mo>+</mo>
+                      <msub>
+                        <mi>b</mi>
+                        <mi>d</mi>
+                      </msub>
+                    </mrow>
+                  </mfrac>
+                  <mo>+</mo>
+                  <mfrac>
+                    <mrow>
+                      <msub>
+                        <mi>k</mi>
+                        <mi>d</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>C</mi>
+                        <mi>L</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>S</mi>
+                        <mn>0</mn>
+                      </msub>
+                    </mrow>
+                    <msup>
+                      <mrow>
+                        <mo>(</mo>
+                        <mrow>
+                          <mrow>
+                            <msub>
+                              <mi>k</mi>
+                              <mi>d</mi>
+                            </msub>
+                            <mo>&#x2062;</mo>
+                            <msub>
+                              <mi>C</mi>
+                              <mi>L</mi>
+                            </msub>
+                            <mo>&#x2062;</mo>
+                            <msub>
+                              <mi>S</mi>
+                              <mn>0</mn>
+                            </msub>
+                          </mrow>
+                          <mo>+</mo>
+                          <msub>
+                            <mi>b</mi>
+                            <mi>d</mi>
+                          </msub>
+                        </mrow>
+                        <mo>)</mo>
+                      </mrow>
+                      <mn>2</mn>
+                    </msup>
+                  </mfrac>
+                </mrow>
+                <mo>]</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mo>-</mo>
+          <mrow>
+            <mfrac>
+              <mrow>
+                <msub>
+                  <mi>k</mi>
+                  <mi>d</mi>
+                </msub>
+                <mo>&#x2062;</mo>
+                <msubsup>
+                  <mi>C</mi>
+                  <mi>L</mi>
+                  <mn>2</mn>
+                </msubsup>
+                <mo>&#x2062;</mo>
+                <mi>GW</mi>
+              </mrow>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow>
+                      <msub>
+                        <mi>k</mi>
+                        <mi>d</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>C</mi>
+                        <mi>L</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>S</mi>
+                        <mn>0</mn>
+                      </msub>
+                    </mrow>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mi>d</mi>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mn>2</mn>
+              </msup>
+            </mfrac>
+            <mo>&#x2062;</mo>
+            <mi>S</mi>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>25</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0045" num="0044">Wherein S<b>0</b> represents speed factor of the gate in concurrent design, and GW represents glitch window of the gate in concurrent design. The glitch window GW is defined as difference between latest arrival time AT_Max and earliest arrival time AT_Min at a net N<b>1</b>, N<b>2</b>, N<b>3</b>, N<b>4</b>.</p>
+<p id="p-0046" num="0045">In step S<b>240</b> the objective function is solved by using a linear programming solver based on the defined variables and determined constrains. In step S<b>250</b> the solution obtained by the linear programming solver is discretized and the best fitting gate configuration is taken. The outputted solution obtained by the linear programming solver is continuous. The optimal speed factor for X<b>1</b> is 0.0937, and the corresponding drive strength is 1/0.0937=10.6724 for example. Since only gates with discrete drive strength exist in the standard cell library, the optimal drive strength is rounded to the available drive strength in standard cell library by using Euclidian distance, for example.</p>
+<p id="p-0047" num="0046">In step S<b>260</b> the timing requirements of the selected gate configuration are checked. Query <b>270</b> branches to step S<b>310</b>, if the time requirements are fulfilled and branches to query S<b>280</b>, if the time requirements are not fulfilled. Query S<b>280</b> checks if further gate configurations are available and branches to step S<b>300</b>, if no further gate configurations are available, and branches to step S<b>290</b>, if further gate configurations are available. In Step S<b>290</b> next best fitting gate configuration is taken and then the method is continued with step S<b>260</b>. In step S<b>300</b> the gate configuration is reset. In step S<b>310</b> the selected gate configuration is outputted.</p>
+<p id="p-0048" num="0047">In view of the exemplary electronic circuit <b>100</b> shown in <figref idref="DRAWINGS">FIG. 5</figref> the optimal drive strength of logic gate X<b>1</b> is to be determined. In the shown embodiment of the electronic circuit <b>100</b> N<b>1</b> and N<b>2</b> denote primary inputs and N<b>4</b> denotes a primary output. According to the method for determining and selecting gate configuration from standard cell library the latest arrival time AT_Max and the earliest arrival time AT_Min are defined for every net N<b>3</b>, N<b>4</b> influenced by the resizing gate X<b>1</b>. For the primary inputs N<b>1</b>, N<b>2</b> no variables are determined since nets N<b>1</b>, N<b>2</b> are not influenced by the resizing gate X<b>1</b>. The speed factor: S=1/s is defined as variable for the logic gate X<b>1</b> under investigation. The constraints are determined relative to the logic gate X<b>2</b> influenced by the logic gate X<b>1</b>. The constraints restrict the timing behavior at the output N<b>3</b>, N<b>4</b> of the involved gates X<b>1</b>, X<b>2</b>.</p>
+<p id="p-0049" num="0048">The constraints for the logic gate X<b>1</b> are defined for late mode timing according to correlations (26) and (27):
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>AT_Max<sub>N3</sub>&#x2267;AT_Max<sub>N1</sub><i>+d</i><sub>X1</sub>&#x2003;&#x2003;(26)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>AT_Max<sub>N3</sub>&#x2267;AT_Max<sub>N2</sub><i>+d</i><sub>X1</sub>&#x2003;&#x2003;(27)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0050" num="0049">The constraints for the logic gate X<b>1</b> are defined for early mode timing according to correlations (28) and (29):
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>AT_Min<sub>N3</sub>&#x2266;AT_Min<sub>N1</sub><i>+d</i><sub>X1</sub>&#x2003;&#x2003;(28)<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>AT_Min<sub>N3</sub>&#x2266;AT_Min<sub>N2</sub><i>+d</i><sub>X1</sub>&#x2003;&#x2003;(29)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0051" num="0050">The constraints for the logic gate X<b>2</b> are defined for late mode timing according to correlation (30):
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>AT_Max<sub>N4</sub>&#x2266;AT_Max<sub>N3</sub><i>+d</i><sub>X2</sub>&#x2003;&#x2003;(30)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0052" num="0051">The constraints for the logic gate X<b>2</b> are defined for early mode timing according to correlation (31):
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>AT_Min<sub>N4</sub>&#x2266;AT_Min<sub>N3</sub><i>+d</i><sub>X2</sub>&#x2003;&#x2003;(31)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0053" num="0052">All constraints are written in a standard format, since this is required by the LP-Solver.</p>
+<p id="p-0054" num="0053">The objective function in example is the sum of simplified power metric according to equation (32) at the nets N<b>3</b> and N<b>4</b> involved due to resizing.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x3a3;<i>PM</i><sub>Ni</sub><i>=PM</i><sub>N3</sub><i>+PM</i><sub>N4</sub>&#x2003;&#x2003;(32)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0055" num="0054">For output net N<b>3</b> of the logic gate X<b>1</b> to be resized equation (24) and (25) are used:</p>
+<p id="p-0056" num="0055">
+<maths id="MATH-US-00006" num="00006">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>PM</mi>
+          <mrow>
+            <mi>N</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msub>
+                <mi>AT_Max</mi>
+                <mrow>
+                  <mi>N</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>3</mn>
+                </mrow>
+              </msub>
+              <mo>-</mo>
+              <msub>
+                <mi>AT_Min</mi>
+                <mrow>
+                  <mi>N</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>3</mn>
+                </mrow>
+              </msub>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <msub>
+              <mi>C</mi>
+              <mi>L</mi>
+            </msub>
+            <mo>[</mo>
+            <mrow>
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <mrow>
+                    <msub>
+                      <mi>k</mi>
+                      <mi>d</mi>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>C</mi>
+                      <mi>L</mi>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>S</mi>
+                      <mrow>
+                        <mi>X</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <msub>
+                          <mn>1</mn>
+                          <mn>0</mn>
+                        </msub>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>b</mi>
+                    <mi>d</mi>
+                  </msub>
+                </mrow>
+              </mfrac>
+              <mo>-</mo>
+              <mrow>
+                <mfrac>
+                  <mrow>
+                    <msub>
+                      <mi>k</mi>
+                      <mi>d</mi>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>C</mi>
+                      <mi>L</mi>
+                    </msub>
+                  </mrow>
+                  <mrow>
+                    <mrow>
+                      <msub>
+                        <mi>k</mi>
+                        <mi>d</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>C</mi>
+                        <mi>L</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>S</mi>
+                        <mrow>
+                          <mi>S</mi>
+                          <mo>&#x2062;</mo>
+                          <mstyle>
+                            <mspace width="0.3em" height="0.3ex"/>
+                          </mstyle>
+                          <mo>&#x2062;</mo>
+                          <msub>
+                            <mn>1</mn>
+                            <mn>0</mn>
+                          </msub>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                    <mo>+</mo>
+                    <msubsup>
+                      <mi>b</mi>
+                      <mi>d</mi>
+                      <mn>2</mn>
+                    </msubsup>
+                  </mrow>
+                </mfrac>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msub>
+                      <mi>S</mi>
+                      <mrow>
+                        <mi>X</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo>-</mo>
+                    <msub>
+                      <mi>S</mi>
+                      <mrow>
+                        <mi>X</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <msub>
+                          <mn>1</mn>
+                          <mn>0</mn>
+                        </msub>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>24</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>PM</mi>
+          <mrow>
+            <mi>N</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2248;</mo>
+        <mrow>
+          <mrow>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <msub>
+                  <mi>AT_Max</mi>
+                  <mrow>
+                    <mi>N</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>3</mn>
+                  </mrow>
+                </msub>
+                <mo>-</mo>
+                <msub>
+                  <mi>AT_Min</mi>
+                  <mrow>
+                    <mi>N</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>3</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <msub>
+                <mi>C</mi>
+                <mi>L</mi>
+              </msub>
+              <mo>[</mo>
+              <mrow>
+                <mfrac>
+                  <mn>1</mn>
+                  <mrow>
+                    <mrow>
+                      <msub>
+                        <mi>k</mi>
+                        <mi>d</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>C</mi>
+                        <mi>L</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>S</mi>
+                        <mrow>
+                          <mi>X</mi>
+                          <mo>&#x2062;</mo>
+                          <mstyle>
+                            <mspace width="0.3em" height="0.3ex"/>
+                          </mstyle>
+                          <mo>&#x2062;</mo>
+                          <msub>
+                            <mn>1</mn>
+                            <mn>0</mn>
+                          </msub>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mi>d</mi>
+                    </msub>
+                  </mrow>
+                </mfrac>
+                <mo>+</mo>
+                <mfrac>
+                  <mrow>
+                    <msub>
+                      <mi>k</mi>
+                      <mi>d</mi>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>C</mi>
+                      <mi>L</mi>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>S</mi>
+                      <mrow>
+                        <mi>X</mi>
+                        <mo>&#x2062;</mo>
+                        <mstyle>
+                          <mspace width="0.3em" height="0.3ex"/>
+                        </mstyle>
+                        <mo>&#x2062;</mo>
+                        <msub>
+                          <mn>1</mn>
+                          <mn>0</mn>
+                        </msub>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                  <msup>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mrow>
+                          <msub>
+                            <mi>k</mi>
+                            <mi>d</mi>
+                          </msub>
+                          <mo>&#x2062;</mo>
+                          <msub>
+                            <mi>C</mi>
+                            <mi>L</mi>
+                          </msub>
+                          <mo>&#x2062;</mo>
+                          <msub>
+                            <mi>S</mi>
+                            <mrow>
+                              <mi>X</mi>
+                              <mo>&#x2062;</mo>
+                              <mstyle>
+                                <mspace width="0.3em" height="0.3ex"/>
+                              </mstyle>
+                              <mo>&#x2062;</mo>
+                              <msub>
+                                <mn>1</mn>
+                                <mn>0</mn>
+                              </msub>
+                            </mrow>
+                          </msub>
+                        </mrow>
+                        <mo>+</mo>
+                        <msub>
+                          <mi>b</mi>
+                          <mi>d</mi>
+                        </msub>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <mn>2</mn>
+                  </msup>
+                </mfrac>
+              </mrow>
+              <mo>]</mo>
+            </mrow>
+          </mrow>
+          <mo>-</mo>
+          <mrow>
+            <mfrac>
+              <mrow>
+                <msub>
+                  <mi>k</mi>
+                  <mi>d</mi>
+                </msub>
+                <mo>&#x2062;</mo>
+                <msubsup>
+                  <mi>C</mi>
+                  <mi>L</mi>
+                  <mn>2</mn>
+                </msubsup>
+                <mo>&#x2062;</mo>
+                <mi>GW</mi>
+              </mrow>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow>
+                      <msub>
+                        <mi>k</mi>
+                        <mi>d</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>C</mi>
+                        <mi>L</mi>
+                      </msub>
+                      <mo>&#x2062;</mo>
+                      <msub>
+                        <mi>S</mi>
+                        <mrow>
+                          <mi>X</mi>
+                          <mo>&#x2062;</mo>
+                          <mstyle>
+                            <mspace width="0.3em" height="0.3ex"/>
+                          </mstyle>
+                          <mo>&#x2062;</mo>
+                          <msub>
+                            <mn>1</mn>
+                            <mn>0</mn>
+                          </msub>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mi>d</mi>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mn>2</mn>
+              </msup>
+            </mfrac>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>S</mi>
+              <mrow>
+                <mi>X</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>25</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0057" num="0056">For output net N<b>4</b> of the involved logic gate X<b>2</b> equation (23) is used:</p>
+<p id="p-0058" num="0057">
+<maths id="MATH-US-00007" num="00007">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>PM</mi>
+          <mrow>
+            <mi>N</mi>
+            <mo>&#x2062;</mo>
+            <mstyle>
+              <mspace width="0.3em" height="0.3ex"/>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mfrac>
+          <mrow>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <msub>
+                  <mi>AT_Max</mi>
+                  <mrow>
+                    <mi>N</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>4</mn>
+                  </mrow>
+                </msub>
+                <mo>-</mo>
+                <msub>
+                  <mi>AT_Min</mi>
+                  <mrow>
+                    <mi>N</mi>
+                    <mo>&#x2062;</mo>
+                    <mstyle>
+                      <mspace width="0.3em" height="0.3ex"/>
+                    </mstyle>
+                    <mo>&#x2062;</mo>
+                    <mn>4</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>C</mi>
+              <mi>L</mi>
+            </msub>
+          </mrow>
+          <mi>d</mi>
+        </mfrac>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>23</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0059" num="0058">Example embodiments for determining and selecting gate configuration from standard cell library and the inventive method for reducing power consumption of an electronic circuit can be implemented as an entirely software embodiment, or an embodiment containing both hardware and software elements. Some example embodiments are implemented in software, which includes but is not limited to firmware, resident software, microcode, etc.</p>
+<p id="p-0060" num="0059">As will be appreciated by one skilled in the art, aspects of the present inventive subject matter may be embodied as a system, method or computer program product. Accordingly, aspects of the present inventive subject matter may take the form of an entirely hardware embodiment, an entirely software embodiment (including firmware, resident software, micro-code, etc.) or an embodiment combining software and hardware aspects that may all generally be referred to herein as a &#x201c;circuit,&#x201d; &#x201c;module&#x201d; or &#x201c;system.&#x201d; Furthermore, aspects of the present inventive subject matter may take the form of a computer program product embodied in one or more computer readable medium(s) having computer readable program code embodied thereon.</p>
+<p id="p-0061" num="0060">Any combination of one or more computer readable medium(s) may be utilized. The computer readable medium may be a computer readable signal medium or a computer readable storage medium. A computer readable storage medium may be, for example, but not limited to, an electronic, magnetic, optical, electromagnetic, infrared, or semiconductor system, apparatus, or device, or any suitable combination of the foregoing. More specific examples (a non-exhaustive list) of the computer readable storage medium would include the following: an electrical connection having one or more wires, a portable computer diskette, a hard disk, a random access memory (RAM), a read-only memory (ROM), an erasable programmable read-only memory (EPROM or Flash memory), an optical fiber, a portable compact disc read-only memory (CD-ROM), an optical storage device, a magnetic storage device, or any suitable combination of the foregoing. In the context of this document, a computer readable storage medium may be any tangible medium that can contain, or store a program for use by or in connection with an instruction execution system, apparatus, or device.</p>
+<p id="p-0062" num="0061">A computer readable signal medium may include a propagated data signal with computer readable program code embodied therein, for example, in baseband or as part of a carrier wave. Such a propagated signal may take any of a variety of forms, including, but not limited to, electro-magnetic, optical, or any suitable combination thereof. A computer readable signal medium may be any computer readable medium that is not a computer readable storage medium and that can communicate, propagate, or transport a program for use by or in connection with an instruction execution system, apparatus, or device.</p>
+<p id="p-0063" num="0062">Program code embodied on a computer readable medium may be transmitted using any appropriate medium, including but not limited to wireless, wireline, optical fiber cable, RF, etc., or any suitable combination of the foregoing.</p>
+<p id="p-0064" num="0063">Computer program code for carrying out operations for aspects of the present inventive subject matter may be written in any combination of one or more programming languages, including an object oriented programming language such as Java, Smalltalk, C++ or the like and conventional procedural programming languages, such as the &#x201c;C&#x201d; programming language or similar programming languages. The program code may execute entirely on the user's computer, partly on the user's computer, as a stand-alone software package, partly on the user's computer and partly on a remote computer or entirely on the remote computer or server. In the latter scenario, the remote computer may be connected to the user's computer through any type of network, including a local area network (LAN) or a wide area network (WAN), or the connection may be made to an external computer (for example, through the Internet using an Internet Service Provider).</p>
+<p id="p-0065" num="0064">Aspects of the present inventive subject matter are described with reference to flowchart illustrations and/or block diagrams of methods, apparatus (systems) and computer program products according to embodiments of the inventive subject matter. It will be understood that each block of the flowchart illustrations and/or block diagrams, and combinations of blocks in the flowchart illustrations and/or block diagrams, can be implemented by computer program instructions. These computer program instructions may be provided to a processor of a general purpose computer, special purpose computer, or other programmable data processing apparatus to produce a machine, such that the instructions, which execute via the processor of the computer or other programmable data processing apparatus, create means for implementing the functions/acts specified in the flowchart and/or block diagram block or blocks.</p>
+<p id="p-0066" num="0065">These computer program instructions may also be stored in a computer readable medium that can direct a computer, other programmable data processing apparatus, or other devices to function in a particular manner, such that the instructions stored in the computer readable medium produce an article of manufacture including instructions which implement the function/act specified in the flowchart and/or block diagram block or blocks.</p>
+<p id="p-0067" num="0066">The computer program instructions may also be loaded onto a computer, other programmable data processing apparatus, or other devices to cause a series of operational steps to be performed on the computer, other programmable apparatus or other devices to produce a computer implemented process such that the instructions which execute on the computer or other programmable apparatus provide processes for implementing the functions/acts specified in the flowchart and/or block diagram block or blocks.</p>
+<p id="p-0068" num="0067">While the embodiments are described with reference to various implementations and exploitations, it will be understood that these embodiments are illustrative and that the scope of the inventive subject matter is not limited to them. In general, techniques for movement reduction as described herein may be implemented with facilities consistent with any hardware system or hardware systems. Many variations, modifications, additions, and improvements are possible.</p>
+<p id="p-0069" num="0068">Plural instances may be provided for components, operations or structures described herein as a single instance. Finally, boundaries between various components, operations and data stores are somewhat arbitrary, and particular operations are illustrated in the context of specific illustrative configurations. Other allocations of functionality are envisioned and may fall within the scope of the inventive subject matter. In general, structures and functionality presented as separate components in the exemplary configurations may be implemented as a combined structure or component. Similarly, structures and functionality presented as a single component may be implemented as separate components. These and other variations, modifications, additions, and improvements may fall within the scope of the inventive subject matter.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08627263-20140107-M00001.NB">
+<img id="EMI-M00001" he="7.79mm" wi="76.20mm" file="US08627263-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08627263-20140107-M00002.NB">
+<img id="EMI-M00002" he="14.14mm" wi="76.20mm" file="US08627263-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00003" nb-file="US08627263-20140107-M00003.NB">
+<img id="EMI-M00003" he="35.98mm" wi="76.20mm" file="US08627263-20140107-M00003.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00004" nb-file="US08627263-20140107-M00004.NB">
+<img id="EMI-M00004" he="6.35mm" wi="76.20mm" file="US08627263-20140107-M00004.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00005" nb-file="US08627263-20140107-M00005.NB">
+<img id="EMI-M00005" he="27.52mm" wi="76.20mm" file="US08627263-20140107-M00005.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00006" nb-file="US08627263-20140107-M00006.NB">
+<img id="EMI-M00006" he="33.87mm" wi="76.20mm" file="US08627263-20140107-M00006.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00007" nb-file="US08627263-20140107-M00007.NB">
+<img id="EMI-M00007" he="6.35mm" wi="76.20mm" file="US08627263-20140107-M00007.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method comprising:
+<claim-text>determining, by a processor, a power consumption for a number of logic gates in an electronic circuit that exceeds a threshold value;</claim-text>
+<claim-text>selecting a logic gate of the number of logic gates to be resized in response to determining the power consumption for the logic gate exceeds the threshold value; and</claim-text>
+<claim-text>determining, from a library, a gate configuration for the logic gate to be resized, the determining the gate configuration to be resized comprising,
+<claim-text>defining at least one variable for the logic gate to be resized, wherein the at least one variable comprises at least one of to be resized and a speed factor of the logic gate to be resized;</claim-text>
+<claim-text>defining at least one net influenced by the logic gate to be resized;</claim-text>
+<claim-text>determining at least one constraint relative to other logic gates of the number of logic gates in the electronic circuit affected by the logic gate to be resized, wherein the at least one constraint comprises timing at an output at the at least one net;</claim-text>
+<claim-text>formulating an objective function, wherein the objective function comprises a formulation of a sum of power metrics at the at least one net influenced by the logic gate to be resized;</claim-text>
+<claim-text>solving the objective function based on the at least one variable and the at least one constraint; and</claim-text>
+<claim-text>selecting the gate configuration from the library for the logic gate to be resized based on the solved objective function.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the determining a gate configuration comprises defining a latest arrival time and an earliest arrival time as variables for the at least one net influenced by the logic gate to be resized.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the at least one constraint comprises a restriction of at least one of a latest arrival time and an earliest arrival time at the output of the at least one net.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the determining a gate configuration comprises:
+<claim-text>identifying involved logic gates among the number of logic gates, the involved logic gates comprising logic gates of the number of logic gates influenced by the logic gate to be resized;</claim-text>
+<claim-text>simplifying the power metrics at output nets of the involved logic gates; and</claim-text>
+<claim-text>linearizing the simplified power metrics at an output net of the logic gate to be resized.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein the at least one variable comprises the drive strength of the logic gate to be resized, wherein the determining a gate configuration comprises,
+<claim-text>outputting the drive strength for the logic gate to be resized as a continuous solution;</claim-text>
+<claim-text>rounding the continuous solution of the drive strength to an available drive strength in the library;</claim-text>
+<claim-text>selecting a gate configuration with the available drive strength in the library for the logic gate to be resized; and</claim-text>
+<claim-text>checking whether the selected gate configuration is breaking the at least one constraint.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00005">claim 5</claim-ref>, wherein the determining a gate configuration comprises:
+<claim-text>responsive to the selected gate configuration breaking the at least one constraint,
+<claim-text>selecting a different gate configuration with a different drive strength; and</claim-text>
+<claim-text>checking whether the selected different gate configuration is breaking the at least one constraint.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein the determining a gate configuration comprises resetting the gate configuration after the selected gate configuration with the available drive strength is breaking the at least one constraint and the selected different gate configuration with the different drive strength is breaking the at least one constraint.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. A computer program product for reducing a power consumption of an electronic circuit, the computer program product comprising:
+<claim-text>a computer readable storage device having computer usable program code embodied therewith, the computer usable program code, when executed by a processor, causes the processor to:
+<claim-text>reduce the power consumption of the electronic circuit using a gate-level design representation, wherein the electronic circuit comprises a number of gates, wherein the electronic circuit comprises at least one logic cone with at least one gate of the number of gates that includes a single output net, wherein representations of the at least one gate are instances of elements from a library, wherein the processor configured to reduce the power consumption of the electronic circuit comprises configuring the processor to:
+<claim-text>determine an upper bound for the power consumption based on calculations of transition metrics and power metrics for each gate of the number of gates in the electronic circuit;</claim-text>
+<claim-text>select at least one gate of the number of gates with the upper bound for a power consumption greater than a threshold value;</claim-text>
+<claim-text>for the at least one selected gate, perform the following operations:
+<claim-text>determine a gate configuration from the library for the at least one selected gate, wherein the processor configured to determine the gate configuration comprises configuring the processor to:</claim-text>
+<claim-text>&#x2003;define at least one variable for the at least one selected gate;</claim-text>
+<claim-text>&#x2003;define at least one net influenced by the at least one selected gate;</claim-text>
+<claim-text>&#x2003;determine at least one constraint relative to other gates of the number of gates in the electronic circuit affected by the at least one selected gate;</claim-text>
+<claim-text>&#x2003;formulate an objective function;</claim-text>
+<claim-text>&#x2003;solve the objective function based on the at least one variable and the at least one constraint;</claim-text>
+<claim-text>&#x2003;select a gate configuration for the at least one selected gate based on the solved objective function; and</claim-text>
+<claim-text>modify the gate-level design representation according to the selected gate configuration.</claim-text>
+</claim-text>
+</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The computer program product of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein a transition metric for the at least one gate is defined as a minimum value between a sum of signal transitions at input nets of the at least one gate and a component dependent on a glitch window defined as a difference between a latest signal arrival time and an earliest signal arrival time at an output net of the at least one gate and an inertial delay of the at least one gate.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The computer program product of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the processor is configured to extract a gate model for each gate of the number of gates of the electronic circuit to evaluate by operations to,
+<claim-text>determine coefficients of delay and slew by a linear regression;</claim-text>
+<claim-text>determine a gate coefficient for each gate based on an average of the coefficients of the delay and the slew;</claim-text>
+<claim-text>set slew parameters of each gate to constant; and</claim-text>
+<claim-text>calculate, after the slew parameters of each gate are set to constant, target coefficients of each gate based on the gate coefficient.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. An apparatus comprising:
+<claim-text>a processor;</claim-text>
+<claim-text>a data processing engine executable on the processor, the data processing engine configured to,
+<claim-text>determine a power consumption for a number of logic gates in an electronic circuit that exceeds a threshold value;</claim-text>
+<claim-text>select a logic gate of the number of logic gates to be resized in response a determination that the power consumption for the logic gate exceeds the threshold value;</claim-text>
+<claim-text>determine, from a library, a gate configuration for the logic gate to be resized, wherein as part of the data processing engine configured to determine the gate configuration, the data processing engine is configured to,
+<claim-text>define at least one variable for the logic gate to be resized, wherein the at least one variable comprises at least one of a drive strength and a speed factor of the logic gate to be resized;</claim-text>
+<claim-text>define at least one net influenced by the logic gate to be resized;</claim-text>
+<claim-text>determine at least one constraint relative to other logic gates of the number of logic gates in the electronic circuit affected by the logic gate to be resized, wherein the at least one constraint comprises timing at an output at the at least one net;</claim-text>
+<claim-text>formulate an objective function, wherein the objective function comprises a formulation of a sum of power metrics at the at least one net influenced by the logic gate to be resized;</claim-text>
+<claim-text>solve the objective function based on the at least one variable and the at least one constraint; and</claim-text>
+<claim-text>select the gate configuration from the library for the logic gate to be resized based on the solved objective function.</claim-text>
+</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The apparatus of <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein, as the part of the data processing engine configured to determine the gate configuration, the data processing engine is configured to define a latest arrival time and an earliest arrival time as variables for the at least one net influenced by the logic gate to be resized.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The apparatus of <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein the at least one constraint comprises a restriction of at least one of a latest arrival time and an earliest arrival time at the output of the at least one net.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The apparatus of <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein, as the part of the data processing engine configured to determine the gate configuration, the data processing engine is configured to,
+<claim-text>identify involved logic gates among the number of logic gates, the involved logic gates comprising logic gates of the number of logic gates influenced by the logic gate to be resized;</claim-text>
+<claim-text>simplify the power metrics at output nets of the involved logic gates; and</claim-text>
+<claim-text>linearize the simplified power metrics at an output net of the logic gate to be resized.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The apparatus of <claim-ref idref="CLM-00014">claim 14</claim-ref>, wherein the at least one variable comprises the drive strength of to be resized, wherein, as the part of the data processing engine configured to determine the gate configuration, the data processing engine is configured to,
+<claim-text>output the drive strength for the logic gate to be resized as a continuous solution;</claim-text>
+<claim-text>round the continuous solution of the drive strength to an available drive strength in the library;</claim-text>
+<claim-text>select a gate configuration with the available drive strength in the library for the logic gate to be resized; and</claim-text>
+<claim-text>check whether the selected gate configuration is breaking the at least one constraint.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The apparatus of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein, as the part of the data processing engine configured to determine the gate configuration, the data processing engine is configured to,
+<claim-text>responsive to the selected gate configuration breaking the at least one constraint,
+<claim-text>select a different gate configuration with a different drive strength; and</claim-text>
+<claim-text>check whether the selected different gate configuration is breaking the at least one constraint. </claim-text>
+</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

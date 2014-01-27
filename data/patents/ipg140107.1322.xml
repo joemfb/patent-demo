@@ -1,0 +1,968 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08622503-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08622503</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13073728</doc-number>
+<date>20110328</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>2010-075748</doc-number>
+<date>20100329</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<us-term-extension>199</us-term-extension>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>B</section>
+<class>41</class>
+<subclass>J</subclass>
+<main-group>29</main-group>
+<subgroup>38</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>347 16</main-classification>
+<further-classification>347 19</further-classification>
+</classification-national>
+<invention-title id="d2e73">Inkjet image forming apparatus, method of designing same and method of improving image formation quality</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5587729</doc-number>
+<kind>A</kind>
+<name>Lee et al.</name>
+<date>19961200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>6755504</doc-number>
+<kind>B2</kind>
+<name>Tee et al.</name>
+<date>20040600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>7530664</doc-number>
+<kind>B2</kind>
+<name>Shimazaki et al.</name>
+<date>20090500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>2005/0028630</doc-number>
+<kind>A1</kind>
+<name>Hagihara</name>
+<date>20050200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>2006/0050096</doc-number>
+<kind>A1</kind>
+<name>Chiwata</name>
+<date>20060300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>2009/0219373</doc-number>
+<kind>A1</kind>
+<name>Tabata et al.</name>
+<date>20090900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>347104</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>JP</country>
+<doc-number>55073560</doc-number>
+<kind>A</kind>
+<date>19800600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>JP</country>
+<doc-number>10-235854</doc-number>
+<kind>A</kind>
+<date>19980900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>JP</country>
+<doc-number>2001-34022</doc-number>
+<kind>A</kind>
+<date>20010200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>JP</country>
+<doc-number>2005-69458</doc-number>
+<kind>A</kind>
+<date>20050300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>JP</country>
+<doc-number>2005-91942</doc-number>
+<kind>A</kind>
+<date>20050400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>JP</country>
+<doc-number>2006-69123</doc-number>
+<kind>A</kind>
+<date>20060300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>JP</country>
+<doc-number>2007-9969</doc-number>
+<kind>A</kind>
+<date>20070100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>10</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>347 16</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>347 19</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>23</number-of-drawing-sheets>
+<number-of-figures>28</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110234697</doc-number>
+<kind>A1</kind>
+<date>20110929</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Sumi</last-name>
+<first-name>Katsuto</first-name>
+<address>
+<city>Kanagawa-ken</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Sumi</last-name>
+<first-name>Katsuto</first-name>
+<address>
+<city>Kanagawa-ken</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Birch, Stewart, Kolasch &#x26; Birch, LLP</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>FUJIFILM Corporation</orgname>
+<role>03</role>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Luu</last-name>
+<first-name>Matthew</first-name>
+<department>2861</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Seo</last-name>
+<first-name>Justin</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">An inkjet image forming apparatus includes: a liquid ejection head having an ejection surface in which a plurality of nozzles are arranged two-dimensionally; a scanning device which conveys at least one of the liquid ejection head and an image formation receiving medium on which liquid ejected from the plurality of nozzles is deposited, to cause relative movement between the image formation receiving medium and the liquid ejection head in a first direction; a motor which is a driving source for driving the scanning device; and a drive force transmission mechanism which transmits drive force generated by the motor to the scanning device, wherein: in a case where rotational non-uniformity can occur Nm times for each revolution of the motor (where Nm is a natural number), and when Pv represents a spatial period representing an amount of the relative movement in the first direction on the image formation receiving medium corresponding to 1/Nm revolution of the motor, and when OSy represents an offset distance in the first direction of a pair of nozzles which form dots that are mutually adjacent in a second direction perpendicular to the first direction on the image formation receiving medium, of the plurality of nozzles arranged two-dimensionally, then relationship of OSy&#x2248;k&#xd7;Pv (where k is a natural number) is satisfied.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="165.35mm" wi="70.44mm" file="US08622503-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="116.67mm" wi="138.68mm" file="US08622503-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="212.51mm" wi="104.14mm" file="US08622503-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="207.60mm" wi="107.10mm" orientation="landscape" file="US08622503-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="192.45mm" wi="144.61mm" file="US08622503-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="239.61mm" wi="161.97mm" orientation="landscape" file="US08622503-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="248.07mm" wi="129.37mm" orientation="landscape" file="US08622503-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="241.81mm" wi="162.31mm" orientation="landscape" file="US08622503-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="238.42mm" wi="140.38mm" orientation="landscape" file="US08622503-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="230.63mm" wi="133.10mm" orientation="landscape" file="US08622503-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="214.12mm" wi="108.71mm" orientation="landscape" file="US08622503-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="236.90mm" wi="130.47mm" file="US08622503-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="192.11mm" wi="142.66mm" file="US08622503-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="105.75mm" wi="126.49mm" file="US08622503-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="240.88mm" wi="169.67mm" file="US08622503-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="243.84mm" wi="164.42mm" file="US08622503-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00016" num="00016">
+<img id="EMI-D00016" he="165.69mm" wi="150.28mm" file="US08622503-20140107-D00016.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00017" num="00017">
+<img id="EMI-D00017" he="198.97mm" wi="125.22mm" orientation="landscape" file="US08622503-20140107-D00017.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00018" num="00018">
+<img id="EMI-D00018" he="245.79mm" wi="102.11mm" orientation="landscape" file="US08622503-20140107-D00018.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00019" num="00019">
+<img id="EMI-D00019" he="239.52mm" wi="168.32mm" orientation="landscape" file="US08622503-20140107-D00019.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00020" num="00020">
+<img id="EMI-D00020" he="249.26mm" wi="154.43mm" orientation="landscape" file="US08622503-20140107-D00020.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00021" num="00021">
+<img id="EMI-D00021" he="250.44mm" wi="102.11mm" orientation="landscape" file="US08622503-20140107-D00021.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00022" num="00022">
+<img id="EMI-D00022" he="244.18mm" wi="169.84mm" orientation="landscape" file="US08622503-20140107-D00022.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00023" num="00023">
+<img id="EMI-D00023" he="244.18mm" wi="140.38mm" orientation="landscape" file="US08622503-20140107-D00023.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0002" num="0001">1. Field of the Invention</p>
+<p id="p-0003" num="0002">The present invention relates to an inkjet image forming apparatus, and more particularly to technology for improving image formation quality (image quality) in an inkjet image forming apparatus based on a single pass method which is equipped with an inkjet head having nozzles in a two-dimensional configuration.</p>
+<p id="p-0004" num="0003">2. Description of the Related Art</p>
+<p id="p-0005" num="0004">In the field of inkjet image formation, an inkjet image formation method (single pass method) is known in which, in order to achieve high image formation resolution and high productivity, head modules comprising a plurality of nozzles arranged in a two-dimensional configuration are formed, a long head (known as a &#x201c;page-wide head&#x201d; or &#x201c;full line type head&#x201d;) which covers an image formation area spanning the entire width of the paper is composed by aligning a plurality of sub-heads which are constituted by the head modules, in the paper width direction (hereinafter, called the &#x201c;x direction&#x201d;), and an image is formed on the paper by performing just one relative scanning action of this long head and the paper in a direction (hereinafter, called the &#x201c;y direction&#x201d;) which is perpendicular to the x direction.</p>
+<p id="p-0006" num="0005">A single-pass composition of this kind employs relative movement of the head and paper (a paper conveyance system which holds and conveys the paper), and therefore the head and the paper are not unified (in a fixed positional relationship) and relative displacement or vibration may occur in directions other than the relative scanning direction (y direction) during the image formation process. The causes of this relative displacement and vibration include, for instance, various mechanical shocks caused internally and externally to the image forming apparatus, displacement caused by the drive system for driving various moving parts including the paper conveyance system, and so on, and such factors manifest themselves as relative vibrations between the head and paper. Of the relative vibration between the head and the paper, the vibration in the x direction in particular generates non-uniformity which causes problems of image quality in a two-dimensional nozzle arrangement.</p>
+<p id="p-0007" num="0006">In relation to relative vibration of the head and the paper, Japanese Patent Application Publication No. 10-235854 discloses technology for reducing image abnormalities (band-shaped &#x201c;vertical stripes&#x201d; extending in the paper conveyance direction (y direction)) which are caused by abnormal ejection dots, by oscillating or moving a head in a direction (x direction) perpendicular to the y direction, in an inkjet apparatus based on a single pass method employing a line head having one-dimensional arrangement of nozzles.</p>
+<p id="p-0008" num="0007">The apparatus composition in Japanese Patent Application Publication No. 10-235854 prevents, due to its one dimensional nozzle arrangement, problems of image quality caused by relative vibration and relative movement of the head and the paper (recording paper) in the x direction and achieves a reduction in non-uniformity by using other nozzles to compensate for recording of missing dots by making active use of the vibration in the x direction. However, in the case of a two-dimensional nozzle arrangement, as described hereinafter, a major problem which is characteristic of a two-dimensional arrangement occurs.</p>
+<heading id="h-0002" level="1">DESCRIPTION OF TECHNICAL PROBLEM</heading>
+<p id="p-0009" num="0008">In a head having a two-dimensional nozzle arrangement, of the pairs of nozzles which form dots that are mutually adjacent in the x direction on the paper (or a raster created by linking dots continuously in the y direction), there are nozzle pairs which are in a positional relationship separated by a distance in the y direction, in the layout of nozzles in the head (such nozzles are called a &#x201c;y-offset adjacent nozzle pair&#x201d; below).</p>
+<p id="p-0010" num="0009">In this case, if there is relative vibration in the x direction between the head and the paper, then the pitch between the rasters recorded by the y-offset adjacent nozzle pair varies depending on the relative vibration. As a result of this, a &#x201c;weighting (overlapping)&#x201d; or &#x201c;gap&#x201d; appears between the dots (adjacent dots in the x direction) which are recorded by the y-offset adjacent nozzle pair, and the extent of this &#x201c;weighting&#x201d; or &#x201c;gap&#x201d; changes in the y direction, producing a non-uniformity which degrades the image quality. In the present specification, density non-uniformity which is caused by relative vibration or displacement in the x direction between the paper and a head having a two-dimensional nozzle arrangement in this way is called &#x201c;vibration non-uniformity&#x201d;.</p>
+<p id="p-0011" num="0010">A phenomenon of this kind is described here by means of the examples in <figref idref="DRAWINGS">FIG. 20</figref> to <figref idref="DRAWINGS">FIG. 25</figref>. <figref idref="DRAWINGS">FIG. 20</figref> is one example of a two-dimensional nozzle arrangement. A black dot &#x201c;&#x2022;&#x201d; in <figref idref="DRAWINGS">FIG. 20</figref> indicates a nozzle position. The horizontal axis represents a position in the x direction and the vertical axis represents a position in the y direction; a nozzle position is represented by coordinates in pixel (pix) units which are determined by the recording resolution.</p>
+<p id="p-0012" num="0011">As shown in <figref idref="DRAWINGS">FIG. 20</figref>, this two-dimensional nozzle layout has two nozzle rows separated in the y direction, and within the same row, nozzles are arranged every other 1 pix (the x-direction nozzle pitch within one row is 2 pix) and the positions of the nozzles belonging to different rows are staggered by 1 pix in the x direction with respect to each other (a so-called staggered matrix configuration). As a result of this, an image formation mode is adopted in which, a raster (scanning line) is formed on the paper every other 1 pix by the nozzle group belonging to the first row, and rasters formed by the nozzle group of the second row are embedded between the rasters formed by the nozzles of the first row. The pitch in the y direction between the first and second rows is called the offset amount of the &#x201c;y-offset adjacent nozzle pair&#x201d; (y-direction offset amount). Here, an example is given in which the y-direction offset amount is 500 pix. If the image formation resolution is 1200 dpi, then 500 pix is 10.6 mm.</p>
+<p id="p-0013" num="0012">Regarding a head having a two-dimensional nozzle arrangement as shown in <figref idref="DRAWINGS">FIG. 20</figref>, <figref idref="DRAWINGS">FIG. 21</figref> shows one example of rasters drawn by respective nozzles in a case where there is relative vibration in the x direction between the head and paper. <figref idref="DRAWINGS">FIG. 21</figref> shows a group of rasters obtained when ejection is started simultaneously from all of the nozzles and continuous ejection is performed at a prescribed droplet ejection frequency while conveying the paper at a uniform speed in the y direction. Furthermore, <figref idref="DRAWINGS">FIG. 22</figref> shows an example of an image actually formed on paper in this case (a solid image; droplet ejection rate 100%). <figref idref="DRAWINGS">FIG. 21</figref> and <figref idref="DRAWINGS">FIG. 22</figref> are examples of a case where the single amplitude (half amplitude) of the relative vibration in the x direction is 5 &#x3bc;m, and the period of the relative vibration is 1000 pix=21.2 mm when converted to a spatial distance on the paper in the y direction.</p>
+<p id="p-0014" num="0013">In <figref idref="DRAWINGS">FIG. 21</figref>, the raster indicated by reference numeral <b>1</b>A is drawn by nozzles belonging to the lower row (first row) in <figref idref="DRAWINGS">FIG. 20</figref>. In <figref idref="DRAWINGS">FIG. 21</figref>, the raster indicated by reference numeral <b>2</b>B is drawn by nozzles belonging to the upper row (second row) in <figref idref="DRAWINGS">FIG. 20</figref>. The raster <b>1</b>A and the raster <b>2</b>B are separated by the equivalent of 500 pix in the y direction. This corresponds to the y-direction offset amount between the lower row nozzle and the upper row nozzle in <figref idref="DRAWINGS">FIG. 20</figref>.</p>
+<p id="p-0015" num="0014">If it is supposed that there is no relative vibration in the x direction between the head and the paper, then the scanning lines (rasters) of the y-offset adjacent nozzle pair are straight lines which extend in perfectly straight fashion in the y direction, and the pitch between the rasters is a uniform value determined by the resolution (for example, a pitch of about 21.2 &#x3bc;m in the case of 1200 dpi resolution).</p>
+<p id="p-0016" num="0015">On the other hand, if there is relative vibration in the x direction between the head and the paper, then the raster of a nozzle of the first row (reference numeral <b>1</b>A) and the raster of a nozzle of the second row (reference numeral <b>2</b>B) fluctuate respectively (see <figref idref="DRAWINGS">FIG. 21</figref>). This fluctuation of the rasters causes variation in the spatial period of the x-direction pitch between mutually adjacent rasters (<b>1</b>A, <b>2</b>B), depending on the position in the paper conveyance direction (y direction).</p>
+<p id="p-0017" num="0016">As a result of this, as shown in <figref idref="DRAWINGS">FIG. 22</figref>, periodic non-uniformity occurs in the resulting image that is formed. More specifically, since the x-direction pitch between rasters which are mutually adjacent in the x direction varies periodically, then a &#x201c;weighting&#x201d; of the adjacent rasters (mutual approach of the rasters) and a &#x201c;gap&#x201d; in the adjacent rasters (distancing of the rasters) are repeated in the y direction, and this appears as a density non-uniformity in the image formation results on the paper.</p>
+<p id="p-0018" num="0017">In <figref idref="DRAWINGS">FIG. 22</figref>, a white-striped region <b>4</b> in which white stripes extending in the y direction are arranged roughly equidistantly in the x direction, and a black region <b>5</b> where the white stripes are interrupted in the y direction and appear darker (more dense) are repeated at &#xbd; of the cycle of the vibration in the y direction (here, 500 pix).</p>
+<p id="p-0019" num="0018">Looking across the white-striped region <b>4</b> in the x direction, a portion where there is a white gap (white stripe) and a portion where there is no white stripe (black portion) are repeated alternately. If the white-striped portions are viewed in further detail, the gaps between white stripes (the thickness of the white stripes) are not uniform in the y direction, but rather become larger in the central portion. If the white-striped region <b>4</b> of this kind is viewed macroscopically, the density is reduced compared to the black region <b>5</b>, and therefore when the image is viewed as a whole, a density non-uniformity is visible in which the density varies in the y direction (dark/light shading is repeated periodically), and therefore image quality declines.</p>
+<p id="p-0020" num="0019">In the description above, an example is given in which nozzles are arranged two-dimensionally in 2 rows (y direction) by N columns (x direction, where N is an integer and N&#x2267;2), but the present problem is not limited to this nozzle arrangement and a similar problem occurs in other two-dimensional nozzle arrangements (for example, an M row&#xd7;N column two-dimensional nozzle arrangement, where M is an integer and M&#x2267;2).</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 23</figref> shows a case of a nozzle layout having 6 rows by N columns. Similarly to <figref idref="DRAWINGS">FIG. 20</figref>, if the half amplitude of the relative vibration is 5 &#x3bc;m, then the period of the relative vibration is 1000 pix=21.2 mm in terms of a y-direction distance on the paper. <figref idref="DRAWINGS">FIG. 24</figref> shows one example of rasters in a case where there is relative vibration in the x direction between the head and the paper, in a head having the nozzle arrangement in <figref idref="DRAWINGS">FIG. 23</figref>, and <figref idref="DRAWINGS">FIG. 25</figref> is an example of an image (solid image) formed in this case.</p>
+<p id="p-0022" num="0021">In the case of the nozzle arrangement shown in <figref idref="DRAWINGS">FIG. 23</figref>, there are a total of six combinations of nozzle rows having nozzles which constitute y-offset adjacent nozzle pairs: the first row and second row, the second row and third row, the third row and fourth row, the fourth row and fifth row, the fifth row and sixth row, and the sixth row and first row. Density non-uniformity occurs due to variation in the pitch between the rasters corresponding to these respective nozzles (see <figref idref="DRAWINGS">FIG. 25</figref>), and of this non-uniformity, the white stripes caused by variation in the pitch between rasters formed by the pair of nozzles which are spaced furthest apart in the y direction (namely, the nozzles of the sixth row and the nozzles of the first row) are most conspicuous and this nozzle pair which have the largest offset amount have the greatest effect on image deterioration.</p>
+<p id="p-0023" num="0022">In this case, as shown in <figref idref="DRAWINGS">FIG. 25</figref>, the white-striped region <b>6</b> and the black region <b>7</b> are repeated at a vibration period (here, 1000 pix) in the y direction. In <figref idref="DRAWINGS">FIG. 22</figref> and <figref idref="DRAWINGS">FIG. 25</figref>, the period of the vibration non-uniformity (white-striped region and black region) varies due to the following reason.</p>
+<p id="p-0024" num="0023">The nozzle arrangement in <figref idref="DRAWINGS">FIG. 22</figref> involves an alignment of two rows as shown in <figref idref="DRAWINGS">FIG. 20</figref>. In this case, there are two sets of &#x201c;y-offset adjacent nozzle pairs&#x201d;, namely, a set of &#x201c;first row nozzle-second row nozzle&#x201d; (hereinafter called &#x201c;A set&#x201d;) and a set of &#x201c;second row nozzle-first row nozzle&#x201d; (hereinafter called &#x201c;B set&#x201d;). A vibration non-uniformity having a vibration period (1000 pix) occurs in the A set nozzle pair and a vibration non-uniformity having a vibration period (1000 pix) occurs in the B set nozzle pair. Since the vibration non-uniformities created by the two sets of nozzle pairs are mutually displaced by 180 degrees in terms of the phase, then the synthesized vibration non-uniformity has a period (500 pix) of &#xbd; of the vibration period (see <figref idref="DRAWINGS">FIG. 21</figref>).</p>
+<p id="p-0025" num="0024">On the other hand, the case shown in <figref idref="DRAWINGS">FIG. 25</figref> corresponds to the nozzle arrangement indicated in <figref idref="DRAWINGS">FIG. 23</figref> (a six-row arrangement), but in this case, the &#x201c;y-offset adjacent nozzle pair&#x201d; is formed by only one set: &#x201c;sixth row nozzle-first row nozzle&#x201d;, and the period of the vibration non-uniformity which appears is the vibration period (1000 pix) only (see <figref idref="DRAWINGS">FIG. 24</figref>).</p>
+<heading id="h-0003" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0026" num="0025">The present invention has been contrived in view of these circumstances, an object thereof being to provide an inkjet image forming apparatus and a method of designing same, and a method of improving image formation quality, whereby it is possible to reduce deterioration in image quality due to density non-uniformity (vibration non-uniformity) caused by relative vibration between a head comprising a two-dimensional nozzle arrangement and an image formation receiving medium (recording paper, or the like).</p>
+<p id="p-0027" num="0026">In order to achieve the aforementioned object, the following modes of the invention are offered for example.</p>
+<p id="p-0028" num="0027">In order to attain an object described above, one aspect of the present invention is directed to an inkjet image forming apparatus comprising: a liquid ejection head having an ejection surface in which a plurality of nozzles are arranged two-dimensionally; a scanning device which conveys at least one of the liquid ejection head and an image formation receiving medium on which liquid ejected from the plurality of nozzles is deposited, to cause relative movement between the image formation receiving medium and the liquid ejection head in a first direction; a motor which is a driving source for driving the scanning device; and a drive force transmission mechanism which transmits drive force generated by the motor to the scanning device, wherein: in a case where rotational non-uniformity can occur Nm times for each revolution of the motor (where Nm is a natural number), and when Pv represents a spatial period representing an amount of the relative movement in the first direction on the image formation receiving medium corresponding to 1/Nm revolution of the motor, and when OSy represents an offset distance in the first direction of a pair of nozzles which form dots that are mutually adjacent in a second direction perpendicular to the first direction on the image formation receiving medium, of the plurality of nozzles arranged two-dimensionally, then relationship of OSy&#x2248;k&#xd7;Pv (where k is a natural number) is satisfied.</p>
+<p id="p-0029" num="0028">In an inkjet image forming apparatus which performs image formation by relative scanning of a liquid ejection head and an image formation receiving medium, a periodic relative vibration may be produced in synchronism with the rotation of a motor, between the liquid ejection head and the image formation receiving medium, as a result of rotational non-uniformity in the motor which is a drive source of the scanning device. If rotational non-uniformity occurs Nm times (where Nm is a natural number) with each one revolution of the motor, then a vibration appears on the image formation receiving medium at a period (Pv) corresponding to 1/Nm revolutions of the motor. On the other hand, in a two-dimensional nozzle arrangement of a liquid ejection head, the distance between nozzles in the first direction of a nozzle pair which form dots that are mutually adjacent in the second direction on the image formation receiving medium is called the offset distance and is represented by &#x201c;OSy&#x201d;. A nozzle pair of this kind is called a &#x201c;first direction offset adjacent nozzle pair&#x201d;.</p>
+<p id="p-0030" num="0029">According to this aspect of the invention, the offset distance OSy of the first direction offset adjacent nozzle pair is generally a natural number multiple of the vibration period (Pv) on the image formation receiving medium which occurs at a period corresponding to the rotational non-uniformity of the motor, and therefore the phase of the vibration causing displacement in the second direction of the dot rows (rasters) recorded on the image formation receiving medium by the nozzle pair is generally matching. Variation in the pitch in the second direction between these dot rows (rasters) is suppressed and kept to a small amount. More specifically, variation in the pitch in the second direction between dots recorded by the nozzle pair is suppressed and vibration non-uniformity is reduced.</p>
+<p id="p-0031" num="0030">If OSy=k&#xd7;Pv is satisfied, then it is possible to suppress vibration non-uniformity more favorably, but a suitable effect can be obtained even if OSy/Pv diverges slightly from k (where k is a natural number). The nearer the value of OSy/Pv to a natural number, the greater the effect in suppressing vibration non-uniformity, whereas the greater the difference between OSy/Pv and a natural number k, the smaller the effect in suppressing vibration non-uniformity.</p>
+<p id="p-0032" num="0031">The scanning device may employ a mode where an image formation receiving medium is conveyed with respect to a stationary liquid ejection head, a mode where a liquid ejection head is moved with respect to a stationary image formation receiving medium, or a mode where both the liquid ejection head and the image formation receiving medium are moved.</p>
+<p id="p-0033" num="0032">Depending on the mode of the two-dimensional nozzle arrangement, there are nozzle pairs having different offset distances, amongst the first direction offset adjacent nozzle pairs, but the present invention does not require the aforementioned relationship to be established in respect of all of the nozzle pairs and a suitable effect in reducing non-uniformity is obtained provided that the aforementioned relationship is satisfied in respect of a portion of the nozzle pairs which have a large effect of vibration non-uniformity.</p>
+<p id="p-0034" num="0033">Desirably, the relationship of |sin {&#x3c0;&#xb7;OSy/Pv}|&#x2266;&#xbc; is satisfied.</p>
+<p id="p-0035" num="0034">As stated above, the effect in suppressing vibration non-uniformity varies depending on the value of OSy/Pv. By satisfying the relationship above, a large effect in reducing vibration non-uniformity is obtained since the half amplitude of the pitch variation of the pitch between dot rows (rasters) that are adjacent in the second direction on the image formation receiving medium can be suppressed to not greater than &#xbd; of the half amplitude Av in the second direction of the relative vibration which occurs with a period corresponding to the pitch of the meshing teeth.</p>
+<p id="p-0036" num="0035">Desirably, a group of the plurality of nozzles arranged two-dimensionally includes the pairs of nozzles having the different offset distances, and the relationship is satisfied, with a maximum value of the different offset distances being taken as OSy.</p>
+<p id="p-0037" num="0036">The greater the offset distance, the greater the effect on vibration non-uniformity, and therefore if at least the maximum value of the offset distance is taken as the value of OSy, then desirably the relationship OSy&#x2248;k&#xd7;Pv or the relationship |sin(&#x3c0;&#xb7;OSy/Pv)|&#x2266;&#xbc; is satisfied.</p>
+<p id="p-0038" num="0037">It is possible that the liquid ejection head is formed by joining together a plurality of head modules each of which has an ejection surface in which a plurality of nozzles are arranged two-dimensionally; and when the offset distance of the pair of nozzles which spans different head modules of the plurality of head modules is represented by OSy_B, the relationship is satisfied by taking OSy_B as OSy.</p>
+<p id="p-0039" num="0038">According to this aspect of the invention, in a mode where one liquid ejection head (head bar) is composed by joining together a plurality of head modules, it is possible to reduce vibration non-uniformity in first direction offset adjacent nozzles pairs which span different modules. This aspect of the invention is especially useful in a composition where head modules are arranged two-dimensionally.</p>
+<p id="p-0040" num="0039">The plurality of head modules may be disposed in a staggered arrangement.</p>
+<p id="p-0041" num="0040">Desirably, the scanning device includes a medium conveyance device which conveys the image formation receiving medium, and the medium conveyance device employs a drum rotation system which holds the image formation receiving medium on a cylindrical surface of a drum and rotates the drum.</p>
+<p id="p-0042" num="0041">Desirably, when a diameter of the drum is represented by Ddr and a speed reduction ratio of the drive force transmission mechanism is represented by R, then Pv which indicates a period of vibration appearing on the image formation receiving medium as a result of rotation of the motor is expressed by Pv=&#x3c0;&#xb7;Ddr&#xb7;R/Nm.</p>
+<p id="p-0043" num="0042">The inkjet image forming apparatus may carry out image formation based on a single pass method such that the relative movement between the image formation receiving medium and the liquid ejection head is caused just once in the first direction by the scanning device to form an image on the image formation receiving medium.</p>
+<p id="p-0044" num="0043">Vibration non-uniformity is a particular problem in a single pass method, and therefore it is effective that this aspect of the present invention is applied to such cases. According to this aspect of the present invention, it is possible to achieve both high image formation quality and high productivity.</p>
+<p id="p-0045" num="0044">In order to attain an object described above, another aspect of the present invention is directed to a method of designing an inkjet image forming apparatus including: a liquid ejection head having an ejection surface in which a plurality of nozzles are arranged two-dimensionally; a scanning device which conveys at least one of the liquid ejection head and an image formation receiving medium on which liquid ejected from the plurality of nozzles is deposited, to cause relative movement between the image formation receiving medium and the liquid ejection head in a first direction; a motor which is a driving source for driving the scanning device; and a drive force transmission mechanism which transmits drive force generated by the motor to the scanning device, wherein: in a case where rotational non-uniformity can occur Nm times for each revolution of the motor (where Nm is a natural number), and when Pv represents a spatial period representing an amount of the relative movement in the first direction on the image formation receiving medium corresponding to 1/Nm revolution of the motor, and when OSy represents an offset distance in the first direction of a pair of nozzles which form dots that are mutually adjacent in a second direction perpendicular to the first direction on the image formation receiving medium, of the plurality of nozzles arranged two-dimensionally, then arrangement of the plurality of nozzles in the liquid ejection head and a speed reduction ratio of the drive force transmission mechanism are specified in such a manner that relationship of OSy&#x2248;k&#xd7;Pv (where k is a natural number) is satisfied.</p>
+<p id="p-0046" num="0045">According to this aspect of the invention, when designing an inkjet image forming apparatus, particular attention is paid to the relationship between the nozzle arrangement in the liquid ejection head (and in particular, the offset distance of the first direction offset adjacent nozzle pairs) and the speed reduction ratio of the drive force transmission mechanism, and the dimensions are adjusted and the members are selected, and the like, so as to satisfy the relationship: OSy&#x2248;k&#xd7;Pv (where k is a natural number). By this means, it is possible to manufacture an inkjet image forming apparatus in which vibration non-uniformity is reduced.</p>
+<p id="p-0047" num="0046">For example, it is possible to create a design which optimizes the speed reduction ratio of the speed reducing system with respect to a certain given nozzle arrangement. Conversely, it is also possible to create a design which optimizes the nozzle arrangement with respect to a drive force transmission mechanism having a certain given speed reduction ratio.</p>
+<p id="p-0048" num="0047">In order to attain an object described above, another aspect of the present invention is directed to a method of improving image formation quality of an inkjet image forming apparatus including: a liquid ejection head having an ejection surface in which a plurality of nozzles are arranged two-dimensionally; a scanning device which conveys at least one of the liquid ejection head and an image formation receiving medium on which liquid ejected from the plurality of nozzles is deposited, to cause relative movement between the image formation receiving medium and the liquid ejection head in a first direction; a motor which is a driving source for driving the scanning device; and a drive force transmission mechanism which transmits drive force generated by the motor to the scanning device, the method comprising the steps of: obtaining information indicating, in a case where rotational non-uniformity can occur Nm times for each revolution of the motor (where Nm is a natural number), a spatial period representing an amount of the relative movement in the first direction on the image formation receiving medium corresponding to 1/Nm revolution of the motor; acquiring information indicating an offset distance in the first direction of a pair of nozzles which form dots that are mutually adjacent in a second direction perpendicular to the first direction on the image formation receiving medium, of the plurality of nozzles arranged two-dimensionally; and modifying a speed reduction ratio of the drive force transmission mechanism in such a manner that relationship of OSy&#x2248;k&#xd7;Pv (where k is a natural number, Pv represents the obtained spatial period and OSy represents the acquired offset distance) is satisfied.</p>
+<p id="p-0049" num="0048">In general, there is little scope for modification in the design of a nozzle arrangement, and in many cases it is easier to change the components or the design of the drive force transmission system. Furthermore, a liquid ejection head is highly expensive compared to gear wheels and other components of a drive force transmission system. Consequently, according to this aspect of the invention, it is possible to improve the effects of vibration non-uniformity in a relatively simple fashion and at low cost, and it is possible to obtain an inkjet image forming apparatus which achieves good image formation quality. The sequence of a first step (step of obtaining information indicating the spatial period) and a second step (step of acquiring information indicating the offset distance) is not limited, and either of the steps can be carried out first.</p>
+<p id="p-0050" num="0049">According to the present invention, it is possible to satisfactorily reduce non-uniformity (vibration non-uniformity) appearing on an image formation receiving medium caused by a two-dimensional nozzle arrangement and rotational non-uniformity of a motor when performing relative scanning of a liquid ejection head and the image formation receiving medium. By this means, it is possible to achieve high image formation quality and high productivity.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0004" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0051" num="0050">A preferred embodiment of this invention as well as other objects and benefits thereof, will be explained in the following with reference to the accompanying drawings, in which like reference characters designate the same or similar parts throughout the figures and wherein:</p>
+<p id="p-0052" num="0051"><figref idref="DRAWINGS">FIG. 1</figref> is an illustrative diagram showing an example of a drive force transmission mechanism between a motor and a drum;</p>
+<p id="p-0053" num="0052"><figref idref="DRAWINGS">FIG. 2</figref> is an illustrative diagram showing a schematic view of rasters in a paper conveyance direction which are recorded by a y-offset adjacent nozzle pair;</p>
+<p id="p-0054" num="0053"><figref idref="DRAWINGS">FIG. 3</figref> is a graph showing an example of a state where the raster pitch D(y) of the y-offset adjacent nozzle pair varies;</p>
+<p id="p-0055" num="0054"><figref idref="DRAWINGS">FIGS. 4A and 4B</figref> are illustrative diagrams showing an example of the relationship between the offset amount of a nozzle pair (OSy), the conditions of the relative vibration period (Pv) and the pitch variation between rasters;</p>
+<p id="p-0056" num="0055"><figref idref="DRAWINGS">FIG. 5</figref> is a diagram showing an example of rasters obtained by applying an embodiment of the present invention to a head having a two-dimensional nozzle arrangement in 2 rows and N columns;</p>
+<p id="p-0057" num="0056"><figref idref="DRAWINGS">FIG. 6</figref> is a diagram showing an example of an image (solid image) formed under the conditions shown in <figref idref="DRAWINGS">FIG. 5</figref>;</p>
+<p id="p-0058" num="0057"><figref idref="DRAWINGS">FIG. 7</figref> is a diagram showing an example of rasters obtained by applying an embodiment of the present invention to a head having a two-dimensional nozzle arrangement in 6 rows and N columns;</p>
+<p id="p-0059" num="0058"><figref idref="DRAWINGS">FIG. 8</figref> is a diagram showing an example of an image (solid image) formed under the conditions shown in <figref idref="DRAWINGS">FIG. 7</figref>;</p>
+<p id="p-0060" num="0059"><figref idref="DRAWINGS">FIG. 9</figref> is a general schematic drawing of an inkjet image forming apparatus relating to an embodiment of the present invention;</p>
+<p id="p-0061" num="0060"><figref idref="DRAWINGS">FIG. 10</figref> is a schematic drawing of a drum rotation mechanism in the inkjet image forming apparatus shown in <figref idref="DRAWINGS">FIG. 9</figref>;</p>
+<p id="p-0062" num="0061"><figref idref="DRAWINGS">FIG. 11</figref> is an enlarged perspective diagram of a drum rotation gear portion employed in an inkjet image forming apparatus according to an embodiment of the invention;</p>
+<p id="p-0063" num="0062"><figref idref="DRAWINGS">FIG. 12</figref> is a schematic drawing showing an enlarged view of a portion of the reducing gear system in the drum rotation mechanism shown in <figref idref="DRAWINGS">FIG. 10</figref>;</p>
+<p id="p-0064" num="0063"><figref idref="DRAWINGS">FIG. 13</figref> is an illustrative diagram showing a schematic diagram of the relationship between the order Nm of rotational non-uniformity of a motor and a vibration period Pv;</p>
+<p id="p-0065" num="0064"><figref idref="DRAWINGS">FIG. 14</figref> is a diagram showing a mode where a toothed belt (timing belt) is used as a further example of a meshing transmission mechanism;</p>
+<p id="p-0066" num="0065"><figref idref="DRAWINGS">FIGS. 15A and 15B</figref> are plan view perspective diagrams showing an example of the composition of an inkjet head;</p>
+<p id="p-0067" num="0066"><figref idref="DRAWINGS">FIGS. 16A and 16B</figref> are diagrams showing examples of a head bar composed by joining together a plurality of head modules;</p>
+<p id="p-0068" num="0067"><figref idref="DRAWINGS">FIG. 17</figref> is a cross-sectional diagram along line <b>17</b>-<b>17</b> in <figref idref="DRAWINGS">FIGS. 15A and 15B</figref>;</p>
+<p id="p-0069" num="0068"><figref idref="DRAWINGS">FIG. 18</figref> is a block diagram showing the composition of a control system of an inkjet image forming apparatus;</p>
+<p id="p-0070" num="0069"><figref idref="DRAWINGS">FIG. 19</figref> is an illustrative diagram of the amount of offset of a y-offset adjacent nozzle pair which spans different head modules;</p>
+<p id="p-0071" num="0070"><figref idref="DRAWINGS">FIG. 20</figref> is a nozzle layout diagram showing an example of a two-dimensional nozzle arrangement comprising 2 rows&#xd7;N columns;</p>
+<p id="p-0072" num="0071"><figref idref="DRAWINGS">FIG. 21</figref> is a diagram showing rasters obtained by an inkjet image forming apparatus which uses the nozzle arrangement in <figref idref="DRAWINGS">FIG. 20</figref>;</p>
+<p id="p-0073" num="0072"><figref idref="DRAWINGS">FIG. 22</figref> is a diagram showing an example of an image (solid image) formed under the conditions shown in <figref idref="DRAWINGS">FIG. 21</figref>;</p>
+<p id="p-0074" num="0073"><figref idref="DRAWINGS">FIG. 23</figref> is a nozzle layout diagram showing an example of a two-dimensional nozzle arrangement comprising 6 rows&#xd7;N columns;</p>
+<p id="p-0075" num="0074"><figref idref="DRAWINGS">FIG. 24</figref> is a diagram showing rasters obtained by an inkjet image forming apparatus which uses the nozzle arrangement in <figref idref="DRAWINGS">FIG. 23</figref>; and</p>
+<p id="p-0076" num="0075"><figref idref="DRAWINGS">FIG. 25</figref> is a diagram showing an example of an image (solid image) formed under the conditions shown in <figref idref="DRAWINGS">FIG. 24</figref>.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0005" level="1">DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS</heading>
+<p id="h-0006" num="0000">Principle of Suppressing Vibration Non-Uniformity According to Embodiments of the Invention</p>
+<p id="p-0077" num="0076">Firstly, the causes of vibration non-uniformity and the corresponding principles of embodiments of the present invention will be described. In the following description, the paper conveyance direction (y direction) corresponds to the &#x201c;first direction&#x201d; and the x direction perpendicular to this corresponds to the &#x201c;second direction&#x201d;.</p>
+<p id="h-0007" num="0000">(1) Causes of Vibration Non-Uniformity</p>
+<p id="p-0078" num="0077">There are following two main causes of vibration non-uniformity.</p>
+<p id="h-0008" num="0000">(1-a) Causes of x Direction Relative Vibration (Main Cause)</p>
+<p id="p-0079" num="0078">In an inkjet image forming apparatus, a motor is used as a source of drive force for a device which causes relative movement of the head and the paper. For example, in the case of an inkjet image forming apparatus based on a drum conveyance method, the rotation of the motor is transmitted to a drum via a drive force transmission system, such as a belt, pulley or gear wheels of various kinds, thus forming a composition which causes the drum to rotate. The ratio of the speed of revolution between the motor and the drum is determined by the gear reduction ratio of the drive force transmission system between the motor and the drum.</p>
+<p id="p-0080" num="0079">Generally, a motor has rotational non-uniformity which is synchronous with one revolution. The &#x201c;rotational non-uniformity&#x201d; referred to here can be regarded as harmonic non-uniformity, such as non-uniformity which occurs once during one revolution caused by the mechanical system of the motor (for example, if the output shaft of the motor is eccentric with respect to the center of rotation), or non-uniformity which occurs twice in one revolution (for example, if the cross-section of the output shaft of the motor is oval-shaped), or non-uniformity which occurs three times in one revolution due to the structure of the motor (for example, a three-phase motor). The order of this (the number of times that non-uniformity occurs in one revolution of the motor) is represented by Nm (a natural number). This rotational non-uniformity is transmitted to the drum via the drive force transmission system, and consequently appears as vibration having a uniform period on the paper (x-direction vibration, y-direction vibration). The vibration in the x-direction of the drum is especially large if using a helical gear wheel as a gear wheel.</p>
+<p id="p-0081" num="0080">The period Pv of the vibration appearing on the paper is determined by the gear reduction ratio R and the drum diameter Ddr, and is expressed by the following Formula.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>Pv=&#x3c0;&#xb7;Ddr R/Nm </i>(<i>Nm</i>:natural number)&#x2003;&#x2003;Formula 1<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0082" num="0081">Here, the symbol &#x201c;&#xb7;&#x201d; in the Formulae represents the multiplication operator (&#xd7;).</p>
+<p id="p-0083" num="0082">The calculation based on Formula 1 is described here briefly with reference to <figref idref="DRAWINGS">FIG. 1</figref>. The rotation transmission mechanism shown in <figref idref="DRAWINGS">FIG. 1</figref> has a structure in which an endless toothed belt <b>28</b> is wound between a pulley <b>16</b> which is fixed to a shaft <b>14</b> of a motor <b>12</b> and a pulley <b>24</b> which is coupled directly to a drum <b>20</b>. If the speed reduction ratio in this transmission mechanism is represented by R (for example, R=1/10), then the drum <b>20</b> performs R revolutions with each revolution of the motor. Since the circumferential length of the drum <b>20</b> is &#x201c;&#x3c0;&#xd7;Ddr&#x201d;, then the amount of movement (in the circumferential direction) of the circumferential surface of the drum for each revolution of the motor is &#x201c;&#x3c0;&#xd7;Ddr&#xd7;R&#x201d;. Since rotational non-uniformity (relative vibration) occurs Nm times with each revolution of the motor, then the vibration period Pv on the circumferential surface of the drum (the spatial period in the circumferential direction of the drum) is a value of (&#x3c0;&#xd7;Ddr&#xd7;R/Nm) derived from dividing &#x201c;&#x3c0;&#xd7;Ddr&#xd7;R&#x201d; by Nm.</p>
+<p id="h-0009" num="0000">(1-b) Relationship Between x-Direction Vibration Period and Nozzle Arrangement (Secondary Cause)</p>
+<p id="p-0084" num="0083">The extent of the x-direction pitch variation &#x394;D(y) between two scanning lines (rasters) recorded by a &#x201c;y-offset adjacent nozzle pair&#x201d; changes depending on the relationship between the y-direction offset amount (which is equivalent to the &#x201c;offset distance&#x201d;) OSy of the &#x201c;y-offset adjacent nozzle pair&#x201d; arising from the nozzle arrangement in the head, and the period Pv of the x-direction relative vibration on the paper (Pv being obtained by converting the period of rotation non-uniformity of the motor to a spatial period in the y direction on the paper).</p>
+<p id="p-0085" num="0084"><figref idref="DRAWINGS">FIG. 2</figref> shows an enlarged schematic view of rasters (scanning lines) in the paper conveyance direction which are recorded by a y-offset adjacent nozzle pair. For the sake of simplicity, in the illustration in <figref idref="DRAWINGS">FIG. 2</figref>, the longitudinal/lateral dimensional ratio is distorted (deformed) in order to emphasize the amount of fluctuation of the rasters.</p>
+<p id="p-0086" num="0085">The horizontal direction in <figref idref="DRAWINGS">FIG. 2</figref> corresponds to the lengthwise direction of the long inkjet head (bar) (called the &#x201c;x direction&#x201d;), and the vertical direction corresponds to the paper conveyance direction (direction of relative movement of the head and the paper, called the &#x201c;y direction&#x201d;). The line R_A having the waveform shown on the left-hand side in <figref idref="DRAWINGS">FIG. 2</figref> indicates a raster produced by one nozzle of a y-offset adjacent nozzle pair (called &#x201c;nozzle A&#x201d; here), and the line R_B having the waveform shown on the right-hand side of <figref idref="DRAWINGS">FIG. 2</figref> indicates a raster produced by the other nozzle of the pair (called &#x201c;nozzle B&#x201d; here). Rasters are recorded by dot rows created by a continuous sequence of dots formed by liquid droplets which are deposited on paper by performing continuous droplet ejection at a uniform cycle (ejection frequency) from the nozzles A and B while conveying the paper at a uniform speed in the y direction. The ejection frequency and the paper conveyance speed are specified on the basis of the image formation resolution in the y direction, and the x-direction distance between the nozzles A and B is specified on the basis of the image formation resolution in the x direction.</p>
+<p id="p-0087" num="0086">As <figref idref="DRAWINGS">FIG. 2</figref> reveals, the raster pitch D(y) between the rasters of the y-offset adjacent nozzle pair changes with the relative vibration between the head and the paper. The amount of change (variation) &#x394;D(y) in this pitch D(y) is expressed as shown below in terms of the y-direction offset amount OSy, the relative vibration period Pv, and the (half) amplitude of the relative vibration in the x direction, Av.</p>
+<p id="p-0088" num="0087">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mtable>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mrow>
+                <mi>&#x394;</mi>
+                <mo>&#x2062;</mo>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mi>D</mi>
+                  <mo>&#x2061;</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>y</mi>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>Av</mi>
+                <mo>&#xb7;</mo>
+                <mrow>
+                  <mo>[</mo>
+                  <mrow>
+                    <mrow>
+                      <mi>sin</mi>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <mo>{</mo>
+                        <mrow>
+                          <mi>&#x3b8;</mi>
+                          <mo>&#x2061;</mo>
+                          <mrow>
+                            <mo>(</mo>
+                            <mi>y</mi>
+                            <mo>)</mo>
+                          </mrow>
+                        </mrow>
+                        <mo>}</mo>
+                      </mrow>
+                    </mrow>
+                    <mo>-</mo>
+                    <mrow>
+                      <mi>sin</mi>
+                      <mo>&#x2062;</mo>
+                      <mrow>
+                        <mo>{</mo>
+                        <mrow>
+                          <mrow>
+                            <mi>&#x3b8;</mi>
+                            <mo>&#x2061;</mo>
+                            <mrow>
+                              <mo>(</mo>
+                              <mi>y</mi>
+                              <mo>)</mo>
+                            </mrow>
+                          </mrow>
+                          <mo>+</mo>
+                          <mrow>
+                            <mn>2</mn>
+                            <mo>&#x2062;</mo>
+                            <mrow>
+                              <mi>&#x3c0;</mi>
+                              <mo>&#xb7;</mo>
+                              <mrow>
+                                <mi>OSy</mi>
+                                <mo>/</mo>
+                                <mi>Pv</mi>
+                              </mrow>
+                            </mrow>
+                          </mrow>
+                        </mrow>
+                        <mo>}</mo>
+                      </mrow>
+                    </mrow>
+                  </mrow>
+                  <mo>]</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mo>=</mo>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mrow>
+                  <mn>2</mn>
+                  <mo>&#xb7;</mo>
+                  <mi>Av</mi>
+                  <mo>&#xb7;</mo>
+                  <mi>sin</mi>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mrow>
+                    <mo>{</mo>
+                    <mrow>
+                      <mrow>
+                        <mo>-</mo>
+                        <mi>&#x3c0;</mi>
+                      </mrow>
+                      <mo>&#xb7;</mo>
+                      <mrow>
+                        <mi>OSy</mi>
+                        <mo>/</mo>
+                        <mi>Pv</mi>
+                      </mrow>
+                    </mrow>
+                    <mo>}</mo>
+                  </mrow>
+                  <mo>&#xb7;</mo>
+                  <mi>cos</mi>
+                </mrow>
+                <mo>&#x2062;</mo>
+                <mrow>
+                  <mo>{</mo>
+                  <mrow>
+                    <mrow>
+                      <mi>&#x3b8;</mi>
+                      <mo>&#x2061;</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mi>y</mi>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                    <mo>+</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mi/>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>&#x3c0;</mi>
+                <mo>&#xb7;</mo>
+                <mrow>
+                  <mi>OSy</mi>
+                  <mo>/</mo>
+                  <mi>Pv</mi>
+                </mrow>
+              </mrow>
+              <mo>}</mo>
+            </mrow>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mi>Formula</mi>
+        <mo>&#x2062;</mo>
+        <mstyle>
+          <mspace width="0.8em" height="0.8ex"/>
+        </mstyle>
+        <mo>&#x2062;</mo>
+        <mn>2</mn>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0089" num="0088">Furthermore, the maximum value &#x394;Dmax of the raster pitch variation is expressed as follows on the basis of Formula 2.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>D</i>max=max|&#x394;<i>D</i>(<i>y</i>)|=2<i>&#xb7;Av</i>&#xb7;|sin {&#x3c0;&#xb7;<i>OSy/Pv}|</i>&#x2003;&#x2003;Formula 3<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0090" num="0089">In Formula 2 and Formula 3, the multiplication symbol (&#xd7;) is written as &#x201c;&#xb7;&#x201d;. Here, &#x394;Dmax is the amplitude of the raster pitch variation, and the value thereof is determined by Av, OSy and Pv. In other words, &#x394;Dmax is a constant component with respect to y (a value which is independent of y). On the other hand, the element &#x201c;cos {&#x3b8;(y)+&#x3c0;&#xb7;OSy/Pv}&#x201d; in Formula 2 is a variable component which varies with y.</p>
+<p id="h-0010" num="0000">Calculation of Formula 2</p>
+<p id="p-0091" num="0090">If there is relative variation between the paper and the head, then the rasters drawn on the paper by a y-offset adjacent nozzle pair in the head fluctuate (undulate) with the period of that relative variation. As a result of this, as shown in <figref idref="DRAWINGS">FIG. 2</figref>, the x-direction pitch D(y) between the rasters varies depending on the position y in the paper conveyance direction (as a function of y).</p>
+<p id="p-0092" num="0091">The position (x-direction position) of the raster recorded by one nozzle A of the y-offset adjacent nozzle pair under consideration varies with a half amplitude Av about the ideal position (reference position x<sub>1</sub>), and therefore this vibration is represented by a triangular function, and when the phase component of the vibration is represented by &#x3b8;(y), the amount of variation &#x394;X<sub>A </sub>in the position X<sub>A </sub>of the raster produced by the nozzle A is expressed as follows as a function of y.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>X</i><sub>A</sub><i>=X</i><sub>A</sub>(<i>y</i>)&#x2212;<i>x</i><sub>1</sub><i>=Av </i>sin {&#x3b8;(<i>y</i>)}&#x2003;&#x2003;Formula 4<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0093" num="0092">Similarly, the position of the raster (x direction position) recorded by the other nozzle B of the y-offset adjacent nozzle pair under consideration varies with a half amplitude Av about the ideal position (reference position x<sub>2</sub>), and furthermore since there is an initial phase difference (2&#x3c0;&#xb7;OSy/Pv) corresponding to the y-direction offset amount OSy between the nozzle A and the nozzle B, then the amount of variation &#x394;X<sub>B </sub>of the position of the raster X<sub>B </sub>produced by nozzle B is expressed as follows as a function of y.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>&#x394;<i>X</i><sub>B</sub><i>=X</i><sub>B</sub>(<i>y</i>)&#x2212;<i>x</i><sub>2</sub>=sin {&#x3b8;(<i>y</i>)+2<i>&#x3c0;&#xb7;OSy/Pv}</i>&#x2003;&#x2003;Formula 5<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0094" num="0093">Therefore, the amount of variation, &#x394;D(y), in the x-direction pitch between the rasters formed by the &#x201c;y-offset adjacent nozzle pair&#x201d; constituted by the nozzle A and nozzle B can be expressed as a difference between the raster variation of nozzle A (&#x394;X<sub>A</sub>) and the raster variation of nozzle B (&#x394;X<sub>B</sub>), and is represented by Formula 2. The formula can be modified by using a product sum formula derived from an addition theorem. Furthermore, in the y-offset adjacent nozzle pair, it is not a fundamental issue which of the nozzles is designated as nozzle A or nozzle B, and a similar theory is established if the relationship between the nozzles is reversed.</p>
+<p id="p-0095" num="0094"><figref idref="DRAWINGS">FIG. 3</figref> is a graph showing an example of a state where the raster pitch D(y) of the y-offset adjacent nozzle pair varies. The horizontal axis indicates the position on the paper in the y direction (y coordinate) and the vertical axis indicates the raster pitch D(y). If there is no relative vibration in the x direction between the head and the paper, then the ideal raster pitch is a specified value D<sub>0 </sub>which is determined by the image formation resolution. For example, if the resolution is 1200 dpi, then D<sub>0</sub>=1 pix=21.2 &#x3bc;m. However, if there is relative vibration in the x direction (vibration period Pv) between the head and the paper, then as shown in <figref idref="DRAWINGS">FIG. 3</figref>, the raster pitch D(y) varies with an amplitude of &#x394;Dmax and a relative vibration period of Pv.</p>
+<p id="p-0096" num="0095">As stated in Formula 3, &#x394;Dmax is a value specified by the relationship between OSy and Pv, and &#x394;Dmax can take a value in the range of 0&#x2266;&#x394;Dmax&#x2266;2Av, depending on the ratio between OSy and Pv (OSy/Pv).</p>
+<p id="p-0097" num="0096">Table 1 shows the relationship between the amplitude of the raster pitch variation, &#x394;Dmax, and the vibration non-uniformity in a case where specific conditions are established between the offset amount OSy of the y-offset adjacent nozzle pair and the period Pv of the relative vibration in the x direction. In Table 1, k represents zero or a positive integer.</p>
+<p id="p-0098" num="0097">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="6">
+<colspec colname="1" colwidth="28pt" align="center"/>
+<colspec colname="2" colwidth="28pt" align="center"/>
+<colspec colname="3" colwidth="42pt" align="center"/>
+<colspec colname="4" colwidth="35pt" align="center"/>
+<colspec colname="5" colwidth="28pt" align="center"/>
+<colspec colname="6" colwidth="56pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="6" rowsep="1">TABLE 1</entry>
+</row>
+<row>
+<entry namest="1" nameend="6" align="center" rowsep="1"/>
+</row>
+<row>
+<entry>Con-</entry>
+<entry/>
+<entry/>
+<entry>sin{&#x3c0; &#xb7;</entry>
+<entry/>
+<entry>Vibration</entry>
+</row>
+<row>
+<entry>dition</entry>
+<entry>OSy/Pv</entry>
+<entry>&#x3c0; &#xb7; OSy/Pv</entry>
+<entry>OSy/Pv]</entry>
+<entry>&#x394;Dmax</entry>
+<entry>Non-Uniformity</entry>
+</row>
+<row>
+<entry namest="1" nameend="6" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="6">
+<colspec colname="1" colwidth="28pt" align="center"/>
+<colspec colname="2" colwidth="28pt" align="center"/>
+<colspec colname="3" colwidth="42pt" align="center"/>
+<colspec colname="4" colwidth="35pt" align="char" char="."/>
+<colspec colname="5" colwidth="28pt" align="center"/>
+<colspec colname="6" colwidth="56pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>[1]</entry>
+<entry>k</entry>
+<entry>k &#xb7; &#x3c0;</entry>
+<entry>0</entry>
+<entry>0</entry>
+<entry>Best or None</entry>
+</row>
+<row>
+<entry>[2]</entry>
+<entry>k + 1/2</entry>
+<entry>(k + 1/2) &#xb7; &#x3c0;</entry>
+<entry>&#xb1;1</entry>
+<entry>2 &#xb7; Av</entry>
+<entry>Worst</entry>
+</row>
+<row>
+<entry namest="1" nameend="6" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0099" num="0098">Condition [1] in Table 1 corresponds to a practical example of the present invention, and indicates the best condition yielding the minimum effect of relative vibration, since the offset amount OSy of the y-offset adjacent nozzle pair is an integral multiple of the vibration period Pv of the x-direction relative vibration (the phases of the variation of the two rasters which are mutually adjacent in the x direction are matching) (see <figref idref="DRAWINGS">FIG. 4A</figref>).</p>
+<p id="p-0100" num="0099">On the other hand, the condition [2] indicated in the bottom part of Table 1 corresponds to a comparative example, and since the offset amount OSy of the y-offset adjacent nozzle pair is (k+&#xbd;) times the vibration period Pv of the x-direction relative vibration, then the phase angle of the variation is displaced by precisely &#x3c0; between the rasters which are mutually adjacent in the x direction. Therefore, the amplitude &#x394;Dmax (half amplitude) of the variation between rasters is twice the amplitude (half amplitude) of the relative vibration Av (see <figref idref="DRAWINGS">FIG. 4B</figref>). In this case, the effects of the relative vibration are emphasized most strongly, and hence the worst conditions are obtained in which vibration non-uniformity is highly conspicuous on the paper.</p>
+<p id="p-0101" num="0100">The examples shown in <figref idref="DRAWINGS">FIG. 21</figref> and <figref idref="DRAWINGS">FIG. 22</figref> correspond to condition [2] in Table 1. <figref idref="DRAWINGS">FIGS. 5 and 6</figref> show the examples of image formation results in a case where the relationship between the relative vibration period Pv and the offset amount OSy corresponds to condition [1] in Table 1 relating to a nozzle arrangement of 2 rows&#xd7;N columns shown in <figref idref="DRAWINGS">FIG. 20</figref>.</p>
+<p id="p-0102" num="0101">Furthermore, <figref idref="DRAWINGS">FIG. 7</figref> and <figref idref="DRAWINGS">FIG. 8</figref> show image formation results in a case corresponding to condition [1] in Table 1, for a nozzle arrangement of 6 rows&#xd7;N columns shown in <figref idref="DRAWINGS">FIG. 23</figref> (<figref idref="DRAWINGS">FIG. 24</figref> and <figref idref="DRAWINGS">FIG. 25</figref> correspond to condition [2] in Table 1).</p>
+<p id="p-0103" num="0102">In <figref idref="DRAWINGS">FIG. 6</figref> and <figref idref="DRAWINGS">FIG. 8</figref> which correspond to the favorable condition [1], it can be seen that the vibration non-uniformity which appears in <figref idref="DRAWINGS">FIG. 22</figref> and <figref idref="DRAWINGS">FIG. 25</figref> is reduced. For the purpose of comparison, the half amplitude of the relative vibration is the same value of 5 &#x3bc;m here, and the period of the relative vibration is 500 pix=10.6 mm.</p>
+<p id="h-0011" num="0000">(2) Method of Resolving Vibration Non-Uniformity</p>
+<p id="p-0104" num="0103">There are limitations on the extent to which the amount of vibration of the sources of vibration which are principal causes of the vibration non-uniformity can be reduced, because of the system/configuration of the motor. Therefore, vibration non-uniformity is reduced by optimizing the relationship between the vibration period and the nozzle arrangement which is a subsidiary cause. More specifically, the apparatus is composed in such a manner that the relationship between the vibration period Pv on the paper corresponding to the period of rotation non-uniformity of the motor (for example, Pv=&#x3c0;&#xb7;Ddr&#xb7;R/Nm of Formula 1) and the offset amount OSy of the &#x201c;y-offset adjacent nozzle pair&#x201d; which is determined by the nozzle arrangement in the head assumes the condition [1] in Table 1 or a condition approximating same.</p>
+<p id="p-0105" num="0104">In other words, the apparatus is composed in such a manner that the relationship in Relationship 1 below is satisfied.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>OSy&#x2248;k&#xd7;Pv </i>(where <i>k </i>is a natural number)&#x2003;&#x2003;Relationship 1<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0106" num="0105">The vibration period Pv can also be expressed by a period on the paper corresponding to 1/Nm revolutions of the motor (where Nm is a natural number).</p>
+<p id="p-0107" num="0106">From Formula 3, &#x394;Dmax can take a value from 0 to 2Av. The extent of the effect in reducing non-uniformity varies depending on the value of &#x394;Dmax, and the smaller the value of &#x394;Dmax, the greater the extent to which deterioration of the image quality caused by non-uniformity is suppressed. Considering the fact that the x-direction amplitude of the relative vibration produced at the period corresponding to 1/Nm revolutions of the motor is Av, then from the viewpoint of obtaining an effect in reducing vibration non-uniformity to a desirable and practicable level, preferably, &#x394;Dmax is not greater than Av/2 and more desirably, not greater than Av/4.</p>
+<p id="p-0108" num="0107">In other words, from Formula 3, it is desirable to satisfy Relationship 2 below.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>|sin {&#x3c0;&#xb7;<i>OSy/Pv}|&#x2266;</i>&#xbc;&#x2003;&#x2003;Relationship 2<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0109" num="0108">More desirably, Relationship 3 indicated below is satisfied.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>|sin {&#x3c0;&#xb7;<i>OSy/Pv}|&#x2266;</i>&#x215b;&#x2003;&#x2003;Relationship 3<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0110" num="0109">In the case of the nozzle arrangement of 2 rows by N columns illustrated in <figref idref="DRAWINGS">FIG. 20</figref>, the offset amount OSy of the y-offset adjacent nozzle pair is a uniform value, but there are also cases where the offset amount of the y-offset adjacent nozzle pair is a different value, as in the nozzle arrangement of 6 rows by N columns shown in <figref idref="DRAWINGS">FIG. 23</figref>. In other words, the offset amount between the nozzles of the first row (bottommost row) and the nozzles of the second row is 100 pix, and the offset amounts between the second row and the third row, the third row and the fourth row, and the fourth row and the fifth row are respectively 100 pix, but the offset amount between the sixth row and the first row is 500 pix.</p>
+<p id="p-0111" num="0110">If there are y-offset adjacent nozzle pairs which have different offset amounts in this way, then it is not absolutely necessary to adopt a composition which satisfies Relationship 1, Relationship 2 or Relationship 3 in respect of all of the different offset amounts. The greater the offset amount of the nozzle pair, the greater their effect on vibration non-uniformity, and therefore a suitable effect is obtained provided that a composition is adopted whereby Relationship 1, 2, or 3 is satisfied in respect of the maximum value of the offset amount at least. In actual practice, in the case of the nozzle arrangement in <figref idref="DRAWINGS">FIG. 23</figref>, a sufficient effect in improving image quality is observed if the Relationship 1, 2 or 3 is satisfied by taking OSy to be the offset amount (=500 pix) of the nozzle pair constituted by a nozzle of the first row (bottommost row) and a nozzle of the sixth row (uppermost row) which form adjacent dots in the x direction.</p>
+<p id="h-0012" num="0000">Example of Composition of Inkjet Image Forming Apparatus</p>
+<p id="p-0112" num="0111"><figref idref="DRAWINGS">FIG. 9</figref> is a general schematic drawing showing an example of the composition of an inkjet image forming apparatus relating to an embodiment of the present invention. <figref idref="DRAWINGS">FIG. 10</figref> is a schematic drawing of a drum rotation drive mechanism which is provided on a side face on the opposite side to <figref idref="DRAWINGS">FIG. 9</figref>. As shown in these drawings, the inkjet image forming apparatus <b>100</b> according to the present embodiment principally includes a paper supply unit <b>112</b>, a treatment liquid deposition unit (pre-coating unit) <b>114</b>, an image formation unit <b>116</b>, a drying unit <b>118</b>, a fixing unit <b>120</b> and a paper output unit <b>122</b>. The inkjet image forming apparatus <b>100</b> is an inkjet image forming apparatus using a single pass method which forms a desired color image by ejecting droplets of inks of a plurality of colors from long inkjet heads <b>172</b>M, <b>172</b>K, <b>172</b>C and <b>172</b>Y onto a recording medium <b>124</b> (also called &#x201c;paper&#x201d; below for the sake of convenience) held on a pressure drum (image formation drum <b>170</b>) of the image formation unit <b>116</b>. The inkjet recording apparatus <b>100</b> is an image forming apparatus of an on-demand type employing a two-liquid reaction (aggregation) method in which an image is formed on a recording medium <b>124</b> by depositing a treatment liquid (here, an aggregating treatment liquid) on the recording medium <b>124</b> before ejecting droplets of ink, and causing the treatment liquid and ink liquid to react together.</p>
+<p id="h-0013" num="0000">Paper Supply Unit</p>
+<p id="p-0113" num="0112">The paper supply unit <b>112</b> has a mechanism for supplying a recording medium <b>124</b> to the treatment liquid deposition unit <b>114</b>, and recording media <b>124</b> (corresponding to &#x201c;image formation receiving media&#x201d;), which are cut sheet paper, are stacked in the paper supply unit <b>112</b>. A paper supply tray <b>150</b> is provided in the paper supply unit <b>112</b>, and the recording medium <b>124</b> is supplied one sheet at a time to the treatment liquid deposition unit <b>114</b> from the paper supply tray <b>150</b>. It is possible to use recording media <b>124</b> of a plurality of types having different materials and dimensions (paper size) as the recording medium <b>124</b>. It is also possible to use a mode in which a plurality of paper trays (not illustrated) for respectively and separately stacking recording media of different types are provided in the paper supply unit <b>112</b>, and the paper supplied to the paper supply tray <b>150</b> among these plurality of paper trays is switched automatically, or a mode in which the operator selects the paper tray or replaces the paper tray according to requirements. In the present embodiment, cut sheet paper (cut paper) is used as the recording medium <b>124</b>, but it is also possible to adopt a composition in which paper is supplied from a continuous roll (rolled paper) and is cut to the required size.</p>
+<p id="h-0014" num="0000">Treatment Liquid Deposition Unit</p>
+<p id="p-0114" num="0113">The treatment liquid deposition unit <b>114</b> is a mechanism which deposits treatment liquid onto a recording surface of the recording medium <b>124</b>. The treatment liquid includes a coloring material aggregating agent which aggregates the coloring material (in the present embodiment, the pigment) in the ink deposited by the image formation unit <b>116</b>, and the separation of the ink into the coloring material and the solvent is promoted due to the treatment liquid and the ink making contact with each other.</p>
+<p id="p-0115" num="0114">The treatment liquid deposition unit <b>114</b> includes a paper supply drum <b>152</b>, a treatment liquid drum <b>154</b> and a treatment liquid application apparatus <b>156</b>. The treatment liquid drum <b>154</b> is a drum which holds the recording medium <b>124</b> and conveys the medium so as to rotate. The treatment liquid drum <b>154</b> includes a hook-shaped gripping device (gripper) <b>155</b> provided on the outer circumferential surface thereof, and is devised in such a manner that the leading end of the recording medium <b>124</b> can be held by gripping the recording medium <b>124</b> between the hook of the holding device <b>155</b> and the circumferential surface of the treatment liquid drum <b>154</b>. The treatment liquid drum <b>154</b> may include suction holes provided in the outer circumferential surface thereof, and be connected to a suctioning device which performs suctioning via the suction holes. By this means, it is possible to hold the recording medium <b>124</b> tightly against the circumferential surface of the treatment liquid drum <b>154</b>.</p>
+<p id="p-0116" num="0115">A treatment liquid application apparatus <b>156</b> is provided opposing the circumferential surface of the treatment liquid drum <b>154</b>, to the outside of the drum. The treatment liquid application apparatus <b>156</b> includes a treatment liquid vessel in which treatment liquid is stored, an anilox roller which is partially immersed in the treatment liquid in the treatment liquid vessel, and a rubber roller which transfers a dosed amount of the treatment liquid to the recording medium <b>124</b>, by being pressed against the anilox roller and the recording medium <b>124</b> on the treatment liquid drum <b>154</b>. According to this treatment liquid application apparatus <b>156</b>, it is possible to apply treatment liquid to the recording medium <b>124</b> while dosing the amount of the treatment liquid.</p>
+<p id="p-0117" num="0116">In the present embodiment, a composition is described which uses a roller-based application method, but the method is not limited to this, and it is also possible to employ various other methods, such as a spray method, an inkjet method, or the like.</p>
+<p id="p-0118" num="0117">The recording medium <b>124</b> onto which the treatment liquid has been deposited by the treatment liquid deposition unit <b>114</b> is transferred from the treatment liquid drum <b>154</b> to the image formation drum <b>170</b> of the image formation unit <b>116</b> via the intermediate conveyance unit <b>126</b>.</p>
+<p id="h-0015" num="0000">Image Formation Unit</p>
+<p id="p-0119" num="0118">The image formation unit <b>116</b> includes an image formation drum (also called an &#x201c;imaging drum&#x201d; or &#x201c;jetting drum&#x201d;) <b>170</b>, a paper pressing roller <b>174</b>, and inkjet heads <b>172</b>M, <b>172</b>K, <b>172</b>C and <b>172</b>Y. Similarly to the treatment liquid drum <b>154</b>, the image formation drum <b>170</b> includes a hook-shaped holding device (gripper) <b>171</b> on the outer circumferential surface of the drum. The recording medium <b>124</b> held on the image formation drum <b>170</b> is conveyed with the recording surface thereof facing to the outer side, and ink is deposited onto this recording surface from the inkjet heads <b>172</b>M, <b>172</b>K, <b>172</b>C and <b>172</b>Y.</p>
+<p id="p-0120" num="0119">The inkjet heads <b>172</b>M, <b>172</b>K, <b>172</b>C and <b>172</b>Y are each full-line type inkjet recording heads (inkjet heads) having a length corresponding to the maximum width of the image forming region on the recording medium <b>124</b>, and a nozzle row (a two-dimensionally arranged nozzle row) of nozzles for ejecting ink arranged throughout the whole width of the image forming region is formed in the ink ejection surface of each head. The inkjet heads <b>172</b>M, <b>172</b>K, <b>172</b>C and <b>172</b>Y are disposed so as to each extend in a direction perpendicular to the conveyance direction of the recording medium <b>124</b> (the direction of rotation of the image formation drum <b>170</b>).</p>
+<p id="p-0121" num="0120">When droplets of the corresponding colored inks are ejected from the inkjet heads <b>172</b>M, <b>172</b>K, <b>172</b>C and <b>172</b>Y toward the recording surface of the recording medium <b>124</b> which is held tightly on the image formation drum <b>170</b>, the ink makes contact with the treatment liquid which has previously been deposited onto the recording surface by the treatment liquid deposition unit <b>114</b>, the coloring material (pigment) dispersed in the ink is aggregated, and a coloring material aggregate is thereby formed. By this means, flowing of coloring material, and the like, on the recording medium <b>124</b> is prevented and an image is formed on the recording surface of the recording medium <b>124</b>.</p>
+<p id="p-0122" num="0121">Although the configuration with the CMYK four standard colors is described in the present embodiment, combinations of the ink colors and the number of colors are not limited to those. Light inks, dark inks or special color inks can be added as required. For example, a configuration is possible in which inkjet heads for ejecting light-colored inks such as light cyan and light magenta are added. Furthermore, there are no particular restrictions on the sequence in which the heads of respective colors are arranged.</p>
+<p id="p-0123" num="0122">The recording medium <b>124</b> onto which an image has been formed in the image formation unit <b>116</b> is transferred from the image formation drum <b>170</b> to the drying drum <b>176</b> of the drying unit <b>118</b> via the intermediate conveyance unit <b>128</b>.</p>
+<p id="h-0016" num="0000">Drying Unit</p>
+<p id="p-0124" num="0123">The drying unit <b>118</b> is a mechanism which dries the water content contained in the solvent which has been separated by the action of aggregating the coloring material, and as shown in <figref idref="DRAWINGS">FIG. 9</figref>, includes a drying drum (also called a &#x201c;drying cylinder&#x201d;) <b>176</b> and a solvent drying apparatus <b>178</b>. Similarly to the treatment liquid drum <b>154</b>, the drying drum <b>176</b> includes a hook-shaped holding device (gripper) <b>177</b> provided on the outer circumferential surface of the drum, in such a manner that the leading end of the recording medium <b>124</b> can be held by the holding device <b>177</b>.</p>
+<p id="p-0125" num="0124">The solvent drying apparatus <b>178</b> is disposed in a position opposing the outer circumferential surface of the drying drum <b>176</b>, and includes a plurality of halogen heaters <b>180</b> and hot air spraying nozzles <b>182</b> disposed respectively between the halogen heaters <b>180</b>.</p>
+<p id="p-0126" num="0125">It is possible to achieve various drying conditions, by suitably adjusting the temperature and air flow volume of the hot air flow which is blown from the hot air flow spraying nozzles <b>182</b> toward the recording medium <b>124</b>, and the temperatures of the respective halogen heaters <b>180</b>.</p>
+<p id="p-0127" num="0126">Furthermore, the surface temperature of the drying drum <b>176</b> is set to not less than 50&#xb0; C. By heating from the rear surface of the recording medium <b>124</b>, drying is promoted and breaking of the image during fixing can be prevented. There are no particular restrictions on the upper limit of the surface temperature of the drying drum <b>176</b>, but from the viewpoint of the safety (skin burn protection) of maintenance operations such as cleaning the ink adhering to the surface of the drying drum <b>176</b>, desirably, the surface temperature of the drying drum <b>176</b> is not greater than 75&#xb0; C. (and more desirably, not greater than 60&#xb0; C.).</p>
+<p id="p-0128" num="0127">By holding the recording medium <b>124</b> on the outer circumferential surface of the drying drum <b>176</b> in such a manner that the recording surface the recording medium <b>124</b> is facing outwards (in other words, in a state where the recording surface of the recording medium <b>124</b> is curved in a convex shape), and drying while conveying the recording medium in rotation, it is possible to prevent the occurrence of wrinkles or floating up of the recording medium <b>124</b>, and therefore drying non-uniformities caused by these phenomena can be prevented reliably.</p>
+<p id="p-0129" num="0128">The recording medium <b>124</b> on which a drying process has been carried out in the drying unit <b>118</b> is transferred from the drying drum <b>176</b> to the fixing drum <b>184</b> of the fixing unit <b>120</b> via the intermediate conveyance unit <b>130</b>.</p>
+<p id="h-0017" num="0000">Fixing Unit</p>
+<p id="p-0130" num="0129">The fixing unit <b>120</b> includes a fixing drum (or a fixing cylinder) <b>184</b>, a halogen heater <b>186</b>, a fixing roller <b>188</b> and an in-line sensor <b>190</b>. Similarly to the treatment liquid drum <b>154</b>, the fixing drum <b>184</b> includes a hook-shaped holding device (gripper) <b>185</b> provided on the outer circumferential surface of the drum, in such a manner that the leading end of the recording medium <b>124</b> can be held by the holding device <b>185</b>.</p>
+<p id="p-0131" num="0130">By means of the rotation of the fixing drum <b>184</b>, the recording medium <b>124</b> is conveyed with the recording surface facing to the outer side, and preliminary heating by the halogen heater <b>186</b>, a fixing process by the fixing roller <b>188</b> and inspection by the in-line sensor <b>190</b> are carried out in respect of the recording surface.</p>
+<p id="p-0132" num="0131">The halogen heater <b>186</b> is controlled to a prescribed temperature (for example, 180&#xb0; C.). By this means, preliminary heating of the recording medium <b>124</b> is carried out.</p>
+<p id="p-0133" num="0132">The fixing roller <b>188</b> is a roller member for melting self-dispersing polymer micro-particles contained in the ink and thereby causing the ink to form a film, by applying heat and pressure to the dried ink, and is composed so as to heat and pressurize the recording medium <b>124</b>. More specifically, the fixing roller <b>188</b> is disposed so as to press against the fixing drum <b>184</b> in such a manner that a nip is created between the fixing roller and the fixing drum <b>184</b> (i.e. the fixing roller serves as a nip roller). By this means, the recording medium <b>124</b> is sandwiched between the fixing roller <b>188</b> and the fixing drum <b>184</b> and is nipped with a prescribed nip pressure (for example, 0.15 MPa), whereby a fixing process is carried out.</p>
+<p id="p-0134" num="0133">Furthermore, the fixing roller <b>188</b> is constituted by a heated roller formed by a pipe of metal having good thermal conductivity, such as aluminum, which internally incorporates a halogen lamp, and is controlled to a prescribed temperature (for example, 60&#xb0; C. to 80&#xb0; C.). By heating the recording medium <b>124</b> by means of this heating roller, thermal energy equal to or greater than the Tg temperature (glass transition temperature) of the latex contained in the ink is applied and the latex particles are thereby caused to melt. By this means, fixing is performed by pressing the latex particles into the undulations in the recording medium <b>124</b>, as well as leveling the undulations in the image surface and obtaining a glossy finish.</p>
+<p id="p-0135" num="0134">In the embodiment shown in <figref idref="DRAWINGS">FIG. 9</figref>, only one fixing roller <b>188</b> is provided, but it is also possible to provide fixing rollers in a plurality of stages, in accordance with the thickness of the image layer and the Tg characteristics of the latex particles.</p>
+<p id="p-0136" num="0135">On the other hand, the in-line sensor <b>190</b> is a measurement device for measuring an ejection defect checking pattern, the image density, image defects, or the like (including a test pattern, and the like) with respect to an image which has been recorded on the recording medium <b>124</b>; a CCD line sensor, or the like, is employed for the in-line sensor <b>190</b>.</p>
+<p id="p-0137" num="0136">According to the fixing unit <b>120</b> having the composition described above, the latex particles in the thin image layer formed by the drying unit <b>118</b> are heated, pressurized and melted by the fixing roller <b>188</b>, and hence the image layer can be fixed to the recording medium <b>124</b>. Furthermore, the surface temperature of the fixing drum <b>184</b> is set to not less than 50&#xb0; C. Drying is promoted by heating the recording medium <b>124</b> held on the outer circumferential surface of the fixing drum <b>184</b> from the rear surface, and therefore breaking of the image during fixing can be prevented, and furthermore, the strength of the image can be increased by the effects of the increased temperature of the image.</p>
+<p id="p-0138" num="0137">Instead of an ink which includes a high-boiling-point solvent and polymer micro-particles (thermoplastic resin particles), it is also possible to include a monomer which can be polymerized and cured by exposure to UV light. In this case, the inkjet recording apparatus <b>100</b> includes a UV exposure unit for exposing the ink on the recording medium <b>124</b> to UV light, instead of the heat and pressure fixing unit (fixing roller <b>188</b>) based on a heat roller. In this way, if using an ink containing an active light-curable resin, such as an ultraviolet-curable resin, a device which irradiates the active light, such as a UV lamp or an ultraviolet LD (laser diode) array, is provided instead of the fixing roller <b>188</b> for heat fixing.</p>
+<p id="h-0018" num="0000">Paper Output Unit</p>
+<p id="p-0139" num="0138">As shown in <figref idref="DRAWINGS">FIG. 9</figref>, a paper output unit <b>122</b> is provided subsequently to the fixing unit <b>120</b>. The paper output unit <b>122</b> includes an output tray <b>192</b>, and a transfer drum <b>194</b>, a conveyance belt <b>196</b> and a tensioning roller <b>198</b> are provided between the output tray <b>192</b> and the fixing drum <b>184</b> of the fixing unit <b>120</b> so as to oppose same. The recording medium <b>124</b> is sent to the conveyance belt <b>196</b> by the transfer drum <b>194</b> and output to the output tray <b>192</b>. The details of the paper conveyance mechanism created by the conveyance belt <b>196</b> are not shown, but the leading end portion of a recording medium <b>124</b> after printing is held by a gripper on a bar (not illustrated) spanned across the endless conveyance belt <b>196</b>, and the recording medium is conveyed above the output tray <b>192</b> due to the rotation of the conveyance belts <b>196</b>.</p>
+<p id="p-0140" num="0139">Furthermore, although not shown in <figref idref="DRAWINGS">FIG. 9</figref>, the inkjet image forming apparatus <b>100</b> according to the present embodiment includes, in addition to the composition described above, an ink storing and loading unit which supplies ink to the inkjet heads <b>172</b>M, <b>172</b>K, <b>172</b>C and <b>172</b>Y, and a device which supplies treatment liquid to the treatment liquid deposition unit <b>114</b>, as well as including a head maintenance unit which carries out cleaning (nozzle surface wiping, purging, nozzle suctioning, and the like) of the inkjet heads <b>172</b>M, <b>172</b>K, <b>172</b>C and <b>172</b>Y, a position determination sensor which determines the position of the recording medium <b>124</b> in the paper conveyance path, temperature sensors which determine the temperature of the respective units of the apparatus, and the like.</p>
+<p id="h-0019" num="0000">Rotation Drive Mechanism of Drum (Cylinder)</p>
+<p id="p-0141" num="0140">As shown in <figref idref="DRAWINGS">FIG. 10</figref>, the inkjet image forming apparatus <b>100</b> includes a motor (corresponding to a &#x201c;drive force generating device&#x201d;, called a &#x201c;drum rotation motor&#x201d; below) <b>202</b>, as a source of drive force. The drive force of the drum rotation motor <b>202</b> is transmitted to a pulley <b>206</b> via a timing belt (an endless toothed belt) <b>204</b>. A gear wheel <b>208</b> is coupled coaxially in an integrated fashion to the pulley <b>206</b>, and the gear wheel <b>208</b> is rotated together with the pulley <b>206</b>. A gear wheel <b>210</b> which meshes with this gear wheel <b>208</b> is provided on the upper left-hand side of the gear wheel <b>208</b> in <figref idref="DRAWINGS">FIG. 10</figref>, and the gear wheel <b>210</b> meshes (engages) with a gear wheel <b>214</b> which is coupled directly to the end portion of a treatment liquid drum <b>154</b> in the pre-coating unit (treatment liquid deposition unit <b>114</b>). The gear wheel <b>214</b> of the treatment liquid drum <b>154</b> meshes with a gear wheel <b>216</b> which is provided on an end portion of a transfer drum which constitutes the intermediate conveyance unit <b>126</b>, and this gear wheel <b>216</b> meshes with a gear wheel <b>220</b> which is provided on an end portion of the image formation drum <b>170</b> in the image formation unit <b>116</b>. Therefore, the gear wheel <b>220</b> meshes with a gear wheel <b>222</b> of the transfer drum which constitutes the intermediate conveyance unit <b>128</b>, and also a gear wheel <b>224</b> of the drying drum <b>176</b>, a gear wheel <b>226</b> of a transfer drum of the intermediate conveyance unit <b>130</b>, and a gear wheel <b>228</b> of the fixing drum <b>184</b> meshes successively with each other.</p>
+<p id="p-0142" num="0141">The respective gear wheels <b>214</b> to <b>228</b> are drum rotating gears, and form a mutually coupled structure. The drive force of the drum rotation motor <b>202</b> is transmitted to the gear wheels <b>214</b> to <b>228</b> via the timing belt <b>204</b>, the pulley <b>206</b>, and the gear wheels <b>208</b> and <b>210</b>, and all of the drums (<b>154</b>, <b>170</b>, <b>176</b> and <b>184</b>) and the transfer drums of the intermediate conveyance units (<b>126</b>, <b>128</b>, <b>130</b>) are caused to rotate by the coupled action of these gear wheels <b>214</b> to <b>228</b>. In the case of the present embodiment, the diameters of the drums (<b>154</b>, <b>170</b>, <b>176</b>, <b>184</b>) and the transfer drums, and the diameters of the gear wheels <b>214</b> to <b>228</b> (diameter of pitch circle) are matching, and when the treatment liquid drum <b>154</b> performs one revolution, the image formation drum <b>170</b>, the drying drum <b>176</b> and the fixing drum <b>184</b> also perform one revolution.</p>
+<p id="p-0143" num="0142"><figref idref="DRAWINGS">FIG. 11</figref> is an enlarged diagram of a drum rotation gear section which causes the image formation drum <b>170</b> to rotate. As shown in <figref idref="DRAWINGS">FIG. 10</figref>, helical gears are used for the gear wheels of the drive transmission member. It is possible to use spur gears for the gear wheels, but in order to achieve a smooth transmission of the drive force, it is desirable to use helical gears (see <figref idref="DRAWINGS">FIG. 10</figref>), or double helical gears (herringbone gear, not illustrated). A helical gear wheel has obliquely formed teeth and is able to achieve smooth transmission of drive force. A double helical gear wheel has a benefit in that the force in the thrust direction can be reduced in comparison with a helical gear, but costs more than a helical gear. Consequently, in the present embodiment, a helical gear is used from the viewpoint of achieving both low costs and smooth transmission of drive force. A helical gear may be more liable to produce vibration in the x direction compared to a spur gear, and the present invention can be effectively applied as a technology for suppressing vibration non-uniformity caused by relative vibration in the x direction.</p>
+<p id="p-0144" num="0143">A composition is adopted whereby the relationship between the drum rotation motor <b>202</b> and the drive force transmission mechanism shown in <figref idref="DRAWINGS">FIG. 9</figref> to <figref idref="DRAWINGS">FIG. 11</figref> and the nozzle arrangement of the inkjet heads <b>172</b>M, <b>172</b>K, <b>172</b>C, <b>172</b>Y satisfies Relationship 1, 2 or 3.</p>
+<p id="h-0020" num="0000">Speed Reduction Ratio R Between Motor and Drum and Vibration Period Pv on Paper</p>
+<p id="p-0145" num="0144">The gear reduction ratio R from the drum rotation motor <b>202</b> to the drums (<b>154</b>, <b>170</b>, <b>176</b>, <b>184</b>) in the inkjet image forming apparatus <b>100</b> is calculated as shown below.</p>
+<p id="p-0146" num="0145">As shown in <figref idref="DRAWINGS">FIG. 12</figref>, when the diameter of a pulley <b>203</b> fixed to the end of the shaft of the drum rotation motor <b>202</b> is represented by Dm, when the diameter of the pulley <b>206</b> driven by the timing belt <b>204</b> is represented by Dp, when the diameter of a gear wheel <b>208</b> which rotates coaxially with and in unison with the pulley <b>206</b> is represented by Dg<b>1</b>, when the diameter of a gear wheel <b>210</b> which meshes with the gear wheel <b>208</b> is equal to the diameter (Dg<b>1</b>) of the gear wheel <b>208</b>, when the diameter of a gear wheel <b>214</b> directly coupled to the drum <b>154</b> is represented by Dg<b>2</b>, and when the diameter of the drum <b>154</b> is represented by Ddr, then the gear reduction ratio R is expressed by the following equation (Formula 6).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>R</i>=(<i>Dm/Dp</i>)&#xb7;(<i>Dg</i>1<i>/Dg</i>2)&#x2003;&#x2003;Formula 6<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0147" num="0146">The vibration period Pv on the paper as determined from Formula 6 and Formula 1 is as indicated below.
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>Pv=&#x3c0;&#xb7;Ddr</i>&#xb7;(<i>Dm/Dp</i>)&#xb7;(<i>Dg</i>1<i>/Dg</i>2)/<i>Nm</i>&#x2003;&#x2003;Formula 7<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0148" num="0147">The gear reduction ratio R and the nozzle layout are set in such a manner that the vibration period Pv expressed by Formula 7 satisfies the Relationship 1: OSy&#x2248;k&#xb7;Pv (where k is a natural number). More specifically, the relationship between the number of revolutions of the motor including the gear reduction ratio and the offset amount of the y-offset adjacent nozzle pair is set in accordance with Relationship 1, 2 or 3.</p>
+<p id="h-0021" num="0000">Order Nm of Rotational Non-Uniformity of Motor</p>
+<p id="p-0149" num="0148"><figref idref="DRAWINGS">FIG. 13</figref> is an illustrative diagram showing a schematic view of the relationship between the order Nm of the rotational non-uniformity of the motor and the vibration period Pv. When the period on the paper corresponding to a rotational non-uniformity having a basic period which occurs once with each revolution of the motor (order Nm=1) is represented by Pv<b>1</b>, then the period Pv<b>2</b> on the paper which corresponds to rotational non-uniformity of the order Nm=2 is &#xbd; of Pv<b>1</b> (Pv<b>2</b>=Pv<b>1</b>/2) and the period Pv<b>3</b> on the paper which corresponds to a rotational non-uniformity of the order Nm=3 is &#x2153; of Pv (Pv<b>3</b>=Pv<b>1</b>/3).</p>
+<p id="p-0150" num="0149">According to Relationship 1 stated above, if the period Pv<b>1</b> on the paper of the rotational non-uniformity having the basic period (order Nm=1) which occurs once with each revolution of the motor is set so as to be a natural number k multiple of the offset amount OSy between the y-offset adjacent nozzle pairs (<figref idref="DRAWINGS">FIG. 13</figref> shows an example where k=1), then it is possible to suppress variation in the pitch between the rasters of the y-offset adjacent nozzle pairs and vibration non-uniformity can be reduced.</p>
+<p id="p-0151" num="0150">In this case, with the higher-order rotational non-uniformities where the order Nm=2 and the order Nm=3, as shown in <figref idref="DRAWINGS">FIG. 13</figref>, the value of OSy is a natural number multiple of the vibration period Pv<b>2</b>=(Pv<b>1</b>)/2 and Pv<b>3</b>=(Pv<b>1</b>)/3 respectively. For this reason, the vibration non-uniformity is also reduced in respect of high-frequency rotational non-uniformity.</p>
+<p id="p-0152" num="0151">More specifically, in respect of the order of higher harmonics of rotational non-uniformity produced by the motor, provided that Relationship 1 is satisfied for Nm=1, then this relationship is also satisfied for Nm=2, 3, and so on, which is desirable. However, in a case where the rotational non-uniformity at Nm=1 is so small as to be negligible and the rotational non-uniform at Nm=2 is relatively large and presents a problem in terms of image quality, then it is sufficient if Relationship 1 is satisfied at Nm=2.</p>
+<p id="h-0022" num="0000">Modification Example of Meshing Transmission Mechanism</p>
+<p id="p-0153" num="0152">Instead of the gear transmission mechanism described in <figref idref="DRAWINGS">FIG. 9</figref> to <figref idref="DRAWINGS">FIG. 10</figref>, it is also possible to adopt a composition which rotates a drum by using a toothed belt (timing belt) <b>230</b> as shown in <figref idref="DRAWINGS">FIG. 14</figref>. <figref idref="DRAWINGS">FIG. 14</figref> shows an example of the transfer drum <b>236</b> of the intermediate conveyance unit <b>126</b> and the image formation drum <b>170</b>, but the present invention can also be applied similarly to other drums. As shown in <figref idref="DRAWINGS">FIG. 14</figref>, it is also possible to transmit drive force by means of a mechanism in which an endless toothed belt <b>230</b> is wrapped between a gear (pulley) <b>237</b> which is directly connected to the shaft of the transfer drum <b>236</b>, and a gear (pulley) <b>240</b> which is directly connected to the shaft of the image formation drum <b>170</b>.</p>
+<p id="h-0023" num="0000">Inkjet Head Structural Examples</p>
+<p id="p-0154" num="0153">Next, the structure of an inkjet head will be described. The heads <b>172</b>M, <b>172</b>K, <b>172</b>C and <b>172</b>Y corresponding to respective colors have the same structure, and a reference numeral <b>250</b> is hereinafter designated to any of the heads.</p>
+<p id="p-0155" num="0154"><figref idref="DRAWINGS">FIG. 15A</figref> is a perspective plan view showing an example of the configuration of the head <b>250</b>, <figref idref="DRAWINGS">FIG. 15B</figref> is an enlarged view of a portion thereof, <figref idref="DRAWINGS">FIGS. 16A and 16B</figref> are perspective plan views showing other examples of the configuration of the head <b>250</b>, and <figref idref="DRAWINGS">FIG. 17</figref> is a cross-sectional view (a cross-sectional view taken along the line <b>17</b>-<b>17</b> in <figref idref="DRAWINGS">FIGS. 15A and 15B</figref>) showing the structure of a droplet ejection element (an ink chamber unit for one nozzle <b>251</b>) corresponding to one channel serving as a recording element unit.</p>
+<p id="p-0156" num="0155">As shown in <figref idref="DRAWINGS">FIGS. 15A and 15B</figref>, the head <b>250</b> according to the present embodiment has a structure in which a plurality of ink chamber units (droplet ejection elements) <b>253</b> each comprising a nozzle <b>251</b> forming an ink ejection port, a pressure chamber <b>252</b> corresponding to the nozzle <b>251</b>, and the like, are disposed two-dimensionally in the form of a matrix, and hence the effective nozzle interval (the projected nozzle pitch) as projected (orthographically-projected) so as to be aligned in the lengthwise direction of the head (the direction perpendicular to the paper conveyance direction) is reduced and high nozzle density is achieved.</p>
+<p id="p-0157" num="0156">The mode of composing a nozzle row having a length equal to or greater than the full width Wm of the image formation region of the recording medium <b>124</b> in a direction (the direction indicated by arrow M, corresponding to the second direction) which is substantially perpendicular to the feed direction of the recording medium <b>124</b> (the direction indicated by arrow S, corresponding to the first direction) is not limited to the present example. For example, instead of the composition in <figref idref="DRAWINGS">FIG. 15A</figref>, it is possible to adopt a mode in which a line head having a nozzle row of a length corresponding to the full width of the recording medium <b>124</b> is composed by joining together short head modules <b>250</b>&#x2032; in which a plurality of nozzles <b>251</b> are arranged in a two-dimensional arrangement, in a staggered configuration as shown in <figref idref="DRAWINGS">FIG. 16A</figref>, or a mode in which head modules <b>250</b>&#x2033; are joined together in an alignment in one row as shown in <figref idref="DRAWINGS">FIG. 16B</figref>.</p>
+<p id="p-0158" num="0157">It is not limited to a case where the full surface of the recording medium <b>124</b> is taken as the image formation range, and in cases where a portion of the surface of the recording medium <b>124</b> is taken as the image formation region (for example, if a non-image formation region (blank margin portion) is provided at the periphery of the paper, or the like), it is enough to form nozzle rows required for image formation in the prescribed image formation range.</p>
+<p id="p-0159" num="0158">The pressure chambers <b>252</b> provided to correspond to the respective nozzles <b>251</b> have a substantially square planar shape (see <figref idref="DRAWINGS">FIGS. 15A and 15B</figref>), an outlet port to the nozzle <b>251</b> being provided in one corner of a diagonal of each pressure chamber, and an ink inlet port (supply port) <b>254</b> being provided in the other corner thereof. The shape of the pressure chambers <b>252</b> is not limited to that of the present example and various modes are possible in which the planar shape is a quadrilateral shape (diamond shape, rectangular shape, or the like), a pentagonal shape, a hexagonal shape, or other polygonal shape, or a circular shape, elliptical shape, or the like.</p>
+<p id="p-0160" num="0159">As shown in <figref idref="DRAWINGS">FIG. 17</figref>, a head <b>250</b> has a structure in which a nozzle plate <b>251</b>A in which nozzles <b>251</b> are formed, a flow channel plate <b>252</b>P in which flow channels such as pressure chambers <b>252</b> and a common flow channel <b>255</b>, and the like, are formed, and so on, are layered and bonded together. The nozzle plate <b>251</b>A constitutes the nozzle surface (ink ejection surface) <b>250</b>A of the head <b>250</b> and a plurality of nozzles <b>251</b> which are connected respectively to the pressure chambers <b>252</b> are formed in a two-dimensional configuration therein.</p>
+<p id="p-0161" num="0160">The flow channel plate <b>252</b>P is a flow channel forming member which constitutes side wall portions of the pressure chambers <b>252</b> and in which a supply port <b>254</b> is formed to serve as a restricting section (most constricted portion) of an individual supply channel for guiding ink to each pressure chamber <b>252</b> from the common flow channel <b>255</b>. For the sake of the description, a simplified view is given in <figref idref="DRAWINGS">FIG. 17</figref>, but the flow channel plate <b>252</b>P has a structure formed by layering together one or a plurality of substrates.</p>
+<p id="p-0162" num="0161">The nozzle plate <b>251</b>A and the flow channel plate <b>252</b>P can be processed into a required shape by a semiconductor manufacturing process using silicon as a material.</p>
+<p id="p-0163" num="0162">The common flow channel <b>255</b> is connected to an ink tank (not shown) which is a base tank that supplies ink, and the ink supplied from the ink tank is supplied through the common flow channel <b>255</b> to the pressure chambers <b>252</b>.</p>
+<p id="p-0164" num="0163">Piezoelectric actuators <b>258</b> each provided with an individual electrode <b>257</b> are bonded to a diaphragm <b>256</b> which constitutes a portion of the surfaces of the pressure chambers <b>252</b> (the ceiling surface in <figref idref="DRAWINGS">FIG. 17</figref>). The diaphragm <b>256</b> according to the present embodiment is made of silicon (Si) having a nickel (Ni) conducting layer which functions as a common electrode <b>259</b> corresponding to the lower electrodes of the piezoelectric actuators <b>258</b>, and serves as a common electrode for the piezoelectric actuators <b>258</b> which are arranged so as to correspond to the respective pressure chambers <b>252</b>. A mode is also possible in which a diaphragm is made from a non-conductive material, such as resin, and in such a mode, a common electrode layer made of a conductive material, such as metal, is formed on the surface of the diaphragm member. Furthermore, the diaphragm which also serves as a common electrode may be made of a metal (conductive material), such as stainless steel (SUS), or the like.</p>
+<p id="p-0165" num="0164">When a drive voltage is applied to an individual electrode <b>257</b>, the corresponding piezoelectric actuator <b>258</b> deforms, thereby changing the volume of the corresponding pressure chamber <b>252</b>. This causes a pressure change which results in ink being ejected from the corresponding nozzle <b>251</b>. When the piezoelectric actuator <b>258</b> returns to its original position after ejecting ink, the pressure chamber <b>252</b> is replenished with new ink from the common flow channel <b>255</b> via the supply port <b>254</b>.</p>
+<p id="p-0166" num="0165">As shown in <figref idref="DRAWINGS">FIG. 15B</figref>, the high-density nozzle head according to the present embodiment is achieved by arranging a plurality of ink chamber units <b>253</b> having the above-described structure in a lattice fashion based on a uniform arrangement pattern, in a row direction which coincides with the main scanning direction, and a column direction which is inclined at a fixed angle of &#x3b8; with respect to the main scanning direction, rather than being perpendicular to the main scanning direction. In the arrangement of such a matrix, when a pitch between adjacent nozzles in the sub-scanning direction is represented by L<sub>S</sub>, it can be assumed equivalently that the nozzles <b>251</b> are substantially arranged linearly at a predetermined pitch of P=L<sub>S</sub>/tan &#x3b8;.</p>
+<p id="p-0167" num="0166">Furthermore, in implementing the present invention, the mode of arrangement of the nozzles <b>251</b> in the head <b>250</b> is not limited to the examples shown in the drawings, and it is possible to adopt various nozzle arrangements. For example, instead of the matrix arrangement shown in <figref idref="DRAWINGS">FIGS. 15A and 15B</figref>, it is possible to use a bent line-shaped nozzle arrangement, such as a V-shaped nozzle arrangement, or a zigzag shape (W shape, or the like) in which a V-shaped nozzle arrangement is repeated (i.e. a V-shaped nozzle arrangement is used as a unit).</p>
+<p id="p-0168" num="0167">The device for generating ejection pressure (ejection energy) for ejecting droplets from the nozzles in the inkjet head is not limited to a piezoelectric actuator (piezoelectric element), and it is also possible to employ pressure generating elements (energy generating elements) of various types, such as a heater (heating element) in a thermal method (a method which ejects ink by using the pressure created by film boiling upon heating by a heater) or actuators of various kinds based on other methods. A corresponding energy generating element is provided in the flow channel structure in accordance with the ejection method of the head.</p>
+<p id="h-0024" num="0000">Description of Control System</p>
+<p id="p-0169" num="0168"><figref idref="DRAWINGS">FIG. 18</figref> is a main part block diagram showing the system configuration of the inkjet image forming apparatus <b>100</b>. The inkjet image forming apparatus <b>100</b> comprises a communication interface <b>270</b>, a system controller <b>272</b>, a memory <b>274</b>, a motor driver <b>276</b>, a heater driver <b>278</b>, a print controller <b>280</b>, an image buffer memory <b>282</b>, a head driver <b>284</b>, and the like.</p>
+<p id="p-0170" num="0169">The communication interface <b>270</b> is an interface unit for receiving image data sent from a host computer <b>286</b>. A serial interface such as USB (Universal Serial Bus), IEEE1394, Ethernet (registered trademark), or wireless network, or a parallel interface such as a Centronics interface may be used as the communication interface <b>270</b>. A buffer memory (not shown) may be mounted in this portion in order to increase the communication speed. The image data sent from the host computer <b>286</b> is received by the inkjet image forming apparatus <b>100</b> through the communication interface <b>270</b>, and is temporarily stored in the memory <b>274</b>.</p>
+<p id="p-0171" num="0170">The memory <b>274</b> is a storage device for temporarily storing images inputted through the communication interface <b>270</b>, and data is written and read to and from the memory <b>274</b> through the system controller <b>272</b>. The memory <b>274</b> is not limited to a memory composed of semiconductor elements, and a hard disk drive or another magnetic medium may be used.</p>
+<p id="p-0172" num="0171">The system controller <b>272</b> is constituted by a central processing unit (CPU) and peripheral circuits thereof, and the like, and it functions as a control device for controlling the whole of the inkjet image forming apparatus <b>100</b> in accordance with a prescribed program, as well as a calculation device for performing various calculations. More specifically, the system controller <b>272</b> controls the various sections, such as the communication interface <b>270</b>, memory <b>274</b>, motor driver <b>276</b>, heater driver <b>278</b>, and the like, as well as controlling communications with the host computer <b>286</b> and writing and reading to and from the memory <b>274</b>, and it also generates control signals for controlling the motor <b>288</b> (including the drum rotation motor <b>202</b> explained in <figref idref="DRAWINGS">FIG. 10</figref>) of the conveyance system and a heater <b>289</b>.</p>
+<p id="p-0173" num="0172">Control programs of various types and parameters of various types, and the like, are stored in the ROM <b>290</b>, and the control programs are read out and executed in accordance with instructions from the system controller <b>272</b>.</p>
+<p id="p-0174" num="0173">The image memory <b>274</b> is used as a temporary storage region for the image data, and it is also used as a program development region and a calculation work region for the CPU.</p>
+<p id="p-0175" num="0174">The motor driver <b>276</b> is a driver which drives the motor <b>288</b> in accordance with instructions from the system controller <b>272</b>. In <figref idref="DRAWINGS">FIG. 18</figref>, various motors arranged in the respective units of the apparatus are represented by the reference numeral <b>288</b>.</p>
+<p id="p-0176" num="0175">The heater driver <b>278</b> is a driver which drives the heater <b>289</b> in accordance with instructions from the system controller <b>272</b>. In <figref idref="DRAWINGS">FIG. 18</figref>, various heaters arranged in the respective units of the apparatus are represented by the reference numeral <b>289</b>.</p>
+<p id="p-0177" num="0176">The print controller <b>280</b> has a signal processing function for performing various tasks, compensations, and other types of processing for generating print control signals from the image data stored in the memory <b>274</b> in accordance with commands from the system controller <b>272</b> so as to supply the generated print data (dot image data) to the head driver <b>284</b>.</p>
+<p id="p-0178" num="0177">In general, the dot image data is generated by subjecting the multiple-tone image data to color conversion processing and halftone processing. The color conversion processing is processing for converting image data represented by a sRGB system, for instance (for example, 8-bit image data for each RGB color) into color data of the respective colors of ink used by the inkjet image forming apparatus <b>100</b> (KCMY color data, in the present embodiment).</p>
+<p id="p-0179" num="0178">Half-tone processing is processing for converting the color data of the respective colors generated by the color conversion processing into dot data of respective colors (in the present embodiment, KCMY dot data) by error diffusion or a threshold matrix method, or the like.</p>
+<p id="p-0180" num="0179">Required signal processing is carried out in the print controller <b>280</b>, and the ejection amount and the ejection timing of the ink droplets from the respective print heads <b>250</b> are controlled via the head driver <b>284</b>, on the basis of the dot data obtained. By this means, desired dot size and dot positions can be achieved.</p>
+<p id="p-0181" num="0180">An image buffer memory <b>282</b> is provided in the print controller <b>280</b>, and data such as image data and parameters, is stored temporarily in the image buffer memory <b>282</b> during processing of the image data in the print controller <b>280</b>. Furthermore, also possible is a mode in which the print controller <b>280</b> and the system controller <b>272</b> are integrated to form a single processor.</p>
+<p id="p-0182" num="0181">The head driver <b>284</b> can be provided with a feedback control system for maintaining constant drive conditions for the head <b>250</b>.</p>
+<p id="p-0183" num="0182">The inkjet image forming apparatus <b>100</b> shown in the present embodiment employs a drive method in which a common drive power waveform signal is applied to the piezo actuators <b>258</b> of the head <b>250</b>, and ink is ejected from the nozzles <b>251</b> corresponding to the respective piezo actuators <b>258</b> by turning switching elements (not illustrated) connected to the individual electrodes for the piezo actuators <b>258</b> on and off, in accordance with the ejection timing of the respective piezo actuators <b>258</b>.</p>
+<p id="h-0025" num="0000">Mode of Head Bar in which a Plurality of Head Modules are Joined Together</p>
+<p id="p-0184" num="0183">As shown in the example in <figref idref="DRAWINGS">FIG. 16A</figref>, if one long head is composed by aligning a plurality of head modules each having a two-dimensional nozzle arrangement in a staggered configuration, then there are similar problems of vibration non-uniformity in the y-offset adjacent nozzle pairs which span between different head modules, as well as the y-offset adjacent nozzle pairs in the same head module, and these problems can be resolved by similar means.</p>
+<p id="p-0185" num="0184"><figref idref="DRAWINGS">FIG. 19</figref> shows a schematic drawing of a staggered matrix head. <figref idref="DRAWINGS">FIG. 19</figref> shows an example where three head modules <b>351</b>, <b>352</b>, <b>353</b> are arranged in a staggered configuration.</p>
+<p id="p-0186" num="0185">The maximum value of the offset amount of the y-offset adjacent nozzle pairs in the respective head modules <b>351</b>, <b>352</b>, <b>353</b> is taken as OSy<b>1</b>. In the example illustrated in <figref idref="DRAWINGS">FIG. 19</figref>, the offset amount of the y-offset adjacent nozzle pair comprising a nozzle <b>361</b><sub>&#x2014;</sub><i>i </i>of the first row (bottommost row) in the module (where i=1, 2, 3) and a nozzle <b>364</b><sub>&#x2014;</sub><i>i </i>of the fourth row (uppermost row) is OSy<b>1</b>.</p>
+<p id="p-0187" num="0186">Furthermore, the offset amount of a y-offset adjacent nozzle pair which spans between different head modules <b>351</b> and <b>352</b> located in a separated fashion in the y direction (nozzle <b>364</b>_<b>1</b> and nozzle <b>361</b>_<b>2</b>) is OSy<b>2</b>, and the offset amount of a y-offset adjacent nozzle pair (nozzle <b>364</b>_<b>2</b> and nozzle <b>361</b>_<b>3</b>) which spans between the head modules <b>352</b> and <b>353</b> is OSy<b>3</b>.</p>
+<p id="p-0188" num="0187">OSy<b>1</b> is designed so as to satisfy Relationship 1, Relationship 2 or Relationship 3, and OSy<b>2</b> and OSy<b>3</b> are designed respectively to be an integral multiple of OSy<b>1</b>. By means of a composition of this kind, each of OSy<b>1</b>, OSy<b>2</b> and OSy<b>3</b> satisfies Relationship 1, Relationship 2 or Relationship 3. <figref idref="DRAWINGS">FIG. 19</figref> shows an example where OSy<b>2</b>=3&#xd7;OSy<b>1</b> and OSy<b>3</b>=OSy<b>1</b>, but in implementing the present invention, the value of the multiple is not limited in particular. OSy<b>2</b> and OSy<b>3</b> correspond to &#x201c;OSy_B&#x201d;.</p>
+<p id="p-0189" num="0188">By means of a composition of this kind, it is possible also to suppress vibration non-uniformity in a y-offset adjacent nozzle pair which spans between head modules. The mode of arrangement of the head modules is not limited to a staggered arrangement, and it is also possible to employ a similar device to that described above in a mode where modules are situated at different positions in the y direction.</p>
+<p id="p-0190" num="0189">The example shown in <figref idref="DRAWINGS">FIG. 19</figref> is a case where each of OSy<b>1</b>, OSy<b>2</b> and OSy<b>3</b> satisfy Relationship 1, Relationship 2 or Relationship 3, but if the offset amount (OSy<b>1</b>) of the y-offset adjacent nozzle pairs within a head module is small, then it is possible to satisfy Relationship 1, Relationship 2 or Relationship 3 only in respect of the offset amount between head modules (OSy<b>2</b>, OSy<b>3</b>).</p>
+<p id="h-0026" num="0000">Mode of Invention as Design Method</p>
+<p id="p-0191" num="0190">From the findings described above, in manufacturing an inkjet image forming apparatus, it is beneficial that the nozzle arrangement and the meshing transmission mechanism are designed so as to satisfy Relationship 1, Relationship 2 or Relationship 3. For example, in designing the dimensions of the offset amount of the y-offset adjacent nozzle pairs in the nozzle arrangement, a suitable offset amount is specified on the basis of the rotational non-uniformity characteristics of the motor (order: Nm) and the gear reduction ratio of the drive force transmission mechanism. Alternatively, if the nozzle arrangement has already been designed, then a suitable combination of a motor and a drive force transmission mechanism is specified in relation to this nozzle arrangement. In this way, by adopting a design which takes account of the relationship between the nozzle arrangement and the motor drive force transmission system, it is possible to manufacture an inkjet image forming apparatus having reduced vibration non-uniformity.</p>
+<p id="h-0027" num="0000">Mode of Invention as Method of Improving Image Formation Quality of Inkjet Image Forming Apparatus</p>
+<p id="p-0192" num="0191">Furthermore, by adopting technology for suppressing vibration non-uniformity by satisfying Relationship 1, Relationship 2 or Relationship 3 stated above, it is possible to improve image formation quality by modifying the design or the components of the drive force transmission system, without modifying the design of the already designed inkjet head or the manufactured inkjet head.</p>
+<p id="p-0193" num="0192">This can be utilized as repair/improvement technology which is capable of dramatically improving image formation performance by modifying an inkjet image forming apparatus which has been manufactured without regard to Relationship 1, Relationship 2 or Relationship 3, so that the drive force transmission mechanism (including the speed reduction system) takes account of these relationships.</p>
+<p id="p-0194" num="0193">More specifically, the number of revolutions of the motor including the gear reduction ratio is optimized and the image formation quality is improved, by means of a first step of acquiring information about the vibration period Pv on the paper corresponding to the rotational non-uniformity of the motor, a second step of acquiring information about the offset amount OSy of the y-offset adjacent nozzle pairs in the two-dimensional nozzle arrangement, and a third step of changing the gear reduction ratio of the drive force transmission mechanism on the basis of the information about Pv and OSy obtained in the first and second steps, so as to satisfy the relationship OSy&#x2248;k&#xd7;Pv (where k is a natural number).</p>
+<heading id="h-0028" level="1">MODIFICATION EXAMPLE 1</heading>
+<p id="p-0195" num="0194">In implementing the present invention, the mechanism for transmitting drive force from the motor is not limited to the composition of components described in relation to <figref idref="DRAWINGS">FIG. 10</figref> to <figref idref="DRAWINGS">FIG. 12</figref> (a timing belt <b>204</b>, pulleys <b>203</b>, <b>206</b>, gear wheels <b>208</b>, <b>210</b>, <b>214</b>, etc.), and this mechanism may adopt various modes.</p>
+<heading id="h-0029" level="1">MODIFICATION EXAMPLE 2</heading>
+<p id="p-0196" num="0195">In the embodiment described above, a drum rotation method is used, but the composition for performing relative scanning of the paper and head is not limited to this. For example, it is also possible to adopt a mode in which the paper is fixed to a flat plate-shaped stage and the stage is conveyed in the y direction. In this case, it is possible to employ a mode for driving the stage by providing a linear gear (rack) on the stage, for example, as a device for moving the stage, and rotating a gear wheel (pinion) which meshes with the rack. Furthermore, instead of a rack and pinion system of this kind, it is also possible to employ a composition which uses a ball screw and moves a stage in the axial direction of the ball screw by turning the ball screw. Even in a conveyance method of this kind, similar problems arise and can be solved by a similar device.</p>
+<heading id="h-0030" level="1">MODIFICATION EXAMPLE 3</heading>
+<p id="p-0197" num="0196">In the embodiment described above, an example is given in which a recording medium is conveyed with respect to a stationary head, but in implementing the present invention, it is also possible to move a head with respect to a stationary recording medium (image formation receiving medium). Furthermore, it is possible to employ a method which performs image formation by moving both the head and the recording medium (image formation receiving medium). With any of these compositions also, similar problems arise and can be solved by a similar device.</p>
+<p id="h-0031" num="0000">Recording Medium</p>
+<p id="p-0198" num="0197">In implementing the present invention, there are no particular restrictions on the material or shape, or other features, of the recording medium, and it is possible to employ various different media, irrespective of their material or shape, such as continuous paper, cut paper, seal paper, OHP sheets or other resin sheets, film, cloth, a printed substrate on which a wiring pattern, or the like, is formed, or a rubber sheet.</p>
+<p id="h-0032" num="0000">Application Examples of the Present Invention</p>
+<p id="p-0199" num="0198">In the embodiment described above, application to an inkjet recording apparatus for graphic printing is described by way of example, but the scope of application of the present invention is not limited to this example. For example, the present invention can also be applied widely to inkjet systems which obtain various shapes or patterns using liquid function material, such as a wire printing apparatus which forms an image of a wire pattern for an electronic circuit, manufacturing apparatuses for various devices, a resist printing apparatus which uses resin liquid as a functional liquid for ejection, a color filter manufacturing apparatus, a fine structure forming apparatus for forming a fine structure using a material for material deposition, or the like.</p>
+<p id="p-0200" num="0199">It should be understood that there is no intention to limit the invention to the specific forms disclosed, but on the contrary, the invention is to cover all modifications, alternate constructions and equivalents falling within the spirit and scope of the invention as expressed in the appended claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08622503-20140107-M00001.NB">
+<img id="EMI-M00001" he="11.26mm" wi="76.20mm" file="US08622503-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. An inkjet image forming apparatus comprising:
+<claim-text>a liquid ejection head having an ejection surface in which a plurality of nozzles are arranged two-dimensionally;</claim-text>
+<claim-text>a scanning device which conveys at least one of the liquid ejection head and an image formation receiving medium on which liquid ejected from the plurality of nozzles is deposited, to cause relative movement between the image formation receiving medium and the liquid ejection head in a first direction;</claim-text>
+<claim-text>a motor which is a driving source for driving the scanning device; and</claim-text>
+<claim-text>a drive force transmission mechanism which transmits drive force generated by the motor to the scanning device, wherein:</claim-text>
+<claim-text>in a case where rotational non-uniformity can occur Nm times for each revolution of the motor, where Nm is a natural number, and when Pv represents a spatial period representing an amount of the relative movement in the first direction on the image formation receiving medium corresponding to 1/Nm revolution of the motor, and when OSy represents an offset distance in the first direction of a pair of nozzles which form dots that are mutually adjacent in a second direction perpendicular to the first direction on the image formation receiving medium, of the plurality of nozzles arranged two-dimensionally, then</claim-text>
+<claim-text>relationship of OSy&#x2248;k&#xd7;Pv, where k is a natural number, is satisfied.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The inkjet image forming apparatus as defined in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the relationship of
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>|sin {&#x3c0;&#xb7;<i>OSy/Pv}|&#x2266;</i>&#xbc;<?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+<claim-text>is satisfied.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The inkjet image forming apparatus as defined in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein a group of the plurality of nozzles arranged two-dimensionally includes the pairs of nozzles, as defined in <claim-ref idref="CLM-00001">claim 1</claim-ref>, at least two of the pairs within the group having mutually different offset distances, and the relationship is satisfied, with a maximum value of the different offset distances being taken as OSy.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The inkjet image forming apparatus as defined in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>the liquid ejection head is formed by joining together a plurality of head modules each of which has an ejection surface in which a plurality of nozzles are arranged two-dimensionally; and</claim-text>
+<claim-text>when the offset distance of the pair of nozzles which spans different head modules of the plurality of head modules is represented by OSy_B, the relationship is satisfied by taking OSy_B as OSy.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The inkjet image forming apparatus as defined in <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein the plurality of head modules are disposed in a staggered arrangement.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The inkjet image formation apparatus as defined in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein:
+<claim-text>the scanning device includes a medium conveyance device which conveys the image formation receiving medium, and</claim-text>
+<claim-text>the medium conveyance device employs a drum rotation system which holds the image formation receiving medium on a cylindrical surface of a drum and rotates the drum.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The inkjet image forming apparatus as defined in <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein, when a diameter of the drum is represented by Ddr and a speed reduction ratio of the drive force transmission mechanism is represented by R, then Pv which indicates a period of vibration appearing on the image formation receiving medium as a result of rotation of the motor is expressed by
+<claim-text>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>Pv=&#x3c0;&#xb7;Ddr&#xb7;R/Nm. </i><?in-line-formulae description="In-line Formulae" end="tail"?>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The inkjet image forming apparatus as defined in <claim-ref idref="CLM-00001">claim 1</claim-ref>, carrying out image formation based on a single pass method such that the relative movement between the image formation receiving medium and the liquid ejection head is caused just once in the first direction by the scanning device to form an image on the image formation receiving medium.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. A method of designing an inkjet image forming apparatus including: a liquid ejection head having an ejection surface in which a plurality of nozzles are arranged two-dimensionally; a scanning device which conveys at least one of the liquid ejection head and an image formation receiving medium on which liquid ejected from the plurality of nozzles is deposited, to cause relative movement between the image formation receiving medium and the liquid ejection head in a first direction; a motor which is a driving source for driving the scanning device; and a drive force transmission mechanism which transmits drive force generated by the motor to the scanning device, wherein:
+<claim-text>in a case where rotational non-uniformity can occur Nm times for each revolution of the motor, where Nm is a natural number, and when Pv represents a spatial period representing an amount of the relative movement in the first direction on the image formation receiving medium corresponding to 1/Nm revolution of the motor, and when OSy represents an offset distance in the first direction of a pair of nozzles which form dots that are mutually adjacent in a second direction perpendicular to the first direction on the image formation receiving medium, of the plurality of nozzles arranged two-dimensionally, then</claim-text>
+<claim-text>arrangement of the plurality of nozzles in the liquid ejection head and a speed reduction ratio of the drive force transmission mechanism are specified in such a manner that relationship of OSy&#x2248;k&#xd7;Pv, where k is a natural number, is satisfied.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. A method of improving image formation quality of an inkjet image forming apparatus including: a liquid ejection head having an ejection surface in which a plurality of nozzles are arranged two-dimensionally; a scanning device which conveys at least one of the liquid ejection head and an image formation receiving medium on which liquid ejected from the plurality of nozzles is deposited, to cause relative movement between the image formation receiving medium and the liquid ejection head in a first direction; a motor which is a driving source for driving the scanning device; and a drive force transmission mechanism which transmits drive force generated by the motor to the scanning device,
+<claim-text>the method comprising the steps of:</claim-text>
+<claim-text>obtaining information indicating, in a case where rotational non-uniformity can occur Nm times for each revolution of the motor (where Nm is a natural number), a spatial period representing an amount of the relative movement in the first direction on the image formation receiving medium corresponding to 1/Nm revolution of the motor;</claim-text>
+<claim-text>acquiring information indicating an offset distance in the first direction of a pair of nozzles which form dots that are mutually adjacent in a second direction perpendicular to the first direction on the image formation receiving medium, of the plurality of nozzles arranged two-dimensionally; and</claim-text>
+<claim-text>modifying a speed reduction ratio of the drive force transmission mechanism in such a manner that relationship of OSy&#x2248;k&#xd7;Pv, where k is a natural number, Pv represents the obtained spatial period and OSy represents the acquired offset distance, is satisfied.</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

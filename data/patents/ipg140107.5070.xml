@@ -1,0 +1,1904 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08626167-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08626167</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12525950</doc-number>
+<date>20080201</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>2007-025873</doc-number>
+<date>20070205</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<us-term-extension>306</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20090101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>04</class>
+<subclass>W</subclass>
+<main-group>36</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>455436</main-classification>
+<further-classification>455438</further-classification>
+</classification-national>
+<invention-title id="d2e71">Inter base station handover method, radio communication method, DRX control method, base station, and communication terminal</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5910944</doc-number>
+<kind>A</kind>
+<name>Callicotte et al.</name>
+<date>19990600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>6490268</doc-number>
+<kind>B1</kind>
+<name>Lee et al.</name>
+<date>20021200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>370342</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>6950415</doc-number>
+<kind>B2</kind>
+<name>Chang et al.</name>
+<date>20050900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>370331</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>7761122</doc-number>
+<kind>B2</kind>
+<name>HomChaudhuri</name>
+<date>20100700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455574</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>7916675</doc-number>
+<kind>B2</kind>
+<name>Dalsgaard et al.</name>
+<date>20110300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>370311</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>7957360</doc-number>
+<kind>B2</kind>
+<name>Suzuki et al.</name>
+<date>20110600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>370341</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>7986949</doc-number>
+<kind>B2</kind>
+<name>Ryu et al.</name>
+<date>20110700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455439</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>2002/0006805</doc-number>
+<kind>A1</kind>
+<name>New et al.</name>
+<date>20020100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>2004/0063431</doc-number>
+<kind>A1</kind>
+<name>Julka et al.</name>
+<date>20040400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455436</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>2005/0032555</doc-number>
+<kind>A1</kind>
+<name>Jami et al.</name>
+<date>20050200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455574</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>2005/0075148</doc-number>
+<kind>A1</kind>
+<name>Park</name>
+<date>20050400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>2005/0143107</doc-number>
+<kind>A1</kind>
+<name>Pattar et al.</name>
+<date>20050600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455466</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>2006/0068789</doc-number>
+<kind>A1</kind>
+<name>Vannithamby et al.</name>
+<date>20060300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455436</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>2007/0167165</doc-number>
+<kind>A1</kind>
+<name>Yang et al.</name>
+<date>20070700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455439</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>2007/0238463</doc-number>
+<kind>A1</kind>
+<name>Ogami</name>
+<date>20071000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455436</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>2008/0167089</doc-number>
+<kind>A1</kind>
+<name>Suzuki et al.</name>
+<date>20080700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455574</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>2009/0253470</doc-number>
+<kind>A1</kind>
+<name>Xu</name>
+<date>20091000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455574</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>2011/0003600</doc-number>
+<kind>A2</kind>
+<name>Beckmann et al.</name>
+<date>20110100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455455</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>EP</country>
+<doc-number>EP001499144</doc-number>
+<kind>A1</kind>
+<date>19950100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>455436</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>EP</country>
+<doc-number>1 107 626</doc-number>
+<kind>A2</kind>
+<date>20010600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>JP</country>
+<doc-number>5-55994</doc-number>
+<kind>A</kind>
+<date>19930300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>JP</country>
+<doc-number>9-508773</doc-number>
+<kind>A</kind>
+<date>19930300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>JP</country>
+<doc-number>7-322332</doc-number>
+<kind>A</kind>
+<date>19951200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>JP</country>
+<doc-number>8-340569</doc-number>
+<kind>A</kind>
+<date>19961200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>JP</country>
+<doc-number>09-331288</doc-number>
+<kind>A</kind>
+<date>19971200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>JP</country>
+<doc-number>10-136424</doc-number>
+<kind>A</kind>
+<date>19980500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>JP</country>
+<doc-number>2004-504783</doc-number>
+<kind>A</kind>
+<date>20040200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>JP</country>
+<doc-number>2005080312</doc-number>
+<kind>A</kind>
+<date>20050300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>KR</country>
+<doc-number>10-0510642</doc-number>
+<kind>B1</kind>
+<date>20050800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>KR</country>
+<doc-number>10-2007-0024302</doc-number>
+<kind>A</kind>
+<date>20070300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00031">
+<document-id>
+<country>RU</country>
+<doc-number>2 201 655</doc-number>
+<kind>C2</kind>
+<date>19991200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00032">
+<document-id>
+<country>WO</country>
+<doc-number>WO 95/32594</doc-number>
+<kind>A1</kind>
+<date>19951100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00033">
+<document-id>
+<country>WO</country>
+<doc-number>2005/022780</doc-number>
+<kind>A1</kind>
+<date>20050300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00034">
+<document-id>
+<country>WO</country>
+<doc-number>2005107377</doc-number>
+<kind>A2</kind>
+<date>20051100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00035">
+<document-id>
+<country>WO</country>
+<doc-number>2006/018670</doc-number>
+<kind>A1</kind>
+<date>20060200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00036">
+<document-id>
+<country>WO</country>
+<doc-number>2006/118490</doc-number>
+<kind>A1</kind>
+<date>20061100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00037">
+<othercit>3GPP TS36.300 v0.3.1, Nov. 2006.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00038">
+<othercit>3GPP TSG RAN WG2[R2-070088 Summary of email discussion on DRX in LTE<sub>&#x2014;</sub>ACTIVE] ,&#x3c;Internet URL http://www.3gpp.org/ftp/tsg<sub>&#x2014;</sub>ran/WG2<sub>&#x2014;</sub>RL2/TSGR2<sub>&#x2014;</sub>56bis/Documents/R2-070088.zip&#x3e;.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00039">
+<othercit>Notice of Grounds for Rejection issued on Sep. 13, 2011 by the Japanese Patent Office in counterpart Japanese Patent Application No. 2008557090.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00040">
+<othercit>Japanese Office Action issued Nov. 15, 2011 in corresponding Japanese Patent Application No. 2008-557090.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00041">
+<othercit>Notice of Submission of Opinion dated Aug. 7, 2011 from the Korean Intellectual Property Office in counterpart Korean application No. 10-2011-7011098.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00042">
+<othercit>Japanese Office Action mailed Jun. 26, 2012 for corresponding Japanese patent application No. 2011-112556.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00043">
+<othercit>3GPP TSG-RAN2 Meeting #56bis; RRC Conection Control for Inactive but connected UEs.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00044">
+<othercit>3GPP TSG-RAN2 Meeting #56 Riga, Lativa, Nov. 6-10, 2006, Fast Setup for PS Services (Cell PCH &#x26; URA PCH).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00045">
+<othercit>Japanese Office Action mailed Sep. 4, 2012 for corresponding Japanese patent application No. 2011-177375.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00046">
+<othercit>3GPP TSG-RAN3 Meeting #53 bis, AS Configuration and Its Use; Tdoc R2-061831.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00047">
+<othercit>3GPP TSG RAN WG2 #52, MAC states in LTE<sub>&#x2014;</sub>ACTIVE; Tdoc R2-060844.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00048">
+<othercit>3GPP-TSG-RAN3 Meeting #55, Use of AS-configuration upon handover and connection establishment; Tdoc R2-062904.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00049">
+<othercit>3GPP TSG-RAN2 Meeting #56; Use of AS-configuration upon handover and connection establishment; Tdoc R2-063179.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00050">
+<othercit>Extended European Search Report dated Feb. 22, 2013 issued by the European Patent Office in counterpart European Application No. 08710722.3.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00051">
+<othercit>Extended European Search Report dated Mar. 1, 2013 issued by the European Patent Office in counterpart European Application No. 12193542.3.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00052">
+<othercit>Communication, dated Apr. 3, 2013, issued by the Federal Service for Intellectual Property, Patents, and Trade Marks in counterpart Russian Patent Application No. 2012113731/07.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00053">
+<othercit>Office Action, dated Dec. 21, 2012, issued by the Russian Federal Service for Intellectual Property in counterpart Russian Patent Application No. 2011140121/07.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00054">
+<othercit>Office Action, dated Dec. 20, 2012, issued by the Russian Federal Service for Intellectual Property in counterpart Russian Patent Application No. 2011140122/07.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00055">
+<othercit>LG Electronics, &#x201c;DRX Scheme,&#x201d; 3GPP TSG-RAN WG2 #56bis, Jan. 15-19, 2007, Sorrento, Italy, pp. 1-4 (R2-070265).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00056">
+<othercit>Panasonic, &#x201c;DRX and DTX Operation in LTE<sub>&#x2014;</sub>Active,&#x201d; 3GPP TSG-RAN WG2 Meeting #52, Mar. 27-31, 2006, Athena, Greece, pp. 1-3; (R2-060888).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00057">
+<othercit>Communication, dated May 22, 2013, issued by the Federal Service for Intellectual Property, Patents, and Trademarks in counterpart Russian Patent Application No. 2011140121/07.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00058">
+<othercit>Communication, dated May 22, 2013, issued by the Federal Service for Intellectual Property, Patents, and Trademarks in counterpart Russian Patent Application No. 2011140122/07.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00059">
+<othercit>Nokia, &#x201c;Active Mode DRX,&#x201d; 3GPP TSG-RAN WG2 Meeting #55, Oct. 9-13, 2006, Seoul, Korea, 3 pages (R2-062752).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00060">
+<othercit>3GPP TS 36.300, VO. 4.0, (Jan. 2007), Release 8,8 pages total.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00061">
+<othercit>Japanese Office Action Issued on May 29, 2012 in corresponding Japanese Application No. 2011-112557.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>8</number-of-claims>
+<us-exemplary-claim>5</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>4554141</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>4554221</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>455436</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>455450</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>4554522</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>455458</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>4555501</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370229-232</main-classification>
+<additional-info>unstructured</additional-info>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370310</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370311</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370328</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370331</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370332</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370338</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370352</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>370353</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>19</number-of-drawing-sheets>
+<number-of-figures>22</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20100317345</doc-number>
+<kind>A1</kind>
+<date>20101216</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Futaki</last-name>
+<first-name>Hisashi</first-name>
+<address>
+<city>Minato-ku</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Lee</last-name>
+<first-name>Jinsock</first-name>
+<address>
+<city>Minato-ku</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Futaki</last-name>
+<first-name>Hisashi</first-name>
+<address>
+<city>Minato-ku</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Lee</last-name>
+<first-name>Jinsock</first-name>
+<address>
+<city>Minato-ku</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Sughrue Mion, PLLC</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>NEC Corporation</orgname>
+<role>03</role>
+<address>
+<city>Tokyo</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Faragalla</last-name>
+<first-name>Michael</first-name>
+<department>2698</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Oliver</last-name>
+<first-name>Gerald</first-name>
+</assistant-examiner>
+</examiners>
+<pct-or-regional-filing-data>
+<document-id>
+<country>WO</country>
+<doc-number>PCT/JP2008/051690</doc-number>
+<kind>00</kind>
+<date>20080201</date>
+</document-id>
+<us-371c124-date>
+<date>20090805</date>
+</us-371c124-date>
+</pct-or-regional-filing-data>
+<pct-or-regional-publishing-data>
+<document-id>
+<country>WO</country>
+<doc-number>WO2008/096685</doc-number>
+<kind>A </kind>
+<date>20080814</date>
+</document-id>
+</pct-or-regional-publishing-data>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Disclosed is a DRX control method and system in which a source base station forwards Dormancy Context, which is information for controlling the activity level of a mobile station that performs inter base station handover, to a target base station and, immediately after the mobile station completes handover, the target base station performs DRX control of the mobile station using the Dormancy Context.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="105.41mm" wi="169.33mm" file="US08626167-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="183.22mm" wi="175.68mm" file="US08626167-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="115.74mm" wi="173.65mm" file="US08626167-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="89.92mm" wi="161.37mm" file="US08626167-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="187.96mm" wi="85.77mm" orientation="landscape" file="US08626167-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="185.25mm" wi="104.22mm" orientation="landscape" file="US08626167-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="96.69mm" wi="180.51mm" file="US08626167-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="247.90mm" wi="148.51mm" orientation="landscape" file="US08626167-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="224.71mm" wi="118.53mm" orientation="landscape" file="US08626167-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="228.18mm" wi="147.07mm" orientation="landscape" file="US08626167-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="195.50mm" wi="109.64mm" orientation="landscape" file="US08626167-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="198.20mm" wi="157.31mm" orientation="landscape" file="US08626167-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="79.67mm" wi="168.91mm" file="US08626167-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="220.90mm" wi="127.25mm" orientation="landscape" file="US08626167-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="177.72mm" wi="177.04mm" file="US08626167-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="126.66mm" wi="170.94mm" file="US08626167-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00016" num="00016">
+<img id="EMI-D00016" he="136.23mm" wi="175.68mm" file="US08626167-20140107-D00016.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00017" num="00017">
+<img id="EMI-D00017" he="209.04mm" wi="168.23mm" file="US08626167-20140107-D00017.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00018" num="00018">
+<img id="EMI-D00018" he="103.55mm" wi="151.89mm" file="US08626167-20140107-D00018.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00019" num="00019">
+<img id="EMI-D00019" he="162.73mm" wi="178.39mm" file="US08626167-20140107-D00019.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">CROSS-REFERENCE TO RELATED APPLICATIONS</heading>
+<p id="p-0002" num="0001">The present application claims priority from Japanese patent application 2007-025873 (filed on Feb. 5, 2007) the content of which is hereby incorporated in its entirety by reference into this specification.</p>
+<heading id="h-0002" level="1">TECHNICAL FIELD</heading>
+<p id="p-0003" num="0002">The present invention relates to a radio communication system, and more particularly to a radio communication system and method that performs an inter base station handover from a source base station to a target base station.</p>
+<heading id="h-0003" level="1">BACKGROUND ART</heading>
+<p id="p-0004" num="0003">In 3GPP (3rd Generation Partnership Project) Long Term Evolution (LTE), study is being conducted that the following information (RAN(Radio Access Network) Context Data), which is the information concerning a mobile station that performs inter base station handover, is transferred from a source base station (source eNB) to a target base station (target eNB), when the mobile station performs inter base station handover (abbreviated &#x201c;HO&#x201d;). (For example, see non-Patent Document 1).</p>
+<p id="p-0005" num="0004">1. Qos profiles (QoS profiles of the SAE (System Architecture Evolution) bearers)</p>
+<p id="p-0006" num="0005">2. AS configuration (RLC(Radio Link Control) Window Size, etc.)</p>
+<p id="p-0007" num="0006">In addition, when the source base station is transmitting downlink data, the source base station performs data forwarding which transfers unsent data to the target base station.</p>
+<p id="p-0008" num="0007">The mobile station that has moved to the target cell accesses the target base station via Random Access Channel (RACH), which is an uplink channel, to acquire Timing Advance (TA), provided for uplink synchronization, and uplink scheduling information from the target base station. After that, the mobile station adjusts transmission timing according to the acquired TA and transmits &#x201c;HO Confirm&#x201d;, which is a control signal for notifying that the mobile station has performed handover to the target base station, at allocated time and frequency.</p>
+<p id="p-0009" num="0008">In LTE, study is being conducted also on DRX (Discontinuous Reception: intermittent reception) control of a mobile station in the RRC(Radio Resource Control)_Connected state (see Non-Patent Document 1).</p>
+<p id="p-0010" num="0009">A base station performs DRX control of entire mobile stations in a cell that the base station manages, and a mobile station performs the discontinuous reception at a periodic interval (also called &#x201c;DRX cycle&#x201d; or &#x201c;DRX period&#x201d;) specified by the base station. A DRX cycle (DRX period) includes a reception period during which data is continuously received and a non-reception period during which no data is received, as shown in <figref idref="DRAWINGS">FIG. 18</figref>.</p>
+<p id="h-0004" num="0000">Non-Patent Document 1:</p>
+<p id="p-0011" num="0000">
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0010">3GPP TS36.300 v0.3.1 (Section 10.1, etc.)
+<br/>
+Non-Patent Document 2:
+</li>
+    <li id="ul0001-0002" num="0011">3GPP RAN WG2[R2-070088 Summary of email discussion on DRX in LTE_ACTIVE], &#x3c;Internet URL http://www.3gpp.org/ftp/tsg_ran/WG2_RL2/TSGR2<sub>&#x2014;</sub>56bis/Documents/R 2-070088.zip&#x3e;</li>
+</ul>
+</p>
+<heading id="h-0005" level="1">SUMMARY</heading>
+<p id="p-0012" num="0012">The disclosure of Non-Patent Documents 1 and 2 given above is hereby incorporated by reference into this specification. The following gives an analysis of the technology related to the present invention.</p>
+<p id="p-0013" num="0013">Today, study has just begun on how to combine the LTE-proposed inter base station HO control and the DRX control. And so, little study has been made on a practical method for power saving on a mobile station when those controls are combined.</p>
+<p id="p-0014" num="0014">Therefore, in view of the problems described above, it is an object of the present invention to provide a method, system, base station, and communication terminal for saving power of a mobile station when handover control and DRX control are combined.</p>
+<p id="p-0015" num="0015">It is another object of the present invention to provide a method, system, base station, and communication terminal for enabling suppression of an increase or reduction in a load of a network side involved in handover control.</p>
+<p id="p-0016" num="0016">To solve one or more the problems of the described above, the invention disclosed by this application provides an inter base station handover (HO) method and a radio communication system, which implements the method, that have the following general configuration.</p>
+<p id="p-0017" num="0017">In an inter base station handover method and a radio communication system of the present invention, a source base station (source eNB) forwards Dormancy Context to a target base station (target eNB) during handover to optimize the continuation of DRX control before and after handover.</p>
+<p id="p-0018" num="0018">After a mobile station has completed handover, the target base station (target eNB) uses the Dormancy Context to perform DRX control of the mobile station.</p>
+<p id="p-0019" num="0019">If the mobile station (User Equipment: UE) has stayed in a long DRX cycle in the source cell, the target base station (target eNB) may use the Dormancy Context also for the processing for moving the state of the mobile station (UE) to LTE_Idle.</p>
+<p id="p-0020" num="0020">In the present invention, at least one of the following is included in the Dormancy Context.</p>
+<p id="p-0021" num="0021">a DRX (Discontinuous Reception) level at the current time (when a HO request is generated),</p>
+<p id="p-0022" num="0022">a time during which a mobile station has stayed in the current DRX level,</p>
+<p id="p-0023" num="0023">an average DRX level during management by the source base station,</p>
+<p id="p-0024" num="0024">a maximum DRX level during management by the source base station,</p>
+<p id="p-0025" num="0025">a minimum DRX level during management by the source base station,</p>
+<p id="p-0026" num="0026">a transmission buffer size in the HO preparation period, and</p>
+<p id="p-0027" num="0027">a scheduling time in the source base station/RRC_Connected state time in the source base station</p>
+<p id="p-0028" num="0028">A source base station and a target base station in the present invention may be base stations not only in the same communication system but also in different systems.</p>
+<p id="p-0029" num="0029">According to the present invention, it is possible to optimize the continuation of DRX control before and after handover. For example, the present invention allows a low activity mobile station to start DRX control more quickly. As a result, the reduction of the power consumption of the mobile station can be achieved.</p>
+<p id="p-0030" num="0030">The present invention also allows a low activity mobile station to transit to an Idle state more quickly. As a result, the reduction of the power consumption of the mobile station can be achieved. In addition, in the present invention, it is possible to avoid inter base station HO which is not actually necessary, thus avoiding an increase in the load of a network.</p>
+<p id="p-0031" num="0031">Still other features and advantages of the present invention will become readily apparent to those skilled in this art from the following detailed description in conjunction with the accompanying drawings wherein only exemplary embodiments of the invention are shown and described, simply by way of illustration of the best mode contemplated of carrying out this invention. As will be realized, the invention is capable of other and different embodiments, and its several details are capable of modifications in various obvious respects, all without departing from the invention. Accordingly, the drawing and description are to be regarded as illustrative in nature, and not as restrictive.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0006" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0032" num="0032"><figref idref="DRAWINGS">FIG. 1</figref> is a diagram for explaining a flow of inter base station handover in one exemplary embodiment of the present invention.</p>
+<p id="p-0033" num="0033"><figref idref="DRAWINGS">FIG. 2</figref> is a diagram for explaining inter base station handover in one exemplary embodiment of the present invention.</p>
+<p id="p-0034" num="0034"><figref idref="DRAWINGS">FIG. 3</figref> is a diagram for explaining activity level control of a mobile station after inter base station handover in one exemplary embodiment of the present invention.</p>
+<p id="p-0035" num="0035"><figref idref="DRAWINGS">FIGS. 4A and 4B</figref> are diagrams for explaining activity level control of a mobile station after inter base station handover in one exemplary embodiment of the present invention.</p>
+<p id="p-0036" num="0036"><figref idref="DRAWINGS">FIGS. 5A and 5B</figref> are diagrams for explaining activity level control of a mobile station after inter base station handover in one exemplary embodiment of the present invention.</p>
+<p id="p-0037" num="0037"><figref idref="DRAWINGS">FIG. 6</figref> is a diagram for explaining activity level control of a mobile station in a first exemplary embodiment of the present invention.</p>
+<p id="p-0038" num="0038"><figref idref="DRAWINGS">FIG. 7</figref> is a diagram for explaining the effect of power saving of a mobile station in the first exemplary embodiment of the present invention.</p>
+<p id="p-0039" num="0039"><figref idref="DRAWINGS">FIG. 8</figref> is a diagram for explaining activity level control of a mobile station in a second exemplary embodiment of the present invention.</p>
+<p id="p-0040" num="0040"><figref idref="DRAWINGS">FIG. 9</figref> is a diagram for explaining the effect of power saving of a mobile station and the effect of reduction in the load of a NW in the second exemplary embodiment of the present invention.</p>
+<p id="p-0041" num="0041"><figref idref="DRAWINGS">FIG. 10</figref> is a diagram for explaining activity level control of a mobile station in one exemplary embodiment of the present invention.</p>
+<p id="p-0042" num="0042"><figref idref="DRAWINGS">FIG. 11</figref> is a diagram for explaining a flow of inter base station handover.</p>
+<p id="p-0043" num="0043"><figref idref="DRAWINGS">FIG. 12</figref> is a diagram for explaining activity level control of a mobile station in an example.</p>
+<p id="p-0044" num="0044"><figref idref="DRAWINGS">FIG. 13</figref> is a diagram for explaining an operation of a mobile station in an example.</p>
+<p id="p-0045" num="0045"><figref idref="DRAWINGS">FIG. 14</figref> is a diagram showing an example of the configuration of a base station in one example of the present invention.</p>
+<p id="p-0046" num="0046"><figref idref="DRAWINGS">FIG. 15</figref> is a diagram showing an example of the configuration of a mobile station in one example of the present invention.</p>
+<p id="p-0047" num="0047"><figref idref="DRAWINGS">FIG. 16</figref> is a diagram showing an example of the configuration of a mobile station in another example of the present invention.</p>
+<p id="p-0048" num="0048"><figref idref="DRAWINGS">FIGS. 17A and 17B</figref> are diagrams for explaining HO in another example of the present invention.</p>
+<p id="p-0049" num="0049"><figref idref="DRAWINGS">FIG. 18</figref> is a diagram for explaining a DRX cycle.</p>
+<p id="p-0050" num="0050"><figref idref="DRAWINGS">FIG. 19</figref> is a diagram for explaining a flow of inter base station handover in a modification of one exemplary embodiment of the present invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0007" level="1">PREFERRED MODES</heading>
+<p id="p-0051" num="0051">To describe the present invention more in detail, exemplary embodiments of the present invention will be described below with reference to the accompanying drawings. In the exemplary embodiment below, an example in which the present invention is applied to a system proposed by 3GPP LTE is used though not limited thereto.</p>
+<p id="p-0052" num="0052">As an example of the DRX (Discontinuous Reception) control at handover (abbreviated &#x201c;HO&#x201d;), a base station changes the parameters (see <figref idref="DRAWINGS">FIG. 18</figref>) related to a DRX cycle, such as the non-reception period, according to the data transmission/reception status (called &#x201c;Activity&#x201d;) of a mobile station. Although a base station changes the parameters in the description below because an example of 3GPP LTE is used, the network side, for example, a 3GPP base station control apparatus (RNC: Radio Network Controller), may change the parameters. As an indicator indicating an Activity rate (degree), the indicator such as an &#x201c;Activity level&#x201d; may be used. As this activity level, the ratio of the time (Ts), during which data is accumulated in the transmission buffer, to a predetermined period (T) may be used ((Ts/T)&#xd7;100(%) when represented in %). Note that, in the present invention, the Activity level is not limited to (Ts/T)&#xd7;100(%) but that another value (conversion value) having a correlation with (Ts/T) may also be used.</p>
+<p id="p-0053" num="0053">Although a practical example of &#x201c;Activity&#x201d; and &#x201c;Activity level&#x201d; was described above, the definition of &#x201c;Activity&#x201d; and &#x201c;Activity level&#x201d; in this specification is not of course limited to the above but should be understood as the general data transmission/reception status and its frequency.</p>
+<p id="p-0054" num="0054">A base station and a mobile station may use an indicator called &#x201c;DRX level&#x201d;, acquired based on the Activity level, as the signal used for the DRX control. An Activity level value may be used directly as a DRX level, or a value acquired by converting an Activity level value (preferably a value having a high correlation with an Activity level value), may be used as a DRX level. A DRX level may be represented in percent (%). In this case, though a discrete value (for example, an integer value) is usually used as a value in the range of 0-100%, a continuous value such as a decimal number may of course be used. Alternatively, several discrete central values may be used as DRX levels.</p>
+<p id="p-0055" num="0055">First, as an example of the LTE-proposed operation in which the inter base station (inter eNB) HO and the DRX control are combined, the following describes the DRX control of a mobile station in the HO preparation period during which a sequence of the following operations are performed.
+<ul id="ul0002" list-style="none">
+    <li id="ul0002-0001" num="0000">
+    <ul id="ul0003" list-style="none">
+        <li id="ul0003-0001" num="0056">The mobile station transmits the Measurement Report to the source base station.</li>
+        <li id="ul0003-0002" num="0057">The source base station checks the Measurement Report to determine which base station is a candidate for the target base station, and the source base station and the target base station exchange the handover-related information indicating whether the target base station can accept the handover or not.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0056" num="0058">For example, a method is known that a mobile station, for which a long non-reception period is configured by the DRX control, ignores the currently configured DRX control and transits to the Active operation (the state in which the mobile station can continuously receive the downlink signal) and that a mobile station, for which a short non-reception period is configured, performs HO, while staying in the state in which the short non-reception period is configured (for example, see Non-Patent Document 2). However, a practical method for implementing the method described above is not shown. The following describes a practical implementation method.</p>
+<p id="p-0057" num="0059">The procedure of the inter base station HO in a mobile station under DRX control will be described with reference to <figref idref="DRAWINGS">FIG. 11</figref>.</p>
+<p id="p-0058" num="0060">Uplink scheduling information (UL allocation) is transmitted from the source base station to the mobile station. The mobile station that will perform inter base station HO transmits a Measurement Report on neighboring cells of the source cell, in which the mobile station resides, to the source base station.</p>
+<p id="p-0059" num="0061">The source base station transmits a signal (DRX Control Signaling), which instructs the mobile station to move from DRX (Discontinuous Reception) to the continuous reception operation (or to reduce the non-reception period of the DRX cycle), to the mobile station and stops the DRX control of the mobile station. It should be noted that, though the base station that receives the Measurement Report outputs the DRX control stop signal to the mobile station in the sequence operation example in <figref idref="DRAWINGS">FIG. 11</figref>, the base station that receives the Measurement Report need not always output the DRX control stop signal to the mobile station. For example, a rule may be predetermined to allow the mobile station to stop the DRX operation itself.</p>
+<p id="p-0060" num="0062">The source base station transfers the RAN Context Data (Qos Profile, AS configuration) on the mobile station to the target base station.</p>
+<p id="p-0061" num="0063">After receiving the notification (Context Confirm), which indicates that the HO can be accepted, from the target base station, the source base station transmits the command of HO start permission (HO Command) to the mobile station.</p>
+<p id="p-0062" num="0064">After receiving the HO start command (HO Command) from the source base station, the mobile station that has moved to the target cell transmits an uplink synchronization (UL Synchronization) request via an RACH that is an uplink channel, and acquires the transmission timing adjustment value (Timing Advance: TA) and the uplink scheduling information (UL allocation) from the target base station.</p>
+<p id="p-0063" num="0065">After that, the mobile station transmits HO Confirm at the allocated time and frequency, by adjusting the transmission timing according to the transmission timing adjustment value (TA) received from the target base station, to inform the target base station that the mobile station has performed handover.</p>
+<p id="p-0064" num="0066">The target base station, which has received the HO Confirm from the mobile station, transmits a control signal (HO Completed) to the source base station to inform that the handover has been completed, notifies the MME (Mobility Management Entity)/UPE (User Plane Entity) that the mobile station performed the inter base station HO to move to the cell which is managed by the target base station (UE (User Equipment) update to MME/UPE), and completes the inter base station HO operation. Note that, at this point of time, the mobile station is still in the Active operation.</p>
+<p id="p-0065" num="0067">If the mobile station that has performed handover does not transmit or receive data during a predetermined period (determined by the timer included in the target base station side) after handover, the target base station restarts DRX control for the mobile station.</p>
+<p id="p-0066" num="0068">The uplink scheduling information (UL allocation: time and frequency allocation information) is transmitted from the target base station to the mobile station to allow the mobile station to transmit data (UL data transmission), if necessary.</p>
+<p id="p-0067" num="0069">As described above, the mobile station is controlled by combining HO and DRX.</p>
+<p id="p-0068" num="0070"><figref idref="DRAWINGS">FIG. 12</figref> is a diagram for explaining the calculation of the time UE staying in DRX shown in <figref idref="DRAWINGS">FIG. 13</figref>, and <figref idref="DRAWINGS">FIG. 12</figref> shows an example of changes in the DRX level when a mobile station in DRX control operation performs the inter base station HO. It is assumed that a mobile station moves through the center of each cell and moves the distance equal to the diameter.</p>
+<p id="p-0069" num="0071">In the example in <figref idref="DRAWINGS">FIG. 12</figref>, the state is called as follows.
+<ul id="ul0004" list-style="none">
+    <li id="ul0004-0001" num="0000">
+    <ul id="ul0005" list-style="none">
+        <li id="ul0005-0001" num="0072">&#x201c;Active&#x201d; when the DRX level is 100%, and</li>
+        <li id="ul0005-0002" num="0073">&#x201c;DRX&#x201d; when the DRX level is 20%.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0070" num="0074">An idle state in which the DRX level is 0% is RRC_Idle(LTE_Idle) state.</p>
+<p id="p-0071" num="0075">In the description below, a model proposed by 3GPP LTE is used as an example where 100% of the DRX level is 100% of the Activity Level. When one frame includes 10 TTIs (Transmission Time Intervals), a mobile station whose DRX level is 100% (that is, Active operation) monitors the downlink (DL) signal (demodulates a control channel) in each TTI. On the other hand, a mobile station whose DRX level is 20% monitors the DL signal only in the two continuous TTIs out of 10 TTIs but not in the remaining eight TTIs that are non-reception periods. It is of course possible to define a value of the DRX level smaller than 100%, for example, 90% or 95%, as &#x201c;Active&#x201d;.</p>
+<p id="p-0072" num="0076">In the example in <figref idref="DRAWINGS">FIG. 12</figref>, cell <b>1</b> is managed by base station <b>1</b>, and cells <b>2</b>, <b>3</b>, and <b>4</b> are managed respectively by base stations <b>2</b>, <b>3</b>, and <b>4</b>. Also assume that the mobile station performs the data transmission/reception only for the HO operation in cells <b>2</b>, <b>3</b>, and <b>4</b>. The change in the DRX level is indicated by the bold line.</p>
+<p id="p-0073" num="0077">In <figref idref="DRAWINGS">FIG. 12</figref>, the symbol X indicates the time during which the mobile station is Active during HO procedure and the symbol Y indicates the time during which the mobile station is under DRX control (DRX residence)</p>
+<p id="p-0074" num="0078">Now, assume that the mobile station is in cell <b>1</b> and is under DRX control. When performing inter base station HO to move to cell <b>2</b>, the mobile station becomes Active and performs the HO operation. Because, in cell <b>2</b>, the mobile station does not perform data transmission/reception immediately after the HO, the base station <b>2</b> changes the state of the mobile station from the Active to the DRX after a timeout of a timer, corresponding to the Active-to-DRX transition time, occurs. After that, the mobile station performs HO from cell <b>2</b> to cell <b>3</b>, to cell <b>4</b>, and then to cell <b>5</b>, one after another, and, in that case, the operation is performed in the same way as when the mobile station performs HO from cell <b>1</b> to cell <b>2</b>.</p>
+<p id="p-0075" num="0079">Assume that the mobile station transition time from Active to DRX at HO is one minute (X in <figref idref="DRAWINGS">FIG. 12</figref> is one minute) and that the mobile station performs data transmission/reception intermittently for 30 minutes. Under this assumption, <figref idref="DRAWINGS">FIG. 13</figref> shows in a tabular form an example of the DRX residence time in 30 minutes when the parameters, such as the movement speed and the cell diameter, are varied.</p>
+<p id="p-0076" num="0080">In this example, the time required for HO, which will be several 10 milliseconds, is so much shorter than the cell residence time that this time is ignored in the calculation.</p>
+<p id="p-0077" num="0081">In <figref idref="DRAWINGS">FIG. 13</figref>, it is assumed that the frequency of the data transmission/reception of the mobile station is not so high that the mobile station can stay in DRX (the mobile station need not be kept in Active). In <figref idref="DRAWINGS">FIG. 12</figref> and <figref idref="DRAWINGS">FIG. 13</figref>, a model is assumed in which cells <b>1</b> to <b>5</b> are adjacent each other and the mobile station moves on a straight line at a constant velocity along the diameters of the multiple cells.</p>
+<p id="p-0078" num="0082"><figref idref="DRAWINGS">FIG. 13</figref> shows that, when the movement velocity of the mobile station is 120 km/h (2 km/minute) and the radius of the cell is 6 km (cell diameter=12 km),</p>
+<p id="p-0079" num="0083">the time the mobile station resides in each cell is 12 km/2 km=6 minutes (X+Y=6 minutes in <figref idref="DRAWINGS">FIG. 12</figref>), and</p>
+<p id="p-0080" num="0084">HO is performed 4 times.</p>
+<p id="p-0081" num="0085">Therefore, in 30 minutes, the mobile station moves across 5(=4+1) cells and resides in the DRX cycle for 5(=6&#x2212;1) minutes in each cell (that is, X=1 minute and Y=5 minutes in <figref idref="DRAWINGS">FIG. 12</figref>).</p>
+<p id="p-0082" num="0086">As a result, in 30 minutes, the mobile station stays in DRX for 5&#xd7;5=25 minutes.</p>
+<p id="p-0083" num="0087">On the other hand, when the movement velocity is 60 km/h and the cell diameter is 1 km, the residence time in each cell and the transition time from Active to DRX are both 1 minute and, therefore, the mobile station does not transit to DRX for 30 minutes.</p>
+<p id="p-0084" num="0088">That is, in <figref idref="DRAWINGS">FIG. 12</figref>, Y=0 minute because X=1 minute and X+Y=1 minute, meaning that the next HO operation is started without starting the DRX control in a target cell and, as a result, while the mobile station moves from cell <b>1</b> through to cell <b>5</b>, HO is performed four times without performing the DRX control.</p>
+<p id="p-0085" num="0089">As described above, when the residence time of a low-Activity mobile station in one cell is shorter than the transition time to DRX (this time is managed, for example, by a timer in the base station side), the mobile station cannot make a transition to DRX in the cell and, as a result, consumes extra power.</p>
+<p id="p-0086" num="0090">Similarly, when the residence time in a cell is shorter than the transition time to the RRC_Idle state, the mobile station cannot make a transition to the RRC_Idle state and, as a result, consumes extra power. In this case, a mobile station, whose Activity is low enough to transit the mobile station to the RRC_Idle state, repeats unnecessary HO. Such wasteful HO will result in a higher network load (base station, UPE/MME) than it is supposed to be, and hence there is room for improvement.</p>
+<p id="p-0087" num="0091">An exemplary embodiment in another aspect of the present invention is that the DRX control of a mobile station, which is performed in a target cell after inter base station HO, is started at the same time the HO is completed. By doing so, the exemplary embodiment prevents the mobile station from consuming extra power in the target cell and avoids the repetition of unnecessary HO, thus reducing the network load. In the exemplary embodiment described below, too, an example in which the present invention is applied to a system, proposed by 3GPP LTE, is described though not limited thereto.</p>
+<p id="p-0088" num="0092"><figref idref="DRAWINGS">FIG. 1</figref> and <figref idref="DRAWINGS">FIG. 2</figref> are diagrams showing the flow (sequence diagram) of inter base station HO of a mobile station, for which the DRX operation is performed in this exemplary embodiment, and the concept of the system configuration.</p>
+<p id="p-0089" num="0093">A source base station (<b>101</b>) transmits uplink scheduling information (UL allocation) to a mobile station (<b>103</b>) and, before performing inter base station HO, the mobile station (<b>103</b>) first transmits a Measurement Report on neighboring cells of the source cell, where the mobile station (<b>103</b>) is now located, to the source base station (<b>101</b>).</p>
+<p id="p-0090" num="0094">The source base station (<b>101</b>) transmits the signal (DRX Control Signaling) to the mobile station (<b>103</b>) to instruct the mobile station (<b>103</b>) to transit from the DRX to Active, and stops the DRX control of the mobile station (<b>103</b>).</p>
+<p id="p-0091" num="0095">The source base station (<b>101</b>) transfers Dormancy Context as well as QoS Profile and AS Configuration of the mobile station (<b>103</b>) to a target base station (<b>102</b>).</p>
+<p id="p-0092" num="0096">After receiving the notification signal (Context Confirm), which indicates that the target base station (<b>102</b>) is ready to accept HO, from the target base station (<b>102</b>), the source base station (<b>101</b>) transmits the signal of HO start permission (HO Command) to the mobile station (<b>103</b>).</p>
+<p id="p-0093" num="0097">After receiving the control signal (HO Command) from the source base station (<b>101</b>), the mobile station (<b>103</b>) accesses the target base station (<b>102</b>) via the RACH(Random Access Channel), which is a uplink channel, to acquire the transmission timing adjustment value (Timing Advance: TA) and uplink scheduling information (UL Allocation) from the target base station (<b>102</b>).</p>
+<p id="p-0094" num="0098">The mobile station (<b>103</b>) adjusts the transmission timing according to the transmission timing adjustment value (TA) and transmits the signal (HO Confirm) to the target base station (<b>102</b>) at the allocated time and frequency to notify the target base station (<b>102</b>) that the mobile station (<b>103</b>) has performed hand over.</p>
+<p id="p-0095" num="0099">The target base station (<b>102</b>) transmits the control signal (HO Completed) to the source base station (<b>101</b>) and notifies an MME/UPE(<b>104</b>) that the mobile station (<b>103</b>), which performed the inter base station HO, has moved to the cell managed by the target base station (<b>102</b>) (UE update to MME/UPE) and, after that, completes the inter base station HO operation.</p>
+<p id="p-0096" num="0100">After the HO operation is completed, the target base station (<b>102</b>) uses at least Dormancy Context, which is one of the following that include information on the mobile station in the source cell and that has been transferred from the source base station (<b>101</b>),</p>
+<p id="p-0097" num="0101">QoS profile;</p>
+<p id="p-0098" num="0102">AS Configuration;</p>
+<p id="p-0099" num="0103">Dormancy Context;</p>
+<p id="p-0100" num="0104">Amount of packets arrived from UPE (User Plane Entity); and</p>
+<p id="p-0101" num="0105">Internal information that the target base station (<b>102</b>) has; to perform the DRX control of the mobile station (<b>103</b>) and transmits the signal (Early DRX Control Signaling) that makes the mobile station transit to an appropriate DRX state.</p>
+<p id="p-0102" num="0106">Any of the following may be used as an item for Dormancy Context.
+<ul id="ul0006" list-style="none">
+    <li id="ul0006-0001" num="0107">(A) Current DRX level;</li>
+    <li id="ul0006-0002" num="0108">(B) Residence time in the current DRX level</li>
+    <li id="ul0006-0003" num="0109">(C) Average DRX level in the source cell</li>
+    <li id="ul0006-0004" num="0110">(D) Maximum DRX level in the source cell</li>
+    <li id="ul0006-0005" num="0111">(E) Minimum DRX level in the source cell</li>
+    <li id="ul0006-0006" num="0112">(F) Transmission buffer size in the HO preparation period</li>
+    <li id="ul0006-0007" num="0113">(G) Scheduling time in the source cell/RRC_Connected residence time in the source cell</li>
+</ul>
+</p>
+<p id="p-0103" num="0114">Although the DRX cycle (DRX period) is defined according to a DRX level in this exemplary embodiment, the length of the DRX cycle may be determined according to a DRX level each time the base station performs the DRX control operation. Alternatively, a table containing the correspondence between DRX levels and DRX cycles (DRX periods) may be provided in a base station or a mobile station to determine the DRX cycle (DRX period) by referencing the correspondence table. It is desirable that, for a higher DRX level, the length of the non-reception period in the DRX cycle be lower than the length of the reception period in the DRX cycle. This correspondence is assumed in the description of the exemplary embodiment below but the exemplary embodiment is not limited to this setting.</p>
+<p id="p-0104" num="0115">The present invention provides the following methods for performing the DRX control.</p>
+<p id="p-0105" num="0116">(I) Fix the DRX cycle (DRX period) and adjust the ratio between the reception period and the non-reception period.</p>
+<p id="p-0106" num="0117">(II) Fix the reception period, and adjust the non-reception period. At the same time, vary the length of the DRX cycle (DRX period).</p>
+<p id="p-0107" num="0118">(III) Fix the ratio between the reception period and the non-reception period, and adjust the DRX cycle (DRX period).</p>
+<p id="p-0108" num="0119">For each item for Dormancy Context, the following describes how to determine L<sub>NEW </sub>that is the DRX level of a mobile station in the target cell after the inter base station HO is performed.</p>
+<p id="p-0109" num="0120">(A) When the current (in the source cell at HO requested) DRX level (=L<sub>OLD</sub>) is used as Dormancy Context, L<sub>NEW </sub>is determined from expression (1) (see <figref idref="DRAWINGS">FIG. 3</figref>).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>L</i><sub>NEW</sub><i>=L</i><sub>OLD</sub><i>+M</i>&#x2003;&#x2003;(1)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0110" num="0121">where M is the predefined margin that is a fixed value. In the example shown in <figref idref="DRAWINGS">FIG. 3</figref>, M=25% and, because L<sub>OLD </sub>is 25%, L<sub>NEW</sub>=50%.</p>
+<p id="p-0111" num="0122">(B) When the current DRX residence time T and the current DRX level are used as the Dormancy Context, L<sub>NEW </sub>is determined from expressions (2) and (3) (see <figref idref="DRAWINGS">FIGS. 4A and 4B</figref>).</p>
+<p id="p-0112" num="0123">
+<maths id="MATH-US-00001" num="00001">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>L</mi>
+          <mi>NEW</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <msub>
+            <mi>L</mi>
+            <mi>OLD</mi>
+          </msub>
+          <mo>+</mo>
+          <msub>
+            <mi>M</mi>
+            <mi>T</mi>
+          </msub>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>2</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>M</mi>
+          <mi>T</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mo>{</mo>
+          <mtable>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mi>M</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>1</mn>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mi>T</mi>
+                    <mo>&#x2265;</mo>
+                    <msub>
+                      <mi>T</mi>
+                      <mn>0</mn>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mi>M</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>2</mn>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mi>T</mi>
+                    <mo>&#x3c;</mo>
+                    <msub>
+                      <mi>T</mi>
+                      <mn>0</mn>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>3</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0113" num="0124">where M<b>1</b> and M<b>2</b> are predefined margins and M<b>1</b>&#x3c;M<b>2</b>. T<sub>0 </sub>is a threshold for selecting one of the predefined margins.</p>
+<p id="p-0114" num="0125">If the current DRX residence time T is greater than or equal to the threshold time T<sub>0</sub>, the margin M<sub>T </sub>is set to M<b>1</b>; if T is less than T<sub>0</sub>, M<sub>T </sub>is set to M<b>2</b>. L<sub>NEW </sub>is the value generated by adding M<sub>T </sub>to L<sub>OLD</sub>.</p>
+<p id="p-0115" num="0126">(C) When the average DRX level (=L<sub>AVE</sub>) in the source cell is used as Dormancy Context, L<sub>NEW </sub>is determined from expression (4).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>L</i><sub>NEW</sub><i>=L</i><sub>AVE</sub><i>+M</i><sub>AVE</sub>&#x2003;&#x2003;(4)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0116" num="0127">In this case, if an integer value is used as the DRX level, L<sub>AVE </sub>is an integer greater than or equal to (or less than or equal to)</p>
+<p id="p-0117" num="0128">
+<maths id="MATH-US-00002" num="00002">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <munderover>
+              <mo>&#x2211;</mo>
+              <mrow>
+                <mi>i</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+              <mi>I</mi>
+            </munderover>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <msub>
+                <mi>t</mi>
+                <mi>i</mi>
+              </msub>
+              <mo>&#x2062;</mo>
+              <msub>
+                <mi>L</mi>
+                <mi>i</mi>
+              </msub>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>/</mo>
+        <mrow>
+          <munderover>
+            <mo>&#x2211;</mo>
+            <mrow>
+              <mi>i</mi>
+              <mo>=</mo>
+              <mn>1</mn>
+            </mrow>
+            <mi>I</mi>
+          </munderover>
+          <mo>&#x2062;</mo>
+          <msub>
+            <mi>t</mi>
+            <mi>i</mi>
+          </msub>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>5</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+<br/>
+and is closest to that value, and M<sub>AVE </sub>is the predefined fixed margin.
+</p>
+<p id="p-0118" num="0129">(D) When the maximum DRX level (=L<sub>MAX</sub>) in the source cell is used as Dormancy Context, L<sub>NEW </sub>is determined from expression (6).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>L</i><sub>NEW</sub><i>=L</i><sub>MAX</sub><i>+M</i><sub>MAX</sub>&#x2003;&#x2003;(6)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0119" num="0130">where M<sub>MAX </sub>is a predefined margin that is fixed.</p>
+<p id="p-0120" num="0131">(E) When the minimum DRX level (=L<sub>MIN</sub>) in the source cell is used as Dormancy Context, L<sub>NEW </sub>is determined from expression (7).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>L</i><sub>NEW</sub><i>=L</i><sub>MIN</sub><i>+M</i><sub>MIN</sub>&#x2003;&#x2003;(7)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0121" num="0132">where M<sub>MIN </sub>is a predefined margin that is fixed.</p>
+<p id="p-0122" num="0133">(F) When the transmission buffer size (S<sub>BUF</sub>) of the source base station in the HO preparation period in the source cell is used as Dormancy Context, L<sub>NEW </sub>is determined based on the relation between K thresholds and K&#x2212;1 DRX levels defined in advance as shown in expression (8) (see <figref idref="DRAWINGS">FIGS. 5A and 5B</figref>).</p>
+<p id="p-0123" num="0134">
+<maths id="MATH-US-00003" num="00003">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>L</mi>
+          <mi>NEW</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mo>{</mo>
+          <mtable>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <msub>
+                    <mi>L</mi>
+                    <mi>K</mi>
+                  </msub>
+                  <mo>,</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msub>
+                      <mi>S</mi>
+                      <mi>K</mi>
+                    </msub>
+                    <mo>&#x3c;</mo>
+                    <msub>
+                      <mi>S</mi>
+                      <mi>BUF</mi>
+                    </msub>
+                    <mo>&#x2264;</mo>
+                    <mi>&#x221e;</mi>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+              </mtd>
+              <mtd>
+                <mi>&#x22ee;</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <msub>
+                    <mi>L</mi>
+                    <mn>2</mn>
+                  </msub>
+                  <mo>,</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>0</mn>
+                    <mo>&#x3c;</mo>
+                    <msub>
+                      <mi>S</mi>
+                      <mi>BUF</mi>
+                    </msub>
+                    <mo>&#x2264;</mo>
+                    <msub>
+                      <mi>S</mi>
+                      <mn>1</mn>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <msub>
+                    <mi>L</mi>
+                    <mn>1</mn>
+                  </msub>
+                  <mo>,</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msub>
+                      <mi>S</mi>
+                      <mi>BUF</mi>
+                    </msub>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>8</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0124" num="0135">In the example in <figref idref="DRAWINGS">FIG. 5A</figref>, because the transmission buffer size S<sub>BUF </sub>of the source base station in the HO preparation period in the source cell is S<sub>1</sub>&#x2266;S<sub>BUF</sub>&#x2266;S<sub>2</sub>, when L<sub>OLD </sub>is 25%, we have
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>L</i><sub>NEW</sub>=50%<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0125" num="0136">from the table of correspondence between buffer thresholds and L<sub>NEW </sub>shown in <figref idref="DRAWINGS">FIG. 5B</figref>. The table of correspondence between buffer thresholds and L<sub>NEW </sub>is held in a memory (for example, rewritable nonvolatile memory) that can be referenced by the controller in the base station.</p>
+<p id="p-0126" num="0137">(G) When the scheduling time in the source cell/RRC_Connected residence time in the source cell (R<sub>SCR</sub>) is used as Dormancy Context, L<sub>NEW </sub>is determined based on the relation between K thresholds and K&#x2212;1 DRX levels defined in advance as shown in expression (9).</p>
+<p id="p-0127" num="0138">
+<maths id="MATH-US-00004" num="00004">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>L</mi>
+          <mi>NEW</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mo>{</mo>
+          <mtable>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <msub>
+                    <mi>L</mi>
+                    <mi>K</mi>
+                  </msub>
+                  <mo>,</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msub>
+                      <mi>R</mi>
+                      <mi>K</mi>
+                    </msub>
+                    <mo>&#x3c;</mo>
+                    <msub>
+                      <mi>R</mi>
+                      <mi>SCR</mi>
+                    </msub>
+                    <mo>&#x2264;</mo>
+                    <mi>&#x221e;</mi>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mstyle>
+                  <mspace width="0.3em" height="0.3ex"/>
+                </mstyle>
+              </mtd>
+              <mtd>
+                <mi>&#x22ee;</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <msub>
+                    <mi>L</mi>
+                    <mn>2</mn>
+                  </msub>
+                  <mo>,</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>1</mn>
+                    </msub>
+                    <mo>&#x3c;</mo>
+                    <msub>
+                      <mi>R</mi>
+                      <mi>SCR</mi>
+                    </msub>
+                    <mo>&#x2264;</mo>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>2</mn>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <msub>
+                    <mi>L</mi>
+                    <mn>1</mn>
+                  </msub>
+                  <mo>,</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>0</mn>
+                    <mo>&#x3c;</mo>
+                    <msub>
+                      <mi>R</mi>
+                      <mi>SCR</mi>
+                    </msub>
+                    <mo>&#x2264;</mo>
+                    <msub>
+                      <mi>R</mi>
+                      <mn>1</mn>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>9</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0128" num="0139">(H) When two or more (J) items described above are used as Dormancy Context, L<sub>NEW </sub>is determined from expression (10).</p>
+<p id="p-0129" num="0140">
+<maths id="MATH-US-00005" num="00005">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>L</mi>
+          <mi>NEW</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mrow>
+            <munderover>
+              <mo>&#x2211;</mo>
+              <mrow>
+                <mi>j</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+              <mi>J</mi>
+            </munderover>
+            <mo>&#x2062;</mo>
+            <mrow>
+              <msub>
+                <mi>w</mi>
+                <mi>j</mi>
+              </msub>
+              <mo>&#xb7;</mo>
+              <msub>
+                <mi>L</mi>
+                <mrow>
+                  <mi>NEW</mi>
+                  <mo>,</mo>
+                  <mi>j</mi>
+                </mrow>
+              </msub>
+            </mrow>
+          </mrow>
+          <mo>+</mo>
+          <mi>M</mi>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>10</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0130" num="0141">where w<sub>j </sub>is the weight on L<sub>NEW,J</sub>, determined from the jth Dormancy Context, and satisfies the following relation.</p>
+<p id="p-0131" num="0142">
+<maths id="MATH-US-00006" num="00006">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <mrow>
+          <munderover>
+            <mo>&#x2211;</mo>
+            <mrow>
+              <mi>j</mi>
+              <mo>=</mo>
+              <mn>1</mn>
+            </mrow>
+            <mi>J</mi>
+          </munderover>
+          <mo>&#x2062;</mo>
+          <msub>
+            <mi>w</mi>
+            <mi>j</mi>
+          </msub>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>11</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0132" num="0143">The following describes some examples.</p>
+<heading id="h-0008" level="1">First Exemplary Embodiment</heading>
+<p id="p-0133" num="0144"><figref idref="DRAWINGS">FIG. 6</figref> and <figref idref="DRAWINGS">FIG. 7</figref> are diagrams showing a first exemplary embodiment of the present invention. In the first exemplary embodiment, the current DRX cycle is used as Dormancy Context, and the DRX level of the mobile station in the HO completion period in the target cell is determined using expression (12) shown below (same as expression (1) shown above).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>L</i><sub>NEW</sub><i>=L</i><sub>OLD</sub><i>M</i>&#x2003;&#x2003;(12)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0134" num="0145">In this example, M=0, that is, the DRX level in the target cell in the HO completion period is set to the same state as that of the DRX level in the source cell immediately before the HO operation was started.</p>
+<p id="p-0135" num="0146">In this example, the DRX level of the mobile station is called as follows.</p>
+<p id="p-0136" num="0147">&#x201c;Active&#x201d; when the DRX level is 100%</p>
+<p id="p-0137" num="0148">&#x201c;Short DRX&#x201d; when the DRX level is 60%</p>
+<p id="p-0138" num="0149">&#x201c;Long DRX&#x201d; when the DRX level is 20%</p>
+<p id="p-0139" num="0150">&#x201c;Idle&#x201d; when the DRX level is 0%</p>
+<p id="p-0140" num="0151">As described above, a DRX level lower than 100%, for example 90%, may be defined as &#x201c;Active&#x201d;. For example, the ratio of the non-reception period of the &#x201c;Short DRX&#x201d; in the DRX cycle is configured shorter than the non-reception period of &#x201c;Long DRX&#x201d;.</p>
+<p id="p-0141" num="0152">Assume that there are four cells, <b>1</b>, <b>2</b>, <b>3</b>, and <b>4</b>, and that the cells and base stations are related in such a way that cells <b>1</b>, <b>2</b>, <b>3</b>, and <b>4</b> are managed respectively by base stations <b>1</b>, <b>2</b>, <b>3</b>, and <b>4</b>.</p>
+<p id="p-0142" num="0153">Also assume that the mobile station performs HO in cells <b>1</b>, <b>2</b>, <b>3</b>, and <b>4</b> in this order and that, in cells <b>2</b>, <b>3</b>, and <b>4</b>, the mobile station performs data transmission/reception only for the HO operation.</p>
+<p id="p-0143" num="0154">Assume that the change in the DRX level in the present invention is as shown in <figref idref="DRAWINGS">FIG. 6</figref> when the mobile station, which is under control of the DRX operation, performs inter base station HO.</p>
+<p id="p-0144" num="0155">In the initial state, assume that the mobile station that is moving fast resides in cell <b>1</b> and that the DRX level is Long DRX. When performing inter base station HO to cell <b>2</b>, this mobile station becomes Active and performs the HO operation.</p>
+<p id="p-0145" num="0156">Because the DRX level of the mobile station in the target cell in the HO completion period, is configured equal to the DRX level in the source cell in this example, the DRX level of the mobile station in cell <b>2</b> in the HO completion period is determined Long DRX that is the same DRX level as that in cell <b>1</b>.</p>
+<p id="p-0146" num="0157">In the HO completion period, base station <b>2</b> transmits a signal (Early DRX Control Signaling), which instructs the mobile station to transit to Long DRX, to the mobile station and starts the DRX control of the mobile station immediately after the completion of HO.</p>
+<p id="p-0147" num="0158">The mobile station performs HO from cell <b>2</b> to cell <b>3</b> and from cell <b>3</b> to cell <b>4</b>. In this case, as in the HO from cell <b>1</b> to cell <b>2</b>, each base station immediately instructs the mobile station to transit to Long DRX in the HO completion period and starts the DRX control. This reduces the extra power consumption of the mobile station in the cell after the HO.</p>
+<p id="p-0148" num="0159"><figref idref="DRAWINGS">FIG. 7</figref> shows the DRX residence time of a mobile station during 30 minutes on the assumption that the transition time from Active to DRX is one minute and the mobile station intermittently transmits and receives data during the 30 minutes. Because the time required for HO, several 10 milliseconds, is so much shorter than the cell residence time that this time is ignored in the calculation.</p>
+<p id="p-0149" num="0160">It is assumed that the frequency of the data transmission/reception of the mobile station is not so high in the HO destination that the mobile station can stay in the DRX (the mobile station need not stay in the Active). It is also assumed that, in each cell, the mobile station moves through the center of the cell and moves the distance equal to the diameter of the cell. A model is assumed in which the cells are adjacent each other and the mobile station moves on the straight line at a uniform speed along the diameters of the multiple cells.</p>
+<p id="p-0150" num="0161">In case the present invention is used, the DRX level of the mobile station is changed to a DRX level equal to that in the source level, immediately after the completion of the HO (for example, in several milliseconds).</p>
+<p id="p-0151" num="0162">For example, when the movement speed of the mobile station is 120 km/h and the diameter of the cell is 12 km in <figref idref="DRAWINGS">FIG. 7</figref>, the time the mobile station resides in each cell is 6 minutes, HO is performed 4 times, and the mobile station resides across 5 cells.</p>
+<p id="p-0152" num="0163">In the example shown in <figref idref="DRAWINGS">FIG. 13</figref>, the transition from Active to DRX is triggered by the time out in the timer which the base station has, as described above, and hence the DRX residence time in 30 minutes is 25(=(6&#x2212;1)&#xd7;5) minutes.</p>
+<p id="p-0153" num="0164">In contrast, because the mobile station can transit to the DRX in the HO completion period in this example, the DRX residence time during 30 minutes is 29 minutes, which is the sum of 5(=6&#x2212;1) minutes during which the mobile station resides in the first cell and 24 (=4&#xd7;6) minutes during which the mobile station resides in the cells after the HO.</p>
+<p id="p-0154" num="0165">As a result, the DRX residence period of the present invention is four minutes longer than that (25 minutes) in the exemplary embodiment shown in <figref idref="DRAWINGS">FIG. 13</figref>. And, the power consumption of the mobile station can be decreased in proportion to an increase in the DRX residence period.</p>
+<p id="p-0155" num="0166">On the other hand, when the movement speed is 60 km/h and the cell diameter is 1 Km, the mobile station resides in each cell for one minute, HO is performed 29 times, and the mobile station resides across 30 cells.</p>
+<p id="p-0156" num="0167">Because both the residence time in each cell and the transition time from Active to DRX are one minute in the example shown in <figref idref="DRAWINGS">FIG. 13</figref>, the mobile station does not transit to DRX, during 30 minutes. That is, the mobile station remains Active during 30 minutes.</p>
+<p id="p-0157" num="0168">In contrast, the mobile station can transit to DRX (for example, Long DRX), immediately after the completion of HO in this example and, in each cell, the mobile station can stay in DRX after HO. For this reason, during 30 minutes, the mobile station can reside in DRX for the maximum of 29 minutes that is the sum of 0(=1&#x2212;1) minute during which the mobile station resides in the first cell and 29 (=1&#xd7;29) minutes during which the mobile station reside in the cells after HO.</p>
+<p id="p-0158" num="0169">As a result, the DRX residence period according to the present invention is 29 minutes longer than that in the case shown in <figref idref="DRAWINGS">FIG. 13</figref>, thus further decreasing the power consumption of the mobile station.</p>
+<heading id="h-0009" level="1">Second Exemplary Embodiment</heading>
+<p id="p-0159" num="0170"><figref idref="DRAWINGS">FIG. 8</figref> and <figref idref="DRAWINGS">FIG. 9</figref> are diagrams showing a second exemplary embodiment of the present invention. As the second exemplary embodiment of the present invention, the following describes a case in which the current DRX level Loop and the current DRX level residence time T are used as Dormancy Context to determine the DRX level of the mobile station in the HO completion period in the target cell using expressions (13) and (14) (same as expressions (2) and (3)).</p>
+<p id="p-0160" num="0171">
+<maths id="MATH-US-00007" num="00007">
+<math overflow="scroll">
+<mtable>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>L</mi>
+          <mi>NEW</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <msub>
+            <mi>L</mi>
+            <mi>OLD</mi>
+          </msub>
+          <mo>+</mo>
+          <msub>
+            <mi>M</mi>
+            <mi>T</mi>
+          </msub>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>13</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+  <mtr>
+    <mtd>
+      <mrow>
+        <msub>
+          <mi>M</mi>
+          <mi>T</mi>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mo>{</mo>
+          <mtable>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mi>M</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>1</mn>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mi>T</mi>
+                    <mo>&#x2265;</mo>
+                    <msub>
+                      <mi>T</mi>
+                      <mn>0</mn>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mi>M</mi>
+                  <mo>&#x2062;</mo>
+                  <mstyle>
+                    <mspace width="0.3em" height="0.3ex"/>
+                  </mstyle>
+                  <mo>&#x2062;</mo>
+                  <mn>2</mn>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mi>T</mi>
+                    <mo>&#x3c;</mo>
+                    <msub>
+                      <mi>T</mi>
+                      <mn>0</mn>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mrow>
+    </mtd>
+    <mtd>
+      <mrow>
+        <mo>(</mo>
+        <mn>14</mn>
+        <mo>)</mo>
+      </mrow>
+    </mtd>
+  </mtr>
+</mtable>
+</math>
+</maths>
+</p>
+<p id="p-0161" num="0172">where T<sub>0 </sub>is a predefined threshold, and M<sub>T </sub>is a margin. Assume that M<b>1</b>=&#x2212;40% and M<b>2</b>=0% and that the value of the DRX level, if negative, is replaced by 0.</p>
+<p id="p-0162" num="0173">In this example, the DRX level of the mobile station is called as follows:</p>
+<p id="p-0163" num="0174">&#x201c;Active&#x201d; when the DRX level is 100%;</p>
+<p id="p-0164" num="0175">&#x201c;Short DRX&#x201d; when the DRX level is 60%;</p>
+<p id="p-0165" num="0176">&#x201c;Long DRX&#x201d; when the DRX level is 20%; and</p>
+<p id="p-0166" num="0177">&#x201c;Idle&#x201d; when the DRX level is 0%.</p>
+<p id="p-0167" num="0178">As described above, a DRX level lower than 100%, for example 90%, may be defined as &#x201c;Active&#x201d;. For example, the ratio of the non-reception period of the &#x201c;Short DRX&#x201d; in the DRX cycle is configured shorter than the non-reception period of &#x201c;Long DRX&#x201d;.</p>
+<p id="p-0168" num="0179">Assume that the cells and base stations are related in such a way that cells <b>1</b>, <b>2</b>, <b>3</b>, and <b>4</b> are managed respectively by base stations <b>1</b>, <b>2</b>, <b>3</b>, and <b>4</b> and that, in cells <b>2</b>, <b>3</b>, and <b>4</b>, the mobile station performs data transmission/reception only for the HO.</p>
+<p id="p-0169" num="0180">Assume that the change in the DRX level in this example is as shown in <figref idref="DRAWINGS">FIG. 8</figref> when the mobile station performs inter base station HO.</p>
+<p id="p-0170" num="0181">In the initial state, assume that the mobile station that is moving fast resides in cell <b>1</b> and its DRX level is Long DRX. Also assume that the time T<sub>1</sub>, during which this mobile station stays in Long DRX in cell <b>1</b>, is greater than or equal to T<sub>0</sub>.</p>
+<p id="p-0171" num="0182">When performing an inter base station HO to cell <b>2</b>, this mobile station transit to Active and performs the HO.</p>
+<p id="p-0172" num="0183">In this example, the DRX level of the mobile station in the target cell in the HO completion period is the value generated by adding the margin to the DRX level in the source cell. Therefore, the DRX level L<sub>NEW,2 </sub>of the mobile station in cell <b>2</b> in the HO completion period is calculated by adding the margin M<sub>T</sub>=M<b>1</b>=&#x2212;40% to the DRX level L<sub>OLD,1</sub>=20% in cell <b>1</b>. This calculation gives 0% (the actual value is &#x2212;20%, and the negative value is replaced by 0) and determines that the mobile station will transit to the Idle state.</p>
+<p id="p-0173" num="0184">In the HO completion period, base station <b>2</b> transmits a signal (Early DRX Control Signaling) to the mobile station to instruct it to transit to the Idle state.</p>
+<p id="p-0174" num="0185">The transition of the mobile station to the Idle state eliminates the need for the mobile station to sequentially perform HO from cell <b>2</b> to cell <b>3</b> and from cell <b>3</b> to cell <b>4</b>, thereby reducing the extra power consumption of the mobile station.</p>
+<p id="p-0175" num="0186">Another advantage is that the network (NW) can avoid an increase in the load that will be caused by repeated unnecessary HO of the mobile station.</p>
+<p id="p-0176" num="0187"><figref idref="DRAWINGS">FIG. 9</figref> shows the number of times the mobile station repeats HO until the mobile station transits to Idle on the assumption that the transition time from Active to Long DRX is one minute and the transition time from Long DRX to Idle is five minutes.</p>
+<p id="p-0177" num="0188">The time required for HO, several 10 m seconds, is so much shorter than the cell residence time that it is neglected in the calculation.</p>
+<p id="p-0178" num="0189">It is assumed that, in the initial state, the DRX level is Long DRX in a cell where the mobile station resides first, the mobile station definitely performs HO to the next cell, and the observation time is 30 minutes.</p>
+<p id="p-0179" num="0190">It is also assumed that the mobile station moves through the center of each cell and moves the distance equal to the diameter. When the present invention is applied, the DRX level is determined to be the value, generated by adding the margin to the DRX level equal to that in the source cell, immediately after the completion of HO (for example, several milliseconds).</p>
+<p id="p-0180" num="0191">In this example, if the maximum DRX residence time is less than five minutes, the mobile station stays in Long DRX and, if the maximum DRX residence time is greater or equal to five minutes, a negative margin is added to make the mobile station transit to Idle state (RRC_Idle).</p>
+<p id="p-0181" num="0192">In <figref idref="DRAWINGS">FIG. 9</figref>, when the movement velocity of the mobile station is 120 km/h and the cell diameter is 12 Km, the time the mobile station resides in each cell is six minutes. The mobile station performs HO once only in the first time and so the mobile station resides across two cells.</p>
+<p id="p-0182" num="0193">In the related art, the transition from Active to Long DRX or from Long DRX to Idle is triggered when the timer of the base station has timed out. Therefore, the mobile station transits to Long DRX in one minute in the second cell and, after that, transits to Idle in five minutes.</p>
+<p id="p-0183" num="0194">In the present invention, because the mobile station transits to Long DRX in the HO completion period and, after that, transits to Idle in five minutes, HO is performed once as in the related art.</p>
+<p id="p-0184" num="0195">It takes one minute for the mobile station to transit to Long DRX in the example shown in <figref idref="DRAWINGS">FIG. 13</figref>, whereas the mobile station in this example transits to Long DRX without waiting one minute but in as short as several milliseconds. This reduces the power consumption of the mobile station.</p>
+<p id="p-0185" num="0196">Next, when the movement velocity is 60 Km/h and the cell diameter is 1 km, the residence time in each cell is one minute.</p>
+<p id="p-0186" num="0197">Because the next HO is performed before the mobile station transits to Long DRX in the example shown in <figref idref="DRAWINGS">FIG. 13</figref>, the mobile station repeats HO during 30 minutes of the observation time, with the result that HO is repeated 29 times.</p>
+<p id="p-0187" num="0198">In contrast, because the mobile station is allowed to transit to Long DRX immediately after the first HO (for example, in several milliseconds) in this example, the Long DRX residence time is added up, even if HO is repeated. After HO is repeated five times, the mobile station transits from Long DRX to Idle.</p>
+<p id="p-0188" num="0199">As a result, the present invention reduces the number of HO operations by 24 as compared with the example shown in <figref idref="DRAWINGS">FIG. 13</figref>, reduces the power consumption of the mobile station, and reduces the load of the network (NW).</p>
+<p id="p-0189" num="0200">As described above, the present invention avoids extra power consumption in the inter base station HO of a mobile station that performs the DRX operation and an increase in the load of the NW.</p>
+<p id="p-0190" num="0201">In addition to those described above, the maximum transmission buffer size of the source base station, the average buffer size of the source cell base station, and so on may be used as Dormancy Context. The average buffer size of the source cell base station and so on are calculated either from the monitoring result of the transmission buffer size obtained via a periodical polling or from a log result of the transmission buffer size based on the generation of an event at the time data is accumulated in the transmission buffer.</p>
+<p id="p-0191" num="0202">The method described below may be used for performing the DRX control in the target cell after HO (see <figref idref="DRAWINGS">FIG. 10</figref>).</p>
+<p id="p-0192" num="0203">When a mobile station and a base station have established the RRC connection (RRC_Connected state) but the mobile station does not perform data transmission/reception for a predetermined time TD, the DRX level of the mobile station is decreased as shown by expression (15).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>L</i><sub>NEW</sub><i>=L</i><sub>OLD</sub><i>&#x2212;&#x394;L</i>&#x2003;&#x2003;(15)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0193" num="0204">Conversely, when a mobile station continues data transmission/reception for a predetermined time TU, the DRX level of the mobile station is increased as shown by expression (16).
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?><i>L</i><sub>NEW</sub><i>=L</i><sub>OLD</sub><i>+&#x394;L</i>&#x2003;&#x2003;(16)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0194" num="0205">To implement this DRX control, one of the following two methods may be used.
+<ul id="ul0007" list-style="none">
+    <li id="ul0007-0001" num="0000">
+    <ul id="ul0008" list-style="none">
+        <li id="ul0008-0001" num="0206">The base station determines L<sub>NEW </sub>and notifies the mobile station of L<sub>NEW</sub>.</li>
+        <li id="ul0008-0002" num="0207">The base station notifies the mobile station of DL, TU, and TD, and the base station and the mobile station each determine L<sub>NEW</sub>.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0195" num="0208">This DRX control method is applicable not only to a mobile station that has performed HO but also to the mobile stations residing in one cell.</p>
+<p id="p-0196" num="0209">Although the transition time from Active to Long DRX is assumed to take one minute in the above example, the effect of the present invention becomes more remarkable as the transition time from Active to Long DRX becomes longer. In the present invention, if a mobile station starts continuous reception on the downlink but data is not transmitted for a predetermined period, there is a case in which the mobile station does not enter into DRX (discontinuous reception), but transits to the RRC_IDLE state.</p>
+<p id="p-0197" num="0210"><figref idref="DRAWINGS">FIG. 14</figref> is a diagram schematically showing an example of the configuration of a base station in the example shown in <figref idref="DRAWINGS">FIG. 1</figref> and <figref idref="DRAWINGS">FIG. 2</figref>. Because the source base station (<b>101</b>) and the target base station (<b>102</b>) in <figref idref="DRAWINGS">FIG. 1</figref> and <figref idref="DRAWINGS">FIG. 2</figref> have the same configuration, <figref idref="DRAWINGS">FIG. 14</figref> shows the configuration of the source base station only. Referring to <figref idref="DRAWINGS">FIG. 14</figref>, the source base station comprises a radio unit (RF) <b>105</b> that has a transmission unit and a reception unit not shown, a baseband unit <b>106</b> that performs baseband processing, a coding/decoding unit (CODEC) <b>107</b> that codes transmission data and decodes reception data, a control unit <b>108</b>, a transmission/reception unit <b>109</b> that communicates with a target base station via a wired line, a DRX controller <b>110</b> that derives a DRX level, a buffer unit <b>111</b>, and a coding/decoding unit <b>112</b> that codes a control signal to be transmitted and decodes a received control signal.</p>
+<p id="p-0198" num="0211">The control unit <b>108</b> comprises a scheduler <b>108</b>-<b>1</b> that controls the operation of the coding/decoding unit (CODEC) <b>107</b> and the DRX controller <b>110</b> and a controller <b>108</b>-<b>2</b> that controls the transmission/reception unit <b>109</b>. The buffer unit <b>111</b> comprises a transmission buffer (not shown) in which transmission data is accumulated and a reception buffer (not shown) in which reception data is accumulated. The DRX controller <b>110</b> monitors data accumulated in the transmission buffer of the buffer unit <b>111</b>, derives the Activity level of a mobile station and, as described above, derives a DRX level having the correlation with the Activity level itself or with the Activity level obtained from the operation for the Activity level. The scheduler <b>108</b>-<b>1</b> notifies the DRX controller <b>110</b> when to monitor the transmission buffer.</p>
+<p id="p-0199" num="0212">When a DRX level is acquired from the DRX controller <b>110</b>, the controller <b>108</b>-<b>2</b> performs the DRX to transmit the signal (DRX Control Signaling) to the mobile station. The control signal from the control unit <b>108</b> is coded by the coding/decoding unit <b>112</b> to generate a control signal corresponding to DRX Control Signaling and, after the baseband processing is performed, the control signal is radio-transmitted to the mobile station from the radio unit <b>105</b>. The controller <b>108</b>-<b>2</b> transmits not only Dormancy Context including the DRX level received from the DRX controller <b>110</b> but also Context Data including QoS Profile and As Configuration to the target base station via the transmission/reception unit <b>109</b>. In addition, when a signal (Context Confirm, HO Completed, etc.) is received from the target base station via the transmission/reception unit <b>109</b>, the controller <b>108</b>-<b>2</b> notifies the scheduler <b>108</b>-<b>1</b> of the received signal and, when the corresponding event is generated, the scheduler <b>108</b>-<b>1</b> schedules the next processing.</p>
+<p id="p-0200" num="0213">In the present invention, a 3GPP-LTE portable terminal may be used as a mobile station. As described above, either the base station side may detect the Activity level of a mobile station and derive the DRX level or the mobile station side detects the Activity level of the mobile station and notifies the base station of the detected Activity level. <figref idref="DRAWINGS">FIG. 15</figref> is a diagram showing an example of the configuration of a mobile station in one example of a communication terminal of the present invention. Referring to <figref idref="DRAWINGS">FIG. 15</figref>, an Activity level controller (Activity Level CTRL) <b>126</b> of the mobile station (communication terminal) <b>103</b> monitors the accumulation state of the transmission buffer of a buffer unit <b>124</b> and calculates the Activity level. A control unit <b>125</b>, which comprises a schedule unit not shown, controls the monitoring of the accumulation state of the transmission buffer of the buffer unit <b>124</b>. The Activity level may be transmitted to the base station, for example, as the control signal to allow the base station to derive the DRX level based on the Activity level, received from the mobile station, and to perform the DRX control. In the non-reception period of the DRX cycle, the mobile station <b>103</b> inactivates the RF reception unit (not shown) of an RF unit <b>121</b>. The description of a baseband unit <b>122</b>, CODEC units <b>123</b> and <b>127</b>, etc., is omitted.</p>
+<p id="p-0201" num="0214"><figref idref="DRAWINGS">FIG. 16</figref> is a diagram showing an example of the configuration of a mobile station in another example of a communication terminal of the present invention. The mobile station (communication terminal) in this example comprises a DRX level controller (DRX Level CTRL) <b>128</b> instead of the Activity level controller shown in <figref idref="DRAWINGS">FIG. 15</figref>. The DRX level controller <b>128</b> monitors the accumulation state of the transmission buffer (not shown) of the buffer unit <b>124</b> to calculate the Activity level and derives the DRX level according to the Activity level. The mobile station autonomously performs the DRX control according to the acquired DRX level. When transitioning to the DRX control, the mobile station transmits a control signal to the base station to notify it about the DRX level and the start of the DRX control, and the base station records and manages the start of the DRX control.</p>
+<p id="p-0202" num="0215">Next, as another example of the present invention, the following describes an example of a mobile station compatible with the dual operation of 3GPP LTE and WCDMA (Wideband Code Division Multiple Access). <figref idref="DRAWINGS">FIGS. 17A and 17B</figref> are diagrams schematically showing another example of the present invention. <figref idref="DRAWINGS">FIG. 17B</figref> is a diagram showing the configuration of the dormancy control unit of a base station control station (RNC: also called &#x201c;Radio Network Controller&#x201d;) <b>4</b> shown in <figref idref="DRAWINGS">FIG. 17A</figref>. At least Dormancy Context is transferred from a first LTE base station <b>1</b> to a second LTE base station <b>2</b> to allow the second LTE base station <b>2</b> to immediately perform the DRX control according to the DRX level that has been used by the first LTE base station <b>1</b>. When handover from the second LTE base station <b>2</b> to a WCDMA base station <b>5</b> is performed, at least Dormancy Context is transferred from the second LTE base station <b>2</b> to the base station control station (RNC) <b>4</b> and the DRX level is transmitted from the base station control station <b>4</b> to the base station <b>5</b> to allow the WCDMA base station <b>5</b> to perform the DRX control of a mobile station <b>3</b> according to the mobile station activity state of that 3GPP-LTE mobile station before the handover. As shown in <figref idref="DRAWINGS">FIG. 17B</figref>, the base station control station <b>4</b> comprises a Dormancy Control relay unit <b>44</b> that receives Dormancy Context from the LTE base station via a transmission/reception interface <b>41</b> and transmits it to the WCDMA base station <b>5</b>, which is under the base station control station <b>4</b>, via a transmission/reception interface <b>42</b>.</p>
+<p id="p-0203" num="0216">It is, as a matter of course, possible to apply the present invention to handover between WLAN (Wireless Local Area Network) access points (AP) and to handover between WiMAX (Wireless interoperability of Microwave Access) base stations.</p>
+<p id="p-0204" num="0217">The present invention is applicable also to the control of the discontinuous reception of a first node when a transition occurs from a state, in which the first node and a second node that can perform radio-communication with each other are relatively movable and the second node manages the first node, to a state in which the first node and a third node that can perform radio-communication with each other (the third node can communicate with the second node) are relatively movable and the third node manages the first node.</p>
+<p id="p-0205" num="0218"><figref idref="DRAWINGS">FIG. 19</figref> is a diagram showing a flow of inter base station handover in a modification of one exemplary embodiment of the present invention. In the exemplary embodiment shown in <figref idref="DRAWINGS">FIG. 1</figref>, the target base station <b>102</b> transmits the handover completion signal (HO Completed) to the source base station <b>101</b> and, after that, transmits the DRX control start instruction signal (Early DRX Control Signaling) to the mobile station <b>103</b>. Instead of transmitting this signal (Early DRX Control Signaling), it is also possible to transmit the DRX control information to the mobile station <b>103</b>, as shown in <figref idref="DRAWINGS">FIG. 19</figref>, by including DRX control information (for example, contents equivalent to the contents of Early DRX Control Signaling such as DRX level or DRX cycle) into a signal (Context Confirm), transmitted from the target base station <b>102</b> to the source base station <b>101</b>, and into a command (HO Command) transmitted from the source base station <b>101</b> to the mobile station <b>103</b>. That is, when Context Data is received from the source base station <b>101</b> in <figref idref="DRAWINGS">FIG. 19</figref>, the target base station <b>102</b> executes the DRX selection processing (DRX Selection) based on Dormancy Context included in Context Data and transmits the selected DRX control information (New DRX control information) to the source base station <b>101</b> via the signal (Context Confirm). The source base station <b>101</b> transmits the DRX control information (New DRX control information) to the mobile station <b>103</b> via a command (HO Command). The mobile station <b>103</b>, which has received the signal (HO Command) transmits a signal (HO Confirm) to the target base station <b>102</b> and, immediately after the response indicating that a signal (HO Confirm) is correctly received is returned from the target base station <b>102</b>, starts DRX.</p>
+<p id="p-0206" num="0219">To enable the proper consumption of the mobile station battery, DRX in E-UTRAN (Evolved UTRAN) has the following features.</p>
+<p id="p-0207" num="0220">There is no sub-state of RRC and MAC (Medium Access Control) for distinguishing between different DRX levels.</p>
+<p id="p-0208" num="0221">DRX values that can be utilized are controlled by the network (NW) and are present for x seconds from the non-DRX state. The value x may be the same as paging DRX used in LTE_IDLE (Actual values will be studied in future and are not defined in this specification).</p>
+<p id="p-0209" num="0222">The measurement request and the reporting criterion may vary according to the length of the DRX period. That is, a longer DRX period may correspond to a more relinquished request.</p>
+<p id="p-0210" num="0223">When the radio quality of the serving (serving cell) (accurate definition of radio quality will be studied in future) is higher than a threshold, the network (NW) may transmit the threshold to the mobile station (UE) to indicate that there is no need for the measurement of neighboring cells.</p>
+<p id="p-0211" num="0224">Regardless of the DRX cycle, a mobile station (UE) may use a first available opportunity of RACH in order to transmit a measurement report (UL measurement report). Immediately after transmitting the measurement result, the mobile station (UE) may change its own DRX operation (whether or not the method is predefined by the eNB will be studied in future).</p>
+<p id="p-0212" num="0225">HARQ processing regarding uplink data transmission is independent of the DRX processing. Whether or not the DL data HARQ processing is independent of the DRX processing will be studied in future.</p>
+<p id="p-0213" num="0226">During handover, a source eNB transfers Dormancy Context to a target eNB to optimize the continuation of DRX control before and after the handover. The Dormancy Context includes at least the latest DRX level and an average/maximum/minimum DRX level in the source cell. If the UE has been at a low DRX level in the source cell, the target eNB may use Dormancy Context also for the processing for shifting the state of the UE to LTE_IDLE.</p>
+<p id="p-0214" num="0227">While the present invention has been described with reference to the examples above, it is to be understood that the present invention is not limited to the configuration of the examples above and that modifications and changes that may be made by those skilled in the art within the scope of the present invention are included.</p>
+<p id="p-0215" num="0228">The exemplary embodiments and the examples may be changed and adjusted in the scope of all disclosures (including claims) of the present invention and based on the basic technological concept thereof. In the scope of the claims of the present invention, various disclosed elements may be combined and selected in a variety of ways.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-math idrefs="MATH-US-00001" nb-file="US08626167-20140107-M00001.NB">
+<img id="EMI-M00001" he="12.36mm" wi="76.20mm" file="US08626167-20140107-M00001.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00002" nb-file="US08626167-20140107-M00002.NB">
+<img id="EMI-M00002" he="8.81mm" wi="76.20mm" file="US08626167-20140107-M00002.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00003" nb-file="US08626167-20140107-M00003.NB">
+<img id="EMI-M00003" he="15.49mm" wi="76.20mm" file="US08626167-20140107-M00003.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00004" nb-file="US08626167-20140107-M00004.NB">
+<img id="EMI-M00004" he="15.49mm" wi="76.20mm" file="US08626167-20140107-M00004.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00005" nb-file="US08626167-20140107-M00005.NB">
+<img id="EMI-M00005" he="9.14mm" wi="76.20mm" file="US08626167-20140107-M00005.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00006" nb-file="US08626167-20140107-M00006.NB">
+<img id="EMI-M00006" he="9.14mm" wi="76.20mm" file="US08626167-20140107-M00006.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-math idrefs="MATH-US-00007" nb-file="US08626167-20140107-M00007.NB">
+<img id="EMI-M00007" he="12.36mm" wi="76.20mm" file="US08626167-20140107-M00007.TIF" alt="embedded image " img-content="math" img-format="tif"/>
+</us-math>
+<us-claim-statement>The invention claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A base station which is a first base station of a plurality of base stations in a wireless communication system, the first base station comprising:
+<claim-text>a transmission unit which transmits, when a mobile station performs a handover from the first base station to a second base station, first Discontinuous Reception (DRX) configuration information that the mobile station has when a handover request is transmitted to the second base station; and</claim-text>
+<claim-text>a reception unit which receives, from the second base station, second DRX configuration information in response to receiving the first DRX configuration information at the second base station from the first base station.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The base station according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the first base station further comprises,
+<claim-text>a radio frequency unit which transmits the second DRX configuration information to the mobile station.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. A method of performing a handover in a wireless communication system comprising a plurality of base stations and a mobile station, the method comprising:
+<claim-text>when the mobile station performs a handover from a first base station to a second base station, transferring, from the first base station to the second base station, first Discontinuous Reception (DRX) configuration information that the mobile station has when a handover request is transmitted to the second base station, and</claim-text>
+<claim-text>in response to receiving the first DRX configuration information at the second base station from the first base station, transferring, from the second base station to the first base station, second DRX configuration information.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method according to <claim-ref idref="CLM-00003">claim 3</claim-ref>, further comprising,
+<claim-text>transmitting the second DRX configuration information to the mobile station.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. A wireless communication system comprising:
+<claim-text>a first base station, a second base station, and a mobile station;</claim-text>
+<claim-text>wherein the first base station comprises a first transmission unit which, when the mobile station performs a handover from the first base station to a second base station, transmits first Discontinuous Reception (DRX) configuration information that the mobile station has when a handover request is transmitted to the second base station; and</claim-text>
+<claim-text>wherein the second base station comprises a second transmission unit which transmits second DRX configuration information to the first base station in response to receiving the first DRX configuration information.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The wireless communication system according to <claim-ref idref="CLM-00005">claim 5</claim-ref>,
+<claim-text>wherein the first base station is further comprises, a radio frequency unit which transmits the second DRX configuration information to the mobile station.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. A communication method in a mobile station comprising:
+<claim-text>performing a handover from a first base station to a second base station, wherein the first base station transmits first Discontinuous Reception (DRX) configuration information to the second base station, wherein the first DRX configuration information is DRX information that the mobile station has when a handover request is transmitted to the second base station, and wherein the second base station transmits second DRX configuration information to the first base station in response to receiving the first DRX configuration information; and</claim-text>
+<claim-text>communicating with the second base station according to the second DRX configuration after the handover.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. A mobile station comprising:
+<claim-text>a control unit which performs a handover from a first base station to a second base station, wherein the first base station transmits first Discontinuous Reception (DRX) configuration information to the second base station, wherein the first DRX configuration information is DRX information that the mobile station has when a handover request is transmitted to the second base station, and wherein the second base station transmits second DRX configuration information to the first base station in response to receiving the first DRX configuration information; and</claim-text>
+<claim-text>a radio unit which communicates with the second base station according to the second DRX configuration after the handover. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

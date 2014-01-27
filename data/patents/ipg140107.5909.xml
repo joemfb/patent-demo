@@ -1,0 +1,575 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627018-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627018</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13300464</doc-number>
+<date>20111118</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>228</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>12</main-group>
+<subgroup>10</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>711147</main-classification>
+</classification-national>
+<invention-title id="d2e53">Automatic optimization for programming of many-core architectures</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>2010/0218196</doc-number>
+<kind>A1</kind>
+<name>Leung et al.</name>
+<date>20100800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2011/0057935</doc-number>
+<kind>A1</kind>
+<name>Fowler</name>
+<date>20110300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>2011/0078226</doc-number>
+<kind>A1</kind>
+<name>Baskaran et al.</name>
+<date>20110300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>2011/0078692</doc-number>
+<kind>A1</kind>
+<name>Nickolls et al.</name>
+<date>20110300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00005">
+<othercit>Yang, et al., &#x201c;A GPGPU Compiler for Memory Optimization and Parallelism Management&#x201d;, In Proceedings of the ACM SIGPLAN Conference on Programming Language Design and Implementation, Jun. 5-10, 2010, 12 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00006">
+<othercit>Pimple, et al., &#x201c;Architecture Aware Programming on Multi-core Systems&#x201d;, In International Journal of Advanced Computer Science and Applications, vol. 2, Issue 6, 2011, pp. 105-111.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00007">
+<othercit>Chen, et al., &#x201c;Tiled-Map Reduce: Optimizing Resource usages of Data-parallel Applications on Multicore with Tiling&#x201d;, In Proceedings of the 19th International Conference on Parallel Architectures and Compilation Techniques, Sep. 11-15, 2010, 12 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00008">
+<othercit>Uen, et al., &#x201c;CUDA-lite: Reducing GPU Programming Complexity&#x201d;, In Book of Languages and Compilers for Parallel Computing, 2008, pp. 1-15.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00009">
+<othercit>Hong, et al., &#x201c;Memory-level and Thread-level Parallelism Aware GPU Architecture Performance Analytical Model&#x201d;, Retrieved on: Sep. 7, 2011, Available at: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.167.431&#x26;rep=rep1&#x26;type=pdf.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>20</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>None</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>7</number-of-drawing-sheets>
+<number-of-figures>9</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20130132684</doc-number>
+<kind>A1</kind>
+<date>20130523</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Ostrovsky</last-name>
+<first-name>Igor</first-name>
+<address>
+<city>Redmond</city>
+<state>WA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Johnson</last-name>
+<first-name>Zachary David</first-name>
+<address>
+<city>Valley Center</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Ostrovsky</last-name>
+<first-name>Igor</first-name>
+<address>
+<city>Redmond</city>
+<state>WA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Johnson</last-name>
+<first-name>Zachary David</first-name>
+<address>
+<city>Valley Center</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Workman Nydegger</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Microsoft Corporation</orgname>
+<role>02</role>
+<address>
+<city>Redmond</city>
+<state>WA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Doan</last-name>
+<first-name>Duc</first-name>
+<department>2185</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">The present invention extends to methods, systems, and computer program products for automatically optimizing memory accesses by kernel functions executing on parallel accelerator processors. A function is accessed. The function is configured to operate over a multi-dimensional matrix of memory cells through invocation as a plurality of threads on a parallel accelerator processor. A layout of the memory cells of the multi-dimensional matrix and a mapping of memory cells to global memory at the parallel accelerator processor are identified. The function is analyzed to identify how each of the threads access the global memory to operate on corresponding memory cells when invoked from the kernel function. Based on the analysis, the function altered to utilize a more efficient memory access scheme when performing accesses to the global memory. The more efficient memory access scheme increases coalesced memory access by the threads when invoked over the multi-dimensional matrix.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="138.94mm" wi="249.26mm" file="US08627018-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="255.44mm" wi="161.46mm" orientation="landscape" file="US08627018-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="241.13mm" wi="146.47mm" orientation="landscape" file="US08627018-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="247.31mm" wi="162.81mm" orientation="landscape" file="US08627018-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="225.47mm" wi="162.81mm" file="US08627018-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="269.75mm" wi="136.91mm" orientation="landscape" file="US08627018-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="243.16mm" wi="173.06mm" file="US08627018-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="128.10mm" wi="168.23mm" file="US08627018-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">CROSS-REFERENCE TO RELATED APPLICATIONS</heading>
+<p id="p-0002" num="0001">Not Applicable.</p>
+<heading id="h-0002" level="1">BACKGROUND</heading>
+<heading id="h-0003" level="1">Background and Relevant Art</heading>
+<p id="p-0003" num="0002">Computer systems and related technology affect many aspects of society. Indeed, the computer system's ability to process information has transformed the way we live and work. Computer systems now commonly perform a host of tasks (e.g., word processing, scheduling, accounting, etc.) that prior to the advent of the computer system were performed manually. More recently, computer systems have been coupled to one another and to other electronic devices to form both wired and wireless computer networks over which the computer systems and other electronic devices can transfer electronic data. Accordingly, the performance of many computing tasks are distributed across a number of different computer systems and/or a number of different computing environments.</p>
+<p id="p-0004" num="0003">In some environments, execution of a software program is split between multiple processors within the same computer system. For example, some computer systems comprise one or more Central Processing Units (&#x201c;CPUs&#x201d;) along with other types of processors, such as one or more parallel accelerator processors. One type of parallel accelerator processor, for example, is a Graphics Processing Unit (&#x201c;GPU&#x201d;), which contains a plurality of processor cores, and which is optimized for executing parallel algorithms over large (and often multi-dimensional) data domains. Some compilers are capable of compiling source code into executable code that executes in part on one or more CPUs and that executes in part on one or more GPUs. Thus, source code can be specifically developed for mixed execution on CPUs and GPUs.</p>
+<p id="p-0005" num="0004">Generally, software developers leveraging GPUs or other parallel processors write kernels, or functions that are invoked over a data domain. GPUs execute a kernel by invoking the kernel as a plurality of parallel threads that each executes instructions of the kernel. The threads are organized into thread blocks which each contain a different subset of the plurality of threads. Threads in the same thread block execute on the same core within a GPU and can communicate efficiently with one another via tiles of thread-shared memory. Thread blocks are further arranged into grids, which may have many dimensions (e.g., one, two, or three). For example, a programmer developing a kernel function that executes over a domain comprising a 1024&#xd7;1024 matrix of data may specify grid dimensions (e.g., 64&#xd7;64 thread blocks), thread block dimensions (e.g., 16&#xd7;16 threads per thread block), and a single function (i.e., a kernel) that all threads will execute when operating over the matrix. An instance of the kernel is invoked for each cell in the matrix as a different thread.</p>
+<p id="p-0006" num="0005">GPUs execute threads in the same thread block together at a single processing core of the GPU as part of warps. For example, an exemplary thread block which includes 16&#xd7;16 threads (i.e., 256 threads) may be executed as a plurality of warps, each comprising 16 or 32 threads, depending on the GPU hardware. During execution of a warp, threads may access global memory at the GPU, and/or may access thread-shared memory (i.e., memory shared by threads executing a particular core). When threads in the same warp access memory locations that are next to or near each other in global memory, the GPU hardware can efficiently group accesses by different threads into a single memory transaction. Efficiently grouping global memory accesses by a plurality threads in the same warp into a single memory transaction is known as &#x2018;memory coalescing&#x2019;. By contrast, when threads in a warp access memory locations that are far apart in global memory, each thread in the warp generates a different memory transaction, which negatively affects performance.</p>
+<heading id="h-0004" level="1">BRIEF SUMMARY</heading>
+<p id="p-0007" num="0006">The present invention extends to methods, systems, and computer program products for automatically optimizing memory accesses by kernel functions executing on parallel accelerator processors. In some embodiments, a function is accessed. The function is configured to be invoked as a plurality of threads on a parallel accelerator processor to operate over a multi-dimensional matrix of memory cells. Each thread is configured to operate on a corresponding memory cell in the multi-dimensional matrix.</p>
+<p id="p-0008" num="0007">A layout of the memory cells of the multi-dimensional matrix, along with how the memory cells map to global memory at the parallel accelerator processor is identified. Subsequently, the function is analyzed by identifying how each of the threads access the global memory to operate on corresponding memory cells when invoked over the multi-dimensional matrix. Based on the analysis, the function is altered to utilize a more efficient memory access scheme when performing accesses to the global memory. The more efficient memory access scheme, which is based on the layout of the memory cells and on the analysis of the function, increases coalesced memory access by the threads when invoked over the multi-dimensional matrix.</p>
+<p id="p-0009" num="0008">This summary is provided to introduce a selection of concepts in a simplified form that are further described below in the Detailed Description. This Summary is not intended to identify key features or essential features of the claimed subject matter, nor is it intended to be used as an aid in determining the scope of the claimed subject matter.</p>
+<p id="p-0010" num="0009">Additional features and advantages of the invention will be set forth in the description which follows, and in part will be obvious from the description, or may be learned by the practice of the invention. The features and advantages of the invention may be realized and obtained by means of the instruments and combinations particularly pointed out in the appended claims. These and other features of the present invention will become more fully apparent from the following description and appended claims, or may be learned by the practice of the invention as set forth hereinafter.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0005" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0011" num="0010">In order to describe the manner in which the above-recited and other advantages and features of the invention can be obtained, a more particular description of the invention briefly described above will be rendered by reference to specific embodiments thereof which are illustrated in the appended drawings. Understanding that these drawings depict only typical embodiments of the invention and are not therefore to be considered to be limiting of its scope, the invention will be described and explained with additional specificity and detail through the use of the accompanying drawings in which:</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 1</figref> illustrates an example computer architecture that facilitates automatically optimizing memory accesses by functions executing on parallel accelerator processors.</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 2</figref> illustrates an exemplary arrangement of threads executing over a data domain.</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 3</figref> illustrates exemplary memory mappings and memory access patterns by a warp of threads that are executing a kernel function over a data domain.</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 4</figref> illustrates a flow chart of an example method for automatically optimizing a function for execution on one or more parallel accelerator processors.</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 5A</figref> illustrates an example of a two-step read from global memory.</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 5B</figref> illustrates an example of a two-step write to global memory.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 6A</figref> illustrates an embodiment of using simple tiling to cache values in thread-shared memory.</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 6B</figref> illustrates an embodiment of enumerated tiling to cache values in thread-shared memory.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 7</figref> illustrates an embodiment of combining tiles for accesses with offsets.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0006" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0021" num="0020">The present invention extends to methods, systems, and computer program products for automatically optimizing memory accesses by kernel functions executing on parallel accelerator processors. In some embodiments, a function is accessed. The function is configured to be invoked as a plurality of threads on a parallel accelerator processor to operate over a multi-dimensional matrix of memory cells. Each thread is configured to operate on a corresponding memory cell in the multi-dimensional matrix.</p>
+<p id="p-0022" num="0021">A layout of the memory cells of the multi-dimensional matrix, along with how the memory cells map to global memory at the parallel accelerator processor is identified. Subsequently, the function is analyzed by identifying how each of the threads access the global memory to operate on corresponding memory cells when invoked over the multi-dimensional matrix. Based on the analysis, the function is altered to utilize a more efficient memory access scheme when performing accesses to the global memory. The more efficient memory access scheme, which is based on the layout of the memory cells and on the analysis of the function, increases coalesced memory access by the threads when invoked over the multi-dimensional matrix.</p>
+<p id="p-0023" num="0022">Embodiments of the present invention may comprise or utilize a special purpose or general-purpose computer including computer hardware, such as, for example, one or more processors and system memory, as discussed in greater detail below. Embodiments within the scope of the present invention also include physical and other computer-readable media for carrying or storing computer-executable instructions and/or data structures. Such computer-readable media can be any available media that can be accessed by a general purpose or special purpose computer system. Computer-readable media that store computer-executable instructions are computer storage media (devices). Computer-readable media that carry computer-executable instructions are transmission media. Thus, by way of example, and not limitation, embodiments of the invention can comprise at least two distinctly different kinds of computer-readable media: computer storage media (devices) and transmission media.</p>
+<p id="p-0024" num="0023">Computer storage media (devices) includes RAM, ROM, EEPROM, CD-ROM, solid state drives (&#x201c;SSDs&#x201d;) (e.g., based on RAM), Flash memory, phase-change memory (&#x201c;PCM&#x201d;), other types of memory, other optical disk storage, magnetic disk storage or other magnetic storage devices, or any other medium which can be used to store desired program code means in the form of computer-executable instructions or data structures and which can be accessed by a general purpose or special purpose computer.</p>
+<p id="p-0025" num="0024">A &#x201c;network&#x201d; is defined as one or more data links that enable the transport of electronic data between computer systems and/or modules and/or other electronic devices. When information is transferred or provided over a network or another communications connection (either hardwired, wireless, or a combination of hardwired or wireless) to a computer, the computer properly views the connection as a transmission medium. Transmissions media can include a network and/or data links which can be used to carry desired program code means in the form of computer-executable instructions or data structures and which can be accessed by a general purpose or special purpose computer. Combinations of the above should also be included within the scope of computer-readable media.</p>
+<p id="p-0026" num="0025">Further, upon reaching various computer system components, program code means in the form of computer-executable instructions or data structures can be transferred automatically from transmission media to computer storage media (devices) (or vice versa). For example, computer-executable instructions or data structures received over a network or data link can be buffered in RAM within a network interface module (e.g., a &#x201c;NIC&#x201d;), and then eventually transferred to computer system RAM and/or to less volatile computer storage media (devices) at a computer system. Thus, it should be understood that computer storage media (devices) can be included in computer system components that also (or even primarily) utilize transmission media.</p>
+<p id="p-0027" num="0026">Computer-executable instructions comprise, for example, instructions and data which, when executed at a processor, cause a general purpose computer, special purpose computer, or special purpose processing device to perform a certain function or group of functions. The computer executable instructions may be, for example, binaries, intermediate format instructions such as assembly language, or even source code. Although the subject matter has been described in language specific to structural features and/or methodological acts, it is to be understood that the subject matter defined in the appended claims is not necessarily limited to the described features or acts described above. Rather, the described features and acts are disclosed as example forms of implementing the claims.</p>
+<p id="p-0028" num="0027">Those skilled in the art will appreciate that the invention may be practiced in network computing environments with many types of computer system configurations, including, personal computers, desktop computers, laptop computers, message processors, hand-held devices, multi-processor systems, microprocessor-based or programmable consumer electronics, network PCs, minicomputers, mainframe computers, mobile telephones, PDAs, tablets, pagers, routers, switches, and the like. The invention may also be practiced in distributed system environments where local and remote computer systems, which are linked (either by hardwired data links, wireless data links, or by a combination of hardwired and wireless data links) through a network, both perform tasks. In a distributed system environment, program modules may be located in both local and remote memory storage devices.</p>
+<p id="p-0029" num="0028">As used in the description and the claims, a &#x201c;warp&#x201d; is defined as a group of threads in the same thread block executing together at a single core of a parallel accelerator processor.</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 1</figref> illustrates an example computer architecture <b>100</b> that facilitates automatically optimizing memory accesses by functions executing on parallel accelerator processors. As depicted, computer architecture <b>100</b> may include a variety of components and data, such as compiler <b>101</b>, program code <b>106</b>, and parallel processor data <b>110</b>. Each of the depicted components and data can be connected to one another over a system bus and/or over (or be part of) a network, such as, for example, a Local Area Network (&#x201c;LAN&#x201d;), a Wide Area Network (&#x201c;WAN&#x201d;), and even the Internet.</p>
+<p id="p-0031" num="0030">Generally, compiler <b>101</b> can include hardware and/or software components that transform a source computing language into a destination computing language. For example, compiler <b>101</b> can translate &#x201c;higher-level&#x201d; source code of a programming language (e.g., C#, VISUAL BASIC, JAVA, JAVASCRIPT, etc.) into &#x201c;lower-level&#x201d; instructions (e.g., assembly language/machine code, intermediate language code, etc.). The instructions can then be executed by one or more physical and/or virtual computing systems, by one or more managed runtime environments, etc. The lower-level instructions can also be subject to further processing or translation.</p>
+<p id="p-0032" num="0031">In some embodiments, compiler <b>101</b> is configured to receive and transform source code for a variety of programming languages into one or more types of lower-level instructions. For example, compiler <b>101</b> can be configured to generate lower-level instructions configured for execution on one or more general purpose processors (either physical or virtual) as well as lower-level instructions configured for execution on one or more parallel accelerator processors (e.g., one or more Graphical Processing Units (&#x201c;GPUs&#x201d;)). In other embodiments, compiler <b>101</b> is configured to translate source code of a single programming language or multiple programming languages into a single type of lower-level instructions, such as lower-level instructions configured for execution on one or more GPUs.</p>
+<p id="p-0033" num="0032">As depicted, compiler <b>101</b> can be configured with one or more modules that access and process program code <b>106</b>. These modules can include accessor module <b>102</b>, analysis module <b>103</b>, optimization module <b>104</b>, and output module <b>105</b>.</p>
+<p id="p-0034" num="0033">Accessor module <b>102</b> is configured to receive or access program code which can include one or more parallel kernel functions. The parallel kernel functions operate over a data domain and are capable of being offloaded to one or more parallel accelerator processors (e.g. GPUs). As depicted, accessor module <b>102</b> accesses program code <b>106</b>. Program code <b>101</b> contains parallel kernel function <b>107</b>. In some embodiments, accessor module <b>102</b> accesses program code which is being compiled offline for later execution. In other embodiments accessor module <b>102</b> accesses program code which is being compiled &#x201c;just in time&#x201d; for substantially immediate execution.</p>
+<p id="p-0035" num="0034">Parallel kernel function <b>107</b> can include instructions for operating over a data domain as a plurality of threads executing at a parallel accelerator processor, wherein a different thread of kernel function <b>107</b> is instantiated for each data cell in the data domain. Kernel function <b>107</b> is typically configured to be executed using a plurality of processing cores of a parallel accelerator processor. Parallel accelerator processors typically include global memory accessible to all threads. Global memory is generally relatively slow to access. Parallel accelerator processors also typically include shared memory accessible only to threads in the same thread block executing at a processing core. Shared memory is generally relatively quickly accessed by thread in the same thread block.</p>
+<p id="p-0036" num="0035">Referring briefly to <figref idref="DRAWINGS">FIG. 2</figref>, for example, <figref idref="DRAWINGS">FIG. 2</figref> illustrates an arrangement of threads executing over a data domain (e.g., memory cells in a data matrix). In the depicted example, a kernel function is executing over a data domain comprising a two-dimensional data matrix (e.g., 24&#xd7;18 or 432 data cells/memory locations). As such, the kernel function can be instantiated as a plurality of threads (e.g., 432 threads) which execute over the data domain. The threads may be grouped into thread blocks organizing a plurality of threads (e.g., 6&#xd7;6 threads per thread block, or 36 threads). The thread blocks may in turn be arranged as a grid (e.g., a 3&#xd7;4 grid or 12 thread blocks). Threads in each thread block execute together at a core of the parallel accelerator processor as one or more warps. Threads in the same thread block have access to the same thread-shared memory.</p>
+<p id="p-0037" num="0036">Returning to <figref idref="DRAWINGS">FIG. 1</figref>, analysis module <b>103</b> is configured to receive program code from accessor module. Analysis module <b>103</b> analyzes any functions written for execution on parallel accelerator processors to ascertain their memory mappings, their memory access patterns, and any other information useful for optimizing functions for execution on parallel accelerator processors. As such, analysis module <b>103</b> can be configured to analyze kernel function <b>107</b> to ascertain how threads of kernel function <b>107</b> would access global memory, when executed. Many different types of analysis are possible.</p>
+<p id="p-0038" num="0037">For example, <figref idref="DRAWINGS">FIG. 3</figref> illustrates exemplary memory mappings and memory access patterns by a warp of threads that are executing kernel function <b>107</b> over a data domain. As depicted by access pattern <b>300</b><i>a</i>, data domain <b>302</b><i>a </i>(or a portion thereof) may be arranged for access using a column-major grid orientation, as indicated by arrow <b>303</b><i>a</i>. In access pattern <b>300</b><i>a</i>, a warp of threads accesses global memory <b>301</b><i>a </i>using a row-major access scheme. As depicted, access pattern <b>300</b><i>a </i>accesses locations in global memory <b>301</b><i>a </i>that are not adjacent (as indicated by arrows <b>304</b><i>a</i>). As such, accesses by access pattern <b>300</b><i>a </i>are less efficiently performed, because each memory access would typically use a different memory transaction.</p>
+<p id="p-0039" num="0038">By contrast, access pattern <b>300</b><i>b </i>uses data domain <b>302</b><i>b </i>arranged for access using a row-major grid orientation, as indicated by arrow <b>303</b><i>b</i>. For access pattern <b>300</b><i>b</i>, when a corresponding warp of threads accesses global memory <b>301</b><i>b </i>using a row-major access scheme, those accesses are more likely be to adjacent locations in global memory <b>301</b><i>b </i>(as indicated by arrows <b>304</b><i>b</i>). At least some of these memory accesses may therefore be coalesced into a single memory transaction for a plurality of threads in the warp.</p>
+<p id="p-0040" num="0039">As such, knowledge of memory mappings and access schemes can provide insight into more efficient ways for kernel function <b>107</b> to access memory (e.g., a more efficient grid orientation). While <figref idref="DRAWINGS">FIG. 3</figref> depicts embodiments of row-major versus column-major accesses and mappings, one will appreciate that more complicated access schemes and mappings are also possible.</p>
+<p id="p-0041" num="0040">As depicted in <figref idref="DRAWINGS">FIG. 1</figref>, analysis module <b>103</b> can access parallel processor data <b>110</b>. Parallel processor data <b>110</b> can comprise a database or library providing information about one or more parallel accelerator processors. Program code <b>106</b> can be compiled for an execution on the one or more parallel accelerator processors by compiler <b>101</b>. Parallel processor data <b>110</b> provides any appropriate information about relevant parallel accelerator processors, such as memory information (e.g., amount and layout of global and/or shared memory), processor core information, thread warp requirements and capabilities, etc. Parallel processor data <b>110</b> can be used by analysis module <b>103</b> when ascertaining memory mappings and memory access patterns, among other things.</p>
+<p id="p-0042" num="0041">Optimization module <b>104</b> is configured to receive any information obtained by analysis module <b>103</b> and to re-write functions written for execution on parallel accelerator processors for more efficient memory usage (e.g., increased coalescing, prioritization of uncoalesced accessed, etc.) during execution. For example, after analysis module <b>103</b> ascertains memory mappings and memory access patterns of kernel function <b>107</b>, optimization module can automatically re-write kernel function <b>107</b> for optimized memory access. Optimization may include choosing a more efficient grid orientation, caching within thread-shared memory, prioritizing uncoalesced memory accesses, etc.</p>
+<p id="p-0043" num="0042">As depicted, optimization module <b>104</b> may also access parallel processor data <b>110</b> when re-writing functions. Similar to analysis module <b>103</b>, optimization module <b>104</b> can use parallel processor data <b>110</b> to gather any appropriate information about one or more target parallel accelerator processors, which optimization module <b>104</b> can leverage when re-writing functions.</p>
+<p id="p-0044" num="0043">After optimization module <b>104</b> rewrites functions for more efficient memory usage, optimization module <b>104</b> can provide the optimized kernel functions to output module <b>105</b>. Output module <b>105</b> is configured to provide optimized program code <b>108</b>, including at least one optimized parallel kernel function <b>109</b>, to another component for further processing.</p>
+<p id="p-0045" num="0044">In some embodiments, output module <b>105</b> outputs program code for execution at a later time. For example, compiler <b>101</b> can compile program code <b>106</b> &#x201c;off line&#x201d; and output module <b>105</b> can provide optimized program code <b>108</b> to other components in a compiler suite (e.g., for linking or packaging into an executable application). In other embodiments, compiler <b>101</b> can compile program code <b>106</b> &#x201c;just in time&#x201d; for immediate execution, and output module <b>105</b> can output program code to a runtime environment for substantially immediate execution.</p>
+<p id="p-0046" num="0045"><figref idref="DRAWINGS">FIG. 4</figref> illustrates a flow chart of an example method <b>400</b> for automatically optimizing a function for execution on one or more parallel accelerator processors. Method <b>400</b> will be described with respect to the components and data of computer architecture <b>100</b>.</p>
+<p id="p-0047" num="0046">Method <b>400</b> includes an act of accessing a function, the function configured to operate over a multi-dimensional matrix of memory cells, the function configured to be invoked as a plurality of threads on at least one parallel accelerator processor, each thread in the plurality of threads configured to operate on a corresponding memory cell (act <b>401</b>). For example, accessor module <b>102</b> may access program code <b>106</b>. Program code <b>106</b> may include kernel function <b>107</b>, including code configured to be executed over a data domain by a parallel accelerator processor as a plurality of threads. For example, kernel function <b>107</b> may be configured to be executed a plurality of threads corresponding to a number of data cells in a multi-dimensional matrix. As depicted in <figref idref="DRAWINGS">FIG. 2</figref>, threads may be configured to execute as a grid of thread blocks. Each thread block may include a plurality of the threads. Each thread block may be configured to execute at different cores of the parallel accelerator processor as one or more warps of threads.</p>
+<p id="p-0048" num="0047">Method <b>400</b> also includes an act of identifying a layout of the plurality of memory cells of the multi-dimensional matrix of memory cells, including identifying how the memory cells map to global memory at the at least one parallel accelerator processor (act <b>402</b>). For example, analysis module <b>103</b> can receive kernel function <b>107</b> from accessor module <b>102</b> and analyze a layout of global memory at the least one parallel accelerator and a manner in which memory cells in the multi-dimensional matrix are laid out. For example, <figref idref="DRAWINGS">FIG. 3</figref> illustrates that a data domain may by laid out in row- or column-major grid orientations, or in any other appropriate manner.</p>
+<p id="p-0049" num="0048">Method <b>400</b> also includes an act of analyzing the function to identify how each of the plurality of threads access the global memory to operate on corresponding memory cells when invoked over the multi-dimensional matrix of memory cells (act <b>403</b>). For example, analysis module <b>103</b> can analyze kernel function <b>107</b> to ascertain how memory accesses will occur when operating over the multi-dimensional matrix. In particular, kernel function <b>107</b> can analyze memory accesses to identify whether memory accesses by different threads will occur at adjacent memory locations in global memory (and be subject to coalescing), or whether memory accesses by different threads would occur at distant memory locations in global memory (and be uncoalesced). For example, analysis module <b>103</b> may determine that memory accesses by different threads would coalesce more frequently when accessing the multi-dimensional matrix using one grid orientation versus another grid orientation (e.g., row-major access versus column-major access, or vice versa).</p>
+<p id="p-0050" num="0049">Method <b>400</b> also includes an act of altering the function to utilize a more efficient memory access scheme when accessing the global memory based on the layout of the multi-dimensional matrix and based on analyzing the function, the more efficient memory access scheme increasing coalesced memory access invoked over the multi-dimensional matrix of memory cells, coalesced memory accesses comprising two or more threads accessing the global memory in a single memory transaction (act <b>404</b>). For example, based on the analysis by analysis module <b>103</b>, optimization module <b>104</b> can re-write kernel function <b>107</b> to produce optimized parallel kernel function <b>109</b>. Re-writing kernel function <b>107</b> can involve any appropriate optimization which causes threads instantiated from kernel function <b>107</b> to more efficiently use global and shared memory.</p>
+<p id="p-0051" num="0050">For example, optimization module <b>104</b> may re-write kernel function <b>107</b> to choose a more efficient grid orientation of the multi-dimensional matrix to use when performing memory accesses. As such, optimization module <b>104</b> may &#x201c;rotate&#x201d; the multi-dimensional matrix to change the access scheme of the data domain (i.e., row-major to column-major, or vice versa).</p>
+<p id="p-0052" num="0051">For example, if kernel function <b>107</b> were configured to increment each value in a 1024&#xd7;1024 matrix M which is stored in row-major order, kernel function <b>107</b> may be instantiated as 1024<sup>^2 </sup>threads, each responsible for incrementing the value of one cell in matrix M. When determining which cell within matrix M a particular thread should increment, optimization module <b>104</b> may consider two possible grid orientations:</p>
+<p id="p-0053" num="0052">A. thread (i,j) increments M[i,j]</p>
+<p id="p-0054" num="0053">B. thread (i,j) increments M[j,i]</p>
+<p id="p-0055" num="0054">It is important to consider which threads execute as a warp, as global memory accesses by threads in the same warp may coalesce. For example, threads (x,y), (x+1,y) . . . (x+15,y) (i.e., sixteen threads) may execute in the same warp. Given this warp, grid orientation &#x2018;A&#x2019; would likely result in coalesced access to global memory by the threads in the warp. This is because threads (0,0), (0,1), . . . (0,15) would increment memory locations M[0,0], M[0,1], . . . M[0,15] and because these memory locations are likely adjacent in memory by virtue of matrix M being stored in row-major format. By contrast, grid orientation &#x2018;B&#x2019; would likely result in uncoalesced access to global memory by threads in the warp. This is because threads (0,0), (0,1), . . . (0,15) would increment memory locations M[0,0], M[1,0], . . . M[15,0]. As such, optimization module <b>104</b> may re-write kernel function <b>107</b> to use grid orientation &#x2018;A&#x2019;.</p>
+<p id="p-0056" num="0055">Analysis module <b>103</b> and optimization module <b>104</b> can perform any number of memory optimizations. For example, an additional optimization may include transposing matrices using read-side tiles and/or write-side tiles of thread-shared memory. Kernel function <b>107</b> may operate to receive matrix M<b>1</b> as input and transpose matrix M<b>1</b> to generate output matrix M<b>2</b>. In this situation, optimization module <b>104</b> may consider two possible transposition schemes:</p>
+<p id="p-0057" num="0056">A. thread (i,j) assigns M<b>2</b>[i,j] to M<b>1</b>[j,i]</p>
+<p id="p-0058" num="0057">B. thread (i,j) assigns M<b>2</b>[j,i] to M<b>1</b>[i,j]</p>
+<p id="p-0059" num="0058">Using either scheme, one of the two memory operations (either the read from M<b>1</b> or the write to M<b>2</b>) will result in uncoalesced accesses to global memory. However, optimization module <b>104</b> can increase the likelihood of memory accesses coalescing by utilizing thread blocks and tiles of thread-shared memory. For example, threads in the same thread block can participate in a two-step read process. First, the threads can cooperatively load data into a tile of thread-shared memory using coalesced reads (e.g., copy a tile of M<b>1</b> into thread-shared memory). Second, the threads can read from the thread-shared memory instead of from global memory (e.g., write out the transposed tile into M<b>2</b>). Reads from thread-shared memory are relatively fast, so coalescing is less of a concern during these reads. Thus, by utilizing thread-shared memory to communicate with one another, threads in the thread block can avoid uncoalesced memory accesses.</p>
+<p id="p-0060" num="0059"><figref idref="DRAWINGS">FIG. 5A</figref> illustrates an example of a two-step read from global memory, in which threads in the same thread block read from global memory into thread-shared memory, and then read from the thread-shared memory. A similar process works in reverse for writes. <figref idref="DRAWINGS">FIG. 5B</figref> illustrates an example of a two-step write to global memory, in which threads in the same thread block dump data into a tile of thread-shared memory, and then perform a cooperative coalesced write to global memory.</p>
+<p id="p-0061" num="0060">Additional optimizations exist which also use tiling (i.e., copying data from global memory to thread-shared memory). For example, <figref idref="DRAWINGS">FIG. 6A</figref> illustrates an embodiment of using simple tiling to cache values in thread-shared memory. Simple tiling is useful when each thread in a thread block (e.g., thread block <b>601</b><i>a</i>) reads one element in an array (e.g., array <b>602</b><i>a</i>). To employ simple tiling, optimization module <b>104</b> can re-write kernel function <b>107</b> to load respective elements of thread block <b>601</b><i>a </i>into tile of shared memory <b>603</b><i>a</i>, eliminating the need for further reads from global memory when later accessing those values.</p>
+<p id="p-0062" num="0061"><figref idref="DRAWINGS">FIG. 6B</figref> illustrates an embodiment of using enumerated tiling to cache values in thread-shared memory. Enumerated tiling is useful when threads in a thread block (e.g., thread block <b>601</b><i>b</i>) read a dimension of an array (e.g., array <b>602</b><i>b</i>), and in which successive blocks of the array should be read in that dimension. This situation may exist when one or more indices for memory reads and/or writes are based upon an iteration variable.</p>
+<p id="p-0063" num="0062">To employ enumerated tiling, optimization module <b>104</b> may re-write kernel function <b>107</b> so that an original loop defining the iteration variable is transformed into an outer loop and an inner loop. The outer loop iterates for the duration of the original loop in tile-sized chunks, and loads the values for the current tile-sized chunk into tile of shared memory <b>603</b><i>b</i>. The inner loop iterates over the tile of shared memory and contains the body of the original loop.</p>
+<p id="p-0064" num="0063">For example, a &#x201c;for&#x201d; loop such as:</p>
+<p id="p-0065" num="0064">
+<tables id="TABLE-US-00001" num="00001">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="42pt" align="left"/>
+<colspec colname="1" colwidth="175pt" align="left"/>
+<thead>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>for (int k = 0 ; k &#x3c; m1.GetLength(1); k++)</entry>
+</row>
+<row>
+<entry/>
+<entry>{</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="56pt" align="left"/>
+<colspec colname="1" colwidth="161pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>sum = sum + m1[i, k];</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="42pt" align="left"/>
+<colspec colname="1" colwidth="175pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>}</entry>
+</row>
+<row>
+<entry/>
+<entry namest="offset" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+<br/>
+may be transformed by optimization module <b>104</b> into a shared memory version that includes an outer loop and an inner loop, such as:
+</p>
+<p id="p-0066" num="0065">
+<tables id="TABLE-US-00002" num="00002">
+<table frame="none" colsep="0" rowsep="0">
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<thead>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>for (int displacement = 0; displacement &#x3c; m1.GetLength(1);</entry>
+</row>
+<row>
+<entry>displacement += 16)</entry>
+</row>
+<row>
+<entry>{</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>float[,] sharedMemory = new float [16, 16];</entry>
+</row>
+<row>
+<entry/>
+<entry>sharedMemory[threadY, threadX] = m1[i, displacement + threadX];</entry>
+</row>
+<row>
+<entry/>
+<entry>for (int k = 0; k &#x3c; 16; k++)</entry>
+</row>
+<row>
+<entry/>
+<entry>{</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="28pt" align="left"/>
+<colspec colname="1" colwidth="189pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>sum = sum + sharedMemory[threadY, k];</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="2">
+<colspec colname="offset" colwidth="14pt" align="left"/>
+<colspec colname="1" colwidth="203pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry/>
+<entry>}</entry>
+</row>
+</tbody>
+</tgroup>
+<tgroup align="left" colsep="0" rowsep="0" cols="1">
+<colspec colname="1" colwidth="217pt" align="left"/>
+<tbody valign="top">
+<row>
+<entry>}</entry>
+</row>
+<row>
+<entry namest="1" nameend="1" align="center" rowsep="1"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tables>
+</p>
+<p id="p-0067" num="0066">In yet an additional optimization, if two or more memory reads differ only by a small offset (e.g., [i,j] and [i+1, j+1]), then a tile of shared memory may be shared among them. As such, optimization module <b>104</b> may combine tiles for access with offsets (e.g., accesses M[a,b] and M[a+1,b] can be served from the same tile of shared memory, except for the boundary value). For example, <figref idref="DRAWINGS">FIG. 7</figref> illustrates that tile of shared memory <b>703</b> can service reads <b>704</b><i>a </i>by thread block <b>701</b> from array <b>702</b>, but may not be used to service reads <b>704</b><i>b. </i></p>
+<p id="p-0068" num="0067">In addition, optimization module <b>104</b> can optimize kernel function <b>107</b> to cache and prioritize uncoalesced memory accesses (reads and writes). For example, optimization module <b>104</b> can determine important (e.g., more frequent) uncoalesced reads from global memory and then use a cooperative coalesced read from global memory to place these values in shared memory. Likewise, optimization module <b>104</b> can determine important uncoalesced writes to global memory, place values associated with these writes in shared memory, and use a cooperative coalesced write to global memory from the shared memory. Because shared memory is limited, optimization module <b>104</b> can prioritize use of shared memory by uncoalesced memory accesses, such as by giving priority to access that occur multiple times (e.g., access inside a loop).</p>
+<p id="p-0069" num="0068">Furthermore, although a read from global memory may occur in a coalesced manner, if that read occurs multiple times it may be more efficient for optimization module <b>104</b> to store that value in shared memory, and then subsequently access that value from shared memory instead of global memory.</p>
+<p id="p-0070" num="0069">When using tiling, optimization module <b>104</b> can prioritize memory accesses that leverage tiling and to limit the number of tiles used by each thread block. Generally, a parallel accelerator processor has a limited amount of shared memory. As such, optimization module <b>104</b> can choose memory operations that would benefit more from tiling, and use a limited number of tiles to optimize these operations. In other words, optimization module <b>104</b> can avoid exceeding a defined number of tiles of shared memory by optimized parallel kernel function <b>109</b> (and by extension, each thread block).</p>
+<p id="p-0071" num="0070">The present invention may be embodied in other specific forms without departing from its spirit or essential characteristics. The described embodiments are to be considered in all respects only as illustrative and not restrictive. The scope of the invention is, therefore, indicated by the appended claims rather than by the foregoing description. All changes which come within the meaning and range of equivalency of the claims are to be embraced within their scope.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. At a computer system which includes system memory and one or more processors, a method for automatically optimizing a function for execution on one or more parallel accelerator processors, the method comprising:
+<claim-text>an act of the computer system accessing a function, the function configured to operate over a multi-dimensional matrix of memory cells, the function configured to be invoked as a plurality of threads on at least one parallel accelerator processor, each thread in the plurality of threads configured to operate on a corresponding memory cell;</claim-text>
+<claim-text>an act of the computer system identifying a layout of the plurality of memory cells of the multi-dimensional matrix of memory cells, including identifying how the memory cells map to global memory at the at least one parallel accelerator processor;</claim-text>
+<claim-text>an act of the computer system analyzing the function to identify how each of the plurality of threads access the global memory to operate on corresponding memory cells when invoked over the multi-dimensional matrix of memory cells; and</claim-text>
+<claim-text>an act of the computer system altering the function to utilize a more efficient memory access scheme when accessing the global memory based on the layout of the multi-dimensional matrix and based on analyzing the function, the more efficient memory access scheme increasing coalesced memory access invoked over the multi-dimensional matrix of memory cells, coalesced memory accesses comprising two or more threads accessing the global memory in a single memory transaction.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the act of altering the function to utilize a more efficient memory access scheme comprises:
+<claim-text>an act of choosing a particular grid orientation that causes an increased number of threads executing in at least one warp of threads to perform a coalesced memory access; and</claim-text>
+<claim-text>an act of re-writing the function to utilize the particular grid orientation.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the act of altering the function to utilize a more efficient memory access scheme comprises:
+<claim-text>an act of determining that a plurality of threads executing in at least one warp should transpose at least a portion of the multi-dimensional matrix using a coalesced memory access;</claim-text>
+<claim-text>an act of re-writing the function to cause the plurality of threads executing in the at least one warp to copy a block of data from the global memory using a coalesced memory access; and</claim-text>
+<claim-text>an act of re-writing the function to cause the plurality of threads executing in the at least one warp to write the block of data to a tile of thread-shared memory while transposing the block of data.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the act of altering the function to utilize a more efficient memory access scheme comprises an act of optimizing the function to prioritize uncoalesced accesses to the global memory by optimizing the function to give uncoalesced accesses that occur repeatedly priority over uncoalesced accesses that occur singly.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the plurality of threads execute as a plurality of thread blocks, the method further comprising:
+<claim-text>an act of the computer system analyzing the function to determine a limit on an amount of shared memory to use when executing the function,</claim-text>
+<claim-text>wherein the act of optimizing the kernel function comprises an act of optimizing the function to limit the number of tiles of shared memory available to each thread block.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the act of the act of altering the function to utilize a more efficient memory access scheme comprises an act of optimizing the kernel function to:
+<claim-text>identify a plurality of highest priority uncoalesced reads from global memory whose data would fit within available thread-shared memory;</claim-text>
+<claim-text>combine the identified plurality of highest priority uncoalesced reads from global memory into a cooperative coalesced read while writing data read by the cooperative coalesced read into the available thread-shared memory; and</claim-text>
+<claim-text>read from the one or more tiles of thread-shared memory.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the act of the act of altering the function to utilize a more efficient memory access scheme comprises an act of optimizing the kernel function to:
+<claim-text>identify a plurality of highest priority uncoalesced writes to global memory whose data would fit within available thread-shared memory;</claim-text>
+<claim-text>write data from each of the plurality of highest priority uncoalesced writes to available thread-shared memory; and</claim-text>
+<claim-text>perform a cooperative coalesced write to global memory from the available thread-shared memory.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the act of the act of altering the function to utilize a more efficient memory access scheme comprises an act of optimizing the kernel function to combine tiles of thread shared memory for memory assesses that use offsets.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the act of analyzing the function to identify how each of the plurality of threads access the global memory to operate on corresponding memory cells when invoked over the multi-dimensional matrix of memory cells comprises determining which threads execute together as the same warp.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method as recited in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the act of altering the function to utilize a more efficient memory access scheme comprises an act of optimizing the kernel function to combine multiple coalesced accessed to the same global memory location to a single coalesced access followed by accesses to thread-shared memory.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. A computer program product for use at a computer system, the computer program product for automatically optimizing a function for execution on one or more parallel accelerator processors, the computer program product comprising one or more computer storage media having stored thereon computer-executable instructions that, when executed at a processor, cause the computer system to perform the method, including the following:
+<claim-text>access a function, the function configured to operate over a multi-dimensional matrix of memory cells, the function configured to be invoked as a plurality of threads on at least one parallel accelerator processor, each thread in the plurality of threads configured to operate on a corresponding memory cell;</claim-text>
+<claim-text>identify a layout of the plurality of memory cells of the multi-dimensional matrix of memory cells, including identifying how the memory cells map to global memory at the at least one parallel accelerator processor;</claim-text>
+<claim-text>analyze the function to identify how each of the plurality of threads access the global memory to operate on corresponding memory cells when invoked over the multi-dimensional matrix of memory cells; and</claim-text>
+<claim-text>alter the function to utilize a more efficient memory access scheme when accessing the global memory based on the layout of the multi-dimensional matrix and based on analyzing the function, the more efficient memory access scheme increasing coalesced memory access invoked over the multi-dimensional matrix of memory cells, coalesced memory accesses comprising two or more threads accessing the global memory in a single memory transaction.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The computer program product as recited in <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the function is configured to be invoked as a plurality of threads which each operate over a plurality of multi-dimensional matrices.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The computer program product as recited in <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the multi-dimensional matrix comprises a three-dimensional matrix.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The computer program product as recited in <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the one one or more parallel accelerator processors comprise one or more Graphics Processing Units.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The computer program product as recited in <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the plurality of threads execute as a plurality of thread blocks, threads in each thread block sharing the same thread-shared memory.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The computer program product as recited in <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein threads in the same thread block execute as a plurality of warps.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The computer program product as recited in <claim-ref idref="CLM-00016">claim 16</claim-ref>, wherein threads in the same thread block execute at a same core at a parallel accelerator processor.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The computer program product as recited in <claim-ref idref="CLM-00011">claim 11</claim-ref>, further comprising computer-executable instructions that, when executed at a processor, cause the computer system to directly execute the optimized kernel function.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The computer program product as recited in <claim-ref idref="CLM-00011">claim 11</claim-ref>, further comprising computer-executable instructions that, when executed at a processor, cause the computer system to export the optimized kernel function.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. A computer system, comprising:
+<claim-text>one or more processors; and</claim-text>
+<claim-text>one or more computer storage devices having stored thereon computer executable instructions representing a compiler, the compiler including an accessor module, an analysis module, an optimization module, and an output module,</claim-text>
+<claim-text>wherein the accessor module is configured to access a function, the function being configured to operate over a multi-dimensional matrix of memory cells, the function configured to be invoked as a plurality of threads on at least one parallel accelerator processor to each thread in the plurality of threads configured to operate on a corresponding memory cell;</claim-text>
+<claim-text>wherein the analysis module is configured to identify a layout of the plurality of memory cells of the multi-dimensional matrix of memory cells, including being configured to identify how the memory cells map to global memory at the at least one parallel accelerator processor and to analyze the function to identify how each of the plurality of threads access the global memory to operate on corresponding memory cells when invoked over the multi-dimensional matrix of memory cells;</claim-text>
+<claim-text>wherein the optimization module is configured to alter the function to utilize an a more efficient access scheme when accessing the global memory based on the layout of the multi-dimensional matrix and based on analyzing the function, the more efficient memory access scheme increasing coalesced memory access when invoked over the multi-dimensional matrix of memory cells by at least choosing an efficient orientation of the multi-dimensional matrix of memory cells, coalesced memory accesses comprising two or more threads accessing the global memory in a single memory transaction; and</claim-text>
+<claim-text>wherein the output module is configured to output the optimized function for execution by at least one parallel accelerator processor.</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

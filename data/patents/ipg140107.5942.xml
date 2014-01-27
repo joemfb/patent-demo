@@ -1,0 +1,1421 @@
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v44-2013-05-16.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.4 2013-05-16" file="US08627051-20140107.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20131224" date-publ="20140107">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08627051</doc-number>
+<kind>B2</kind>
+<date>20140107</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13442919</doc-number>
+<date>20120410</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>06</class>
+<subclass>F</subclass>
+<main-group>9</main-group>
+<subgroup>44</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20140107</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>712233</main-classification>
+</classification-national>
+<invention-title id="d2e51">Dynamically rewriting branch instructions to directly target an instruction cache location</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5313616</doc-number>
+<kind>A</kind>
+<name>Cline et al.</name>
+<date>19940500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5778228</doc-number>
+<kind>A</kind>
+<name>Wei</name>
+<date>19980700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>5926632</doc-number>
+<kind>A</kind>
+<name>Kawaguchi</name>
+<date>19990700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6112280</doc-number>
+<kind>A</kind>
+<name>Shah et al.</name>
+<date>20000800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>6175957</doc-number>
+<kind>B1</kind>
+<name>Ju et al.</name>
+<date>20010100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>6205545</doc-number>
+<kind>B1</kind>
+<name>Shah et al.</name>
+<date>20010300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>6317870</doc-number>
+<kind>B1</kind>
+<name>Mattson, Jr.</name>
+<date>20011100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>6330556</doc-number>
+<kind>B1</kind>
+<name>Chilimbi et al.</name>
+<date>20011200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>6427234</doc-number>
+<kind>B1</kind>
+<name>Chambers et al.</name>
+<date>20020700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>6453411</doc-number>
+<kind>B1</kind>
+<name>Hsu et al.</name>
+<date>20020900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>6463582</doc-number>
+<kind>B1</kind>
+<name>Lethin et al.</name>
+<date>20021000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>6481008</doc-number>
+<kind>B1</kind>
+<name>Chaiken et al.</name>
+<date>20021100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>6598221</doc-number>
+<kind>B1</kind>
+<name>Pegatoquet et al.</name>
+<date>20030700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>6609248</doc-number>
+<kind>B1</kind>
+<name>Srivastava et al.</name>
+<date>20030800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>6622300</doc-number>
+<kind>B1</kind>
+<name>Krishnaswamy et al.</name>
+<date>20030900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>6721875</doc-number>
+<kind>B1</kind>
+<name>McCormick, Jr. et al.</name>
+<date>20040400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>6725335</doc-number>
+<kind>B2</kind>
+<name>Bala et al.</name>
+<date>20040400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>6728788</doc-number>
+<kind>B1</kind>
+<name>Ainsworth et al.</name>
+<date>20040400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>6795964</doc-number>
+<kind>B2</kind>
+<name>Ramasamy et al.</name>
+<date>20040900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>6817014</doc-number>
+<kind>B2</kind>
+<name>Hundt et al.</name>
+<date>20041100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>6839895</doc-number>
+<kind>B1</kind>
+<name>Ju et al.</name>
+<date>20050100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>6865735</doc-number>
+<kind>B1</kind>
+<name>Sirer et al.</name>
+<date>20050300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>6934943</doc-number>
+<kind>B2</kind>
+<name>Hundt et al.</name>
+<date>20050800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>6966057</doc-number>
+<kind>B2</kind>
+<name>Lueh</name>
+<date>20051100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>6968546</doc-number>
+<kind>B2</kind>
+<name>Lueh</name>
+<date>20051100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>7039910</doc-number>
+<kind>B2</kind>
+<name>Kosche et al.</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>US</country>
+<doc-number>7526502</doc-number>
+<kind>B2</kind>
+<name>Hall et al.</name>
+<date>20090400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>US</country>
+<doc-number>7526760</doc-number>
+<kind>B1</kind>
+<name>Daynes et al.</name>
+<date>20090400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>US</country>
+<doc-number>7577965</doc-number>
+<kind>B2</kind>
+<name>Tobin</name>
+<date>20090800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>US</country>
+<doc-number>7856628</doc-number>
+<kind>B2</kind>
+<name>Li et al.</name>
+<date>20101200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00031">
+<document-id>
+<country>US</country>
+<doc-number>2002/0144241</doc-number>
+<kind>A1</kind>
+<name>Lueh</name>
+<date>20021000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00032">
+<document-id>
+<country>US</country>
+<doc-number>2002/0144245</doc-number>
+<kind>A1</kind>
+<name>Lueh</name>
+<date>20021000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00033">
+<document-id>
+<country>US</country>
+<doc-number>2002/0194580</doc-number>
+<kind>A1</kind>
+<name>Ramasamy et al.</name>
+<date>20021200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00034">
+<document-id>
+<country>US</country>
+<doc-number>2003/0009750</doc-number>
+<kind>A1</kind>
+<name>Hundt et al.</name>
+<date>20030100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00035">
+<document-id>
+<country>US</country>
+<doc-number>2003/0079215</doc-number>
+<kind>A1</kind>
+<name>Hundt et al.</name>
+<date>20030400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00036">
+<document-id>
+<country>US</country>
+<doc-number>2004/0133777</doc-number>
+<kind>A1</kind>
+<name>Kiriansky et al.</name>
+<date>20040700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00037">
+<document-id>
+<country>US</country>
+<doc-number>2005/0108562</doc-number>
+<kind>A1</kind>
+<name>Khazan et al.</name>
+<date>20050500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00038">
+<document-id>
+<country>US</country>
+<doc-number>2005/0155023</doc-number>
+<kind>A1</kind>
+<name>Li et al.</name>
+<date>20050700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00039">
+<document-id>
+<country>US</country>
+<doc-number>2005/0246700</doc-number>
+<kind>A1</kind>
+<name>Archambault et al.</name>
+<date>20051100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00040">
+<document-id>
+<country>US</country>
+<doc-number>2006/0059195</doc-number>
+<kind>A1</kind>
+<name>Hall et al.</name>
+<date>20060300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00041">
+<document-id>
+<country>US</country>
+<doc-number>2006/0095895</doc-number>
+<kind>A1</kind>
+<name>Sudheer</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00042">
+<document-id>
+<country>US</country>
+<doc-number>2007/0027877</doc-number>
+<kind>A1</kind>
+<name>Droshev et al.</name>
+<date>20070200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00043">
+<document-id>
+<country>US</country>
+<doc-number>2007/0174819</doc-number>
+<kind>A1</kind>
+<name>Li et al.</name>
+<date>20070700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00044">
+<document-id>
+<country>US</country>
+<doc-number>2007/0286483</doc-number>
+<kind>A1</kind>
+<name>Delong et al.</name>
+<date>20071200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00045">
+<document-id>
+<country>US</country>
+<doc-number>2008/0126771</doc-number>
+<kind>A1</kind>
+<name>Chen et al.</name>
+<date>20080500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00046">
+<document-id>
+<country>US</country>
+<doc-number>2008/0282035</doc-number>
+<kind>A1</kind>
+<name>Hundt et al.</name>
+<date>20081100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00047">
+<document-id>
+<country>US</country>
+<doc-number>2009/0307430</doc-number>
+<kind>A1</kind>
+<name>Bruening et al.</name>
+<date>20091200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00048">
+<document-id>
+<country>US</country>
+<doc-number>2010/0306746</doc-number>
+<kind>A1</kind>
+<name>Barua et al.</name>
+<date>20101200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>717136</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00049">
+<document-id>
+<country>US</country>
+<doc-number>2011/0161641</doc-number>
+<kind>A1</kind>
+<name>Chen et al.</name>
+<date>20110600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>712234</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00050">
+<document-id>
+<country>US</country>
+<doc-number>2011/0320785</doc-number>
+<kind>A1</kind>
+<name>Chen et al.</name>
+<date>20111200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00051">
+<document-id>
+<country>US</country>
+<doc-number>2011/0320786</doc-number>
+<kind>A1</kind>
+<name>Chen et al.</name>
+<date>20111200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00052">
+<document-id>
+<country>US</country>
+<doc-number>2011/0321002</doc-number>
+<kind>A1</kind>
+<name>Chen et al.</name>
+<date>20111200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00053">
+<document-id>
+<country>US</country>
+<doc-number>2011/0321021</doc-number>
+<kind>A1</kind>
+<name>Chen et al.</name>
+<date>20111200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00054">
+<document-id>
+<country>US</country>
+<doc-number>2012/0198170</doc-number>
+<kind>A1</kind>
+<name>Chen et al.</name>
+<date>20120800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00055">
+<document-id>
+<country>US</country>
+<doc-number>2012/0198429</doc-number>
+<kind>A1</kind>
+<name>Chen et al.</name>
+<date>20120800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00056">
+<document-id>
+<country>US</country>
+<doc-number>2012/0204016</doc-number>
+<kind>A1</kind>
+<name>Chen et al.</name>
+<date>20120800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00057">
+<document-id>
+<country>WO</country>
+<doc-number>WO 02/27498</doc-number>
+<kind>A2</kind>
+<date>20020400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00058">
+<othercit>Huneycutt, Chad, Mackenzie, Kenneth. &#x201c;Software Caching using Dynamic Binary Rewriting for Embedded Devices&#x201d; in Proceedings of the International Conference on Parallel Processing, pp. 621-630, 2001.</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00059">
+<othercit>Miller, Jason E., Agarwal, Anant. &#x201c;Flexicache: Software-based Instruction Caching for Embedded Processors&#x201d; ASPLOS '06 Oct. 21-25, 2006.</othercit>
+</nplcit>
+<category>cited by examiner</category>
+</us-citation>
+<us-citation>
+<nplcit num="00060">
+<othercit>Lin, Charles, &#x201c;Direct Mapped Cache&#x201d;, Obtained via http://www.cs.umd.edu/class/sum2003/cmsc311/Notes/, May 16, 2003, 3 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00061">
+<othercit>USPTO U.S. Appl. No. 12/648,741, 1 page.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00062">
+<othercit>USPTO U.S. Appl. No. 12/823,194, 1 page.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00063">
+<othercit>USPTO U.S. Appl. No. 12/823,204, 1 page.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00064">
+<othercit>USPTO U.S. Appl. No. 12/823,226, 1 page.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00065">
+<othercit>USPTO U.S. Appl. No. 12/823,244, 1 page.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00066">
+<othercit>USPTO U.S. Appl. No. 13/443,188, 1 page.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00067">
+<othercit>USPTO U.S. Appl. No. 13/444,890, 1 page.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00068">
+<othercit>USPTO U.S. Appl. No. 13/444,907, 1 page.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00069">
+<othercit>Chen, Tong et al., &#x201c;SPE Software Instruction Cache&#x201d;, U.S. Appl. No. 12/648,741, filed Dec. 29, 2009.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00070">
+<othercit>Gilbert, John et al., &#x201c;Adaptive Object Code Compression&#x201d;, Cases'06, Oct. 23-25, 2006, pp. 282-292.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00071">
+<othercit>Hazelwood, Kim et al., &#x201c;A Dynamic Binary Instrumentation Engine for the ARM Architecture&#x201d;, CASES'06, Oct. 23-25, 2006, pp. 261-270.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00072">
+<othercit>Hu, Wei et al., &#x201c;Secure and Practical Defense Against Code-injection Attacks using Software Dynamic Translation&#x201d;, VEE'06, Jun. 14-16, 2006, pp. 2-12.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00073">
+<othercit>Lu, Jiwei et al., &#x201c;The Performance of Runtime Data Cache Prefetching in a Dynamic Optimization System&#x201d;, Proceedings of the 36th International Symposium on Microarchitecture (MICRO-36'03), IEEE, 2003, 11 pages. 2003.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00074">
+<othercit>Miller, Jason E. et al., &#x201c;Software-based Instruction Caching for Embedded Processors&#x201d;, ACM, ASPLOS'06, Oct. 21-25, 2006, pp. 293-302. 2006 , 293-302.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00075">
+<othercit>Noori, Hamid et al., &#x201c;Enhancing Energy Efficiency of Processor-Based Embedded Systems through Post-Fabrication ISA Extension&#x201d;, ISLPED '08, Aug. 11-13, 2008, pp. 241-246.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00076">
+<othercit>Ramirez, Alex et al., &#x201c;Software Trace Cache&#x201d;, ACM, International Conference on Supercomputing ICS'99, 1999, pp. 119-126.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00077">
+<othercit>Ramsey, Norman et al., &#x201c;A Transformational Approach to Binary Translation of Delayed Branches&#x201d;, ACM Transactions on Programming Languages and Systems, vol. 25, No. 2, Mar. 2003, pp. 210-224.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00078">
+<othercit>Larus, James R. et al., &#x201c;Rewriting Executable Files to Measure Program Behavior&#x201d;, Computer Sciences Department University of Wisconsin-Madison, Oct. 24, 1994, 23 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00079">
+<othercit>Nanda, Susanta et al., &#x201c;BIRD: Binary Interpretation using Runtime Disassembly&#x201d;, IEEE, Proceedings of the International Symposium on Code Generation and Optimization, 2006, 12 pages.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>10</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>None</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>16</number-of-drawing-sheets>
+<number-of-figures>22</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>12823194</doc-number>
+<date>20100625</date>
+</document-id>
+<parent-status>PENDING</parent-status>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13442919</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20120198169</doc-number>
+<kind>A1</kind>
+<date>20120802</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Chen</last-name>
+<first-name>Tong</first-name>
+<address>
+<city>Yorktown Heights</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Flachs</last-name>
+<first-name>Brian</first-name>
+<address>
+<city>Georgetown</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Michael</last-name>
+<first-name>Brad W.</first-name>
+<address>
+<city>Cedar Park</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="004" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Nutter</last-name>
+<first-name>Mark R.</first-name>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="005" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>O'Brien</last-name>
+<first-name>John K. P.</first-name>
+<address>
+<city>South Salem</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="006" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>O'Brien</last-name>
+<first-name>Kathryn M.</first-name>
+<address>
+<city>South Salem</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="007" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Zhang</last-name>
+<first-name>Tao</first-name>
+<address>
+<city>Jersey City</city>
+<state>NJ</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Chen</last-name>
+<first-name>Tong</first-name>
+<address>
+<city>Yorktown Heights</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Flachs</last-name>
+<first-name>Brian</first-name>
+<address>
+<city>Georgetown</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Michael</last-name>
+<first-name>Brad W.</first-name>
+<address>
+<city>Cedar Park</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="004" designation="us-only">
+<addressbook>
+<last-name>Nutter</last-name>
+<first-name>Mark R.</first-name>
+<address>
+<city>Austin</city>
+<state>TX</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="005" designation="us-only">
+<addressbook>
+<last-name>O'Brien</last-name>
+<first-name>John K. P.</first-name>
+<address>
+<city>South Salem</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="006" designation="us-only">
+<addressbook>
+<last-name>O'Brien</last-name>
+<first-name>Kathryn M.</first-name>
+<address>
+<city>South Salem</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="007" designation="us-only">
+<addressbook>
+<last-name>Zhang</last-name>
+<first-name>Tao</first-name>
+<address>
+<city>Jersey City</city>
+<state>NJ</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<last-name>Lammes</last-name>
+<first-name>Francis</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="02" rep-type="attorney">
+<addressbook>
+<last-name>Walder, Jr.</last-name>
+<first-name>Stephen J.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="03" rep-type="attorney">
+<addressbook>
+<last-name>Talpis</last-name>
+<first-name>Matthew B.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>International Business Machines Corporation</orgname>
+<role>02</role>
+<address>
+<city>Armonk</city>
+<state>NY</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Petranek</last-name>
+<first-name>Jacob A</first-name>
+<department>2183</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">Mechanisms are provided for dynamically rewriting branch instructions in a portion of code. The mechanisms execute a branch instruction in the portion of code. The mechanisms determine if a target instruction of the branch instruction, to which the branch instruction branches, is present in an instruction cache associated with the processor. Moreover, the mechanisms directly branch execution of the portion of code to the target instruction in the instruction cache, without intervention from an instruction cache runtime system, in response to a determination that the target instruction is present in the instruction cache. In addition, the mechanisms redirect execution of the portion of code to the instruction cache runtime system in response to a determination that the target instruction cannot be determined to be present in the instruction cache.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="178.48mm" wi="246.21mm" file="US08627051-20140107-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="226.99mm" wi="198.97mm" orientation="landscape" file="US08627051-20140107-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="250.02mm" wi="185.59mm" orientation="landscape" file="US08627051-20140107-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="219.71mm" wi="151.98mm" orientation="landscape" file="US08627051-20140107-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="222.84mm" wi="186.86mm" file="US08627051-20140107-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="247.73mm" wi="181.02mm" orientation="landscape" file="US08627051-20140107-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="199.56mm" wi="184.66mm" file="US08627051-20140107-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="255.78mm" wi="192.19mm" file="US08627051-20140107-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="237.24mm" wi="187.71mm" file="US08627051-20140107-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="252.14mm" wi="200.83mm" file="US08627051-20140107-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="243.84mm" wi="180.42mm" file="US08627051-20140107-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="244.77mm" wi="186.86mm" orientation="landscape" file="US08627051-20140107-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="253.75mm" wi="188.21mm" file="US08627051-20140107-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="244.60mm" wi="147.66mm" file="US08627051-20140107-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="242.23mm" wi="148.76mm" file="US08627051-20140107-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00015" num="00015">
+<img id="EMI-D00015" he="245.70mm" wi="180.17mm" file="US08627051-20140107-D00015.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00016" num="00016">
+<img id="EMI-D00016" he="170.69mm" wi="167.05mm" file="US08627051-20140107-D00016.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<p id="p-0002" num="0001">This application is a continuation of application Ser. No. 12/823,194, filed Jun. 25, 2010, status pending.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND</heading>
+<p id="p-0003" num="0002">The present application relates generally to an improved data processing apparatus and method and more specifically to mechanisms for performing binary rewriting in software instruction caches.</p>
+<p id="p-0004" num="0003">Many modern computing devices utilize a multiprocessor architecture in which multiple processors are provided to increase the computation power of the computing device. One example of a modern multiprocessor architecture is the Cell Broadband Engine (CBE) available from International Business Machines Corporation or Armonk, N.Y. With the CBE, a primary control processor, referred to as the PPE, is provided along with a plurality of controlled processors, referred to as synergistic processing elements (SPEs). Each SPE has a local memory, or local store, into which instructions and data are copied so that the SPE may execute instructions in the local store on data brought into the location store from main memory. Thus, the local store serves as both an instruction and data cache for the SPE. Other multiprocessor architectures utilize similar configurations in which the processors may have a local instruction cache and data cache into which data and instructions are brought before executing on the processor or having the processor operate on the data.</p>
+<p id="p-0005" num="0004">Typically, the local store, or cache, of a modern day multiprocessor architecture is designed to be much smaller in storage size than the main memory. Thus, executing code larger than the processor's local store or cache size requires a strategy for swapping pieces of code, or code segments, into the local store or cache before use. In some cases, a code segment may include branch instructions whose target instruction is located in a different code segment that may not be currently present in the local store or cache. This would require a strategy for bringing in the code segment corresponding to the target instruction from main memory.</p>
+<heading id="h-0002" level="1">SUMMARY</heading>
+<p id="p-0006" num="0005">In one illustrative embodiment, a method, in a data processing system, is provided for dynamically rewriting branch instructions in a portion of code. The method comprises executing, in a processor of the data processing system, a branch instruction in the portion of code. The method further comprises determining, by the processor, if a target instruction of the branch instruction, to which the branch instruction branches, is present in an instruction cache associated with the processor. Moreover, the method comprises directly branching, by the processor, execution of the portion of code to the target instruction in the instruction cache, without intervention from an instruction cache runtime system, in response to a determination that the target instruction is present in the instruction cache. In addition, the method comprises redirecting, by the processor, execution of the portion of code to the instruction cache runtime system in response to a determination that the target instruction cannot be determined to be present in the instruction cache.</p>
+<p id="p-0007" num="0006">In other illustrative embodiments, a computer program product comprising a computer useable or readable medium having a computer readable program is provided. The computer readable program, when executed on a computing device, causes the computing device to perform various ones, and combinations of, the operations outlined above with regard to the method illustrative embodiment.</p>
+<p id="p-0008" num="0007">In yet another illustrative embodiment, a system/apparatus is provided. The system/apparatus may comprise one or more processors and a memory coupled to the one or more processors. The memory may comprise instructions which, when executed by the one or more processors, cause the one or more processors to perform various ones, and combinations of, the operations outlined above with regard to the method illustrative embodiment.</p>
+<p id="p-0009" num="0008">These and other features and advantages of the present invention will be described in, or will become apparent to those of ordinary skill in the art in view of, the following detailed description of the example embodiments of the present invention.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE SEVERAL VIEWS OF THE DRAWINGS</heading>
+<p id="p-0010" num="0009">The invention, as well as a preferred mode of use and further objectives and advantages thereof, will best be understood by reference to the following detailed description of illustrative embodiments when read in conjunction with the accompanying drawings, wherein:</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 1</figref> is an example embodiment of an information handling system capable of implementing aspects of the illustrative embodiments set forth herein;</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 2</figref> is a diagram showing embodiments of a software controlled instruction cache (icache) manager translating a target instruction space address to other types of instruction addresses;</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 3</figref> is a diagram showing a cache line that includes direct branch instructions and corresponding branch descriptors in accordance with one illustrative embodiment;</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 4</figref> is a flowchart showing steps taken in compiling various branch instruction types in accordance with one illustrative embodiment;</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 5</figref> is a flowchart showing steps taken in executing a direct branch instruction in a runtime environment in accordance with one illustrative embodiment;</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 6</figref> is a flowchart showing steps taken in executing an indirect branch instruction in a runtime environment in accordance with one illustrative embodiment;</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 7</figref> is a flowchart showing steps taken in executing a function return instruction in a runtime environment in accordance with one illustrative embodiment;</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 8A</figref> shows a target instruction space address translated into a target local store address in accordance with one illustrative embodiment;</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 8B</figref> is a flowchart showing steps taken in an icache manager translating a target instruction space address to a target instruction tag (ITAG) in accordance with one illustrative embodiment;</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 8C</figref> is a flowchart showing steps taken in an icache manager translating a target instruction space address to a target backing store address in accordance with one illustrative embodiment;</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 9</figref> illustrates information handling system, which is another embodiment of a simplified example of a computer system capable of performing the computing operations described herein;</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 10</figref> is an example diagram of a branch stub in accordance with one illustrative embodiment;</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 11</figref> is an example diagram illustrating a rewriting of a link register in accordance with one illustrative embodiment;</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 12</figref> is an example diagram illustrating an overall operation of one illustrative embodiment for rewriting branch instructions using branch stubs;</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 13</figref> is a flowchart outlining an example operation of a compiler for rewriting branch instructions in accordance with one illustrative embodiment;</p>
+<p id="p-0026" num="0025"><figref idref="DRAWINGS">FIG. 14</figref> is a flowchart outlining an example operation or an instruction cache runtime system for performing dynamic rewriting of branch instructions in accordance with one illustrative embodiment;</p>
+<p id="p-0027" num="0026"><figref idref="DRAWINGS">FIG. 15</figref> is an example diagram illustrating a call stub in accordance with one illustrative embodiment;</p>
+<p id="p-0028" num="0027"><figref idref="DRAWINGS">FIG. 16</figref> is a flowchart outlining an example operation of an instruction cache manager when handling the eviction of a cache line in accordance with one illustrative embodiment;</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 17</figref> is an example diagram illustrating one illustrative embodiment of a source code block listing quad word;</p>
+<p id="p-0030" num="0029"><figref idref="DRAWINGS">FIG. 18</figref> is a flowchart outlining an example operation of a compiler when analyzing original code and inserting a list of possible source code blocks targeting a current code block in accordance with one illustrative embodiment;</p>
+<p id="p-0031" num="0030"><figref idref="DRAWINGS">FIG. 19</figref> is a flowchart outlining an example operation of the instruction cache runtime system in accordance with one illustrative embodiment, with regard to handling eviction of a cache line; and</p>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIG. 20</figref> is a flowchart outlining an example operation for performing code optimization using a partitioned call graph in accordance with one illustrative embodiment.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0033" num="0032">The illustrative embodiments provide a mechanism for statically and dynamically rewriting branch instructions so that they may be more optimally executed in view of the limited size of local stores or caches of a processor. In particular, the mechanisms of the illustrative embodiments provide functionality for rewriting code, both statically by a compiler and dynamically by an instruction cache runtime system, to thereby generate and utilize branch stubs in the code for branch instructions. The branch stubs may be used as a basis for holding information about the branch instruction for use in determining whether a jump directly to a target of the branch instruction in the instruction cache may be possible or not. Examples of branch instructions include function calls, conditional branch instructions, unconditional branch instructions, function returns, and the like, as is generally known in the art.</p>
+<p id="p-0034" num="0033">In addition, the mechanisms of the illustrative embodiments provide functionality for performing dynamic rewriting of branches based on whether or not the possible targets of the branches are known or not. The rewriting of the branch instructions allows the code to directly jump to target code in the instruction cache when possible rather than having to go through an instruction cache manager to determine if the target code is present in the instruction cache or not. In general, when the target code is loaded into the instruction cache, the branch instruction is rewritten as a jump to the location of the target code in the instruction cache. When the target code is evicted from the instruction cache, the branch instruction is restored since it cannot jump to the target code directly but must trigger a software instruction cache mechanism to handle the jump to the target code.</p>
+<p id="p-0035" num="0034">As will be appreciated by one skilled in the art, the present invention may be embodied as a system, method, or computer program product. Accordingly, aspects of the present invention may take the form of an entirely hardware embodiment, an entirely software embodiment (including firmware, resident software, micro-code, etc.) or an embodiment combining software and hardware aspects that may all generally be referred to herein as a &#x201c;circuit,&#x201d; &#x201c;module&#x201d; or &#x201c;system.&#x201d; Furthermore, aspects of the present invention may take the form of a computer program product embodied in any one or more computer readable medium(s) having computer usable program code embodied thereon.</p>
+<p id="p-0036" num="0035">Any combination of one or more computer readable medium(s) may be utilized. The computer readable medium may be a computer readable signal medium or a computer readable storage medium. A computer readable storage medium may be, for example, but not limited to, an electronic, magnetic, optical, electromagnetic, infrared, or semiconductor system, apparatus, device, or any suitable combination of the foregoing. More specific examples (a non-exhaustive list) of the computer readable medium would include the following: an electrical connection having one or more wires, a portable computer diskette, a hard disk, a random access memory (RAM), a read-only memory (ROM), an erasable programmable read-only memory (EPROM or Flash memory), an optical fiber, a portable compact disc read-only memory (CDROM), an optical storage device, a magnetic storage device, or any suitable combination of the foregoing. In the context of this document, a computer readable storage medium may be any tangible medium that can contain or store a program for use by or in connection with an instruction execution system, apparatus, or device.</p>
+<p id="p-0037" num="0036">A computer readable signal medium may include a propagated data signal with computer readable program code embodied therein, for example, in a baseband or as part of a carrier wave. Such a propagated signal may take any of a variety of forms, including, but not limited to, electro-magnetic, optical, or any suitable combination thereof. A computer readable signal medium may be any computer readable medium that is not a computer readable storage medium and that can communicate, propagate, or transport a program for use by or in connection with an instruction execution system, apparatus, or device.</p>
+<p id="p-0038" num="0037">Computer code embodied on a computer readable medium may be transmitted using any appropriate medium, including but not limited to wireless, wireline, optical fiber cable, radio frequency (RF), etc., or any suitable combination thereof.</p>
+<p id="p-0039" num="0038">Computer program code for carrying out operations for aspects of the present invention may be written in any combination of one or more programming languages, including an object oriented programming language such as Java&#x2122;, Smalltalk&#x2122;, C++, or the like, and conventional procedural programming languages, such as the &#x201c;C&#x201d; programming language or similar programming languages. The program code may execute entirely on the user's computer, partly on the user's computer, as a stand-alone software package, partly on the user's computer and partly on a remote computer, or entirely on the remote computer or server. In the latter scenario, the remote computer may be connected to the user's computer through any type of network, including a local area network (LAN) or a wide area network (WAN), or the connection may be made to an external computer (for example, through the Internet using an Internet Service Provider).</p>
+<p id="p-0040" num="0039">Aspects of the present invention are described below with reference to flowchart illustrations and/or block diagrams of methods, apparatus (systems) and computer program products according to the illustrative embodiments of the invention. It will be understood that each block of the flowchart illustrations and/or block diagrams, and combinations of blocks in the flowchart illustrations and/or block diagrams, can be implemented by computer program instructions. These computer program instructions may be provided to a processor of a general purpose computer, special purpose computer, or other programmable data processing apparatus to produce a machine, such that the instructions, which execute via the processor of the computer or other programmable data processing apparatus, create means for implementing the functions/acts specified in the flowchart and/or block diagram block or blocks.</p>
+<p id="p-0041" num="0040">These computer program instructions may also be stored in a computer readable medium that can direct a computer, other programmable data processing apparatus, or other devices to function in a particular manner, such that the instructions stored in the computer readable medium produce an article of manufacture including instructions that implement the function/act specified in the flowchart and/or block diagram block or blocks.</p>
+<p id="p-0042" num="0041">The computer program instructions may also be loaded onto a computer, other programmable data processing apparatus, or other devices to cause a series of operational steps to be performed on the computer, other programmable apparatus, or other devices to produce a computer implemented process such that the instructions which execute on the computer or other programmable apparatus provide processes for implementing the functions/acts specified in the flowchart and/or block diagram block or blocks.</p>
+<p id="p-0043" num="0042">The flowchart and block diagrams in the figures illustrate the architecture, functionality, and operation of possible implementations of systems, methods and computer program products according to various embodiments of the present invention. In this regard, each block in the flowchart or block diagrams may represent a module, segment, or portion of code, which comprises one or more executable instructions for implementing the specified logical function(s). It should also be noted that, in some alternative implementations, the functions noted in the block may occur out of the order noted in the figures. For example, two blocks shown in succession may, in fact, be executed substantially concurrently, or the blocks may sometimes be executed in the reverse order, depending upon the functionality involved. It will also be noted that each block of the block diagrams and/or flowchart illustration, and combinations of blocks in the block diagrams and/or flowchart illustration, can be implemented by special purpose hardware-based systems that perform the specified functions or acts, or combinations of special purpose hardware and computer instructions.</p>
+<p id="p-0044" num="0043"><figref idref="DRAWINGS">FIG. 1</figref> is an example embodiment of an information handling system capable of implementing aspects of the illustrative embodiments set forth herein. The example information handling system shown in <figref idref="DRAWINGS">FIG. 1</figref> is an example of a Cell Broadband Engine (CBE) architecture available from International Business Machines Corporation of Armonk, N.Y. It should be appreciated, however, that the present invention is not limited to use with the CBE and other information handling system architectures, configurations, and the like, may be used without departing from the spirit and scope of the illustrative embodiments.</p>
+<p id="p-0045" num="0044">Processor element architecture (<b>100</b>) includes multiple heterogeneous processors that share a common memory and a common bus. Processor element architecture (PEA) <b>100</b> sends and receives information to/from external devices through input output <b>190</b>, and distributes the information to control plane <b>110</b> and data plane <b>140</b> using processor element bus <b>180</b>. Control plane <b>110</b> manages PEA <b>100</b> and distributes work to data plane <b>140</b>.</p>
+<p id="p-0046" num="0045">Control plane <b>110</b> includes processing unit <b>120</b>, which runs operating system (OS) <b>125</b>. For example, processing unit <b>120</b> may be a Power PC core that is embedded in PEA <b>100</b> and OS <b>125</b> may be a Linux operating system. Processing unit <b>120</b> manages a common memory map table for PEA <b>100</b>. The memory map table corresponds to memory locations included in PEA <b>100</b>, such as L2 memory <b>130</b> as well as non-private memory included in data plane <b>140</b>.</p>
+<p id="p-0047" num="0046">Data plane <b>140</b> includes Synergistic Processing Elements (SPE) <b>150</b>, <b>160</b>, and <b>170</b>. Each SPE processes data information and each SPE may have different instruction sets. For example, PEA <b>100</b> may be used in a wireless communications system and each SPE may be responsible for separate processing tasks, such as modulation, chip rate processing, encoding, and network interfacing. In another example, each SPE may have identical instruction sets and may be used in parallel to perform operations benefiting from parallel processes. Each SPE includes a synergistic processing unit (SPUs <b>155</b>, <b>165</b>, <b>175</b>), which is a processing core, such as a digital signal processor, a microcontroller, a microprocessor, or a combination of these cores. Each SPU includes a local storage area (local stores <b>158</b>, <b>168</b>, and <b>178</b>), which may be segmented into private and non-private memory. Each of local stores <b>158</b>, <b>168</b>, and <b>178</b> store a cache directory and tag directory (instruction and/or data), along with a cache manager (see <figref idref="DRAWINGS">FIG. 2</figref> and corresponding text for further details). And, each cache manager within each SPU manages their corresponding cache and retrieves data from backing store <b>135</b> accordingly.</p>
+<p id="p-0048" num="0047">While <figref idref="DRAWINGS">FIG. 1</figref> shows one information handling system, an information handling system may take many forms. For example, an information handling system may take the form of a desktop, server, portable, laptop, notebook, or other form factor computer or data processing system. In addition, an information handling system may take other form factors such as a personal digital assistant (PDA), a gaming device, ATM machine, a portable telephone device, a communication device or other devices that include a processor and memory (see <figref idref="DRAWINGS">FIG. 9</figref> and corresponding text for another embodiment of an information handling system for performing compilation functions as described herein).</p>
+<p id="p-0049" num="0048"><figref idref="DRAWINGS">FIG. 2</figref> is a diagram showing embodiments of an instruction cache (icache) manager translating a target instruction space address to other types of instruction addresses. Local store <b>200</b> resides within a synergistic processing unit (e.g., SPU's <b>155</b>, <b>165</b>, or <b>175</b>) and includes instruction cache (icache) manager <b>220</b>, instruction tag (ITAG) directory <b>225</b>, and instruction cache <b>230</b>.</p>
+<p id="p-0050" num="0049">In order to effectively move instructions from backing store <b>135</b> to icache <b>230</b>, icache manager <b>220</b> requires an effective address within backing store <b>135</b> that corresponds to the location of the target instruction (target backing store address <b>280</b>), as well as a local storage address within icache <b>230</b> to store the instruction (target local store address <b>260</b>). In addition, icache manager <b>220</b> requires an instruction tag that corresponds to the target instruction in order to utilize ITAG directory <b>225</b> and determine a cache hit or a cache miss (target ITAG <b>270</b>). As discussed herein, icache manager <b>220</b> uses an instruction's &#x201c;instruction space address&#x201d; (target instruction space address <b>255</b>) to compute an instruction's target backing store address, target local store address, and target ITAG. The instruction space address is an address given to an instruction at link/load time based upon the location of the instruction in a program (program <b>250</b>).</p>
+<p id="p-0051" num="0050">When icache manager <b>220</b> is requested (by an application thread) to branch to a particular target instruction, icache manager <b>220</b> determines whether the target instruction already resides in icache <b>230</b> by checking whether the target instruction's corresponding instruction tag (ITAG) is located in ITAG directory <b>225</b> (target ITAG <b>270</b>). In order to generate target ITAG <b>270</b>, icache manager <b>220</b> uses target ITAG subroutine <b>265</b>, which generates target ITAG <b>270</b> using target instruction space address <b>255</b> and a tag array mask (see <figref idref="DRAWINGS">FIG. 8B</figref> and corresponding text for further details).</p>
+<p id="p-0052" num="0051">When icache manager <b>200</b> needs to load the target instruction from backing store <b>135</b> into icache <b>230</b>, icache manager <b>220</b> computes the location of the target instruction in backing store <b>135</b> (target backing store address <b>280</b>) as well as the location to store the target instruction in icache <b>230</b> (target local store address <b>260</b>). Icache manager <b>220</b> utilizes target instruction space address <b>255</b> to generate these addresses as discussed below.</p>
+<p id="p-0053" num="0052">In the example shown in <figref idref="DRAWINGS">FIG. 2</figref>, target instruction space address <b>255</b> is 32 bits. Target instruction space address <b>255</b>'s 18 least significant bits, however, is target local store address <b>260</b> because local store <b>200</b> is 256 KB in size and only requires 18 bits for addressing into icache <b>230</b>. As such, icache manager <b>220</b> masks off target instruction space address <b>255</b>'s 14 most significant bits in order to generate target local store address <b>260</b> (see <figref idref="DRAWINGS">FIG. 8A</figref> and corresponding text for further details). As those skilled in the art can appreciate, more or less bits may be required for target local store address <b>260</b> based upon the size of local store <b>200</b>.</p>
+<p id="p-0054" num="0053">In order to identify the location in backing store <b>135</b> to retrieve the instruction (target backing store address <b>280</b>), icache manager <b>220</b> uses backing store subroutine <b>275</b>, which generates an offset using target instruction space address <b>255</b> and an icache base address, and uses the offset and a mask to generate target backing store address <b>280</b> (see <figref idref="DRAWINGS">FIG. 8C</figref> and corresponding text for further details). In turn, icache manager <b>220</b> retrieves the target instruction from target backing store address <b>280</b>; stores the target instruction in target local store address <b>260</b>; and updates ITAG directory <b>225</b> accordingly.</p>
+<p id="p-0055" num="0054"><figref idref="DRAWINGS">FIG. 3</figref> is a diagram showing a cache line that includes direct branch instructions and corresponding branch descriptors in accordance with one illustrative embodiment. A &#x201c;direct&#x201d; branch instruction is an instruction in which the address of a next instruction to execute, i.e. the target of the branch instruction, is explicitly specified. An &#x201c;indirect&#x201d; branch instruction is one in which the address of the next instruction to execute is not explicitly specified but instead the argument of the branch instruction specifies where the address is located. Thus, an example of an indirect branch instruction could be of the type &#x201c;jump indirect on the r<b>1</b> register,&#x201d; which means that the next instruction to be executed would be at the address whose value is stored in register r<b>1</b>. It should be noted that indirect branch instructions can also depend on the value of a memory location, rather than a specified register. Thus, with indirect branch instructions, the address of the next instruction to execute is not known at compile time, but is only known once the branch instruction is executed, i.e. at runtime. With direct branch instructions, the target of the branch instruction is known at compile time.</p>
+<p id="p-0056" num="0055">One aspect of the illustrative embodiment is that, during source compilation, a compiler adds a &#x201c;branch descriptor&#x201d; into a program for each direct branch instruction and, in turn, an icache manager loads the branch descriptors into the same instruction cache line during runtime execution. <figref idref="DRAWINGS">FIG. 3</figref> shows instruction cache <b>230</b>, which includes cache line <b>300</b>. Cache line <b>300</b> includes multiple instructions, some of which are direct branch instructions <b>310</b> and <b>320</b>. Cache line <b>300</b> also includes branch descriptors <b>330</b> and <b>350</b>, which correspond to direct branch instructions <b>310</b> and <b>320</b>, respectively.</p>
+<p id="p-0057" num="0056">When an application thread executes direct branch instruction <b>310</b>, direct branch instruction <b>310</b> branches to branch descriptor <b>330</b>. Branch descriptor <b>330</b> includes trampoline branch instruction <b>335</b> and target instruction space address <b>345</b>. A trampoline branch is an instruction that, when executed, branches to, or &#x201c;bounces&#x201d; to icache manager <b>220</b>, thus causing a trampoline effect. When branch instruction <b>310</b> branches to branch descriptor <b>330</b>, trampoline branch instruction <b>335</b> is invoked, which branches to icache manager <b>220</b> and loads pointer <b>340</b> into a link register via a branch and set link instruction, which points back to branch descriptor <b>330</b>. In turn, icache manager <b>220</b> uses pointer <b>340</b> to locate branch descriptor <b>330</b> and retrieve target instruction space address <b>345</b>. Icache manager <b>220</b> uses target instruction space address <b>345</b> to generate various addresses and locate a target instruction corresponding to direct branch instruction <b>310</b> (see <figref idref="DRAWINGS">FIG. 5</figref> and corresponding text for further details).</p>
+<p id="p-0058" num="0057">Likewise, when the application thread executes direct branch instruction <b>320</b>, the branch instruction branches to branch descriptor <b>350</b>, which is different than branch descriptor <b>330</b>. Branch descriptor <b>350</b> includes trampoline branch instruction <b>355</b> and target instruction space address <b>365</b>. Target instruction space address <b>365</b> corresponds to a location of the target instruction for branch instruction <b>320</b>. When branch instruction <b>320</b> branches to branch descriptor <b>350</b>, trampoline branch instruction <b>355</b> is invoked, which branches to icache manager <b>220</b> and loads pointer <b>360</b> into the link register via a branch and set link instruction, which points back to branch descriptor <b>350</b>. In turn, icache manager <b>220</b> uses pointer <b>360</b> to locate branch descriptor <b>350</b> and retrieve target instruction space address <b>365</b>.</p>
+<p id="p-0059" num="0058"><figref idref="DRAWINGS">FIG. 4</figref> is a flowchart showing steps taken in compiling various branch instruction types in accordance with one illustrative embodiment. The illustrative embodiments described herein includes embodiments discussing code compilation/linking, and embodiments discussing code execution (e.g., runtime environment). <figref idref="DRAWINGS">FIG. 4</figref> shows steps taken by a compiler (and/or linker) when the compiler encounters a branch instruction while compiling source code.</p>
+<p id="p-0060" num="0059">Processing commences at <b>400</b>, whereupon processing retrieves an instruction from source code <b>410</b> at step <b>405</b>. A determination is made as to whether the retrieved instruction is a branch instruction (decision <b>420</b>). If the instruction is not a branch instruction, decision <b>420</b> branches to &#x201c;No&#x201d; branch <b>422</b> whereupon processing compiles the instruction (step <b>425</b>) in a traditional manner known to those skilled in the art.</p>
+<p id="p-0061" num="0060">On the other hand, if the retrieved instruction is a branch instruction, decision <b>420</b> branches to &#x201c;Yes&#x201d; branch <b>428</b>, whereupon a determination is made as to the type of branch instruction (decision <b>430</b>). If the instruction is a direct branch instruction, decision <b>430</b> branches to &#x201c;Direct&#x201d; branch <b>432</b> whereupon processing generates a branch descriptor that includes a trampoline branch instruction and a target instruction space address at step <b>440</b>. During runtime execution, the direct branch instruction branches to the trampoline branch instruction, which sends a pointer to the icache manager and, in turn, the icache manager retrieves the target instruction space address from the branch descriptor (see <figref idref="DRAWINGS">FIGS. 3</figref>, <b>5</b>, and corresponding text for further details). At step <b>450</b>, processing compiles the branch instruction and branch descriptor.</p>
+<p id="p-0062" num="0061">If the branch type is an indirect branch, however, decision <b>430</b> branches to &#x201c;Indirect&#x201d; branch <b>438</b>, whereupon processing generates a number of instructions (step <b>460</b>) to handle the indirect branch during runtime execution. The instructions include an instruction to translate the indirect branch's target instruction space address to an instruction tag (ITAG) along with an instruction to look up the ITAG in an icache directory (icache directory <b>225</b> shown in <figref idref="DRAWINGS">FIG. 2</figref>). Processing also generates instructions in order to handle hit or miss outcomes of the lookup. For example, processing generates an instruction that translates the target instruction space address to a target local store address in order to branch to the instruction in icache if the lookup results in a cache hit, and also generates an instruction that calls the icache manager if the lookup results in a cache miss. At step <b>470</b>, processing compiles the instructions.</p>
+<p id="p-0063" num="0062">A determination is made as to whether there are more instructions to process in source code <b>410</b> (decision <b>480</b>). If there are more instructions to process, processing branches to &#x201c;Yes&#x201d; branch <b>482</b>, which loops back to retrieve and process the next instruction. This looping continues until there are no more source code instruction to process, at which point decision <b>480</b> branches to &#x201c;No&#x201d; branch <b>488</b> whereupon processing ends at <b>490</b>.</p>
+<p id="p-0064" num="0063"><figref idref="DRAWINGS">FIG. 5</figref> is a flowchart showing steps taken in executing a direct branch instruction in a runtime environment in accordance with one illustrative embodiment. In some of the illustrative embodiments described herein a branch descriptor is inserted into a cache line for each direct branch instruction (see <figref idref="DRAWINGS">FIG. 4</figref> and corresponding text for further details). In turn, the branch descriptor includes information to pass onto an icache manager to process the direct branch instruction.</p>
+<p id="p-0065" num="0064">Processing commences at <b>500</b>, whereupon processing (e.g., application thread) loads a direct branch instruction at step <b>505</b>. The direct branch instruction was arranged at load time to branch to a trampoline branch instruction included in the direct branch's corresponding branch descriptor (see <figref idref="DRAWINGS">FIG. 3</figref> and corresponding text for further details). As such, at step <b>510</b>, processing branches to the trampoline branch instruction included in the corresponding branch descriptor. The trampoline branch instruction, at step <b>515</b>, branches to the icache manager and sends a branch descriptor pointer to the icache manager (e.g., stores the branch descriptor pointer in an icache link register).</p>
+<p id="p-0066" num="0065">Icache manager processing commences at <b>530</b>, whereupon the icache manager retrieves the branch descriptor pointer from the link register at step <b>535</b>. At step <b>540</b>, the icache manager uses the branch descriptor pointer to locate and extract the target instruction space address from the branch descriptor. The target instruction space address is an address that corresponds to the direct branch's target instruction.</p>
+<p id="p-0067" num="0066">At step <b>545</b>, the icache manager computes a target ITAG from the target instruction space using a tag array mask (see <figref idref="DRAWINGS">FIG. 8B</figref> and corresponding text for further details). Next, the icache manager looks up the target ITAG in ITAG directory <b>225</b> in order to determine whether the target instruction is located in icache <b>230</b> (step <b>550</b>).</p>
+<p id="p-0068" num="0067">A determination is made as to whether ITAG directory <b>225</b> includes the target ITAG (decision <b>560</b>). If ITAG directory <b>225</b> includes the target ITAG (cache hit), decision <b>560</b> branches to &#x201c;Yes&#x201d; branch <b>562</b> whereupon the icache manager translates the target instruction space address to a target local store address at step <b>564</b> by masking off a portion of the target instruction space address (see <figref idref="DRAWINGS">FIG. 8A</figref> and corresponding text for further details). Then, at step <b>565</b>, the icache manager branches to the target instruction located at the target local store address within icache <b>230</b>; passes control back to the application thread; and ends at <b>570</b>. The application thread continues program execution at step <b>520</b>, and ends at <b>525</b>.</p>
+<p id="p-0069" num="0068">On the other hand, if ITAG directory <b>225</b> fails to include the target ITAG (cache miss), decision <b>560</b> branches to &#x201c;No&#x201d; branch <b>568</b> whereupon processing computes a target backing store address from the target instruction space address using an offset and mask at step <b>570</b> (see <figref idref="DRAWINGS">FIG. 8C</figref> and corresponding text for further details). The target backing store address corresponds to the location of the target instruction stored in backing store <b>135</b>. Next, the icache manager translates the target instruction space address to a target local store address at step <b>575</b> by masking off a portion of the target instruction space address (see <figref idref="DRAWINGS">FIG. 8A</figref> and corresponding text for further details). The target local store address is the location in icache <b>230</b> that the target instruction is stored. At step <b>580</b>, the icache manager loads the target instruction from backing store <b>135</b> into icache <b>230</b>. At this point, the icache manager branches to the target instruction located at the target local store address within icache <b>230</b> and passes control back to the application thread (step <b>565</b>), which continues program execution at step <b>520</b>. Icache manager processing ends at <b>570</b> and application thread processing ends at <b>525</b>.</p>
+<p id="p-0070" num="0069"><figref idref="DRAWINGS">FIG. 6</figref> is a flowchart showing steps taken in executing an indirect branch instruction in a runtime environment in accordance with one illustrative embodiment. Indirect branch processing commences at <b>600</b>, whereupon processing (e.g., application thread) computes a target instruction tag (ITAG) using a target instruction space address located in register store <b>615</b> that corresponds to the indirect branch instruction's target instruction (step <b>610</b>). The target instruction space address was stored in register store <b>615</b> from a previous instruction (hence an indirect branch instruction).</p>
+<p id="p-0071" num="0070">Processing looks up the target ITAG in ITAG directory <b>225</b> at step <b>620</b>, and a determination is made as to whether the lookup results in a cache hit or a cache miss (decision <b>630</b>). If a cache miss occurs, decision <b>630</b> branches to &#x201c;No&#x201d; branch <b>632</b>, whereupon processing calls icache manager <b>220</b> to move the target instruction from backing store <b>135</b> into icache <b>230</b> (step <b>640</b>). Icache manager <b>220</b>, in turn, translates the target instruction space address to a target backing store address and a target local store address in order to move the target instruction from backing store <b>135</b> into icache <b>230</b> (see <figref idref="DRAWINGS">FIGS. 5</figref>, <b>8</b>A, <b>8</b>C, and corresponding text for further details). On the other hand, if a cache hit occurs, decision <b>630</b> branches to &#x201c;Yes&#x201d; branch <b>638</b>, bypassing icache manager steps.</p>
+<p id="p-0072" num="0071">At step <b>650</b>, processing translates the target instruction space address to the target local store address and, at step <b>660</b>, processing retrieves the target instruction from icache <b>230</b> at the target local store address. Processing continues program execution at step <b>670</b>, and ends at <b>680</b>.</p>
+<p id="p-0073" num="0072"><figref idref="DRAWINGS">FIG. 7</figref> is a flowchart showing steps taken in executing a function return instruction in a runtime environment in accordance with one illustrative embodiment. Processing commences at <b>700</b>, whereupon processing executes a function return instruction and, in doing so, creates a target local store address (icache address) as the return value, which is stored in a link register included in register store <b>720</b> (step <b>705</b>).</p>
+<p id="p-0074" num="0073">While waiting for the instruction to finish, a determination is made as to whether the target instruction is being evicted from the icache (decision <b>710</b>). If the target instruction address is being evicted from the icache, decision <b>710</b> branches to &#x201c;Yes&#x201d; branch <b>712</b>, whereupon processing translates the target local store address to a target instruction space address and stores the target instruction space address in the link register at step <b>715</b>. The target instruction space address is stored in the link register such that when the function return completes, processing realizes that the target instruction is no longer in icache <b>230</b> and should call the icache manager to move the target instruction from backing store <b>135</b> into icache <b>230</b> (discussed below). On the other hand, if the target instruction is not evicted from the icache, decision <b>710</b> branches to &#x201c;No&#x201d; branch <b>718</b> bypassing translation steps.</p>
+<p id="p-0075" num="0074">A determination is made as to whether the function return has completed (decision <b>730</b>). If the function return has not yet completed, decision <b>730</b> branches to &#x201c;No&#x201d; branch <b>732</b>, which loops back to monitor function return completion and target instruction eviction. This looping continues until the function return completes, at which point decision <b>730</b> branches to &#x201c;Yes&#x201d; branch <b>738</b> whereupon processing retrieves the link register value from register store <b>720</b> (step <b>740</b>).</p>
+<p id="p-0076" num="0075">A determination is made as to whether the link register value is a target local store address (TLSA) or a target instruction space address (TISA) (decision <b>750</b>). If the link register value is a target instruction space address, decision <b>750</b> branches to &#x201c;TISA&#x201d; branch <b>752</b>, whereupon processing calls icache manager <b>220</b> to move the target instruction from backing store <b>135</b> into icache <b>230</b> (step <b>760</b>). Icache manager <b>220</b>, in turn, translates the target instruction space address to a target backing store address and a target local store address in order to move the target instruction from backing store <b>135</b> into icache <b>230</b> (see <figref idref="DRAWINGS">FIGS. 5</figref>, <b>8</b>A, <b>8</b>C, and corresponding text for further details). Processing, at step <b>765</b>, converts the target instruction space address to the target local store address. On the other hand, if the link register value is a target local store address (e.g., target instruction was not evicted), decision <b>750</b> branches to &#x201c;TLSA&#x201d; branch <b>758</b> bypassing icache manager calling steps.</p>
+<p id="p-0077" num="0076">At step <b>770</b>, processing branches to the target address at the target local store address and continues program execution at step <b>780</b>. Processing ends at <b>790</b>.</p>
+<p id="p-0078" num="0077"><figref idref="DRAWINGS">FIG. 8A</figref> shows a target instruction space address translated into a target local store address in accordance with one illustrative embodiment. The target instruction space address discussed herein includes 32 bits and the target local store address discussed herein includes 18 bits. As those skilled in the art can appreciate, more or less bits may be used for the target instruction space address and/or the target local store address. The target instruction space address includes the target local store address in its 18 least significant bits (see <figref idref="DRAWINGS">FIG. 2</figref> and corresponding text for further details). As such, in order to translate the target instruction space address to the target local store address, the icache manager masks off target instruction space address <b>800</b>'s 14 most significant bits using mask <b>810</b>, which leaves 18 least significant bits as target local store address <b>820</b>.</p>
+<p id="p-0079" num="0078"><figref idref="DRAWINGS">FIG. 8B</figref> is a flowchart showing steps taken in an icache manager translating a target instruction space address to a target instruction tag (ITAG) in accordance with one illustrative embodiment. Icache manager processing commences at <b>830</b>, whereupon the icache manager generates an instruction tag index using the target instruction space effective address and a tag array mask (step <b>840</b>). In one embodiment, a tag array is an array of structures with one element per cache Iine. Each element includes an instruction space address of a corresponding line that is currently resident. As such, in this embodiment:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>tag array mask=Number of cache lines&#x2212;1<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>ITAG index=(TISA/linesize) &#x26; tag mask<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0080" num="0079">Next, at step <b>850</b>, the icache manager generates the target instruction tag at step <b>850</b> from the generated ITAG index, such as by using the instruction:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>Target ITAG=tag[ITAG index]<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0081" num="0080">The icache manager may then use the target ITAG to look in the ITAG directory and determine whether a corresponding target instruction is located in the icache or whether the icache manager should retrieve the target instruction from backing store and load it into the icache. Processing ends at <b>860</b></p>
+<p id="p-0082" num="0081"><figref idref="DRAWINGS">FIG. 8C</figref> is a flowchart showing steps taken in an icache manager translating a target instruction space address to a target backing store address. Icache manager processing commences at <b>870</b>, whereupon the icache manager generates an offset using the target instruction space address (TISA) and icache base address (step <b>880</b>), such as with the instruction:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>offset=(TISA&#x2212;icachebase)<?in-line-formulae description="In-line Formulae" end="tail"?>
+</p>
+<p id="p-0083" num="0082">Next, at step <b>890</b>, the icache manager generates the target backing store address (TBSA) using the generated offset and mask that preserves an index into a cache array, such as with the instruction:
+<br/>
+<?in-line-formulae description="In-line Formulae" end="lead"?>TBSA=(offset&#x26;mask that preserves idx into cache array)|(offset&#x3e;&#x3e;(18-log 2 icachesize))<?in-line-formulae description="In-line Formulae" end="tail"?>
+<br/>
+where &#x201c;&#x26;&#x201d; is a bitwise AND operator; &#x201c;|&#x201d; is a bitwise OR operator; and &#x201c;&#x3e;&#x3e;&#x201d; is a bitwise right shift. The icache manager may then use the target backing store address to retrieve the target instruction from backing store at the target backing store address, and load the target instruction into the icache (see <figref idref="DRAWINGS">FIGS. 5-7</figref> and corresponding text for further details). Processing ends at <b>895</b>.
+</p>
+<p id="p-0084" num="0083"><figref idref="DRAWINGS">FIG. 9</figref> illustrates information handling system <b>900</b>, which is another embodiment of a simplified example of a computer system capable of performing the computing operations described herein. Information handling system <b>900</b> includes one or more processors <b>910</b> coupled to processor interface bus <b>912</b>. Processor interface bus <b>912</b> connects processors <b>910</b> to Northbridge <b>915</b>, which is also known as the Memory Controller Hub (MCH). Northbridge <b>915</b> connects to system memory <b>920</b> and provides a means for processor(s) <b>910</b> to access the system memory. Graphics controller <b>925</b> also connects to Northbridge <b>915</b>. In one embodiment, PCI Express bus <b>918</b> connects Northbridge <b>915</b> to graphics controller <b>925</b>. Graphics controller <b>925</b> connects to display device <b>930</b>, such as a computer monitor.</p>
+<p id="p-0085" num="0084">Northbridge <b>915</b> and Southbridge <b>935</b> connect to each other using bus <b>919</b>. In one embodiment, the bus is a Direct Media Interface (DMI) bus that transfers data at high speeds in each direction between Northbridge <b>915</b> and Southbridge <b>935</b>. In another embodiment, a Peripheral Component Interconnect (PCI) bus connects the Northbridge and the Southbridge. Southbridge <b>935</b>, also known as the I/O Controller Hub (ICH) is a chip that generally implements capabilities that operate at slower speeds than the capabilities provided by the Northbridge. Southbridge <b>935</b> typically provides various busses used to connect various components. These busses include, for example, PCI and PCI Express busses, an ISA bus, a System Management Bus (SMBus or SMB), and/or a Low Pin Count (LPC) bus. The LPC bus often connects low-bandwidth devices, such as boot ROM <b>996</b> and &#x201c;legacy&#x201d; I/O devices (using a &#x201c;super I/O&#x201d; chip). The &#x201c;legacy&#x201d; I/O devices (<b>998</b>) can include, for example, serial and parallel ports, keyboard, mouse, and/or a floppy disk controller. The LPC bus also connects Southbridge <b>935</b> to Trusted Platform Module (TPM) <b>995</b>. Other components often included in Southbridge <b>935</b> include a Direct Memory Access (DMA) controller, a Programmable Interrupt Controller (PIC), and a storage device controller, which connects Southbridge <b>935</b> to nonvolatile storage device <b>985</b>, such as a hard disk drive, using bus <b>984</b>.</p>
+<p id="p-0086" num="0085">ExpressCard <b>955</b> is a slot that connects hot-pluggable devices to the information handling system. ExpressCard <b>955</b> supports both PCI Express and USB connectivity as it connects to Southbridge <b>935</b> using both the Universal Serial Bus (USB) the PCI Express bus. Southbridge <b>935</b> includes USB Controller <b>940</b> that provides USB connectivity to devices that connect to the USB. These devices include webcam (camera) <b>950</b>, infrared (IR) receiver <b>948</b>, keyboard and trackpad <b>944</b>, and Bluetooth device <b>946</b>, which provides for wireless personal area networks (PANs). USB Controller <b>940</b> also provides USB connectivity to other miscellaneous USB connected devices <b>942</b>, such as a mouse, removable nonvolatile storage device <b>945</b>, modems, network cards, ISDN connectors, fax, printers, USB hubs, and many other types of USB connected devices. While removable nonvolatile storage device <b>945</b> is shown as a USB-connected device, removable nonvolatile storage device <b>945</b> could be connected using a different interface, such as a Firewire interface, etcetera.</p>
+<p id="p-0087" num="0086">Wireless Local Area Network (LAN) device <b>975</b> connects to Southbridge <b>935</b> via the PCI or PCI Express bus <b>972</b>. LAN device <b>975</b> typically implements one of the IEEE 802.11 standards of over-the-air modulation techniques that all use the same protocol to wireless communicate between information handling system <b>900</b> and another computer system or device. Optical storage device <b>990</b> connects to Southbridge <b>935</b> using Serial ATA (SATA) bus <b>988</b>. Serial ATA adapters and devices communicate over a high-speed serial link. The Serial ATA bus also connects Southbridge <b>935</b> to other forms of storage devices, such as hard disk drives. Audio circuitry <b>960</b>, such as a sound card, connects to Southbridge <b>935</b> via bus <b>958</b>. Audio circuitry <b>960</b> also provides functionality such as audio line-in and optical digital audio in port <b>962</b>, optical digital output and headphone jack <b>964</b>, internal speakers <b>966</b>, and internal microphone <b>968</b>. Ethernet controller <b>970</b> connects to Southbridge <b>935</b> using a bus, such as the PCI or PCI Express bus. Ethernet controller <b>970</b> connects information handling system <b>900</b> to a computer network, such as a Local Area Network (LAN), the Internet, and other public and private computer networks.</p>
+<p id="p-0088" num="0087">The above mechanisms provide the ability for code to jump, through the use of a trampoline instruction, to the instruction cache manager of the instruction cache to check whether the target code for a branch instruction is in the instruction cache or not. If not, the instruction cache manager will bring the target code into the cache. The instruction cache manager will then cause the execution to jump to where the target code is present in the instruction cache. This allows code segments to be brought from a backing store, or main memory, of the system into a local store or instruction cache associated with a processor. This mechanism may be replicated with each processor of a multi-processor system such that each processor may manage the moving of instructions into and out of the local stores or instruction caches associated with the individual processors.</p>
+<p id="p-0089" num="0088">While this mechanism generally works well, further performance enhancement and optimization may be achieved by providing mechanisms to avoid the overhead of redirecting execution to the instruction cache manager, having the instruction cache manager perform its checks and operations, and then returning to the original code. The mechanisms of the illustrative embodiments provide further functionality to dynamically rewrite branch instructions utilizing branch stubs, i.e. small portions of code that stand in for, or replace, another programming function. The branch stubs maintain information about branch instructions and serve as a mechanism for jumping directly to target code in the instruction cache when possible. The branch stub code serves a similar purpose as the trampoline code with the exception that the overhead of the instruction cache manager is avoided when the target code exists within the instruction cache. In the case that the target code is not in the instruction cache, the execution of the code may be redirected to the instruction cache manager as previously described above. These mechanisms may be implemented in an information handling system, such as described above with reference to <figref idref="DRAWINGS">FIG. 9</figref>, or other type of information/data processing system.</p>
+<p id="p-0090" num="0089">The branch stubs are introduced into the code, such as at the end of a code block (a section of code grouped together, typically having a size that is able to fit into one or more cache lines of an instruction cache), by a compiler at compile time and may be dynamically updated at runtime by an instruction cache runtime system. The instruction cache runtime system is the collection of software designed to support the execution of computer programs, which may include subroutines and libraries for common operations, implementation of programming language commands, type checking, debugging, code generation and optimization, and the like. In particular, the instruction cache runtime system includes an instruction cache manager, such as that previously described above, which has been modified to make use of the additional mechanisms described in the further illustrative embodiments hereafter. The original branch instruction is rewritten by the compiler to branch to an address corresponding to the branch stub for this branch instruction and the modified branch instruction and branch stub are included in the executable code so that it can be brought into the instruction cache along with the other instructions. Again, branch instructions may be function calls, conditional branch instructions, unconditional branch instructions, or the like, and may be direct branch instructions or indirect branch instructions.</p>
+<p id="p-0091" num="0090">With direct branch instructions, i.e. branch instructions for which an address of a next instruction to execute is explicitly specified in the branch instruction, the branch stubs can be used to store a branch offset, i.e. an offset from the address of the branch instruction, that is used to locate the original target address of the next instruction to execute and thus, the target is explicitly identified. During runtime, after the instruction cache line corresponding to the branch instruction is fetched, the direct branch instruction can be rewritten so that it targets the address of the actual target inside the instruction cache, rather than the address of the branch stub. In this way, further executions of the direct branch instruction will proceed directly to the target address of the next instruction directly without incurring instruction cache runtime system overhead, i.e. the overhead associated with jumping to the instruction cache manager of the instruction cache runtime system.</p>
+<p id="p-0092" num="0091">Indirect branch instructions cannot be rewritten in the same manner as direct branch instructions using the branch stubs since the targets of indirect branch instructions are only known at runtime and may be different each time the indirect branch instructions are executed. Thus, the overhead associated with having to go to the instruction cache runtime system can only be avoided if it can be determined that the current target of the indirect branch instruction is already in the instruction cache. The illustrative embodiments provide mechanisms for determining whether the target of an indirect branch instruction is in the instruction cache or not so that a direct jump can be made using the branch stub.</p>
+<p id="p-0093" num="0092">With indirect branch instructions, the instruction cache runtime system may monitor the execution of code to identify these indirect branch instructions and may determine the target of the indirect branch instruction and whether the target of the indirect branch instruction is the same target as in a previous execution of the indirect branch instruction. The branch stubs for indirect branch instructions, along with a compiler inserted check instruction, can be used to make such a determination, as will be described in greater detail hereafter. If the indirect branch instruction is targeting the same target address as for a previous execution of the indirect branch instruction, then the execution may jump directly to this target in the instruction cache without having to go through the instruction cache runtime system, e.g., the instruction cache manager. However, if the target address of the indirect branch instruction does not match a previous target address for a previous execution of the branch instruction, then the execution may jump to the instruction cache runtime system, such as the instruction cache manager as described above, to bring the target of the indirect branch instruction into the instruction cache.</p>
+<p id="p-0094" num="0093">As mentioned above, one aspect of these illustrative embodiments is the introduction of branch stubs for branch instructions in code provided to a compiler. The compiler may analyze the received code, identify branch instructions in the code as well as whether the branch instruction is a direct branch instruction or an indirect branch instruction. For example, the compiler may identify a branch instruction as a direct branch instruction when the target of the branch instruction is a discernable address at compile time. A branch instruction whose target is a register or some other location whose contents are dynamically determined at runtime, will be identified by the compiler as an indirect branch instruction.</p>
+<p id="p-0095" num="0094">For direct and indirect branch instructions, the compiler generates a branch stub, inserts a link to the instruction cache manager into a first portion of the branch stub, and a copy of the target address from the original branch instruction in a second portion of the branch stub. The original branch instruction is then rewritten to reference the branch stub, i.e. the target of the original branch instruction is changed to an address or offset to the branch stub for that branch instruction to thereby generate a modified branch instruction. For indirect branch instructions, the compiler further inserts a check instruction, such as prior to the branch instruction, to check whether a target of the branch instruction matches a previous target of the same branch instruction and to jump to one of the target instruction or the instruction cache runtime system based on an outcome of the check. This will be described in greater detail hereafter.</p>
+<p id="p-0096" num="0095"><figref idref="DRAWINGS">FIG. 10</figref> is an example diagram of a branch stub in accordance with one illustrative embodiment. As shown in <figref idref="DRAWINGS">FIG. 10</figref>, in one illustrative embodiment, the branch stub <b>1000</b> comprises a plurality of portions of data <b>1010</b>-<b>1040</b> with each portion of data <b>1010</b>-<b>1040</b> storing different information based on the type of branch instruction that is replaced by the branch stub <b>1000</b>. In the depicted example, the branch stub <b>1000</b> is comprised of four words <b>1010</b>-<b>1040</b>, with each word being a fixed size number of bits of data. In general the first portion <b>1010</b> of the branch stub <b>1000</b>, e.g., the first word, is used for storing an address to link register and a cache miss handler in the first portion <b>1010</b>, which may be the instruction cache manager, may be part of the instruction cache manager, or may otherwise be provided by the instruction cache runtime system, for example, in case the target of the branch is not present in the instruction cache when the branch stub is processed. The second portion <b>1020</b> may store a copy of the target effective address from the original branch instruction. The last two portions <b>1030</b> and <b>1040</b>, e.g., the last two words, are free to be used by the instruction cache runtime system to store information about runtime status of the branch instructions that are rewritten using the branch stub <b>1000</b> based on the type of branch instruction being replaced or rewritten.</p>
+<p id="p-0097" num="0096">For example, the third portion <b>1030</b> of the branch stub <b>1000</b> may be used by the instruction cache runtime system, for direct branch instructions, to store an offset into a cache line or cache line for locating the original branch instruction. The fourth portion <b>1040</b> of the branch stub <b>1000</b> may be used to store a copy of the original branch instruction before rewriting. With this extra information in the branch stub <b>1000</b>, after the instruction cache manager fetches the instruction cache line corresponding to the branch instruction into the instruction cache, the instruction cache manager may cause the direct branch instruction to be rewritten to target the actual target address inside the instruction cache rather than the branch stub <b>1000</b>. Thereafter, when the direct branch instruction is again executed, the branch instruction will jump directly to the target in the instruction cache rather than having to go through the instruction cache manager to check to see if the target is in the instruction cache.</p>
+<p id="p-0098" num="0097">For indirect branch instructions, the mechanisms of the illustrative embodiments make use of the observation that indirect branch instructions tend to target the same target address at runtime. Thus, for indirect branch instructions, the instruction cache runtime system uses a sub-portion of the third portion <b>1030</b> of the branch stub <b>1000</b>, which is unused for direct branch instructions, to store the target address for the last target called by the indirect branch instruction. This target address for the last target called by the indirect branch instruction, stored in sub-portion of the third portion <b>1030</b> of the branch stub <b>1000</b>, may be used by the check instruction inserted by the compiler to check to see if the previous execution of the indirect branch instruction targeted the same target address or not as the current execution of the indirect branch instruction. If so, then the target instruction is already present in the instruction cache (since the previous execution used it) and thus, the indirect branch instruction can jump directly to the target instruction in the instruction cache without having to go through the instruction cache manager. If the target address for the last target called by the indirect branch instruction does not match the target of the current execution of the indirect branch instruction, then the execution jumps to the instruction cache manager to perform the necessary operations for bringing the target into the instruction cache, as previously described above.</p>
+<p id="p-0099" num="0098">It should be noted that in order to handle cache line eviction properly, such as when there is an instruction cache miss and a cache line needs to be evicted to bring in another cache line, the saved target address in the sub-portion of the third portion <b>1030</b> of the branch stub <b>1000</b> of the calling indirect branch instruction needs to be cleared when the target instruction is evicted from the instruction cache. The same is true for direct branches such that the target address information stored in the branch stub <b>1000</b> must be cleared when the target instruction is evicted from the instruction cache. More about eviction will be provided hereafter.</p>
+<p id="p-0100" num="0099">In addition to the above, the illustrative embodiments further include mechanisms for rewriting branch instruction returns. Branch instruction return rewriting, in accordance with one illustrative embodiment, is achieved without using branch stubs but instead makes use of a rewriting of a link register. For example with a processor element architecture such as shown in <figref idref="DRAWINGS">FIG. 1</figref>, each SPE may support 128 bit registers, each of which may store a quadword. Register r<b>0</b> may be used as a link register, i.e. a register that stores the address to return to when a function completes execution, with only word <b>0</b> of the link register typically being used. In general, when a function returns, the address stored in the link register is loaded from the call stack and then a return handler, which may be part of the instruction cache manager, or otherwise provided in the instruction cache runtime system, is called with the link register address as input. The return handler would then check whether the code block to return to is still in the instruction cache or not, and if not, it will fetch the code block from the backing store or main memory and put it into the instruction cache.</p>
+<p id="p-0101" num="0100"><figref idref="DRAWINGS">FIG. 11</figref> is an example diagram illustrating a rewriting of a link register in accordance with one illustrative embodiment. As shown in <figref idref="DRAWINGS">FIG. 11</figref>, the mechanisms of the illustrative embodiments rewrite the link register <b>1100</b> so that additional information is stored in the link register <b>1100</b>. That is, typically the link register <b>1100</b> only stores the return address, referred to as the load/store return address, in word <b>0</b> <b>1110</b> of the link register <b>1100</b>. However, with the mechanisms of the illustrative embodiments, the instruction cache runtime system rewrites the link register <b>1100</b> to store a target address in word <b>0</b> <b>1110</b>, which is to be used as a basis for an indirect branch instruction to the target address, and an effective address (EA) for the return address in word <b>1</b> <b>1120</b>.</p>
+<p id="p-0102" num="0101">With this rewriting of the link register <b>1100</b>, when a branch returns, the instruction cache runtime system can perform a load of the link register from the stack and perform an indirect branch to the link register. The target of the indirect branch instruction to the link register will be word <b>0</b> of the link register. This indirect branch instruction can then be handled using the mechanisms noted above with regard to indirect branches. As a result, if the target address stored in word <b>0</b> of the link register corresponds to the same target address as a previous execution of the indirect branch, as determined from a branch stub associated with the indirect branch instruction, then the execution of the code can bypass the return handler of the instruction cache runtime system and jump directly to the target instruction in the instruction cache. If the target addresses do not match, then the instruction cache manager may be invoked as discussed above.</p>
+<p id="p-0103" num="0102">In particular, after instruction cache miss handling, which may occur as a result of a target of the branch instruction, e.g., a called function, not being present in the instruction cache, the return handler of the instruction cache runtime system, e.g., in the instruction cache manager, stores the instruction cache address of the code block to return to in the first slot or word, e.g., word <b>0</b> <b>1110</b>, of the link register <b>1100</b>. The return handler also stores the corresponding effective address of the instruction cache address of the code block to return to in a second slot or word, e.g., word <b>1</b> <b>1120</b>, of the link register <b>1100</b>. Thus, after rewriting the link register, and assuming that the target block of code is not evicted, when the branch returns, it will branch to the first slot or word, e.g., word <b>0</b> <b>1110</b>, of the link register <b>1100</b> directly without invoking the return handier of the instruction cache runtime system.</p>
+<p id="p-0104" num="0103">It should be noted that cache eviction needs to be handled carefully in this case. To correct return rewriting when the target block of code to be returned to has been evicted from the instruction cache, whenever a cache line is evicted, the instruction cache manager may traverse all call stack frames through a back chain. For each call stack frame, the instruction cache manager may examine the second slot or word, e.g., word <b>1</b> <b>1120</b>, of the link register <b>1100</b>. If the effective address in the second slot or word matches the cache line evicted, then the instruction cache manager may modify the first slot or word, e.g., word <b>0</b> <b>1110</b>, of the link register <b>1100</b> to point to the address of the return handler of the instruction cache runtime system. Thus, later, when the branch instruction returns, the return handler will be invoked instead, and the return handler knows which cache line to fetch based on the second slot or word, e.g., word <b>1</b> <b>1120</b>, of the link register <b>1100</b>.</p>
+<p id="p-0105" num="0104"><figref idref="DRAWINGS">FIG. 12</figref> is an example diagram illustrating an overall operation of one illustrative embodiment for rewriting branch instructions using branch stubs. As shown in <figref idref="DRAWINGS">FIG. 12</figref>, original code <b>1210</b> is provided and may include one or more direct branch instructions <b>1212</b> and/or one or more indirect branch instructions <b>1214</b>. The compiler <b>1220</b> may receive the original code <b>1210</b> and, as part of its optimizations, may rewrite the branches in the original code <b>1210</b> using branch stubs with the branch instructions referencing the branch stubs. In order to achieve this rewriting, the compiler <b>1220</b> may be provided with branch rewriting logic <b>1222</b> that performs the static analysis of the original code <b>1210</b> as described previously to identify branches in the original code <b>1210</b> and rewrite these branches accordingly.</p>
+<p id="p-0106" num="0105">For example, the branch rewriting logic <b>1222</b> may identify the branches in the original code <b>1210</b>, generate a branch stub, e.g., branch stubs <b>1238</b> and <b>1239</b>, for each of the branches in the original code <b>1210</b>, and populate the branch stubs with an address for the instruction cache manager (for use in the case of a target block not being present in the instruction cache), as well as an original target address from the original branch instruction. The original branch instructions are then rewritten to replace the reference to the target instruction with a reference to the branch stub corresponding to the branch instruction. This is done regardless of whether the branch instruction is a direct branch instruction or an indirect branch instruction. As a result, the rewritten code <b>1230</b> includes rewritten branch instructions <b>1232</b> and <b>1236</b> as well as branch stubs <b>1238</b> and <b>1239</b> with a linking between the rewritten branch instructions and their corresponding branch stubs (represented by the arrows in <figref idref="DRAWINGS">FIG. 12</figref>).</p>
+<p id="p-0107" num="0106">The branch rewriting logic <b>1222</b> further determines which branch instructions in the original code <b>1210</b> are direct branch instructions <b>1212</b> or indirect branch instructions <b>1214</b>. For indirect branch instructions <b>1214</b>, the branch rewriting logic <b>1222</b> inserts check target instructions, such as check target instruction <b>1234</b>. As discussed above, these check target instructions <b>1234</b>, at runtime, cause a check to be performed of the target address of the current execution of an indirect branch instruction with a target address of a last previous execution of the indirect branch instruction to see if there is a match between the two. If there is a match, then the execution jumps to the target address directly without having to go to the instruction cache (icache) runtime system <b>1240</b>. If there is not a match, then the execution goes to the icache runtime system <b>1240</b> so that an instruction cache manager <b>1242</b> may perform the necessary operations to ensure that the block of code targeted by the indirect branch instruction is brought into the instruction cache (icache) <b>1250</b>.</p>
+<p id="p-0108" num="0107">The rewritten code <b>1230</b> may be provided to a linker (not shown) which then links the code with library functions and the like, and generates executable code that is provided to processor <b>1280</b>. The processor <b>1280</b> may execute the rewritten code <b>1230</b> and, in the process execute the rewritten branch instructions <b>1232</b> and <b>1236</b> using the corresponding branch stubs <b>1238</b> and <b>1239</b>. As part of the execution of these instructions, the icache runtime system <b>1240</b> may monitor the execution to determine when the branch instructions need to be dynamically rewritten. For example, with direct branch instructions, such as direct branch instruction <b>1232</b>, the dynamic branch rewriting logic <b>1244</b> of the icache runtime system <b>1240</b> rewrites the direct branch instruction <b>1232</b> dynamically to directly target the location <b>1254</b> within the instruction cache <b>1250</b> where the target of the original branch instruction is currently located, rather than pointing to the branch stub <b>1238</b>. This dynamic rewriting is performed to the direct branch instruction in the direct branch cache line <b>1252</b> in the icache <b>1250</b>.</p>
+<p id="p-0109" num="0108">With indirect branch instructions, such as indirect branch instruction <b>1236</b>, the dynamic branch rewriting logic <b>1244</b> monitors whether the corresponding check target instruction <b>1234</b> results in the target addresses matching or not. If the target addresses match, then the processor may access the indirect branch target cache line <b>1258</b> directly without having to go through the instruction cache manager <b>1242</b> of the icache runtime system <b>1240</b>. If the target addresses do not match, then the execution branches to the instruction cache manager <b>1242</b> of the instruction cache runtime system <b>1240</b>, as specified by the first portion of the branch stub. In addition, the dynamic branch rewriting logic <b>1244</b> rewrites the indirect branch stub <b>1239</b>, in the indirect branch cache line <b>1256</b>, with the current target address of the current execution of the indirect branch instruction <b>1236</b>, such as in a sub-portion of the third word <b>1030</b> in <figref idref="DRAWINGS">FIG. 10</figref>. In this way, the target address stored in the indirect branch stub in the indirect branch cache line <b>1256</b> is updated to store the last previous target address of the indirect branch instruction.</p>
+<p id="p-0110" num="0109">In addition to the above, the branch return rewriting logic <b>1246</b> of the icache runtime system <b>1240</b> operates to rewrite the link register <b>1260</b> so that it stores the target address and effective address of the target address in the link register as discussed above with regard to <figref idref="DRAWINGS">FIG. 11</figref>. When a branch instruction returns, it returns to the target address in the link register using an indirect branch instruction that is handled in the same manner as other indirect branch instructions discussed above. In addition, the instruction cache manager <b>1242</b> may perform the operations noted above using the call stack <b>1270</b> to traverse call stack frames to determine if there is a match to the effective address of the link register <b>1260</b> and if so, cause the branch return rewriting logic to rewrite the target address in the link register <b>1260</b> to point to the instruction cache manager <b>1242</b>.</p>
+<p id="p-0111" num="0110"><figref idref="DRAWINGS">FIG. 13</figref> is a flowchart outlining an example operation of a compiler for rewriting branch instructions in accordance with one illustrative embodiment. As shown in <figref idref="DRAWINGS">FIG. 13</figref>, the operation starts with the compiler analyzing the received code (step <b>1305</b>) and determining if a branch instruction is encountered (step <b>1310</b>). If a branch instruction is not encountered, the operation determines if an end of the code is encountered (step <b>1315</b>). If not, the operation returns to step <b>1305</b>. Otherwise the optimized code is output to the linker for generation of executable code (step <b>1320</b>) and the operation terminates.</p>
+<p id="p-0112" num="0111">If the compiler encounters a branch instruction (step <b>1310</b>), the compiler generates a branch stub for the branch instruction including storing the address to the instruction cache manager and the original target address of the branch instruction as described above (step <b>1325</b>). The compiler rewrites the branch instruction to target the branch stub (step <b>1330</b>) and determines if the branch instruction is an indirect branch instruction (step <b>1335</b>). If the branch is an indirect branch instruction, the compiler inserts a check target instruction prior to the branch instruction that checks the target of the indirect branch instruction against a last previous target address stored in the branch stub and jumps directly to the target if there is a match or jumps to the instruction cache manager if there is not a match (step <b>1340</b>). Thereafter, or if the branch instruction is not an indirect branch instruction, the operation continues to step <b>1315</b>.</p>
+<p id="p-0113" num="0112"><figref idref="DRAWINGS">FIG. 14</figref> is a flowchart outlining an example operation or an instruction cache runtime system for performing dynamic rewriting of branch instructions in accordance with one illustrative embodiment. As shown in <figref idref="DRAWINGS">FIG. 14</figref>, the operation starts by receiving a cache line request requesting an access to a particular portion of code in a cache line of the instruction cache (step <b>1405</b>). A determination is made as to whether there is a cache hit or not, i.e. the cache line corresponding to the cache line request is already present in the instruction cache (step <b>1410</b>). If there is a cache hit, then the cache line is accessed from the instruction cache (step <b>1415</b>) and the operation terminates. If there is not a cache hit, i.e. there is a cache miss, then a determination is made as to whether the instruction cache has available unused space to store a cache line corresponding to the cache line request (step <b>1420</b>). If there is available space, then the requested cache line is fetched from the backing store and loaded into the instruction cache (step <b>1425</b>), with the operation returning to step <b>405</b> where the cache line request is again executed.</p>
+<p id="p-0114" num="0113">If there is not available space in the instruction cache, an existing cache line is evicted (step <b>1430</b>) and a determination is made as to whether dynamic branch rewriting is to be performed (step <b>1435</b>). If dynamic branch rewriting is not to be performed, the operation continues to step <b>1425</b>. The determination as to whether to perform dynamic branch rewriting may include, for example, determining if a branch instruction loaded with the cache line targeted by the cache line request is a direct branch or an indirect branch. If the branch is a direct branch, then the branch instruction can be dynamically rewritten to directly reference the location of the original target instruction in the instruction cache rather than referencing the branch stub of the direct branch. If the branch is an indirect branch, then a check instruction may be executed to determine if the target of the indirect branch is the same as a last previous target as stored in the branch stub. If there is a match, then the branch instruction can jump directly to the target in the instruction cache. If there is not a match, then the execution may branch to the instruction branch manager and the current target may be stored in the branch stub in replacement of the last previous target address.</p>
+<p id="p-0115" num="0114">If dynamic branch rewriting is to be performed, then the dynamic branch rewriting is performed as discussed above (step <b>1440</b>). A return rewrite operation may then be performed for the evicted cache line based on the effective address of the target stored in the link register, as previously described above (step <b>1445</b>). The link register may then be dynamically rewritten (step <b>1450</b>). As noted above, the link register may be rewritten to include the target address and the effective address of the target. An indirect branch instruction to the target address stored in the link register may be inserted at the branch return (step <b>1455</b>). The operation then terminates.</p>
+<p id="p-0116" num="0115">Thus, the illustrative embodiments provide a mechanism for using a branch stub and runtime logic to bypass the instruction cache manager in instances where it can be determined that the target of the branch instruction is already present in the instruction cache. Moreover, the mechanisms of the illustrative embodiments provide a functionality for rewriting a link register so that upon a return from executing a branch instruction, an indirect branch to a target specified in the link register, or the instruction cache manager is made possible.</p>
+<p id="p-0117" num="0116">These mechanisms improve the performance of a software managed instruction cache by rewriting a jump to the software instruction cache runtime system as a direct jump to the target location in the software cache. However, when a cache line or block is evicted from the instruction cache, all jumps directly going to this cache line or cache line need to be restored to their original targets so that, if necessary, the jumps can be made to the instruction cache runtime system in the event that the target is not in the instruction cache. This is because, if these jumps to the targets are not restored, the jumps may be made to a wrong target since the correct target is no longer in the instruction cache.</p>
+<p id="p-0118" num="0117">The unchaining process, i.e. retracing the jump instructions from one cache line to another in the instruction cache to identify source cache lines, i.e. the cache line from which a branch or call to a cache line of interest, or target cache line, is especially challenging when the source cache lines are only known at runtime, such as with indirect branch instructions or function calls. One mechanism for handling this situation is to flush the entire instruction cache or utilize expensive bookkeeping and table lookup algorithms which result in significant overhead and lose the opportunity for reuse of the cache line, i.e. if the instruction cache is flushed and all cache lines are evicted, then the cache lines that were brought into the instruction cache cannot be used again.</p>
+<p id="p-0119" num="0118">The illustrative embodiments provide additional mechanisms for handling cache eviction in which branch instructions have been rewritten to directly target cache lines that are to be evicted. With these mechanisms, the possible source cache lines of a cache line of interest, hereafter referred to as the target cache line, are dynamically maintained in a doubly linked list. When the target cache line is to be evicted, the linked list is scanned to restore the chained jump branch instructions. In this way, the mechanisms of the illustrative embodiments support efficient eviction via a doubly linked list of cross inter-cache line branches who's branch targets are in a particular cache line, and a singly linked list of inter-cache line branches within a particular cache line that have been put into the doubly linked lists of the other cache lines. Moreover, the mechanisms of the illustrative embodiments support a partial stack scan with the stack back trace scan being stopped at a first match to a &#x201c;victim&#x201d; cache line, as described hereafter.</p>
+<p id="p-0120" num="0119">The rewriting of direct function calls is very similar to rewriting branches inside a function. However, unlike in the case of branches inside a function, the compiler generally does not have a complete view of all functions inside a program and thus, the compiler does not know the exact set of possible callers to a callee function. As a result, the compiler cannot pre-allocate space to record all call sites, i.e. the branch instruction that makes the function call which is also part of the source cache line, as in the case of branches inside a function.</p>
+<p id="p-0121" num="0120">The mechanisms of the illustrative embodiments address these problems by using a linked list based solution that is able to handle an arbitrary number of call sites, i.e. branch instructions that branch to, or &#x201c;call,&#x201d; a portion of code corresponding to a target cache line, i.e. a callee function. For each callee function, i.e. each function called by a caller branch instruction, a linked list is dynamically constructed that records rewritten call sites that call the callee function.</p>
+<p id="p-0122" num="0121">The linked list node is constructed as part of an extended branch stub, which is referred to herein as a &#x201c;call stub,&#x201d; which extends the branch stub described above with an additional quadword for tracking call sites. For example, in a first quadword, information corresponding to the branch stub previously described above is stored. In a second quadword, a linked list previous entry pointer and a linked list next entry pointer for pointing to entries in a linked list of call sites are stored. The linked list previous entry pointer points to a previous entry in the linked list and the linked list next entry pointer points to a next entry in the linked list. This provides a doubly linked list of call sites that facilitates a more simplified deletion process for deleting call sites from the linked list.</p>
+<p id="p-0123" num="0122"><figref idref="DRAWINGS">FIG. 15</figref> is an example diagram illustrating a call stub in accordance with one illustrative embodiment. As shown in <figref idref="DRAWINGS">FIG. 15</figref>, the call stub <b>1500</b> includes a first portion <b>1510</b>, which may be a first quad word, that stores data similar to that of the branch stub previously described above. That is, the first portion <b>1510</b> stores, in a first word <b>1512</b>, a link to the instruction cache manager in the case of a instruction cache miss. In a second word <b>1514</b>, the target address for the original branch instruction or function call is stored. In a third word <b>1516</b>, an offset to the original branch or call instruction is stored. In a fourth word <b>1518</b>, a copy of the original branch or call instruction is stored.</p>
+<p id="p-0124" num="0123">In addition, the call stub includes a second portion <b>1520</b>, which may be a second quadword, for storing linked list pointers for purposes of handling instruction cache eviction. As shown in <figref idref="DRAWINGS">FIG. 15</figref>, a first word <b>1522</b> of the second portion <b>1520</b> may store a linked list previous pointer that points to, i.e. stores an address for, a previous call stub in the linked list. A second word <b>1524</b> of the second portion <b>1520</b> may store a linked list next pointer that points to, i.e. stores an address for, a next call stub in the linked list. The third and fourth words <b>1526</b> and <b>1528</b> may be kept free and unused.</p>
+<p id="p-0125" num="0124">During runtime, if a cache line is evicted, the instruction cache manager determines whether the evicted cache line is the entry of a function. This determination may be done based on a tag placed on the cache directory when the cache line is loaded due to a function call or a separate table of function entry cache lines may be maintained, for example. Other ways of determining whether a cache line is an entry to a function may be used without departing from the spirit and scope of the illustrative embodiments.</p>
+<p id="p-0126" num="0125">If the cache line is the entry of a function, the cache line has additional information, before or after the actual code, that records the start of the doubly linked list of call sites. This additional information may be generated by the compiler and may be maintained by the instruction cache runtime system. The instruction cache manager may process the doubly linked list and each call site is &#x201c;fixed&#x201d; by restoring the target of the original call or branch instruction to point to the original target address rather than the call stub. This can be achieved by replacing the branch or call instruction with the copy of the original branch or call instruction stored in the fourth word <b>1518</b> of the first quadword <b>1510</b> in the call stub <b>1500</b> or the fourth word <b>1040</b> in the branch stub <b>1000</b> in <figref idref="DRAWINGS">FIG. 10</figref>. Since the information for performing this fix is stored in the call stub <b>1500</b> or branch stub <b>1000</b> this fix is made simple to implement by changing the binary code in the instruction cache to replace the branch instruction or call instruction.</p>
+<p id="p-0127" num="0126">In addition, the instruction cache manager may perform additional functionality for maintaining the doubly linked call site list. Whenever a cache line is evicted, the instruction cache manager processes the doubly linked call site list for the evicted cache line and checks whether any of the call sites is in the doubly linked call site list. If so, the call site has to be removed from the linked list otherwise, after eviction of the cache line, the doubly linked call site list may become corrupted. For example, the next pointer in the previous call stub maybe changed to point to the next pointer in the current call stub and the previous pointer in the next call stub may be changed to point to the previous call stub of the current call stub, thereby eliminating the current call stub from the linked list. Using this doubly linked call site list mechanism, an arbitrary number of call sites calling a callee function can be handled with undoing rewriting of call or branch instructions when the callee function is evicted.</p>
+<p id="p-0128" num="0127"><figref idref="DRAWINGS">FIG. 16</figref> is a flowchart outlining an example operation of an instruction cache manager when handling the eviction of a cache line in accordance with one illustrative embodiment. As shown in <figref idref="DRAWINGS">FIG. 16</figref>, the operation starts with the eviction of a cache line (step <b>1610</b>). A determination is made as to whether the cache line is an entry to a function (step <b>1620</b>). If so, then a doubly linked call site list associated with the function is processed using the call stub of the function and any other call stubs linked to directly or indirectly by the call stub (step <b>1630</b>). Call sites in the doubly linked call site list are fixed by restoring the target address from the call stubs corresponding to the call sites (step <b>1640</b>). In addition, each call site inside the evicted block is checked (step <b>1650</b>) to determine if the call site is present in the doubly linked call site list as the doubly linked call site list is processed (step <b>1660</b>). If the call site is in the doubly linked call site list, then the call site is removed from the doubly linked call site list (step <b>1670</b>). The operation then terminates.</p>
+<p id="p-0129" num="0128">Thus, in addition to providing mechanisms for rewriting branch instructions using branch stubs, the mechanisms of the illustrative embodiments may extend these branch stubs to call stubs that include pointers for a doubly linked list. These pointers may be used to maintain a doubly linked call site list that can be used during cache line eviction to determine which call sites need to be &#x201c;fixed&#x201d; by restoring the target addresses originally referenced in the call site branch or call instructions. Mechanisms for maintaining the doubly linked call site list are also provided. These mechanisms make eviction of cache lines with rewritten call site branch instructions or call instructions possible without corrupting the rewritten code.</p>
+<p id="p-0130" num="0129">To assist in handling the eviction of a cache line from the instruction cache, in addition to the mechanisms noted above, the illustrative embodiments may, for direct branches or calls to a target code block, where each code block is stored in its own cache line, further record a list of source code blocks that branch to or call the code in the target code block. Since the compiler has a complete view of the functions/procedures in the code, for each code block, the compiler knows the exact list of source code blocks that could directly branch to this target code block at runtime. The compiler just needs to record this information in the target code block so that it can be used by the instruction cache runtime system. With the mechanisms of the illustrative embodiments, the information regarding the list of source code blocks is recorded at the end of the target code block after all of the created branch stubs and call stubs.</p>
+<p id="p-0131" num="0130">To store this list of source code blocks information, the last quad word of the current code block is reserved. <figref idref="DRAWINGS">FIG. 17</figref> is an example diagram illustrating one illustrative embodiment of a source code block listing quad word. A first word <b>1710</b> of this quad word <b>1700</b> contains the number of source code blocks that could branch to the current code block at runtime. A second word <b>1720</b> of the quad word contains the number of branch stubs this current code block has. A third word <b>1730</b> of the quad word contains a number of call stubs this current code block has. A fourth word <b>1740</b> of the quad word contains the start address of the branch stubs and call stubs in the current code block. The locations, i.e. addresses, of the source code blocks <b>1750</b> are laid out just before the last quad word so that the instruction cache runtime system knows where to find them at runtime.</p>
+<p id="p-0132" num="0131">At runtime, when a cache line has to be evicted, the instruction cache manager needs to fix all the rewritten source code blocks with a target code block that is in the evicted cache line. To achieve this, the instruction cache manager in the instruction cache runtime system first fetches the last quad word of the evicted cache line, which will also be the last quadword of the code block since each code block is loaded into its own cache line. From the first word <b>1710</b> of the quad word <b>1700</b>, the instruction cache manager knows how many source code block address have been encoded in the evicted cache line and where the list of addresses start. The instruction cache manager processes the potential source code blocks one by one. For each source code block, the instruction cache manager locates the source code block based on the source code block address encoded in the evicted cache line.</p>
+<p id="p-0133" num="0132">The instruction cache manager fetches the last quad word of that source block and examines the second word <b>1720</b> and fourth word <b>1740</b> of the quad word <b>1700</b>. As previously mentioned above, the second word <b>1720</b> records the number of branch stubs in the source code block. The fourth word <b>1740</b> records the start address of the branch stubs. With this information, the instruction cache manager may examine each branch stub and check whether the branch stub is the one branching to the evicted cache line. Eventually, the instruction cache manager will find the branch stub that branches to the evicted cache line.</p>
+<p id="p-0134" num="0133">To fix the rewritten branch instruction that branches to the evicted cache line, the instruction cache manager copies the fourth word of the branch stub, i.e. word <b>1040</b> in <figref idref="DRAWINGS">FIG. 10</figref>, and replaces the rewritten branch instruction with the copy of the original branch instruction (prior to rewriting) stored in the fourth word <b>1040</b>. As a result, the branch instruction is restored and does not directly branch to the evicted cache line, thereby eliminating the possibility of a direct branch to a wrong target block. To the contrary, the restored branch instruction will operate in the same manner as discussed above with regard to branching to the instruction cache manager to determine if the target block is in the instruction cache or not and bringing the required block of code into the instruction cache if it is not already present in the instruction cache.</p>
+<p id="p-0135" num="0134"><figref idref="DRAWINGS">FIG. 18</figref> is a flowchart outlining an example operation of a compiler when analyzing original code and inserting a list of possible source code blocks targeting a current code block in accordance with one illustrative embodiment. As shown in <figref idref="DRAWINGS">FIG. 18</figref>, for a next block of code in received original code, the compiler identifies possible source blocks that may target the next block of code (step <b>1810</b>). The addresses of the possible source code blocks are stored in a portion of the current code block after any branch stubs and/or call stubs created by the compiler (step <b>1820</b>). The compiler stores a number of the source code blocks in a last portion of the current code block, e.g., the last quad word of the current code block (step <b>1830</b>). The compiler further stores a number of call stubs in the last portion of the current code block (step <b>1840</b>). The compiler further stores the start address of branch and call stubs in the current code block in this last portion of the current code block (step <b>1850</b>). A determination is made as to whether this is the last code block to process or not (step <b>1860</b>). If not, the operation returns to step <b>1810</b>. Otherwise, the operation terminates.</p>
+<p id="p-0136" num="0135"><figref idref="DRAWINGS">FIG. 19</figref> is a flowchart outlining an example operation of the instruction cache manager in accordance with one illustrative embodiment, with regard to handling eviction of a cache line with direct branches to the evicted cache line. As shown in <figref idref="DRAWINGS">FIG. 19</figref>, the operation starts with determining that a cache line needs to be evicted (step <b>1910</b>). The instruction cache manager fetches the last quad word of the evicted cache line (step <b>1920</b>). From the first word of the quad word, the instruction cache manager determines how many source code block address have been encoded in the evicted cache line and where the list of addresses start (step <b>1930</b>). The instruction cache manager processes a next potential source code block (step <b>1940</b>). For the next source code block, the instruction cache manager locates the source code block based on the source code block address encoded in the evicted cache line (step <b>1950</b>).</p>
+<p id="p-0137" num="0136">The instruction cache manager fetches the last quad word of that source block and examines the number of branch stubs and start address of the branch stubs in the last quad word (step <b>1960</b>). The instruction cache manager examines each branch stub and checks whether the branch stub branches to the evicted cache line (step <b>1970</b>). The instruction cache manager then fixes the rewritten branch instruction corresponding to a branch stub that branches to the evicted cache line, by copying the copy of the original branch instruction from the branch stub and replacing the rewritten branch instruction with the copy of the original branch instruction (step <b>1980</b>). The operation then terminates.</p>
+<p id="p-0138" num="0137">With the direct-mapped software instruction cache mechanisms described above, conflict misses sometimes are a problem to the performance of the system. A conflict miss is a cache miss due to the replacement policy used by the software cache. For example, in direct-mapped caches, a code block can be only put, or &#x201c;mapped,&#x201d; into one predefined cache line. Obviously, some code blocks may be mapped into the same cache line. If they are used repeated, only one of them can be kept in the cache even if there are many other unused cache lines. As a result, the cache manager has to load and evict these cache blocks repeatedly. Such cache misses are referred to as conflict misses.</p>
+<p id="p-0139" num="0138">To reduce the possibility of conflict misses, the illustrative embodiments may further provide a compiler mechanism that is able to collect and process all the objects, e.g., object files, or .o files, that together make up the executable code of a program, compiled by the compiler that utilize direct target jump optimizations such as those described above. The compiler builds a whole program call graph that lays out the objects and which objects call which other objects, as is generally known in the art. The compiler then partitions the call graph to minimize inter-partition transitions based on the instruction cache size, the size of each function, and the affinity among functions.</p>
+<p id="p-0140" num="0139">In order to achieve such partitioning, the illustrative embodiments weights the call graph by weighting the nodes in the call graph according to code size, and weights the edges of the call graph according to a number of calls between the particular objects at the ends of the edge. A maximally weighted edge in unprocessed edges of the call graph is selected and a determination is made as to whether the weights of the nodes associated with the selected edge are less than a cache line size. If so, then the nodes are merged into a new node with the weights being updated appropriately. If an edge having a maximum weight among unprocessed edges cannot be found, any remaining procedures are places in one node together in one cache line. In this way, the compiler tries to put high affinity functions into the same partition to reduce conflict misses.</p>
+<p id="p-0141" num="0140">Using such call graph partitioning and attempting to put high affinity functions into the same partition helps to reduce cache conflict misses for the following reasons. Under call graph partitioning, one &#x201c;compilation unit&#x201d; is created for each call graph partition. That is, after the call graph is partitioned into several sub-graphs, each of the sub-graphs, along with its procedures, is associated with a compilation unit for the compiler to operate on. The compiler takes one compilation unit, or partition, as input and lays out the code in it starting at the beginning of the instruction cache address space. Thus, the functions inside one call graph partition normally will not evict each other, as long as the code size for this call graph partition is smaller than the total instruction cache size.</p>
+<p id="p-0142" num="0141">With this call graph partitioning mechanism, the link-time optimizer first builds a global call graph in a manner generally known in the art. Each node in the global call graph is weighted according to the corresponding size of the code represented by the node in the global call graph. Each call graph edge is weighted according to a number of calls between the nodes associated with the edge. This information may all be determined statically by the compiler at compile time by analyzing the original code and determining the size of the portions of code in the compiled code that correspond to the nodes in the global call graph and determining an estimate of the number of calls anticipated between nodes, such as based on iterations in loops referencing portions of code, or the like. Thus, the weights may be determined through static program analysis or by profiling, for example, and the result may be a weighted call graph that may be the basis for the partitioning mechanisms. Of course other weightings may be used without departing from the spirit and scope of the illustrative embodiments.</p>
+<p id="p-0143" num="0142"><figref idref="DRAWINGS">FIG. 20</figref> is a flowchart outlining an example operation for performing code optimization using a partitioned call graph in accordance with one illustrative embodiment. As shown in <figref idref="DRAWINGS">FIG. 20</figref>, the operation starts by building a weighted call graph (step <b>2010</b>). As noted above, the building of the weighted call graph starts by building a global call graph and then applying weights to the nodes and edges of the global call graph. The weights of nodes may be determined according to the code size, such as in bytes, associated with the nodes. The weights of edges may be determined based on an estimate of the number of calls between nodes of the particular edge. These weights are applied to the nodes and edges of the global call graph to thereby generate a weighted call graph.</p>
+<p id="p-0144" num="0143">A maximally weighted edge, in unprocessed edges of the call graph, is selected (step <b>2020</b>). Assume for purposes of description that the selected edge is e and the nodes of the selected edge are v<b>1</b> and v<b>2</b>. A determination is made as to whether such a maximally weighted edge can be found or not (step <b>2030</b>). If not, any remaining procedures/functions are placed in the same node together in one cache line (step <b>2040</b>) and the operation ends.</p>
+<p id="p-0145" num="0144">If a maximally weighted edge is found, a determination is made as to whether a sum of the weights of the nodes associated with the selected edge, e.g., weight(v<b>1</b>)+weight(v<b>2</b>), are less than or equal to a cache line size, e.g., a 1K cache line size or the like (step <b>2050</b>). If so, then the nodes are merged into a new node with the weights being updated appropriately (step <b>2060</b>). The merging of nodes into a new node places the binary code for the nodes together in the resulting binary code that is loaded into the instruction cache.</p>
+<p id="p-0146" num="0145">The weights of the new node may be set, for example, by setting the weight of the new node to the sum of the weights of the merged nodes, e.g., weight(vnew)=weight(v<b>1</b>)+weight(v<b>2</b>). The weight of the edges between this new node and other nodes previously connected to the nodes of the selected edge are set, for example, equal to the sum of the weights of the edges between these other nodes and the nodes of the selected edges, e.g., weight (edge(edge(vnew,v))=weight(edge(v<b>1</b>, v))+weight(edge(v<b>2</b>, v)) for all v. Of course other weightings may be used without departing from the spirit and scope of the illustrative embodiments. The selected edge e, i.e. edge (v<b>1</b>, v<b>2</b>), is then eliminated from the weighted call graph (step <b>2070</b>) and the operation returns to step <b>2020</b> to select a next maximally weighted edge from the remaining unprocessed edges. If the sum of the weights of the nodes of the selected edge is greater than a cache line size, then the edge is marked as having been processed (step <b>2080</b>) and the operation returns to step <b>2020</b>.</p>
+<p id="p-0147" num="0146">The result is a partitioned call graph in which nodes are merged into sizes corresponding to the cache line size of the instruction cache based on their affinity. The resulting code is configured according to this partitioned call graph such that when the code is brought into the instruction cache the code fits within the cache lines of the instruction cache will minimal cross-cache line references. This greatly reduces conflict misses because of a cache line not being present in the instruction cache.</p>
+<p id="p-0148" num="0147">Thus, the illustrative embodiments provide mechanisms for directly jumping to branch targets in an instruction cache when possible through compiler implemented and runtime implemented rewriting of branch instructions and function calls. The illustrative embodiments further provide mechanisms for handling eviction of cache lines that correspond to rewritten branch instructions and function calls so as to avoid any jumps to incorrect targets in the instruction cache. Further, the illustrative embodiments provide mechanisms for reducing instruction cache conflict misses by partitioning the code based on instruction cache size, function size, and affinity amongst the functions. All of these mechanisms work together to improve the performance of a system's execution of the code by reducing latency encountered by the overhead of having to redirect execution to an instruction cache manager for every branch or function call.</p>
+<p id="p-0149" num="0148">As noted above, it should be appreciated that the illustrative embodiments may take the form of an entirely hardware embodiment, an entirely software embodiment or an embodiment containing both hardware and software elements. In one example embodiment, the mechanisms of the illustrative embodiments are implemented in software or program code, which includes but is not limited to firmware, resident software, microcode, etc.</p>
+<p id="p-0150" num="0149">A data processing system suitable for storing and/or executing program code will include at least one processor coupled directly or indirectly to memory elements through a system bus. The memory elements can include local memory employed during actual execution of the program code, bulk storage, and cache memories which provide temporary storage of at least some program code in order to reduce the number of times code must be retrieved from bulk storage during execution.</p>
+<p id="p-0151" num="0150">Input/output or I/O devices (including but not limited to keyboards, displays, pointing devices, etc.) can be coupled to the system either directly or through intervening I/O controllers. Network adapters may also be coupled to the system to enable the data processing system to become coupled to other data processing systems or remote printers or storage devices through intervening private or public networks. Modems, cable modems and Ethernet cards are just a few of the currently available types of network adapters.</p>
+<p id="p-0152" num="0151">The description of the present invention has been presented for purposes of illustration and description, and is not intended to be exhaustive or limited to the invention in the form disclosed. Many modifications and variations will be apparent to those of ordinary skill in the art. The embodiment was chosen and described in order to best explain the principles of the invention, the practical application, and to enable others of ordinary skill in the art to understand the invention for various embodiments with various modifications as are suited to the particular use contemplated.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A method, in a data processing system, for dynamically rewriting branch instructions in a portion of code, comprising:
+<claim-text>compiling, by a compiler, source code, wherein, during compilation of the source code:
+<claim-text>in response to encountering a direct branch instruction, the compiler inserts into compiled code a branch descriptor comprising a target instruction space address for redirecting execution to an instruction cache manager of an instruction cache runtime system for translating the target instruction space address,</claim-text>
+<claim-text>in response to encountering an indirect branch instruction in the source code, inserting a set of instruction tag (ITAG) based instructions for translating the target instruction space address to a target address in order to branch to a target instruction, and</claim-text>
+<claim-text>wherein branch descriptors are inserted by the compiler only for direct branches;</claim-text>
+</claim-text>
+<claim-text>responsive to executing, in a processor of the data processing system, the indirect branch instruction in the portion of code of the compiled code, determining, by the processor, whether the target instruction of the indirect branch instruction, to which the indirect branch instruction branches, is present in an instruction cache of a local store of the data processing system by utilizing the set of instruction tag (ITAG) based instructions to check whether an instruction tag (ITAG) corresponding to the target instruction is located in an ITAG directory of the local store;</claim-text>
+<claim-text>directly branching, by the processor, execution of the portion of code to the target instruction in the instruction cache, without intervention from the instruction cache runtime system, in response to a determination that the target instruction is present in the instruction cache; and</claim-text>
+<claim-text>redirecting, by the processor, execution of the portion of code to the instruction cache runtime system in response to a determination that the target instruction cannot be determined to be present in the instruction cache.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the branch instruction is a rewritten branch instruction that has been rewritten by a compiler from an original branch instruction having an original target address, to a rewritten branch instruction with an associated branch stub.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The method of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the branch stub stores a link to the instruction cache manager of the instruction cache runtime system and the original target address of the original branch instruction.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The method of <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein the branch stub further stores an offset to the original branch instruction and a copy of the original branch instruction.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The method of <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein the branch stub further stores a last target address specifying a target address of a last execution of the rewritten branch instruction during runtime execution of the code.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The method of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein determining whether the target instruction of the branch instruction is present in the instruction cache associated with the processor comprises using the branch stub to determine whether the target instruction, corresponding to the original target address of the original branch instruction, is present in the instruction cache.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The method of <claim-ref idref="CLM-00006">claim 6</claim-ref>, further comprising:
+<claim-text>determining, based on the branch stub, if the rewritten branch instruction can be dynamically rewritten to have a target address corresponding to a current location of the original target address in the instruction cache; and</claim-text>
+<claim-text>dynamically rewriting the rewritten branch instruction to target the current location of the original target address in the instruction cache in response to a determination that the rewritten branch instruction can be dynamically rewritten.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein determining whether the target instruction of the branch instruction is present in the instruction cache associated with the processor comprises executing a check instruction prior to the branch instruction, wherein the check instruction checks whether a current target of the branch instruction is a same target as a previous execution of the branch instruction.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The method of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the check instruction, for a current execution of the branch instruction, checks a current target address of a current target of the branch instruction against a last target address specified in the branch stub for a last prior execution of the branch instruction.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The method of <claim-ref idref="CLM-00009">claim 9</claim-ref>, wherein responsive to the last target address and the current target address match, then the processor determines that execution of the branch instruction may be branched directly to the current target in the instruction cache without intervention by the instruction cache runtime system. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

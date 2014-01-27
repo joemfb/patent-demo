@@ -40,7 +40,7 @@ The classification description tooltips only display on page load. I spent sever
 experiment with MutationObservers and overriding jQuery functions to emit custom events,
 but was unable to reliably display the tooltips as a user interacts with them.
 
-**MLCP Transformation Errors**
+**MLCP Transformation Errors (Classifications)**
 
 I implemented an XQuery module for transforming the classification XML when uploaded with MLCP,
 but, for reasons I can't determine, that transformation errors out: 'missing socket'.
@@ -48,6 +48,12 @@ I read through the MLCP source, but the actual error is from com.marklogic.mapre
 which is in a separate project. The configuration works fine without the transformation., 
 so something else is causing the socket to disappear. I created a simple test case to
 split documents via MLCP, and that worked just fine.
+
+**MLCP Transformation Errors (Patents)**
+
+There's a date-parse error when loading the patent XML files. I've tried running the parser
+from QC, and been unable to reproduce the error. I can't seem to find any logging options
+for MLCP. The error doesn't appear to have impacted the application in any way.
 
 **Patent Citations Dead Links**
 

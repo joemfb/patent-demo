@@ -50,12 +50,20 @@
       <search:element ns="http://example.com/patent" name="classification-ipcr"/>
     </search:range>
   </search:constraint>
-  <search:constraint name="country">
-    <search:range collation="http://marklogic.com/collation/codepoint" type="xs:string" facet="true">
+  <search:constraint name="inventor-country">
+    <search:range collation="http://marklogic.com/collation/" type="xs:string" facet="true">
       <search:facet-option>frequency-order</search:facet-option>
       <search:facet-option>descending</search:facet-option>
       <search:facet-option>limit=10</search:facet-option>
-      <search:element ns="http://example.com/patent" name="country"/>
+      <search:path-index>pt:inventor/pt:addressbook/pt:address/pt:country</search:path-index>
+    </search:range>
+  </search:constraint>
+  <search:constraint name="assignee-country">
+    <search:range collation="http://marklogic.com/collation/" type="xs:string" facet="true">
+      <search:facet-option>frequency-order</search:facet-option>
+      <search:facet-option>descending</search:facet-option>
+      <search:facet-option>limit=10</search:facet-option>
+      <search:path-index>pt:assignee/pt:addressbook/pt:address/pt:country</search:path-index>
     </search:range>
   </search:constraint>
   <search:constraint name="date">
@@ -132,7 +140,8 @@
     <search:qname elem-ns="http://example.com/patent" elem-name="department"/>
     <search:constraint-value ref="type"/>
     <search:constraint-value ref="class"/>
-    <search:constraint-value ref="country"/>
+    <search:constraint-value ref="inventor-country"/>
+    <search:constraint-value ref="assignee-country"/>
     <search:constraint-value ref="date"/>
   </search:extract-metadata>
   <annotation xmlns="http://marklogic.com/appservices/search">Delta options here</annotation>

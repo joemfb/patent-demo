@@ -88,7 +88,6 @@ declare private variable $transform := <xsl:stylesheet version="2.0" exclude-res
         <div id="debug"></div>
         <script src="/application/lib/external/jquery-1.7.1.min.js" type="text/javascript" xml:space="preserve"></script>
         <script src="/application/lib/external/jquery-ui-1.10.4.custom.js" type="text/javascript" xml:space="preserve"></script>
-        <script src="/application/lib/external/trunk8.js" type="text/javascript" xml:space="preserve"></script>
         <script src="/application/skin.js" type="text/javascript" xml:space="preserve"></script>
         <script src="/application/custom/app.js?4925867444361487418" type="text/javascript" xml:space="preserve"></script>
       </body>

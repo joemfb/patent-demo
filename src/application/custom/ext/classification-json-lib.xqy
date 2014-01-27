@@ -26,13 +26,6 @@ declare function cj:transform($y)
           attribute type {"object"},
           cj:transform($x/*)
         }
-      case element(class:textBody) return
-        element jsonb:text-body {
-          attribute type { "string" },
-          xdmp:quote(
-            html:serialize(
-              html:transform($x)))
-        }
       case element() return
         if ($x[fn:not(*)])
         then

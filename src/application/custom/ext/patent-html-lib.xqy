@@ -34,11 +34,13 @@ declare function html:transform($y)
     typeswitch($x)
       case processing-instruction()        return ()
       case element(pt:drawings)            return ()
+      case element(pt:residence)           return ()
       case element(pt:p)                   return <xhtml:p id="{ $x/@id }">{ html:walk-tree($x) }</xhtml:p>
       case element(pt:heading)             return <xhtml:h3>{ html:walk-tree($x) }</xhtml:h3>
       case element(pt:figref)              return <xhtml:span class="figref">{ html:walk-tree($x) }</xhtml:span>
       case element(pt:b)                   return <xhtml:strong>{ html:walk-tree($x) }</xhtml:strong>
       case element(pt:us-citation)         return html:citation($x)
+      case element(pt:addressbook)         return html:addressbook($x)
       case element(pt:claim)               return html:claim($x)
       case element(pt:claim-text)          return html:claim-text($x)
       case element(pt:claim-ref)           return <xhtml:a class="claim-ref" href="{ $x/@idref }">{ html:walk-tree($x) }</xhtml:a>
@@ -118,7 +120,7 @@ declare function html:ipc-entry($x)
     if ($x/class:ipc-entries/*)
     then
       <xhtml:ul class="ipc-children">
-        <xhtml:h3>Children</xhtml:h3>
+        <xhtml:h3>Sub-Classifications</xhtml:h3>
         { html:transform($x/class:ipc-entries/*) }
       </xhtml:ul>
     else ()
@@ -140,6 +142,38 @@ declare function html:ipc-entry-ref($x)
 declare function html:ipc-entry-search($x)
 {
   <xhtml:a class="ipc-entry-search" href="#" data-code="{ $x/@ref }">{ $x/@ref/fn:string() }</xhtml:a>
+};
+
+declare function html:addressbook($x)
+{
+  let $name :=
+    if ($x/pt:orgname)
+    then $x/pt:orgname/fn:string()
+    else $x/pt:first-name || " " || $x/pt:last-name
+  return
+    <xhtml:li>
+      <xhtml:span>{ $name }</xhtml:span>
+      { "&nbsp;" }
+      <xhtml:span>{ "(" || $x/pt:address/pt:city || ", " || $x/pt:address/pt:country || ")" }</xhtml:span>
+    </xhtml:li>
+};
+
+declare function html:additional-info($x)
+{
+  <div class="additional-info" xmlns="http://www.w3.org/1999/xhtml">
+    <div class="inventors">
+      <h4>Inventors:</h4>
+      <ul>{ html:transform($x//pt:inventors/pt:inventor) }</ul>
+    </div>
+    <div class="applicants">
+      <h4>Applicants:</h4>
+      <ul>{ html:transform($x//pt:us-applicants/pt:us-applicant) }</ul>
+    </div>
+    <div class="assignee">
+      <h4>Assignees:</h4>
+      <ul>{ html:transform($x//pt:assignees/pt:assignee) }</ul>
+    </div>
+  </div>
 };
 
 declare function html:licensing()
@@ -222,11 +256,8 @@ declare function html:transform-patent($x)
         <h3>Classifications</h3>
         { html:transform($x//pt:classification-ipcr) }
       </div>
-      <div class="additional-info">
-        <h3>Additional Information</h3>
-        <div>TODO</div>
-      </div>
       {
+        html:additional-info($x),
         html:licensing(),
         html:prior-art()
       }

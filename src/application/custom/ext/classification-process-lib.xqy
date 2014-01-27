@@ -1,6 +1,6 @@
 xquery version "1.0-ml";
 
-module namespace process = "http://marklogic.com/roxy/lib/ipc-classification-process";
+module namespace process = "http://marklogic.com/roxy/lib/classification-process";
 
 declare namespace pt = "http://example.com/patent";
 declare namespace class = "http://example.com/classification";

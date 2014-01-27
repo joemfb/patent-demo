@@ -15,6 +15,10 @@ var Util = {
           urlParams[decode(match[1])] = decode(match[2])
         }
         return urlParams
+      },
+
+      formatDate: function(date) {
+        return new Date(date).toLocaleString().split(" ")[0]
       }
 
     },
@@ -57,7 +61,7 @@ var Util = {
           selector = ".licensing",
           row = $('<tr data-uri="' + uri  + '" data-email="' + data.email + '" data-phone="' + data.phone + '" data-created="' + data.created + '">' +
             '<td class="name">' + data.name + '</td>' +
-            '<td class="formatted-date">' + new Date(data.created).toLocaleString().split(" ")[0] + '</td>' +
+            '<td class="formatted-date">' + Util.formatDate(data.created) + '</td>' +
             '<td class="company">' + data.company + '</td>' +
             '<td class="description">' + data.description + '</td>' +
             '<td class="comments">' + data.comments + '</td>' +
@@ -394,7 +398,14 @@ var Util = {
 
 // setup patent doc event handlers, get related content
 if ( $('.patent-result').length > 0 ) {
-  Content.findClassifications()  
+  
+  $('.date').each(function(index, item) {
+    var txt = $(item).text()
+    
+    $(item).text( Util.formatDate(txt) )
+  })
+
+  Content.findClassifications()
 
   UserContent.findUserContent()
 
@@ -410,6 +421,7 @@ if ( $('.patent-result').length > 0 ) {
   })
 
   $(".licensing-form").dialog({
+    title: "Request a License",
     autoOpen: false,
     height: 450,
     width: 400,
@@ -431,11 +443,11 @@ if ( $('.patent-result').length > 0 ) {
   })
 
   $('.prior-art-form').dialog({
+    title: "Suggest Prior Art",
     autoOpen: false,
     height: 450,
     width: 400,
     modal: true,
-    title: "Suggest Prior Art",
     buttons: {
       cancel: function() {
         $(this).get(0).reset()

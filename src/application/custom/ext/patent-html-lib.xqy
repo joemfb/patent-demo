@@ -158,6 +158,15 @@ declare function html:addressbook($x)
     </xhtml:li>
 };
 
+declare function html:dates($x)
+{
+  <xhtml:h5 class="dates">
+    <xhtml:span>Applied <xhtml:span class="date">{ $x//pt:application-reference/pt:document-id/pt:date/@date ! xs:dateTime(xs:date(.)) }</xhtml:span></xhtml:span>
+    { ",&nbsp;" }
+    <xhtml:span>Granted <xhtml:span class="date">{ $x//pt:publication-reference/pt:document-id/pt:date/@date ! xs:dateTime(xs:date(.)) }</xhtml:span></xhtml:span>
+  </xhtml:h5>
+};
+
 declare function html:additional-info($x)
 {
   <div class="additional-info" xmlns="http://www.w3.org/1999/xhtml">
@@ -250,6 +259,7 @@ declare function html:transform-patent($x)
   <div class="patent-result" xmlns="http://www.w3.org/1999/xhtml">
     <h2 class="patent-title">{ html:transform($x//pt:invention-title) }</h2>
     <div class="patent-contents">
+      { html:dates($x) }
       { (: TODO: why does normal indentation create extra space here? :) }
       <div class="abstract"><h3>Abstract</h3>{ html:transform($x/pt:abstract) }</div>
       <div class="classification">

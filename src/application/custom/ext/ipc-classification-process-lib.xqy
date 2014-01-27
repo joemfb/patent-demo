@@ -2,8 +2,6 @@ xquery version "1.0-ml";
 
 module namespace process = "http://marklogic.com/roxy/lib/ipc-classification-process";
 
-import module namespace patent = "http://marklogic.com/roxy/models/patent" at "/application/custom/ext/patent-lib.xqy";
-
 declare namespace pt = "http://example.com/patent";
 declare namespace class = "http://example.com/classification";
 

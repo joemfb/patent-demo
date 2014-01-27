@@ -117,10 +117,10 @@ declare function html:ipc-entry($x)
     html:transform($x/class:textBody),
     if ($x/class:ipc-entries/*)
     then
-      <xhtml:div class="ipc-children">
+      <xhtml:ul class="ipc-children">
         <xhtml:h3>Children</xhtml:h3>
-        <xhtml:ul>{ html:transform($x/class:ipc-entries/*) }</xhtml:ul>
-      </xhtml:div>
+        { html:transform($x/class:ipc-entries/*) }
+      </xhtml:ul>
     else ()
   }
   </xhtml:div>

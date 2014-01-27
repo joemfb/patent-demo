@@ -287,23 +287,7 @@ var Util = {
       findClassifications: function() {
         $('.classification .ipc').each(function(index, item) {
           Content.findClassification($(item).data('code'), function(data) {
-            /*
-            var entries = data['ipc-entries'],
-                el
-
-            console.log(data)
-            el = $('<div/>')
-
-            for (var i = 0; i < entries.length; i++) {
-              el.append( $() )
-            }
-            */
-
             Content.displayClassification(data, $(item))
-            
-            //$(item).append( $(data.html).find('.ipc-entry') )            
-            //$(item).find('.ipc-entry-search').click(Content.findClassificationFromCode)
-            //$(item).find('.ipc-entry-ref').click(Content.findClassificationFromHref)
           })
         })
       },
@@ -325,7 +309,6 @@ var Util = {
       findClassificationFromCode: function(e) {
         e.preventDefault()
         Content.findClassification($(e.target).data('code'), function(data) {
-          //$(data.html).find('.ipc-entry').dialog()
           Content.displayClassification(data, $(e.target))
         })
       },
@@ -333,15 +316,12 @@ var Util = {
       findClassificationFromHref: function(e) {
         e.preventDefault()
         $.get($(e.target).attr('href') + '&format=json', function(data) {
-          //$(data.html).find('.ipc-entry').dialog()
           Content.displayClassification(data, $(e.target))
         })
       },
 
       displayClassification: function(data, target) {
         var html = $(data.html).find('.ipc-entry')
-
-        console.log(target[0])
 
         html.find('.ipc-entry-search').click(Content.findClassificationFromCode)
         html.find('.ipc-entry-ref').click(Content.findClassificationFromHref)
@@ -358,7 +338,7 @@ var Util = {
         }
 
         Content.findPatentsByClassification(target.data('code'), function(data) {
-          var patents = $('<ul class="related-patents"/>'),
+          var patents = $('<ul class="related-patents"><h3>Related Patents</h3></ul>'),
               patent
 
           for (var i = 0; i < data.results.length; i++) {
@@ -379,7 +359,6 @@ var Util = {
       },
 
       findPatentsByClassification: function(code, callback) {
-        //A61B0005050000
         var url = 'keyvalue?element=pt:classification-ipcr&attribute=code&value=' + code + '&format=json'
 
         $.get(url, function(data) {
@@ -458,24 +437,6 @@ if ( $('.patent-result').length !== 0 ) {
   })
 }
 
+
 //TODO
 //$('.additional-info > div').toggle()
-
-/*
-$('.additional-info').trunk8({
-  //lines: 10,
-  fill: '&hellip; <a id="read-more" href="#">read more</a>'
-})
-
-$('#read-more').live('click', function (event) {
-  $(this).parent().trunk8('revert').append(' <a id="read-less" href="#">read less</a>');
-  
-  return false;
-});
-
-$('#read-less').live('click', function (event) {
-  $(this).parent().trunk8();
-  
-  return false;
-});
-*/

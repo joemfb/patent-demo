@@ -7,11 +7,11 @@ var Util = {
             search = /([^&=]+)=?([^&]*)/g,
             decode = function (s) { return decodeURIComponent(s.replace(pl, " ")) }
         
-        if (query == null) {
+        if (query === undefined) {
           query  = window.location.search.substring(1)
         }
 
-        while (match = search.exec(query)) {
+        while ( (match = search.exec(query)) ) {
           urlParams[decode(match[1])] = decode(match[2])
         }
         return urlParams
@@ -27,8 +27,8 @@ var Util = {
       findUserContent: function(uri) {
         var searchUrl
 
-        if (uri == null) {
-          uri = Util.urlParams()["uri"]
+        if (uri === undefined) {
+          uri = Util.urlParams().uri
         }
         searchUrl = '/v1/keyvalue?key=doc-uri&value=' + uri + '&format=json'
 
@@ -58,7 +58,7 @@ var Util = {
           '</tr>')
         }
         else if (data.type === 'license-request') {
-          selector = ".licensing",
+          selector = ".licensing"
           row = $('<tr data-uri="' + uri  + '" data-email="' + data.email + '" data-phone="' + data.phone + '" data-created="' + data.created + '">' +
             '<td class="name">' + data.name + '</td>' +
             '<td class="formatted-date">' + Util.formatDate(data.created) + '</td>' +
@@ -81,7 +81,7 @@ var Util = {
         if (srcUri.length === 0) {
           Repo.saveDoc(data, function(response, status, jqXHR) {
             var url = jqXHR.getResponseHeader('Location')
-            srcUri = Util.urlParams(url.split('\?')[1])['uri']
+            srcUri = Util.urlParams(url.split('?')[1]).uri
             UserContent.displayContent(data, srcUri)
           })
         }
@@ -219,7 +219,7 @@ var Util = {
       //Prepare a json document from user input
       prepareDoc: function(data, type) {
         data = Repo.processFormData(data)
-        data['doc-uri'] = Util.urlParams()["uri"]
+        data['doc-uri'] = Util.urlParams().uri
         data.type = type
         data.username = $('#username').text()
         return data
@@ -285,11 +285,11 @@ var Util = {
             condition,
             result
 
-        //TODO: check that isn't not the same doc
-        uri = Util.urlParams()["uri"]
+        uri = Util.urlParams().uri
         result = data.results[0]
 
-        condition = result != null && result.uri !== uri
+        condition = result !== null && result !== undefined
+        condition = condition && result.uri !== uri
         condition = condition && /publication-reference/.test(result.matches[0].path)
 
         if ( condition ) {
@@ -316,7 +316,7 @@ var Util = {
         $.get(url, function(data) {
           var result = data.results[0]
 
-          if (result !== null && result != undefined) {
+          if (result !== null && result !== undefined) {
             $.get(result.href + '&format=json', function(data) {
               callback(data)
             })
@@ -363,7 +363,7 @@ var Util = {
           }
         }
 
-        Content.displayRelatedPatents(target.data('code'), html)
+        Content.getRelatedPatents(target.data('code'), html)
       },
 
       findPatentsByClassification: function(code, callback) {
@@ -374,7 +374,7 @@ var Util = {
         })
       },
 
-      displayRelatedPatents: function(code, target) {
+      getRelatedPatents: function(code, target) {
         Content.findPatentsByClassification(code, function(data) {
           var patents = $('<ul class="related-patents"><h3>Related Patents</h3></ul>'),
               patent,
@@ -385,22 +385,26 @@ var Util = {
           }
 
           for (var i = 0; i < data.results.length; i++) {
-            href = data.results[i].href
-            
-            //exclude current doc
-            if (data.results[i].uri !== Util.urlParams()["uri"]) {
-              $.get(href + '&format=json', function(details) {
-                var str = '(' + details['doc-number'] + ') - ' + details.title
-                patent = $('<li><a href="' + href + '" target="_blank">' + str + '</a></li>') 
-                patents.append(patent)
-              })
-              
-            }
+            Content.displayRelatedPatent(data.results[i], patents)
           }
 
           target.append(patents)
         })
-      }
+      },
+
+      displayRelatedPatent: function(result, patents) {
+        var href = result.href,
+            patent
+
+        //exclude current doc
+        if (result.uri !== Util.urlParams().uri) {
+          $.get(href + '&format=json', function(details) {
+            var str = '(' + details['doc-number'] + ') - ' + details.title
+            patent = $('<li><a href="' + href + '" target="_blank">' + str + '</a></li>') 
+            patents.append(patent)
+          })
+        }
+      },
 
     }
 

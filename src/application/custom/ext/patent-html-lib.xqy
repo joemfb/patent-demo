@@ -168,9 +168,9 @@ declare function html:licensing()
         <input type="text" name="email" id="email" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
         <label for="phone">Phone Number: </label>
         <input type="text" name="phone" id="phone" class="text ui-widget-content ui-corner-all" xml:space="preserve"></input>
-        <!--<label for="description">Comments:</label>-->
+        <label for="description">Product Description:</label>
         <textarea name="description" cols="45" rows="6" id="comments" placeholder="Describe your intended product ..." class="ui-widget ui-state-default ui-corner-all" xml:space="preserve"></textarea>
-        <!--<label for="comments">Comments:</label>-->
+        <label for="comments">Comments:</label>
         <textarea name="comments" cols="45" rows="6" id="comments" placeholder="Additional comments ..." class="ui-widget ui-state-default ui-corner-all" xml:space="preserve"></textarea>
         <input type="hidden" name="uri" id="uri" value="" xml:space="preserve"></input>
         <input type="hidden" name="created" id="created" value="" xml:space="preserve"></input>
@@ -187,7 +187,7 @@ declare function html:prior-art()
       <thead>
         <tr class="ui-widget-header ">
           <th class="name ui-state-default">Name</th>
-          <th class="email ui-state-default">Email</th>
+          <th class="requested ui-state-default">Requested</th>
           <th class="external-link ui-state-default">External Link</th>
           <th class="comments ui-state-default">Comments</th>
         </tr>
@@ -222,21 +222,14 @@ declare function html:transform-patent($x)
         <h3>Classifications</h3>
         { html:transform($x//pt:classification-ipcr) }
       </div>
-      <div class="patent-citations">
-        <h3>Patent Citations</h3>
-        { html:transform($x//pt:us-citation[pt:patcit]) }
+      <div class="additional-info">
+        <h3>Additional Information</h3>
+        <div>TODO</div>
       </div>
       {
         html:licensing(),
         html:prior-art()
       }
-      <div class="additional-info">
-        <h3>Additional Information</h3>
-        <div class="non-patent-citations">
-          <h3>Non-Patent Citations:</h3>
-          { html:transform($x//pt:us-citation[pt:nplcit]) }
-        </div>
-      </div>
       <div class="description">
         <h3 class="description-title">Description</h3>
         <div class="description-contents">{ html:transform($x/pt:description) }</div>
@@ -244,6 +237,14 @@ declare function html:transform-patent($x)
       <div class="claims">
         <h3 class="claims-title">{ html:transform($x/pt:us-claim-statement) }</h3>
         <div class="claims-contents">{ html:transform($x/pt:claims/pt:claim) }</div>
+      </div>
+      <div class="patent-citations">
+        <h3>Patent Citations</h3>
+        <div class="citations-contents">{ html:transform($x//pt:us-citation[pt:patcit]) }</div>
+      </div>
+      <div class="non-patent-citations">
+        <h3>Non-Patent Citations:</h3>
+        <div class="citations-contents">{ html:transform($x//pt:us-citation[pt:nplcit]) }</div>
       </div>
     </div>
   </div>

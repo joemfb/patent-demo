@@ -45,8 +45,9 @@ var Util = {
 
         if (data.type === "prior-art") {
           selector = ".prior-art"
-          row = $('<tr data-uri="' + uri  + '" data-email="' + data.email + '" data-phone="' + data.phone + '">' +
+          row = $('<tr data-uri="' + uri  + '" data-email="' + data.email + '" data-phone="' + data.phone + '" data-created="' + data.created + '">' +
             '<td class="name">' + data.name + '</td>' +
+            '<td class="formatted-date">' + new Date(data.created).toLocaleString().split(" ")[0] + '</td>' +
             '<td class="external-link">' + data['external-link'] + '</td>' +
             '<td class="comments">' + data.comments + '</td>' +
             '<td class="operations"></td>' +
@@ -136,19 +137,14 @@ var Util = {
 
         contact.click(function(e) {
           e.preventDefault()
-          var tr = $(e.target).parent().parent()
-          $('<div>email: ' + tr.data('email') + '<br/>' + 'phone: ' + tr.data('phone') + '</div>').dialog()
+          UserContent.contact(selector, e.target)
         })
       },
 
       populateForm: function(selector, obj) {
-        //TODO: cleanup
-        //$(selector + ' fieldset input[id="uri"').remove()
         $(selector + ' :input').each(function(index, input) {
           input.value = obj[input.name]
         })
-        console.log(obj)
-        //$(selector + ' fieldset').append('<input type="hidden" name="uri" id="uri" value="' + obj.uri +'"></input>')
       },
 
       edit: function(selector, target) {
@@ -166,6 +162,7 @@ var Util = {
             srcUri = tr.data('uri')
 
         $("<div/>").dialog({
+          title: "Are you sure?",
           resizable: false,
           height:140,
           modal: true,
@@ -180,6 +177,15 @@ var Util = {
               $( this ).dialog( "close" );
             }
           }
+        }).dialog("open")
+      },
+
+      contact: function(selector, target) {
+        var tr = $(target).parent().parent(),
+            details = $('<div>email: ' + tr.data('email') + '<br/>' + 'phone: ' + tr.data('phone') + '</div>')
+
+        details.dialog({
+          title: "Contact Details"
         }).dialog("open")
       }
 
@@ -321,14 +327,22 @@ var Util = {
       },
 
       displayClassification: function(data, target) {
-        var html = $(data.html).find('.ipc-entry')
+        var html = $(data.html).find('.ipc-entry'),
+            wrapper
 
         html.find('.ipc-entry-search').click(Content.findClassificationFromCode)
         html.find('.ipc-entry-ref').click(Content.findClassificationFromHref)
 
         // if target is not a dialog, and target already has entries
         if (target.parents('.ui-dialog-content').length === 0 && target.parents('.ipc').find('.ipc-entry').length > 0) {
-          html.dialog()
+          wrapper = $('<div class="ipc-wrapper"><strong>' + data.symbol + '</strong></div>')
+          wrapper.append(html).dialog({
+            title: "Classification Details",
+            autoOpen: false,
+            height: 450,
+            width: 500,
+            modal: false
+          }).dialog( "open" )
         } else {
           if (target.hasClass('ipc-entry-search') || target.hasClass('ipc-entry-ref')) {
             target.parent().append(html)
@@ -337,25 +351,7 @@ var Util = {
           }
         }
 
-        Content.findPatentsByClassification(target.data('code'), function(data) {
-          var patents = $('<ul class="related-patents"><h3>Related Patents</h3></ul>'),
-              patent
-
-          for (var i = 0; i < data.results.length; i++) {
-            //exclude current doc
-            if (data.results[i].uri !== Util.urlParams()["uri"]) {
-              Content.getPatentDetails(data.results[i].href, function(details) {
-                var str = '(' + details['doc-number'] + ') - ' + details.title
-                patent = $('<li><a href="' + details.href + '" target="_blank">' + str + '</a></li>') 
-                patents.append(patent)  
-              })
-              
-            }
-          }
-
-          html.append(patents)
-        })
-
+        Content.displayRelatedPatents(target.data('code'), html)
       },
 
       findPatentsByClassification: function(code, callback) {
@@ -366,10 +362,31 @@ var Util = {
         })
       },
 
-      getPatentDetails: function(url, callback) {
-        $.get(url + '&format=json', function(data) {
-          data.href = url
-          callback(data)
+      displayRelatedPatents: function(code, target) {
+        Content.findPatentsByClassification(code, function(data) {
+          var patents = $('<ul class="related-patents"><h3>Related Patents</h3></ul>'),
+              patent,
+              href
+
+          if (data.results.length === 0) {
+            return
+          }
+
+          for (var i = 0; i < data.results.length; i++) {
+            href = data.results[i].href
+            
+            //exclude current doc
+            if (data.results[i].uri !== Util.urlParams()["uri"]) {
+              $.get(href + '&format=json', function(details) {
+                var str = '(' + details['doc-number'] + ') - ' + details.title
+                patent = $('<li><a href="' + href + '" target="_blank">' + str + '</a></li>') 
+                patents.append(patent)
+              })
+              
+            }
+          }
+
+          target.append(patents)
         })
       }
 

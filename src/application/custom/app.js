@@ -26,11 +26,11 @@ var Util = {
         if (uri == null) {
           uri = Util.urlParams()["uri"]
         }
-        searchUrl = 'keyvalue?key=doc-uri&value=' + uri + '&format=json'
+        searchUrl = '/v1/keyvalue?key=doc-uri&value=' + uri + '&format=json'
 
         $.get( searchUrl, function(data) {
           data.results.map(function(item) {
-            var docUrl = 'documents?uri=' + item.uri + '&format=json'
+            var docUrl = '/v1/documents?uri=' + item.uri + '&format=json'
 
             $.get( docUrl, function(data) {
               UserContent.displayContent(data, item.uri)
@@ -259,7 +259,7 @@ var Util = {
 
       //Find a Patent Document by it's publication number
       findByPatentNum: function(patentNum, target, callback) {
-        var searchUrl = 'keyvalue?element=doc-number&value=' + patentNum+ '&format=json'
+        var searchUrl = '/v1/keyvalue?element=doc-number&value=' + patentNum+ '&format=json'
         
         $.get( searchUrl, function( data ) {
           callback(data, target)
@@ -281,7 +281,7 @@ var Util = {
         condition = condition && /publication-reference/.test(result.matches[0].path)
 
         if ( condition ) {
-          target.get(0).href = 'documents?uri=' + encodeURIComponent(result.uri)
+          target.get(0).href = '/v1/documents?uri=' + encodeURIComponent(result.uri)
         } else {
           message = $('<span class="message">&nbsp;&nbsp;no results found.</span>')
           target.parent().append(message)
@@ -299,7 +299,7 @@ var Util = {
       },
 
       findClassification: function(code, callback) {
-        var url = 'keyvalue?element=class:symbol&value=' + code + '&format=json'
+        var url = '/v1/keyvalue?element=class:symbol&value=' + code + '&format=json'
 
         $.get(url, function(data) {
           var result = data.results[0]
@@ -355,7 +355,7 @@ var Util = {
       },
 
       findPatentsByClassification: function(code, callback) {
-        var url = 'keyvalue?element=pt:classification-ipcr&attribute=code&value=' + code + '&format=json'
+        var url = '/v1/keyvalue?element=pt:classification-ipcr&attribute=code&value=' + code + '&format=json'
 
         $.get(url, function(data) {
           callback(data)
@@ -392,12 +392,12 @@ var Util = {
 
     }
 
-if ( $('.patent-result').length !== 0 ) {
+// setup patent doc event handlers, get related content
+if ( $('.patent-result').length > 0 ) {
   Content.findClassifications()  
 
   UserContent.findUserContent()
 
-  // Setup patent-number click handler
   $('.patent-number').click(function(e) {
     //TODO: do something else to pause this process?
     e.preventDefault()
@@ -409,7 +409,6 @@ if ( $('.patent-result').length !== 0 ) {
     Content.findByPatentNum(patentNum, $(this), Content.navigateToResult)
   })
 
-  // Setup user-input dialogs
   $(".licensing-form").dialog({
     autoOpen: false,
     height: 450,
@@ -454,6 +453,105 @@ if ( $('.patent-result').length !== 0 ) {
   })
 }
 
+//add description tooltips to classification facet
+if ( $('#sidebar-container').length > 0 ) {
 
-//TODO
-//$('.additional-info > div').toggle()
+  // from https://forum.jquery.com/topic/waiting-for-a-dom-element-to-become-available#14737000002248405
+  $.fn.onAvailable = function(fn){
+    var sel = this.selector,
+        timer,
+        self = this
+
+    if (this.length > 0) {
+      fn.call(this)
+    }
+    else {
+      timer = setInterval(function(){
+        if ($(sel).length > 0) {
+          fn.call($(sel))
+          clearInterval(timer)
+        }
+      },50)
+    }
+  }
+
+  //TODO: fix these so that they fire on item display, not just on page load
+
+  $('#facet-list-class').onAvailable(function() {
+    $('#facet-list-class a[rel]').each(function(index, item) {
+      if ($(item).is(":visible")) {
+        Content.findClassification($(item).text(), function(data) {
+          var txt = $(data.html).find('.claim-title > span').text()
+          $(item).attr('title', txt)
+        })
+      }
+    })
+  })
+
+  $('#chiclet-class .content').onAvailable(function() {
+    var item = $('#chiclet-class .content'),
+        code = item.text().split(" ")[1]
+
+    Content.findClassification(code, function(data) {
+      var txt = $(data.html).find('.claim-title > span').text()
+      item.attr('title', txt)
+    })
+  })
+
+  //ALTERNATE APPROACH: https://stackoverflow.com/questions/1225102/jquery-event-to-trigger-action-when-a-div-is-made-visible
+
+  //FAILED ATTEMPT 1
+
+  /*
+  var _oldShow = $.fn.show;
+  $.fn.show = function(speed, oldCallback) {
+    return $(this).each(function() {
+      var obj         = $(this),
+          newCallback = function() {
+            if ($.isFunction(oldCallback)) {
+              oldCallback.apply(obj);
+            }
+            obj.trigger('afterShow');
+          };
+
+      // you can trigger a before show if you want
+      obj.trigger('beforeShow');
+
+      // now use the old function to show the element passing the new callback
+      _oldShow.apply(obj, [speed, newCallback]);
+    });
+  }
+
+  $('#facet-list-class').onAvailable(function () {
+    console.log('onAvailable')
+    $('#facet-list-class').on('afterShow', {}, function() {
+      console.log('shown')
+    })
+  })
+  */
+
+  //FAILED ATTEMPT 2
+
+  /*
+  MutationObserver = window.MutationObserver || window.WebKitMutationObserver
+  var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          console.log(mutation)
+          console.log('visible: ' + $(mutation.target).is(':visible'))
+        })
+      })
+  
+  $('#facet-list-class').onAvailable(function () {
+    $('#facet-list-class').each(function(index, item) {
+      $(item).data('test', 'yes')
+      console.log(item)
+      observer.observe(item, {
+        subtree: true,
+        childList: true,
+        attributes: true
+      })
+
+    })
+  })
+  */
+}

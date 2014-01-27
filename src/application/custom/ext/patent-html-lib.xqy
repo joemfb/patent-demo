@@ -259,14 +259,19 @@ declare function html:transform-patent($x)
   <div class="patent-result" xmlns="http://www.w3.org/1999/xhtml">
     <h2 class="patent-title">{ html:transform($x//pt:invention-title) }</h2>
     <div class="patent-contents">
-      { html:dates($x) }
-      { (: TODO: why does normal indentation create extra space here? :) }
-      <div class="abstract"><h3>Abstract</h3>{ html:transform($x/pt:abstract) }</div>
-      <div class="classification">
-        <h3>Classifications</h3>
-        { html:transform($x//pt:classification-ipcr) }
-      </div>
       {
+        html:dates($x),
+        if ($x/pt:abstract)
+        then
+          <div class="abstract"><h3>Abstract</h3>{ html:transform($x/pt:abstract) }</div>
+        else (),
+        if ($x//pt:classification-ipcr)
+        then
+          <div class="classification">
+            <h3>Classifications</h3>
+            { html:transform($x//pt:classification-ipcr) }
+          </div>
+        else (),
         html:additional-info($x),
         html:licensing(),
         html:prior-art()
@@ -279,14 +284,22 @@ declare function html:transform-patent($x)
         <h3 class="claims-title">{ html:transform($x/pt:us-claim-statement) }</h3>
         <div class="claims-contents">{ html:transform($x/pt:claims/pt:claim) }</div>
       </div>
-      <div class="patent-citations">
-        <h3>Patent Citations</h3>
-        <div class="citations-contents">{ html:transform($x//pt:us-citation[pt:patcit]) }</div>
-      </div>
-      <div class="non-patent-citations">
-        <h3>Non-Patent Citations:</h3>
-        <div class="citations-contents">{ html:transform($x//pt:us-citation[pt:nplcit]) }</div>
-      </div>
+      {
+        if ($x//pt:us-citation[pt:nplcit])
+        then
+          <div class="patent-citations">
+            <h3>Patent Citations</h3>
+            <div class="citations-contents">{ html:transform($x//pt:us-citation[pt:patcit]) }</div>
+          </div>
+        else (),
+        if ($x//pt:us-citation[pt:nplcit])
+        then
+          <div class="non-patent-citations">
+            <h3>Non-Patent Citations:</h3>
+            <div class="citations-contents">{ html:transform($x//pt:us-citation[pt:nplcit]) }</div>
+          </div>
+        else ()
+      }
     </div>
   </div>
 };

@@ -161,6 +161,8 @@ declare function html:addressbook($x)
 declare function html:dates($x)
 {
   <xhtml:h5 class="dates">
+    <xhtml:span>{ $x//pt:publication-reference/pt:document-id/pt:doc-number/fn:string() }</xhtml:span>
+    {  ":&nbsp;" }
     <xhtml:span>Applied <xhtml:span class="date">{ $x//pt:application-reference/pt:document-id/pt:date/@date ! xs:dateTime(xs:date(.)) }</xhtml:span></xhtml:span>
     { ",&nbsp;" }
     <xhtml:span>Granted <xhtml:span class="date">{ $x//pt:publication-reference/pt:document-id/pt:date/@date ! xs:dateTime(xs:date(.)) }</xhtml:span></xhtml:span>

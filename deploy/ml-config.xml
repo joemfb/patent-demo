@@ -30,6 +30,16 @@
       <error-handler>@ml.error-handler</error-handler>
       <rewrite-resolves-globally>@ml.rewrite-resolves-globally</rewrite-resolves-globally>
       <!-- <ssl-certificate-template>@ml.ssl-certificate-template</ssl-certificate-template> -->
+      <namespaces>
+        <namespace>
+          <prefix>class</prefix>
+          <namespace-uri>http://example.com/classification</namespace-uri>
+        </namespace>
+        <namespace>
+          <prefix>pt</prefix>
+          <namespace-uri>http://example.com/patent</namespace-uri>
+        </namespace>
+      </namespaces>
     </http-server>
     @ml.test-appserver
   </http-servers>

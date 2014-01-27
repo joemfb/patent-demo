@@ -66,13 +66,20 @@
       <search:path-index>pt:assignee/pt:addressbook/pt:address/pt:country</search:path-index>
     </search:range>
   </search:constraint>
-  <search:constraint name="date">
+  <search:constraint name="application-date">
     <search:range type="xs:date" facet="true">
       <search:facet-option>frequency-order</search:facet-option>
       <search:facet-option>descending</search:facet-option>
       <search:facet-option>limit=10</search:facet-option>
-      <search:attribute ns="" name="date"/>
-      <search:element ns="http://example.com/patent" name="date"/>
+      <search:path-index>pt:application-reference/pt:document-id/pt:date/@date</search:path-index>
+    </search:range>
+  </search:constraint>
+  <search:constraint name="grant-date">
+    <search:range type="xs:date" facet="true">
+      <search:facet-option>frequency-order</search:facet-option>
+      <search:facet-option>descending</search:facet-option>
+      <search:facet-option>limit=10</search:facet-option>
+      <search:path-index>pt:publication-reference/pt:document-id/pt:date/@date</search:path-index>
     </search:range>
   </search:constraint>
   <search:operator name="sort">
@@ -142,7 +149,8 @@
     <search:constraint-value ref="class"/>
     <search:constraint-value ref="inventor-country"/>
     <search:constraint-value ref="assignee-country"/>
-    <search:constraint-value ref="date"/>
+    <search:constraint-value ref="application-date"/>
+    <search:constraint-value ref="grant-date"/>
   </search:extract-metadata>
   <annotation xmlns="http://marklogic.com/appservices/search">Delta options here</annotation>
 </search:options>

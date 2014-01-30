@@ -1,6 +1,6 @@
 **SETUP**
 
-Update credentials / port numbes in `deploy/build.properties`, then:
+Update credentials / port numbers in `deploy/build.properties`, then:
 
     ml local bootstrap
     ml local deploy modules

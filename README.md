@@ -29,7 +29,7 @@ This is a customized interface. The patent document is transformed into HTML on 
 and then enhanced with a variety of related JSON data retrieved via the REST API.
 Referenced classifications are retrieved, and can be further explored in a pop-up window.
 Patents related to those classifications are also linked. Users can request a licence
-for the patent, or suggest prior art that my invalidate the patent.
+for the patent, or suggest prior art that may invalidate the patent.
 Cited patents are linked (although most won't exist, see known issues).
 
 **KNOWN ISSUES**

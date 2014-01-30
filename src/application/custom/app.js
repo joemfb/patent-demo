@@ -7,9 +7,7 @@ var Util = {
             search = /([^&=]+)=?([^&]*)/g,
             decode = function (s) { return decodeURIComponent(s.replace(pl, " ")) }
         
-        if (query === undefined) {
-          query  = window.location.search.substring(1)
-        }
+        query = query || window.location.search.substring(1)
 
         while ( (match = search.exec(query)) ) {
           urlParams[decode(match[1])] = decode(match[2])
@@ -27,9 +25,7 @@ var Util = {
       findUserContent: function(uri) {
         var searchUrl
 
-        if (uri === undefined) {
-          uri = Util.urlParams().uri
-        }
+        uri = uri || Util.urlParams().uri
         searchUrl = '/v1/keyvalue?key=doc-uri&value=' + uri + '&format=json'
 
         $.get( searchUrl, function(data) {
@@ -69,7 +65,9 @@ var Util = {
           '</tr>')
         }
 
-        UserContent.populateRow(row, selector)
+        if (row) {
+          UserContent.populateRow(row, selector)
+        }
       },
 
       processInput: function(data, type) {
@@ -111,6 +109,7 @@ var Util = {
       populateRow: function(row, selector) {
         var edit,
             remove,
+            contact,
             existing
 
         edit = $('<a href="#" class="edit">edit</a>')
@@ -121,7 +120,7 @@ var Util = {
           .append('&nbsp;|&nbsp;').append(remove)
           .append('&nbsp;|&nbsp;').append(contact)
 
-        existing = $(selector + ' tr[data-uri="' + row.data('uri') +'"')
+        existing = $(selector + ' tr[data-uri="' + row.data('uri') + '"')
 
         if (existing.length === 0) {
           $(selector + '-entries').append(row)
@@ -281,25 +280,24 @@ var Util = {
       //Navigate to a patent document by it's publication number
       navigateToResult: function(data, target) {
         var uri,
-            message,
-            condition,
             result
 
-        uri = Util.urlParams().uri
-        result = data.results[0]
+        if (data.results.length > 0) {
+          uri = Util.urlParams().uri
+          result = data.results[0]
 
-        condition = result !== null && result !== undefined
-        condition = condition && result.uri !== uri
-        condition = condition && /publication-reference/.test(result.matches[0].path)
-
-        if ( condition ) {
-          target.get(0).href = '/v1/documents?uri=' + encodeURIComponent(result.uri)
-        } else {
-          message = $('<span class="message">&nbsp;&nbsp;no results found.</span>')
-          target.parent().append(message)
-          message.delay(750).fadeOut()
+          if ( result.uri !== uri && /publication-reference/.test(result.matches[0].path) ) {
+            target.get(0).href = '/v1/documents?uri=' + encodeURIComponent(result.uri)
+            return
+          }
         }
+        Content.appendErrorMessage(target, "no results found")
+      },
 
+      appendErrorMessage: function(target, msg) {
+        var message = $('<span class="message">&nbsp;&nbsp;' + msg + '.</span>')
+        target.parent().append(message)
+        message.delay(750).fadeOut()
       },
 
       findClassifications: function() {
@@ -314,10 +312,8 @@ var Util = {
         var url = '/v1/keyvalue?element=class:symbol&value=' + code + '&format=json'
 
         $.get(url, function(data) {
-          var result = data.results[0]
-
-          if (result !== null && result !== undefined) {
-            $.get(result.href + '&format=json', function(data) {
+          if (data.results.length > 0) {
+            $.get(data.results[0].href + '&format=json', function(data) {
               callback(data)
             })
           }
@@ -344,6 +340,8 @@ var Util = {
 
         html.find('.ipc-entry-search').click(Content.findClassificationFromCode)
         html.find('.ipc-entry-ref').click(Content.findClassificationFromHref)
+
+        //TODO handle .ipc-entry-search in dialog
 
         // if target is not a dialog, and target already has entries
         if (target.parents('.ui-dialog-content').length === 0 && target.parents('.ipc').find('.ipc-entry').length > 0) {
@@ -376,19 +374,14 @@ var Util = {
 
       getRelatedPatents: function(code, target) {
         Content.findPatentsByClassification(code, function(data) {
-          var patents = $('<ul class="related-patents"><h3>Related Patents</h3></ul>'),
-              patent,
-              href
+          var patents = $('<ul class="related-patents"><h3>Related Patents</h3></ul>')
 
-          if (data.results.length === 0) {
-            return
+          if (data.results.length > 0) {
+            for (var i = 0; i < data.results.length; i++) {
+              Content.displayRelatedPatent(data.results[i], patents)
+            }
+            target.append(patents)
           }
-
-          for (var i = 0; i < data.results.length; i++) {
-            Content.displayRelatedPatent(data.results[i], patents)
-          }
-
-          target.append(patents)
         })
       },
 
